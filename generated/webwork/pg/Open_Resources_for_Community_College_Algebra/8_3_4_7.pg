@@ -1,0 +1,116 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8.3.4.7)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "parserNumberWithUnits.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+$baseF = random(4,6,0.1);
+$heightI = random(24,36,1);
+$baseI = $baseF*12;
+$baseFU = NumberWithUnits("$baseF ft");
+$baseIU = NumberWithUnits("$baseI in");
+$heightIU = NumberWithUnits("$heightI in");
+$perimeter = 2*($baseI+$heightI);
+$area = $baseI*$heightI;
+$ansP = NumberWithUnits("$perimeter in");
+$ansA = NumberWithUnits("$area in^2");
+$ansPE = NumberWithUnits("$perimeter/12 ft");
+$ansAE = NumberWithUnits("$area/144 ft^2");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the perimeter and area of a rectangular table top with a length of [`[$baseFU]`] and a width of [`[$heightIU]\text{.}`]
+
+Its perimeter is [_]{$ansP}{5} and its area is [_]{$ansA}{5}.
+
+[@KeyboardInstructions('(Use [|in|]* for inches and [|in^2|]* for square inches.)')@]**
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Notice that the units of the rectangle's length and width are not the same. We must convert them to the same unit. For this solution, we will convert feet to inches to avoid inaccurate answers.
+
+The rectangle's length [`[$baseFU]`] can be converted to:
+
+[```
+                [$baseFU]\cdot\frac{12\text{ in}}{1\text{ ft}}=[$baseIU]
+              ```]
+
+Now we can calculate the rectangle's perimeter by its perimeter formula:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+\text{rectangle perimeter}\amp=2([$baseIU]+[$heightIU])\\
+\amp= [$ansP]
+\end{aligned}
+```]
+
+An equivalent answer is [`[$ansPE]\text{.}`]
+
+We will calculate the rectangle's area by its area formula:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+\text{rectangle area}\amp= ([$baseIU]) \cdot ([$heightIU])\\
+\amp = [$ansA]
+\end{aligned}
+```]
+
+The rectangular table top's area is [`[$ansA]\text{.}`] An equivalent answer is [`[$ansAE]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

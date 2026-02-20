@@ -1,0 +1,80 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:09-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.4.5.78)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("FiniteSolutionSets");
+$a = list_random(2,3,5);
+$b = list_random(4,9,16,25);
+$c = $a * $b;
+$exp = random(12,50,2);
+$smallexp = $exp - 2;
+$sqrt = Formula("sqrt($b)")->reduce;
+$answer = Formula("{0, 1/$sqrt, -1/$sqrt}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve for [`x`] in the equation [`[$c]x^{[$exp]}-[$a]x^{[$smallexp]} = 0 \text{.}`]
+
+[_]{$answer}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+To solve [`[$c]x^{[$exp]}-[$a]x^{[$smallexp]} = 0 \text{,}`] we can factor out the GCF, [`[$a]x^{[$smallexp]}\text{.}`] Thus, the equation becomes [`[$a]x^{[$smallexp]}([$b]x^{2}-1)=0\text{.}`] Keep solving this by setting each factor equal to zero.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

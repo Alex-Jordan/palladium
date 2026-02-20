@@ -1,0 +1,112 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-19T08:29:04-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.10.6.75)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserMultiAnswer.pl",
+  "parserPopUp.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Fraction");
+do {
+  $h = Fraction(non_zero_random(-9,9,1),non_zero_random(-9,9,1));
+  $k = Fraction(non_zero_random(-9,9,1),non_zero_random(-9,9,1));
+  ($hnum,$hden) = $h->value;
+  ($knum,$kden) = $k->value;
+} until (abs($h) != abs($k) and $hden != 1 and $kden != 1);
+Context("Numeric");
+Context()->flags->set(reduceConstants=>0);
+Context()->noreduce('(-x)+y','(-x)-y');
+$abshnum = abs($hnum);
+if ($h > 0) {$formula = Formula("(x - $hnum/$hden)^2");}
+else {$formula = Formula("(x + $abshnum/$hden)^2");}
+$absknum = abs($knum);
+if ($k > 0) {$formula = Formula("$formula+$knum/$kden");}
+else {$formula = Formula("$formula-$absknum/$kden");}
+$hdir = ($h > 0) ? PopUp(['?','left','right'],2) : PopUp(['?','left','right'],1);
+$horizontal = MultiAnswer(abs($h),$hdir)->with(
+  singleResult => 1,
+  checker => sub {
+    my ($correct, $student, $self) = @_;
+    my @co = @{$correct};
+    my @st = @{$student};
+    return 1 if ($co[0] == $st[0] and $co[1] == $st[1] or $co[0] == -$st[0] and (lex_sort($co[1], $st[1]))[0] eq 'left' and (lex_sort($co[1], $st[1]))[1] eq 'right');
+    return 0;
+  }
+);
+$vdir = ($k > 0) ? PopUp(['?','down','up'],2) : PopUp(['?','down','up'],1);
+$vertical = MultiAnswer(abs($k),$vdir)->with(
+  singleResult => 1,
+  checker => sub {
+    my ($correct, $student, $self) = @_;
+    my @co = @{$correct};
+    my @st = @{$student};
+    return 1 if ($co[0] == $st[0] and $co[1] == $st[1] or $co[0] == -$st[0] and (lex_sort($co[1], $st[1]))[0] eq 'down' and (lex_sort($co[1], $st[1]))[1] eq 'up');
+    return 0;
+  }
+);
+$hshift = ($h > 0) ? abs($h)." units right" : abs($h)." units left";
+$vshift = ($k > 0) ? abs($k)." units up" : abs($k)." units down";
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Consider the graph of the equation [`y=[$formula]\text{.}`] Compared to the graph of [`y=x^2\text{,}`] the vertex has been shifted [_]{$horizontal}{5} units [_]{$horizontal}{5} and [_]{$vertical}{5} units [_]{$vertical}{5}.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Since the vertex is [`\left([$h],[$k]\right)\text{,}`] the graph is the graph of [`y=x^2`] shifted [$hshift] and [$vshift].
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

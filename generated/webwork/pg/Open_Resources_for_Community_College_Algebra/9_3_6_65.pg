@@ -1,0 +1,92 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(9.3.6.65)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Point");
+Context()->variables->are(n=>'Real',p=>'Real');
+$xintanswer = Compute("((-n-sqrt(n^2-4p))/2,0),((-n+sqrt(n^2-4p))/2,0)");
+$yintanswer = Point('(0,p)');
+$vertexanswer = Compute("(-n/2,(4p-n^2)/4)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Consider the equation [`y = x^{2}+nx+p\text{.}`] Let [`n`] and [`p`] be real numbers. Give your answers as points.
+a.  Suppose the graph has two real [`x`]-intercepts. What are they?
+
+    [@KeyboardInstructions('Enter the two intercepts as a comma-separated list. Be mindful of how you use parentheses in typing up the answers.')@]**
+
+    [_]{$xintanswer}{30}
+
+a.  What is its [`y`]-intercept?
+
+    [_]{$yintanswer}{10}
+
+a.  What is its vertex?
+
+    [_]{$vertexanswer}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  Set [`y`] equal to zero and use the quadratic formula.
+
+a.  Set [`x`] equal to zero and solve.
+
+a.  The x-coordinate of the vertex is equal to [` \frac{-b}{2a} \text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

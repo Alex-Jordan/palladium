@@ -1,0 +1,94 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:10-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.9.12)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Point");
+$vertex[0] = Point("(-4,10)");
+$vertex[1] = Point("(1,2)");
+$vertex[2] = Point("(10,-5)");
+$vertex[3] = Point("(-7,-13)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the vertex of each quadratic function.
+a.  [`r(x)=-2(x+4)^2+10`]
+
+    [_]{$vertex[0]}{10}
+
+a.  [`s(x)=5(x-1)^2+2`]
+
+    [_]{$vertex[1]}{10}
+
+a.  [`t(x)=(x-10)^2-5`]
+
+    [_]{$vertex[2]}{10}
+
+a.  [`u(x)=3(x+7)^2-13`]
+
+    [_]{$vertex[3]}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  The vertex of [`\newcommand{\firsthighlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}\newcommand{\secondhighlight}[1]{\mathchoice{\colorbox{lightemerald}{$\displaystyle #1$}}{\colorbox{lightemerald}{$\textstyle #1$}}{\colorbox{lightemerald}{$\scriptstyle #1$}}{\colorbox{lightemerald}{$\scriptscriptstyle #1$}}}r(x)=-2(x\firsthighlight{{}+4})^2\secondhighlight{{}+10}`] is [`\newcommand{\firsthighlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}\newcommand{\secondhighlight}[1]{\mathchoice{\colorbox{lightemerald}{$\displaystyle #1$}}{\colorbox{lightemerald}{$\textstyle #1$}}{\colorbox{lightemerald}{$\scriptstyle #1$}}{\colorbox{lightemerald}{$\scriptscriptstyle #1$}}}(\firsthighlight{-4},\secondhighlight{10})\text{.}`]
+
+a.  The vertex of [`\newcommand{\firsthighlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}\newcommand{\secondhighlight}[1]{\mathchoice{\colorbox{lightemerald}{$\displaystyle #1$}}{\colorbox{lightemerald}{$\textstyle #1$}}{\colorbox{lightemerald}{$\scriptstyle #1$}}{\colorbox{lightemerald}{$\scriptscriptstyle #1$}}}s(x)=5(x\firsthighlight{{}-1})^2\secondhighlight{{}+2}`] is [`\newcommand{\firsthighlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}\newcommand{\secondhighlight}[1]{\mathchoice{\colorbox{lightemerald}{$\displaystyle #1$}}{\colorbox{lightemerald}{$\textstyle #1$}}{\colorbox{lightemerald}{$\scriptstyle #1$}}{\colorbox{lightemerald}{$\scriptscriptstyle #1$}}}(\firsthighlight{1},\secondhighlight{2})\text{.}`]
+
+a.  The vertex of [`\newcommand{\firsthighlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}\newcommand{\secondhighlight}[1]{\mathchoice{\colorbox{lightemerald}{$\displaystyle #1$}}{\colorbox{lightemerald}{$\textstyle #1$}}{\colorbox{lightemerald}{$\scriptstyle #1$}}{\colorbox{lightemerald}{$\scriptscriptstyle #1$}}}t(x)=(x\firsthighlight{{}-10})^2\secondhighlight{{}-5}`] is [`\newcommand{\firsthighlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}\newcommand{\secondhighlight}[1]{\mathchoice{\colorbox{lightemerald}{$\displaystyle #1$}}{\colorbox{lightemerald}{$\textstyle #1$}}{\colorbox{lightemerald}{$\scriptstyle #1$}}{\colorbox{lightemerald}{$\scriptscriptstyle #1$}}}(\firsthighlight{10},\secondhighlight{-5})\text{.}`]
+
+a.  The vertex of [`\newcommand{\firsthighlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}\newcommand{\secondhighlight}[1]{\mathchoice{\colorbox{lightemerald}{$\displaystyle #1$}}{\colorbox{lightemerald}{$\textstyle #1$}}{\colorbox{lightemerald}{$\scriptstyle #1$}}{\colorbox{lightemerald}{$\scriptscriptstyle #1$}}}u(x)=3(x\firsthighlight{{}+7})^2\secondhighlight{{}-13}`] is [`\newcommand{\firsthighlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}\newcommand{\secondhighlight}[1]{\mathchoice{\colorbox{lightemerald}{$\displaystyle #1$}}{\colorbox{lightemerald}{$\textstyle #1$}}{\colorbox{lightemerald}{$\scriptstyle #1$}}{\colorbox{lightemerald}{$\scriptscriptstyle #1$}}}(\firsthighlight{-7},\secondhighlight{-13})\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

@@ -1,0 +1,103 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8.3.4.19)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "parserNumberWithUnits.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+$baseM = random(2,4,0.1);
+$heightCM = random(50,150,10);
+$heightM = $heightCM/100;
+$baseMU = NumberWithUnits("$baseM m");
+$heightMU = NumberWithUnits("$heightM m");
+$heightCMU = NumberWithUnits("$heightCM cm");
+$area = $baseM*$heightM/2;
+$ansA = NumberWithUnits("$area m^2");
+$ansAE = NumberWithUnits("$area*10000 cm^2");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the area of a triangular flag with a base of [`[$baseMU]`] and a height of [`[$heightCMU]\text{.}`]
+
+Its area is [_]{$ansA}{5}.
+
+[@KeyboardInstructions('(Use [|m|]* for meters and [|m^2|]* for square meters.)')@]**
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Notice that the units of the triangle's base and height are not the same. We must convert them to the same unit. For this solution, we will convert centimeters to meters to avoid big numbers.
+
+The triangle's height [`[$heightCMU]`] can be converted to:
+
+[```
+                [$heightCMU]\cdot\frac{1\text{ m}}{100\text{ cm}}=[$heightMU]
+              ```]
+
+We will calculate the triangular flag's area by its area formula:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+\text{triangle area}\amp= \frac{1}{2}bh\\
+\amp=\frac{1}{2}([$baseMU]) \cdot ([$heightMU])\\
+\amp = [$ansA]
+\end{aligned}
+```]
+
+The flag's area is [`[$ansA]\text{.}`] An equivalent answer is [`[$ansAE]`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

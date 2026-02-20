@@ -1,0 +1,70 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-01T09:36:05-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.1.4.63)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextForm.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$var = list_random(@ORCCA_variables);
+$scale = random(2,9);
+$scaleWord = numberWord($scale);
+$c = $scale**3;
+Context("Form")->variables->are($var => 'Real');;
+$answer = Formula("$c $var^3");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+If a cube has sides of length [`[$var]\text{,}`] its volume is [`[$var]^3\text{.}`] If we grew the side lengths to make them [$scaleWord] times as long, the volume would become [`([$scale][$var])^3\text{.}`] Simplify this expression using the product-to-power rule.
+
+[_]{$answer}{10}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

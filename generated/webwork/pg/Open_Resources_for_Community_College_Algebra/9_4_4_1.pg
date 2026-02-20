@@ -1,0 +1,75 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(9.4.4.1)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserPopUp.pl",
+  "contextForm.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context()->noreduce('(-x)-y','(-x)+y');
+@m = (non_zero_random(-20,20,1), non_zero_random(-20,20,1));
+@b = (non_zero_random(-500,500,1), non_zero_random(-500,500,1));
+$c = non_zero_random(-20000,20000,1000);
+$f = Formula("($b[0]+$m[0]x)($b[1]+$m[1]x)")->reduce;
+$g = Formula("$c");
+$disc = ($m[0]*$b[1]+$m[1]*$b[0])**2 - 4*$m[0]*$m[1]*($b[0]*$b[1]-$c);
+if ($disc > 0) {$ans = 2;}
+elsif ($disc == 0) {$ans = 1;}
+else {$ans = 0;}
+$popup = PopUp(['?','zero times', 'one time', 'two times', 'three times'],$ans+1);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use technology to make some graphs and determine how many times the graphs of the following curves cross each other.
+
+[`y=[$f]`] and [`y=[$g]`] intersect [_]{$popup}{5}.
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

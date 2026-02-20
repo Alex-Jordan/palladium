@@ -1,0 +1,212 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:10-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.9.6.15)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "niceTables.pl",
+  "PCCmacros.pl",
+  "parserMultiAnswer.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context()->noreduce('(-x)+y', '(-x)-y');
+$f = RandomVariableName(type=>'function');
+do {
+  do {
+    $b = non_zero_random(-4,4,1);
+    $c = non_zero_random(-3,3,1);
+  } until (($b)**2+4*$c > 0);
+} until ((0 < (-$b-sqrt(($b)**2+4*$c))/-2  and  (-$b-sqrt(($b)**2+4*$c))/-2 < 4) or (0 < (-$b+sqrt(($b)**2+4*$c))/-2  and  (-$b+sqrt(($b)**2+4*$c))/-2 < 4));
+$formula = Compute("-x^2+$b x+$c")->reduce;
+@defaultAnswers = ();
+for my $i (0..6) {
+  $x[$i] = $i-2;
+  $y[$i] = $formula->eval(x=>$x[$i]);
+  push(@defaultAnswers,$x[$i]);
+  push(@defaultAnswers,$y[$i]);
+}
+$multians = MultiAnswer(@defaultAnswers)->with(
+  singleResult => 1,
+  checker => sub {
+    my ( $correct, $student, $self ) = @_;
+    my @sxy = @{$student};
+    my @xs, @ys;
+    for my $k (0..6){
+      $xs[$k] = $sxy[2*$k];
+      $ys[$k] = $sxy[2*$k+1];
+    }
+    #
+    #  Loop though the student answers
+    ##
+    for ($i = 0; $i <= 6; $i++) {
+      my $ith = Value::List->NameForNumber($i+1);
+      #
+      #  Check that the student's answers are Reals
+      #
+      Value->Error("Your $ith x-value is not a number") if ($xs[$i]->type ne "Number");
+      Value->Error("Your $ith y-value is not a number") if ($ys[$i]->type ne "Number");
+      #
+      #  Check that the point hasn't been given before
+      #
+      for ($j = 0, $used = 0; $j < $i; $j++) {
+        my $jth = Value::List->NameForNumber($j+1);
+        if ($xs[$j] == $xs[$i] and $ys[$j] == $ys[$i]) {
+          Value->Error("Your $ith row in the table is the same as your $jth row") unless $ansHash->{isPreview};
+          $used = 1; last;
+        }
+      }
+      #
+      #  If not already used, check that it satisfies the equation
+      #    and increase the score if so.
+      #
+      if (!$used) {
+        Value->Error("Your $ith row is not correct") unless $ansHash->{isPreview} or $ys[$i] == $formula->eval(x=>$xs[$i]);
+      }
+    }
+    return 1;
+  }
+);
+for my $i (0..6) {
+Context()->flags->set(reduceConstants=>0,reduceConstantFunctions=>0);
+$rs[$i] = $formula->substitute(x=>$x[$i]);
+}
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Let [`[$f](x)=[$formula]\text{.}`] Use technology to make a table of values [`[$f]\text{.}`]
+
+>> [@DataTable(
+  [
+    [[PGML('[`x`]'),
+      rowbottom => '2',
+      midrule => '1',],
+     PGML('[`[$f](x)`]'),
+    ],
+    [PGML('[_]{$multians}{4}'),
+     PGML('[_]{$multians}{4}'),
+    ],
+    [PGML('[_]{$multians}{4}'),
+     PGML('[_]{$multians}{4}'),
+    ],
+    [PGML('[_]{$multians}{4}'),
+     PGML('[_]{$multians}{4}'),
+    ],
+    [PGML('[_]{$multians}{4}'),
+     PGML('[_]{$multians}{4}'),
+    ],
+    [PGML('[_]{$multians}{4}'),
+     PGML('[_]{$multians}{4}'),
+    ],
+    [PGML('[_]{$multians}{4}'),
+     PGML('[_]{$multians}{4}'),
+    ],
+    [PGML('[_]{$multians}{4}'),
+     PGML('[_]{$multians}{4}'),
+    ],
+  ],
+      align => '*{2}{c}',
+      valign => 'middle',);@]* <<
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+This solution will use the [`x`]-values [`[$x[0]]\text{,}`] [`[$x[1]]\text{,}`] [`[$x[2]]\text{,}`] [`[$x[3]]\text{,}`] [`[$x[4]]\text{,}`] [`[$x[5]]\text{,}`] and [`[$x[6]]\text{.}`] The choice to use these [`x`]-values is arbitrary. Since they are small numbers, they might make calculations easier. It's important to include some negative numbers.
+
+One at a time, we substitute these [`x`]-values into the formula [`[$f](x)=[$formula]`] and compute.
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$rs[0]]\amp=[$y[0]]\\
+[$rs[1]]\amp=[$y[1]]\\
+[$rs[2]]\amp=[$y[2]]\\
+[$rs[3]]\amp=[$y[3]]\\
+[$rs[4]]\amp=[$y[4]]\\
+[$rs[5]]\amp=[$y[5]]\\
+[$rs[6]]\amp=[$y[6]]
+\end{aligned}
+```]
+
+So the table may be completed as:
+
+>> [@DataTable(
+  [
+    [[PGML('[`x`]'),
+      rowbottom => '2',
+      midrule => '1',],
+     PGML('[`[$f](x)`]'),
+    ],
+    [PGML('[`[$x[0]]`]'),
+     PGML('[`[$y[0]]`]'),
+    ],
+    [PGML('[`[$x[1]]`]'),
+     PGML('[`[$y[1]]`]'),
+    ],
+    [PGML('[`[$x[2]]`]'),
+     PGML('[`[$y[2]]`]'),
+    ],
+    [PGML('[`[$x[3]]`]'),
+     PGML('[`[$y[3]]`]'),
+    ],
+    [PGML('[`[$x[4]]`]'),
+     PGML('[`[$y[4]]`]'),
+    ],
+    [PGML('[`[$x[5]]`]'),
+     PGML('[`[$y[5]]`]'),
+    ],
+    [PGML('[`[$x[6]]`]'),
+     PGML('[`[$y[6]]`]'),
+    ],
+  ],
+      align => '*{2}{c}',
+      valign => 'middle',);@]* <<
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

@@ -1,0 +1,106 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:08-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.6.7.127)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserMultiAnswer.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+do {
+  $a = random(1,10,1);
+  $b = random(-10,-1,1);
+  $c = random(1,10,1);
+  $exponent = $a + $b - $c;
+} until ($exponent > 5);
+$multians = MultiAnswer($a, $b, $c)->with(
+singleResult => 1,
+    checker => sub {
+    my ( $correct, $student, $self ) = @_;
+    my ( $astu, $bstu, $cstu ) = @{$student};
+    my ( $acor, $bcor, $ccor ) = @{$correct};
+    if ( $astu <= 0) {Value::Error('Your value for a should be positive.')};
+    if ( $bstu <= 0) {Value::Error('Your value for b should be positive.')};
+    if ( $cstu >= 0) {Value::Error('Your value for c should be negative.')};
+    if ($astu+$bstu-$cstu != $exponent) {return 0;} else {return 1};
+  }
+);
+ do {
+  $d = random(1,10,1);
+  $e = random(-10,-1,1);
+  $f = random(1,10,1);
+  $negexponent = $d + $e - $f;
+} until ($negexponent < -5);
+$abs = abs($negexponent);
+$answer = Compute("none");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Consider the exponential expression [`\dfrac{x^a\cdot x^b}{x^c}`] where [`\newcommand{\gt}{>}a\gt0, b\gt0\text{,}`] and [`\newcommand{\lt}{<}c \lt 0\text{.}`]
+a.  Are there values for [`a\text{,}`] [`b\text{,}`] and [`c`] so that the expression equals [`x^{[$exponent]}\text{?}`] If so, fill in the blanks below with possible values for [`a\text{,}`] [`b\text{,}`] and [`c\text{.}`] If not, fill in the blanks below with the word [|none|]*.
+
+    [`a`] = [_]{$multians}{10}, [`b`] = [_]{$multians}{10}, and [`c`] = [_]{$multians}{10}
+
+a.  Are there values for [`a\text{,}`] [`b\text{,}`] and [`c`] so that the expression equals [`\frac{1}{x^{[$abs]}}\text{?}`] If so, fill in the blanks below with possible values for [`a\text{,}`] [`b\text{,}`] and [`c\text{.}`] If not, fill in the blanks below with the word [|none|]*.
+
+    [`a`] = [_]{$answer}{10}, [`b`] = [_]{$answer}{10}, and [`c`] = [_]{$answer}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  The problem states that [`\frac{x^a\cdot x^b}{x^c}=x^{[$exponent]}\text{.}`] To simplify [`\frac{x^a\cdot x^b}{x^c}\text{,}`] we must add the exponents [`a`] and [`b\text{,}`] and then subtract the exponent [`c\text{.}`] Thus, [`a+b-c`] must equal [`[$exponent]\text{.}`] For example, [`[$a]+[$b]-{[$c]}=[$exponent]\text{.}`]
+
+a.  First off, we must remember that [`\frac{1}{x^{[$abs]}}=x^{[$negexponent]}\text{.}`] The problem states that [`\frac{x^a\cdot x^b}{x^c}=x^{[$negexponent]}\text{.}`] To simplify [`\frac{x^a\cdot x^b}{x^c}\text{,}`] we must add the exponents [`a`] and [`b\text{,}`] and then subtract the exponent [`c\text{.}`] Thus, [`a+b-c`] must equal [`[$exponent]\text{.}`] Since [`a`] and [`b`] are positive, [`a+b`] is a positive number. Then, we have to subtract [`c`] (a negative number), which is the same as adding a positive number. Thus, [`a+b-c`] will result in a positive number, but [` a + b - c `] must equal [$exponent]. Therefore, it is not possible to come up with values for [`a\text{,}`] [`b\text{,}`] and [`c`] that work.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

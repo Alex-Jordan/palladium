@@ -1,0 +1,115 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:10-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.6.5.51)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+do {
+  $a = non_zero_random(-9,9,1)+non_zero_random(-0.9,0.9,0.1);
+  $c = non_zero_random(-9,9,1)+non_zero_random(-0.9,0.9,0.1);
+  if ($a*$c > 0) {
+    $b = (random(int(sqrt(4*$a*$c))+1,20,1) + random(0.1,0.9,0.1)) * list_random(-1,1);
+  } else {
+    $b = non_zero_random(-9,9,1)+non_zero_random(-0.9,0.9,0.1);
+  }
+} until (sqrt(($b**2-4*$a*$c)*10) != int(sqrt(($b**2-4*$a*$c)*10)));
+Context()->noreduce('(-x)-y','(-x)+y');
+$f = Formula("$a x^2+$b x+$c")->reduce;
+$disc = $b**2-4*$a*$c;
+$denom = 2*$a;
+$B = $b/$denom;
+$negb = -$b;
+$a2 = 2*$a;
+$bsquared = ($b)**2;
+$discriminant = ($b)**2 - 4*$a*$c;
+$sqrtdisc = Real(sqrt($discriminant));
+Context("FiniteSolutionSets");
+Context()->flags->remove("NumberCheck");
+Context()->flags->set(useBizarro=>0);
+$r = Real(-$B - 1/$denom*sqrt($disc));
+$s = Real(-$B + 1/$denom*sqrt($disc));
+$solutions = Formula("{$r,$s}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use the quadratic formula to solve the equation.
+
+[`[$f]=0`]
+
+[@KeyboardInstructions('If you need to enter a square root like [`\sqrt{17}\text{,}`] type [|sqrt(17)|]*. If there is no real solution, enter [|no real solution|]*.')@]**
+
+[_]{$solutions}{40}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+To use the quadratic formula, we identify [`a=[$a]\text{,}`] [`b=[$b]\text{,}`] and [`c=[$c]\text{.}`]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{[$negb]\pm\sqrt{[$bsquared]-4([$a])([$c])}}{2([$a])}\\
+\amp=\frac{[$negb]\pm\sqrt{[$discriminant]}}{[$a2]}\\
+\amp\approx\frac{[$negb]\pm[$sqrtdisc]}{[$a2]}\\
+x\amp\approx\frac{[$negb]-[$sqrtdisc]}{[$a2]}\quad\text{or}\quad x\approx\frac{[$negb]+[$sqrtdisc]}{[$a2]}\\
+x\amp\approx[$r]\quad\text{or}\quad x\approx[$s]
+\end{aligned}
+```]
+
+The solution set is approximately [`[$solutions]\text{.}`] Note that since we started with decimal coefficients, we felt it was acceptible to round the solutions to decimal approximations rather than keep to the exact solutions.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

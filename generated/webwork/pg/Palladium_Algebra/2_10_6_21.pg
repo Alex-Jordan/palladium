@@ -1,0 +1,119 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:10-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.10.6.21)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$x = RandomVariableName(type=>'variable');
+$a = 1;
+do {
+  $sol1 = non_zero_random(-9,9,1);
+  $sol2 = non_zero_random(-9,9,1);
+  ($sol1, $sol2) = (min($sol1, $sol2), max($sol1, $sol2));
+} until (abs($sol1) != abs($sol2)  and  ($sol1 + $sol2) % 2 == 1);
+$b = -($sol1 + $sol2);
+$c = $sol1*$sol2;
+Context()->variables->are($x=>'Real');
+$left0 = Formula("$a^2 $x^2 + $b $x + $c")->reduce;
+$right0 = Formula("0")->reduce;
+$left = Formula("$a^2 $x^2 + $b $x")->reduce;
+$right = Formula("-$sol1*$sol2")->reduce;
+Context("Fraction");
+$helper = Fraction(-$sol1 - $sol2, 2);
+$helpersquared = $helper**2;
+$rightplushelpersquared = Fraction("$right + $helpersquared");
+$margin = Fraction(sqrt($rightplushelpersquared));
+Context("FiniteSolutionSets");
+Context()->variables->are($x=>'Real');
+$answer = Formula("{$sol1, $sol2}");
+$linear = Formula("$a $x")->reduce;
+($num,$den) = $helper->value;
+$absnum = abs($num);
+  $linear = ($helper > 0) ? Formula("$linear + $helper") : Formula("$linear - $absnum/$den");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve the equation by completing the square.
+
+[`[$left0]=[$right0]`]
+
+[_]{$answer}{25}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Move the constant term to the other side to get [`[$left] = [$right]\text{.}`] Then compute [`\left(\frac{[$b]}{2}\right)^2=[$helpersquared]\text{.}`] Then
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$left]+[$helpersquared]\amp = [$right]+[$helpersquared]\\
+[$left]+[$helpersquared]\amp = [$rightplushelpersquared]\\
+\left([$linear]\right)^2\amp = [$rightplushelpersquared]
+\end{aligned}
+```]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$linear] \amp = -[$margin]\amp\amp\text{or}\amp [$linear] \amp = [$margin]\\
+[$x] \amp = [$sol1]\amp\amp\text{or}\amp [$x] \amp = [$sol2]
+\end{aligned}
+```]
+
+So the solution set is [`[$answer]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

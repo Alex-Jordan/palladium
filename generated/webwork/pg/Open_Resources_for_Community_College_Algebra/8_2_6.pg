@@ -1,0 +1,102 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8.2.6)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserNumberWithUnits.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$feet = NumberWithUnits(5,'ft');
+# Make units parser require feet, not allow inches
+$evaluator = $feet->cmp->withPostFilter(sub {
+  my $ans = shift;
+  if ($ans->{score}) {
+    my $correct = $ans->{correct_value};
+    my $student = $ans->{student_value};
+    my %goodunits = map { $_ => 1 } ('ft','feet','foot');
+
+    if (!exists($goodunits{$student->{units}})) {
+      $ans->{ans_message} = "Your answer is equivalent to the correct answer, but it uses the wrong units";
+      $ans->score(0);
+    }
+  }
+  return $ans;
+});
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Convert [`60`] inches to feet.
+
+[_]{$evaluator}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+We start by writing what it is that we are converting as a ratio, by placing it over a [`1\text{.}`] This is similar to writing a whole number as a fraction when we want to multiply it by a fraction. Next we multiply that ratio by a unit ratio, one that will have inches in the denominator so that inches will cancel. Multiply what's left just as we multiply fractions (multiply the numerators together and multiply the denominators together), including the units, and simplify by dividing.
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+60\,\text{in}\amp=\frac{60\,\text{in}}{1}\amp\amp\text{We are about to do fraction-like multiplication.}\\
+\amp=\frac{60\,\text{in}}{1}\cdot\frac{1\,\text{ft}}{12\,\text{in}}\amp\amp1\,\text{ft equals }12\,\text{in.}\\
+\amp=\frac{60\,\cancel{\text{in}}}{1}\cdot\frac{1\,\text{ft}}{12\,\cancel{\text{in}}}\amp\amp\text{Units may now cancel.}\\
+\amp=\frac{60}{1}\cdot\frac{1\,\text{ft}}{12}\\
+\amp=\frac{60}{12}\,\text{ft}\\
+\amp=5\,\text{ft}
+\end{aligned}
+```]
+
+We find that [`60`] inches is equivalent to [`5`] feet.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

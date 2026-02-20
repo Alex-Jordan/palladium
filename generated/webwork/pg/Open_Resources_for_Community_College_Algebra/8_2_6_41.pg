@@ -1,0 +1,128 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8.2.6.41)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserNumberWithUnits.pl",
+  "ORCCA.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+do {
+  $digits = list_random(2,3);
+  $decimals = random(0,$digits-1,1);
+  $a = ($digits == 2) ? (random(1,9,1)*10 + random(1,9,1)) / 10**$decimals  :  (random(10,99,1)*10 + random(1,9,1)) / 10**$decimals;
+  $numunitsin = list_random('lb','oz','g','mg','kg');
+  $numunitsout = list_random(lex_sort(keys %{$ORCCAconversions{$numunitsin}}));
+  $denunitsin = list_random('c','pt','qt','gal','in^3','cc','cm^3','mL','L');
+  $denunitsout = list_random(lex_sort(keys %{$ORCCAconversions{$denunitsin}}));
+  $numword = $unitWords{$numunitsout};
+  $denword = $unitWord{$denunitsout};
+  $factornum = $ORCCAconversions{$numunitsin}->{$numunitsout};
+  $factorden = $ORCCAconversions{$denunitsin}->{$denunitsout};
+  $factor = $factornum/$factorden;
+  $b = $a*$factor;
+} until (abs(log10($b)) < 6);
+@numalternatives = ($numunitsout, @{$unitAlternatives{$numunitsout}});
+@denalternatives = ($denunitsout, @{$unitAlternatives{$denunitsout}});
+@alternatives;
+for my $i (@numalternatives) {
+  for my $j (@denalternatives) {
+    push(@alternatives, $i.'/'.$j);
+  };
+};
+$given = NumberWithUnits("$a $numunitsin/$denunitsin", {newUnit => $ORCCAunits});
+$get = NumberWithUnits("$b $numunitsout/$denunitsout", {newUnit => $ORCCAunits});
+$evaluator = $get->cmp->withPostFilter(sub {
+  my $ans = shift;
+  if ($ans->{score}) {
+    my $correct = $ans->{correct_value};
+    my $student = $ans->{student_value};
+    my %goodunits = map { $_ => 1 } (@alternatives);
+    if (!exists($goodunits{$student->{units}})) {
+      $ans->{ans_message} = "Your answer is equivalent to the correct answer, but it uses the wrong units";
+      $ans->score(0);
+    }
+  }
+  return $ans;
+});
+$factornum1 = ($factornum > 1) ? $factornum : 1;
+$factorden1 = ($factornum > 1) ? 1 : 1/$factornum;
+$factornum1U = NumberWithUnits("$factornum1 $numunitsout", {newUnit => $ORCCAunits});
+$factorden1U = NumberWithUnits("$factorden1 $numunitsin", {newUnit => $ORCCAunits});
+$factorden2 = ($factorden > 1) ? $factorden : 1;
+$factornum2 = ($factorden > 1) ? 1 : 1/$factorden;
+$factornum2U = NumberWithUnits("$factornum2 $denunitsin", {newUnit => $ORCCAunits});
+$factorden2U = NumberWithUnits("$factorden2 $denunitsout", {newUnit => $ORCCAunits});
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Convert [`[$given]`] to [$numword] per [$denword].
+
+[_]{$evaluator}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$given]\amp=\frac{[$a]\,\mathrm{[$numunitsin]}}{1\,\mathrm{[$denunitsin]}}\\
+\amp=\frac{[$a]\,\mathrm{[$numunitsin]}}{1\,\mathrm{[$denunitsin]}}\cdot\frac{[$factornum1U]}{[$factorden1U]}\cdot\frac{[$factornum2U]}{[$factorden2U]}\\
+\amp=\frac{[$a]\cdot [$factornum1U] \cdot [$factornum2]}{1\cdot [$factorden1] \cdot [$factorden2U]}\\
+\amp=[$get]
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

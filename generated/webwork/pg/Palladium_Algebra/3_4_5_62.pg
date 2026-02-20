@@ -1,0 +1,82 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-19T15:37:07-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(3.4.5.62)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("FiniteSolutionSets");
+Context()->flags->remove("NumberCheck");
+$solution = Formula("{-6.2488979294408989928222523, -4.1021955169551566999786258, 0.35109344639605569280087808}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use technology to solve the equation.
+
+[```
+                  2x-\frac{1}{x+4}=\frac{3}{x+6}
+                \text{.}```]
+
+[@KeyboardInstructions('Round answers to at least four significant digits.')@]**
+
+[_]{$solution}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The points of intersection are approximately [`(-6.249,-12.05)\text{,}`] [`(-4.102,1.581)`] and [`(0.3511,0.4724)\text{.}`] The solution set is approximately [`\{-6.249\ldots, -4.102\ldots, 0.3511\ldots\}\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

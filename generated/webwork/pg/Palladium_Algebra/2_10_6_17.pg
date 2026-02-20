@@ -1,0 +1,142 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:10-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.10.6.17)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$x = RandomVariableName(type=>'variable');
+@squares = map{$_**2} (2, 3, 5, 7, 11);
+do {
+  Context("Numeric");
+  $squarefree = 1;
+  do {
+    $a = 1;
+    $b = non_zero_random(-10,10,2);
+    $c = non_zero_random(-10,10,1);
+    $discriminant = $b**2 - 4*$a*$c;
+  } until ($discriminant > 0);
+  Context()->variables->are($x=>'Real');
+  $left = Formula("$a^2 $x^2 + $b $x")->reduce;
+  $right = Formula("-$c")->reduce;
+  Context("Fraction");
+  $helper = Fraction($b, 2);
+  $helpersquared = $helper**2;
+  $rightplushelpersquared = Fraction("$right + $helpersquared");
+  Context("FiniteSolutionSets");
+  Context()->variables->are($x=>'Real');
+  @divsquares = map {(($rightplushelpersquared->value)[0] % $_ == 0) ? $_ : 1} (@squares);
+  $squarepart = 1;
+  foreach my $element (@divsquares) {
+    $power = 1;
+    while ($element != 1 and ($rightplushelpersquared->value)[0] % $element**($power+1) == 0) {$power += 1;}  
+    $squarepart *= $element**$power;
+  };
+  $nonsquarepart = $rightplushelpersquared/$squarepart;
+} until ($nonsquarepart > 1);
+$reducedpart = sqrt($squarepart);
+$margin = Formula("$reducedpart sqrt($x)")->reduce->substitute($x=>Formula("$nonsquarepart"));
+$ax = Formula("$a $x")->reduce;
+($num,$den) = $helper->value;
+$absnum = abs($num);
+if ($den == 1) {$linear = ($helper > 0) ? Formula("$ax + $helper") : Formula("$ax - $absnum");}
+else {$linear = ($helper > 0) ? Formula("$ax + $helper") : Formula("$ax - $absnum/$den");}
+$twoa = Formula("2*$a");
+$nhelper = -$helper;
+$sol1 = Formula("$nhelper - $margin");
+$sol2 = Formula("$nhelper + $margin");
+if (int(sqrt($nonsquarepart)) == sqrt($nonsquarepart)) {
+  $mycontext = Context();
+  Context("Fraction");
+  $sol1 = Compute("$sol1");
+  $sol2 = Compute("$sol2");
+  Context($mycontext);
+}
+$answer = Formula("{$sol1, $sol2}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve the equation by completing the square.
+
+[`[$left]=[$right]`]
+
+[_]{$answer}{25}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Compute [`\left(\frac{[$b]}{2}\right)^2=[$helpersquared]\text{.}`] Then
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$left]+[$helpersquared]\amp = [$right]+[$helpersquared]\\
+[$left]+[$helpersquared]\amp = [$rightplushelpersquared]\\
+\left([$linear]\right)^2\amp = [$rightplushelpersquared]
+\end{aligned}
+```]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$linear] \amp = -[$margin]\amp\amp\text{or}\amp [$linear] \amp = [$margin]\\
+[$ax] \amp = [$nhelper]-[$margin]\amp\amp\text{or}\amp [$ax] \amp = [$nhelper]+[$margin]\\
+[$x] \amp = [$sol1]\amp\amp\text{or}\amp [$x] \amp = [$sol2]
+\end{aligned}
+```]
+
+So the solution set is [`[$answer]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

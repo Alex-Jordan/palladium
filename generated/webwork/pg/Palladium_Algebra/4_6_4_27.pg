@@ -1,0 +1,106 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:11-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.6.4.27)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("FiniteSolutionSets");
+$sqrtx = list_random(2,3,5,6,7,8);
+$x = $sqrtx**2;
+$xans = Formula("1/$x");
+$answer = Formula("{1/$x}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve for [`x\text{.}`]
+
+[```
+                  \sqrt{1+\sqrt{[$sqrtx]}}=\sqrt{2+\sqrt{\frac{1}{\sqrt{x}}}-1}
+                ```]
+
+[_]{$answer}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+\sqrt{1+\sqrt{[$sqrtx]}}\amp=\sqrt{2+\sqrt{\frac{1}{\sqrt{x}}}-1}\\
+\left(\sqrt{1+\sqrt{[$sqrtx]}}\right)^{2}\amp=\left(\sqrt{2+\sqrt{\frac{1}{\sqrt{x}}}-1}\right)^{2}\\
+1+\sqrt{[$sqrtx]}\amp=2+\sqrt{\frac{1}{\sqrt{x}}}-1\\
+1+\sqrt{[$sqrtx]}\amp=1+\sqrt{\frac{1}{\sqrt{x}}}\\
+\sqrt{[$sqrtx]}\amp=\sqrt{\frac{1}{\sqrt{x}}}\\
+\left(\sqrt{[$sqrtx]}\right)^{2}\amp=\left(\sqrt{\frac{1}{\sqrt{x}}}\right)^{2}\\
+[$sqrtx]\amp=\frac{1}{\sqrt{x}}\\
+[$sqrtx]^{2}\amp=\left(\frac{1}{\sqrt{x}}\right)^{2}\\
+[$x]\amp=\frac{1}{x}\\
+[$x]x\amp=1\\
+x \amp= [$xans]
+\end{aligned}
+```]
+
+To check the proposed solution, we will replace [`x`] with [`[$xans]\text{:}`]
+
+[```\newcommand{\confirm}[1]{\stackrel{\checkmark}{#1}}\newcommand{\wonder}[1]{\stackrel{\text{?}}{#1}}\newcommand{\amp}{&}
+\begin{aligned}
+\sqrt{1+\sqrt{[$sqrtx]}}\amp\wonder{=}\sqrt{2+\sqrt{\frac{1}{\sqrt{[$xans]}}}-1}\\
+\sqrt{1+\sqrt{[$sqrtx]}}\amp\wonder{=}\sqrt{1+\sqrt{\frac{1}{\frac{1}{[$sqrtx]}}}}\\
+\sqrt{1+\sqrt{[$sqrtx]}}\amp\confirm{=}\sqrt{1+\sqrt{[$sqrtx]}}
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

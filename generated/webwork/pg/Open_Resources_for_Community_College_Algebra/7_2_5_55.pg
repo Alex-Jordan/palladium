@@ -1,0 +1,110 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:08-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(7.2.5.55)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGchoicemacros.pl",
+  "PCCmacros.pl",
+  "contextForm.pl",
+  "contextFiniteSolutionSets.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+($r,$s) = (1..9)[NchooseK(9,2)];
+($r,$s) = num_sort(map{$_*list_random(-1,1)}($r,$s));
+$b = -($r + $s);
+$c = $r*$s;
+Context()->noreduce('(-x)-y','(-x)+y');
+$f = Formula("x^2 + $b x + $c")->reduce;
+$left = Formula("x^2")->reduce;
+$right = Formula("-$b x - $c")->reduce;
+$negb = -$b;
+$bsquared = ($b)**2;
+$discriminant = ($b)**2 - 4*$c;
+$sqrtdisc = Real(sqrt($discriminant));
+Context("FiniteSolutionSets");
+$solutions = Formula("{$r,$s}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use the quadratic formula to solve the equation.
+
+[`[$left]=[$right]`]
+
+[@KeyboardInstructions('If you need to enter a square root like [`\sqrt{17}\text{,}`] type [|sqrt(17)|]*. If there is no real solution, enter [|no real solution|]*.')@]**
+
+[_]{$solutions}{40}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+To use the quadratic formula, we write the equation in standard form:
+
+[```[$f]=0```]
+
+and identify [`a=1\text{,}`] [`b=[$b]\text{,}`] and [`c=[$c]\text{.}`]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{[$negb]\pm\sqrt{[$bsquared]-4(1)([$c])}}{2}\\
+\amp=\frac{[$negb]\pm\sqrt{[$discriminant]}}{2}\\
+\amp=\frac{[$negb]\pm[$sqrtdisc]}{2}\\
+x\amp=\frac{[$negb]-[$sqrtdisc]}{2}\quad\text{or}\quad x=\frac{[$negb]+[$sqrtdisc]}{2}\\
+x\amp=[$r]\quad\text{or}\quad x=[$s]
+\end{aligned}
+```]
+
+The solution set is [`[$solutions]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

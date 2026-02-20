@@ -1,0 +1,73 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8.2.6.51)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserNumberWithUnits.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$d = {name=>'d',conversion=>{factor=>24*60*60,s=>1}};
+$wk = {name=>'wk',conversion=>{factor=>7*24*60*60,s=>1}};
+$rate = random(0.1,0.5,0.01);
+$rateU = NumberWithUnits("$rate kg/d", {newUnit => $d});
+$weeks = random(3,23,1);
+$weeksU = NumberWithUnits("$weeks wk", {newUnit => $wk});
+$days = $weeks*7;
+$kilograms = $rate*$days;
+$kilogramsU = NumberWithUnits("$kilograms kg");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+The algae in a pond is growing at a rate of [`[$rateU]\text{.}`] How much algae is in the pond after [`[$weeks]`] weeks?
+
+[_]{$kilogramsU}{20}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

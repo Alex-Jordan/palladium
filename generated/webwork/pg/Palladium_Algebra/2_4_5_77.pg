@@ -1,0 +1,95 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:09-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.4.5.77)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserImplicitEquation.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("ImplicitEquation");
+Context()->variables->are(x=>'Real');
+$a = random(1,10,1);
+$b = random(-10,-1,1);
+$solstring = "(x-$a)*(x-$b)*(x-2/3)=0";
+$solution = ImplicitEquation($solstring);
+
+$evaluator = $solution->cmp(
+     cmp_class=>'a cubic equation',
+     correct_ans=>$solstring,
+     correct_ans_latex_string=>$solstring,
+     checker => sub {
+       my ($correct,$student,$ansHash) = @_;
+       ($left, $right) = split('=',$ansHash->{original_student_ans});
+       $left = Formula($left);
+       $right= Formula($right);
+       $ansHash->{preview_latex_string} = $ansHash->{original_student_ans};
+       $ansHash->{preview_text_string} = $ansHash->{original_student_ans};
+       $ansHash->{student_ans} = $ansHash->{original_student_ans};
+       return ($correct == $student);
+     }
+   );
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Give an example of a cubic equation that has three solutions: one solution is [`x = [$a]\text{,}`] the second solution is [`x= [$b]\text{,}`] and the third solution is [` x = \frac{2}{3} \text{.}`] Write your equation in standard form.
+
+[_]{$evaluator}{30}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+I will first write a cubic equation in factored form: [` (x-a)(x-b)(x-c) = 0 `] where [`a,
+                b\text{,}`] and [`c`] are the solutions of the equation. Thus, we can write the cubic equation as [` (x-[$a])(x-([$b]))(x - \frac{2}{3}) = 0 `] or [` (x-[$a])(x-[$b])(x - \frac{2}{3}) = 0 \text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

@@ -1,0 +1,110 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:09-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.6.9)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("FiniteSolutionSets");
+$answer = Formula("{(35-sqrt(1345))/2, (35+sqrt(1345))/2}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Two numbers have sum [`35\text{,}`] and their product is [`-30\text{.}`] Find these two numbers.
+
+[_]{$answer}{16}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Let [`x`] be one of these numbers. Since the two numbers have sum [`35\text{,}`] it means that the other number must be [`35-x\text{.}`] Since the two numbers have product [`-30\text{,}`] we have the equation
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+x(35-x)\amp=-30\\
+35x-x^2\amp=-30
+\end{aligned}
+```]
+
+This is a quadratic equation which can be rewritten into standard form by adding [`30`] to each side:
+
+[```
+\begin{gathered}
+-x^2+35x+30=0
+\end{gathered}
+```]
+
+Then, to solve for [`x\text{,}`] we apply the quadratic formula:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+x\amp=\frac{-35\pm\sqrt{35^2-4(-1)(30)}}{2(-1)}\\
+\amp=\frac{-35\pm\sqrt{1225+120}}{-2}\\
+\amp=\frac{-35\pm\sqrt{1345}}{-2}\\
+\amp=\frac{35\pm\sqrt{1345}}{2}
+\end{aligned}
+```]
+
+So the two possible solutions for [`x`] are:
+
+[```
+\begin{gathered}
+x=\frac{35-\sqrt{1345}}{2}\quad\text{or}\quad x=\frac{35+\sqrt{1345}}{2}
+\end{gathered}
+```]
+
+Actually these are the two numbers we were looking for. They sum to [`35`] and multiply to [`-30\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

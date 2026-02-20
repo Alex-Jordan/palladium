@@ -1,0 +1,99 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-19T08:29:04-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.11.7)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("FiniteSolutionSets");
+$solset=Formula("{-1,21}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Complete the square to solve for [`y`] in [`y^2-20y-21=0\text{.}`]
+
+[_]{$solset}{8}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+To complete the square, first move the constant term to the right side of the equation. Then use Fact[$NBSP]*3 to find [`\left(\frac{b}{2}\right)^2`] to add to both sides.
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+y^2-20y-21\amp=0\\
+y^2-20y\amp=21
+\end{aligned}
+```]
+
+In our case, [`b=-20\text{,}`] so [`\left(\frac{b}{2}\right)^2=\left(\frac{-20}{2}\right)^2=100`]
+
+[```\newcommand{\addright}[1]{{\highlight{{{}+#1}}}}\newcommand{\amp}{&}
+\begin{aligned}
+y^2-20y\addright{100}\amp=21\addright{100}\\
+(y-10)^2\amp=121
+\end{aligned}
+```]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+y-10\amp=-11\amp\text{or}\amp\amp y-10\amp=11\\
+y\amp=-1\amp\text{or}\amp\amp y\amp=21
+\end{aligned}
+```]
+
+The solution set is [`\{-1, 21\}\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

@@ -1,0 +1,87 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8.3.15)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "parserNumberWithUnits.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$volume=NumberWithUnits("63 in^3");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+A masonry brick is in the shape of a rectangular prism and is [`8`] inches wide, [`3.5`] inches deep, and [`2.25`] inches high. What is its volume?
+
+[@KeyboardInstructions('Use [|in^3|]* for cubic inches.')@]**
+
+[_]{$volume}{15}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Using the formula for the volume of a rectangular prism:
+
+[```\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}\newcommand{\amp}{&}
+\begin{aligned}
+V\amp=wdh\\
+\amp=\substitute{8}(\substitute{3.5})(\substitute{2.25})\\
+\amp=63
+\end{aligned}
+```]
+
+So the brick's volume is [`63`] cubic inches.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

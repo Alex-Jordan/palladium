@@ -1,0 +1,127 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:10-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.6.5.105)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGlateximage.pl",
+  "parserNumberWithUnits.pl",
+  "contextForm.pl",
+  "Pd.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$h = random(25,60,5);
+$hU = NumberWithUnits("$h cm");
+$w = 1.6*$h;
+$wU = NumberWithUnits("$w cm");
+$s = random(2,5,1)+random(0.1,0.9,0.1);
+$sU = NumberWithUnits("$s cm");
+$area = int(($h+2*$s)*($w+2*$s) - $h*$w);
+$areaU = NumberWithUnits("$area cm^2");
+$a = 4;
+$b = 2*($h+$w);
+$c = -$area;
+$surface = Formula("4x^2 + $b x")->reduce;
+$f = Formula("4x^2 + $b x + $c")->reduce;
+$negb = -$b;
+$bsquared = $b*$b;
+$discriminant = $bsquared - 4*$a*$c;
+$sqrtdisc = Real(sqrt($discriminant));
+$a2 = 2*$a;
+$r = ($negb - $sqrtdisc)/$a2;
+$s = ($negb + $sqrtdisc)/$a2;
+$sU = NumberWithUnits("$s cm");
+
+$image_1 = createLaTeXImage();
+$image_1->addToPreamble(latexImagePreamble());
+$image_1->BEGIN_LATEX_IMAGE
+\begin{tikzpicture}
+  \draw[fill=lightgray] (0,0) -| (5,3) -| cycle;
+  \draw[fill=lightsapphire] (0.5,0.5) -| (4.5,2.5) -| cycle;
+  \draw[dashed] (2.5,0) -- node[pos=0.5, right] {\(x\)} (2.5,0.5);
+  \draw[dashed] (0,1.5) -- node[pos=0.5, above] {\(x\)} (0.5,1.5);
+  \node[above] at (2.5,0.5) {\($w\) cm};
+  \node[above, rotate=-90] at (0.5,1.5) {\($h\) cm};
+\end{tikzpicture}
+
+END_LATEX_IMAGE
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+A metals factory will produce steel picture frames in the form of a rectagle with a smaller rectangle cut out, as in the diagram. The widths of the four edges is to be consistent, and leave a [`[$wU]`] by [`[$hU]`] visible area for photos and other images. There is a standard thickness for the metal from which these frames will be cut, and the manufacturer has a target weight in mind for the final product so that shipping costs will be kept low. This leads to the decision that the surface area of the frame needs to be [`[$areaU]\text{.}`] How wide should the four edges be? (What is the value of [`x`] in the diagram?)
+
+>> [@image(insertGraph($image_1), width=>240)@]*  <<
+
+[_]{$sU}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+We can find a formula for the surface area of the frame by taking the area of the outer rectangle and subtracting the area of the inner rectangle. The outer rectangle's width is [`[$w]+2x`] centimeters. Its height is [`[$h]+2x`] centimeters. So its area is [`([$w]+2x)([$h]+2x)`] square centimeters. The inner rectangle area is [`([$w])([$h])`] square centimeters. So the surface area of the frame, in square centimeters, is [`([$w]+2x)([$h]+2x)-([$w])([$h])\text{,}`] which simplifies to [`[$surface]\text{.}`] So we must solve the equation [`[$surface]=[$area]\text{.}`]
+
+Writing the quadratic equation in standard form, [`[$f]=0\text{.}`] Now we apply the quadratic formula.
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{[$negb]\pm\sqrt{[$bsquared]-4([$a])([$c])}}{2([$a])}\\
+\amp=\frac{[$negb]\pm\sqrt{[$discriminant]}}{[$a2]}\\
+\amp\approx\frac{[$negb]\pm[$sqrtdisc]}{[$a2]}\\
+x\approx\amp\frac{[$negb]-[$sqrtdisc]}{[$a2]}\quad\text{or}\quad x\approx\frac{[$negb]+[$sqrtdisc]}{[$a2]}\\
+x\approx\amp[$r]\quad\text{or}\quad x\approx[$s]
+\end{aligned}
+```]
+
+The possible solutions are [`[$r]`] and [`[$s]\text{,}`] but only [`[$s]`] makes sense in this context. Each edge of the frame will be about [`[$sU]`] wide.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

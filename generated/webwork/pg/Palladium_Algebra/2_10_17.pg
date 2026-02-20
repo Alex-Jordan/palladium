@@ -1,0 +1,95 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-19T08:29:04-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.10.17)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Interval");
+$domain = Interval("(-inf,inf)");
+$range[0] = Interval("(-inf,-11]");
+$range[1] = Interval("[20,inf)");
+$range[2] = Interval("(-inf,0]");
+$range[3] = Interval("[-4,inf)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Identify the domain and range of each quadratic function.
+a.  [`w(x)=-3(x+10)^2-11`]
+
+    The domain is [_]{$domain}{5} and the range is [_]{$range[0]}{5}.
+
+a.  [`u(x)=4(x-7)^2+20`]
+
+    The domain is [_]{$domain}{5} and the range is [_]{$range[1]}{5}.
+
+a.  [`y(x)=-(x-1)^2`]
+
+    The domain is [_]{$domain}{5} and the range is [_]{$range[2]}{5}.
+
+a.  [`z(x)=3(x+9)^2-4`]
+
+    The domain is [_]{$domain}{5} and the range is [_]{$range[3]}{5}.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  The domain of [`w`] is [`(-\infty,\infty)\text{.}`] The parabola opens downward so the range is [`(-\infty,-11]\text{.}`]
+
+a.  The domain of [`u`] is [`(-\infty,\infty)\text{.}`] The parabola opens upward so the range is [`[20,\infty)\text{.}`]
+
+a.  The domain of [`y`] is [`(-\infty,\infty)\text{.}`] The parabola opens downward so the range is [`(-\infty,0]\text{.}`]
+
+a.  The domain of [`z`] is [`(-\infty,\infty)\text{.}`] The parabola opens upward so the range is [`[-4,\infty)\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

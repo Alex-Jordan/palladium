@@ -1,0 +1,503 @@
+openDate          = 02/20/2026 at 12:00am
+dueDate           = 08/20/2026 at 10:00pm
+answerDate        = 08/20/2026 at 10:00pm
+paperHeaderFile   = Palladium_Algebra/header/Palladium_Algebra.pg
+screenHeaderFile  = Palladium_Algebra/header/Palladium_Algebra.pg
+description       = Palladium Algebra
+problemListV2
+problem_start
+source_file = Palladium_Algebra/1_1_7.pg
+problem_id = 7
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_1_8.pg
+problem_id = 8
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_1_10.pg
+problem_id = 10
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_1_12.pg
+problem_id = 12
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_1_14.pg
+problem_id = 14
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_2_3.pg
+problem_id = 3
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_2_4.pg
+problem_id = 4
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_2_7.pg
+problem_id = 7
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_2_10.pg
+problem_id = 10
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_2_13.pg
+problem_id = 13
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_3_5.pg
+problem_id = 5
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_4_3.pg
+problem_id = 3
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_4_5.pg
+problem_id = 5
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_4_10.pg
+problem_id = 10
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_4_13.pg
+problem_id = 13
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_5_9.pg
+problem_id = 9
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_5_10.pg
+problem_id = 10
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_5_11.pg
+problem_id = 11
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_6_6.pg
+problem_id = 6
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_7_8.pg
+problem_id = 8
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_7_9.pg
+problem_id = 9
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_7_10.pg
+problem_id = 10
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_7_12.pg
+problem_id = 12
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_7_17.pg
+problem_id = 17
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_7_18.pg
+problem_id = 18
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_7_19.pg
+problem_id = 19
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_8_13.pg
+problem_id = 13
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_8_14.pg
+problem_id = 14
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_8_18-Jogging_on_MtNBSPHood.pg
+problem_id = 18
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_8_26.pg
+problem_id = 26
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_9_4.pg
+problem_id = 4
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_9_6.pg
+problem_id = 6
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_9_13.pg
+problem_id = 13
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_9_14.pg
+problem_id = 14
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_9_15.pg
+problem_id = 15
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_9_18.pg
+problem_id = 18
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_9_19.pg
+problem_id = 19
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_9_21.pg
+problem_id = 21
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_10_5.pg
+problem_id = 5
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_10_6.pg
+problem_id = 6
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_10_9.pg
+problem_id = 9
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_10_11.pg
+problem_id = 11
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_11_8.pg
+problem_id = 8
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_11_11.pg
+problem_id = 11
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_11_12.pg
+problem_id = 12
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_11_13.pg
+problem_id = 13
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_11_14.pg
+problem_id = 14
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_11_22.pg
+problem_id = 22
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_11_23.pg
+problem_id = 23
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_12_5.pg
+problem_id = 5
+problem_end
+problem_start
+source_file = Palladium_Algebra/1_12_12-Mixing_a_Coffee_Blend.pg
+problem_id = 12
+problem_end
+problem_start
+source_file = Palladium_Algebra/2_1_4.pg
+problem_id = 4
+problem_end
+problem_start
+source_file = Palladium_Algebra/2_1_8.pg
+problem_id = 8
+problem_end
+problem_start
+source_file = Palladium_Algebra/2_2_5.pg
+problem_id = 5
+problem_end
+problem_start
+source_file = Palladium_Algebra/2_2_7.pg
+problem_id = 7
+problem_end
+problem_start
+source_file = Palladium_Algebra/2_3_3.pg
+problem_id = 3
+problem_end
+problem_start
+source_file = Palladium_Algebra/2_3_7.pg
+problem_id = 7
+problem_end
+problem_start
+source_file = Palladium_Algebra/2_3_13.pg
+problem_id = 13
+problem_end
+problem_start
+source_file = Palladium_Algebra/2_4_3.pg
+problem_id = 3
+problem_end
+problem_start
+source_file = Palladium_Algebra/2_5_5.pg
+problem_id = 5
+problem_end
+problem_start
+source_file = Palladium_Algebra/2_5_7.pg
+problem_id = 7
+problem_end
+problem_start
+source_file = Palladium_Algebra/2_6_9.pg
+problem_id = 9
+problem_end
+problem_start
+source_file = Palladium_Algebra/2_7_8.pg
+problem_id = 8
+problem_end
+problem_start
+source_file = Palladium_Algebra/2_7_15.pg
+problem_id = 15
+problem_end
+problem_start
+source_file = Palladium_Algebra/2_9_12.pg
+problem_id = 12
+problem_end
+problem_start
+source_file = Palladium_Algebra/2_9_17.pg
+problem_id = 17
+problem_end
+problem_start
+source_file = Palladium_Algebra/2_9_23.pg
+problem_id = 23
+problem_end
+problem_start
+source_file = Palladium_Algebra/2_10_7.pg
+problem_id = 7
+problem_end
+problem_start
+source_file = Palladium_Algebra/3_1_7.pg
+problem_id = 7
+problem_end
+problem_start
+source_file = Contrib/PCC/BasicAlgebra/Exponents/exponentsMultiplication0.pg
+problem_id = 3
+problem_end
+problem_start
+source_file = Contrib/PCC/BasicAlgebra/Exponents/exponentsMultiplication20.pg
+problem_id = 6
+problem_end
+problem_start
+source_file = Contrib/PCC/BasicAlgebra/Exponents/exponentsMultiplication23.pg
+problem_id = 8
+problem_end
+problem_start
+source_file = Palladium_Algebra/4_2_3.pg
+problem_id = 3
+problem_end
+problem_start
+source_file = Palladium_Algebra/4_2_6.pg
+problem_id = 6
+problem_end
+problem_start
+source_file = Palladium_Algebra/4_2_9.pg
+problem_id = 9
+problem_end
+problem_start
+source_file = Palladium_Algebra/4_2_12.pg
+problem_id = 12
+problem_end
+problem_start
+source_file = Palladium_Algebra/4_2_16.pg
+problem_id = 16
+problem_end
+problem_start
+source_file = Palladium_Algebra/4_2_17.pg
+problem_id = 17
+problem_end
+problem_start
+source_file = Palladium_Algebra/4_3_7.pg
+problem_id = 7
+problem_end
+problem_start
+source_file = Palladium_Algebra/4_3_14.pg
+problem_id = 14
+problem_end
+problem_start
+source_file = Palladium_Algebra/4_3_16.pg
+problem_id = 16
+problem_end
+problem_start
+source_file = Palladium_Algebra/4_3_18.pg
+problem_id = 18
+problem_end
+problem_start
+source_file = Palladium_Algebra/4_3_20.pg
+problem_id = 20
+problem_end
+problem_start
+source_file = Palladium_Algebra/4_3_23.pg
+problem_id = 23
+problem_end
+problem_start
+source_file = Palladium_Algebra/4_4_3.pg
+problem_id = 3
+problem_end
+problem_start
+source_file = Palladium_Algebra/4_4_6.pg
+problem_id = 6
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_1_3-A_Fraction_as_Parts_of_a_Whole.pg
+problem_id = 3
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_1_5-A_Fraction_on_a_Number_Line.pg
+problem_id = 5
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_1_7-Seeing_a_Fraction_as_Division_Arithmetic.pg
+problem_id = 7
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_1_11-Reducing_Fractions.pg
+problem_id = 11
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_1_12-Building_Up_a_Fraction.pg
+problem_id = 12
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_1_17-Fraction_Multiplication.pg
+problem_id = 17
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_1_20-Fraction_Division.pg
+problem_id = 20
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_1_22-Fraction_Addition_and_Subtraction.pg
+problem_id = 22
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_1_26-Using_Some_Flour.pg
+problem_id = 26
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_2_4.pg
+problem_id = 4
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_2_8-Practice_with_order_of_operations.pg
+problem_id = 8
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_2_9.pg
+problem_id = 9
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_2_10.pg
+problem_id = 10
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_2_12-Implied_Grouping.pg
+problem_id = 12
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_2_13.pg
+problem_id = 13
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_2_15-Negating_and_Raising_to_Powers.pg
+problem_id = 15
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_3_6.pg
+problem_id = 6
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_3_10.pg
+problem_id = 10
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_3_12.pg
+problem_id = 12
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_4_10.pg
+problem_id = 10
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_4_11.pg
+problem_id = 11
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_4_12.pg
+problem_id = 12
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_4_14.pg
+problem_id = 14
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_5_2.pg
+problem_id = 2
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_5_5.pg
+problem_id = 5
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_5_10.pg
+problem_id = 10
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_5_13-Interval_Notation_from_Number_Lines.pg
+problem_id = 13
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_6_9.pg
+problem_id = 9
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_6_10.pg
+problem_id = 10
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_6_11.pg
+problem_id = 11
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_7_15.pg
+problem_id = 15
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_7_16.pg
+problem_id = 16
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_7_18.pg
+problem_id = 18
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_7_21.pg
+problem_id = 21
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_7_23.pg
+problem_id = 23
+problem_end
+problem_start
+source_file = Palladium_Algebra/Appendices/A_7_25.pg
+problem_id = 25
+problem_end
+problem_start
+source_file = Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplicationApplication10.pg
+problem_id = 4
+problem_end
+problem_start
+source_file = Contrib/PCC/BasicAlgebra/PolynomialMultiplication/polyMultVar145.pg
+problem_id = 19
+problem_end

@@ -1,0 +1,116 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8.3.4.51)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "niceTables.pl",
+  "AnswerFormatHelp.pl",
+  "parserAssignment.pl",
+  "parserOneOf.pl",
+  "contextForm.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric")->variables->are(
+  P=>'Real',
+  l=>'Real',
+  w=>'Real',
+  A=>'Real',
+  b=>'Real',
+  h=>'Real',
+  c=>'Real',
+  C=>'Real',
+  d=>'Real',
+  r=>'Real',
+  V=>'Real',
+  B=>'Real');
+parser::Assignment->Allow;
+$rectangleperimeter = Formula("P=2(l+w)");
+$rectanglearea = Formula("A=lw");
+$trianglearea = Formula("A=1/2bh");
+$circleperimeter = OneOf(Formula("c=pi d"), Formula("c=2 pi r"), Formula("C=pi d"), Formula("C=2 pi r"));
+$circlearea = Formula("A=pi r^2");
+$prismvolume = OneOf(Formula("V=wdh"), Formula("V=lwh"), Formula("V=lhd"));
+$cylindervolume = Formula("V=pi r^2h");
+$bothvolume = Formula("V=Bh");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Fill out the table with various formulas as they were given in this section.
+
+>> [@DataTable(
+  [
+    [PGML('Rectangle Perimeter'),
+     PGML('[_]{$rectangleperimeter}{15}'),
+    ],
+    [PGML('Rectangle Area'),
+     PGML('[_]{$rectanglearea}{15}'),
+    ],
+    [PGML('Triangle Area'),
+     PGML('[_]{$trianglearea}{15}'),
+    ],
+    [PGML('Circle Circumference'),
+     PGML('[_]{$circleperimeter}{15}'),
+    ],
+    [PGML('Circle Area'),
+     PGML('[_]{$circlearea}{15}'),
+    ],
+    [PGML('Rectangular Prism Volume'),
+     PGML('[_]{$prismvolume}{15}'),
+    ],
+    [PGML('Cylinder Volume'),
+     PGML('[_]{$cylindervolume}{15}'),
+    ],
+    [PGML('Volume of either Rectangular Prism or Cylinder'),
+     PGML('[_]{$bothvolume}{15}'),
+    ],
+  ],
+      align => '*{2}{l}',
+      valign => 'middle',);@]* <<
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

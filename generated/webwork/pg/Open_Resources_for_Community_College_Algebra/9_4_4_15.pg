@@ -1,0 +1,114 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(9.4.4.15)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGgraphmacros.pl",
+  "contextForm.pl",
+  "contextFiniteSolutionSets.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Point");
+$intersections = List("(-2,-2), (0,0), (2,2)");
+Context("FiniteSolutionSets");
+Context()->flags->remove("NumberCheck");
+$solutions = Formula("{-2,0,2}");
+Context("Interval");
+$ineq[0] = Interval("(-2,0)U(2,inf)");
+$ineq[1] = Interval("(-inf,-2]U[0,2]");
+$gr = init_graph(-7,-7,7,7,
+  axes=>[0,0],
+  grid=>[14,14],
+  size=>[240,130]
+);
+$gr->lb('reset');
+$gr->lb( new Label(1,0,'1','black','center','top','large'));
+$gr->lb( new Label(0,1,'1','black','left','middle','large'));
+Context()->flags->set(reduceConstants=>0);
+$f[0] = Formula("1/4 x^3");
+$f[1] = Formula("x");
+@color = ('blue','red');
+@x = ([-3.03,3.03],[-6.9,6.9]);
+@px = (28/240,28/140);
+Context("Vector");
+$A[0] = Matrix("[[cos(pi/6),-sin(pi/6)],[sin(pi/6),cos(pi/6)]]");
+$A[1] = Matrix("[[cos(-pi/6),-sin(-pi/6)],[sin(-pi/6),cos(-pi/6)]]");
+for my $i (0,1) {  #function 1 and 2
+  add_functions($gr, "$f[$i] for x in <$x[$i][0],$x[$i][1]> using color:$color[$i] and weight:1");
+  for my $j (0,1) {  #left and right
+    $fp[$i][$j] = Point($x[$i][$j],$f[$i]->eval(x=>$x[$i][$j]));
+    $df[$i][$j] = unit(Vector($px[0],$f[$i]->eval(x=>($x[$i][$j]+$px[0])) - $f[$i]->eval(x=>$x[$i][$j])));
+    for my $k (0,1) { #rotate left and right
+      $Adf[$i][$j][$k] = Vector($A[$k]*$df[$i][$j]);
+      $gr->moveTo($fp[$i][$j]->value);
+      $gr->lineTo(Point($fp[$i][$j]+(-1)**$j*unit($Adf[$i][$j][$k]))->value,$color[$i],1);
+    };
+  };
+};
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+The equations [`y=[$f[0]]`] and [`y=[$f[1]]`] are plotted.
+
+>> [@image(insertGraph($gr), width=>240)@]*  <<
+
+a.  What are the points of intersection?
+
+    [_]{$intersections}{30}
+
+a.  Solve [`[$f[0]]=[$f[1]]\text{.}`]
+
+    [_]{$solutions}{30}
+
+a.  Solve [`\newcommand{\gt}{>}[$f[0]]\gt[$f[1]]\text{.}`]
+
+    [_]{$ineq[0]}{30}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

@@ -1,0 +1,162 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-01T20:00:19-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.1.18)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "scaffold.pl",
+  "AnswerFormatHelp.pl",
+  "parserOneOf.pl",
+  "contextForm.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+COMMENT('This problem is scaffolded with multiple parts');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Form");
+$a[0] = Formula('1/6');
+$a[1] = Formula('2/3');
+$a[2] = OneOf(Formula('3root(3,3)/5'), Formula('3/5 root(3,3)'));
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Simplify each of the following.
+
+END_PGML
+
+############################################################
+# Scaffold
+############################################################
+Scaffold::Begin(numbered => 1,is_open => "correct_or_first_incorrect",can_open => always,);
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+[`\sqrt{\dfrac{1}{36}}`]
+
+[_]{$a[0]}{16}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`\newcommand{\amp}{&}
+                \begin{aligned}[t]
+                  \sqrt{\frac{1}{36}}\amp=\frac{\sqrt{1}}{\sqrt{36}}\\
+                  \amp=\frac{1}{6}
+                \end{aligned}
+              `]
+
+END_PGML_SOLUTION
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+[`\sqrt[3]{\dfrac{8}{27}}`]
+
+[_]{$a[1]}{16}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`\newcommand{\amp}{&}
+                \begin{aligned}[t]
+                  \sqrt[3]{\frac{8}{27}}\amp=\frac{\sqrt[3]{8}}{\sqrt[3]{27}}\\
+                  \amp=\frac{2}{3}
+                \end{aligned}
+              `]
+
+END_PGML_SOLUTION
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+[`\sqrt[3]{\dfrac{81}{125}}`]
+
+[_]{$a[2]}{16}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`\newcommand{\amp}{&}
+                \begin{aligned}[t]
+                \sqrt[3]{\frac{81}{125}}\amp=\frac{\sqrt[3]{81}}{\sqrt[3]{125}}\\
+                \amp=\frac{\sqrt[3]{81}}{5}\\
+                \amp=\frac{\sqrt[3]{27\cdot3}}{5}\\
+                \amp=\frac{\sqrt[3]{27}\sqrt[3]{3}}{5}\\
+                \amp=\frac{3\sqrt[3]{3}}{5}\\
+              \end{aligned}
+              `]
+
+END_PGML_SOLUTION
+
+Section::End();
+
+Scaffold::End();
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

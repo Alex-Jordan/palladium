@@ -1,0 +1,76 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(9.4.4.5)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserPopUp.pl",
+  "contextForm.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context()->noreduce('(-x)-y','(-x)+y');
+@a = (random(1,9,1), 0);
+@b = (0, random(1,9,1));
+@c = (non_zero_random(-9,9,1), non_zero_random(-9,9,1));
+@s = (non_zero_random(-0.9,0.9,0.1), non_zero_random(-0.9,0.9,0.01));
+$f = Formula("$s[0]($a[0] x^2 + $b[0] x + $c[0])")->reduce;
+$g = Formula("$s[1]($a[1] x^2 + $b[1] x + $c[1])")->reduce;
+$disc = ($s[0]*$b[0]-$s[1]*$b[1])**2 - 4*($s[0]*$a[0]-$s[1]*$a[1])*($s[0]*$c[0]-$s[1]*$c[1]);
+if ($disc > 0) {$ans = 2;}
+elsif ($disc == 0) {$ans = 1;}
+else {$ans = 0;}
+$popup = PopUp(['?','zero times', 'one time', 'two times', 'three times'],$ans+1);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use technology to make some graphs and determine how many times the graphs of the following curves cross each other.
+
+[`y=[$f]`] and [`y=[$g]`] intersect [_]{$popup}{5}.
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

@@ -1,0 +1,90 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8.1.6)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextScientificNotation.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("ScientificNotation");
+$debt= Compute("1.96 x 10^13");
+$pop = Compute("7.418 x 10^9");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Write each of the following in scientific notation.
+a.  The federal debt at the close of business on Sept.[$NBSP]*30, 2016: about [`19{,}600{,}000{,}000{,}000`] dollars.
+
+    [_]{$debt}{10}
+
+a.  [@htmlLink("http://www.prb.org/pdf16/prb-wpds2016-web-2016.pdf","The world's population","TARGET='_blank'")@]* in 2016: about [`7{,}418{,}000{,}000`] people.
+
+    [_]{$pop}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  To convert the federal debt to scientific notation, we will count the number of digits after the first nonzero digit (which happens to be a [`1`] here). Since there are [`13`] places after the first nonzero digit, we write:
+
+    [```
+                      1\overbrace{9{,}600{,}000{,}000{,}000}^{13\text{ places}} \text{ dollars} = 1.96\times 10^{13} \text{ dollars}
+                    ```]
+
+a.  Since there are nine places after the first nonzero digit of [`7\text{,}`] the world's population in 2016 was about
+
+    [```
+                      7{,}\overbrace{418{,}000{,}000}^{9\text{ places}} \text{ people} = 7.418 \times 10^{9} \text{ people}
+                    ```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

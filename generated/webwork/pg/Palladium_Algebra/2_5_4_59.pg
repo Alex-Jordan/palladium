@@ -1,0 +1,138 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:09-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.5.4.59)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGlateximage.pl",
+  "PCCmacros.pl",
+  "parserNumberWithUnits.pl",
+  "randomPerson.pl",
+  "Pd.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$name = randomPerson();
+$size = list_random(43, 50, 55, 65);
+$ratio = list_random('16:9', '4:3');
+($w, $h) = split(':', $ratio);
+$width = NumberWithUnits($size/sqrt(1+($h/$w)**2), 'in');
+$height = NumberWithUnits($size/sqrt(1+($w/$h)**2), 'in');
+$aux = $size**2/(1+($w/$h)**2);
+$auxw = $size**2/(1+($h/$w)**2);
+
+$image_1 = createLaTeXImage();
+$image_1->addToPreamble(latexImagePreamble());
+$image_1->BEGIN_LATEX_IMAGE
+\begin{tikzpicture}[]
+  \draw[fill=firstcolor] (-0.2,-0.2) rectangle (4.2,3.2);
+  \draw[rounded corners=2ex,fill=secondcolor!10] (0,0) rectangle (4,3);
+  \draw (0,0) -- (4,3);
+  \draw (2,1.5) node [above, rotate=36.9]{\($size\) in};
+\end{tikzpicture}
+
+END_LATEX_IMAGE
+
+$image_2 = createLaTeXImage();
+$image_2->addToPreamble(latexImagePreamble());
+$image_2->BEGIN_LATEX_IMAGE
+\begin{tikzpicture}[]
+  \draw[fill=firstcolor] (-0.2,-0.2) rectangle (4.2,3.2);
+  \draw[rounded corners=2ex,fill=secondcolor!10] (0,0) rectangle (4,3);
+  \draw (0,0) -- (4,3);
+  \draw [above] (2,0) node {\(\frac{$w}{$h}x\) in};
+  \draw (4,1.5) node[above,rotate=90] {\(x\) in};
+  \draw (2,1.5) node [above, rotate=36.9]{\($size\) in};
+\end{tikzpicture}
+
+END_LATEX_IMAGE
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+[$name] is designing a [`[$size]`]-inch TV, which means that the diagonal of the TV's screen will be [`[$size]`] inches long.
+
+>> [@image(insertGraph($image_1), width=>300, alt=>qq"a rectangle representing the TV with a diagonal line drawn and labeled c=$size in;")@]*  <<
+
+[$name->They] [$name->verb('need')] the screen's width-to-height ratio to be [`[$ratio]\text{.}`] Find the TV screen's width and height.
+
+[@KeyboardInstructions('Enter the width here.')@]**
+
+[_]{$width}{6}
+
+[@KeyboardInstructions('Enter the height here.')@]**
+
+[_]{$height}{6}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Let [`x`] represent the height of the screen, in inches. Since the screen's width-to-height ratio will be [`[$ratio]\text{,}`] then the width is [`\frac{[$w]}{[$h]}`] times as long as the height. The width is [`\frac{[$w]}{[$h]}x`] inches. We can draw a diagram.
+
+>> [@image(insertGraph($image_2), width=>300, alt=>qq"The previous image of the TV with the height labeled x in and the base width labeled $w/$h in")@]*  <<
+
+Now we can use the Pythagorean Theorem to write and solve an equation:
+
+[```\newcommand{\multiplyleft}[2][\cdot]{{\highlight{{#2#1{}}}}}\newcommand{\amp}{&}
+\begin{aligned}
+a^2+b^2\amp=c^2\\
+\left(\frac{[$w]}{[$h]}x\right)^2+x^2\amp=[$size]^2\\
+\frac{[$w**2]}{[$h**2]}x^2+\frac{[$h**2]}{[$h**2]}x^2\amp=[$size**2]\\
+\frac{[$w**2 + $h**2]}{[$h**2]}x^2\amp=[$size**2]\\
+\multiplyleft{\frac{[$h**2]}{[$w**2]}}\frac{[$w**2 + $h**2]}{[$h**2]}x^2\amp=\multiplyleft{\frac{[$h**2]}{[$w**2]}}[$size**2]\\
+x^2\amp=[$aux]\\
+x\amp=[$aux**0.5]
+\end{aligned}
+```]
+
+Since the screen's height is [`[$height]\text{,}`] its width is [`\frac{[$w]}{[$h]}[$aux**0.5]=[$auxw]`] inches.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

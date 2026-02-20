@@ -1,0 +1,100 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8.4.4)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGgraphmacros.pl",
+  "PCCmacros.pl",
+  "parserImplicitPlane.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("ImplicitPlane");
+Context()->flags->set(reduceConstants=>0);
+Context()->variables->are(h=>'Real');
+$equation = ImplicitPlane("125=1/2(10)h");
+$evaluator = $equation->cmp(correct_ans_latex_string=>'125=\frac{1}{2}(10)h');
+$triangle = init_graph(-1,-2,11.5,26.2,size=>[48,120]);
+$triangle->moveTo(1,1);
+$triangle->lineTo(11,1,'black',1);
+$triangle->lineTo(1,26,'black',1);
+$triangle->lineTo(1,1,'black',1);
+$triangle->lb( new Label(6,1,'10','black','center','top','large'));
+$triangle->lb( new Label(1,13,'h','black','right','middle','large'));
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+One sail on a sail boat is approximately shaped like a triangle. If the base length is [`10`] feet and the total sail area is [`125`] square feet, we can wonder how tall is the sail. Set up an equation to model the sail's height.
+
+[@KeyboardInstructions(q"Use [|h|]* as the variable representing the sail's height.")@]**
+
+[_]{$evaluator}{25}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Since the sail's shape is (approximately) a triangle, it helps to sketch a triangle representing the sail. Since we know its base width is [`10`] feet, it is a good idea to label that in the sketch. The heigth is our unknown quantity, so we can use [`h`] as a variable to represent the sail's height in feet and label that too.
+
+>> [@image(insertGraph($triangle), width=>48)@]*  <<
+
+Since the total area is known to be [`125`] square feet, this suggests using the area formula for a triangle: [`A=\frac{1}{2}bh\text{.}`]
+
+With this formula, we can substitute [`125`] in for [`A`] and [`100`] in for [`b\text{:}`]
+
+[```
+                125=\frac{1}{2}(10)h
+              ```]
+
+and this equation models the height of the pool.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

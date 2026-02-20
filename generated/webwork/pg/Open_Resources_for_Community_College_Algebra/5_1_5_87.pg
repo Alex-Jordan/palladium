@@ -1,0 +1,76 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:08-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.1.5.87)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "contextLimitedPolynomial.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+@a = random_subset(2, map {$_/1000} (1 .. 9));
+@b = random_subset(2, map {$_/100} (-90 .. 90));
+@c = random_subset(2, 100 .. 200);
+$a[2] = $a[1] + $a[0];
+$b[2] = $b[1] + $b[0];
+$c[2] = $c[1] + $c[0];
+Context("LimitedPolynomial-Strict");
+$blue = Formula("$a[1] x^2 + $b[1]x + $c[1]")->reduce;
+$green = Formula("$a[0] x^2 + $b[0]x + $c[0]")->reduce;
+$total = Formula("$a[2] x^2 + $b[2]x + $c[2]")->reduce;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+There are two types of algae (blue and green) growing in a pond, and each type's total biomass (measured in kilograms) can be modeled using a polynomial where the variable [`t`] represents time.
+
+If the blue algae biomass is modeled by [`[$blue]`] and the green algae biomass is modeled by [`[$green]\text{,}`] what is a model for the total algae biomass?
+
+[_]{$total}{16}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

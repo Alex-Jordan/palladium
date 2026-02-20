@@ -1,0 +1,85 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8.2.6.53)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "parserNumberWithUnits.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$b = {name=>'b'};
+$B = {name=>'B', conversion=>{factor => 8, b => 1}};
+$kb = {name=>'kb', conversion=>{factor => 2**10, b => 1}};
+$kB = {name=>'kB', conversion=>{factor => 8*2**10, b => 1}};
+$Mb = {name=>'Mb', conversion=>{factor => 2**20, b => 1}};
+$MB = {name=>'MB', conversion=>{factor => 8*2**20, b => 1}};
+$GB = {name=>'GB', conversion=>{factor => 2**30, b => 1}};
+$TB = {name=>'TB', conversion=>{factor => 8*2**30, b => 1}};
+$Mbps = {name=>'Mbps', conversion=>{factor => 2**20, b => 1, s => -1}};
+$rate = random(10,100,1);
+$rateU = NumberWithUnits("$rate Mbps", {newUnit => $Mbps});
+$minutes = random(12,199,1);
+$minutesU = NumberWithUnits("$minutes min");
+$seconds = $minutes*60;
+$megabytes = $rate*$seconds/8;
+$megabytesU = NumberWithUnits("$megabytes MB", {newUnit => [$B,$kB,$MB,$GB,$TB]});
+$sex = list_random('female','male');
+$name = RandomName(sex=>$sex);
+$Pronoun = ($sex eq 'male') ? 'He' : 'She';
+$pronoun = lc($Pronoun);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+[$name] is downloading content at an average rate of [`[$rateU]`] (megabits per second). After [`[$minutes]`] minutes, how much has [$pronoun] downloaded? It is appropriate to express an amount of data like this in bytes, kilobytes, megabytes, gigabytes, or terabytes.
+
+[_]{$megabytesU}{20}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

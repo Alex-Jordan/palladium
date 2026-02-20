@@ -1,0 +1,140 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:08-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.6.9)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "bizarroArithmetic.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context()->operators->set(
+    '**' => {class => 'bizarro::BOP::power', isCommand => 1, perl=>undef},
+    '^' => {class => 'bizarro::BOP::power', isCommand => 1, perl=>undef},
+);
+@answer = (Formula("1"),Formula("1"),Formula("-1"),Formula("3"));
+for $i (0..3) {
+    $evaluator[$i] = $answer[$i] -> cmp(
+        checker=>sub{
+            my ( $correct, $student, $ansHash ) = @_;
+            return 0 if $ansHash->{isPreview} || $correct != $student;
+            $student = $ansHash->{student_formula};
+            $correct = $correct->{original_formula} if defined $correct->{original_formula};
+            $student = Formula("$student"); $correct = Formula("$correct");
+            return 0 unless ($correct == $student);
+            Context()->flags->set(bizarroPow=>1,);
+            delete $correct->{test_values};
+            delete $student->{test_values};
+            my $OK = (($correct == $student) or ($student == $correct));
+            Context()->flags->set(bizarroPow=>0);
+            Value::Error("Your answer is not fully simplified.") unless $OK;
+            return $OK;
+        }
+    );
+}
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Simplify the following expressions. Assume all variables represent nonzero real numbers.
+a.  [`\left(173 x^4 y^{251}\right)^0`]
+
+    [_]{$evaluator[0]}{10}
+
+a.  [`(-8)^0`]
+
+    [_]{$evaluator[1]}{10}
+
+a.  [`-8^0`]
+
+    [_]{$evaluator[2]}{10}
+
+a.  [`3x^0`]
+
+    [_]{$evaluator[3]}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+To simplify any of these expressions, it is critical that we remember an exponent only applies to what it is touching or immediately next to.
+a.  In the expression [`\left(173 x^4 y^{251}\right)^0\text{,}`] the exponent [`0`] applies to everything inside the parentheses.
+
+    [```
+                      \left(173 x^4 y^{251}\right)^0 =  1
+                    ```]
+
+a.  In the expression [`(-8)^0`] the exponent applies to everything inside the parentheses, [`-8\text{.}`]
+
+    [```
+                      (-8)^0  =  1
+                    ```]
+
+a.  In contrast to the previous example, the exponent only applies to the [`8\text{.}`] The exponent has a higher priority than negation in the order of operations. We should consider that [`-8^0 = -\mathopen{}\left(8^0\right)\mathclose{}\text{,}`] and so:
+
+    [```\newcommand{\amp}{&}
+    \begin{aligned}
+    -8^0  \amp=  -\mathopen{}\left(8^0\right)\mathclose{}\\
+    \amp=  -1
+    \end{aligned}
+    ```]
+
+a.  In the expression [`3x^0\text{,}`] the exponent [`0`] only applies to the [`x\text{:}`]
+
+    [```\newcommand{\amp}{&}
+    \begin{aligned}
+    3x^0 \amp= 3\cdot x^0\\
+    \amp= 3\cdot 1\\
+    \amp= 3
+    \end{aligned}
+    ```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

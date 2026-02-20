@@ -1,0 +1,119 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:08-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(7.2.5.33)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "contextFiniteSolutionSets.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+do {
+  $c = non_zero_random(-9,9,1);
+  $b = ($c > 0) ? random(int(sqrt(4*$c))+1,9,1) * list_random(-1,1) : non_zero_random(-9,9,1);
+} until (sqrt($b**2-4*$c) != int(sqrt($b**2-4*$c)));
+Context()->noreduce('(-x)-y','(-x)+y');
+$f = Formula("x^2+$b x+$c")->reduce;
+$disc = $b**2-4*$c;
+$squarepart = 1;
+$squarefree = $disc;
+for $i (2,3,5,7) {
+  while ($squarefree % $i**2 == 0) {
+    $squarepart *= $i**2;
+    $squarefree /= $i**2;
+  }
+}
+$pull = sqrt($squarepart);
+Context("Fraction");
+$B = Fraction($b,2);
+$P = Fraction($pull,2);
+if ($P == 1) {$P = ''};
+if ($pull == 1) {$pull = ''};
+$negb = -$b;
+$bsquared = ($b)**2;
+$discriminant = ($b)**2 - 4*1*$c;
+Context("FiniteSolutionSets");
+($r,$s) = (Formula("-$B - $P sqrt($squarefree)"),Formula("-$B + $P sqrt($squarefree)"));
+$solutions = Formula("{$r,$s}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use the quadratic formula to solve the equation.
+
+[`[$f]=0`]
+
+[@KeyboardInstructions('If you need to enter a square root like [`\sqrt{17}\text{,}`] type [|sqrt(17)|]*. If there is no real solution, enter [|no real solution|]*.')@]**
+
+[_]{$solutions}{40}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+To use the quadratic formula, we identify [`a=1\text{,}`] [`b=[$b]\text{,}`] and [`c=[$c]\text{.}`]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{[$negb]\pm\sqrt{[$bsquared]-4(1)([$c])}}{2}\\
+\amp=\frac{[$negb]\pm\sqrt{[$discriminant]}}{2}\\
+\amp=\frac{[$negb]\pm[$pull]\sqrt{[$squarefree]}}{2}\\
+x\amp=\frac{[$negb]-[$pull]\sqrt{[$squarefree]}}{2}\quad\text{or}\quad x=\frac{[$negb]+[$pull]\sqrt{[$squarefree]}}{2}\\
+x\amp=[$r]\quad\text{or}\quad x=[$s]
+\end{aligned}
+```]
+
+The solution set is [`[$solutions]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

@@ -1,0 +1,115 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(7.2.5.110)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "contextFiniteSolutionSets.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Fraction");
+$s = Fraction(random(1,9,2),2);
+$r = random(-9,-1,1);
+$B = -($r + $s);
+$C = $r*$s;
+$a = lcm(($B->value)[1],($C->value)[1]);
+$b = $a*$B;
+$c = $a*$C;
+Context()->noreduce('(-x)-y','(-x)+y');
+$f = Formula("$a x^2+$b x+$c")->reduce;
+$negb = -$b;
+$bsquared = ($b)**2;
+$discriminant = ($b)**2 - 4*$a*$c;
+$sqrtdisc = Fraction(sqrt($discriminant));
+$a2 = 2*$a;
+Context("FiniteSolutionSets");
+$solutions = Formula("{$r,$s}");
+$add = $b/2;
+$product = -$c;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+If you double a certain positive number, then also add  [`[$add]`] to that same number, and multiply the results, you get [`[$product]\text{.}`] What was the original number?
+
+[_]{$s}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Let [`x`] be the mystery number. We are told that [`(2x)\left(x+[$add]\right)=[$product]\text{.}`] So
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+2x^2 + [$b]x \amp=[$product]\\
+[$f]\amp=0
+\end{aligned}
+```]
+
+Now we can apply the quadratic formula:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{[$negb]\pm\sqrt{[$bsquared]-4([$a])([$c])}}{2([$a])}\\
+\amp=\frac{[$negb]\pm\sqrt{[$discriminant]}}{[$a2]}\\
+\amp=\frac{[$negb]\pm[$sqrtdisc]}{[$a2]}\\
+x\amp=\frac{[$negb]-[$sqrtdisc]}{[$a2]}\quad\text{or}\quad x=\frac{[$negb]+[$sqrtdisc]}{[$a2]}\\
+x\amp=[$r]\quad\text{or}\quad x=[$s]
+\end{aligned}
+```]
+
+Both [`[$r]`] and [`[$s]`] solve the equation, but we were asked to find a positive number. So the mystery number is [`[$s]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

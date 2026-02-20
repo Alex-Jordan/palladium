@@ -1,0 +1,82 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:08-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.1.5.65)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "contextLimitedPolynomial.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+($x, $y) = random_subset(2, 'x','y','z','r','t');
+Context()->variables->are($x => 'Real', $y => 'Real');
+Context()->noreduce('(-x)+y', '(-x)-y');
+@n = random_subset(4, 1..9);
+@k = random_subset(4, 1..9);
+@c = random_subset(6, -99..-1, 1..99);
+@c = map {$_/10} @c;
+$poly1 = Formula("$c[0] $x^$n[0]$y^$k[0] + $c[1] $x^$n[1]$y^$k[1] + $c[2] $x^$n[2]")->reduce;
+$poly2 = Formula("$c[3] $x^$n[2] + $c[4] $x^$n[0]$y^$k[0] + $c[5] $x^$n[3]$y^$k[3]")->reduce;
+$m[0] = $c[0] - $c[4];
+$m[1] = $c[1];
+$m[2] = $c[2] - $c[3];
+$m[3] = -$c[5];
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($x => 'Real', $y => 'Real');
+$answer = Formula("$m[0] $x^$n[0]$y^$k[0] + $m[1] $x^$n[1]$y^$k[1] + $m[2] $x^$n[2] + $m[3] $x^$n[3]$y^$k[3]")->reduce;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Add or subtract the multivariable polynomials as indicated.
+
+[`\left([$poly1]\right)-\left([$poly2]\right)`]
+
+[_]{$answer}{20}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

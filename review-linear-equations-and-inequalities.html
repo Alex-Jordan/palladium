@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Pd Linear Equations and Inequalities Chapter Review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="og:image" content="https://spot.pcc.edu/math/palladium/html/external/">
+<meta property="book:title" content="Palladium Algebra">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.14';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.d892923478694492.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
+<script src="_static/pretext/js/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork.pcc.edu/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdn.geogebra.org/apps/deployggb.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="palladium" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<img src="external/" alt="Logo image"><div class="title-container">
+<h1 class="heading"><a href="palladium.html"><span class="title">Palladium Algebra</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-3.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="calculator-toggle" class="calculator-toggle button" title="Show calculator" aria-expanded="false" aria-controls="calculator-container"><span class="icon material-symbols-outlined" aria-hidden="true">&#xea5f;</span><span class="name">Calc</span></button><div id="calculator-container" class="calculator-container" style="display: none; z-index:100;"><div id="geogebra-calculator"></div></div>
+<script>
+var ggbApp = new GGBApplet({"appName": "graphing",
+    "width": 330,
+    "height": 600,
+    "showToolBar": true,
+    "showAlgebraInput": true,
+    "perspective": "G/A",
+    "algebraInputPosition": "bottom",
+    "scaleContainerClass": "calculator-container",
+    "allowUpscale": true,
+    "autoHeight": true,
+    "disableAutoScale": false},
+true);
+</script><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="section-isolating-a-linear-variable.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="chapter-linear-equations-and-inequalities.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="chapter-graphing-lines.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{cancel}\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+\newcommand{\point}[2]{\left(#1,#2\right)}
+\newcommand{\highlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}
+\newcommand{\firsthighlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}
+\newcommand{\secondhighlight}[1]{\mathchoice{\colorbox{lightemerald}{$\displaystyle #1$}}{\colorbox{lightemerald}{$\textstyle #1$}}{\colorbox{lightemerald}{$\scriptstyle #1$}}{\colorbox{lightemerald}{$\scriptscriptstyle #1$}}}
+\newcommand{\unhighlight}[1]{{\color{black}{{#1}}}}
+\newcommand{\lowlight}[1]{{\color{lightgray}{#1}}}
+\newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}
+\newcommand{\nextoperation}[1]{\mathord{\boxed{#1}}}
+\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}
+\newcommand{\pinover}[2]{\overset{\overset{\mathrm{\ #2\ }}{|}}{\strut #1 \strut}}
+\newcommand{\addright}[1]{{\highlight{{{}+#1}}}}
+\newcommand{\addleft}[1]{{\highlight{{#1+{}}}}}
+\newcommand{\subtractright}[1]{{\highlight{{{}-#1}}}}
+\newcommand{\multiplyright}[2][\cdot]{{\highlight{{{}#1#2}}}}
+\newcommand{\multiplyleft}[2][\cdot]{{\highlight{{#2#1{}}}}}
+\newcommand{\divideunder}[2]{\frac{#1}{{\highlight{{#2}}}}}
+\newcommand{\divideright}[1]{{\highlight{{{}\div#1}}}}
+\newcommand{\negate}[1]{{\highlight{{-}}}\left(#1\right)}
+\newcommand{\cancelhighlight}[1]{{\color{sapphire}{{\cancel{#1}}}}}
+\newcommand{\secondcancelhighlight}[1]{{\color{emerald}{{\bcancel{#1}}}}}
+\newcommand{\thirdcancelhighlight}[1]{\definecolor{amethyst}{RGB}{112,72,91}{\color{amethyst}{{\xcancel{#1}}}}}
+\newcommand{\confirm}[1]{\stackrel{\checkmark}{#1}}
+\newcommand{\reject}[1]{\stackrel{\text{no}}{#1}}
+\newcommand{\wonder}[1]{\stackrel{\text{?}}{#1}}
+\newcommand{\apple}{\text{🍎}}
+\newcommand{\banana}{\text{🍌}}
+\newcommand{\pear}{\text{🍐}}
+\newcommand{\cat}{\text{🐱}}
+\newcommand{\dog}{\text{🐶}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="chapter-linear-equations-and-inequalities.html" class="internal"><span class="codenumber">1</span> <span class="title">Linear Equations and Inequalities</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-solving-multistep-linear-equations.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Solving Multistep Linear Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-solving-multistep-linear-equations.html#section-solving-multistep-linear-equations-4" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Solving Two-Step Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-solving-multistep-linear-equations.html#section-solving-multistep-linear-equations-5" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Solving Multistep Linear Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-solving-multistep-linear-equations.html#section-solving-multistep-linear-equations-6" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Revisiting Applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-solving-multistep-linear-equations.html#section-solving-multistep-linear-equations-7" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Differentiating between Simplifying Expressions, Evaluating Expressions and Solving Equations</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-solving-multistep-linear-equations.html#section-solving-multistep-linear-equations-8" class="internal"><span class="codenumber">1.1.5</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-solving-multistep-linear-equations.html#section-solving-multistep-linear-equations-9" class="internal"><span class="codenumber">1.1.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-solving-multistep-linear-inequalities.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Solving Multistep Linear Inequalities</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-solving-multistep-linear-inequalities.html#section-solving-multistep-linear-inequalities-4" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Solving Multistep Inequalities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-solving-multistep-linear-inequalities.html#section-solving-multistep-linear-inequalities-5" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Applications</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-solving-multistep-linear-inequalities.html#section-solving-multistep-linear-inequalities-6" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-solving-multistep-linear-inequalities.html#section-solving-multistep-linear-inequalities-7" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-equations-and-inequalities-with-fractions.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Equations and Inequalities with Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-equations-and-inequalities-with-fractions.html#subsection-eliminating-denominators" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Eliminating Denominators</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-equations-and-inequalities-with-fractions.html#section-equations-and-inequalities-with-fractions-5" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Proportional Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-equations-and-inequalities-with-fractions.html#section-equations-and-inequalities-with-fractions-6" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Solving Inequalities with Fractions</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-equations-and-inequalities-with-fractions.html#section-equations-and-inequalities-with-fractions-7" class="internal"><span class="codenumber">1.3.4</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-equations-and-inequalities-with-fractions.html#section-equations-and-inequalities-with-fractions-8" class="internal"><span class="codenumber">1.3.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-special-solution-sets.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Special Solution Sets</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-special-solution-sets.html#section-special-solution-sets-4" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Special Solution Sets</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-special-solution-sets.html#section-special-solution-sets-5" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Further Examples</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-special-solution-sets.html#section-special-solution-sets-6" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-special-solution-sets.html#section-special-solution-sets-7" class="internal"><span class="codenumber">1.4.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-isolating-a-linear-variable.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Isolating a Linear Variable</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-isolating-a-linear-variable.html#section-isolating-a-linear-variable-4" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Solving for a Variable</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-isolating-a-linear-variable.html#section-isolating-a-linear-variable-5" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-isolating-a-linear-variable.html#section-isolating-a-linear-variable-6" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="review-linear-equations-and-inequalities.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Linear Equations and Inequalities Chapter Review</span></a></div>
+<ul class="structural toc-item-list active"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="review-linear-equations-and-inequalities.html#review-linear-equations-and-inequalities-22" class="internal"><span class="codenumber">1.6</span> <span class="title">Review Exercises for Chapter 1</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-graphing-lines.html" class="internal"><span class="codenumber">2</span> <span class="title">Graphing Lines</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-cartesian-coordinates.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Cartesian Coordinates</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-cartesian-coordinates.html#section-cartesian-coordinates-20" class="internal"><span class="codenumber">2.1</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-cartesian-coordinates.html#section-cartesian-coordinates-21" class="internal"><span class="codenumber">2.1</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-graphing-equations.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Graphing Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-graphing-equations.html#section-graphing-equations-26" class="internal"><span class="codenumber">2.2</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-graphing-equations.html#section-graphing-equations-27" class="internal"><span class="codenumber">2.2</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-exploring-two-variable-data-and-rate-of-change.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Exploring Two-Variable Data and Rate of Change</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-exploring-two-variable-data-and-rate-of-change.html#section-exploring-two-variable-data-and-rate-of-change-4" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Modeling data with two variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-exploring-two-variable-data-and-rate-of-change.html#section-exploring-two-variable-data-and-rate-of-change-5" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Patterns in Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-exploring-two-variable-data-and-rate-of-change.html#section-exploring-two-variable-data-and-rate-of-change-6" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Rate of Change</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-exploring-two-variable-data-and-rate-of-change.html#section-exploring-two-variable-data-and-rate-of-change-7" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-exploring-two-variable-data-and-rate-of-change.html#section-exploring-two-variable-data-and-rate-of-change-8" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-slope.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Slope</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-slope.html#section-slope-4" class="internal"><span class="codenumber">2.4.1</span> <span class="title">What is slope?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-slope.html#subsection-comparing-slopes" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Comparing Slopes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-slope.html#section-slope-6" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Finding Slope by Two Given Points</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-slope.html#section-slope-7" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-slope.html#section-slope-8" class="internal"><span class="codenumber">2.4.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-slope-intercept-form.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Slope-Intercept Form</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-slope-intercept-form.html#section-slope-intercept-form-4" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Slope-Intercept Definition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-slope-intercept-form.html#section-slope-intercept-form-5" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Graphing Slope-Intercept Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-slope-intercept-form.html#section-slope-intercept-form-6" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Writing a Slope-Intercept Equation Given a Graph</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-slope-intercept-form.html#section-slope-intercept-form-7" class="internal"><span class="codenumber">2.5.4</span> <span class="title">Writing a Slope-Intercept Equation Given Two Points</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-slope-intercept-form.html#section-slope-intercept-form-8" class="internal"><span class="codenumber">2.5.5</span> <span class="title">Modeling with Slope-Intercept Form</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-slope-intercept-form.html#section-slope-intercept-form-9" class="internal"><span class="codenumber">2.5.6</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-slope-intercept-form.html#section-slope-intercept-form-10" class="internal"><span class="codenumber">2.5.7</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-point-slope-form.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Point-Slope Form</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-point-slope-form.html#section-point-slope-form-4" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Point-Slope Motivation and Definition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-point-slope-form.html#section-point-slope-form-5" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Using Two Points to Build a Linear Equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-point-slope-form.html#section-point-slope-form-6" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Recognizing Point-Slope Form</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-point-slope-form.html#section-point-slope-form-7" class="internal"><span class="codenumber">2.6.4</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-point-slope-form.html#section-point-slope-form-8" class="internal"><span class="codenumber">2.6.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-standard-form.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Standard Form</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-standard-form.html#section-standard-form-4" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Standard Form Definition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-standard-form.html#section-standard-form-5" class="internal"><span class="codenumber">2.7.2</span> <span class="title">The Importance of <span class="process-math">\(x\)</span>- and <span class="process-math">\(y\)</span>-Intercepts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-standard-form.html#subsection-transforming-between-standard-form-and-slope-intercept-form" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Transforming between Standard Form and Slope-Intercept Form</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-standard-form.html#section-standard-form-7" class="internal"><span class="codenumber">2.7.4</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-standard-form.html#section-standard-form-8" class="internal"><span class="codenumber">2.7.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-geometry-of-lines.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Geometry of Lines</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-geometry-of-lines.html#section-geometry-of-lines-4" class="internal"><span class="codenumber">2.8.1</span> <span class="title">Horizontal Lines and Vertical Lines</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-geometry-of-lines.html#subsection-parallel-lines" class="internal"><span class="codenumber">2.8.2</span> <span class="title">Parallel Lines</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-geometry-of-lines.html#section-geometry-of-lines-6" class="internal"><span class="codenumber">2.8.3</span> <span class="title">Perpendicular Lines</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-geometry-of-lines.html#section-geometry-of-lines-7" class="internal"><span class="codenumber">2.8.4</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-geometry-of-lines.html#section-geometry-of-lines-8" class="internal"><span class="codenumber">2.8.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-strategies-for-graphing-lines.html" class="internal"><span class="codenumber">2.9</span> <span class="title">Strategies for Graphing Lines</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-strategies-for-graphing-lines.html#section-strategies-for-graphing-lines-4" class="internal"><span class="codenumber">2.9.1</span> <span class="title">Graphing Lines in Slope-Intercept Form</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-strategies-for-graphing-lines.html#section-strategies-for-graphing-lines-5" class="internal"><span class="codenumber">2.9.2</span> <span class="title">Graphing Lines in Point-Slope Form</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-strategies-for-graphing-lines.html#section-strategies-for-graphing-lines-6" class="internal"><span class="codenumber">2.9.3</span> <span class="title">Graphing Lines in Standard Form</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-strategies-for-graphing-lines.html#section-strategies-for-graphing-lines-7" class="internal"><span class="codenumber">2.9.4</span> <span class="title">Graphing Horizontal and Vertical Lines</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-strategies-for-graphing-lines.html#section-strategies-for-graphing-lines-8" class="internal"><span class="codenumber">2.9.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="review-graphing-lines.html" class="internal"><span class="codenumber">2.10</span> <span class="title">Graphing Lines Chapter Review</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="review-graphing-lines.html#review-graphing-lines-34" class="internal"><span class="codenumber">2.10</span> <span class="title">Review Exercises for Chapter 2</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Appendices</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">Answers to Exercises</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Index</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="review-linear-equations-and-inequalities"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Linear Equations and Inequalities Chapter Review</span>
+</h2>
+<article class="assemblage assemblage-like" id="review-linear-equations-and-inequalities-2"><h3 class="heading"><span class="title">Solving Multistep Linear Equations.</span></h3>
+<div class="para logical" id="review-linear-equations-and-inequalities-2-2">
+<div class="para">There is a regular process to use for solving a linear equation.</div>
+<dl class="description-list">
+<dt id="review-linear-equations-and-inequalities-2-2-1-1">Simplify<div class="autopermalink" data-description="Item: Simplify"><a href="#review-linear-equations-and-inequalities-2-2-1-1" title="Copy heading and permalink for Item: Simplify" aria-label="Copy heading and permalink for Item: Simplify">🔗</a></div>
+</dt>
+<dd><div class="para" id="review-linear-equations-and-inequalities-2-2-1-1-2">Simplify the expressions on each side of the equation by distributing and combining like terms.<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-2-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="review-linear-equations-and-inequalities-2-2-1-2">Separate<div class="autopermalink" data-description="Item: Separate"><a href="#review-linear-equations-and-inequalities-2-2-1-2" title="Copy heading and permalink for Item: Separate" aria-label="Copy heading and permalink for Item: Separate">🔗</a></div>
+</dt>
+<dd><div class="para" id="review-linear-equations-and-inequalities-2-2-1-2-2">Use addition or subtraction to separate the terms so that the variable terms are on one side of the equation and the constant terms are on the other side of the equation.<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-2-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="review-linear-equations-and-inequalities-2-2-1-3">Clear the Coefficient<div class="autopermalink" data-description="Item: Clear the Coefficient"><a href="#review-linear-equations-and-inequalities-2-2-1-3" title="Copy heading and permalink for Item: Clear the Coefficient" aria-label="Copy heading and permalink for Item: Clear the Coefficient">🔗</a></div>
+</dt>
+<dd><div class="para" id="review-linear-equations-and-inequalities-2-2-1-3-2">Use multiplication or division to eliminate the variable term’s coefficient.<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-2-2-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="review-linear-equations-and-inequalities-2-2-1-4">Check<div class="autopermalink" data-description="Item: Check"><a href="#review-linear-equations-and-inequalities-2-2-1-4" title="Copy heading and permalink for Item: Check" aria-label="Copy heading and permalink for Item: Check">🔗</a></div>
+</dt>
+<dd><div class="para" id="review-linear-equations-and-inequalities-2-2-1-4-2">Check the solution in the original equation. Substitute values into the original equation and use the order of operations to simplify both sides. It’s important to use the order of operations alone rather than properties like the distributive law. Otherwise you might repeat the same arithmetic errors you (might have) made while solving, and fail to catch an incorrect solution.<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-2-2-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="review-linear-equations-and-inequalities-2-2-1-5">Summarize<div class="autopermalink" data-description="Item: Summarize"><a href="#review-linear-equations-and-inequalities-2-2-1-5" title="Copy heading and permalink for Item: Summarize" aria-label="Copy heading and permalink for Item: Summarize">🔗</a></div>
+</dt>
+<dd><div class="para" id="review-linear-equations-and-inequalities-2-2-1-5-2">State the solution set. Or in the case of an application problem, summarize the result in a complete sentence using appropriate units.<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-2-2-1-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="review-linear-equations-and-inequalities-2-3">
+<div class="para">Simplifying expressions, evaluating expressions, and solving equations are distinct algebra tasks.</div>
+<ul class="disc" id="review-linear-equations-and-inequalities-2-3-1">
+<li id="review-linear-equations-and-inequalities-2-3-1-1">
+<div class="para" id="review-linear-equations-and-inequalities-2-3-1-1-1">An expression like <span class="process-math">\(10-3(x+2)\)</span> can be <dfn class="terminology">simplified</dfn> to <span class="process-math">\(-3x+4\)</span> (as in <a href="section-solving-multistep-linear-equations.html#example-differentiate-simplify-expressions" class="xref" data-knowl="./knowl/xref/example-differentiate-simplify-expressions.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.1.14">Example 1.1.14</a>). However we cannot “solve” an expression like this. It is incorrect to say you will “solve <span class="process-math">\(10-3(x+2)\)</span>”.<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-2-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#review-linear-equations-and-inequalities-2-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="review-linear-equations-and-inequalities-2-3-1-2">
+<div class="para" id="review-linear-equations-and-inequalities-2-3-1-2-1">An expression like <span class="process-math">\(10-3(x+2)\)</span> can be <dfn class="terminology">evaluated</dfn>, but only once you have a number to use in place of the variable. This is what happens in <a href="section-solving-multistep-linear-equations.html#example-differentiate-evaluate-expressions" class="xref" data-knowl="./knowl/xref/example-differentiate-evaluate-expressions.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.1.15">Example 1.1.15</a>, where <span class="process-math">\(x=2\text{,}\)</span> and the expression evaluates to <span class="process-math">\(-2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-2-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#review-linear-equations-and-inequalities-2-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="review-linear-equations-and-inequalities-2-3-1-3">
+<div class="para" id="review-linear-equations-and-inequalities-2-3-1-3-1">An equation connects two expressions with an equal sign. In <a href="section-solving-multistep-linear-equations.html#example-differentiate-solve-equations" class="xref" data-knowl="./knowl/xref/example-differentiate-solve-equations.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.1.16">Example 1.1.16</a>, <span class="process-math">\(10-3(x+2)=x-16\)</span> has one expression on either side of equal sign. You can <dfn class="terminology">solve</dfn> this equation, because it is an equation. You can also solve inequalities. You just cannot solve an expression like <span class="process-math">\(10-3(x+2)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-2-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#review-linear-equations-and-inequalities-2-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="review-linear-equations-and-inequalities-2-3-1-4">
+<div class="para" id="review-linear-equations-and-inequalities-2-3-1-4-1">When we solve the equation <span class="process-math">\(10-3(x+2)=x-16\text{,}\)</span> we are looking for a number which makes those two expressions evaluate to the same value. In <a href="section-solving-multistep-linear-equations.html#example-differentiate-solve-equations" class="xref" data-knowl="./knowl/xref/example-differentiate-solve-equations.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.1.16">Example 1.1.16</a>, we found the solution was <span class="process-math">\(5\text{.}\)</span> That number <span class="process-math">\(5\)</span> makes both <span class="process-math">\(10-3(x+2)\)</span> and <span class="process-math">\(x-16\)</span> evaluate to the same number (and that number is <span class="process-math">\(-11\)</span> if you were curious.)<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-2-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#review-linear-equations-and-inequalities-2-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Assemblage: Solving Multistep Linear Equations"><a href="#review-linear-equations-and-inequalities-2" title="Copy heading and permalink for Assemblage: Solving Multistep Linear Equations" aria-label="Copy heading and permalink for Assemblage: Solving Multistep Linear Equations">🔗</a></div></article><article class="exercise exercise-like" id="use-evaluate-simplify-solve-appropriately-for-quiz-copy"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="autopermalink" data-description="Checkpoint 1.6.1"><a href="#use-evaluate-simplify-solve-appropriately-for-quiz-copy" title="Copy heading and permalink for Checkpoint 1.6.1" aria-label="Copy heading and permalink for Checkpoint 1.6.1">🔗</a></div></article><article class="exercise exercise-like" id="two-step-integer-mxplusbequalsc-copy2"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="introduction" id="two-step-integer-mxplusbequalsc-copy2-1"><div class="para" id="two-step-integer-mxplusbequalsc-copy2-1-1">Solve the equation.<div class="autopermalink" data-description="Paragraph"><a href="#two-step-integer-mxplusbequalsc-copy2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div id="webwork-250" class="exercise-wrapper" data-domain="https://webwork.pcc.edu" data-seed="250" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Explanation" data-origin="generated" data-problemSource="Open_Resources_for_Community_College_Algebra/1_3_4_59.pg" data-documentID="palladium" data-courseID="orcca" data-userID="orcca" data-coursePassword="orcca" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-250')">Activate</button></div>
+<div class="problem-contents"><div class="para" id="extracted-webwork-250-1-1-1">
+<span class="process-math">\({\{ x \mid x &gt; 3 \}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-250-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 1.6.2"><a href="#two-step-integer-mxplusbequalsc-copy2" title="Copy heading and permalink for Checkpoint 1.6.2" aria-label="Copy heading and permalink for Checkpoint 1.6.2">🔗</a></div></article><article class="exercise exercise-like" id="tire-pressure-solve-equation-copy"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="autopermalink" data-description="Checkpoint 1.6.3"><a href="#tire-pressure-solve-equation-copy" title="Copy heading and permalink for Checkpoint 1.6.3" aria-label="Copy heading and permalink for Checkpoint 1.6.3">🔗</a></div></article><article class="assemblage assemblage-like" id="review-linear-equations-and-inequalities-6"><h3 class="heading"><span class="title">Solving Multistep Linear Inequalities.</span></h3>
+<div class="para logical" id="review-linear-equations-and-inequalities-6-2">
+<div class="para">Solving a linear inequality is much like solving a linear equation. Two noteworthy differences are that multiplication/division by a negative number requires reversing the direction of the inequality symbol, and checking a solution takes more effort.</div>
+<dl class="description-list">
+<dt id="review-linear-equations-and-inequalities-6-2-1-1">Simplify<div class="autopermalink" data-description="Item: Simplify"><a href="#review-linear-equations-and-inequalities-6-2-1-1" title="Copy heading and permalink for Item: Simplify" aria-label="Copy heading and permalink for Item: Simplify">🔗</a></div>
+</dt>
+<dd><div class="para" id="review-linear-equations-and-inequalities-6-2-1-1-2">Simplify the expressions on each side of the inequality by distributing and combining like terms.<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-6-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="review-linear-equations-and-inequalities-6-2-1-2">Separate<div class="autopermalink" data-description="Item: Separate"><a href="#review-linear-equations-and-inequalities-6-2-1-2" title="Copy heading and permalink for Item: Separate" aria-label="Copy heading and permalink for Item: Separate">🔗</a></div>
+</dt>
+<dd><div class="para" id="review-linear-equations-and-inequalities-6-2-1-2-2">Use addition or subtraction to separate the terms so that the variable terms are on one side of the inequality and the constant terms are on the other side of the inequality.<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-6-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="review-linear-equations-and-inequalities-6-2-1-3">Clear the Coefficient<div class="autopermalink" data-description="Item: Clear the Coefficient"><a href="#review-linear-equations-and-inequalities-6-2-1-3" title="Copy heading and permalink for Item: Clear the Coefficient" aria-label="Copy heading and permalink for Item: Clear the Coefficient">🔗</a></div>
+</dt>
+<dd><div class="para" id="review-linear-equations-and-inequalities-6-2-1-3-2">Use multiplication or division to eliminate the variable term’s coefficient. <em class="alert">If you multiply or divide each side by a negative number, switch the direction of the inequality symbol.</em><div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-6-2-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="review-linear-equations-and-inequalities-6-2-1-4">Check<div class="autopermalink" data-description="Item: Check"><a href="#review-linear-equations-and-inequalities-6-2-1-4" title="Copy heading and permalink for Item: Check" aria-label="Copy heading and permalink for Item: Check">🔗</a></div>
+</dt>
+<dd><div class="para" id="review-linear-equations-and-inequalities-6-2-1-4-2">A solution to a linear inequality has a “boundary number”. Using the original inequality, check (1) a number less than the boundary number, (2) the boundary number itself, and (3) a number greater than the boundary number to confirm what should and shouldn’t be solutions are all working as expected. (This can take time, so use your judgment about when you might get away with skipping this checking.)<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-6-2-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="review-linear-equations-and-inequalities-6-2-1-5">Summarize<div class="autopermalink" data-description="Item: Summarize"><a href="#review-linear-equations-and-inequalities-6-2-1-5" title="Copy heading and permalink for Item: Summarize" aria-label="Copy heading and permalink for Item: Summarize">🔗</a></div>
+</dt>
+<dd><div class="para" id="review-linear-equations-and-inequalities-6-2-1-5-2">State the solution set. Or in the case of an application problem, summarize the result in a complete sentence using appropriate units.<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-6-2-1-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Assemblage: Solving Multistep Linear Inequalities"><a href="#review-linear-equations-and-inequalities-6" title="Copy heading and permalink for Assemblage: Solving Multistep Linear Inequalities" aria-label="Copy heading and permalink for Assemblage: Solving Multistep Linear Inequalities">🔗</a></div></article><article class="exercise exercise-like" id="integer-mxplusbineqc-copy2"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="introduction" id="integer-mxplusbineqc-copy2-1"><div class="para" id="integer-mxplusbineqc-copy2-1-1">Solve the inequality. Graph the solution set, and write the solution set using both interval notation and set-builder notation.<div class="autopermalink" data-description="Paragraph"><a href="#integer-mxplusbineqc-copy2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div id="webwork-252" class="exercise-wrapper" data-domain="https://webwork.pcc.edu" data-seed="252" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Explanation" data-origin="generated" data-problemSource="Open_Resources_for_Community_College_Algebra/1_3_4_61.pg" data-documentID="palladium" data-courseID="orcca" data-userID="orcca" data-coursePassword="orcca" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-252')">Activate</button></div>
+<div class="problem-contents"><div class="para" id="extracted-webwork-252-1-1-1">
+<span class="process-math">\({\left[6,\infty \right)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-252-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 1.6.4"><a href="#integer-mxplusbineqc-copy2" title="Copy heading and permalink for Checkpoint 1.6.4" aria-label="Copy heading and permalink for Checkpoint 1.6.4">🔗</a></div></article><article class="exercise exercise-like" id="integer-bplusnegmxineqc-copy2"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="introduction" id="integer-bplusnegmxineqc-copy2-1"><div class="para" id="integer-bplusnegmxineqc-copy2-1-1">Solve the inequality. Graph the solution set, and write the solution set using both interval notation and set-builder notation.<div class="autopermalink" data-description="Paragraph"><a href="#integer-bplusnegmxineqc-copy2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="autopermalink" data-description="Checkpoint 1.6.5"><a href="#integer-bplusnegmxineqc-copy2" title="Copy heading and permalink for Checkpoint 1.6.5" aria-label="Copy heading and permalink for Checkpoint 1.6.5">🔗</a></div></article><article class="exercise exercise-like" id="out-of-gas-inequality-copy"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div id="webwork-254" class="exercise-wrapper" data-domain="https://webwork.pcc.edu" data-seed="254" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Explanation" data-origin="generated" data-problemSource="Open_Resources_for_Community_College_Algebra/1_3_4_63.pg" data-documentID="palladium" data-courseID="orcca" data-userID="orcca" data-coursePassword="orcca" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-254')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-254-1-1-1">
+<span class="process-math">\({\left(-6,\infty \right)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-254-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="extracted-webwork-254-1-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Explanation</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="extracted-webwork-254-1-4-1">The interval notation tells us to graph all numbers between <span class="process-math">\(-6\)</span> and <span class="process-math">\(\infty\text{.}\)</span> So the shading can start at <span class="process-math">\(-6\)</span> and go all the way to the right “to <span class="process-math">\(\infty\)</span>”. There should be a parenthesis at <span class="process-math">\(-6\)</span> to indicate that <span class="process-math">\(-6\)</span> itself is not included.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-254-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/webwork/images/webwork-254-image-1.svg" role="img" class="contained"></div>
+<div class="para" id="extracted-webwork-254-1-4-3">We have shaded all numbers greater than <span class="process-math">\(-6\text{.}\)</span> So in set-builder notation, the interval is <span class="process-math">\({\{ x \mid x &gt; -6 \}}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-254-1-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Explanation 1.6.6.1"><a href="#extracted-webwork-254-1-4" title="Copy heading and permalink for Explanation 1.6.6.1" aria-label="Copy heading and permalink for Explanation 1.6.6.1">🔗</a></div>
+</div></details></div>
+</div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 1.6.6"><a href="#out-of-gas-inequality-copy" title="Copy heading and permalink for Checkpoint 1.6.6" aria-label="Copy heading and permalink for Checkpoint 1.6.6">🔗</a></div></article><article class="assemblage assemblage-like" id="review-linear-equations-and-inequalities-10"><h3 class="heading"><span class="title">Linear Equations and Inequalities with Fractions.</span></h3>
+<div class="para" id="review-linear-equations-and-inequalities-10-2">For both equations and inequalities, it is often helpful to “clear denominators” if there are any fractions present. This is done by identifying the “least common denominator” for the fractions that are present, and multiplying on each side by that number. This lets you avoid some fraction arithmetic that could lead to human error.<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-10-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="review-linear-equations-and-inequalities-10-3">A <dfn class="terminology">proportional equation</dfn> uses two ratios that should be equal to each other, for situations where two quantities change together. One example might use a ratio of how much of a substance is dissolved in how much of a certain liquid. Typically one ratio has two known numbers, and the other ratio has one known number and one unknown variable.<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-10-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Assemblage: Linear Equations and Inequalities with Fractions"><a href="#review-linear-equations-and-inequalities-10" title="Copy heading and permalink for Assemblage: Linear Equations and Inequalities with Fractions" aria-label="Copy heading and permalink for Assemblage: Linear Equations and Inequalities with Fractions">🔗</a></div></article><article class="exercise exercise-like" id="linear-equation-fractions-two-rel-prime-copy2"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="introduction" id="linear-equation-fractions-two-rel-prime-copy2-1"><div class="para" id="linear-equation-fractions-two-rel-prime-copy2-1-1">Solve the given equation. Practice clearing the denominator(s) as a first step.<div class="autopermalink" data-description="Paragraph"><a href="#linear-equation-fractions-two-rel-prime-copy2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="autopermalink" data-description="Checkpoint 1.6.7"><a href="#linear-equation-fractions-two-rel-prime-copy2" title="Copy heading and permalink for Checkpoint 1.6.7" aria-label="Copy heading and permalink for Checkpoint 1.6.7">🔗</a></div></article><article class="exercise exercise-like" id="linear-inequality-fractions-pqr-denom-copy"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="introduction" id="linear-inequality-fractions-pqr-denom-copy-1"><div class="para" id="linear-inequality-fractions-pqr-denom-copy-1-1">Solve the given inequality. Practice clearing the denominator(s) as a first step.<div class="autopermalink" data-description="Paragraph"><a href="#linear-inequality-fractions-pqr-denom-copy-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div id="webwork-256" class="exercise-wrapper" data-domain="https://webwork.pcc.edu" data-seed="256" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Explanation" data-origin="generated" data-problemSource="Open_Resources_for_Community_College_Algebra/1_3_4_65.pg" data-documentID="palladium" data-courseID="orcca" data-userID="orcca" data-coursePassword="orcca" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-256')">Activate</button></div>
+<div class="problem-contents"><div class="para" id="extracted-webwork-256-1-1-1">
+<span class="process-math">\({\left(-\infty ,-2\right)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-256-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 1.6.8"><a href="#linear-inequality-fractions-pqr-denom-copy" title="Copy heading and permalink for Checkpoint 1.6.8" aria-label="Copy heading and permalink for Checkpoint 1.6.8">🔗</a></div></article><article class="exercise exercise-like" id="soup-recipe-copy"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="autopermalink" data-description="Checkpoint 1.6.9"><a href="#soup-recipe-copy" title="Copy heading and permalink for Checkpoint 1.6.9" aria-label="Copy heading and permalink for Checkpoint 1.6.9">🔗</a></div></article><article class="assemblage assemblage-like" id="review-linear-equations-and-inequalities-14"><h3 class="heading"><span class="title">Special Solution Sets.</span></h3>
+<div class="para" id="review-linear-equations-and-inequalities-14-2">An equation or inequality might reduce to an unambiguously true statement like <span class="process-math">\(2=2\)</span> or <span class="process-math">\(4\lt9\text{.}\)</span> If it does, then the solution set is all real numbers. This can be written as <span class="process-math">\((\infty,\infty)\)</span> or <span class="process-math">\(\mathbb{R}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-14-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="review-linear-equations-and-inequalities-14-3">Another special thing that can happen is that an equation or inequality can reduce to an unambiguously false statement like <span class="process-math">\(2=5\)</span> or <span class="process-math">\(4\geq9\text{.}\)</span> When this happens, then there is no solution at all. We can say that the solution set is “empty”. The solution set can be written as <span class="process-math">\(\{\}\)</span> or <span class="process-math">\(\emptyset\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-14-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Assemblage: Special Solution Sets"><a href="#review-linear-equations-and-inequalities-14" title="Copy heading and permalink for Assemblage: Special Solution Sets" aria-label="Copy heading and permalink for Assemblage: Special Solution Sets">🔗</a></div></article><article class="exercise exercise-like" id="solve-special-with-like-terms-copy2"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="introduction" id="solve-special-with-like-terms-copy2-1"><div class="para" id="solve-special-with-like-terms-copy2-1-1">Solve the equation for its variable.<div class="autopermalink" data-description="Paragraph"><a href="#solve-special-with-like-terms-copy2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div id="webwork-258" class="exercise-wrapper" data-domain="https://webwork.pcc.edu" data-seed="258" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Explanation" data-origin="generated" data-problemSource="Open_Resources_for_Community_College_Algebra/1_3_4_67.pg" data-documentID="palladium" data-courseID="orcca" data-userID="orcca" data-coursePassword="orcca" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-258')">Activate</button></div>
+<div class="problem-contents"><div class="para" id="extracted-webwork-258-1-1-1">
+<span class="process-math">\({\left(-\infty ,1\right]}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-258-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 1.6.10"><a href="#solve-special-with-like-terms-copy2" title="Copy heading and permalink for Checkpoint 1.6.10" aria-label="Copy heading and permalink for Checkpoint 1.6.10">🔗</a></div></article><article class="exercise exercise-like" id="solve-mxequalsmxplusb-fraction-copy2"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="introduction" id="solve-mxequalsmxplusb-fraction-copy2-1"><div class="para" id="solve-mxequalsmxplusb-fraction-copy2-1-1">Solve the equation for its variable.<div class="autopermalink" data-description="Paragraph"><a href="#solve-mxequalsmxplusb-fraction-copy2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="autopermalink" data-description="Checkpoint 1.6.11"><a href="#solve-mxequalsmxplusb-fraction-copy2" title="Copy heading and permalink for Checkpoint 1.6.11" aria-label="Copy heading and permalink for Checkpoint 1.6.11">🔗</a></div></article><article class="exercise exercise-like" id="solve-special-with-simplification2-inequality-copy2"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="introduction" id="solve-special-with-simplification2-inequality-copy2-1"><div class="para" id="solve-special-with-simplification2-inequality-copy2-1-1">Solve the inequality for its variable.<div class="autopermalink" data-description="Paragraph"><a href="#solve-special-with-simplification2-inequality-copy2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="autopermalink" data-description="Checkpoint 1.6.12"><a href="#solve-special-with-simplification2-inequality-copy2" title="Copy heading and permalink for Checkpoint 1.6.12" aria-label="Copy heading and permalink for Checkpoint 1.6.12">🔗</a></div></article><article class="assemblage assemblage-like" id="review-linear-equations-and-inequalities-18"><h3 class="heading"><span class="title">Isolating a Linear Variable.</span></h3>
+<div class="para" id="review-linear-equations-and-inequalities-18-2">Equations might relate two or more variables to each other. When you have an equation like that (for example <span class="process-math">\(2x+3y=4z\)</span>) you can solve for any one of the variables, isolating it on one side of an equal sign. The example could be solved for <span class="process-math">\(y\text{,}\)</span> which gives <span class="process-math">\(y=\frac{4z-2x}{3}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-18-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="review-linear-equations-and-inequalities-18-3">The process for doing this is not different than solving a one-variable equation. You should just keep clear which variable you are solving for.<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-18-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Assemblage: Isolating a Linear Variable"><a href="#review-linear-equations-and-inequalities-18" title="Copy heading and permalink for Assemblage: Isolating a Linear Variable" aria-label="Copy heading and permalink for Assemblage: Isolating a Linear Variable">🔗</a></div></article><article class="exercise exercise-like" id="isolate-axplusbequalsc-copy2"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="introduction" id="isolate-axplusbequalsc-copy2-1"><div class="para" id="isolate-axplusbequalsc-copy2-1-1">Isolate the indicated variable.<div class="autopermalink" data-description="Paragraph"><a href="#isolate-axplusbequalsc-copy2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="autopermalink" data-description="Checkpoint 1.6.13"><a href="#isolate-axplusbequalsc-copy2" title="Copy heading and permalink for Checkpoint 1.6.13" aria-label="Copy heading and permalink for Checkpoint 1.6.13">🔗</a></div></article><article class="exercise exercise-like" id="isolate-triangleareaforbase-copy"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="autopermalink" data-description="Checkpoint 1.6.14"><a href="#isolate-triangleareaforbase-copy" title="Copy heading and permalink for Checkpoint 1.6.14" aria-label="Copy heading and permalink for Checkpoint 1.6.14">🔗</a></div></article><article class="exercise exercise-like" id="solve-standard-linear-equation-for-y-3-copy2"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="introduction" id="solve-standard-linear-equation-for-y-3-copy2-1"><div class="para" id="solve-standard-linear-equation-for-y-3-copy2-1-1">Isolate <span class="process-math">\(y\)</span> in the standard form linear equation (a topic covered later in this book).<div class="autopermalink" data-description="Paragraph"><a href="#solve-standard-linear-equation-for-y-3-copy2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="autopermalink" data-description="Checkpoint 1.6.15"><a href="#solve-standard-linear-equation-for-y-3-copy2" title="Copy heading and permalink for Checkpoint 1.6.15" aria-label="Copy heading and permalink for Checkpoint 1.6.15">🔗</a></div></article><section class="exercises" id="review-linear-equations-and-inequalities-22"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Review Exercises for Chapter 1</span>
+</h3>
+<article class="subexercises" id="review-linear-equations-and-inequalities-22-2"><h4 class="heading"><span class="title">Section 1: Solving Multistep Linear Equations</span></h4>
+<article class="exercise exercise-like" id="use-evaluate-simplify-solve-appropriately-economics-copy"><h5 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 1.6.1"><a href="#use-evaluate-simplify-solve-appropriately-economics-copy" title="Copy heading and permalink for Exercise 1.6.1" aria-label="Copy heading and permalink for Exercise 1.6.1">🔗</a></div></article><div class="exercisegroup" id="review-linear-equations-and-inequalities-22-2-3">
+<h5 class="heading"><span class="title">Exercise Group.</span></h5>
+<div class="introduction" id="review-linear-equations-and-inequalities-22-2-3-1"><div class="para" id="review-linear-equations-and-inequalities-22-2-3-1-1">Solve the equation.<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-22-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="exercisegroup-exercises cols2 multicolumn">
+<article class="exercise exercise-like" id="two-step-integer-coefficients-fraction-solution-mxplusbequalsc-copy2"><h6 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="introduction" id="extracted-webwork-265-1-1"><div class="para" id="extracted-webwork-265-1-1-1">Choose the correct inequality or equal sign to make the relation true.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-265-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="extracted-webwork-265-1-2"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<div class="para" id="extracted-webwork-265-1-2-1-1">Let <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> be integers such that <span class="process-math">\(x \lt y\text{.}\)</span> Then <span class="process-math">\(x - y\)</span> <span class="fillin shade" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> <span class="process-math">\(y - x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-265-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.6.2.a"><a href="#extracted-webwork-265-1-2" title="Copy heading and permalink for Task 1.6.2.a" aria-label="Copy heading and permalink for Task 1.6.2.a">🔗</a></div></article><article class="task exercise-like" id="extracted-webwork-265-1-3"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<div class="para" id="extracted-webwork-265-1-3-1-1">Let <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> be integers, such that <span class="process-math">\(1 \lt x \lt y\text{.}\)</span> Then <span class="process-math">\(xy\)</span> <span class="fillin shade" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> <span class="process-math">\(x + y\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-265-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.6.2.b"><a href="#extracted-webwork-265-1-3" title="Copy heading and permalink for Task 1.6.2.b" aria-label="Copy heading and permalink for Task 1.6.2.b">🔗</a></div></article><article class="task exercise-like" id="extracted-webwork-265-1-4"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<div class="para" id="extracted-webwork-265-1-4-1-1">Let <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> be fractions such that <span class="process-math">\(0 \lt x \lt y \lt 1\text{.}\)</span> Then <span class="process-math">\(xy\)</span> <span class="fillin shade" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> <span class="process-math">\(x + y\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-265-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.6.2.c"><a href="#extracted-webwork-265-1-4" title="Copy heading and permalink for Task 1.6.2.c" aria-label="Copy heading and permalink for Task 1.6.2.c">🔗</a></div></article><article class="task exercise-like" id="extracted-webwork-265-1-5"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<div class="para" id="extracted-webwork-265-1-5-1-1">Let <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> be integers, such that <span class="process-math">\(x \lt y\text{.}\)</span> Then <span class="process-math">\(x + 2y\)</span> <span class="fillin shade" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> <span class="process-math">\(2x + y\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-265-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 1.6.2.d"><a href="#extracted-webwork-265-1-5" title="Copy heading and permalink for Task 1.6.2.d" aria-label="Copy heading and permalink for Task 1.6.2.d">🔗</a></div></article><div class="autopermalink" data-description="Exercise 1.6.2"><a href="#two-step-integer-coefficients-fraction-solution-mxplusbequalsc-copy2" title="Copy heading and permalink for Exercise 1.6.2" aria-label="Copy heading and permalink for Exercise 1.6.2">🔗</a></div></article><article class="exercise exercise-like" id="two-step-decimal-mxplusbequalsc-copy2"><h6 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="extracted-webwork-266-1-1-1">Is <span class="process-math">\(-3\)</span> a solution to the equation <span class="process-math">\(2x-3=5-(4+x)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-266-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(2x-3\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\({}={}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(5-(4+x)\)</span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\({}\wonder{=}{}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Exercise 1.6.3"><a href="#two-step-decimal-mxplusbequalsc-copy2" title="Copy heading and permalink for Exercise 1.6.3" aria-label="Copy heading and permalink for Exercise 1.6.3">🔗</a></div></article>
+</div>
+<div class="autopermalink" data-description="Exercise Group 2–3"><a href="#review-linear-equations-and-inequalities-22-2-3" title="Copy heading and permalink for Exercise Group 2–3" aria-label="Copy heading and permalink for Exercise Group 2–3">🔗</a></div>
+</div>
+<div class="exercisegroup" id="review-linear-equations-and-inequalities-22-2-4">
+<h5 class="heading"><span class="title">Exercise Group.</span></h5>
+<div class="introduction" id="review-linear-equations-and-inequalities-22-2-4-1"><div class="para" id="review-linear-equations-and-inequalities-22-2-4-1-1">Solve the equation.<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-22-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="exercisegroup-exercises cols2 multicolumn">
+<article class="exercise exercise-like" id="more-step-integer-mxplusbequalsnxplusc-copy2"><h6 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="extracted-webwork-267-1-1-1">Is <span class="process-math">\(2\)</span> a solution to the inequality <span class="process-math">\(\frac{z+3}{z-1}\lt\sqrt{18z}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-267-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(\dfrac{z+3}{z-1}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\({}\lt{}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\sqrt{18z}\)</span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\({}\wonder{\lt}{}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Exercise 1.6.4"><a href="#more-step-integer-mxplusbequalsnxplusc-copy2" title="Copy heading and permalink for Exercise 1.6.4" aria-label="Copy heading and permalink for Exercise 1.6.4">🔗</a></div></article><article class="exercise exercise-like" id="more-step-integer-mgroupxplusbequalsnxplusc-copy2"><h6 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="extracted-webwork-268-1-1-1">Is <span class="process-math">\(-3\)</span> a solution to the equation <span class="process-math">\(x^2+x+1=\frac{3x+2}{x+2}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-268-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(x^2+x+1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\({}={}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\dfrac{3x+2}{x+2}\)</span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\({}\wonder{=}{}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Exercise 1.6.5"><a href="#more-step-integer-mgroupxplusbequalsnxplusc-copy2" title="Copy heading and permalink for Exercise 1.6.5" aria-label="Copy heading and permalink for Exercise 1.6.5">🔗</a></div></article><article class="exercise exercise-like" id="more-step-fraction-mxplusbequalsnxplusc-copy2"><h6 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="autopermalink" data-description="Exercise 1.6.6"><a href="#more-step-fraction-mxplusbequalsnxplusc-copy2" title="Copy heading and permalink for Exercise 1.6.6" aria-label="Copy heading and permalink for Exercise 1.6.6">🔗</a></div></article><article class="exercise exercise-like" id="more-step-fraction-mgroupxplusbplusnxequalspgroupxplusdpluse-copy2"><h6 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="extracted-webwork-270-1-1-1">
+<span class="process-math">\(\sqrt{{81}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-270-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.7"><a href="#more-step-fraction-mgroupxplusbplusnxequalspgroupxplusdpluse-copy2" title="Copy heading and permalink for Exercise 1.6.7" aria-label="Copy heading and permalink for Exercise 1.6.7">🔗</a></div></article><article class="exercise exercise-like" id="more-step-fraction-mgroupxplusbminusgroupnxpluscequalsd-copy2"><h6 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="autopermalink" data-description="Exercise 1.6.8"><a href="#more-step-fraction-mgroupxplusbminusgroupnxpluscequalsd-copy2" title="Copy heading and permalink for Exercise 1.6.8" aria-label="Copy heading and permalink for Exercise 1.6.8">🔗</a></div></article>
+</div>
+<div class="autopermalink" data-description="Exercise Group 4–8"><a href="#review-linear-equations-and-inequalities-22-2-4" title="Copy heading and permalink for Exercise Group 4–8" aria-label="Copy heading and permalink for Exercise Group 4–8">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="tree-height-solve-equation-copy"><h5 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-272-1-1-1">
+<span class="process-math">\(\sqrt{{{\frac{1}{64}}}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-272-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.9"><a href="#tree-height-solve-equation-copy" title="Copy heading and permalink for Exercise 1.6.9" aria-label="Copy heading and permalink for Exercise 1.6.9">🔗</a></div></article><article class="exercise exercise-like" id="boil-water-fahrenheit-solve-equation-copy"><h5 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 1.6.10"><a href="#boil-water-fahrenheit-solve-equation-copy" title="Copy heading and permalink for Exercise 1.6.10" aria-label="Copy heading and permalink for Exercise 1.6.10">🔗</a></div></article><article class="exercise exercise-like" id="heat-goes-out-solve-equation-copy"><h5 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-274-1-1-1">
+<span class="process-math">\(\left\lvert{34}\right\rvert\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-274-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.11"><a href="#heat-goes-out-solve-equation-copy" title="Copy heading and permalink for Exercise 1.6.11" aria-label="Copy heading and permalink for Exercise 1.6.11">🔗</a></div></article><article class="exercise exercise-like" id="kids-birthday-venue-solve-equation-copy"><h5 class="heading"><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 1.6.12"><a href="#kids-birthday-venue-solve-equation-copy" title="Copy heading and permalink for Exercise 1.6.12" aria-label="Copy heading and permalink for Exercise 1.6.12">🔗</a></div></article><article class="exercise exercise-like" id="sales-tax-solve-equation-copy"><h5 class="heading"><span class="codenumber">13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-276-1-1-1">
+<span class="process-math">\(\left\lvert{-{56}}\right\rvert\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-276-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 1.6.13"><a href="#sales-tax-solve-equation-copy" title="Copy heading and permalink for Exercise 1.6.13" aria-label="Copy heading and permalink for Exercise 1.6.13">🔗</a></div></article><article class="exercise exercise-like" id="median-rent-solve-equation-copy"><h5 class="heading"><span class="codenumber">14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 1.6.14"><a href="#median-rent-solve-equation-copy" title="Copy heading and permalink for Exercise 1.6.14" aria-label="Copy heading and permalink for Exercise 1.6.14">🔗</a></div></article><div class="autopermalink" data-description="Subexercises: Section 1: Solving Multistep Linear Equations"><a href="#review-linear-equations-and-inequalities-22-2" title="Copy heading and permalink for Subexercises: Section 1: Solving Multistep Linear Equations" aria-label="Copy heading and permalink for Subexercises: Section 1: Solving Multistep Linear Equations">🔗</a></div></article><article class="subexercises" id="review-linear-equations-and-inequalities-22-3"><h4 class="heading"><span class="title">Section 2: Solving Multistep Linear Inequalities</span></h4>
+<div class="exercisegroup" id="review-linear-equations-and-inequalities-22-3-2">
+<h5 class="heading"><span class="title">Exercise Group.</span></h5>
+<div class="introduction" id="review-linear-equations-and-inequalities-22-3-2-1"><div class="para" id="review-linear-equations-and-inequalities-22-3-2-1-1">Solve the inequality. Graph the solution set, and write the solution set using both interval notation and set-builder notation.<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-22-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="exercisegroup-exercises cols2 multicolumn">
+<article class="exercise exercise-like" id="integer-bplusmxineqc-copy2"><h6 class="heading"><span class="codenumber">15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="extracted-webwork-278-1-1-1">Is <span class="process-math">\({3}\)</span> a solution to <span class="process-math">\({5x+3}={28}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-278-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(5x+3\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(=\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(28\)</span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\wonder{=}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(28\)</span></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Exercise 1.6.15"><a href="#integer-bplusmxineqc-copy2" title="Copy heading and permalink for Exercise 1.6.15" aria-label="Copy heading and permalink for Exercise 1.6.15">🔗</a></div></article><article class="exercise exercise-like" id="integer-bplusnegmxineqc-copy3"><h6 class="heading"><span class="codenumber">16<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="autopermalink" data-description="Exercise 1.6.16"><a href="#integer-bplusnegmxineqc-copy3" title="Copy heading and permalink for Exercise 1.6.16" aria-label="Copy heading and permalink for Exercise 1.6.16">🔗</a></div></article><article class="exercise exercise-like" id="integer-aplusmxplusbineqc-copy2"><h6 class="heading"><span class="codenumber">17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="extracted-webwork-280-1-1-1">Is <span class="process-math">\({-10.8}\)</span> a solution to <span class="process-math">\({5x+1.7}={-39.8}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-280-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(5x+1.7\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(=\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(-39.8\)</span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\wonder{=}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(-39.8\)</span></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Exercise 1.6.17"><a href="#integer-aplusmxplusbineqc-copy2" title="Copy heading and permalink for Exercise 1.6.17" aria-label="Copy heading and permalink for Exercise 1.6.17">🔗</a></div></article><article class="exercise exercise-like" id="integer-nxplusaplusmxplusbineqc2-copy2"><h6 class="heading"><span class="codenumber">18<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="autopermalink" data-description="Exercise 1.6.18"><a href="#integer-nxplusaplusmxplusbineqc2-copy2" title="Copy heading and permalink for Exercise 1.6.18" aria-label="Copy heading and permalink for Exercise 1.6.18">🔗</a></div></article><article class="exercise exercise-like" id="integer-mxplusbineqnxplusc-negative-copy2"><h6 class="heading"><span class="codenumber">19<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="extracted-webwork-282-1-1-1">Is <span class="process-math">\({0}\)</span> a solution to <span class="process-math">\({2x-{\frac{7}{8}}}={-{\frac{17}{56}}}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-282-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(2x-{\frac{7}{8}}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(=\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(-{\frac{17}{56}}\)</span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\wonder{=}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(-{\frac{17}{56}}\)</span></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Exercise 1.6.19"><a href="#integer-mxplusbineqnxplusc-negative-copy2" title="Copy heading and permalink for Exercise 1.6.19" aria-label="Copy heading and permalink for Exercise 1.6.19">🔗</a></div></article><article class="exercise exercise-like" id="integer-simplifyfirst2-copy2"><h6 class="heading"><span class="codenumber">20<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="autopermalink" data-description="Exercise 1.6.20"><a href="#integer-simplifyfirst2-copy2" title="Copy heading and permalink for Exercise 1.6.20" aria-label="Copy heading and permalink for Exercise 1.6.20">🔗</a></div></article>
+</div>
+<div class="autopermalink" data-description="Exercise Group 15–20"><a href="#review-linear-equations-and-inequalities-22-3-2" title="Copy heading and permalink for Exercise Group 15–20" aria-label="Copy heading and permalink for Exercise Group 15–20">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="taxi-inequality-copy"><h5 class="heading"><span class="codenumber">21<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-284-1-1-1">Is <span class="process-math">\({0}\)</span> a solution to <span class="process-math">\({5x-6}={3x-8}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-284-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(5x-6\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(=\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(3x-8\)</span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\wonder{=}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Exercise 1.6.21"><a href="#taxi-inequality-copy" title="Copy heading and permalink for Exercise 1.6.21" aria-label="Copy heading and permalink for Exercise 1.6.21">🔗</a></div></article><article class="exercise exercise-like" id="population-inequality-copy"><h5 class="heading"><span class="codenumber">22<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 1.6.22"><a href="#population-inequality-copy" title="Copy heading and permalink for Exercise 1.6.22" aria-label="Copy heading and permalink for Exercise 1.6.22">🔗</a></div></article><div class="autopermalink" data-description="Subexercises: Section 2: Solving Multistep Linear Inequalities"><a href="#review-linear-equations-and-inequalities-22-3" title="Copy heading and permalink for Subexercises: Section 2: Solving Multistep Linear Inequalities" aria-label="Copy heading and permalink for Subexercises: Section 2: Solving Multistep Linear Inequalities">🔗</a></div></article><article class="subexercises" id="review-linear-equations-and-inequalities-22-4"><h4 class="heading"><span class="title">Section 3: Equations and Inequalities with Fractions</span></h4>
+<div class="exercisegroup" id="review-linear-equations-and-inequalities-22-4-2">
+<h5 class="heading"><span class="title">Exercise Group.</span></h5>
+<div class="introduction" id="review-linear-equations-and-inequalities-22-4-2-1"><div class="para" id="review-linear-equations-and-inequalities-22-4-2-1-1">Solve the given equation. Practice clearing the denominator(s) as a first step.<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-22-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="exercisegroup-exercises cols2 multicolumn">
+<article class="exercise exercise-like" id="linear-equation-fractions-c-copy2"><h6 class="heading"><span class="codenumber">23<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="extracted-webwork-286-1-1-1">Is <span class="process-math">\({2}\)</span> a solution to <span class="process-math">\({7x+{\frac{8}{7}}}={9x-{\frac{41}{7}}}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-286-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(7x+{\frac{8}{7}}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(=\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(9x-{\frac{41}{7}}\)</span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\wonder{=}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Exercise 1.6.23"><a href="#linear-equation-fractions-c-copy2" title="Copy heading and permalink for Exercise 1.6.23" aria-label="Copy heading and permalink for Exercise 1.6.23">🔗</a></div></article><article class="exercise exercise-like" id="linear-equation-fractions-gcf-denom-copy2"><h6 class="heading"><span class="codenumber">24<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="autopermalink" data-description="Exercise 1.6.24"><a href="#linear-equation-fractions-gcf-denom-copy2" title="Copy heading and permalink for Exercise 1.6.24" aria-label="Copy heading and permalink for Exercise 1.6.24">🔗</a></div></article><article class="exercise exercise-like" id="linear-equation-fractions-pqr-denom-copy2"><h6 class="heading"><span class="codenumber">25<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="extracted-webwork-288-1-1-1">Is <span class="process-math">\({-4}\)</span> a solution to <span class="process-math">\({9x^{2}+7x}={2}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-288-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(9x^{2}+7x\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(=\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\wonder{=}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Exercise 1.6.25"><a href="#linear-equation-fractions-pqr-denom-copy2" title="Copy heading and permalink for Exercise 1.6.25" aria-label="Copy heading and permalink for Exercise 1.6.25">🔗</a></div></article><article class="exercise exercise-like" id="linear-equation-fractions-three-pqr-copy2"><h6 class="heading"><span class="codenumber">26<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="autopermalink" data-description="Exercise 1.6.26"><a href="#linear-equation-fractions-three-pqr-copy2" title="Copy heading and permalink for Exercise 1.6.26" aria-label="Copy heading and permalink for Exercise 1.6.26">🔗</a></div></article>
+</div>
+<div class="autopermalink" data-description="Exercise Group 23–26"><a href="#review-linear-equations-and-inequalities-22-4-2" title="Copy heading and permalink for Exercise Group 23–26" aria-label="Copy heading and permalink for Exercise Group 23–26">🔗</a></div>
+</div>
+<div class="exercisegroup" id="review-linear-equations-and-inequalities-22-4-3">
+<h5 class="heading"><span class="title">Exercise Group.</span></h5>
+<div class="introduction" id="review-linear-equations-and-inequalities-22-4-3-1"><div class="para" id="review-linear-equations-and-inequalities-22-4-3-1-1">Solve the given inequality. Practice clearing the denominator(s) as a first step.<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-22-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="exercisegroup-exercises cols2 multicolumn">
+<article class="exercise exercise-like" id="linear-inequality-fractions-c-copy"><h6 class="heading"><span class="codenumber">27<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="extracted-webwork-290-1-1-1">Is <span class="process-math">\({-1}\)</span> a solution to <span class="process-math">\({4x^{2}+8}={7x+5}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-290-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(4x^{2}+8\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(=\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(7x+5\)</span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\wonder{=}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Exercise 1.6.27"><a href="#linear-inequality-fractions-c-copy" title="Copy heading and permalink for Exercise 1.6.27" aria-label="Copy heading and permalink for Exercise 1.6.27">🔗</a></div></article><article class="exercise exercise-like" id="linear-inequality-fractions-same-denom-copy"><h6 class="heading"><span class="codenumber">28<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="autopermalink" data-description="Exercise 1.6.28"><a href="#linear-inequality-fractions-same-denom-copy" title="Copy heading and permalink for Exercise 1.6.28" aria-label="Copy heading and permalink for Exercise 1.6.28">🔗</a></div></article><article class="exercise exercise-like" id="linear-inequality-fractions-two-same-copy"><h6 class="heading"><span class="codenumber">29<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="extracted-webwork-292-1-1-1">Is <span class="process-math">\({{\frac{1}{7}}}\)</span> a solution to <span class="process-math">\({7x^{2}+2x-{\frac{15}{7}}}={0}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-292-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(7x^{2}+2x-{\frac{15}{7}}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(=\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\wonder{=}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Exercise 1.6.29"><a href="#linear-inequality-fractions-two-same-copy" title="Copy heading and permalink for Exercise 1.6.29" aria-label="Copy heading and permalink for Exercise 1.6.29">🔗</a></div></article><article class="exercise exercise-like" id="linear-inequality-fractions-three-pqr-copy"><h6 class="heading"><span class="codenumber">30<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="autopermalink" data-description="Exercise 1.6.30"><a href="#linear-inequality-fractions-three-pqr-copy" title="Copy heading and permalink for Exercise 1.6.30" aria-label="Copy heading and permalink for Exercise 1.6.30">🔗</a></div></article>
+</div>
+<div class="autopermalink" data-description="Exercise Group 27–30"><a href="#review-linear-equations-and-inequalities-22-4-3" title="Copy heading and permalink for Exercise Group 27–30" aria-label="Copy heading and permalink for Exercise Group 27–30">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="tree-height-solve-equation-copy2"><h5 class="heading"><span class="codenumber">31<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-294-1-1-1">Is <span class="process-math">\(5\)</span> a solution to <span class="process-math">\({\sqrt{16x+1}}={14-x}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-294-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(\sqrt{16x+1}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(=\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(14-x\)</span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\wonder{=}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Exercise 1.6.31"><a href="#tree-height-solve-equation-copy2" title="Copy heading and permalink for Exercise 1.6.31" aria-label="Copy heading and permalink for Exercise 1.6.31">🔗</a></div></article><article class="exercise exercise-like" id="grade-average2-copy2"><h5 class="heading"><span class="codenumber">32<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 1.6.32"><a href="#grade-average2-copy2" title="Copy heading and permalink for Exercise 1.6.32" aria-label="Copy heading and permalink for Exercise 1.6.32">🔗</a></div></article><article class="exercise exercise-like" id="apples-cost-copy"><h5 class="heading"><span class="codenumber">33<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-296-1-1-1">Is <span class="process-math">\(7\)</span> a solution to <span class="process-math">\({\sqrt{x-3}}={\sqrt{2x-5}-4}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-296-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(\sqrt{x-3}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(=\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\sqrt{2x-5}-4\)</span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\wonder{=}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Exercise 1.6.33"><a href="#apples-cost-copy" title="Copy heading and permalink for Exercise 1.6.33" aria-label="Copy heading and permalink for Exercise 1.6.33">🔗</a></div></article><article class="exercise exercise-like" id="black-tailed-deer-copy"><h5 class="heading"><span class="codenumber">34<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 1.6.34"><a href="#black-tailed-deer-copy" title="Copy heading and permalink for Exercise 1.6.34" aria-label="Copy heading and permalink for Exercise 1.6.34">🔗</a></div></article><div class="autopermalink" data-description="Subexercises: Section 3: Equations and Inequalities with Fractions"><a href="#review-linear-equations-and-inequalities-22-4" title="Copy heading and permalink for Subexercises: Section 3: Equations and Inequalities with Fractions" aria-label="Copy heading and permalink for Subexercises: Section 3: Equations and Inequalities with Fractions">🔗</a></div></article><article class="subexercises" id="review-linear-equations-and-inequalities-22-5"><h4 class="heading"><span class="title">Section 4: Special Solution Sets</span></h4>
+<div class="exercisegroup" id="review-linear-equations-and-inequalities-22-5-2">
+<h5 class="heading"><span class="title">Exercise Group.</span></h5>
+<div class="introduction" id="review-linear-equations-and-inequalities-22-5-2-1"><div class="para" id="review-linear-equations-and-inequalities-22-5-2-1-1">Solve the equation for its variable.<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-22-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="exercisegroup-exercises cols2 multicolumn">
+<article class="exercise exercise-like" id="solve-mxequalsmxplusb-copy2"><h6 class="heading"><span class="codenumber">35<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="extracted-webwork-298-1-1-1">Is <span class="process-math">\({9}\)</span> a solution to <span class="process-math">\({\left|6x+9\right|}={63}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-298-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(\left|6x+9\right|\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(=\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(63\)</span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\wonder{=}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(63\)</span></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Exercise 1.6.35"><a href="#solve-mxequalsmxplusb-copy2" title="Copy heading and permalink for Exercise 1.6.35" aria-label="Copy heading and permalink for Exercise 1.6.35">🔗</a></div></article><article class="exercise exercise-like" id="solve-special-with-like-terms2-copy2"><h6 class="heading"><span class="codenumber">36<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="autopermalink" data-description="Exercise 1.6.36"><a href="#solve-special-with-like-terms2-copy2" title="Copy heading and permalink for Exercise 1.6.36" aria-label="Copy heading and permalink for Exercise 1.6.36">🔗</a></div></article><article class="exercise exercise-like" id="solve-special-with-distribution-copy2"><h6 class="heading"><span class="codenumber">37<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="extracted-webwork-300-1-1-1">Is <span class="process-math">\({-5.1}\)</span> a solution to <span class="process-math">\({\left|8x+8.9\right|}={\left|2x+33.1\right|}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-300-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(\left|8x+8.9\right|\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(=\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\left|2x+33.1\right|\)</span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\wonder{=}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Exercise 1.6.37"><a href="#solve-special-with-distribution-copy2" title="Copy heading and permalink for Exercise 1.6.37" aria-label="Copy heading and permalink for Exercise 1.6.37">🔗</a></div></article><article class="exercise exercise-like" id="solve-special-with-like-terms-fraction-copy2"><h6 class="heading"><span class="codenumber">38<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="autopermalink" data-description="Exercise 1.6.38"><a href="#solve-special-with-like-terms-fraction-copy2" title="Copy heading and permalink for Exercise 1.6.38" aria-label="Copy heading and permalink for Exercise 1.6.38">🔗</a></div></article>
+</div>
+<div class="autopermalink" data-description="Exercise Group 35–38"><a href="#review-linear-equations-and-inequalities-22-5-2" title="Copy heading and permalink for Exercise Group 35–38" aria-label="Copy heading and permalink for Exercise Group 35–38">🔗</a></div>
+</div>
+<div class="exercisegroup" id="review-linear-equations-and-inequalities-22-5-3">
+<h5 class="heading"><span class="title">Exercise Group.</span></h5>
+<div class="introduction" id="review-linear-equations-and-inequalities-22-5-3-1"><div class="para" id="review-linear-equations-and-inequalities-22-5-3-1-1">Solve the inequality for its variable.<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-22-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="exercisegroup-exercises cols2 multicolumn">
+<article class="exercise exercise-like" id="solve-mxequalsmxplusb-inequality-copy2"><h6 class="heading"><span class="codenumber">39<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="extracted-webwork-302-1-1-1">Is <span class="process-math">\({{\frac{2}{9}}}\)</span> a solution to <span class="process-math">\({\left|2x-{\frac{3}{2}}\right|}={\left|-7x+{\frac{5}{2}}\right|}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-302-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(\left|2x-{\frac{3}{2}}\right|\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(=\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\left|-7x+{\frac{5}{2}}\right|\)</span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\wonder{=}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Exercise 1.6.39"><a href="#solve-mxequalsmxplusb-inequality-copy2" title="Copy heading and permalink for Exercise 1.6.39" aria-label="Copy heading and permalink for Exercise 1.6.39">🔗</a></div></article><article class="exercise exercise-like" id="solve-mxplusbequalsmxplusb-inequality-copy2"><h6 class="heading"><span class="codenumber">40<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="autopermalink" data-description="Exercise 1.6.40"><a href="#solve-mxplusbequalsmxplusb-inequality-copy2" title="Copy heading and permalink for Exercise 1.6.40" aria-label="Copy heading and permalink for Exercise 1.6.40">🔗</a></div></article><article class="exercise exercise-like" id="solve-special-with-distribution-inequality-copy2"><h6 class="heading"><span class="codenumber">41<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="extracted-webwork-304-1-1-1">Is <span class="process-math">\({3}\)</span> a solution to <span class="process-math">\({5x+8}\lt{23}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-304-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(5x+8\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\lt\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(23\)</span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\wonder{\lt}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(23\)</span></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Exercise 1.6.41"><a href="#solve-special-with-distribution-inequality-copy2" title="Copy heading and permalink for Exercise 1.6.41" aria-label="Copy heading and permalink for Exercise 1.6.41">🔗</a></div></article><article class="exercise exercise-like" id="solve-special-with-simplification-fraction-inequality-copy2"><h6 class="heading"><span class="codenumber">42<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="autopermalink" data-description="Exercise 1.6.42"><a href="#solve-special-with-simplification-fraction-inequality-copy2" title="Copy heading and permalink for Exercise 1.6.42" aria-label="Copy heading and permalink for Exercise 1.6.42">🔗</a></div></article>
+</div>
+<div class="autopermalink" data-description="Exercise Group 39–42"><a href="#review-linear-equations-and-inequalities-22-5-3" title="Copy heading and permalink for Exercise Group 39–42" aria-label="Copy heading and permalink for Exercise Group 39–42">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subexercises: Section 4: Special Solution Sets"><a href="#review-linear-equations-and-inequalities-22-5" title="Copy heading and permalink for Subexercises: Section 4: Special Solution Sets" aria-label="Copy heading and permalink for Subexercises: Section 4: Special Solution Sets">🔗</a></div></article><article class="subexercises" id="review-linear-equations-and-inequalities-22-6"><h4 class="heading"><span class="title">Section 5: Isolating a Linear Variable</span></h4>
+<div class="exercisegroup" id="review-linear-equations-and-inequalities-22-6-2">
+<h5 class="heading"><span class="title">Exercise Group.</span></h5>
+<div class="introduction" id="review-linear-equations-and-inequalities-22-6-2-1"><div class="para" id="review-linear-equations-and-inequalities-22-6-2-1-1">Isolate the indicated variable.<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-22-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="exercisegroup-exercises cols2 multicolumn">
+<article class="exercise exercise-like" id="isolate-yequalsaxplusb-copy2"><h6 class="heading"><span class="codenumber">43<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="extracted-webwork-306-1-1-1">Is <span class="process-math">\({7.7}\)</span> a solution to <span class="process-math">\({4x-2}\lt{28.8}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-306-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(4x-2\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\lt\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(28.8\)</span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\wonder{\lt}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(28.8\)</span></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Exercise 1.6.43"><a href="#isolate-yequalsaxplusb-copy2" title="Copy heading and permalink for Exercise 1.6.43" aria-label="Copy heading and permalink for Exercise 1.6.43">🔗</a></div></article><article class="exercise exercise-like" id="isolate-xoveraplusbequalsc-copy2"><h6 class="heading"><span class="codenumber">44<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="autopermalink" data-description="Exercise 1.6.44"><a href="#isolate-xoveraplusbequalsc-copy2" title="Copy heading and permalink for Exercise 1.6.44" aria-label="Copy heading and permalink for Exercise 1.6.44">🔗</a></div></article>
+</div>
+<div class="autopermalink" data-description="Exercise Group 43–44"><a href="#review-linear-equations-and-inequalities-22-6-2" title="Copy heading and permalink for Exercise Group 43–44" aria-label="Copy heading and permalink for Exercise Group 43–44">🔗</a></div>
+</div>
+<div class="exercisegroup" id="review-linear-equations-and-inequalities-22-6-3">
+<h5 class="heading"><span class="title">Exercise Group.</span></h5>
+<div class="introduction" id="review-linear-equations-and-inequalities-22-6-3-1">
+<div class="para" id="review-linear-equations-and-inequalities-22-6-3-1-1">The equation for a line in “slope-intercept form” is <span class="process-math">\(y=mx+b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-22-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 47%; margin-left: 26.5%; margin-right: 26.5%;"><img src="generated/latex-image/review-linear-equations-and-inequalities-22-6-3-1-2.svg" role="img" class="contained"></div>
+</div>
+<div class="exercisegroup-exercises cols2 multicolumn">
+<article class="exercise exercise-like" id="isolate-slopeinterceptform-copy"><h6 class="heading"><span class="codenumber">45<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="extracted-webwork-308-1-1-1">Is <span class="process-math">\({{\frac{1}{6}}}\)</span> a solution to <span class="process-math">\({2x+{\frac{1}{9}}}\neq{{\frac{4}{9}}}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-308-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(2x+{\frac{1}{9}}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\neq\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\({\frac{4}{9}}\)</span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\wonder{\neq}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\({\frac{4}{9}}\)</span></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Exercise 1.6.45"><a href="#isolate-slopeinterceptform-copy" title="Copy heading and permalink for Exercise 1.6.45" aria-label="Copy heading and permalink for Exercise 1.6.45">🔗</a></div></article><article class="exercise exercise-like" id="isolate-slopeinterceptforb-copy"><h6 class="heading"><span class="codenumber">46<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="autopermalink" data-description="Exercise 1.6.46"><a href="#isolate-slopeinterceptforb-copy" title="Copy heading and permalink for Exercise 1.6.46" aria-label="Copy heading and permalink for Exercise 1.6.46">🔗</a></div></article>
+</div>
+<div class="autopermalink" data-description="Exercise Group 45–46"><a href="#review-linear-equations-and-inequalities-22-6-3" title="Copy heading and permalink for Exercise Group 45–46" aria-label="Copy heading and permalink for Exercise Group 45–46">🔗</a></div>
+</div>
+<div class="exercisegroup" id="review-linear-equations-and-inequalities-22-6-4">
+<h5 class="heading"><span class="title">Exercise Group.</span></h5>
+<div class="introduction" id="review-linear-equations-and-inequalities-22-6-4-1"><div class="para" id="review-linear-equations-and-inequalities-22-6-4-1-1">Isolate <span class="process-math">\(y\)</span> in the standard form linear equation (a topic covered later in this book).<div class="autopermalink" data-description="Paragraph"><a href="#review-linear-equations-and-inequalities-22-6-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="exercisegroup-exercises cols2 multicolumn">
+<article class="exercise exercise-like" id="solve-standard-linear-equation-for-y-copy2"><h6 class="heading"><span class="codenumber">47<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="para" id="extracted-webwork-310-1-1-1">Is <span class="process-math">\({-3}\)</span> a solution to <span class="process-math">\({4x-4}\lt{2x-10}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-310-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>  <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(4x-4\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\lt\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2x-10\)</span></td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\wonder{\lt}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="fillin shade" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Exercise 1.6.47"><a href="#solve-standard-linear-equation-for-y-copy2" title="Copy heading and permalink for Exercise 1.6.47" aria-label="Copy heading and permalink for Exercise 1.6.47">🔗</a></div></article><article class="exercise exercise-like" id="solve-standard-linear-equation-for-y-2-copy2"><h6 class="heading"><span class="codenumber">48<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h6>
+<div class="autopermalink" data-description="Exercise 1.6.48"><a href="#solve-standard-linear-equation-for-y-2-copy2" title="Copy heading and permalink for Exercise 1.6.48" aria-label="Copy heading and permalink for Exercise 1.6.48">🔗</a></div></article>
+</div>
+<div class="autopermalink" data-description="Exercise Group 47–48"><a href="#review-linear-equations-and-inequalities-22-6-4" title="Copy heading and permalink for Exercise Group 47–48" aria-label="Copy heading and permalink for Exercise Group 47–48">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subexercises: Section 5: Isolating a Linear Variable"><a href="#review-linear-equations-and-inequalities-22-6" title="Copy heading and permalink for Subexercises: Section 5: Isolating a Linear Variable" aria-label="Copy heading and permalink for Subexercises: Section 5: Isolating a Linear Variable">🔗</a></div></article><div class="autopermalink" data-description="Exercises 1.6: Review Exercises for Chapter 1"><a href="#review-linear-equations-and-inequalities-22" title="Copy heading and permalink for Exercises 1.6: Review Exercises for Chapter 1" aria-label="Copy heading and permalink for Exercises 1.6: Review Exercises for Chapter 1">🔗</a></div></section><div class="autopermalink" data-description="Section 1.6: Linear Equations and Inequalities Chapter Review"><a href="#review-linear-equations-and-inequalities" title="Copy heading and permalink for Section 1.6: Linear Equations and Inequalities Chapter Review" aria-label="Copy heading and permalink for Section 1.6: Linear Equations and Inequalities Chapter Review">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="section-isolating-a-linear-variable.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="chapter-graphing-lines.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

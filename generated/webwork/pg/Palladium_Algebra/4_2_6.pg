@@ -1,0 +1,147 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:11-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.2.6)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Form");
+Context()->variables->are(p=>'Real',r=>'Real',w=>'Real');
+$b = Formula("p^6/64");
+$c = Formula("5^36w^27");
+$d = Formula("2r^11");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+a.  Simplify [`\left(\dfrac{p}{2}\right)^6\text{.}`]
+
+    [_]{$b}{8}
+
+a.  Simplify [`\left(\dfrac{5^6w^7}{5^2w^4}\right)^9\text{.}`] If you end up with a large power of a specific number, leave it written that way.
+
+    [_]{$c}{8}
+
+a.  Simplify [`\dfrac{\left(2r^5\right)^7}{\left(2^2 r^8\right)^3}\text{.}`] If you end up with a large power of a specific number, leave it written that way.
+
+    [_]{$d}{8}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  We can use the quotient to a power rule:
+
+    [```\newcommand{\amp}{&}
+    \begin{aligned}
+    \left(\frac{p}{2}\right)^6\amp=\frac{p^6}{2^6}\\
+    \amp=\frac{p^6}{64}
+    \end{aligned}
+    ```]
+
+a.  If we stick closely to the order of operations, we should first simplify inside the parentheses and then work with the outer exponent. Going this route, we will first use the quotient rule:
+
+    [```\newcommand{\amp}{&}
+    \begin{aligned}
+    \left(\frac{5^6w^7}{5^2w^4}\right)^9 \amp= \left(5^{6-2}w^{7-4}\right)^9\\
+    \amp=  \left(5^{4}w^{3}\right)^9
+    \end{aligned}
+    ```]
+
+    Now we can apply the outer exponent to each factor inside the parentheses using the product to a power rule.
+
+    [```\newcommand{\amp}{&}
+    \begin{aligned}
+    \amp= \left(5^{4}\right)^9\cdot \left(w^{3}\right)^9
+    \end{aligned}
+    ```]
+
+    To finish, we need to use the power to a power rule.
+
+    [```\newcommand{\amp}{&}
+    \begin{aligned}
+    \amp= 5^{4\cdot 9}\cdot w^{3 \cdot 9}\\
+    \amp= 5^{36}\cdot w^{27}
+    \end{aligned}
+    ```]
+
+a.  According to the order of operations, we should simplify inside parentheses first, then apply exponents, then divide. Since we cannot simplify inside the parentheses, we must apply the outer exponents to each factor inside the respective set of parentheses first:
+
+    [```\newcommand{\amp}{&}
+    \begin{aligned}
+    \frac{\left(2r^5\right)^7}{\left(2^2 r^8\right)^3}
+                    \amp=  \frac{2^7 \left(r^5\right)^7}{\left(2^2\right)^3 \left(r^8\right)^3}
+    \end{aligned}
+    ```]
+
+    At this point, we need to use the power-to-a-power rule:
+
+    [```\newcommand{\amp}{&}
+    \begin{aligned}
+    \phantom{\frac{\left(2r^5\right)^7}{\left(2^2 r^8\right)^3}}
+                    \amp= \frac{2^{7} r^{5\cdot 7}}{ 2^{2\cdot 3} r^{8 \cdot 3}}\\
+    \amp= \frac{2^{7} r^{35}}{ 2^{6} r^{24}}
+    \end{aligned}
+    ```]
+
+    To finish simplifying, we'll conclude with the quotient rule:
+
+    [```\newcommand{\amp}{&}
+    \begin{aligned}
+    \phantom{\frac{\left(2r^5\right)^7}{\left(2^2 r^8\right)^3}}
+                    \amp= 2^{7-6} r^{35-24}\\
+    \amp= 2^{1} r^{11}\\
+    \amp= 2 r^{11}
+    \end{aligned}
+    ```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

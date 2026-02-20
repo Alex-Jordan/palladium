@@ -1,0 +1,75 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:10-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.6.5.111)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context()->variables->are(m=>'Real',n=>'Real',p=>'Real');
+$answer = Compute("(-n-sqrt(n^2-4mp))/(2m),(-n+sqrt(n^2-4mp))/(2m)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve for [`x`] in the equation [`mx^{2}+nx+p=0\text{,}`] assuming [`m\neq0\text{.}`]
+
+[@KeyboardInstructions('Enter the two solutions as a comma-separated list.')@]**
+
+[_]{$answer}{40}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+To solve a quadratic equation of the form [`ax^{2}+bx+c=0\text{,}`] we can use the quadratic formula. In this case, [`a=m\text{,}`] [`b=n\text{,}`] and [`c=p\text{.}`] Therefore the solutions are [`\frac{-n+\sqrt{n^{2}-4mp}}{2m}, \frac{-n-\sqrt{n^{2}-4mp}}{2m}\text{,}`] or [`\frac{-n \pm \sqrt{n^{2}-4mp}}{2m}\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

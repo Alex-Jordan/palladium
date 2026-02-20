@@ -1,0 +1,113 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8.2.6.23)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserNumberWithUnits.pl",
+  "ORCCA.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$digits = list_random(2,3);
+$decimals = random(0,$digits-1,1);
+$unitsin = list_random('ft','in','yd','mi','m','mm','cm','dm','dam','hm','km');
+$a = ($digits == 2) ? (random(1,9,1)*10 + random(1,9,1)) / 10**$decimals  :  (random(10,99,1)*10 + random(1,9,1)) / 10**$decimals;
+$dimension = list_random(2,3);
+$unitsout = list_random(lex_sort(keys %{$ORCCAconversions{$unitsin}}));
+@alternatives = map{$_."^$dimension"} ($unitsout, @{$unitAlternatives{$unitsout}});
+$word = $unitWords{$unitsout};
+$dimensionWord = ($dimension == 2) ? 'square' : 'cubic';
+$factor = $ORCCAconversions{$unitsin}->{$unitsout};
+$b = $a*$factor**$dimension;
+$given = NumberWithUnits("$a $unitsin^$dimension", {newUnit => $ORCCAunits});
+$get = NumberWithUnits("$b $unitsout^$dimension", {newUnit => $ORCCAunits});
+$evaluator = $get->cmp->withPostFilter(sub {
+  my $ans = shift;
+  if ($ans->{score}) {
+    my $correct = $ans->{correct_value};
+    my $student = $ans->{student_value};
+    my %goodunits = map { $_ => 1 } (@alternatives);
+    if (!exists($goodunits{$student->{units}})) {
+      $ans->{ans_message} = "Your answer is equivalent to the correct answer, but it uses the wrong units";
+      $ans->score(0);
+    }
+  }
+  return $ans;
+});
+$factornum = ($factor > 1) ? $factor : 1;
+$factorden = ($factor > 1) ? 1 : 1/$factor;
+$factornumU = NumberWithUnits("$factornum $unitsout", {newUnit => $ORCCAunits});
+$factordenU = NumberWithUnits("$factorden $unitsin", {newUnit => $ORCCAunits});
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Convert [`[$given]`] to [$dimensionWord] [$word].
+
+[_]{$evaluator}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$given]\amp=\frac{[$given]}{1}\\
+\amp=\frac{[$given]}{1}\cdot\left(\frac{[$factornumU]}{[$factordenU]}\right)^{[$dimension]}\\
+\amp=\frac{[$given]}{1}\cdot\frac{[$factornum]^{[$dimension]}\,\mathrm{[$unitsout]}^{[$dimension]}}{[$factorden]^{[$dimension]}\,\mathrm{[$unitsin]}^{[$dimension]}}\\
+\amp=\frac{[$a]\cdot [$factornum]^{[$dimension]}\,\mathrm{[$unitsout]}^{[$dimension]}}{1\cdot [$factorden]^{[$dimension]}}\\
+\amp=[$get]
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

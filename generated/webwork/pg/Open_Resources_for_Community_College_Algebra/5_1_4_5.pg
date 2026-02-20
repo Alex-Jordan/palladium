@@ -1,0 +1,132 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-01T09:36:05-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.1.4.5)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "scaffold.pl",
+  "AnswerFormatHelp.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+COMMENT('This problem is scaffolded with multiple parts');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+@a = (random(2,5), random(-5,-2), random(-5,-2));
+$a[3] = $a[0];
+@a = map {$_ + random(0.1,0.9,0.1)} @a;
+@n = (random(2,5), list_random(2,4), list_random(3,5), list_random(2,4));
+@answer = map {Real($a[$_]**$n[$_])} (0..3);
+$answer[3] = -$answer[3];
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Evaluate each power expression.
+
+END_PGML
+
+############################################################
+# Scaffold
+############################################################
+Scaffold::Begin(numbered => 1,is_open => "correct_or_first_incorrect",can_open => always,);
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+[`[$a[0]]^[$n[0]]`]
+
+[_]{$answer[0]}{6}
+
+END_PGML
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+[`([$a[1]])^[$n[1]]`]
+
+[_]{$answer[1]}{6}
+
+END_PGML
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+[`([$a[2]])^[$n[2]]`]
+
+[_]{$answer[2]}{6}
+
+END_PGML
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+[`-[$a[3]]^[$n[3]]`]
+
+[_]{$answer[3]}{6}
+
+END_PGML
+
+Section::End();
+
+Scaffold::End();
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

@@ -1,0 +1,156 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8.3.13)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "answerHints.pl",
+  "PCCmacros.pl",
+  "parserFormulaWithUnits.pl",
+  "parserNumberWithUnits.pl",
+  "contextForm.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$radius = 3;
+$diameter = $radius*2;
+$radiusSquared = $radius**2;
+$radiusMO = NumberWithUnits("$radius m");
+$diameterMO = NumberWithUnits("$diameter m");
+$pi = Compute("pi");
+$circumferceRounded = sprintf("%.2f", $diameter*$pi);
+$circumferenceMO = NumberWithUnits("$circumferceRounded m");
+$areaRounded = sprintf("%.2f", $pi*$radiusSquared );
+$areaMO = NumberWithUnits("$areaRounded m^2");
+Context()->constants->remove('pi');
+Context()->variables->are(pi=>'Real');
+Context()->variables->set(pi => {TeX=>'\pi'});
+$circumferenceWithPiMO = FormulaWithUnits("$diameter pi" , 'm');
+$areaWithPiMO = FormulaWithUnits("$radiusSquared pi", 'm^2');
+$eval[0] = $circumferenceWithPiMO->cmp(
+    correct_ans_latex_string=>$circumferenceWithPiMO->TeX
+)->withPostFilter(
+    AnswerHints(
+        sub {
+            my ($correct,$student,$ans) = @_;
+            return (Formula($student)->isConstant);
+        } => "Your answer should be in terms of pi",
+    )
+);
+$eval[1] = $circumferenceMO->cmp(
+    tolType=>absolute,tolerance=>0.005
+);
+$eval[2] = $areaWithPiMO->cmp(
+    correct_ans_latex_string=>$areaWithPiMO->TeX
+)->withPostFilter(
+    AnswerHints(
+        sub {
+            my ($correct,$student,$ans) = @_;
+            return (Formula($student)->isConstant);
+        } => "Your answer should be in terms of pi",
+    )
+);
+$eval[3] = $areaMO->cmp(
+    tolType=>absolute,tolerance=>0.005
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+A circle's diameter is [`[$diameterMO]\text{.}`]
+
+[@KeyboardInstructions('For the answers below, type [|pi|]* for [`\pi\text{,}`] [|m|]* for meters, and [|m^2|]* for square meters.')@]**
+
+a.  This circle's circumference, in terms of [`\pi\text{,}`] is [_]{$eval[0]}{15}.
+
+a.  This circle's circumference, rounded to the hundredth place, is [_]{$eval[1]}{15}.
+
+a.  This circle's area, in terms of [`\pi\text{,}`] is [_]{$eval[2]}{15}.
+
+a.  This circle's area, rounded to the hundredth place, is [_]{$eval[3]}{15}.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+We use [`r`] to represent radius and [`d`] to represent diameter. In this problem, it's given that the diameter is [`[$diameterMO]\text{.}`] A circle's radius is half as long as its diameter, so the radius is [`[$radiusMO]\text{.}`]
+
+Throughout these computations, all quantities have units attached, but we only show them in the final step.
+a.  [`\newcommand{\amp}{&}\begin{aligned}[t]
+                    c\amp = \pi d\\
+                    \amp = \pi \cdot [$diameter]\\
+                    \amp = [$circumferenceWithPiMO]
+                    \end{aligned}
+                    `]
+
+a.  [`\newcommand{\amp}{&}\begin{aligned}[t]
+                    c\amp = \pi d\\
+                    \amp \approx 3.1415926 \cdot [$diameter]\\
+                    \amp \approx [$circumferenceMO]
+                    \end{aligned}
+                    `]
+
+a.  [`\newcommand{\amp}{&}\begin{aligned}[t]
+                    A\amp = \pi r^2\\
+                    \amp = \pi \cdot [$radius]^2\\
+                    \amp = \pi \cdot [$radiusSquared]\\
+                    \amp = [$areaWithPiMO]
+                    \end{aligned}
+                    `]
+
+a.  [`\newcommand{\amp}{&}\begin{aligned}[t]
+                    A\amp = \pi r^2\\
+                    \amp \approx 3.1415926 \cdot [$radius]^2\\
+                    \amp \approx 3.1415926 \cdot [$radiusSquared]\\
+                    \amp \approx [$areaMO]
+                    \end{aligned}
+                    `]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

@@ -1,0 +1,84 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:09-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.3.13)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "contextLimitedFactor.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedFactor");
+Context()->variables->are(q=>'Real');
+$answer = Formula("(4q+7)^2");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Factor [`16q^2+56q+49\text{.}`]
+
+[_]{$answer}{25}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The first term, [`16q^2\text{,}`] is a perfect square because it equals [`(4q)^2\text{.}`] So we could take [`A=4q\text{.}`] The last term, [`49\text{,}`] is also a perfect square since it is equal to [`7^2\text{.}`] So we could take [`B=7\text{.}`] Now we multiply [`2AB=2\cdot(4q)\cdot7\text{,}`] and the result is [`56q\text{.}`] This is the middle term, which is what we hope to see.
+
+So we can use The Perfect Square Trinomial Formula:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+16q^2+56q+49\amp=(A+B)^2\\
+\amp=(4q+7)^2
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

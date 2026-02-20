@@ -1,0 +1,74 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:10-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.1.4.55)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+($x, $y) = random_subset(2, 'a' .. 'k', 'm', 'n', 'p' .. 'r', 't' .. 'z');
+Context("Form")->variables->are($x => 'Real', $y => 'Real');
+($m[0], $n[0], $m[1], $n[1]) = random_subset(4, 1 .. 9);
+$m[2] = random(2,4);
+@b = random_subset(2, 2 .. 5);
+$m = $m[0] + $m[1]*$m[2];
+$n = $n[0] + $n[1]*$m[2];
+$b = $b[0]*$b[1]**$m[2];
+$given = Formula("$b[0] $x^$m[0] $y^$n[0] * ($b[1] $x^$m[1] $y^$n[1])^$m[2]")->reduce;
+$ans = Formula("$b $x^$m $y^$n")->reduce;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Simplify the given expression.
+
+[`[$given]`]
+
+[_]{$ans}{16}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

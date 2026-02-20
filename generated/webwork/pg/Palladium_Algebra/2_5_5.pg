@@ -1,0 +1,99 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:09-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.5.5)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("FiniteSolutionSets")->variables->are(z => 'Real');
+$answer = Formula("{-9/2, 9/2}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve for [`z`] in [`4z^2-81=0\text{.}`]
+
+[_]{$answer}{16}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Before we can use the square root property we need to isolate the squared quantity.
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+4z^2-81\amp=0\\
+4z^2\amp=81\\
+z^2\amp=\frac{81}{4}
+\end{aligned}
+```]
+
+Now we can use the square root property
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+z\amp=\pm\sqrt{\frac{81}{4}}\\
+z\amp=\pm\frac{9}{2}
+\end{aligned}
+```]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+z\amp=-\frac{9}{2}\amp\text{ or }\amp\amp z\amp=\frac{9}{2}
+\end{aligned}
+```]
+
+The solution set is [`\left\{-\frac{9}{2},\frac{9}{2}\right\}\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

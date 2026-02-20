@@ -1,0 +1,87 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-01T20:00:19-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.1.16)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextForm.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Form");
+$a = Formula('2root(4,3)');
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Simplify [`\sqrt[4]{48}\text{.}`]
+
+[@KeyboardInstructions('If you need to enter a [`4`]th root, like [`\sqrt[4]{2}\text{,}`] type [|root(4,2)|]*.')@]**
+
+[_]{$a}{15}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+As with the previous example, it will help if [`48`] can be written as a product of a [`4`]th power. In this case, [`16`] divides [`48\text{,}`] and [`48=16\cdot3\text{.}`] So
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+\sqrt[4]{48}\amp=\sqrt[4]{16\cdot3}\\
+\amp=\sqrt[4]{16}\sqrt[4]{3}\\
+\amp=2\sqrt[4]{3}
+\end{aligned}
+```]
+
+This is as simple as we can make this expression.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

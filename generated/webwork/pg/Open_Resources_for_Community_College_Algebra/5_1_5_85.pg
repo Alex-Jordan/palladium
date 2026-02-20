@@ -1,0 +1,76 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:08-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.1.5.85)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "contextLimitedPolynomial.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+@a = num_sort(random_subset(2, map {$_/10} (10 .. 60)));
+@b = num_sort(random_subset(2, map {$_/100} (100 .. 600)));
+@c = num_sort(random_subset(2, 1000 .. 6000));
+$a[2] = $a[1] - $a[0];
+$b[2] = $b[1] - $b[0];
+$c[2] = $c[1] - $c[0];
+Context("LimitedPolynomial-Strict");
+$revenue = Formula("$a[1] x^2 + $b[1]x + $c[1]")->reduce;
+$cost = Formula("$a[0] x^2 + $b[0]x + $c[0]")->reduce;
+$profit = Formula("$a[2] x^2 + $b[2]x + $c[2]")->reduce;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+A company that sells a certain product can use polynomials to model its sales revenue (in dollars) and its costs (also in dollars). The variable [`x`] represents the number of units produced. Profit is revenue minus costs.
+
+If revenue is modeled by [`[$revenue]`] and costs are modeled by [`[$cost]\text{,}`] what is the model for profit?
+
+[_]{$profit}{16}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

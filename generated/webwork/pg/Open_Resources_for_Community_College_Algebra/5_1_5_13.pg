@@ -1,0 +1,103 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:08-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.1.5.13)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextForm.pl",
+  "parserPopUp.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+@a = map {$_/10} (random_subset(3, -999..-1,1..999));
+@n = random_subset(3, 0..9);
+$x = list_random('t', 'x', 'y', 'z');
+Context()->variables->are($x => 'Real');
+Context()->noreduce('(-x)+y', '(-x)-y');
+$p = Formula("$a[0] $x^$n[0] + $a[1] $x^$n[1] + $a[2] $x^$n[2]")->reduce;
+@types = ('monomial', 'binomial', 'trinomial');
+$which = DropDown(~~@types, 2, showInStatic => 0);
+$degree = Real(max(@n));
+$leadingTerm = Formula("$a[0] $x^$n[0]")->reduce;
+$leadingTerm = Formula("$a[1] $x^$n[1]")->reduce if ($degree == $n[1]);
+$leadingTerm = Formula("$a[2] $x^$n[2]")->reduce if ($degree == $n[2]);
+$leadingCoefficient = Real("$a[0]");
+$leadingCoefficient = Real("$a[1]") if ($degree == $n[1]);
+$leadingCoefficient = Real("$a[2]") if ($degree == $n[2]);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+What specific type of polynomial is the given polynomial? What is its degree? What is its leading term? What is its leading coefficient?
+
+[`[$p]`]
+
+[_]{$which}{5}
+
+[@KeyboardInstructions('Enter its degree here.')@]**
+
+[_]{$degree}{6}
+
+[@KeyboardInstructions('Enter its leading term here.')@]**
+
+[_]{$leadingTerm}{16}
+
+[@KeyboardInstructions('Enter its leading coefficient here.')@]**
+
+[_]{$leadingCoefficient}{16}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+This is a trinomial because it has [`3`] terms. Its degree is [`[$degree]`] because that is the highest exponent on [`[$x]`] in the terms. The leading term is [`[$leadingTerm]`] because that's the term with degree [`[$degree]\text{.}`] The leading coefficent is [`[$leadingCoefficient]`] because that's the coefficient of the leading term.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

@@ -1,0 +1,106 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-01T20:00:19-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.4.45)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "scaffold.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+COMMENT('This problem is scaffolded with multiple parts');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$x = list_random('a' .. 'k', 'm', 'n', 'p' .. 'r', 't' .. 'z');
+Context("Form")->variables->are($x => 'Real');
+$m = random(2,9);
+$m2 = 2*$m;
+$g[0] = Formula("$x^$m+ $x^$m");
+$g[1] = Formula("$x^$m * $x^$m");
+$ans[0] = Formula("2$x^$m");
+$ans[1] = Formula("$x^($m2)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Simplify each expression, taking note of the different behavior when adding versus multiplying. If it's not possible to simplify an expression more than it already is, then the answer should just be the same given expression.
+
+END_PGML
+
+############################################################
+# Scaffold
+############################################################
+Scaffold::Begin(numbered => 1,is_open => "correct_or_first_incorrect",can_open => always,);
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+[`[$g[0]]`]
+
+[_]{$ans[0]}{16}
+
+END_PGML
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+[`[$x]^[$m]\cdot [$x]^[$m]`]
+
+[_]{$ans[1]}{16}
+
+END_PGML
+
+Section::End();
+
+Scaffold::End();
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

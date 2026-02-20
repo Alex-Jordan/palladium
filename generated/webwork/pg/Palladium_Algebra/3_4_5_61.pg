@@ -1,0 +1,82 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-19T15:37:07-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(3.4.5.61)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("FiniteSolutionSets");
+Context()->flags->remove("NumberCheck");
+$solution = Formula("{-1.5367656770392080358971582, 1.2218659968751737501705682}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use technology to solve the equation.
+
+[```
+                  \frac{12x}{x-5}+\frac{3}{x+1}=\frac{x-5}{x^2}
+                \text{.}```]
+
+[@KeyboardInstructions('Round answers to at least four significant digits.')@]**
+
+[_]{$solution}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The points of intersection are approximately [`(-1.537,-2.768)`] and [`(1.222,-2.531)\text{.}`] The solution set is approximately [`\{-1.537\ldots, 1.222\ldots\}\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

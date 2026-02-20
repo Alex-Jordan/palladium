@@ -1,0 +1,80 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-01T20:00:19-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.1.10.109)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextForm.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Form");
+$N = list_random(2, 3, 5..7, 10, 11, 13..15, 17, 19, 21..23, 26, 29..31, 33..35, 37, 38, 41..43, 46, 47);
+$answer = Formula("root(3,$N)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find a solution to the equation. Use a radical expression. If there are no solutions, say so.
+
+[`x^3 = [$N]`]
+
+[@KeyboardInstructions('Just enter one number that would work as a solution to this equation. If there are no solutions, enter [|none|]*.')@]**
+
+[_]{$answer}{16}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+We need a number that multiplies with itself [`3`] times to make [`[$N]\text{.}`] This is exactly what [`\sqrt[3]{[$N]}`] means.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

@@ -1,0 +1,149 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:08-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(7.1.4.60)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGlateximage.pl",
+  "parserNumberWithUnits.pl",
+  "randomPerson.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$name = randomPerson();
+$benchWidth = random(36,72,6);
+$halfWidth = $benchWidth/2;
+$boardHeight = random(6,12);
+$ans = ($halfWidth**2 + $boardHeight**2) / (2*$boardHeight);
+$answer = NumberWithUnits($ans, 'in');
+
+$image_1 = createLaTeXImage();
+$image_1->addToPreamble(latexImagePreamble());
+$image_1->BEGIN_LATEX_IMAGE
+\begin{tikzpicture}
+  \draw[fill=firstcolor!30, very thick] (1,1.5) -- (1,2.5) arc (126.87:53.13:2.5) -- (4,1.5) -- (1,1.5) -- (0,1) -- (3,1) -- (4,1.5) --  cycle;
+  \draw[very thick] (0,0) -- (0,2) -- (1,2.5) -- (1,1.5) -- (0,1) -- (3,1) -- (3,0) -- (3,1) -- (3,2) -- (4,2.5) -- (4,0.5) -- (4,1.5) -- (3,1) -- (4,1.5) -- (1,1.5) -- (3,1.5);
+  \draw[dotted, very thick] (3,1.5) -- (4,1.5);
+  \draw[dotted, very thick] (1,1.5) -- (1,1);
+  \draw[very thick] (1,0.5) -- (1,1);
+  \draw[dotted] (1,2.5) -- (4,2.5);
+\end{tikzpicture}
+
+END_LATEX_IMAGE
+
+$image_2 = createLaTeXImage();
+$image_2->addToPreamble(latexImagePreamble());
+$image_2->BEGIN_LATEX_IMAGE
+\begin{tikzpicture}[x=2pt,y=2pt]
+  \draw[fill=firstcolor!30] (45,-24) --++ (6,0) --++ (0,48) -- (45,24) -- cycle;
+  \node[draw,circle,fill=black,inner sep=2pt] at (0,0) {};
+  \node[below] at (0,0) {circle center};
+  \node[left] at (45,0) {\($benchWidth\) in};
+  \node[above] at (48,24) {\($boardHeight\) in};
+  \draw[dashed, thin, color=secondcolor] (51,0) arc (0:360:51);
+\end{tikzpicture}
+
+END_LATEX_IMAGE
+
+$image_3 = createLaTeXImage();
+$image_3->addToPreamble(latexImagePreamble());
+$image_3->BEGIN_LATEX_IMAGE
+\begin{tikzpicture}
+  \begin{axis}[axis x line=none, axis y line=none, xmin=-10, xmax=60, ymin=-30, ymax=30, axis equal]
+  \addplot[fill=firstcolor!30] coordinates{(45,-24)(51,-24)(51,24)(45,24)(45,-24)};
+  \addplot[radius] coordinates{(45,-24)(0,0)};
+  \addplot[radius] coordinates{(0,0)(45,24)} node [below, pos=0.5, sloped]{\(x\)};
+  \addplot[radius] coordinates{(0,0)(45,0)} node [above, pos=0.6]{\(x-6\)};
+  \addplot[color=firstcolor, thick, dashed] coordinates{(45,24)(45,0)} node [left, pos=0.5]{\(24\)};
+  \addplot[radius] coordinates{(51,0)(45,0)} node [above, pos=0.5]{\(6\)};
+  \addplot[soliddot] coordinates{(0,0)} node{};
+  \addplot[variable=\t, domain=0:360, samples=100, dashed, thin, color=secondcolor]({51*cos(t)}, {51*sin(t)});
+  \end{axis}
+\end{tikzpicture}
+
+END_LATEX_IMAGE
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+[$name] wanted to make a bench.
+
+>> [@image(insertGraph($image_1), width=>282, alt=>qq"a sketch of a bench with an arc drawn on the backrest of the bench")@]* [@image(insertGraph($image_2), width=>282, alt=>qq"the bench backrest board is labeled $benchWidth in by $boardHeight in and a large circle that makes the arc on the board; there is a dot in the center of the circle")@]*  <<
+
+[$name->They] wanted the top of the bench back to be a perfect portion of a circle, in the shape of an arc, as in the image. (Note that this won't be a half-circle, just a small portion of a circular edge.) He started with a rectangular board [`[$boardHeight]`] inches wide and [`[$benchWidth]`] inches long, and a piece of string, like a compass, to draw a circular arc on the board. How long should the string be so that it can be swung round to draw the arc?
+
+[_]{$answer}{6}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Let's define [`x`] to be the radius of the circle in question, in inches. The circle should go through the bottom corners of the board and just barely touch the top of the board. That means that the line from the middle of the bottom of the board to the center of the circle will be [`[$boardHeight]`] inches shorter than the radius.
+
+ >> [@image(insertGraph($image_3), width=>282, alt=>qq"a diagram using the radii of the circle to form a triangle with the bench back board; The base of the triangle is a radius that is horizontal from the center of the circle to the bottom of the backrest, labeled x-$boardHeight; The hypotenuse is another radius from the center of the circle to the corner of the backrest, labeled x; the height of the triangle is labeled $halfWidth in from the center to edge of the backrest")@]*  <<
+
+Now we can set up the Pythagorean Theorem based on the scenario. The equation [`a^2+b^2=c^2`] turns into...
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+(x-[$boardHeight])^2+[$halfWidth]^2\amp=x^2\\
+x^2-[$boardHeight*2]x+[$boardHeight**2]+[$halfWidth**2]\amp=x^2\\
+-[$boardHeight*2]x+[$boardHeight**2+$halfWidth**2]\amp=0
+\end{aligned}```]
+Note that at this point the equation is no longer quadratic! Solve the linear equation by isolating [`x`]
+[```\begin{aligned}
+x\amp=[$ans]
+\end{aligned}
+```]
+
+So, the circle radius required is [`[$ans]`] inches. [$name] found a friend to hold the string at one end and drew a circular segment on the board to great effect.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

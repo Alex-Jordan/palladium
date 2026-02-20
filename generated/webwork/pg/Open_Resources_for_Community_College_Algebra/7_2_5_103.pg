@@ -1,0 +1,109 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(7.2.5.103)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserNumberWithUnits.pl",
+  "contextForm.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$h = random(8,12,0.25);
+$hU = NumberWithUnits("$h ft");
+$w = random(16,32,4);
+$extra = $w-$h;
+$extraU = NumberWithUnits("$extra ft");
+$area = $h*$w;
+$areaU = NumberWithUnits("$area ft^2");
+Context()->variables->are(h=>'Real');
+$widthformula = Formula("h+$extra");
+$areaformula = Formula("h(h+$extra)");
+$a = 1;
+$b = $extra;
+$c = -$area;
+$f = Formula("$a h^2 + $b h + $c")->reduce;
+$s = Real((-$b + sqrt(($b)**2 - 4*$a*$c))/(2*$a));
+$t = Real((-$b - sqrt(($b)**2 - 4*$a*$c))/(2*$a));
+$sU = NumberWithUnits("$s ft");
+$negb = -$b;
+$discriminant = $b**2 - 4*$a*$c;
+$sqrtdisc = Real(sqrt($discriminant));
+$a2 = 2*$a;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+One rectangular wall in your classroom is [`[$extraU]`] longer than it is tall. The total area of the wall is [`[$areaU]\text{.}`] How tall is the wall?
+
+[_]{$hU}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The area of a rectangle is given by multipying its two dimensions. If we let [`h`] stand for the height of the wall, then [`[$widthformula]`] is the width, and the total area is [`[$areaformula]\text{.}`] So we must solve the equation [`[$areaformula]=[$area]\text{.}`]
+
+After multiplying and moving to standard form, we have [`[$f]=0\text{.}`] Using the quadratic formula:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+h\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{[$negb]\pm\sqrt{[$b]^2-4\left([$a]\right)\left([$c]\right)}}{2\left([$a]\right)}\\
+\amp=\frac{[$negb]\pm\sqrt{[$discriminant]}}{[$a2]}\\
+\amp=\frac{[$negb]\pm[$sqrtdisc]}{[$a2]}\\
+h\amp=\frac{[$negb]-[$sqrtdisc]}{[$a2]}\quad\text{or}\quad h=\frac{[$negb]+[$sqrtdisc]}{[$a2]}\\
+h\amp=[$t]\quad\text{or}\quad h=[$s]
+\end{aligned}
+```]
+
+Only the solution [`h\approx[$s]`] makes sense in this situation. The wall is [`[$sU]`] tall.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

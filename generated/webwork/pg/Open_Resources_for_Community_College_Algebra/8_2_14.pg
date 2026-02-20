@@ -1,0 +1,102 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8.2.14)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserNumberWithUnits.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$gdL = NumberWithUnits(0.018,'g/dL');
+# Make units parser require hours, not allow months, etc
+$evaluator = $gdL->cmp->withPostFilter(sub {
+  my $ans = shift;
+  if ($ans->{score}) {
+    my $correct = $ans->{correct_value};
+    my $student = $ans->{student_value};
+    my %goodunits = map { $_ => 1 } ('g/dL');
+
+    if (!exists($goodunits{$student->{units}})) {
+      $ans->{ans_message} = "Your answer is equivalent to the correct answer, but it uses the wrong units";
+      $ans->score(0);
+    }
+  }
+  return $ans;
+});
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Convert 180 mg/L into g/dL, given that there are [`10`] deciliters in a liter.
+
+[_]{$evaluator}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+We start by writing what we are converting, which is 180 mg/L, as a ratio. Then, we need to convert the milligrams into grams and the liters into deciliters, converting one unit at a time. We will start by converting the milligrams into grams. Then, we will convert the liters to deciliters.
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+180\,\frac{\text{mg}}{\text{L}}\amp=\frac{180\,\text{mg}}{1\,\text{L}}\amp\amp\text{Write the rate as a ratio.}\\
+\amp=\frac{180\,\text{mg}}{1\,\text{L}}\cdot\frac{1\,\text{g}}{1000\,\text{mg}}\cdot\frac{1\,\text{L}}{10\,\text{dL}}\amp\amp\text{Use unit ratios to make cancellations.}\\
+\amp=\frac{180\,\cancel{\text{mg}}}{1\,\cancel{\text{L}}}\cdot\frac{1\,\text{g}}{1000\,\cancel{\text{mg}}}\cdot\frac{1\,\cancel{\text{L}}}{10\,\text{dL}}\amp\amp\text{Units may now cancel.}\\
+\amp=\frac{180}{1}\cdot\frac{1\,\text{g}}{1000}\cdot\frac{1}{10\,\text{dL}}\\
+\amp=\frac{180}{1000\cdot10}\,\frac{\text{g}}{\text{dL}}\\
+\amp\approx0.018\,\frac{\text{g}}{\text{dL}}
+\end{aligned}
+```]
+
+So for example if salt is mixed into water with a concentration of 180 mg/L, the concentration can also be described as 0.018 g/dL.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

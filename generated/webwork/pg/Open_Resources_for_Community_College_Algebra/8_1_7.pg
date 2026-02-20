@@ -1,0 +1,98 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8.1.7)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedNumeric");
+Context()->{format}{number} = "%.4f#";
+$diam = Compute("12700000");
+$pidig = Compute("31400000000000");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Convert each of the following from scientific notation to decimal notation (without any exponents).
+
+[@KeyboardInstructions('Do not use commas in your answers.')@]**
+
+a.  The earth's diameter is about [`1.27\times 10^{7}`] meters.
+
+    [_]{$diam}{30}
+
+a.  As of 2019, there are [`3.14\times10^{13}`] known digits of [`\pi\text{.}`]
+
+    [_]{$pidig}{30}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  To convert this number to decimal notation we will move the decimal point after the digit [`1`] seven places to the right, including zeros where necessary. The earth's diameter is:
+
+    [```
+                      1.27\times 10^{7}\text{ meters} = 1\overbrace{2{,}700{,}000}^{7\text{ places}}\text{ meters}
+                    \text{.}```]
+
+    
+
+a.  As of 2019 there are
+
+    [```
+                      3.14\times10^{13}  = 3\overbrace{1{,}400{,}000{,}000{,}000}^{13\text{ places}}
+                    ```]
+
+    known digits of [`\pi\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

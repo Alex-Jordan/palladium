@@ -1,0 +1,95 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:09-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.1.4)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context()->variables->are(x=>'Real',y=>'Real');
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+a.  The greatest common factor between [`6x`] and [`8x`] is [_]{'2x'}{10}.
+
+a.  The greatest common factor between [`14x^2`] and [`10x`] is [_]{'2x'}{10}.
+
+a.  The greatest common factor between [`6y^2`] and [`7y^2`] is [_]{'y^2'}{10}.
+
+a.  The greatest common factor between [`12xy^2`] and [`9xy`] is [_]{'3xy'}{10}.
+
+a.  The greatest common factor between [`6x^3\text{,}`] [`2x^2\text{,}`] and [`8x`] is [_]{'2x'}{10}.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  Since [`6x`] completely factors as [`\newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}\attention{2}\cdot3\cdot \attention{x}`] ... and [`8x`] completely factors as [`\newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}\attention{2}\cdot2\cdot2\cdot \attention{x}\text{,}`] ...
+
+    ... the greatest common factor is [`2x\text{.}`]
+
+a.  Since [`14x^2`] completely factors as [`\newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}\attention{2}\cdot7\cdot \attention{x}\cdot x`] ... and [`10x`] completely factors as [`\newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}\attention{2}\cdot5\cdot \attention{x}\text{,}`] ...
+
+    ... the greatest common factor is [`2x\text{.}`]
+
+a.  Since [`6y^2`] completely factors as [`\newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}2\cdot3\cdot \attention{y}\cdot \attention{y}`] ... and [`7y^2`] completely factors as [`\newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}7\cdot\attention{y}\cdot\attention{y}\text{,}`] ...
+
+    ... the greatest common factor is [`y^2\text{.}`]
+
+a.  Since [`12xy^2`] completely factors as [`\newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}2\cdot2\cdot\attention{3}\cdot \attention{x}\cdot \attention{y}\cdot y`] ... and [`9xy`] completely factors as [`\newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}\attention{3}\cdot3\cdot \attention{x}\cdot \attention{y}\text{,}`] ...
+
+    ... the greatest common factor is [`3xy\text{.}`]
+
+a.  Since [`6x^3`] completely factors as [`\newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}\attention{2}\cdot3\cdot \attention{x}\cdot x\cdot x`] ... [`2x^2`] completely factors as [`\newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}\attention{2}\cdot\attention{x}\cdot x\text{,}`] ...and [`8x`] completely factors as [`\newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}\attention{2}\cdot2\cdot2\cdot\attention{x}\text{,}`] ...
+
+    ... the greatest common factor is [`2x\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

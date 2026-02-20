@@ -1,0 +1,106 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(7.4.5.19)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "bizarroArithmetic.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "contextFiniteSolutionSets.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+do {
+do {
+  $a[0] = non_zero_random(-9,9,1); $a[1] = 0;
+  $b[0] = non_zero_random(-9,9,1); $b[1] = 0;
+  $c[0] = non_zero_random(-9,9,1); $c[1] = 0;
+} until (($b[0]-$b[1])**2 - 4*($a[0]-$a[1])*($c[0]-$c[1]) > 0);
+Context()->noreduce('(-x)+y', '(-x)-y');
+$left = Formula("$a[0] x^2 + $b[0] x + $c[0]")->reduce;
+$right = Formula("$a[1] x^2 + $b[1] x + $c[1]")->reduce;
+$A = $a[0]-$a[1];
+$B = $b[0]-$b[1];
+$C = $c[0]-$c[1];
+$disc = $B**2 - 4*$A*$C;
+$squarepart = 1;
+$nonsquarepart = $disc;
+do {
+  $squarefree = 1;
+  for my $p (2,3,5,7,11,13,17,19,23,29,31,37) {
+    while ($nonsquarepart % ($p**2) == 0) {$squarepart *= $p**2; $nonsquarepart /= $p**2;};
+    $squarefree = $squarefree and ($nonsquarepart % ($p**2) != 0)
+  }
+} until ($squarefree);
+Context("Fraction");
+$rational = Fraction(-$B,2*$A);
+$coefficient = Fraction(sqrt($squarepart),2*$A);
+$effcoeff = (abs($coefficient) == 1) ? '' : $coefficient;
+} until (
+  # various known issues with bizarroArithmetic/FiniteSolutionSets and simplification
+  abs(($rational->value)[0]) != 1
+  and ($rational->value)[1] == ($coefficient->value)[1]
+  and gcd(($rational->value)[0], ($coefficient->value)[0]) == 1
+);
+$sum = $rational + $coefficient;
+$dif = $rational - $coefficient;
+Context("FiniteSolutionSets");
+$solution = ($nonsquarepart != 1) ?
+  Formula("{$rational + $effcoeff sqrt($nonsquarepart),$rational - $effcoeff sqrt($nonsquarepart)}") :
+  Formula("{$sum,$dif}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve the equation.
+
+[`[$left]=[$right]`]
+
+[_]{$solution}{60}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

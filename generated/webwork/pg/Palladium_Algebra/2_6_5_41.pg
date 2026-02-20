@@ -1,0 +1,142 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:10-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.6.5.41)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Fraction");
+do {
+  do {
+    $ad = random(2,3,1);
+    $an = 1;
+    $a = Fraction($an,$ad);
+  } until (($a->value)[1] != 1);
+  do {
+    $cd = 2;
+    $cn = random(-3,3,2);
+    $c = Fraction($cn,$cd);
+  } until (($c->value)[1] != 1);
+  if ($c > 0) {
+    $bd = random(2,3,1);
+    $bn = random(int(sqrt(4*$a*$c)*$bd)+1,4) * list_random(-1,1);
+    $b = Fraction($bn,$bd);
+  } else {
+    $bd = 2;
+    $bn = non_zero_random(-1,1,1);
+    $b = Fraction($bn,$bd);
+  }
+} until (sqrt($bn**2*$ad**2*$cd**2 - 4*$an*$ad*$cn*$cd*$bd**2) != int(sqrt($bn**2*$ad**2*$cd**2 - 4*$an*$ad*$cn*$cd*$bd**2)));
+Context()->noreduce('(-x)-y','(-x)+y');
+$f = Formula("$a x^2+$b x+$c")->reduce;
+$disc = ($b)**2-4*$a*$c;
+($discn,$discd) = $disc->value;
+($newdiscn,$newdiscd) = ($discn*$discd,$discd*$discd);
+$squarepart = 1;
+$squarefree = $newdiscn;
+for $i (2,3,5,7,11,13,17,19) {
+  while ($squarefree % $i**2 == 0) {
+    $squarepart *= $i**2;
+    $squarefree /= $i**2;
+  }
+}
+Context("Fraction");
+$pull = Fraction(sqrt($squarepart), $discd);
+$B = Fraction($b/(2*$a));
+$P = Fraction($pull/(2*$a));
+if ($P == 1) {$P = ''};
+if ($pull == 1) {$pull = ''};
+$negb = -$b;
+$a2 = 2*$a;
+$bsquared = ($b)**2;
+$discriminant = ($b)**2 - 4*$a*$c;
+Context("FiniteSolutionSets");
+$NB = -$B;
+($r,$s) = (Formula("$NB - $P sqrt($squarefree)"),Formula("$NB + $P sqrt($squarefree)"));
+$solutions = Formula("{$r,$s}");
+Context("FiniteSolutionSets");
+$solutions = Formula("{$NB - $P sqrt($squarefree),$NB + $P sqrt($squarefree)}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use the quadratic formula to solve the equation.
+
+[`[$f]=0`]
+
+[@KeyboardInstructions('If you need to enter a square root like [`\sqrt{17}\text{,}`] type [|sqrt(17)|]*. If there is no real solution, enter [|no real solution|]*.')@]**
+
+[_]{$solutions}{40}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+To use the quadratic formula, we identify [`a=[$a]\text{,}`] [`b=[$b]\text{,}`] and [`c=[$c]\text{.}`]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{[$negb]\pm\sqrt{[$bsquared]-4\left([$a]\right)\left([$c]\right)}}{2\left([$a]\right)}\\
+\amp=\frac{[$negb]\pm\sqrt{[$discriminant]}}{[$a2]}\\
+\amp=\frac{[$negb]\pm[$pull]\sqrt{[$squarefree]}}{[$a2]}\\
+x\amp=\frac{[$negb]-[$pull]\sqrt{[$squarefree]}}{[$a2]}\quad\text{or}\quad x=\frac{[$negb]+[$pull]\sqrt{[$squarefree]}}{[$a2]}\\
+x\amp=[$r]\quad\text{or}\quad x=[$s]
+\end{aligned}
+```]
+
+The solution set is [`[$solutions]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

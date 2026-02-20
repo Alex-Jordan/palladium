@@ -1,0 +1,135 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:08-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.6.12)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "bizarroArithmetic.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context()->operators->set(
+'**' => {class => 'bizarro::BOP::power', isCommand => 1, perl=>undef},
+'^' => {class => 'bizarro::BOP::power', isCommand => 1, perl=>undef},
+);
+Context()->variables()->are(x=>'Real',y=>'Real',z=>'Real');
+Context()->variables->set(x=>{limits=>[0.1,2]});
+Context()->variables->set(y=>{limits=>[0.1,2]});
+Context()->variables->set(z=>{limits=>[0.1,2]});
+$a[0]= Formula("4/y^6");
+$a[1]= Formula("3z^2/(x^4y)");
+$a[2]= Formula("40/x");
+for my $i (0,1,2) {
+    $evaluator[$i] = $a[$i] -> cmp(
+       checker=>sub{
+          my ( $correct, $student, $ansHash ) = @_;
+          return 0 if $ansHash->{isPreview} || $correct != $student;
+          $student = $ansHash->{student_formula};
+          $correct = $correct->{original_formula} if defined $correct->{original_formula};
+          $student = Formula("$student"); $correct = Formula("$correct");
+          return 0 unless ($correct == $student);
+          Context()->flags->set(bizarroPow=>1);
+          delete $correct->{test_values};
+          delete $student->{test_values};
+          my $OK = (($correct == $student) or ($student == $correct));
+          Context()->flags->set(bizarroPow=>0);
+          Value::Error("Your answer is not in the required form yet") unless $OK;
+          return $OK;
+    });
+};
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+a.  Write [`4y^{-6}`] without using negative exponents.
+
+    [_]{$evaluator[0]}{12}
+
+a.  Write [`\dfrac{ 3 x^{-4} }{ yz^{-2} }`] without using negative exponents.
+
+    [_]{$evaluator[1]}{12}
+
+a.  Simplify [`\left(-5x^{-5}\right)\left(-8x^4\right)`] and write it without using negative exponents.
+
+    [_]{$evaluator[2]}{12}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  An exponent only applies to whatever it is "touching". In the expression [`4y^{-6}\text{,}`] only the [`y`] is affected by the exponent.
+
+    [```\newcommand{\amp}{&}
+    \begin{aligned}
+    4y^{-6} \amp= 4\cdot \frac{1}{y^{6}}\\
+    \amp= \frac{4}{y^6}
+    \end{aligned}
+    ```]
+
+a.  Negative exponents tell us to move some variables between the numerator and denominator to make the exponents positive. The [`x^{-4}`] in the numerator should become [`x^4`] in the denominator. The [`z^{-2}`] in the denominator should become [`z^2`] in the numerator.
+
+    [```\newcommand{\highlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}
+                      \frac{ 3 \highlight{x^{-4}} }{ y\highlight{z^{-2}} }=\frac{ 3 \highlight{z^{2}} }{ y\highlight{x^{4}} }
+                    ```]
+
+    Notice that the factors of [`3`] and [`y`] did not move, as both of those factors had positive exponents.
+
+a.  The product of powers rule still applies, and we can add exponents even when one or both are negative:
+
+    [```\newcommand{\amp}{&}
+    \begin{aligned}
+    \left(-5x^{-5}\right)\left(-8x^4\right)\amp=(-5)(-8)x^{-5}x^4\\
+    \amp=40x^{-1}\\
+    \amp=\frac{40}{x}
+    \end{aligned}
+    ```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

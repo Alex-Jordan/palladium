@@ -1,0 +1,90 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8.1.10)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextScientificNotation.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("ScientificNotation");
+$rice= Compute("2.9 x 10^-2");
+$gate= Compute("1.4 x 10^-8");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Write each of the following in scientific notation.
+a.  The weight of a single grain of long grain rice is about [`0.029`] grams.
+
+    [_]{$rice}{10}
+
+a.  The gate pitch of a [@htmlLink("http://www.prb.org/pdf16/prb-wpds2016-web-2016.pdf","microprocessor","TARGET='_blank'")@]* is [`0.000\,000\,014`] meters
+
+    [_]{$gate}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  To convert this weight to scientific notation, we must first move the decimal behind the first nonzero digit to obtain [`2.9\text{,}`] which requires that we move the decimal point 2 places. Thus we have:
+
+    [```
+                      0\overbrace{.02}^{2}9\text{ grams} = 2.9 \times 10^{-2}\text{ grams}
+                    ```]
+
+a.  The gate pitch of a microprocessor is:
+
+    [```
+                      0\overbrace{.000\,000\,01}^{8 \text{ places}}4\text{ meters} = 1.4 \times 10^{-8}\text{ meters}
+                    ```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

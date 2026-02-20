@@ -1,0 +1,103 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:10-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.6.5.101)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserNumberWithUnits.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$g = -1.62;
+$gU = NumberWithUnits("$g m/s^2");
+$h = random(2,8,1);
+$hU = NumberWithUnits("$h m");
+$v = random(1,2,0.1);
+$vU = NumberWithUnits("$v m/s");
+Context()->variables->are(t=>'Real');
+$a = $g/2;
+$b = $v;
+$c = $h+2;
+$f = Formula("$a t^2 + $b t + $c");
+$s = Real((-$b + sqrt(($b)**2 - 4*$a*$c))/(2*$a));
+$t = Real((-$b - sqrt(($b)**2 - 4*$a*$c))/(2*$a));
+$tU = NumberWithUnits("$t s");
+$negb = -$b;
+$discriminant = $b**2 - 4*$a*$c;
+$sqrtdisc = Real(sqrt($discriminant));
+$a2 = 2*$a;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+An astronaut on the moon makes a running jump off a cliff onto a broad flat plain. The clifftop is [$hU] higher than the plain. Because of the slight upward jump, the astronaut's height from the plain, in meters, [`t`] seconds after the jump is [`[$f]\text{.}`] How long will it be until the astronaut lands in the plain?
+
+[_]{$tU}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+When the astronaut lands, the height will be [`0\text{.}`] So we must solve the equation [`[$f]=0\text{.}`] Using the quadratic formula:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+t\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{[$negb]\pm\sqrt{[$b]^2-4\left([$a]\right)\left([$c]\right)}}{2\left([$a]\right)}\\
+\amp=\frac{[$negb]\pm\sqrt{[$discriminant]}}{[$a2]}\\
+\amp\approx\frac{[$negb]\pm[$sqrtdisc]}{[$a2]}\\
+t\amp\approx\frac{[$negb]-[$sqrtdisc]}{[$a2]}\quad\text{or}\quad t\approx\frac{[$negb]+[$sqrtdisc]}{[$a2]}\\
+t\amp\approx[$t]\quad\text{or}\quad t\approx[$s]
+\end{aligned}
+```]
+
+Only the solution [`t\approx[$t]`] makes sense in this situation. So it will takes [`[$tU]`] for the astronaut to land.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

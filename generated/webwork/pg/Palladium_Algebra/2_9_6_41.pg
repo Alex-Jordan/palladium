@@ -1,0 +1,120 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:10-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.9.6.41)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGgraphmacros.pl",
+  "PCCgraphMacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->add(t => 'Real');
+Context()->flags->set(showExtraParens=>0, reduceConstants=>0);
+Context()->noreduce("(-x)-y","(-x)+y");
+Context()->flags->set(
+  tolerance => 0.005,
+  tolType => "absolute",
+);
+$acceleration = random(1,5,0.1);
+$v0 = random(3,10,1);
+$a = $acceleration/2;
+$b = $v0;
+$func = Compute("$a*t**2+$b*t")->reduce;
+$funcX = Compute("$a*x**2+$b*x")->reduce;
+$t1 = random(5,20,1);
+$d1 = $func->eval(t=>$t1);
+$alt="This picture shows the graph of a parabola for the function d(t)=$func. A horizontal line y=$d1 is graphed, and the intersections of d(t) and y=$d1, ($t1,$d1), are labeled.";
+($min[0], $max[0], $min[1], $max[1], $ticknum[0], $ticknum[1], $xticks_ref, $yticks_ref, $marksep[0], $marksep[1]) = NiceGraphParameters([0,$t1],[$d1,0]);
+@xticks = @$xticks_ref;
+@yticks = @$yticks_ref;
+$gr = init_graph($min[0],$min[1],$max[0],$max[1],
+   axes=>[0,0],
+   grid=>[$ticknum[0],$ticknum[1]],
+   size=>[xPixels(),yPixels()]
+);
+$gr->lb('reset');
+for my $j (@xticks) {
+    if (abs($j) < 10**(-10)) {next;}
+    $gr->lb( new Label($j, -$marksep[1]/8, $j,'black','center','top'));
+}
+$gr->lb( new Label($max[0]-$marksep[0]/2, $marksep[1]/8, t,'black','center','bottom'));
+$gr->lb( new Label($marksep[0]/8, $max[1]-$marksep[1]/2, d,'black','left','middle'));
+for my $j (@yticks) {
+    if (Real($j) == 0) {next;}
+    $gr->lb( new Label(-$marksep[0]/8, $j, $j,'black','right','middle'));
+}
+add_functions($gr, "$funcX for x in < 0,$max[0]> using color:red and weight:1");
+add_functions($gr, "$d1 for x in < $min[0],$max[0]> using color:blue and weight:1");
+$gr->lb( new Label($t1/2, $d1-$marksep[1]/8, "y=$d1",'blue','center','top'));
+$hx = $t1/2;
+$hy = $func->eval(t=>$hx);
+$gr->lb( new Label($hx-$marksep[0]/8, $hy, "d(t)",'red','right','middle'));
+$gr->stamps( closed_circle($t1,$d1,'red') );
+$gr->lb( new Label($t1-$marksep[0]/8, $d1+$marksep[1]/8, "($t1,$d1)",'red','right','bottom'));
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+In a race, a car drove through the starting line at the speed of [`[$v0]`] meters per second. It was accelerating at [`[$acceleration]`] meters per second squared. Its distance from the starting position can be modeled by the function [`d(t)=[$func]\text{.}`] Find the answer using technology.
+
+After [_]{$t1}{10} seconds, the car was [`[$d1]`] meters away from the starting position.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Use technology to graph the functions [`d(t)=[$func]`] and [`y=[$d1]\text{,}`] and find the point of intersection where [`x`] is positive, [`([$t1],[$d1])\text{.}`]
+
+>> [@image(insertGraph($gr), width=>282)@]*  <<
+
+According to the point of intersection, the car was [`[$d1]`] meters away from the starting position after [`[$t1]`] seconds.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

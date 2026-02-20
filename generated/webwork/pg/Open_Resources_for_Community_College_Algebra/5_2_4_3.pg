@@ -1,0 +1,134 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:08-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.2.4.3)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "scaffold.pl",
+  "AnswerFormatHelp.pl",
+  "contextFraction.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+COMMENT('This problem is scaffolded with multiple parts');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Fraction");
+$a[0] = Fraction(random_coprime([1 .. 5], [2 .. 5]));
+$a[1] = Fraction(random_coprime([-5 .. -1], [2 .. 5]));
+$a[2] = Fraction(random_coprime([-5 .. -1], [2 .. 5]));
+$a[3] = $a[0];
+@n = (random(2,5), list_random(2,4), list_random(3,5), list_random(2,4));
+@answer = map {$a[$_]**$n[$_]} (0..3);
+$answer[3] = -$answer[3];
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Evaluate each power expression.
+
+END_PGML
+
+############################################################
+# Scaffold
+############################################################
+Scaffold::Begin(numbered => 1,is_open => "correct_or_first_incorrect",can_open => always,);
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+[`\left([$a[0]]\right)^[$n[0]]`]
+
+[_]{$answer[0]}{6}
+
+END_PGML
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+[`\left([$a[1]]\right)^[$n[1]]`]
+
+[_]{$answer[1]}{6}
+
+END_PGML
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+[`\left([$a[2]]\right)^[$n[2]]`]
+
+[_]{$answer[2]}{6}
+
+END_PGML
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+[`-\left([$a[3]]\right)^[$n[3]]`]
+
+[_]{$answer[3]}{6}
+
+END_PGML
+
+Section::End();
+
+Scaffold::End();
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

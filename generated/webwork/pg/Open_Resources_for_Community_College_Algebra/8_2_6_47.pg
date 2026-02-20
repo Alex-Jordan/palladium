@@ -1,0 +1,95 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8.2.6.47)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "parserNumberWithUnits.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$milliliters = random(100,400,10);
+$millilitersU = NumberWithUnits("$milliliters mL", {newUnit => {name => 'mL', conversion => {factor => 10**-6, m => 3}}});
+$sex = list_random('female','male');
+$name = RandomName(sex=>$sex);
+$Pronoun = ($sex eq 'male') ? 'He' : 'She';
+$pronoun = lc($Pronoun);
+$n = list_random(6,7,9,10,11,13,14,15);
+$nWord = numberWord($n);
+$cups = $milliliters/236.588*$n/4;
+$conversion = {factor => 0.000236588, m => 3};
+$cupsU = NumberWithUnits("$cups c",
+  {newUnit=>[
+    {name=>'c', conversion => $conversion},
+    {name=>'cup', conversion => $conversion},
+    {name=>'cups', conversion => $conversion},
+  ]}
+);
+$evaluator = $cupsU->cmp->withPostFilter(sub {
+  my $ans = shift;
+  if ($ans->{score}) {
+    my $correct = $ans->{correct_value};
+    my $student = $ans->{student_value};
+    my %goodunits = map { $_ => 1 } ('c','cup','cups');
+    if (!exists($goodunits{$student->{units}})) {
+      $ans->{ans_message} = "Your answer is equivalent to the correct answer, but it uses the wrong units";
+      $ans->score(0);
+    }
+  }
+  return $ans;
+});
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+[$name] found a family recipe from the old country that uses [`[$millilitersU]`] of soup stock. The recipe serves four, but [$name] wants to scale it up to serve [$nWord]. And none of [$name]'s measuring devices use the metric system. How many cups of soup stock should [$pronoun] use?
+
+[_]{$evaluator}{20}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

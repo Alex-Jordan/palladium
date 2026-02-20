@@ -1,0 +1,104 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(9.2.15)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGgraphmacros.pl",
+  "parserAssignment.pl",
+  "contextForm.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Point");
+$vertex=Point("(-2,1)");
+$xintercept=Compute("None");
+$yintercept=Point("(0,5)");
+Context("Numeric")->variables->add(y=>'Real');
+parser::Assignment->Allow;
+$axisofsymmetry=Formula("x=-2");
+$gr = init_graph(-7,-7,7,7,axes=>[0,0],grid=>[14,14],size=>[240,240]);
+$gr->lb('reset');
+for my $j (-6,-4,-2,2,4,6) {
+  $gr->lb( new Label($j, 0, $j,'black','center','top','large'));
+}
+for my $j (-6,-4,-2,2,4,6) {
+  $gr->lb( new Label(0, $j, $j,'black','right','middle','large'));
+}
+add_functions($gr, "(x+2)**2+1 for x in <-4.45,0.45>  using color:blue and weight:1");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use the graph to answer the following questions.
+
+>> [@image(insertGraph($gr), width=>240)@]*  <<
+
+a.  What are the coordinates of the vertex? [_]{$vertex}{10}
+
+a.  What is the equation of the axis of symmetry? [_]{$axisofsymmetry}{10}
+
+a.  What are the coordinates of the [`x`]-intercept(s)? [_]{$xintercept}{10}
+
+a.  What are the coordinates of the [`y`]-intercept? [_]{$yintercept}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  The vertex is at [`(-2,1)\text{.}`]
+
+a.  The equation of the axis of symmetry is [`x=-2\text{.}`]
+
+a.  There are no [`x`]-intercepts. (Answer [|None|]*.)
+
+a.  The [`y`]-intercept is at [`(0,5)\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

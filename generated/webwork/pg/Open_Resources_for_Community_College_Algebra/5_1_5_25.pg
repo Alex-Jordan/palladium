@@ -1,0 +1,81 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:08-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.1.5.25)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "contextLimitedPolynomial.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$x = list_random('x','y','r','t');
+Context("Fraction");
+Context()->variables->are($x=>'Real');
+Context()->noreduce('(-x)+y', '(-x)-y');
+for my $i (0..3) {
+  $c[$i] = Fraction(non_zero_random(-9,9,1),non_zero_random(-9,9,1));
+}
+$poly1 = Formula("$c[0] $x + $c[1]")->reduce;
+$poly2 = Formula("$c[2] $x + $c[3]")->reduce;
+$m[0] = $c[0] + $c[2];
+$m[1] = $c[1] + $c[3];
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($x=>'Real');
+$answer = Formula("$m[0] $x + $m[1]")->reduce;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Add the polynomials.
+
+[`\left([$poly1]\right)+\left([$poly2]\right)`]
+
+[_]{$answer}{20}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

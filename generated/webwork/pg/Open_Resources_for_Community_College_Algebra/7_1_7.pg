@@ -1,0 +1,93 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:08-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(7.1.7)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Form")->variables->are(q => 'Real');
+$answer = Formula("{-2sqrt(3)-2, 2sqrt(3)-2}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve for [`q`] in [`(q+2)^2-12=0\text{.}`]
+
+[_]{$answer}{16}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+It's important to suppress any urge to expand the squared binomial.
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+(q+2)^2-12\amp=0\\
+(q+2)^2\amp=12\\
+q+2\amp=\pm\sqrt{12}\\
+q+2\amp=\pm\sqrt{4\cdot3}\\
+q+2\amp=\pm2\sqrt{3}\\
+q\amp=\pm2\sqrt{3}-2
+\end{aligned}
+```]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+q\amp=-2\sqrt{3}-2\amp\text{or}\amp\amp q\amp=2\sqrt{3}-2
+\end{aligned}
+```]
+
+The solution set is [`\left\{-2\sqrt{3}-2,2\sqrt{3}-2\right\}\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

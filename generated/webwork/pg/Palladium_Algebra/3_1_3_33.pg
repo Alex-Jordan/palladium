@@ -1,0 +1,146 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:10-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(3.1.3.33)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGgraphmacros.pl",
+  "PCCgraphMacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->add(t => 'Real');
+Context()->flags->set(showExtraParens=>0, reduceConstants=>0);
+Context()->noreduce("(-x)-y","(-x)+y");
+Context()->flags->set(
+  tolerance => 0.005,
+  tolType => "absolute",
+);
+
+$a = random(2,9,1);
+do {$b = random(4,9,1);} until ($a!=$b);
+
+$func = Compute("($a*t)/(t**2+$b)")->reduce;
+$funcX = Compute("($a*x)/(x**2+$b)")->reduce;
+
+$tMax = sqrt($b);
+$fMax = $func->eval(t=>$tMax);
+$t11 = random(5,int($tMax*10)-5,1)/10;
+$f11 = $func->eval(t=>$t11);
+$f11R = int($f11*100+0.5)/100;
+
+$a1 = $f11R;
+$b1 = -$a;
+$c1 = $b*$f11R;
+$dis = ($b1)**2-4*$a1*$c1;
+$t1 = (-$b1-sqrt($dis))/(2*$a1);
+$t2 = (-$b1+sqrt($dis))/(2*$a1);
+$t1R = int($t1*100+0.5)/100;
+$t2R = int($t2*100+0.5)/100;
+$f1 = $func->eval(t=>$t1);
+$f1R = int($f1*100+0.5)/100;
+$ans = List($t1R,$t2R);
+
+$alt="This picture shows the graph of a rational function C(t)=$func and the line y=$f1. Their intersections ($t1R,$f1R) and ($t2R,$f1R) are labeled.";
+
+($min[0], $max[0], $min[1], $max[1], $ticknum[0], $ticknum[1], $xticks_ref, $yticks_ref, $marksep[0], $marksep[1]) = NiceGraphParameters([0,$t2],[$fMax,0,0.5]);
+
+@xticks = @$xticks_ref;
+@yticks = @$yticks_ref;
+
+$gr = init_graph($min[0],$min[1],$max[0],$max[1],
+   axes=>[0,0],
+   grid=>[$ticknum[0],$ticknum[1]],
+   size=>[xPixels(),yPixels()]
+);
+$gr->lb('reset');
+for my $j (@xticks) {
+    if (abs($j) < 10**(-10)) {next;}
+    $gr->lb( new Label($j, -$marksep[1]/8, $j,'black','center','top'));
+}
+$gr->lb( new Label($max[0]-$marksep[0]/2, $marksep[1]/8, t,'black','center','bottom'));
+$gr->lb( new Label($marksep[0]/8, $max[1]-$marksep[1]/2, C,'black','left','middle'));
+
+for my $j (@yticks) {
+    if (Real($j) == 0) {next;}
+    $gr->lb( new Label(-$marksep[0]/8, $j, $j,'black','right','middle'));
+}
+
+add_functions($gr, "$funcX for x in < 0,$max[0]> using color:red and weight:1");
+add_functions($gr, "$f1R for x in < 0,$max[0]> using color:red and weight:1");
+$gr->lb( new Label($tMax, $f1R-$marksep[1]/8, "y=$f1R",'red','center','top'));
+
+$hx = $tMax;
+$hy = $func->eval(t=>$tMax);
+$gr->lb( new Label($hx, $hy+$marksep[1]/8, "C(t)",'red','center','bottom'));
+
+$gr->stamps( closed_circle($t1,$f1,'red') );
+$gr->stamps( closed_circle($t2,$f1,'red') );
+$gr->lb( new Label($t1-$marksep[0]/8, $f1+$marksep[1]/8, "($t1R,$f1R)",'red','center','bottom'));
+$gr->lb( new Label($t2-$marksep[0]/8, $f1+$marksep[1]/8, "($t2R,$f1R)",'red','center','bottom'));
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+The concentration of a drug in a patient's blood stream, in milligrams per liter, can be modeled by the function [`C`]m>, with [`C(t)=[$func]\text{,}`] where [`t`] is the number of hours since the drug is injected. Use technology to complete the following sentence.
+
+The drug's concentration is [$f1R] milligrams per liter [_]{$t1}{10} hours after injection and then again [_]{$ans}{10} hours after injection.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+To locate the points on [`C(t)`] where the [`y`]-value is [`[$f1R]\text{,}`] we use technology to graph the function [`C(t)=[$func]`] and [`y=[$f1R]\text{,}`] and then locate their intersections.
+
+>> [@image(insertGraph($gr), width=>600)@]*  <<
+
+The intersections are [`([$t1R],[$f1R])`] and [`([$t2R],[$f1R])\text{.}`] Those points imply the drug concentration in the blood stream will be approximately [`[$f1R]`] milligrams per liter approximately [`[$t1R]`] hours since injection, and then again at this level [`[$t2R]`] hours since the injection.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

@@ -1,0 +1,82 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:08-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(6.3.4.74)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFraction.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedNumeric");
+$decimal = Real(2**(4/12));
+Context("Fraction-NoDecimals");
+$fraction = Fraction(5,4);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+On a guitar, there are [`12`] frets separating a note and the same note one octave higher.
+
+By moving from one fret to another that is four frets away, the frequency of the note changes by a factor of [`2^{4/12}\text{.}`] Use a calculator to find this number as a decimal.
+
+[_]{$decimal}{10}
+
+This decimal shows you that [`2^{4/12}`] is very close to a "nice" fraction with a small denominator. Two notes with this frequency ratio form a "major third" in music. What is that fraction?
+
+[_]{$fraction}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+A calculator says [`2^{4/12}\approx[$decimal]\text{.}`] This is very close to [`[$fraction]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

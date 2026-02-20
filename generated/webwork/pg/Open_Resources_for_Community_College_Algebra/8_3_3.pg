@@ -1,0 +1,126 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8.3.3)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGgraphmacros.pl",
+  "PCCmacros.pl",
+  "parserNumberWithUnits.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$base = 14;
+$height = 5;
+
+$xmin = 0;         #The viewing window
+$xmax = $base+2;
+$ymin = 0;
+$ymax = $xmax*$height/$base;
+
+@x = (($xmax-$base)/2,($xmax+$base)/2);
+@y = (($ymax-$height)/2,($ymax+$height)/2);
+
+$cornersize = $xmax*10/240;
+
+$picture = init_graph($xmin,$ymin,$xmax,$ymax, pixels=>[240,240*$height/$base]);
+
+$picture->lb( new Label(($x[0]+$x[1])/2, $y[0],"$base m",'black','center','bottom','large'));
+$picture->lb( new Label($x[1],($y[0]+$y[1])/2,"$height m",'black','right','middle','large'));
+
+$picture->moveTo($x[0],$y[0]);
+$picture->lineTo($x[1],$y[0], 'blue',3);
+$picture->lineTo($x[1],$y[1], 'blue',3);
+$picture->lineTo($x[0],$y[1], 'blue',3);
+$picture->lineTo($x[0],$y[0], 'blue',3);
+
+foreach $i (0,1) {
+    foreach $j (0,1) {
+        $picture->moveTo($x[$i]+(-1)**$i*$cornersize,$y[$j]);
+        $picture->lineTo($x[$i]+(-1)**$i*$cornersize,$y[$j]+(-1)**$j*$cornersize, 'blue',1);
+        $picture->lineTo($x[$i],$y[$j]+(-1)**$j*$cornersize, 'blue',1);
+    }
+}
+
+$perimeter = 2*($base+$height);
+$area = $base*$height;
+$ansP = NumberWithUnits("$perimeter m");
+$ansA = NumberWithUnits("$area m^2");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the perimeter and area of the rectangle.
+
+>> [@image(insertGraph($picture), width=>270)@]*  <<
+
+[@KeyboardInstructions('Use [|m|]* for meters and [|m^2|]* for square meters.')@]**
+
+Its perimeter is [_]{$ansP}{10} and its area is [_]{$ansA}{10}.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Using the perimeter and area formulas for a rectangle, we have:
+
+[```\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}\newcommand{\amp}{&}
+\begin{aligned}
+P\amp=2(\ell+w)\amp A\amp=\ell\cdot w\\
+\amp=2(\substitute{14}+\substitute{5}) \amp  \amp=\substitute{14}\cdot\substitute{5}\\
+\amp=2(19)\amp\amp=70\\
+\amp=38
+\end{aligned}
+```]
+
+Since length and width were measured in meters, we find that the perimeter is [`38`] meters and the area is [`70`] square meters.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

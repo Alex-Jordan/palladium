@@ -1,0 +1,105 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:11-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.2.7.126)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserMultiAnswer.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+do {
+  $a = random(1,10,1);
+  $b = random(-10,-1,1);
+  $c = random(1,10,1);
+  $exponent = $a + $b - $c;
+} until ($exponent > 5);
+$answer = Compute("none");
+do {
+  $d = random(1,10,1);
+  $e = random(-10,-1,1);
+  $f = random(1,10,1);
+  $negexponent = $d + $e - $f;
+} until ($negexponent < -5);
+$multians = MultiAnswer($d, $e, $f)->with(
+singleResult => 1,
+    checker => sub {
+    my ( $correct, $student, $self ) = @_;
+    my ( $dstu, $estu, $fstu ) = @{$student};
+    my ( $dcor, $ecor, $fcor ) = @{$correct};
+    if ( $dstu >= 0) {Value::Error('Your value for a should be negative.')};
+    if ( $estu >= 0) {Value::Error('Your value for b should be negative.')};
+    if ( $fstu <= 0) {Value::Error('Your value for c should be positive.')};
+    if ($dstu+$estu-$fstu != $negexponent) {return 0;} else {return 1};
+  }
+);
+$abs = abs($negexponent);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Consider the expression [`\dfrac{x^a\cdot x^b}{x^c}`] where [`\newcommand{\lt}{<}a\lt0, b\lt0\text{,}`] and [`\newcommand{\gt}{>}c \gt0\text{.}`]
+a.  Are there values for [`a\text{,}`] [`b\text{,}`] and [`c`] so that the expression equals [`x^{[$exponent]}\text{?}`] If so, fill in the blanks below with possible values for [`a\text{,}`] [`b\text{,}`] and [`c\text{.}`] If not, fill in the blanks below with the word [|none|]*.
+
+    [`a`] = [_]{$answer}{10}, [`b`] = [_]{$answer}{10}, and [`c`] = [_]{$answer}{10}
+
+a.  Are there values for [`a\text{,}`] [`b\text{,}`] and [`c`] so that the expression equals [`\frac{1}{x^{[$abs]}}\text{?}`] If so, fill in the blanks below with possible values for [`a\text{,}`] [`b\text{,}`] and [`c\text{.}`] If not, fill in the blanks below with the word [|none|]*.
+
+    [`a`] = [_]{$multians}{10}, [`b`] = [_]{$multians}{10}, and [`c`] = [_]{$multians}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  The problem states that [`\frac{x^a\cdot x^b}{x^c}=x^{[$exponent]}\text{.}`] To simplify [`\frac{x^a\cdot x^b}{x^c}\text{,}`] we must add the exponents [`a`] and [`b\text{,}`] and then subtract the exponent [`c\text{.}`] Thus, [`a+b-c`] must equal [$exponent]. Since [`a`] and [`b`] are negative, [`a+b`] is a negative number. Then, we have to subtract [`c\text{,}`] which is a positive number. Thus, [`a+b-c`] will result in a negative number, but [`a+b-c`] must equal [$exponent]. Therefore, it is not possible to come up with values for [`a\text{,}`] [`b\text{,}`] and [`c`] that work.
+
+a.  First off, we must remember that [`\frac{1}{x^{[$abs]}}=x^{[$negexponent]}\text{.}`] To simplify [`\frac{x^a\cdot x^b}{x^c}\text{,}`] we must add the exponents [`a`] and [`b\text{,}`] and then subtract the exponent [`c\text{.}`] Thus, [`a+b-c`] must equal [$negexponent]. For example, [`[$a]+{[$b]}-[$c]=[$negexponent]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

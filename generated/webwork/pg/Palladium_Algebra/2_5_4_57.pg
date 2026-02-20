@@ -1,0 +1,66 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:09-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.5.4.57)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserNumberWithUnits.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$base = random(6 .. 8);
+$height = random(16 .. 30);
+$ladder = NumberWithUnits(int(sqrt($base**2 + $height**2) - 0.00001) + 1, 'ft');
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+To hang some decorations on a home's roof line, you need a ladder that can reach [`[$height]`] feet. However, the base of the ladder needs to be at least [`[$height]`] feet removed from direcly below the roofline because of some bushes at the base of the house. Rounding up to the nearest foot, how long of a ladder do you need?
+
+[_]{$ladder}{16}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

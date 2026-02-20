@@ -1,0 +1,84 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-01T09:36:05-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.1.4.68)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserPopUp.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$m = random(2,3,1);
+$mraised = 100*$m;
+$p = random(4,5,1);
+$praised = 100*$p;
+$less = DropDown(['<','>','='],0);
+$more = DropDown(['<','>','='],1);
+$equal = DropDown(['<','>','='],2);
+if ($m**$p == $p**$m) {$popup = $equal;}
+else {
+  $popup = ($m**$p > $p**$m) ? $more : $less;
+};
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Choose the correct inequality or equal sign to make the relation true.
+
+[`[$m]^{[$praised]}`] [_]{$popup}{5} [`[$p]^{[$mraised]}`]
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Trying to calculate [`[$m]^{[$praised]}`] or [`[$p]^{[$mraised]}`] results in very large numbers. Notice that [`[$m]^{[$praised]}=[$m]^{([$p]\cdot 100)}\text{.}`] Also, notice that [`[$p]^{[$mraised]}=[$p]^{([$m]\cdot100)}\text{.}`] So to know if [`[$m]^{[$praised]}`] or [`[$p]^{[$mraised]}`] is bigger, we only have to compare [`[$m]^{[$p]}`] with [`[$p]^{[$m]}\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

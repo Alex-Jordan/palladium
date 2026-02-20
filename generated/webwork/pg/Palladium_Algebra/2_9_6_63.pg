@@ -1,0 +1,93 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:10-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.9.6.63)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$f = RandomVariableName(type=>'function');
+$a = random(0.1,9.9,0.2);
+$h = non_zero_random(-9,9,1);
+$k = non_zero_random(-9,9,1);
+Context()->noreduce('(-x)+y','(-x)-y');
+$formula = Formula("$a(x - $h)^2 + $k")->reduce;
+Context("Interval");
+$domain = Compute("(-inf,inf)");
+$range = Compute("[$k,inf)");
+Context("Point");
+$vertex = Compute("($h,$k)");
+$posneg = ($a > 0) ? "positive" : "negative";
+$updown = ($a > 0) ? "upward" : "downward";
+$greatless = ($a > 0) ? "greater" : "less";
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Let [`[$f]`] be defined by [`[$f](x)=[$formula]\text{.}`]
+a.  What is the domain of [`[$f]\text{?}`]
+
+    [_]{$domain}{10}
+
+a.  What is the range of [`[$f]\text{?}`]
+
+    [_]{$range}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  The function is quadratic, so the domain is [`[$domain]\text{.}`] There are no invalid inputs for this function.
+
+a.  Since the formula is in vertex form, we can see that the graph of [`[$f]`] has a vertex at [`[$vertex]\text{.}`] Since the leading coefficient is [`[$a]`] which is [$posneg], the parabola opens [$updown]. So the range is all numbers [$greatless] than or equal to [`[$k]\text{.}`] So the range is [`[$range]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

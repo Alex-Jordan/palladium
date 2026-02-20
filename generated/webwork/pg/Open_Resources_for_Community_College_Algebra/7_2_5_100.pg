@@ -1,0 +1,104 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(7.2.5.100)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserNumberWithUnits.pl",
+  "contextForm.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$g = -32;
+$gU = NumberWithUnits("$g ft/s^2");
+$h = random(16,42,1);
+$hU = NumberWithUnits("$h ft");
+$v = random(1.5,4,0.1);
+$vU = NumberWithUnits("$v ft/s");
+Context()->variables->are(t=>'Real');
+$a = $g/2;
+$b = $v;
+$c = $h;
+$f = Formula("$a t^2 + $b t + $c");
+$s = Real((-$b + sqrt(($b)**2 - 4*$a*$c))/(2*$a));
+$t = Real((-$b - sqrt(($b)**2 - 4*$a*$c))/(2*$a));
+$tU = NumberWithUnits("$t s");
+$negb = -$b;
+$discriminant = $b**2 - 4*$a*$c;
+$sqrtdisc = Real(sqrt($discriminant));
+$a2 = 2*$a;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+While standing on a tree branch that is [$hU] high off the ground, a squirrel kicks a nut in an arc. The nut falls cleanly to the ground without hitting anything on the way down. While the nut is in the air, its height from the ground, in feet, [`t`] seconds after the kick is [`[$f]\text{.}`] How long will it be until the nut hits the ground?
+
+[_]{$tU}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+When the nut hits the ground, the height will be [`0\text{.}`] So we must solve the equation [`[$f]=0\text{.}`] Using the quadratic formula:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+t\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{[$negb]\pm\sqrt{[$b]^2-4\left([$a]\right)\left([$c]\right)}}{2\left([$a]\right)}\\
+\amp=\frac{[$negb]\pm\sqrt{[$discriminant]}}{[$a2]}\\
+\amp\approx\frac{[$negb]\pm[$sqrtdisc]}{[$a2]}\\
+t\amp\approx\frac{[$negb]-[$sqrtdisc]}{[$a2]}\quad\text{or}\quad t\approx\frac{[$negb]+[$sqrtdisc]}{[$a2]}\\
+t\amp\approx[$t]\quad\text{or}\quad t\approx[$s]
+\end{aligned}
+```]
+
+Only the solution [`t\approx[$t]`] makes sense in this situation. So it will takes [`[$tU]`] for the ball to hit the ground.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

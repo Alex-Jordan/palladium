@@ -1,0 +1,82 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:08-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(7.1.4.61)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$west = random(2,8,1);
+$north = random(3,7,1);
+$factor = random(2,6,1);
+$east = $west + $factor;
+$answer = Formula("sqrt($north**2+$factor**2)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Imagine that you are in Math Land, where roads are perfectly straight, and Mathlanders can walk along a perfectly straight line between any two points. One day, you bike [$west] miles west, [$north] miles north, and [$east] miles east. Then, your bike gets a flat tire and you have to walk home. How far do you have to walk?
+
+You have to walk [_]{$answer}{10} miles home.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+You biked [$west] miles west, [$north] miles north, and [$east] miles east. You are [$north] miles north and [$factor] miles east of your home. These are two sides of a right triangle. Thus, you must use the Pythagorean Theorem to find out how far you walked home.
+
+Solve this equation for [`c\text{:}`]
+
+[` [$north]^{2} + [$factor]^{2} = c^{2}\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

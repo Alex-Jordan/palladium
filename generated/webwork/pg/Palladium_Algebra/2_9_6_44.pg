@@ -1,0 +1,172 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:10-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.9.6.44)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGgraphmacros.pl",
+  "PCCmacros.pl",
+  "PCCgraphMacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->add(w => 'Real');
+Context()->flags->set(showExtraParens=>0, reduceConstants=>0);
+Context()->noreduce("(-x)-y","(-x)+y");
+Context()->flags->set(
+  tolerance => 0.005,
+  tolType => "absolute",
+);
+
+$width = random(50,100,10);
+$length = random($width+10,200,10);
+$area = $length*$width;
+$perimeter = $length+2*$width;
+
+$func = Compute("-2*w**2+$perimeter*w")->reduce;
+$funcX = Compute("-2*x**2+$perimeter*x")->reduce;
+
+$xVertex = $perimeter/4;
+$yVertex = $func->eval(w=>$xVertex);
+$a = -2;
+$b = $perimeter;
+$c = 0;
+$dis = ($b)**2-4*$a*$c;
+$xInt2 = (-$b-sqrt($dis))/(2*$a);
+$optimalLength = $yVertex/$xVertex;
+
+$alt="This picture shows the graph of a parabola for the function A(w)=$func. The vertex ($xVertex,$yVertex) is labeled.";
+
+($min[0], $max[0], $min[1], $max[1], $ticknum[0], $ticknum[1], $xticks_ref, $yticks_ref, $marksep[0], $marksep[1]) = NiceGraphParameters([0,$xInt2],[$yVertex,0]);
+
+@xticks = @$xticks_ref;
+@yticks = @$yticks_ref;
+
+$gr = init_graph($min[0],$min[1],$max[0],$max[1],
+   axes=>[0,0],
+   grid=>[$ticknum[0],$ticknum[1]],
+   size=>[xPixels(),yPixels()]
+);
+$gr->lb('reset');
+for my $j (@xticks) {
+    if (abs($j) < 10**(-10)) {next;}
+    $gr->lb( new Label($j, -$marksep[1]/8, $j,'black','center','top'));
+}
+$gr->lb( new Label($max[0]-$marksep[0]/2, $marksep[1]/8, 'w','black','center','bottom'));
+$gr->lb( new Label($marksep[0]/8, $max[1]-$marksep[1]/2, 'A','black','left','middle'));
+
+for my $j (@yticks) {
+    if (Real($j) == 0) {next;}
+    $gr->lb( new Label(-$marksep[0]/8, $j, $j,'black','right','middle'));
+}
+
+add_functions($gr, "$funcX for x in < $min[0],$max[0]> using color:red and weight:1");
+
+$lx = ($xVertex+$xInt2)/2;
+$ly = $func->eval(w=>$lx);
+$gr->lb( new Label($lx-$marksep[0]/8, $ly, "A(w)",'red','right','middle'));
+
+$gr->stamps( closed_circle($xVertex,$yVertex,'red') );
+$gr->lb( new Label($xVertex, $yVertex+$marksep[1]/4, "($xVertex,$yVertex)",'red','center','bottom'));
+
+$ans = List($length,$width);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+A farmer purchased [`[$perimeter]`] meters of fencing, and will build a rectangular pen along a river. This implies the pen has only [`3`] fenced sides. To enclose the largest possible area, what should the pen's length and width be? Model the pen's area with a function, and then find its maximum value.
+
+[@KeyboardInstructions('Use a comma to separate your answers.')@]**
+
+To enclose the largest possible area, the pen's length and width should be [_]{$ans}{10} meters.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Assume the rectangle's length is [`l`] meters, and its width is [`w`] meters. Since the pen has only three fenced sides, we have:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$perimeter]\amp=l+2w\\
+[$perimeter]-2w\amp=l
+\end{aligned}
+```]
+
+The area of the pen is [`A=lw\text{.}`] Substitute [`l=[$perimeter]-2w`] into [`A=lw\text{,}`] we have:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+A\amp=lw\\
+A\amp=([$perimeter]-2w)w\\
+A\amp=[$perimeter]w-2w^2\\
+A\amp=-2w^2+[$perimeter]w
+\end{aligned}
+```]
+
+Next, we use technology to graph the function [`A=-2w^2+[$perimeter]w\text{,}`] and then find the parabola's vertex [`([$xVertex],[$yVertex])\text{.}`]
+
+>> [@image(insertGraph($gr), width=>282)@]*  <<
+
+According to the vertex point [`([$xVertex],[$yVertex])\text{,}`] when the pen's width is [`[$xVertex]`] meters, the pen has the maximum area of [`[$yVertex]`] square meters.
+
+When [`w=[$xVertex]\text{,}`] we have:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+l\amp=[$perimeter]-2w\\
+\amp=[$perimeter]-2([$xVertex])\\
+\amp=[$optimalLength]
+\end{aligned}
+```]
+
+To maximize the pen's area, the length and width should be [`[$optimalLength]`] meters and [`[$xVertex]`] meters.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

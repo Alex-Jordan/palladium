@@ -1,0 +1,93 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8.2.6.45)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "parserNumberWithUnits.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$liters = random(26,50,1);
+$litersU = NumberWithUnits("$liters L");
+$sex = list_random('female','male');
+$name = RandomName(sex=>$sex);
+$Pronoun = ($sex eq 'male') ? 'He' : 'She';
+$pronoun = lc($Pronoun);
+$gallons = $liters/3.785;
+$conversion = {factor => 0.003785, m => 3};
+$gallonsU = NumberWithUnits("$gallons gal",
+  {newUnit=>[
+    {name=>'gal', conversion => $conversion},
+    {name=>'gallon', conversion => $conversion},
+    {name=>'gallons', conversion => $conversion},
+  ]}
+);
+$evaluator = $gallonsU->cmp->withPostFilter(sub {
+  my $ans = shift;
+  if ($ans->{score}) {
+    my $correct = $ans->{correct_value};
+    my $student = $ans->{student_value};
+    my %goodunits = map { $_ => 1 } ('gal','gallon','gallons');
+    if (!exists($goodunits{$student->{units}})) {
+      $ans->{ans_message} = "Your answer is equivalent to the correct answer, but it uses the wrong units";
+      $ans->score(0);
+    }
+  }
+  return $ans;
+});
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+[$name] is traveling in Europe and renting a car. [$Pronoun] is used to thinking of gasoline amounts in gallons, but in Europe it is sold in liters. After filling the gas tank, [$pronoun] notices it took [`[$litersU]`] of gas. How many gallons is that?
+
+[_]{$evaluator}{20}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

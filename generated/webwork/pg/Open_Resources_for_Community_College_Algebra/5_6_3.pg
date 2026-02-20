@@ -1,0 +1,125 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:08-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.6.3)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Form");
+Context()->variables->are(r=>'Real',x=>'Real',y=>'Real');
+$a = Formula("r^21");
+$b = Formula("x^110");
+$c = Formula("81r^4");
+$d = Formula("3y^4");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+a.  Simplify [`r^{16}\cdot r^{5}\text{.}`]
+
+    [_]{$a}{8}
+
+a.  Simplify [`\left(x^{11}\right)^{10}\text{.}`]
+
+    [_]{$b}{8}
+
+a.  Simplify [`(3r)^{4}\text{.}`]
+
+    [_]{$c}{8}
+
+a.  Simplify [`\frac{3y^7}{y^3}\text{.}`]
+
+    [_]{$d}{8}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  We _add_ the exponents because this is a product of powers with the same base:
+
+    [```\newcommand{\amp}{&}
+    \begin{aligned}
+    r^{16}\cdot r^{5}\amp=r^{16+5}\\
+    \amp=r^{21}
+    \end{aligned}
+    ```]
+
+a.  We _multiply_ the exponents because this is a power being raised to a power:
+
+    [```\newcommand{\amp}{&}
+    \begin{aligned}
+    \left(x^{11}\right)^{10}\amp=x^{11\cdot10}\\
+    \amp=x^{110}
+    \end{aligned}
+    ```]
+
+a.  We apply the power to each factor in the product:
+
+    [```\newcommand{\amp}{&}
+    \begin{aligned}
+    (3r)^{4}\amp=3^4r^4\\
+    \amp=81r^4
+    \end{aligned}
+    ```]
+
+a.  We _subtract_ the exponents because this expression is dividing powers with the same base:
+
+    [```\newcommand{\amp}{&}
+    \begin{aligned}
+    \frac{3y^7}{y^3}\amp=\frac{3}{1}\frac{y^7}{y^3}\\
+    \amp=3y^{7-3}\\
+    \amp=3y^4
+    \end{aligned}
+    ```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

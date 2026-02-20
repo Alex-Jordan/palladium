@@ -1,0 +1,113 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:10-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(3.1.3.31)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->add(t => 'Real');
+Context()->noreduce("(-x)-y","(-x)+y");
+
+$init = random(30,100,10);
+$b2 = random(2,9,1);
+$b1 = $init*$b2;
+$horizontal = random(200,500,50);
+$m2 = random(0.1,0.9,0.1);
+$m1 = $horizontal*$m2;
+
+$func = Compute("($m1*t+$b1)/($m2*t+$b2)")->reduce;
+
+$t1 = 100;
+$f1 = $func->eval(t=>$t1);
+$f1R = int($f1+0.5);
+
+$t2 = 1000;
+$f2 = $func->eval(t=>$t2);
+$f2R = int($f2+0.5);
+
+$t3 = 10000;
+$f3 = $func->eval(t=>$t3);
+$f3R = int($f3+0.5);
+
+$t4 = 100000;
+$f4 = $func->eval(t=>$t4);
+$f4R = int($f4+0.5);
+
+$diff = Round(abs($horizontal - $f2),0);
+Context()->flags->set(tolType=>'absolute',tolerance=>$diff);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+In a forest, the number of deer can be modeled by the function [`f(t)=[$func]\text{,}`] where [`t`] stands for the number of years from now. Answer the question with technology.
+
+[@KeyboardInstructions('Round your answer to at least one decimal place.')@]**
+
+As time goes on, the population levels off at approximately [_]{$horizontal}{10} deer living in the forest.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+With technology, we can find [`y`]-values of a few points when [`x`]-values are very large. For example:
+* [`([$t1],[$f1])`]
+
+* [`([$t2],[$f2])`]
+
+* [`([$t3],[$f3])`]
+
+* [`([$t4],[$f4])`]
+
+We can see the number of deer living in the forest is approaching [`[$horizontal]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

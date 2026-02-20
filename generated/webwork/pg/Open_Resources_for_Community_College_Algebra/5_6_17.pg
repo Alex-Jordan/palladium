@@ -1,0 +1,232 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:08-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.6.17)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "bizarroArithmetic.pl",
+  "scaffold.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+COMMENT('This problem is scaffolded with multiple parts');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context()->operators->set(
+'**' => {class => 'bizarro::BOP::power', isCommand => 1, perl=>undef},
+'^' => {class => 'bizarro::BOP::power', isCommand => 1, perl=>undef},
+);
+Context()->variables()->are(t=>'Real',v=>'Real',x=>'Real',y=>'Real');
+Context()->variables->set(t=>{limits=>[0.1,2]});
+Context()->variables->set(v=>{limits=>[0.1,2]});
+Context()->variables->set(x=>{limits=>[0.1,2]});
+Context()->variables->set(y=>{limits=>[0.1,2]});
+Context()->flags->set(reduceConstants=>0);
+$a[0]= Formula("3/x^4");
+$a[1]= Formula("4t^2/(25v^8)");
+$a[2]= Formula("y^21/216");
+$a[3]= Formula("x^22/(7^16t^38)");
+for my $i (0..3) {
+  $evaluator[$i] = $a[$i] -> cmp(
+    checker=>sub{
+      my ( $correct, $student, $ansHash ) = @_;
+      return 0 if $ansHash->{isPreview} || $correct != $student;
+      $student = $ansHash->{student_formula};
+      $correct = $correct->{original_formula} if defined $correct->{original_formula};
+      $student = Formula("$student"); $correct = Formula("$correct");
+      return 0 unless ($correct == $student);
+      Context()->flags->set(bizarroPow=>1);
+      delete $correct->{test_values};
+      delete $student->{test_values};
+      my $OK = (($correct == $student) or ($student == $correct));
+      Context()->flags->set(bizarroPow=>0);
+      Value::Error("Your answer is not in the required form yet") unless $OK;
+      return $OK;
+    }
+  );
+};
+
+############################################################
+# Body
+############################################################
+
+############################################################
+# Scaffold
+############################################################
+Scaffold::Begin(numbered => 1,is_open => "correct_or_first_incorrect",can_open => always,);
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+Simplify [`\dfrac{6x^{3}}{2x^{7}}`] and write it without using negative exponents.
+
+[_]{$evaluator[0]}{12}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+In the expression [`\frac{6x^{3}}{2x^{7}}\text{,}`] the coefficients reduce using the properties of fractions. One way to simplify the variable powers is:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+\frac{6x^{3}}{2x^{7}} \amp= \frac{6}{2} \cdot \frac{x^{3}}{x^{7}}\\
+\amp= 3 \cdot x^{3-7}\\
+\amp= 3 \cdot x^{-4}\\
+\amp= 3 \cdot \frac{1}{x^4}\\
+\amp= \frac{3}{x^4}
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+Simplify [`4\left(\frac{1}{5}tv^{-4}\right)^{2}`] and write it without using negative exponents.
+
+[_]{$evaluator[1]}{12}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+In the expression [`4\left(\frac{1}{5}tv^{-4}\right)^{2}\text{,}`] the exponent [`2`] applies to each factor inside the parentheses.
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+4\left(\frac{1}{5}tv^{-4}\right)^{2} \amp= 4\left(\frac{1}{5}\right)^{2}\left(t\right)^2\left(v^{-4}\right)^2\\
+\amp= 4\left(\frac{1}{25}\right)\left(t^2\right)\left(v^{-4\cdot 2}\right)\\
+\amp= 4\left(\frac{1}{25}\right)\left(t^2\right)\left(v^{-8}\right)\\
+\amp= 4\left(\frac{1}{25}\right)\left(t^2\right)\left(\frac{1}{v^{8}}\right)\\
+\amp= \frac{4t^2}{25v^{8}}
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+Simplify [`\left(\dfrac{3^{0}y^{4}\cdot y^{5}}{6y^2}\right)^{3}`] and write it without using negative exponents.
+
+[_]{$evaluator[2]}{12}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+To follow the order of operations in the expression [`\left(\frac{3^{0}y^{4}\cdot y^{5}}{6y^2}\right)^{3}\text{,}`] the numerator inside the parentheses should be dealt with first. After that, we'll simplify the quotient inside the parentheses. As a final step, we'll apply the exponent to that simplified expression:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+\left(\frac{3^0 y^4 \cdot y^5}{6y^2}\right)^3 \amp=  \left(\frac{1\cdot y^{4+5}}{6y^2}\right)^3\\
+\amp= \left(\frac{y^{9}}{6y^2}\right)^{3}\\
+\amp= \left(\frac{y^{9-2}}{6}\right)^{3}\\
+\amp= \left(\frac{y^7}{6}\right)^3\\
+\amp= \frac{\left(y^7\right)^3}{6^3}\\
+\amp= \frac{y^{7\cdot 3}}{216}\\
+\amp= \frac{y^{21}}{216}
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+Simplify [`\left( 7^{4} x^{-6} t^{2} \right)^{-5} \left( 7 x^{-2} t^{-7} \right)^{4}`] and write it without using negative exponents. Leave larger numbers (such as [`7^{10}`]) in exponent form.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+We'll again rely on the order of operations, and look to simplify anything inside parentheses first and then apply exponents. In this example, we will begin by applying the product to a power rule, followed by the power to a power rule.
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+\left( 7^{4} x^{-6} t^{2} \right)^{-5} \left( 7 x^{-2} t^{-7} \right)^{4}
+                \amp=  \left( 7^{4} \right)^{-5} \left( x^{-6} \right)^{-5} \left( t^{2} \right)^{-5} \cdot \left( 7 \right)^{4} \left(x^{-2}\right)^{4}  \left(t^{-7} \right)^{4}\\
+\amp=   7^{-20} x^{30} t^{-10} \cdot 7^{4} x^{-8} t^{-28}\\
+\amp= 7^{-20+4} x^{30-8} t^{-10-28}\\
+\amp= 7^{-16} x^{22} t^{-38}\\
+\amp= \frac{x^{22}}{7^{16}t^{38}}
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
+
+Section::End();
+
+Scaffold::End();
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

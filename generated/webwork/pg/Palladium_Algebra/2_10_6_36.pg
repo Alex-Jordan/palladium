@@ -1,0 +1,132 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-19T08:29:04-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.10.6.36)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "niceTables.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->add(t => 'Real');
+Context()->noreduce("(-x)-y","(-x)+y");
+Context()->flags->set(
+  tolerance => 0.005,
+  tolType => "absolute",
+);
+
+$initSpeed = random(50,200,10);
+$a = -16;
+$b = $initSpeed;
+$c = random(100,300,50);
+
+$func = Compute("$a*t**2+$b*t+$c")->reduce;
+
+$h1 = $func->eval(t=>0.1);
+$h2 = $func->eval(t=>0.2);
+$h3 = $func->eval(t=>0.3);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+An object was launched from the top of a hill with an upward vertical velocity of [`[$b]`] feet per second. The height of the object can be modeled by the function [`h(t)=[$func]\text{,}`] where [`t`] represents the number of seconds after the launch. Assume the object landed on the ground at sea level. Find the answer using graphing technology.
+
+Use a table to list the object's height within the first second after it was launched, at an increment of [`0.1`] second. Fill in the blanks. Round your answers to two decimal places when needed.
+
+>> [@DataTable(
+  [
+    [[PGML('Time in Seconds'),
+      rowbottom => '2',
+      midrule => '1',],
+     PGML('Height in Feet'),
+    ],
+    [PGML('[`0.1`]'),
+     PGML('[_]{$h1}{10}'),
+    ],
+    [PGML('[`0.2`]'),
+     PGML('[_]{$h2}{10}'),
+    ],
+    [PGML('[`0.3`]'),
+     PGML('[_]{$h3}{10}'),
+    ],
+  ],
+      align => 'cc',
+      valign => 'middle',);@]* <<
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Define the function [`h(t)=[$func]`] with technology. Set the table's starting value to [`0\text{,}`] and use an increment of [`0.1\text{.}`]
+
+>> [@DataTable(
+  [
+    [[PGML('Time in Seconds'),
+      rowbottom => '2',
+      midrule => '1',],
+     PGML('Height in Feet'),
+    ],
+    [PGML('[`0.1`]'),
+     PGML('[$h1]'),
+    ],
+    [PGML('[`0.2`]'),
+     PGML('[$h2]'),
+    ],
+    [PGML('[`0.3`]'),
+     PGML('[$h3]'),
+    ],
+    [PGML('[`\vdots`]'),
+     PGML('[`\vdots`]'),
+    ],
+  ],
+      align => 'cc',
+      valign => 'middle',);@]* <<
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

@@ -1,0 +1,140 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-01T09:36:05-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.1.4.67)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "scaffold.pl",
+  "AnswerFormatHelp.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+COMMENT('This problem is scaffolded with multiple parts');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$m = random(5,15,1);
+$n = $m + random(10,20,1);
+$p = random(50,100,5);
+$answerb = $p-1;
+$q = random(500,2000,50);
+$answerc = $q-1;
+
+############################################################
+# Body
+############################################################
+
+############################################################
+# Scaffold
+############################################################
+Scaffold::Begin(numbered => 1,is_open => "correct_or_first_incorrect",can_open => always,);
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+Let [`x^{[$m]}\cdot x^{a}=x^{[$n]}\text{,}`] where [`a`] is a natural number. How many possibilities are there for [`a\text{?}`]
+
+[_]{'1'}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Let [`x^{[$m]}\cdot x^{a}=x^{[$n]}\text{.}`] Then [`a`] must be [`[$n]-[$m]\text{.}`] So there is only one possibility for [`a\text{.}`]
+
+END_PGML_SOLUTION
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+Let [`x^{b}\cdot x^{c}=x^{[$p]}\text{,}`] where [`b`] and [`c`] are natural numbers. How many possibilities are there for [`b\text{?}`]
+
+[_]{$answerb}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Let [`x^{b}\cdot x^{c}=x^{[$p]}\text{.}`] Many possibilities exist for [`b`] and [`c\text{.}`] Since [`b`] and [`c`] must be natural numbers, let's start with [`b`] equal to [`1\text{.}`] Then [`c`] must equal [$p-1], because [`x^{1}\cdot x^{[$p-1]}=x^{[$p]}\text{.}`] Considering all of the possibilities for [`b\text{,}`] notice that [`b`] can equal [`1,2,3,\ldots,[$p-1]\text{.}`] Therefore, there are [$p-1] possibilities for [`b\text{.}`] Note that [`b`] can't equal [$p] because that would force [`c`] to be zero,which is not a natural number.
+
+END_PGML_SOLUTION
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+Let [`x^{d}\cdot x^{e}=x^{[$q]}`] where [`d`] and [`e`] are natural numbers. How many possibilities are there for [`d\text{?}`]
+
+[_]{$answerc}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Let [`x^{d}\cdot x^{e}=x^{[$q]}\text{.}`] Many possibilities exist for [`d`] and [`e\text{.}`] Since [`d`] and [`e`] must be natural numbers, let's start with [`d`] equal to [`1\text{.}`] Then [`e`] must equal [$q-1], because [`x^{1}\cdot x^{[$q-1]}=x^{[$q]}\text{.}`] Considering all of the possibilities for [`d\text{,}`] notice that [`d`] can equal [`1,2,3,\ldots,[$q-1]\text{.}`] Therefore, there are [$q-1] possibilities for [`d\text{.}`] Note that [`d`] can't equal [$q] because that would force [`e`] to be zero, which is not a natural number.
+
+END_PGML_SOLUTION
+
+Section::End();
+
+Scaffold::End();
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

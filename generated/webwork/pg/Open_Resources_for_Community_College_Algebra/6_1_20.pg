@@ -1,0 +1,88 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:08-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(6.1.20)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextForm.pl",
+  "contextLimitedRadical.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedRadical");
+$answer=Formula("42sqrt(3)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Multiply [`2\sqrt{7}\cdot3\sqrt{21}\text{.}`]
+
+[@KeyboardInstructions('To type [`\sqrt{\phantom{x}}\text{,}`] use [|sqrt( )|]*.')@]**
+
+[_]{$answer}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+First multiply the non-radical factors together and the radical factors together. Then look for further simplifications.
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+2\sqrt{7}\cdot3\sqrt{21}\amp=2\cdot3\cdot\sqrt{7}\cdot\sqrt{21}\\
+\amp=6\cdot\sqrt{7}\cdot\sqrt{7\cdot3}\\
+\amp=6\sqrt{49\cdot3}\\
+\amp=6\cdot7\cdot\sqrt{3}\\
+\amp=42\sqrt{3}
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

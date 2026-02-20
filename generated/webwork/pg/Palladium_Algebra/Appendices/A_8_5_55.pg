@@ -1,0 +1,107 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:12-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(A.8.5.55)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+$a = -random(1,5,1);
+$b = non_zero_random(-10,10,1);
+do {$c = non_zero_random(-10,10,1);} until ($b!=$c);
+$bPlusC = $b+$c;
+$bc = $b*$c;
+$d = $a*$bPlusC;
+$e = $a*$bc;
+$binomial1 = Compute("$var+$b")->reduce;
+$binomial2 = Compute("$var+$c")->reduce;
+$s1 = Compute("$a*$var+$a*$b")->reduce;
+$s2 = Compute("$var**2+$bPlusC*$var+$bc")->reduce;
+$s3 = Compute("$a*($var**2+$bPlusC*$var+$bc)")->reduce;
+$problem = Compute("$a*($var+$b)*($var+$c)")->reduce;
+$ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Multiply the binomial with the binomial, writing the result as a single simplified polynomial.
+
+[`[$problem]`]
+
+[_]{$ans}{16}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+We could first distribute [`[$a]`] into [`[$binomial1]`] to get [`[$s1]\text{,}`] and then multiply [`[$s1]`] and [`[$binomial2]\text{:}`]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$problem]\amp=([$s1])([$binomial2])\\
+\amp=[$ans]
+\end{aligned}
+```]
+
+We could also first multiply [`[$binomial1]`] and [`[$binomial2]`] to get [`[$s2]\text{,}`] and then distribute [`[$a]`] into [`[$s2]\text{:}`]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$problem]\amp=[$s3]\\
+\amp=[$ans]
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

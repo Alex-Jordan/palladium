@@ -1,0 +1,94 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8.1.12)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserPopUp.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$is = PopUp(['?','is','is not'],1);
+$isnot = PopUp(['?','is','is not'],2);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Decide if the numbers are written in scientific notation or not. Use Definition[$NBSP]*4.
+a.  The number [`7 \times 10^{1.9}`] [_]{$isnot}{5} in scientific notation.
+
+a.  The number [`2.6 \times 10^{-31}`] [_]{$is}{5} in scientific notation.
+
+a.  The number [`10 \times 7^4`] [_]{$isnot}{5} in scientific notation.
+
+a.  The number [`0.93 \times 10^{3}`] [_]{$isnot}{5} in scientific notation.
+
+a.  The number [`4.2 \times 10^0`] [_]{$is}{5} in scientific notation.
+
+a.  The number [`12.5 \times 10^{-6}`] [_]{$isnot}{5} in scientific notation.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  The number [`7 \times 10^{1.9}`] _is not_ in scientific notation. The exponent on the 10 is required to be an integer and [`1.9`] is not.
+
+a.  The number [`2.6 \times 10^{-31}`] _is_ in scientific notation.
+
+a.  The number [`10 \times 7^4`] _is not_ in scientific notation. The base must be [`10\text{,}`] not [`7\text{.}`]
+
+a.  The number [`0.93 \times 10^{3}`] _is not_ in scientific notation. The coefficient of the 10 must be between [`1`] (inclusive) and [`10\text{.}`]
+
+a.  The number [`4.2 \times 10^0`] _is_ in scientific notation.
+
+a.  The number [`12.5 \times 10^{-6}`] _is not_ in scientific notation. The coefficient of the 10 must be between [`1`] (inclusive) and [`10\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

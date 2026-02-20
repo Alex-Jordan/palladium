@@ -1,0 +1,82 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-19T15:37:07-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(3.1.5.119)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$denom = random(25,95,5);
+$minusone = $denom - 1;
+$answer = Formula("1/(x+$denom)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Simplify the following: [`\frac{1}{x+1} \div \frac{x+2}{x+1} \div \frac{x+3}{x+2} \div \frac{x+4}{x+3} \div \cdots \div \frac{x+[$denom]}{x+[$minusone]} \text{.}`] For this exercise, you do not have to write the restricted domain of the simplified expression.
+
+[_]{$answer}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+\amp\frac{1}{x+1} \div \frac{x+2}{x+1} \div \frac{x+3}{x+2} \div \frac{x+4}{x+3} \div \dots \frac{x+[$denom]}{x+[$minusone]}\\
+\amp=\frac{1}{x+1} \cdot \frac{x+1}{x+2} \cdot \frac{x+2}{x+3} \cdot \frac{x+3}{x+4} \cdot \dots \frac{x+[$minusone]}{x+[$denom]}\\
+\amp=\frac{1}{x+[$denom]}, x \neq 1, 2, 3, \dots [$minusone]
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

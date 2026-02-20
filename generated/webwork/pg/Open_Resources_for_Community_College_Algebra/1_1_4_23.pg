@@ -1,0 +1,87 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-01T20:00:19-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.4.23)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$x = list_random('a' .. 'k', 'm', 'n', 'p' .. 'r', 't' .. 'z');
+Context("Form")->variables->are($x => 'Real');
+$b = random(2,5);
+$m = random(2,4);
+$n = random(2,9);
+$bm = $b**$m;
+$total = $m*$n;
+$given = Formula("($b $x^$n)^$m");
+$ans = Formula("$bm $x^$total");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use the properties of exponents to simplify the expression.
+
+[`[$given]`]
+
+[_]{$ans}{6}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+This expression is a product of two things ([`[$b]`] and [`[$x]^{[$n]}`]) that is then raised to a power. We can raise each of the two factors to that outer power instead:
+
+[```[$b]^{[$m]}\left([$x]^{[$n]}\right)^{[$m]}```]
+
+and then use the power-to-power property of exponents to simplify it more: [`[$ans]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

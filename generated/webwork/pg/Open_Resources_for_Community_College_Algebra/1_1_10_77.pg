@@ -1,0 +1,100 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-01T20:10:15-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.10.77)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextForm.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Form");
+do {
+  $n = random(3,6,1);
+  do {
+    $r = random(2,5,1);
+    $R = random(2,5,1);
+  } until (gcd($r,$R) == 1);
+  $x = $r**($n);
+  $z = $R**($n);
+  do {$y = ($n % 2 == 0) ? list_random(2,3,5..7,10,11) : list_random(2..7,9..12);} until (gcd($x,$y) == 1 and gcd($z,$y) == 1);
+  $Y = $z*$y;
+} until ($x <= 125 and $z <= 125 and $Y <= 200);
+$expression = Formula("root($n,$Y/$x)");
+$answer = Formula("$R/$r root($n,$y)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Simplify the higher index radical.
+
+[`[$expression]\text{.}`]
+
+[@KeyboardInstructions('To enter [`\sqrt[n]{x}\text{,}`] type [|root(n, x)|]*. If the value is not a real number, enter [|not a real number|]*.')@]**
+
+[_]{$answer}{30}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$expression]\amp = \frac{\sqrt[[$n]]{[$Y]}}{\sqrt[[$n]]{[$x]}}\\
+\amp = \frac{\sqrt[[$n]]{[$z]\cdot [$y]}}{[$r]}\\
+\amp = \frac{\sqrt[[$n]]{[$z]}\sqrt[[$n]]{[$y]}}{[$r]}\\
+\amp = \frac{[$R]\sqrt[[$n]]{[$y]}}{[$r]}\\
+\amp = \frac{[$R]}{[$r]}\sqrt[[$n]]{[$y]}
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

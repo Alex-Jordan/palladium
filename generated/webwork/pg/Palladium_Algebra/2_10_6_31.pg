@@ -1,0 +1,157 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:10-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.10.6.31)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "bizarroArithmetic.pl",
+  "parserAssignment.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$f = RandomVariableName(type=>'function');
+$x = RandomVariableName(type=>'variable');
+Context()->variables->are($x=>'Real');
+$a = 1;
+$b = non_zero_random(-9,9,2);
+$c = non_zero_random(-5,5,1);
+$formula = Formula("$a $x^2 + $b $x + $c")->reduce;
+$nonconstant = Formula("$a $x^2 + $b $x")->reduce;
+Context("Fraction");
+Context()->variables->are($x=>'Real');
+$h = Fraction(-$b, 2*$a);
+$k = Fraction($formula->eval($x=>$h));
+$helper = Fraction($b,2);
+$helpersquared = $helper**2;
+$perfectsquare = $nonconstant+$helpersquared;
+($num,$den) = $helper->value;
+$absnum = abs($num);
+if ($den != 1) {$linear = ($helper > 0) ? Formula("$x + $helper") : Formula("$x - $absnum/$den");}
+{$linear = ($helper > 0) ? Formula("$x + $helper") : Formula("$x - $absnum");};
+Context("Point");
+Context()->flags->set(reduceConstants=>0);
+$vertex = Formula("($h,$k)");
+Context("Numeric");
+Parser::Number::NoDecimals();
+parser::Assignment->Allow;
+parser::Assignment->Function("$f");
+Context()->variables->are($x=>'Real');
+Context()->noreduce('(-x)-y','(-x)+y');
+Context()->flags->set(reduceConstants=>0);
+Context()->operators->set(
+  '+' => {class => 'bizarro::BOP::add', isCommand => 1},
+  '-' => {class => 'bizarro::BOP::subtract', isCommand => 1},
+  '*' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+  ' *' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+  '* ' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+  '/' => {class => 'bizarro::BOP::divide', isCommand => 1},
+  ' /' => {class => 'bizarro::BOP::divide', isCommand => 1},
+  '/ ' => {class => 'bizarro::BOP::divide', isCommand => 1},
+  '//' => {class => 'bizarro::BOP::divide', isCommand => 1},
+);
+($hnum,$hden) = $h->value;
+$abshnum = abs($hnum);
+if ($hden != 1) {$hshift = ($h > 0) ? Formula("$x - $h") : Formula("$x + $abshnum/$hden")}
+else {$hshift = ($h > 0) ? Formula("$x - $h") : Formula("$x + $abshnum")};
+($knum,$kden) = $k->value;
+$absknum = abs($knum);
+if ($kden != 1) {$vshift = ($k > 0) ? Formula("$x + $k") : Formula("$x - $absknum/$kden")}
+else {$vshift = ($k > 0) ? Formula("$x + $k") : Formula("$x - $absknum")};
+$vform = Formula("$a $x^2")->reduce;
+$vform = $vshift->substitute($x => $vform)->substitute($x => $hshift);
+$fxvform = Formula("$f($x)=$vform");
+$evaluator = $fxvform->cmp(checker=>sub{
+  my ( $correct, $student, $ansHash ) = @_;
+  return 0 if $ansHash->{isPreview} || $correct != $student;
+  $student = $ansHash->{student_formula};
+  $correct = $correct->{original_formula} if defined $correct->{original_formula};
+  $student = Formula("$student"); $correct = Formula("$correct");
+  return 0 unless ($correct == $student);
+  Context()->flags->set(bizarroAdd=>1,bizarroSub=>1,bizarroMul=>1,bizarroDiv=>1);
+  delete $correct->{test_values}, $student->{test_values};
+  my $OK = (($correct == $student) or ($student == $correct));
+  Context()->flags->set(bizarroAdd=>0,bizarroSub=>0,bizarroMul=>0,bizarroDiv=>0);
+  Value::Error("Your answer is a formula for $f, but not in vertex form") unless $OK;
+  return $OK;
+});
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Consider [`[$f]([$x])=[$formula]\text{.}`]
+a.  Give the formula for [`[$f]`] in vertex form.
+
+    [@KeyboardInstructions('Use function notation with your answer.')@]**
+
+    [_]{$evaluator}{20}
+
+a.  What is the vertex of the parabola graph of [`[$f]\text{?}`]
+
+    [_]{$vertex}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Compute [`\left(\frac{[$b]}{2}\right)^2=[$helpersquared]\text{.}`] Then
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$f]([$x])\amp = [$nonconstant]+[$helpersquared]-[$helpersquared]+[$c]\\
+\amp=\left([$perfectsquare]\right)-[$helpersquared]+[$c]\\
+\amp=[$vform]
+\end{aligned}
+```]
+
+From the vertex form, we can see the vertex is [`[$vertex]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

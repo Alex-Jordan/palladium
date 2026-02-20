@@ -1,0 +1,90 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-19T08:29:04-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.10.6.85)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Point");
+Context()->flags->set(reduceConstants=>0);
+$a = non_zero_random(-9,9,1);
+do {
+    $r = 0;
+    $s = non_zero_random(-9,9,1);
+} until ($r != $s);
+$f = RandomVariableName(type=>"function");
+$formula = Formula("$a(x - $r)(x - $s)")->reduce;
+$c = $a*$r*$s;
+$yint = Point(0,$c);
+$xint = ($r == $s) ? List(Point($r,0)) : List(Point($r,0),Point($s,0));
+$fof0 = $formula->substitute(x=>Formula("0"));
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+The formula for a quadratic function [`[$f]`] is [`[$f](x)=[$formula]\text{.}`]
+a.  The [`y`]-intercept is [_]{$yint}{5}.
+
+a.  The [`x`]-intercept(s) is/are [_]{$xint}{8}.
+
+    [@KeyboardInstructions('If there are no [`x`]-intercepts, enter [|NONE|]*. If there are more than one, use commas to separate the points.')@]**
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  To find the [`y`]-intercept, compute [`[$f](0)=[$fof0]=[$c]\text{.}`] So the [`y`]-intercept is [`[$yint]\text{.}`]
+
+a.  The quadratic function is given in factored form. We can see that subbing in [`x=[$r]`] or [`x=[$s]`] would result in the output being [`0\text{.}`] So the [`x`]-intercepts are [`([$r], 0)`] and [`([$s], 0)\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

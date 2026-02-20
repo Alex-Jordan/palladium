@@ -1,0 +1,87 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:08-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(6.1.23)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextForm.pl",
+  "contextLimitedRadical.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedRadical");
+$answer=Formula("-10sqrt(3)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Simplify [`2\sqrt{3}-3\sqrt{48}\text{.}`]
+
+[@KeyboardInstructions('To type [`\sqrt{\phantom{x}}\text{,}`] use [|sqrt( )|]*.')@]**
+
+[_]{$answer}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+First we will simplify the radical term where [`48`] is the radicand, and we may see that we then have like radicals.
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+2\sqrt{3}-3\sqrt{48}\amp=2\sqrt{3}-3\sqrt{16\cdot3}\\
+\amp=2\sqrt{3}-3\cdot4\sqrt{3}\\
+\amp=2\sqrt{3}-12\sqrt{3}\\
+\amp=-10\sqrt{3}
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

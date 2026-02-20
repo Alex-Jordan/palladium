@@ -1,0 +1,98 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8.2.8)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserNumberWithUnits.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$ans = NumberWithUnits(4.557,'lb');
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+The density of oil is [`6.9`] pounds per gallon. You have a 2.5-liter bottle of oil. How much does this much oil weigh? (To find weight, multiply density with volume when the units match.)
+
+[_]{$ans}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The density is in pounds per _gallon_, but the volume is in _liters_. So first let's convert the 2.5 L to gallons.
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+2.5\,\text{L}\amp=\frac{2.5\,\text{L}}{1}\amp\amp\text{We are about to do fraction-like multiplication.}\\
+\amp\approx\frac{2.5\,\text{L}}{1}\cdot\frac{1\,\text{gal}}{3.785\,\text{L}}\amp\amp1\,\text{gal approximately equals }3.785\,\text{L.}\\
+\amp=\frac{2.5\,\cancel{\text{L}}}{1}\cdot\frac{1\,\text{gal}}{3.785\,\cancel{\text{L}}}\amp\amp\text{Units may now cancel.}\\
+\amp=\frac{2.5}{1}\cdot\frac{1\,\text{gal}}{3.785}\\
+\amp=\frac{2.5}{3.785}\,\text{gal}\\
+\amp\approx0.6605\,\text{gal}
+\end{aligned}
+```]
+
+Now we can multiply the density (6.9 lb/gal) by the volume ([`\approx0.6605\,\text{gal}`]). We find [`6.9\cdot0.6605\approx4.557\text{,}`] so the oil weighs about [`4.557`] pounds.
+
+With units:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+6.9\,\frac{\text{lb}}{\text{gal}}\cdot0.6605\,\text{gal}\amp=\frac{6.9\,\text{lb}}{1\,\text{gal}}\cdot\frac{0.6605\,\text{gal}}{1}\\
+\amp=\frac{6.9\,\text{lb}}{1\,\cancel{\text{gal}}}\cdot\frac{0.6605\,\cancel{\text{gal}}}{1}\\
+\amp=6.9\cdot0.6605\,\text{lb}\\
+\amp\approx4.557\,\text{lb}
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

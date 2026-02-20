@@ -1,0 +1,100 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:08-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.1.5.17)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "parserPopUp.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+@a = random_subset(3, -9..-1,1..9);
+@b = random_subset(3, -9..-1,1..9);
+do {
+  @n = random_subset(3, 0..9);
+  @m = random_subset(3, 0..9);
+  @degrees = map {$n[$_] + $m[$_]} (0,1,2);
+} until ($degrees[0] != $degrees[1] && $degrees[0] != $degrees[2] && $degrees[1] != $degrees[2]);
+@x = random_subset(2, 't', 'x', 'y', 'z');
+Context("Fraction")->variables->are(map {$_ => 'Real'} @x);
+Context()->noreduce('(-x)+y', '(-x)-y');
+$p = Formula("$a[0]/$b[0] $x[0]^$n[0]$x[1]^$m[0] + $a[1]/$b[1] $x[0]^$n[1]$x[1]^$m[1] + $a[2]/$b[2] $x[0]^$n[2]$x[1]^$m[2]")->reduce;
+@types = ('monomial', 'binomial', 'trinomial');
+$which = DropDown(~~@types, 2, showInStatic => 0);
+$degree = Real(max(@degrees));
+$leadingTerm = Formula("$a[0]/$b[0] $x[0]^$n[0]$x[1]^$m[0]")->reduce;
+$leadingTerm = Formula("$a[1]/$b[1] $x[0]^$n[1]$x[1]^$m[1]")->reduce if ($degree == $degrees[1]);
+$leadingTerm = Formula("$a[2]/$b[2] $x[0]^$n[2]$x[1]^$m[2]")->reduce if ($degree == $degrees[2]);
+$leadingCoefficient = Fraction("$a[0]/$b[0]");
+$leadingCoefficient = Fraction("$a[1]/$b[1]") if ($degree == $degrees[1]);
+$leadingCoefficient = Fraction("$a[2]/$b[2]") if ($degree == $degrees[2]);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+What specific type of polynomial is the given polynomial? What is its degree? What is its leading term? What is its leading coefficient?
+
+[`[$p]`]
+
+[_]{$which}{5}
+
+[@KeyboardInstructions('Enter its degree here.')@]**
+
+[_]{$degree}{6}
+
+[@KeyboardInstructions('Enter its leading term here.')@]**
+
+[_]{$leadingTerm}{16}
+
+[@KeyboardInstructions('Enter its leading coefficient here.')@]**
+
+[_]{$leadingCoefficient}{16}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

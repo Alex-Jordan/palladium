@@ -1,0 +1,124 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:10-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.6.5.85)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$rs = list_random([1,4],[1,9],[1,16],[4,9],[4,16],[9,16]);
+($r,$s) = ($rs->[0],$rs->[1]);
+Context("Fraction");
+$m = Fraction(sqrt($s)-sqrt($r),$s-$r);
+$b = Fraction(sqrt($r) - $m*$r);
+$a = lcm(($m->value)[1],($b->value)[1]);
+$am = $a*$m;
+$ab = $a*$b;
+$left = Formula("$a sqrt(x)")->reduce;
+$right = Formula("$am x + $ab")->reduce;
+$leftsquared = Formula("$a^2 x")->reduce;
+$rightsquared = Formula("($am)^2 x^2 + 2*$am*$ab x + ($ab)^2")->reduce;
+$A = $am*$am;
+$B = 2*$am*$ab - $a*$a;
+$C = $ab*$ab;
+$f = Formula("$A x^2 + $B x + $C")->reduce;
+$negB = -$B;
+$Bsquared = $B*$B;
+$discriminant = $Bsquared - 4*$A*$C;
+$A2 = 2*$A;
+$sqrtdisc = Fraction(sqrt($discriminant));
+Context("FiniteSolutionSets");
+$solutions = Formula("{$r,$s}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve the equation.
+
+[`[$left]=[$right]`]
+
+[@KeyboardInstructions('If you need to enter a square root like [`\sqrt{17}\text{,}`] type [|sqrt(17)|]*. If there is no real solution, enter [|no real solution|]*.')@]**
+
+[_]{$solutions}{40}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+First we square each side to obtain a quadratic equation. Then we can rearrange that into standard form.
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+\left([$left]\right)^2\amp=\left([$right]\right)^2\\
+[$leftsquared]\amp=[$rightsquared]\\
+0\amp=[$f]
+\end{aligned}
+```]
+
+Now we can identify [`a=[$A]\text{,}`] [`b=[$B]\text{,}`] and [`c=[$C]\text{,}`] and apply the quadratic formula.
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{[$negB]\pm\sqrt{[$Bsquared]-4\left([$A]\right)\left([$C]\right)}}{2\left([$A]\right)}\\
+\amp=\frac{[$negB]\pm\sqrt{[$discriminant]}}{[$A2]}\\
+\amp=\frac{[$negB]\pm[$sqrtdisc]}{[$A2]}\\
+x\amp=\frac{[$negB]-[$sqrtdisc]}{[$A2]}\quad\text{or}\quad x=\frac{[$negB]+[$sqrtdisc]}{[$A2]}\\
+x\amp=[$r]\quad\text{or}\quad x=[$s]
+\end{aligned}
+```]
+
+The only possible solutions are [`[$r]`] and [`[$s]\text{.}`] They each check as valid solutions in the original equation, so the solution set is [`[$solutions]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

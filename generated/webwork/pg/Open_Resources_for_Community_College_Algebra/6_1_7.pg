@@ -1,0 +1,81 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:08-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(6.1.7)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedNumeric");
+Context()->flags->set(tolType=>'absolute',tolerance=>'0.15');
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Estimate [`\sqrt{19}`] without a calculator.
+
+[_]{'4.35'}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The radicand, [`19\text{,}`] is between [`16`] and [`25\text{,}`] so [`\sqrt{19}`] is between [`\sqrt{16}`] and [`\sqrt{25}\text{,}`] or between [`4`] and [`5\text{.}`] We notice that [`19`] is in the middle between [`16`] and [`25`] but closer to [`16\text{.}`] We estimate [`\sqrt{19}`] to be about [`4.4\text{.}`]
+
+We can check our estimate by calculating:
+
+[```
+              4.4^2=19.36
+            ```]
+
+So [`4.4^2`] is close to [`19\text{,}`] and [`4.4`] is close to [`\sqrt{19}\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

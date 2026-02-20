@@ -1,0 +1,102 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8.2.12)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserNumberWithUnits.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$ccs = NumberWithUnits(1393,'cc');
+# Make units parser require hours, not allow months, etc
+$evaluator = $ccs->cmp->withPostFilter(sub {
+  my $ans = shift;
+  if ($ans->{score}) {
+    my $correct = $ans->{correct_value};
+    my $student = $ans->{student_value};
+    my %goodunits = map { $_ => 1 } ('cc','cm^3');
+
+    if (!exists($goodunits{$student->{units}})) {
+      $ans->{ans_message} = "Your answer is equivalent to the correct answer, but it uses the wrong units";
+      $ans->score(0);
+    }
+  }
+  return $ans;
+});
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Convert [`85`] cubic inches into cubic centimeters.
+
+[_]{$evaluator}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+85\,\text{in}^3\amp=\frac{85\,\text{in}^3}{1}\\
+\amp=\frac{85\,\text{in}^3}{1}\cdot\left(\frac{2.54\,\text{cm}}{1\,\text{in}}\right)^3\amp\amp\text{The inches in the denominator will be cubed.}\\
+\amp=\frac{85\,\text{in}^3}{1}\cdot\frac{2.54^3\,\text{cm}^3}{1\,\text{in}^3}\amp\amp\text{Using the quotient to a power property.}\\
+\amp=\frac{85\,\cancel{\text{in}^3}}{1}\cdot\frac{2.54^3\,\text{cm}^3}{1\,\cancel{\text{in}^3}}\amp\amp\text{Units may now cancel.}\\
+\amp=\frac{85}{1}\cdot\frac{2.54^3\,\text{cm}^3}{1}\\
+\amp=85\cdot2.54^3\,\text{cm}^3\\
+\amp\approx1393\,\text{cm}^3
+\end{aligned}
+```]
+
+So [`85`] cubic inches is about [`1393`] cubic centimeters.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

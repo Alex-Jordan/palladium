@@ -1,0 +1,108 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8.3.21)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "answerHints.pl",
+  "PCCmacros.pl",
+  "parserFormulaWithUnits.pl",
+  "parserNumberWithUnits.pl",
+  "contextForm.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context()->flags->set(reduceConstants=>0);
+$pi = Compute("pi");
+$piConstant = 8.112;
+Context()->constants->remove('pi');
+Context()->variables->are(pi=>'Real');
+Context()->variables->set(pi => {TeX=>'\pi'});
+$volumePI = FormulaWithUnits("$piConstant pi in^3");
+$volume = $pi*$piConstant;
+$volume = NumberWithUnits("$volume in^3");
+$evaluatorPI = $volumePI->cmp(correct_ans_latex_string=>"8.112\pi\,\text{in}^3")->
+    withPostFilter(AnswerHints(
+    sub {
+        my ($correct,$student,$ans) = @_;
+        return (Formula($student)->isConstant);
+    } => "Your answer should be in terms of pi",
+));
+$evaluator = $volume->cmp(tolType=>absolute,tolerance=>0.005);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+A soda can is basically in the shape of a cylinder with radius [`1.3`] inches and height [`4.8`] inches. What is its volume?
+
+[@KeyboardInstructions('Use [|in^3|]* for cubic inches. Use [|pi|]* for [`\pi\text{.}`]')@]**
+
+Its exact volume in terms of [`\pi`] is: [_]{$volumePI}{15}.
+
+As a decimal approximation rounded to four significant digits, its volume is: [_]{$volume}{15}.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Using the formula for the volume of a cylinder:
+
+[```\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}\newcommand{\amp}{&}
+\begin{aligned}
+V\amp=\pi r^2h\\
+\amp=\pi(\substitute{1.3})^2(\substitute{4.8})\\
+\amp=8.112\pi\\
+\amp\approx25.48
+\end{aligned}
+```]
+
+So the can's volume is [`8.112\pi`] cubic inches, which is about [`25.48`] cubic inches.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

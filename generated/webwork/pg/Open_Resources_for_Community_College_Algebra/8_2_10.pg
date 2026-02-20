@@ -1,0 +1,102 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8.2.10)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserNumberWithUnits.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$hours = NumberWithUnits(3240,'h');
+# Make units parser require hours, not allow months, etc
+$evaluator = $hours->cmp->withPostFilter(sub {
+  my $ans = shift;
+  if ($ans->{score}) {
+    my $correct = $ans->{correct_value};
+    my $student = $ans->{student_value};
+    my %goodunits = map { $_ => 1 } ('h','hour','hours', 'hr');
+
+    if (!exists($goodunits{$student->{units}})) {
+      $ans->{ans_message} = "Your answer is equivalent to the correct answer, but it uses the wrong units";
+      $ans->score(0);
+    }
+  }
+  return $ans;
+});
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Convert [`4.5`] months into hours.
+
+[_]{$evaluator}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Notice that we can convert months to days (using the fact that one month is approximately [`30`] days) and then we can convert days to hours (using the fact that one day is [`24`] hours).
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+4.5\,\text{mo}\amp=\frac{4.5\,\text{mo}}{1}\amp\amp\text{We are about to do fraction-like multiplication.}\\
+\amp\approx\frac{4.5\,\text{mo}}{1}\cdot\frac{30\,\text{d}}{1\,\text{mo}}\cdot\frac{24\,\text{h}}{1\,\text{d}}\amp\amp\text{Two unit ratios are needed.}\\
+\amp=\frac{4.5\,\cancel{\text{mo}}}{1}\cdot\frac{30\,\cancel{\text{d}}}{1\,\cancel{\text{mo}}}\cdot\frac{24\,\text{h}}{1\,\cancel{\text{d}}}\amp\amp\text{Units may now cancel.}\\
+\amp=\frac{4.5}{1}\cdot\frac{30}{1}\cdot\frac{24\,\text{h}}{1}\\
+\amp=4.5\cdot30\cdot24\,\text{h}\\
+\amp=3240\,\text{h}
+\end{aligned}
+```]
+
+So [`4.5`] months is about [`3240`] hours.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

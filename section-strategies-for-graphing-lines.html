@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Pd Strategies for Graphing Lines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="og:image" content="https://spot.pcc.edu/math/palladium/html/external/">
+<meta property="book:title" content="Palladium Algebra">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.14';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.d892923478694492.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
+<script src="_static/pretext/js/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork.pcc.edu/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdn.geogebra.org/apps/deployggb.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="palladium" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<img src="external/" alt="Logo image"><div class="title-container">
+<h1 class="heading"><a href="palladium.html"><span class="title">Palladium Algebra</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-3.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="calculator-toggle" class="calculator-toggle button" title="Show calculator" aria-expanded="false" aria-controls="calculator-container"><span class="icon material-symbols-outlined" aria-hidden="true">&#xea5f;</span><span class="name">Calc</span></button><div id="calculator-container" class="calculator-container" style="display: none; z-index:100;"><div id="geogebra-calculator"></div></div>
+<script>
+var ggbApp = new GGBApplet({"appName": "graphing",
+    "width": 330,
+    "height": 600,
+    "showToolBar": true,
+    "showAlgebraInput": true,
+    "perspective": "G/A",
+    "algebraInputPosition": "bottom",
+    "scaleContainerClass": "calculator-container",
+    "allowUpscale": true,
+    "autoHeight": true,
+    "disableAutoScale": false},
+true);
+</script><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="section-geometry-of-lines.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="chapter-graphing-lines.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="review-graphing-lines.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{cancel}\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+\newcommand{\point}[2]{\left(#1,#2\right)}
+\newcommand{\highlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}
+\newcommand{\firsthighlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}
+\newcommand{\secondhighlight}[1]{\mathchoice{\colorbox{lightemerald}{$\displaystyle #1$}}{\colorbox{lightemerald}{$\textstyle #1$}}{\colorbox{lightemerald}{$\scriptstyle #1$}}{\colorbox{lightemerald}{$\scriptscriptstyle #1$}}}
+\newcommand{\unhighlight}[1]{{\color{black}{{#1}}}}
+\newcommand{\lowlight}[1]{{\color{lightgray}{#1}}}
+\newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}
+\newcommand{\nextoperation}[1]{\mathord{\boxed{#1}}}
+\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}
+\newcommand{\pinover}[2]{\overset{\overset{\mathrm{\ #2\ }}{|}}{\strut #1 \strut}}
+\newcommand{\addright}[1]{{\highlight{{{}+#1}}}}
+\newcommand{\addleft}[1]{{\highlight{{#1+{}}}}}
+\newcommand{\subtractright}[1]{{\highlight{{{}-#1}}}}
+\newcommand{\multiplyright}[2][\cdot]{{\highlight{{{}#1#2}}}}
+\newcommand{\multiplyleft}[2][\cdot]{{\highlight{{#2#1{}}}}}
+\newcommand{\divideunder}[2]{\frac{#1}{{\highlight{{#2}}}}}
+\newcommand{\divideright}[1]{{\highlight{{{}\div#1}}}}
+\newcommand{\negate}[1]{{\highlight{{-}}}\left(#1\right)}
+\newcommand{\cancelhighlight}[1]{{\color{sapphire}{{\cancel{#1}}}}}
+\newcommand{\secondcancelhighlight}[1]{{\color{emerald}{{\bcancel{#1}}}}}
+\newcommand{\thirdcancelhighlight}[1]{\definecolor{amethyst}{RGB}{112,72,91}{\color{amethyst}{{\xcancel{#1}}}}}
+\newcommand{\confirm}[1]{\stackrel{\checkmark}{#1}}
+\newcommand{\reject}[1]{\stackrel{\text{no}}{#1}}
+\newcommand{\wonder}[1]{\stackrel{\text{?}}{#1}}
+\newcommand{\apple}{\text{🍎}}
+\newcommand{\banana}{\text{🍌}}
+\newcommand{\pear}{\text{🍐}}
+\newcommand{\cat}{\text{🐱}}
+\newcommand{\dog}{\text{🐶}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-linear-equations-and-inequalities.html" class="internal"><span class="codenumber">1</span> <span class="title">Linear Equations and Inequalities</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-solving-multistep-linear-equations.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Solving Multistep Linear Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-solving-multistep-linear-equations.html#section-solving-multistep-linear-equations-4" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Solving Two-Step Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-solving-multistep-linear-equations.html#section-solving-multistep-linear-equations-5" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Solving Multistep Linear Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-solving-multistep-linear-equations.html#section-solving-multistep-linear-equations-6" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Revisiting Applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-solving-multistep-linear-equations.html#section-solving-multistep-linear-equations-7" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Differentiating between Simplifying Expressions, Evaluating Expressions and Solving Equations</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-solving-multistep-linear-equations.html#section-solving-multistep-linear-equations-8" class="internal"><span class="codenumber">1.1.5</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-solving-multistep-linear-equations.html#section-solving-multistep-linear-equations-9" class="internal"><span class="codenumber">1.1.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-solving-multistep-linear-inequalities.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Solving Multistep Linear Inequalities</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-solving-multistep-linear-inequalities.html#section-solving-multistep-linear-inequalities-4" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Solving Multistep Inequalities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-solving-multistep-linear-inequalities.html#section-solving-multistep-linear-inequalities-5" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Applications</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-solving-multistep-linear-inequalities.html#section-solving-multistep-linear-inequalities-6" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-solving-multistep-linear-inequalities.html#section-solving-multistep-linear-inequalities-7" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-equations-and-inequalities-with-fractions.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Equations and Inequalities with Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-equations-and-inequalities-with-fractions.html#subsection-eliminating-denominators" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Eliminating Denominators</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-equations-and-inequalities-with-fractions.html#section-equations-and-inequalities-with-fractions-5" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Proportional Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-equations-and-inequalities-with-fractions.html#section-equations-and-inequalities-with-fractions-6" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Solving Inequalities with Fractions</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-equations-and-inequalities-with-fractions.html#section-equations-and-inequalities-with-fractions-7" class="internal"><span class="codenumber">1.3.4</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-equations-and-inequalities-with-fractions.html#section-equations-and-inequalities-with-fractions-8" class="internal"><span class="codenumber">1.3.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-special-solution-sets.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Special Solution Sets</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-special-solution-sets.html#section-special-solution-sets-4" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Special Solution Sets</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-special-solution-sets.html#section-special-solution-sets-5" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Further Examples</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-special-solution-sets.html#section-special-solution-sets-6" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-special-solution-sets.html#section-special-solution-sets-7" class="internal"><span class="codenumber">1.4.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-isolating-a-linear-variable.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Isolating a Linear Variable</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-isolating-a-linear-variable.html#section-isolating-a-linear-variable-4" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Solving for a Variable</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-isolating-a-linear-variable.html#section-isolating-a-linear-variable-5" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-isolating-a-linear-variable.html#section-isolating-a-linear-variable-6" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="review-linear-equations-and-inequalities.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Linear Equations and Inequalities Chapter Review</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="review-linear-equations-and-inequalities.html#review-linear-equations-and-inequalities-22" class="internal"><span class="codenumber">1.6</span> <span class="title">Review Exercises for Chapter 1</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="chapter-graphing-lines.html" class="internal"><span class="codenumber">2</span> <span class="title">Graphing Lines</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-cartesian-coordinates.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Cartesian Coordinates</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-cartesian-coordinates.html#section-cartesian-coordinates-20" class="internal"><span class="codenumber">2.1</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-cartesian-coordinates.html#section-cartesian-coordinates-21" class="internal"><span class="codenumber">2.1</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-graphing-equations.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Graphing Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-graphing-equations.html#section-graphing-equations-26" class="internal"><span class="codenumber">2.2</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-graphing-equations.html#section-graphing-equations-27" class="internal"><span class="codenumber">2.2</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-exploring-two-variable-data-and-rate-of-change.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Exploring Two-Variable Data and Rate of Change</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-exploring-two-variable-data-and-rate-of-change.html#section-exploring-two-variable-data-and-rate-of-change-4" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Modeling data with two variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-exploring-two-variable-data-and-rate-of-change.html#section-exploring-two-variable-data-and-rate-of-change-5" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Patterns in Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-exploring-two-variable-data-and-rate-of-change.html#section-exploring-two-variable-data-and-rate-of-change-6" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Rate of Change</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-exploring-two-variable-data-and-rate-of-change.html#section-exploring-two-variable-data-and-rate-of-change-7" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-exploring-two-variable-data-and-rate-of-change.html#section-exploring-two-variable-data-and-rate-of-change-8" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-slope.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Slope</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-slope.html#section-slope-4" class="internal"><span class="codenumber">2.4.1</span> <span class="title">What is slope?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-slope.html#subsection-comparing-slopes" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Comparing Slopes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-slope.html#section-slope-6" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Finding Slope by Two Given Points</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-slope.html#section-slope-7" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-slope.html#section-slope-8" class="internal"><span class="codenumber">2.4.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-slope-intercept-form.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Slope-Intercept Form</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-slope-intercept-form.html#section-slope-intercept-form-4" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Slope-Intercept Definition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-slope-intercept-form.html#section-slope-intercept-form-5" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Graphing Slope-Intercept Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-slope-intercept-form.html#section-slope-intercept-form-6" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Writing a Slope-Intercept Equation Given a Graph</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-slope-intercept-form.html#section-slope-intercept-form-7" class="internal"><span class="codenumber">2.5.4</span> <span class="title">Writing a Slope-Intercept Equation Given Two Points</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-slope-intercept-form.html#section-slope-intercept-form-8" class="internal"><span class="codenumber">2.5.5</span> <span class="title">Modeling with Slope-Intercept Form</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-slope-intercept-form.html#section-slope-intercept-form-9" class="internal"><span class="codenumber">2.5.6</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-slope-intercept-form.html#section-slope-intercept-form-10" class="internal"><span class="codenumber">2.5.7</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-point-slope-form.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Point-Slope Form</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-point-slope-form.html#section-point-slope-form-4" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Point-Slope Motivation and Definition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-point-slope-form.html#section-point-slope-form-5" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Using Two Points to Build a Linear Equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-point-slope-form.html#section-point-slope-form-6" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Recognizing Point-Slope Form</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-point-slope-form.html#section-point-slope-form-7" class="internal"><span class="codenumber">2.6.4</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-point-slope-form.html#section-point-slope-form-8" class="internal"><span class="codenumber">2.6.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-standard-form.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Standard Form</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-standard-form.html#section-standard-form-4" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Standard Form Definition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-standard-form.html#section-standard-form-5" class="internal"><span class="codenumber">2.7.2</span> <span class="title">The Importance of <span class="process-math">\(x\)</span>- and <span class="process-math">\(y\)</span>-Intercepts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-standard-form.html#subsection-transforming-between-standard-form-and-slope-intercept-form" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Transforming between Standard Form and Slope-Intercept Form</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-standard-form.html#section-standard-form-7" class="internal"><span class="codenumber">2.7.4</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-standard-form.html#section-standard-form-8" class="internal"><span class="codenumber">2.7.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-geometry-of-lines.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Geometry of Lines</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-geometry-of-lines.html#section-geometry-of-lines-4" class="internal"><span class="codenumber">2.8.1</span> <span class="title">Horizontal Lines and Vertical Lines</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-geometry-of-lines.html#subsection-parallel-lines" class="internal"><span class="codenumber">2.8.2</span> <span class="title">Parallel Lines</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-geometry-of-lines.html#section-geometry-of-lines-6" class="internal"><span class="codenumber">2.8.3</span> <span class="title">Perpendicular Lines</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="section-geometry-of-lines.html#section-geometry-of-lines-7" class="internal"><span class="codenumber">2.8.4</span> <span class="title">Reading Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-geometry-of-lines.html#section-geometry-of-lines-8" class="internal"><span class="codenumber">2.8.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="section-strategies-for-graphing-lines.html" class="internal"><span class="codenumber">2.9</span> <span class="title">Strategies for Graphing Lines</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-strategies-for-graphing-lines.html#section-strategies-for-graphing-lines-4" class="internal"><span class="codenumber">2.9.1</span> <span class="title">Graphing Lines in Slope-Intercept Form</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-strategies-for-graphing-lines.html#section-strategies-for-graphing-lines-5" class="internal"><span class="codenumber">2.9.2</span> <span class="title">Graphing Lines in Point-Slope Form</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-strategies-for-graphing-lines.html#section-strategies-for-graphing-lines-6" class="internal"><span class="codenumber">2.9.3</span> <span class="title">Graphing Lines in Standard Form</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-strategies-for-graphing-lines.html#section-strategies-for-graphing-lines-7" class="internal"><span class="codenumber">2.9.4</span> <span class="title">Graphing Horizontal and Vertical Lines</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="section-strategies-for-graphing-lines.html#section-strategies-for-graphing-lines-8" class="internal"><span class="codenumber">2.9.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="review-graphing-lines.html" class="internal"><span class="codenumber">2.10</span> <span class="title">Graphing Lines Chapter Review</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="review-graphing-lines.html#review-graphing-lines-34" class="internal"><span class="codenumber">2.10</span> <span class="title">Review Exercises for Chapter 2</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Appendices</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">Answers to Exercises</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Index</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-strategies-for-graphing-lines"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Strategies for Graphing Lines</span>
+</h2>
+<article class="objectives goal-like" id="section-strategies-for-graphing-lines-2"><h3 class="heading">
+<span class="type">Objectives<span class="colon heading-divison-mark heading-divison-mark__colon">:</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">PCC Course Content and Outcome Guide</span>
+</h3>
+<ul class="disc" id="section-strategies-for-graphing-lines-2-2">
+<li id="section-strategies-for-graphing-lines-2-2-1">
+<div class="para" id="p-derived-section-strategies-for-graphing-lines-2-2-1"><code class="code-inline tex2jax_ignore">[cross-reference to target(s) "ccog-plot-graph-from-slope-intercept-form" missing or not unique]</code></div>
+<div class="autopermalink" data-description="Objective"><a href="#section-strategies-for-graphing-lines-2-2-1" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="section-strategies-for-graphing-lines-2-2-2">
+<div class="para" id="p-derived-section-strategies-for-graphing-lines-2-2-2"><code class="code-inline tex2jax_ignore">[cross-reference to target(s) "ccog-plot-graph-from-point-slope-form" missing or not unique]</code></div>
+<div class="autopermalink" data-description="Objective"><a href="#section-strategies-for-graphing-lines-2-2-2" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="section-strategies-for-graphing-lines-2-2-3">
+<div class="para" id="p-derived-section-strategies-for-graphing-lines-2-2-3"><code class="code-inline tex2jax_ignore">[cross-reference to target(s) "ccog-plot-graph-from-standard-form" missing or not unique]</code></div>
+<div class="autopermalink" data-description="Objective"><a href="#section-strategies-for-graphing-lines-2-2-3" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="section-strategies-for-graphing-lines-2-2-4">
+<div class="para" id="p-derived-section-strategies-for-graphing-lines-2-2-4"><code class="code-inline tex2jax_ignore">[cross-reference to target(s) "ccog-plot-vertical-or-horizontal-line" missing or not unique]</code></div>
+<div class="autopermalink" data-description="Objective"><a href="#section-strategies-for-graphing-lines-2-2-4" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Objectives 2.9: PCC Course Content and Outcome Guide"><a href="#section-strategies-for-graphing-lines-2" title="Copy heading and permalink for Objectives 2.9: PCC Course Content and Outcome Guide" aria-label="Copy heading and permalink for Objectives 2.9: PCC Course Content and Outcome Guide">🔗</a></div></article><section class="introduction" id="section-strategies-for-graphing-lines-3"><div class="para" id="section-strategies-for-graphing-lines-3-1">Previous several sections covered methods for plotting a graph of a linear equation in two variables.<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-strategies-for-graphing-lines-3-2">We’ve learned three forms for a linear equation:<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:31% 31% 31%;column-gap:3.5%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="section-strategies-for-graphing-lines-3-3-1">slope-intercept form <span class="process-math">\(y=mx+b\)</span><div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="section-strategies-for-graphing-lines-3-3-2">point-slope form <span class="process-math">\(y=m\left(x-x_0\right)+y_0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-3-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="section-strategies-for-graphing-lines-3-3-3">standard form <span class="process-math">\(Ax+By=C\)</span><div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-3-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+</div></div>
+<div class="para" id="section-strategies-for-graphing-lines-3-4">We’ve studied two special types of line:<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:50% 50%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="section-strategies-for-graphing-lines-3-5-1">horizontal line <span class="process-math">\(y=k\)</span><div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-3-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="section-strategies-for-graphing-lines-3-5-2">vertical line <span class="process-math">\(x=h\)</span><div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-3-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+</div></div>
+<div class="para" id="section-strategies-for-graphing-lines-3-6">We’ve practiced three ways to graph a line:<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:31% 31% 31%;column-gap:3.5%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="section-strategies-for-graphing-lines-3-7-1">building a table of <span class="process-math">\(x\)</span>- and <span class="process-math">\(y\)</span>-values<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-3-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="section-strategies-for-graphing-lines-3-7-2">plotting <em class="emphasis">one</em> point (often the <span class="process-math">\(y\)</span>-intercept) and drawing slope triangles<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-3-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="section-strategies-for-graphing-lines-3-7-3">plotting its <span class="process-math">\(x\)</span>-intercept and <span class="process-math">\(y\)</span>-intercept<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-3-7-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+</div></div>
+<div class="para" id="section-strategies-for-graphing-lines-3-8">In this section, we review these ideas, especially what steps to take to plot a graph of a               linear equation.                                                                                        <div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-3-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="section-strategies-for-graphing-lines-3-9"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed?listType=playlist&amp;list=PLmuZCPhWPt-dSIb9W3SsQGsoWCmjMihcY&amp;modestbranding=1&amp;rel=0" id="section-strategies-for-graphing-lines-3-9-2"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Alternative Video Lesson<div class="autopermalink" data-description="Figure 2.9.1"><a href="#section-strategies-for-graphing-lines-3-9" title="Copy heading and permalink for Figure 2.9.1" aria-label="Copy heading and permalink for Figure 2.9.1">🔗</a></div></figcaption></figure></section><section class="subsection" id="section-strategies-for-graphing-lines-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Graphing Lines in Slope-Intercept Form</span>
+</h3>
+<div class="para" id="section-strategies-for-graphing-lines-4-2">To review various methods for plotting a line, we’ll start by taking one line, <span class="process-math">\(y=-2x+1\text{,}\)</span> and graph it using each of the strategies we’ve learned.<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="section-strategies-for-graphing-lines-4-3"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Building a Table.</span>
+</h4>
+<div class="para" id="section-strategies-for-graphing-lines-4-3-2">First, we’ll graph <span class="process-math">\(y=-2x+1\)</span> by building a table of values. Our first task is to pick some <span class="process-math">\(x\)</span>-values to use in the table, and we arbitrarily choose <span class="process-math">\(-2,-1,0,1,2\text{.}\)</span> It’s a good habit to use at least five values when plotting this way. After this, we carefully evaluate <span class="process-math">\(y\)</span> over and over, and plot the resulting points.<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-4-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:50% 44%;column-gap:6%;">
+<div class="sbspanel sbspanel--top top" style=""><figure class="figure figure-like" id="section-strategies-for-graphing-lines-4-3-3-1"><table class="tabular">
+<tr>
+<td class="c t b2 r0 l0 t0 lines">
+<span class="process-math">\(x\)</span>-value</td>
+<td class="c t b2 r0 l0 t0 lines">
+<span class="process-math">\(y\)</span>-value</td>
+<td class="c t b2 r0 l0 t0 lines">Point</td>
+</tr>
+<tr>
+<td class="c t b0 r0 l0 t0 lines"><span class="process-math">\(\highlight{-2}\)</span></td>
+<td class="l t b0 r0 l0 t0 lines"><span class="process-math">\(\begin{aligned}[t]y\amp=-2(\substitute{-2})+1\\\amp=5\end{aligned}\)</span></td>
+<td class="c t b0 r0 l0 t0 lines"><span class="process-math">\((-2,5)\)</span></td>
+</tr>
+<tr>
+<td class="c t b0 r0 l0 t0 lines"><span class="process-math">\(\highlight{-1}\)</span></td>
+<td class="l t b0 r0 l0 t0 lines"><span class="process-math">\(\begin{aligned}[t]y\amp=-2(\substitute{-1})+1\\\amp=3\end{aligned}\)</span></td>
+<td class="c t b0 r0 l0 t0 lines"><span class="process-math">\((-1,3)\)</span></td>
+</tr>
+<tr>
+<td class="c t b0 r0 l0 t0 lines"><span class="process-math">\(\highlight{0}\)</span></td>
+<td class="l t b0 r0 l0 t0 lines"><span class="process-math">\(\begin{aligned}[t]y\amp=-2(\substitute{0})+1\\\amp=1\end{aligned}\)</span></td>
+<td class="c t b0 r0 l0 t0 lines"><span class="process-math">\((0,1)\)</span></td>
+</tr>
+<tr>
+<td class="c t b0 r0 l0 t0 lines"><span class="process-math">\(\highlight{1}\)</span></td>
+<td class="l t b0 r0 l0 t0 lines"><span class="process-math">\(\begin{aligned}[t]y\amp=-2(\substitute{1})+1\\\amp=-1\end{aligned}\)</span></td>
+<td class="c t b0 r0 l0 t0 lines"><span class="process-math">\((1,-1)\)</span></td>
+</tr>
+<tr>
+<td class="c t b0 r0 l0 t0 lines"><span class="process-math">\(\highlight{2}\)</span></td>
+<td class="l t b0 r0 l0 t0 lines"><span class="process-math">\(\begin{aligned}[t]y\amp=-2(\substitute{2})+1\\\amp=-3\end{aligned}\)</span></td>
+<td class="c t b0 r0 l0 t0 lines"><span class="process-math">\((2,-3)\)</span></td>
+</tr>
+</table>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Table for <span class="process-math">\(y=-2x+1\)</span><div class="autopermalink" data-description="Figure 2.9.3"><a href="#section-strategies-for-graphing-lines-4-3-3-1" title="Copy heading and permalink for Figure 2.9.3" aria-label="Copy heading and permalink for Figure 2.9.3">🔗</a></div></figcaption></figure></div>
+<div class="sbspanel sbspanel--top top" style=""><figure class="figure figure-like" id="section-strategies-for-graphing-lines-4-3-3-2"><img src="generated/latex-image/summary-graph-using-table.svg" role="img" class="contained" alt="this is a graph of the line y=-2x+1. The following points on the line are plotted: (-2,5),(-1,3),(0,1),(1,-1),(2,-3)"><figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Graphing <span class="process-math">\(y=-2x+1\)</span> using a table of values<div class="autopermalink" data-description="Figure 2.9.4"><a href="#section-strategies-for-graphing-lines-4-3-3-2" title="Copy heading and permalink for Figure 2.9.4" aria-label="Copy heading and permalink for Figure 2.9.4">🔗</a></div></figcaption></figure></div>
+</div></div>
+<div class="autopermalink" data-description="Example 2.9.2: Building a Table"><a href="#section-strategies-for-graphing-lines-4-3" title="Copy heading and permalink for Example 2.9.2: Building a Table" aria-label="Copy heading and permalink for Example 2.9.2: Building a Table">🔗</a></div></article><article class="example example-like" id="section-strategies-for-graphing-lines-4-4"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using Slope Triangles.</span>
+</h4>
+<div class="para" id="section-strategies-for-graphing-lines-4-4-2">Although making a table is straightforward, the slope triangle method is faster and reinforces the true meaning of slope. With the slope triangle method, we first identify some point on the line. Our line is in <a href="section-slope-intercept-form.html#equation-slope-intercept-form" class="xref" data-knowl="./knowl/xref/equation-slope-intercept-form.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.5.1">slope-intercept form</a>, so we know the <span class="process-math">\(y\)</span>-intercept is <span class="process-math">\((0,1)\text{.}\)</span> Plot this first, and then we can draw slope triangles in both directions to find more points. The slope we will use is also apparent: <span class="process-math">\(-2=\frac{-2}{1}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-4-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:47% 47%;column-gap:6%;">
+<div class="sbspanel sbspanel--top top" style=""><figure class="figure figure-like" id="section-strategies-for-graphing-lines-4-4-3-1"><img src="generated/latex-image/summary-slope-intercept.svg" role="img" class="contained" alt=""><figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Marking a point and some slope triangles<div class="autopermalink" data-description="Figure 2.9.6"><a href="#section-strategies-for-graphing-lines-4-4-3-1" title="Copy heading and permalink for Figure 2.9.6" aria-label="Copy heading and permalink for Figure 2.9.6">🔗</a></div></figcaption></figure></div>
+<div class="sbspanel sbspanel--top top" style=""><figure class="figure figure-like" id="section-strategies-for-graphing-lines-4-4-3-2"><img src="generated/latex-image/summary-negative-slope-intercept.svg" role="img" class="contained" alt="This is a graph of the line y=-2x+1. The following points on the line are plotted: (-2,5),(-1,3),( 0,1),(1,-1),(2,-3). There are a few slope triangles. One starts at (-2,5), passes (-1,5), and ends at (-1,3). One    starts at (-1,3), passes (0,3), and ends at (0,1). One starts at (0,1), passes (1,1), and ends at (1,-1). One starts at (1,-1), passes (2,-1), and ends at (2,-3)."><figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Graphing <span class="process-math">\(y=-2x+1\)</span> by slope triangles<div class="autopermalink" data-description="Figure 2.9.7"><a href="#section-strategies-for-graphing-lines-4-4-3-2" title="Copy heading and permalink for Figure 2.9.7" aria-label="Copy heading and permalink for Figure 2.9.7">🔗</a></div></figcaption></figure></div>
+</div></div>
+<div class="para logical" id="section-strategies-for-graphing-lines-4-4-4">
+<div class="para">Compared to the table method, the slope triangle method:</div>
+<ul class="disc" id="section-strategies-for-graphing-lines-4-4-4-1">
+<li id="section-strategies-for-graphing-lines-4-4-4-1-1">
+<div class="para" id="p-derived-section-strategies-for-graphing-lines-4-4-4-1-1">is more sophisticated;</div>
+<div class="autopermalink" data-description="Item"><a href="#section-strategies-for-graphing-lines-4-4-4-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="section-strategies-for-graphing-lines-4-4-4-1-2">
+<div class="para" id="p-derived-section-strategies-for-graphing-lines-4-4-4-1-2">doesn’t take the time and space to make a table;</div>
+<div class="autopermalink" data-description="Item"><a href="#section-strategies-for-graphing-lines-4-4-4-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="section-strategies-for-graphing-lines-4-4-4-1-3">
+<div class="para" id="p-derived-section-strategies-for-graphing-lines-4-4-4-1-3">doesn’t involve lots of calculations where you might make a human error;</div>
+<div class="autopermalink" data-description="Item"><a href="#section-strategies-for-graphing-lines-4-4-4-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="section-strategies-for-graphing-lines-4-4-4-1-4">
+<div class="para" id="p-derived-section-strategies-for-graphing-lines-4-4-4-1-4">shows slope triangles, which reinforces the meaning of slope.</div>
+<div class="autopermalink" data-description="Item"><a href="#section-strategies-for-graphing-lines-4-4-4-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-4-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.9.5: Using Slope Triangles"><a href="#section-strategies-for-graphing-lines-4-4" title="Copy heading and permalink for Example 2.9.5: Using Slope Triangles" aria-label="Copy heading and permalink for Example 2.9.5: Using Slope Triangles">🔗</a></div></article><article class="example example-like" id="section-strategies-for-graphing-lines-4-5"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using intercepts.</span>
+</h4>
+<div class="para" id="section-strategies-for-graphing-lines-4-5-2">If we use <span class="process-math">\(x\)</span>- and <span class="process-math">\(y\)</span>-intercepts to plot <span class="process-math">\(y=-2x+1\text{,}\)</span> we have to find those intercepts first. For our current line, it is apparent that the <span class="process-math">\(y\)</span>-intercept is at <span class="process-math">\((0,1)\text{.}\)</span> But where is the <span class="process-math">\(x\)</span>-intercept?<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-4-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:47% 47%;column-gap:6%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="section-strategies-for-graphing-lines-4-5-3-1">
+<div class="para">Set <span class="process-math">\(y=0\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="section-strategies-for-graphing-lines-4-5-3-1-2">
+\begin{align*}
+y\amp=-2x+1\\
+\substitute{0}\amp=-2x+1\\
+0\subtractright{1}\amp=-2x\\
+-1\amp=-2x\\
+\divideunder{-1}{-2}\amp=x\\
+\frac{1}{2}\amp=x
+\end{align*}
+</div>
+<div class="para">So the <span class="process-math">\(x\)</span>-intercept is at <span class="process-math">\(\left(\frac{1}{2},0\right)\text{.}\)</span> Plotting both intercepts, we can connect the dots with a straight line.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-4-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel sbspanel--top top" style=""><figure class="figure figure-like" id="section-strategies-for-graphing-lines-4-5-3-2"><img src="generated/latex-image/summary-graph-using-slope-triangles.svg" role="img" class="contained" alt=""><figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Using slope triangles<div class="autopermalink" data-description="Figure 2.9.9"><a href="#section-strategies-for-graphing-lines-4-5-3-2" title="Copy heading and permalink for Figure 2.9.9" aria-label="Copy heading and permalink for Figure 2.9.9">🔗</a></div></figcaption></figure></div>
+</div></div>
+<div class="para logical" id="section-strategies-for-graphing-lines-4-5-4">
+<div class="para">This worked, but here are some observations about why this method is not the greatest.</div>
+<ul class="disc" id="section-strategies-for-graphing-lines-4-5-4-1">
+<li id="section-strategies-for-graphing-lines-4-5-4-1-1">
+<div class="para" id="p-derived-section-strategies-for-graphing-lines-4-5-4-1-1">Algebra was required to solve for at least one of the intercepts.</div>
+<div class="autopermalink" data-description="Item"><a href="#section-strategies-for-graphing-lines-4-5-4-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="section-strategies-for-graphing-lines-4-5-4-1-2">
+<div class="para" id="p-derived-section-strategies-for-graphing-lines-4-5-4-1-2">We had to plot a point with a fraction in its coordinates.</div>
+<div class="autopermalink" data-description="Item"><a href="#section-strategies-for-graphing-lines-4-5-4-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="section-strategies-for-graphing-lines-4-5-4-1-3">
+<div class="para" id="p-derived-section-strategies-for-graphing-lines-4-5-4-1-3">We only plotted two points and they turned out to be very close to each other. So if there is even a small inaccuracy in where we marked the points or how we use a straight edge, it could result in a line that is significantly off.</div>
+<div class="autopermalink" data-description="Item"><a href="#section-strategies-for-graphing-lines-4-5-4-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-4-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.9.8: Using intercepts"><a href="#section-strategies-for-graphing-lines-4-5" title="Copy heading and permalink for Example 2.9.8: Using intercepts" aria-label="Copy heading and permalink for Example 2.9.8: Using intercepts">🔗</a></div></article><article class="note remark-like" id="section-strategies-for-graphing-lines-4-6"><h4 class="heading">
+<span class="type">Note</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="section-strategies-for-graphing-lines-4-6-1">When a line is presented in <a href="section-slope-intercept-form.html#equation-slope-intercept-form" class="xref" data-knowl="./knowl/xref/equation-slope-intercept-form.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.5.1">slope-intercept form</a> and <span class="process-math">\(b\)</span> is an integer, our opinion is that the slope triangle method is the best choice for making its graph.<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-4-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Note 2.9.10"><a href="#section-strategies-for-graphing-lines-4-6" title="Copy heading and permalink for Note 2.9.10" aria-label="Copy heading and permalink for Note 2.9.10">🔗</a></div></article><div class="autopermalink" data-description="Subsection 2.9.1: Graphing Lines in Slope-Intercept Form"><a href="#section-strategies-for-graphing-lines-4" title="Copy heading and permalink for Subsection 2.9.1: Graphing Lines in Slope-Intercept Form" aria-label="Copy heading and permalink for Subsection 2.9.1: Graphing Lines in Slope-Intercept Form">🔗</a></div></section><section class="subsection" id="section-strategies-for-graphing-lines-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Graphing Lines in Point-Slope Form</span>
+</h3>
+<div class="para" id="section-strategies-for-graphing-lines-5-2">When we graph a line in <a href="section-point-slope-form.html#equation-point-slope-form" class="xref" data-knowl="./knowl/xref/equation-point-slope-form.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.6.1">point-slope form</a> like <span class="process-math">\(y=\frac{2}{3}(x+1)+3\text{,}\)</span> the slope triangle method is the obvious choice. We can see a point on the line, <span class="process-math">\((-1,3)\text{,}\)</span> and the slope is apparent: <span class="process-math">\(\frac{2}{3}\text{.}\)</span> Here is the graph:<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="section-strategies-for-graphing-lines-5-3"><div class="image-box" style="width: 47%; margin-left: 26.5%; margin-right: 26.5%;"><img src="generated/latex-image/summary-graph-point-slope.svg" role="img" class="contained" alt="This is a graph of the line y-3=2/3(x+1). The following points on the line are plotted: (-4,1),(-1,3),(2,5). There are two slope triangles. One starts at (-4,1), passes (-1,1), and ends at (-1,3). One starts at (-1,3), passes (2,3), and ends at (2,5)."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Graphing <span class="process-math">\(y=\frac{2}{3}(x+1)+3\)</span> using slope triangles<div class="autopermalink" data-description="Figure 2.9.11"><a href="#section-strategies-for-graphing-lines-5-3" title="Copy heading and permalink for Figure 2.9.11" aria-label="Copy heading and permalink for Figure 2.9.11">🔗</a></div></figcaption></figure><div class="para" id="section-strategies-for-graphing-lines-5-4">Other graphing methods would take more work and miss the purpose of <a href="section-point-slope-form.html#equation-point-slope-form" class="xref" data-knowl="./knowl/xref/equation-point-slope-form.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.6.1">point-slope form</a>. To graph a line in <a href="section-point-slope-form.html#equation-point-slope-form" class="xref" data-knowl="./knowl/xref/equation-point-slope-form.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.6.1">point-slope form</a>, we recommend always using slope triangles.<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 2.9.2: Graphing Lines in Point-Slope Form"><a href="#section-strategies-for-graphing-lines-5" title="Copy heading and permalink for Subsection 2.9.2: Graphing Lines in Point-Slope Form" aria-label="Copy heading and permalink for Subsection 2.9.2: Graphing Lines in Point-Slope Form">🔗</a></div></section><section class="subsection" id="section-strategies-for-graphing-lines-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Graphing Lines in Standard Form</span>
+</h3>
+<div class="para" id="section-strategies-for-graphing-lines-6-2">The line <span class="process-math">\(3x+4y=12\)</span> is in <a href="section-standard-form.html#equation-standard-form" class="xref" data-knowl="./knowl/xref/equation-standard-form.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.7.1">standard form</a>. How should we graph it? We’ll review methods we learned and compare them.<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="section-strategies-for-graphing-lines-6-3"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Building a Table of <span class="process-math">\(x\)</span>- and <span class="process-math">\(y\)</span>-values.</span>
+</h4>
+<div class="para" id="section-strategies-for-graphing-lines-6-3-2">To make a table, we could substitute <span class="process-math">\(x\)</span> for various numbers and use algebra to find the corresponding <span class="process-math">\(y\)</span>-values. Let’s start with <span class="process-math">\(x=-2\text{,}\)</span> planning to move on to <span class="process-math">\(x=-1,0,1,2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-6-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:47% 47%;column-gap:6%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="section-strategies-for-graphing-lines-6-3-3-1">
+<div class="displaymath process-math" id="section-strategies-for-graphing-lines-6-3-3-1-1">
+\begin{align*}
+3x+4y\amp=12\\
+3(\substitute{-2})+4y\amp=12\\
+-6+4y\amp=12\\
+4y\amp=12\addright{6}\\
+4y\amp=18\\
+y\amp=\divideunder{18}{4}=\frac{9}{2}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-6-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="section-strategies-for-graphing-lines-6-3-3-2">The first point we found is <span class="process-math">\(\left(-2,\frac{9}{2}\right)\text{.}\)</span> This has been a lot of calculation, and we ended up with a fraction we will have to plot. <em class="emphasis">And</em> we have to repeat this process a few more times to get more points for the table. The table method is generally not a preferred way to graph a line in <a href="section-standard-form.html#equation-standard-form" class="xref" data-knowl="./knowl/xref/equation-standard-form.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.7.1">standard form</a>. So let’s look at other options.<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-6-3-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+</div></div>
+<div class="autopermalink" data-description="Example 2.9.12: Building a Table of x- and y-values"><a href="#section-strategies-for-graphing-lines-6-3" title="Copy heading and permalink for Example 2.9.12: Building a Table of x- and y-values" aria-label="Copy heading and permalink for Example 2.9.12: Building a Table of x- and y-values">🔗</a></div></article><article class="example example-like" id="section-strategies-for-graphing-lines-6-4"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using intercepts.</span>
+</h4>
+<div class="para" id="section-strategies-for-graphing-lines-6-4-2">Next, we’ll try graphing <span class="process-math">\(3x+4y=12\)</span> using intercepts. We set up a small table to record the two intercepts:<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-6-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:100%;column-gap:0%;"><div class="sbspanel fixed-width sbspanel--top top" style=""><table class="tabular">
+<tr>
+<td class="l m b2 r0 l0 t0 lines"></td>
+<td class="c m b2 r0 l0 t0 lines">
+<span class="process-math">\(x\)</span>-value</td>
+<td class="c m b2 r0 l0 t0 lines">
+<span class="process-math">\(y\)</span>-value</td>
+<td class="c m b2 r0 l0 t0 lines">Intercept</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(x\)</span>-intercept</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(y\)</span>-intercept</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div></div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1.5%;margin-right:1.5%;grid-template-columns:48.4536082474227% 48.4536082474227%;column-gap:3%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="section-strategies-for-graphing-lines-6-4-4-1">
+<div class="para">We have to calculate the line’s <span class="process-math">\(x\)</span>-intercept by substituting <span class="process-math">\(y=0\)</span> into the equation:</div>
+<div class="displaymath process-math" id="section-strategies-for-graphing-lines-6-4-4-1-3">
+\begin{align*}
+3x+4y\amp=12\\
+3x+4(\substitute{0})\amp=12\\
+3x\amp=12\\
+x\amp=\divideunder{12}{3}\\
+x\amp=4
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-6-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="section-strategies-for-graphing-lines-6-4-4-2">
+<div class="para">And similarly for the <span class="process-math">\(y\)</span>-intercept:</div>
+<div class="displaymath process-math" id="section-strategies-for-graphing-lines-6-4-4-2-2">
+\begin{align*}
+3x+4y\amp=12\\
+3(\substitute{0})+4y\amp=12\\
+4y\amp=12\\
+y\amp=\divideunder{12}{4}\\
+y\amp=3
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-6-4-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+</div></div>
+<div class="para" id="section-strategies-for-graphing-lines-6-4-5">So the line’s <span class="process-math">\(x\)</span>-intercept is at <span class="process-math">\((4,0)\)</span> and its <span class="process-math">\(y\)</span>-intercept is at <span class="process-math">\((0,3)\text{.}\)</span> Now we can complete the table and then graph the line:<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-6-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:47% 47%;column-gap:6%;">
+<div class="sbspanel sbspanel--top top" style=""><figure class="figure figure-like" id="section-strategies-for-graphing-lines-6-4-6-1"><table class="tabular">
+<tr>
+<td class="l m b2 r0 l0 t0 lines"></td>
+<td class="c m b2 r0 l0 t0 lines">
+<span class="process-math">\(x\)</span>-value</td>
+<td class="c m b2 r0 l0 t0 lines">
+<span class="process-math">\(y\)</span>-value</td>
+<td class="c m b2 r0 l0 t0 lines">Intercepts</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(x\)</span>-intercept</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(4\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\((4,0)\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(y\)</span>-intercept</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(3\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\((0,3)\)</span></td>
+</tr>
+</table>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Intercepts of <span class="process-math">\(3x+4y=12\)</span><div class="autopermalink" data-description="Figure 2.9.14"><a href="#section-strategies-for-graphing-lines-6-4-6-1" title="Copy heading and permalink for Figure 2.9.14" aria-label="Copy heading and permalink for Figure 2.9.14">🔗</a></div></figcaption></figure></div>
+<div class="sbspanel sbspanel--top top" style=""><figure class="figure figure-like" id="section-strategies-for-graphing-lines-6-4-6-2"><img src="generated/latex-image/summary-graph-standard-form.svg" role="img" class="contained" alt="This is a grid with the graph of line 3x+4y=12. The following points are plotted: (0,3), (4,0)."><figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Graph of <span class="process-math">\(3x+4y=12\)</span><div class="autopermalink" data-description="Figure 2.9.15"><a href="#section-strategies-for-graphing-lines-6-4-6-2" title="Copy heading and permalink for Figure 2.9.15" aria-label="Copy heading and permalink for Figure 2.9.15">🔗</a></div></figcaption></figure></div>
+</div></div>
+<div class="autopermalink" data-description="Example 2.9.13: Using intercepts"><a href="#section-strategies-for-graphing-lines-6-4" title="Copy heading and permalink for Example 2.9.13: Using intercepts" aria-label="Copy heading and permalink for Example 2.9.13: Using intercepts">🔗</a></div></article><article class="example example-like" id="section-strategies-for-graphing-lines-6-5"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">With Slope Triangles.</span>
+</h4>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:47% 47%;column-gap:6%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="section-strategies-for-graphing-lines-6-5-2-1">We can always rearrange <span class="process-math">\(3x+4y=12\)</span> into <a href="section-slope-intercept-form.html#equation-slope-intercept-form" class="xref" data-knowl="./knowl/xref/equation-slope-intercept-form.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.5.1">slope-intercept form</a>, and then graph it with the slope triangle method:<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-6-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="para logical" id="section-strategies-for-graphing-lines-6-5-2-2">
+<div class="displaymath process-math" id="section-strategies-for-graphing-lines-6-5-2-2-1">
+\begin{align*}
+3x+4y\amp=12\\
+4y\amp=12\subtractright{3x}\\
+4y\amp=-3x+12\\
+y\amp=\divideunder{-3x+12}{4}\\
+y\amp=-\frac{3}{4}x+3
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-6-5-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+</div></div>
+<div class="para" id="section-strategies-for-graphing-lines-6-5-3">With the <span class="process-math">\(y\)</span>-intercept at <span class="process-math">\((0,3)\)</span> and slope <span class="process-math">\(-\frac{3}{4}\text{,}\)</span> we can graph the line using slope triangles:<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-6-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="section-strategies-for-graphing-lines-6-5-4"><div class="image-box" style="width: 47%; margin-left: 26.5%; margin-right: 26.5%;"><img src="generated/latex-image/summary-graph-standard-form-using-intercepts.svg" role="img" class="contained" alt="This is a graph of the line 3x+4y=12. The following points on the line are plotted: (-4,6),(0,3),(4,0). There  are  two slope triangles. One starts at (-4,6), passes (0,6), and ends at (0,3). One starts at (0,3), passes (4,3), and  ends at   (4,0)."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Graphing <span class="process-math">\(3x+4y=12\)</span> using slope triangles<div class="autopermalink" data-description="Figure 2.9.17"><a href="#section-strategies-for-graphing-lines-6-5-4" title="Copy heading and permalink for Figure 2.9.17" aria-label="Copy heading and permalink for Figure 2.9.17">🔗</a></div></figcaption></figure><div class="para" id="section-strategies-for-graphing-lines-6-5-5">Compared with the intercepts method, the slope triangle method takes more time, but it works.<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-6-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.9.16: With Slope Triangles"><a href="#section-strategies-for-graphing-lines-6-5" title="Copy heading and permalink for Example 2.9.16: With Slope Triangles" aria-label="Copy heading and permalink for Example 2.9.16: With Slope Triangles">🔗</a></div></article><div class="para logical" id="section-strategies-for-graphing-lines-6-6">
+<div class="para">Here are some observations about graphing a line equation that is in <a href="section-standard-form.html#equation-standard-form" class="xref" data-knowl="./knowl/xref/equation-standard-form.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.7.1">standard form</a>:</div>
+<ul class="disc" id="section-strategies-for-graphing-lines-6-6-2">
+<li id="section-strategies-for-graphing-lines-6-6-2-1">
+<div class="para" id="p-derived-section-strategies-for-graphing-lines-6-6-2-1">The intercepts method might be the quickest approach.</div>
+<div class="autopermalink" data-description="Item"><a href="#section-strategies-for-graphing-lines-6-6-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="section-strategies-for-graphing-lines-6-6-2-2">
+<div class="para" id="p-derived-section-strategies-for-graphing-lines-6-6-2-2">The intercepts method only tells us two intercepts of the line. When we need to know more information, like the line’s slope, and get a more accurate graph, we should take the time to convert the equation into slope-intercept form.</div>
+<div class="autopermalink" data-description="Item"><a href="#section-strategies-for-graphing-lines-6-6-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="section-strategies-for-graphing-lines-6-6-2-3">
+<div class="para" id="p-derived-section-strategies-for-graphing-lines-6-6-2-3">When <span class="process-math">\(C=0\)</span> in a <a href="section-standard-form.html#equation-standard-form" class="xref" data-knowl="./knowl/xref/equation-standard-form.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.7.1">standard form equation</a> we cannot use the intercepts method to plot the line anyway.</div>
+<div class="autopermalink" data-description="Item"><a href="#section-strategies-for-graphing-lines-6-6-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">So there’s not really a clear winner for which method is best. Using intercepts or converting to slope-intercept form and using slope triangels might be preferable depending on the situation.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-6-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 2.9.3: Graphing Lines in Standard Form"><a href="#section-strategies-for-graphing-lines-6" title="Copy heading and permalink for Subsection 2.9.3: Graphing Lines in Standard Form" aria-label="Copy heading and permalink for Subsection 2.9.3: Graphing Lines in Standard Form">🔗</a></div></section><section class="subsection" id="section-strategies-for-graphing-lines-7"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Graphing Horizontal and Vertical Lines</span>
+</h3>
+<div class="para" id="section-strategies-for-graphing-lines-7-2">We learned in <a href="section-geometry-of-lines.html" class="internal" title="Section 2.8: Geometry of Lines">Section 8</a> that equations in the form <span class="process-math">\(x=h\)</span> and <span class="process-math">\(y=k\)</span> make vertical and horizontal lines. But perhaps you will one day find yourself not remembering which is which. Making a table and plotting points can quickly remind you which type of equation makes which type of line. Let’s build a table for <span class="process-math">\(y=2\)</span> and another one for <span class="process-math">\(x=-3\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:50% 50%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style=""><figure class="figure figure-like" id="section-strategies-for-graphing-lines-7-3-1"><table class="tabular">
+<tr>
+<td class="c m b2 r0 l0 t0 lines">
+<span class="process-math">\(x\)</span>-value</td>
+<td class="c m b2 r0 l0 t0 lines">
+<span class="process-math">\(y\)</span>-value</td>
+<td class="c m b2 r0 l0 t0 lines">Point</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\((0,2)\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\((1,2)\)</span></td>
+</tr>
+</table>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.18<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Table of values for <span class="process-math">\(y=2\)</span><div class="autopermalink" data-description="Figure 2.9.18"><a href="#section-strategies-for-graphing-lines-7-3-1" title="Copy heading and permalink for Figure 2.9.18" aria-label="Copy heading and permalink for Figure 2.9.18">🔗</a></div></figcaption></figure></div>
+<div class="sbspanel sbspanel--top top" style=""><figure class="figure figure-like" id="section-strategies-for-graphing-lines-7-3-2"><table class="tabular">
+<tr>
+<td class="c m b2 r0 l0 t0 lines">
+<span class="process-math">\(x\)</span>-value</td>
+<td class="c m b2 r0 l0 t0 lines">
+<span class="process-math">\(y\)</span>-value</td>
+<td class="c m b2 r0 l0 t0 lines">Point</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-3\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\((-3,0)\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-3\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\((-3,1)\)</span></td>
+</tr>
+</table>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.19<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Table of values for <span class="process-math">\(x=-3\)</span><div class="autopermalink" data-description="Figure 2.9.19"><a href="#section-strategies-for-graphing-lines-7-3-2" title="Copy heading and permalink for Figure 2.9.19" aria-label="Copy heading and permalink for Figure 2.9.19">🔗</a></div></figcaption></figure></div>
+</div></div>
+<div class="para" id="section-strategies-for-graphing-lines-7-4">With two points on each line, we can graph them:<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-7-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:47% 47%;column-gap:6%;">
+<div class="sbspanel sbspanel--top top" style=""><figure class="figure figure-like" id="section-strategies-for-graphing-lines-7-5-1"><img src="generated/latex-image/summary-graph-horizontal.svg" role="img" class="contained" alt="a graph of y=2; the points (0,2) and (1,2) are plotted, and a horizontal line passes between them"><figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.20<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Graphing <span class="process-math">\(y=2\)</span><div class="autopermalink" data-description="Figure 2.9.20"><a href="#section-strategies-for-graphing-lines-7-5-1" title="Copy heading and permalink for Figure 2.9.20" aria-label="Copy heading and permalink for Figure 2.9.20">🔗</a></div></figcaption></figure></div>
+<div class="sbspanel sbspanel--top top" style=""><figure class="figure figure-like" id="section-strategies-for-graphing-lines-7-5-2"><img src="generated/latex-image/summary-graph-vertical.svg" role="img" class="contained" alt="a graph of x=-3; the points (-3,0) and (-3,1) are plotted, and a vertical line passes between them"><figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.21<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Graphing <span class="process-math">\(x=-3\)</span><div class="autopermalink" data-description="Figure 2.9.21"><a href="#section-strategies-for-graphing-lines-7-5-2" title="Copy heading and permalink for Figure 2.9.21" aria-label="Copy heading and permalink for Figure 2.9.21">🔗</a></div></figcaption></figure></div>
+</div></div>
+<div class="autopermalink" data-description="Subsection 2.9.4: Graphing Horizontal and Vertical Lines"><a href="#section-strategies-for-graphing-lines-7" title="Copy heading and permalink for Subsection 2.9.4: Graphing Horizontal and Vertical Lines" aria-label="Copy heading and permalink for Subsection 2.9.4: Graphing Horizontal and Vertical Lines">🔗</a></div></section><section class="exercises" id="section-strategies-for-graphing-lines-8"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.9.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h3>
+<div class="exercisegroup" id="section-strategies-for-graphing-lines-8-1">
+<h4 class="heading"><span class="title">Graphing by Table.</span></h4>
+<div class="introduction" id="section-strategies-for-graphing-lines-8-1-2"><div class="para" id="section-strategies-for-graphing-lines-8-1-2-1">Make a table and then plot the equation.<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-8-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="exercisegroup-exercises cols4 multicolumn">
+<article class="exercise exercise-like" id="plot-linear-equation-integer-copy2"><h5 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-691-1-1-1">A number divided by nine is fourteen.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-691-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.1"><a href="#plot-linear-equation-integer-copy2" title="Copy heading and permalink for Exercise 2.9.5.1" aria-label="Copy heading and permalink for Exercise 2.9.5.1">🔗</a></div></article><article class="exercise exercise-like" id="plot-linear-equation-integer-copy3"><h5 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-692-1-1-1">Ten less than five times a number is eight.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-692-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.2"><a href="#plot-linear-equation-integer-copy3" title="Copy heading and permalink for Exercise 2.9.5.2" aria-label="Copy heading and permalink for Exercise 2.9.5.2">🔗</a></div></article><article class="exercise exercise-like" id="plot-linear-equation-fraction-slope-copy2"><h5 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-693-1-1-1">When a heating oil tank is decommissioned, it is drained of its remaining oil and then filled with an inert material, such as sand. One cylindrical oil tank has a volume of <span class="process-math">\({350\ {\rm gal}}\)</span> and is being filled with sand at a rate of <span class="process-math">\({510\ {\textstyle\frac{\rm\mathstrut gal}{\rm\mathstrut hr}}}\text{.}\)</span> Write an equation where the solution is the amount of time, in hours, that it will take to fill the tank with sand. There is no need to solve the equation.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-693-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.3"><a href="#plot-linear-equation-fraction-slope-copy2" title="Copy heading and permalink for Exercise 2.9.5.3" aria-label="Copy heading and permalink for Exercise 2.9.5.3">🔗</a></div></article><article class="exercise exercise-like" id="plot-linear-equation-fraction-slope-copy3"><h5 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-694-1-1-1">Rhys filled the gas tank in his car to <span class="process-math">\({17\ {\rm gal}}\text{.}\)</span> When the tank reaches <span class="process-math">\({1\ {\rm gal}}\text{,}\)</span> the low gas light will come on. On average, Rhys’s car uses <span class="process-math">\({0.04\ {\textstyle\frac{\rm\mathstrut gal}{\rm\mathstrut mi}}}\)</span> per mile driven. How many miles will Rhys’s car be able to drive before the low gas light comes on? Write an equation to model this scenario. There is no need to solve it.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-694-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.4"><a href="#plot-linear-equation-fraction-slope-copy3" title="Copy heading and permalink for Exercise 2.9.5.4" aria-label="Copy heading and permalink for Exercise 2.9.5.4">🔗</a></div></article><article class="exercise exercise-like" id="plot-vertical-linear-equation-copy2"><h5 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-695-1-1-1">A small town would like to replace its aging water treatment system. This will cost <span class="process-math">\({\$14{,}900{,}000}\text{,}\)</span> but the town just needs <span class="process-math">\({\$1{,}490{,}000}\)</span> up front for downpayment on a loan that will cover the rest. The town treasury has <span class="process-math">\({\$372{,}500}\)</span> in it already for this need, and the town can gather <span class="process-math">\({\$195{,}000}\)</span> per month from taxes. How long will it take to reach enough for downpayment on that loan? Write an equation to model this scenario. There is no need to solve it.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-695-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.5"><a href="#plot-vertical-linear-equation-copy2" title="Copy heading and permalink for Exercise 2.9.5.5" aria-label="Copy heading and permalink for Exercise 2.9.5.5">🔗</a></div></article><article class="exercise exercise-like" id="plot-vertical-linear-equation-copy3"><h5 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-696-1-1-1">Alyssa baked a pie at <span class="process-math">\(425\,^{\circ}F\)</span> and just took it out of the oven. It immediately starts to cool at a rate of <span class="process-math">\(21\,\frac{^{\circ}F}{\text{min}}\text{.}\)</span> How long will it take to cool to <span class="process-math">\(300\,^{\circ}F\text{?}\)</span> Write an equation to model this scenario. There is no need to solve it.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-696-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.6"><a href="#plot-vertical-linear-equation-copy3" title="Copy heading and permalink for Exercise 2.9.5.6" aria-label="Copy heading and permalink for Exercise 2.9.5.6">🔗</a></div></article><article class="exercise exercise-like" id="plot-horizontal-linear-equation-copy2"><h5 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-697-1-1-1">At a recent trip to the casino, Clayton brought <span class="process-math">\({\$960}\)</span> in cash. He knows he needs to hold on to <span class="process-math">\({\$80}\)</span> in reserve to pay for dinner later. Unfortunately Clayton had rough luck and was losing money at the slot machines at an average rate of <span class="process-math">\({\$215}\)</span> per hour. How long was Clayton gambling before he had to stop? Write an equation to model this scenario. There is no need to solve it.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-697-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.7"><a href="#plot-horizontal-linear-equation-copy2" title="Copy heading and permalink for Exercise 2.9.5.7" aria-label="Copy heading and permalink for Exercise 2.9.5.7">🔗</a></div></article><article class="exercise exercise-like" id="plot-horizontal-linear-equation-copy3"><h5 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-698-1-1-1">Edgar’s current annual salary as an office manager is <span class="process-math">\({\$69{,}126}\text{.}\)</span> This is with a raise of <span class="process-math">\({5\%}\)</span> over last year’s salary. What was his salary last year? Set up an equation to answer this question. There is no need to solve it.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-698-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.8"><a href="#plot-horizontal-linear-equation-copy3" title="Copy heading and permalink for Exercise 2.9.5.8" aria-label="Copy heading and permalink for Exercise 2.9.5.8">🔗</a></div></article>
+</div>
+<div class="autopermalink" data-description="Exercise Group 2.9.5.1–8: Graphing by Table"><a href="#section-strategies-for-graphing-lines-8-1" title="Copy heading and permalink for Exercise Group 2.9.5.1–8: Graphing by Table" aria-label="Copy heading and permalink for Exercise Group 2.9.5.1–8: Graphing by Table">🔗</a></div>
+</div>
+<div class="exercisegroup" id="section-strategies-for-graphing-lines-8-2">
+<h4 class="heading"><span class="title">Graphing Standard Form Equations.</span></h4>
+<div class="introduction" id="section-strategies-for-graphing-lines-8-2-2"><div class="para" id="section-strategies-for-graphing-lines-8-2-2-1">Find the <span class="process-math">\(x\)</span>- and <span class="process-math">\(y\)</span>-intercepts of the line, and then use them to graph the line.<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-8-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="exercisegroup-exercises cols3 multicolumn">
+<article class="exercise exercise-like" id="standard-form-plot-positive-integers-copy2"><h5 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-699-1-1-1">One year, the median rent for a one-bedroom apartment in a city was reported to be <span class="process-math">\({\$1{,}340}\text{.}\)</span> This was reported to be an increase of <span class="process-math">\({1.1\%}\)</span> over the previous year. Based on this reporting, what was the median rent for of a one-bedroom apartment the previous year? Set up an equation to answer this question. There is no need to solve it.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-699-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.9"><a href="#standard-form-plot-positive-integers-copy2" title="Copy heading and permalink for Exercise 2.9.5.9" aria-label="Copy heading and permalink for Exercise 2.9.5.9">🔗</a></div></article><article class="exercise exercise-like" id="standard-form-plot-positive-integers-copy3"><h5 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-700-1-1-1">Jenny’s maximum lung capacity is <span class="process-math">\({7.2\ {\rm L}}\text{.}\)</span> If her lungs are full and she exhales at a rate of <span class="process-math">\({0.7\ {\textstyle\frac{\rm\mathstrut L}{\rm\mathstrut s}}}\text{,}\)</span> write an inequality where the solution set is the possible times when she still has at least <span class="process-math">\({0.7\ {\rm L}}\)</span> of air left in her lungs. There is no need to solve it.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-700-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.10"><a href="#standard-form-plot-positive-integers-copy3" title="Copy heading and permalink for Exercise 2.9.5.10" aria-label="Copy heading and permalink for Exercise 2.9.5.10">🔗</a></div></article><article class="exercise exercise-like" id="standard-form-plot-positive-integers-one-neg-copy2"><h5 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-701-1-1-1">The final bill at a restaurant one night was <span class="process-math">\({\$97.10}\text{,}\)</span> including a tip that was at least <span class="process-math">\({18\%}\text{.}\)</span> What could the bill have been before the tip was added? Set up an inequality where the solution set represents the possible amounts that the original bill might have been. There is no need to solve it.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-701-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.11"><a href="#standard-form-plot-positive-integers-one-neg-copy2" title="Copy heading and permalink for Exercise 2.9.5.11" aria-label="Copy heading and permalink for Exercise 2.9.5.11">🔗</a></div></article><article class="exercise exercise-like" id="standard-form-plot-positive-integers-one-neg-copy3"><h5 class="heading"><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-702-1-1-1">Solve for <span class="process-math">\(y\)</span> in the equation <span class="process-math">\(7-3y=-8\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-702-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.12"><a href="#standard-form-plot-positive-integers-one-neg-copy3" title="Copy heading and permalink for Exercise 2.9.5.12" aria-label="Copy heading and permalink for Exercise 2.9.5.12">🔗</a></div></article><article class="exercise exercise-like" id="standard-form-plot-positive-integers-both-neg-copy2"><h5 class="heading"><span class="codenumber">13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-703-1-1-1">Your savings account starts with <span class="process-math">\(\$500\text{.}\)</span> Then each month, there is an automatic deposit of <span class="process-math">\(\$150\text{.}\)</span> You need <span class="process-math">\(\$1700\)</span> to afford a deposit on a new apartment. How long will this take?<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-703-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.13"><a href="#standard-form-plot-positive-integers-both-neg-copy2" title="Copy heading and permalink for Exercise 2.9.5.13" aria-label="Copy heading and permalink for Exercise 2.9.5.13">🔗</a></div></article><article class="exercise exercise-like" id="standard-form-plot-positive-integers-both-neg-copy3"><h5 class="heading"><span class="codenumber">14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-704-1-1-1">Solve for <span class="process-math">\(x\)</span> in <span class="process-math">\(5-2x=5x-9\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-704-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.14"><a href="#standard-form-plot-positive-integers-both-neg-copy3" title="Copy heading and permalink for Exercise 2.9.5.14" aria-label="Copy heading and permalink for Exercise 2.9.5.14">🔗</a></div></article>
+</div>
+<div class="autopermalink" data-description="Exercise Group 2.9.5.9–14: Graphing Standard Form Equations"><a href="#section-strategies-for-graphing-lines-8-2" title="Copy heading and permalink for Exercise Group 2.9.5.9–14: Graphing Standard Form Equations" aria-label="Copy heading and permalink for Exercise Group 2.9.5.9–14: Graphing Standard Form Equations">🔗</a></div>
+</div>
+<div class="exercisegroup" id="section-strategies-for-graphing-lines-8-3">
+<h4 class="heading"><span class="title">Graphing Slope-Intercept Equations.</span></h4>
+<div class="introduction" id="section-strategies-for-graphing-lines-8-3-2"><div class="para" id="section-strategies-for-graphing-lines-8-3-2-1">Use the slope and <span class="process-math">\(y\)</span>-intercept to plot the line.<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-8-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="exercisegroup-exercises cols3 multicolumn">
+<article class="exercise exercise-like" id="plot-slope-intercept-pos-int-copy2"><h5 class="heading"><span class="codenumber">15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-705-1-1-1">Solve for <span class="process-math">\(x\)</span> in <span class="process-math">\(4 + 3(12 - x) = 12x - 5(2x - 2)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-705-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.15"><a href="#plot-slope-intercept-pos-int-copy2" title="Copy heading and permalink for Exercise 2.9.5.15" aria-label="Copy heading and permalink for Exercise 2.9.5.15">🔗</a></div></article><article class="exercise exercise-like" id="plot-slope-intercept-pos-int-copy3"><h5 class="heading"><span class="codenumber">16<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-706-1-1-1">A shirt is on sale for <span class="process-math">\(20\%\)</span> off. The sale price is <span class="process-math">\(\$51.00\text{.}\)</span> What was the shirt’s original price?<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-706-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.16"><a href="#plot-slope-intercept-pos-int-copy3" title="Copy heading and permalink for Exercise 2.9.5.16" aria-label="Copy heading and permalink for Exercise 2.9.5.16">🔗</a></div></article><article class="exercise exercise-like" id="plot-slope-intercept-neg-int-copy2"><h5 class="heading"><span class="codenumber">17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-707-1-1-1">
+<span class="process-math">\({n+7}={-11}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-707-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.17"><a href="#plot-slope-intercept-neg-int-copy2" title="Copy heading and permalink for Exercise 2.9.5.17" aria-label="Copy heading and permalink for Exercise 2.9.5.17">🔗</a></div></article><article class="exercise exercise-like" id="plot-slope-intercept-neg-int-copy3"><h5 class="heading"><span class="codenumber">18<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-708-1-1-1">
+<span class="process-math">\({18}={\frac{t}{20}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-708-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.18"><a href="#plot-slope-intercept-neg-int-copy3" title="Copy heading and permalink for Exercise 2.9.5.18" aria-label="Copy heading and permalink for Exercise 2.9.5.18">🔗</a></div></article><article class="exercise exercise-like" id="plot-slope-intercept-neg-reciprocal-copy2"><h5 class="heading"><span class="codenumber">19<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-709-1-1-1">
+<span class="process-math">\({-z}={5}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-709-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.19"><a href="#plot-slope-intercept-neg-reciprocal-copy2" title="Copy heading and permalink for Exercise 2.9.5.19" aria-label="Copy heading and permalink for Exercise 2.9.5.19">🔗</a></div></article><article class="exercise exercise-like" id="plot-slope-intercept-neg-reciprocal-copy3"><h5 class="heading"><span class="codenumber">20<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-710-1-1-1">
+<span class="process-math">\({{\frac{3}{4}}+F}={-{\frac{7}{12}}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-710-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.20"><a href="#plot-slope-intercept-neg-reciprocal-copy3" title="Copy heading and permalink for Exercise 2.9.5.20" aria-label="Copy heading and permalink for Exercise 2.9.5.20">🔗</a></div></article><article class="exercise exercise-like" id="plot-slope-intercept-pos-reciprocal-copy2"><h5 class="heading"><span class="codenumber">21<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-711-1-1-1">
+<span class="process-math">\({-K}={-{\frac{9}{8}}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-711-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.21"><a href="#plot-slope-intercept-pos-reciprocal-copy2" title="Copy heading and permalink for Exercise 2.9.5.21" aria-label="Copy heading and permalink for Exercise 2.9.5.21">🔗</a></div></article><article class="exercise exercise-like" id="plot-slope-intercept-pos-reciprocal-copy3"><h5 class="heading"><span class="codenumber">22<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-712-1-1-1">
+<span class="process-math">\({12.88+R}={13.62}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-712-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.22"><a href="#plot-slope-intercept-pos-reciprocal-copy3" title="Copy heading and permalink for Exercise 2.9.5.22" aria-label="Copy heading and permalink for Exercise 2.9.5.22">🔗</a></div></article><article class="exercise exercise-like" id="plot-slope-intercept-pos-frac-copy2"><h5 class="heading"><span class="codenumber">23<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 2.9.5.23"><a href="#plot-slope-intercept-pos-frac-copy2" title="Copy heading and permalink for Exercise 2.9.5.23" aria-label="Copy heading and permalink for Exercise 2.9.5.23">🔗</a></div></article><article class="exercise exercise-like" id="plot-slope-intercept-pos-frac-copy3"><h5 class="heading"><span class="codenumber">24<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 2.9.5.24"><a href="#plot-slope-intercept-pos-frac-copy3" title="Copy heading and permalink for Exercise 2.9.5.24" aria-label="Copy heading and permalink for Exercise 2.9.5.24">🔗</a></div></article><article class="exercise exercise-like" id="plot-slope-intercept-one-copy2"><h5 class="heading"><span class="codenumber">25<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 2.9.5.25"><a href="#plot-slope-intercept-one-copy2" title="Copy heading and permalink for Exercise 2.9.5.25" aria-label="Copy heading and permalink for Exercise 2.9.5.25">🔗</a></div></article><article class="exercise exercise-like" id="plot-slope-intercept-one-copy3"><h5 class="heading"><span class="codenumber">26<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-716-1-1-1">
+<span class="process-math">\({-5n+5}={35}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-716-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.26"><a href="#plot-slope-intercept-one-copy3" title="Copy heading and permalink for Exercise 2.9.5.26" aria-label="Copy heading and permalink for Exercise 2.9.5.26">🔗</a></div></article><article class="exercise exercise-like" id="plot-slope-intercept-neg-frac-copy2"><h5 class="heading"><span class="codenumber">27<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 2.9.5.27"><a href="#plot-slope-intercept-neg-frac-copy2" title="Copy heading and permalink for Exercise 2.9.5.27" aria-label="Copy heading and permalink for Exercise 2.9.5.27">🔗</a></div></article><article class="exercise exercise-like" id="plot-slope-intercept-neg-frac-copy3"><h5 class="heading"><span class="codenumber">28<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-718-1-1-1">
+<span class="process-math">\({49}={-6z+1}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-718-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.28"><a href="#plot-slope-intercept-neg-frac-copy3" title="Copy heading and permalink for Exercise 2.9.5.28" aria-label="Copy heading and permalink for Exercise 2.9.5.28">🔗</a></div></article>
+</div>
+<div class="autopermalink" data-description="Exercise Group 2.9.5.15–28: Graphing Slope-Intercept Equations"><a href="#section-strategies-for-graphing-lines-8-3" title="Copy heading and permalink for Exercise Group 2.9.5.15–28: Graphing Slope-Intercept Equations" aria-label="Copy heading and permalink for Exercise Group 2.9.5.15–28: Graphing Slope-Intercept Equations">🔗</a></div>
+</div>
+<div class="exercisegroup" id="section-strategies-for-graphing-lines-8-4">
+<h4 class="heading"><span class="title">Graphing Point-Slope Equations.</span></h4>
+<div class="introduction" id="section-strategies-for-graphing-lines-8-4-2"><div class="para" id="section-strategies-for-graphing-lines-8-4-2-1">Use the slope and the apparent point to plot the line.<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-8-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="exercisegroup-exercises cols3 multicolumn">
+<article class="exercise exercise-like" id="graph-point-slope-pos-int-copy2"><h5 class="heading"><span class="codenumber">29<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 2.9.5.29"><a href="#graph-point-slope-pos-int-copy2" title="Copy heading and permalink for Exercise 2.9.5.29" aria-label="Copy heading and permalink for Exercise 2.9.5.29">🔗</a></div></article><article class="exercise exercise-like" id="graph-point-slope-pos-int-copy3"><h5 class="heading"><span class="codenumber">30<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-720-1-1-1">
+<span class="process-math">\({8K-24}={4K}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-720-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.30"><a href="#graph-point-slope-pos-int-copy3" title="Copy heading and permalink for Exercise 2.9.5.30" aria-label="Copy heading and permalink for Exercise 2.9.5.30">🔗</a></div></article><article class="exercise exercise-like" id="graph-point-slope-pos-int-neg-k-copy2"><h5 class="heading"><span class="codenumber">31<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 2.9.5.31"><a href="#graph-point-slope-pos-int-neg-k-copy2" title="Copy heading and permalink for Exercise 2.9.5.31" aria-label="Copy heading and permalink for Exercise 2.9.5.31">🔗</a></div></article><article class="exercise exercise-like" id="graph-point-slope-pos-int-neg-k-copy3"><h5 class="heading"><span class="codenumber">32<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-722-1-1-1">
+<span class="process-math">\({-8X+5}={-8}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-722-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.32"><a href="#graph-point-slope-pos-int-neg-k-copy3" title="Copy heading and permalink for Exercise 2.9.5.32" aria-label="Copy heading and permalink for Exercise 2.9.5.32">🔗</a></div></article><article class="exercise exercise-like" id="graph-point-slope-pos-frac-copy2"><h5 class="heading"><span class="codenumber">33<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 2.9.5.33"><a href="#graph-point-slope-pos-frac-copy2" title="Copy heading and permalink for Exercise 2.9.5.33" aria-label="Copy heading and permalink for Exercise 2.9.5.33">🔗</a></div></article><article class="exercise exercise-like" id="graph-point-slope-pos-frac-copy3"><h5 class="heading"><span class="codenumber">34<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-724-1-1-1">
+<span class="process-math">\({1}={-3h+2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-724-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.34"><a href="#graph-point-slope-pos-frac-copy3" title="Copy heading and permalink for Exercise 2.9.5.34" aria-label="Copy heading and permalink for Exercise 2.9.5.34">🔗</a></div></article><article class="exercise exercise-like" id="graph-point-slope-neg-frac-copy2"><h5 class="heading"><span class="codenumber">35<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 2.9.5.35"><a href="#graph-point-slope-neg-frac-copy2" title="Copy heading and permalink for Exercise 2.9.5.35" aria-label="Copy heading and permalink for Exercise 2.9.5.35">🔗</a></div></article><article class="exercise exercise-like" id="graph-point-slope-neg-frac-copy3"><h5 class="heading"><span class="codenumber">36<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-726-1-1-1">
+<span class="process-math">\({4t}={-2t-9}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-726-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.36"><a href="#graph-point-slope-neg-frac-copy3" title="Copy heading and permalink for Exercise 2.9.5.36" aria-label="Copy heading and permalink for Exercise 2.9.5.36">🔗</a></div></article><article class="exercise exercise-like" id="graph-point-slope-decimal-copy2"><h5 class="heading"><span class="codenumber">37<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 2.9.5.37"><a href="#graph-point-slope-decimal-copy2" title="Copy heading and permalink for Exercise 2.9.5.37" aria-label="Copy heading and permalink for Exercise 2.9.5.37">🔗</a></div></article><article class="exercise exercise-like" id="graph-point-slope-decimal-copy3"><h5 class="heading"><span class="codenumber">38<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-728-1-1-1">
+<span class="process-math">\({-8.7F-0.6}={6.2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-728-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.38"><a href="#graph-point-slope-decimal-copy3" title="Copy heading and permalink for Exercise 2.9.5.38" aria-label="Copy heading and permalink for Exercise 2.9.5.38">🔗</a></div></article>
+</div>
+<div class="autopermalink" data-description="Exercise Group 2.9.5.29–38: Graphing Point-Slope Equations"><a href="#section-strategies-for-graphing-lines-8-4" title="Copy heading and permalink for Exercise Group 2.9.5.29–38: Graphing Point-Slope Equations" aria-label="Copy heading and permalink for Exercise Group 2.9.5.29–38: Graphing Point-Slope Equations">🔗</a></div>
+</div>
+<div class="exercisegroup" id="section-strategies-for-graphing-lines-8-5">
+<h4 class="heading"><span class="title">Choosing a Method to Graph a Line.</span></h4>
+<div class="introduction" id="section-strategies-for-graphing-lines-8-5-2"><div class="para" id="section-strategies-for-graphing-lines-8-5-2-1">Use whatever method you think best to plot the line.<div class="autopermalink" data-description="Paragraph"><a href="#section-strategies-for-graphing-lines-8-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<div class="exercisegroup-exercises cols3 multicolumn">
+<article class="exercise exercise-like" id="plot-slope-intercept-pos-int-copy4"><h5 class="heading"><span class="codenumber">39<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 2.9.5.39"><a href="#plot-slope-intercept-pos-int-copy4" title="Copy heading and permalink for Exercise 2.9.5.39" aria-label="Copy heading and permalink for Exercise 2.9.5.39">🔗</a></div></article><article class="exercise exercise-like" id="plot-slope-intercept-neg-int-copy4"><h5 class="heading"><span class="codenumber">40<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-730-1-1-1">
+<span class="process-math">\({-2.9Q+6.3}={8.4Q}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-730-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.40"><a href="#plot-slope-intercept-neg-int-copy4" title="Copy heading and permalink for Exercise 2.9.5.40" aria-label="Copy heading and permalink for Exercise 2.9.5.40">🔗</a></div></article><article class="exercise exercise-like" id="plot-slope-intercept-neg-frac-copy4"><h5 class="heading"><span class="codenumber">41<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 2.9.5.41"><a href="#plot-slope-intercept-neg-frac-copy4" title="Copy heading and permalink for Exercise 2.9.5.41" aria-label="Copy heading and permalink for Exercise 2.9.5.41">🔗</a></div></article><article class="exercise exercise-like" id="plot-slope-intercept-pos-frac-copy4"><h5 class="heading"><span class="codenumber">42<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-732-1-1-1">
+<span class="process-math">\({2.9c}={-2.6c+6.5}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-732-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.42"><a href="#plot-slope-intercept-pos-frac-copy4" title="Copy heading and permalink for Exercise 2.9.5.42" aria-label="Copy heading and permalink for Exercise 2.9.5.42">🔗</a></div></article><article class="exercise exercise-like" id="graph-point-slope-neg-frac-copy4"><h5 class="heading"><span class="codenumber">43<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 2.9.5.43"><a href="#graph-point-slope-neg-frac-copy4" title="Copy heading and permalink for Exercise 2.9.5.43" aria-label="Copy heading and permalink for Exercise 2.9.5.43">🔗</a></div></article><article class="exercise exercise-like" id="graph-point-slope-pos-frac-copy4"><h5 class="heading"><span class="codenumber">44<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-734-1-1-1">
+<span class="process-math">\({5n-3}={6n-11}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-734-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.44"><a href="#graph-point-slope-pos-frac-copy4" title="Copy heading and permalink for Exercise 2.9.5.44" aria-label="Copy heading and permalink for Exercise 2.9.5.44">🔗</a></div></article><article class="exercise exercise-like" id="standard-form-plot-positive-integers-copy4"><h5 class="heading"><span class="codenumber">45<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="autopermalink" data-description="Exercise 2.9.5.45"><a href="#standard-form-plot-positive-integers-copy4" title="Copy heading and permalink for Exercise 2.9.5.45" aria-label="Copy heading and permalink for Exercise 2.9.5.45">🔗</a></div></article><article class="exercise exercise-like" id="standard-form-plot-positive-integers-one-neg-copy4"><h5 class="heading"><span class="codenumber">46<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-736-1-1-1">
+<span class="process-math">\({2y-4}={-44-6y}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-736-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.46"><a href="#standard-form-plot-positive-integers-one-neg-copy4" title="Copy heading and permalink for Exercise 2.9.5.46" aria-label="Copy heading and permalink for Exercise 2.9.5.46">🔗</a></div></article><article class="exercise exercise-like" id="plot-x-equals-number"><h5 class="heading"><span class="codenumber">47<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-plot-x-equals-number-1-1-1">
+<span class="process-math">\(x=-5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-plot-x-equals-number-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.47"><a href="#plot-x-equals-number" title="Copy heading and permalink for Exercise 2.9.5.47" aria-label="Copy heading and permalink for Exercise 2.9.5.47">🔗</a></div></article><article class="exercise exercise-like" id="plot-x-equals-number-copy"><h5 class="heading"><span class="codenumber">48<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-738-1-1-1">
+<span class="process-math">\({-2K+6+4K}={-9-5K+22}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-738-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.48"><a href="#plot-x-equals-number-copy" title="Copy heading and permalink for Exercise 2.9.5.48" aria-label="Copy heading and permalink for Exercise 2.9.5.48">🔗</a></div></article><article class="exercise exercise-like" id="plot-y-equals-number"><h5 class="heading"><span class="codenumber">49<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-plot-y-equals-number-1-1-1">
+<span class="process-math">\(y=-1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-plot-y-equals-number-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.49"><a href="#plot-y-equals-number" title="Copy heading and permalink for Exercise 2.9.5.49" aria-label="Copy heading and permalink for Exercise 2.9.5.49">🔗</a></div></article><article class="exercise exercise-like" id="plot-y-equals-number-copy"><h5 class="heading"><span class="codenumber">50<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="extracted-webwork-740-1-1-1">
+<span class="process-math">\({-5\mathopen{}\left(W-5\right)}={-8W+43}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-740-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 2.9.5.50"><a href="#plot-y-equals-number-copy" title="Copy heading and permalink for Exercise 2.9.5.50" aria-label="Copy heading and permalink for Exercise 2.9.5.50">🔗</a></div></article>
+</div>
+<div class="autopermalink" data-description="Exercise Group 2.9.5.39–50: Choosing a Method to Graph a Line"><a href="#section-strategies-for-graphing-lines-8-5" title="Copy heading and permalink for Exercise Group 2.9.5.39–50: Choosing a Method to Graph a Line" aria-label="Copy heading and permalink for Exercise Group 2.9.5.39–50: Choosing a Method to Graph a Line">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercises 2.9.5"><a href="#section-strategies-for-graphing-lines-8" title="Copy heading and permalink for Exercises 2.9.5" aria-label="Copy heading and permalink for Exercises 2.9.5">🔗</a></div></section><div class="autopermalink" data-description="Section 2.9: Strategies for Graphing Lines"><a href="#section-strategies-for-graphing-lines" title="Copy heading and permalink for Section 2.9: Strategies for Graphing Lines" aria-label="Copy heading and permalink for Section 2.9: Strategies for Graphing Lines">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="section-geometry-of-lines.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="review-graphing-lines.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

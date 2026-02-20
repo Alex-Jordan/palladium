@@ -1,0 +1,97 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:10-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.10.6.7)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$x = RandomVariableName(type=>'variable');
+$m = 1;
+$b = non_zero_random(-9,9,1);
+$c = random(2,9,1);
+Context()->variables->are($x=>'Real');
+$linear = Formula("$m $x + $b")->reduce;
+$left = Formula("($linear)^2");
+$leftexpanded = Formula("$m^2 $x^2 + 2*$m*$b $x + ($b)^2")->reduce;
+$right = Formula("$c^2");
+$sol1 = ($c-$b)/$m;
+$sol2 = (-$c-$b)/$m;
+Context("FiniteSolutionSets");
+Context()->variables->are($x=>'Real');
+$answer = Formula("{$sol1, $sol2}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use a square root to solve [`[$leftexpanded]=[$right]\text{.}`]
+
+[_]{$answer}{25}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The left side is a perfect square trinomial. So the equation may be written [`[$left]=[$right]\text{.}`] Then using the square root property:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$linear]\amp=\sqrt{[$right]}\amp\amp\text{or}\amp [$linear]\amp=-\sqrt{[$right]}\\
+[$linear]\amp=[$c]\amp\amp\text{or}\amp [$linear]\amp=-[$c]\\
+[$x]\amp=[$sol1]\amp\amp\text{or}\amp [$x]\amp=[$sol2]
+\end{aligned}
+```]
+
+So the solution set is [`[$answer]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

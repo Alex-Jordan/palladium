@@ -1,0 +1,81 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-19T08:29:04-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.11.6.73)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGessaymacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Let [`f(x) = x^{2}+bx+c\text{.}`] Let [`b`] and [`c`] be real numbers. Complete the square to find the vertex of [`f(x) = x^{2}+bx+c\text{.}`] Write [`f(x)`] in vertex form and then state the vertex.
+
+[@ANS(essay_cmp()); essay_box(6,76)@]* [@essay_help()@]*
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+f(x) = x^{2}+bx+c  \amp = \left(x + \frac{b}{2}\right)^{2} - \frac{b^{2}}{4} +c\\
+\amp = \left(x + \frac{b}{2}\right)^{2} - \frac{b^{2}}{4} +\frac{4c}{4}\\
+\amp = \left(x + \frac{b}{2}\right)^{2} + \frac{4c-b^{2}}{4}
+\end{aligned}
+```]
+
+Thus, the vertex is [`(\frac{-b}{2},\frac{4c-b^{2}}{4})\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

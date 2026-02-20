@@ -1,0 +1,143 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-01T20:00:19-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.4.69)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserMultiAnswer.pl",
+  "contextForm.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+do {
+  $a = random(-15,-1,2);
+  $b = random(-10,-2,2);
+  $coefficient = $a + $b;
+} until ($coefficient < -7);
+$ax = Formula("$a x")->reduce;
+$bx = Formula("$b x")->reduce;
+$complete = Formula("$coefficient*x")->reduce;
+$m = MultiAnswer($ax, $bx)->with(
+singleResult => 1,
+  checker => sub {
+    my ( $correct, $student, $self ) = @_;
+    my ( $astu, $bstu ) = @{$student};
+    my ( $acor, $bcor ) = @{$correct};
+    if ( $astu == Formula("0")) {Value::Error('None of your values can be zero.')};
+    if ( $bstu == Formula("0")) {Value::Error('None of your values can be zero.')};
+    if ($astu+$bstu != $complete) {return 0;} else {return 1};
+  }
+);
+do {
+  $c = random(-15,-1,2);
+  $d = random(-10,-2,2);
+  $expx = random(15,30,5);
+  $coefficient2 = $c + $d;
+} until ($coefficient2 < -7);
+$cexp = Formula("$c*(x**$expx)")->reduce;
+$dexp = Formula("$d*(x**$expx)")->reduce;
+$complete2 = Formula("$coefficient2*(x**$expx)");
+$m2 = MultiAnswer($cexp, $dexp)->with(
+singleResult => 1,
+  checker => sub {
+    my ( $correct, $student, $self ) = @_;
+    my ( $cstu, $dstu ) = @{$student};
+    my ( $ccor, $dcor ) = @{$correct};
+    if ( $cstu == 0) {Value::Error('None of your values can be zero.')};
+    if ( $dstu == 0) {Value::Error('None of your values can be zero.')};
+    if ($cstu+$dstu != $complete2) {return 0;} else {return 1};
+  }
+);
+$p = list_random(2,3,5,7,11,13,17);
+$exp1 = random(20,50,5);
+$exp2 = random(10,30,10);
+$exp3 = $exp1 + $exp2;
+$expa = Formula("(x**$exp1)")->reduce;
+$expb = Formula("(x**$exp2)")->reduce;
+$num = Formula("$p");
+$complete3 = Formula("$num*(x**$exp3)");
+$m3 = MultiAnswer($num, $expa, $expb)->with(
+singleResult => 1,
+  checker => sub {
+    my ( $correct, $student, $self ) = @_;
+    my ( $numstu, $expastu, $expbstu ) = @{$student};
+    my ( $numcor, $expacor, $expbcor ) = @{$correct};
+    if ( $numstu == 1) {Value::Error('None of your values can be one.')};
+    if ( $expastu == 1) {Value::Error('None of your values can be one.')};
+    if ( $expbstu == 1) {Value::Error('None of your values can be one.')};
+    if ($numstu*$expastu*$expbstu != $complete3) {return 0;} else {return 1};
+  }
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Fill in the blanks with algebraic expressions that make the equation true. You may not use [`0`] or [`1`] in any of the blank spaces. For example, if [`\mathord{?}+\mathord{?}=8x\text{,}`] then one possible answer is [`3x+5x=8x\text{.}`]
+
+There are infinitely many correct answers. _Be creative._ After finding a correct answer, see if you can come up with a different answer that is also correct.
+
+a.  [_]{$m}{6}[`{}+{}`][_]{$m}{6}[`{}=[$complete]`]
+
+a.  [_]{$m2}{6}[`{}+{}`][_]{$m2}{6}[`{}=[$complete2]`]
+
+a.  [_]{$m3}{6}[`{}\cdot{}`][_]{$m3}{6}[`{}\cdot{}`][_]{$m3}{6}[`{}=[$complete3]`]
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  Think about adding like terms. One possibility is: [`[$ax] + [$bx] = [$complete]\text{.}`]
+
+a.  Think about adding like terms. One possibility is: [`[$cexp] + [$dexp] = [$complete2]\text{.}`]
+
+a.  Think about multiplying exponents. One possibility is: [`[$num] \cdot [$expa] \cdot [$expb] = [$complete3]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

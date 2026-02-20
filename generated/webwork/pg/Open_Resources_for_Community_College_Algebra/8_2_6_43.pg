@@ -1,0 +1,93 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8.2.6.43)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "parserNumberWithUnits.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$sqft = random(90,200,1);
+$sqftU = NumberWithUnits("$sqft ft^2");
+$sex = list_random('female','male');
+$name = RandomName(sex=>$sex);
+$Pronoun = ($sex eq 'male') ? 'He' : 'She';
+$pronoun = lc($Pronoun);
+$sqyd = $sqft/9;
+$conversion = {factor => 0.9144, m => 1};
+$sqydU = NumberWithUnits("$sqyd yd^2",
+  {newUnit=>[
+    {name=>'yd', conversion => $conversion},
+    {name=>'yard', conversion => $conversion},
+    {name=>'yards', conversion => $conversion},
+  ]}
+);
+$evaluator = $sqydU->cmp->withPostFilter(sub {
+  my $ans = shift;
+  if ($ans->{score}) {
+    my $correct = $ans->{correct_value};
+    my $student = $ans->{student_value};
+    my %goodunits = map { $_ => 1 } ('yd^2','yard^2','yards^2');
+    if (!exists($goodunits{$student->{units}})) {
+      $ans->{ans_message} = "Your answer is equivalent to the correct answer, but it uses the wrong units";
+      $ans->score(0);
+    }
+  }
+  return $ans;
+});
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+[$name]'s bedroom has [`[$sqftU]`] of floor. [$Pronoun] would like to carpet the floor, but carpeting is sold by the square yard. How many square yards of carpeting will [$pronoun] need to get?
+
+[_]{$evaluator}{20}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

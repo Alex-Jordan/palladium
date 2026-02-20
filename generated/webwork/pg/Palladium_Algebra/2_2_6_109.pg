@@ -1,0 +1,105 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:09-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.2.6.109)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$c = list_random(4,6,8,9,10,12,14,15,16,18,20)*random(-1,1,2);
+$absc = abs($c);
+@smalls = ();
+@bigs = ();
+for $i (1..floor(sqrt($absc))) {
+  if ($absc % $i == 0) {
+    push(@smalls,$i);
+    push(@smalls,-$i);
+    push(@bigs,$c/$i);
+    push(@bigs,-$c/$i);
+  }
+}
+@b = ();
+$n = scalar(@smalls);
+for $j (1..$n) {
+  push(@b,$smalls[$j-1] + $bigs[$j-1]);
+}
+$answer = List(@b);
+
+Context()->variables->add(b=>'Real');
+$expression = Formula("x^2+bx+$c")->reduce;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+What integers can go in the place of [`b`] so that the quadratic expression [`[$expression]`] is factorable?
+
+[@KeyboardInstructions('Enter the solutions as a comma-separated list.')@]**
+
+[_]{$answer}{30}
+
+END_PGML
+
+############################################################
+# Hint
+############################################################
+#Set value of $showHint in PGcourse.pl for course-wide attempt threshhold for revealing hints
+
+BEGIN_PGML_HINT
+There are [$n] answers.
+
+END_PGML_HINT
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Think about all of ways to factor [$c]. The list of possible [`b`]-values is [$answer].
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

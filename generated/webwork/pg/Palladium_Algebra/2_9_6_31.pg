@@ -1,0 +1,130 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:10-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.9.6.31)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$f = RandomVariableName(type=>'function');
+$bound = 20;
+do {
+  $a = non_zero_random(-3,3,0.1);
+  $b = non_zero_random(-6,6,0.1);
+  $c = random(-5,5,0.1);
+  Context()->noreduce('(-x)+y', '(-x)-y');
+  $formula = Formula("$a x^2 + $b x + $c")->reduce;
+  $discriminant = Real("($b)^2-4*$a*$c");
+  Context("Point");
+  Context()->flags->set(tolerance => 0.001);
+  $h = -$b/(2*$a);
+  $k = $formula->eval(x=>$h);
+  $vertex = Point($h,$k);
+  $yint = Point(0,$c);
+  if ($discriminant == 0) {$xint = List(Point($h,0));}
+  elsif ($discriminant > 0) {$xint = List(Point($h-sqrt($discriminant)/(2*$a),0), Point($h+sqrt($discriminant)/(2*$a),0));}
+  else {$xint = List(Compute("NONE"));}
+  Context("Numeric");
+  Context()->flags->set(tolerance => 0.001);
+  $p = non_zero_random(-8,8,1);
+  $fofp = $formula->eval(x=>$p);
+  $q = ($a > 0) ? non_zero_random(ceil($k+1),ceil($k+10),1) : non_zero_random(floor($k-10),floor($k-1),1);
+  Context("FiniteSolutionSets");
+  Context()->flags->remove("NumberCheck");
+  Context()->flags->set(tolerance => 0.001);
+  $s1 = (-$b - sqrt(($b)**2 - 4*$a*($c-$q)))/(2*$a);
+  $s2 = (-$b + sqrt(($b)**2 - 4*$a*($c-$q)))/(2*$a);
+  ($s1, $s2) = (min($s1,$s2), max($s1,$s2));
+  $solutions = Formula("{$s1,$s2}");
+  Context("Interval");
+  Context()->flags->set(tolerance => 0.001);
+  $domain = Compute("(-inf,inf)");
+  $range = ($a > 0) ? Interval("[$k,inf)") : Interval("(-inf,$k]");
+  $inequality = list_random('<', '>', '\leq', '\geq');
+  if    ($a > 0 and $inequality eq '<' or $a < 0 and $inequality eq '>')    {$ineqsolution = Interval("($s1,$s2)");}
+  elsif ($a > 0 and $inequality eq '>'    or $a < 0 and $inequality eq '<') {$ineqsolution = Union("(-inf,$s1)U($s2,inf)");}
+  elsif ($a > 0 and $inequality eq '\leq' or $a < 0 and $inequality eq '\geq') {$ineqsolution = Interval("[$s1,$s2]");}
+  elsif ($a > 0 and $inequality eq '\geq' or $a < 0 and $inequality eq '\leq') {$ineqsolution = Union("(-inf,$s1]U[$s2,inf)");}
+} until (abs($h) < $bound and abs($k) < $bound and abs($c) < $bound and abs($p) < $bound and abs($fofp) < $bound and abs($q) < $bound and abs($s1) < $bound and abs($s2) < $bound and $fofp != 0);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use technology to find features of a quadratic function and its graph.
+
+Let [`[$f](x)=[$formula]\text{.}`] Use technology to find the following.
+
+[@KeyboardInstructions('Any decimal answers should be correct to four significant digits.')@]**
+
+a.  The vertex is [_]{$vertex}{5}.
+
+a.  The [`y`]-intercept is [_]{$yint}{5}.
+
+a.  The [`x`]-intercept(s) is/are [_]{$xint}{10}.
+
+    [@KeyboardInstructions('If there are no [`x`]-intercepts, enter [|NONE|]*. If there are more than one, use commas to separate the points.')@]**
+
+a.  The domain of [`[$f]`] is [_]{$domain}{5}.
+
+    [@KeyboardInstructions('Use interval notation.')@]**
+
+a.  The range of [`[$f]`] is [_]{$range}{5}.
+
+    [@KeyboardInstructions('Use interval notation.')@]**
+
+a.  Calculate [`[$f]([$p])\text{.}`] [_]{$fofp}{5}.
+
+a.  Solve [`[$f](x)=[$q]\text{.}`] [_]{$solutions}{5}
+
+a.  Solve [`[$f](x)[$inequality][$q]\text{.}`] [_]{$ineqsolution}{10}
+
+    [@KeyboardInstructions('Use interval notation. If you need to write a union of intervals, use [|U|]* for the union symbol.')@]**
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

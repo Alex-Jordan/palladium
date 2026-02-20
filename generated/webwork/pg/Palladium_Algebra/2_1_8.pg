@@ -1,0 +1,108 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-20T13:16:09-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.1.8)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "contextLimitedFactor.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedFactor");
+Context()->noreduce('(-x)-y','(-x)+y');
+$answer=Formula("4x(x^2+3x-3)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Factor the polynomial [`4x^3+12x^2-12x\text{.}`]
+
+[_]{$answer}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+In this exercise, [`4x`] is the greatest common factor. We find
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+4x^3+12x^2-12x\amp=4x(\phantom{x^2}+\phantom{3x}-\phantom{3})\\
+\amp=4x(x^2+\phantom{3x}-\phantom{3})\\
+\amp=4x(x^2+3x-\phantom{3})\\
+\amp=4x(x^2+3x-3)
+\end{aligned}
+```]
+
+Note that you might fail to recognize that [`4x`] is the greatest common factor. At first you might only find that, say, [`4`] is a common factor. This is OK[$MDASH]*you can factor out the [`4`] and continue from there:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+4x^3+12x^2-12x\amp=4(\phantom{x^3}+\phantom{3x^2}-\phantom{3})\\
+\amp=4(x^3+\phantom{3x^2}-\phantom{3x})\\
+\amp=4(x^3+3x^2-\phantom{3x})\\
+\amp=4(x^3+3x^2-3x)
+\end{aligned}
+```]
+
+Now examine the second factor here and there is _still_ a common factor, [`x\text{.}`] Factoring this out too.
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+\amp=4x(\phantom{x^2}+\phantom{3x}-\phantom{3})\\
+\amp=4x(x^2+\phantom{3x}-\phantom{3})\\
+\amp=4x(x^2+3x-\phantom{3})\\
+\amp=4x(x^2+3x-3)
+\end{aligned}
+```]
+
+So there is more than one way to find the answer.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

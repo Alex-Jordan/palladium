@@ -1,0 +1,82 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-19T15:37:07-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(3.4.5.60)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("FiniteSolutionSets");
+Context()->flags->remove("NumberCheck");
+$solution = Formula("{-1.61803398874989, 0.61803398874989}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use technology to solve the equation.
+
+[```
+                  \frac{1}{x}+\frac{1}{x^2}=\frac{1}{x^3}
+                \text{.}```]
+
+[@KeyboardInstructions('Round answers to at least four significant digits.')@]**
+
+[_]{$solution}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The points of intersection are approximately [`(-1.618,-0.2361)`] and [`(0.6180,4.236)\text{.}`] The solution set is approximately [`\{-1.618\ldots,0.6180\ldots\}\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

@@ -1,0 +1,91 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:09-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(8.1.11)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedNumeric");
+Context()->{format}{number} = "%.4f#";
+$down = Compute("0.00753");
+$poppy = Compute("0.0000003");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Convert each of the following from scientific notation to decimal notation (without any exponents).
+
+a.  A download speed of [`7.53\times 10^{-3}`] Gigabyte per second.
+
+    [_]{$down}{30}
+
+a.  The weight of a poppy seed is about [`3 \times 10^{-7}`] kilograms
+
+    [_]{$poppy}{30}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  To convert a download speed of [`7.53\times 10^{-3}`] Gigabyte per second to decimal notation, we will move the decimal point [`3`] places to the left and include the appropriate number of zeros:
+
+    [```
+                      7.53\times 10^{-3}\text{ Gigabyte per second} = 0\overbrace{.007}^{3}53\text{ Gigabyte per second}
+                    ```]
+
+a.  The weight of a poppy seed is about:
+
+    [```
+                      3 \times 10^{-7}\text{ kilograms} = 0\overbrace{.0000003}^{7 \text{ places}}\text{ kilograms}
+                    ```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

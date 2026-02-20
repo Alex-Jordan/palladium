@@ -1,0 +1,93 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2025-08-09T22:53:08-07:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(7.2.5.5)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGchoicemacros.pl",
+  "contextForm.pl",
+  "ORCCA.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context()->variables->are(a=>'Real',b=>'Real',c=>'Real');
+($a,$c) = (1..5)[NchooseK(5,2)];
+$b = list_random(4..9);
+$d = Formula("b^2-4ac");
+$answer = $d->eval(a=>$a,b=>$b,c=>$c);
+Context()->flags->set(reduceConstants=>0);
+$substituted = $d->substitute(a=>$a,b=>$b,c=>$c);
+$b2 = $b**2;
+$ac4 = 4*$a*$c;
+$solutionstep = Formula("$b2-$ac4");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Evaluate the given expression for the given values.
+
+[`[$d]`] for [`a=[$a]\text{,}`] [`b=[$b]\text{,}`] and [`c=[$c]`]
+
+[_]{$answer}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Substituting in the three values,
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$d]\amp=[$substituted]\\
+\amp=[$solutionstep]\\
+\amp=[$answer]
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
