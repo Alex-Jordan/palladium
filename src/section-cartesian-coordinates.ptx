@@ -1,0 +1,1250 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2016-2019                                                  -->
+<!-- Portland Community College                                           -->
+<!--                                                                      -->
+<!-- This file is part of Open Resources for Community College Algebra    -->
+<!-- (ORCCA).                                                             -->
+<!--                                                                      -->
+<!-- Open Resources for Community College Algebra is licensed under a     -->
+<!-- Creative Commons Attribution 4.0 International License.              -->
+<!--                                                                      -->
+<!-- Under this license, any user of this textbook or the textbook        -->
+<!-- contents must provide proper attribution as follows.                 -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- include in every digital format page view (including but not         -->
+<!-- limited to EPUB, PDF, and HTML) and on every physical printed page   -->
+<!-- the following attribution:                                           -->
+<!--                                                                      -->
+<!-- Original source material, products with readable and accessible      -->
+<!-- math content, and other information freely available at              -->
+<!-- pcc.edu/orcca.                                                       -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- reproduce any math content (such as math expressions and equations)  -->
+<!-- in a readable manner, and offer math content in at least one web     -->
+<!-- accessible manner.                                                   -->
+<!--                                                                      -->
+<!-- The Portland Community College name, Portland Community College      -->
+<!-- logo, ORCCA name, Open Resources for Community College Algebra name, -->
+<!-- ORCCA logo, and front and back cover designs are not subject to the  -->
+<!-- Creative Commons license and may not be reproduced without the       -->
+<!-- prior and express written consent of Portland Community College.     -->
+<!--                                                                      -->
+<!-- For questions regarding this license, please contact                 -->
+<!-- orcca-group@pcc.edu.                                                 -->
+<!-- *********************************************************************-->
+<section xml:id="section-cartesian-coordinates">
+  <title>Cartesian Coordinates</title>
+  <objectives>
+    <title>PCC Course Content and Outcome Guide</title>
+    <ul>
+      <li>
+        <xref ref="ccog-plot-cartesian-coordinates" text="local">MTH 60 CCOG</xref>
+      </li>
+      <li>
+        <xref ref="ccog-read-cartesian-coordinates" text="local">MTH 60 CCOG</xref>
+      </li>
+      <li>
+        <xref ref="ccog-quadrants-axes-origin">MTH 60 CCOG</xref>
+      </li>
+    </ul>
+  </objectives>
+
+  <p>
+    When we visualize a relationship between two variables, we use the                                        <idx><h>Cartesian coordinate system</h></idx>
+    <term>Cartesian coordinate system</term>. This section covers the basic vocabulary and imagery            <idx><h>Rectangular coordinate system</h></idx>
+    of the Cartesian coordinate system.
+  </p>
+
+  <figure>
+    <caption>Alternative Video Lesson</caption>
+    <video youtubeplaylist="PLmuZCPhWPt-cHeBo5cBbvM9w9bPCv8TU6" />
+  </figure>
+
+  <p>
+    The Cartesian coordinate system gives a numerical location for every point in a plane. It gives
+    every point in a plane its own <q>address</q> in relation to a starting point and some agreed
+    upon directions. We will use a street grid as an analogy. Here is a map with Carl's home at the
+    center. The map also shows some nearby businesses. Assume each unit in the grid represents one
+    city block.
+  </p>
+
+  <figure xml:id="figure-carls-neighborhood">
+    <caption>Carl's neighborhood</caption>
+    <image width="47%">
+      <shortdescription>
+        a Cartesian grid with Carl's home at (0,0); a restaurant at (2, 3); a pet shop at (-3,2);
+        a gas station at (-2,-4), and a bar at (3, -3)
+      </shortdescription>
+      <latex-image label="carls-neighborhood">
+        \begin{tikzpicture}
+          \begin{axis}[
+                xlabel={},
+                ylabel={},
+                width=0.47\orccaprintwidth,
+                xmin=-5,xmax=5,
+                ymin=-5,ymax=5,
+                xtick={-4,4},
+                ytick={-4,4},
+                clip=false
+              ]
+              \addplot[soliddot] coordinates {(0,0)} node[pin=240:{Carl's house}] {};
+              \addplot[soliddot] coordinates {(2, 3)} node[pin=-30:{restaurant}] {};
+              \addplot[soliddot] coordinates {(-3, 2)} node[pin=100:{pet shop}] {};
+              \addplot[soliddot] coordinates {(-2, -4)} node[pin=150:{gas station}] {};
+              \addplot[soliddot] coordinates {(3, -3)} node[pin=120:{bar}] {};
+              \addplot[mark=none] coordinates {(5, 0)} node[above left] {east};
+              \addplot[mark=none] coordinates {(-5, 0)} node[above right] {west};
+              \addplot[mark=none] coordinates {(0, 5)} node[below right] {north};
+              \addplot[mark=none] coordinates {(0, -5)} node[above right] {south};
+          \end{axis}
+        \end{tikzpicture}  
+      </latex-image>
+    </image>
+  </figure>
+
+  <aside>
+    <title>René Descartes</title>                                                                             <idx><h>Cartesian coordinate system</h><h>René Descartes</h></idx>
+    <p>
+      Several ideas and conventions used in mathematics are named after René Descartes. The
+      Cartesian coordinate system is one of these.
+    </p>
+  </aside>
+
+  <p>
+    If Carl has an out-of-town guest who asks him how to get to the restaurant, Carl could say:
+    <q>First go <m>2</m> blocks east (to the right on the map), then go <m>3</m> blocks north (up on
+    the map).</q>
+  </p>
+  <p>
+    Everyone is in agreement to start at Carl's house. What's less obvious is that we all agree to
+    travel in the east-west (left-right) direction <em>first</em>. And only <em>after</em> that is
+    done will we travel north-south (up-down).
+  </p>
+
+  <sidebyside widths="47% 47%" margins="0%">
+    <p>
+      Two numbers are used to locate the restaurant. In the Cartesian coordinate system, these                <idx><h>Coordinates</h><h>of a point</h></idx>
+      numbers are called <term>coordinates</term> and they are written as the                                 <idx><h>Ordered pair</h></idx>
+      <term>ordered pair</term> <m>(2,3)</m>. The first coordinate, <m>2</m>, represents distance             <idx><h>Rectangular coordinate system</h><h>finding coordinates of points</h></idx>
+      traveled from Carl's house to the east (or to the right horizontally on the graph). The second
+      coordinate, <m>3</m>, represents distance to the north (up vertically on the graph).
+    </p>
+
+    <figure>
+      <caption>Path to the restaurant</caption>
+      <image>
+        <shortdescription>
+          a Cartesian grid with Carl's home at (0,0) and the path he travels to the restaurant at
+          (2, 3); a line shows his path going east/right 2 blocks and north/up 3 blocks
+        </shortdescription>
+        <latex-image label="carls-neighborhood-restaurant">
+          \begin{tikzpicture}
+            \begin{axis}[
+                  xlabel={},
+                  ylabel={},
+                  xmin=-5,
+                  xmax=5,
+                  ymin=-5,
+                  ymax=5,
+                  xtick={-4,4},
+                  ytick={-4,4},
+                  clip=false,
+                  width=0.47\orccaprintwidth
+                ]
+                \addplot[soliddot] coordinates {(0,0)} node[pin=240:{Carl's house}] {};
+                \addplot[soliddot] coordinates {(2, 3)} node[pin=-30:{restaurant}] {} node[left] {$(2,3)$};
+                \addplot[soliddot,opacity=0] coordinates {(-2, -4)} node[pin=150:{gas station}] {};
+                \addplot[mark=none] coordinates {(5, 0)} node[above left] {east};
+                \addplot[mark=none] coordinates {(-5, 0)} node[above right] {west};
+                \addplot[mark=none] coordinates {(0, 5)} node[below right] {north};
+                \addplot[mark=none] coordinates {(0, -5)} node[above right] {south};
+                \addplot[firstcurve,-] coordinates {(0,0) (2,0)} node[below,pos=0.5] {right $2$};
+                \addplot[firstcurve,->] coordinates {(2,0) (2,2.8)} node[below,pos=0.5,rotate=90] {up $3$};
+            \end{axis}
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+  </sidebyside>
+
+  <sidebyside widths="47% 47%" margins="0%">
+    <stack>
+      <p>
+        To travel from Carl's home to the pet shop, he would go <m>3</m> blocks west, and then
+        <m>2</m> blocks north.
+      </p>
+      <p>
+        In the Cartesian coordinate system, the <em>positive</em> directions are to the
+        <em>right</em> and <em>up</em>. The <em>negative</em> directions are to the <em>left</em>
+        and <em>down</em>. So the pet shop's Cartesian coordinates are <m>(-3,2)</m>.
+      </p>
+    </stack>
+
+    <figure>
+      <caption>Path to the pet shop</caption>
+      <image>
+        <shortdescription>
+          a Cartesian grid with Carl's home at (0,0) and the path he travels to the pet shop (-3,2);
+          a line shows his path going west/left 3 blocks and north/up 2 blocks
+        </shortdescription>
+        <latex-image label="carls-neighborhood-petshop">
+          \begin{tikzpicture}
+            \begin{axis}[
+                  xlabel={},
+                  ylabel={},
+                  xmin=-5,
+                  xmax=5,
+                  ymin=-5,
+                  ymax=5,
+                  xtick={-4,4},
+                  ytick={-4,4},
+                  clip=false,
+                  width=0.47\orccaprintwidth
+                ]
+                \addplot[soliddot] coordinates {(0,0)} node[pin=240:{Carl's house}] {};
+                \addplot[soliddot] coordinates {(-3, 2)} node[pin=100:{pet shop}] {} node[above right] {$(-3,2)$};
+                \addplot[soliddot,opacity=0] coordinates {(-2, -4)} node[pin=150:{gas station}] {};
+                \addplot[soliddot,opacity=0] coordinates {(2, 3)} node[pin=-30:{restaurant}] {};
+                \addplot[mark=none] coordinates {(5, 0)} node[above left] {east};
+                \addplot[mark=none] coordinates {(-5, 0)} node[above right] {west};
+                \addplot[mark=none] coordinates {(0, 5)} node[below right] {north};
+                \addplot[mark=none] coordinates {(0, -5)} node[above right] {south};
+                \addplot[firstcurve,-] coordinates {(0,0) (-3,0)} node[below,pos=0.5] {left $3$};
+                \addplot[firstcurve,->] coordinates {(-3,0) (-3,1.8)} node[below,pos=0.5,rotate=90] {up $2$};
+            \end{axis}
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+  </sidebyside>
+
+  <remark>
+    <p>
+      It's important to know that the order of Cartesian coordinates is (horizontal, vertical). The
+      custom to communicate horizontal information <em>before</em> vertical information is fairly
+      consistent even in math beyond this level.
+    </p>
+  </remark>
+
+  <exercise>
+    <webwork>
+      <pg-code>
+        Context("Point");
+        $bar = Point("(3,-3)");
+        $gas = Point("(-2,-4)");
+        $carls = Point("(0,0)");
+      </pg-code>
+      <introduction>
+        <p>
+          Use <xref ref="figure-carls-neighborhood"/> to answer the following questions about Carl's
+          neighborhood.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            What are the coordinates of the bar? <var name="$bar" width="10" />
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We have to move <m>3</m> units to the right, then <m>3</m> units down. So the
+            coordinates are <m>(3,-3)</m>.
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What are the coordinates of the gas station? <var name="$gas" width="10" />
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We have to move <m>2</m> units to the left, then <m>4</m> units down. So the
+            coordinates are <m>(-2,-4)</m>.
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What are the coordinates of Carl's house? <var name="$carls" width="10" />
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We don't move at all to get to Carl's house. That is, we move <m>0</m> units to the
+            left/right, and then <m>0</m> units up/down. So the coordinates are <m>(0,0)</m>.
+          </p>
+        </solution>
+      </task>
+    </webwork>
+  </exercise>
+
+  <warning>
+    <title>Notation Issue: Coordinates or Interval?</title>
+    <p>
+      Unfortunately, the notation for an ordered pair looks exactly like interval notation for an
+      open interval. <em>Context</em> will help you understand if <m>(1,3)</m> means the point
+      on a Cartesian plane that is <m>1</m> unit right and <m>3</m> units up, or if it means the
+      interval of all real numbers between <m>1</m> and <m>3</m>.
+    </p>
+    <sidebyside widths="25% 25%" margins="20%" valign="middle">
+      <image>
+        <shortdescription>a Cartesian grid a point marked at (1, 3)</shortdescription>
+        <latex-image label="cartesian-grid-with-point">
+          \begin{tikzpicture}
+            \begin{axis}[
+                  xlabel={},
+                  ylabel={},
+                  xmin=-5,
+                  xmax=5,
+                  ymin=-5,
+                  ymax=5,
+                  xtick={-4,4},
+                  ytick={-4,4},
+                  clip=false,
+                  width=0.25\orccaprintwidth
+                ]
+                \addplot[soliddot] coordinates {(1, 3)} node[right] {$(1,3)$};
+            \end{axis}
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+      <image>
+        <shortdescription>a number line with the interval from 1 to 3 shaded</shortdescription>
+        <latex-image label="numberline-with-interval">
+          \begin{tikzpicture}
+            \begin{axis}[
+                  numberline,
+                  xmin=-2,xmax=5,
+                  xtick={1,3},
+                  width=0.25\orccaprintwidth
+                ]
+                \addplot[openinterval] coordinates {(1,0) (3,0)} node[pos=0.5,above] {$(1,3)$};
+            \end{axis}
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </sidebyside>
+  </warning>
+
+  <p>
+    In a Cartesian coordinate system, the map of Carl's neighborhood would look like this:
+  </p>
+
+  <figure>
+    <caption>Carl's Neighborhood in a Cartesian Coordinate System</caption>
+    <image width="47%">
+      <shortdescription>
+        a Cartesian grid with the points (0,0), (2, 3), (-3,2), (-2,-4), (3, -3), with the
+        horizontal axis labeled x and the vertical axis labeled y
+      </shortdescription>
+      <latex-image label="carls-neighborhood-with-coordinates">
+        \begin{tikzpicture}
+          \begin{axis}[
+                xmin=-5,
+                xmax=5,
+                width=0.47\orccaprintwidth,
+                ymin=-5,ymax=5,
+                xtick={-4,4},
+                ytick={-4,4}
+              ]
+              \addplot[soliddot] coordinates {(0,0)} node[above right] {(0,0)};
+              \addplot[soliddot] coordinates {(2, 3)} node[above] {(2,3)};
+              \addplot[soliddot] coordinates {(-3, 2)} node[above] {(-3,2)};
+              \addplot[soliddot] coordinates {(-2, -4)} node[above] {(-2,-4)};
+              \addplot[soliddot] coordinates {(3, -3)} node[above] {(3,-3)};
+          \end{axis}
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+  </figure>
+
+  <definition xml:id="definition-cartesian-coordinate-system">
+    <title>Cartesian Coordinate System</title>                                                                <idx><h>Cartesian coordinate system</h></idx>
+    <statement>
+      <p>
+        The
+        <url href="https://en.wikipedia.org/wiki/Cartesian_coordinate_system" visual="en.wikipedia.org/wiki/Cartesian_coordinate_system">Cartesian coordinate system</url>
+        is a coordinate system that specifies each point uniquely in a plane by a pair of numerical
+        coordinates, which are the signed (positive/negative) distances to the point from two fixed
+        perpendicular directed lines, measured in the same unit of length. Those two reference lines          <idx><h>Axis</h><h>horizontal</h></idx>
+        are called the <term>horizontal axis</term> and <term>vertical axis</term>, and the point             <idx><h>Axis</h><h>vertical</h></idx>
+        where they meet is the <term>origin</term>. The horizontal and vertical axes are often                <idx><h sortby="x-axis"><m>x</m>-axis</h></idx>
+        called the <term><m>x</m>-axis</term> and <term><m>y</m>-axis</term>, because traditionally,          <idx><h sortby="y-axis"><m>y</m>-axis</h></idx>
+        the variable <m>x</m> represents numbers on the horizontal axis and the variable <m>y</m>             <idx><h>Origin</h></idx>
+        represents numbers on the vertical axis.                                                              <idx><h>Ordered pair</h></idx>
+      </p>
+
+      <p>
+        The plane based on the <m>x</m>-axis and <m>y</m>-axis is called a
+        <term>coordinate plane</term>. The ordered pair used to locate a point is called the point's          <idx><h>Coordinate plane</h></idx>
+        <term>coordinates</term>, which consists of an <term><m>x</m>-coordinate</term> and a                 <idx><h>Coordinates</h></idx>
+        <term><m>y</m>-coordinate</term>. For example, the point <m>(1,2)</m>, has                            <idx><h sortby="x-coordinate"><m>x</m>-coordinate</h></idx>
+        <m>x</m>-coordinate <m>1</m>, and <m>y</m>-coordinate <m>2</m>. The origin has coordinates            <idx><h sortby="y-coordinate"><m>y</m>-coordinate</h></idx>
+        <m>(0,0)</m>.
+      </p>
+
+      <p>
+        A Cartesian coordinate system is divided into four <term>quadrants</term>, as shown in                <idx><h>Quadrant</h></idx>
+        <xref ref="figure-quadrants"/>. The quadrants are traditionally labeled with Roman numerals.
+      </p>
+
+      <figure xml:id="figure-quadrants">
+        <caption>A Cartesian grid with four quadrants marked</caption>
+        <image width="47%">
+          <shortdescription>
+            a Cartesian grid with Quadrant I marked in the top right section, Quadrant II marked in
+            the top left section, Quadrant III marked in the bottom left section, Quadrant IV marked
+            in the bottom right section.
+          </shortdescription>
+          <latex-image label="quadrants">
+            \begin{tikzpicture}
+              \begin{axis}[width=0.47\orccaprintwidth]
+                  \addplot[mark=none] coordinates {(3.5,3.5)} node[] {Quadrant I};
+                  \addplot[mark=none] coordinates {(-3.5, 3.5)} node[] {Quadrant II};
+                  \addplot[mark=none] coordinates {(-3.5, -3.5)} node[] {Quadrant III};
+                  \addplot[mark=none] coordinates {(3.5, -3.5)} node[] {Quadrant IV};
+              \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </figure>
+    </statement>
+  </definition>
+
+  <example xml:id="example-cartesian-points">
+    <statement>
+      <p>
+        On paper, sketch a Cartesian coordinate system with units, and then plot the following
+        points: <m>(3,2),(-5,-1),(0,-3),(4,0)</m>.
+      </p>
+    </statement>
+    <solution>
+      <sidebyside widths="47% 47%" margins="0%">
+        <image>
+          <shortdescription>
+            a Cartesian grid with arrows drawn to plot each point;(3,2) is right 3, up 2;(-5,-1) is
+            left 5, down 1;(0,-3) is down 3 on the y-axis;(4,0) is right 4 on the x-axis
+          </shortdescription>
+          <latex-image label="cartesian-plot-mapping-coordinates">
+            \begin{tikzpicture}
+              \begin{axis}[
+                  width=0.47\orccaprintwidth,
+                ]
+                \addplot[firstcurve,->] coordinates {(0,0) (3,0) (3, 2)};
+                \addplot[firstcurve,->] coordinates {(0,0) (-5,0) (-5, -1)};
+                \addplot[firstcurve,->] coordinates {(0,0) (0,-3)};
+                \addplot[firstcurve,->] coordinates {(0,0) (4,0)};
+              \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+
+        <image>
+          <shortdescription>the previous graph with the points drawn and labeled</shortdescription>
+          <latex-image label="cartesian-plot-mapping-coordinates-labeled">
+            \begin{tikzpicture}
+              \begin{axis}[
+                  width=0.47\orccaprintwidth,
+                ]
+                \addplot[soliddot] coordinates {(3, 2)} node[above] {$(3,2)$};
+                \addplot[soliddot] coordinates {(-5, -1)} node[below] {$(-5,-1)$};
+                \addplot[soliddot] coordinates {(0, -3)} node[right] {$(0,-3)$};
+                \addplot[soliddot] coordinates {(4, 0)} node[above] {$(4,0)$};
+              \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </sidebyside>
+    </solution>
+  </example>
+
+  <exercise label="mark-points-at-coordinates">
+    <webwork>
+      <pg-macros>
+        <macro-file>parserGraphTool.pl</macro-file>
+      </pg-macros>
+      <pg-code>
+        $gt = GraphTool("{point,(3,5)}", "{point,(0,0)}", "{point,(-3,0)}", "{point,(1,-1)}")->with(
+          availableTools => ['PointTool'],
+          bBox => [-6,6,6,-6],
+          showInStatic => 0,
+          showCoordinateHints => 0,
+          cmpOptions => {
+            list_checker => sub {
+              my ($c, $s, $ans, $value) = @_;
+              return 0 if $ans->{isPreview};
+              my $score = 0;
+              my @errors;
+              my ($p, $o, $x, $q) = (0, 0, 0, 0);
+              my ($pCmp, $oCmp) = map {($graphToolObjectCmps->{point}->($c->[$_]))[1]} (0..1);
+              for (0 .. $#$s) {
+                if ($pCmp->($s->[$_]) &amp;&amp; !$p) { $p = 1; ++$score; next; }
+                if ($oCmp->($s->[$_]) &amp;&amp; !$o) { $o = 1; ++$score; next; }
+                if (!$x &amp;&amp; ($s->[$_]->extract(2)->value)[0] &lt; 0 &amp;&amp; ($s->[$_]->extract(2)->value)[1] == 0) { $x = 1; ++$score; next; }
+                if (!$q &amp;&amp; ($s->[$_]->extract(2)->value)[0] &gt; 0 &amp;&amp; ($s->[$_]->extract(2)->value)[1] &lt; 0) { $q = 1; ++$score; next; }
+                my $nth = Value::List->NameForNumber($_ + 1);
+                push(@errors, "The $nth point graphed is incorrect.");
+              }
+              return ($score, @errors);
+            }
+          }
+        );
+      </pg-code>
+      <statement>
+        <p>
+          Plot the point <m>(3,5)</m>, the origin, some point on the negative <m>x</m>-axis, and
+          some point in quadrant IV.
+        </p>
+        <p>
+          <var name="$gt" width="1"/>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The point <m>(3,5)</m> is <m>3</m> units to the right of the origin and <m>5</m> units up.
+          The origin itself, <m>(0,0)</m> is where the axes cross. A point on the negative
+          <m>x</m>-axis can be any point directly to the left of the origin, and not up or down
+          from there. A point in quadrant IV can be anything in the lower right region.
+        </p>
+        <image width="47%">
+          <latex-image>
+            \begin{tikzpicture}
+              \begin{axis}[
+                  width=0.47\orccaprintwidth,
+                  clip=false,
+                ]
+                \addplot[soliddot] coordinates {(3,5)} node[above] {\((3,5\))};
+                \addplot[soliddot] coordinates {(0,0)} node[above right] {origin};
+                \addplot[soliddot] coordinates {(-4,0)} node[above] {on negative \(x\)-axis};
+                \addplot[soliddot] coordinates {(4,-4)} node[above] {in quadrant IV};
+              \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </solution>
+    </webwork>
+  </exercise>
+
+  <reading-questions>
+    <exercise>
+      <statement>
+        <p>
+          When you read English, you primarily read left to right. Then every once in a while your
+          eyes drop down vertically to the next line. How is this similar to the way that we treat
+          coordinates in the Cartesian coordinate system?
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          A Cartesian coordinate system has seven places/regions that have special names. What are
+          these seven places?
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          How does math notation like <m>(-1,4)</m> potentially mean two very different things, and
+          how will you decide which meaning to use?
+        </p>
+      </statement>
+    </exercise>
+  </reading-questions>
+
+  <exercises>
+    <exercisegroup cols="3">
+      <title>Identifying Coordinates</title>
+      <introduction>
+        <p>
+          Identify the coordinates of each point in the graph.
+        </p>
+      </introduction>
+      <exercise label="identify-cartesian-coordinates">
+        <webwork xml:id="webwork-identify-cartesian-coordinates">
+          <pg-code>
+            @xy = random_subset(8, -4..-1, 1..4);
+            @x = (@xy)[0..3];
+            @y = (@xy)[4..7];
+            @z = random_subset(2,0..3);
+            $x[$z[0]] = 0;
+            $y[$z[1]] = 0;
+            Context("Point");
+            @p = map {Point($x[$_], $y[$_])} (0..3);
+          </pg-code>
+          <statement>
+            <image>
+              <latex-image>
+                \begin{tikzpicture}
+                  \begin{axis}[
+                      width=0.33\orccaprintwidth,
+                    ]
+                    \addplot[soliddot] coordinates {$p[0]} node[pin=60:{A}] {};
+                    \addplot[soliddot] coordinates {$p[1]} node[pin=60:{B}] {};
+                    \addplot[soliddot] coordinates {$p[2]} node[pin=60:{C}] {};
+                    \addplot[soliddot] coordinates {$p[3]} node[pin=60:{D}] {};
+                  \end{axis}
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+            <instruction>
+              The coordinates of <m>A</m> are:
+            </instruction>
+            <p>
+              <var name="$p[0]" width="3" />
+            </p>
+            <instruction>
+              The coordinates of <m>B</m> are:
+            </instruction>
+            <p>
+              <var name="$p[1]" width="3" />
+            </p>
+            <instruction>
+              The coordinates of <m>C</m> are:
+            </instruction>
+            <p>
+              <var name="$p[2]" width="3" />
+            </p>
+            <instruction>
+              The coordinates of <m>D</m> are:
+            </instruction>
+            <p>
+              <var name="$p[3]" width="3" />
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+      <exercise label="identify-cartesian-coordinates-copy">
+        <webwork copy="webwork-identify-cartesian-coordinates"/>
+      </exercise>
+    </exercisegroup>
+
+    <exercisegroup cols="3">
+      <title>Sketching Points</title>
+      <introduction>
+        <p>
+          Make a Cartesian plot with the indicated points marked.
+        </p>
+      </introduction>
+      <exercise label="mark-four-points-at-coordinates">
+        <webwork xml:id="webwork-mark-four-points-at-coordinates">
+          <pg-macros>
+            <macro-file>parserGraphTool.pl</macro-file>
+          </pg-macros>
+          <pg-code>
+            @xy = random_subset(8, -8..-1,1..8);
+            @x = (@xy)[0..3];
+            @y = (@xy)[4..7];
+            @z = random_subset(2,0..3);
+            $x[$z[0]] = 0;
+            $y[$z[1]] = 0;
+            Context("Point");
+            @p = map {Point($x[$_], $y[$_])} (0..3);
+            $gt = GraphTool("{point,$p[0]}", "{point,$p[1]}", "{point,$p[2]}", "{point,$p[3]}")->with(
+              availableTools => ['PointTool'],
+              showInStatic => 0,
+              showCoordinateHints => 0,
+            );
+          </pg-code>
+          <statement>
+            <p>
+              <m><var name="$p[0]"/>, <var name="$p[1]"/>, <var name="$p[2]"/>, <var name="$p[3]"/></m>
+            </p>
+            <p>
+              <var name="$gt" width="1"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+      <exercise label="mark-four-points-at-coordinates-copy">
+        <webwork copy="webwork-mark-four-points-at-coordinates"/>
+      </exercise>
+      <exercise label="mark-two-points-at-fractional-coordinates">
+        <webwork xml:id="webwork-mark-two-points-at-fractional-coordinates">
+          <pg-macros>
+            <macro-file>parserGraphTool.pl</macro-file>
+          </pg-macros>
+          <pg-code>
+            @xy = random_subset(4, -5..-1,1..5);
+            @x = (@xy)[0,1];
+            @y = (@xy)[2,3];
+            @z = random_subset(2,0,1);
+            Context("Fraction");
+            $x[$z[0]] += Fraction(list_random(-2,-1,1,2),3);
+            $y[$z[1]] += Fraction(list_random(-2,-1,1,2),3);
+            @p = map {Point($x[$_], $y[$_])} (0,1);
+            $gt = GraphTool("{point,$p[0]}", "{point,$p[1]}")->with(
+              availableTools => ['PointTool'],
+              bBox => [-6,6,6,-6],
+              snapSizeX => 1/3,
+              snapSizeY => 1/3,
+              showInStatic => 0,
+              showCoordinateHints => 0,
+            );
+            @absx = map {abs($_)} @x;
+            @absy = map {abs($_)} @y;
+            @dirx = map {($_ >= 0) ? 'to the right' : 'to the left'} @x;
+            @diry = map {($_ >= 0) ? 'up' : 'down'} @y;
+          </pg-code>
+          <statement>
+            <p>
+              <m><var name="$p[0]"/>, <var name="$p[1]"/></m>
+            </p>
+            <p>
+              <var name="$gt" width="1"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The first point is <m><var name="$absx[0]"/></m> <var name="$dirx[0]"/> and
+              <m><var name="$absy[0]"/></m> <var name="$diry[0]"/> from the origin. The second point
+              is <m><var name="$absx[1]"/></m> <var name="$dirx[1]"/> and
+              <m><var name="$absy[1]"/></m> <var name="$diry[1]"/> from the origin.
+            </p>
+            <image width="47%">
+              <latex-image>
+                \begin{tikzpicture}
+                  \begin{axis}[
+                      width=0.47\orccaprintwidth,
+                    ]
+                    \addplot[soliddot] coordinates {$p[0] $p[1]};
+                  \end{axis}
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+          </solution>
+        </webwork>
+      </exercise>
+      <exercise label="mark-two-points-at-fractional-coordinates-copy">
+        <webwork copy="webwork-mark-two-points-at-fractional-coordinates"/>
+      </exercise>
+      <exercise label="mark-two-points-at-decimal-coordinates">
+        <webwork xml:id="webwork-mark-two-points-at-decimal-coordinates">
+          <pg-macros>
+            <macro-file>parserGraphTool.pl</macro-file>
+          </pg-macros>
+          <pg-code>
+            @xy = random_subset(4, -5..-1,1..5);
+            @x = map {$_ + list_random(-3..-1,1..3)/4} ((@xy)[0,1]);
+            @y = map {$_ + list_random(-3..-1,1..3)/4} ((@xy)[2,3]);
+            @p = map {Point($x[$_], $y[$_])} (0,1);
+            $gt = GraphTool("{point,$p[0]}", "{point,$p[1]}")->with(
+              availableTools => ['PointTool'],
+              bBox => [-6,6,6,-6],
+              snapSizeX => 1/4,
+              snapSizeY => 1/4,
+              showInStatic => 0,
+              showCoordinateHints => 0,
+            );
+          </pg-code>
+          <statement>
+            <p>
+              <m><var name="$p[0]"/>, <var name="$p[1]"/></m>
+            </p>
+            <p>
+              <var name="$gt" width="1"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+      <exercise label="mark-two-points-at-decimal-coordinates-copy">
+        <webwork copy="webwork-mark-two-points-at-decimal-coordinates"/>
+      </exercise>
+      <exercise label="mark-two-points-at-large-coordinates">
+        <webwork xml:id="webwork-mark-two-points-at-large-coordinates">
+          <pg-macros>
+            <macro-file>parserGraphTool.pl</macro-file>
+          </pg-macros>
+          <pg-code>
+            @xy = random_subset(4, 100..200);
+            @x = ((@xy)[0,1]);
+            @y = ((@xy)[2,3]);
+            @p = map {Point($x[$_], $y[$_])} (0,1);
+            $gt = GraphTool("{point,$p[0]}", "{point,$p[1]}")->with(
+              availableTools => ['PointTool'],
+              bBox => [-30,220,220,-30],
+              gridX => 10,
+              gridY => 10,
+              ticksDistanceX => 50,
+              ticksDistanceY => 50,
+              snapSizeX => 5,
+              snapSizeY => 5,
+              showInStatic => 0,
+              showCoordinateHints => 0,
+              cmpOptions => {
+                list_checker => sub {
+                  my ($c, $s, $ans, $value) = @_;
+                  return 0 if $ans->{isPreview};
+                  my $score = 0;
+                  my @errors;
+                  my ($p, $q) = (0, 0);
+                  for (0 .. $#$s) {
+                    if (!$p &amp;&amp; (abs(($s->[$_]->extract(2)->value)[0] - $x[0]) &lt; 5 &amp;&amp; abs(($s->[$_]->extract(2)->value)[1] - $y[0]) &lt; 5)) { $p = 1; ++$score; next; }
+                    if (!$q &amp;&amp; (abs(($s->[$_]->extract(2)->value)[0] - $x[1]) &lt; 5 &amp;&amp; abs(($s->[$_]->extract(2)->value)[1] - $y[1]) &lt; 5)) { $q = 1; ++$score; next; }
+                    my $nth = Value::List->NameForNumber($_ + 1);
+                    push(@errors, "The $nth point graphed is incorrect.");
+                  }   
+                  return ($score, @errors);
+                }
+              }
+            );
+          </pg-code>
+          <statement>
+            <p>
+              <m><var name="$p[0]"/>, <var name="$p[1]"/></m>
+            </p>
+            <p>
+              <var name="$gt" width="1"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+      <exercise label="mark-two-points-at-large-coordinates-copy">
+        <webwork copy="webwork-mark-two-points-at-large-coordinates"/>
+      </exercise>
+    </exercisegroup>
+
+    <exercise label="fill-vertical-half-plane">
+      <webwork xml:id="webwork-fill-vertical-half-plane">
+        <pg-macros>
+          <macro-file>parserGraphTool.pl</macro-file>
+        </pg-macros>
+        <pg-code>
+          %options = ('positive' => 1, 'negative' => -1);
+          $posneg = list_random(lex_sort(keys %options));
+          $y = $options{$posneg}; 
+          $gt = GraphTool("{fill,(1,$y)}", "{fill,(-1,$y)}")->with(
+            availableTools => ['FillTool'],
+            staticObjects => ["{line,solid,(0,0),(0,1)}","{line,solid,(0,0),(1,0)}"],
+            showInStatic => 0,
+            showCoordinateHints => 0,
+          );
+        </pg-code>
+        <statement>
+          <p>
+            Sketch a Cartesian coordinate plane and then shade the quadrants where the second
+            coordinate is <var name="$posneg"/>.
+          </p>
+          <p>
+            <var name="$gt" width="1"/>
+          </p>
+        </statement>
+      </webwork>
+    </exercise>
+    <exercise label="fill-horizontal-half-plane">
+      <webwork xml:id="webwork-fill-horizontal-half-plane">
+        <pg-macros>
+          <macro-file>parserGraphTool.pl</macro-file>
+        </pg-macros>
+        <pg-code>
+          %options = ('positive' => 1, 'negative' => -1);
+          $posneg = list_random(lex_sort(keys %options));
+          $x = $options{$posneg}; 
+          $gt = GraphTool("{fill,($x,1)}", "{fill,($x,-1)}")->with(
+            availableTools => ['FillTool'],
+            staticObjects => ["{line,solid,(0,0),(0,1)}","{line,solid,(0,0),(1,0)}"],
+            showInStatic => 0,
+            showCoordinateHints => 0,
+          );
+        </pg-code>
+        <statement>
+          <p>
+            Sketch a Cartesian coordinate plane and then shade the quadrants where the first
+            coordinate is <var name="$posneg"/>.
+          </p>
+          <p>
+            <var name="$gt" width="1"/>
+          </p>
+        </statement>
+      </webwork>
+    </exercise>
+    <exercise label="fill-same-sign">
+      <webwork xml:id="webwork-fill-same-sign">
+        <pg-macros>
+          <macro-file>parserGraphTool.pl</macro-file>
+        </pg-macros>
+        <pg-code>
+          $gt = GraphTool("{fill,(1,1)}", "{fill,(-1,-1)}")->with(
+            availableTools => ['FillTool'],
+            staticObjects => ["{line,solid,(0,0),(0,1)}","{line,solid,(0,0),(1,0)}"],
+            showInStatic => 0,
+            showCoordinateHints => 0,
+          );
+        </pg-code>
+        <statement>
+          <p>
+            Sketch a Cartesian coordinate plane and then shade the quadrants where the coordinates
+            have the same sign.
+          </p>
+          <p>
+            <var name="$gt" width="1"/>
+          </p>
+        </statement>
+      </webwork>
+    </exercise>
+    <exercise label="fill-opposite-sign">
+      <webwork xml:id="webwork-fill-opposite-sign">
+        <pg-macros>
+          <macro-file>parserGraphTool.pl</macro-file>
+        </pg-macros>
+        <pg-code>
+          $gt = GraphTool("{fill,(1,-1)}", "{fill,(-1,1)}")->with(
+            availableTools => ['FillTool'],
+            staticObjects => ["{line,solid,(0,0),(0,1)}","{line,solid,(0,0),(1,0)}"],
+            showInStatic => 0,
+            showCoordinateHints => 0,
+          );
+        </pg-code>
+        <statement>
+          <p>
+            Sketch a Cartesian coordinate plane and then shade the quadrants where the coordinates
+            have the opposite sign.
+          </p>
+          <p>
+            <var name="$gt" width="1"/>
+          </p>
+        </statement>
+      </webwork>
+    </exercise>
+
+    <exercise label="early-covid-counts">
+      <webwork xml:id="webwork-early-covid-counts">
+        <pg-code>
+          %data = (
+            20 => 1,
+            24 => 2,
+            26 => 5,
+            30 => 7,
+          );
+          $table = "x~~ty~~n";
+          for (num_sort(keys %data)) {$table .= "$_~~t$data{$_}~~n"};
+          $x = list_random(num_sort(keys %data));
+          $y = $data{$x};
+          Context("Point");
+          $ans = Point($x, $y);
+          @b = num_sort(random_subset(2,num_sort(keys %data)));
+          $ans2 = abs($data{$b[0]} - $data{$b[1]});
+        </pg-code>
+        <statement>
+          <p>
+            Here is a graph of the number of SARS-CoV-2 (COVID) cases confirmed by the CDC within
+            the United States during the month of January, 2020.
+          </p>
+          <image width="75%">
+            <latex-image>
+              \begin{tikzpicture}
+                \begin{axis}[
+                    xlabel={\(t\) (day)},
+                    ylabel={\(n\) (count)},
+                    xmin=-1,
+                    xmax=31,
+                    ymin=0,
+                    ymax=10,
+                    xtick=,
+                    ytick=,
+                    minor xtick=,
+                    minor ytick=,
+                    clip=false,
+                    width=\orccaprintwidth,
+                    height=0.33\orccaprintwidth,
+                    axis line style={->},
+                    ]
+                  \addplot[soliddot] table [x=x,y=y] {
+                    $table
+                  };
+                \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+          <p>
+            What are the coordinates for the data point corresponding to January
+            <var name="$x"/>th?
+          </p>
+          <p>
+            <var name="$ans" width="5"/>
+          </p>
+          <p>
+            How many additional new cases were there between January <var name="$b[0]"/>th
+            and January <var name="$b[1]"/>th?
+          </p>
+          <p>
+            <var name="$ans2" width="5"/>
+          </p>
+        </statement>
+      </webwork>
+    </exercise>
+
+    <exercise label="stable-isotopes">
+      <webwork xml:id="webwork-stable-isotopes">
+        <pg-code>
+          @data = (
+            1 => 0,
+            1 => 1,
+            2 => 1,
+            2 => 2,
+            3 => 3,
+            3 => 4,
+            4 => 5,
+            5 => 5,
+            5 => 6,
+            6 => 6,
+            6 => 7,
+            7 => 7,
+            7 => 8,
+            8 => 8,
+            8 => 9,
+            8 => 10,
+            9 => 10,
+            10 => 10,
+            10 => 11,
+            10 => 12,
+            11 => 12,
+            12 => 12,
+            12 => 13,
+            12 => 14,
+            13 => 14,
+            14 => 14,
+            14 => 15,
+            14 => 16,
+            15 => 16,
+            16 => 16,
+            16 => 17,
+            16 => 18,
+            16 => 20,
+            17 => 18,
+            17 => 20,
+            18 => 18,
+            18 => 20,
+          );
+          @elements = qw(Hydrogen Helium Lithium Beryllium Boron Carbon Nitrogen Oxygen Fluorine
+            Neon Sodium Magnesium Aluminum Silicon Phosphorus Sulfur Chlorine Argon);
+          $table = "x~~ty~~n";
+          for (0..36) {$table .= "$data[2*$_]~~t$data[2*$_ + 1]~~n"};
+          $i = random(0,36);
+          $x = $data[2*$i];
+          $elt = $elements[$x - 1];
+          @ans;
+          for (0..36) {
+            push(@ans, Point($x, $data[2*$_ + 1])) if $data[2*$_] == $x;
+          }
+          Context("Point");
+          $ans = List(@ans);
+          $proton = ($elt eq 'Hydrogen') ? 'proton' : 'protons';
+        </pg-code>
+        <statement>
+          <p>
+            This is a graph representing stable isotopes of atomic elements (Hydrogen, Helium,
+            etc.) up through the first three rows of the periodic table of elements.
+          </p>
+          <image width="75%">
+            <latex-image>
+              \begin{tikzpicture}
+                \begin{axis}[
+                    xlabel={\(z\) (num. protons)},
+                    ylabel={\(n\) (num. neutrons)},
+                    xmin=0,
+                    xmax=18,
+                    ymin=0,
+                    ymax=20,
+                    xtick=,
+                    ytick=,
+                    minor xtick=,
+                    minor ytick=,
+                    clip=false,
+                    width=\orccaprintwidth,
+                    height=0.33\orccaprintwidth,
+                    axis line style={->},
+                    ]
+                  \addplot[soliddot] table [x=x,y=y] {
+                    $table
+                  };
+                \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+          <p>
+            <var name="$elt"/> has <m><var name="$x"/></m> <var name="$proton"/>. List all of the
+            ordered pairs of coordinates on this graph that correspond to <var name="$elt"/>.
+          </p>
+          <instruction>
+            If there are more than one pair of coordinates, separate each pair from the others using
+            a comma.
+          </instruction>
+          <p>
+            <var name="$ans" width="16"/>
+          </p>
+          <p>
+            According to the graph, there is a certain number of neutrons for which there is no
+            stable isotope of any atom. What number of neutrons is this?
+          </p>
+          <p>
+            <var name="19" width="16"/>
+          </p>
+        </statement>
+      </webwork>
+    </exercise>
+
+    <exercisegroup cols="2">
+      <title>Quadrants</title>
+      <introduction>
+        <p>
+          Which quadrant is the point in?
+        </p>
+      </introduction>
+      <exercise label="which-quadrant">
+        <webwork xml:id="webwork-which-quadrant">
+          <pg-macros>
+            <macro-file>parserPopUp.pl</macro-file>
+          </pg-macros>
+          <pg-code>
+            @x = random_subset(2,1..9);
+            @p = (Point(@x), -Point(@x), Point($x[0], -$x[1]), Point($x[1], -$x[0]));
+            @p = random_subset(4, @p);
+            for (0..3) {
+              $ans[$_] = 'I'   if (($p[$_]->value)[0] &gt; 0 &amp;&amp; ($p[$_]->value)[1] &gt; 0);
+              $ans[$_] = 'II'  if (($p[$_]->value)[0] &lt; 0 &amp;&amp; ($p[$_]->value)[1] &gt; 0);
+              $ans[$_] = 'III' if (($p[$_]->value)[0] &lt; 0 &amp;&amp; ($p[$_]->value)[1] &lt; 0);
+              $ans[$_] = 'IV'  if (($p[$_]->value)[0] &gt; 0 &amp;&amp; ($p[$_]->value)[1] &lt; 0);
+              $d[$_] = DropDown(['I','II','III','IV'], $ans[$_], showInStatic => 0);
+              $xposneg[$_] = (($p[$_]->value)[0] > 0) ? 'positive' : 'negative';
+              $yposneg[$_] = (($p[$_]->value)[1] > 0) ? 'positive' : 'negative';
+            }
+            %qwords = (
+              I => 'upper right',
+              II => 'upper left',
+              III => 'lower left',
+              IV => 'lower right',
+            );
+            @ul = map {$qwords{$_}} @ans;
+          </pg-code>
+          <task>
+            <statement>
+              <p>
+                <m><var name="$p[0]"/></m> <var name="$d[0]" form="popup"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                The <m>x</m>-coordinate is <var name="$xposneg[0]"/> and the <m>y</m>-coordinate is
+                <var name="$yposneg[0]"/>, so the point is in the <var name="$ul[0]"/> quadrant,
+                which is Quadrant <var name="$ans[0]"/>.
+              </p>
+            </solution>
+          </task>
+          <task>
+            <statement>
+              <p>
+                <m><var name="$p[1]"/></m> <var name="$d[1]" form="popup"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                The <m>x</m>-coordinate is <var name="$xposneg[1]"/> and the <m>y</m>-coordinate is
+                <var name="$yposneg[1]"/>, so the point is in the <var name="$ul[1]"/> quadrant,
+                which is Quadrant <var name="$ans[1]"/>.
+              </p>
+            </solution>
+          </task>
+          <task>
+            <statement>
+              <p>
+                <m><var name="$p[2]"/></m> <var name="$d[2]" form="popup"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                The <m>x</m>-coordinate is <var name="$xposneg[2]"/> and the <m>y</m>-coordinate is
+                <var name="$yposneg[2]"/>, so the point is in the <var name="$ul[2]"/> quadrant,
+                which is Quadrant <var name="$ans[2]"/>.
+              </p>
+            </solution>
+          </task>
+          <task>
+            <statement>
+              <p>
+                <m><var name="$p[3]"/></m> <var name="$d[3]" form="popup"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                The <m>x</m>-coordinate is <var name="$xposneg[3]"/> and the <m>y</m>-coordinate is
+                <var name="$yposneg[3]"/>, so the point is in the <var name="$ul[3]"/> quadrant,
+                which is Quadrant <var name="$ans[3]"/>.
+              </p>
+            </solution>
+          </task>
+        </webwork>
+      </exercise>
+      <exercise label="which-quadrant-copy">
+        <webwork copy="webwork-which-quadrant"/>
+      </exercise>
+      <exercise label="which-quadrant-copy2">
+        <webwork copy="webwork-which-quadrant"/>
+      </exercise>
+      <exercise label="which-quadrant-copy3">
+        <webwork copy="webwork-which-quadrant"/>
+      </exercise>
+    </exercisegroup>
+
+    <exercisegroup>
+      <title>Plotting Points and Choosing a Scale</title>
+      <introduction>
+        <p>
+          Answer these questions about the practical difficulties that might arise when plotting
+          points and setting the scales on the two axes.
+        </p>
+      </introduction>
+      <exercise>
+        <webwork label="difficulty-plotting-close-and-far-points">
+          <statement>
+            <p>
+              What would be the difficulty with trying to plot <m>(12,4)</m>, <m>(13,5)</m>, and
+              <m>(310,208)</m> all on the same graph?
+            </p>
+            <p>
+              <var form="essay" />
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Answers will vary, but the issue is that once you set the scale on both axes so that
+              both <m>(12,4)</m> and <m>(310,208)</m> will appear, then <m>(13,5)</m> will appear to
+              be so close to <m>(12,4)</m> that it will be challenging to draw them both and make it
+              clear they are two different points.
+            </p>
+          </solution>
+        </webwork>
+      </exercise>
+      <exercise label="importance-of-regular-spacing">
+        <webwork>
+          <statement>
+            <p>
+              The points <m>(3,5)</m>, <m>(5,6)</m>, <m>(7,7)</m>, and <m>(9,8)</m> all lie on a
+              straight line. What can go wrong if you make a plot of a Cartesian plane with these
+              points marked, and you don't have tick marks that are evenly spaced apart?
+            </p>
+            <p>
+              <var form="essay" />
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Answers will vary, but the issue is that having irregularly spaced tick marks can make
+              it so that points that are actually in a straight line might not appear to be in a
+              straight line.
+            </p>
+          </solution>
+        </webwork>
+      </exercise>
+    </exercisegroup>
+  </exercises>
+</section>
+

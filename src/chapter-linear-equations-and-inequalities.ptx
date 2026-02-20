@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2026                                                       -->
+<!-- Alex Jordan                                                          -->
+<!-- *********************************************************************-->
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chapter-linear-equations-and-inequalities">
+  <title>Linear</title>
+  <introduction>
+    <p>
+      In this chapter we learn the mechanical task of solving linear equations and inequalities.
+      For example, starting with an equation like <md>2x+5=7x</md>, a few steps later we will
+      conclude that <m>x</m> must be the number <m>1</m>.
+    </p>
+  </introduction>
+  <xi:include href="section-modeling-with-equations-and-inequalities.ptx"/>
+  <xi:include href="section-solving-multistep-linear-equations.ptx"/>
+  <xi:include href="section-solving-multistep-linear-inequalities.ptx"/>
+  <xi:include href="section-equations-and-inequalities-with-fractions.ptx"/>
+  <xi:include href="section-special-solution-sets.ptx"/>
+  <xi:include href="section-isolating-a-linear-variable.ptx"/>
+  <xi:include href="section-exploring-two-variable-data-and-rate-of-change.ptx"/>
+  <xi:include href="section-slope.ptx"/>
+  <xi:include href="section-slope-intercept-form.ptx"/>
+  <xi:include href="section-point-slope-form.ptx"/>
+  <xi:include href="section-solving-a-system-by-graphing.ptx"/>
+  <xi:include href="section-substitution.ptx"/>
+</chapter>
+

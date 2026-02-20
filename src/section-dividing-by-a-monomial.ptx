@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2016-2019                                                  -->
+<!-- Portland Community College                                           -->
+<!--                                                                      -->
+<!-- This file is part of Open Resources for Community College Algebra    -->
+<!-- (ORCCA).                                                             -->
+<!--                                                                      -->
+<!-- Open Resources for Community College Algebra is licensed under a     -->
+<!-- Creative Commons Attribution 4.0 International License.              -->
+<!--                                                                      -->
+<!-- Under this license, any user of this textbook or the textbook        -->
+<!-- contents must provide proper attribution as follows.                 -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- include in every digital format page view (including but not         -->
+<!-- limited to EPUB, PDF, and HTML) and on every physical printed page   -->
+<!-- the following attribution:                                           -->
+<!--                                                                      -->
+<!-- Original source material, products with readable and accessible      -->
+<!-- math content, and other information freely available at              -->
+<!-- pcc.edu/orcca.                                                       -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- reproduce any math content (such as math expressions and equations)  -->
+<!-- in a readable manner, and offer math content in at least one web     -->
+<!-- accessible manner.                                                   -->
+<!--                                                                      -->
+<!-- The Portland Community College name, Portland Community College      -->
+<!-- logo, ORCCA name, Open Resources for Community College Algebra name, -->
+<!-- ORCCA logo, and front and back cover designs are not subject to the  -->
+<!-- Creative Commons license and may not be reproduced without the       -->
+<!-- prior and express written consent of Portland Community College.     -->
+<!--                                                                      -->
+<!-- For questions regarding this license, please contact                 -->
+<!-- orcca-group@pcc.edu.                                                 -->
+<!-- *********************************************************************-->
+<section xml:id="section-dividing-by-a-monomial">
+  <title>Dividing by a Monomial</title>
+  <objectives>
+    <title>PCC Course Content and Outcome Guide</title>
+    <ul>
+      <li>
+        <xref ref="ccog-divide-polynomial-by-monomial" text="local">MTH 65 CCOG</xref>
+      </li>
+    </ul>
+  </objectives>
+
+  <introduction>
+    <p>
+      We learned how to <em>add</em> and <em>subtract</em> polynomials in
+      <xref ref="section-adding-and-subtracting-polynomials"/>. Then in
+      <xref ref="section-introduction-to-exponent-properties"/>, we learned how to <em>multiply</em>
+      monomials together (but not yet how to multiply general polynomials together). In this section
+      we learn how to <em>divide</em> a general polynomial by a monomial.
+    </p>
+
+    <figure>
+      <caption>Alternative Video Lesson</caption>
+      <video youtubeplaylist="PLmuZCPhWPt-ctMJkDhYZdH-wRbE0WDzAE" />
+    </figure>
+  </introduction>
+
+  <subsection>
+    <title>Quotient of Powers Property</title>
+    <p>
+      When we <em>multiply</em> powers that have the same base, we <em>add</em> the exponents, as in
+      <m>2^{2}\cdot2^{3}=2^{5}</m>. What happens when we <em>divide</em> powers that have the same
+      base?
+    </p>
+
+    <example xml:id="example-quotient-of-powers-i">
+      <statement>
+        <p>
+          Simplify <m>\frac{x^5}{x^2}</m> by writing out each power as repeated multiplication.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We can write the expressions without exponents and simplify.
+          <md>
+            <mrow>\frac{x^5}{x^2} \amp= \frac{x \cdot x \cdot x \cdot x \cdot x}{x \cdot x}</mrow>
+            <mrow>\amp= \frac{\cancel{x \cdot x} \cdot x \cdot x \cdot x}{\cancel{x \cdot x} \cdot 1}</mrow>
+            <mrow>\amp= \frac{x \cdot x \cdot x}{1}</mrow>
+            <mrow>\amp= x^3</mrow>
+          </md>
+          Notice that we had <m>5</m> copies of <m>x</m> in the numerator and <m>2</m> of them went
+          away. We are left with <m>3</m> copies of <m>x</m>, where <m>3</m> the difference between
+          <m>5</m> and <m>2</m>.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      When we divide powers as we've just done, we end up canceling factors from the numerator and
+      denominator one-for-one. The general rule for this is:
+    </p>
+
+    <fact>
+      <title>Quotient of Powers Property</title>                                                              <idx><h>exponent</h><h>quotient of powers property</h></idx>
+      <statement>
+        <p>
+          For any nonzero real number <m>b</m> and
+          <xref ref="item-integer-definition" text="custom">integers</xref> <m>m</m> and <m>n</m>
+          where <m>m\gt n</m>,
+          <me>
+            \frac{b^{m}}{b^{n}} = b^{m-n}
+          </me>
+        </p>
+      </statement>
+    </fact>
+
+    <p>
+      This rule says that when you're dividing two expressions that have the same base, you can
+      simplify the quotient by subtracting the exponents. In
+      <xref ref="example-quotient-of-powers-i"/>, this means that we can directly compute
+      <m>\frac{x^5}{x^2}</m>:
+      <md>
+        <mrow>\frac{x^5}{x^2} \amp= x^{5-2}</mrow>
+        <mrow>\amp=x^3</mrow>
+      </md>
+    </p>
+
+    <p>
+      Now we can update the list of exponent properties from
+      <xref ref="section-introduction-to-exponent-properties"/>.
+    </p>
+
+    <list xml:id="list-properties-of-exponents-four-properties">
+      <title>Summary of the Properties of Exponents (Thus Far)</title>
+
+      <introduction>
+        <p>
+          If <m>b</m> and <m>c</m> are real numbers, and <m>m</m> and <m>n</m> are positive
+          integers, then we have the following properties:
+        </p>
+      </introduction>
+
+      <dl>
+        <li>
+          <title>Product Property</title>
+          <p>
+            <m>b^{m} \cdot b^{n} = b^{m+n}</m>
+          </p>
+        </li>
+
+        <li>
+          <title>Power to a Power Property</title>
+          <p>
+            <m>(b^{m})^{n} = b^{m\cdot n}</m>
+          </p>
+        </li>
+
+        <li>
+          <title>Product to a Power Property</title>
+          <p>
+            <m>(bc)^{m} = b^{m} \cdot c^{m}</m>
+          </p>
+        </li>
+
+        <li xml:id="item-exponent-quotient-of-powers-property">
+          <title>Quotient of Powers Property</title>
+          <p>
+            <m>\dfrac{b^m}{b^n} = b^{m-n}</m>
+          </p>
+          <p>
+            This last one is only valid when <m>b\neq0</m>. And for now, only when <m>m\gt n</m>.
+          </p>
+        </li>
+      </dl>
+    </list>
+  </subsection>
+
+
+  <subsection>
+    <title>Dividing a Polynomial by a Monomial</title>                                                        <idx><h>polynomial</h><h>divided by a monomial</h></idx>
+                                                                                                              <idx><h>dividing a polynomial by a monomial</h></idx>
+
+    <p>
+      Dividing by a number <m>C</m> is the same action as multiplying by the reciprocal
+      <m>\frac{1}{C}</m>. For example, you could divide <m>8</m> by <m>2</m>, and you would get
+      <m>4</m>. Or you could multiply <m>8</m> by <m>\frac{1}{2}</m>, and you would still get
+      <m>4</m>. In symbols,
+      <me>
+        \frac{8}{2}=\frac{1}{2}\cdot8\qquad\text{(both work out to }4\text{)}
+      </me>
+    </p>
+
+    <p>
+      We apply this idea to the situation where a polynomial being divided by a monomial. And then
+      with help from the distributive poroperty for multiplication, we find that the distributive
+      property also works for division by a monomial:
+      <md>
+        <mrow>\frac{A+B}{C} \amp= \frac{1}{C}\cdot(A+B)</mrow>
+        <mrow>\amp= \frac{1}{C}\cdot A + \frac{1}{C}\cdot B</mrow>
+        <mrow>\amp= \frac{A}{C} + \frac{B}{C}</mrow>
+      </md>
+      In the end, the <m>C</m> has been <q>distributed into</q> the <m>A</m> and the <m>B</m>.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Simplify <m>\dfrac{2x^3+4x^2-10x}{2}</m>.
+        </p>
+        <p>
+          The <m>2</m> we are dividing by can be divided into each term of the numerator. Then the
+          individual fractions that remain can be simplified.
+          <md>
+            <mrow>\frac{2x^3+4x^2-10x}{2}\amp=\frac{2x^3}{2}+\frac{4x^2}{2}+\frac{-10x}{2}</mrow>
+            <mrow>\amp=x^3+2x^2-5x</mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <example xml:id="example-polyomial-division">
+      <statement>
+        <p>
+          Simplify <m>\dfrac{15x^4-9x^3+12x^2}{3x^2}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Each term in the numerator can be divided by <m>3x^2</m>. To actually do that division
+          we'll use the <xref ref="item-exponent-quotient-of-powers-property" text="title"/>. This
+          will change each coefficient and exponent.
+          <md>
+            <mrow>\frac{15x^4-9x^3+12x^2}{3x^2}\amp=\frac{15x^4}{3x^2}+\frac{-9x^3}{3x^2}+\frac{12x^2}{3x^2}</mrow>
+            <mrow>\amp=5x^2-3x+4</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <remark>
+      <p>
+        If you become comfortable with this process, you might leave out the step where we write out
+        the distribution explicitly. You may find you can do that distribution in your head and this
+        will become a one-step exercise. Here's how <xref ref="example-polyomial-division"/> could
+        be visualized that way:
+        <me>
+          \frac{15x^4-9x^3+12x^2}{3x^2}=\boxed{\phantom{5}}x^{\boxed{\phantom{2}}} - \boxed{\phantom{3}}x^{\boxed{\phantom{1}}} + \boxed{\phantom{4}}x^{\boxed{\phantom{0}}}
+        </me>
+        And with each piece calculated in your head:
+        <me>
+          \frac{15x^4-9x^3+12x^2}{3x^2}=5x^2-3x+4
+        </me>
+        With the last term, note that <m>\frac{x^2}{x^2}</m> reduces to <m>1</m>.
+      </p>
+    </remark>
+
+    <example>
+      <statement>
+        <p>
+          Simplify <m>\dfrac{20x^3y^4+30x^2y^3-5x^2y^2}{-5xy^2}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\frac{20x^3y^4+30x^2y^3-5x^2y^2}{-5xy^2}\amp=
+            \frac{20x^3y^4}{-5xy^2}+\frac{30x^2y^3}{-5xy^2}+\frac{-5x^2y^2}{-5xy^2}</mrow>
+            <mrow>\amp= -4x^2y^2 -6xy+x</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <exercise>
+      <webwork source="Contrib/PCC/BasicAlgebra/Exponents/exponentDivision150.pg" seed="5"/>
+    </exercise>
+    <example>
+      <statement>
+        <p>
+          The density of an object, <m>\rho</m> (pronounced <q>rho</q>), can be calculated by the
+          formula
+          <me>\rho=\frac{m}{V}</me>
+          where <m>m</m> is the object's mass, and <m>V</m> is its volume. The mass of a certain
+          cancerous growth can be modeled by <m>4t^3-6t^2+8t</m> grams, where <m>t</m> is the number
+          of days since the growth began. If its volume is <m>2t</m> cubic centimeters, find the
+          growth's density.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We have:
+          <md>
+            <mrow>\rho\amp=\frac{m}{V}</mrow>
+            <mrow>\amp=\frac{4t^3-6t^2+8t}{2t}\,\frac{\text{g}}{\text{cm}^3}</mrow>
+            <mrow>\amp=\frac{4t^3}{2t}-\frac{6t^2}{2t}+\frac{8t}{2t}\quad\frac{\text{g}}{\text{cm}^3}</mrow>
+            <mrow>\amp=2t^2-3t+4\quad\frac{\text{g}}{\text{cm}^3}</mrow>
+          </md>
+          The growth's density can be modeled by <m>2t^2-3t+4</m> <quantity><unit base="gram"/><per prefix="centi" base="meter" exp="3"/></quantity>.
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <reading-questions>
+    <exercise>
+      <statement>
+        <p>
+          When you divide a power by another power with the same base, what can you do with the
+          exponents?
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          How is dividing a polynomial by a monomial similar to distributing multiplication over a
+          polynomial? For example, how is the process of simplifying
+          <m>\frac{15x^3+5x^2+10x}{5x}</m> similar to simplifying
+          <m>5x\left(15x^3+5x^2+10x\right)</m>?
+        </p>
+      </statement>
+    </exercise>
+  </reading-questions>
+
+  <exercises>
+    <subexercises>
+      <title>Skills Practice</title>
+      <exercisegroup cols="4">
+        <title>Quotient of Powers Property</title>
+        <introduction>
+          <p>
+            Use properties of exponents to simplify the expression.
+          </p>
+        </introduction>
+        <exercise label="power-divided-by-power">
+          <webwork xml:id="webwork-power-divided-by-power">
+            <pg-code>
+              $x = list_random('a' .. 'k', 'm', 'n', 'p' .. 'r', 't' .. 'z');
+              Context("Form")->variables->are($x => 'Real');
+              @m = num_sort(random_subset(2, 2 .. 9));
+              $m = $m[1] - $m[0];
+              $given = Formula("$x^$m[1]/$x^$m[0]")->reduce;
+              $answer = Formula("$x^$m");
+            </pg-code>
+            <statement>
+              <p>
+                <m>\displaystyle<var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="power-divided-by-power-copy">
+          <webwork copy="webwork-power-divided-by-power"/>
+        </exercise>
+        <exercise label="power-divided-by-variable">
+          <webwork xml:id="webwork-power-divided-by-variable">
+            <pg-code>
+              $x = list_random('a' .. 'k', 'm', 'n', 'p' .. 'r', 't' .. 'z');
+              Context("Form")->variables->are($x => 'Real');
+              $m[0] = 1;
+              $m[1] = random(2,9);
+              $m = $m[1] - $m[0];
+              $given = Formula("$x^$m[1]/$x^$m[0]")->reduce;
+              $answer = Formula("$x^$m");
+            </pg-code>
+            <statement>
+              <p>
+                <m>\displaystyle<var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="power-divided-by-variable-copy">
+          <webwork copy="webwork-power-divided-by-variable"/>
+        </exercise>
+        <exercise label="power-divided-by-power-pos-int-coef">
+          <webwork xml:id="webwork-power-divided-by-power-pos-int-coef">
+            <pg-code>
+              $x = list_random('a' .. 'k', 'm', 'n', 'p' .. 'r', 't' .. 'z');
+              Context("Form")->variables->are($x => 'Real');
+              @m = num_sort(random_subset(2, 2 .. 9));
+              @b = random_subset(2, 2 .. 9);
+              $b[2] = $b[0] * $b[1];
+              $m = $m[1] - $m[0];
+              $given = Formula("($b[2] $x^$m[1])/($b[1] $x^$m[0])")->reduce;
+              $answer = Formula("$b[0] $x^$m")->reduce;
+            </pg-code>
+            <statement>
+              <p>
+                <m>\displaystyle<var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                We can divide the coefficients to get <m><var name="$b[0]"/></m>. With the powers
+                of <m><var name="$x"/></m>, we can subtract the exponents to get
+                <m><var name="$x"/>^<var name="$m"/></m>. The result is
+                <m><var name="$answer"/></m>.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="power-divided-by-power-pos-int-coef-copy">
+          <webwork copy="webwork-power-divided-by-power-pos-int-coef"/>
+        </exercise>
+        <exercise label="power-divided-by-power-neg-int-coef">
+          <webwork xml:id="webwork-power-divided-by-power-neg-int-coef">
+            <pg-code>
+              $x = list_random('a' .. 'k', 'm', 'n', 'p' .. 'r', 't' .. 'z');
+              Context("Form")->variables->are($x => 'Real');
+              @m = num_sort(random_subset(2, 2 .. 9));
+              @b = random_subset(2, 2 .. 9);
+              $b[random(0,1)] *= -1;
+              $b[2] = $b[0] * $b[1];
+              $m = $m[1] - $m[0];
+              $given = Formula("($b[2] $x^$m[1])/($b[1] $x^$m[0])");
+              $answer = Formula("$b[0] $x^$m");
+            </pg-code>
+            <statement>
+              <p>
+                <m>\displaystyle<var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="power-divided-by-power-neg-int-coef-copy">
+          <webwork copy="webwork-power-divided-by-power-neg-int-coef"/>
+        </exercise>
+        <exercise label="power-divided-by-power-reciprocal-coef">
+          <webwork xml:id="webwork-power-divided-by-power-reciprocal-coef">
+            <pg-code>
+              $x = list_random('a' .. 'k', 'm', 'n', 'p' .. 'r', 't' .. 'z');
+              Context("Form")->variables->are($x => 'Real');
+              @m = num_sort(random_subset(2, 2 .. 9));
+              @b = random_subset(2, 2 .. 9);
+              $b[2] = $b[0] * $b[1];
+              $m = $m[1] - $m[0];
+              $given = Formula("($b[1] $x^$m[1])/($b[2] $x^$m[0])")->reduce;
+              $answer = Formula("(1/$b[0]) $x^$m")->reduce;
+            </pg-code>
+            <statement>
+              <p>
+                <m>\displaystyle<var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="power-divided-by-power-reciprocal-coef-copy">
+          <webwork copy="webwork-power-divided-by-power-reciprocal-coef"/>
+        </exercise>
+        <exercise label="power-divided-by-power-fraction-coef">
+          <webwork xml:id="webwork-power-divided-by-power-fraction-coef">
+            <pg-code>
+              $k = random(2, 9);
+              @b = random_coprime([2..9], [2..9]);
+              @b = map {$_ * $k} @b;
+              Context("Fraction");
+              $b = Fraction($b[0], $b[1]);
+              $x = list_random('a' .. 'k', 'm', 'n', 'p' .. 'r', 't' .. 'z');
+              Context("Form")->variables->are($x => 'Real');
+              @m = num_sort(random_subset(2, 2 .. 9));
+              $m = $m[1] - $m[0];
+              $given = Formula("($b[0] $x^$m[1])/($b[1] $x^$m[0])")->reduce;
+              $answer = Formula("$b $x^$m")->reduce;
+              </pg-code>
+            <statement>
+              <p>
+                <m>\displaystyle<var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="power-divided-by-power-fraction-coef-copy">
+          <webwork copy="webwork-power-divided-by-power-fraction-coef"/>
+        </exercise>
+        <exercise label="integer-power-divided-by-power">
+          <webwork xml:id="webwork-integer-power-divided-by-power">
+            <pg-code>
+              $x = random(100,200);
+              Context("Form");
+              @m = random_subset(2, 200 .. 300);
+              push @m, $m[0] + $m[1];
+              $given = Formula("$x^$m[2]/$x^$m[1]");
+              $answer = Formula("$x^$m[0]");
+            </pg-code>
+            <statement>
+              <p>
+                <m>\displaystyle<var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="integer-power-divided-by-power-copy">
+          <webwork copy="webwork-integer-power-divided-by-power"/>
+        </exercise>
+        <exercise label="integer-power-product-divided-by-power-product">
+          <webwork xml:id="webwork-integer-power-product-divided-by-power-product">
+            <pg-code>
+              ($x, $y) = random_subset(2, 40 .. 99);
+              Context("Form");
+              @m = random_subset(4, 50 .. 99);
+              push @m, $m[0] + $m[1], $m[2] + $m[3];
+              $given = Formula("($x^$m[4] $y^$m[5])/($x^$m[1] $y^$m[3])");
+              $answer = Formula("$x^$m[0] $y^$m[2]");
+            </pg-code>
+            <statement>
+              <p>
+                <m>\displaystyle<var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="integer-power-product-divided-by-power-product-copy">
+          <webwork copy="webwork-integer-power-product-divided-by-power-product"/>
+        </exercise>
+        <exercise label="multivar-power-product-divided-by-power-product">
+          <webwork xml:id="webwork-multivar-power-product-divided-by-power-product">
+            <pg-code>
+              ($x, $y) = random_subset(2, 'a' .. 'k', 'm', 'n', 'p' .. 'r', 't' .. 'z');
+              Context("Form")->variables->are($x => 'Real', $y => 'Real');
+              @m = random_subset(4, 2 .. 20);
+              push @m, $m[0] + $m[1], $m[2] + $m[3];
+              $given = Formula("($x^$m[4] $y^$m[5])/($x^$m[1] $y^$m[3])");
+              $answer = Formula("$x^$m[0] $y^$m[2]");
+            </pg-code>
+            <statement>
+              <p>
+                <m>\displaystyle<var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="multivar-power-product-divided-by-power-product-copy">
+          <webwork copy="webwork-multivar-power-product-divided-by-power-product"/>
+        </exercise>
+        <exercise label="multivar-power-product-divided-by-power-product-frac-coef">
+          <webwork xml:id="webwork-multivar-power-product-divided-by-power-product-frac-coef">
+            <pg-code>
+              $k = random(2, 9);
+              @b = random_coprime([2..9], [2..9]);
+              @b = map {$_ * $k} @b;
+              Context("Fraction");
+              $b = Fraction($b[0], $b[1]);
+              ($x, $y) = random_subset(2, 'a' .. 'k', 'm', 'n', 'p' .. 'r', 't' .. 'z');
+              Context("Form")->variables->are($x => 'Real', $y => 'Real');
+              @m = random_subset(4, 2 .. 20);
+              push @m, $m[0] + $m[1], $m[2] + $m[3];
+              $given = Formula("($b[0] $x^$m[4] $y^$m[5])/($b[1] $x^$m[1] $y^$m[3])");
+              $answer = Formula("$b $x^$m[0] $y^$m[2]");
+            </pg-code>
+            <statement>
+              <p>
+                <m>\displaystyle<var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="multivar-power-product-divided-by-power-product-frac-coef-copy">
+          <webwork copy="webwork-multivar-power-product-divided-by-power-product-frac-coef"/>
+        </exercise>
+      </exercisegroup>
+
+      <exercisegroup cols="3">
+        <title>Dividing Polynomials by Monomials</title>
+        <introduction>
+          <p>
+            Simplify the expression.
+          </p>
+        </introduction>
+        <exercise label="binomial-over-integer">
+          <webwork xml:id="webwork-binomial-over-integer">
+            <pg-code>
+              $d = random(2, 9);
+              @a = random_subset(2, 2 .. 9);
+              @b = map {$_ * $d} @a;
+              $x = list_random('a' .. 'k', 'm', 'n', 'p' .. 'r', 't' .. 'z');
+              Context("Form")->variables->are($x => 'Real');
+              @m = random_subset(2, 2 .. 9);
+              $given = Formula("($b[0] $x^$m[0] + $b[1] $x^$m[1])/$d");
+              $answer = Formula("$a[0] $x^$m[0] + $a[1] $x^$m[1]");
+            </pg-code>
+            <statement>
+              <p>
+                <m>\displaystyle<var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="binomial-over-integer-copy">
+          <webwork copy="webwork-binomial-over-integer"/>
+        </exercise>
+        <exercise label="binomial-over-monomial">
+          <webwork xml:id="webwork-binomial-over-monomial">
+            <pg-code>
+              $d = random(2, 9);
+              @a = random_subset(2, 2 .. 9);
+              @b = map {$_ * $d} @a;
+              $x = list_random('a' .. 'k', 'm', 'n', 'p' .. 'r', 't' .. 'z');
+              Context("Form")->variables->are($x => 'Real');
+              @n = random_subset(2, 2 .. 9);
+              $m = random(2,9);
+              @m = map {$_ + $m} @n;
+              $given = Formula("($b[0] $x^$m[0] + $b[1] $x^$m[1]) / ($d $x^$m)");
+              $answer = Formula("$a[0] $x^$n[0] + $a[1] $x^$n[1]");
+            </pg-code>
+            <statement>
+              <p>
+                <m>\displaystyle<var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="binomial-over-monomial-copy">
+          <webwork copy="webwork-binomial-over-monomial"/>
+        </exercise>
+        <exercise label="trinomial-over-power">
+          <webwork xml:id="webwork-trinomial-over-power">
+            <pg-code>
+              $d = 1;
+              @a = random_subset(3, -9 .. -2, 2 .. 9);
+              @b = map {$_ * $d} @a;
+              $x = list_random('a' .. 'k', 'm', 'n', 'p' .. 'r', 't' .. 'z');
+              Context("Form")->variables->are($x => 'Real');
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              @n = random_subset(3, 2 .. 9);
+              $m = random(2, 9);
+              @m = map {$_ + $m} @n;
+              $given = Formula("($b[0] $x^$m[0] + $b[1] $x^$m[1] + $b[2] $x^$m[2]) / ($x^$m)")->reduce;
+              $answer = Formula("$a[0] $x^$n[0] + $a[1] $x^$n[1] + $a[2] $x^$n[2]")->reduce;
+            </pg-code>
+            <statement>
+              <p>
+                <m>\displaystyle<var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                We can divide <m><var name="$x"/>^{<var name="$m"/>}</m> into each of the three
+                terms to get <m><var name="$answer"/></m>.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="trinomial-over-power-copy">
+          <webwork copy="webwork-trinomial-over-power"/>
+        </exercise>
+        <exercise label="trinomial-over-monomial">
+          <webwork xml:id="webwork-trinomial-over-monomial">
+            <pg-code>
+              $d = random(2, 9);
+              @a = random_subset(3, -9 .. -2, 2 .. 9);
+              @b = map {$_ * $d} @a;
+              $x = list_random('a' .. 'k', 'm', 'n', 'p' .. 'r', 't' .. 'z');
+              Context("Form")->variables->are($x => 'Real');
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              @n = random_subset(3, 2 .. 9);
+              $m = random(2, 9);
+              @m = map {$_ + $m} @n;
+              $given = Formula("($b[0] $x^$m[0] + $b[1] $x^$m[1] + $b[2] $x^$m[2]) / ($d $x^$m)")->reduce;
+              $answer = Formula("$a[0] $x^$n[0] + $a[1] $x^$n[1] + $a[2] $x^$n[2]");
+            </pg-code>
+            <statement>
+              <p>
+                <m>\displaystyle<var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="trinomial-over-monomial-copy">
+          <webwork copy="webwork-trinomial-over-monomial"/>
+        </exercise>
+        <exercise label="binomial-over-linear-monomial">
+          <webwork xml:id="webwork-binomial-over-linear-monomial">
+            <pg-code>
+              $d = random(2, 9);
+              @a = random_subset(2, 2 .. 9);
+              @b = map {$_ * $d} @a;
+              $x = list_random('a' .. 'k', 'm', 'n', 'p' .. 'r', 't' .. 'z');
+              Context("Form")->variables->are($x => 'Real');
+              @n = random_subset(2, 2 .. 9);
+              $m = 1;
+              @m = map {$_ + $m} @n;
+              $given = Formula("($b[0] $x^$m[0] - $b[1] $x^$m[1]) / ($d $x)");
+              $answer = Formula("$a[0] $x^$n[0] - $a[1] $x^$n[1]");
+            </pg-code>
+            <statement>
+              <p>
+                <m>\displaystyle<var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="binomial-over-linear-monomial-copy">
+          <webwork copy="webwork-binomial-over-linear-monomial"/>
+        </exercise>
+        <exercise label="binomial-over-monomial-multivar">
+          <webwork xml:id="webwork-binomial-over-monomial-multivar">
+            <pg-code>
+              $d = random(2, 9);
+              @a = random_subset(2, 2 .. 9);
+              @b = map {$_ * $d} @a;
+              ($x, $y) = random_subset(2, 'a' .. 'k', 'm', 'n', 'p' .. 'r', 't' .. 'z');
+              Context("Form")->variables->are($x => 'Real', $y => 'Real');
+              @n = random_subset(2, 2 .. 9);
+              $m = random(2,9);
+              @m = map {$_ + $m} @n;
+              @p = random_subset(2, 2 .. 9);
+              $q = random(2,9);
+              @q = map {$_ + $q} @p;
+              $given = Formula("($b[0] $x^$m[0] $y^$q[0] + $b[1] $x^$m[1] $y^$q[1]) / ($d $x^$m $y^$q)");
+              $answer = Formula("$a[0] $x^$n[0] $y^$p[0] + $a[1] $x^$n[1] $y^$p[1]");
+            </pg-code>
+            <statement>
+              <p>
+                <m>\displaystyle<var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="binomial-over-monomial-multivar-copy">
+          <webwork copy="webwork-binomial-over-monomial-multivar"/>
+        </exercise>
+      </exercisegroup>
+    </subexercises>
+
+    <subexercises>
+      <title>Applications</title>
+      <exercisegroup cols="2">
+        <introduction>
+          <p>
+            A rectangular prism's base area can be calculated by the formula <m>B=\frac{V}{h}</m>,
+            where <m>V</m> is the volume and <m>h</m> is the height.
+          </p>
+        </introduction>
+        <exercise label="prism-base-area">
+          <webwork xml:id="webwork-prism-base-area">
+            <pg-code>
+              Context("Numeric");
+              Context()->noreduce('(-x)-y','(-x)+y');
+              do {
+                $d = random(2,5,1);
+                $a = $d*random(2,10,1);
+                $b = $d*random(2,10,1)*random(-1,1,2);
+                $c = $d*random(2,10,1)*random(-1,1,2);
+              } until ( ($a!=$b) &amp;&amp; ($a!=$c) &amp;&amp; ($b!=$c) );
+              $exp3 = random(1,2,1);
+              $exp2 = random($exp3+1,4,1);
+              $exp1 = random($exp2+1,6,1);
+              $v = Compute("$a*x**$exp1+$b*x**$exp2+$c*x**$exp3")->reduce;
+              $h = Compute("$d*x")->reduce;
+              $step1 = Compute("$a*x**$exp1/($d*x)+$b*x**$exp2/($d*x)+$c*x**$exp3/($d*x)")->reduce;
+              $ad = $a/$d;
+              $bd = $b/$d;
+              $cd = $c/$d;
+              $ans = Compute("$ad*x**($exp1-1)+$bd*x**($exp2-1)+$cd*x**($exp3-1)")->reduce;
+              Context("LimitedPolynomial-Strict");
+              $ans = Formula($ans);
+            </pg-code>
+            <statement>
+              <p>
+                A certain rectangular prism's volume can be modeled by <m><var name="$v"/></m> cubic
+                units. If its height is <m><var name="$h"/></m> units, find the prism's base area.
+              </p>
+              <p>
+                <var name="$ans" width="16"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                Using the formula,
+                <me>B=\frac{<var name="$v"/>}{<var name="$h"/>}</me>
+                Now we can divide <m><var name="$h"/></m> into each of the three terms in the
+                numerator. So the base area is modeled by <m><var name="$ans"/></m>.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="prism-base-area-copy">
+          <webwork copy="webwork-prism-base-area"/>
+        </exercise>
+      </exercisegroup>
+      <exercisegroup cols="2">
+        <introduction>
+          <p>
+            A cylinder's height can be calculated by the formula <m>h=\frac{V}{B}</m>,
+            where <m>V</m> is the volume and <m>B</m> is the base area.
+          </p>
+        </introduction>
+        <exercise label="cylinder-base-area">
+          <webwork xml:id="webwork-cylinder-base-area">
+            <pg-code>
+              Context("Numeric");
+              Context()->noreduce('(-x)-y','(-x)+y');
+              do {
+                 $d = random(2,5,1);
+                 $a = $d*random(2,10,1);
+                 $b = $d*random(2,10,1)*random(-1,1,2);
+                 $c = $d*random(2,10,1)*random(-1,1,2);
+              } until ( ($a!=$b) &amp;&amp; ($a!=$c) &amp;&amp; ($b!=$c) );
+              $exp3 = random(2,3,1);
+              $exp2 = random($exp3+1,5,1);
+              $exp1 = random($exp2+1,7,1);
+              $v = Compute("$a*pi*x**$exp1+$b*pi*x**$exp2+$c*pi*x**$exp3")->reduce;
+              $B = Compute("$d*pi*x**2")->reduce;
+              $step1 = Compute("$a*pi*x**$exp1/($d*pi*x**2)+$b*pi*x**$exp2/($d*pi*x**2)+$c*pi*x**$exp3/($d*pi*x**2)")->reduce;
+              $ad = $a/$d;
+              $bd = $b/$d;
+              $cd = $c/$d;
+              $ans = Compute("$ad*x**($exp1-2)+$bd*x**($exp2-2)+$cd*x**($exp3-2)")->reduce;
+              Context("LimitedPolynomial-Strict");
+              $ans = Formula($ans);
+            </pg-code>
+            <statement>
+              <p>
+                A certain cylinder's volume can be modeled by <m><var name="$v"/></m> cubic units.
+                If its base area is <m><var name="$B"/></m> square units, find the cylinder's
+                height.
+              </p>
+              <p>
+                <var name="$h" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="cylinder-base-area-copy">
+          <webwork copy="webwork-cylinder-base-area"/>
+        </exercise>
+      </exercisegroup>
+    </subexercises>
+  </exercises>
+</section>
+

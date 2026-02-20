@@ -1,0 +1,1973 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2016-2019                                                  -->
+<!-- Portland Community College                                           -->
+<!--                                                                      -->
+<!-- This file is part of Open Resources for Community College Algebra    -->
+<!-- (ORCCA).                                                             -->
+<!--                                                                      -->
+<!-- Open Resources for Community College Algebra is licensed under a     -->
+<!-- Creative Commons Attribution 4.0 International License.              -->
+<!--                                                                      -->
+<!-- Under this license, any user of this textbook or the textbook        -->
+<!-- contents must provide proper attribution as follows.                 -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- include in every digital format page view (including but not         -->
+<!-- limited to EPUB, PDF, and HTML) and on every physical printed page   -->
+<!-- the following attribution:                                           -->
+<!--                                                                      -->
+<!-- Original source material, products with readable and accessible      -->
+<!-- math content, and other information freely available at              -->
+<!-- pcc.edu/orcca.                                                       -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- reproduce any math content (such as math expressions and equations)  -->
+<!-- in a readable manner, and offer math content in at least one web     -->
+<!-- accessible manner.                                                   -->
+<!--                                                                      -->
+<!-- The Portland Community College name, Portland Community College      -->
+<!-- logo, ORCCA name, Open Resources for Community College Algebra name, -->
+<!-- ORCCA logo, and front and back cover designs are not subject to the  -->
+<!-- Creative Commons license and may not be reproduced without the       -->
+<!-- prior and express written consent of Portland Community College.     -->
+<!--                                                                      -->
+<!-- For questions regarding this license, please contact                 -->
+<!-- orcca-group@pcc.edu.                                                 -->
+<!-- *********************************************************************-->
+<section xml:id="section-standard-form">
+  <title>Standard Form</title>
+  <objectives>
+    <title>PCC Course Content and Outcome Guide</title>
+    <ul>
+      <li>
+        <xref ref="ccog-interpret-graphs-and-intercepts" text="local">MTH 60 CCOG</xref>
+      </li>
+      <li>
+        <xref ref="ccog-find-slope-from-forms" text="local">MTH 60 CCOG</xref>
+      </li>
+      <li>
+        <xref ref="ccog-manipulate-into-slope-intercept-form" text="local">MTH 60 CCOG</xref>
+      </li>
+      <li>
+        <xref ref="ccog-plot-graph-from-standard-form" text="local">MTH 60 CCOG</xref>
+      </li>
+    </ul>
+  </objectives>
+
+  <introduction>
+    <p>
+      We've seen that a linear relationship can be expressed with an equation in
+      <xref ref="equation-slope-intercept-form" text="custom">slope-intercept form</xref> or with an
+      equation in <xref ref="equation-point-slope-form" text="custom">point-slope form</xref>. There
+      is a third form that you can use to write line equations. It's known as <q>standard form</q>.
+    </p>
+
+    <figure>
+      <caption>Alternative Video Lesson</caption>
+      <video youtubeplaylist="PLmuZCPhWPt-dXhmAoys9lNZg0c3U77LBw" />
+    </figure>
+  </introduction>
+
+  <subsection>
+    <title>Standard Form Definition</title>
+    <p>
+      Imagine gathering donations to pay for a <m>\$10{,}000</m> medical procedure you cannot
+      afford. Oversimplifying the mathematics a bit, suppose that there were only two types of
+      donors in the world: those who will donate <m>\$20</m> and those who will donate <m>\$100</m>.
+      How many of each, or what combination, do you need to reach the funding goal? That is, if
+      <m>x</m> people donate <m>\$20</m> and <m>y</m> people donate <m>\$100</m>, what numbers could
+      <m>x</m> and <m>y</m> be to meet your goal? The donors of the first type have collectively
+      donated <m>20x</m> dollars, and the donors of the second type have collectively donated
+      <m>100y</m>.
+    </p>
+
+    <p>
+      To reach <m>\$10{,}000</m>, altogether you'd need to have
+      <me>
+        20x+100y=10000
+      </me>
+      This is an example of a line equation in <term>standard form</term>.
+    </p>
+
+    <definition xml:id="definition-standard-form">
+      <title>Standard Form</title>                                                                            <idx><h>Standard form</h></idx>
+                                                                                                              <idx><h>Equation of a line</h><h>standard form</h></idx>
+      <statement>
+        <p>
+          It is always possible to write an equation for a line in the form
+          <men xml:id="equation-standard-form">
+            Ax+By=C
+          </men>
+          where <m>A</m>, <m>B</m>, and <m>C</m> are three numbers (each of which might be <m>0</m>,
+          although at least one of <m>A</m> and <m>B</m> must be nonzero). This form of a line
+          equation is called <term>standard form</term>. In the context of an application, the
+          meaning of <m>A</m>, <m>B</m>, and <m>C</m> depends on that context. This equation is
+          called <q>standard</q> form perhaps because <em>any</em> line can be written this way,
+          even vertical lines, which do not have slope and therefore cannot be written using
+          slope-intercept or point-slope form.    
+        </p>
+      </statement>
+    </definition>
+
+    <exercise label="identify-form">
+      <webwork>
+        <pg-macros>
+          <macro-file>parserPopUp.pl</macro-file>
+        </pg-macros>
+        <pg-code>
+          @eq=(
+            '2.7x+3.4y=-82',
+            'y=\frac{2}{7}(x-3)+\frac{1}{10}',
+            '12x-3=y+2',
+            'y=x^2+5',
+            'x-y=10',
+            'y=4x+1',
+          );
+          $forms=['slope-intercept', 'point-slope', 'standard', 'other linear', 'not linear'];
+          @ans=(
+            DropDown($forms,2, showInStatic => 0),
+            DropDown($forms,1, showInStatic => 0),
+            DropDown($forms,3, showInStatic => 0),
+            DropDown($forms,4, showInStatic => 0),
+            DropDown($forms,2, showInStatic => 0),
+            DropDown($forms,0, showInStatic => 0),
+          );
+        </pg-code>
+        <statement>
+          <p>
+            For each of the following equations, identify what form they are in: slope-intercept,
+            point-slope, standard, other linear, or not linear.
+          </p>
+          <p>
+            <m><var name="$eq[0]" /></m> <var name="$ans[0]" form="popup" />
+          </p>
+          <p>
+            <m><var name="$eq[1]" /></m> <var name="$ans[1]" form="popup" />
+          </p>
+          <p>
+            <m><var name="$eq[2]" /></m> <var name="$ans[2]" form="popup" />
+          </p>
+          <p>
+            <m><var name="$eq[3]" /></m> <var name="$ans[3]" form="popup" />
+          </p>
+          <p>
+            <m><var name="$eq[4]" /></m> <var name="$ans[4]" form="popup" />
+          </p>
+          <p>
+            <m><var name="$eq[5]" /></m> <var name="$ans[5]" form="popup" />
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m><var name="$eq[0]" /></m> is in standard form, with <m>A=2.7</m>, <m>B=3.4</m>, and
+            <m>C=-82</m>.
+          </p>
+          <p>
+            <m><var name="$eq[1]" /></m> is in point-slope form, with slope <m>\frac{2}{7}</m>, and
+            passing through <m>\left(3,\frac{1}{10}\right)</m>.
+          </p>
+          <p>
+            <m><var name="$eq[2]" /></m> is linear, but not in any of the forms we have studied.
+            Using algebra, you can rearrange it to read <m>y=12x-5</m>.
+          </p>
+          <p>
+            <m><var name="$eq[3]" /></m> is not linear. The exponent on <m>x</m> is a dead giveaway.
+          </p>
+          <p>
+            <m><var name="$eq[4]" /></m> is in standard form, with <m>A=1</m>, <m>B=-1</m>, and
+            <m>C=10</m>.
+          </p>
+          <p>
+            <m><var name="$eq[5]" /></m> is in slope-intercept form, with slope <m>4</m> and
+            <m>y</m>-intercept at <m>(0,1)</m>.
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+
+    <p>
+      Returning to the example with donations for the medical procedure, let's examine the equation
+      <me>
+        20x+100y=10000
+      </me>.
+      What units are attached to each part of this equation? The <m>10000</m> is in dollars. Both
+      <m>x</m> and <m>y</m> are numbers of people. Both the <m>20</m> and the <m>100</m> are in
+      dollars per person. So the terms <m>20x</m> and <m>100y</m> are ultimately in dollars. Note
+      how both sides of the equation are in dollars.
+    </p>
+    <p>
+      What is the slope of the linear relationship? It's not immediately visible since <m>m</m> is
+      not part of the standard form equation. But we can use algebra to isolate <m>y</m>:
+      <md>
+        <mrow>20x+100y\amp=10000</mrow>
+        <mrow>100y\amp=\highlight{-20x}+10000</mrow>
+        <mrow>y\amp=\divideunder{-20x+10000}{100}</mrow>
+        <mrow>y\amp=\frac{-20x}{100}+\frac{10000}{100}</mrow>
+        <mrow>y\amp=-\frac{1}{5}x+100</mrow>
+      </md>.
+      And we see that the slope is <m>-\frac{1}{5}</m>.
+    </p>
+    <p>
+      What units are on that slope? As always, the units on slope are
+      <m>\frac{y\text{-unit}}{x\text{-unit}}</m>. In this case that's
+      <m>\frac{\text{person}}{\text{person}}</m>, which sounds a little weird, but this slope of
+      <m>-\frac{1}{5}\frac{\text{person}}{\text{person}}</m> is saying that for every 5 extra
+      <em>people</em> who donate <m>\$20</m>, you need <m>1</m> fewer <em>person</em> donating
+      <m>\$100</m> to still reach your goal.
+    </p>
+    <p>
+      What is the <m>y</m>-intercept? Since we've already converted the equation into
+      slope-intercept form, we can see that it is at <m>(0,100)</m>. This tells us that if <m>0</m>
+      people donate <m>\$20</m>, then you will need <m>100</m> people donating <m>\$100</m> to meet
+      the goal.
+    </p>
+    <p>
+      What does a graph for this line look like? We've already converted into slope-intercept form,
+      and we could use that to make the graph. But when given a line in standard form, there is
+      another approach that may be preferable. Returning to
+      <me>
+        20x+100y=10000
+      </me>,
+      let's calculate the <m>y</m>-intercept and the <m>x</m>-intercept from scratch. Recall that
+      these are <em>points</em> where the line crosses the <m>y</m>-axis and <m>x</m>-axis. To be on
+      the <m>y</m>-axis means that <m>x=0</m>, and to be on the <m>x</m>-axis means that <m>y=0</m>.
+      All these <q><m>0</m></q>s make the resulting algebra easy to finish:
+      <md>
+        <mrow>20x+100y\amp=10000\amp20x+100y\amp=10000</mrow>
+        <mrow>20(\substitute{0})+100y\amp=10000\amp20x+100(\substitute{0})\amp=10000</mrow>
+        <mrow>100y\amp=10000\amp20x\amp=10000</mrow>
+        <mrow>y\amp=\divideunder{10000}{100}\amp x\amp=\divideunder{10000}{20}</mrow>
+        <mrow>y\amp=100\amp x\amp=500</mrow>
+      </md>
+    </p>
+    <p>
+      So we have a <m>y</m>-intercept at <m>(0,100)</m> and an <m>x</m>-intercept at <m>(500,0)</m>.
+      If we plot these, we get to mark especially relevant points given the context, and then
+      drawing a straight line between them gives us <xref ref="figure-medical-procedure"/>.
+    </p>
+    <figure xml:id="figure-medical-procedure">
+      <caption></caption>
+      <image width="100%">
+        <shortdescription>
+          A Cartesian plot where the x-axis represents $20 donors and the y-axis represents $100
+          donors; the line has a y-intercept of 100 $100 donors and an x-intercept of 500 $20 donors
+        </shortdescription>
+        <latex-image label="medical-procedure">
+          \begin{tikzpicture}
+            \begin{axis}[
+                xmin=-100,
+                xmax=600,
+                ymin=-100,
+                ymax=200,
+                xtick={0,100,...,500},
+                ytick={0,100},
+                minor xtick={-80,-60,...,580},
+                minor ytick={-80,-60,...,180},
+                ylabel near ticks,
+                xlabel near ticks,
+                ylabel={count of \$100 donors},
+                xlabel={count of \$20 donors},
+                width=\orccaprintwidth,
+                height=0.33\orccaprintwidth,
+              ]
+              \addplot+[domain=-100:600]{-1/5*x+100};
+              \addplot[soliddot] coordinates {(0, 100)};
+              \addplot[soliddot] coordinates {(500, 0)};
+            \end{axis}
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+  </subsection>
+
+  <subsection>
+    <title>The Importance of <m>x</m>- and <m>y</m>-Intercepts</title>                                        <idx><h>Intercept</h></idx>
+                                                                                                              <idx><h sortby="x-intercept"><m>x</m>-intercept</h></idx>
+                                                                                                              <idx><h sortby="y-intercept"><m>y</m>-intercept</h></idx>
+    <p>
+      With a linear relationship (and other types of equations too), we are often interested in the
+      <m>x</m>-intercept and <m>y</m>-intercept because they have special meaning in context. For
+      example, in <xref ref="figure-medical-procedure"/>, the <m>x</m>-intercept implies that if
+      <em>no one</em> donates <m>\$100</m>, you need <m>500</m> people to donate <m>\$20</m> to get
+      us to <m>\$10{,}000</m>. And the <m>y</m>-intercept implies if <em>no one</em> donates
+      <m>\$20</m>, you need <m>100</m> people to donate <m>\$100</m>. Let's look at another example.
+    </p>
+    <example>
+      <p>
+        James owns a restaurant that uses about <m>32</m> lb of flour every day. He just purchased
+        <m>1200</m> lb of flour. Model the amount of flour that remains <m>x</m> days later with a
+        linear equation, and interpret the meaning of its <m>x</m>-intercept and <m>y</m>-intercept.
+      </p>
+      <p>
+        Since the rate of change is constant (<m>-32</m> lb every day), and we know the initial
+        value, we can model the amount of flour at the restaurant with a
+        <xref ref="equation-slope-intercept-form" text="custom">slope-intercept form</xref> equation:
+        <me>
+          y=-32x+1200
+        </me>
+        where <m>x</m> represents the number of days passed since the initial purchase, and <m>y</m>
+        represents the amount of flour left (in lb).
+      </p>
+      <p>
+        A line's <m>x</m>-intercept is on the <m>x</m>-axis, so its <m>y</m>-value must be <m>0</m>.          <idx><h>Intercepts</h><h>finding</h></idx>
+        To find this line's <m>x</m>-intercept, we substitute <m>y</m> with <m>0</m>, and solve for
+        <m>x</m>:
+        <md>
+          <mrow>y\amp=-32x+1200</mrow>
+          <mrow>\substitute{0}\amp=-32x+1200</mrow>
+          <mrow>\highlight{-1200}\amp=-32x</mrow>
+          <mrow>\divideunder{-1200}{-32}\amp=x</mrow>
+          <mrow>37.5\amp=x</mrow>
+        </md>
+      </p>
+      <p>
+        So the line's <m>x</m>-intercept is at <m>(37.5,0)</m>. In context this means the flour
+        would last for <m>37.5</m> days.
+      </p>
+      <p>
+        A line's <m>y</m>-intercept is on the <m>y</m>-axis, so its <m>x</m>-value must be <m>0</m>.
+        This line equation is already in slope-intercept form, so we simply recognize that its
+        <m>y</m>-intercept is at <m>(0,1200)</m>. In general though, we would substitute <m>x</m>
+        with <m>0</m>, and we have:
+        <md>
+          <mrow>y\amp=-32x+1200</mrow>
+          <mrow>y\amp=-32(\substitute{0})+1200</mrow>
+          <mrow>y\amp=1200</mrow>
+        </md>
+      </p>
+      <p>
+        So yes, the line's <m>y</m>-intercept is at <m>(0,1200)</m>. This means that when the flour
+        was purchased, there was <m>1200</m> lb of it. In other words, the <m>y</m>-intercept tells
+        us one of the original pieces of information: in the beginning, James purchased <m>1200</m>
+        of flour.
+      </p>
+      <p>
+        The important thing is that both intercepts have relevant meaning in the context of the
+        example. One was the initial amount of flour, and the other was how long until we would run
+        out of flour.
+      </p>
+    </example>
+    <p>
+      If a line is in standard form, it may be easiest to graph it using its two intercepts.                  <idx><h>Intercept</h><h>graphing</h></idx>
+    </p>                                                                                                      <idx><h>Linear equations</h><h>intercepts used for graphing</h></idx>
+    <example xml:id="example-graph-by-intercepts">
+      <statement>
+        <p>
+          Graph <m>2x-3y=-6</m> using its intercepts. And then use the intercepts to calculate the
+          line's slope.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To graph a line by its <m>x</m>-intercept and <m>y</m>-intercept, it might help to first
+          set up a table like in <xref ref="figure-intercepts"/>:
+        </p>
+        <figure xml:id="figure-intercepts">
+          <caption>Intercepts of <m>2x-3y=-6</m></caption>
+          <tabular>
+            <col halign="left"/>
+            <col halign="center"/>
+            <col halign="center"/>
+            <col halign="center"/>
+            <row bottom="medium">
+              <cell/>
+              <cell><m>x</m>-value</cell>
+              <cell><m>y</m>-value</cell>
+              <cell>Intercepts</cell>
+            </row>
+            <row>
+              <cell><m>x</m>-intercept</cell>
+              <cell/>
+              <cell><m>0</m></cell>
+              <cell/>
+            </row>
+            <row>
+              <cell><m>y</m>-intercept</cell>
+              <cell><m>0</m></cell>
+              <cell/>
+              <cell/>
+            </row>
+          </tabular>
+        </figure>
+        <p>
+          A table like this might help you stay focused on searching for <em>two</em> points. As
+          To find an <m>x</m>-intercept, <m>y</m> must be <m>0</m>. This is why we put <m>0</m> in
+          the <m>y</m>-value cell of the <m>x</m>-intercept row. Similarly, a line's
+          <m>y</m>-intercept has <m>x=0</m>, and we put <m>0</m> into the <m>x</m>-value cell of the
+          <m>y</m>-intercept row.
+        </p>
+        <sidebyside widths="47% 47%" margins="0%">
+          <p>
+            Next, we calculate the line's <m>x</m>-intercept by substituting <m>y=0</m> into the
+            equation
+            <md>
+              <mrow>2x-3y\amp=-6</mrow>
+              <mrow>2x-3(\substitute{0})\amp=-6</mrow>
+              <mrow>2x\amp=-6</mrow>
+              <mrow>x\amp=-3</mrow>
+            </md>
+            So the line's <m>x</m>-intercept is <m>(-3,0)</m>.
+          </p>
+          <p>
+            Similarly, we substitute <m>x=0</m> into the equation to calculate the
+            <m>y</m>-intercept:
+            <md>
+              <mrow>2x-3y\amp=-6</mrow>
+              <mrow>2(\substitute{0})-3y\amp=-6</mrow>
+              <mrow>-3y\amp=-6</mrow>
+              <mrow>y\amp=2</mrow>
+            </md>
+            So the line's <m>y</m>-intercept is <m>(0,2)</m>.
+          </p>
+        </sidebyside>
+        <figure>
+          <caption>Intercepts of <m>2x-3y=-6</m></caption>
+          <tabular>
+            <col halign="left"/>
+            <col halign="center"/>
+            <col halign="center"/>
+            <col halign="center"/>
+            <row bottom="medium">
+              <cell/>
+              <cell><m>x</m>-value</cell>
+              <cell><m>y</m>-value</cell>
+              <cell>Intercepts</cell>
+            </row>
+            <row>
+              <cell><m>x</m>-intercept</cell>
+              <cell><m>-3</m></cell>
+              <cell><m>0</m></cell>
+              <cell><m>(-3,0)</m></cell>
+            </row>
+            <row>
+              <cell><m>y</m>-intercept</cell>
+              <cell><m>0</m></cell>
+              <cell><m>2</m></cell>
+              <cell><m>(0,2)</m></cell>
+            </row>
+          </tabular>
+        </figure>
+        <p>
+          With both intercepts' coordinates, we can graph the line:                                           <idx><h>Graphing</h><h>intercepts</h></idx>
+        </p>
+        <sidebyside widths="47% 47%" margins="0%">
+          <figure>
+            <caption>Graph of <m>2x-3y=-6</m></caption>
+            <image>
+              <shortdescription>
+                a coordinate grid with the graph of line 2x-3y=-6; the x-intercept is (-3,0) and the
+                y-intercept is (0,2)
+              </shortdescription>
+              <latex-image label="standard-form-2x-3yequals-6">
+                \begin{tikzpicture}
+                  \begin{axis}[
+                      xmin=-5,
+                      xmax=2,
+                      ymin=-1,ymax=4,
+                      minor xtick=,
+                      minor ytick=,
+                      xtick={-4,-3,...,1},
+                      ytick={1,2,3},
+                      width=0.47\orccaprintwidth,
+                      ]
+                    \addplot+[domain=-4.5:2]{2/3*x+2};
+                    \addplot[soliddot] coordinates {(0, 2)} node[above left] {$(0,2)$};
+                    \addplot[soliddot] coordinates {(-3, 0)} node[above left] {$(-3,0)$};
+                  \end{axis}
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+          </figure>
+          <p>
+            There is a slope triangle from the <m>x</m>-intercept to the origin up to the
+            <m>y</m>-intercept. It tells us that the slope is
+            <me>
+              m=\frac{\Delta y}{\Delta x}=\frac{2}{3}
+            </me>.
+          </p>
+        </sidebyside>
+      </solution>
+    </example>
+    <p>
+      This last example generalizes to a fact worth noting.
+    </p>
+    <fact>
+      <statement>
+        <p>                                                                                                   <idx><h>Slope</h><h>given intercepts</h></idx>
+          If a line's <m>x</m>-intercept is at <m>(r,0)</m> and its <m>y</m>-intercept is at
+          <m>(0,b)</m>, then the slope of the line is <m>-\frac{b}{r}</m>. (Unless the line passes
+          through the origin, in which case both <m>r</m> and <m>b</m> equal <m>0</m>, and then this
+          fraction is undefined. And the slope of the line could be anything.)
+        </p>
+      </statement>
+    </fact>
+    <exercise label="standard-form-identify-interepts-slope">
+      <webwork>
+        <pg-code>
+          Context("Point");
+          Context()->flags->set(reduceConstants=>0);
+          $xi=Compute("(500/99,0)");
+          $y=(1000/99)/4.3;
+          $yi=Compute("(0,$y)");
+          $m=-$y/(500/99);
+        </pg-code>
+        <introduction>
+          <p>
+            Consider the line with equation <m>2x+4.3y=\frac{1000}{99}</m>.
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              What is its <m>x</m>-intercept?
+            </p>
+            <p>
+              <var name="$xi" width="5" />
+            </p>
+          </statement>
+          <solution>
+            <p>
+              To find the <m>x</m>-intercept:
+              <md>
+                <mrow>2x+4.3y\amp=\frac{1000}{99}</mrow>
+                <mrow>2x+4.3(\substitute{0})\amp=\frac{1000}{99}</mrow>
+                <mrow>2x\amp=\frac{1000}{99}</mrow>
+                <mrow>x\amp=\frac{500}{99}</mrow>
+              </md>
+              So the <m>x</m>-intercept is at <m>\left(\frac{500}{99},0\right)</m>.
+            </p>
+          </solution>
+        </task>
+        <task>
+          <statement>
+            <p>
+              What is its <m>y</m>-intercept?
+            </p>
+            <p>
+              <var name="$yi" width="5" />
+            </p>
+          </statement>
+          <solution>
+            <p>
+              To find the <m>y</m>-intercept:
+              <md>
+                <mrow>2x+4.3y\amp=\frac{1000}{99}</mrow>
+                <mrow>2(\substitute{0})+4.3y\amp=\frac{1000}{99}</mrow>
+                <mrow>4.3y\amp=\frac{1000}{99}</mrow>
+                <mrow>y\amp=\multiplyleft{\frac{1}{4.3}}\frac{1000}{99}</mrow>
+                <mrow>y\amp\approx2.349\ldots</mrow>
+              </md>
+              So the <m>y</m>-intercept is at about <m>(0,2.349)</m>.
+            </p>
+          </solution>
+        </task>
+        <task>
+          <statement>
+            <p>
+              What is its slope?
+            </p>
+            <p>
+              <var name="$m" width="5" />
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Since we have the <m>x</m>- and <m>y</m>-intercepts,
+              we can calculate the slope:
+              <me>
+                m\approx-\frac{2.349}{\frac{500}{99}}=-\frac{2.349\cdot99}{500}\approx-0.4561
+              </me>.
+            </p>
+          </solution>
+        </task>
+      </webwork>
+    </exercise>
+    <exercise label="standard-form-plot">
+      <webwork>
+        <pg-macros>
+          <macro-file>parserGraphTool.pl</macro-file>
+        </pg-macros>
+        <pg-code>
+          Context("Point");
+          Context()->flags->set(reduceConstants=>0);
+          $xi=Compute("(4,0)");
+          $yi=Compute("(0,-6)");
+          $gt = GraphTool("{line, solid, $xi, $yi}")->with(
+            bBox => [-11, 11, 11, -11],
+            showInStatic => 0,
+          );
+        </pg-code>
+        <statement>
+          <p>
+            Consider the line with equation <m>3x-2y=12</m>. Graph the line by first finding its
+            <m>x</m>- and <m>y</m>-intercepts.
+          </p>
+          <instruction>
+            Enter the <m>x</m>-intercept here.
+          </instruction>
+          <p>
+            <var name="$xi" width="5" />
+          </p>
+          <instruction>
+            Enter the <m>y</m>-intercept here.
+          </instruction>
+          <p>
+            <var name="$yi" width="5" />
+          </p>
+          <p>
+            <var name="$gt" width="1" />
+          </p>
+        </statement>
+        <solution>
+          <p>
+            To find the <m>x</m>-intercept:
+            <md>
+              <mrow>3x-2y\amp=12</mrow>
+              <mrow>3x-2(\substitute{0})\amp=12</mrow>
+              <mrow>3x\amp=12</mrow>
+              <mrow>x\amp=4</mrow>
+            </md>
+            So the <m>x</m>-intercept is at <m>\left(4,0\right)</m>.
+          </p>
+          <p>
+            To find the <m>y</m>-intercept:
+            <md>
+              <mrow>3x-2y\amp=12</mrow>
+              <mrow>3(\substitute{0})-2y\amp=12</mrow>
+              <mrow>-2y\amp=12</mrow>
+              <mrow>y\amp=6\ldots</mrow>
+            </md>
+            So the <m>y</m>-intercept is at about <m>(0,-6)</m>.
+          </p>
+          <p>
+            So the graph is:
+          </p>
+          <image width="47%">
+            <latex-image>
+              \begin{tikzpicture}
+                \begin{axis}[
+                    width=0.47\orccaprintwidth,
+                  ]
+                  \addplot+[domain=-0.666:7]{-6+1.5*x};
+                \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </solution>
+      </webwork>
+    </exercise>
+  </subsection>
+
+  <subsection xml:id="subsection-transforming-between-standard-form-and-slope-intercept-form">
+    <title>Transforming between Standard Form and Slope-Intercept Form</title>
+    <p>
+      Sometimes a linear equation arises in
+      <xref ref="definition-standard-form" text="custom">standard form</xref>, but it would be
+      useful to see that equation in
+      <xref ref="equation-slope-intercept-form" text="custom">slope-intercept form</xref>. Or
+      perhaps, vice versa.
+    </p>
+    <example>
+      <statement>
+        <p>
+          Change <m>2x-3y=-6</m> to slope-intercept form, and then graph it. (This is the same
+          equation from <xref ref="example-graph-by-intercepts"/>).
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Since a line in slope-intercept form looks like <m>y=\ldots</m>, we will isolate <m>y</m>:
+        </p>
+        <sidebyside widths="47% 47%" margins="0%">
+          <p>
+            <md>
+              <mrow>2x-3y\amp=-6</mrow>
+              <mrow>-3y\amp=-6\subtractright{2x}</mrow>
+              <mrow>-3y\amp=-2x-6</mrow>
+              <mrow>y\amp=\divideunder{-2x-6}{-3}</mrow>
+              <mrow>y\amp=\frac{-2x}{-3}-\frac{6}{-3}</mrow>
+              <mrow>y\amp=\frac{2}{3}x+2</mrow>
+            </md>
+          </p>
+          <p>
+            In the third line, we wrote <m>-2x-6</m> on the right side, instead of <m>-6-2x</m>. The
+            only reason we did this is because we are headed to slope-intercept form, where the
+            <m>x</m>-term is traditionally written first.
+          </p>
+        </sidebyside>
+        <p>
+          Now we can see that the slope is <m>\frac{2}{3}</m> and the <m>y</m>-intercept is at
+          <m>(0,2)</m>. With these things found, we can graph the line using slope triangles.
+        </p>
+        <sidebyside widths="47% 47%" margins="0%">
+          <p>
+            Compare this graphing method with the Graphing by Intercepts method in
+            <xref ref="example-graph-by-intercepts"/>. We have more points in this graph, thus we
+            can graph the line more accurately.
+          </p>
+          <figure>
+            <caption>Graphing <m>2x-3y=-6 </m> with Slope Triangles</caption>
+            <image>
+              <shortdescription>
+                a coordinate gris with the graph of the line 2x-3y=-6; the y-intercept is 2 and the
+                slope is 2/3; slope triangles are shown along the line with a run of 3 and a rise of
+                2
+              </shortdescription>
+              <latex-image label="standard-form-2x-3yequals-6-slope-triangles">
+                \begin{tikzpicture}
+                  \begin{axis}[
+                      width=0.47\orccaprintwidth,
+                    ]
+                    \addplot+[]{2/3*x+2};
+                    \addplot[only marks,color=firstcolor]
+                    coordinates{
+                        (-6,-2)
+                        (-3,0)
+                        (0,2)
+                        (3,4)
+                        (6,6)
+                    };
+                    \addplot[guideline] coordinates {(0,2) (3,2)} node[pos=0.5,below] {$3$};
+                    \addplot[guideline,->] coordinates {(3,2) (3,3.7)} node[pos=0.588,right] {$2$};
+                    \addplot[guideline,->] coordinates {(3,4) (6,4) (6,5.7)};
+                    \addplot[guideline,->] coordinates {(0,2) (-3,2) (-3,0.3)};
+                    \addplot[guideline,->] coordinates {(-3,0) (-6,0) (-6,-1.7)};
+                  \end{axis}
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+
+          </figure>
+        </sidebyside>
+      </solution>
+    </example>
+
+    <example xml:id="example-graph-standard-c-zero">
+      <statement>
+        <p>
+          Graph <m>2x-3y=0</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First, we will try
+          (and fail)
+          to graph this line using its <m>x</m>- and <m>y</m>-intercepts.
+        </p>
+        <p>
+          Trying to find the <m>x</m>-intercept:
+          <md>
+            <mrow>2x-3y\amp=0</mrow>
+            <mrow>2x-3(\substitute{0})\amp=0</mrow>
+            <mrow>2x\amp=0</mrow>
+            <mrow>x\amp=0</mrow>
+          </md>
+          So the line's <m>x</m>-intercept is at <m>(0,0)</m>, at the origin. Hmm, the origin is
+          <em>also</em> on the <m>y</m>-axis<ellipsis /> So we've also found the <m>y</m>-intercept
+          even though that was not the immediate goal.
+        </p>
+        <p>
+          Since both intercepts are the same point, there is no way to use the intercepts alone to
+          graph this line. So what can be done?
+        </p>
+
+        <sidebyside widths="47% 47%" margins="0%" valign="top">
+          <p>
+            One is to convert the line equation into slope-intercept form:
+            <md>
+              <mrow>2x-3y\amp=0</mrow>
+              <mrow>-3y\amp=0\subtractright{2x}</mrow>
+              <mrow>-3y\amp=-2x</mrow>
+              <mrow>y\amp=\divideunder{-2x}{-3}</mrow>
+              <mrow>y\amp=\frac{2}{3}x</mrow>
+            </md>
+            So the line's slope is <m>\frac{2}{3}</m>, and we can graph the line using slope
+            triangles and the intercept at <m>(0,0)</m>, as in <xref ref="figure-through-origin"/>.
+          </p>
+
+          <figure xml:id="figure-through-origin">
+            <caption>Graphing <m>2x-3y=0 </m> with Slope Triangles</caption>
+            <image width="47%">
+              <shortdescription>
+                a coordinate grid with the graph of line 2x-3y=0; The line has a y-intercept of 0
+                and a slope of 2/3; slope triangles are shown along the line with a run of 3 and a
+                rise of 2
+              </shortdescription>
+              <latex-image label="standard-form-2x-3yequals0-slope-triangles">
+                \begin{tikzpicture}
+                  \begin{axis}[
+                      width=0.47\orccaprintwidth,
+                    ]
+                    \addplot+[]{2/3*x};
+                    \addplot[only marks,color=firstcolor] coordinates{(-6,-4) (-3,-2) (0,0) (3,2) (6,4)};
+                    \addplot[guideline] coordinates {(0,0) (3,0)} node[pos=0.5,above] {$3$};
+                    \addplot[guideline,->] coordinates {(3,0) (3,1.7)} node[pos=0.588,right] {$2$};
+                    \addplot[guideline,->] coordinates {(3,2) (6,2) (6,3.7)};
+                    \addplot[guideline,->] coordinates {(0,0) (-3,0) (-3,-1.7)};
+                    \addplot[guideline,->] coordinates {(-3,-2) (-6,-2) (-6,-3.7)};
+                  \end{axis}
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+          </figure>
+        </sidebyside>
+        <p>
+          If <m>C=0</m> in a
+          <xref ref="definition-standard-form" text="custom">standard form equation</xref>, it's
+          convenient to graph it by first converting the equation to
+          <xref ref="equation-slope-intercept-form" text="custom">slope-intercept form</xref>.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Write the equation <m>y=\frac{2}{3}x+2</m> in standard form.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Once we subtract <m>\frac{2}{3}x</m> on both sides of the equation, we have
+          <me>
+            -\frac{2}{3}x+y=2
+          </me>
+          Technically,
+          this equation is already in standard form <m>Ax+By=C</m>. However,
+          you might like to end up with an equation that has no fractions,
+          so you could multiply each side by <m>3</m>:
+          <md>
+            <mrow>\multiplyleft{3}\left(-\frac{2}{3}x+y\right)\amp=\multiplyleft{3}2</mrow>
+            <mrow>-2x+3y\amp=6</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <reading-questions>
+    <exercise label="what-kind-of-line-needs-standard-form">
+      <statement>
+        <p>
+          What kind of line has an equation in standard form, but cannot be written in
+          slope-intercept form or point-slope form?
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+    <exercise label="why-care-about-intercepts">
+      <statement>
+        <p>
+          What are some reasons why you might want to find the <m>x</m>- and <m>y</m>-intercepts of
+          a line?
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+    <exercise label="what-is-not-apparent-from-standard-form">
+      <statement>
+        <p>
+          What is not immediately apparent from standard form, that <em>is</em> immediately apparent
+          from slope-intercept form and point-slope form?
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+  </reading-questions>
+
+  <exercises>
+    <subexercises>
+      <title>Review and Warmup</title>
+      <exercisegroup cols="3">      
+        <introduction>
+          <p>
+            Isolate <m>y</m> in the given equation.
+          </p>
+        </introduction>
+        <exercise>
+          <webwork copy="webwork-solve-standard-linear-equation-for-y"/>
+        </exercise>
+        <exercise>
+          <webwork copy="webwork-solve-standard-linear-equation-for-y"/>
+        </exercise>
+        <exercise>
+          <webwork copy="webwork-solve-standard-linear-equation-for-y-2"/>
+        </exercise>
+        <exercise>
+          <webwork copy="webwork-solve-standard-linear-equation-for-y-2"/>
+        </exercise>
+        <exercise>
+          <webwork copy="webwork-solve-standard-linear-equation-for-y-4"/>
+        </exercise>
+        <exercise>
+          <webwork copy="webwork-solve-standard-linear-equation-for-y-4"/>
+        </exercise>
+      </exercisegroup>
+    </subexercises>
+
+    <subexercises>
+      <title>Skills Practice</title>
+      <exercisegroup cols="3">
+        <title>Slope and Intercepts</title>
+        <introduction>
+          <p>
+            Find both intercepts and the slope of the line.
+          </p>
+        </introduction>
+        <exercise label="standard-form-find-slope-and-intercepts-integers">
+          <webwork xml:id="webwork-standard-form-find-slope-and-intercepts-integers">
+            <pg-code>
+              ($x, $y) = random_subset(2, 2..9);
+              $C = lcm($x,$y);
+              $A = $C/$x;
+              $B = $C/$y;
+              Context()->variables->add(y => 'Real');
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              $left = Formula("$A x + $B y");
+              $right = Formula("$C");
+              Context("Point");
+              $xi = Point($x,0);
+              $yi = Point(0,$y);
+              Context("Fraction");
+              $m = Fraction(-$y/$x);
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <instruction>
+                Enter the <m>x</m>-intercept here.
+              </instruction>
+              <p>
+                <var name="$xi" width="5"/>
+              </p>
+              <instruction>
+                Enter the <m>y</m>-intercept here.
+              </instruction>
+              <p>
+                <var name="$yi" width="5"/>
+              </p>
+              <instruction>
+                Enter the slope here.
+              </instruction>
+              <p>
+                <var name="$m" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="standard-form-find-slope-and-intercepts-integers-copy">
+          <webwork copy="webwork-standard-form-find-slope-and-intercepts-integers"/>
+        </exercise>
+        <exercise label="standard-form-find-slope-and-intercepts-integers-one-neg">
+          <webwork xml:id="webwork-standard-form-find-slope-and-intercepts-integers-one-neg">
+            <pg-code>
+              ($x, $y) = random_subset(2, 2..9);
+              $C = lcm($x,$y);
+              ($x, $y) = (random(0,1))
+                ? (-$x, $y)
+                : ($x, -$y);
+              $C = lcm($x,$y);
+              $A = $C/$x;
+              $B = $C/$y;
+              Context()->variables->add(y => 'Real');
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              $left = Formula("$A x + $B y")->reduce;
+              $right = Formula("$C");
+              $xi = Point($x,0);
+              $yi = Point(0,$y);
+              Context("Fraction");
+              $m = Fraction(-$y/$x);
+              Context()->variables->add(solvar => 'Real');
+              Context()->flags->set(reduceConstants => 0);
+              $sol = Formula("solvar - ($A x)")->reduce;
+              $sol = $sol->substitute(solvar => Formula("$C"));
+              $sol2 = Formula("$m x + $C/$B");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <instruction>
+                Enter the <m>x</m>-intercept here.
+              </instruction>
+              <p>
+                <var name="$xi" width="5"/>
+              </p>
+              <instruction>
+                Enter the <m>y</m>-intercept here.
+              </instruction>
+              <p>
+                <var name="$yi" width="5"/>
+              </p>
+              <instruction>
+                Enter the slope here.
+              </instruction>
+              <p>
+                <var name="$m" width="5"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                Find the <m>x</m>-intercept by setting <m>y=0</m>. That makes
+                <m><var name="$A"/>x=<var name="$C"/></m>, so <m>x=<var name="$x"/></m>. And the
+                <m>x</m>-intercept is at <m><var name="$xi"/></m>.
+              </p>
+              <p>
+                Find the <m>y</m>-intercept by setting <m>x=0</m>. That makes
+                <m><var name="$B"/>y=<var name="$C"/></m>, so <m>y=<var name="$y"/></m>. And the
+                <m>y</m>-intercept is at <m><var name="$yi"/></m>.
+              </p>
+              <p>
+                Find the slope by isolating <m>y</m>:
+                <md>
+                  <mrow><var name="$left"/> \amp= <var name="$right"/></mrow>
+                  <mrow><var name="$B"/> y \amp= <var name="$sol"/></mrow>
+                  <mrow>y \amp= \frac{<var name="$sol"/>}{<var name="$B"/>}</mrow>
+                  <mrow>y \amp= <var name="$sol2"/></mrow>
+                </md>
+                So the slope is <m><var name="$m"/></m>.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="standard-form-find-slope-and-intercepts-integers-one-neg-copy">
+          <webwork copy="webwork-standard-form-find-slope-and-intercepts-integers-one-neg"/>
+        </exercise>
+        <exercise label="standard-form-find-slope-and-intercepts-integers-fractions">
+          <webwork xml:id="webwork-standard-form-find-slope-and-intercepts-integers-fractions">
+            <pg-code>
+              ($A, $B, $C) = random_pairwise_coprime([2 .. 9], [2 .. 9], [2 .. 9]);
+              Context("Fraction");
+              $x = Fraction($C/$A);
+              $y = Fraction($C/$B);
+              $m = Fraction(-$y/$x);
+              Context()->variables->add(y => 'Real');
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              $left = Formula("$A x + $B y")->reduce;
+              $right = Formula("$C");
+              Context("Point");
+              $xi = Compute("($x,0)");
+              $yi = Compute("(0,$y)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <instruction>
+                Enter the <m>x</m>-intercept here.
+              </instruction>
+              <p>
+                <var name="$xi" width="5"/>
+              </p>
+              <instruction>
+                Enter the <m>y</m>-intercept here.
+              </instruction>
+              <p>
+                <var name="$yi" width="5"/>
+              </p>
+              <instruction>
+                Enter the slope here.
+              </instruction>
+              <p>
+                <var name="$m" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="standard-form-find-slope-and-intercepts-integers-fractions-copy">
+          <webwork copy="webwork-standard-form-find-slope-and-intercepts-integers-fractions"/>
+        </exercise>
+        <exercise label="standard-form-find-slope-and-intercepts-large-integers-fractions">
+          <webwork xml:id="webwork-standard-form-find-slope-and-intercepts-large-integers-fractions">
+            <pg-code>
+              ($A, $B, $C) = random_subset(3, 20 .. 99);
+              ($A, $B) = (random(0,1))
+                ? (-$A, $B)
+                : ($A, -$B);
+              Context("Fraction");
+              $x = Fraction($C/$A);
+              $y = Fraction($C/$B);
+              $m = Fraction(-$y/$x);
+              Context()->variables->add(y => 'Real');
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              $left = Formula("$A x + $B y")->reduce;
+              $right = Formula("$C");
+              Context("Point");
+              $xi = Compute("($x,0)");
+              $yi = Compute("(0,$y)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <instruction>
+                Enter the <m>x</m>-intercept here.
+              </instruction>
+              <p>
+                <var name="$xi" width="5"/>
+              </p>
+              <instruction>
+                Enter the <m>y</m>-intercept here.
+              </instruction>
+              <p>
+                <var name="$yi" width="5"/>
+              </p>
+              <instruction>
+                Enter the slope here.
+              </instruction>
+              <p>
+                <var name="$m" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="standard-form-find-slope-and-intercepts-large-integers-fractions-copy">
+          <webwork copy="webwork-standard-form-find-slope-and-intercepts-large-integers-fractions"/>
+        </exercise>
+        <exercise label="standard-form-find-slope-and-intercepts-fractions">
+          <webwork xml:id="webwork-standard-form-find-slope-and-intercepts-fractions">
+            <pg-code>
+              Context("Fraction");
+              $A = Fraction(random_coprime([1 .. 9], [2 .. 9]));
+              $B = Fraction(random_coprime([1 .. 9], [2 .. 9]));
+              $C = Fraction(random_coprime([1 .. 9], [2 .. 9]));
+              $x = $C/$A;
+              $y = $C/$B;
+              $m = -$y/$x;
+              Context()->variables->add(y => 'Real');
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              $left = Formula("$A x + $B y")->reduce;
+              $right = Formula("$C");
+              Context("Point");
+              $xi = Compute("($x,0)");
+              $yi = Compute("(0,$y)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <instruction>
+                Enter the <m>x</m>-intercept here.
+              </instruction>
+              <p>
+                <var name="$xi" width="5"/>
+              </p>
+              <instruction>
+                Enter the <m>y</m>-intercept here.
+              </instruction>
+              <p>
+                <var name="$yi" width="5"/>
+              </p>
+              <instruction>
+                Enter the slope here.
+              </instruction>
+              <p>
+                <var name="$m" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="standard-form-find-slope-and-intercepts-fractions-copy">
+          <webwork copy="webwork-standard-form-find-slope-and-intercepts-fractions"/>
+        </exercise>
+        <exercise label="standard-form-find-slope-and-intercepts-decimals">
+          <webwork xml:id="webwork-standard-form-find-slope-and-intercepts-decimals">
+            <pg-code>
+              $A = random(1,9) + random(0.1, 0.9, 0.1);
+              $B = random(1,9) + random(0.1, 0.9, 0.1);
+              $C = random(1,9) + random(0.1, 0.9, 0.1);
+              ($A, $B) = (random(0,1))
+                ? (-$A, $B)
+                : ($A, -$B);
+              $x = $C/$A;
+              $y = $C/$B;
+              $m = -$y/$x;
+              Context()->variables->add(y => 'Real');
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              $left = Formula("$A x + $B y")->reduce;
+              $right = Formula("$C");
+              $xi = Point($x,0);
+              $yi = Point(0,$y);
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <instruction>
+                Enter the <m>x</m>-intercept here.
+              </instruction>
+              <p>
+                <var name="$xi" width="5"/>
+              </p>
+              <instruction>
+                Enter the <m>y</m>-intercept here.
+              </instruction>
+              <p>
+                <var name="$yi" width="5"/>
+              </p>
+              <instruction>
+                Enter the slope here.
+              </instruction>
+              <p>
+                <var name="$m" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="standard-form-find-slope-and-intercepts-decimals-copy">
+          <webwork copy="webwork-standard-form-find-slope-and-intercepts-decimals"/>
+        </exercise>
+      </exercisegroup>
+
+      <exercisegroup cols="4">
+        <title>Converting to Standard Form</title>
+        <introduction>
+          <p>
+            Write the linear equation in standard form.
+          </p>
+        </introduction>
+        <exercise label="write-slope-intercept-form-in-standard-form">
+          <webwork xml:id="webwork-write-slope-intercept-form-in-standard-form">
+            <pg-code>
+              Context("ImplicitPlane");
+              Context()->flags->set(reduceConstants=>0);
+              Context()->flags->set(reduceConstantFormulas=>0);
+              Context()->flags->set(showExtraParens=>0);
+              Context()->variables->are(x=>'Real', y=>'Real');
+              Context()->noreduce('(-x)-y','(-x)+y','(-x)*y','x*(-y)','-n');
+              $b = random(2,9,1);
+              $c = non_zero_random(-9,9,1);
+              $left0 = Compute("y");
+              $right0 = Compute("$b*x+$c")->reduce;
+              $ansPSstring = "$b*x-y=-$c";
+              if ($b>0) {
+                 $left1 = Compute("$b*x-y")->reduce;
+                 $nC = -$c;
+                 $ansPSstringTeX = $left1->TeX."=$nC";
+              } else {
+                 $left1 = Compute("-$b*x+y")->reduce;
+                 $ansPSstringTeX = $left1->TeX."=$c";
+              }
+              $s1 = Compute("-$b*x+y")->reduce;
+              $s2 = Compute("$b*x-y")->reduce;
+              $ansPS = ImplicitPlane($ansPSstring);
+              $evaluator=$ansPS->cmp(correct_ans_latex_string => $ansPSstringTeX
+                 ) -> withPostFilter(sub {
+                    my $ansHash = shift;
+                      my $student = $ansHash->{original_student_ans};
+                      my @sides = split('=',"$student");
+                    #if it's an implicit plane object, reset how student's answer is displayed:
+                    if (defined $ansHash->{student_formula}) {
+                    if ($ansHash->{student_formula}->cmp_class eq "an Implicit line") {
+                      $ansHash->{preview_text_string} = "$sides[0]=$sides[1]";
+                      my $leftTex = Formula("$sides[0]")->TeX;
+                      my $rightTex = Formula("$sides[1]")->TeX;
+                      $ansHash->{preview_latex_string} = "$leftTex=$rightTex";
+                      $ansHash->{student_ans} = $ansHash->{original_student_ans};
+                    }
+                    };
+                    # if they have it correct, then check each side to see
+                    # whether x and y are on the same side of =
+                    if ($ansHash->{score}) {
+                       if ( (($sides[0] =~ /x/) &amp;&amp; ($sides[1] =~ /y/)) || (($sides[1] =~ /x/) &amp;&amp; ($sides[0] =~ /y/)) ) {
+                       $ansHash->{score} = 0;
+                       $ansHash->{ans_message} = "This is an equation for the line, but it is not in standard form.";
+                       }
+                    }
+                    return $ansHash;
+                  });
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left0"/>=<var name="$right0"/></m>
+              </p>
+              <p>
+                <var name="$ansPS" evaluator="$evaluator" width="30" />
+              </p>
+            </statement>
+            <solution>
+              <p>
+                Standard form is <m>Ax+By=C</m>. We need to move <m>x</m>- and <m>y</m>-terms to the
+                same side of the equal sign.
+                <md>
+                  <mrow><var name="$left0"/>\amp=<var name="$right0"/></mrow>
+                  <mrow><var name="$left0"/>\subtractright{<var name="$b"/>x}\amp=<var name="$right0"/>\subtractright{<var name="$b"/>x}</mrow>
+                  <mrow><var name="$s1"/>\amp=<var name="$c"/></mrow>
+                  <mrow>(-1)(<var name="$s1"/>)\amp=(-1)(<var name="$c"/>)</mrow>
+                  <mrow><var name="$s2"/>\amp=<var name="$nC"/></mrow>
+                </md>
+              </p>
+              <p>
+                Note that <m><var name="$s1"/>=<var name="$c"/></m> is already in standard form, but
+                it's preferable to make the leading coefficient positive.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="write-slope-intercept-form-in-standard-form-copy">
+          <webwork copy="webwork-write-slope-intercept-form-in-standard-form"/>
+        </exercise>
+        <exercise label="write-slope-intercept-form-in-standard-form-fraction">
+          <webwork xml:id="webwork-write-slope-intercept-form-in-standard-form-fraction">
+            <pg-code>
+              Context("ImplicitPlane");
+              Context()->flags->set(reduceConstants=>0);
+              Context()->flags->set(reduceConstantFormulas=>0);
+              Context()->flags->set(showExtraParens=>0);
+              Context()->variables->are(x=>'Real', y=>'Real');
+              Context()->noreduce('(-x)-y','(-x)+y','(-x)*y','x*(-y)','-n');
+              $a = random(2,9,1);
+              do {$b = random(2,9,1);} until (gcd($a,$b)==1);
+              $c = non_zero_random(-9,9,1);
+              $bc = $b*$c;
+              $nbc = -$bc;
+              $left0 = Compute("y");
+              $right0 = Compute("$a/$b*x+$c");
+              $ansPSstring = "$a*x-$b*y=-$bc";
+              $left1 = Compute("$a*x-$b*y")->reduce;
+              $ansPSstringTeX = $left1->TeX."=$nbc";
+              $s1 = Compute("-$a*x+$b*y")->reduce;
+              $s2 = Compute("$a*x-$b*y")->reduce;
+              $ansPS = ImplicitPlane($ansPSstring);
+              $evaluator=$ansPS->cmp(correct_ans_latex_string => $ansPSstringTeX
+                 ) -> withPostFilter(sub {
+                    my $ansHash = shift;
+                      my $student = $ansHash->{original_student_ans};
+                      my @sides = split('=',"$student");
+                    #if it's an implicit plane object, reset how student's answer is displayed:
+                    if (defined $ansHash->{student_formula}) {
+                    if ($ansHash->{student_formula}->cmp_class eq "an Implicit line") {
+                      $ansHash->{preview_text_string} = "$sides[0]=$sides[1]";
+                      my $leftTex = Formula("$sides[0]")->TeX;
+                      my $rightTex = Formula("$sides[1]")->TeX;
+                      $ansHash->{preview_latex_string} = "$leftTex=$rightTex";
+                      $ansHash->{student_ans} = $ansHash->{original_student_ans};
+                    }
+                    };
+                    # if they have it correct, then check each side to see
+                    # whether x and y are on the same side of =
+                    if ($ansHash->{score}) {
+                       if ( (($sides[0] =~ /x/) &amp;&amp; ($sides[1] =~ /y/)) || (($sides[1] =~ /x/) &amp;&amp; ($sides[0] =~ /y/)) ) {
+                       $ansHash->{score} = 0;
+                       $ansHash->{ans_message} = "This is an equation for the line, but it is not in standard form.";
+                       }
+                    }
+                    return $ansHash;
+                  });
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left0"/>=<var name="$right0"/></m>
+              </p>
+              <p>
+                <var name="$ansPS" evaluator="$evaluator" width="30" />
+              </p>
+            </statement>
+            <solution>
+              <p>
+                A line's standard form is <m>Ax+By=C</m>.
+                We need to move <m>x</m> and <m>y</m> terms to the same side of the equal sign.
+                <md>
+                  <mrow><var name="$left0"/>\amp=<var name="$right0"/></mrow>
+                  <mrow>\multiplyleft{<var name="$b"/>}<var name="$left0"/>\amp=\multiplyleft{<var name="$b"/>}\left(<var name="$right0"/>\right)</mrow>
+                  <mrow><var name="$b"/>y\amp=<var name="$b"/>\left( \frac{<var name="$a"/>}{<var name="$b"/>}x \right)+<var name="$b"/>(<var name="$c"/>)</mrow>
+                  <mrow><var name="$b"/>y\amp=<var name="$a"/>x+<var name="$bc"/></mrow>
+                  <mrow><var name="$b"/>y\subtractright{<var name="$a"/>x}\amp=<var name="$a"/>x+<var name="$bc"/>\subtractright{<var name="$a"/>x}</mrow>
+                  <mrow><var name="$s1"/>\amp=<var name="$bc"/></mrow>
+                  <mrow>\multiplyleft{-1}(<var name="$s1"/>)\amp=\multiplyleft{-1}(<var name="$bc"/>)</mrow>
+                  <mrow><var name="$s2"/>\amp=<var name="$nbc"/></mrow>
+                </md>
+              </p>
+              <p>
+                Note that <m><var name="$s1"/>=<var name="$bc"/></m> is already in standard form,
+                but it's better to get rid of the leading negative sign in an equation.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="write-slope-intercept-form-in-standard-form-fraction2">
+          <webwork xml:id="webwork-write-slope-intercept-form-in-standard-form-fraction2">
+            <pg-code>
+              Context("ImplicitPlane");
+              Context()->flags->set(reduceConstants=>0);
+              Context()->flags->set(reduceConstantFormulas=>0);
+              Context()->flags->set(showExtraParens=>0);
+              Context()->variables->are(x=>'Real', y=>'Real');
+              Context()->noreduce('(-x)-y','(-x)+y','(-x)*y','x*(-y)','-n');
+              $a = random(2,9,1);
+              do {$b = random(2,9,1);} until (gcd($a,$b)==1);
+              $c = non_zero_random(-9,9,1);
+              $bc = $b*$c;
+              $ansPSstring = "$a*x+$b*y=$bc";
+              $left1 = Compute("$a*x+$b*y")->reduce;
+              $ansPSstringTeX = $left1->TeX."=$bc";
+              $s1 = Compute("$a*x+$b*y")->reduce;
+              $ansPS = ImplicitPlane($ansPSstring);
+              $evaluator=$ansPS->cmp(correct_ans_latex_string => $ansPSstringTeX
+                 ) -> withPostFilter(sub {
+                    my $ansHash = shift;
+                      my $student = $ansHash->{original_student_ans};
+                      my @sides = split('=',"$student");
+                    #if it's an implicit plane object, reset how student's answer is displayed:
+                    if (defined $ansHash->{student_formula}) {
+                    if ($ansHash->{student_formula}->cmp_class eq "an Implicit line") {
+                      $ansHash->{preview_text_string} = "$sides[0]=$sides[1]";
+                      my $leftTex = Formula("$sides[0]")->TeX;
+                      my $rightTex = Formula("$sides[1]")->TeX;
+                      $ansHash->{preview_latex_string} = "$leftTex=$rightTex";
+                      $ansHash->{student_ans} = $ansHash->{original_student_ans};
+                    }
+                    };
+                    # if they have it correct, then check each side to see
+                    # whether x and y are on the same side of =
+                    if ($ansHash->{score}) {
+                       if ( (($sides[0] =~ /x/) &amp;&amp; ($sides[1] =~ /y/)) || (($sides[1] =~ /x/) &amp;&amp; ($sides[0] =~ /y/)) ) {
+                       $ansHash->{score} = 0;
+                       $ansHash->{ans_message} = "This is an equation for the line, but it is not in standard form.";
+                       }
+                    }
+                    return $ansHash;
+                  });
+            </pg-code>
+            <statement>
+              <p>
+                <m>y=-\frac{<var name="$a"/>}{<var name="$b"/>}x+<var name="$c"/></m>
+              </p>
+              <p>
+                <var name="$ansPS" evaluator="$evaluator" width="30" />
+              </p>
+            </statement>
+            <solution>
+              <p>
+                A line's standard form is <m>Ax+By=C</m>.
+                We need to move <m>x</m> and <m>y</m> terms to the same side of the equal sign.
+                <md>
+                  <mrow>y\amp=-\frac{<var name="$a"/>}{<var name="$b"/>}x+<var name="$c"/></mrow>
+                  <mrow>\multiplyleft{<var name="$b"/>}y\amp=\multiplyleft{<var name="$b"/>}\left(-\frac{<var name="$a"/>}{<var name="$b"/>}x+<var name="$c"/>\right)</mrow>
+                  <mrow><var name="$b"/>y\amp=<var name="$b"/>\left( -\frac{<var name="$a"/>}{<var name="$b"/>}x \right)+<var name="$b"/>(<var name="$c"/>)</mrow>
+                  <mrow><var name="$b"/>y\amp=-<var name="$a"/>x+<var name="$bc"/></mrow>
+                  <mrow><var name="$b"/>y\addright{<var name="$a"/>x}\amp=-<var name="$a"/>x+<var name="$bc"/>\addright{<var name="$a"/>x}</mrow>
+                  <mrow><var name="$s1"/>\amp=<var name="$bc"/></mrow>
+                </md>
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+      </exercisegroup>
+
+      <exercisegroup cols="3">
+        <title>Graphs and Standard Form</title>
+        <introduction>
+          <p>
+            Plot the given standard form linear equation.
+          </p>
+        </introduction>
+        <exercise label="standard-form-plot-positive-integers">
+          <webwork xml:id="webwork-standard-form-plot-positive-integers">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              ($x, $y) = random_subset(2, 2..9);
+              $C = lcm($x,$y);
+              $A = $C/$x;
+              $B = $C/$y;
+              Context()->variables->add(y => 'Real');
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              $left = Formula("$A x + $B y")->reduce;
+              $right = Formula("$C");
+              $xi = Point($x,0);
+              $yi = Point(0,$y);
+              Context("Point");
+              Context()->flags->set(reduceConstants=>0);
+              $xi=Compute("($x,0)");
+              $yi=Compute("(0,$y)");
+              $gt = GraphTool("{line, solid, $xi, $yi}, {point, $xi}, {point, $yi}")->with(
+                bBox => [-11, 11, 11, -11],
+                availableTools => [ "PointTool", "LineTool" ],
+                showInStatic => 0,
+              );
+            </pg-code>
+            <statement>
+              <instruction>
+                Plot the <m>x</m>- and <m>y</m>-intercepts, as well as the line.
+              </instruction>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="standard-form-plot-positive-integers-copy">
+          <webwork copy="webwork-standard-form-plot-positive-integers"/>
+        </exercise>
+        <exercise label="standard-form-plot-positive-integers-one-neg">
+          <webwork xml:id="webwork-standard-form-plot-positive-integers-one-neg">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              ($x, $y) = random_subset(2, 2..9);
+              $C = lcm($x,$y);
+              $A = $C/$x;
+              $B = $C/$y;
+              ($A, $B) = (random(0,1))
+                ? (-$A, $B)
+                : ($A, -$B);
+              $x = $C/$A;
+              $y = $C/$B;
+              $m = -$A/$B;
+              $b = $C/$B;
+              Context()->variables->add(y => 'Real');
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              $left = Formula("$A x + $B y")->reduce;
+              $right = Formula("$C");
+              $xi = Point($x,0);
+              $yi = Point(0,$y);
+              Context("Point");
+              Context()->flags->set(reduceConstants=>0);
+              $xi=Compute("($x,0)");
+              $yi=Compute("(0,$y)");
+              $gt = GraphTool("{line, solid, $xi, $yi}, {point, $xi}, {point, $yi}")->with(
+                bBox => [-11, 11, 11, -11],
+                availableTools => [ "PointTool", "LineTool" ],
+                showInStatic => 0,
+              );
+              @domain = num_sort(-10,10,(10 - $b)/$m,(-10 - $b)/$m);
+              ($l,$r) = (@domain)[1,2];
+              $f = Formula("$m x + $b");
+            </pg-code>
+            <statement>
+              <instruction>
+                Plot the <m>x</m>- and <m>y</m>-intercepts, as well as the line.
+              </instruction>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+            </statement>
+            <solution>
+              <sidebyside widths="47% 47%">
+                <p>
+                  We can plot this by finding the <m>x</m>-intercept, which is at
+                  <m><var name="$xi"/></m>, and the <m>y</m>-intercept, which is at
+                  <m><var name="$yi"/></m>. After plotting these, we can just connect the dots and
+                  extend the line past them. It is highly recommended to do some quality control by
+                  checking that a few more points on the line you've drawn actually satisfy the
+                  equation.
+                </p>
+                <image>
+                  <latex-image>
+                    \begin{tikzpicture}
+                      \begin{axis}[
+                          xmin=-10,
+                          xmax=10,
+                          ymin=-10,
+                          ymax=10,
+                          xtick={-10,-5,5,10},
+                          ytick={-10,-5,5,10},
+                          minor xtick={-10,...,10},
+                          minor ytick={-10,...,10},
+                          width=0.47\orccaprintwidth,
+                        ]
+                        \addplot+[domain=$l:$r] {$f};
+                        \addplot[soliddot] coordinates {$xi $yi};
+                      \end{axis}
+                    \end{tikzpicture}
+                  </latex-image>
+                </image>
+              </sidebyside>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="standard-form-plot-positive-integers-one-neg-copy">
+          <webwork copy="webwork-standard-form-plot-positive-integers-one-neg"/>
+        </exercise>
+        <exercise label="standard-form-plot-positive-integers-both-neg">
+          <webwork xml:id="webwork-standard-form-plot-positive-integers-both-neg">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              ($x, $y) = random_subset(2, 2..9);
+              $C = lcm($x,$y);
+              $A = $C/$x;
+              $B = $C/$y;
+              $C = -$C;
+              $x = -$x;
+              $y = -$y;
+              Context()->variables->add(y => 'Real');
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              $left = Formula("$A x + $B y");
+              $right = Formula("$C");
+              $xi = Point($x,0);
+              $yi = Point(0,$y);
+              Context("Point");
+              Context()->flags->set(reduceConstants=>0);
+              $xi=Compute("($x,0)");
+              $yi=Compute("(0,$y)");
+              $gt = GraphTool("{line, solid, $xi, $yi}, {point, $xi}, {point, $yi}")->with(
+                bBox => [-11, 11, 11, -11],
+                availableTools => [ "PointTool", "LineTool" ],
+                showInStatic => 0,
+              );
+            </pg-code>
+            <statement>
+              <instruction>
+                Plot the <m>x</m>- and <m>y</m>-intercepts, as well as the line.
+              </instruction>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="standard-form-plot-positive-integers-both-neg-copy">
+          <webwork copy="webwork-standard-form-plot-positive-integers-both-neg"/>
+        </exercise>
+      </exercisegroup>
+    </subexercises>
+
+    <subexercises>
+      <title>Applications</title>
+      <exercise label="tea-bags">
+        <webwork xml:id="webwork-tea-bags">
+          <pg-macros>
+            <macro-file>randomPerson.pl</macro-file>
+          </pg-macros>
+          <pg-code>
+            Context("ImplicitPlane");
+            Context()->flags->set(reduceConstants=>0);
+            Context()->flags->set(reduceConstantFormulas=>0);
+            Context()->flags->set(showExtraParens=>0);
+            Context()->variables->are(x=>'Real', y=>'Real');
+            Context()->noreduce('(-x)-y','(-x)+y','(-x)*y','x*(-y)','-n');
+            do {
+              $A = random(20,75,5);
+              $B = random(10,50,5);
+            } until ($A != $B);
+            $C = $A*random(100,200);
+            $a = $A/100;
+            $b = $B/100;
+            $c = $C/100;
+            $ansSTstring = "$a*x+$b*y=$c";
+            $left1 = Compute("$a*x+$b*y")->reduce;
+            $ansSTstringTeX = $left1->TeX."=$c";
+            $ansST = ImplicitPlane($ansSTstring);
+            $evaluator=$ansST->cmp(correct_ans_latex_string => $ansSTstringTeX)->withPostFilter(sub{
+              my $ansHash = shift;
+              my $student = $ansHash->{original_student_ans};
+              my @sides = split('=',"$student");
+              #if it's an implicit plane object, reset how student's answer is displayed:
+              if (defined $ansHash->{student_formula}) {
+                if ($ansHash->{student_formula}->cmp_class eq "an Implicit line") {
+                  $ansHash->{preview_text_string} = "$sides[0]=$sides[1]";
+                  my $leftTex = Formula("$sides[0]")->TeX;
+                  my $rightTex = Formula("$sides[1]")->TeX;
+                  $ansHash->{preview_latex_string} = "$leftTex=$rightTex";
+                  $ansHash->{student_ans} = $ansHash->{original_student_ans};
+                }
+              };
+              # if they have it correct, then check each side to see
+              # whether x and y are on the same side of =
+              if ($ansHash->{score}) {
+                if ((($sides[0] =~ /x/) &amp;&amp; ($sides[1] =~ /y/)) || (($sides[1] =~ /x/) &amp;&amp; ($sides[0] =~ /y/))) {
+                  $ansHash->{score} = 0;
+                  $ansHash->{ans_message} = "This is an equation for the line, but it is not in standard form.";
+                 }
+              }
+              return $ansHash;
+            });
+            $p = randomPerson();
+            Context("Currency");
+            $Cd = Currency($C/100);
+          </pg-code>
+          <statement>
+            <p>
+              <var name="$p"/> is buying tea bags and sugar packets. Each tea bag costs
+              <var name="$A"/> cents, and each sugar packet costs <var name="$B"/> cents.
+              <var name="$p->They"/> can spend a total of <var name="$Cd"/>. Assume <var name="$p"/>
+              will spend the full amount. Write a linear equation in standard form that models the
+              number of tea bags and sugar packets <var name="$p->they"/> can purchase.
+            </p>
+            <instruction>
+              Associate the number of tea bags with variable <m>x</m> and the number of sugar packets with variable <m>y</m>.
+            </instruction>
+            <p>
+              <var name="$ansST" evaluator="$evaluator" width="16"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+      <exercise label="nuts">
+        <webwork xml:id="webwork-nuts">
+          <pg-macros>
+            <macro-file>randomPerson.pl</macro-file>
+          </pg-macros>
+          <pg-code>
+            Context("ImplicitPlane");
+            Context()->flags->set(reduceConstants=>0);
+            Context()->flags->set(reduceConstantFormulas=>0);
+            Context()->flags->set(showExtraParens=>0);
+            Context()->variables->are(x=>'Real', y=>'Real');
+            Context()->noreduce('(-x)-y','(-x)+y','(-x)*y','x*(-y)','-n');
+            $A = random(4,5,0.01);
+            $B = random(9,11,0.01);
+            $C = $A*random(12,20) + $B*random(12,20);
+            $C = int($C/100 + 0.5)*100;
+            $ansSTstring = "$A*x+$B*y=$C";
+            $left1 = Compute("$A*x+$B*y")->reduce;
+            $ansSTstringTeX = $left1->TeX."=$C";
+            $ansST = ImplicitPlane($ansSTstring);
+            $evaluator=$ansST->cmp(correct_ans_latex_string => $ansSTstringTeX)->withPostFilter(sub{
+              my $ansHash = shift;
+              my $student = $ansHash->{original_student_ans};
+              my @sides = split('=',"$student");
+              #if it's an implicit plane object, reset how student's answer is displayed:
+              if (defined $ansHash->{student_formula}) {
+                if ($ansHash->{student_formula}->cmp_class eq "an Implicit line") {
+                  $ansHash->{preview_text_string} = "$sides[0]=$sides[1]";
+                  my $leftTex = Formula("$sides[0]")->TeX;
+                  my $rightTex = Formula("$sides[1]")->TeX;
+                  $ansHash->{preview_latex_string} = "$leftTex=$rightTex";
+                  $ansHash->{student_ans} = $ansHash->{original_student_ans};
+                }
+              };
+              # if they have it correct, then check each side to see
+              # whether x and y are on the same side of =
+              if ($ansHash->{score}) {
+                if ((($sides[0] =~ /x/) &amp;&amp; ($sides[1] =~ /y/)) || (($sides[1] =~ /x/) &amp;&amp; ($sides[0] =~ /y/))) {
+                  $ansHash->{score} = 0;
+                  $ansHash->{ans_message} = "This is an equation for the line, but it is not in standard form.";
+                 }
+              }
+              return $ansHash;
+            });
+            $p = randomPerson();
+            Context("Currency")->flags->set(trimTrailingZeros => 1);
+            $Ad = Currency($A);
+            $Bd = Currency($B);
+            $Cd = Currency($C);
+          </pg-code>
+          <statement>
+            <p>
+              <var name="$p"/> is buying peanuts and cashews in bulk to make a barrel of mixed nuts.
+              Each pound of peanuts costs <var name="$Ad"/>, and each pound of cashews costs
+              <var name="$Bd"/>. <var name="$p->They"/> can spend a total of <var name="$Cd"/>.
+              Assume <var name="$p"/> will spend the full amount. Write a linear equation in
+              standard form that models the amounts of peanuts and cashews <var name="$p->they"/>
+              can purchase.
+            </p>
+            <instruction>
+              Associate the amount of peanuts with variable <m>x</m> and the amount of cashews with variable <m>y</m>.
+            </instruction>
+            <p>
+              <var name="$ansST" evaluator="$evaluator" width="16"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+      <exercise label="gasoline-and-ethanol">
+        <webwork xml:id="webwork-gasoline-and-ethanol">
+          <pg-macros>
+            <macro-file>randomPerson.pl</macro-file>
+          </pg-macros>
+          <pg-code>
+            Context("ImplicitPlane");
+            Context()->flags->set(reduceConstants=>0);
+            Context()->flags->set(reduceConstantFormulas=>0);
+            Context()->flags->set(showExtraParens=>0);
+            Context()->variables->are(x=>'Real', y=>'Real');
+            Context()->noreduce('(-x)-y','(-x)+y','(-x)*y','x*(-y)','-n');
+            $A = random(4,5,0.01);
+            $B = random(2,2.5,0.01);
+            $C = 0.9*$A + 0.1*$B;
+            $C = int($C*100 + 0.5)/100;
+            $ansSTstring = "$A*x+$B*y=$C";
+            $left1 = Compute("$A*x+$B*y")->reduce;
+            $ansSTstringTeX = $left1->TeX."=$C";
+            $ansST = ImplicitPlane($ansSTstring);
+            $evaluator=$ansST->cmp(correct_ans_latex_string => $ansSTstringTeX)->withPostFilter(sub{
+              my $ansHash = shift;
+              my $student = $ansHash->{original_student_ans};
+              my @sides = split('=',"$student");
+              #if it's an implicit plane object, reset how student's answer is displayed:
+              if (defined $ansHash->{student_formula}) {
+                if ($ansHash->{student_formula}->cmp_class eq "an Implicit line") {
+                  $ansHash->{preview_text_string} = "$sides[0]=$sides[1]";
+                  my $leftTex = Formula("$sides[0]")->TeX;
+                  my $rightTex = Formula("$sides[1]")->TeX;
+                  $ansHash->{preview_latex_string} = "$leftTex=$rightTex";
+                  $ansHash->{student_ans} = $ansHash->{original_student_ans};
+                }
+              };
+              # if they have it correct, then check each side to see
+              # whether x and y are on the same side of =
+              if ($ansHash->{score}) {
+                if ((($sides[0] =~ /x/) &amp;&amp; ($sides[1] =~ /y/)) || (($sides[1] =~ /x/) &amp;&amp; ($sides[0] =~ /y/))) {
+                  $ansHash->{score} = 0;
+                  $ansHash->{ans_message} = "This is an equation for the line, but it is not in standard form.";
+                 }
+              }
+              return $ansHash;
+            });
+            Context("Currency")->flags->set(trimTrailingZeros => 1);
+            $Ad = Currency($A);
+            $Bd = Currency($B);
+            $Cd = Currency($C);
+          </pg-code>
+          <statement>
+            <p>
+              To make fuel for an automobile, you could mix <m>x</m> gallons of gasoline with
+              <m>y</m> gallons of ethanol. Suppose that gasoline costs <var name="$Ad"/> per gallon
+              and ethanol costs <var name="$Bd"/> per gallon, and you want to mix these types of
+              fuel together to make fuel that costs <var name="$Cd"/> total. Write a linear equation
+              in standard form that models the amounts of gasoline and ethanol you could mix.
+            </p>
+            <p>
+              <var name="$ansST" evaluator="$evaluator" width="16"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+      <exercise label="gasoline-and-ethanol-by-weight">
+        <webwork xml:id="webwork-gasoline-and-ethanol-by-weight">
+          <pg-macros>
+            <macro-file>randomPerson.pl</macro-file>
+          </pg-macros>
+          <pg-code>
+            Context("ImplicitPlane");
+            Context()->flags->set(reduceConstants=>0);
+            Context()->flags->set(reduceConstantFormulas=>0);
+            Context()->flags->set(showExtraParens=>0);
+            Context()->variables->are(x=>'Real', y=>'Real');
+            Context()->noreduce('(-x)-y','(-x)+y','(-x)*y','x*(-y)','-n');
+            $A = random(710,770);
+            $B = 789;
+            $C = 0.9*$A + 0.1*$B;
+            $C = int($C*100 + 0.5)/100;
+            $ansSTstring = "$A*x+$B*y=$C";
+            $left1 = Compute("$A*x+$B*y")->reduce;
+            $ansSTstringTeX = $left1->TeX."=$C";
+            $ansST = ImplicitPlane($ansSTstring);
+            $evaluator=$ansST->cmp(correct_ans_latex_string => $ansSTstringTeX)->withPostFilter(sub{
+              my $ansHash = shift;
+              my $student = $ansHash->{original_student_ans};
+              my @sides = split('=',"$student");
+              #if it's an implicit plane object, reset how student's answer is displayed:
+              if (defined $ansHash->{student_formula}) {
+                if ($ansHash->{student_formula}->cmp_class eq "an Implicit line") {
+                  $ansHash->{preview_text_string} = "$sides[0]=$sides[1]";
+                  my $leftTex = Formula("$sides[0]")->TeX;
+                  my $rightTex = Formula("$sides[1]")->TeX;
+                  $ansHash->{preview_latex_string} = "$leftTex=$rightTex";
+                  $ansHash->{student_ans} = $ansHash->{original_student_ans};
+                }
+              };
+              # if they have it correct, then check each side to see
+              # whether x and y are on the same side of =
+              if ($ansHash->{score}) {
+                if ((($sides[0] =~ /x/) &amp;&amp; ($sides[1] =~ /y/)) || (($sides[1] =~ /x/) &amp;&amp; ($sides[0] =~ /y/))) {
+                  $ansHash->{score} = 0;
+                  $ansHash->{ans_message} = "This is an equation for the line, but it is not in standard form.";
+                 }
+              }
+              return $ansHash;
+            });
+          </pg-code>
+          <statement>
+            <p>
+              To make fuel for an automobile, you could mix <m>x</m> cubic meters of gasoline with
+              <m>y</m> cubic meters of ethanol. The density of gasoline is <var name="$A"/> kg per
+              cubic meter, and the density of ethanol is <var name="$B"/> kg per cubic meter. If you
+              want to mix these types of fuel together to make a total of <var name="$C"/> kg, write
+              a linear equation in standard form that models the amounts of gasoline and ethanol you
+              could mix.
+            </p>
+            <p>
+              <var name="$ansST" evaluator="$evaluator" width="16"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+    </subexercises>
+
+    <subexercises>
+      <title>Challenge</title>
+      <exercise>
+        <!-- Kara's challenge problem -->
+        <webwork>
+          <pg-code>
+            $little = random(2,10,2);
+            $medium = $little+1;
+            $medium2 = $medium+1;
+            do {$big = random($medium2,15,1);} until ($big % $little != 0);
+            $steepest = Formula("$big/$little");
+            $shallowest = Formula("$little/$big");
+          </pg-code>
+          <introduction>
+            <p>
+              Fill in the variables <m>A</m>, <m>B</m>, and <m>C</m> in <m>Ax + By = C</m> with the
+              numbers <m><var name="$little"/>, <var name="$medium"/></m> and
+              <m><var name="$big"/></m>. You may only use each number once in each part.
+            </p>
+          </introduction>
+          <task>
+            <statement>
+              <p>
+                For the steepest possible slope, <m>A</m> must be <var name="$big" width="4"/>,
+                <m>B</m> must be <var name="$little" width="4"/>, and <m>C</m> must be
+                <var name="$medium" width="4"/>.
+              </p>
+            </statement>
+            <solution>
+              <p>
+                Let's put <m>Ax + By = C</m> into slope-intercept form. Then, the equation
+                becomes <m>y = \frac{-A}{B}x + \frac{C}{B}</m>. To make the steepest slope
+                possible, we must maximize the fraction <m>\frac{A}{B}</m>. The possibilities
+                are <m>\frac{<var name="$little"/>}{<var name="$medium"/>}</m>,
+                <m>\frac{<var name="$little"/>}{<var name="$big"/>}</m>,
+                <m>\frac{<var name="$medium"/>}{<var name="$little"/>}</m>,
+                <m>\frac{<var name="$medium"/>}{<var name="$big"/>}</m>,
+                <m>\frac{<var name="$big"/>}{<var name="$little"/>}</m>,
+                and <m>\frac{<var name="$big"/>}{<var name="$medium"/>}</m>. The biggest of
+                these is <m>\frac{<var name="$big"/>}{<var name="$little"/>}</m>. Thus, <m>A</m>
+                must equal <var name="$big"/>, <m>B</m> must equal <var name="$little"/>, and
+                <m>C</m> must equal <var name="$medium"/>.
+              </p>
+            </solution>
+          </task>
+          <task>
+            <statement>
+              <p>
+                For the shallowest possible slope, <m>A</m> must be
+                <var name="$little" width="4"/>, <m>B</m> must be <var name="$big" width="4"/>,
+                and <m>C</m> must be <var name="$medium" width="4"/>.
+              </p>
+            </statement>
+            <solution>
+              <p>
+                To make the shallowest slope possible, we must minimize the fraction
+                <m>\frac{A}{B}</m>. The smallest of the possible fractions is
+                <m>\frac{<var name="$little"/>}{<var name="$big"/>}</m>. Thus, <m>A</m> must
+                equal <var name="$little"/>, <m>B</m> must equal <var name="$big"/>, and
+                <m>C</m> must equal <var name="$medium"/>.
+              </p>
+            </solution>
+          </task>
+        </webwork>
+      </exercise>
+    </subexercises>
+  </exercises>
+</section>
+

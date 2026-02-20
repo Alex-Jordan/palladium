@@ -1,0 +1,1839 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2016-2019                                                  -->
+<!-- Portland Community College                                           -->
+<!--                                                                      -->
+<!-- This file is part of Open Resources for Community College Algebra    -->
+<!-- (ORCCA).                                                             -->
+<!--                                                                      -->
+<!-- Open Resources for Community College Algebra is licensed under a     -->
+<!-- Creative Commons Attribution 4.0 International License.              -->
+<!--                                                                      -->
+<!-- Under this license, any user of this textbook or the textbook        -->
+<!-- contents must provide proper attribution as follows.                 -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- include in every digital format page view (including but not         -->
+<!-- limited to EPUB, PDF, and HTML) and on every physical printed page   -->
+<!-- the following attribution:                                           -->
+<!--                                                                      -->
+<!-- Original source material, products with readable and accessible      -->
+<!-- math content, and other information freely available at              -->
+<!-- pcc.edu/orcca.                                                       -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- reproduce any math content (such as math expressions and equations)  -->
+<!-- in a readable manner, and offer math content in at least one web     -->
+<!-- accessible manner.                                                   -->
+<!--                                                                      -->
+<!-- The Portland Community College name, Portland Community College      -->
+<!-- logo, ORCCA name, Open Resources for Community College Algebra name, -->
+<!-- ORCCA logo, and front and back cover designs are not subject to the  -->
+<!-- Creative Commons license and may not be reproduced without the       -->
+<!-- prior and express written consent of Portland Community College.     -->
+<!--                                                                      -->
+<!-- For questions regarding this license, please contact                 -->
+<!-- orcca-group@pcc.edu.                                                 -->
+<!-- *********************************************************************-->
+<section xml:id="section-compound-inequalities">
+  <title>Compound Inequalities</title>
+  <objectives>
+    <title>PCC Course Content and Outcome Guide</title>
+    <ul>
+      <li>
+        <xref ref="ccog-solve-compound-linear-inequalities" text="local">MTH 95 CCOG</xref>
+      </li>
+    </ul>
+  </objectives>
+
+  <introduction>
+    <p>
+      On the newest version of the SAT
+      (an exam that often qualifies students for colleges)
+      the minimum score that you can earn is <m>400</m> and the maximum score that you can earn is <m>1600</m>.
+      This means that only numbers between <m>400</m> and <m>1600</m>,
+      including these endpoints, are possible scores.
+      To plot all of these values on a number line would look something like:
+    </p>
+
+    <!-- TODO: this figure is not schema compliant to have figure in introduction.
+    But investigate how this was numbered in edition 2 PDF before removing it. -->
+    <figure xml:id="figure-possible-SAT-scores">
+      <caption>Possible SAT Scores</caption>
+      <image width="47%">
+        <shortdescription>a number line where the numbers 400 and 1600 are marked; the portion of the number line between 400 and 1600 has a thick line overlaying it; at 400, there is a left bracket character and at 1600, there is a right bracket character; text indicates the region highlighted represents all possible SAT scores.</shortdescription>
+
+            <latex-image>
+                <![CDATA[\begin{tikzpicture}
+                    \begin{axis}[numberline, xmin=-100, xmax=1700, xtick={400,1600}, minor xtick={-100,0,...,1700}]
+                        \addplot[closedinterval] coordinates {(400,0) (1600,0)} node[pos=0.5,above] {possibile SAT scores};
+                    \end{axis}
+                \end{tikzpicture}]]>
+            </latex-image>
+      </image>
+
+    </figure>
+
+    <p>
+      Going back to the original statement,
+      <q>the minimum score that you can earn is <m>400</m> and the maximum score that you can earn is <m>1600</m>,</q>
+      this really says two things.
+      First, it says that <m>(\text{a SAT score})\geq400</m>,
+      and second, that <m>(\text{a SAT score})\le1600</m>.
+      When we combine two inequalities like this into a single problem,
+      it becomes a <term>compound inequality</term>.
+    </p>
+
+    <p>
+      Our lives are often constrained by the compound inequalities of reality:
+      you need to buy enough materials to complete your project,
+      but you can only fit so much into your vehicle;
+      you would like to finish your degree early,
+      but only have so much money and time to put toward your courses;
+      you would like a vegetable garden big enough to supply you with veggies all summer long,
+      but your yard or balcony only gets so much sun.
+      In the rest of the section we hope to illuminate how to think mathematically about problems like these.
+    </p>
+
+    <figure>
+      <caption>Alternative Video Lesson</caption>
+      <video youtubeplaylist="PLfPh0EsBc0yIJ7nSw6k49Z3QiZQKXjYOR" />
+    </figure>
+
+    <p>
+      Before continuing,
+      a review on how notation for intervals works may be useful,
+      and you may benefit from revisiting <xref ref="section-comparison-symbols-and-notation-for-intervals">Section</xref>.
+      Then a refresher on solving linear inequalities may also benefit you,
+      which you can revisit in <xref ref="section-solving-multistep-linear-inequalities">Section</xref>
+      and <xref ref="section-equations-and-inequalities-with-fractions">Section</xref>.
+    </p>
+  </introduction>
+
+  <subsection>
+    <title>Unions of Intervals</title>
+    <definition xml:id="definition-union">
+
+      <notation>
+        <usage><m>A\cup B</m></usage>
+        <shortdescription>Union of two sets.</shortdescription>
+      </notation>
+
+      <statement>
+        <p>
+          The <term>union</term>
+              <idx><h>union</h></idx>
+          of two sets, <m>A</m> and <m>B</m>,
+          is the set of all elements contained in either <m>A</m> or <m>B</m>
+          (or both).
+          We write <m>A\cup B</m> to indicate the union of the two sets.
+        </p>
+
+        <p>
+          In other words,
+          the union of two sets is what you get if you toss every number in both sets into a bigger set.
+        </p>
+      </statement>
+    </definition>
+
+    <example>
+      <p>
+        The union of sets <m>\{1,2,3,4\}</m> and
+        <m>\{3,4,5,6\}</m> is the set of all elements from either set.
+        So <m>\{\highlight{1,2,3,4}\}\cup\{3,4,\highlight{5,6}\}=\{\highlight{1,2,3,4,5,6}\}</m>.
+        Note that we don't write duplicates.
+      </p>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Visualize the union of the sets
+          <m>(-\infty,4)</m> and <m>[7,\infty)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First we make a number line with both intervals drawn to understand what both sets mean.
+        </p>
+        <figure xml:id="figure-infinite-union-example">
+          <caption>A number line sketch of <m>(-\infty,4)</m> as well as <m>[7,\infty)</m></caption>
+          <image width="47%">
+            <shortdescription>a number line where the numbers 0, 4, and 7 are marked; a thick line is above the x-axis starting at 7 with a left bracket and going to the right with an arrow; another thick line is above the first line starting at 4 with a left parenthesis and going to the left with an arrow.</shortdescription>
+
+                 <latex-image>
+                  <![CDATA[\begin{tikzpicture}
+                      \begin{axis}[numberline, xmin=-1, xmax=12, xtick={4,7}, minor xtick={-1,0,...,12}]
+                          \addplot[closedinfiniteinterval] coordinates {(7,0.4) (12,0.4)};
+                          \addplot[infiniteopeninterval, color=secondcolor] coordinates {(-1,0.4) (4,0.4)};
+                      \end{axis}
+                  \end{tikzpicture}]]>
+              </latex-image>
+          </image>
+
+        </figure>
+
+        <p>
+          The two intervals should be viewed as a single object when stating the union,
+          so here is the picture of the union.
+          It looks the same, but now it is a graph of a single set.
+        </p>
+
+        <figure xml:id="figure-infinite-union-example-solution">
+          <caption>A number line sketch of <m>(-\infty,4)\cup[7,\infty)</m></caption>
+          <image width="47%">
+            <shortdescription>a number line where the numbers 0, 4, and 7 are marked; a thick line is above the x-axis starting at 7 with a left bracket and going to the right with an arrow; another thick line is above the first line starting at 4 with a right parenthesis and going to the left with an arrow.</shortdescription>
+              <latex-image>
+                <![CDATA[\begin{tikzpicture}
+                    \begin{axis}[numberline, xmin=-1, xmax=12, xtick={4,7}, minor xtick={-1,0,...,12}]
+                        \addplot[closedinfiniteinterval, color=thirdcolor] coordinates {(7,0.4) (12,0.4)};
+                        \addplot[infiniteopeninterval, color=thirdcolor] coordinates {(-1,0.4) (4,0.4)};
+                    \end{axis}
+                \end{tikzpicture}]]>
+              </latex-image>
+          </image>
+        </figure>
+      </solution>
+    </example>
+
+        <definition xml:id="definition-intersection">
+            <notation>
+                <usage><m>A\cap B</m></usage>
+                <shortdescription>Intersection of two sets.</shortdescription>
+            </notation>
+            <statement>
+                <p>The <term>intersection</term><idx><h>intersection</h></idx> of two sets, <m>A</m> and <m>B</m>, is the set of all elements that are in <m>A</m> <term>and</term> <m>B</m>. We write <m>A\cap B</m> to indicate the intersection of the two sets.</p>
+                <p>In other words, the intersection of two sets is where the two sets overlap.</p>
+            </statement>
+        </definition>
+
+        <example>
+            <p>The intersection of sets <m>\{1,2,3,4\}</m> and <m>\{3,4,5,6\}</m> is the set of all elements that are in common to both sets. So <m>\{1,2,\highlight{3,4}\}\cap\{\highlight{3,4},5,6\}=\{\highlight{3,4}\}</m>.</p>
+        </example>
+
+        <!-- <example>
+            <statement>
+                <p>Find the union of the sets <m>[-3,5)</m> and <m>[2,8)</m>.</p>
+            </statement>
+            <solution>
+                <p>To find the union of the sets <m>[-3,5)</m> and <m>[2,8)</m>, first we draw a number line with both intervals drawn to visualize both sets.</p>
+                <figure xml:id="figure-intro-union-example">
+                <caption>A number line sketch of <m>[-3,5)</m> and <m>[2,8)</m></caption>
+                    <image width="47%">
+                        <shortdescription>a number line where the numbers -3, 0, 2, 5 and 8 are marked; a thick line is above the x-axis from -3 to 5 with a left bracket at -3 and a parenthesis at 5; another thick line is above the first line from 2 to 8 with a left bracket at 2 and a parenthesis at 8.</shortdescription>
+                           <latex-image>
+                            <![CDATA[\begin{tikzpicture}
+                                \begin{axis}[numberline, xmin=-5, xmax=10, xtick={-3,2,5,8}, minor xtick={-5,-4,...,10}]
+                                    \addplot[closedopeninterval] coordinates {(-3,0.4) (5,0.4)};
+                                    \addplot[closedopeninterval, color=secondcolor] coordinates {(2,1) (8,1)};
+                                \end{axis}
+                            \end{tikzpicture}]]>
+                        </latex-image>
+                       </image>
+                </figure>
+                <p>Recall that the union of two sets is the set of the combination of numbers from both sets. Looking at the graph, we need to include all of the numbers from both colored lines. Imagine pressing these two colored lines together as if they were long strands of modeling clay. The new combined strand would go from <m>-3</m> all the way to <m>8</m>. Note that <m>-3</m> would be included on this new line because it was in <m>[-3,5)</m>, but <m>8</m> wouldn't be on this new line because it wasn't on either of the lines.</p>
+
+                <figure xml:id="figure-intro-union-example-solution">
+                <caption>A number line sketch of the union of <m>[-3,5)</m> and <m>[2,8)</m></caption>
+                    <image width="47%">
+                        <shortdescription>a number line where the numbers -3, 0, 2, 5 and 8 are marked; a thick line is above the x-axis from -3 to 8 with a left bracket at -3 and a parenthesis at 8.</shortdescription>
+                           <latex-image>
+                            <![CDATA[\begin{tikzpicture}
+                                \begin{axis}[numberline, xmin=-5, xmax=10, xtick={-3,2,5,8}, minor xtick={-5,-4,...,10}]
+                                    \addplot[closedopeninterval, color=thirdcolor] coordinates {(-3,0.4) (8,0.4)};
+                                \end{axis}
+                            \end{tikzpicture}]]>
+                        </latex-image>
+                       </image>
+                </figure>
+
+                <p>In conclusion, <me>[-3,5)\cup[2,8)=[-3,8)</me>.</p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>Find the intersection of the sets <m>[-3,5)</m> and <m>[2,8)</m>.</p>
+            </statement>
+            <solution>
+                <p>To find the intersection of the sets <m>[-3,5)</m> and <m>[2,8)</m>, first we draw a number line with both intervals drawn to visualize the overlap of the sets.</p>
+                <figure xml:id="figure-intro-intersection-example">
+                <caption>A number line sketch of <m>[-3,5)</m> and <m>[2,8)</m></caption>
+                    <image width="47%">
+                        <shortdescription>a number line where the numbers -3, 0, 2, 5 and 8 are marked; a thick line is above the x-axis from -3 to 5 with a left bracket at -3 and a parenthesis at 5; another thick line is above the first line from 2 to 8 with a left bracket at 2 and a parenthesis at 8.</shortdescription>
+                           <latex-image>
+                            <![CDATA[\begin{tikzpicture}
+                                \begin{axis}[numberline, xmin=-5, xmax=10, xtick={-3,2,5,8}, minor xtick={-5,-4,...,10}]
+                                    \addplot[closedopeninterval] coordinates {(-3,0.4) (5,0.4)};
+                                    \addplot[closedopeninterval, color=secondcolor] coordinates {(2,1) (8,1)};
+                                \end{axis}
+                            \end{tikzpicture}]]>
+                        </latex-image>
+                       </image>
+                </figure>
+                <p>Recall that the intersection of two sets is the set of the numbers in common to both sets. The lines have numbers in common on a long stretch where they overlap. How would we describe all of the numbers where the two lines overlap? In English, we might say that the lines overlap at every number between <m>2</m> and <m>5</m>. Note that the number <m>2</m> is in both sets, but since <m>5</m> is not in the set <m>[-3,5)</m>, we should exclude <m>5</m> from the intersection. The description we have come up with the same as the interval <m>[2,5)</m>. </p>
+                <figure xml:id="figure-intro-intersection-example-solution">
+                <caption>A number line sketch of the intersection of <m>[-3,5)</m> and <m>[2,8)</m></caption>
+                    <image width="47%">
+                        <shortdescription>a number line where the numbers -3, 0, 2, 5 and 8 are marked; a thick line is above the x-axis from 2 to 5 with a left bracket at 2 and a parenthesis at 5.</shortdescription>
+                           <latex-image>
+                            <![CDATA[\begin{tikzpicture}
+                                \begin{axis}[numberline, xmin=-5, xmax=10, xtick={-3,2,5,8}, minor xtick={-5,-4,...,10}]
+                                    \addplot[closedopeninterval, color=thirdcolor] coordinates {(2,0.4) (5,0.4)};
+                                \end{axis}
+                            \end{tikzpicture}]]>
+                        </latex-image>
+                       </image>
+                </figure>
+                <p>In conclusion, <me>[-3,5)\cap[2,8)=[2,5)</me>.</p>
+            </solution>
+        </example> -->
+
+        <!-- <example>
+            <statement>
+                <p>Find the union of the sets <m>[4,\infty)</m> and <m>(7,\infty)</m>.</p>
+            </statement>
+            <solution>
+                <p>To find the union of the sets <m>[4,\infty)</m> and <m>(7,\infty)</m>, first we draw a number line with both intervals drawn to visualize both sets.</p>
+                <figure xml:id="figure-infinite-union-example">
+                <caption>A number line sketch of <m>[4,\infty)</m> and <m>(7,\infty)</m></caption>
+                    <image width="47%">
+                        <shortdescription>a number line where the numbers 0, 4, and 7 are marked; a thick line is above the x-axis starting at 4 with a left bracket and going to the right with an arrow; another thick line is above the first line starting at 7 with a left parenthesis and going to the right with an arrow.</shortdescription>
+                           <latex-image>
+                            <![CDATA[\begin{tikzpicture}
+                                \begin{axis}[numberline, xmin=-1, xmax=12, xtick={4,7}, minor xtick={-1,0,...,12}]
+                                    \addplot[closedinfiniteinterval] coordinates {(4,0.4) (12,0.4)};
+                                    \addplot[openinfiniteinterval, color=secondcolor] coordinates {(7,1) (12,1)};
+                                \end{axis}
+                            \end{tikzpicture}]]>
+                        </latex-image>
+                       </image>
+                </figure>
+                <p>Recall that the union of two sets is what we get when we combine both sets together. Again, imagine that the two colored line were made out of modeling clay and roll them together. The union will be the result of rolling the two strands together. That combination will have the number <m>4</m> in it because it was on <m>[4,\infty)</m>. A graph of that combination strand is shown.</p>
+                <figure xml:id="figure-infinite-union-example-solution">
+                <caption>A number line sketch of the union of <m>[4,\infty)</m> and <m>(7,\infty)</m></caption>
+                    <image width="47%">
+                        <shortdescription>a number line where the numbers 0, 4, and 7 are marked; a thick line is above the x-axis starting at 4 with a left bracket and going to the right with an arrow.</shortdescription>
+                           <latex-image>
+                            <![CDATA[\begin{tikzpicture}
+                                \begin{axis}[numberline, xmin=-1, xmax=12, xtick={4,7}, minor xtick={-1,0,...,12}]
+                                    \addplot[closedinfiniteinterval, color=thirdcolor] coordinates {(4,0.4) (12,0.4)};
+                                \end{axis}
+                            \end{tikzpicture}]]>
+                        </latex-image>
+                       </image>
+                </figure>
+                <p>In conclusion, <me>[4,\infty)\cup(7,\infty)=[4,\infty)</me>.</p>
+              </solution>
+        </example> -->
+        <example>
+            <statement>
+                <p>Find the intersection of the sets <m>(-\infty,5)</m> and <m>[3,\infty)</m>.</p>
+            </statement>
+            <solution>
+                <p>To find the intersection of the sets <m>(-\infty,5)</m> and <m>[3,\infty)</m>, first we draw a number line with both intervals drawn to visualize where the sets overlap.</p>
+                <figure xml:id="figure-infinite-intersection-example">
+                <caption>A number line sketch of <m>(-\infty,5)</m> and <m>[-3,\infty)</m></caption>
+                    <image width="47%">
+                        <shortdescription>a number line where the numbers -3, 0, and 5 are marked; a thick line is above the x-axis starting at -3 with a left bracket and going to the right with an arrow; another thick line is above the first line starting at 5 with a right parenthesis and going to the left with an arrow.</shortdescription>
+                           <latex-image>
+                            <![CDATA[\begin{tikzpicture}
+                                \begin{axis}[numberline, xmin=-5, xmax=7, xtick={-3,5}, minor xtick={-5,-4,...,7}]
+                                    \addplot[infiniteopeninterval] coordinates {(-5,0.4) (5,0.4)};
+                                    \addplot[closedinfiniteinterval, color=secondcolor] coordinates {(-3,1) (7,1)};
+                                \end{axis}
+                            \end{tikzpicture}]]>
+                        </latex-image>
+                       </image>
+                </figure>
+                <p>Recall that the intersection of two sets is the set of the numbers in common to both sets. In English, we might say that the lines overlap at every number between <m>-3</m> and <m>5</m>. This description is the same as the interval <m>[-3,5)</m>.</p>
+                <figure xml:id="figure-infinite-intersection-example-solution">
+                <caption>A number line sketch of <m>[-3,5)</m></caption>
+                    <image width="47%">
+                        <shortdescription>a number line where the numbers -3, 0, and 5 are marked; a thick line is above the x-axis starting at -3 with a right bracket and going to the right to 5 with a right parenthesis.</shortdescription>
+                           <latex-image>
+                            <![CDATA[\begin{tikzpicture}
+                                \begin{axis}[numberline, xmin=-5, xmax=7, xtick={-3,5}, minor xtick={-5,-4,...,7}]
+                                    \addplot[closedopeninterval, color=thirdcolor] coordinates {(-3,0.4) (5,0.4)};
+                                \end{axis}
+                            \end{tikzpicture}]]>
+                        </latex-image>
+                       </image>
+                </figure>
+
+                <p>In conclusion, <me>[-3,\infty)\cap(-\infty,5)=[-3,5)</me>.</p>
+            </solution>
+        </example>
+
+        <remark>
+          <p>
+            Note that every intersection of two intervals can and should be simplified in some way.
+            <!-- Even if the sets have nothing in common at all, as in <m>(-\infty,1]</m> and <m>[5,\infty)</m>, their intersection can be written as <m>(-\infty,1]\cap[5,\infty)=\emptyset</m>. -->
+            On the other hand, there <em>are</em> unions which cannot be algebraically simplified.
+            For example, if the two sets have nothing in common, as in <m>(-\infty,4)</m> and <m>[7,\infty)</m> again, then the union is simply <m>(-\infty,4)\cup[7,\infty)</m> which is our final simplification.
+          </p>
+        </remark>
+
+        <example>
+            <statement>
+                <p>Simplify the intersections and unions.<ol marker="a." cols="2">
+                    <!-- <li><p><m>\{2,4,6,8\}\cup\{1,2,3,4\}</m>.</p></li> -->
+                    <!-- <li><p><m>\{2,4,6,8\}\cap\{1,2,3,4\}</m>.</p></li> -->
+                    <!-- <li><p><m>\{2,4,6,8\}\cup\{1,3,5,7\}</m>.</p></li> -->
+                    <!-- <li><p><m>\{2,4,6,8\}\cap\{1,3,5,7\}</m>.</p></li> -->
+                    <!-- <li><p><m>(-\infty,9]\cup[-\infty,-3]</m>.</p></li> -->
+                    <!-- <li><p><m>(-\infty,9]\cap[-\infty,-3]</m>.</p></li> -->
+                    <li>
+                      <p>
+                        <m>(-\infty,12)\cup[-3,\infty)</m>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <m>(-\infty,12)\cap[-3,\infty)</m>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <m>(-\infty,-2]\cup[4,\infty)</m>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <m>(-\infty,-2]\cap[4,\infty)</m>
+                      </p>
+                    </li>
+                    <!-- <li><p><m>[-7,8)\cup(0,12]</m>.</p></li> -->
+                    <!-- <li><p><m>[-7,8)\cap(0,12]</m>.</p></li> -->
+                </ol></p>
+            </statement>
+            <solution>
+                <p><ol marker="a.">
+                    <!-- <li><p><m>\{2,4,6,8\}\cup\{1,2,3,4\}=\{1,2,3,4,6,8\}</m>.</p></li> -->
+                    <!-- <li><p><m>\{2,4,6,8\}\cap\{1,2,3,4\}=\{2,4\}</m>.</p></li> -->
+                    <!-- <li><p><m>\{2,4,6,8\}\cup\{1,3,5,7\}=\{1,2,3,4,5,6,7,8\}</m>.</p></li> -->
+                    <!-- <li><p><m>\{2,4,6,8\}\cap\{1,3,5,7\}=\emptyset</m>.</p></li> -->
+                    <!-- <li><p><m>(-\infty,9]\cup(-\infty,-3]=(-\infty,9]</m>.</p></li> -->
+                    <!-- <li><p><m>(-\infty,9]\cap(-\infty,-3]=(-\infty,-3]</m>.</p></li> -->
+                    <li>
+                      <p>
+                        <m>(-\infty,12)\cup[-3,\infty)=\mathbb{R}</m>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <m>(-\infty,12)\cap[-3,\infty)=[-3,12)</m>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <m>(-\infty,-2]\cup[4,\infty)=(-\infty,-2]\cup[4,\infty)</m>
+                      </p>
+                      <p>
+                        This union cannot be simplified because the two sets have nothing in common.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <m>(-\infty,-2]\cap[4,\infty)=\emptyset</m>
+                      </p>
+                      <p>
+                        Since the two sets have nothing in common, their intersection is empty.
+                      </p>
+                    </li>
+                    <!-- <li><p><m>[-7,8)\cup(0,12]=[-7,12]</m>.</p></li> -->
+                    <!-- <li><p><m>[-7,8)\cap(0,12]=(0,8)</m>.</p></li> -->
+                </ol></p>
+            </solution>
+        </example>
+
+        <remark>
+          <p>
+            In this section, we mostly use <xref ref="definition-interval-notation" text="custom">interval notation</xref>
+            to answer questions.
+            Recall that we can also use <xref ref="definition-set-builder-notation" text="custom">set builder notation</xref>.
+            For example, the set <m>[3,\infty)</m> can also be written as <m>\{x\mid x\ge 3\}</m>.
+          </p>
+        </remark>
+
+        <!-- <example>
+            <statement>
+                <p>Simplify the intersections and unions.</p>
+                <p>
+                    <ol>
+                        <li><m>\{x\mid x\ge 3\}\cap\{x\mid x\lt 5\}</m></li>
+                        <li><m>\{y\mid y\le 7\}\cup\{y\mid y\lt -12\}</m></li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol>
+                        <li><m>\{x\mid x\ge 3\}\cap\{x\mid x\lt 5\}=\{x\mid 3\le x \lt 5\}</m></li>
+                        <li><m>\{y\mid y\le 7\}\cup\{y\mid y\lt -12\}=\{y\mid y\le 7\}</m></li>
+                    </ol>
+                </p>
+            </solution>
+        </example> -->
+  </subsection>
+
+  <subsection>
+    <title><q>Or</q> Compound Inequalities</title>
+    <idx><h>solving</h><h>compound inequalities</h><h>with "or"</h></idx>
+
+    <definition xml:id="definition-compound-inequality">
+
+      <statement>
+        <p>
+          A <term>compound inequality</term>
+              <idx><h>compound inequality</h></idx>
+          is a grouping of two or more inequalities into a larger inequality statement.
+          These usually come in two flavors:
+          <q>or</q> and <q>and</q> inequalities.
+          For an example of an <q>or</q> compound inequality,
+          you might get a discount at the movie theater if your age is less than <m>13</m>
+          <em>or</em> greater than <m>64</m>.
+          For an example of an <q>and</q> compound inequality,
+          to purchase a drink at a bar in Oregon,
+          you need to be over <m>21</m> years old <em>and</em> be have money for your drink.
+          You need to fulfill <em>both</em> requirements.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      In math, the technical term <term>or</term><idx><h>compound inequality</h><h>or</h></idx>
+          <idx><h>or</h></idx>
+      means <q>either or both.</q> So, mathematically,
+      if we asked if you would like <q>chocolate cake <em>or</em>
+      apple pie</q> for dessert,
+      your choices are either <q>chocolate cake,</q> <q>apple pie,</q> or
+      <q>both chocolate cake and apple pie.</q>
+      This is slightly different than the English <q>or</q>
+      which usually means <q>one or the other but not both.</q>
+    </p>
+
+    <p>
+      <q>Or</q> shows up in math between equations
+      (as in when solving a quadratic equation,
+      you might end up with <q><m>x=2</m> or <m>x=-3</m></q>)
+      or between inequalities
+      (which is what we're about to discuss).
+    </p>
+
+    <remark>
+      <p>
+        The definition of <q>or</q> is very close to the definition of a union where you combine elements from either or both sets together.
+        In fact, when you have an <q>or</q>
+        between inequalities in a compound inequality,
+        to find the solution set of the compound inequality,
+        you find the union of the the solutions sets of each of the pieces.
+      </p>
+    </remark>
+
+    <example>
+      <statement>
+        <p>
+          Solve the compound inequality.
+          <me>
+            x\le 1\quad\text{or}\quad x\gt 4
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <sidebyside widths="47% 47%" margins="0%" valign="middle">
+          <p>
+            Writing the solution set to this compound inequality doesn't require any algebra beforehand because each of the inequalities is already solved for <m>x</m>.
+            The first thing we should do is understand what each inequality is saying using a graph.
+          </p>
+
+          <figure xml:id="figure-intro-or-example">
+            <caption>A number line sketch of solutions to <m>x\le 1</m> as well as to <m>x\gt 4</m></caption>
+            <image width="47%">
+              <shortdescription>a number line where the numbers 0, 1, and 4 are marked; a thick line is above the x-axis starting at 4 with a left parenthesis and going to the right with an arrow; another thick line is above the first line starting at 1 with a right bracket and going to the left with an arrow.</shortdescription>
+
+               <latex-image>
+                <![CDATA[\begin{tikzpicture}
+                    \begin{axis}[numberline, xmin=-2, xmax=6, xtick={1,4}, minor xtick={-2,-1,...,6}]
+                        \addplot[infiniteclosedinterval] coordinates {(-2,0.5) (1,0.5)} node[above, pos=0.5] {$x\le1$};
+                        \addplot[openinfiniteinterval, color=secondcolor] coordinates {(4,0.5) (6,0.5)} node[above, pos=0.5] {$x\gt4$};
+                    \end{axis}
+                \end{tikzpicture}]]>
+            </latex-image>
+            </image>
+
+          </figure>
+        </sidebyside>
+
+        <p>
+          An <q>or</q> statement becomes a union of solution sets,
+          so the solution set to the compound inequality must be:
+          <me>
+            (-\infty,1]\cup(4,\infty)
+          </me>.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Solve the compound inequality.
+          <me>
+            3-5x\gt-7\quad\text{or}\quad2-x\le-3
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First we need to do some algebra to isolate <m>x</m> in each piece.
+          Note that we are going to do algebra on both pieces simultaneously.
+          Also note that the mathematical symbol <q>or</q>
+          should be written on each line.
+          <md>
+            <mrow>3-5x\amp\gt-7\amp\text{or}\amp\amp 2-x\amp\le-3</mrow>
+            <!-- <mrow>3-5x\subtractright{3}\amp\gt-7\subtractright{3}\amp\text{or}\amp\amp 2-x\subtractright{2}\amp\le-3\subtractright{2}</mrow> -->
+            <mrow>-5x\amp\gt-10\amp\text{or}\amp\amp -x\amp\le-5</mrow>
+            <mrow>\divideunder{-5x}{-5}\amp\mathbin{\highlight{\lt}}\divideunder{-10}{-5}\amp\text{or}\amp\amp \divideunder{-x}{-1}\amp\mathbin{\highlight{\geq}}\divideunder{-5}{-1}</mrow>
+            <mrow>x\amp\lt2\amp\text{or}\amp\amp x\amp\geq5</mrow>
+          </md>
+        </p>
+
+        <p>
+          The solution set for the compound inequality <m>x\lt2</m> is
+          <m>(-\infty,2)</m> and the solution set to <m>x\ge5</m> is <m>[5,\infty)</m>.
+          To do the <q>or</q> portion of the problem,
+          we need to take the union of these two sets.
+          Let's first make a graph of the solution sets to visualize the problem.
+        </p>
+
+        <figure xml:id="figure-or-example">
+          <caption>A number line sketch of <m>(-\infty,2)</m> as well as <m>[5,\infty)</m></caption>
+          <image width="47%">
+            <shortdescription>a number line where the numbers 0, 2, and 5 are marked; a thick line is above the x-axis starting at 2 with a right parenthesis and going to the left with an arrow; another thick line is above the first line starting at 5 with a left bracket and going to the right with an arrow.</shortdescription>
+
+               <latex-image>
+                <![CDATA[\begin{tikzpicture}
+                    \begin{axis}[numberline, xmin=-2, xmax=9, xtick={2,5}, minor xtick={-2,-1,...,9}]
+                        \addplot[infiniteopeninterval] coordinates {(-2,0.4) (2,0.4)};
+                        \addplot[closedinfiniteinterval, color=secondcolor] coordinates {(5,0.4) (9,0.4)};
+                    \end{axis}
+                \end{tikzpicture}]]>
+            </latex-image>
+          </image>
+
+        </figure>
+
+        <p>
+          The union combines both solution sets into one, and so
+          <me>
+            (-\infty,2)\cup[5,\infty)
+          </me>
+        </p>
+
+        <p>
+          We have finished the problem,
+          but for the sake of completeness,
+          let's try to verify that our answer is reasonable.
+        </p>
+
+        <p>
+          <ul>
+            <li>
+              <p>
+                First, let's choose a number that is <em>not</em>
+                in our proposed solution set.
+                We will arbitrarily choose <m>\highlight{3}</m>.
+                <md>
+                  <mrow>3-5x\amp\gt-7\amp\text{or}\amp\amp 2-x\amp\le-3</mrow>
+                  <mrow>3-5(\highlight{3})\amp\wonder{\gt}-7\amp\text{or}\amp\amp 2-(\highlight{3})\amp\wonder{\le}-3</mrow>
+                  <mrow>-9\amp\reject{\gt}-7\amp\text{or}\amp\amp -1\amp\reject{\le}-3</mrow>
+                </md>
+              </p>
+
+              <p>
+                This value made <em>both</em> inequalities false which is why <m>3</m> isn't in our solution set.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Next, let's choose a number that
+                <em>is</em> in our solution region.
+                We will arbitrarily choose <m>\highlight{1}</m>.
+                <md>
+                  <mrow>3-5x\amp\gt-7\amp\text{or}\amp\amp 2-x\amp\le-3</mrow>
+                  <mrow>3-5(\highlight{1})\amp\wonder{\gt}-7\amp\text{or}\amp\amp 2-(\highlight{1})\amp\wonder{\le}-3</mrow>
+                  <mrow>-12\amp\confirm{\lt}-7\amp\text{or}\amp\amp -1\amp\reject{\leq}-3</mrow>
+                </md>
+              </p>
+
+              <p>
+                This value made <em>one</em> of the inequalities true.
+                Since this is an <q>or</q> statement,
+                only one <em>or</em> the other piece has to be true to make the compound inequality true.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Last, what will happen if we choose a value that was in the other solution region in <xref ref="figure-or-example">Figure</xref>,
+                like the number <m>\highlight{6}</m>?
+                <md>
+                  <mrow>3-5x\amp\gt-7\amp\text{or}\amp\amp 2-x\amp\le-3</mrow>
+                  <mrow>3-5(\highlight{6})\amp\wonder{\gt}-7\amp\text{or}\amp\amp 2-(\highlight{6})\amp\wonder{\le}-3</mrow>
+                  <mrow>-27\amp\reject{\gt}-7\amp\text{or}\amp\amp -4\amp\confirm{\le}-3</mrow>
+                </md>
+              </p>
+
+              <p>
+                This solution made the <em>other</em> inequality piece true.
+              </p>
+            </li>
+          </ul>
+        </p>
+
+        <p>
+          This completes the check.
+          Numbers from within the solution region make the compound inequality true and numbers outside the solution region make the compound inequality false.
+        </p>
+      </solution>
+    </example>
+        <!-- <example>
+            <statement>
+                <p>Solve the compound inequality. <me>3-5x\lt-7\text{ or } 2-x\le-3</me></p>
+            </statement>
+            <solution>
+                <p>First we need to do some algebra to isolate <m>x</m> in each piece. Note that we are going to do algebra on both pieces simultaneously. Also note that the mathematical symbol <q>or</q> should be written on each line.<md>
+                    <mrow>3-5x\amp\lt-7\amp\text{or}\amp\amp 2-x\amp\le-3</mrow>
+                    <mrow>3-5x\subtractright{3}\amp\lt-7\subtractright{3}\amp\text{or}\amp\amp 2-x\subtractright{2}\amp\le-3\subtractright{2}</mrow>
+                    <mrow>-5x\amp\lt-10\amp\text{or}\amp\amp -x\amp\le-5</mrow>
+                    <mrow>\divideunder{-5x}{-5}\amp\mathbin{\highlight{\gt}}\divideunder{-10}{-5}\amp\text{or}\amp\amp \divideunder{-x}{-1}\amp\mathbin{\highlight{\geq}}\divideunder{-5}{-1}</mrow>
+                    <mrow>x\amp\gt2\amp\text{or}\amp\amp x\amp\geq5</mrow>
+                </md></p>
+                <p>The solution set to <m>x\gt2</m> is <m>(2,\infty)</m> and the solution set to <m>x\ge5</m> is <m>[5,\infty)</m>. To do the <q>or</q> portion of the problem, we need to take the union of these two sets. Let's first make a graph of the solution sets to visualize the problem.</p>
+                <figure xml:id="figure-or-example">
+                <caption>A number line sketch of <m>(2,\infty)</m> and <m>[5,\infty)</m></caption>
+                    <image width="47%">
+                    <shortdescription>a number line where the numbers 0, 2, and 5 are marked; a thick line is above the x-axis starting at 2 with a left parenthesis and going to the right with an arrow; another thick line is above the first line starting at 5 with a left bracket and going to the right with an arrow.</shortdescription>
+                           <latex-image>
+                            <![CDATA[\begin{tikzpicture}
+                                \begin{axis}[numberline, xmin=-1, xmax=10, xtick={2,5}, minor xtick={-1,0,...,10}]
+                                    \addplot[openinfiniteinterval] coordinates {(2,0.4) (10,0.4)};
+                                    \addplot[closedinfiniteinterval, color=secondcolor] coordinates {(5,1) (10,1)};
+                                \end{axis}
+                            \end{tikzpicture}]]>
+                        </latex-image>
+                       </image>
+                </figure>
+                <p>The union combines both solution sets into one, and so <me>(2,\infty)\cup[5,\infty)=(2,\infty)</me>.</p>
+
+                <p>We have finished the problem, but for the sake of completeness, let's try to verify that our answer is reasonable.</p>
+                <p><ul>
+                    <li>
+                        <p>First, let's choose a number that is <em>not</em> in our proposed solution set. We will arbitrarily choose <m>\highlight{1}</m>.<md>
+                            <mrow>3-5x\amp\lt-7\amp\text{or}\amp\amp 2-x\amp\leq-3</mrow>
+                            <mrow>3-5(\highlight{1})\amp\wonder{\lt}-7\amp\text{or}\amp\amp 2-(\highlight{1})\amp\wonder{\leq}-3</mrow>
+                            <mrow>-2\amp\reject{\lt}-7\amp\text{or}\amp\amp 1\amp\reject{\leq}-3</mrow>
+                        </md></p>
+                        <p>This value made <em>both</em> inequalities false which is why <m>1</m> isn't in our solution set.</p>
+                    </li>
+                    <li>
+                        <p>Next, let's choose a number that <em>is</em> in our solution region. We will arbitrarily choose <m>\highlight{3}</m>.<md>
+                            <mrow>3-5x\amp\lt-7\amp\text{or}\amp\amp 2-x\amp\leq-3</mrow>
+                            <mrow>3-5(\highlight{3})\amp\wonder{\lt}-7\amp\text{or}\amp\amp 2-(\highlight{3})\amp\wonder{\leq}-3</mrow>
+                            <mrow>-12\amp\confirm{\lt}-7\amp\text{or}\amp\amp -1\amp\reject{\leq}-3</mrow>
+                        </md></p>
+                        <p>This value made <em>one</em> of the inequalities true. Since this is an <q>or</q> statement, only one <em>or</em> the other piece has to be true to make the compound inequality true.</p>
+                    </li>
+                    <li>
+                        <p>Last, note that the value <m>3</m> only made one of the inequalities true. What will happen if we choose a value that was in the region where the lines in <xref ref="figure-or-example">Figure</xref> overlap, like the number <m>\highlight{6}</m>?<md>
+                            <mrow>3-5x\amp\lt-7\amp\text{or}\amp\amp 2-x\amp\le-3</mrow>
+                            <mrow>3-5(\highlight{6})\amp\wonder{\lt}-7\amp\text{or}\amp\amp 2-(\highlight{6})\amp\wonder{\le}-3</mrow>
+                            <mrow>-27\amp\confirm{\lt}-7\amp\text{or}\amp\amp -4\amp\confirm{\le}-3</mrow>
+                        </md></p>
+                        <p>When you select a value from the region that the lines overlap, it makes both inequalities true.</p>
+                    </li>
+                </ul></p>
+                <p>This completes the check. Numbers from within the solution region make the compound inequality true and numbers outside the solution region make the compound inequality false.</p>
+            </solution>
+        </example> -->
+    <example>
+      <statement>
+        <p>
+          Solve the compound inequality.
+          <me>
+            \frac{3}{4}t+2\le \frac{5}{2}\quad\text{or}\quad -\frac{1}{2}(t-3)\lt -2
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First we will solve each inequality for <m>t</m>.
+          Recall that we usually try to clear denominators by multiplying both sides by the least common denominator.
+          <md>
+            <mrow>\frac{3}{4}t+2\amp\le \frac{5}{2}\amp\text{or}\amp\amp -\frac{1}{2}(t-3)\amp\lt -2</mrow>
+            <mrow>\multiplyleft{4}\left(\frac{3}{4}t+2\right)\amp\le \multiplyleft{4}\frac{5}{2}\amp\text{or}\amp\amp \multiplyleft{2}\left(-\frac{1}{2}(t-3)\right)\amp\lt \multiplyleft{2}(-2)</mrow>
+            <mrow>3t+8\amp\le 10\amp\text{or}\amp\amp -t+3\amp\lt -4</mrow>
+            <!-- <mrow>3t+8\subtractright{8}\amp\le 10\subtractright{8}\amp\text{or}\amp\amp -t+3\subtractright{3}\amp\lt -4\subtractright{3}</mrow> -->
+            <mrow>3t\amp\le 2\amp\text{or}\amp\amp -t\amp\lt -7</mrow>
+            <mrow>\divideunder{3t}{3}\amp\le \divideunder{2}{3}\amp\text{or}\amp\amp \divideunder{-t}{-1}\amp\mathbin{\highlight{\gt}} \divideunder{-7}{-1}</mrow>
+            <mrow>t\amp\le\frac{2}{3}\amp\text{or}\amp\amp t\amp\gt 7</mrow>
+          </md>
+        </p>
+
+        <p>
+          The solution set to <m>t\le \frac{2}{3}</m> is
+          <m>\left(-\infty,\frac{2}{3}\right]</m> and the solution set to <m>t\gt 7</m> is <m>(7,\infty)</m>.
+          <xref ref="figure-or-nonintersecting-example">Figure</xref> shows these two sets.
+        </p>
+
+        <figure xml:id="figure-or-nonintersecting-example">
+          <caption>A number line sketch of <m>\left(-\infty,\frac{2}{3}\right]</m> and also <m>(7,\infty)</m></caption>
+          <image width="47%">
+            <shortdescription>a number line where the numbers 0, 2/3, and 7 are marked; a thick line is above the x-axis starting at 2/3 with a right bracket and going to the left with an arrow; another thick line is above the axis starting at 5 with a left parenthesis and going to the right with an arrow.</shortdescription>
+
+               <latex-image>
+                <![CDATA[\begin{tikzpicture}
+                    \begin{axis}[numberline,
+                            xmin=-3,
+                            xmax=10,
+                            xtick={.6666,7},
+                            xticklabels={$\frac{2}{3}$,$7$},
+                            minor xtick={-2,-1,...,9},
+                            xlabel={t}]
+                        \addplot[infiniteclosedinterval] coordinates {(-2,0.4) (2/3,0.4)};
+                        \addplot[openinfiniteinterval, color=secondcolor] coordinates {(7,0.4) (10,0.4)};
+                    \end{axis}
+                \end{tikzpicture}]]>
+            </latex-image>
+          </image>
+
+        </figure>
+
+        <p>
+          Note that the two sets do not overlap so there will be no way to simplify the union.
+          Thus the solution set to the compound inequality is:
+          <me>
+            \left(-\infty,\frac{2}{3}\right]\cup(7,\infty)
+          </me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Solve the compound inequality.
+          <me>
+            3y-15\gt 6\quad\text{or}\quad7-4y\ge y-3
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First we solve each inequality for <m>y</m>.
+          <md>
+            <mrow>3y-15\amp\gt 6\amp\text{or}\amp\amp 7-4y\amp\ge y-3</mrow>
+            <!-- <mrow>3y-15\addright{15}\amp\gt 6\addright{15} \amp\text{or}\amp\amp 7-4y\subtractright{7}\subtractright{y}\amp\ge y-3\subtractright{7}\subtractright{y}</mrow> -->
+            <mrow>3y\amp\gt 21\amp\text{or}\amp\amp -5y\amp\ge -10</mrow>
+            <mrow>\divideunder{3y}{3}\amp\gt \divideunder{21}{3}\amp\text{or}\amp\amp \divideunder{-5y}{-5}\amp\mathbin{\highlight{\le}} \divideunder{-10}{-5}</mrow>
+            <mrow>y\amp\gt 7\amp\text{or}\amp\amp y\amp\le 2</mrow>
+          </md>
+        </p>
+
+        <p>
+          The solution set to <m>y\gt 7</m> is
+          <m>(7,\infty)</m> and the solution set to <m>y\le 2</m> is <m>(-\infty,2]</m>.
+          <xref ref="figure-or-all-reals-example">Figure</xref> shows these two sets.
+        </p>
+
+        <figure xml:id="figure-or-all-reals-example">
+          <caption>A number line sketch of <m>(7,\infty)</m> as well as <m>(-\infty,2]</m></caption>
+          <image width="47%">
+            <shortdescription>a number line where the numbers 0, 2, and 7 are marked; a thick line is above the x-axis starting at 7 with a left parenthesis and going to the right with an arrow; another thick line is above the first line starting at 2 with a right bracket and going to the left with an arrow.</shortdescription>
+
+               <latex-image>
+                <![CDATA[\begin{tikzpicture}
+                    \begin{axis}[numberline, xmin=-3, xmax=12, xtick={2,7}, minor xtick={-3,-2,...,12}, xlabel={y}]
+                        \addplot[openinfiniteinterval] coordinates {(7,0.4) (12,0.4)};
+                        \addplot[infiniteclosedinterval, color=secondcolor] coordinates {(-3,0.4) (2,0.4)};
+                    \end{axis}
+                \end{tikzpicture}]]>
+            </latex-image>
+          </image>
+
+        </figure>
+
+        <p>
+          So the solution set to the compound inequality is:
+          <me>
+            (-\infty,2]\cup(7,\infty)
+          </me>
+        </p>
+      </solution>
+    </example>
+        <!--
+        <example>
+            <statement>
+                <p>Solve the compound inequality. <me>3y-15\lt 6 \text{ or } 7-4y\le y-3</me></p>
+            </statement>
+            <solution>
+                <p>First we solve each inequality for <m>y</m>.<md>
+                    <mrow>3y-15\amp\lt 6\amp\text{or}\amp\amp 7-4y\amp\le y-3</mrow>
+                    <mrow>3y-15\addright{15}\amp\lt 6-15\addright{15} \amp\text{or}\amp\amp 7-4y\subtractright{7}\subtractright{y}\amp\le y-3\subtractright{7}\subtractright{y}</mrow>
+                    <mrow>3y\amp\lt 21\amp\text{or}\amp\amp -5y\amp\le -10</mrow>
+                    <mrow>\divideunder{3y}{3}\amp\lt \divideunder{21}{3}\amp\text{or}\amp\amp \divideunder{-5y}{-5}\amp\mathbin{\highlight{\geq}} \divideunder{-10}{-5}</mrow>
+                    <mrow>y\amp\lt 7\amp\text{or}\amp\amp y\amp\geq 2</mrow>
+                </md></p>
+                <p>The solution set to <m>y\lt 7</m> is <m>(-\infty,7)</m> and the solution set to <m>y\geq 2</m> is <m>[2,\infty)</m>. Shown is a graph of these two sets.</p>
+                <figure xml:id="figure-or-all-reals-example">
+                <caption>A number line sketch of <m>(-\infty,7)</m> and also <m>[2,\infty)</m></caption>
+                    <image width="47%">
+                    <shortdescription>a number line where the numbers 0, 2, and 7 are marked; a thick line is above the x-axis starting at 7 with a right parenthesis and going to the left with an arrow; another thick line is above the first line starting at 2 with a left bracket and going to the right with an arrow.</shortdescription>
+                           <latex-image>
+                            <![CDATA[\begin{tikzpicture}
+                                \begin{axis}[numberline, xmin=-3, xmax=12, xtick={2,7}, minor xtick={-3,-2,...,12}, xlabel={y}]
+                                    \addplot[infiniteopeninterval] coordinates {(-3,0.4) (7,0.4)};
+                                    \addplot[closedinfiniteinterval, color=secondcolor] coordinates {(2,1) (12,1)};
+                                \end{axis}
+                            \end{tikzpicture}]]>
+                        </latex-image>
+                       </image>
+                </figure>
+                <p>Note that <em>every number</em> is covered by one or both of the two lines, so the solution set to the compound inequality is <me>(-\infty,7)\cup(2,\infty)=(-\infty,\infty)</me>.</p>
+            </solution>
+        </example> -->
+  </subsection>
+
+  <subsection xml:id="subsection-triple-inequalities">
+    <title>Three-Part Inequalities</title>
+    <idx><h>solving</h><h>compound inequalities</h><h>three-part</h></idx>
+
+    <p>
+      There are two different kinds of <q>and</q> compound inequalities. One type has an expression that is <q>between</q> two values, <!-- as we have been discussing in the past examples, --> like <m>A \lt B \le C</m>, that we will call <q>three-part inequalities</q>. The other type has two inequalities joined by the word <q>and,</q> as in <m>A \lt B \text{ and } C\geq D</m>. We will start with the three-part inequalities.
+    </p>
+
+<!--     <remark xml:id="remark-triple-inequality">
+      <p>
+        The inequality <q><m>A \lt B \le C</m></q> is equivalent to <q><m>A \lt B</m> and <m>B\le C</m>,</q> but we don't need to break it up into the two statements. It can also be read as <q>B is between A and C.</q>
+      </p>
+    </remark> -->
+
+    <p>
+      The inequality <m>1\leq 2\lt 3</m> says a lot more than you might think.
+      It actually says four different single inequalities which are highlighted for you to see.
+      <me>
+        \highlight{1}\mathbin{\highlight{\leq}}\highlight{2}\mathbin{\lowlight{\lt}}\lowlight{3}\quad
+        \highlight{1}\mathbin{\highlight{\leq}}\lowlight{2}\mathbin{\lowlight{\lt}}\highlight{3}\quad
+        \highlight{1}\mathbin{\lowlight{\leq}}\lowlight{2}\mathbin{\highlight{\lt}}\highlight{3}\quad
+        \lowlight{1}\mathbin{\lowlight{\leq}}\highlight{2}\mathbin{\highlight{\lt}}\highlight{3}
+      </me>
+    </p>
+
+    <p>
+      This might seem trivial at first,
+      but if you are presented with an inequality like <m>-1\lt3\geq2</m>,
+      at first it might look sensible;
+      however, in reality, you need to check that <em>all four</em>
+      linear inequalities make sense.
+      Those are highlighted here.
+      <me>
+        \highlight{-1}\mathbin{\highlight{\lt}}\highlight{3}\mathbin{\lowlight{\geq}}\lowlight{2}\quad
+        \highlight{-1}\mathbin{\highlight{\lt}}\lowlight{3}\mathbin{\lowlight{\geq}}\highlight{2}\quad
+        \highlight{-1}\mathbin{\lowlight{\lt}}\lowlight{3}\mathbin{\highlight{\geq}}\highlight{2}\quad
+        \lowlight{-1}\mathbin{\lowlight{\lt}}\highlight{3}\mathbin{\highlight{\geq}}\highlight{2}
+      </me>
+    </p>
+
+    <p>
+      One of these inequalities is false: <m>-1\ngeq2</m>.
+      This implies that the entire original inequality,
+      <m>-1\lt3\geq2</m>, is nonsense.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Decide whether or not the following inequalities are true or false.
+
+          <ol marker="a." cols="2">
+            <li>
+              <p>
+                True or False: <m>-5\lt7\le12</m>?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                True or False: <m>-7\le-10\lt4</m>?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                True or False: <m>-2\le0\geq1</m>?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                True or False: <m>5\gt-3\geq-9</m>?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                True or False: <m>3\lt3\le5</m>?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                True or False: <m>9\gt1\lt5</m>?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                True or False: <m>3\lt8\le-2</m>?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                True or False: <m>-9\lt-4\le-2</m>?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We need to go through all four single inequalities for each.
+          If the inequality is false, for simplicity's sake,
+          we will only highlight the one single inequality that makes the inequality false.
+
+          <ol marker="a." cols="2">
+            <li>
+              <p>
+                True: <m>-5\lt7\le12</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                False: <m>-7\reject{\le}-10</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                False: <m>-2\reject{\ge}1</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                True: <m>5\gt-3\geq-9</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                False: <m>3\reject{\lt}3</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                False: <m>9\reject{\lt}5</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                False: <m>8\reject{\le}-2</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                True: <m>-9\lt-4\le-2</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      As a general hint,
+      no (nontrivial) three-part inequality can ever be true if the inequality signs are not pointing in the same direction.
+      So no matter what numbers <m>a</m>,
+      <m>b</m>, and <m>c</m> are,
+      both <m>a\lt b\geq c</m> and <m>a\geq b \lt c</m> cannot be true!
+      Soon you will be writing inequalities like
+      <m>2\lt x \le 4</m> and you need to be sure to check that your answer is feasible.
+      You will know that if you get <m>2\gt x \le 4</m> or
+      <m>2\lt x \geq 4</m> that something went wrong in the solving process.
+      The only exception is that something like
+      <m>1\le1\geq1</m> is true because <m>1=1=1</m>,
+      although this shouldn't come up very often!
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Write the solution set to the compound inequality.
+          <me>
+            -7\lt x\le 5
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The solutions to the three-part inequality
+          <m>-7\lt x\le 5</m> are those numbers that are trapped between <m>-7</m> and <m>5</m>,
+          including <m>5</m> but not <m>-7</m>.
+          Keep in mind that there are infinitely many decimal numbers and irrational numbers that satisfy this inequality like <m>-2.781828</m> and <m>\pi</m>.
+          We will write these numbers in interval notation as <m>(-7,5]</m> or in set builder notation as <m>\{x\mid -7\lt x\le 5\}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Solve the compound inequality.
+          <me>
+            4\le 9x+13\lt 20
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <stack>
+            <p>
+              This is a three-part inequality which we can treat just as a regular inequality with three <q>sides.</q>
+              The goal is to isolate <m>x</m> in the middle and whatever you do to one <q>side,</q>
+              you have to do to the other two <q>sides.</q>
+            </p>
+
+            <p>
+              The solutions to the three-part inequality
+              <m>-1\le x\lt \frac{7}{9}</m> are those numbers that are trapped between <m>-1</m> and <m>\frac{7}{9}</m>,
+              including <m>-1</m> but not <m>\frac{7}{9}</m>.
+              The solution set in interval notation is <m>\left[-1,\frac{7}{9}\right)</m>.
+            </p>
+          </stack>
+
+          <p>
+            <md>
+              <mrow>4\amp\le 9x+13\lt 20</mrow>
+              <mrow>4\subtractright{13}\amp\le 9x+13\subtractright{13}\lt 20\subtractright{13}</mrow>
+              <mrow>-9\amp\le 9x\lt 7</mrow>
+              <mrow>\divideunder{-9}{9}\amp\le \divideunder{9x}{9}\lt \divideunder{7}{9}</mrow>
+              <mrow>-1\amp\le x\lt \frac{7}{9}</mrow>
+            </md>
+          </p>
+        </sidebyside>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Solve the compound inequality.
+          <me>
+            -13\lt 7-\frac{4}{3}x\le 15
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <sidebyside widths="47% 47%" margins="0%">
+
+          <stack>
+            <p>
+              This is a three-part inequality which we can treat just as a regular inequality with three
+              <q>sides.</q> The goal is to isolate <m>x</m> in the middle and whatever you do to one <q>side,</q>
+              you have to do to the other two <q>sides.</q>
+              We will begin by canceling the fraction by multiplying each part by the least common denominator.
+            </p>
+
+            <p>
+              At the end we reverse the entire statement to go from smallest to largest.
+              The solution set is <m>[-6,15)</m>.
+            </p>
+          </stack>
+
+          <p>
+            <md>
+              <mrow>-13\amp\lt 7-\frac{4}{3}x\le15</mrow>
+              <mrow>-13\multiplyright{3}\amp\lt \left(7-\frac{4}{3}x\right)\multiplyright{3}\le15\multiplyright{3}</mrow>
+              <mrow>-39\amp\lt 21-4x\le45</mrow>
+              <!-- <mrow>-39\subtractright{21}\amp\lt 21-4x\subtractright{21}\le45\subtractright{21}</mrow> -->
+              <mrow>-60\amp\lt -4x\le24</mrow>
+              <mrow>\divideunder{-60}{-4}\amp\mathbin{\highlight{\gt}} \divideunder{-4x}{-4}\mathbin{\highlight{\ge}}\divideunder{24}{-4}</mrow>
+              <mrow>15\amp\gt x\ge-6</mrow>
+              <mrow>-6\amp\le x\lt 15</mrow>
+            </md>
+          </p>
+        </sidebyside>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection>
+    <title>Solving <q>And</q> Inequalities</title>
+
+    <p>Here we will deal with the other kind of compound inequality: the <q>and</q> variety.</p>
+
+    <remark>
+      <p>
+        An <q>and</q> statement means that you need both inequalities to be true simultaneously. In English, if you say, <q>I need Khaleem <em>and</em> Freja to paint the fence,</q> then the only way you will be happy is if <em>both</em> people are working simultaneously on the fence. This statement that both things happen at the same time should be very reminiscent of our discussion of intersections earlier in this section. In fact, every <q>and</q> statement will result in the intersection of the solution sets of the pieces.
+      </p>
+    </remark>
+
+        <example>
+            <statement>
+                <p>Solve the compound inequality. <me>4-2t\gt-2\quad\text{and}\quad3t+1\geq-2</me></p>
+            </statement>
+            <solution>
+                <p><md>
+                    <mrow>4-2t\amp\gt -2\amp\text{and}\amp\amp 3t+1\amp\geq -2</mrow>
+                    <mrow>4-2t\subtractright{4}\amp\gt -2\subtractright{4} \amp\text{and}\amp\amp 3t+1\subtractright{1}\amp\geq -2\subtractright{1}</mrow>
+                    <mrow>-2t\amp\gt -6\amp\text{and}\amp\amp 3t\amp\geq -3</mrow>
+                    <mrow>\divideunder{-2t}{-2}\amp \mathbin{\highlight{\lt}} \divideunder{-6}{-2} \amp\text{and}\amp\amp \divideunder{3t}{3}\amp\geq \divideunder{-3}{3}</mrow>
+                    <mrow>t\amp\lt 3\amp\text{and}\amp\amp t\amp\geq -1</mrow>
+                </md></p>
+                <p>The solution set to <m>t\lt3</m> is <m>(-\infty,3)</m> and the solution set to <m>t\geq-1</m> is <m>[-1,\infty)</m>. Shown is a graph of these solution sets.</p>
+
+                <figure xml:id="figure-and-intro-example">
+                <caption>A number line sketch of <m>(-\infty,3)</m> and also <m>[-1,\infty)</m></caption>
+                    <image width="47%">
+                    <shortdescription>a number line where the numbers 0, 3, and -1 are marked; a thick line is above the x-axis starting at 3 with a right parenthesis and going to the left with an arrow; another thick line is above the first line starting at -1 with a left bracket and going to the right with an arrow.</shortdescription>
+                           <latex-image>
+                            <![CDATA[\begin{tikzpicture}
+                                \begin{axis}[numberline, xmin=-5, xmax=7, xtick={-1,3}, minor xtick={-5,-4,...,7}, xlabel={$t$}]
+                                    \addplot[infiniteopeninterval] coordinates {(-5,0.4) (3,0.4)};
+                                    \addplot[closedinfiniteinterval, color=secondcolor] coordinates {(-1,1) (7,1)};
+                                \end{axis}
+                            \end{tikzpicture}]]>
+                        </latex-image>
+                       </image>
+                </figure>
+
+                <p>
+                  Recall that an <q>and</q> problem finds the intersection of the solution sets. Intersection finds the <m>t</m>-values where the two lines overlap, so the solution to the compound inequality must be <me>(-\infty,3)\cap[-1,\infty)=[-1,3)</me>.
+                </p>
+                <p>
+                  We have finished the problem, but for the sake of completeness, let's try to <q>verify</q> that our answer is reasonable.
+                </p>
+                <p>
+                  <ul>
+                    <li>
+                        <p>First, choose a number within our solution region and test that it makes both original inequalities true. We will arbitrarily choose <m>\highlight{1}</m>.<md>
+                            <mrow>4-2t\amp\gt -2\amp\text{and}\amp\amp 3t+1\amp\geq -2</mrow>
+                            <mrow>4-2(\highlight{1})\amp\wonder{\gt} -2\amp\text{and}\amp\amp 3(\highlight{1})+1\amp\wonder{\geq} -2</mrow>
+                            <mrow>2\amp\confirm{\gt} -2\amp\text{and}\amp\amp 4\amp\confirm{\geq} -2</mrow>
+                        </md></p>
+                    </li>
+                    <li>
+                        <p>Next, choose a value outside the solution set and test that it makes <em>at least</em> one of the inequalities false. We will arbitrarily choose <m>\highlight{4}</m>.<md>
+                            <mrow>4-2t\amp\gt -2\amp\text{and}\amp\amp 3t+1\amp\geq -2</mrow>
+                            <mrow>4-2(\highlight{4})\amp\wonder{\gt} -2\amp\text{and}\amp\amp 3(\highlight{4})+1\amp\wonder{\geq} -2</mrow>
+                            <mrow>-4\amp\reject{\gt} -2\amp\text{and}\amp\amp 13\amp\confirm{\geq} -2</mrow>
+                        </md></p>
+                        <p>Since one of the inequalities is false and this is an <q>and</q> question, the compound inequality is false for this value which is what expected by picking a number outside the solution set.</p>
+                    </li>
+                    <li>
+                        <p>Last, we should choose a number that is not a solution that is on the <q>other side</q> of the solution set. We will arbitrarily choose <m>\highlight{-2}</m>.<md>
+                            <mrow>4-2t\amp\gt -2\amp\text{and}\amp\amp 3t+1\amp\geq -2</mrow>
+                            <mrow>4-2(\highlight{-2})\amp\wonder{\gt} -2\amp\text{and}\amp\amp 3(\highlight{-2})+1\amp\wonder{\geq} -2</mrow>
+                            <mrow>8\amp\confirm{\gt} -2\amp\text{and}\amp\amp -5\amp\reject{\geq} -2</mrow>
+                        </md></p>
+                        <p>Again, since one of the inequalities is false and this is an <q>and</q> question, the compound inequality is false for <m>-2</m>.</p>
+                    </li>
+                  </ul>
+                </p>
+                <p>
+                  So, numbers outside the proposed solution region make the compound inequality false, and numbers inside the region make the compound inequality true. We have verified our solution set.
+                </p>
+            </solution>
+        </example>
+
+        <exercise>
+            <statement>
+                <p>Solve the compound inequality. <me>-6\ge 3x+3\quad\text{and}\quad3x+9\gt-6</me></p>
+            </statement>
+            <solution>
+                <p><md>
+                    <mrow>-6\amp\ge 3x+3\amp\text{and}\amp\amp 3x+9\amp\gt -6</mrow>
+                    <mrow>-9\amp\ge 3x\amp\text{and}\amp\amp 3x\amp\gt -15</mrow>
+                    <mrow>-3\amp\ge x\amp\text{and}\amp\amp x\amp\gt -5</mrow>
+                    <mrow>\highlight{x}\amp\mathbin{\highlight{\le}}\highlight{-3}\amp\text{and}\amp\amp x\amp\gt -5</mrow>
+                </md></p>
+                <p>The solution set to <m>x\le -3</m> is <m>(-\infty,-3]</m> and the solution set to <m>x\gt-5</m> is <m>(-5,\infty)</m>. Shown is a graph of these solution sets on a number line.</p>
+
+                <figure xml:id="figure-and-empty-example">
+                <caption>A number line sketch of <m>(-\infty,-3]</m> and <m>(-5,\infty)</m></caption>
+                    <image width="47%">
+                    <shortdescription>a number line where the numbers 0, -3, and -5 are marked; a thick line is above the x-axis starting at -3 with a right bracket and going to the left with an arrow; another thick line is above the axis starting at -5 with a left parenthesis and going to the right with an arrow.</shortdescription>
+                           <latex-image>
+                            <![CDATA[\begin{tikzpicture}
+                                \begin{axis}[numberline, xmin=-10, xmax=1, xtick={-3,-5}, minor xtick={-10,-9,...,1}]
+                                    \addplot[infiniteclosedinterval] coordinates {(-10,0.4) (-3,0.4)};
+                                    \addplot[openinfiniteinterval, color=secondcolor] coordinates {(-5,1) (1,1)};
+                                \end{axis}
+                            \end{tikzpicture}]]>
+                        </latex-image>
+                       </image>
+                </figure>
+                <p>Recall that <q>and</q> statements of inequalities become intersections of the solution sets. Since intersections refer to where the sets overlap, and these sets overlap between <m>-5</m> (exclusive) and <m>-3</m> (inclusive), we would say <me>(-\infty,-3]\cap(-5,\infty)=(-5,-3]</me>.</p>
+            </solution>
+        </exercise>
+  </subsection>
+
+  <subsection>
+    <title>Applications of Compound inequalities</title>
+    <example>
+      <statement>
+        <p>
+          Raphael's friend is getting married and he's decided to give them some dishes from their registry.
+          Raphael doesn't want to seem cheap but isn't a wealthy man either,
+          so he wants to buy <q>enough</q> but not <q>too many.</q>
+          He's decided that he definitely wants to spend at least <m>\$150</m> on his friend,
+          but less than <m>\$250</m>.
+          Each dish is <m>\$21.70</m> and shipping on an order of any size is going to be <m>\$19.99</m>.
+          Given his budget,
+          set up and algebraically solve a compound inequality to find out what his different options are for the number of dishes that he can buy.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First, we should define our variable.
+          Let <m>x</m> represent the number of dishes that Raphael can afford.
+          Next we should write a compound inequality that describes this situation.
+          In this case, Raphael wants to spend between <m>\$150</m> and <m>\$250</m> and,
+          since he's buying <m>x</m> dishes,
+          the price that he will pay is <m>21.70x+19.99</m>.
+          All of this translates to a triple inequality
+          <me>
+            150 \lt 21.70x+19.99 \lt 250
+          </me>
+        </p>
+
+        <p>
+          Now we have to solve this inequality in the usual way.
+          <md>
+            <mrow>150 \amp\lt 21.70x+19.99 \lt 250</mrow>
+            <mrow>150\subtractright{19.99} \amp\lt 21.70x+19.99\subtractright{19.99} \lt 250\subtractright{19.99}</mrow>
+            <mrow>130.01 \amp\lt 21.70x \lt 230.01</mrow>
+            <mrow>\divideunder{130.01}{21.70} \amp\lt \divideunder{21.70x}{21.70} \lt \divideunder{230.01}{21.70}</mrow>
+            <mrow>5.991 \amp\lt x \lt 10.6\amp\text{(note: these values are approximate)}</mrow>
+          </md>
+        </p>
+
+        <p>
+          The interpretation of this inequality is a little tricky.
+          Remember that <m>x</m> represents the number of dishes Raphael can afford.
+          Since you cannot buy <m>5.991</m> dishes
+          (manufacturers will typically only ship whole number amounts of tableware)
+          his minimum purchase must be <m>6</m> dishes.
+          We have a similar problem with his maximum purchase:
+          clearly he cannot buy <m>10.6</m> dishes.
+          So, should we round up or down?
+          If we rounded up,
+          that would be <m>11</m> dishes and that would cost <m>\$21.70\cdot\highlight{11}+\$19.99=\$258.69</m>,
+          which is outside his price range.
+          Therefore, we should actually round
+          <em>down</em> in this case.
+        </p>
+
+        <p>
+          In conclusion, Raphael should buy somewhere between 6 and 10 dishes for his friend to stay within his budget.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Oak Ridge National Laboratory,
+          a renowned scientific research facility,
+          compiled some <url href="https://tedb.ornl.gov/data/" visual="tedb.ornl.gov/data">data</url>
+          on fuel efficiency of a mid-size hybrid car versus the speed that the car was driven.
+          A model for the fuel efficiency <m>e(x)</m>
+          (in miles per gallon,
+          <quantity>
+            <unit base="milepergallon"/>
+          </quantity>)
+          at a speed <m>x</m>
+          (in miles per hour,
+          <quantity>
+            <unit base="mileperhour"/>
+          </quantity>)
+          is <m>e(x)=88-0.7x</m>.
+
+          <ol marker="a.">
+            <li>
+              <p>
+                Evaluate and interpret <m>e(60)</m> in the context of the problem.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Note that this model only applies between certain speeds.
+                The maximum fuel efficiency for which this formula applies is
+                <quantity>
+                  <mag>55</mag><unit base="milepergallon"/>
+                </quantity>
+                and the minimum fuel efficiency for which it applies is
+                <quantity>
+                  <mag>33</mag><unit base="milepergallon"/>
+                </quantity>.
+                Set up and algebraically solve a compound inequality to find the range of speeds for which this model applies.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a.">
+            <li>
+              <p>
+                Let's evaluate <m>e(60)</m> first.
+                <md>
+                  <mrow>e(x)\amp=88-0.7x</mrow>
+                  <mrow>e(\highlight{60})\amp=88-0.7(\highlight{60})</mrow>
+                  <mrow>\amp=46</mrow>
+                </md>
+              </p>
+
+              <p>
+                So, when the hybrid car travels at a speed of
+                <quantity>
+                  <mag>60</mag><unit base="mileperhour"/>
+                </quantity>, it has a fuel efficiency of
+                <quantity>
+                  <mag>46</mag><unit base="milepergallon"/>
+                </quantity>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                In this case, the minimum efficiency is
+                <quantity>
+                  <mag>33</mag><unit base="milepergallon"/>
+                </quantity>
+                and the maximum efficiency is
+                <quantity>
+                  <mag>55</mag><unit base="milepergallon"/>
+                </quantity>.
+                We need to trap our formula between these two values to solve for the respective speeds.
+                <md>
+                  <mrow>33 \amp\lt 88-0.7x \lt 55</mrow>
+                  <mrow>33\subtractright{88} \amp\lt 88-0.7x\subtractright{88} \lt 55\subtractright{88}</mrow>
+                  <mrow>-55 \amp\lt -0.7x \lt -33</mrow>
+                  <mrow>\divideunder{-55}{-0.7} \amp\mathbin{\highlight{\gt}} \divideunder{-0.7x}{-0.7} \mathbin{\highlight{\gt}} \divideunder{-33}{-0.7}</mrow>
+                  <mrow>78.57 \amp\gt x \gt 47.14\amp\text{(note: these values are approximate)}</mrow>
+                </md>
+              </p>
+            </li>
+          </ol>
+        </p>
+
+        <p>
+          This inequality says that our model is applicable when the car's speed is between about
+          <quantity>
+            <mag>47</mag><unit base="mileperhour"/>
+          </quantity>
+          and about
+          <quantity>
+            <mag>79</mag><unit base="mileperhour"/>
+          </quantity>.
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+<!-- TODO: Add more application problems -->
+
+  <reading-questions>
+    <exercise>
+      <statement>
+        <p>
+          What is the difference between an <q>inequality</q> and a <q>compound inequality</q>?
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          What is the difference between a union and an intersection?
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Explain why <m>-3\lt5\ge2</m> doesn't make mathematical sense.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          If you solve a compound inequality and your final simplification is <q><m>x\gt7\text{ and }x\lt12</m></q>,
+          how many solutions are in your solution set?
+          How would you write those solutions?
+        </p>
+      </statement>
+    </exercise>
+  </reading-questions>
+  <exercises>
+
+    <exercisegroup cols="2">
+      <title>Review and Warmup</title>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation10.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation30.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation20.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation40.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality40.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality40.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality70.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality70.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality210.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality210.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality240.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/SolveInequality240.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <title>Check Solutions</title>
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities1.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities1.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <title>Compound Inequalities and Interval Notation</title>
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities2.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities2.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities5.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities5.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities6.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities6.pg" />
+      </exercise>
+
+      <exercise>
+          <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities10.pg" />
+      </exercise>
+      <exercise>
+          <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities10.pg" />
+      </exercise>
+      <exercise>
+          <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities11.pg" />
+      </exercise>
+      <exercise>
+          <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities11.pg" />
+      </exercise>
+
+            <!-- <exercise>
+                <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation10.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation10.pg" />
+            </exercise> -->
+            <!-- these are not in ccog.-->
+            <!-- <exercise>
+                <statement>
+                    <p>Simplify the intersections and unions using set builder notation.</p>
+                    <p>
+                        <ol>
+                            <li><m>\{x\mid x\le -12\}\cap\{x\mid x\lt 4\}</m></li>
+                            <li><m>\{y\mid y\ge 7\}\cup\{y\mid y\gt -1\}</m></li>
+                            <li><m>\{z\mid z\gt 9\}\cap\{z\mid z\le 13\}</m></li>
+                        </ol>
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        <ol>
+                            <li><m>\{x\mid x\le -12\}\cap\{x\mid x\lt 4\}=\{x\mid x\le -12\}</m></li>
+                            <li><m>\{y\mid y\ge 7\}\cup\{y\mid y\gt -1\}=\{y\mid y\gt -1\}</m></li>
+                            <li><m>\{z\mid z\gt 9\}\cap\{z\mid z\le 13\}=\{z\mid 9\lt z\le 13\}</m></li>
+                        </ol>
+                    </p>
+                </solution>
+            </exercise> -->
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <title>Solving a Compound Inequality Algebraically</title>
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities3.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities3.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities4.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities4.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities7.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities7.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities12.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities12.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities12.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities12.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities12.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities12.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities12.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities12.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/CompoundInequalityAnd60.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/CompoundInequalityAnd60.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/CompoundInequalityAnd70.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/LinearInequalities/CompoundInequalityAnd70.pg" />
+      </exercise>
+<!--             <exercise>
+                <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities9.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities9.pg" />
+            </exercise> outside the scope of the course.-->
+    </exercisegroup>
+
+    <exercisegroup>
+      <title>Applications</title>
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/CompoundLinearInequalities/CompoundLinearInequalities8.pg" />
+      </exercise>
+    </exercisegroup>
+
+    <exercisegroup>
+      <title>Challenge</title>
+      <exercise>
+        <!-- Kara's challenge problem -->
+        <webwork>
+             <pg-code>
+               Context("Interval");
+               $a = random(2,10,1);
+               $b = 2*$a;
+               $c = $a + $b;
+               $d = $a + $a + $b;
+               $I = Interval("[$a,$b]");
+            </pg-code>
+            <statement>
+            <!--The answer is an interval.  I do not give any indication of this in the question, as that kind of ruins the question.-->
+              <p>
+                Algebraically, solve for <m>x</m> in the equation:
+                <me>
+                  <var name="$a"/> = \abs{x-<var name="$a"/>} + \abs{x-<var name="$b"/>}
+                </me>
+              </p>
+
+              <p>
+                <var name="$I" width="10"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                Because the expressions inside the absolute value brackets can be positive or negative, I will break this into four possibilities:
+
+                <ol marker="1.">
+                  <li>
+                    <m>(x-<var name="$a"/>)</m> and <m>(x-<var name="$b"/>)</m>
+                  </li>
+
+                  <li>
+                    <m>(<var name="$a"/>-x)</m> and <m>(<var name="$b"/>-x)</m>
+                  </li>
+
+                  <li>
+                    <m>(<var name="$a"/>-x)</m> and <m>(x-<var name="$b"/>)</m>
+                  </li>
+
+                  <li>
+                    <m>(x-<var name="$a"/>)</m> and <m>(<var name="$b"/>-x)</m>
+                  </li>
+                </ol>
+              </p>
+
+              <p>
+                Case 1:
+                <md>
+                  <mrow><var name="$a"/> \amp= \abs{x-<var name="$a"/>} + \abs{x-<var name="$b"/>}</mrow>
+                  <mrow><var name="$a"/> \amp= (x-<var name="$a"/>) + (x-<var name="$b"/>)</mrow>
+                  <mrow><var name="$a"/> \amp= 2x - <var name="$c"/></mrow>
+                  <mrow><var name="$d"/> \amp= 2x</mrow>
+                  <mrow><var name="$b"/> \amp= x</mrow>
+                </md>
+              </p>
+
+              <p>
+                Case 2:
+                <md>
+                  <mrow><var name="$a"/> \amp= \abs{x-<var name="$a"/>} + \abs{x-<var name="$b"/>}</mrow>
+                  <mrow><var name="$a"/> \amp= (<var name="$a"/> - x) + (<var name="$b"/> - x)</mrow>
+                  <mrow><var name="$a"/> \amp= <var name="$c"/> - 2x</mrow>
+                  <mrow>2x \amp= <var name="$c"/> - <var name="$a"/></mrow>
+                  <mrow>x \amp= <var name="$a"/></mrow>
+                </md>
+              </p>
+
+              <p>
+                Case 3:
+                <md>
+                  <mrow><var name="$a"/> \amp= \abs{x-<var name="$a"/>} + \abs{x-<var name="$b"/>}</mrow>
+                  <mrow><var name="$a"/> \amp= (<var name="$a"/> - x) + (x - <var name="$b"/>)</mrow>
+                  <mrow><var name="$a"/> \amp= (<var name="$a"/> - <var name="$b"/>)</mrow>
+                  <mrow><var name="$b"/> \amp= 0</mrow>
+                </md>
+              </p>
+
+              <p>
+                This is a false statement,
+                but what is the implication of this false statement?
+                The implication is that under "Case 3" conditions,
+                the equation is never true.
+              </p>
+
+              <p>
+                Case 4:
+                <md>
+                  <mrow><var name="$a"/> \amp= \abs{x-<var name="$a"/>} + \abs{x-<var name="$b"/>}</mrow>
+                  <mrow><var name="$a"/> \amp= (x-<var name="$a"/>) + (<var name="$b"/> - x)</mrow>
+                  <mrow><var name="$a"/> \amp=  - <var name="$a"/> + <var name="$b"/></mrow>
+                  <mrow><var name="$a"/> \amp=  <var name="$a"/></mrow>
+                </md>
+              </p>
+
+              <p>
+                This is a true statement,
+                but what is the implication of this true statement?
+                This means that the equation is always true under "Case 4" conditions.
+                The function <m>y=\abs{x-<var name="$a"/>}</m> is based on <m>y=x-<var name="$a"/></m> when <m> x > <var name="$a"/> </m>.
+                The function <m>y=\abs{x-<var name="$b"/>}</m> is based on <m>y=<var name="$b"/>-x</m> when <m> x \lt <var name="$b"/></m>.
+                Thus, the equation is always true when <m><var name="$a"/> \lt x \lt <var name="$b"/></m>.
+              </p>
+
+              <p>
+                In conclusion,
+                the equation is true when <m>x = <var name="$b"/></m>,
+                when <m> x = <var name="$a"/></m>,
+                and when <m><var name="$a"/> \lt x \lt <var name="$b"/></m>.
+                Thus, the interval solution is <m>[<var name="$a"/>,<var name="$b"/>]</m>.
+              </p>
+            </solution>
+        </webwork>
+      </exercise>
+    </exercisegroup>
+  </exercises>
+</section>
+

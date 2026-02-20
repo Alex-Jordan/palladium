@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2016-2019                                                  -->
+<!-- Portland Community College                                           -->
+<!--                                                                      -->
+<!-- This file is part of Open Resources for Community College Algebra    -->
+<!-- (ORCCA).                                                             -->
+<!--                                                                      -->
+<!-- Open Resources for Community College Algebra is licensed under a     -->
+<!-- Creative Commons Attribution 4.0 International License.              -->
+<!--                                                                      -->
+<!-- Under this license, any user of this textbook or the textbook        -->
+<!-- contents must provide proper attribution as follows.                 -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- include in every digital format page view (including but not         -->
+<!-- limited to EPUB, PDF, and HTML) and on every physical printed page   -->
+<!-- the following attribution:                                           -->
+<!--                                                                      -->
+<!-- Original source material, products with readable and accessible      -->
+<!-- math content, and other information freely available at              -->
+<!-- pcc.edu/orcca.                                                       -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- reproduce any math content (such as math expressions and equations)  -->
+<!-- in a readable manner, and offer math content in at least one web     -->
+<!-- accessible manner.                                                   -->
+<!--                                                                      -->
+<!-- The Portland Community College name, Portland Community College      -->
+<!-- logo, ORCCA name, Open Resources for Community College Algebra name, -->
+<!-- ORCCA logo, and front and back cover designs are not subject to the  -->
+<!-- Creative Commons license and may not be reproduced without the       -->
+<!-- prior and express written consent of Portland Community College.     -->
+<!--                                                                      -->
+<!-- For questions regarding this license, please contact                 -->
+<!-- orcca-group@pcc.edu.                                                 -->
+<!-- *********************************************************************-->
+<section xml:id="review-radical-expressions-and-equations" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Radical Expressions and Equations Chapter Review</title>
+  <assemblage>
+    <title>Square and <m>n</m>th Root Properties</title>
+    <p>
+      The <term>square root</term> of some number is a non-negative number you can multiply with
+      itself to get that first number. For example, the square root of <m>9</m> is <m>3</m> because
+      <m>3\cdot3=9</m>. The symbol for a square root uses a <term>radical</term>, like
+      <m>\sqrt{9}</m>.
+    </p>
+    <p>
+      Memorizing some square roots can be helpful.
+    </p>
+    <tabular halign="center">
+      <row>
+        <cell><m>\sqrt{0}=0</m></cell>
+        <cell><m>\sqrt{1}=1</m></cell>
+        <cell><m>\sqrt{4}=2</m></cell>
+        <cell><m>\sqrt{9}=3</m></cell>
+      </row>
+      <row>
+        <cell><m>\sqrt{16}=4</m></cell>
+        <cell><m>\sqrt{25}=5</m></cell>
+        <cell><m>\sqrt{36}=6</m></cell>
+        <cell><m>\sqrt{49}=7</m></cell>
+      </row>
+      <row>
+        <cell><m>\sqrt{64}=8</m></cell>
+        <cell><m>\sqrt{81}=9</m></cell>
+        <cell><m>\sqrt{100}=10</m></cell>
+        <cell><m>\sqrt{121}=11</m></cell>
+      </row>
+      <row>
+        <cell><m>\sqrt{144}=12</m></cell>
+        <cell><m>\sqrt{225}=15</m></cell>
+        <cell><m>\sqrt{256}=16</m></cell>
+        <cell><m>\sqrt{400}=20</m></cell>
+      </row>
+    </tabular>
+    <p>
+      Many square roots have decimal expressions that go on forever, like
+      <m>\sqrt{2}=1.4142\ldots</m>. A calculator can provide these decimal expressions or you can
+      estimate them.
+    </p>
+    <p>
+      There are also higher index roots, also known as <term><m>n</m>th roots</term>. The <m>n</m>th
+      root of some number is a number you can multiply with itself <m>n</m> times to get that first
+      number. The <m>n</m>th root of a positive number is positive. The <m>n</m>th root of a
+      negative number is negative when <m>n</m> is odd, and does not exist when <m>n</m> is even.
+      The symbol for an <m>n</m>th root uses a <term>radical</term> with <m>n</m> written in the
+      pocket, like <m>\sqrt[3]{8}</m>.
+    </p>
+    <p>
+      The <m>n</m>th root of a number <m>a</m> is a solution to the equation <m>x^n=a</m>.
+    </p>
+    <p>
+      Square roots and <m>n</m>th roots have algebra properties that can be used to simply radical
+      expressions.
+      <dl>
+        <li>
+          <title>Root of a Product Property</title>
+          <p>
+            <m>\sqrt[m]{a\cdot b} = \sqrt[m]{a} \cdot \sqrt[m]{b}</m>
+          </p>
+        </li>
+        <li>
+          <title>Root of a Quotient Property</title>
+          <p>
+            <m>\sqrt[m]{\frac{a}{b}} = \frac{\sqrt[m]{a}}{\sqrt[m]{b}}</m> as long as <m>b\neq 0</m>
+          </p>
+        </li>
+      </dl>
+    </p>
+    <p>
+      A goal is to simplify any radical expression such that the <term>radicand</term> (the number
+      inside the radical) is a whole number, but as small as possible. This can be done by
+      <q>factoring</q> the radicand into factors where one facotr is a perfect square, and then
+      using the first property above.
+    </p>
+    <p>
+      More complicated radical expressions with more than one radical might be simplified using
+      radical properties and combining like radical terms.
+    </p>
+  </assemblage>
+
+  <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot20-copy2">
+    <introduction>
+      <p>
+        Evaluate the following.
+      </p>
+    </introduction>
+    <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateSquareRoot20.pg"/></webwork>
+  </exercise>
+  <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_MultiplyRadicals30-copy2">
+    <introduction>
+      <p>
+        Simplify the expression or state that it is not a real number.
+      </p>
+    </introduction>
+    <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/MultiplyRadicals30.pg"/></webwork>
+  </exercise>
+  <exercise label="solve-third-power-equation-copy2">
+    <introduction>
+      <p>
+        Find a solution to the equation. Use a radical expression. If there are no solutions,
+        say so.
+      </p>
+    </introduction>
+    <webwork copy="webwork-solve-third-power-equation"/>
+  </exercise>
+
+  <assemblage>
+    <title>Rationalizing the Denominator</title>
+    <p>
+      For various reasons, a radical inside a denominator in undesirable. The same is true for a
+      denominator inside a radical. Here are some examples of these undesirable expressions.
+      <me>\frac{3}{\sqrt2}\quad\frac{1+\sqrt{3}}{4\sqrt{5}}\quad\frac{7}{3+\sqrt{5}}\quad\sqrt{\frac35}</me>
+      There are algebra steps that can be taken to write numbers like these without a radical in the
+      denominator or a denominator inside a radical. The process is called <q>rationalizing the
+      denominator</q>.
+    </p>
+    <p>
+      If the denominator is a single term with a radical, multiplying the entire expression by that
+      radical over itself will not change the value of the expression, but it will leave you with a
+      rational denominator. For example:
+      <me>\frac{3}{\sqrt2}\cdot\frac{\sqrt2}{\sqrt2}=\frac{3\sqrt{2}}{2}\qquad\frac{1+\sqrt{3}}{4\sqrt{5}}\cdot\frac{\sqrt5}{\sqrt5}=\frac{\sqrt{5}+\sqrt{15}}{20}</me>
+    </p>
+    <p>
+      If the denominator has two terms where one or both are radicals, multiplying the entire
+      expression by the <term>conjugate</term> of that denominator over itself will not change the
+      value of the expression, but it will leave you with a rational denominator. For example:
+      <me>\frac{7}{3+\sqrt{5}}\cdot{3-\sqrt{5}}{3-\sqrt{5}}=\frac{14-7\sqrt{5}}{3^2-5}=\frac{14-7\sqrt{5}}{4}</me>
+    </p>
+    <p>
+      If there is a fraction within that denominator, you can use a property of radicals to separate
+      the numerator and denominator into their own radicals:
+      <me>\sqrt{\frac35}=\frac{\sqrt3}{\sqrt5}</me>
+      And then you can do as we did above in the first example:
+      <me>\frac{\sqrt3}{\sqrt5}\cdot\frac{\sqrt5}{\sqrt5}=\frac{\sqrt15}{5}</me>
+    </p>
+  </assemblage>
+
+  <p>
+    Simplify each expression. If the result has a denominator, it must be rationalized.
+  </p>
+
+  <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator60-copy2">
+    <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RationalizeDenominator60.pg"/></webwork>
+  </exercise>
+  <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator100-copy2">
+    <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RationalizeDenominator100.pg"/></webwork>
+  </exercise>
+  <exercise label="PCC-ORCCA-ed3_Math95_SimplifyRadicals_SimplifyRadicals24-copy4">
+    <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/Math95/SimplifyRadicals/SimplifyRadicals24.pg"/></webwork>
+  </exercise>
+
+  <assemblage>
+    <title>Radical Expressions and Rational Exponents</title>
+    <p>
+      The square root of a number is the same thing as raising that number to the <m>\frac12</m>
+      power. That is, <m>\sqrt{x}=x^{1/2}</m>. Similarly, the <m>n</m>th root of a number is the
+      same thing as raising that number to the <m>\frac1n</m> power. That is,
+      <m>\sqrt[n]{x}=x^{1/n}</m>. More generally,
+      <me>x^{m/n}=\sqrt[n]{x^m}=\left(\sqrt[n]{x}\right)^m</me>
+    </p>
+    <p>
+      When given radical expressions, using the above to write them with rational exponents can be
+      useful for simplifying the expressions. This is because we have all of the exponent properties
+      from <xref ref="section-more-exponent-properties"/> and other places. So we have a lot of
+      tools that work well for expressions with exponents.
+    </p>
+    <p>
+      So one possible approach to simplifying a radical expression is to convert it to use rational
+      exponents and then see what you can do using exponent properties. After some progress has been
+      made, you might also convert your result back into a radical form.
+    </p>
+  </assemblage>
+
+  <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateFractionalExponent25-copy2">
+    <introduction>
+      <p>
+        Evaluate each expression without help from a calculator.
+      </p>
+    </introduction>
+    <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateFractionalExponent25.pg"/></webwork>
+  </exercise>
+  <exercise label="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents12-copy2">
+    <introduction>
+      <p>
+        Write the expression with rational exponents.
+      </p>
+    </introduction>
+    <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/Math95/RadicalsRationalExponents/RadicalsRationalExponents12.pg"/></webwork>
+  </exercise>
+  <exercise label="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents20-copy2">
+    <introduction>
+      <p>
+        Simplify the expression, answering with rational exponents and not radicals.
+      </p>
+    </introduction>
+    <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/Math95/RadicalsRationalExponents/RadicalsRationalExponents20.pg"/></webwork>
+  </exercise>
+
+  <assemblage>
+    <title>Solving Radical Equations</title>
+    <p>
+      If an equation has one variable that appears one time in the equation, and it is within a
+      radical, then solving the equation is relatively straightforward. First isolate the radical.
+      Then raise each side of the equation to the appropriate power to undo the radical. This
+      either solves the equation for you or leaves you with only some basic steps left to apply.
+    </p>
+  </assemblage>
+
+  <p>
+    Solve each equation.
+  </p>
+  <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation20-copy2">
+    <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalEquations/SolvingRadicalEquation20.pg"/></webwork>
+  </exercise>
+  <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation50-copy2">
+    <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalEquations/SolvingRadicalEquation50.pg"/></webwork>
+  </exercise>
+  <exercise label="PCC-ORCCA-ed3_Math95_SolvingRadicalEquations_SolvingRadicalEquations5-copy2">
+    <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/Math95/SolvingRadicalEquations/SolvingRadicalEquations5.pg"/></webwork>
+  </exercise>
+
+  <exercises>
+    <title>Review Exercises for <xref ref="chapter-radical-expressions-and-equations"/></title>
+    <subexercises>
+      <title><xref ref="section-square-and-nth-root-properties"/>: <xref ref="section-square-and-nth-root-properties" text="title"/></title>
+      <exercisegroup cols="2">
+        <introduction>
+          <p>
+            Evaluate the expression without using a calculator.
+          </p>
+        </introduction>
+        <exercise label="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers20-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicMath/IntegerAndSquareRoot/identifySquareNumbers20.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers30-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicMath/IntegerAndSquareRoot/identifySquareNumbers30.pg"/></webwork>
+        </exercise> -->
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers40-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicMath/IntegerAndSquareRoot/identifySquareNumbers40.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers50-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicMath/IntegerAndSquareRoot/identifySquareNumbers50.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers60-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicMath/IntegerAndSquareRoot/identifySquareNumbers60.pg"/></webwork>
+        </exercise> -->
+      </exercisegroup>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Without using a calculator...
+          </p>
+        </introduction>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EstimateRadical10-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EstimateRadical10.pg"/></webwork>
+        </exercise>
+      </exercisegroup>
+
+      <exercisegroup cols="2">
+        <title>Simplify Radical Expressions</title>
+        <introduction>
+          <p>
+            Evaluate the following.
+          </p>
+        </introduction>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot20-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateSquareRoot20.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot25-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateSquareRoot25.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot30-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateSquareRoot30.pg"/></webwork>
+        </exercise> -->
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot40-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateSquareRoot40.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot50-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateSquareRoot50.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot60-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateSquareRoot60.pg"/></webwork>
+        </exercise> -->
+      </exercisegroup>
+
+      <exercisegroup cols="2">
+        <title>Simplifying Square Root Expressions</title>
+        <introduction>
+          <p>
+            Simplify the expression or state that it is not a real number.
+          </p>
+        </introduction>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty10-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RadicalDivisionProperty10.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty20-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RadicalDivisionProperty20.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals04-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals04.pg"/></webwork>
+        </exercise> -->
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals06-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals06.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals02-copy2">
+          <webwork seed="603"><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals02.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_MultiplyRadicals10-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/MultiplyRadicals10.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_MultiplyRadicals20-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/MultiplyRadicals20.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_MultiplyRadicals30-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/MultiplyRadicals30.pg"/></webwork>
+        </exercise> -->
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_MultiplyRadicals40-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/MultiplyRadicals40.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty30-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RadicalDivisionProperty30.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty40-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RadicalDivisionProperty40.pg"/></webwork>
+        </exercise> -->
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals20-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals20.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals30-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals30.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals50-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals50.pg"/></webwork>
+        </exercise> -->
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals70-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals70.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals60-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals60.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals90-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals90.pg"/></webwork>
+        </exercise> -->
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals100-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals100.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals120-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals120.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals130-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals130.pg"/></webwork>
+        </exercise> -->
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals137-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals137.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals138-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals138.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals139-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals139.pg"/></webwork>
+        </exercise> -->
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals140-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals140.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_FOILradical1-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/FOILradical1.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_FOILradical2-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/FOILradical2.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_FOILradical3-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/FOILradical3.pg"/></webwork>
+        </exercise>
+      </exercisegroup>
+
+      <exercisegroup cols="5">
+        <title>Higher Index Roots</title>
+        <introduction>
+          <p>
+            Simplify the higher index radical.
+          </p>
+        </introduction>
+        <!-- root(n,x) with positive x, integer answers -->
+        <!-- seed set to guarantee distinct versions -->
+        <exercise label="simplify-radical-positive-integer-copy6">
+          <webwork seed="2" copy="webwork-simplify-radical-positive-integer"/>
+        </exercise>
+        <!-- root(n,x) with negative x, integer or nonreal answers -->
+        <exercise label="simplify-radical-negative-integer-copy6">
+          <webwork copy="webwork-simplify-radical-negative-integer"/>
+        </exercise>
+        <!-- seed set to guarantee an even index -->
+        <!-- seed set to guarantee an even index -->
+        <!-- root(n,x) with positive integer x, non-integer answers -->
+        <exercise label="simplify-radical-non-integer-copy6">
+          <webwork copy="webwork-simplify-radical-non-integer"/>
+        </exercise>
+        <!-- root(n,x) with positive fraction x, denominator is nth power -->
+        <exercise label="simplify-radical-denominator-integer-copy2">
+          <webwork copy="webwork-simplify-radical-denominator-integer"/>
+        </exercise>
+        <!-- root(n,x) with positive fraction x, denominator is nth power, numerator has nth power factor -->
+        <exercise label="simplify-radical-denominator-integer-numerator-splits-copy4">
+          <webwork copy="webwork-simplify-radical-denominator-integer-numerator-splits"/>
+        </exercise>
+      </exercisegroup>
+
+      <exercisegroup cols="3">
+        <introduction>
+          <p>
+            Find a solution to the equation. Use a radical expression. If there are no solutions,
+            say so.
+          </p>
+        </introduction>
+        <!-- <exercise label="solve-square-equation-copy2">
+          <webwork copy="webwork-solve-square-equation"/>
+        </exercise> -->
+        <exercise label="solve-square-equation-negative-copy2">
+          <webwork copy="webwork-solve-square-equation-negative"/>
+        </exercise>
+        <!-- <exercise label="solve-third-power-equation-copy2">
+          <webwork copy="webwork-solve-third-power-equation"/>
+        </exercise> -->
+        <!-- <exercise label="solve-third-power-equation-negative-copy2">
+          <webwork copy="webwork-solve-third-power-equation-negative"/>
+        </exercise> -->
+        <exercise label="solve-fourth-power-equation-copy2">
+          <webwork copy="webwork-solve-fourth-power-equation"/>
+        </exercise>
+        <!-- <exercise label="solve-fourth-power-equation-negative-copy2">
+          <webwork copy="webwork-solve-fourth-power-equation-negative"/>
+        </exercise> -->
+        <exercise label="solve-fifth-power-equation-copy2">
+          <webwork copy="webwork-solve-fifth-power-equation"/>
+        </exercise>
+      </exercisegroup>
+    </subexercises>
+
+    <subexercises>
+      <title><xref ref="section-rationalizing-the-denominator"/>: <xref ref="section-rationalizing-the-denominator" text="title"/></title>
+      <exercisegroup cols="5">
+        <introduction>
+          <p>
+            Simplify the expression. If the result has a denominator, it must be rationalized.
+          </p>
+        </introduction>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator30-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RationalizeDenominator30.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator60-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RationalizeDenominator60.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator70-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RationalizeDenominator70.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator80-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RationalizeDenominator80.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator10-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RationalizeDenominator10.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator40-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RationalizeDenominator40.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator45-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RationalizeDenominator45.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator50-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RationalizeDenominator50.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator90-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RationalizeDenominator90.pg"/></webwork>
+        </exercise>
+        <!-- seed set to guarantee distinct versions -->
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator100-copy2">
+          <webwork seed="215"><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RationalizeDenominator100.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator110-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RationalizeDenominator110.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator120-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RationalizeDenominator120.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator35-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RationalizeDenominator35.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator130-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RationalizeDenominator130.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_Math95_SimplifyRadicals_SimplifyRadicals24-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/Math95/SimplifyRadicals/SimplifyRadicals24.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_Math95_SimplifyRadicals_SimplifyRadicals26-copy4">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/Math95/SimplifyRadicals/SimplifyRadicals26.pg"/></webwork>
+        </exercise>
+      </exercisegroup>
+    </subexercises>
+
+    <subexercises>
+      <title><xref ref="section-radical-expressions-and-rational-exponents"/>: <xref ref="section-radical-expressions-and-rational-exponents" text="title"/></title>
+      <exercisegroup cols="3">
+        <introduction>
+          <p>
+            Evaluate each expression without help from a calculator.
+          </p>
+        </introduction>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateFractionalExponent25-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateFractionalExponent25.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateFractionalExponent26-copy2">
+          <webwork seed="5"><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateFractionalExponent26.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateFractionalExponent30-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateFractionalExponent30.pg"/></webwork>
+        </exercise> -->
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateFractionalExponent40-copy2">
+          <webwork seed="9"><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateFractionalExponent40.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateOtherRoots40-copy4">
+          <webwork seed="58"><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateOtherRoots40.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateFractionalExponent10-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateFractionalExponent10.pg"/></webwork>
+        </exercise> -->
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateFractionalExponent20-copy2">
+          <webwork seed="3"><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateFractionalExponent20.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateOtherRoots10-copy2">
+          <webwork seed="14"><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateOtherRoots10.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateOtherRoots20-copy2">
+          <webwork seed="16"><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateOtherRoots20.pg"/></webwork>
+        </exercise> -->
+      </exercisegroup>
+
+      <exercisegroup>
+        <introduction>
+          <p>
+            Use a calculator to approximate the expression with a decimal to four significant digits.
+          </p>
+        </introduction>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateOtherRoots30-copy4">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateOtherRoots30.pg"/></webwork>
+        </exercise>
+      </exercisegroup>
+
+      <exercisegroup cols="2">
+        <title>Convert Radicals to Fractional Exponents</title>
+        <introduction>
+          <p>
+            Write the expression with rational exponents.
+          </p>
+        </introduction>
+        <exercise label="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents11-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/Math95/RadicalsRationalExponents/RadicalsRationalExponents11.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents12-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/Math95/RadicalsRationalExponents/RadicalsRationalExponents12.pg"/></webwork>
+        </exercise> -->
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalToRationalExponent10-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RadicalToRationalExponent10.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalToRationalExponent20-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RadicalToRationalExponent20.pg"/></webwork>
+        </exercise>
+      </exercisegroup>
+
+      <exercisegroup cols="3">
+        <title>Convert Fractional Exponents to Radicals</title>
+        <introduction>
+          <p>
+            Convert the expression to use radical notation.
+          </p>
+        </introduction>
+        <!-- <exercise label="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents7-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/Math95/RadicalsRationalExponents/RadicalsRationalExponents7.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents8-copy2">
+          <webwork seed="58"><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/Math95/RadicalsRationalExponents/RadicalsRationalExponents8.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents10-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/Math95/RadicalsRationalExponents/RadicalsRationalExponents10.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_FractionalExponentToRadical10-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/FractionalExponentToRadical10.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_FractionalExponentToRadical20-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/FractionalExponentToRadical20.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_FractionalExponentToRadical30-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/FractionalExponentToRadical30.pg"/></webwork>
+        </exercise> -->
+      </exercisegroup>
+
+      <exercisegroup cols="3">
+        <title>Simplifying Expressions with Rational Exponents</title>
+        <introduction>
+          <p>
+            Simplify the expression, answering with rational exponents and not radicals.
+          </p>
+        </introduction>
+        <exercise label="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents13-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/Math95/RadicalsRationalExponents/RadicalsRationalExponents13.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents14-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/Math95/RadicalsRationalExponents/RadicalsRationalExponents14.pg"/></webwork>
+        </exercise> -->
+        <!-- <exercise label="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents16-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/Math95/RadicalsRationalExponents/RadicalsRationalExponents16.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents17-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/Math95/RadicalsRationalExponents/RadicalsRationalExponents17.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents20-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/Math95/RadicalsRationalExponents/RadicalsRationalExponents20.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents22-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/Math95/RadicalsRationalExponents/RadicalsRationalExponents22.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents24-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/Math95/RadicalsRationalExponents/RadicalsRationalExponents24.pg"/></webwork>
+        </exercise> -->
+      </exercisegroup>
+    </subexercises>
+
+    <subexercises>
+      <title><xref ref="section-solving-radical-equations"/>: <xref ref="section-solving-radical-equations" text="title"/></title>
+      <exercisegroup cols="2">
+        <title>Solving Radical Equations</title>
+        <introduction>
+          <p>
+            Solve the equation.
+          </p>
+        </introduction>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation10-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalEquations/SolvingRadicalEquation10.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation20-copy3">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalEquations/SolvingRadicalEquation20.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation30-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalEquations/SolvingRadicalEquation30.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation40-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalEquations/SolvingRadicalEquation40.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation50-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalEquations/SolvingRadicalEquation50.pg"/></webwork>
+        </exercise> -->
+        <!-- <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation90-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalEquations/SolvingRadicalEquation90.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation100-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalEquations/SolvingRadicalEquation100.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_Math95_SolvingRadicalEquations_SolvingRadicalEquations1-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/Math95/SolvingRadicalEquations/SolvingRadicalEquations1.pg"/></webwork>
+        </exercise> -->
+        <exercise label="PCC-ORCCA-ed3_Math95_SolvingRadicalEquations_SolvingRadicalEquations2-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/Math95/SolvingRadicalEquations/SolvingRadicalEquations2.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_Math95_SolvingRadicalEquations_SolvingRadicalEquations3-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/Math95/SolvingRadicalEquations/SolvingRadicalEquations3.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_Math95_SolvingRadicalEquations_SolvingRadicalEquations5-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/Math95/SolvingRadicalEquations/SolvingRadicalEquations5.pg"/></webwork>
+        </exercise> -->
+      </exercisegroup>
+  
+      <exercisegroup>
+        <title>Isolating a Variable</title>
+        <exercise label="PCC-ORCCA-ed3_Math95_SolvingRadicalEquations_SolvingRadicalEquationsLiteral120-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/Math95/SolvingRadicalEquations/SolvingRadicalEquationsLiteral120.pg"/></webwork>
+        </exercise>
+        <!-- <exercise label="PCC-ORCCA-ed3_Math95_SolvingRadicalEquations_SolvingRadicalEquationsLiteral112-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/Math95/SolvingRadicalEquations/SolvingRadicalEquationsLiteral112.pg"/></webwork>
+        </exercise> -->
+      </exercisegroup>
+  
+      <!-- <exercisegroup>
+        <title>Pendulum</title>
+        <introduction>
+          <p>
+            A pendulum has length <m>L</m>, measured in feet. The amount of time that it takes to
+            swing back and forth one full cycle is called the <q>period</q> and is denoted <m>T</m>.
+            The following formula from physics relates <m>T</m> to <m>L</m>.
+            <me>T = 2 \pi \sqrt{\frac{L}{32}}</me>
+          </p>
+        </introduction>
+        <exercise label="PCC-ORCCA-ed3_Math95_SolvingRadicalEquations_SolvingRadicalEquationsApplication122-copy2">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/Math95/SolvingRadicalEquations/SolvingRadicalEquationsApplication122.pg"/></webwork>
+        </exercise>
+      </exercisegroup>   -->
+    </subexercises>
+  </exercises>
+</section>
+

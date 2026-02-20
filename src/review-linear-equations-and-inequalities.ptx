@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2016-2019                                                  -->
+<!-- Portland Community College                                           -->
+<!--                                                                      -->
+<!-- This file is part of Open Resources for Community College Algebra    -->
+<!-- (ORCCA).                                                             -->
+<!--                                                                      -->
+<!-- Open Resources for Community College Algebra is licensed under a     -->
+<!-- Creative Commons Attribution 4.0 International License.              -->
+<!--                                                                      -->
+<!-- Under this license, any user of this textbook or the textbook        -->
+<!-- contents must provide proper attribution as follows.                 -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- include in every digital format page view (including but not         -->
+<!-- limited to EPUB, PDF, and HTML) and on every physical printed page   -->
+<!-- the following attribution:                                           -->
+<!--                                                                      -->
+<!-- Original source material, products with readable and accessible      -->
+<!-- math content, and other information freely available at              -->
+<!-- pcc.edu/orcca.                                                       -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- reproduce any math content (such as math expressions and equations)  -->
+<!-- in a readable manner, and offer math content in at least one web     -->
+<!-- accessible manner.                                                   -->
+<!--                                                                      -->
+<!-- The Portland Community College name, Portland Community College      -->
+<!-- logo, ORCCA name, Open Resources for Community College Algebra name, -->
+<!-- ORCCA logo, and front and back cover designs are not subject to the  -->
+<!-- Creative Commons license and may not be reproduced without the       -->
+<!-- prior and express written consent of Portland Community College.     -->
+<!--                                                                      -->
+<!-- For questions regarding this license, please contact                 -->
+<!-- orcca-group@pcc.edu.                                                 -->
+<!-- *********************************************************************-->
+<section xml:id="review-linear-equations-and-inequalities">
+  <title>Linear Equations and Inequalities Chapter Review</title>
+  <assemblage>
+    <title>Solving Multistep Linear Equations</title>
+    <p>
+      There is a regular process to use for solving a linear equation.
+      <dl>
+        <li>
+          <title>Simplify</title>
+          <p>
+            Simplify the expressions on each side of the equation by distributing and combining
+            like terms.
+          </p>
+        </li>
+        <li>
+          <title>Separate</title>
+          <p>
+            Use addition or subtraction to separate the terms so that the variable terms are on
+            one side of the equation and the constant terms are on the other side of the equation.
+          </p>
+        </li>
+        <li>
+          <title>Clear the Coefficient</title>
+          <p>
+            Use multiplication or division to eliminate the variable term's coefficient.
+          </p>
+        </li>
+        <li>
+          <title>Check</title>
+          <p>
+            Check the solution in the original equation. Substitute values into the original
+            equation and use the order of operations to simplify both sides. It's important to use
+            the order of operations alone rather than properties like the distributive law.
+            Otherwise you might repeat the same arithmetic errors you (might have) made while
+            solving, and fail to catch an incorrect solution.
+          </p>
+        </li>
+        <li>
+          <title>Summarize</title>
+          <p>
+            State the solution set. Or in the case of an application problem, summarize the result
+            in a complete sentence using appropriate units.
+          </p>
+        </li>
+      </dl>
+    </p>
+
+    <p>
+      Simplifying expressions, evaluating expressions, and solving equations are distinct algebra
+      tasks.
+      <ul>
+        <li>
+          <p>
+            An expression like <m>10-3(x+2)</m> can be <term>simplified</term> to <m>-3x+4</m> (as
+            in <xref ref="example-differentiate-simplify-expressions"/>). However we cannot
+            <q>solve</q> an expression like this. It is incorrect to say you will <q>solve
+            <m>10-3(x+2)</m></q>.
+          </p>
+        </li>
+        <li>
+          <p>
+            An expression like <m>10-3(x+2)</m> can be <term>evaluated</term>, but only once you
+            have a number to use in place of the variable. This is what happens in
+            <xref ref="example-differentiate-evaluate-expressions"/>, where <m>x=2</m>, and the
+            expression evaluates to <m>-2</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            An equation connects two expressions with an equal sign. In
+            <xref ref="example-differentiate-solve-equations"/>, <m>10-3(x+2)=x-16</m> has one
+            expression on either side of equal sign. You can <term>solve</term> this equation,
+            because it is an equation. You can also solve inequalities. You just cannot solve an
+            expression like <m>10-3(x+2)</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            When we solve the equation <m>10-3(x+2)=x-16</m>, we are looking for a number which
+            makes those two expressions evaluate to the same value. In
+            <xref ref="example-differentiate-solve-equations"/>, we found the solution was <m>5</m>.
+            That number <m>5</m> makes both <m>10-3(x+2)</m> and <m>x-16</m> evaluate to the same
+            number (and that number is <m>-11</m> if you were curious.)
+          </p>
+        </li>
+      </ul>
+    </p>
+  </assemblage>
+
+  <exercise label="use-evaluate-simplify-solve-appropriately-for-quiz-copy">
+    <webwork copy="webwork-use-evaluate-simplify-solve-appropriately-for-quiz"/>
+  </exercise>
+  <exercise label="two-step-integer-mxplusbequalsc-copy2">
+    <introduction>
+      <p>
+        Solve the equation.
+      </p>
+    </introduction>
+    <webwork copy="webwork-two-step-integer-mxplusbequalsc"/>
+  </exercise>
+  <exercise label="tire-pressure-solve-equation-copy">
+    <webwork copy="webwork-tire-pressure-solve-equation"/>
+  </exercise>
+
+  <assemblage>
+    <title>Solving Multistep Linear Inequalities</title>
+    <p>
+      Solving a linear inequality is much like solving a linear equation. Two noteworthy differences
+      are that multiplication/division by a negative number requires reversing the direction of the
+      inequality symbol, and checking a solution takes more effort.
+      <dl>
+        <li>
+          <title>Simplify</title>
+          <p>
+            Simplify the expressions on each side of the inequality by distributing and combining
+            like terms.
+          </p>
+        </li>
+        <li>
+          <title>Separate</title>
+          <p>
+            Use addition or subtraction to separate the terms so that the variable terms are on
+            one side of the inequality and the constant terms are on the other side of the
+            inequality.
+          </p>
+        </li>
+        <li>
+          <title>Clear the Coefficient</title>
+          <p>
+            Use multiplication or division to eliminate the variable term's coefficient. <alert>If
+            you multiply or divide each side by a negative number, switch the direction of the
+            inequality symbol.</alert>
+          </p>
+        </li>
+        <li>
+          <title>Check</title>
+          <p>
+            A solution to a linear inequality has a <q>boundary number</q>. Using the original
+            inequality, check (1) a number less than the boundary number, (2) the boundary number
+            itself, and (3) a number greater than the boundary number to confirm what should and
+            shouldn't be solutions are all working as expected. (This can take time, so use your
+            judgment about when you might get away with skipping this checking.)
+          </p>
+        </li>
+        <li>
+          <title>Summarize</title>
+          <p>
+            State the solution set. Or in the case of an application problem, summarize the result
+            in a complete sentence using appropriate units.
+          </p>
+        </li>
+      </dl>
+    </p>
+  </assemblage>
+
+  <exercise label="integer-mxplusbineqc-copy2">
+    <introduction>
+      <p>
+        Solve the inequality. Graph the solution set, and write the solution set using both
+        interval notation and set-builder notation.
+      </p>
+    </introduction>
+    <webwork copy="webwork-integer-mxplusbineqc"/>
+  </exercise>
+  <exercise label="integer-bplusnegmxineqc-copy2">
+    <introduction>
+      <p>
+        Solve the inequality. Graph the solution set, and write the solution set using both
+        interval notation and set-builder notation.
+      </p>
+    </introduction>
+    <webwork copy="webwork-integer-bplusnegmxineqc"/>
+  </exercise>
+  <exercise label="out-of-gas-inequality-copy">
+    <webwork copy="webwork-out-of-gas-inequality"/>
+  </exercise>
+
+  <assemblage>
+    <title>Linear Equations and Inequalities with Fractions</title>
+    <p>
+      For both equations and inequalities, it is often helpful to <q>clear denominators</q> if there
+      are any fractions present. This is done by identifying the <q>least common denominator</q>
+      for the fractions that are present, and multiplying on each side by that number. This lets you
+      avoid some fraction arithmetic that could lead to human error.
+    </p>
+    <p>
+      A <term>proportional equation</term> uses two ratios that should be equal to each other, for
+      situations where two quantities change together. One example might use a ratio of how much
+      of a substance is dissolved in how much of a certain liquid. Typically one ratio has two known
+      numbers, and the other ratio has one known number and one unknown variable.
+    </p>
+  </assemblage>
+
+  <exercise label="linear-equation-fractions-two-rel-prime-copy2">
+    <introduction>
+      <p>
+        Solve the given equation. Practice clearing the denominator(s) as a first step.
+      </p>
+    </introduction>
+    <webwork copy="webwork-linear-equation-fractions-two-rel-prime"/>
+  </exercise>
+  <exercise label="linear-inequality-fractions-pqr-denom-copy">
+    <introduction>
+      <p>
+        Solve the given inequality. Practice clearing the denominator(s) as a first step.
+      </p>
+    </introduction>
+    <webwork copy="webwork-linear-inequality-fractions-pqr-denom"/>
+  </exercise>
+  <exercise label="soup-recipe-copy">
+    <webwork copy="webwork-soup-recipe"/>
+  </exercise>
+
+  <assemblage>
+    <title>Special Solution Sets</title>
+    <p>
+      An equation or inequality might reduce to an unambiguously true statement like <m>2=2</m> or
+      <m>4\lt9</m>. If it does, then the solution set is all real numbers. This can be written as
+      <m>(\infty,\infty)</m> or <m>\mathbb{R}</m>.
+    </p>
+    <p>
+      Another special thing that can happen is that an equation or inequality can reduce to an
+      unambiguously false statement like <m>2=5</m> or <m>4\geq9</m>. When this happens, then there
+      is no solution at all. We can say that the solution set is <q>empty</q>. The solution set can
+      be written as <m>\{\}</m> or <m>\emptyset</m>.
+    </p>
+  </assemblage>
+
+  <exercise label="solve-special-with-like-terms-copy2">
+    <introduction>
+      <p>
+        Solve the equation for its variable.
+      </p>
+    </introduction>
+    <webwork copy="webwork-solve-special-with-like-terms"/>
+  </exercise>
+  <exercise label="solve-mxequalsmxplusb-fraction-copy2">
+    <introduction>
+      <p>
+        Solve the equation for its variable.
+      </p>
+    </introduction>
+    <webwork copy="webwork-solve-mxequalsmxplusb-fraction"/>
+  </exercise>
+  <exercise label="solve-special-with-simplification2-inequality-copy2">
+    <introduction>
+      <p>
+        Solve the inequality for its variable.
+      </p>
+    </introduction>
+    <webwork copy="webwork-solve-special-with-simplification2-inequality"/>
+  </exercise>
+
+  <assemblage>
+    <title>Isolating a Linear Variable</title>
+    <p>
+      Equations might relate two or more variables to each other. When you have an equation like
+      that (for example <m>2x+3y=4z</m>) you can solve for any one of the variables, isolating it on
+      one side of an equal sign. The example could be solved for <m>y</m>, which gives
+      <m>y=\frac{4z-2x}{3}</m>.
+    </p>
+    <p>
+      The process for doing this is not different than solving a one-variable equation. You should
+      just keep clear which variable you are solving for.
+    </p>
+  </assemblage>
+
+  <exercise label="isolate-axplusbequalsc-copy2">
+    <introduction>
+      <p>
+        Isolate the indicated variable.
+      </p>
+    </introduction>
+    <webwork copy="webwork-isolate-axplusbequalsc"/>
+  </exercise>
+  <exercise label="isolate-triangleareaforbase-copy">
+    <webwork copy="webwork-isolate-triangleareaforbase"/>
+  </exercise>
+
+  <exercise label="solve-standard-linear-equation-for-y-3-copy2">
+    <introduction>
+      <p>
+        Isolate <m>y</m> in the standard form linear equation (a topic covered later in this book).
+      </p>
+    </introduction>
+    <webwork copy="webwork-solve-standard-linear-equation-for-y-3"/>
+  </exercise>
+
+
+  <exercises>
+    <title>Review Exercises for <xref ref="chapter-linear-equations-and-inequalities"/></title>
+    <subexercises>
+      <title><xref ref="section-solving-multistep-linear-equations"/>: <xref ref="section-solving-multistep-linear-equations" text="title"/></title>
+      <exercise label="use-evaluate-simplify-solve-appropriately-economics-copy">
+        <webwork copy="webwork-use-evaluate-simplify-solve-appropriately-economics"/>
+      </exercise>
+
+      <exercisegroup cols="2">
+        <!-- <title>Two-Step Equations</title> -->
+        <introduction>
+          <p>
+            Solve the equation.
+          </p>
+        </introduction>
+        <!-- <exercise label="two-step-integer-cequalsmxplusb-copy2">
+          <webwork copy="webwork-two-step-integer-cequalsmxplusb"/>
+        </exercise>
+        <exercise label="two-step-integer-mxplusbequalsnx-copy2">
+          <webwork copy="webwork-two-step-integer-mxplusbequalsnx"/>
+        </exercise> -->
+        <exercise label="two-step-integer-coefficients-fraction-solution-mxplusbequalsc-copy2">
+          <webwork copy="webwork-two-step-integer-coefficients-fraction-solution-mxplusbequalsc"/>
+        </exercise>
+        <!-- <exercise label="two-step-integer-coefficients-fraction-solution-cequalsmxplusb-copy2">
+          <webwork copy="webwork-two-step-integer-coefficients-fraction-solution-cequalsmxplusb"/>
+        </exercise>
+        <exercise label="two-step-integer-coefficients-fraction-solution-mxequalsnxplusb-copy2">
+          <webwork copy="webwork-two-step-integer-coefficients-fraction-solution-mxequalsnxplusb"/>
+        </exercise> -->
+        <exercise label="two-step-decimal-mxplusbequalsc-copy2">
+          <webwork copy="webwork-two-step-decimal-mxplusbequalsc"/>
+        </exercise>
+        <!-- <exercise label="two-step-decimal-mxplusbequalsnx-copy2">
+          <webwork copy="webwork-two-step-decimal-mxplusbequalsnx"/>
+        </exercise>
+        <exercise label="two-step-decimal-mxequalsnxplusb-copy2">
+          <webwork copy="webwork-two-step-decimal-mxequalsnxplusb"/>
+        </exercise> -->
+      </exercisegroup>
+
+      <exercisegroup cols="2">
+        <!-- <title>More Steps</title> -->
+        <introduction>
+          <p>
+            Solve the equation.
+          </p>
+        </introduction>
+        <exercise label="more-step-integer-mxplusbequalsnxplusc-copy2">
+          <webwork copy="webwork-more-step-integer-mxplusbequalsnxplusc"/>
+        </exercise>
+        <!-- <exercise label="more-step-integer-mxplusbequalscplusnx-copy2">
+          <webwork copy="webwork-more-step-integer-mxplusbequalscplusnx"/>
+        </exercise>
+        <exercise label="more-step-integer-mxplusbplusnxequalscpluspxplusd-copy2">
+          <webwork copy="webwork-more-step-integer-mxplusbplusnxequalscpluspxplusd"/>
+        </exercise> -->
+        <exercise label="more-step-integer-mgroupxplusbequalsnxplusc-copy2">
+          <webwork copy="webwork-more-step-integer-mgroupxplusbequalsnxplusc"/>
+        </exercise>
+        <!-- <exercise label="more-step-integer-mgroupxplusbpluscequalsngroupxplusd-copy2">
+          <webwork copy="webwork-more-step-integer-mgroupxplusbpluscequalsngroupxplusd"/>
+        </exercise>
+        <exercise label="more-step-integer-mgroupxplusbplusnxequalspgroupxplusdpluse-copy2">
+          <webwork copy="webwork-more-step-integer-mgroupxplusbplusnxequalspgroupxplusdpluse"/>
+        </exercise> -->
+        <exercise label="more-step-fraction-mxplusbequalsnxplusc-copy2">
+          <webwork copy="webwork-more-step-fraction-mxplusbequalsnxplusc"/>
+        </exercise>
+        <!-- <exercise label="more-step-fraction-mxplusbplusnxequalscpluspxplusd-copy2">
+          <webwork copy="webwork-more-step-fraction-mxplusbplusnxequalscpluspxplusd"/>
+        </exercise>
+        <exercise label="more-step-fraction-mgroupxplusbequalsnxplusc-copy2">
+          <webwork copy="webwork-more-step-fraction-mgroupxplusbequalsnxplusc"/>
+        </exercise> -->
+        <exercise label="more-step-fraction-mgroupxplusbplusnxequalspgroupxplusdpluse-copy2">
+          <webwork copy="webwork-more-step-fraction-mgroupxplusbplusnxequalspgroupxplusdpluse"/>
+        </exercise>
+        <!-- <exercise label="more-step-integer-dminusgroupmxplusbequalsnxplusc-copy2">
+          <webwork copy="webwork-more-step-integer-dminusgroupmxplusbequalsnxplusc"/>
+        </exercise>
+        <exercise label="more-step-integer-nxminusgroupmxplusbequalsdminusgroupxplusc-copy2">
+          <webwork copy="webwork-more-step-integer-nxminusgroupmxplusbequalsdminusgroupxplusc"/>
+        </exercise> -->
+        <exercise label="more-step-fraction-mgroupxplusbminusgroupnxpluscequalsd-copy2">
+          <webwork copy="webwork-more-step-fraction-mgroupxplusbminusgroupnxpluscequalsd"/>
+        </exercise>
+      </exercisegroup>
+
+      <!-- <exercise label="mile-marker-solve-equation-copy">
+        <webwork copy="webwork-mile-marker-solve-equation"/>
+      </exercise>
+      <exercise label="gas-mileage-solve-equation-copy">
+        <webwork copy="webwork-gas-mileage-solve-equation"/>
+      </exercise> -->
+      <exercise label="tree-height-solve-equation-copy">
+        <webwork copy="webwork-tree-height-solve-equation"/>
+      </exercise>
+      <!-- <exercise label="savings-account-solve-equation-copy">
+        <webwork copy="webwork-savings-account-solve-equation"/>
+      </exercise>
+      <exercise label="water-treatment-cost-solve-equation-copy">
+        <webwork copy="webwork-water-treatment-cost-solve-equation"/>
+      </exercise> -->
+      <exercise label="boil-water-fahrenheit-solve-equation-copy">
+        <webwork copy="webwork-boil-water-fahrenheit-solve-equation"/>
+      </exercise>
+      <!-- <exercise label="boil-water-celsius-solve-equation-copy">
+        <webwork copy="webwork-boil-water-celsius-solve-equation"/>
+      </exercise>
+      <exercise label="cooling-pie-solve-equation-copy">
+        <webwork copy="webwork-cooling-pie-solve-equation"/>
+      </exercise> -->
+      <exercise label="heat-goes-out-solve-equation-copy">
+        <webwork copy="webwork-heat-goes-out-solve-equation"/>
+      </exercise>
+      <!-- <exercise label="restaurant-onions-solve-equation-copy">
+        <webwork copy="webwork-restaurant-onions-solve-equation"/>
+      </exercise>
+      <exercise label="casino-solve-equation-copy">
+        <webwork copy="webwork-casino-solve-equation"/>
+      </exercise> -->
+      <exercise label="kids-birthday-venue-solve-equation-copy">
+        <webwork copy="webwork-kids-birthday-venue-solve-equation"/>
+      </exercise>
+      <!-- <exercise label="property-tax-solve-equation-copy">
+        <webwork copy="webwork-property-tax-solve-equation"/>
+      </exercise>
+      <exercise label="salary-solve-equation-copy">
+        <webwork copy="webwork-salary-solve-equation"/>
+      </exercise> -->
+      <exercise label="sales-tax-solve-equation-copy">
+        <webwork copy="webwork-sales-tax-solve-equation"/>
+      </exercise>
+      <!-- <exercise label="discount-solve-equation-copy">
+        <webwork copy="webwork-discount-solve-equation"/>
+      </exercise>
+      <exercise label="restaurant-bill-linear-model-solve-equation-copy">
+        <webwork copy="webwork-restaurant-bill-linear-model-solve-equation"/>
+      </exercise> -->
+      <exercise label="median-rent-solve-equation-copy">
+        <webwork copy="webwork-median-rent-solve-equation"/>
+      </exercise>
+    </subexercises>
+
+    <subexercises>
+      <title><xref ref="section-solving-multistep-linear-inequalities"/>: <xref ref="section-solving-multistep-linear-inequalities" text="title"/></title>
+          <exercisegroup cols="2">
+            <!-- <title>Solve the Inequality</title> -->
+            <introduction>
+              <p>
+                Solve the inequality. Graph the solution set, and write the solution set using both
+                interval notation and set-builder notation.
+              </p>
+            </introduction>
+            <exercise label="integer-bplusmxineqc-copy2">
+              <webwork copy="webwork-integer-bplusmxineqc"/>
+            </exercise>
+            <!-- <exercise label="integer-negmxplusbineqc-copy2">
+              <webwork copy="webwork-integer-negmxplusbineqc"/>
+            </exercise> -->
+            <exercise label="integer-bplusnegmxineqc-copy3">
+              <webwork copy="webwork-integer-bplusnegmxineqc"/>
+            </exercise>
+            <exercise label="integer-aplusmxplusbineqc-copy2">
+              <webwork copy="webwork-integer-aplusmxplusbineqc"/>
+            </exercise>
+            <!-- <exercise label="integer-nxplusaplusmxplusbineqc-copy2">
+              <webwork copy="webwork-integer-nxplusaplusmxplusbineqc"/>
+            </exercise>
+            <exercise label="integer-aminusmxplusbineqc-copy2">
+              <webwork copy="webwork-integer-aminusmxplusbineqc"/>
+            </exercise> -->
+            <exercise label="integer-nxplusaplusmxplusbineqc2-copy2">
+              <webwork copy="webwork-integer-nxplusaplusmxplusbineqc2"/>
+            </exercise>
+            <!-- <exercise label="integer-nxplusaminuskmxplusbineqc-copy2">
+             <webwork copy="webwork-integer-nxplusaminuskmxplusbineqc"/>
+            </exercise>
+            <exercise label="integer-mxplusbineqnxplusc-positive-copy2">
+             <webwork copy="webwork-integer-mxplusbineqnxplusc-positive"/>
+            </exercise> -->
+            <exercise label="integer-mxplusbineqnxplusc-negative-copy2">
+              <webwork copy="webwork-integer-mxplusbineqnxplusc-negative"/>
+            </exercise>
+            <!-- <exercise label="integer-mxplusbineqnxplusc-copy2">
+             <webwork copy="webwork-integer-mxplusbineqnxplusc"/>
+            </exercise>
+            <exercise label="integer-simplifyfirst-copy2">
+             <webwork copy="webwork-integer-simplifyfirst"/>
+            </exercise> -->
+            <exercise label="integer-simplifyfirst2-copy2">
+             <webwork copy="webwork-integer-simplifyfirst2"/>
+            </exercise>
+          </exercisegroup>
+
+          <exercise label="taxi-inequality-copy">
+            <webwork copy="webwork-taxi-inequality"/>
+          </exercise>
+          <!-- <exercise label="time-to-boil-inequality-copy">
+            <webwork copy="webwork-time-to-boil-inequality"/>
+          </exercise>
+          <exercise label="electric-bill-inequality-copy">
+            <webwork copy="webwork-electric-bill-inequality"/>
+          </exercise> -->
+          <exercise label="population-inequality-copy">
+            <webwork copy="webwork-population-inequality"/>
+          </exercise>
+          <!-- <exercise label="restaurant-tip-inequality-copy">
+            <webwork copy="webwork-restaurant-tip-inequality"/>
+          </exercise> -->
+    </subexercises>
+
+    <subexercises>
+      <title><xref ref="section-equations-and-inequalities-with-fractions"/>: <xref ref="section-equations-and-inequalities-with-fractions" text="title"/></title>
+        <exercisegroup cols="2">
+          <!-- <title>Linear Equations with Fractions</title> -->
+          <introduction>
+            <p>
+              Solve the given equation. Practice clearing the denominator(s) as a first step.
+            </p>
+          </introduction>
+          <!-- <exercise label="linear-equation-fractions-b-copy2">
+            <webwork copy="webwork-linear-equation-fractions-b"/>
+          </exercise> -->
+          <exercise label="linear-equation-fractions-c-copy2">
+            <webwork copy="webwork-linear-equation-fractions-c"/>
+          </exercise>
+          <!-- <exercise label="linear-equation-fractions-rel-prime-denom-copy2">
+            <webwork copy="webwork-linear-equation-fractions-rel-prime-denom"/>
+          </exercise> -->
+          <exercise label="linear-equation-fractions-gcf-denom-copy2">
+            <webwork copy="webwork-linear-equation-fractions-gcf-denom"/>
+          </exercise>
+          <exercise label="linear-equation-fractions-pqr-denom-copy2">
+            <webwork copy="webwork-linear-equation-fractions-pqr-denom"/>
+          </exercise>
+          <!-- <exercise label="linear-equation-fractions-two-same-copy2">
+            <webwork copy="webwork-linear-equation-fractions-two-same"/>
+          </exercise>
+          <exercise label="linear-equation-fractions-two-with-gcf-copy2">
+            <webwork copy="webwork-linear-equation-fractions-two-with-gcf"/>
+          </exercise> -->
+          <exercise label="linear-equation-fractions-three-pqr-copy2">
+            <webwork copy="webwork-linear-equation-fractions-three-pqr"/>
+          </exercise>
+        </exercisegroup>
+
+        <exercisegroup cols="2">
+          <!-- <title>Linear Inequalities with Fractions</title> -->
+          <introduction>
+            <p>
+              Solve the given inequality. Practice clearing the denominator(s) as a first step.
+            </p>
+          </introduction>
+          <!-- <exercise label="linear-inequality-fractions-b-copy">
+            <webwork copy="webwork-linear-inequality-fractions-b"/>
+          </exercise> -->
+          <exercise label="linear-inequality-fractions-c-copy">
+            <webwork copy="webwork-linear-inequality-fractions-c"/>
+          </exercise>
+          <exercise label="linear-inequality-fractions-same-denom-copy">
+            <webwork copy="webwork-linear-inequality-fractions-same-denom"/>
+          </exercise>
+          <!-- <exercise label="linear-inequality-fractions-rel-prime-denom-copy">
+            <webwork copy="webwork-linear-inequality-fractions-rel-prime-denom"/>
+          </exercise>
+          <exercise label="linear-inequality-fractions-gcf-denom-copy">
+            <webwork copy="webwork-linear-inequality-fractions-gcf-denom"/>
+          </exercise> -->
+          <exercise label="linear-inequality-fractions-two-same-copy">
+            <webwork copy="webwork-linear-inequality-fractions-two-same"/>
+          </exercise>
+          <!-- <exercise label="linear-inequality-fractions-two-rel-prime-copy">
+            <webwork copy="webwork-linear-inequality-fractions-two-rel-prime"/>
+          </exercise>
+          <exercise label="linear-inequality-fractions-two-with-gcf-copy">
+            <webwork copy="webwork-linear-inequality-fractions-two-with-gcf"/>
+          </exercise> -->
+          <exercise label="linear-inequality-fractions-three-pqr-copy">
+            <webwork copy="webwork-linear-inequality-fractions-three-pqr"/>
+          </exercise>
+        </exercisegroup>
+
+        <!-- <exercise label="running-with-fractions-copy">
+          <webwork copy="webwork-running-with-fractions"/>
+        </exercise>
+        <exercise label="gas-mileage-with-fractions-copy">
+          <webwork copy="webwork-gas-mileage-with-fractions"/>
+        </exercise> -->
+        <exercise label="tree-height-solve-equation-copy2">
+          <webwork copy="webwork-tree-height-solve-equation"/>
+        </exercise>
+        <!-- <exercise label="tire-pressure-with-fractions-copy">
+          <webwork copy="webwork-tire-pressure-with-fractions"/>
+        </exercise>
+        <exercise label="grade-average-copy">
+          <webwork copy="webwork-grade-average"/>
+        </exercise> -->
+        <exercise label="grade-average2-copy2">
+          <webwork copy="webwork-grade-average"/>
+        </exercise>
+        <!-- <exercise label="soup-recipe-copy">
+          <webwork copy="webwork-soup-recipe"/>
+        </exercise>
+        <exercise label="garam-masala-recipe-copy">
+          <webwork copy="webwork-garam-masala-recipe"/>
+        </exercise> -->
+        <exercise label="apples-cost-copy">
+          <webwork copy="webwork-apples-cost"/>
+        </exercise>
+        <!-- <exercise label="architect-model-copy">
+          <webwork copy="webwork-architect-model"/>
+        </exercise>
+        <exercise label="rocky-mountain-elk-copy">
+          <webwork copy="webwork-rocky-mountain-elk"/>
+        </exercise> -->
+        <exercise label="black-tailed-deer-copy">
+          <webwork copy="webwork-black-tailed-deer"/>
+        </exercise>
+    </subexercises>
+
+    <subexercises>
+      <title><xref ref="section-special-solution-sets"/>: <xref ref="section-special-solution-sets" text="title"/></title>
+          <exercisegroup cols="2">
+            <!-- <title>Equations with Special Solution Sets</title> -->
+            <introduction>
+              <p>
+                Solve the equation for its variable.
+              </p>
+            </introduction>
+            <exercise label="solve-mxequalsmxplusb-copy2">
+              <webwork copy="webwork-solve-mxequalsmxplusb"/>
+            </exercise>
+            <!-- <exercise label="solve-mxplusbequalsmxplusb-copy2">
+              <webwork copy="webwork-solve-mxplusbequalsmxplusb"/>
+            </exercise> -->
+            <exercise label="solve-special-with-like-terms2-copy2">
+              <webwork copy="webwork-solve-special-with-like-terms2"/>
+            </exercise>
+            <exercise label="solve-special-with-distribution-copy2">
+              <webwork copy="webwork-solve-special-with-distribution"/>
+            </exercise>
+            <!-- <exercise label="solve-special-with-simplification-copy2">
+              <webwork copy="webwork-solve-special-with-simplification"/>
+            </exercise>
+            <exercise label="solve-special-with-simplification2-copy2">
+              <webwork copy="webwork-solve-special-with-simplification2"/>
+            </exercise> -->
+            <exercise label="solve-special-with-like-terms-fraction-copy2">
+              <webwork copy="webwork-solve-special-with-like-terms-fraction"/>
+            </exercise>
+            <!-- <exercise label="solve-special-with-simplification-fraction-copy2">
+              <webwork copy="webwork-solve-special-with-simplification-fraction"/>
+            </exercise> -->
+          </exercisegroup>
+
+          <exercisegroup cols="2">
+            <!-- <title>Inequalities with Special Solution Sets</title> -->
+            <introduction>
+              <p>
+                Solve the inequality for its variable.
+              </p>
+            </introduction>
+            <exercise label="solve-mxequalsmxplusb-inequality-copy2">
+              <webwork copy="webwork-solve-mxequalsmxplusb-inequality"/>
+            </exercise>
+            <exercise label="solve-mxplusbequalsmxplusb-inequality-copy2">
+              <webwork copy="webwork-solve-mxplusbequalsmxplusb-inequality"/>
+            </exercise>
+            <!-- <exercise label="solve-special-with-like-terms-inequality-copy2">
+              <webwork copy="webwork-solve-special-with-like-terms-inequality"/>
+            </exercise>
+            <exercise label="solve-special-with-like-terms2-inequality-copy2">
+              <webwork copy="webwork-solve-special-with-like-terms2-inequality"/>
+            </exercise> -->
+            <exercise label="solve-special-with-distribution-inequality-copy2">
+              <webwork copy="webwork-solve-special-with-distribution-inequality"/>
+            </exercise>
+            <!-- <exercise label="solve-mxequalsmxplusb-fraction-inequality-copy2">
+              <webwork copy="webwork-solve-mxequalsmxplusb-fraction-inequality"/>
+            </exercise>
+            <exercise label="solve-special-with-like-terms-fraction-inequality-copy2">
+              <webwork copy="webwork-solve-special-with-like-terms-fraction-inequality"/>
+            </exercise> -->
+            <exercise label="solve-special-with-simplification-fraction-inequality-copy2">
+              <webwork copy="webwork-solve-special-with-simplification-fraction-inequality"/>
+            </exercise>
+          </exercisegroup>
+    </subexercises>
+
+    <subexercises>
+      <title><xref ref="section-isolating-a-linear-variable"/>: <xref ref="section-isolating-a-linear-variable" text="title"/></title>
+          <exercisegroup cols="2">
+            <!-- <title>Isolate the Variable</title> -->
+            <introduction>
+              <p>
+                Isolate the indicated variable.
+              </p>
+            </introduction>
+            <!-- <exercise label="isolate-xplusaequalsb-copy2">
+              <webwork copy="webwork-isolate-xplusaequalsb"/>
+            </exercise> -->
+            <exercise label="isolate-yequalsaxplusb-copy2">
+              <webwork copy="webwork-isolate-yequalsaxplusb"/>
+            </exercise>
+            <exercise label="isolate-xoveraplusbequalsc-copy2">
+                <webwork copy="webwork-isolate-xoveraplusbequalsc"/>
+            </exercise>
+          </exercisegroup>
+
+          <exercisegroup cols="2">
+            <!-- <title>Slope-Intercept Form</title> -->
+            <introduction>
+              <p>
+                The equation for a line in <q>slope-intercept form</q> is <m>y=mx+b</m>.
+              </p>
+              <image width="47%">
+                <latex-image>
+                  \begin{tikzpicture}
+                    \begin{axis}[
+                        xtick={0},
+                        ytick={0},
+                        minor xtick=,
+                        minor ytick=,
+                        ymin=-1,
+                        ymax=5,
+                        width=0.47\orccaprintwidth,
+                        height=0.2\orccaprintwidth,
+                      ]
+                      \addplot+ {1/3*x + 2};
+                      \draw[guideline] (axis cs:0,0) -- (axis cs:0.2,0) -- node[pos=0.5, right]{\(b\)} (axis cs:0.2,2) -- (axis cs:0,2);
+                      \draw[guideline] (axis cs:0,2) -- node[pos=0.5, below]{\(1\)} (axis cs:3,2) -- node[pos=0.5, right]{\(m\)} (axis cs:3,3);
+                    \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+            </introduction>
+            <exercise label="isolate-slopeinterceptform-copy">
+              <webwork copy="webwork-isolate-slopeinterceptform"/>
+            </exercise>
+            <exercise label="isolate-slopeinterceptforb-copy">
+              <webwork copy="webwork-isolate-slopeinterceptforb"/>
+            </exercise>
+          </exercisegroup>
+          <!-- <exercisegroup cols="2">
+            <title>Circle Circumference</title>
+            <introduction>
+              <p>
+                The circumference of a circle can be found with the equation <m>c=2\pi r</m>, where
+                <m>r</m> is the radius, or with the equation <m>c=\pi d</m>, where <m>d</m> is the
+                diameter.
+              </p>
+              <image width="50%">
+                <latex-image>
+                  \begin{tikzpicture}[x=1.8cm,y=1.8cm]
+                  \draw[thick, fill=secondcolor!20!white, postaction={decorate,decoration={text along path,text align=center, transform={yshift=1ex},text={circumference $c$}}}] (1,0) arc (270:-90:1);
+                  \draw[thick] (1,1) -&#45; node[pos=0.5, above] {radius \(r\)} (2,1);
+                  \draw[thick, fill=secondcolor!20!white, postaction={decorate,decoration={text along path,text align=center, transform={yshift=1ex},text={circumference $c$}}}] (4,0) arc (270:-90:1);
+                  \draw[thick] (3,1) -&#45; node[pos=0.5, above] {diameter \(d\)} (5,1);
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+            </introduction>
+            <exercise label="isolate-circumferenceforr-copy">
+              <webwork copy="webwork-isolate-circumferenceforr"/>
+            </exercise>
+            <exercise label="isolate-circumferenceford-copy">
+              <webwork copy="webwork-isolate-circumferenceford"/>
+            </exercise>
+          </exercisegroup>
+          <exercisegroup cols="2">
+            <title>Cylinders</title>
+            <introduction>
+              <p>
+                The volume of a cylinder can be found with the equation <m>V=\pi r^2h</m>, where
+                <m>r</m> is the radius and <m>h</m> is the height. Its surface area can be found with
+                the equation <m>A=2\pi r^2+2\pi rh</m>.
+              </p>
+              <image width="50%">
+                <latex-image>
+                  \begin{tikzpicture}
+                    \draw[fill=firstcolor!20] (0,0) ellipse (3 and 0.45);
+                    \draw[fill=firstcolor!10] (3,0) arc (0:180:3 and -0.45) -&#45; (-3,-2) arc (180:360:3 and 0.5) -&#45; cycle;
+                    \draw [dashed] (-3,-2) arc (180:360:3 and -0.5);
+                    \draw [dashed] (0,0) -&#45; (3,0) node[pos=0.5,above] {radius \(r\)};
+                    \node at (-3,-1) [left] {height \(h\)};
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+            </introduction>
+            <exercise label="isolate-cylindervolumeforh-copy">
+              <webwork copy="webwork-isolate-cylindervolumeforh"/>
+            </exercise>
+            <exercise label="isolate-cylinderareaforh-copy">
+              <webwork copy="webwork-isolate-cylinderareaforh"/>
+            </exercise>
+          </exercisegroup> -->
+
+          <exercisegroup cols="2">
+            <!-- <title>Standard Form Linear Equations</title> -->
+            <introduction>
+              <p>
+                Isolate <m>y</m> in the standard form linear equation (a topic covered later in this book).
+              </p>
+            </introduction>
+            <exercise label="solve-standard-linear-equation-for-y-copy2">
+              <webwork copy="webwork-solve-standard-linear-equation-for-y"/>
+            </exercise>
+            <exercise label="solve-standard-linear-equation-for-y-2-copy2">
+              <webwork copy="webwork-solve-standard-linear-equation-for-y-2"/>
+            </exercise>
+            <!-- <exercise label="solve-standard-linear-equation-for-y-4-copy2">
+              <webwork copy="webwork-solve-standard-linear-equation-for-y-4"/>
+            </exercise> -->
+          </exercisegroup>
+        </subexercises>
+  </exercises>
+</section>
+

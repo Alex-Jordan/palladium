@@ -1,0 +1,2489 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2026                                                       -->
+<!-- Alex Jordan                                                          -->
+<!-- *********************************************************************-->
+<section xml:id="section-algebraic-properties-and-simplifying-expressions">
+  <title>Algebraic Properties and Simplifying Expressions</title>
+
+  <introduction>
+    <p>
+      If we have two apples and <em>then</em> add three more, we have five apples.
+      That result is the same as if we'd started with three apples and <em>then</em> added two more.
+      This is a feature of numbers and arithmetic that we will formalize in this section,
+      along with a few other features.
+      Understanding these well will help us solve more equations later.
+    </p>
+
+    <figure xml:id="video-simplifying-expressions">
+      <caption>Alternative Video Lesson</caption>
+      <video youtubeplaylist="PLmuZCPhWPt-eiwLULOcn5X4ZyZ5kB6H6A" />
+    </figure>
+  </introduction>
+
+  <subsection>
+    <title>Identities and Inverses</title>                                                                    <idx><h>Identity</h></idx>
+    <p>
+      We start with some definitions.
+      The number <m>0</m> is called the <term>additive identity</term>. It has this name because              <idx><h>Additive identity</h></idx>
+      adding <m>0</m> to a number does not change that number's <q>identity</q>.                              <idx><h>Identity</h><h>additive</h></idx>
+      If you were playing a <q>game</q> where you needed to add something to <m>x</m>, but you                <idx><h>Addition</h><h>identity property of</h></idx>
+      didn't want to change the value, then you would add <m>0</m>:                                           <idx><h>Identity property</h><h>of addition</h></idx>
+      <me>
+        x+0=x
+      </me>
+      Adding the additive identity to a number does not change that number.
+    </p>
+
+    <p>
+      If the sum of two numbers is the additive identity (<m>0</m>) then those two numbers                    <idx><h>Addition</h><h>inverse property of</h></idx>
+      are called <term>additive inverses</term> of each other.                                                <idx><h>Additive inverse</h></idx>
+      Imagine playing a game where you have a number like <m>2</m>, and you need to add something             <idx><h>Inverse</h><h>additive</h></idx>
+      to it to get <m>0</m>. You would add <m>-2</m>:                                                         <idx><h>Opposite</h></idx>
+                                                                                                              <idx><h>Inverse property</h><h>of addition</h></idx>
+      <me>
+        2+(-2)=0
+      </me>
+      It works the other way too when starting with a negative number. Now imagine starting with
+      <m>-3</m> and you need to add something to that to get <m>0</m>. You would add <m>3</m>:
+      <me>
+        -3+3=0
+      </me>
+      The additive inverse of a number is that same number with the opposite sign. And what makes
+      that pair of numbers special is that they add to <m>0</m>.
+    </p>
+
+    <p>
+      We also have the special number <m>1</m>, which is the <term>multiplicative identity</term>.            <idx><h>Multiplicative identity</h></idx>
+      The special feature being highlighted is that when you multiply a number by <m>1</m>,                   <idx><h>Identity</h><h>multiplicative</h></idx>
+      it does not change that number's <q>identity</q>. Once again, imagine you are playing a game            <idx><h>Multiplication</h><h>identity property of</h></idx>
+      where your job is to multiply <m>x</m> by something, but you actually do not want to change
+      the number's value. Then you would multiply by <m>1</m>:                                                <idx><h>Identity property</h><h>of multiplication</h></idx>
+      <me>
+        x\cdot1=x
+      </me>
+    </p>
+
+    <p>
+      If the product of two numbers is the multiplicative identity (<m>1</m>) then those two numbers          <idx><h>Multiplication</h><h>inverse property of</h></idx>
+      are called <term>multiplicative inverses</term> of each other.                                          <idx><h>Multiplicative inverse</h></idx>
+      Strategically, what would you multiply <m>2</m> by to get <m>1</m>?                                     <idx><h>Inverse</h><h>multiplicative</h></idx>
+      You could use the fraction <m>\frac12</m>:                                                              <idx><h>Reciprocal</h></idx>
+                                                                                                              <idx><h>Inverse property</h><h>of multiplication</h></idx>
+      <me>
+        2\cdot\frac12=1
+      </me>
+      Or what if you started with a more <q>complicated</q> number like <m>-\frac{2}{3}</m>?
+      What could you multiply that by to get <m>1</m>? We would use <m>-\frac{3}{2}</m> so that the
+      negative signs cancel, and the product would be <m>\frac{6}{6}</m> which reduces to <m>1</m>:
+      <me>
+        -\frac{2}{3}\cdot\left(-\frac{3}{2}\right)=1
+      </me>
+      Notice what happens with the numerator and denominator swapping places.
+      The multiplicative inverse of a number is also called its <term>reciprocal</term>.
+    </p>
+
+    <exercise label="matching-inverses-and-identitites-vocabulary">
+      <title>Matching Vocabulary</title>
+      <statement>
+        <p>
+          Match each concept with the corresponding vocabulary term.
+        </p>
+      </statement>
+      <cardsort>
+        <match>
+            <premise order="4">Add something but not change value</premise>
+            <response>Additive identity</response>
+        </match>
+        <match>
+            <premise order="3">Add something and get <m>0</m></premise>
+            <response>Additive inverse</response>
+        </match>
+        <match>
+            <premise order="1">Multiply by something but not change value</premise>
+            <response>Multiplicative identity</response>
+        </match>
+        <match>
+            <premise order="2">Multiply by something and get <m>1</m></premise>
+            <response>Multiplicative inverse</response>
+        </match>
+      </cardsort>
+    </exercise>
+
+    <exercise label="matching-inverses-and-identitites">
+      <title>Matching Identities and Inverses</title>
+      <statement>
+        <p>
+          Match each description of a number on the left with a number on the right.
+        </p>
+      </statement>
+      <cardsort>
+        <match>
+            <premise order="4">The additive inverse of <m>-5</m></premise>
+            <response><m>5</m></response>
+        </match>
+        <match>
+            <premise order="3">The multiplicative inverse of <m>5</m></premise>
+            <response><m>\frac{1}{5}</m></response>
+        </match>
+        <match>
+            <premise order="1">The multiplicative inverse of <m>-\frac{1}{5}</m> added to the additive identity</premise>
+            <response><m>-5</m></response>
+        </match>
+        <match>
+            <premise order="2">The multiplicative identity divided by the additive inverse of <m>5</m></premise>
+            <response><m>-\frac{1}{5}</m></response>
+        </match>
+      </cardsort>
+    </exercise>
+  </subsection>
+
+  <subsection>
+    <title>Algebraic Properties</title>
+    <paragraphs>
+      <title>Commutative Property</title>                                                                     <idx><h>Commutative property</h></idx>
+      <p>
+        To find the area of a rectangle, multiply the length by the width.
+        Does the result change if we multiply the width by the length?
+      </p>
+
+      <figure>
+        <caption>Horizontal and Vertical Rectangles</caption>
+        <image width="70%">
+          <shortdescription>
+            two rectangles;
+            the left rectangle is 3 cm wide by 2 cm high;
+            its area is marked by Area=3*2=6;
+            the right rectangle is 2 cm wide by 3 cm high;
+            its area is marked by Area=2*3=6
+          </shortdescription>
+          <latex-image label="rectangle-area-commutativity">
+            \begin{tikzpicture}
+              \draw[fill=wood] (0,3) -- (0,0) -- (4,0) -- (4,3) -- cycle; %horizontal
+                \node[below] at (2,0) {$4$ cm};
+                \node[right] at (4,1.5) {$3$ cm};
+                \node[] at (2,1.5) {$\begin{aligned}A\amp=4\cdot3\\\amp=12\,(\text{cm}^2)\end{aligned}$};
+              \draw[fill=wood] (7,4) -- (7,0) -- (10,0) -- (10,4) -- cycle; %vertical
+                \node[below] at (8.5,0) {$3$ cm};
+                \node[right] at (10,2) {$4$ cm};
+                \node[] at (8.5,2) {$\begin{aligned}A\amp=3\cdot4\\\amp=12\,(\text{cm}^2)\end{aligned}$};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </figure>
+
+      <p>
+        We can see that <m>3\cdot4=4\cdot3</m>. If we write the length of a rectangle as <m>\ell</m>
+        and the width as <m>w</m>, we can write <m>\ell w=w\ell</m>.
+        The fact that we can reverse the order of multiplication is known as the
+        <term>commutative property of multiplication</term>.
+        There is a similar property for addition, which you can see in the equation <m>1+2=2+1</m>.
+        It's called the <term>commutative property of addition</term>.                                        <idx><h>Addition</h><h>commutative property of</h></idx>
+        However, subtraction and division do not have the commutative property,
+        because for example <m>2-1\ne1-2</m> and <m>\frac{4}{2}\ne\frac{2}{4}</m>.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Associative Property</title>                                                                     <idx><h>Associative property</h></idx>
+      <p>
+        Instead of a rectangle, consider a 3D rectangular prism with depth <m>d=3\,\text{cm}</m>,
+        width <m>w=4\,\text{cm}</m>, and height <m>h=2\,\text{cm}</m>.
+        To compute the volume of this prism, we multiply the depth, width, and height together.
+        In the following figure, on the left side, we multiply the width and depth first,
+        and then multiply the height. On the right side, we multiply the width and height first,
+        and then multiply the depth. Either way, the final result is the same.
+      </p>
+
+      <sidebyside widths="35% 35%">
+        <figure>
+          <caption><m>(3\cdot4)\cdot2=24</m></caption>
+          <image>
+            <shortdescription>
+              a rectangular prism;
+              its length is 4 cm, width is 3 cm, and height is 2 cm;
+              one face representing the width and depth is highlighted
+            </shortdescription>
+            <latex-image label="prism-volume-one-way">
+              \begin{tikzpicture}%(x,z,y)
+                %\node[white] at (2,0,0) {.};
+                \draw[fill=wood!20] (0,0,0) -- ++(0,-2,0) -- ++(-4,0,0) -- ++(0,2,0) node[pos=0.5,above,sloped] {$2\,\text{cm}$} -- cycle; %front face
+                \draw[fill=wood!20] (0,0,0) -- ++(0,0,-3) -- ++(0,-2,0) -- ++(0,0,3) -- cycle; %side
+                \draw[fill=wood] (0,0,0) -- ++(-4,0,0) -- ++(0,0,-3) node[pos=0.5,above,sloped] {$3\,\text{cm}$} -- ++(4,0,0) node[pos=0.5,above] {$4\,\text{cm}$} -- cycle; %top
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </figure>
+
+        <figure>
+          <caption><m>3\cdot(4\cdot2)=24</m></caption>
+          <image>
+            <shortdescription>
+              a rectangular prism;
+              its length is 4 cm, width is 3 cm, and height is 2 cm;
+              one face representing the width and height is highlighted
+            </shortdescription>
+            <latex-image label="prism-volume-another-way">
+              \begin{tikzpicture}%(x,z,y)
+                %\node[white] at (2,0,0) {.};
+                \draw[fill=wood] (0,0,0) -- ++(0,-2,0) -- ++(-4,0,0) -- ++(0,2,0) node[pos=0.5,above,sloped] {$2\,\text{cm}$} -- cycle; %front face
+                \draw[fill=wood!20] (0,0,0) -- ++(0,0,-3) -- ++(0,-2,0) -- ++(0,0,3) -- cycle; %side
+                \draw[fill=wood!20] (0,0,0) -- ++(-4,0,0) -- ++(0,0,-3) node[pos=0.5,above,sloped] {$3\,\text{cm}$} -- ++(4,0,0) node[pos=0.5,above] {$4\,\text{cm}$} -- cycle; %top
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </figure>
+      </sidebyside>
+
+      <p>
+        What this shows us is <m>(dw)h=d(wh)</m>. We haven't changed the order that the three
+        variables are <em>written</em> left to right, but we are doing the actual multiplication in
+        a different order. The order of operations requires multiplication inside the parentheses to
+        happen first. This feature of numbers is known as the
+        <term>associative property of multiplication</term>.
+        There is a similar property for addition, which you can see in the equation
+        <m>(1+2)+3=1+(2+3)</m>. Note again that the left-to-right order that the numbers are
+        written is the same on either side. But the grouping symbols get us to actually do the
+        addition in a different order. This property is called the
+        <term>associative property of addition</term>.                                                        <idx><h>Addition</h><h>associative property of</h></idx>
+        Subtraction and division do not have an associative property,
+        because for example <m>(3-2)-1\ne3-(2-1)</m> and <m>(2\div2)\div2\neq2\div(2\div2)</m>.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Distributive Property</title>                                                                    <idx><h>Distributive property</h></idx>
+      <p>
+        The final property we'll explore is called the <term>distributive property</term>,
+        which involves both multiplication and addition (or subtraction).
+        To understand this property, consider what happens if we take <m>3</m> bags,
+        and each bag contains one apple and one pear.
+        We have the same total amount of fruit as if we'd taken a bag with <m>3</m> apples and
+        another bag with <m>3</m> pears. Algebraically:
+        <md>
+          <mrow>\amp\text{3 bags, each with 1 apple and 1 pear}\amp\amp3(a+p)</mrow>
+          <mrow>\amp=(\text{bag with 3 apples})+(\text{bag with 3 pears})\amp\amp=3a+3p</mrow>
+        </md>
+        It helps to think of this as <q>distributing</q> the <m>3</m> to the <m>a</m> and the <m>p</m>.
+      </p>
+      <p>
+        The distributive property also works with multiplication on the other side,
+        and with subtraction:
+        <me>
+          (a+p)\cdot3 =a\cdot3+p\cdot3\qquad 3(a-p)=3a-3p\qquad (a-p)\cdot3 =a\cdot3-p\cdot3
+        </me>
+        although the apples and pears metaphor may be harder to make sense of.
+      </p>
+      <p>
+        And the distributive property works with division too, when there is only one term in the
+        denominator:
+        <me>
+          \frac{a+p}{3}=\frac{a}{3}+\frac{p}{3}
+        </me>
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Summary of Algebraic Properties</title>
+      <list xml:id="list-algebraic-properties">
+        <title>Algebraic Properties</title>                                                                   <idx><h>Addition</h><h>commutative property of</h></idx>
+                                                                                                              <idx><h>Commutative property</h><h>of addition</h></idx>
+                                                                                                              <idx><h>Addition</h><h>associative property of</h></idx>
+                                                                                                              <idx><h>Associative property</h><h>of addition</h></idx>
+                                                                                                              <idx><h>Multiplication</h><h>commutative property of</h></idx>
+                                                                                                              <idx><h>Commutative property</h><h>of multiplication</h></idx>
+                                                                                                              <idx><h>Multiplication</h><h>associative property of</h></idx>
+                                                                                                              <idx><h>Associative property</h><h>of multiplication</h></idx>
+                                                                                                              <idx><h>Distributive property</h></idx>
+
+        <introduction>
+          <p>
+            Let <m>a</m>, <m>b</m>, and <m>c</m> be real numbers, variables, or algebraic expressions.
+            Then the following properties hold:
+          </p>
+        </introduction>
+
+        <dl width="narrow">
+          <li xml:id="item-commutative-property-of-multiplication">
+            <title>Commutative Property of Multiplication</title>
+            <p>
+              <m>a\cdot b=b\cdot a</m>
+            </p>
+          </li>
+
+          <li xml:id="item-associative-property-of-multiplication">
+            <title>Associative Property of Multiplication</title>
+            <p>
+              <m>a\cdot(b\cdot c)=(a\cdot b)\cdot c</m>
+            </p>
+          </li>
+
+          <li xml:id="item-commutative-property-of-addition">
+            <title>Commutative Property of Addition</title>
+            <p>
+              <m>a+b=b+a</m>
+            </p>
+          </li>
+
+          <li xml:id="item-associative-property-of-addition">
+            <title>Associative Property of Addition</title>
+            <p>
+              <m>a+(b+c)=(a+b)+c</m>
+            </p>
+          </li>
+
+          <li xml:id="item-distributive-property">
+            <title>Distributive Property</title>
+            <p>
+              <m>\begin{aligned}
+                a(b+c) \amp=ab+ac\amp\qquad a(b-c) \amp= ab-ac\\
+                (b+c)a \amp=ba+ca\amp\qquad (b-c)a \amp=ba-ca\\
+                \frac{b+c}{a} \amp=\frac{b}{a}+\frac{c}{a}\amp\qquad\frac{b-c}{a} \amp=\frac{b}{a}-\frac{c}{a}\\
+              \end{aligned}</m>
+            </p>
+            <p>
+              (The last two versions require <m>a\neq0</m>.)
+            </p>
+          </li>
+        </dl>
+      </list>
+    </paragraphs>
+
+    <p>
+      Practice these properties in the following exercises.
+    </p>
+
+    <exercise label="matching-algebra-property-vocabulary">
+      <title>Matching Vocabulary</title>
+      <statement>
+        <p>
+          Match each concept with the corresponding vocabulary term.
+        </p>
+      </statement>
+      <cardsort>
+        <match>
+            <premise order="5">Change the order that addition is written</premise>
+            <response>Commutative Property of Addition</response>
+        </match>
+        <match>
+            <premise order="1">Change the order that multiplication is written</premise>
+            <response>Commutative Property of Multiplication</response>
+        </match>
+        <match>
+            <premise order="4">Change the order that three terms are actually added together</premise>
+            <response>Associative Property of Addition</response>
+        </match>
+        <match>
+            <premise order="2">Change the order that three factors are actually multiplied together</premise>
+            <response>Associative Property of Multiplication</response>
+        </match>
+        <match>
+            <premise order="3">Either add two terms, then multiply; or multiply twice, then add</premise>
+            <response>Distributive Property</response>
+        </match>
+      </cardsort>
+    </exercise>
+
+    <exercise label="matching-algebra-property-to-example">
+      <title>Matching Properties to Examples</title>
+      <statement>
+        <p>
+          Match each algebra property with an example.
+        </p>
+      </statement>
+      <cardsort>
+        <match>
+            <premise order="5">Commutative Property of Addition</premise>
+            <response><m>x+4=4+x</m></response>
+        </match>
+        <match>
+            <premise order="1">Commutative Property of Multiplication</premise>
+            <response><m>x\cdot y=y\cdot x</m></response>
+        </match>
+        <match>
+            <premise order="4">Associative Property of Addition</premise>
+            <response><m>(t+1)+2=t+(1+2)</m></response>
+        </match>
+        <match>
+            <premise order="2">Associative Property of Multiplication</premise>
+            <response><m>(3y)z=3(yz)</m></response>
+        </match>
+        <match>
+            <premise order="3">Distributive Property</premise>
+            <response><m>7(m+n)=7m+7n</m></response>
+        </match>
+      </cardsort>
+    </exercise>
+
+    <exercise label="try-all-algebra-properties">
+      <webwork>
+        <!-- This problem code is very long; to avoid a too-long URL, it is condensed. -->
+        <pg-code>
+          Context("Numeric")->variables->add(c=>'Real',m=>'Real',n=>'Real',q=>'Real',r=>'Real');
+          Context()->reduction->set('(-x)-y'=>0,'(-x)+y'=>0);
+          $giv1=Formula("53m");
+          $ans1=Formula("m*53");
+          $ev1=$ans1->cmp(checker=>sub{
+            my ($correct,$student,$ans)=@_;
+            Value->Error("This is the original expression") if ($student eq $giv1);
+            Value->Error("This is algebraically equivalent to the given expression, but using the commutative property of multiplication would give you something else") if (($student == $correct) &amp;&amp; ($student ne $correct));
+            return ($student eq $correct);
+          });
+          Context()->flags->set(reduceConstants=>0);
+          Context()->lists->set(AbsoluteValue=>{open=>"(",close=>")"});
+          Context()->parens->set("("=>{removable=>0,type=>"AbsoluteValue",close=>")"});
+          $giv2=Formula("3*(5 n)");
+          $ans2=Formula("(3*5)*n");
+          $alt2=Formula("15*n");
+          $ev2=$ans2->cmp(checker=>sub{
+            my ($correct,$student,$ans)=@_;
+            $student->{test_at}=[[0,0,-1,0,0,0],[0,0,1,0,0,0]];
+            $correct->{test_at}=[[0,0,-1,0,0,0],[0,0,1,0,0,0]];
+            Value->Error("This is algebraically equivalent to the given expression, but using the associative property of multiplication would give you something else") if (($student == $giv2) || (($student == $correct) &amp;&amp; ($student ne $correct) &amp;&amp; ($student ne $alt2)));
+            return (($student eq $correct) or ($student eq $alt2));
+          });
+          $giv3=Formula("q+84");
+          $ans3=Formula("84+q");
+          $ev3=$ans3->cmp(checker=>sub{
+            my ($correct,$student,$ans)=@_;
+            Value->Error("This is the original expression") if ($student eq $giv3);
+            Value->Error("This is algebraically equivalent to the given expression, but using the commutative property of addition would give you something else") if (($student == $correct) &amp;&amp; ($student ne $correct));
+            return ($student eq $correct);
+          });
+          $giv4=Compute("x+(20+c)");
+          $amb4=Compute("x+20+c");
+          $ans4=Compute("(x+20)+c");
+          $ev4=$ans4->cmp(checker=>sub{
+            my ($correct,$student,$ans)=@_;
+            for my $x ($giv4,$student,$amb4,$correct) {
+              $x->{test_at}=[[-21,0,0,0,0,-21],[-21,0,0,0,0,-19],[-19,0,0,0,0,-21],[-19,0,0,0,0,-19]];
+            }
+            Value->Error("This expression is algebraically equivalent to the given expression, but using the associative property of addition would give you something else") if (($student == $giv4) || ($student == $amb4) || (($student == $correct) &amp;&amp; ($student ne $correct)));
+            return ($student eq $correct);
+          });
+          $giv5=Compute("3*(r+7)")->reduce;
+          Context("Form")->variables->are(r=>'Real');
+          $ans5=Compute("3*r+3*7");
+        </pg-code>
+        <task>
+          <statement>
+            <p>
+              Use the commutative property of multiplication to write an equivalent expression to <m><var name="$giv1" /></m>.
+            </p>
+            <p>
+              <var name="$ans1" evaluator="$ev1" width="10"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              To use the commutative property of multiplication, change the order the two factors are multiplied:
+              <me>
+                53m=m\cdot 53
+              </me>.
+            </p>
+          </solution>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Use the associative property of multiplication to write an equivalent expression to <m><var name="$giv2" /></m>.
+            </p>
+            <p>
+              <var name="$ans2" evaluator="$ev2" width="10"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              To use the associative property of multiplication, leave factors written in their original order,
+              but change the grouping symbols so that a different multiplication has higher priority:
+              <me>
+                3(5n)=(3\cdot5)n
+              </me>.
+              You may further simplify by multiplying the two numbers:
+              <md>
+                <mrow>3(5n)\amp=(3\cdot5)n</mrow>
+                <mrow>\amp=15n</mrow>
+              </md>
+               but that is going a step beyond simply using the associative property.
+            </p>
+          </solution>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Use the commutative property of addition to write an equivalent expression to <m><var name="$giv3" /></m>.
+            </p>
+            <p>
+              <var name="$ans3" evaluator="$ev3" width="10"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              To use the commutative property of addition, change the order the two terms are added:
+              <me>
+                q+84=84+q
+              </me>.
+            </p>
+          </solution>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Use the associative property of addition to write an equivalent expression to <m><var name="$giv4" /></m>.
+            </p>
+            <p>
+              <var name="$ans4" evaluator="$ev4" width="10"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              To use the associative property of addition, leave terms written in their original order,
+              but change the grouping symbols so that a different addition has higher priority:
+              <me>
+                x+(20+c)=(x+20)+c
+              </me>
+            </p>
+          </solution>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Use the distributive property to write an equivalent expression to <m><var name="$giv5" /></m> that has no grouping symbols.
+            </p>
+            <p>
+              <var name="$ans5" width="10"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              To use the distributive property, multiply the number outside the parentheses, <m>3</m>,
+              with each term inside the parentheses:
+              <md>
+                <mrow>3(r+7)\amp=3\cdot r+3\cdot7</mrow>
+                <mrow>\amp=3r+21</mrow>
+              </md>.
+            </p>
+          </solution>
+        </task>
+      </webwork>
+    </exercise>
+  </subsection>
+
+  <subsection>
+    <title>Applying the Commutative, Associative, and Distributive Properties</title>
+    <p>
+      One way we use the commutative, associative, and distributive properties is to simplify                 <idx><h>Algebraic expressions</h><h>simplifying</h></idx>
+      algebra expressions.
+    </p>
+    <paragraphs>                                                                                              <idx><h>Combining like terms</h></idx>
+      <title>Like Terms</title>
+        <p>
+        For example, how we treat like terms (see <xref ref="section-combining-like-terms"/>) is
+        actually putting these algebra properties into practice. We combine like terms when we take
+        an expression like <m>2a+3a</m> and write the result as <m>5a</m>. The drawn-out formal
+        process actually looks like this:
+        <md>
+          <mrow>2a+3a \amp= (2+3)a \amp\amp\text{distributive property}</mrow>
+          <mrow>\amp=5a\amp\amp\text{do the addition}</mrow>
+        </md>
+        So combining like terms is actually making use of the distributive property.
+        In practice, it's better for you to do this the fast way. But you can grow you understanding
+        and appreciation for algebra if you see how the above steps break things down with one
+        official algebra property at a time.
+      </p>
+    </paragraphs>
+
+    <exercise label="distributive-property-to-add-like-terms">
+      <webwork>
+        <pg-code>
+          Context("Form")->variables->are(c => "Real");
+          $ans1 = Formula("13c");
+          Context("Form")->variables->are(q => "Real");
+          $ans2 = Formula("-8q^2");
+          Context("Form")->variables->add(y => "Real");
+          $ans3 = Formula("5x-5y");
+          Context("Form")->variables->add(y => "Real", z => "Real");
+          $ans4 = Formula("2x-3y+4z");
+        </pg-code>
+        <introduction>
+          <p>
+            Where possible, simplify the following expressions by combining like terms.
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              <m>6c+12c-5c</m>
+            </p>
+            <instruction>
+              If it cannot be simplified, just enter it as is.
+            </instruction>
+            <p>
+              <var name="$ans1" width="20"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              All three terms are like terms, so they may combined. We combine them two at a time:
+              <md>
+                <mrow>6c+12c-5c \amp=(6c+12c)-5c</mrow>
+                <mrow>\amp=(6+12)c-5c</mrow>
+                <mrow>\amp=18c-5c</mrow>
+                <mrow>\amp=(18-5)c=13c</mrow>
+              </md>
+            </p>
+          </solution>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>-5q^2-3q^2</m>
+            </p>
+            <instruction>
+              If it cannot be simplified, just enter it as is.
+            </instruction>
+            <p>
+              <var name="$ans2" width="20"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The terms <m>-5q^2</m> and <m>-3q^2</m> are like terms, so we may combine them.
+              Note we are using one of the subtraction versions of the distributive property.
+              <md>
+                <mrow>-5q^2-3q^2 \amp=(-5-3)q^2</mrow>
+                <mrow>\amp=-8q^2</mrow>
+              </md>
+            </p>
+          </solution>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>x-5y+4x</m>
+            </p>
+            <instruction>
+              If it cannot be simplified, just enter it as is.
+            </instruction>
+            <p>
+              <var name="$ans3" width="20"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The terms <m>x</m> and <m>4x</m> are like terms, while the other term is different.
+              Using the associative and commutative properties of addition early in the process
+              allows us to place the two like terms next to each other, and then combine them:
+              <md>
+                <mrow>x-5y+4x \amp=x+(-5y)+4x</mrow>
+                <mrow>\amp=x+((-5y)+4x)</mrow>
+                <mrow>\amp=x+(4x+(-5y))</mrow>
+                <mrow>\amp=(x+4x)+(-5y)</mrow>
+                <mrow>\amp=(1+4)x+(-5y)</mrow>
+                <mrow>\amp=5x+(-5y)=5x-5y</mrow>
+              </md>
+              This walkthrough uses the algebra properties cleanly and clearly one step at a time,
+              but if you are combining like terms more quickly, there's nothing at all wrong with
+              that.
+            </p>
+          </solution>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>2x-3y+4z</m>
+            </p>
+            <instruction>
+              If it cannot be simplified, just enter it as is.
+            </instruction>
+            <p>
+              <var name="$ans4" width="20"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The expression <m>2x-3y+4z</m> cannot be simplified as there are no like terms.
+            </p>
+          </solution>
+        </task>
+      </webwork>
+    </exercise>
+
+    <paragraphs>
+      <title>Adding Expressions</title>
+      <p>
+        Consider adding an expression like <m>4x+5</m> to an expression like <m>3x+7</m>:
+        <me>
+          (4x+5)+(3x+7)
+        </me>
+        Can we simplify this? It's great if you already see that the parentheses in this case can
+        be removed and it would not change the outcome:
+        <me>
+          4x+5+3x+7
+        </me>
+        And then using what you know about like terms, you could conclude that this is <m>7x+12</m>.
+      </p>
+      <p>
+        Several steps that are described above are sweeping things under the rug, taking multiple
+        steps at once without really justifying why that is legal. Why exactly is it OK to just
+        ignore those parentheses? Why is it ok to add <m>4x</m> and <m>3x</m> when they are separated
+        with the <m>5</m> in between? With the algebra properties, we can cleanly justify why
+        <m>(4x+5)+(3x+7)</m> simplifies to <m>7x+12</m>, explaining one step at a time.
+        <md>
+          <mrow>\amp\highlight{(4x+5)}+\Big(\highlight{3x}+\highlight{7}\Big)</mrow>
+          <intertext>View this as three things being added, and apply associativity of addition.</intertext>
+          <mrow>\amp=\Big((4x+5)+3x\Big)+7</mrow>
+          <mrow>\amp=(\highlight{(}4x+5\highlight{)}+3x)+7</mrow>
+          <intertext>Once again apply associativity of addition. We won't change the order anything is written, but we will move that inner pair of parentheses.</intertext>
+          <mrow>\amp=(4x+(5+3x))+7</mrow>
+          <mrow>\amp=(4x+(\highlight{5}+\highlight{3x}))+7</mrow>
+          <intertext>Now apply commutativity of addition.</intertext>
+          <mrow>\amp=(4x+(3x+5))+7</mrow>
+          <intertext>We've made noteworthy progress because the <m>x</m>-terms are finally written close to each other.</intertext>
+          <mrow>\amp=(4x+\highlight{(}3x+5\highlight{)})+7</mrow>
+          <intertext>Apply associativity of addition to the inner parentheses.</intertext>
+          <mrow>\amp=((4x+3x)+5)+7</mrow>
+          <mrow>\amp=(\highlight{(4x+3x)}+\highlight{5})+\highlight{7}</mrow>
+          <intertext>Apply associativity of addition again.</intertext>
+          <mrow>\amp=(4x+3x)+(5+7)</mrow>
+          <mrow>\amp=\highlight{(4x+3x)}+(5+7)</mrow>
+          <intertext>Use the distributive property.</intertext>
+          <mrow>\amp=(4+3)x+(5+7)</mrow>
+          <intertext>And finally, we can just respect the order of operations and carry out the additions inside the parentheses.</intertext>
+          <mrow>\amp=7x+12</mrow>
+        </md>
+        That was a lot to do! So it's worth repeating that it is good if you can more quickly
+        simplify <m>(4x+5)+(3x+7)</m> to <m>7x+12</m>. The above demonstrates how the algebra
+        properties, one at a time, truly justify and validate that simplification.
+      </p>
+    </paragraphs>
+
+    <exercise label="adding-expressions-using-algebra-properties">
+      <webwork>
+        <pg-code>
+          Context("Form");
+          $ans1 = Formula("6x+8");
+          $ans2 = Formula("-x-4");
+        </pg-code>
+        <introduction>
+          <p>
+            Use the associative, commutative, and distributive properties
+            to simplify the following expressions as much as possible.
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              <m>(2x+3)+(4x+5)</m>
+            </p>
+            <p>
+              <var name="$ans1" width="20"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow>\amp(2x+3)+(4x+5)</mrow>
+                <mrow>\amp=((2x+3)+4x)+5\amp\amp\text{using the associative property of addition}</mrow>
+                <mrow>\amp=(2x+(3+4x))+5\amp\amp\text{using the associative property of addition}</mrow>
+                <mrow>\amp=(2x+(4x+3))+5\amp\amp\text{using the commutative property of addition}</mrow>
+                <mrow>\amp=((2x+4x)+3)+5\amp\amp\text{using the associative property of addition}</mrow>
+                <mrow>\amp=(2x+4x)+(3+5)\amp\amp\text{using the associative property of addition}</mrow>
+                <mrow>\amp=(2+4)x+(3+5)\amp\amp\text{using the distributive property}</mrow>
+                <mrow>\amp=6x+8\amp\amp\text{using addition}</mrow>
+              </md>
+            </p>
+          </solution>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>(-5x+3)+(4x-7)</m>
+            </p>
+            <p>
+              <var name="$ans2" width="20"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow>\amp(-5x+3)+(4x-7)</mrow>
+                <mrow>\amp=((-5x+3)+4x)+(-7)\amp\amp\text{using the associative property of addition}</mrow>
+                <mrow>\amp=(-5x+(3+4x))+(-7)\amp\amp\text{using the associative property of addition}</mrow>
+                <mrow>\amp=(-5x+(4x+3))+(-7)\amp\amp\text{using the commutative property of addition}</mrow>
+                <mrow>\amp=((-5x+4x)+3)+(-7)\amp\amp\text{using the associative property of addition}</mrow>
+                <mrow>\amp=(-5x+4x)+(3+(-7))\amp\amp\text{using the associative property of addition}</mrow>
+                <mrow>\amp=(-5+4)x+(3+(-7))\amp\amp\text{using the distributive property}</mrow>
+                <mrow>\amp=-1x+(-4)\amp\amp\text{using addition}</mrow>
+                <mrow>\amp=-x-4</mrow>
+              </md>
+            </p>
+          </solution>
+        </task>
+      </webwork>
+    </exercise>
+  </subsection>
+
+  <subsection>
+    <title>The Role of the Order of Operations</title>
+    <p>
+      When simplifying an expression such as <m>3+4(5x+7)</m>, we need to respect the order of
+      operations. Since the terms inside the parentheses are not like terms, there is nothing to
+      simplify inside the parentheses.
+      The next highest priority operation is multiplying the <m>4</m> by the <m>(5x+7)</m>.
+      This must be done <em>before</em> anything happens with that <m>3</m> at the far left.
+      It is wrong to write <m>3+4(5x+7)=\highlight{7}(5x+7)</m>,
+      because that would mean we treated the addition as having higher priority than the
+      multiplication. And that just plain violates the standard order of operations.
+    </p>
+
+    <p>
+      So the order of operations <em>alone</em> is not enough to simplify this expression.
+      But the algebra properties let us rearrange things so that we can be productive.
+      To simplify <m>3+4(5x+7)</m>, note that there is a place where we can apply the distributive
+      property:
+      <md>
+        <mrow>3+4(5x+7)\amp=3+\Big(4(5x)+4(7)\Big)</mrow>
+        <mrow>\amp=3+(20x+28)</mrow>
+        <intertext>
+          Now we can uses the commutative and associative properties.
+        </intertext>
+        <mrow>\amp=3+(28+20x)</mrow>
+        <mrow>\amp=(3+28)+20x</mrow>
+        <mrow>\amp=31+20x</mrow>
+      </md>
+    </p>
+
+    <exercise label="simplify-expression-using-properties" adaptive="yes">
+      <title>Algebra Steps to Simplify an Expression</title>                                                  <idx><h>Simplifying algebraic expressions</h></idx>
+      <statement>
+        <p>
+          Put the steps to simplify <m>5+9(2-3x)</m> in the correct order.
+          Use only one algebra property or arithmetic operation in each step.
+          It's possible you should not use all of the steps provided here as options.
+        </p>
+      </statement>
+      <blocks>
+        <block order="2">
+          <p>
+            <m>5+9(2-3x)</m>
+          </p>
+        </block>
+        <block order="1" correct="no">
+          <p>
+            <m>{}=14(2-3x)</m>
+          </p>
+        </block>
+        <block order="4">
+          <choice>
+            <p>
+              <m>{}=5+9(2)-3x</m>
+            </p>
+          </choice>
+          <choice correct="yes">
+            <p>
+              <m>{}=5+\Big(9\cdot2-9(3x)\Big)</m>
+            </p>
+          </choice>
+        </block>
+        <block order="5">
+          <p>
+            <m>{}=5+(18-27x)</m>
+          </p>
+        </block>
+        <block order="3">
+          <p>
+            <m>{}=(5+18)-27x</m>
+          </p>
+        </block>
+        <block order="6">
+          <p>
+            <m>{}=23-27x</m>
+          </p>
+        </block>
+      </blocks>
+    </exercise>
+
+    <exercise label="simplify-expressions-using-properties">
+      <webwork>
+        <pg-code>
+          Context("Form");
+          $ans1 = Formula("13-3x");
+          $ans2 = Formula("5x+6");
+          $ans3 = Formula("9x-29");
+        </pg-code>
+        <introduction>
+          <p>
+            Simplify the expressions using the commutative, associative, and distributive properties.
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              <m>4-(3x-9)</m>
+            </p>
+            <p>
+              <var name="$ans1" width="10"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              That first subtraction may be tricky. It may help to write that as addition of
+              <m>-1</m> times the rest:
+              <md>
+                <mrow>4-(3x-9) \amp=4+(-1)(3x-9)</mrow>
+                <mrow>\amp=4+\Big(-1(3x)-(-1)(9)\Big)</mrow>
+                <mrow>\amp=4+(-3x+9)</mrow>
+                <mrow>\amp=4+(9-3x)</mrow>
+                <mrow>\amp=4+(9+(-3x))</mrow>
+                <mrow>\amp=(4+9)+(-3x)</mrow>
+                <mrow>\amp=13+(-3x)=13-3x</mrow>
+              </md>
+            </p>
+          </solution>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>9x+2(-2x+3)</m>
+            </p>
+            <p>
+              <var name="$ans2" width="10"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We start out with the distributive property and proceed from there:
+              <md>
+                <mrow>5x+9(-2x+3)\amp=5x+\Big(9(-2x)+9\cdot3\Big)</mrow>
+                <mrow>\amp=5x+(-18x+27)</mrow>
+                <mrow>\amp=(5x+(-18x))+27</mrow>
+                <mrow>\amp=-13x+27</mrow>
+              </md>
+            </p>
+          </solution>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>5(x-9)+4(x+4)</m>
+            </p>
+            <p>
+              <var name="$ans3" width="10"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We start out with the distributive property and proceed from there:
+              <md>
+                <mrow>\amp5(x-9)+4(x+4)</mrow>
+                <mrow>\amp=(5x-45)+(4x+16)</mrow>
+                <mrow>\amp=5x+(-45)+4x+16\amp\amp\text{skipping lots of formal algebra properties}</mrow>
+                <mrow>\amp=9x-29</mrow>
+              </md>
+            </p>
+          </solution>
+        </task>
+      </webwork>
+    </exercise>
+  </subsection>
+
+  <reading-questions>
+    <exercise label="why-multiplicative-identity">
+      <statement>
+        <p>
+          Why is the number <m>1</m> called the <q>multiplicative identity</q>?
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+    <exercise label="use-associative-in-your-head">
+      <statement>
+        <p>
+          Consider the expression <m>138+25+5</m>. According to the order of operations,
+          you should add this from left to right, and start out by adding <m>(138+25)+5</m>.
+        </p>
+        <p>
+          Which property of algebra allows you to view this as equal to <m>138+(25+5)</m>?
+          (Adding them that way is probably easier to do in your head.)
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+    <exercise label="which-propeeerty-is-used-with-like-terms">
+      <statement>
+        <p>
+          Whenever you combine like terms, which algebraic property of numbers are you using?
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+  </reading-questions>
+
+  <exercises>
+    <subexercises>
+      <title>Vocabulary</title>
+      <exercisegroup cols="2">
+        <introduction>
+          <p>
+            Find the indicated inverse.
+          </p>
+        </introduction>
+        <exercise label="additive-inverse-of-integer">
+          <webwork xml:id="webwork-additive-inverse-of-integer">
+            <pg-code>
+              $n = non_zero_random(-10,10);
+              $ans = -$n;
+            </pg-code>
+            <statement>
+              <p>
+                Additive inverse of <m><var name="$n"/></m>.
+              </p>
+              <p>
+                <var name="$ans" width="5"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                The additive inverse of a number is just the negative of that number. So the
+                additive inverse of <m><var name="$n"/></m> is <m><var name="$ans"/></m>.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="additive-inverse-of-integer-copy">
+          <webwork copy="webwork-additive-inverse-of-integer"/>
+        </exercise>
+        <exercise label="multiplicative-inverse-of-integer">
+          <webwork xml:id="webwork-multiplicative-inverse-of-integer">
+            <pg-code>
+              $n = non_zero_random(-10,10);
+              Context("Fraction");
+              $ans = Fraction(1, $n);
+            </pg-code>
+            <statement>
+              <p>
+                Multiplicative inverse of <m><var name="$n"/></m>.
+              </p>
+              <p>
+                <var name="$ans" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="multiplicative-inverse-of-integer-copy">
+          <webwork copy="webwork-multiplicative-inverse-of-integer"/>
+        </exercise>
+        <exercise label="additive-inverse-of-decimal">
+          <webwork xml:id="webwork-additive-inverse-of-decimal">
+            <pg-code>
+              $n = non_zero_random(-10,9) + random(0.1,0.9,0.1);
+              $ans = -$n;
+            </pg-code>
+            <statement>
+              <p>
+                Additive inverse of <m><var name="$n"/></m>.
+              </p>
+              <p>
+                <var name="$ans" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="additive-inverse-of-decimal-copy">
+          <webwork copy="webwork-additive-inverse-of-decimal"/>
+        </exercise>
+        <exercise label="multiplicative-inverse-of-positive-fraction">
+          <webwork xml:id="webwork-multiplicative-inverse-of-positive-fraction">
+            <pg-code>
+              ($n, $d) = random_coprime([1..10],[2..10]);
+              Context("Fraction");
+              $a = Fraction($n,$d);
+              $ans = 1/$a;
+            </pg-code>
+            <statement>
+              <p>
+                Multiplicative inverse of <m><var name="$a"/></m>.
+              </p>
+              <p>
+                <var name="$ans" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="multiplicative-inverse-of-positive-fraction-copy">
+          <webwork copy="webwork-multiplicative-inverse-of-positive-fraction"/>
+        </exercise>
+        <exercise label="multiplicative-inverse-of-negative-fraction">
+          <webwork xml:id="webwork-multiplicative-inverse-of-negative-fraction">
+            <pg-code>
+              ($n, $d) = random_coprime([-10..-1],[2..10]);
+              Context("Fraction");
+              $a = Fraction($n,$d);
+              $ans = 1/$a;
+            </pg-code>
+            <statement>
+              <p>
+                Multiplicative inverse of <m><var name="$a"/></m>.
+              </p>
+              <p>
+                <var name="$ans" width="5"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                The multiplicative inverse of a negative number will still be negative. The
+                multiplicative inverse of fraction swaps the numerator and denominator. So here the
+                multiplicative inverse of <m><var name="$a"/></m> is <m><var name="$ans"/></m>.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="multiplicative-inverse-of-negative-fraction-copy">
+          <webwork copy="webwork-multiplicative-inverse-of-negative-fraction"/>
+        </exercise>
+      </exercisegroup>
+
+      <exercise label="what-is-the-additive-identity">
+        <webwork>
+          <statement>
+            <p>
+              What number is the additive identity?
+            </p>
+            <p>
+              <var name="'0'" width="5"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+
+      <exercise label="what-is-the-multiplicative-identity">
+        <webwork>
+          <statement>
+            <p>
+              What number is the multiplicative identity?
+            </p>
+            <p>
+              <var name="'1'" width="5"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+    </subexercises>
+
+    <subexercises>
+      <title>Skills Practice</title>
+
+      <exercisegroup cols="2">
+        <title>Apply an Algebraic Property</title>
+        <introduction>
+          <p>
+            Demonstrate that you know the meanings of the various algebraic properties by
+            applying the given algebraic property to the given expression to get a new expression.
+          </p>
+        </introduction>
+        <exercise label="use-additive-associativity">
+          <webwork xml:id="webwork-use-additive-associativity">
+            <pg-code>
+              @var = random_subset(2, 'a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+              Context("Numeric")->variables->are($var[0] => 'Real', $var[1] => 'Real');
+              Context()->flags->set(reduceConstants => 0);
+              Context()->lists->set(AbsoluteValue => {open => "(", close => ")"});
+              Context()->parens->set("(" => {removable => 0,type => "AbsoluteValue",close => ")"});
+              $c = random(1, 100);
+              @terms = (@var, $c)[NchooseK(3, 3)];
+              $given = Compute("($terms[0] + $terms[1]) + $terms[2]");
+              $ambig = Compute("$terms[0] + $terms[1] + $terms[2]");
+              $ans = Compute("$terms[0] + ($terms[1] + $terms[2])");
+              $evaluator = $ans->cmp(checker=>sub{
+                my ($correct, $student, $ans)=@_;
+                for $x ($given, $ambig, $student, $correct) {
+                  $x->{test_at} = [[-$c - 1, -$c - 1], [-$c - 1, -$c + 1], [-$c + 1, -$c - 1], [-$c + 1, -$c + 1]];
+                }
+                Value->Error("This expression is algebraically equivalent to the given expression, but using associativity would give you something else") if (($student == $given) || ($student == $ambig) || (($student == $correct) &amp;&amp; ($student ne $correct)));
+                return ($student eq $correct);
+              });
+            </pg-code>
+            <statement>
+              <p>
+                Apply associativity to <m><var name="$given"/></m>.
+              </p>
+              <p>
+                <var name="$ans" evaluator="$evaluator" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="use-additive-associativity-copy">
+          <webwork copy="webwork-use-additive-associativity"/>
+        </exercise>
+
+        <exercise label="use-additive-associativity-one-var">
+          <webwork xml:id="webwork-use-additive-associativity-one-var">
+            <pg-code>
+              $var = list_random('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+              Context("Fraction")->variables->are($var => 'Real');
+              Context()->flags->set(reduceConstants => 0, showExtraParens => 0);
+              Context()->lists->set(AbsoluteValue => {open => "(", close => ")"});
+              Context()->parens->set("(" => {removable => 0,type => "AbsoluteValue",close => ")"});
+              $c = Fraction(random_coprime([1..10],[2..10]));
+              @terms = ($var, "$var^2", $c)[NchooseK(3, 3)];
+              $given = Compute("$terms[0] + ($terms[1] + $terms[2])")->reduce;
+              $ambig = Compute("$terms[0] + $terms[1] + $terms[2]")->reduce;
+              $ans = Compute("($terms[0] + $terms[1]) + $terms[2]")->reduce;
+              $evaluator = $ans->cmp(checker=>sub{
+                my ($correct, $student, $ans) = @_;
+                $student = Formula("$student")->reduce;
+                for $x ($given, $ambig, $student, $correct) {
+                  $x->{test_at} = [[-$c - 0.5], [-$c + 0.5], [-$c**2 - 0.5], [-$c**2 + 0.5], [-$c - sqrt($c)], [-$c + sqrt($c)], [-$c**2 - sqrt($c)], [-$c**2 + sqrt($c)]];
+                }
+                Value->Error("This expression is what was originally given") if ($student eq $given);
+                Value->Error("This expression is technically correct, but please try again with explicit parentheses") if ($student == $ambig &amp;&amp; $student eq $ambig);
+                Value->Error("This expression is algebraically equivalent to the given expression, but using associativity would give you something else") if (($student == $given) || (($student == $correct) &amp;&amp; ($student ne $correct)));
+                return ($student eq $correct);
+              });
+            </pg-code>
+            <statement>
+              <p>
+                Apply associativity to <m><var name="$given"/></m>.
+              </p>
+              <p>
+                <var name="$ans" evaluator="$evaluator" width="16"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                The expression has three terms. To apply associativity, we write the three terms in
+                the same order from left to right, but change which two terms are grouped. This
+                gives us <m><var name="$ans"/></m>.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="use-additive-associativity-one-var-copy">
+          <webwork copy="webwork-use-additive-associativity-one-var"/>
+        </exercise>
+
+        <exercise label="use-multiplicative-associativity">
+          <webwork xml:id="webwork-use-multiplicative-associativity">
+            <pg-code>
+              @var = random_subset(2, 'a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+              Context("Numeric")->variables->are($var[0] => 'Real', $var[1] => 'Real');
+              Context()->flags->set(reduceConstants => 0);
+              Context()->lists->set(AbsoluteValue => {open => "(", close => ")"});
+              Context()->parens->set("(" => {removable => 0,type => "AbsoluteValue",close => ")"});
+              $c = random(2, 20);
+              $given = Formula("($c $var[0]) $var[1]");
+              $ambig = Formula("$c $var[0] $var[1]");
+              $ans = Formula("$c($var[0] $var[1])");
+              $evaluator = $ans->cmp(checker=>sub{
+                my ($correct, $student, $ans) = @_;
+                $student->{test_at} = [[1, 1], [1, -1], [-1, 1] ,[-1, -1]];
+                $correct->{test_at} = [[1, 1], [1, -1], [-1, 1] ,[-1, -1]];
+                Value->Error("This is algebraically equivalent to the given expression, but using associativity would give you something else") if (($student == $given) || ($student == $ambig) || (($student == $correct) &amp;&amp; ($student ne $correct)));
+                return ($student eq $correct);
+              });
+            </pg-code>
+            <statement>
+              <p>
+                Apply associativity to <m><var name="$given"/></m>.
+              </p>
+              <p>
+                <var name="$ans" evaluator="$evaluator" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="use-multiplicative-associativity-copy">
+          <webwork copy="webwork-use-multiplicative-associativity"/>
+        </exercise>
+
+        <exercise label="use-additive-commutativity">
+          <webwork xml:id="webwork-use-additive-commutativity">
+            <pg-code>
+              @var = random_subset(2, 'a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+              Context("Numeric")->variables->are($var[0] => 'Real', $var[1] => 'Real');
+              $given = Formula("$var[0] + $var[1]");
+              $ans = Formula("$var[1] + $var[0]");
+              $evaluator = $ans->cmp(checker => sub{
+                my ($correct, $student, $ans) = @_;
+                Value->Error("This is the original expression") if ($student eq $given);
+                Value->Error("This is algebraically equivalent to the given expression, but using commutativity would give you something else") if (($student == $correct) &amp;&amp; ($student ne $correct));
+                return ($student eq $correct);
+              });
+            </pg-code>
+            <statement>
+              <p>
+                Apply commutativity to <m><var name="$given"/></m>.
+              </p>
+              <p>
+                <var name="$ans" evaluator="$evaluator" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="use-additive-commutativity-copy">
+          <webwork copy="webwork-use-additive-commutativity"/>
+        </exercise>
+
+        <exercise label="use-additive-commutativity-with-coefficient">
+          <webwork xml:id="webwork-use-additive-commutativity-with-coefficient">
+            <pg-code>
+              @var = random_subset(2, 'a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+              Context("Fraction")->variables->are($var[0] => 'Real', $var[1] => 'Real');
+              $m = Fraction(random_coprime([1..10], [2..10]));
+              $given = Formula("$m $var[0] + $var[1]");
+              $ans = Formula("$var[1] + $m $var[0]");
+              $evaluator = $ans->cmp(checker => sub{
+                my ($correct, $student, $ans) = @_;
+                Value->Error("This is the original expression") if ($student eq $given);
+                Value->Error("This is algebraically equivalent to the given expression, but using commutativity of addition would give you something else") if (($student == $correct) &amp;&amp; ($student ne $correct));
+                return ($student eq $correct);
+              });
+            </pg-code>
+            <statement>
+              <p>
+                Apply commutativity of addition to <m><var name="$given"/></m>.
+              </p>
+              <p>
+                <var name="$ans" evaluator="$evaluator" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="use-additive-commutativity-with-coefficient-copy">
+          <webwork copy="webwork-use-additive-commutativity-with-coefficient"/>
+        </exercise>
+
+        <exercise label="use-multiplicative-commutativity-with-coefficient">
+          <webwork xml:id="webwork-use-multiplicative-commutativity-with-coefficient">
+            <pg-code>
+              @var = random_subset(3, 'a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+              Context("Numeric")->variables->are($var[0] => 'Real', $var[1] => 'Real', $var[2] => 'Real');
+              $given = Formula("$var[0] $var[1] + $var[2]");
+              $ans = Formula("$var[1] $var[0] + $var[2]");
+              $evaluator = $ans->cmp(checker => sub{
+                my ($correct, $student, $ans) = @_;
+                Value->Error("This is the original expression") if ($student eq $given);
+                Value->Error("This is algebraically equivalent to the given expression, but using commutativity of multiplication would give you something else") if (($student == $correct) &amp;&amp; ($student ne $correct));
+                return ($student eq $correct);
+              });
+            </pg-code>
+            <statement>
+              <p>
+                Apply commutativity of multiplication to <m><var name="$given"/></m>.
+              </p>
+              <p>
+                <var name="$ans" evaluator="$evaluator" width="16"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                There is one place in this expression where there is multiplication. To apply
+                commutativity of multiplication, we just write those two factors in the opposite
+                order. This gives us <m><var name="$ans"/></m>.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="use-multiplicative-commutativity-with-coefficient-copy">
+          <webwork copy="webwork-use-multiplicative-commutativity-with-coefficient"/>
+        </exercise>
+
+        <exercise label="use-multiplicative-commutativity-with-factored">
+          <webwork xml:id="webwork-use-multiplicative-commutativity-with-factored">
+            <pg-code>
+              $var = list_random('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+              Context("Numeric")->variables->are($var => 'Real');
+              ($a, $b) = (2..10)[NchooseK(9,2)];
+              $given = Formula("$a ($var + $b)");
+              $ans = Formula("($var + $b) $a");
+              $evaluator = $ans->cmp(checker => sub{
+                my ($correct, $student, $ans) = @_;
+                Value->Error("This is the original expression") if ($student eq $given);
+                Value->Error("This is algebraically equivalent to the given expression, but using commutativity of multiplication would give you something else") if (($student == $correct) &amp;&amp; ($student ne $correct));
+                return ($student eq $correct);
+              });
+            </pg-code>
+            <statement>
+              <p>
+                Apply commutativity of multiplication to <m><var name="$given"/></m>.
+              </p>
+              <p>
+                <var name="$ans" evaluator="$evaluator" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="use-multiplicative-commutativity-with-factored-copy">
+          <webwork copy="webwork-use-multiplicative-commutativity-with-factored"/>
+        </exercise>
+
+        <exercise label="use-additive-commutativity-with-factored">
+          <webwork xml:id="webwork-use-additive-commutativity-with-factored">
+            <pg-code>
+              $var = list_random('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+              Context("Numeric")->variables->are($var => 'Real');
+              ($a, $b) = (2..10)[NchooseK(9,2)];
+              $given = Formula("$a($var + $b)");
+              $ans = Formula("$a($b + $var)");
+              $evaluator = $ans->cmp(checker => sub{
+                my ($correct, $student, $ans) = @_;
+                Value->Error("This is the original expression") if ($student eq $given);
+                Value->Error("This is algebraically equivalent to the given expression, but using commutativity of multiplication would give you something else") if (($student == $correct) &amp;&amp; ($student ne $correct));
+                return ($student eq $correct);
+              });
+            </pg-code>
+            <statement>
+              <p>
+                Apply commutativity of addition to <m><var name="$given"/></m>.
+              </p>
+              <p>
+                <var name="$ans" evaluator="$evaluator" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="use-additive-commutativity-with-factored-copy">
+          <webwork copy="webwork-use-additive-commutativity-with-factored"/>
+        </exercise>
+
+        <exercise label="use-distributive-property">
+          <webwork xml:id="webwork-use-distributive-property">
+            <pg-code>
+              $var = list_random('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+              Context("Form")->variables->are($var => 'Real');
+              ($a, $b) = (2..10)[NchooseK(9,2)];
+              $given = Formula("$a($var + $b)");
+              $ab = $a*$b;
+              $ans = Formula("$a $var + $a*$b");
+              $alt = Formula("$a $var + $ab");
+              $evaluator = $ans->cmp->withPostFilter(sub {
+                my $ans = shift;
+                $altans = $alt->cmp->evaluate($ans->{original_student_ans});
+                if ($altans->{score} == 1) {
+                  return $altans;
+                } else {
+                  return $ans;
+                }
+              });
+            </pg-code>
+            <statement>
+              <p>
+                Apply the distributive property to <m><var name="$given"/></m>.
+              </p>
+              <p>
+                <var name="$ans" evaluator="$evaluator" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="use-distributive-property-copy">
+          <webwork copy="webwork-use-distributive-property"/>
+        </exercise>
+
+        <exercise label="use-distributive-property-subtraction">
+          <webwork xml:id="webwork-use-distributive-property-subtraction">
+            <pg-code>
+              $var = list_random('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+              Context("Form")->variables->are($var => 'Real');
+              ($a, $b) = (2..10)[NchooseK(9,2)];
+              $given = Formula("$a($var - $b)");
+              $ab = $a*$b;
+              $ans = Formula("$a $var - $a*$b");
+              $alt = Formula("$a $var - $ab");
+              $evaluator = $ans->cmp->withPostFilter(sub {
+                my $ans = shift;
+                $altans = $alt->cmp->evaluate($ans->{original_student_ans});
+                if ($altans->{score} == 1) {
+                  return $altans;
+                } else {
+                  return $ans;
+                }
+              });
+            </pg-code>
+            <statement>
+              <p>
+                Apply the distributive property to <m><var name="$given"/></m>.
+              </p>
+              <p>
+                <var name="$ans" evaluator="$evaluator" width="16"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                The expression has a group of two terms multiplied by <m><var name="$a"/></m>. To
+                apply the distributive property, we multiply <m><var name="$a"/></m> by each of
+                those two terms. This gives us <m><var name="$ans"/></m>.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="use-distributive-property-subtraction-copy">
+          <webwork copy="webwork-use-distributive-property-subtraction"/>
+        </exercise>
+
+        <exercise label="use-distributive-property-fraction">
+          <webwork xml:id="webwork-use-distributive-property-fraction">
+            <pg-code>
+              $var = list_random('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+              Context("Fraction");
+              $a = Fraction(random_coprime([2..10],[2..10]));
+              $b = Fraction(random_coprime([2..10],[2..10]));
+              Context("Form")->variables->are($var => 'Real');
+              $given = Formula("$a($var + $b)");
+              $ab = $a*$b;
+              $ans = Formula("$a $var + $a*$b");
+              $alt = Formula("$a $var + $ab");
+              $evaluator = $ans->cmp->withPostFilter(sub {
+                my $ans = shift;
+                $altans = $alt->cmp->evaluate($ans->{original_student_ans});
+                if ($altans->{score} == 1) {
+                  return $altans;
+                } else {
+                  return $ans;
+                }
+              });
+            </pg-code>
+            <statement>
+              <p>
+                Apply the distributive property to <m><var name="$given"/></m>.
+              </p>
+              <p>
+                <var name="$ans" evaluator="$evaluator" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="use-distributive-property-fraction-copy">
+          <webwork copy="webwork-use-distributive-property-fraction"/>
+        </exercise>
+
+        <exercise label="use-distributive-property-negate">
+          <webwork xml:id="webwork-use-distributive-property-negate">
+            <pg-code>
+              $var = list_random('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+              Context("Fraction");
+              $b = Fraction(random_coprime([2..10],[2..10]));
+              Context("Form")->variables->are($var => 'Real');
+              $given = Formula("-($var + $b)");
+              Context()->lists->set(AbsoluteValue=>{open=>"(",close=>")"});
+              Context()->parens->set("("=>{removable=>0,type=>"AbsoluteValue",close=>")"});
+              $ans = Formula("-$var - $b");
+            </pg-code>
+            <statement>
+              <p>
+                Apply the distributive property to <m><var name="$given"/></m>.
+              </p>
+              <p>
+                <var name="$ans" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="use-distributive-property-negate-copy">
+          <webwork copy="webwork-use-distributive-property-negate"/>
+        </exercise>
+      </exercisegroup>
+
+      <exercisegroup cols="2">
+        <title>Simplify</title>
+        <introduction>
+          <p>
+            Simplify the given expression. Ideally, you are thinking about how the properties of
+            algebra are helping you simplify.
+          </p>
+        </introduction>
+        <exercise label="simplify-combine-two-terms">
+          <webwork xml:id="webwork-simplify-combine-two-terms">
+            <pg-code>
+              Context("Form");
+              ($a, $b) = (2..20)[NchooseK(19,2)];
+              $given = Formula("$a x + $b x");
+              $ab = $a + $b;
+              $ans = Formula("$ab x");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$ans" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="simplify-combine-two-terms-copy">
+          <webwork copy="webwork-simplify-combine-two-terms"/>
+        </exercise>
+
+        <exercise label="simplify-combine-two-terms-subtract-fractions">
+          <webwork xml:id="webwork-simplify-combine-two-terms-subtract-fractions">
+            <pg-code>
+              Context("Fraction");
+              do {
+                $a = Fraction(random_coprime([2..9], [2..9]));
+                $b = Fraction(random_coprime([2..9], [2..9]));
+              } until ($a != $b);
+              Context("Form");
+              $given = Formula("$a x - $b x");
+              $ab = $a - $b;
+              $ans = Formula("$ab x");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$ans" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="simplify-combine-two-terms-subtract-fractions-copy">
+          <webwork copy="webwork-simplify-combine-two-terms-subtract-fractions"/>
+        </exercise>
+
+        <exercise label="simplify-combine-two-numbers-var-in-between">
+          <webwork xml:id="webwork-simplify-combine-two-numbers-var-in-between">
+            <pg-code>
+              Context("Form");
+              $var = list_random('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+              Context()->variables->are($var => 'Real');
+              ($a, $b, $c) = (2..20)[NchooseK(19,3)];
+              $given = Formula("$a + ($c $var + $b)");
+              $ab = $a + $b;
+              $ans = Formula("$c $var + $ab");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$ans" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="simplify-combine-two-numbers-var-in-between-copy">
+          <webwork copy="webwork-simplify-combine-two-numbers-var-in-between"/>
+        </exercise>
+
+        <exercise label="simplify-combine-two-terms-number-in-between">
+          <webwork xml:id="webwork-simplify-combine-two-terms-number-in-between">
+            <pg-code>
+              Context("Form");
+              $var = list_random('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+              Context()->variables->are($var => 'Real');
+              ($a, $b, $c) = (2..20)[NchooseK(19,3)];
+              $given = Formula("$a $var + $c + $b $var");
+              $ab = $a + $b;
+              $ans = Formula("$ab $var + $c");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$ans" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="simplify-combine-two-terms-number-in-between-copy">
+          <webwork copy="webwork-simplify-combine-two-terms-number-in-between"/>
+        </exercise>
+
+        <exercise label="simplify-with-distributive-subtract-number">
+          <webwork xml:id="webwork-simplify-with-distributive-subtract-number">
+            <pg-code>
+              Context("Form");
+              $var = list_random('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+              Context()->variables->are($var => 'Real');
+              ($a, $b, $c, $d) = (2..9)[NchooseK(8,4)];
+              $given = Formula("$a ($b $var + $c) - $d");
+              $ab = $a*$b;
+              $acd = $a*$c - $d;
+              $ans = Formula("$ab $var + $acd");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$ans" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="simplify-with-distributive-subtract-number-copy">
+          <webwork copy="webwork-simplify-with-distributive-subtract-number"/>
+        </exercise>
+
+        <exercise label="simplify-with-distributive-add-number">
+          <webwork xml:id="webwork-simplify-with-distributive-add-number">
+            <pg-code>
+              Context("Form");
+              $var = list_random('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+              Context()->variables->are($var => 'Real');
+              ($a, $b, $c, $d) = (2..9)[NchooseK(8,4)];
+              $given = Formula("$d + $a ($b $var - $c)");
+              $ab = $a*$b;
+              $acd = $d - $a*$c;
+              $ans = Formula("$ab $var + $acd");
+              $sol[0] = Formula("$d + ($a*$b) $var - ($a*$c)")->reduce;
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$ans" width="16"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                First, apply the distributive property to get <m><var name="$sol[0]"/></m>. Now add
+                the two like terms to get <m><var name="$ans"/></m>.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="simplify-with-distributive-add-number-copy">
+          <webwork copy="webwork-simplify-with-distributive-add-number"/>
+        </exercise>
+
+        <exercise label="simplify-add-two-distributions">
+          <webwork xml:id="webwork-simplify-add-two-distributions">
+            <pg-code>
+              Context("Form");
+              $var = list_random('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+              Context()->variables->are($var => 'Real');
+              ($a, $b, $c, $d, $e, $f) = (2..9)[NchooseK(8,6)];
+              $given = Formula("$a($b $var + $c) + $d($e $var + $f)");
+              $abde = $a*$b + $d*$e;
+              $acdf = $a*$c + $d*$f;
+              $ans = Formula("$abde $var + $acdf");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$ans" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="simplify-add-two-distributions-copy">
+          <webwork copy="webwork-simplify-add-two-distributions"/>
+        </exercise>
+
+        <exercise label="simplify-add-two-distributions-double-negative">
+          <webwork xml:id="webwork-simplify-add-two-distributions-double-negative">
+            <pg-code>
+              Context("Form");
+              $var = list_random('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+              Context()->variables->are($var => 'Real');
+              ($a, $b, $c, $d, $e, $f) = (2..9)[NchooseK(8,6)];
+              $given = Formula("$a($b $var + $c) - $d($e $var - $f)");
+              $abde = $a*$b - $d*$e;
+              $acdf = $a*$c + $d*$f;
+              $ans = Formula("$abde $var + $acdf");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$ans" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="simplify-add-two-distributions-double-negative-copy">
+          <webwork copy="webwork-simplify-add-two-distributions-double-negative"/>
+        </exercise>
+
+        <exercise label="simplify-subtract-two-distributions">
+          <webwork xml:id="webwork-simplify-subtract-two-distributions">
+            <pg-code>
+              Context("Form");
+              $var = list_random('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+              Context()->variables->are($var => 'Real');
+              do {
+                ($a, $b, $c, $d, $e, $f) = (2..9)[NchooseK(8,6)];
+                $abde = $a*$b - $d*$e;
+                $acdf = $a*$c - $d*$f;
+              } until ($abde != 0 &amp;&amp; $acdf != 0);
+              $given = Formula("$a($b $var + $c) - $d($e $var + $f)");
+              $ans = Formula("$abde $var + $acdf");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$ans" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="simplify-subtract-two-distributions-copy">
+          <webwork copy="webwork-simplify-subtract-two-distributions"/>
+        </exercise>
+
+        <exercise label="simplify-distribute-subtract-biinomial">
+          <webwork xml:id="webwork-simplify-distribute-subtract-biinomial">
+            <pg-code>
+              Context("Form");
+              $var = list_random('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+              Context()->variables->are($var => 'Real');
+              do {
+                ($a, $b, $c, $e, $f) = (2..9)[NchooseK(8,5)];
+                $abe = $a*$b - $e;
+                $acf = $a*$c - $f;
+              } until ($abe != 0 &amp;&amp; $acf != 0);
+              $given = Formula("$a($b $var + $c) - ($e $var + $f)");
+              $ans = Formula("$abe $var + $acf");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$ans" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="simplify-distribute-subtract-biinomial-copy">
+          <webwork copy="webwork-simplify-distribute-subtract-biinomial"/>
+        </exercise>
+
+        <exercise label="simplify-add-two-distributions-fractions">
+          <webwork xml:id="webwork-simplify-add-two-distributions-fractions">
+            <pg-code>
+              Context("Fraction");
+              $a = Fraction(random_coprime([2..10],[2..10]));
+              $f = Fraction(random_coprime([2..10],[2..10]));
+              Context("Form");
+              $var = list_random('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+              Context()->variables->are($var => 'Real');
+              ($b, $c, $d, $e) = (2..9)[NchooseK(8,4)];
+              $given = Formula("$a($b $var - $c) + $d($e $var - $f)");
+              $abde = $a*$b + $d*$e;
+              $acdf = -$a*$c - $d*$f;
+              $ans = Formula("$abde $var + $acdf");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$ans" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="simplify-add-two-distributions-fractions-copy">
+          <webwork copy="webwork-simplify-add-two-distributions-fractions"/>
+        </exercise>
+
+        <exercise label="simplify-double-negative-decimals">
+          <webwork xml:id="webwork-simplify-double-negative-decimals">
+            <pg-code>
+              Context("Form")->flags->remove("NumberCheck");
+              $var = list_random('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+              Context()->variables->are($var => 'Real');
+              ($a, $b, $c, $d, $e, $f) = (0..9)[NchooseK(10,6)];
+              for $x ($a, $b, $c, $d, $e, $f) {
+                $x += random(0.1,0.9,0.1);
+              }
+              $given = Formula("$a($b $var - $c) - $d($e $var - $f)");
+              $abde = $a*$b - $d*$e;
+              $acdf = -$a*$c + $d*$f;
+              $ans = Formula("$abde $var + $acdf");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$given"/></m>
+              </p>
+              <p>
+                <var name="$ans" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="simplify-double-negative-decimals-copy">
+          <webwork copy="webwork-simplify-double-negative-decimals"/>
+        </exercise>
+      </exercisegroup>
+    </subexercises>
+
+    <subexercises>
+      <title>Critical Thinking</title>
+
+      <exercise label="disambiguate-addition">
+        <webwork>
+          <pg-code>
+            @var = ('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z')[NchooseK(49,3)];
+            Context("Numeric");
+            Context()->variables->are($var[0]=>'Real' ,$var[1]=>'Real', $var[2]=>'Real');
+            Context()->lists->set(AbsoluteValue => {open => "(", close => ")"});
+            Context()->parens->set("(" => {removable=>0, type => "AbsoluteValue", close => ")"});
+            for my $var (@vars) {
+              Context()->variables->set($var => {limits => [-2,2]});
+            }
+            $given = Formula("$var[0] + $var[1] + $var[2]");
+            $ans1 = Formula("($var[0] + $var[1]) + $var[2]");
+            $ans2 = Formula("$var[0] + ($var[1] + $var[2])");
+            $evaluator1 = $ans1->cmp(checker => sub {
+              my ($correct, $student, $ans) = @_;
+              for my $x ($studnet, $correct) {
+                $x->{test_at} = [[-1,-1,-1],[-1,-1,1],[-1,1,-1],[-1,1,1],[1,-1,-1],[1,-1,1],[1,1,-1],[1,1,1]];
+              }
+              Value->Error("This expression is algebraically equivalent to the given expression, but it is not what is asked for") if (($student == $given) || ($student == $ans2) || (($student == $correct) &amp;&amp; ($student ne $correct)));
+              return ($student eq $correct);
+            });
+            $evaluator2 = $ans2->cmp(checker => sub {
+              my ($correct, $student, $ans) = @_;
+              for my $x ($studnet, $correct) {
+                $x->{test_at} = [[-1,-1,-1],[-1,-1,1],[-1,1,-1],[-1,1,1],[1,-1,-1],[1,-1,1],[1,1,-1],[1,1,1]];
+              }
+              Value->Error("This expression is algebraically equivalent to the given expression, but it is not what is asked for") if (($student == $given) || ($student == $ans1) || (($student == $correct) &amp;&amp; ($student ne $correct)));
+              return ($student eq $correct);
+            });
+          </pg-code>
+          <introduction>
+            <p>
+              The expression <m><var name="$given"/></m> would be ambiguous if we did not have a
+              left-to-right reading convention.
+            </p>
+          </introduction>
+          <task>
+            <statement>
+              <p>
+                Use grouping symbols to emphasize the order
+                that these additions should be carried out.
+              </p>
+              <p>
+                <var name="$ans1" evaluator="$evaluator1" width="16"/>
+              </p>
+            </statement>
+          </task>
+          <task>
+            <statement>
+              <p>
+                Use the associative property of addition
+                to write an equivalent (but different) algebraic expression.
+              </p>
+              <p>
+                <var name="$ans2" evaluator="$evaluator2" width="16"/>
+              </p>
+            </statement>
+          </task>
+        </webwork>
+      </exercise>
+
+      <exercise label="disambiguate-multiplication">
+        <webwork>
+          <pg-code>
+            @var = ('x', 'y', 'z');
+            Context("Numeric");
+            Context()->variables->are($var[0]=>'Real' ,$var[1]=>'Real', $var[2]=>'Real');
+            Context()->lists->set(AbsoluteValue => {open => "(", close => ")"});
+            Context()->parens->set("(" => {removable=>0, type => "AbsoluteValue", close => ")"});
+            for my $var (@vars) {
+              Context()->variables->set($var => {limits => [-2,2]});
+            }
+            $given = Formula("$var[0] * $var[1] * $var[2]");
+            $ans1 = Formula("($var[0] * $var[1]) * $var[2]");
+            $ans2 = Formula("$var[0] * ($var[1] * $var[2])");
+            $evaluator1 = $ans1->cmp(checker => sub {
+              my ($correct, $student, $ans) = @_;
+              for my $x ($studnet, $correct) {
+                $x->{test_at} = [[-1,-1,-1],[-1,-1,1],[-1,1,-1],[-1,1,1],[1,-1,-1],[1,-1,1],[1,1,-1],[1,1,1]];
+              }
+              Value->Error("This expression is algebraically equivalent to the given expression, but it is not what is asked for") if (($student == $given) || ($student == $ans2) || (($student == $correct) &amp;&amp; ($student ne $correct)));
+              return ($student eq $correct);
+            });
+            $evaluator2 = $ans2->cmp(checker => sub {
+              my ($correct, $student, $ans) = @_;
+              for my $x ($studnet, $correct) {
+                $x->{test_at} = [[-1,-1,-1],[-1,-1,1],[-1,1,-1],[-1,1,1],[1,-1,-1],[1,-1,1],[1,1,-1],[1,1,1]];
+              }
+              Value->Error("This expression is algebraically equivalent to the given expression, but it is not what is asked for") if (($student == $given) || ($student == $ans1) || (($student == $correct) &amp;&amp; ($student ne $correct)));
+              return ($student eq $correct);
+            });
+          </pg-code>
+          <introduction>
+            <p>
+              The expression <m><var name="$given"/></m> would be ambiguous if we did not have a
+              left-to-right reading convention.
+            </p>
+          </introduction>
+          <task>
+            <statement>
+              <p>
+                Use grouping symbols to emphasize the order
+                that these multiplications should be carried out.
+              </p>
+              <p>
+                <var name="$ans1" evaluator="$evaluator1" width="16"/>
+              </p>
+            </statement>
+          </task>
+          <task>
+            <statement>
+              <p>
+                Use the associative property of multiplication
+                to write an equivalent (but different) algebraic expression.
+              </p>
+              <p>
+                <var name="$ans2" evaluator="$evaluator2" width="16"/>
+              </p>
+            </statement>
+          </task>
+        </webwork>
+      </exercise>
+    </subexercises>
+
+    <subexercises>
+      <title>Challenge</title>
+      <exercise label="explain-identity">
+        <!-- Kara's challenge problem -->
+        <webwork>
+          <statement>
+            <p>
+              Think of a number. Add four to your number. Now double that. Then add six. Then halve
+              it. Finally, subtract <m>7</m>. What is the result? Do you always get the same result,
+              regardless of what number you start with? How does this work? Explain using algebra.
+            </p>
+            <p>
+              <var form="essay"/>
+            </p>
+          </statement>
+          <solution>
+            <!-- TODO: restructure this -->
+            <p>
+              Let's start with the number <m>x</m> and follow the instructions: <m>x</m>
+            </p>
+            <p>
+              Add four to the number: <m>x + 4</m>
+            </p>
+            <p>
+              Now double that: <m> 2(x+4)</m>
+            </p>
+            <p>
+              Then add six: <m> 2(x+4)+6</m>
+            </p>
+            <p>
+              Then halve it: <m> \frac{2(x + 4)+ 6}{2} </m>
+            </p>
+            <p>
+              Finally, subtract 7: <m> \frac{2(x + 4)+ 6}{2}-7 </m>
+            </p>
+            <p>
+            </p>
+            <p>
+              This expression can be simplified:
+              <md>
+                <mrow>\frac{2(x + 4)+ 6}{2}-7                   \amp = \frac{2x+8+6}{2} - 7</mrow>
+                <mrow>\amp = \frac{2x+14}{2}-7</mrow>
+                <mrow>\amp = x + 7 - 7</mrow>
+                <mrow>\amp = x</mrow>
+              </md>
+            </p>
+            <p>
+              Thus, after following the instructions,
+              you always end up with the original number.
+            </p>
+          </solution>
+        </webwork>
+      </exercise>
+    </subexercises>
+  </exercises>
+
+  <!-- <worksheet>
+    <author>Ann Cary</author>
+    <p>
+      This worksheet has the exercises that are worked out in
+      <xref ref="video-simplifying-expressions">Video</xref>.
+    </p>
+    <p>
+      Let <m>a</m>, <m>b</m>, and <m>c</m> be real numbers or algebraic expressions.
+      State each of the following properties.
+    </p>
+    <exercise workspace="13%">
+      <statement>
+        <p>
+          Commutative Property of Multiplication
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="13%">
+      <statement>
+        <p>
+          Associative Property of Multiplication
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="13%">
+      <statement>
+        <p>
+          Commutative Property of Addition
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="13%">
+      <statement>
+        <p>
+          Associative Property of Addition
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="13%">
+      <statement>
+        <p>
+          Distributive Property
+        </p>
+      </statement>
+    </exercise>
+    <pagebreak/>
+    <exercise workspace="13%">
+      <statement>
+        <p>
+          Use the commutative property of multiplication to rewrite the expression <m>5z</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="13%">
+      <statement>
+        <p>
+          Use the associative property of multiplication to rewrite the expression <m>2(3b)</m>.
+        </p>
+      </statement>
+    </exercise>
+     <exercise workspace="13%">
+      <statement>
+        <p>
+          Use the commutative property of addition to rewrite the expression <m>4+6x</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="13%">
+      <statement>
+        <p>
+          Use the associative property of addition to rewrite the expression <m>(p+7)+1</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="13%">
+      <statement>
+        <p>
+          Use the distributive property rewrite the expression <m>8(y+2)</m>.
+        </p>
+      </statement>
+    </exercise>
+    <pagebreak/>
+    <exercise workspace="13%">
+      <statement>
+        <p>
+          Expand <m>2(x-5)</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="13%">
+      <statement>
+        <p>
+          Expand <m>3(7-2y+5x)</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="13%">
+      <statement>
+        <p>
+          Simplify <m>4(6t+1)+7t</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="13%">
+      <statement>
+        <p>
+          Expand <m>5(2y-9)</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="13%">
+      <statement>
+        <p>
+          Simplify <m>7(3x+4)+5</m>.
+        </p>
+      </statement>
+    </exercise>
+    <pagebreak/>
+    <exercise workspace="17%">
+      <statement>
+        <p>
+          Simplify <m>4(y+5)+2(y+7)</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="17%">
+      <statement>
+        <p>
+          Expand <m>-2(x-5)</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="17%">
+      <statement>
+        <p>
+          Simplify <m>5+4(x-3)</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="17%">
+      <statement>
+        <p>
+          Simplify <m>2(3x-1)+4(2x+9)</m>.
+        </p>
+      </statement>
+    </exercise>
+    <pagebreak/>
+    <exercise workspace="12%">
+      <statement>
+        <p>
+          Simplify <m>(3x+4)-(9x+6)</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="12%">
+      <statement>
+        <p>
+          Simplify <m>(12t-10)-2(6t+5)</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="12%">
+      <statement>
+        <p>
+          Simplify <m>(7x-3)-3(8x-2)</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="12%">
+      <statement>
+        <p>
+          Expand <m>-3(x+5)</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="12%">
+      <statement>
+        <p>
+          Simplify <m>3(2y-5)+5(6y+3)</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="12%">
+      <statement>
+        <p>
+          Simplify <m>2(5x+4)-(9x-1)</m>.
+        </p>
+      </statement>
+    </exercise>
+  </worksheet>
+
+  <worksheet>
+    <author>Cara Lee</author>
+    <exercise>
+      <statement>
+        <p>
+          Apply the properties listed. You do not need to simplify further.
+          <ol>
+            <li>
+              <p>
+                Use the commutative property of multiplication to rewrite the expression <m>7x</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Use the associative property of multiplication to rewrite the expression <m>3(5t)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Use the commutative property of addition to rewrite the expression <m>2x+20</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Use the associative property of addition to rewrite the expression <m>10+(4+x)</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+    <p>
+      Use the distributive law to rewrite the expressions and simplify as much as possible.
+    </p>
+    <sidebyside>
+      <exercise workspace="8%">
+        <statement>
+          <p>
+            <m>4(x-3)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="8%">
+        <statement>
+          <p>
+            <m>-(3-x)</m>
+          </p>
+        </statement>
+      </exercise>
+    </sidebyside>
+    <sidebyside>
+      <exercise workspace="8%">
+        <statement>
+          <p>
+            <m>-5(2x+7)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="8%">
+        <statement>
+          <p>
+            <m>-11(x-7)</m>
+          </p>
+        </statement>
+      </exercise>
+    </sidebyside>
+    <sidebyside>
+      <exercise workspace="8%">
+        <statement>
+          <p>
+            <m>-\frac{1}{3}(t+24)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="8%">
+        <statement>
+          <p>
+            <m>\frac{1}{2}(x+5)</m>
+          </p>
+        </statement>
+      </exercise>
+    </sidebyside>
+
+    <p>
+      Simplify the following expressions by combining like terms, if possible.
+    </p>
+    <sidebyside>
+      <exercise workspace="8%">
+        <statement>
+          <p>
+            <m>2x+9x</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="8%">
+        <statement>
+          <p>
+            <m>3x-3t</m>
+          </p>
+        </statement>
+      </exercise>
+    </sidebyside>
+    <sidebyside>
+      <exercise workspace="8%">
+        <statement>
+          <p>
+            <m>2x-7x</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="8%">
+        <statement>
+          <p>
+            <m>4x-11x^3</m>
+          </p>
+        </statement>
+      </exercise>
+    </sidebyside>
+    <sidebyside>
+      <exercise workspace="8%">
+        <statement>
+          <p>
+            <m>-4y-6y</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="8%">
+        <statement>
+          <p>
+            <m>4x^3+x^2</m>
+          </p>
+        </statement>
+      </exercise>
+    </sidebyside>
+    <pagebreak/>
+
+    <p>
+      Use all the properties to simplify the following expressions.
+    </p>
+    <sidebyside>
+      <exercise workspace="20%">
+        <statement>
+          <p>
+            <m>6(y-4)+11</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="20%">
+        <statement>
+          <p>
+            <m>3(2t-3)+9(4t+1)</m>
+          </p>
+        </statement>
+      </exercise>
+    </sidebyside>
+    <sidebyside>
+      <exercise workspace="20%">
+        <statement>
+          <p>
+            <m>5\left(\frac{2}{5}-3y+\frac{1}{5}z\right)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="20%">
+        <statement>
+          <p>
+            <m>10-(-9x+6)</m>
+          </p>
+        </statement>
+      </exercise>
+    </sidebyside>
+    <sidebyside>
+      <exercise workspace="20%">
+        <statement>
+          <p>
+            <m>\frac{1}{2}(12t-10)-2(6t+5)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="20%">
+        <statement>
+          <p>
+            <m>(7x-3)-3(8x-2)</m>
+          </p>
+        </statement>
+      </exercise>
+    </sidebyside>
+  </worksheet> -->
+
+</section>
+

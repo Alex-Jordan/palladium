@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2026                                                       -->
+<!-- Alex Jordan                                                          -->
+<!-- *********************************************************************-->
+<frontmatter xml:id="frontmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <titlepage>
+    <titlepage-items/>
+  </titlepage>
+
+  <bibinfo>
+    <!-- <author>
+      <personname>Faculty</personname>
+      <institution>Portland Community College</institution>
+    </author> -->
+
+    <date><today /></date>
+
+    <!-- <credit>
+      <role>Project Lead</role>
+      <entity>Alex Jordan</entity>
+    </credit> -->
+
+    <!-- <website>
+      <url href="https://www.pcc.edu/ORCCA" visual="pcc.edu/ORCCA"/>
+    </website> -->
+
+    <copyright>
+      <year>2026</year>
+      <holder>Alex Jordan</holder>
+      <shortlicense>
+          This book uses openly licensed content from Open Resources for Community College Algebra.
+          Original source material and other information freely available at
+          <url href="https://www.pcc.edu/orcca" visual="pcc.edu/orcca"/>.
+      </shortlicense>
+    </copyright>
+  </bibinfo>
+
+</frontmatter>
+

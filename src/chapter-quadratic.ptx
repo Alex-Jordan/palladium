@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2026                                                       -->
+<!-- Alex Jordan                                                          -->
+<!-- *********************************************************************-->
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chapter-quadratic">
+  <title>Quadratic</title>
+  <introduction>
+    <p>
+      Needs introduction.
+    </p>
+  </introduction>
+  <xi:include href="section-factoring-out-the-common-factor.ptx"/>
+  <xi:include href="section-factoring-trinomials-with-leading-coefficient-one.ptx"/>
+  <xi:include href="section-factoring-special-polynomials.ptx"/>
+  <xi:include href="section-solving-quadratic-equations-by-factoring.ptx"/>
+  <xi:include href="section-solving-quadratic-equations-by-using-a-square-root.ptx"/>
+  <xi:include href="section-the-quadratic-formula.ptx"/>
+  <xi:include href="section-key-features-of-quadratic-graphs.ptx"/>
+  <xi:include href="section-graphing-quadratic-expressions.ptx"/>
+  <xi:include href="section-quadratic-graphs-and-vertex-form.ptx"/>
+  <xi:include href="section-completing-the-square.ptx"/>
+</chapter>
+

@@ -1,0 +1,2106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2026                                                       -->
+<!-- Alex Jordan                                                          -->
+<!-- *********************************************************************-->
+<section xml:id="section-square-and-nth-root-properties" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Square and <m>n</m>th Root Properties</title>
+
+  <introduction>
+    <p>
+      In this section, we discuss what radical expressions like <m>\sqrt{50}</m> and
+      <m>\sqrt[3]{27}</m> mean, and learn some properties that allow these expressions to be
+      simplified.
+    </p>
+    <figure>
+      <caption>Alternative Video Lesson</caption>
+      <video youtubeplaylist="PLmuZCPhWPt-flbQmCojUofDfyHSDrpt72"/>
+    </figure>
+  </introduction>
+
+  <subsection>
+    <title>Square Roots</title>
+    <sidebyside widths="47% 47%" margins="0%">
+      <stack>
+        <p>
+          Consider the non-negative number <m>25</m>. You can ask the question <q>what number
+          multiplies by itself to make <m>25</m>?</q> We use the symbol <m>\sqrt{25}</m> to
+          represent the answer to this question, even if you know the <q>answer</q> is <m>5</m>.
+        </p>
+        <p>
+          A way to visualize this question is with a square that has <m>25</m> units of area inside
+          it. What would a side length have to be? We use <m>\sqrt{25}</m> to represent that side
+          length.
+        </p>
+      </stack>
+      <image>
+        <latex-image>
+          \begin{tikzpicture}[baseline=(D.base)]
+            \node[node distance=0cm, inner xsep=0cm] (A) at (0,0) {$(\phantom{5})$};
+            \node[node distance=0cm, inner xsep=0cm, right=of A] (B) {$(\phantom{5})$}; 
+            \node[node distance=0cm, inner xsep=0cm, right=of B] (C) {${}=25$}; 
+            \node[above=1cm of $(A)!0.5!(B)$] (D) {$\sqrt{25}$};
+            \draw[->] (D.south) -- (A.north);
+            \draw[->] (D.south) -- (B.north);
+          \end{tikzpicture}
+          \begin{tikzpicture}[baseline=(A.base)]
+            \draw[fill=firstcolor!30] (0,0) -- (5,0) -- (5,5) -- (0,5) -- cycle;
+            \node[below] at (2.5,0) {$\sqrt{25}$};
+            \node[left] at (0,2.5) {$\sqrt{25}$};
+            \node (A) at (2.5,2.5) {25};
+            \foreach \i in {1,2,3,4} {
+              \draw[gray,very thin] (\i,0) -- (\i,5);
+              \draw[gray,very thin] (0,\i) -- (5,\i);
+            };
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </sidebyside>
+
+    <definition xml:id="definition-square-root">
+      <title>Square Root</title>                                                                              <idx><h>Square root</h></idx>
+                                                                                                              <idx><h>Radical</h></idx>
+                                                                                                              <idx><h>Radical symbol</h></idx>
+                                                                                                              <idx><h>Symbol</h><h>radical</h></idx>
+      <statement>
+        <p>
+          Given a non-negative number <m>x</m>, if <m>r\cdot r=x</m> for some positive number
+          <m>r</m>, then <m>r</m> is called the <term>square root</term> of <m>x</m>, and we can              <idx><h>square root</h></idx>
+          write <m>\sqrt{x}</m> instead of <m>r</m>. The <m>\sqrt{\phantom{x}}</m> symbol is called
+          the <term>radical</term> or the <term>root</term>. We call expressions with the                     <idx><h>radical</h></idx>
+          <m>\sqrt{\phantom{x}}</m> symbol <term>radical expressions</term>. The number inside the            <idx><h>root</h></idx>
+          radical is called the <term>radicand</term>.                                                        <idx><h>radicand</h></idx>
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      For example, if you see the expression <m>\sqrt{16}</m>, you should think about the equation
+      <m>r\cdot r=16</m> (or if you prefer, the equation <m>r^2=16</m>) and ask yourself if you know
+      a non-negative value for <m>r</m> that solves that equation. Of course, <m>4</m> is a
+      non-negative solution. So we can say <m>\sqrt{16}=4</m>.
+    </p>
+    <p>
+      To demonstrate vocabulary, both <m>\sqrt{2}</m> and <m>3\sqrt{2}</m> are radical expressions.
+      In both expressions, the number <m>2</m> is the radicand.
+    </p>
+    <sidebyside widths="69% 25%" margins="0%">
+      <p>
+        The word <q>radical</q> means something like <q>on the fringes</q> when used in politics,
+        sports, and other places. It actually has that same meaning in math, when you consider a
+        square with area <m>A</m> as in <xref ref="figure-radical"/>.
+      </p>
+      <figure xml:id="figure-radical">
+        <caption><q>Radical</q> means <q>off to the side.</q></caption>
+        <image>
+          <shortdescription>
+            A drawing of a square labeled with area A; the side lengths are labeled the square root
+            of A
+          </shortdescription>
+          <latex-image>
+            \begin{tikzpicture}
+              \draw [fill=firstcolor!30] (0,0) rectangle (2.5,2.5);
+              \node at (1.25,1.25) {area $A$};
+              \node[right] at (2.5,1.25) {$\sqrt{A}$};
+              \node[below] at (1.25,0) {side length $\sqrt{A}$};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </figure>
+    </sidebyside>
+    <p>
+      The one-digit multiplication times table has special numbers along the diagonal. They are
+      known as <term>perfect squares</term>. And for working with square roots, it will be helpful            <idx><h>perfect squares</h></idx>
+      if you can memorize these first few perfect square numbers. For example, the times table tells
+      us that <m>7\cdot7=49</m>. Just knowing that fact from memory lets us know that
+      <m>\sqrt{49}=7</m>. It's advisable to memorize the following:
+    </p>
+
+    <sidebyside widths="47% 47%" margins="0%" valign="top">
+      <tabular halign="center">
+        <row>
+          <cell><m>\sqrt{0}=0</m></cell>
+          <cell><m>\sqrt{1}=1</m></cell>
+          <cell><m>\sqrt{4}=2</m></cell>
+        </row>
+        <row>
+          <cell><m>\sqrt{9}=3</m></cell>
+          <cell><m>\sqrt{16}=4</m></cell>
+          <cell><m>\sqrt{25}=5</m></cell>
+        </row>
+        <row>
+          <cell><m>\sqrt{36}=6</m></cell>
+          <cell><m>\sqrt{49}=7</m></cell>
+          <cell><m>\sqrt{64}=8</m></cell>
+        </row>
+        <row>
+          <cell><m>\sqrt{81}=9</m></cell>
+          <cell><m>\sqrt{100}=10</m></cell>
+          <cell><m>\sqrt{121}=11</m></cell>
+        </row>
+        <row>
+          <cell><m>\sqrt{144}=12</m></cell>
+          <cell><m>\sqrt{225}=15</m></cell>
+          <cell><m>\sqrt{256}=16</m></cell>
+        </row>
+      </tabular>
+
+      <figure xml:id="figure-perfect-squares">
+        <caption>Multiplication table with squares</caption>
+        <tabular top="major" bottom="minor" left="major" right="minor" halign="center">
+          <col right="medium" />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col right="major"/>
+          <row bottom="medium">
+            <cell><m>\times</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>5</m></cell>
+            <cell><m>6</m></cell>
+            <cell><m>7</m></cell>
+            <cell><m>8</m></cell>
+            <cell><m>9</m></cell>
+          </row>
+          <row>
+            <cell><m>1</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>\lowlight{2}</m></cell>
+            <cell><m>\lowlight{3}</m></cell>
+            <cell><m>\lowlight{4}</m></cell>
+            <cell><m>\lowlight{5}</m></cell>
+            <cell><m>\lowlight{6}</m></cell>
+            <cell><m>\lowlight{7}</m></cell>
+            <cell><m>\lowlight{8}</m></cell>
+            <cell><m>\lowlight{9}</m></cell>
+          </row>
+          <row>
+            <cell><m>2</m></cell>
+            <cell><m>\lowlight{2}</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>\lowlight{6}</m></cell>
+            <cell><m>\lowlight{8}</m></cell>
+            <cell><m>\lowlight{10}</m></cell>
+            <cell><m>\lowlight{12}</m></cell>
+            <cell><m>\lowlight{14}</m></cell>
+            <cell><m>\lowlight{16}</m></cell>
+            <cell><m>\lowlight{18}</m></cell>
+          </row>
+          <row>
+            <cell><m>3</m></cell>
+            <cell><m>\lowlight{3}</m></cell>
+            <cell><m>\lowlight{6}</m></cell>
+            <cell><m>9</m></cell>
+            <cell><m>\lowlight{12}</m></cell>
+            <cell><m>\lowlight{15}</m></cell>
+            <cell><m>\lowlight{18}</m></cell>
+            <cell><m>\lowlight{21}</m></cell>
+            <cell><m>\lowlight{24}</m></cell>
+            <cell><m>\lowlight{27}</m></cell>
+          </row>
+          <row>
+            <cell><m>4</m></cell>
+            <cell><m>\lowlight{4}</m></cell>
+            <cell><m>\lowlight{8}</m></cell>
+            <cell><m>\lowlight{12}</m></cell>
+            <cell><m>16</m></cell>
+            <cell><m>\lowlight{20}</m></cell>
+            <cell><m>\lowlight{24}</m></cell>
+            <cell><m>\lowlight{28}</m></cell>
+            <cell><m>\lowlight{32}</m></cell>
+            <cell><m>\lowlight{36}</m></cell>
+          </row>
+          <row>
+            <cell><m>5</m></cell>
+            <cell><m>\lowlight{5}</m></cell>
+            <cell><m>\lowlight{10}</m></cell>
+            <cell><m>\lowlight{15}</m></cell>
+            <cell><m>\lowlight{20}</m></cell>
+            <cell><m>25</m></cell>
+            <cell><m>\lowlight{30}</m></cell>
+            <cell><m>\lowlight{35}</m></cell>
+            <cell><m>\lowlight{40}</m></cell>
+            <cell><m>\lowlight{45}</m></cell>
+          </row>
+          <row>
+            <cell><m>6</m></cell>
+            <cell><m>\lowlight{6}</m></cell>
+            <cell><m>\lowlight{12}</m></cell>
+            <cell><m>\lowlight{18}</m></cell>
+            <cell><m>\lowlight{24}</m></cell>
+            <cell><m>\lowlight{30}</m></cell>
+            <cell><m>36</m></cell>
+            <cell><m>\lowlight{42}</m></cell>
+            <cell><m>\lowlight{48}</m></cell>
+            <cell><m>\lowlight{54}</m></cell>
+          </row>
+          <row>
+            <cell><m>7</m></cell>
+            <cell><m>\lowlight{7}</m></cell>
+            <cell><m>\lowlight{14}</m></cell>
+            <cell><m>\lowlight{21}</m></cell>
+            <cell><m>\lowlight{28}</m></cell>
+            <cell><m>\lowlight{35}</m></cell>
+            <cell><m>\lowlight{42}</m></cell>
+            <cell><m>49</m></cell>
+            <cell><m>\lowlight{56}</m></cell>
+            <cell><m>\lowlight{63}</m></cell>
+          </row>
+          <row>
+            <cell><m>8</m></cell>
+            <cell><m>\lowlight{8}</m></cell>
+            <cell><m>\lowlight{16}</m></cell>
+            <cell><m>\lowlight{24}</m></cell>
+            <cell><m>\lowlight{32}</m></cell>
+            <cell><m>\lowlight{40}</m></cell>
+            <cell><m>\lowlight{48}</m></cell>
+            <cell><m>\lowlight{56}</m></cell>
+            <cell><m>64</m></cell>
+            <cell><m>\lowlight{72}</m></cell>
+          </row>
+          <row bottom="major">
+            <cell><m>9</m></cell>
+            <cell><m>\lowlight{9}</m></cell>
+            <cell><m>\lowlight{18}</m></cell>
+            <cell><m>\lowlight{27}</m></cell>
+            <cell><m>\lowlight{36}</m></cell>
+            <cell><m>\lowlight{45}</m></cell>
+            <cell><m>\lowlight{54}</m></cell>
+            <cell><m>\lowlight{63}</m></cell>
+            <cell><m>\lowlight{72}</m></cell>
+            <cell><m>81</m></cell>
+          </row>
+        </tabular>
+      </figure>
+    </sidebyside>
+  </subsection>
+
+  <subsection>
+    <title>Square Root Decimal Values</title>
+    <p>
+      Most square roots have decimal expressions that go on forever. Take <m>\sqrt{5}</m> as an
+      example. The number <m>5</m> is between two perfect squares, <m>4</m> and <m>9</m>. Therefore,
+      as demonstrated in <xref ref="figure-compare-square-roots"/>,
+      <m>\sqrt{4}\lt\sqrt{5}\lt\sqrt{9}</m>. In other words,
+      <me>
+        2\lt\sqrt{5}\lt3
+      </me>
+      So <m>\sqrt{5}</m> has a decimal value somewhere between <m>2</m> and <m>3</m>.
+    </p>
+    <figure xml:id="figure-compare-square-roots">
+      <caption><m>2\lt\sqrt{5}\lt3</m></caption>
+      <image>
+        <latex-image>
+          \begin{tikzpicture}
+            \draw[] (0,0) --++ (3,0) --++ (0,3) --++ (-3,0) -- cycle;
+            \draw[fill=firstcolor!30] (0,0) --++ (2,0) --++ (0,2) --++ (-2,0) -- cycle;
+            \foreach \i in {1,2} {
+              \draw[gray,very thin] (\i,0) -- (\i,3);
+              \draw[gray,very thin] (0,\i) -- (3,\i);
+            };
+            \draw (0,0) --++ (2,0) --++ (0,2) --++ (-2,0) -- cycle;
+            \node at (1,1) {4};
+            \node (A) at (0,0) {};
+            \node (B) at (2,0) {};
+            \node (C) at (1,-1) {$\sqrt{4}$};
+            \draw (A.south) -- (C.west);
+            \draw (B.south) -- (C.east);
+          \end{tikzpicture}
+          \begin{tikzpicture}
+            \draw[] (0,0) --++ (3,0) --++ (0,3) --++ (-3,0) -- cycle;
+            \draw[fill=secondcolor!30] (0,0) --++ (2.236,0) --++ (0,2.236) --++ (-2.236,0) -- cycle;
+            \foreach \i in {1,2} {
+              \draw[gray,very thin] (\i,0) -- (\i,3);
+              \draw[gray,very thin] (0,\i) -- (3,\i);
+            };
+            \draw (0,0) --++ (2.236,0) --++ (0,2.236) --++ (-2.236,0) -- cycle;
+            \node at (1.118,1.118) {5};
+            \node (A) at (0,0) {};
+            \node (B) at (2.236,0) {};
+            \node (C) at (1.118,-1) {$\sqrt{5}$};
+            \draw (A.south) -- (C.west);
+            \draw (B.south) -- (C.east);
+          \end{tikzpicture}
+          \begin{tikzpicture}
+            \draw[fill=thirdcolor!30] (0,0) --++ (3,0) --++ (0,3) --++ (-3,0) -- cycle;
+            \foreach \i in {1,2} {
+              \draw[gray,very thin] (\i,0) -- (\i,3);
+              \draw[gray,very thin] (0,\i) -- (3,\i);
+            };
+            \node at (1.5,1.5) {9};
+            \node (A) at (0,0) {};
+            \node (B) at (3,0) {};
+            \node (C) at (1.5,-1) {$\sqrt{9}$};
+            \draw (A.south) -- (C.west);
+            \draw (B.south) -- (C.east);
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+
+    <p>
+      With a calculator, we can see:
+      <me>
+        \sqrt{5}=2.236\ldots
+      </me>
+      Actually the decimal will not terminate, and we can write <m>\sqrt{5}\approx2.236</m> with the
+      <m>\approx</m> symbol instead of an equal sign. To get <m>2.236</m> we rounded down slightly
+      from the true value of <m>\sqrt{5}</m>. With a calculator, we can check that
+      <m>2.236^2=4.999696</m>, a little less than <m>5</m>, but close.
+    </p>
+    <p>
+      When the radicand is a perfect square, its square root is a rational number. If the radicand
+      is not a perfect square, the square root is irrational. (It has a decimal that goes on forever
+      without any repeating pattern.) We want to be able to estimate square roots without using a
+      calculator.
+    </p>
+
+    <example>
+      <p>
+        To estimate <m>\sqrt{10}</m> without a calculator, we can find the nearest perfect squares
+        that are whole numbers on either side of <m>10</m>. Recall that the perfect squares are
+        <m>1, 4, 9, 16, 25, 36, 49, 64,\dots</m> The perfect square that is just below <m>10</m> is
+        <m>9</m> and the perfect square just above <m>10</m> is <m>16</m>.
+      </p>
+      <image>
+        <latex-image>
+          \begin{tikzpicture}
+            \begin{axis}[
+                numberline,
+                xtick={9,10,16},
+                minor xtick={0,...,20},
+                xmin=0,
+                xmax=20,
+              ]
+              \addplot[soliddot] coordinates {(9,0)};
+              \addplot[soliddot] coordinates {(10,0)};
+              \addplot[soliddot] coordinates {(16,0)};
+            \end{axis}
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+      <p>
+        This tells us that <m>\sqrt{10}</m> is between <m>\sqrt{9}</m> and <m>\sqrt{16}</m>, or
+        between <m>3</m> and <m>4</m>. We can also say that <m>\sqrt{10}</m> is much closer to
+        <m>3</m> than <m>4</m> because <m>10</m> is closer to <m>9</m>, so we think <m>3.1</m> or
+        <m>3.2</m> would be a good estimate.
+      </p>
+      <p>
+        To check our estimates (<m>3.1</m> or <m>3.2</m>) we can square them and see if the result
+        is close to <m>10</m>. We find <m>3.1^2=9.61</m> and <m>3.2^2=10.24</m>, so our estimates
+        are pretty good.
+      </p>
+    </example>
+
+    <exercise>
+      <webwork>
+        <pg-code>
+          Context("LimitedNumeric");
+          Context()->flags->set(tolType=>'absolute',tolerance=>'0.15');
+        </pg-code>
+        <statement>
+          <p>
+            Estimate <m>\sqrt{19}</m> without a calculator.
+          </p>
+          <p>
+            <var name="'4.35'" width="5" />
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The radicand, <m>19</m>, is between <m>16</m> and <m>25</m>, so <m>\sqrt{19}</m> is
+            between <m>\sqrt{16}</m> and <m>\sqrt{25}</m>, or between <m>4</m> and <m>5</m>. We
+            notice that <m>19</m> is in the middle between <m>16</m> and <m>25</m> but closer to
+            <m>16</m>. We estimate <m>\sqrt{19}</m> to be about <m>4.4</m>.
+          </p>
+          <p>
+            We can check our estimate by calculating:
+            <me>
+              4.4^2=19.36
+            </me>
+            So <m>4.4^2</m> is close to <m>19</m>, and <m>4.4</m> is close to <m>\sqrt{19}</m>.
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+  </subsection>
+
+  <subsection xml:id="subsection-cube-root-and-higher-order-roots">
+    <title>Cube Root and Higher Order Roots</title>
+    <sidebyside widths="47% 47%" margins="0%">
+      <stack>
+        <p>
+          The concept of a square root extends to a <term>cube root</term>. What if we have a number
+          in mind, like <m>64</m>, and we would like to know what number could be multiplied with
+          itself <em>three</em> times to make <m>64</m>?
+        </p>
+        <p>
+          A way to visualize this question is to imagine a cube with <m>64</m> units of volume
+          inside it. What would an edge length have to be? We use <m>\sqrt[3]{64}</m> to represent 
+          that edge length.
+        </p>
+      </stack>
+      <image>
+        <latex-image>
+          \begin{tikzpicture}[baseline=(E.base)]
+            \node[node distance=0cm, inner xsep=0cm] (A) at (0,0) {$(\phantom{4})$};
+            \node[node distance=0cm, inner xsep=0cm, right=of A] (B) {$(\phantom{4})$}; 
+            \node[node distance=0cm, inner xsep=0cm, right=of B] (C) {$(\phantom{4})$}; 
+            \node[node distance=0cm, inner xsep=0cm, right=of C] (D) {${}=64$}; 
+            \node[above=1cm of $(A)!0.5!(C)$] (E) {$\sqrt[3]{64}$};
+            \draw[->] (E.south) -- (A.north);
+            \draw[->] (E.south) -- (B.north);
+            \draw[->] (E.south) -- (C.north);
+          \end{tikzpicture}
+          \begin{tikzpicture}[baseline=(A.base)]
+            \coordinate (v) at (14,12);
+            \foreach \i in {0,...,4}{
+            \draw (\i,0) -- (\i,4) -- ( $ (\i,4)!.142!(v) $ );
+            }
+            \foreach \j in {0,...,4}{
+            \draw (0,\j) -- (4,\j) -- ( $ (4,\j)!.142!(v) $ );
+            }
+            \foreach \k in {0.04,0.076,0.110,0.142}{
+            \draw ( $ (4,0)!{\k}!(v) $) -- ( $ (4,4)!{\k}!(v) $) -- ( $ (0,4)!{\k}!(v) $);
+            }
+            \coordinate (A) at (0,2);
+            \node[below] at (2,0) {$\sqrt[3]{64}$};
+            \node[left] at (0,2) {$\sqrt[3]{64}$};
+            \path (4,0) -- ( $ (4,0)!.142!(v) $ ) node[sloped,below,pos=0.5] {$\sqrt[3]{64}$};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </sidebyside>
+
+    <definition xml:id="definition-nth-root">
+      <title><m>n</m>th Root</title>                                                                          <idx><h sortby="nth"><m>n</m>th root</h></idx>
+                                                                                                              <idx><h>Radical</h></idx>
+                                                                                                              <idx><h>Radical symbol</h></idx>
+                                                                                                              <idx><h>Symbol</h><h>radical</h></idx>
+      <statement>
+        <p>
+          Given a number <m>x</m>, if
+          <m>\overbrace{r\cdot r\cdot \cdots \cdot r}^{n\text{ instances}}=x</m> for some number
+          <m>r</m> (or if you prefer, <m>r^n=x</m>) then <m>r</m> is called an                                <idx><h sortby="nth root"><m>n</m>th root</h></idx>
+          <term><m>n</m>th root</term> of <m>x</m>. 
+          <ul>
+            <li>
+              <p>
+                When <m>n</m> is odd, there is always exactly one real number <m>n</m>th root for
+                any <m>x</m>, and we write <m>\sqrt[n]{x}</m> to mean that one <m>n</m>th root.
+              </p>
+            </li>
+            <li>
+              <p>
+                When <m>n</m> is even and <m>x</m> is positive, there are two real number <m>n</m>th
+                roots, one of which is positive and the other of which is negative. We write
+                <m>\sqrt[n]{x}</m> to mean the positive <m>n</m>th root.
+              </p>
+            </li>
+            <li>
+              <p>
+                When <m>n</m> is even and <m>x</m> is negative, there aren't any real number
+                <m>n</m>th roots, and we say that <m>\sqrt[n]{x}</m> is <q>not a real number</q>.
+              </p>
+            </li>
+            <li>
+              <p>
+                When <m>x</m> is <m>0</m>, then <m>0</m> is the <m>n</m>th root. On other words,
+                <m>\sqrt[n]{0}=0</m>.
+              </p>
+            </li>
+          </ul>
+        </p>
+        <p>
+          The <m>\sqrt[n]{\phantom{x}}</m> symbol is called the <term><m>n</m>th radical</term>               <idx><h sortby="nth radical"><m>n</m>th radical</h></idx>              
+          or the <term><m>n</m>th root</term>. We call expressions with the                                   <idx><h sortby="nth root"><m>n</m>th root</h></idx>
+          <m>\sqrt[n]{\phantom{x}}</m> symbol <term>radical expressions</term>. The number inside             <idx><h>radicand</h></idx>
+          the radical is called the <term>radicand</term>. The <term>index</term> of a radical is             <idx><h>index</h></idx>
+          the number <m>n</m> in <m>\sqrt[n]{\phantom{x}}</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      As we noted earlier, when we have <m>\sqrt[3]{\phantom{x}}</m>, we can say <q>cube root</q>
+      instead of <q><m>3</m>rd root</q>. Also, when we have <m>\sqrt[2]{\phantom{x}}</m>, we usually
+      say <q>square root</q> instead of <q><m>2</m>nd root</q> and we usually just write
+      <m>\sqrt{x}</m> without the <q><m>2</m></q>.
+    </p>
+
+    <p>
+      Here are some examples of <m>n</m>th roots:
+      <ul>
+        <li>
+          <p>
+            <m>\sqrt[3]{8}=2</m>, because <m>\overbrace{2\cdot2\cdot2}^{\text{3 instances}}=8</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\sqrt[4]{81}=3</m>, because
+            <m>\overbrace{3\cdot3\cdot3\cdot3}^{\text{4 instances}}=81</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\sqrt[5]{-32}=-2</m>, because
+            <m>\overbrace{(-2)\cdot(-2)\cdot(-2)\cdot(-2)\cdot(-2)}^{\text{5 instances}}=-32</m>.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      As with square roots, in general an <m>n</m>th root's decimal value is a decimal that goes on
+      forever. For example, <m>\sqrt[3]{20}=2.714\ldots</m>. For practical applications, we may want
+      to use a calculator to find a decimal approximation to an <m>n</m>th root. Some calculators
+      will do this for you directly, and some will not.
+      <ul>
+        <li>
+          <p>
+            Maybe your calculator has a button that looks like <m>\sqrt[x]{y}</m>. Then you should
+            be able to type something like <c>3 </c><m>\sqrt[x]{y}</m><c> 20</c> to get
+            <m>\sqrt[3]{20}\approx2.714</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Maybe your calculator has a button that looks like <m>\sqrt[n]{\phantom{y}}</m>. Then
+            you should be able to type something like <c>3 </c><m>\sqrt[n]{\phantom{y}}</m><c> 20</c>
+            to get <m>\sqrt[3]{20}\approx2.714</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Maybe your calculator allows you to type letters, parentheses, and commas, and you can
+            type <c>root(3,20)</c> to get <m>\sqrt[3]{20}\approx2.714</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Maybe your calculator allows you to type letters, parentheses, and commas, but the
+            syntax for an <m>n</m>th root is reversed from the last example, and you can type
+            <c>root(20,3)</c> to get <m>\sqrt[3]{20}\approx2.714</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            If your calculator has none of the above options, then you should be able to type
+            <c>20^(1/3)</c> as a way to get <m>\sqrt[3]{20}\approx2.714\ldots</m>. This is
+            technically using mathematics we will learn later in
+            <xref ref="section-radical-expressions-and-rational-exponents"/>.
+          </p>
+        </li>
+      </ul>
+      Try using your own calculator to calculate <m>\sqrt[3]{20}</m> so that you can become familiar
+      with whatever method it uses.
+    </p>
+
+    <fact>
+      <statement>
+        <p>
+          Since <m>\sqrt[n]{a}</m> is can be used to fill in the blanks in the equation
+          <me>\overbrace{(\phantom{r})\cdot(\phantom{r})\cdot\cdots\cdot(\phantom{r})}^{n\text{ times}}=a</me>
+          it means that <m>\sqrt[n]{a}</m> is a solution to the equation <m>x^n=a</m>.
+        </p>
+      </statement>
+    </fact>
+
+    <example>
+      <p>
+        A solution to <m>x^5=48</m> is <m>\sqrt[5]{48}</m>.
+      </p>
+    </example>
+
+    <example>
+      <sidebyside widths="70% 24%" margins="0%">
+        <p>
+          A pyramid has a square base, and its height is equal to one side length of the square at
+          its base. In this situation, the volume <m>V</m> of the pyramid, in
+          <quantity><unit base="inch" exp="3"/></quantity>, is given by <m>V=\frac{1}{3}s^3</m>,
+          where <m>s</m> is the pyramid's base side length in
+          <quantity><unit base="inch"/></quantity>. Archimedes dropped the pyramid in a bathtub, and
+          judging by how high the water level rose, the volume of the pyramid is
+          <quantity><mag>243</mag><unit base="inch" exp="3"/></quantity> (a little more than
+          <quantity><mag>1</mag><unit base="gallon"/></quantity>). How tall is the pyramid?
+        </p>
+        <image>
+          <latex-image>
+            \tdplotsetmaincoords{70}{-20}
+            \begin{tikzpicture}[tdplot_main_coords,line cap=butt,line join=bevel]
+              \pgfmathsetmacro{\B}{2}
+              \pgfmathsetmacro{\H}{2}
+              \draw[firstcolor,thick] (-\B/2,-\B/2,0) -- (\B/2,-\B/2,0) -- (\B/2,\B/2,0) -- (-\B/2,\B/2,0) -- cycle;
+              \node[below left] at (-\B/2,0,0) {$s$};
+              \node[below] at (0,-\B/2,0) {$s$};
+              \draw[firstcolor,thick] (\B/2,\B/2,0) -- (0,0,\H);
+              \draw[dashed,firstcolor] (0,0,0) -- (0,0,\H) coordinate[midway](aux1);
+              \draw[firstcolor] (0,0,0.3) -- (0.3,0,0.3) -- (0.3,0,0);
+              \coordinate (aux3) at (1,0,0);
+              \draw[firstcolor,thick,fill=secondcolor,fill opacity=0.3] (-\B/2,-\B/2,0) -- (0,0,\H) -- (\B/2,-\B/2,0) -- cycle;
+              \draw[firstcolor,thick,fill=firstcolor,fill opacity=0.3] (-\B/2,-\B/2,0) -- (0,0,\H) -- (-\B/2,\B/2,0) -- cycle;
+              \begin{scope}[tdplot_screen_coords]
+                \draw (aux1) -- ++ (1,0.1) node[right,font=\itshape] {$s$};
+              \end{scope}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </sidebyside>
+      <p>
+        The equation tells us that:
+        <me>
+          243=\frac{1}{3}s^3
+        </me>
+        We can multiply on both sides by <m>3</m> and:
+        <me>
+          729=s^3
+        </me>
+        So we are looking for a solution to the equation <m>s^3=729</m>. This means that <m>s</m> is
+        <m>\sqrt[3]{729}</m>. A calculator tells us that this equals <m>9</m>. So the pyramid's
+        height is <m>9</m> inches.
+      </p>
+    </example>
+  </subsection>
+
+  <subsection>
+    <title>Roots of Negative Numbers</title>
+    <p>
+      Can we find the square root of a negative number, like <m>\sqrt{-64}</m>? How about its cube
+      root, <m>\sqrt[3]{-64}</m>?
+    </p>
+    <p>
+      As noted in <xref ref="definition-nth-root"/>, when the index of an <m>n</m>th root is odd,
+      there will always be a real number <m>n</m>th root even when the radicand is negative. For
+      example, <m>\sqrt[3]{-64}</m> is <m>-4</m>, because <m>(-4)(-4)(-4)=-64</m>.
+    </p>
+    <p>
+      When the index of an <m>n</m>th root is even, it is a problem to have a negative radicand.
+      For example, to find <m>\sqrt{-64}</m>, you would need to find a value <m>r</m> so that
+      <m>r\cdot r=-64</m>. But whether <m>r</m> is positive or negative, multiplying <m>r</m> by
+      itself will give a positive result. It could never be <m>-64</m>. So there is no way to have a
+      real number square root of a negative number. And the same thing is true for <em>any</em> even
+      index <m>n</m>th root with a negative radicand, such as <m>\sqrt[4]{-64}</m>. An even-indexed
+      root of a negative number is not a real number.
+    </p>
+    <aside>
+      <title>Imaginary Numbers</title>
+      <p>
+        Mathematicians imagined a new type of number, neither positive nor negative, that would
+        multiply by itself to make a negative result. But that is beyond the scope of this section.
+      </p>
+    </aside>
+    <p>
+      If you are confronted with an expression like <m>\sqrt{-25}</m> or <m>\sqrt[4]{-16}</m> (any
+      square root or even-indexed root of a negative number), you can state that the expression
+      <q>is not real</q> or that it is <q>not defined</q> (as a real number). Don't get carried away
+      though. Expressions like <m>\sqrt[3]{-27}</m> and <m>\sqrt[5]{-1}</m> <em>are</em> defined,
+      because the index is odd.
+    </p>
+  </subsection>
+
+  <subsection>
+    <title>Radical Properties and Exponent Properties</title>
+    <p>
+      In <xref ref="section-introduction-to-exponent-properties"/> and
+      <xref ref="section-more-exponent-properties"/>, we learned some algebra properties of
+      exponents. A summary of these properties is in <xref ref="list-exponent-properties"/>. There
+      are some similar properties for radicals, presented here without explanation. (These
+      properties are easier to explain once we are in
+      <xref ref="section-radical-expressions-and-rational-exponents"/>.)
+    </p>
+
+    <list xml:id="list-radical-properties">
+      <title>Properties of Radicals for Multiplication and Division</title>
+      <introduction>
+        <p>
+          If <m>a</m> and <m>b</m> are positive real numbers, and <m>m</m> is a positive integer,
+          then we have the following properties:
+        </p>
+      </introduction>
+      <dl>
+        <li xml:id="item-radical-properties-product">
+          <title>Root of a Product Property</title>
+          <p>
+            <m>\sqrt[m]{a\cdot b} = \sqrt[m]{a} \cdot \sqrt[m]{b}</m>
+          </p>
+        </li>
+        <li xml:id="item-radical-properties-quotient">
+          <title>Root of a Quotient Property</title>
+          <p>
+            <m>\sqrt[m]{\frac{a}{b}} = \frac{\sqrt[m]{a}}{\sqrt[m]{b}}</m>
+            as long as <m>b \neq 0</m>
+          </p>
+        </li>
+      </dl>
+    </list>
+    <p>
+      Knowing these algebra properties helps to make complicated radical expressions look simpler.
+    </p>
+    <example>
+      <p>
+        Simplify <m>\sqrt{18}</m>. Anything we can do to make the radicand a smaller simpler number
+        is helpful. Note that <m>18=9\cdot2</m>, so we can write
+        <md>
+          <mrow>\sqrt{18}\amp=\sqrt{9\cdot 2}</mrow>
+          <mrow>\amp=\sqrt{9}\cdot\sqrt{2}\amp\amp\text{according to the }<xref ref="item-radical-properties-product" text="title"/></mrow>
+          <mrow>\amp=3\sqrt{2}</mrow>
+        </md>
+        This expression <m>3\sqrt{2}</m> is considered <q>simpler</q> than <m>\sqrt{18}</m> because
+        the radicand is so much smaller.
+      </p>
+    </example>
+
+    <exercise>
+      <webwork>
+          <pg-code>
+            Context("Form");
+            $a = Formula('6sqrt(2)');
+          </pg-code>
+        <statement>
+          <p>
+            Simplify <m>\sqrt{72}</m>.
+          </p>
+          <instruction>
+            If you need to enter a square root, like <m>\sqrt{2}</m>, type <c>sqrt(2)</c>.
+          </instruction>
+          <p>
+            <var name="$a" width="15"/>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            As with the previous example, it will help if <m>72</m> can be written as a product of a
+            perfect square. In this case, <m>4</m> divides <m>72</m>, and <m>72=4\cdot18</m>. So
+            <md>
+              <mrow>\sqrt{72}\amp=\sqrt{4\cdot18}</mrow>
+              <mrow>\amp=\sqrt{4}\cdot\sqrt{18}</mrow>
+              <mrow>\amp=2\sqrt{18}</mrow>
+            </md>
+            But we aren't done. Can <m>18</m> can be written as a product of a perfect square?
+            Yes, because <m>18=9\cdot2</m>. So
+            <md>
+              <mrow>\sqrt{72}\amp=2\sqrt{18}</mrow>
+              <mrow>\amp=2\sqrt{9\cdot2}</mrow>
+              <mrow>\amp=2\sqrt{9}\cdot\sqrt{2}</mrow>
+              <mrow>\amp=2\cdot3\sqrt{2}</mrow>
+              <mrow>\amp=6\sqrt{2}</mrow>
+            </md>
+            This is as simple as we can make this expression.
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+
+    <example>
+      <p>
+        Simplify <m>\sqrt[3]{80}</m>. Anything we can do to make the radicand a smaller simpler
+        number is helpful. With lessons learned from the previous examples, maybe there is a way to
+        rewrite <m>80</m> as the product of two numbers in a helpful way. Since we have a
+        <em>cube</em> root, writing <m>80</m> as a product of a perfect <em>cube</em> would be
+        helpful. We can write <m>80=8\cdot10</m>, where <m>8</m> is a perfect cube.
+        <md>
+          <mrow>\sqrt[3]{80}\amp=\sqrt[3]{8\cdot 10}</mrow>
+          <mrow>\amp=\sqrt[3]{8}\cdot\sqrt[3]{10}\amp\amp\text{according to the }<xref ref="item-radical-properties-product" text="title"/></mrow>
+          <mrow>\amp=2\sqrt[3]{10}</mrow>
+        </md>
+        This expression <m>2\sqrt[3]{10}</m> is considered <q>simpler</q> than <m>\sqrt[3]{80}</m>
+        because the radicand is so much smaller.
+      </p>
+    </example>
+
+    <exercise>
+      <webwork>
+          <pg-code>
+            Context("Form");
+            $a = Formula('2root(4,3)');
+          </pg-code>
+        <statement>
+          <p>
+            Simplify <m>\sqrt[4]{48}</m>.
+          </p>
+          <instruction>
+            If you need to enter a <m>4</m>th root, like <m>\sqrt[4]{2}</m>, type <c>root(4,2)</c>.
+          </instruction>
+          <p>
+            <var name="$a" width="15"/>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            As with the previous example, it will help if <m>48</m> can be written as a product of a
+            <m>4</m>th power. In this case, <m>16</m> divides <m>48</m>, and <m>48=16\cdot3</m>. So
+            <md>
+              <mrow>\sqrt[4]{48}\amp=\sqrt[4]{16\cdot3}</mrow>
+              <mrow>\amp=\sqrt[4]{16}\sqrt[4]{3}</mrow>
+              <mrow>\amp=2\sqrt[4]{3}</mrow>
+            </md>
+            This is as simple as we can make this expression.
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+
+    <p>
+      When a radical is applied to a fraction, the
+      <xref ref="item-radical-properties-quotient" text="title"/> is useful.
+    </p>
+
+    <example>
+      <p>
+        Simplify <m>\sqrt{\frac{8}{25}}</m>. According to the
+        <xref ref="item-radical-properties-quotient" text="title"/>,
+        <md>
+          <mrow>\sqrt{\frac{8}{25}}\amp=\frac{\sqrt{8}}{\sqrt{25}}</mrow>
+          <mrow>\amp=\frac{\sqrt{8}}{5}</mrow>
+          <mrow>\amp=\frac{\sqrt{4\cdot2}}{5}</mrow>
+          <mrow>\amp=\frac{\sqrt{4}\cdot\sqrt{2}}{5}</mrow>
+          <mrow>\amp=\frac{2\sqrt{2}}{5}</mrow>
+        </md>
+        This is as simple as we can make this expression, unless you prefer to write it as
+        <m>\frac{2}{5}\sqrt{2}</m>.
+      </p>
+    </example>
+
+
+    <exercise>
+      <webwork>
+        <pg-code>
+          Context("Form");
+          $a[0] = Formula('1/6');
+          $a[1] = Formula('2/3');
+          $a[2] = OneOf(Formula('3root(3,3)/5'), Formula('3/5 root(3,3)'));
+        </pg-code>
+        <introduction>
+          <p>
+            Simplify each of the following.
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              <m>\sqrt{\dfrac{1}{36}}</m>
+            </p>
+            <p>
+              <var name="$a[0]" width="16" />
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                  \sqrt{\frac{1}{36}}\amp=\frac{\sqrt{1}}{\sqrt{36}}\\
+                  \amp=\frac{1}{6}
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\sqrt[3]{\dfrac{8}{27}}</m>
+            </p>
+            <p>
+              <var name="$a[1]" width="16" />
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                  \sqrt[3]{\frac{8}{27}}\amp=\frac{\sqrt[3]{8}}{\sqrt[3]{27}}\\
+                  \amp=\frac{2}{3}
+                \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\sqrt[3]{\dfrac{81}{125}}</m>
+            </p>
+            <p>
+              <var name="$a[2]" width="16" />
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <m>
+                \begin{aligned}[t]
+                \sqrt[3]{\frac{81}{125}}\amp=\frac{\sqrt[3]{81}}{\sqrt[3]{125}}\\
+                \amp=\frac{\sqrt[3]{81}}{5}\\
+                \amp=\frac{\sqrt[3]{27\cdot3}}{5}\\
+                \amp=\frac{\sqrt[3]{27}\sqrt[3]{3}}{5}\\
+                \amp=\frac{3\sqrt[3]{3}}{5}\\
+              \end{aligned}
+              </m>
+            </p>
+          </solution>
+        </task>
+      </webwork>
+    </exercise>
+  </subsection>
+
+  <subsection>
+    <title>Multiplying Square Root Expressions</title>
+    <p>
+      We can use the <xref ref="item-radical-properties-product" text="title"/> and the
+      <xref ref="item-radical-properties-quotient" text="title"/> to multiply and divide square root
+      expressions. We want to simplify each radical first to keep the radicands as small as
+      possible.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Multiply <m>\sqrt{8}\cdot\sqrt{54}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We will simplify each radical first, and then multiply them together. We do not want to
+          multiply <m>8\cdot54</m> because we would end up with a larger number that is harder to
+          factor.
+          <md>
+            <mrow>\sqrt{8}\cdot\sqrt{54}\amp=\sqrt{4\cdot2}\cdot\sqrt{9\cdot6}</mrow>
+            <mrow>\amp=\sqrt{4}\cdot\sqrt{2}\cdot\sqrt{9}\cdot\sqrt{6}</mrow>
+            <mrow>\amp=2\sqrt{2}\cdot3\sqrt{6}</mrow>
+            <mrow>\amp=6\sqrt{2}\cdot\sqrt{6}</mrow>
+            <mrow>\amp=6\sqrt{12}</mrow>
+            <mrow>\amp=6\sqrt{4\cdot3}</mrow>
+            <mrow>\amp=6\sqrt{4}\cdot\sqrt{3}</mrow>
+            <mrow>\amp=6\cdot2\sqrt{3}</mrow>
+            <mrow>\amp=12\sqrt{3}</mrow>
+          </md>
+          It is worth noting that this is considered as simple as we can make it, because the
+          radicand of <m>3</m> is so small.
+        </p>
+      </solution>
+    </example>
+
+    <exercise>
+      <webwork>
+        <pg-code>
+          Context("LimitedRadical");
+          $answer=Formula("42sqrt(3)");
+        </pg-code>
+        <statement>
+          <p>
+            Multiply <m>2\sqrt{7}\cdot3\sqrt{21}</m>.
+          </p>
+          <instruction>
+            To type <m>\sqrt{\phantom{x}}</m>, use <c>sqrt( )</c>.
+          </instruction>
+          <p>
+            <var name="$answer" width="10" />
+          </p>
+        </statement>
+        <solution>
+          <p>
+            First multiply the non-radical factors together and the radical factors together.
+            Then look for further simplifications.
+            <md>
+              <mrow>2\sqrt{7}\cdot3\sqrt{21}\amp=2\cdot3\cdot\sqrt{7}\cdot\sqrt{21}</mrow>
+              <mrow>\amp=6\cdot\sqrt{7}\cdot\sqrt{7\cdot3}</mrow>
+              <mrow>\amp=6\sqrt{49\cdot3}</mrow>
+              <mrow>\amp=6\cdot7\cdot\sqrt{3}</mrow>
+              <mrow>\amp=42\sqrt{3}</mrow>
+            </md>
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+
+    <example>
+      <statement>
+        <p>
+          Multiply <m>\sqrt{\frac{6}{5}}\cdot\sqrt{\frac{3}{5}}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First multiply the fractions together under the radical. Then look for further
+          simplifications.
+          <md>
+            <mrow>\sqrt{\frac{6}{5}}\cdot\sqrt{\frac{3}{5}}\amp=\sqrt{\frac{6}{5}\cdot\frac{3}{5}}</mrow>
+            <mrow>\amp=\sqrt{\frac{18}{25}}</mrow>
+            <mrow>\amp=\frac{\sqrt{18}}{\sqrt{25}}</mrow>
+            <mrow>\amp=\frac{\sqrt{9\cdot2}}{5}</mrow>
+            <mrow>\amp=\frac{3\sqrt{2}}{5}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection>
+    <title>Adding and Subtracting Square Root Expressions</title>
+    <p>
+      We learned the <xref ref="item-radical-properties-product" text="title"/> previously and applied
+      this to multiplication of square roots, but we cannot apply this property to the operations of
+      addition or subtraction. Here are two examples to demonstrate why not.
+      <md>
+        <mrow>\sqrt{9}+\sqrt{16}\amp\wonder{=}\sqrt{9+16}\amp\sqrt{169}-\sqrt{25}\amp\wonder{=}\sqrt{169-25}</mrow>
+        <mrow>3+4\amp\wonder{=}\sqrt{25}\amp13-5\amp\wonder{=}\sqrt{144}</mrow>
+        <mrow>7\amp\reject{=}5\amp8\amp\reject{=}12</mrow>
+      </md>
+      We do not get the same result if we combine radical sums and differences in the same way we
+      can combine radical products and quotiens.
+    </p>
+
+    <p>
+      To add and subtract radical expressions, we need to recognize that we can only add and
+      subtract like terms. In this case, we will call them <term>like radicals</term>. Adding like
+      radicals will work just like adding like terms. In the same way that <m>x+3x=4x</m> combines
+      two like terms, <m>\sqrt{5}+3\sqrt{5}=4\sqrt{5}</m> combines two like radicals.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Simplify <m>\sqrt{2}+\sqrt{8}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First, simplify each radical. Simplifying is the best way to understand whether or not we
+          even have two like radicals that could be combined.
+          <md>
+            <mrow>\sqrt{2}+\sqrt{8}\amp=\sqrt{2}+\sqrt{4\cdot2}</mrow>
+            <mrow>\amp=\sqrt{2}+2\sqrt{2}</mrow>
+            <mrow>\amp=3\sqrt{2}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <exercise>
+      <webwork>
+        <pg-code>
+            Context("LimitedRadical");
+            $answer=Formula("-10sqrt(3)");
+        </pg-code>
+        <statement>
+          <p>
+            Simplify <m>2\sqrt{3}-3\sqrt{48}</m>.
+          </p>
+          <instruction>
+            To type <m>\sqrt{\phantom{x}}</m>, use <c>sqrt( )</c>.
+          </instruction>
+          <p>
+            <var name="$answer" width="10" />
+          </p>
+        </statement>
+        <solution>
+          <p>
+            First we will simplify the radical term where <m>48</m> is the radicand, and we may see
+            that we then have like radicals.
+            <md>
+              <mrow>2\sqrt{3}-3\sqrt{48}\amp=2\sqrt{3}-3\sqrt{16\cdot3}</mrow>
+              <mrow>\amp=2\sqrt{3}-3\cdot4\sqrt{3}</mrow>
+              <mrow>\amp=2\sqrt{3}-12\sqrt{3}</mrow>
+              <mrow>\amp=-10\sqrt{3}</mrow>
+            </md>
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+
+    <example>
+      <statement>
+        <p>
+          Simplify <m>\sqrt{2}+\sqrt{27}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>\sqrt{2}+\sqrt{27}\amp=\sqrt{2}+\sqrt{9\cdot3}</mrow>
+            <mrow>\amp=\sqrt{2}+3\sqrt{3}</mrow>
+          </md>
+          We cannot simplify the expression further because <m>\sqrt{2}</m> and <m>\sqrt{3}</m> are
+          not like radicals.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Simplify <m>\sqrt{6}-\sqrt{18}\cdot\sqrt{12}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          In this example, we should multiply the latter two square roots first (after simplifying
+          them) and then see if we have like radicals.
+          <md>
+            <mrow>\sqrt{6}-\sqrt{18}\cdot\sqrt{12}\amp=\sqrt{6}-\sqrt{9\cdot2}\cdot\sqrt{4\cdot3}</mrow>
+            <mrow>\amp=\sqrt{6}-3\sqrt{2}\cdot2\sqrt{3}</mrow>
+            <mrow>\amp=\sqrt{6}-6\sqrt{2}\cdot\sqrt{3}</mrow>
+            <mrow>\amp=\sqrt{6}-6\sqrt{6}</mrow>
+            <mrow>\amp=-5\sqrt{6}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="subsection-distributing-with-square-roots">
+    <title>Distributing with Square Roots</title>
+    <p>
+      In <xref ref="section-multiplying-polynomials"/>, we learned how to multiply polynomials like
+      <m>2(x+3)</m> and <m>(x+2)(x+3)</m>. All the methods we learned there apply when we multiply
+      square root expressions. We will look at a few examples done with different methods.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Multiply <m>\sqrt{5}\left(\sqrt{3}-\sqrt{2}\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We will use the distributive property to do this problem:
+          <md>
+            <mrow>\sqrt{5}\left(\sqrt{3}-\sqrt{2}\right)\amp=\sqrt{5}\cdot\sqrt{3}-\sqrt{5}\cdot\sqrt{2}</mrow>
+            <mrow>\amp=\sqrt{15}-\sqrt{10}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Multiply <m>\left(\sqrt{6}+\sqrt{12}\right)\left(\sqrt{3}-\sqrt{2}\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We will use the <acro>FOIL</acro> Method to expand the product. There is an opportunity to
+          simplify some of the radicals after multiplying.
+          <md>
+            <mrow>\left(\sqrt{6}+\sqrt{12}\right)\left(\sqrt{3}-\sqrt{2}\right)\amp=\sqrt{6}\cdot\sqrt{3}-\sqrt{6}\cdot\sqrt{2}+\sqrt{12}\cdot\sqrt{3}-\sqrt{12}\cdot\sqrt{2}</mrow>
+            <mrow>\amp=\sqrt{18}-\sqrt{12}+\sqrt{36}-\sqrt{24}</mrow>
+            <mrow>\amp=3\sqrt{2}-2\sqrt{3}+6-2\sqrt{6}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Expand <m>\left(\sqrt{3}-\sqrt{2}\right)^2</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We will use the <acro>FOIL</acro> method to expand this expression:
+          <md>
+            <mrow>\left(\sqrt{3}-\sqrt{2}\right)^2\amp=\left(\sqrt{3}-\sqrt{2}\right)\left(\sqrt{3}-\sqrt{2}\right)</mrow>
+            <mrow>\amp=\left(\sqrt{3}\right)^2-\sqrt{3}\cdot\sqrt{2}-\sqrt{2}\cdot\sqrt{3}+\left(\sqrt{2}\right)^2</mrow>
+            <mrow>\amp=3-\sqrt{6}-\sqrt{6}+2</mrow>
+            <mrow>\amp=5-2\sqrt{6}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Multiply <m>\left(\sqrt{5}-\sqrt{7}\right)\left(\sqrt{5}+\sqrt{7}\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We can once again use the <acro>FOIL</acro> method to expand this expression. (But it is
+          worth noting that this expression is in the special form
+          <m>(a-b)(a+b)</m> and will simplify to <m>a^2-b^2</m>.)
+          <md>
+            <mrow>\left(\sqrt{5}-\sqrt{7}\right)\left(\sqrt{5}+\sqrt{7}\right)\amp=\left(\sqrt{5}\right)^2+\sqrt{5}\cdot\sqrt{7}-\sqrt{7}\cdot\sqrt{5}-\left(\sqrt{7}\right)^2</mrow>
+            <mrow>\amp=5+\sqrt{35}-\sqrt{35}-7</mrow>
+            <mrow>\amp=-2</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+  <!-- <subsection>
+    <title>Trigonometry Ratios</title>
+
+    <p>
+      In <xref ref="section-right-triangle-trigonometric-ratios"/>,
+      we learned how to find trigonometry ratios in a right triangle when all side lengths are whole numbers.
+      Now that we learned how to rationalize denominator, we can handle lengths with square root symbols.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          In right triangle <m>\Delta ABC</m>,
+          find the values of <m>\sin{A}, \cos{A}, \tan{A}, \sin{B}, \cos{B}</m> and <m>\tan{B}</m>.
+        </p>
+
+        <figure>
+          <caption>a right triangle</caption>
+          <image width="25%">
+            <latex-image>
+              <![CDATA[\begin{tikzpicture}
+                  \draw (0,0) -&#x2d; (3,0) -&#x2d; (3,6) -&#x2d; cycle;
+                  \draw (3,0.2) -&#x2d; (2.8,0.2) -&#x2d; (2.8,0);
+                  \draw [below] (1.5,0) node {$5$};
+                  \draw [right] (3,3) node {$10$};
+                  \draw [left] (1.5,3) node {$x$};
+                  \draw (-0.3,0) node {$A$};
+                  \draw (3,6.3) node {$B$};
+                  \draw (3.2,-0.2) node {$C$};
+              \end{tikzpicture}]]>
+            </latex-image>
+          </image>
+        </figure>
+      </statement>
+      <solution>
+        <p>
+          To find those trigonometry ratios, we must first find the length of the missing leg <m>AB</m>.
+          Assume the length of <m>AB</m> is <m>x</m> units. We can use the Pythagorean Theorem to find <m>x</m>'s value.
+        </p>
+
+        <p>
+          We will use the Pythagorean Theorem to solve for <m>x</m>:
+          <md>
+            <mrow>5^2+10^2\amp=x^2</mrow>
+            <mrow>25+100\amp=x^2</mrow>
+            <mrow>125\amp=x^2</mrow>
+            <mrow>\sqrt{125}\amp=x\amp\text{no need to consider }-\sqrt{125}\text{ in this context}</mrow>
+            <mrow>\sqrt{5^3}\amp=x</mrow>
+            <mrow>5\sqrt{5}\amp=x</mrow>
+          </md>
+          The missing length is <m>x=5\sqrt{5}</m>.
+        </p>
+
+        <p>
+          Now we can write trigonometry ratios for <m>\angle A</m> and <m>\angle B</m>:
+        </p>
+
+        <sidebyside margins="0%">
+          <p>
+            <md>
+              <mrow>\sin{A}\amp=\frac{\text{opposite side length}}{\text{hypotenuse length}}</mrow>
+              <mrow>\amp=\frac{10}{5\sqrt{5}}</mrow>
+              <mrow>\amp=\frac{2}{\sqrt{5}}</mrow>
+              <mrow>\amp=\frac{2\highlight{\cdot\sqrt{5}}}{\sqrt{5}\highlight{\cdot\sqrt{5}}}</mrow>
+              <mrow>\amp=\frac{2\sqrt{5}}{5}</mrow>
+            </md>
+          </p>
+          <p>
+            <md>
+              <mrow>\cos{A}\amp=\frac{\text{adjacent side length}}{\text{hypotenuse length}}</mrow>
+              <mrow>\amp=\frac{5}{5\sqrt{5}}</mrow>
+              <mrow>\amp=\frac{1}{\sqrt{5}}</mrow>
+              <mrow>\amp=\frac{1\highlight{\cdot\sqrt{5}}}{\sqrt{5}\highlight{\cdot\sqrt{5}}}</mrow>
+              <mrow>\amp=\frac{\sqrt{5}}{5}</mrow>
+            </md>
+          </p>
+        </sidebyside>
+        <sidebyside margins="0%">
+          <p>
+            <md>
+              <mrow>\tan{A}\amp=\frac{\text{opposite side length}}{\text{adjacent side length}}</mrow>
+              <mrow>\amp=\frac{10}{5}</mrow>
+              <mrow>\amp=2</mrow>
+            </md>
+          </p>
+          <p>
+            <md>
+              <mrow>\sin{B}\amp=\frac{\text{opposite side length}}{\text{hypotenuse length}}</mrow>
+              <mrow>\amp=\frac{5}{5\sqrt{5}}</mrow>
+              <mrow>\amp=\frac{1}{\sqrt{5}}</mrow>
+              <mrow>\amp=\frac{1\highlight{\cdot\sqrt{5}}}{\sqrt{5}\highlight{\cdot\sqrt{5}}}</mrow>
+              <mrow>\amp=\frac{\sqrt{5}}{5}</mrow>
+            </md>
+          </p>
+        </sidebyside>
+        <sidebyside margins="0%">
+          <p>
+            <md>
+              <mrow>\cos{B}\amp=\frac{\text{adjacent side length}}{\text{hypotenuse length}}</mrow>
+              <mrow>\amp=\frac{10}{5\sqrt{5}}</mrow>
+              <mrow>\amp=\frac{2}{\sqrt{5}}</mrow>
+              <mrow>\amp=\frac{2\highlight{\cdot\sqrt{5}}}{\sqrt{5}\highlight{\cdot\sqrt{5}}}</mrow>
+              <mrow>\amp=\frac{2\sqrt{5}}{5}</mrow>
+            </md>
+          </p>
+          <p>
+            <md>
+              <mrow>\tan{B}\amp=\frac{\text{opposite side length}}{\text{hypotenuse length}}</mrow>
+              <mrow>\amp=\frac{5}{10}</mrow>
+              <mrow>\amp=\frac{1}{2}</mrow>
+            </md>
+          </p>
+        </sidebyside>
+        <p>
+          Note that we used the skill of <q>rationalizing the denominator</q> when the denominator has radicals.
+        </p>
+      </solution>
+    </example>
+  </subsection> -->
+
+  <reading-questions>
+    <exercise>
+      <statement>
+        <p>
+          Is there a difference between <m>\sqrt[3]{2}</m> and <m>3\sqrt{2}</m>? Explain.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Choose one of the radical properties from <xref ref="list-radical-properties"/>.
+          Then find its counterpart in the exponent properties from <xref ref="list-exponent-properties"/>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Describe a way you can visualize <m>\sqrt{81}</m> in a geometric shape.
+          Describe a way you can visualize <m>\sqrt[3]{27}</m> in a geometric shape.
+        </p>
+      </statement>
+    </exercise>
+  </reading-questions>
+
+  <exercises>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Which of the following are square numbers? There may be more than one correct answer.
+        </p>
+      </introduction>
+      <exercise label="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers10">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicMath/IntegerAndSquareRoot/identifySquareNumbers10.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers10-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicMath/IntegerAndSquareRoot/identifySquareNumbers10.pg"/></webwork>
+      </exercise>
+    </exercisegroup>
+
+    <exercisegroup cols="4">
+      <introduction>
+        <p>
+          Evaluate the expression without using a calculator.
+        </p>
+      </introduction>
+      <exercise label="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers20">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicMath/IntegerAndSquareRoot/identifySquareNumbers20.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers20-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicMath/IntegerAndSquareRoot/identifySquareNumbers20.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers30">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicMath/IntegerAndSquareRoot/identifySquareNumbers30.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers30-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicMath/IntegerAndSquareRoot/identifySquareNumbers30.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers40">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicMath/IntegerAndSquareRoot/identifySquareNumbers40.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers40-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicMath/IntegerAndSquareRoot/identifySquareNumbers40.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers50">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicMath/IntegerAndSquareRoot/identifySquareNumbers50.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers50-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicMath/IntegerAndSquareRoot/identifySquareNumbers50.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers60">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicMath/IntegerAndSquareRoot/identifySquareNumbers60.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers60-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicMath/IntegerAndSquareRoot/identifySquareNumbers60.pg"/></webwork>
+      </exercise>
+    </exercisegroup>
+
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Without using a calculator...
+        </p>
+      </introduction>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EstimateRadical10">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EstimateRadical10.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EstimateRadical10-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EstimateRadical10.pg"/></webwork>
+      </exercise>
+    </exercisegroup>
+
+    <exercisegroup cols="3">
+      <title>Simplify Radical Expressions</title>
+      <introduction>
+        <p>
+          Evaluate the following.
+        </p>
+      </introduction>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot20">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateSquareRoot20.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot20-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateSquareRoot20.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot25">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateSquareRoot25.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot25-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateSquareRoot25.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot30">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateSquareRoot30.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot30-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateSquareRoot30.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot40">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateSquareRoot40.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot40-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateSquareRoot40.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot50">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateSquareRoot50.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot50-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateSquareRoot50.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot60">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateSquareRoot60.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot60-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/EvaluateSquareRoot60.pg"/></webwork>
+      </exercise>
+    </exercisegroup>
+
+    <exercisegroup cols="3">
+      <title>Simplifying Square Root Expressions</title>
+      <introduction>
+        <p>
+          Simplify the expression or state that it is not a real number.
+        </p>
+      </introduction>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty10">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RadicalDivisionProperty10.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty10-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RadicalDivisionProperty10.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty20">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RadicalDivisionProperty20.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty20-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RadicalDivisionProperty20.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals04">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals04.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals04-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals04.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals06">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals06.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals06-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals06.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals02">
+        <webwork seed="602"><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals02.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals02-copy">
+        <webwork seed="603"><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals02.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_MultiplyRadicals10">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/MultiplyRadicals10.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_MultiplyRadicals10-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/MultiplyRadicals10.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_MultiplyRadicals20">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/MultiplyRadicals20.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_MultiplyRadicals20-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/MultiplyRadicals20.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_MultiplyRadicals30">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/MultiplyRadicals30.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_MultiplyRadicals30-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/MultiplyRadicals30.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_MultiplyRadicals40">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/MultiplyRadicals40.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_MultiplyRadicals40-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/MultiplyRadicals40.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty30">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RadicalDivisionProperty30.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty30-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RadicalDivisionProperty30.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty40">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RadicalDivisionProperty40.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty40-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/RadicalDivisionProperty40.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals20">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals20.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals20-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals20.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals30">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals30.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals30-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals30.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals50">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals50.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals50-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals50.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals70">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals70.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals70-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals70.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals60">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals60.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals60-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals60.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals90">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals90.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals90-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals90.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals100">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals100.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals100-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals100.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals120">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals120.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals120-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals120.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals130">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals130.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals130-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals130.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals137">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals137.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals137-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals137.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals138">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals138.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals138-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals138.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals139">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals139.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals139-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals139.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals140">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals140.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals140-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicals140.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_FOILradical1">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/FOILradical1.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_FOILradical1-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/FOILradical1.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_FOILradical2">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/FOILradical2.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_FOILradical2-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/FOILradical2.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_FOILradical3">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/FOILradical3.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_FOILradical3-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/RadicalsAndRationalExponents/FOILradical3.pg"/></webwork>
+      </exercise>
+    </exercisegroup>
+
+    <exercisegroup cols="5">
+      <title>Higher Index Roots</title>
+      <introduction>
+        <p>
+          Simplify the higher index radical.
+        </p>
+      </introduction>
+      <!-- root(n,x) with positive x, integer answers -->
+      <!-- seed set to guarantee distinct versions -->
+      <exercise label="simplify-radical-positive-integer">
+        <webwork seed="1" xml:id="webwork-simplify-radical-positive-integer">
+            <pg-code>
+              Context("Form");
+              do {
+                $n = random(3,6,1);
+                $r = random(2,5,1);
+                $x = $r**($n);
+              } until ($x &lt;= 125);
+              $expression = Formula("root($n,$x)");
+              $answer = Formula("$r");
+              $explanation = Formula("$r" . ('*' . "$r") x ($n-1));
+              $explanation2 = Formula("$r ^ $n");
+            </pg-code>
+          <statement>
+            <p>
+              <m><var name="$expression"/></m>.
+            </p>
+            <instruction>To enter <m>\sqrt[n]{x}</m>, type <c>root(n, x)</c>. If the value is not a real number, enter <c>not a real number</c>.</instruction>
+            <p>
+              <var name="$answer" width="30"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Since <m><var name="$explanation"/> = <var name="$x"/></m>, then <m><var name="$expression"/>=<var name="$answer"/></m>. Or if you prefer, since <m><var name="$explanation2"/> = <var name="$x"/></m>, then <m><var name="$expression"/>=<var name="$answer"/></m>.
+            </p>
+          </solution>
+        </webwork>
+      </exercise>
+      <exercise label="simplify-radical-positive-integer-copy">
+        <webwork seed="2" copy="webwork-simplify-radical-positive-integer"/>
+      </exercise>
+      <exercise label="simplify-radical-positive-integer-copy2">
+        <webwork seed="3" copy="webwork-simplify-radical-positive-integer"/>
+      </exercise>
+      <exercise label="simplify-radical-positive-integer-copy3">
+        <webwork seed="5" copy="webwork-simplify-radical-positive-integer"/>
+      </exercise>
+      <exercise label="simplify-radical-positive-integer-copy4">
+        <webwork seed="6" copy="webwork-simplify-radical-positive-integer"/>
+      </exercise>
+      <exercise label="simplify-radical-positive-integer-copy5">
+        <webwork seed="9" copy="webwork-simplify-radical-positive-integer"/>
+      </exercise>
+      <!-- root(n,x) with negative x, integer or nonreal answers -->
+      <exercise label="simplify-radical-negative-integer">
+        <webwork xml:id="webwork-simplify-radical-negative-integer">
+            <pg-code>
+              Context("Form");
+              do {
+                $n = random(3,6,1);
+                $r = random(2,5,1);
+                $x = -$r**($n);
+              } until (abs($x) &lt;= 125);
+              $expression = Formula("root($n,$x)");
+              $answer = ($n % 2 == 1) ? Formula("-$r") : String('not a real number');
+              $explanation = Formula("$r" . ('*' . "$r") x ($n-1));
+              $explanation2 = Formula("$r ^ $n");
+              if ($n % 2 == 1) {
+                $th = ($n == 3) ? 'rd' : 'th';
+                $explanationText =
+                  "Since $x is negative and $n is odd, a ${n}${th} root of $x exists and is equal to $r.";
+              }
+              else {
+                $explanationText =
+                  "Since $x is negative and $n is even, this is not a real number.";
+              }
+            </pg-code>
+          <statement>
+            <p>
+              <m><var name="$expression"/></m>.
+            </p>
+            <instruction>To enter <m>\sqrt[n]{x}</m>, type <c>root(n, x)</c>. If the value is not a real number, enter <c>not a real number</c>.</instruction>
+            <p>
+              <var name="$answer" width="30"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <var name="$explanationText"/>
+            </p>
+          </solution>
+        </webwork>
+      </exercise>
+      <exercise label="simplify-radical-negative-integer-copy">
+        <webwork copy="webwork-simplify-radical-negative-integer"/>
+      </exercise>
+      <!-- seed set to guarantee an even index -->
+      <exercise label="simplify-radical-negative-integer-copy2">
+        <webwork seed="4" copy="webwork-simplify-radical-negative-integer"/>
+      </exercise>
+      <!-- seed set to guarantee an even index -->
+      <exercise label="simplify-radical-negative-integer-copy3">
+        <webwork seed="5" copy="webwork-simplify-radical-negative-integer"/>
+      </exercise>
+      <exercise label="simplify-radical-negative-integer-copy4">
+        <webwork copy="webwork-simplify-radical-negative-integer"/>
+      </exercise>
+      <exercise label="simplify-radical-negative-integer-copy5">
+        <webwork copy="webwork-simplify-radical-negative-integer"/>
+      </exercise>
+      <!-- root(n,x) with positive integer x, non-integer answers -->
+      <exercise label="simplify-radical-non-integer">
+        <webwork xml:id="webwork-simplify-radical-non-integer">
+            <pg-code>
+              Context("Form");
+              do {
+                $n = random(3,6,1);
+                $r = random(2,5,1);
+                $x = $r**($n);
+                $y = ($n % 2 == 0) ? list_random(2,3,5..7,10,11) : list_random(2..7,9..12);
+                $X = $x*$y;
+              } until ($x &lt;= 125 and $X &lt;= 200);
+              $expression = Formula("root($n,$X)");
+              $answer = Formula("$r root($n,$y)");
+            </pg-code>
+          <statement>
+            <p>
+              <m><var name="$expression"/></m>.
+            </p>
+            <instruction>To enter <m>\sqrt[n]{x}</m>, type <c>root(n, x)</c>. If the value is not a real number, enter <c>not a real number</c>.</instruction>
+            <p>
+              <var name="$answer" width="30"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow><var name="$expression"/>\amp = \sqrt[<var name="$n"/>]{<var name="$x"/>\cdot <var name="$y"/>}</mrow>
+                <mrow>\amp = \sqrt[<var name="$n"/>]{<var name="$x"/>}\cdot \sqrt[<var name="$n"/>]{<var name="$y"/>}</mrow>
+                <mrow>\amp = <var name="$answer"/></mrow>
+              </md>
+            </p>
+          </solution>
+        </webwork>
+      </exercise>
+      <exercise label="simplify-radical-non-integer-copy">
+        <webwork copy="webwork-simplify-radical-non-integer"/>
+      </exercise>
+      <exercise label="simplify-radical-non-integer-copy2">
+        <webwork copy="webwork-simplify-radical-non-integer"/>
+      </exercise>
+      <exercise label="simplify-radical-non-integer-copy3">
+        <webwork copy="webwork-simplify-radical-non-integer"/>
+      </exercise>
+      <exercise label="simplify-radical-non-integer-copy4">
+        <webwork copy="webwork-simplify-radical-non-integer"/>
+      </exercise>
+      <exercise label="simplify-radical-non-integer-copy5">
+        <webwork copy="webwork-simplify-radical-non-integer"/>
+      </exercise>
+      <!-- root(n,x) with positive fraction x, denominator is nth power -->
+      <exercise label="simplify-radical-denominator-integer">
+        <webwork xml:id="webwork-simplify-radical-denominator-integer">
+            <pg-code>
+              Context("Form");
+              do {
+                $n = random(3,6,1);
+                $r = random(2,5,1);
+                $x = $r**($n);
+                do {$y = ($n % 2 == 0) ? list_random(2,3,5..7,10,11) : list_random(2..7,9..12);} until (gcd($x,$y) == 1);
+              } until ($x &lt;= 125);
+              $expression = Formula("root($n,$y/$x)");
+              $answer = Formula("1/$r root($n,$y)");
+            </pg-code>
+          <statement>
+            <p>
+              <m><var name="$expression"/></m>.
+            </p>
+            <instruction>To enter <m>\sqrt[n]{x}</m>, type <c>root(n, x)</c>. If the value is not a real number, enter <c>not a real number</c>.</instruction>
+            <p>
+              <var name="$answer" width="30"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow><var name="$expression"/>\amp = \frac{\sqrt[<var name="$n"/>]{<var name="$y"/>}}{\sqrt[<var name="$n"/>]{<var name="$x"/>}}</mrow>
+                <mrow>\amp = \frac{\sqrt[<var name="$n"/>]{<var name="$y"/>}}{<var name="$r"/>}</mrow>
+                <mrow>\amp = \frac{1}{<var name="$r"/>}\sqrt[<var name="$n"/>]{<var name="$y"/>}</mrow>
+              </md>
+            </p>
+          </solution>
+        </webwork>
+      </exercise>
+      <exercise label="simplify-radical-denominator-integer-copy">
+        <webwork copy="webwork-simplify-radical-denominator-integer"/>
+      </exercise>
+      <!-- root(n,x) with positive fraction x, denominator is nth power, numerator has nth power factor -->
+      <exercise label="simplify-radical-denominator-integer-numerator-splits">
+        <webwork xml:id="webwork-simplify-radical-denominator-integer-numerator-splits">
+            <pg-code>
+              Context("Form");
+              do {
+                $n = random(3,6,1);
+                do {
+                  $r = random(2,5,1);
+                  $R = random(2,5,1);
+                } until (gcd($r,$R) == 1);
+                $x = $r**($n);
+                $z = $R**($n);
+                do {$y = ($n % 2 == 0) ? list_random(2,3,5..7,10,11) : list_random(2..7,9..12);} until (gcd($x,$y) == 1 and gcd($z,$y) == 1);
+                $Y = $z*$y;
+              } until ($x &lt;= 125 and $z &lt;= 125 and $Y &lt;= 200);
+              $expression = Formula("root($n,$Y/$x)");
+              $answer = Formula("$R/$r root($n,$y)");
+            </pg-code>
+          <statement>
+            <p>
+              <m><var name="$expression"/></m>.
+            </p>
+            <instruction>To enter <m>\sqrt[n]{x}</m>, type <c>root(n, x)</c>. If the value is not a real number, enter <c>not a real number</c>.</instruction>
+            <p>
+              <var name="$answer" width="30"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <md>
+                <mrow><var name="$expression"/>\amp = \frac{\sqrt[<var name="$n"/>]{<var name="$Y"/>}}{\sqrt[<var name="$n"/>]{<var name="$x"/>}}</mrow>
+                <mrow>\amp = \frac{\sqrt[<var name="$n"/>]{<var name="$z"/>\cdot <var name="$y"/>}}{<var name="$r"/>}</mrow>
+                <mrow>\amp = \frac{\sqrt[<var name="$n"/>]{<var name="$z"/>}\sqrt[<var name="$n"/>]{<var name="$y"/>}}{<var name="$r"/>}</mrow>
+                <mrow>\amp = \frac{<var name="$R"/>\sqrt[<var name="$n"/>]{<var name="$y"/>}}{<var name="$r"/>}</mrow>
+                <mrow>\amp = \frac{<var name="$R"/>}{<var name="$r"/>}\sqrt[<var name="$n"/>]{<var name="$y"/>}</mrow>
+              </md>
+            </p>
+          </solution>
+        </webwork>
+      </exercise>
+      <exercise label="simplify-radical-denominator-integer-numerator-splits-copy">
+        <webwork copy="webwork-simplify-radical-denominator-integer-numerator-splits"/>
+      </exercise>
+      <exercise label="simplify-radical-denominator-integer-numerator-splits-copy2">
+        <webwork copy="webwork-simplify-radical-denominator-integer-numerator-splits"/>
+      </exercise>
+      <exercise label="simplify-radical-denominator-integer-numerator-splits-copy3">
+        <webwork copy="webwork-simplify-radical-denominator-integer-numerator-splits"/>
+      </exercise>
+    </exercisegroup>
+
+    <exercisegroup cols="4">
+      <introduction>
+        <p>
+          Find a solution to the equation. Use a radical expression. If there are no solutions,
+          say so.
+        </p>
+      </introduction>
+      <exercise label="solve-square-equation">
+        <webwork xml:id="webwork-solve-square-equation">
+          <pg-code>
+            Context("Form");
+            $N = list_random(2, 3, 5..7, 10, 11, 13..15, 17, 19, 21..23, 26, 29..31, 33..35, 37, 38, 41..43, 46, 47);
+            $answer = OneOf(Formula("sqrt($N)"), Formula("-sqrt($N)"));
+          </pg-code>
+          <statement>
+            <p>
+              <m>x^2 = <var name="$N"/></m>
+            </p>
+            <instruction>
+              Just enter one number that would work as a solution to this equation. If there are no
+              solutions, enter <c>none</c>.
+            </instruction>
+            <p>
+              <var name="$answer" width="16"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+      <exercise label="solve-square-equation-copy">
+        <webwork copy="webwork-solve-square-equation"/>
+      </exercise>
+      <exercise label="solve-square-equation-negative">
+        <webwork xml:id="webwork-solve-square-equation-negative">
+          <pg-code>
+            Context("Form");
+            $N = list_random(2, 3, 5..7, 10, 11, 13..15, 17, 19, 21..23, 26, 29..31, 33..35, 37, 38, 41..43, 46, 47);
+            $answer = Compute("None");
+          </pg-code>
+          <statement>
+            <p>
+              <m>x^2 = -<var name="$N"/></m>
+            </p>
+            <instruction>
+              Just enter one number that would work as a solution to this equation. If there are no
+              solutions, enter <c>none</c>.
+            </instruction>
+            <p>
+              <var name="$answer" width="16"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+      <exercise label="solve-square-equation-negative-copy">
+        <webwork copy="webwork-solve-square-equation-negative"/>
+      </exercise>
+      <exercise label="solve-third-power-equation">
+        <webwork xml:id="webwork-solve-third-power-equation">
+          <pg-code>
+            Context("Form");
+            $N = list_random(2, 3, 5..7, 10, 11, 13..15, 17, 19, 21..23, 26, 29..31, 33..35, 37, 38, 41..43, 46, 47);
+            $answer = Formula("root(3,$N)");
+          </pg-code>
+          <statement>
+            <p>
+              <m>x^3 = <var name="$N"/></m>
+            </p>
+            <instruction>
+              Just enter one number that would work as a solution to this equation. If there are no
+              solutions, enter <c>none</c>.
+            </instruction>
+            <p>
+              <var name="$answer" width="16"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We need a number that multiplies with itself <m>3</m> times to make
+              <m><var name="$N"/></m>. This is exactly what <m>\sqrt[3]{<var name="$N"/>}</m> means.
+            </p>
+          </solution>
+        </webwork>
+      </exercise>
+      <exercise label="solve-third-power-equation-copy">
+        <webwork copy="webwork-solve-third-power-equation"/>
+      </exercise>
+      <exercise label="solve-third-power-equation-negative">
+        <webwork xml:id="webwork-solve-third-power-equation-negative">
+          <pg-code>
+            Context("Form");
+            $N = list_random(2, 3, 5..7, 10, 11, 13..15, 17, 19, 21..23, 26, 29..31, 33..35, 37, 38, 41..43, 46, 47);
+            $answer = Formula("root(3,-$N)");
+          </pg-code>
+          <statement>
+            <p>
+              <m>x^3 = -<var name="$N"/></m>
+            </p>
+            <instruction>
+              Just enter one number that would work as a solution to this equation. If there are no
+              solutions, enter <c>none</c>.
+            </instruction>
+            <p>
+              <var name="$answer" width="16"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+      <exercise label="solve-third-power-equation-negative-copy">
+        <webwork copy="webwork-solve-third-power-equation-negative"/>
+      </exercise>
+      <exercise label="solve-fourth-power-equation">
+        <webwork xml:id="webwork-solve-fourth-power-equation">
+          <pg-code>
+            Context("Form");
+            $N = list_random(2, 3, 5..7, 10, 11, 13..15, 17, 19, 21..23, 26, 29..31, 33..35, 37, 38, 41..43, 46, 47);
+            $answer = OneOf(Formula("root(4,$N)"), Formula("-root(4,$N)"));
+          </pg-code>
+          <statement>
+            <p>
+              <m>x^4 = <var name="$N"/></m>
+            </p>
+            <instruction>
+              Just enter one number that would work as a solution to this equation. If there are no
+              solutions, enter <c>none</c>.
+            </instruction>
+            <p>
+              <var name="$answer" width="16"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+      <exercise label="solve-fourth-power-equation-copy">
+        <webwork copy="webwork-solve-fourth-power-equation"/>
+      </exercise>
+      <exercise label="solve-fourth-power-equation-negative">
+        <webwork xml:id="webwork-solve-fourth-power-equation-negative">
+          <pg-code>
+            Context("Form");
+            $N = list_random(2, 3, 5..7, 10, 11, 13..15, 17, 19, 21..23, 26, 29..31, 33..35, 37, 38, 41..43, 46, 47);
+            $answer = Compute("None");
+          </pg-code>
+          <statement>
+            <p>
+              <m>x^4 = -<var name="$N"/></m>
+            </p>
+            <instruction>
+              Just enter one number that would work as a solution to this equation. If there are no
+              solutions, enter <c>none</c>.
+            </instruction>
+            <p>
+              <var name="$answer" width="16"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+      <exercise label="solve-fourth-power-equation-negative-copy">
+        <webwork copy="webwork-solve-fourth-power-equation-negative"/>
+      </exercise>
+      <exercise label="solve-fifth-power-equation">
+        <webwork xml:id="webwork-solve-fifth-power-equation">
+          <pg-code>
+            Context("Form");
+            $N = list_random(2, 3, 5..7, 10, 11, 13..15, 17, 19, 21..23, 26, 29..31, 33..35, 37, 38, 41..43, 46, 47);
+            $N = list_random($N, -$N);
+            $answer = Formula("root(5,$N)");
+          </pg-code>
+          <statement>
+            <p>
+              <m>x^5 = <var name="$N"/></m>
+            </p>
+            <instruction>
+              Just enter one number that would work as a solution to this equation. If there are no
+              solutions, enter <c>none</c>.
+            </instruction>
+            <p>
+              <var name="$answer" width="16"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+      <exercise label="solve-fifth-power-equation-copy">
+        <webwork copy="webwork-solve-fifth-power-equation"/>
+      </exercise>
+    </exercisegroup>
+  </exercises>
+</section>
+

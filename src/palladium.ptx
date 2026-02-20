@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2026                                                       -->
+<!-- Alex Jordan                                                          -->
+<!-- *********************************************************************-->
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+  <xi:include href="./bookinfo.ptx"/>
+  <book xml:id="palladium">
+    <title>Palladium Algebra</title>
+    <xi:include href="./frontmatter.ptx"/>
+
+    <xi:include href="./chapter-linear-equations-and-inequalities.ptx"/>
+    <xi:include href="./chapter-quadratic.ptx"/>
+    <xi:include href="./chapter-rational-functions-and-equations.ptx"/>
+    <xi:include href="./chapter-radical-expressions-and-equations.ptx"/>
+
+    <xi:include href="./backmatter.ptx"/>
+  </book>
+</pretext>
+
+<!-- Checklist -->
+<!-- Every exercise has @label -->
+<!-- Every "exercises" as "subexercises" structure. Possible titles are Review and Warmup, Skills Practice, Applications, Challenge -->
+<!-- Every review section is structured the new way -->
+<!-- Multipart exercises use tasks wherever appropriate -->
+<!-- Exercisegroups have titles -->
+<!-- Indexing -->
+<!-- CCOG indexing -->
+<!-- Every section has a reading questions -->
+<!-- Each chapter has an introduction -->
+
+
+<!-- division by a momnomial is cut, but it has an exponents rule in it. Needs to be recovered. -->
+

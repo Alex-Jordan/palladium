@@ -1,0 +1,1603 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2016-2019                                                  -->
+<!-- Portland Community College                                           -->
+<!--                                                                      -->
+<!-- This file is part of Open Resources for Community College Algebra    -->
+<!-- (ORCCA).                                                             -->
+<!--                                                                      -->
+<!-- Open Resources for Community College Algebra is licensed under a     -->
+<!-- Creative Commons Attribution 4.0 International License.              -->
+<!--                                                                      -->
+<!-- Under this license, any user of this textbook or the textbook        -->
+<!-- contents must provide proper attribution as follows.                 -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- include in every digital format page view (including but not         -->
+<!-- limited to EPUB, PDF, and HTML) and on every physical printed page   -->
+<!-- the following attribution:                                           -->
+<!--                                                                      -->
+<!-- Original source material, products with readable and accessible      -->
+<!-- math content, and other information freely available at              -->
+<!-- pcc.edu/orcca.                                                       -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- reproduce any math content (such as math expressions and equations)  -->
+<!-- in a readable manner, and offer math content in at least one web     -->
+<!-- accessible manner.                                                   -->
+<!--                                                                      -->
+<!-- The Portland Community College name, Portland Community College      -->
+<!-- logo, ORCCA name, Open Resources for Community College Algebra name, -->
+<!-- ORCCA logo, and front and back cover designs are not subject to the  -->
+<!-- Creative Commons license and may not be reproduced without the       -->
+<!-- prior and express written consent of Portland Community College.     -->
+<!--                                                                      -->
+<!-- For questions regarding this license, please contact                 -->
+<!-- orcca-group@pcc.edu.                                                 -->
+<!-- *********************************************************************-->
+<section xml:id="review-topics-in-graphing">
+  <title>Topics in Graphing Chapter Review</title>
+  <subsection>
+    <title>Review of Graphing</title>
+    <p>
+      In <xref ref="section-review-of-graphing">Section</xref>,
+      we reviewed the fundamentals of graph-making.
+      In particular, given an equation of the form <m>y=\text{expression in }x</m>,
+      the fundamental approach to making a graph is to make a table of points to plot.
+    </p>
+    <p>
+      We also looked back at the notions of <q>intercepts</q> on a graph.
+      In the case of a linear equation in <m>x</m> and <m>y</m>,
+      finding the <m>x</m>- and <m>y</m>-intercepts can be a way to create a graph.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Key Features of Quadratic Graphs</title>
+    <p>
+      In <xref ref="section-key-features-of-quadratic-graphs">Section</xref>,
+      we identified the key features of a quadratic graph
+      (which takes the shape of a parabola). The key features are the direction that it opens,
+      the vertex, the axis of symmetry, the vertical intercept,
+      and the horizontal intercepts (if there are any).
+    </p>
+    <p>
+      If the equation for a quadratic curve is <m>y=ax^2+bx+c</m>,
+      then the formula <m>h=-\frac{b}{2a}</m> gives the first coordinate of the vertex.
+      So you can find the location of the vertex with that coordinate
+      and subbing that number into the equation to find the second coordinate.
+    </p>
+    <p>
+      If we know the location of a parabola's vertex and the direction that it opens,
+      we can sketch the parabola. It helps to make a table finding a few points the the
+      left and to the right of the vertex. The symmetry of a parabola means you only
+      need to find points on one side to automatically get corresponding points on the other side.
+    </p>
+  </subsection>
+
+  <subsection>
+    <title>Graphing Quadratic Equations</title>
+    <p>
+      In <xref ref="section-graphing-quadratic-expressions">Section</xref>,
+      we practiced finding the exact locations of the vertical and horizontal
+      intercepts for a quadratic equation curve. The vertical intercept can be found
+      by lettting <m>x=0</m>. The result is a number on the <m>y</m>-axis.
+    </p>
+    <p>
+      The horizontal intercepts can be found by setting <m>y</m> equal to <m>0</m>.
+      This leaves you with a quadratic equation in one variable, <m>x</m>,
+      and the quadratic formula can be used to solve for <m>x</m>.
+      There might be no solutions, as is the case when the parabola doesn't touch the <m>x</m>-axis.
+      There might be one solution, when the vertex is on the <m>x</m>-axis.
+      Or there might be two solutions, and therefore two horizontal intercepts.
+    </p>
+    <p>
+      When we know the exact locations of the intercepts (as well as the location of the vertex
+      as found in <xref ref="section-key-features-of-quadratic-graphs">Section</xref>) then we
+      can plot accurate graphs of quadratic equations.
+    </p>
+  </subsection>
+
+  <subsection>
+    <title>Graphically Solving Equations and Inequalities</title>
+    <p>
+      In <xref ref="section-graphically-solving-equations-and-inequalities">Section</xref>,
+      we see how a graph can be used to solve an equation or inequality.
+      Each side of an equation gives you a curve,
+      and where the two curves cross tells you where there are solutions to the equation.
+    </p>
+    <p>
+      For example, to solve the equation <m>x^2+x-1=2x+1</m>, we could plot two curves:
+      <m>y=x^2+x-1</m> and <m>y=2x+1</m>. We might use a computer to make the graphs for us,
+      as in <xref ref="figure-review-solving-graphically">Figure</xref>.
+    </p>
+    <figure xml:id="figure-review-solving-graphically">
+      <caption><m>y=x^2+x-1</m> and <m>y=2x+1</m></caption>
+      <image width="47%">
+        <shortdescription></shortdescription>
+        <latex-image>
+            <![CDATA[\begin{tikzpicture}
+                \begin{axis}[]
+                    \addplot+[domain=-3.37:2.37] {x^2+x-1};
+                    \addplot+[domain=-4:3] {2*x+1};
+                \end{axis}
+            \end{tikzpicture}
+            ]]>
+        </latex-image>
+      </image>
+    </figure>
+    <p>
+      Since the curves cross at <m>(-1,-1)</m> and <m>(2,5)</m>, the solutions are <m>x=-1</m> and <m>x=2</m>.
+      This means the solution set is <m>\{-1,2\}</m>.
+    </p>
+  </subsection>
+
+  <exercises>
+    <exercisegroup cols="2">
+      <title>Review of Graphing</title>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/EquationsAndInequalitiesInTwoVariables/XYTable10.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/EquationsAndInequalitiesInTwoVariables/XYTable20.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/EquationsAndInequalitiesInTwoVariables/XYTable50.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/EquationsAndInequalitiesInTwoVariables/XYTable60.pg" />
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <exercise>
+        <statement>
+          <p>
+            Create a table of ordered pairs and then make a plot of the equation <m>y=2x+3</m>.
+          </p>
+        </statement>
+        <answer>
+          <sidebyside margins="0%">
+            <tabular valign="top" bottom="minor">
+              <col halign="right" right="minor"/>
+              <col halign="center" right="minor"/>
+              <col halign="center"/>
+              <row bottom="medium">
+                <cell><m>x</m></cell>
+                <cell halign="center"><m>y=2x+3</m></cell>
+                <cell>Point</cell>
+              </row>
+              <row>
+                <cell><m>-2</m></cell>
+                <cell><m>-1</m></cell>
+                <cell><m>(-2,-1)</m></cell>
+              </row>
+              <row>
+                <cell><m>-1</m></cell>
+                <cell><m>1</m></cell>
+                <cell><m>(-1,1)</m></cell>
+              </row>
+              <row>
+                <cell><m>0</m></cell>
+                <cell><m>3</m></cell>
+                <cell><m>(0,3)</m></cell>
+              </row>
+              <row>
+                <cell><m>1</m></cell>
+                <cell><m>5</m></cell>
+                <cell><m>(1,5)</m></cell>
+              </row>
+              <row bottom="none">
+                <cell><m>2</m></cell>
+                <cell><m>7</m></cell>
+                <cell><m>(2,7)</m></cell>
+              </row>
+            </tabular>
+          </sidebyside>
+          <sidebyside margins="0%">
+            <image>
+              <latex-image>
+                <![CDATA[
+                    \begin{tikzpicture}
+                        \begin{axis}[]
+                            \addplot+[domain=-5:2] {2*x+3};
+                            \addplot[soliddot] coordinates {(-2,-1) (-1,1) (0,3) (1,5)};
+                        \end{axis}
+                    \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </sidebyside>
+        </answer>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Create a table of ordered pairs and then make a plot of the equation <m>y=-\frac{3}{4}x+2</m>.
+          </p>
+        </statement>
+        <answer>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <tabular valign="top" bottom="minor">
+              <col halign="right" right="minor"/>
+              <col halign="center" right="minor"/>
+              <col halign="center"/>
+              <row bottom="medium">
+                <cell><m>x</m></cell>
+                <cell halign="center"><m>y=-\frac{3}{4}x+2</m></cell>
+                <cell>Point</cell>
+              </row>
+              <row>
+                <cell><m>-4</m></cell>
+                <cell><m>5</m></cell>
+                <cell><m>(-4,5)</m></cell>
+              </row>
+              <row>
+                <cell><m>0</m></cell>
+                <cell><m>2</m></cell>
+                <cell><m>(0,2)</m></cell>
+              </row>
+              <row bottom="none">
+                <cell><m>4</m></cell>
+                <cell><m>-1</m></cell>
+                <cell><m>(4,-1)</m></cell>
+              </row>
+            </tabular>
+
+            <image>
+
+            <latex-image>
+                <![CDATA[
+                    \begin{tikzpicture}
+                        \begin{axis}[]
+                            \addplot+[domain=-6.66:7] {-3/4*x+2};
+                            \addplot[soliddot] coordinates {(-4,5) (0,2) (4,-1)};
+                        \end{axis}
+                    \end{tikzpicture}
+                ]]>
+            </latex-image>
+            </image>
+
+          </sidebyside>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/GraphingPointsAndLines/FindXYIntercepts70.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/GraphingPointsAndLines/FindXYIntercepts80.pg" />
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <exercise>
+        <statement>
+          <p>
+            Find the <m>x</m>- and <m>y</m>-intercepts of the line with equation <m>5x-6y=-90</m>.
+            Then find one other point on the line.
+            Use your results to graph the line.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>x</m>-intercept: <m>(-18,0)</m>
+          </p>
+
+          <p>
+            <m>y</m>-intercept: <m>(0,15)</m>
+          </p>
+
+          <sidebyside>
+
+            <image>
+
+            <latex-image>
+                <![CDATA[
+                    \begin{tikzpicture}
+                        \begin{axis}[xmin=-24,xmax=24,ymin=-24,ymax=24,
+                            xtick={-18,-12,...,18},
+                            minor xtick={-21,-18,...,21},
+                            ytick={-18,-12,...,18},
+                            minor ytick={-21,-18,...,21}
+                            ]
+                            \addplot+[domain=-24:11] {5/6*x+15};
+                            \addplot[soliddot] coordinates {(-18,0) (0,15)};
+                        \end{axis}
+                    \end{tikzpicture}
+                ]]>
+            </latex-image>
+            </image>
+
+          </sidebyside>
+        </answer>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Find the <m>x</m>- and <m>y</m>-intercepts of the line with equation <m>x+5y=-15</m>.
+            Then find one other point on the line.
+            Use your results to graph the line.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>x</m>-intercept: <m>(-15,0)</m>
+          </p>
+
+          <p>
+            <m>y</m>-intercept: <m>(0,-3)</m>
+          </p>
+
+          <sidebyside widths="47%">
+
+            <image>
+
+            <latex-image>
+                <![CDATA[
+                    \begin{tikzpicture}
+                        \begin{axis}[xmin=-24,xmax=24,ymin=-24,ymax=24,
+                            xtick={-18,-12,...,18},
+                            minor xtick={-21,-18,...,21},
+                            ytick={-18,-12,...,18},
+                            minor ytick={-21,-18,...,21}
+                            ]
+                            \addplot+[domain=-24:24] {-1/5*x-3};
+                            \addplot[soliddot] coordinates {(-15,0) (0,-3)};
+                        \end{axis}
+                    \end{tikzpicture}
+                ]]>
+            </latex-image>
+            </image>
+
+          </sidebyside>
+        </answer>
+      </exercise>
+    </exercisegroup>
+
+    <exercisegroup cols="3">
+      <title>Key Features of Quadratic Graphs</title>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex50.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex60.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex70.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex80.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex90.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex100.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex110.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex40.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex20.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex10.pg" />
+      </exercise>
+    </exercisegroup>
+
+    <exercisegroup cols="4">
+      <introduction>
+        <p>
+          For the given quadratic equation, find the vertex.
+          Then create a table of ordered pairs centered around the vertex and make a graph.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>y=x^2+2</m>
+          </p>
+        </statement>
+        <solution>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <figure>
+              <caption></caption>
+              <tabular valign="top" bottom="minor">
+                <col halign="right" right="minor"/>
+                <col halign="right"/>
+                <row bottom="medium">
+                  <cell><m>x</m></cell>
+                  <cell halign="center"><m>y=x^2+2</m></cell>
+                </row>
+                <row>
+                  <cell><m>-3</m></cell>
+                  <cell><m>(-3)^2+2=11</m></cell>
+                </row>
+                <row>
+                  <cell><m>-2</m></cell>
+                  <cell><m>(-2)^2+2=6</m></cell>
+                </row>
+                <row>
+                  <cell><m>-1</m></cell>
+                  <cell><m>(-1)^2+2=3</m></cell>
+                </row>
+                <row>
+                  <cell><m>0</m></cell>
+                  <cell><m>0^2+2=2</m></cell>
+                </row>
+                <row>
+                  <cell><m>1</m></cell>
+                  <cell><m>1^2+2=3</m></cell>
+                </row>
+                <row>
+                  <cell><m>2</m></cell>
+                  <cell><m>2^2+2=6</m></cell>
+                </row>
+                <row bottom="none">
+                  <cell><m>3</m></cell>
+                  <cell><m>3^2+2=11</m></cell>
+                </row>
+              </tabular>
+
+            </figure>
+
+            <image>
+
+            <latex-image>
+                <![CDATA[
+                    \begin{tikzpicture}
+                        \begin{axis}[]
+                            \addplot+[domain=-2.236:2.236] {x^2+2};
+                            \addplot[soliddot] coordinates {(-2,6) (-1,3) (0,2) (1,3) (2,6)};
+                        \end{axis}
+                    \end{tikzpicture}
+                ]]>
+            </latex-image>
+            </image>
+
+          </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>y=x^2-5</m>
+          </p>
+        </statement>
+        <solution>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <figure>
+              <caption></caption>
+              <tabular valign="top" bottom="minor">
+                <col halign="right" right="minor"/>
+                <col halign="right"/>
+                <row bottom="medium">
+                  <cell><m>x</m></cell>
+                  <cell halign="center"><m>y=x^2-5</m></cell>
+                </row>
+                <row>
+                  <cell><m>-3</m></cell>
+                  <cell><m>(-3)^2-5=4</m></cell>
+                </row>
+                <row>
+                  <cell><m>-2</m></cell>
+                  <cell><m>(-2)^2-5=-1</m></cell>
+                </row>
+                <row>
+                  <cell><m>-1</m></cell>
+                  <cell><m>(-1)^2-5=-4</m></cell>
+                </row>
+                <row>
+                  <cell><m>0</m></cell>
+                  <cell><m>0^2-5=-5</m></cell>
+                </row>
+                <row>
+                  <cell><m>1</m></cell>
+                  <cell><m>1^2-5=-4</m></cell>
+                </row>
+                <row>
+                  <cell><m>2</m></cell>
+                  <cell><m>2^2-5=-1</m></cell>
+                </row>
+                <row bottom="none">
+                  <cell><m>3</m></cell>
+                  <cell><m>3^2-5=4</m></cell>
+                </row>
+              </tabular>
+
+            </figure>
+
+            <image>
+
+            <latex-image>
+                <![CDATA[
+                    \begin{tikzpicture}
+                        \begin{axis}[]
+                            \addplot+[domain=-3.464:3.464] {x^2-5};
+                            \addplot[soliddot] coordinates {(-3,4) (-2,-1) (-1,-4) (0,-5) (1,-4) (2,-1) (3,4)};
+                        \end{axis}
+                    \end{tikzpicture}
+                ]]>
+            </latex-image>
+            </image>
+
+          </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>y=(x-2)^2</m>
+          </p>
+        </statement>
+        <solution>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <figure>
+              <caption></caption>
+              <tabular valign="top" bottom="minor">
+                <col halign="right" right="minor"/>
+                <col halign="right"/>
+                <row bottom="medium">
+                  <cell><m>x</m></cell>
+                  <cell halign="center"><m>y=(x-2)^2</m></cell>
+                </row>
+                <row>
+                  <cell><m>-1</m></cell>
+                  <cell><m>(-1-2)^2=9</m></cell>
+                </row>
+                <row>
+                  <cell><m>0</m></cell>
+                  <cell><m>(0-2)^2=4</m></cell>
+                </row>
+                <row>
+                  <cell><m>1</m></cell>
+                  <cell><m>(1-2)^2=1</m></cell>
+                </row>
+                <row>
+                  <cell><m>2</m></cell>
+                  <cell><m>(2-2)^2=0</m></cell>
+                </row>
+                <row>
+                  <cell><m>3</m></cell>
+                  <cell><m>(3-2)^2=1</m></cell>
+                </row>
+                <row>
+                  <cell><m>4</m></cell>
+                  <cell><m>(4-2)^2=4</m></cell>
+                </row>
+                <row bottom="none">
+                  <cell><m>5</m></cell>
+                  <cell><m>(5-2)^2=9</m></cell>
+                </row>
+              </tabular>
+
+            </figure>
+
+            <image>
+
+            <latex-image>
+                <![CDATA[
+                    \begin{tikzpicture}
+                        \begin{axis}[]
+                            \addplot+[domain=-0.464:4.464] {(x-2)^2};
+                            \addplot[soliddot] coordinates { (0,4) (1,1) (2,0) (3,1) (4,4)};
+                        \end{axis}
+                    \end{tikzpicture}
+                ]]>
+            </latex-image>
+            </image>
+
+          </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>y=(x+3)^2</m>
+          </p>
+        </statement>
+        <solution>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <figure>
+              <caption></caption>
+              <tabular valign="top" bottom="minor">
+                <col halign="right" right="minor"/>
+                <col halign="right"/>
+                <row bottom="medium">
+                  <cell><m>x</m></cell>
+                  <cell halign="center"><m>y=(x+3)^2</m></cell>
+                </row>
+                <row>
+                  <cell><m>-6</m></cell>
+                  <cell><m>(-6+3)^2=9</m></cell>
+                </row>
+                <row>
+                  <cell><m>-5</m></cell>
+                  <cell><m>(-5+3)^2=4</m></cell>
+                </row>
+                <row>
+                  <cell><m>-4</m></cell>
+                  <cell><m>(-4+3)^2=1</m></cell>
+                </row>
+                <row>
+                  <cell><m>-3</m></cell>
+                  <cell><m>(-3+3)^2=0</m></cell>
+                </row>
+                <row>
+                  <cell><m>-2</m></cell>
+                  <cell><m>(-2+3)^2=1</m></cell>
+                </row>
+                <row>
+                  <cell><m>-1</m></cell>
+                  <cell><m>(-1+3)^2=4</m></cell>
+                </row>
+                <row bottom="none">
+                  <cell><m>0</m></cell>
+                  <cell><m>(0+3)^2=9</m></cell>
+                </row>
+              </tabular>
+
+            </figure>
+
+            <image>
+
+            <latex-image>
+                <![CDATA[
+                    \begin{tikzpicture}
+                        \begin{axis}[ymin=-5,ymax=10,ytick={-4,-2,...,8},minor ytick={-5,-4,...,10}]
+                            \addplot+[domain=-6.16:0.16] {(x+3)^2};
+                            \addplot[soliddot] coordinates { (-6,9) (-5,4) (-4,1) (-3,0) (-2,1) (-1,4) (0,9)};
+                        \end{axis}
+                    \end{tikzpicture}
+                ]]>
+            </latex-image>
+            </image>
+
+          </sidebyside>
+        </solution>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup>
+      <exercise>
+        <statement>
+          <p>
+            For <m>y=4x^2-8x+5</m>, determine the vertex,
+            create a table of ordered pairs,
+            and then make a graph.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The vertex occurs at <m>(1,1)</m>.
+          </p>
+
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <figure>
+              <caption></caption>
+              <tabular valign="top" bottom="minor">
+                <col halign="right" right="minor"/>
+                <col halign="right"/>
+                <row bottom="medium">
+                  <cell><m>x</m></cell>
+                  <cell halign="center"><m>y=4x^2-8x+5</m></cell>
+                </row>
+                <row>
+                  <cell><m>-1</m></cell>
+                  <cell><m>4(-1)^2-8(-1)+5=17</m></cell>
+                </row>
+                <row>
+                  <cell><m>0</m></cell>
+                  <cell><m>4(0)^2-8(0)+5=5</m></cell>
+                </row>
+                <row>
+                  <cell><m>1</m></cell>
+                  <cell><m>4(1)^2-8(1)+5=1</m></cell>
+                </row>
+                <row>
+                  <cell><m>2</m></cell>
+                  <cell><m>4(2)^2-8(2)+5=5</m></cell>
+                </row>
+                <row bottom="none">
+                  <cell><m>3</m></cell>
+                  <cell><m>4(3)^2-8(3)+5=17</m></cell>
+                </row>
+              </tabular>
+
+            </figure>
+
+            <image>
+
+            <latex-image>
+                <![CDATA[
+                    \begin{tikzpicture}
+                        \begin{axis}[ymin=-5,ymax=20,
+                                    ytick={-4,0,...,16},
+                                    minor ytick={-5,-4,...,20}]
+                            \addplot+[domain=-1.179:3.179] {4*x^2-8*x+5};
+                            \addplot[soliddot] coordinates { (-1,17) (0,5) (1,1) (2,5) (3,17)};
+                        \end{axis}
+                    \end{tikzpicture}
+                ]]>
+            </latex-image>
+            </image>
+
+          </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            For <m>y=-x^2+4x+2</m>, determine the vertex,
+            create a table of ordered pairs,
+            and then make a graph.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The vertex occurs at <m>(2,6)</m>.
+          </p>
+
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <figure>
+              <caption></caption>
+              <tabular valign="top" bottom="minor">
+                <col halign="right" right="minor"/>
+                <col halign="right"/>
+                <row bottom="medium">
+                  <cell><m>x</m></cell>
+                  <cell halign="center"><m>y=-x^2+4x+2</m></cell>
+                </row>
+                <row>
+                  <cell><m>-1</m></cell>
+                  <cell><m>-(-1)^2+4(-1)+2=-3</m></cell>
+                </row>
+                <row>
+                  <cell><m>0</m></cell>
+                  <cell><m>-(0)^2+4(0)+2=2</m></cell>
+                </row>
+                <row>
+                  <cell><m>1</m></cell>
+                  <cell><m>-(1)^2+4(1)+2=5</m></cell>
+                </row>
+                <row>
+                  <cell><m>2</m></cell>
+                  <cell><m>-(2)^2+4(2)+2=6</m></cell>
+                </row>
+                <row>
+                  <cell><m>3</m></cell>
+                  <cell><m>-(3)^2+4(3)+2=5</m></cell>
+                </row>
+                <row>
+                  <cell><m>4</m></cell>
+                  <cell><m>-(4)^2+4(4)+2=2</m></cell>
+                </row>
+                <row bottom="none">
+                  <cell><m>5</m></cell>
+                  <cell><m>-(5)^2+4(5)^2+2=-3</m></cell>
+                </row>
+              </tabular>
+
+            </figure>
+
+            <image>
+
+            <latex-image>
+                <![CDATA[
+                    \begin{tikzpicture}
+                        \begin{axis}[]
+                            \addplot+[domain=-1.606:5.606] {-1*x^2+4*x+2};
+                            \addplot[soliddot] coordinates { (-1,-3) (0,2) (1,5) (2,6) (3,5) (4,2) (5,-3)};
+                        \end{axis}
+                    \end{tikzpicture}
+                ]]>
+            </latex-image>
+            </image>
+
+          </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            For <m>y=x^2-5x+3</m>, determine the vertex,
+            create a table of ordered pairs,
+            and then make a graph.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The vertex occurs at <m>(2.5,-3.25)</m>.
+          </p>
+
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <figure>
+              <caption></caption>
+              <tabular valign="top" bottom="minor">
+                <col halign="right" right="minor"/>
+                <col halign="right"/>
+                <row bottom="medium">
+                  <cell><m>x</m></cell>
+                  <cell halign="center"><m>y=x^2-5x+3</m></cell>
+                </row>
+                <row>
+                  <cell><m>1</m></cell>
+                  <cell><m>(1)^2-5(1)+3=-1</m></cell>
+                </row>
+                <row>
+                  <cell><m>2</m></cell>
+                  <cell><m>(2)^2-5(2)+3=-3</m></cell>
+                </row>
+                <row>
+                  <cell><m>2.5</m></cell>
+                  <cell><m>(2.5)^2-5(2.5)+3=-3.25</m></cell>
+                </row>
+                <row>
+                  <cell><m>3</m></cell>
+                  <cell><m>(3)^2-5(3)+3=-3</m></cell>
+                </row>
+                <row bottom="none">
+                  <cell><m>4</m></cell>
+                  <cell><m>(4)^2-5(4)+3=-1</m></cell>
+                </row>
+              </tabular>
+
+            </figure>
+
+            <image>
+
+            <latex-image>
+                <![CDATA[
+                    \begin{tikzpicture}
+                        \begin{axis}[]
+                            \addplot+[domain=-0.702:5.702] {x^2-5*x+3};
+                            \addplot[soliddot] coordinates { (0,3) (1,-1) (2,-3) (2.5,-3.25) (3,-3) (4,-1) (5,3)};
+                        \end{axis}
+                    \end{tikzpicture}
+                ]]>
+            </latex-image>
+            </image>
+
+          </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            For <m>y=-2x^2-5x+6</m>, determine the vertex,
+            create a table of ordered pairs,
+            and then make a graph.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The vertex occurs at <m>(-1.25,9.125)</m>.
+            The axis of symmetry is used to determine points on the graph not listed in the table.
+          </p>
+
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <figure>
+              <caption></caption>
+              <tabular valign="top" bottom="minor">
+                <col halign="right" right="minor"/>
+                <col halign="right"/>
+                <row bottom="medium">
+                  <cell><m>x</m></cell>
+                  <cell halign="center"><m>y=-2x^2-5x+6</m></cell>
+                </row>
+                <row>
+                  <cell><m>-3</m></cell>
+                  <cell><m>-2(-3)^2-5(-3)+6=3</m></cell>
+                </row>
+                <row>
+                  <cell><m>-2</m></cell>
+                  <cell><m>-2(-2)^2-5(-2)+6=8</m></cell>
+                </row>
+                <row>
+                  <cell><m>-1</m></cell>
+                  <cell><m>-2(-1)^2-5(-1)+6=9</m></cell>
+                </row>
+                <row>
+                  <cell><m>0</m></cell>
+                  <cell><m>-2(0)^2-5(0)+6=6</m></cell>
+                </row>
+                <row bottom="none">
+                  <cell><m>1</m></cell>
+                  <cell><m>-2(1)^2-5(1)+6=-1</m></cell>
+                </row>
+              </tabular>
+
+            </figure>
+
+            <image>
+
+            <latex-image>
+                <![CDATA[
+                    \begin{tikzpicture}
+                        \begin{axis}[ymin=-5,ymax=10,
+                                    ytick={-4,-2,...,8},
+                                    minor ytick={-4,-3,...,9}]
+                            \addplot+[domain=-3.908:1.408] {-2*x^2-5*x+6};
+                            \addplot[soliddot] coordinates { (-3,3) (-2,8) (-1.25,9.125) (-1,9) (0,6) (1,-1)};
+                            \addplot[soliddot] coordinates { (0.5,3) (-0.5,8) (-1.5,9) (-2.5,6) (-3.5,-1)};
+                        \end{axis}
+                    \end{tikzpicture}
+                ]]>
+            </latex-image>
+            </image>
+
+          </sidebyside>
+        </solution>
+      </exercise>
+    </exercisegroup>
+
+    <exercisegroup>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/QuadraticApplications/MaxMinApplication10.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/QuadraticApplications/MaxMinApplication30.pg" />
+      </exercise>
+    </exercisegroup>
+
+    <exercisegroup cols="2">
+      <title>Graphing Quadratic Equations</title>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/ParabolaIntercepts10.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/ParabolaIntercepts40.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/ParabolaIntercepts70.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/ParabolaIntercepts80.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/ParabolaIntercepts90.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/ParabolaIntercepts120.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/ParabolaIntercepts150.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/ParabolaIntercepts160.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup cols="3">
+      <introduction>
+        <p>
+          Graph each curve by algebraically determining its key features.
+        </p>
+      </introduction>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>y=x^2-7x+12</m>
+          </p>
+        </statement>
+        <solution>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <stack>
+              <p>
+                The parabola opens upward.
+              </p>
+
+              <p>
+                The <m>x</m>-intercepts are <m>(3,0)</m> and <m>(4,0)</m>.
+              </p>
+
+              <p>
+                The <m>y</m>-intercept is <m>(0,12)</m>.
+              </p>
+
+              <p>
+                The vertex is <m>(3.5,-0.25)</m> and the axis of symmetry is <m>x=3.5</m>.
+              </p>
+
+              <p>
+                Symmetry can be used to determine the point <m>(7,12)</m>.
+              </p>
+            </stack>
+
+            <figure>
+              <caption></caption>
+              <image>
+
+            <latex-image>
+                <![CDATA[
+                    \begin{tikzpicture}
+                        \begin{axis}[xmin=-10,xmax=10,ymin=-5,ymax=15,
+                            xtick={-5,0,5},minor xtick={-10,-9,...,10},
+                            ytick={0,5,10},minor ytick={-5,-4,...,15}]
+                            \addplot+[domain=-0.405:7.405] {x^2-7*x+12};
+                            \addplot[soliddot] coordinates {(3,0) (4,0) (0,12) (3.5,-0.25) (7,12)};
+                        \end{axis}
+                    \end{tikzpicture}
+                ]]>
+            </latex-image>
+              </image>
+
+            </figure>
+          </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>y=-x^2-x+20</m>
+          </p>
+        </statement>
+        <solution>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <stack>
+              <p>
+                The parabola opens downward.
+              </p>
+
+              <p>
+                The <m>x</m>-intercepts are <m>(-5,0)</m> and <m>(4,0)</m>.
+              </p>
+
+              <p>
+                The <m>y</m>-intercept is <m>(0,20)</m>.
+              </p>
+
+              <p>
+                The vertex is <m>(-0.5,20.25)</m> and the axis of symmetry is <m>x=-0.5</m>.
+              </p>
+
+              <p>
+                Symmetry can be used to determine the point <m>(-1,20)</m>.
+              </p>
+            </stack>
+
+            <figure>
+              <caption></caption>
+              <image>
+
+            <latex-image>
+                <![CDATA[
+                    \begin{tikzpicture}
+                        \begin{axis}[xmin=-10,xmax=10,ymin=-5,ymax=25,
+                            xtick={-5,0,5},minor xtick={-10,-9,...,10},
+                            ytick={0,5,10,15,20},minor ytick={-5,-4,...,25}]
+                            \addplot+[domain=-5.525:4.525] {-x^2-x+20};
+                            \addplot[soliddot] coordinates {(-5,0) (4,0) (0,20) (-0.5,20.25) (-1,20)};
+                        \end{axis}
+                    \end{tikzpicture}
+                ]]>
+            </latex-image>
+              </image>
+
+            </figure>
+          </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>y=x^2-8x+16</m>
+          </p>
+        </statement>
+        <solution>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <stack>
+              <p>
+                The parabola opens upward.
+              </p>
+
+              <p>
+                The <m>x</m>-intercept is <m>(4,0)</m>.
+              </p>
+
+              <p>
+                The <m>y</m>-intercept is <m>(0,16)</m>.
+              </p>
+
+              <p>
+                The vertex is <m>(4,0)</m> and the axis of symmetry is <m>x=4</m>.
+              </p>
+
+              <p>
+                Symmetry can be used to determine the point <m>(8,16)</m>.
+              </p>
+            </stack>
+
+            <figure>
+              <caption></caption>
+              <image>
+
+            <latex-image>
+                <![CDATA[
+                    \begin{tikzpicture}
+                        \begin{axis}[xmin=-10,xmax=10,ymin=-5,ymax=20,
+                            xtick={-5,0,5},minor xtick={-10,-9,...,10},
+                            ytick={0,5,10,15},minor ytick={-5,-4,...,19}]
+                            \addplot+[domain=-0.472:8.472] {x^2-8*x+16};
+                            \addplot[soliddot] coordinates {(4,0) (0,16) (8,16)};
+                        \end{axis}
+                    \end{tikzpicture}
+                ]]>
+            </latex-image>
+              </image>
+
+            </figure>
+          </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>y=x^2-4</m>
+          </p>
+        </statement>
+        <solution>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <stack>
+              <p>
+                The parabola opens upward.
+              </p>
+
+              <p>
+                The <m>x</m>-intercepts are <m>(-2,0)</m> and <m>(2,0)</m>.
+              </p>
+
+              <p>
+                The <m>y</m>-intercept is <m>(0,-4)</m>.
+              </p>
+
+              <p>
+                The vertex is <m>(0,-4)</m> and the axis of symmetry is <m>x=0</m>.
+              </p>
+            </stack>
+
+            <figure>
+              <caption></caption>
+              <image>
+
+            <latex-image>
+                <![CDATA[
+                    \begin{tikzpicture}
+                        \begin{axis}[]
+                            \addplot+[domain=-3.317:3.317] {x^2-4};
+                            \addplot[soliddot] coordinates {(-2,0) (2,0) (0,-4) };
+                        \end{axis}
+                    \end{tikzpicture}
+                ]]>
+            </latex-image>
+              </image>
+
+            </figure>
+          </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>y=x^2+6x</m>
+          </p>
+        </statement>
+        <solution>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <stack>
+              <p>
+                The parabola opens upward.
+              </p>
+
+              <p>
+                The <m>x</m>-intercepts are <m>(-6,0)</m> and <m>(0,0)</m>.
+              </p>
+
+              <p>
+                The <m>y</m>-intercept is <m>(0,0)</m>.
+              </p>
+
+              <p>
+                The vertex is <m>(-3,-9)</m> and the axis of symmetry is <m>x=-3</m>.
+              </p>
+            </stack>
+
+            <figure>
+              <caption></caption>
+              <image>
+
+            <latex-image>
+                <![CDATA[
+                    \begin{tikzpicture}
+                        \begin{axis}[xmin=-10,xmax=10,ymin=-10,ymax=10,
+                            xtick={-5,0,5},minor xtick={-10,-9,...,10},
+                            ytick={-5,0,5},minor ytick={-10,-9,...,10}]
+                            \addplot+[domain=-7.359:1.359] {x^2+6*x};
+                            \addplot[soliddot] coordinates {(-6,0) (0,0) (-3,-9)};
+                        \end{axis}
+                    \end{tikzpicture}
+                ]]>
+            </latex-image>
+              </image>
+
+            </figure>
+          </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>y=-x^2+5x</m>
+          </p>
+        </statement>
+        <solution>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <stack>
+              <p>
+                The parabola opens downward.
+              </p>
+
+              <p>
+                The <m>x</m>-intercepts are <m>(5,0)</m> and <m>(0,0)</m>.
+              </p>
+
+              <p>
+                The <m>y</m>-intercept is <m>(0,0)</m>.
+              </p>
+
+              <p>
+                The vertex is <m>(2.5,6.25)</m> and the axis of symmetry is <m>x=2.5</m>.
+              </p>
+            </stack>
+
+            <figure>
+              <caption></caption>
+              <image>
+
+            <latex-image>
+                <![CDATA[
+                    \begin{tikzpicture}
+                        \begin{axis}[]
+                            \addplot+[domain=-1.14:6.14] {-x^2+5*x};
+                            \addplot[soliddot] coordinates {(5,0) (0,0) (2.5,6.25)};
+                        \end{axis}
+                    \end{tikzpicture}
+                ]]>
+            </latex-image>
+              </image>
+
+            </figure>
+          </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>y=x^2+4x+7</m>
+          </p>
+        </statement>
+        <solution>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <stack>
+              <p>
+                The parabola opens upward.
+              </p>
+
+              <p>
+                There are no <m>x</m>-intercepts.
+              </p>
+
+              <p>
+                The <m>y</m>-intercept is <m>(0,7)</m>.
+              </p>
+
+              <p>
+                The vertex is <m>(-2,3)</m> and the axis of symmetry is <m>x=-2</m>.
+              </p>
+
+              <p>
+                Symmetry can be used to determine the point <m>(-4,7)</m>.
+              </p>
+            </stack>
+
+            <figure>
+              <caption></caption>
+              <image>
+
+            <latex-image>
+                <![CDATA[
+                    \begin{tikzpicture}
+                        \begin{axis}[xmin=-10,xmax=10,ymin=-10,ymax=10,
+                            xtick={-5,0,5},minor xtick={-10,-9,...,10},
+                            ytick={-5,0,5},minor ytick={-10,-9,...,10}]
+                            \addplot+[domain=-4.646:0.646] {x^2+4*x+7};
+                            \addplot[soliddot] coordinates { (0,7) (-2,3) (-4,7)};
+                        \end{axis}
+                    \end{tikzpicture}
+                ]]>
+            </latex-image>
+              </image>
+
+            </figure>
+          </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>y=x^2+2x-5</m>
+          </p>
+        </statement>
+        <solution>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <stack>
+              <p>
+                The parabola opens upward.
+              </p>
+
+              <p>
+                The <m>x</m>-intercepts are
+                <m>(-1+\sqrt{6},0)</m> and <m>(-1-\sqrt{6},0)</m>,
+                or approximately <m>(-3.449,0)</m> and <m>(1.449,0)</m>.
+              </p>
+
+              <p>
+                The <m>y</m>-intercept is <m>(0,-5)</m>.
+              </p>
+
+              <p>
+                The vertex is <m>(-1,-6)</m> and the axis of symmetry is <m>x=-1</m>.
+              </p>
+
+              <p>
+                Symmetry can be used to determine the point <m>(-2,-5)</m>.
+              </p>
+            </stack>
+
+            <figure>
+              <caption></caption>
+              <image>
+
+            <latex-image>
+                <![CDATA[
+                    \begin{tikzpicture}
+                        \begin{axis}[xmin=-10,xmax=10,ymin=-10,ymax=10,
+                            xtick={-5,0,5},minor xtick={-10,-9,...,10},
+                            ytick={-5,0,5},minor ytick={-10,-9,...,10}]
+                            \addplot+[domain=-5:3] {x^2+2*x-5};
+                            \addplot[soliddot] coordinates {(-3.449,0) (1.449,0) (0,-5) (-1,-6) (-2,-5)};
+                        \end{axis}
+                    \end{tikzpicture}
+                ]]>
+            </latex-image>
+              </image>
+
+            </figure>
+          </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>y=-x^2+4x-1</m>
+          </p>
+        </statement>
+        <solution>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <stack>
+              <p>
+                The parabola opens downward.
+              </p>
+
+              <p>
+                The <m>x</m>-intercepts are
+                <m>(2-\sqrt{3},0)</m> and <m>(2+\sqrt{3},0)</m>,
+                or approximately <m>(0.268,0)</m> and <m>(3.732,0)</m>.
+              </p>
+
+              <p>
+                The <m>y</m>-intercept is <m>(0,-1)</m>.
+              </p>
+
+              <p>
+                The vertex is <m>(2,3)</m> and the axis of symmetry is <m>x=2</m>.
+              </p>
+
+              <p>
+                Symmetry can be used to determine the point <m>(4,-1)</m>.
+              </p>
+            </stack>
+
+            <figure>
+              <caption></caption>
+              <image>
+
+            <latex-image>
+                <![CDATA[
+                    \begin{tikzpicture}
+                       \begin{axis}[xmin=-10,xmax=10,ymin=-10,ymax=10,
+                            xtick={-5,0,5},minor xtick={-10,-9,...,10},
+                            ytick={-5,0,5},minor ytick={-10,-9,...,10}]
+                             \addplot+[domain=-1.606:5.606] {-x^2+4*x-1};
+                            \addplot[soliddot] coordinates {(0.268,0) (3.732,0) (0,-1) (2,3) (4,-1)};
+                        \end{axis}
+                    \end{tikzpicture}
+                ]]>
+            </latex-image>
+              </image>
+
+            </figure>
+          </sidebyside>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            <m>y=2x^2-4x-30</m>
+          </p>
+        </statement>
+        <solution>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <stack>
+              <p>
+                The parabola opens upward.
+              </p>
+
+              <p>
+                The <m>x</m>-intercepts are <m>(-3,0)</m> and <m>(5,0)</m>.
+              </p>
+
+              <p>
+                The <m>y</m>-intercept is <m>(0,-30)</m>.
+              </p>
+
+              <p>
+                The vertex is <m>(1,-32)</m> and the axis of symmetry is <m>x=1</m>.
+              </p>
+
+              <p>
+                Symmetry can be used to determine the point <m>(2,-30)</m>.
+              </p>
+            </stack>
+
+            <figure>
+              <caption></caption>
+              <image>
+
+            <latex-image>
+                <![CDATA[
+                    \begin{tikzpicture}
+                        \begin{axis}[xmin=-10,xmax=10,ymin=-40,ymax=10,
+                            xtick={-5,0,5},minor xtick={-10,-9,...,10},
+                            ytick={-35,-20,...,5},minor ytick={-40,-39,...,10}]
+                            \addplot+[domain=-3.583:5.583] {2*x^2-4*x-30};
+                            \addplot[soliddot] coordinates {(-3,0) (5,0) (0,-30) (1,-32) (2,-30)};
+                        \end{axis}
+                    \end{tikzpicture}
+                ]]>
+            </latex-image>
+              </image>
+
+            </figure>
+          </sidebyside>
+        </solution>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/QuadraticApplications/FlyingObjectApp10.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/QuadraticApplications/FlyingObjectApp30.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication80.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication90.pg" />
+      </exercise>
+    </exercisegroup>
+
+
+    <exercisegroup cols="2">
+      <title>Graphically Solving Equations and Inequalities</title>
+      <exercise>
+        <webwork copy="webwork-use-technology-to-count-curve-crossings"/>
+      </exercise>
+      <exercise>
+        <webwork copy="webwork-use-technology-to-count-curve-crossings-2"/>
+      </exercise>
+      <exercise>
+        <webwork copy="webwork-use-technology-to-count-curve-crossings-3"/>
+      </exercise>
+      <exercise>
+        <webwork copy="webwork-use-technology-to-count-curve-crossings-4"/>
+      </exercise>
+    </exercisegroup>
+
+    <exercisegroup cols="2">
+      <exercise>
+        <webwork copy="webwork-use-graphs-to-solve-equation"/>
+      </exercise>
+      <exercise>
+        <webwork copy="webwork-use-graphs-to-solve-equation-3"/>
+      </exercise>
+      <exercise>
+        <webwork copy="webwork-use-graphs-to-solve-equation-5"/>
+      </exercise>
+      <exercise>
+        <webwork copy="webwork-use-graphs-to-solve-equation-7"/>
+      </exercise>
+      <exercise>
+        <webwork copy="webwork-use-graphs-to-solve-equation-9"/>
+      </exercise>
+      <exercise>
+        <webwork copy="webwork-use-graphs-to-solve-equation-11"/>
+      </exercise>
+    </exercisegroup>
+  </exercises>
+
+</section>
+

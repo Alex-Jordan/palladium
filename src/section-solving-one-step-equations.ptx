@@ -1,0 +1,2580 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2026                                                       -->
+<!-- Alex Jordan                                                          -->
+<!-- *********************************************************************-->
+<section xml:id="section-solving-one-step-equations">
+  <title>Solving One-Step Equations</title>
+
+  <introduction>
+    <p>
+      In <xref ref="section-equations-inequalities-and-solutions"/> we learned how to check whether
+      or not a give number is a solution to an equation. But the number to check was always given to
+      us. In this section, we begin learning how to find solution(s) ourselves.
+    </p>
+
+    <figure xml:id="video-solving-one-step-equations">
+      <caption>Alternative Video Lesson</caption>
+      <video youtubeplaylist="PLmuZCPhWPt-cttxbKypuCvTQFoSXATxAF"/>
+    </figure>
+  </introduction>
+
+  <subsection>
+    <title>Imagine Filling in the Blanks</title>
+    <p>
+      Let's start with a simple situation<mdash/>so simple that you might not need algebra, but the
+      example serves as a warm-up.
+    </p>
+
+    <example xml:id="example-first-solution">
+      <p>
+        A number plus <m>2</m> is <m>6</m>. What is that number?
+      </p>
+      <p>
+        You may be so familiar with arithmetic that you know the answer already. The
+        <em>algebra</em> approach is to translate <q>A number plus <m>2</m> is <m>6</m></q> into an
+        equation:
+        <me>
+          x+2=6
+        </me>
+        where <m>x</m> is the number we are trying to find. How do we find the value for <m>x</m>
+        that makes the equation true?
+      </p>
+      <p>
+        One valid option is to <em>imagine</em> what number you could put in place of <m>x</m> that
+        would result in a true equation.
+        <ul>
+          <li>
+            <p>
+              Would <m>0</m> work? No, that would mean <m>0+2=6</m>, which is false.
+            </p>
+          </li>
+          <li>
+            <p>
+              Would <m>17</m> work? No, that would mean <m>17+2=6</m>, which is false.
+            </p>
+          </li>
+          <li>
+            <p>
+              Would <m>4</m> work? Yes, because <m>4+2=6</m> is a true equation.
+            </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        So one solution to the equation is <m>4</m>. No other numbers can be a solution, because
+        when you add <m>2</m> to something smaller than <m>4</m>, the result is smaller than
+        <m>6</m>. And when you add <m>2</m> to something larger than <m>4</m>, the result is larger
+        than <m>6</m>.
+      </p>
+    </example>
+
+    <p>
+      This approach (<q>imagining</q> what number works in the equation) might work for you to solve
+      <em>very basic</em> equations. It's not going to work in general with more complicated
+      equations. And so we move on to a more systematic approach that you can use all the time.
+    </p>
+  </subsection>
+
+  <subsection xml:id="subsection-balancing">
+    <title>The Basic Principle of Algebra</title>
+    <p>
+      Let's revisit <xref ref="example-first-solution"/>, but think it through differently.
+    </p>
+
+    <example>
+      <p>
+        If a number plus <m>2</m> is <m>6</m>, what is the number?
+      </p>
+
+      <p>
+        If a number <em>plus</em> <m>2</m> equals <m>6</m>, then the number is a little smaller than
+        <m>6</m>. We should be able to <em>subtract</em> <m>2</m> from <m>6</m> to get that unknown
+        number. (We are using the <em>opposite</em> operation from addition, which is subtraction.)
+      </p>
+
+      <figure>
+        <caption>Add <m>2</m> to mystery number to get <m>6</m>, or subtract <m>2</m> from <m>6</m> to get mystery number</caption>
+        <sidebyside widths="47% 47%">
+          <image>
+            <shortdescription>
+              a number line marked at a mystery location with "?";
+              an arrow leaves "?" and arcs to the right, stopping at 6;
+              above the arrow it says "add 2"
+            </shortdescription>
+            <latex-image label="numberline-add-2-get-6">
+              \begin{tikzpicture}
+                \begin{axis}[
+                    numberline,
+                    xtick = {4,6},
+                    xticklabels = {{?},6},
+                    xlabel =,
+                    xmin = -1,
+                    xmax = 8,
+                    minor xtick = {},
+                    width = 5cm
+                  ]
+                  \addplot[only marks] coordinates {(4,0) (6,0)};
+                  \draw[-{Kite}] (axis cs:4, 0.2) to[out=45, in=135] node[pos=0.5, above] {add \(2\)} (axis cs:6,0.2);
+                \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+
+          <image>
+            <shortdescription>
+              a number line marked at a mystery location with "?";
+              an arrow leaves "?" and arcs to the right, stopping at 6;
+              above the arrow it says "add 2"
+            </shortdescription>
+            <latex-image label="numberline-subtract-2-get-solution">
+              \begin{tikzpicture}
+                \begin{axis}[
+                    numberline,
+                    xtick = {4,6},
+                    xticklabels = {{?},6},
+                    xlabel =,
+                    xmin = -1,
+                    xmax = 8,
+                    minor xtick = {},
+                    width = 5cm
+                  ]
+                  \addplot[only marks] coordinates {(4,0) (6,0)};
+                  \draw[{Kite}-] (axis cs:4, 0.2) to[out=45, in=135] node[pos=0.5, above] {subtract \(2\)} (axis cs:6,0.2);
+                \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </sidebyside>
+      </figure>
+
+      <p>
+        Doing that subtraction: <m>6-2=4</m>.
+      </p>
+    </example>
+
+    <p>
+      Let's try this strategy with another example.
+    </p>
+
+    <example>
+      <p>
+        If a number <em>minus</em> <m>2</m> equals <m>6</m>, what is that number?
+        The mystery number must be a little larger than <m>6</m>.
+        The opposite of subtraction is addition, so if we <em>add</em>
+        <m>2</m> to <m>6</m> we will find the unknown number.
+        So the unknown number is <m>6+2=8</m>.
+      </p>
+    </example>
+
+    <p>
+      Does this strategy work with multiplication and division?
+    </p>
+
+    <example xml:id="example-two-x-equals-six">
+      <p>
+        If a number multiplied by <m>2</m> makes <m>6</m>, what is that number?
+        The mystery number is small, since it gets multiplied by <m>2</m> to make <m>6</m>.
+        If we <em>divide</em> <m>6</m> by <m>2</m>, we will find the unknown number.
+        Note that division is the opposite action of multiplication.
+      </p>
+
+      <figure>
+        <caption>Multiply mystery number by <m>2</m> to get <m>6</m>, or divide <m>6</m> by <m>2</m> to get mystery number</caption>
+        <sidebyside widths="47% 47%">
+          <image>
+            <shortdescription>
+              a number line marked at a mystery location with "?";
+              an arrow leaves "?" and arcs to the right, stopping at 6;
+              above the arrow it says "multiply by 2"
+            </shortdescription>
+            <latex-image label="numberline-multiply-by-2-get-6">
+              \begin{tikzpicture}
+                \begin{axis}[
+                    numberline,
+                    xtick = {3,6},
+                    xticklabels = {{?},6},
+                    xlabel =,
+                    xmin = -1,
+                    xmax = 8,
+                    minor xtick = {},
+                    width = 5cm
+                  ]
+                  \addplot[only marks] coordinates {(3,0) (6,0)};
+                  \draw[-{Kite}] (axis cs:3, 0.2) to[out=45, in=135] node[pos=0.5, above] {multiply by \(2\)} (axis cs:6,0.2);
+                \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+
+          <image>
+            <shortdescription>
+              a number line marked at a mystery location with "?";
+              an arrow leaves "?" and arcs to the right, stopping at 6;
+              above the arrow it says "divide by 2"
+            </shortdescription>
+            <latex-image label="numberline-divide-by-2-get-solution">
+              \begin{tikzpicture}
+                \begin{axis}[
+                    numberline,
+                    xtick = {3,6},
+                    xticklabels = {{?},6},
+                    xlabel =,
+                    xmin = -1,
+                    xmax = 8,
+                    minor xtick = {},
+                    width = 5cm
+                  ]
+                  \addplot[only marks] coordinates {(3,0) (6,0)};
+                  \draw[{Kite}-] (axis cs:3, 0.2) to[out=45, in=135] node[pos=0.5, above] {divide by \(2\)} (axis cs:6,0.2);
+                \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </sidebyside>
+      </figure>
+      <p>
+        So the unknown number is <m>\frac{6}{2}=3</m>.
+      </p>
+    </example>
+
+    <example>
+      <p>
+        If a number divided by <m>2</m> equals <m>6</m>, what is the number?
+        We must be starting with a larger number, since cutting it in half makes <m>6</m>.
+        If we <em>multiply</em> <m>6</m> by <m>2</m> (because multiplying is the opposite of dividing)
+        then we find the unknown number is <m>6\cdot2=12</m>.
+      </p>
+    </example>
+
+    <p>
+      These examples explore an important principle for solving an equation<mdash/>applying an
+      opposite arithmetic operation. We can revisit <xref ref="example-first-solution"/>
+      and apply this strategy with more care and intentionality.
+      If a number plus <m>2</m> is <m>6</m>, what is the number?
+      We will use <m>x</m> to represent the unknown number.
+      The question translates into the math equation
+      <me>
+        x+2=6
+      </me>.
+      Picture the equal sign as the middle of a balanced scale.
+      The left side has a brick labeled <q><m>x</m> lb</q> together with <m>2</m> one-pound bricks.
+      So the total weight on the left is <m>x+2</m>. The right side has <m>6</m> one-pound bricks.
+      <xref ref="figure-balance-scale"/> (left side) shows the scale.
+    </p>
+
+    <aside>
+      <title>Abbreviation for <q>pound</q></title>
+      <p>
+        Why is <q>lb</q> the abbreviation for <q>pound</q>?
+        It has a connection to a balance scale (⚖),
+        which is the symbol for the Zodiac sign <alert>L</alert>i<alert>b</alert>ra.
+      </p>
+    </aside>
+
+    <figure xml:id="figure-balance-scale">
+      <caption>Balance scale representing <m>x+2=6</m>, and the solution after taking away <m>2</m> from each side</caption>
+      <sidebyside widths="32% 32% 32%" valign="bottom">
+        <image>
+          <shortdescription>
+            a balance scale; its left arm has one brick marked x lb and two bricks marked 1 lb;
+            its right arm has six bricks marked 1 lb; the scale is in a state of balance
+          </shortdescription>
+          <latex-image label="balance-scale">
+            \begin{tikzpicture}[scale=0.32]
+              \small
+              \draw[fill=wood] (4.5,0) -- (5.5,0) -- (5,1) -- cycle;
+              \draw[fill=wood] (0,0.9) rectangle (10,1);
+              \draw [fill=firstcolor!25] (-0.5,1) rectangle (2.5,4) node[pos=0.5] {$x$ lb};
+              \foreach \x in {4, 5.5}
+                  \draw [fill=secondcolor!25] (0,\x) rectangle (2,\x+1.5) node[pos=0.5] {$1$ lb};
+              \foreach \x in {1, 2.5, ..., 8.5}
+                  \draw [fill=secondcolor!25] (8,\x) rectangle (10,\x+1.5) node[pos=0.5] {$1$ lb};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+
+        <image>
+          <shortdescription>
+            a balance scale; its left arm has one brick marked x lb and two bricks marked 1 lb;
+            its right arm has six bricks marked 1 lb; the scale is in a state of balance;
+            two of the 1 lb bricks on each side are being removed
+          </shortdescription>
+          <latex-image label="balance-scale-subtracting">
+            \begin{tikzpicture}[scale=0.32]
+              \small
+              \draw[fill=wood] (4.5,0) -- (5.5,0) -- (5,1) -- cycle;
+              \draw[fill=wood] (0,0.9) rectangle (10,1);
+              \draw [fill=firstcolor!25] (-0.5,1) rectangle (2.5,4) node[pos=0.5] {$x$ lb};
+              \foreach \x in {4, 5.5} {
+                  \draw [dashed, fill=secondcolor!10] (0,\x) rectangle (2,\x+1.5);
+                  \draw [dashed] (0,\x) -- (2,\x+1.5);
+                  \draw [dashed] (2,\x) -- (0,\x+1.5);
+              }
+              \foreach \x in {1, 2.5, ..., 5.5}
+                  \draw [fill=secondcolor!25] (8,\x) rectangle (10,\x+1.5) node[pos=0.5] {$1$ lb};
+              \foreach \x in {7, 8.5} {
+                  \draw [dashed, fill=secondcolor!10] (8,\x) rectangle (10,\x+1.5);
+                  \draw [dashed] (8,\x) -- (10,\x+1.5);
+                  \draw [dashed] (10,\x) -- (8,\x+1.5);
+              }
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+
+        <image>
+          <shortdescription>
+            a balance scale; its left arm has a brick marked x lb;
+            its right arm has four bricks marked 1 lb; the scale is in a state of balance
+          </shortdescription>
+          <latex-image label="balance-scale-solution">
+            \begin{tikzpicture}[scale=0.32]
+              \small
+              \draw[fill=wood] (4.5,0) -- (5.5,0) -- (5,1) -- cycle;
+              \draw[fill=wood] (0,0.9) rectangle (10,1);
+              \draw [fill=firstcolor!25] (-0.5,1) rectangle (2.5,4) node[pos=0.5] {$x$ lb};
+              \foreach \x in {1, 2.5, ..., 5.5}
+                  \draw [fill=secondcolor!25] (8,\x) rectangle (10,\x+1.5) node[pos=0.5] {$1$ lb};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </sidebyside>
+    </figure>
+
+    <p>
+      To find the weight of the unknown brick, we can take away <m>2</m> one-pound bricks from
+      <em>each</em> side of the scale and that will keep the scale balanced.
+      <xref ref="figure-balance-scale"/> (right side) shows the solution.
+    </p>
+
+    <p>
+      An equation is like a balanced scale: the two sides of the equation are equal,
+      and the two sides of the balanced scale have equal weight.
+      Just like we can take away <m>2</m> lb from each side of a balanced scale,
+      we can subtract <m>2</m> from each side of an equation.
+      Instead of drawing two pictures of balance scales,
+      we can use algebra symbols and solve the equation <m>x+2=6</m> in the following way:
+      <md>
+        <mrow>x+2\amp=6\amp\amp\text{like a balanced scale}</mrow>
+        <mrow>x+2\subtractright{2}\amp=6\subtractright{2}\amp\amp\text{remove the same quantity from each side}</mrow>
+        <mrow>x\amp=4\amp\amp\text{still balanced; now it straight up tells you the solution}</mrow>
+      </md>
+    </p>
+
+    <p>
+      Each line of the algebra above shows what is called an <term>equivalent equation</term>.                <idx><h>Equation(s)</h><h>equivalent</h></idx>
+      Each of those equations is <q>algebraically equivalent</q> to the one that came before it,              <idx><h>Equivalent equations</h></idx>
+      meaning it has exactly the same solution(s). The final equivalent equation <m>x=4</m>
+      tells us directly that the solution to the equation is <m>4</m>.
+    </p>
+
+    <p>
+      In theory, there could have been more than one solution to the equation (although that is
+      not the case with this equation). So conceptually, there is a <em>collection</em> of solutions
+      to any given equation. We call this collection a <term>solution set</term>.                            <idx><h>Equation(s)</h><h>solution set of</h></idx>
+      Any set of numbers that only has one or a few numbers in it                                            <idx><h>Solution set</h><h>of equation</h></idx>
+      is written using curly braces. In this case, the solution set is <m>\{4\}</m>.
+      Using braces to surround a collection of numbers listed out is called
+      <term>set notation</term>, not to be confused with set-builder notation from                           <idx><h>Set notation</h></idx>
+      <xref ref="section-comparison-symbols-and-notation-for-intervals"/>.
+    </p>
+
+    <!-- <p>
+      In <xref ref="figure-geogebra-solve-one-step"/>,
+      add/subtract something to/from each side of the equation to find its solution set.
+    </p>
+
+    <figure xml:id="figure-geogebra-solve-one-step">
+      <caption>Allowing Variables to Vary</caption>
+      <interactive xml:id="geogebra-solve-one-step" platform="geogebra" aspect="3:1">
+        <slate surface="geogebra" aspect="3:1">
+          setPerspective("G");
+          setCoordSystem(-1,1,-0.2,1);
+          setAxesVisible(false, false);
+          evalCommand("b = Slider(-9,9,1)");
+          evalCommand("b = 1");
+          setColor("b",158,12,15);
+          setLabelStyle("b",2);
+          evalCommand("B = abs(b)");
+          evalCommand('s = If(b&lt;0,"{}-"+B,"{}+"+B)');
+          setVisible("s", false);
+          evalCommand("l = 2+b");
+          evalCommand("r = 9+b");
+          evalCommand("left = x+l");
+          evalCommand("right = r");
+          setVisible("left", false);
+          setVisible("right", false);
+          evalCommand('stylesolution = If(r==7,"\\color[HTML]{263c53}\\bf","")');
+          setVisible("stylesolution", false);
+          evalCommand('solutionstatement = If(r==7,"The solution set is {7}.","")');
+          evalCommand('evaluation=Text("\\begin{aligned}x+2&amp;=9\\\\x+2\\color[HTML]{9e0c0f}\\bf"+s+"&amp;=9\\color[HTML]{9e0c0f}\\bf"+s+"\\\\"+left+"&amp;="+stylesolution+right"\\end{aligned}",(-0.9,0.6),true,true)');
+          evalCommand('instrucitons=Text("Use the slider to add or subtract\\\\nfrom each side of the equation\\\\nuntil you find the solution.",(0,0.6),false,false)');
+          enableShiftDragZoom(false);
+        </slate>
+      </interactive>
+    </figure> -->
+
+    <p>
+      We have learned we can add or subtract the same number on each side of the equal sign,
+      just like we can add or remove the same amount of weight on a balanced scale.
+      Can we multiply and divide the same number on each side of the equal sign?
+      Let's look at <xref ref="example-two-x-equals-six"/>
+      again: If a number times <m>2</m> is <m>6</m>, what is the number?
+      Another balance scale can help visualize this.
+    </p>
+
+    <figure>
+      <caption>Balance scale representing <m>2x=6</m>, and the solution after taking away half from each side</caption>
+      <sidebyside widths="32% 32% 32%" valign="bottom">
+        <image>
+          <shortdescription>
+            a balance scale; its left arm has two bricks marked x lb;
+            its right arm has six bricks marked 1 lb;
+            the scale is in a state of balance
+          </shortdescription>
+          <latex-image label="balance-scale-multiplication">
+            \begin{tikzpicture}[scale=0.32]
+              \small
+              \draw[fill=wood] (4.5,0) -- (5.5,0) -- (5,1) -- cycle;
+              \draw[fill=wood] (0,0.9) rectangle (10,1);
+              \foreach \x in {1, 4}
+                \draw [fill=firstcolor!25] (-0.5,\x) rectangle (2.5,\x+3) node[pos=0.5] {$x$ lb};
+              \foreach \x in {1, 2.5, ..., 8.5}
+                \draw [fill=secondcolor!25] (8,\x) rectangle (10,\x+1.5) node[pos=0.5] {$1$ lb};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+
+        <image>
+          <shortdescription>
+            a balance scale; its left arm has two bricks marked x lb;
+            its right arm has six bricks marked 1 lb;
+            the scale is in a state of balance;
+            half the bricks on each side are being removed
+          </shortdescription>
+          <latex-image label="balance-scale-dividing">
+            \begin{tikzpicture}[scale=0.32]
+              \small
+              \draw[fill=wood] (4.5,0) -- (5.5,0) -- (5,1) -- cycle;
+              \draw[fill=wood] (0,0.9) rectangle (10,1);
+              \draw [fill=firstcolor!25] (-0.5,1) rectangle (2.5,4) node[pos=0.5] {$x$ lb};
+              \draw [dashed, fill=firstcolor!10] (-0.5,4) rectangle (2.5,7);
+              \draw [dashed] (-0.5,4) -- (2.5,7);
+              \draw [dashed] (-0.5,7) -- (2.5,4);
+              \foreach \x in {1, 2.5, 4}
+                \draw [fill=secondcolor!25] (8,\x) rectangle (10,\x+1.5) node[pos=0.5] {$1$ lb};
+              \foreach \x in {5.5, 7, 8.5} {
+                \draw [dashed, fill=secondcolor!10] (8,\x) rectangle (10,\x+1.5);
+                \draw [dashed] (8,\x) -- (10,\x+1.5);
+                \draw [dashed] (10,\x) -- (8,\x+1.5);
+              }
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+
+        <image>
+          <shortdescription>
+            a balance scale; its left arm has a brick marked x lb;
+            its right arm has three bricks marked 1 lb; the scale is in a state of balance
+          </shortdescription>
+          <latex-image label="balance-scale-multiplication-solution">
+            \begin{tikzpicture}[scale=0.32]
+              \small
+              \draw[fill=wood] (4.5,0) -- (5.5,0) -- (5,1) -- cycle;
+              \draw[fill=wood] (0,0.9) rectangle (10,1);
+              \draw [fill=firstcolor!25] (-0.5,1) rectangle (2.5,4) node[pos=0.5] {$x$ lb};
+              \foreach \x in {1, 2.5, 4}
+                \draw [fill=secondcolor!25] (8,\x) rectangle (10,\x+1.5) node[pos=0.5] {$1$ lb};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </sidebyside>
+    </figure>
+
+    <p>
+      At first, the scale is balanced.
+      If we cut the weight in half on both sides, it should still be balanced.
+      We can see from the scale that <m>x=3</m> is correct.
+    </p>
+
+    <p>
+      Removing half of the weight from each side of the scale is like dividing both sides of an equation by <m>2</m>:
+      <md>
+        <mrow>2x\amp=6</mrow>
+        <mrow>\divideunder{2x}{2}\amp=\divideunder{6}{2}</mrow>
+        <mrow>x\amp=3</mrow>
+      </md>
+      The equivalent equation in this example is <m>x=3</m>,
+      which tells us that the solution to the equation is <m>3</m> and the solution set is <m>\{3\}</m>.
+    </p>
+
+    <remark>
+      <p>
+        Note that when we divide each side of an equation by a number,
+        we use a fraction bar, not a division symbol.
+        The equation <m>\divideunder{2x}{2}=\divideunder{6}{2}</m> could be written as
+        <m>2x\divideright{2}=6\divideright{2}</m>, but algebra tends to avoid using the
+        <m>\div</m> symbol. In part, this is because when writing by hand, it might be confused
+        with a subtraction sign.
+      </p>
+    </remark>
+
+    <p>
+      Similarly, we can multiply each side of an equation by <m>2</m> if that is helpful,
+      and it will keep a scale in balance. We can summarize these properties.
+    </p>
+
+    <fact xml:id="fact-properties-of-equivalent-equations">
+      <title>Properties of Equivalent Equations</title>                                                       <idx><h>Addition property</h><h>of equality</h></idx>
+                                                                                                              <idx><h>Equation(s)</h><h>addition property of equality for solving</h></idx>
+                                                                                                              <idx><h>Subtraction property of equality</h></idx>
+                                                                                                              <idx><h>Multiplication property of equality</h></idx>
+                                                                                                              <idx><h>Equation(s)</h><h>multiplication property of equality for solving</h></idx>
+                                                                                                              <idx><h>Division property of equality</h></idx>
+      <statement>
+        <p>
+          If there is an equation <m>\text{Left}=\text{Right}</m>, we can do the following to obtain
+          an equivalent equation.
+        </p>
+        <sbsgroup>
+          <sidebyside widths="47% 47%">
+            <p>
+              <me>\text{Left}\addright{c}=\text{Right}\addright{c}</me>
+              (add the same number to each side)
+            </p>
+            <p>
+              <me>\text{Left}\subtractright{c}=\text{Right}\subtractright{c}</me>
+              (subtract the same number from each side)
+            </p>
+          </sidebyside>
+          <sidebyside widths="47% 47%">
+            <p>
+              <me>\text{(Left)}\multiplyright{c}=\text{(Right)}\multiplyright{c}</me>
+              (multiply each side of the equation by the same <em>nonzero</em> number)
+            </p>
+            <p>
+              <me>\displaystyle\divideunder{\text{Left}}{c}=\divideunder{\text{Right}}{c}</me>
+              (divide each side of the equation by the same <em>nonzero</em> number)
+            </p>
+          </sidebyside>
+        </sbsgroup>
+      </statement>
+    </fact>
+  </subsection>
+
+  <subsection>
+    <title>Solving One-Step Equations and Stating Solution Sets</title>                                       <idx><h>Linear equations</h><h>solving</h></idx>
+
+    <p>
+      Notice when we solved equations in <xref ref="subsection-balancing"/>,
+      the final equation looked like <m>x=\text{number}</m>,
+      where the variable <m>x</m> stands alone on one side of the equal sign.
+      The goal of solving any equation is to <em>isolate the variable</em> in this same manner.               <idx><h>Solving an equation</h></idx>
+    </p>
+
+    <p>
+      Putting together both strategies
+      (applying the opposite operation and balancing equations like a scale)
+      that we just explored,
+      we summarize how to solve a one-step linear equation.
+    </p>
+
+    <algorithm xml:id="algorithm-steps-to-solve-one-step-linear-equation">
+      <title>Steps to Solving Simple (One-Step) Linear Equations</title>
+      <statement>
+        <p>
+          <dl width="narrow">
+            <li>
+              <title>Apply</title>
+              <p>
+                Apply the opposite operation to both sides of the equation.
+                If a number was added to the variable, subtract that number, and vice versa.
+                If the variable was multiplied by a number, divide by that number, and vice versa.
+              </p>
+            </li>
+
+            <li>
+              <title>Check</title>
+              <p>
+                Check the solution.
+                This means verify that what you think is the solution actually solves the equation.
+                It's only human to have made a simple arithmetic mistake,
+                and by checking you will protect yourself from this.
+                Also there are situations where doing all of the algebra correctly will tell you
+                which numbers are <em>possible</em> solutions, but even though your steps have no
+                errors, those numbers might still not actually solve the original equation.
+                Checking solutions will catch these situations.
+              </p>
+            </li>
+
+            <li>
+              <title>Summarize</title>
+              <p>
+                State the solution set, or in the case of application problems,
+                summarize the result using a complete sentence and appropriate units.
+              </p>
+            </li>
+          </dl>
+        </p>
+      </statement>
+    </algorithm>
+
+    <p>
+      Let's look at a few examples.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Solve for <m>y</m> in the equation <m>7+y=3</m>.
+        </p>
+      </statement>
+      <solution>
+        <sidebyside widths="47% 47%" margins="0%">
+          <p>
+            To isolate <m>y</m>, we need to remove <m>7</m> from the left side.
+            Since <m>7</m> is being <em>added</em> to <m>y</m>,
+            we need to <em>subtract</em> <m>7</m> from each side of the equation.
+            <md>
+              <mrow>7+y\amp=3</mrow>
+              <mrow>7+y\subtractright{7}\amp=3\subtractright{7}</mrow>
+              <mrow>y\amp=-4</mrow>
+            </md>
+          </p>
+
+          <p>
+            We should check the solution.
+            To do that, substitute <m>-4</m> in for <m>y</m> in the original equation:
+            <md>
+              <mrow>7+y\amp=3</mrow>
+              <mrow>7+(\substitute{-4})\amp\wonder{=}3</mrow>
+              <mrow>3\amp\confirm{=}3</mrow>
+            </md>
+            The solution <m>-4</m> is checked, and the solution set is <m>\{-4\}</m>.
+          </p>
+        </sidebyside>
+      </solution>
+    </example>
+
+    <exercise xml:id="exercise-solve-add-decimal" label="solve-add-decimal">
+      <webwork>
+        <pg-code>
+          Context("FiniteSolutionSets");
+          Context()->variables->are(z=>'Real');
+          Context()->flags->remove("NumberCheck");
+          $answer = Formula("{12.4}");
+        </pg-code>
+        <statement>
+          <p>
+            Solve the equation <m>-7.3+z=5.1</m> for <m>z</m>.
+          </p>
+
+          <p>
+            <var name="$answer" width="10" />
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Our goal is to remove that <m>-7.3</m> from the left side.
+            Since that negative number is being <em>added</em> to <m>z</m>,
+            we could <em>subtract</em> <m>-7.3</m> from both sides.
+            <md>
+              <mrow>-7.3+z\amp=5.1</mrow>
+              <mrow>-7.3+z\subtractright{(-7.3)}\amp=5.1\subtractright{(-7.3)}</mrow>
+              <mrow>z\amp=12.4</mrow>
+            </md>
+            It is just as effective to add positive <m>7.3</m> to each side.
+            <md>
+              <mrow>-7.3+z\amp=5.1</mrow>
+              <mrow>-7.3+z\addright{7.3}\amp=5.1\addright{7.3}</mrow>
+              <mrow>z\amp=12.4</mrow>
+            </md>
+          </p>
+
+          <p>
+            We should check the solution
+            by substituting <m>12.4</m> in for <m>z</m> in the original equation:
+            <md>
+              <mrow>-7.3+z\amp=5.1</mrow>
+              <mrow>-7.3+(\substitute{12.4})\amp\wonder{=}5.1</mrow>
+              <mrow>5.1\amp\confirm{=}5.1</mrow>
+            </md>
+            The solution <m>12.4</m> is checked, and the solution set is <m>\{12.4\}</m>.
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+
+    <exercise xml:id="exercise-solve-equation-solution-on-left" label="solve-equation-solution-on-left">
+      <webwork>
+        <pg-code>
+          Context("FiniteSolutionSets");
+          Context()->variables->are(a=>'Real');
+          Context()->flags->remove("NumberCheck");
+          $answer = Formula("{-3}");
+        </pg-code>
+        <statement>
+          <p>
+            Solve the equation <m>51=-17a</m> for <m>a</m>.
+          </p>
+
+          <p>
+            <var name="$answer" width="10" />
+          </p>
+        </statement>
+        <solution>
+          <p>
+            To isolate the variable <m>a</m>, we need to divide each side by <m>-17</m>
+            (because <m>a</m> is <em>multiplied</em> by <m>-17</m>).
+            <md>
+              <mrow>51\amp=-17a</mrow>
+              <mrow>\divideunder{51}{-17}\amp=\divideunder{-17a}{-17}</mrow>
+              <mrow>-3\amp=a</mrow>
+            </md>
+          </p>
+
+          <p>
+            We should check the solution
+            by substituting <m>-3</m> in for <m>a</m> in the original equation:
+            <md>
+              <mrow>51\amp=-17a</mrow>
+              <mrow>51\amp\wonder{=}-17(\substitute{-3})</mrow>
+              <mrow>51\amp\confirm{=}51</mrow>
+            </md>
+            The solution <m>-3</m> is checked, and the solution set is <m>\{-3\}</m>.
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+
+    <p>
+      Note that when solving the equation in <xref ref="exercise-solve-equation-solution-on-left"/>
+      we found <m>-3=a</m>, and did not bother to write it the other way round as <m>a=-3</m>.
+      All that really matters is that we ended with a clear statement of the solution set,
+      which was <m>\{-3\}</m>.
+    </p>
+
+    <example xml:id="example-find-diameter">
+      <statement>
+        <p>
+          The formula for a circle's circumference is <m>c=\pi d</m>, where <m>c</m> represents
+          circumference, <m>d</m> represents diameter, and <m>\pi</m> is a constant with the value
+          of <m>3.1415926\ldots</m>.
+        </p>
+        <p>
+          If a circle's circumference is
+          <quantity>
+            <mag>12\pi</mag><unit base="foot"/>
+          </quantity>,
+          find the circle's diameter.
+        </p>
+        <image width="35%">
+          <shortdescription>
+            a circle with the diameter labeled d and the circumference labeled c
+          </shortdescription>
+          <latex-image label="circle-diameter-circumference">
+            \begin{tikzpicture}
+              \node at (-3,0) {};
+              \draw (-2,0) -- (2,0) node[pos=0.5, above] {diameter $d$};
+              \def\myshift#1{\raisebox{1ex}}
+              \draw [
+                fill = firstcolor!20,
+                postaction = {
+                  decorate,
+                    decoration = {
+                      text along path,
+                      text align = center,
+                      text={|\myshift|The circumference $c$ is the distance all the way around.}
+                    }
+                  }
+                ] (0,-2) arc [
+                  start angle = 270,
+                  end angle = -90,
+                  x radius = 2,
+                  y radius = 2
+                ] ;
+              \draw (-2,0) -- (2,0) node[pos = 0.5, above] {diameter $d$};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </statement>
+      <solution>
+        <sidebyside widths="47% 47%" margins="0%">
+          <p>
+            The circumference is given as <m>12\pi</m> feet,
+            so we will substitute <m>c</m> in the formula with <m>12\pi</m>,
+            giving the equation <m>12\pi=\pi d</m>. Now we will solve for <m>d</m>:
+            <md>
+              <mrow>12\pi\amp=\pi d</mrow>
+              <mrow>\divideunder{12\pi}{\pi}\amp=\divideunder{\pi d}{\pi}</mrow>
+              <mrow>12\amp=d</mrow>
+            </md>
+          </p>
+
+          <p>
+            We should check the solution
+            by substituting <m>12</m> in for <m>d</m> in the original equation:
+            <md>
+              <mrow>12\pi\amp=\pi d</mrow>
+              <mrow>12\pi\amp\wonder{=}\pi \substitute{(12)}</mrow>
+              <mrow>12\pi\amp\confirm{=}12\pi</mrow>
+            </md>
+            This checks out, so the circle's diameter is
+            <quantity>
+              <mag>12</mag><unit base="foot"/>
+            </quantity>.
+          </p>
+        </sidebyside>
+      </solution>
+    </example>
+
+    <exercise label="find-celsius-temperature">
+      <webwork>
+        <pg-code>
+          $answer = NumberWithUnits("-233 degC");
+        </pg-code>
+        <statement>
+          <p>
+            To convert a temperature in degrees Celsius to degrees Kelvin,
+            there is a formula <m>K = C + 273</m>.
+            The surface temperature of Pluto is about <m>40</m> Kelvin.
+            What is the surface temperature of Pluto in degrees Celsius?
+          </p>
+          <instruction>You may enter <c>degC</c> for ^{\circ}C.</instruction>
+          <p>
+            <var name="$answer" width="10"/>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Since we know the Kelvin temperature is <m>40</m>, the formula becomes the equation
+            <me>
+              40 = C + 273
+            </me>
+            and we need to solve for <m>C</m>. With <m>273</m> being added,
+            we should subtract <m>273</m> from each side.
+            <md>
+              <mrow>40\subtractright{273}\amp= C + 273\subtractright{273}</mrow>
+              <mrow>-233\amp=C</mrow>
+            </md>
+            We should check the solution
+            by substituting <m>-233</m> in for <m>C</m> in the original equation:
+            <md>
+              <mrow>40\amp=C + 273</mrow>
+              <mrow>40\amp\wonder{=}\substitute{-233} + 273</mrow>
+              <mrow>40\amp\confirm{=}40</mrow>
+            </md>
+            This checks out, so the surface temperature of Pluto is <m>-233</m> degrees Celsius.
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+
+    <p>
+      Examples so far have solved an equation by undoing addition, subtraction, multiplication,
+      or division. There is one last arithmetic action that we will look into undoing:
+      <term>negation</term>. Negation is when you apply the negative sign to a number.                        <idx><h>Negation property of equality</h></idx>
+      Undoing negation is simple though: just negate again. For example, <m>-(-42)=42</m>.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Solve the equation <m>-b=2</m> for <m>b</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Our variable <m>b</m> is not yet isolated because of the negative sign in front.
+          To attack that negative sign, we can <q>negate</q> each side:
+          <md>
+            <mrow>-b\amp=2</mrow>
+            <mrow>\negate{-b}\amp=\negate{2}</mrow>
+            <mrow>b\amp=-2</mrow>
+          </md>
+          We removed the negative sign from <m>-b</m> by negating both sides,
+          and we can see that the solution set is <m>\{-2\}</m>.
+        </p>
+
+        <p>
+          An alternative is to think of the original negative sign as multiplication by <m>-1</m>.
+          In that case, dividing each side by <m>-1</m> will successfully isolate <m>b</m>.
+          <md>
+            <mrow>-b\amp=2</mrow>
+            <mrow>-1\cdot b\amp=2</mrow>
+            <mrow>\divideunder{-1\cdot b}{-1}\amp=\divideunder{2}{-1}</mrow>
+            <mrow>b\amp=-2</mrow>
+          </md>
+        </p>
+
+        <p>
+          Another alternative is to recognize that multiplying on each side by <m>-1</m> will
+          also cancel that unwanted negative sign.
+          <md>
+            <mrow>-b\amp=2</mrow>
+            <mrow>\multiplyleft{-1}(-b)\amp=\multiplyleft{-1}(2)</mrow>
+            <mrow>b\amp=-2</mrow>
+          </md>
+        </p>
+
+        <p>
+          It is recommended that you review these three approaches for undoing negation,
+          settle on the method that you like, and use it consistently.
+        </p>
+
+        <p>
+          We should check the solution
+          by substituting <m>-2</m> in for <m>b</m> in the original equation:
+          <md>
+            <mrow>-b\amp=2</mrow>
+            <mrow>-(\substitute{-2})\amp\confirm{=}2</mrow>
+          </md>
+          The solution <m>-2</m> is checked, and the solution set is <m>\{-2\}</m>.
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection>
+    <title>Equations with Fractions</title>
+    <p>
+      When an equation has fractions, solving it uses the same principles.
+      Of course you may need to use fraction arithmetic.
+      Also, you might make good use of the reciprocal of a fraction
+      as described in <xref ref="example-solve-when-multiplied-by-fraction"/>.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Solve the equation <m>\frac{2}{3}+g=\frac{1}{2}</m> for <m>g</m>.
+        </p>
+      </statement>
+      <solution>
+        <sidebyside widths="47% 47%" margins="0%">
+          <p>
+            Since <m>\frac23</m> is added to <m>g</m>,
+            we will subtract <m>\frac23</m> from each side.
+            <md>
+              <mrow>\frac{2}{3}+g\amp=\frac{1}{2}</mrow>
+              <mrow>\frac{2}{3}+g\subtractright{\frac{2}{3}}\amp=\frac{1}{2}\subtractright{\frac{2}{3}}</mrow>
+              <mrow>g\amp=\highlight{\frac{3}{6}}-\highlight{\frac{4}{6}}</mrow>
+              <mrow>g\amp=-\frac{1}{6}</mrow>
+            </md>
+          </p>
+
+          <p>
+            We should check the solution by substituting <m>-\frac{1}{6}</m> in for <m>g</m>:
+            <md>
+              <mrow>\frac{2}{3}+g\amp=\frac{1}{2}</mrow>
+              <mrow>\frac{2}{3}+\left(\substitute{-\frac{1}{6}}\right)\amp\wonder{=}\frac{1}{2}</mrow>
+              <mrow>\frac{4}{6}+\left(-\frac{1}{6}\right)\amp\wonder{=}\frac{1}{2}</mrow>
+              <mrow>\frac{3}{6}\amp\confirm{=}\frac{1}{2}</mrow>
+            </md>
+            The solution <m>-\frac{1}{6}</m> is checked,
+            and the solution set is <m>\left\{-\frac{1}{6}\right\}</m>.
+          </p>
+        </sidebyside>
+      </solution>
+    </example>
+
+    <exercise label="solve-by-adding-fraction">
+      <webwork>
+        <pg-code>
+          Context("FiniteSolutionSets");
+          Context()->variables->are(q => 'Real');
+          $answer = Formula("{27/14}");
+        </pg-code>
+        <statement>
+          <p>
+            Solve the equation <m>q - \frac{3}{7} = \frac{3}{2}</m> for <m>q</m>.
+          </p>
+
+          <p>
+            <var name="$answer" width="10" />
+          </p>
+        </statement>
+        <solution>
+          <p>
+            To remove the <m>\frac{3}{7}</m> from the left side,
+            we need to <em>add</em> <m>\frac{3}{7}</m> to each side of the equation.
+          </p>
+
+          <p>
+            <md>
+              <mrow>q-\frac{3}{7}\amp=\frac{3}{2}</mrow>
+              <mrow>q-\frac{3}{7}\addright{\frac{3}{7}}\amp=\frac{3}{2}\addright{\frac{3}{7}}</mrow>
+              <mrow>q\amp=\highlight{\frac{21}{14}}+\highlight{\frac{6}{14}}</mrow>
+              <mrow>q\amp=\frac{27}{14}</mrow>
+            </md>
+          </p>
+
+          <p>
+            We should check the solution
+            by substituting <m>\frac{27}{14}</m> in for <m>q</m> in the original equation:
+            <md>
+              <mrow>q-\frac{3}{7}\amp=\frac{3}{2}</mrow>
+              <mrow>\substitute{\frac{27}{14}}-\frac{3}{7}\amp\wonder{=}\frac{3}{2}</mrow>
+              <mrow>\frac{27}{14}-\frac{6}{14}\amp\wonder{=}\frac{3}{2}</mrow>
+              <mrow>\frac{21}{14}\amp\wonder{=}\frac{3}{2}</mrow>
+              <mrow>\frac{3}{2}\amp\confirm{=}\frac{3}{2}</mrow>
+            </md>
+            The solution <m>\frac{27}{14}</m> is checked,
+            and the solution set is <m>\left\{\frac{27}{14}\right\}</m>.
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+
+    <p>
+      When the variable in an equation is multiplied by a fraction,
+      you can use the reciprocal of that fraction to help solve the equation.
+      The <term>reciprocal</term> of a fraction is the fraction you get                                       <idx><h>Reciprocal</h></idx>
+      from swapping the numerator and denominator.
+      For example, the reciprocal of <m>\frac{2}{3}</m> is <m>\frac{3}{2}</m>.
+    </p>
+
+    <p>
+      A reciprocal is useful because when a fraction is multiplied by its reciprocal,
+      the result is <m>1</m>. For example, <m>\frac{2}{3}\cdot\frac{3}{2}=1</m>.
+      This helps us remove a fraction when it is multiplied by the variable.
+    </p>
+
+    <example xml:id="example-solve-when-multiplied-by-fraction">
+      <statement>
+        <p>
+          Solve the equation <m>\frac{5}{8}d=7</m> for <m>d</m>.
+        </p>
+      </statement>
+      <solution>
+        <sidebyside widths="47% 47%" margins="0%">
+          <p>
+            Our variable <m>d</m> is multiplied by the fraction <m>\frac{5}{8}</m>.
+            While we <em>could</em> divide on each side by <m>\frac{5}{8}</m>,
+            that leads to a messy four-level equation:
+            <m>\frac{\frac{5}{8}d}{\frac{5}{8}}=\frac{7}{\frac{5}{8}}</m>.
+            To avoid this, we can just <em>multiply</em> on each side by the reciprocal of <m>\frac{5}{8}</m>.
+            <md>
+              <mrow>\frac{5}{8}d\amp=7</mrow>
+              <mrow>\multiplyleft{\frac{8}{5}}\frac{5}{8}d\amp=\multiplyleft{\frac{8}{5}}7</mrow>
+              <mrow>1d\amp=\frac{8}{5}\cdot\highlight{\frac{7}{1}}</mrow>
+              <mrow>d\amp=\frac{56}{5}</mrow>
+            </md>
+          </p>
+
+          <p>
+            We should check the solution
+            by substituting <m>\frac{56}{5}</m> in for <m>d</m>:
+            <md>
+              <!-- <mrow>\frac{5}{8}d\amp=7</mrow> -->
+              <mrow>\frac{5}{8}\substitute{\left(\frac{56}{5}\right)}\amp\wonder{=}7</mrow>
+              <mrow>\frac{\cancel{5}}{8}\left(\frac{56}{\cancel{5}}\right)\amp\wonder{=}7</mrow>
+              <mrow>\frac{1}{\cancel{8}}\left(\frac{\cancelto{7}{56}}{1}\right)\amp\wonder{=}7</mrow>
+              <mrow>\frac{7}{1}\amp\confirm{=}7</mrow>
+            </md>
+            The solution <m>\frac{56}{5}</m> is checked,
+            and the solution set is <m>\left\{\frac{56}{5}\right\}</m>.
+          </p>
+        </sidebyside>
+      </solution>
+    </example>
+
+    <exercise label="solve-using-reciprocal">
+      <webwork>
+        <pg-code>
+          Context("FiniteSolutionSets");
+          $answer = Formula("{-55/3}");
+        </pg-code>
+        <statement>
+          <p>
+            Solve the equation <m>-\frac{3}{5}x=11</m> for <m>x</m>.
+          </p>
+
+          <p>
+            <var name="$answer" width="10" />
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Our variable <m>x</m> is multiplied by the fraction <m>-\frac{3}{5}</m>.
+            This is a negative number, so we should multiply by something negative to undo that part.
+            But also we should multiply by the reciprocal of <m>\frac{3}{5}</m>,
+            which is <m>\frac{5}{3}</m>. All together, we should multiply each side by <m>-\frac{5}{3}</m>.
+          </p>
+
+          <p>
+            <md>
+              <mrow>-\frac{3}{5}x\amp=11</mrow>
+              <mrow>\multiplyleft{-\frac{5}{3}}\left(-\frac{3}{5}x\right)\amp=\multiplyleft{-\frac{5}{3}}(11)</mrow>
+              <mrow>1x\amp=-\frac{5}{3}\left(\highlight{\frac{11}{1}}\right)</mrow>
+              <mrow>x\amp=-\frac{55}{3}</mrow>
+            </md>
+          </p>
+
+          <p>
+            We should check the solution by substituting <m>-\frac{55}{3}</m> in for <m>x</m> in the
+            original equation:
+            <md>
+              <!-- <mrow>-\frac{3}{5}x\amp=11</mrow> -->
+              <mrow>-\frac{3}{5}\substitute{\left(-\frac{55}{3}\right)}\amp\wonder{=}11</mrow>
+              <mrow>-\frac{\cancel{3}}{5}\left(-\frac{55}{\cancel{3}}\right)\amp\wonder{=}11</mrow>
+              <mrow>-\frac{1}{5}\left(-\frac{55}{1}\right)\amp\wonder{=}11</mrow>
+              <mrow>\frac{55}{5}\amp\confirm{=}11</mrow>
+            </md>
+            The solution <m>-\frac{55}{3}</m> is checked,
+            and the solution set is <m>\left\{-\frac{55}{3}\right\}</m>.
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+
+    <p>
+      Sometimes the variable is in the numerator of a fraction, like in <m>\frac{3x}{4}</m>.
+      This is actually the same as <m>\frac{3}{4}x</m>.
+      Either way, <m>x</m> is multiplied by <m>3</m> and divided by <m>4</m>.
+      So this is another situation where the reciprocal of a fraction can help.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Solve the equation <m>\frac{3x}{4}=10</m> for <m>x</m>.
+        </p>
+      </statement>
+      <solution>
+        <sidebyside widths="47% 47%" margins="0%">
+          <p>
+            We can multiply on each side by <m>\frac{4}{3}</m> and that will isolate <m>x</m>:
+            <md>
+              <mrow>\frac{3x}{4}\amp=10</mrow>
+              <mrow>\multiplyleft{\frac{4}{3}}\left(\frac{3x}{4}\right)\amp=\multiplyleft{\frac{4}{3}}(10)</mrow>
+              <mrow>\frac{4}{\cancel{3}}\left(\frac{\cancel{3}x}{4}\right)\amp=\frac{4}{3}\left(\highlight{\frac{10}{1}}\right)</mrow>
+              <mrow>\frac{\cancel{4}}{1}\left(\frac{x}{\cancel{4}}\right)\amp=\frac{40}{3}</mrow>
+              <mrow>x\amp=\frac{40}{3}</mrow>
+            </md>
+          </p>
+
+          <p>
+            We should check the solution
+            by substituting <m>\frac{40}{3}</m> in for <m>x</m> in the original equation:
+            <md>
+              <mrow>\frac{3x}{4}\amp=10</mrow>
+              <mrow>\frac{3\left(\substitute{\frac{40}{3}}\right)}{4}\amp\wonder{=}10</mrow>
+              <mrow>\frac{40}{4}\amp\wonder{=}10</mrow>
+              <mrow>10\amp\confirm{=}10</mrow>
+            </md>
+            The solution <m>\frac{40}{3}</m> is checked,
+            and the solution set is <m>\left\{\frac{40}{3}\right\}</m>.
+          </p>
+        </sidebyside>
+      </solution>
+    </example>
+
+    <exercise label="solve-with-variable-in-numerator">
+      <webwork>
+        <pg-code>
+          Context("FiniteSolutionSets");
+          Context()->variables->are(H=>'Real');
+          $answer = Formula("{8/7}");
+        </pg-code>
+          <statement>
+            <p>
+              Solve the equation <m>\frac{7H}{12}=\frac{2}{3}</m> for <m>H</m>.
+            </p>
+
+            <p>
+              <var name="$answer" width="10" />
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The left side is effectively the same thing as <m>\frac{7}{12}H</m>,
+              so multiplying by <m>\frac{12}{7}</m> will isolate <m>H</m>.
+            </p>
+
+            <p>
+              <md>
+                <mrow>\frac{7H}{12}\amp=\frac{2}{3}</mrow>
+                <mrow>\multiplyleft{\left(\frac{12}{7}\right)}\left(\frac{7H}{12}\right)\amp=\multiplyleft{\left(\frac{12}{7}\right)}\frac{2}{3}</mrow>
+                <mrow>\left(\frac{\cancel{12}}{\bcancel{7}}\right)\left(\frac{\bcancel{7}H}{\cancel{12}}\right)\amp=\left(\frac{\cancelto{4}{12}}{7}\right)\frac{2}{\cancel{3}}</mrow>
+                <mrow>H\amp=\frac{8}{7}</mrow>
+              </md>
+            </p>
+
+            <p>
+              We should check the solution
+              by substituting <m>\frac{8}{7}</m>in for <m>H</m> in the original equation:
+              <md>
+                <mrow>\frac{7H}{12}\amp=\frac{2}{3}</mrow>
+                <mrow>\frac{7\left(\substitute{\frac{8}{7}}\right)}{12}\amp\wonder{=}\frac{2}{3}</mrow>
+                <mrow>\frac{8}{12}\amp\wonder{=}\frac{2}{3}</mrow>
+                <mrow>\frac{2}{3}\amp\confirm{=}\frac{2}{3}</mrow>
+              </md>
+              The solution <m>\frac{8}{7}</m> is checked,
+               and the solution set is <m>\left\{\frac{8}{7}\right\}</m>.
+            </p>
+          </solution>
+      </webwork>
+    </exercise>
+  </subsection>
+
+  <reading-questions>
+    <exercise label="how-many-bricks">
+      <statement>
+        <p>
+          If you imagine the equation <m>2x+3=11</m> as a balance scale with bricks on each side,
+          how many bricks do you imagine are on the left side?
+          How many <em>types</em> of brick do you imagine being on the left side?
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+    <exercise label="opposite-of-multiplying-by-negative">
+      <statement>
+        <p>
+          What is the opposite operation of multiplying by a negative number?
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+    <exercise label="what-should-you-do-after-solving">
+      <statement>
+        <p>
+          Each time you solve an algebra equation, there is something you should be in the habit of
+          doing at the end. Describe that thing you should do.
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+  </reading-questions>
+
+
+  <exercises>
+    <subexercises>
+      <title>Review and Warmup</title>
+
+      <exercisegroup cols="4">
+        <title>Fraction Multiplication</title>
+        <introduction>
+          <p>
+            Multiply the fractions.
+          </p>
+        </introduction>
+        <exercise label="multiply-fractions-no-reduce">
+          <webwork xml:id="webwork-multiply-fractions-no-reduce">
+            <pg-code>
+              Context("LimitedFraction")->flags->set(allowMixedNumbers => 0, showMixedNumbers => 0);
+              do {
+                ($a, $b) = random_coprime([2..10], [2..10]);
+                $c = (random_coprime([2..10], [$b]))[0];
+                $d = (random_coprime([2..10], [$c]))[0];
+              } until (gcd($a, $d) == 1);
+              $A = Fraction($a, $b);
+              $B = Fraction($c, $d);
+              $ans = $A*$B;
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$A"/>\cdot<var name="$B"/></m>
+              </p>
+              <p>
+                <var name="$ans" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="multiply-fractions-no-reduce-copy">
+          <webwork copy="webwork-multiply-fractions-no-reduce"/>
+        </exercise>
+
+        <exercise label="multiply-fractions-reduce">
+          <webwork xml:id="webwork-multiply-fractions-reduce">
+            <pg-code>
+              Context("LimitedFraction")->flags->set(allowMixedNumbers => 0, showMixedNumbers => 0);
+              do {
+                ($a, $b) = random_coprime([2..10], [2..10]);
+                $c = (random_coprime([2..10], [$b]))[0];
+                $d = (random_coprime([2..10], [$c]))[0];
+              } until (gcd($a, $d) == 1);
+              $k = (random_coprime([2..10], [$a], [$d]))[0];
+              $A = Fraction($a, $b*$k);
+              $B = Fraction($c*$k, $d);
+              ($A, $B) = ($A, $B)[NchooseK(2,2)];
+              $ans = $A*$B;
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$A"/>\cdot<var name="$B"/></m>
+              </p>
+              <p>
+                <var name="$ans" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="multiply-fractions-reduce-copy">
+          <webwork copy="webwork-multiply-fractions-reduce"/>
+        </exercise>
+
+        <exercise label="multiply-fraction-integer-no-reduce">
+          <webwork xml:id="webwork-multiply-fraction-integer-no-reduce">
+            <pg-code>
+              Context("LimitedFraction")->flags->set(allowMixedNumbers => 0, showMixedNumbers => 0);
+              ($a, $b) = random_coprime([2..10], [2..10]);
+              $c = (random_coprime([2..10], [$b]))[0];
+              $d = 1;
+              $A = Fraction($a, $b);
+              $B = Fraction($c, $d);
+              ($A, $B) = ($A, $B)[NchooseK(2,2)];
+             $ans = $A*$B;
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$A"/>\cdot<var name="$B"/></m>
+              </p>
+              <p>
+                <var name="$ans" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="multiply-fraction-integer-no-reduce-copy">
+          <webwork copy="webwork-multiply-fraction-integer-no-reduce"/>
+        </exercise>
+
+        <exercise label="multiply-fraction-integer-reduce">
+          <webwork xml:id="webwork-multiply-fraction-integer-reduce">
+            <pg-code>
+              Context("LimitedFraction")->flags->set(allowMixedNumbers => 0, showMixedNumbers => 0);
+              ($a, $b) = random_coprime([2..10], [2..10]);
+              $c = (random_coprime([2..10], [$b]))[0];
+              $d = 1;
+              $k = (random_coprime([2..10], [$a]))[0];
+              $A = Fraction($a, $b*$k);
+              $B = Fraction($c*$k, $d);
+              ($A, $B) = ($A, $B)[NchooseK(2,2)];
+              $ans = $A*$B;
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$A"/>\cdot<var name="$B"/></m>
+              </p>
+              <p>
+                <var name="$ans" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="multiply-fraction-integer-reduce-copy">
+          <webwork copy="webwork-multiply-fraction-integer-reduce"/>
+        </exercise>
+      </exercisegroup>
+
+      <exercisegroup cols="5">
+        <title>Add/Subtract Fractions</title>
+        <introduction>
+          <p>
+            Add or subtract the fractions.
+          </p>
+        </introduction>
+        <exercise label="add-same-denominator-no-reduce-copy2">
+          <webwork copy="webwork-add-same-denominator-no-reduce"/>
+        </exercise>
+        <exercise label="add-same-denominator-no-reduce-copy3">
+          <webwork copy="webwork-add-same-denominator-no-reduce"/>
+        </exercise>
+        <exercise label="subtract-same-denominator-reduce-copy2">
+          <webwork copy="webwork-subtract-same-denominator-reduce"/>
+        </exercise>
+        <exercise label="subtract-same-denominator-reduce-copy3">
+          <webwork copy="webwork-subtract-same-denominator-reduce"/>
+        </exercise>
+        <exercise label="add-integer-fraction-copy2">
+          <webwork copy="webwork-add-integer-fraction"/>
+        </exercise>
+        <exercise label="add-integer-fraction-copy3">
+          <webwork copy="webwork-add-integer-fraction"/>
+        </exercise>
+        <exercise label="add-fractions-rel-prime-denoms-copy2">
+          <webwork copy="webwork-add-fractions-rel-prime-denoms"/>
+        </exercise>
+        <exercise label="add-fractions-rel-prime-denoms-copy3">
+          <webwork copy="webwork-add-fractions-rel-prime-denoms"/>
+        </exercise>
+        <exercise label="subtract-fractions-one-build-no-reduce-copy2">
+          <webwork copy="webwork-subtract-fractions-one-build-no-reduce"/>
+        </exercise>
+        <exercise label="subtract-fractions-one-build-no-reduce-copy3">
+          <webwork copy="webwork-subtract-fractions-one-build-no-reduce"/>
+        </exercise>
+        <exercise label="add-fractions-two-build-no-reduce-copy2">
+          <webwork copy="webwork-add-fractions-two-build-no-reduce"/>
+        </exercise>
+        <exercise label="add-fractions-two-build-no-reduce-copy3">
+          <webwork copy="webwork-add-fractions-two-build-no-reduce"/>
+        </exercise>
+        <exercise label="subtract-fractions-two-build-reduce-copy2">
+          <webwork copy="webwork-subtract-fractions-two-build-reduce"/>
+        </exercise>
+        <exercise label="subtract-fractions-two-build-reduce-copy3">
+          <webwork copy="webwork-subtract-fractions-two-build-reduce"/>
+        </exercise>
+      </exercisegroup>
+    </subexercises>
+
+    <subexercises>
+      <title>Skills Practice</title>
+
+      <exercisegroup cols="4">
+        <title>Solve the Equation</title>
+        <introduction>
+          <p>
+            Solve the equation.
+          </p>
+        </introduction>
+        <exercise label="solve-equation-add-right-integer">
+          <webwork xml:id="webwork-solve-equation-add-right-integer">
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              ($a, $b) = (1..20)[NchooseK(20,2)];
+              $b = random(0,1) ? $b : -$b;
+              $left = Formula("$var + $a")->reduce;
+              $right = Formula("$b")->reduce;
+              Context("FiniteSolutionSets");
+              Context()->variables->are($var => 'Real');
+              $solution = $b - $a;
+              $solset = Formula("{$solution}");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$solset" width="10"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                The opposite action to addition is subtraction.
+                <md>
+                  <mrow><var name="$left"/> \amp= <var name="$right"/></mrow>
+                  <mrow><var name="$left"/>\subtractright{<var name="$a"/>} \amp= <var name="$right"/>\subtractright{<var name="$a"/>}</mrow>
+                  <mrow><var name="$var"/> \amp= <var name="$solution"/></mrow>
+                </md>
+                The solution set is <m><var name="$solset"/></m>.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="solve-equation-add-right-integer-copy">
+          <webwork copy="webwork-solve-equation-add-right-integer"/>
+        </exercise>
+
+        <exercise label="solve-equation-add-left-integer">
+          <webwork xml:id="webwork-solve-equation-add-left-integer">
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              ($a, $b) = (1..20)[NchooseK(20,2)];
+              $b = random(0,1) ? $b : -$b;
+              $left = Formula("$a + $var")->reduce;
+              $right = Formula("$b")->reduce;
+              ($left, $right) = ($left, $right)[NchooseK(2,2)];
+              Context("FiniteSolutionSets");
+              Context()->variables->are($var => 'Real');
+              $solution = $b - $a;
+              $solset = Formula("{$solution}");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$solset" width="10"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="solve-equation-add-left-integer-copy">
+          <webwork copy="webwork-solve-equation-add-left-integer"/>
+        </exercise>
+
+        <exercise label="solve-equation-subtract-integer">
+          <webwork xml:id="webwork-solve-equation-subtract-integer">
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              ($a, $b) = (1..20)[NchooseK(20,2)];
+              $b = random(0,1) ? $b : -$b;
+              $left = Formula("$var - $a")->reduce;
+              $right = Formula("$b")->reduce;
+              Context("FiniteSolutionSets");
+              Context()->variables->are($var => 'Real');
+              $solution = $b + $a;
+              $solset = Formula("{$solution}");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$solset" width="10"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="solve-equation-subtract-integer-copy">
+          <webwork copy="webwork-solve-equation-subtract-integer"/>
+        </exercise>
+
+        <exercise label="solve-equation-divide-integer">
+          <webwork xml:id="webwork-solve-equation-divide-integer">
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              ($a, $b) = (2..20)[NchooseK(19,2)];
+              $b = random(0,1) ? $b : -$b;
+              $left = Formula("$var/$a")->reduce;
+              $right = Formula("$b")->reduce;
+              ($left, $right) = ($left, $right)[NchooseK(2,2)];
+              Context("FiniteSolutionSets");
+              Context()->variables->are($var => 'Real');
+              $solution = $b*$a;
+              $solset = Formula("{$solution}");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$solset" width="10"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                The opposite action to division is multiplication.
+                <md>
+                  <mrow><var name="$left"/> \amp= <var name="$right"/></mrow>
+                  <mrow>\multiplyleft{<var name="$a"/>}<var name="$left"/> \amp= \multiplyleft{<var name="$a"/>}<var name="$right"/></mrow>
+                  <mrow><var name="$var"/> \amp= <var name="$solution"/></mrow>
+                </md>
+                The solution set is <m><var name="$solset"/></m>.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="solve-equation-divide-integer-copy">
+          <webwork copy="webwork-solve-equation-divide-integer"/>
+        </exercise>
+
+        <exercise label="solve-equation-multiply-integer-integer-solution">
+          <webwork xml:id="webwork-solve-equation-multiply-integer-integer-solution">
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              ($a, $b) = (-20..-2,2..20)[NchooseK(38,2)];
+              $left = Formula("$a $var")->reduce;
+              $right = Formula("$a*$b")->reduce;
+              Context("FiniteSolutionSets");
+              Context()->variables->are($var => 'Real');
+              $solution = $b;
+              $solset = Formula("{$solution}");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$solset" width="10"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="solve-equation-multiply-integer-integer-solution-copy">
+          <webwork copy="webwork-solve-equation-multiply-integer-integer-solution"/>
+        </exercise>
+
+        <exercise label="solve-equation-multiply-integer-noninteger-solution">
+          <webwork xml:id="webwork-solve-equation-multiply-integer-noninteger-solution">
+            <pg-code>
+              Context("Fraction");
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              do {
+                ($a, $b) = (-20..-2,2..20)[NchooseK(38,2)];
+              } until ($b % $a != 0);
+              $left = Formula("$a*$var")->reduce;
+              $right = Formula("$b")->reduce;
+              ($left, $right) = ($left, $right)[NchooseK(2,2)];
+              $solution = Fraction($b, $a);
+              Context("FiniteSolutionSets");
+              Context()->variables->are($var => 'Real');
+              $solset = Formula("{$solution}");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$solset" width="10"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="solve-equation-multiply-integer-noninteger-solution-copy">
+          <webwork copy="webwork-solve-equation-multiply-integer-noninteger-solution"/>
+        </exercise>
+
+        <exercise label="solve-equation-negate-integer">
+          <webwork xml:id="webwork-solve-equation-negate-integer">
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              $b = list_random(-20..-1,1..20);
+              $left = Formula("-$var")->reduce;
+              $right = Formula("$b")->reduce;
+              Context("FiniteSolutionSets");
+              Context()->variables->are($var => 'Real');
+              $solution = -$b;
+              $solset = Formula("{$solution}");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$solset" width="10"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="solve-equation-negate-integer-copy">
+          <webwork copy="webwork-solve-equation-negate-integer"/>
+        </exercise>
+
+        <exercise label="solve-equation-variable-in-numerator-integer-solution">
+          <webwork xml:id="webwork-solve-equation-variable-in-numerator-integer-solution">
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              ($a, $b) = (-20..-2,2..20)[NchooseK(38,2)];
+              $c = (random_coprime([2..20], [$a]))[0];
+              $left = Formula("($a $var)/$c")->reduce;
+              $right = Formula("$a*$b")->reduce;
+              Context("FiniteSolutionSets");
+              Context()->variables->are($var => 'Real');
+              $solution = $b*$c;
+              $solset = Formula("{$solution}");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$solset" width="10"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="solve-equation-variable-in-numerator-integer-solution-copy">
+          <webwork copy="webwork-solve-equation-variable-in-numerator-integer-solution"/>
+        </exercise>
+
+        <exercise label="solve-equation-add-right-fraction">
+          <webwork xml:id="webwork-solve-equation-add-right-fraction">
+            <pg-code>
+              Context("Fraction");
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              do {
+                ($a, $b) = random_coprime([1..10], [2..10,12]);
+                ($c, $d) = random_coprime([1..10], [2..10,12]);
+              } until ($b != $d);
+              $A = Fraction($a, $b);
+              $B = Fraction($c, $d);
+              $B = random(0,1) ? $B : -$B;
+              $left = Formula("$var + $A")->reduce;
+              $right = Formula("$B")->reduce;
+              ($left, $right) = ($left, $right)[NchooseK(2,2)];
+              Context("FiniteSolutionSets");
+              Context()->variables->are($var => 'Real');
+              $solution = $B - $A;
+              $solset = Formula("{$solution}");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$solset" width="10"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="solve-equation-add-right-fraction-copy">
+          <webwork copy="webwork-solve-equation-add-right-fraction"/>
+        </exercise>
+
+        <exercise label="solve-equation-add-left-fraction">
+          <webwork xml:id="webwork-solve-equation-add-left-fraction">
+            <pg-code>
+              Context("Fraction");
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              do {
+                ($a, $b) = random_coprime([1..10], [2..10,12]);
+                ($c, $d) = random_coprime([1..10], [2..10,12]);
+              } until ($b != $d);
+              $A = Fraction($a, $b);
+              $B = Fraction($c, $d);
+              $B = random(0,1) ? $B : -$B;
+              $left = Formula("$A + $var")->reduce;
+              $right = Formula("$B")->reduce;
+              Context("FiniteSolutionSets");
+              Context()->variables->are($var => 'Real');
+              $solution = $B - $A;
+              $solset = Formula("{$solution}");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$solset" width="10"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                The opposite action to addition is subtraction.
+                <md>
+                  <mrow><var name="$left"/> \amp= <var name="$right"/></mrow>
+                  <mrow><var name="$left"/>\subtractright{<var name="$A"/>} \amp= <var name="$right"/>\subtractright{<var name="$A"/>}</mrow>
+                  <mrow><var name="$var"/> \amp= <var name="$solution"/></mrow>
+                </md>
+                The solution set is <m><var name="$solset"/></m>.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="solve-equation-add-left-fraction-copy">
+          <webwork copy="webwork-solve-equation-add-left-fraction"/>
+        </exercise>
+
+        <exercise label="solve-equation-subtract-fraction">
+          <webwork xml:id="webwork-solve-equation-subtract-fraction">
+            <pg-code>
+              Context("Fraction");
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              do {
+                ($a, $b) = random_coprime([1..10], [2..10,12]);
+                ($c, $d) = random_coprime([1..10], [2..10,12]);
+              } until ($b != $d);
+              $A = Fraction($a, $b);
+              $B = Fraction($c, $d);
+              $B = random(0,1) ? $B : -$B;
+              $left = Formula("$var - $A")->reduce;
+              $right = Formula("$B")->reduce;
+              ($left, $right) = ($left, $right)[NchooseK(2,2)];
+              Context("FiniteSolutionSets");
+              Context()->variables->are($var => 'Real');
+              $solution = $B + $A;
+              $solset = Formula("{$solution}");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$solset" width="10"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="solve-equation-subtract-fraction-copy">
+          <webwork copy="webwork-solve-equation-subtract-fraction"/>
+        </exercise>
+
+        <exercise label="solve-equation-multiply-fraction">
+          <webwork xml:id="webwork-solve-equation-multiply-fraction">
+            <pg-code>
+              Context("Fraction");
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              do {
+                ($a, $b) = random_coprime([1..10], [2..10,12]);
+                ($c, $d) = random_coprime([1..10], [2..10,12]);
+              } until ($b != $d);
+              $A = Fraction($a, $b);
+              $Ainv = 1/$A;
+              $B = Fraction($c, $d);
+              $B = random(0,1) ? $B : -$B;
+              $left = Formula("$A*$var")->reduce;
+              $right = Formula("$B")->reduce;
+              $solution = $B / $A;
+              Context("FiniteSolutionSets");
+              Context()->variables->are($var => 'Real');
+              $solset = Formula("{$solution}");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$solset" width="10"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                To undo multiplication by a fraction, we can multiply my its reciprocal.
+                <md>
+                  <mrow><var name="$left"/> \amp= <var name="$right"/></mrow>
+                  <mrow>\multiplyleft{<var name="$Ainv"/>}<var name="$left"/> \amp= \multiplyleft{<var name="$Ainv"/>}<var name="$right"/></mrow>
+                  <mrow><var name="$var"/> \amp= <var name="$solution"/></mrow>
+                </md>
+                The solution set is <m><var name="$solset"/></m>.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="solve-equation-multiply-fraction-copy">
+          <webwork copy="webwork-solve-equation-multiply-fraction"/>
+        </exercise>
+
+        <exercise label="solve-equation-negate-fraction">
+          <webwork xml:id="webwork-solve-equation-negate-fraction">
+            <pg-code>
+              Context("Fraction");
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              ($c, $d) = random_coprime([1..10], [2..10,12]);
+              $B = Fraction($c, $d);
+              $B = random(0,1) ? $B : -$B;
+              $left = Formula("-$var")->reduce;
+              $right = Formula("$B")->reduce;
+              $solution = -$B;
+              Context("FiniteSolutionSets");
+              Context()->variables->are($var => 'Real');
+              $solset = Formula("{$solution}");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$solset" width="10"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="solve-equation-negate-fraction-copy">
+          <webwork copy="webwork-solve-equation-negate-fraction"/>
+        </exercise>
+
+        <exercise label="solve-equation-variable-in-numerator-fraction">
+          <webwork xml:id="webwork-solve-equation-variable-in-numerator-fraction">
+            <pg-code>
+              Context("Fraction");
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              do {
+                ($a, $b) = random_coprime([1..10], [2..10,12]);
+                ($c, $d) = random_coprime([1..10], [2..10,12]);
+              } until ($b != $d);
+              $A = Fraction($a, $b);
+              $B = Fraction($c, $d);
+              $B = random(0,1) ? $B : -$B;
+              $left = Formula("$a*$var/$b")->reduce;
+              $right = Formula("$B")->reduce;
+              ($left, $right) = ($left, $right)[NchooseK(2,2)];
+              $solution = $B/$A;
+              Context("FiniteSolutionSets");
+              Context()->variables->are($var => 'Real');
+              $solset = Formula("{$solution}");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$solset" width="10"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="solve-equation-variable-in-numerator-fraction-copy">
+          <webwork copy="webwork-solve-equation-variable-in-numerator-fraction"/>
+        </exercise>
+
+        <exercise label="solve-equation-add-right-decimal">
+          <webwork xml:id="webwork-solve-equation-add-right-decimal">
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              ($a, $b) = (1..20)[NchooseK(20,2)];
+              ($a, $b) = map{$_ + random(0.1, 0.9, 0.1)} ($a, $b);
+              $b = random(0,1) ? $b : -$b;
+              $left = Formula("$var + $a")->reduce;
+              $right = Formula("$b")->reduce;
+              Context("FiniteSolutionSets");
+              Context()->flags->remove("NumberCheck");
+              Context()->variables->are($var => 'Real');
+              $solution = $b - $a;
+              $solset = Formula("{$solution}");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$solset" width="10"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="solve-equation-add-right-decimal-copy">
+          <webwork copy="webwork-solve-equation-add-right-decimal"/>
+        </exercise>
+
+        <exercise label="solve-equation-add-left-decimal">
+          <webwork xml:id="webwork-solve-equation-add-left-decimal">
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              ($a, $b) = (1..20)[NchooseK(20,2)];
+              ($a, $b) = map{$_ + random(0.01, 0.99, 0.01)} ($a, $b);
+              $b = random(0,1) ? $b : -$b;
+              $left = Formula("$a + $var")->reduce;
+              $right = Formula("$b")->reduce;
+              Context("FiniteSolutionSets");
+              Context()->flags->remove("NumberCheck");
+              Context()->variables->are($var => 'Real');
+              $solution = $b - $a;
+              $solset = Formula("{$solution}");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$solset" width="10"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="solve-equation-add-left-decimal-copy">
+          <webwork copy="webwork-solve-equation-add-left-decimal"/>
+        </exercise>
+
+        <exercise label="solve-equation-subtract-decimal">
+          <webwork xml:id="webwork-solve-equation-subtract-decimal">
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              ($a, $b) = (1..20)[NchooseK(20,2)];
+              ($a, $b) = map{$_ + random(0.1, 0.9, 0.1)} ($a, $b);
+              $b += random(0.01, 0.09, 0.01);
+              $b = random(0,1) ? $b : -$b;
+              $left = Formula("$var - $a")->reduce;
+              $right = Formula("$b")->reduce;
+              Context("FiniteSolutionSets");
+              Context()->flags->remove("NumberCheck");
+              Context()->variables->are($var => 'Real');
+              $solution = $b + $a;
+              $solset = Formula("{$solution}");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$solset" width="10"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="solve-equation-subtract-decimal-copy">
+          <webwork copy="webwork-solve-equation-subtract-decimal"/>
+        </exercise>
+
+        <exercise label="solve-equation-divide-decimal">
+          <webwork xml:id="webwork-solve-equation-divide-decimal">
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              ($a, $b) = (0..10)[NchooseK(11,2)];
+              ($a, $b) = map{$_ + random(0.1, 0.9, 0.1)} ($a, $b);
+              $b = random(0,1) ? $b : -$b;
+              $left = Formula("$var/$a")->reduce;
+              $right = Formula("$b")->reduce;
+              ($left, $right) = ($left, $right)[NchooseK(2,2)];
+              Context("FiniteSolutionSets");
+              Context()->flags->remove("NumberCheck");
+              Context()->variables->are($var => 'Real');
+              $solution = $b*$a;
+              $solset = Formula("{$solution}");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$solset" width="10"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="solve-equation-divide-decimal-copy">
+          <webwork copy="webwork-solve-equation-divide-decimal"/>
+        </exercise>
+
+        <exercise label="solve-equation-multiply-decimal">
+          <webwork xml:id="webwork-solve-equation-multiply-decimal">
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              ($a, $b) = (0..10)[NchooseK(11,2)];
+              ($a, $b) = map{$_ + random(0.1, 0.9, 0.1)} ($a, $b);
+              $b = random(0,1) ? $b : -$b;
+              $left = Formula("$a $var")->reduce;
+              $right = Formula("$b")->reduce;
+              Context("FiniteSolutionSets");
+              Context()->flags->remove("NumberCheck");
+              Context()->variables->are($var => 'Real');
+              $solution = $b/$a;
+              $solset = Formula("{$solution}");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/>=<var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$solset" width="10"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="solve-equation-multiply-decimal-copy">
+          <webwork copy="webwork-solve-equation-multiply-decimal"/>
+        </exercise>
+      </exercisegroup>
+    </subexercises>
+
+    <subexercises>
+      <title>Applications</title>
+
+      <exercisegroup cols="2">
+        <title>Celsius and Kelvin</title>
+        <introduction>
+          <p>
+            To convert a temperature in degrees Celsius to degrees Kelvin,
+            there is a formula <m>K = C + 273</m>. Suppose the temperature of something in space
+            is the given Kelvin temperature.
+            Write an equation that can be used to find that temperature in degrees Celsius.
+            Then solve that equation and report the corresponding Celsius temperature.
+          </p>
+        </introduction>
+
+        <exercise label="find-celsius-kelvin-temperature">
+          <webwork xml:id="webwork-find-celsius-kelvin-temperature">
+            <pg-code>
+              $K = list_random(1..39,41..100);
+              Context("ImplicitEquation");
+              Context()->variables->are(C => 'Real');
+              $answer = $K - 273;
+              Context()->variables->set(C => {limits=>[$answer - 10, $answer + 10]});
+              $equation = ImplicitEquation("$K = C + 273");
+              $answer = NumberWithUnits("$answer degC");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$K"/></m> Kelvin
+              </p>
+              <instruction>Write the equation here.</instruction>
+              <p>
+                <var name="$equation" width="15"/>
+              </p>
+              <instruction>Write the Celsius temperature here. You may enter <c>degC</c> for ^{\circ}C.</instruction>
+              <p>
+                <var name="$answer" width="10"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="find-celsius-kelvin-temperature-copy">
+          <webwork copy="webwork-find-celsius-kelvin-temperature"/>
+        </exercise>
+      </exercisegroup>
+
+      <exercisegroup cols="2">
+        <title>Stair Rise and Run</title>
+        <introduction>
+          <p>
+            When building a staircase, you want the rise and run to be consistent from one step to the
+            next.
+          </p>
+          <image width="47%">
+            <shortdescription>
+              diagram of a staircase with one stair's height labeled as 'rise' and its width labeled
+              as 'run'
+            </shortdescription>
+            <latex-image label="stair-rise-run">
+              \begin{tikzpicture}[x=0.7mm,y=0.7mm]
+                \foreach \x in {0,...,3}
+                  \draw [fill=firstcolor!20] (10*\x, 12*\x) --++ (-30,15) --++ (0,7) --++ (30,-15);
+                \draw (0,0) --++ (0,7) --++ (10,5) --++ (0,7) --++ (10,5) --++ (0,7) --++ (10,5) --++ (0,7) --++ (10,5);
+                \draw (-30,15) --++ (0,7) --++ (10,5) node[pos=0.5, sloped, above] {run} --++ (0,7) --++ (10,5) --++ (0,7) --++ (10,5) --++ (0,7) --++ (10,5);
+                \draw (0,0) -- (40,20) --++ (0,28) --++ (-30,15);
+                \node[left] at (-30,18.5) {rise};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+          <p>
+            A convention among contractors is that steps in a staircase should have rise <m>S</m>
+            and run <m>N</m>, both in inches, such that <m>S + N = 17.5</m>.
+            To bridge the first floor to the second floor, contractors determined the rise of each
+            stair should be the given number of inches.
+            Write an equation that can be used to find the run of each step.
+            Then solve that equation and report what the run should be.
+          </p>
+        </introduction>
+
+        <exercise label="find-step-run">
+          <webwork xml:id="webwork-find-step-run">
+            <pg-code>
+              $rise = random(6.125, 8.75, 0.125);
+              Context("ImplicitEquation");
+              Context()->variables->are(N => 'Real');
+              $answer = 17.5 - $rise;
+              Context()->variables->set(N => {limits=>[$answer - 10, $answer + 10]});
+              $equation = ImplicitEquation("$rise + N = 17.5");
+              $answer = NumberWithUnits("$answer in");
+            </pg-code>
+            <statement>
+              <p>
+                The rise is <m><var name="$rise"/></m> inches.
+              </p>
+              <instruction>Write the equation here.</instruction>
+              <p>
+                <var name="$equation" width="15"/>
+              </p>
+              <instruction>Write the run here.</instruction>
+              <p>
+                <var name="$answer" width="10"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="find-step-run-copy">
+          <webwork copy="webwork-find-step-run"/>
+        </exercise>
+      </exercisegroup>
+
+      <exercisegroup cols="2">
+        <title>Markup</title>
+        <introduction>
+          <p>
+            In retail, the <q>profit margin</q> <m>m</m> of an item being sold is a number that
+            explains what percentage of the item's shelf price is profit. For example if the profit
+            margin is 15% or 0.15, it means that 15% of the shelf price is profit for the store. If
+            the shelf price <m>s</m> is what a customer pays to buy the item and the item has a
+            wholesale price <m>w</m> that the store pays to obtain the item, then these numbers are
+            related by the formula <m>s(1-m)=w</m>.
+          </p>
+        </introduction>
+
+        <exercise label="find-shelf-price">
+          <webwork xml:id="webwork-find-shelf-price">
+            <pg-code>
+              $m = random(10, 90, 5);
+              $mdecimal = $m/100;
+              $wdecimal = random(5, 20, 0.05);
+              Context("ImplicitEquation");
+              Context()->variables->are(s => 'Real');
+              $r = 1 - $mdecimal;
+              $answerdecimal = Real(Round($wdecimal/$r, 2));
+              Context()->variables->set(s => {limits=>[$answerdecimal - 100, $answerdecimal + 100]});
+              $equation = ImplicitEquation("s(1 - $mdecimal) = $wdecimal");
+              Context("Currency")->flags->set(trimTrailingZeros => 1);
+              $w = Currency($wdecimal);
+              $answer = Currency($answerdecimal);
+            </pg-code>
+            <statement>
+              <p>
+                Suppose the profit margin is <m><var name="$m"/>\%</m> and the wholesale price is
+                <m><var name="$w"/></m>. Write an equation that could be used to find the shelf
+                price. Then find the shelf price.
+              </p>
+              <instruction>Write the equation here.</instruction>
+              <p>
+                <var name="$equation" width="15"/>
+              </p>
+              <instruction>Write the shelf price here.</instruction>
+              <p>
+                <var name="$answer" width="10"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                We start with the equation <m>s(1-m)=w</m> and substitute in what we know. The value
+                for <m>m</m> should be <m><var name="$mdecimal"/></m> and the value for <m>w</m>
+                should be <m><var name="$wdecimal"/></m>. So we have the equation
+                <md>
+                  <mrow>s(1-<var name="$mdecimal"/>) \amp= <var name="$wdecimal"/></mrow>
+                  <mrow>s(<var name="$r"/>) \amp= <var name="$wdecimal"/></mrow>
+                </md>
+                Now to solve for <m>s</m>, divide on each side by <m><var name="$r"/></m>:
+                <md>
+                  <mrow>\divideunder{s(<var name="$r"/>)}{<var name="$r"/>} \amp= \divideunder{<var name="$wdecimal"/>}{<var name="$r"/>}</mrow>
+                  <mrow>s \amp= <var name="$answerdecimal"/></mrow>
+                </md>
+                So the shelf price is <var name="$answer" width="10"/>.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="find-shelf-price-copy">
+          <webwork copy="webwork-find-shelf-price"/>
+        </exercise>
+      </exercisegroup>
+
+      <exercisegroup cols="2">
+        <title>Circumference and Diameter</title>
+        <introduction>
+          <p>
+            The formula for a circle's circumference is <m>c=\pi d</m>,
+            where <m>c</m> represents circumference, <m>d</m> represents diameter,
+            and <m>\pi</m> is a constant with the value of <m>3.1415926\ldots</m>.
+            Use the given circumference to write an equation
+            that could be used to find that circle's diameter.
+            Then find the diameter.
+          </p>
+        </introduction>
+
+        <exercise label="find-diameter">
+          <webwork xml:id="webwork-find-diameter">
+            <pg-code>
+              $unit = list_random('m', 'cm', 'in', 'ft');
+              $dinteger = random(2,20);
+              $d = NumberWithUnits("$dinteger $unit");
+              $c = FormulaWithUnits("$dinteger pi $unit");
+              Context("ImplicitEquation");
+              Context()->variables->are(d => 'Real');
+              Context()->variables->set(d => {limits=>[$dinteger - 10, $dinteger + 10]});
+              $equation = ImplicitEquation("$dinteger pi = pi d");
+              $answer = $d;
+            </pg-code>
+            <statement>
+              <p>
+                The circumference is <m><var name="$c"/></m>.
+              </p>
+              <instruction>Write the equation here.</instruction>
+              <p>
+                <var name="$equation" width="15"/>
+              </p>
+              <instruction>Write the diameter here.</instruction>
+              <p>
+                <var name="$answer" width="10"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="find-diameter-copy">
+          <webwork copy="webwork-find-diameter"/>
+        </exercise>
+      </exercisegroup>
+
+      <exercisegroup cols="2">
+        <title>Throw a Baseball</title>
+        <introduction>
+          <p>
+            On Earth, if you throw a baseball straight up at speed <m>v</m> (in feet per second),
+            the height of the ball <m>t</m> seconds later is given by <m>-16t^2+vt+6</m>.
+            Suppose a ball is thrown straight up and takes the given number of seconds
+            to hit the ground, where the height is <m>0</m> feet.
+            Write an equation that can be used to find the initial speed the ball was thrown with.
+            Then solve that equation and report what that speed was.
+          </p>
+        </introduction>
+        <exercise label="find-initial-speed-of-baseball">
+          <webwork xml:id="webwork-find-initial-speed-of-baseball">
+            <pg-code>
+              $vdecimal = random(45, 90, 1);
+              $tdecimal = Round((-$vdecimal - sqrt($vdecimal**2 + 3840))/-32,1);
+              $t = NumberWithUnits($tdecimal, "s");
+              $newv = (-6 + 16*$tdecimal**2)/$tdecimal;
+              Context("ImplicitEquation");
+              Context()->variables->are(v => 'Real');
+              Context()->variables->set(v => {limits=>[$newv - 10, $newv + 10]});
+              $equation = ImplicitEquation("-16*($tdecimal)**2 + $tdecimal v + 6 = 0");
+              $answer = NumberWithUnits("$newv ft/s");
+            </pg-code>
+            <statement>
+              <p>
+                The ball lands after <m><var name="$t"/></m> seconds.
+              </p>
+              <instruction>Write the equation here.</instruction>
+              <p>
+                <var name="$equation" width="16"/>
+              </p>
+              <instruction>Write the initial speed here.</instruction>
+              <p>
+                <var name="$answer" width="10"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="find-initial-speed-of-baseball-copy">
+          <webwork copy="webwork-find-initial-speed-of-baseball"/>
+        </exercise>
+      </exercisegroup>
+
+    </subexercises>
+
+    <subexercises>
+      <title>Challenge</title>
+      <exercise label="write-linear-equation-with-given-solution">
+        <!-- Kara's challenge problem -->
+        <webwork>
+          <pg-code>
+            Context("ImplicitPlane");
+            Context()->variables->are(x=>'Real');
+            $solstring = "x+1=6";
+            $solution = ImplicitPlane($solstring);
+            $evaluator = $solution->cmp(
+              cmp_class=>'a linear equation',
+              correct_ans=>$solstring,
+              correct_ans_latex_string=>$solstring,
+              checker => sub {
+                my ($correct,$student,$ansHash) = @_;
+                ($left, $right) = split('=',$ansHash->{original_student_ans});
+                $left = Formula($left);
+                $right= Formula($right);
+                $ansHash->{preview_latex_string} = $ansHash->{original_student_ans};
+                $ansHash->{preview_text_string} = $ansHash->{original_student_ans};
+                $ansHash->{student_ans} = $ansHash->{original_student_ans};
+                Value::Error('Your left side is just x') if ($left == Formula('x'));
+                Value::Error('Your right side is just x') if ($right == Formula('x'));
+                return ($correct == $student);
+              }
+            );
+          </pg-code>
+          <statement>
+            <p>
+              Write a linear equation whose solution is <m>x = 5</m>.
+              You may not write an equation whose left side is just <q><m>x</m></q>
+              or whose right side is just <q><m>x</m></q>.
+            </p>
+            <p>
+              There are infinitely many correct answers to this problem. <em>Be creative.</em>
+              After finding an equation that works,
+              see if you can come up with a different one that also works.
+            </p>
+            <p>
+              <var name="$solution" evaluator="$evaluator" width="20" />
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+
+      <exercise label="create-equation-with-greatest-solution">
+        <!-- Kara's challenge problem -->
+        <webwork>
+          <pg-code>
+            $little = random(10,50,2);
+            $big = random(53,99,2);
+          </pg-code>
+          <statement>
+            <p>
+              Fill in the blanks with the numbers <var name="$little"/> and <var name="$big"/>
+              (using each number only once)
+              to create an equation where <m>x</m> has the greatest possible value.
+              <ol marker="a.">
+                <li>
+                  <p>
+                    <var name="$little" width="3"/> <m>{}+x={}</m> <var name="$big" width="3"/>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <var name="$big" width="3"/> <m>{}={}</m> <var name="$little" width="3"/><m>{}\cdot x</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <ol marker="a.">
+                <li>
+                  <p>
+                    Consider which is greater:
+                    <m><var name="$big"/> - <var name="$little"/></m>
+                    or <m><var name="$little"/> - <var name="$big"/></m>?
+                    To make the largest value for <m>x</m>,
+                    you must put <var name="$little"/> in the left blank and <var name="$big"/>
+                    in the right blank because you solve this equation by subtracting
+                    <var name="$little"/> from both sides.
+                    This makes <m>x = <var name="$big"/> - <var name="$little"/></m>,
+                    which is the largest possible value for <m>x</m>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Consider which is larger:
+                    <m>\frac{<var name="$big"/>}{<var name="$little"/>}</m>
+                    or <m>\frac{<var name="$little"/>}{<var name="$big"/>}</m>?
+                    To make the largest value for <m>x</m>,
+                    you must put <var name="$big"/> in the left blank
+                    and <var name="$little"/> in the right blank
+                    because you solve this equation by dividing both sides by <var name="$little"/>.
+                    This makes <m>x = \frac{<var name="$big"/>}{<var name="$little"/>}</m>,
+                    which is the largest possible value for <m>x</m>.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+        </webwork>
+      </exercise>
+    </subexercises>
+  </exercises>
+
+  <!-- <worksheet>
+    <author>Scot Leavitt and Ann Cary</author>
+    <p>
+      This worksheet has the exercises that are worked out in
+      <xref ref="video-solving-one-step-equations">Video</xref>.
+    </p>
+    <exercise workspace="25%">
+      <statement>
+        <p>
+          What is the addition property of equality?
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="15%">
+      <statement>
+        <p>
+          Solve <m>y-9=-23</m>. Formally check your solution(s).
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="15%">
+      <statement>
+        <p>
+          Solve <m>t+3=18</m>. Formally check your solution(s).
+        </p>
+      </statement>
+    </exercise>
+    <pagebreak/>
+    <exercise workspace="14%">
+      <statement>
+        <p>
+          What is the multiplication property of equality?
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="14%">
+      <statement>
+        <p>
+          Solve <m>\frac{x}{6}=7</m>. Formally check your solution(s).
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="14%">
+      <statement>
+        <p>
+          Solve <m>-4t=24</m>. Formally check your solution(s).
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="14%">
+      <statement>
+        <p>
+          Solve <m>5x=45</m>. Formally check your solution(s).
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="14%">
+      <statement>
+        <p>
+          Solve <m>\frac{1}{3}x=-4</m>. Formally check your solution(s).
+        </p>
+      </statement>
+    </exercise>
+  </worksheet>
+
+  <worksheet>
+    <author>Cara Lee</author>
+    <p>
+      Solve and check these one-step equations. Show your operation and write the solution set.
+    </p>
+    <sidebyside>
+      <exercise workspace="20%">
+        <statement>
+          <p>
+            <m>y+1=-10</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="20%">
+        <statement>
+          <p>
+            <m>z-12=5</m>
+          </p>
+        </statement>
+      </exercise>
+    </sidebyside>
+    <sidebyside>
+      <exercise workspace="20%">
+        <statement>
+          <p>
+            <m>15=-3x</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="20%">
+        <statement>
+          <p>
+            <m>-7z=8</m>
+          </p>
+        </statement>
+      </exercise>
+    </sidebyside>
+    <sidebyside>
+      <exercise workspace="20%">
+        <statement>
+          <p>
+            <m>x-(-7)=7</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="20%">
+        <statement>
+          <p>
+            <m>t-\frac{2}{3}=-\frac{7}{6}</m>
+          </p>
+        </statement>
+      </exercise>
+    </sidebyside>
+    <sidebyside>
+      <exercise workspace="20%">
+        <statement>
+          <p>
+            <m>-\frac{1}{5}x=-20</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="20%">
+        <statement>
+          <p>
+            <m>\frac{x}{12}=-\frac{3}{4}</m>
+          </p>
+        </statement>
+      </exercise>
+    </sidebyside>
+  </worksheet> -->
+</section>
+

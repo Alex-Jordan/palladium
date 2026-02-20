@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2016-2019                                                  -->
+<!-- Portland Community College                                           -->
+<!--                                                                      -->
+<!-- This file is part of Open Resources for Community College Algebra    -->
+<!-- (ORCCA).                                                             -->
+<!--                                                                      -->
+<!-- Open Resources for Community College Algebra is licensed under a     -->
+<!-- Creative Commons Attribution 4.0 International License.              -->
+<!--                                                                      -->
+<!-- Under this license, any user of this textbook or the textbook        -->
+<!-- contents must provide proper attribution as follows.                 -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- include in every digital format page view (including but not         -->
+<!-- limited to EPUB, PDF, and HTML) and on every physical printed page   -->
+<!-- the following attribution:                                           -->
+<!--                                                                      -->
+<!-- Original source material, products with readable and accessible      -->
+<!-- math content, and other information freely available at              -->
+<!-- pcc.edu/orcca.                                                       -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- reproduce any math content (such as math expressions and equations)  -->
+<!-- in a readable manner, and offer math content in at least one web     -->
+<!-- accessible manner.                                                   -->
+<!--                                                                      -->
+<!-- The Portland Community College name, Portland Community College      -->
+<!-- logo, ORCCA name, Open Resources for Community College Algebra name, -->
+<!-- ORCCA logo, and front and back cover designs are not subject to the  -->
+<!-- Creative Commons license and may not be reproduced without the       -->
+<!-- prior and express written consent of Portland Community College.     -->
+<!--                                                                      -->
+<!-- For questions regarding this license, please contact                 -->
+<!-- orcca-group@pcc.edu.                                                 -->
+<!-- *********************************************************************-->
+<section xml:id="review-quantities-in-the-physical-world">
+  <title>Quantities in the Physical World Chapter Review</title>
+
+  <subsection>
+    <title>Scientific Notation</title>
+    <p>
+      In <xref ref="section-scientific-notation">Section</xref>
+      we covered the definition of <xref ref="definition-scientific-notation" text="custom">scientific notation</xref>,
+      how to convert to and from scientific notation,
+      and how to do some calculations in scientific notation.
+    </p>
+
+    <example>
+      <title>Scientific Notation for Large Numbers</title>
+      <statement>
+        <p>
+          <ol marker="a.">
+            <li>
+              <p>
+                The distance to the star Betelgeuse is about <m>3{,}780{,}000{,}000{,}000{,}000</m> miles.
+                Write this number in scientific notation.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The gross domestic product (GDP) of California in the year 2017 was about <m>\$2.746\times10^{13}</m>.
+                Write this number in standard notation.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a.">
+            <li>
+              <p>
+                <m>3{,}780{,}000{,}000{,}000{,}000=3.78\times10^{15}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\$2.746\times10^{13}=\$2{,}746{,}000{,}000{,}000</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <title>Scientific Notation for Small Numbers</title>
+      <statement>
+        <p>
+          <ol marker="a.">
+            <li>
+              <p>
+                Human DNA forms a double helix with diameter <m>2\times10^{-9}</m> meters.
+                Write this number in standard notation.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                A single grain of Forget-me-not (Myosotis) pollen is about <m>0.00024</m> inches in diameter.
+                Write this number in scientific notation.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a." cols="2">
+            <li>
+              <p>
+                <m>2\times10^{-9}=0.000000002</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>0.00024=2.4\times10^{-4}</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <title>Multiplying and Dividing Using Scientific Notation</title>
+      <statement>
+        <p>
+          The fastest spacecraft so far have traveled about <m>5\times10^6</m> miles per day.
+
+          <ol marker="a.">
+            <li>
+              <p>
+                If that spacecraft traveled at that same speed for <m>2\times10^4</m> days
+                (which is about <m>55</m> years),
+                how far would it have gone?
+                Write your answer in scientific notation.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The nearest star to Earth, besides the Sun,
+                is Proxima Centauri, about <m>2.5\times10^{13}</m> miles from Earth.
+                How many days would you have to fly in that spacecraft at top speed to reach Proxima Centauri
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a.">
+            <li>
+              <p>
+                Remember that you can find the distance traveled by multiplying the rate of travel times the time traveled:
+                <m>d=r\cdot t</m>.
+                So this problem turns into
+                <md>
+                  <mrow>d\amp=r\cdot t</mrow>
+                  <mrow>d\amp=\left(\highlight{5}\times10^6\right)\cdot \left(\highlight{2}\times10^4\right)</mrow>
+                  <intertext>Multiply coefficient with coefficient and power of <m>10</m> with power of <m>10</m>.</intertext>
+                  <mrow>\amp=\left(\highlight{5}\cdot\highlight{2}\right) \left(10^6\times10^4\right)</mrow>
+                  <mrow>\amp=\highlight{10}\times10^{10}</mrow>
+                  <intertext>Remember that this still isn't in scientific notation. So we convert like this:</intertext>
+                  <mrow>\amp=\highlight{1.0\times10^1}\times10^{10}</mrow>
+                  <mrow>\amp=1.0\times10^{11}</mrow>
+                </md>
+                So, after traveling for <m>2\times10^4</m> days (55 years),
+                we will have traveled about <m>1.0\times10^{11}</m> miles.
+                That's one-hundred million miles.
+                I hope someone remembered the snacks.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Since we are looking for time,
+                let's solve the equation <m>d=r\cdot t</m> for <m>t</m> by dividing by <m>r</m> on both sides:
+                <m>t=\frac{d}{r}</m>.
+                So we have:
+                <md>
+                  <mrow>t\amp=\frac{d}{r}</mrow>
+                  <mrow>t\amp=\frac{2.5\times10^{13}}{5\times10^6}</mrow>
+                  <intertext>Now we can divide coefficient by coefficient and power of <m>10</m> with power of <m>10</m>.</intertext>
+                  <mrow>t\amp=\frac{2.5}{5}\times\frac{10^{13}}{10^6}</mrow>
+                  <mrow>t\amp=\highlight{0.5}\times10^7</mrow>
+                  <mrow>t\amp=\highlight{5\times10^{-1}}\times10^7</mrow>
+                  <mrow>t\amp=5\times10^6</mrow>
+                </md>
+                This means that to get to Proxima Centauri,
+                even in our fastest spacecraft,
+                would take <m>5\times10^6</m> years.
+                Converting to standard form, this is <m>5{,}000{,}000</m> years.
+                I think we're going to need a faster ship.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection>
+    <title>Unit Conversion</title>
+    <p>
+      Unit conversion is a particular process that uses unit ratios to convert units.
+      You may refer to <xref ref="appendix-unit-conversions">Appendix</xref>
+      to find unit conversion facts needed to do these conversions.
+    </p>
+
+    <example>
+      <title>Using Multiple Unit Ratios</title>
+      <p>
+        How many grams are in <m>5</m> pounds?
+        <md>
+          <mrow>5\,\text{lb}\amp=\frac{5\,\text{lb}}{1}\amp\amp\text{Rewrite as a ratio.}</mrow>
+          <mrow>\amp=\frac{5\,\text{lb}}{1}\cdot\frac{1\,\text{kg}}{2.205\,\text{lb}}\cdot\frac{1000\,\text{g}}{1\,\text{kg}}\amp\amp\text{Two unit ratios are needed.}</mrow>
+          <mrow>\amp=\frac{5\,\cancelhighlight{\text{lb}}}{1}\cdot\frac{1\,\secondcancelhighlight{\text{kg}}}{2.205\,\cancelhighlight{\text{lb}}}\cdot\frac{1000\,\text{g}}{1\,\secondcancelhighlight{\text{kg}}}\amp\amp\text{Units may now cancel.}</mrow>
+          <mrow>\amp=\frac{5}{1}\cdot\frac{1}{2.205}\cdot\frac{1000\,\text{g}}{1}\amp\amp\text{Only units of g remain.}</mrow>
+          <mrow>\amp=\frac{5\cdot1000}{2.205}\,\text{g}\amp\amp\text{Multiply what's left and then divide.}</mrow>
+          <mrow>\amp\approx2268\,\text{g}</mrow>
+        </md>
+      </p>
+      <p>
+        So <m>5</m> pounds is about <m>2268</m> grams.
+      </p>
+    </example>
+    <example>
+      <title>Converting Squared or Cubed Units</title>
+      <p>
+        Convert <m>240</m> square inches into square centimeters.
+        <md>
+          <mrow>240\,\text{in}^2\amp=\frac{240\,\text{in}^2}{1}\amp\amp\text{Rewrite as a ratio.}</mrow>
+          <mrow>\amp=\frac{240\,\text{in}^2}{1}\cdot\left(\frac{2.54\,\text{cm}}{1\,\text{in}}\right)^2\amp\amp\text{The unit ratio needs to be squared.}</mrow>
+          <mrow>\amp=\frac{240\,\text{in}^2}{1}\cdot\frac{2.54^2\,\text{cm}^2}{1\,\text{in}^2}\amp\amp\text{Everything inside the parentheses is squared.}</mrow>
+          <mrow>\amp=\frac{240\,\cancel{\text{in}^2}}{1}\cdot\frac{2.54^2\,\text{cm}^2}{1\,\cancel{\text{in}^2}}\amp\amp\text{Units may now cancel.}</mrow>
+          <mrow>\amp=\frac{240}{1}\cdot\frac{2.54^2\,\text{cm}^2}{1}\amp\amp\text{Only units of sq cm remain.}</mrow>
+          <mrow>\amp=240\cdot2.54^2\,\text{cm}^2\amp\amp\text{Multiply.}</mrow>
+          <mrow>\amp\approx1548\,\text{cm}^2</mrow>
+        </md>
+      </p>
+      <p>
+        So <m>240</m> square inches is approximately <m>1548</m> square centimeters.
+      </p>
+    </example>
+    <example>
+      <title>Converting Rates</title>
+      <p>
+        Gold has a density of
+        <quantity>
+          <mag>19.3</mag><unit base="gram"/><per prefix="milli" base="liter"/>
+        </quantity>.
+        What is this density in ounces per cubic inch?
+        <md>
+          <mrow>19.3\,\frac{\text{g}}{\text{mL}}\amp=\frac{19.3\,\text{g}}{1\,\text{mL}}\amp\amp\text{Write the rate as a ratio.}</mrow>
+          <mrow>\amp\approx\frac{19.3\,\text{g}}{1\,\text{mL}}\cdot\frac{16.39\,\text{mL}}{1\,\text{in}^3}\cdot\frac{1\,\text{oz}}{28.35\,\text{g}}\amp\amp\text{Use unit ratios to make cancellations.}</mrow>
+          <mrow>\amp=\frac{19.3\,\cancelhighlight{\text{g}}}{1\,\secondcancelhighlight{\text{mL}}}\cdot\frac{16.39\,\secondcancelhighlight{\text{mL}}}{1\,\text{in}^3}\cdot\frac{1\,\text{oz}}{28.35\,\cancelhighlight{\text{g}}}\amp\amp\text{Units may now cancel.}</mrow>
+          <mrow>\amp=\frac{19.3}{1}\cdot\frac{16.39}{1\,\text{in}^3}\cdot\frac{1\,\text{oz}}{28.35}\amp\amp\text{Only oz per cubic inch remain.}</mrow>
+          <mrow>\amp=\frac{19.3\cdot16.39}{28.35}\,\frac{\text{oz}}{\text{in}^3}\amp\amp\text{Multiply what's left and then divide.}</mrow>
+          <mrow>\amp\approx11.16\,\frac{\text{oz}}{\text{in}^3}</mrow>
+        </md>
+        Notice that we did not need to raise any unit ratios to a power since there is a conversion fact that tells us that <m>1\,\text{in}^3\approx16.39\,\text{mL}</m>.
+      </p>
+      <p>
+        Thus, the density of gold is about
+        <quantity>
+          <mag>11.16</mag><unit base="ounce"/><per base="inch" exp="3"/>
+        </quantity>.
+      </p>
+    </example>
+  </subsection>
+
+  <!-- Moved from edition 1's chapter review of variables, expressions, and equations -->
+  <!-- Either keep the list here or refererence subsection-list-of-geometry-formulas -->
+  <subsection>
+    <title>Geometry Formulas</title>
+    <p>
+      In <xref ref="section-geometry-formulas">Section</xref>
+      we established the following formulas.
+      <dl>
+        <li>
+          <title>Perimeter of a Rectangle</title>
+          <p>
+            <m>P=2(\ell+w)</m>
+          </p>
+        </li>
+
+        <li>
+          <title>Area of a Rectangle</title>
+          <p>
+            <m>A=\ell w</m>
+          </p>
+        </li>
+
+        <li>
+          <title>Area of a Triangle</title>
+          <p>
+            <m>A=\frac{1}{2}bh</m>
+          </p>
+        </li>
+
+        <li>
+          <title>Circumference of a Circle</title>
+          <p>
+            <m>c=2\pi r</m>
+          </p>
+        </li>
+
+        <li>
+          <title>Area of a Circle</title>
+          <p>
+            <m>A=\pi r^2</m>
+          </p>
+        </li>
+
+        <li>
+          <title>Volume of a Rectangular Prism</title>
+          <p>
+            <m>V=wdh</m>
+          </p>
+        </li>
+
+        <li>
+          <title>Volume of a Cylinder</title>
+          <p>
+            <m>V=\pi r^2h</m>
+          </p>
+        </li>
+
+        <li>
+          <title>Volume of a Rectangular Prism or Cylinder</title>
+          <p>
+            <m>V=Bh</m>
+          </p>
+        </li>
+      </dl>
+    </p>
+  </subsection>
+
+  <exercises>
+    <exercisegroup cols="2">
+      <title>Scientific Notation</title>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation60.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation60.pg" />
+      </exercise>
+      <!-- <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation60.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation60.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation70.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation70.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <!-- <exercise>
+      <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation70.pg" />
+    </exercise>
+    <exercise>
+      <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation70.pg" />
+    </exercise> -->
+    <!-- <exercise>
+      <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation10.pg" />
+    </exercise>
+    <exercise>
+      <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation10.pg" />
+    </exercise> -->
+    <exercisegroup cols="3">
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation20.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation20.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation30.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation30.pg" />
+      </exercise>
+      <!-- <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation40.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation40.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation50.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation50.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup cols="2">
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation80.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation80.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <!-- <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation90.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation90.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation95.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation95.pg" />
+      </exercise> -->
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation100.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation100.pg" />
+      </exercise>
+      <!-- <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation105.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation105.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation110.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation110.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation115.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation115.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation120.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/NumberBasics/ScientificNotation120.pg" />
+      </exercise> -->
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <title>Unit Conversion</title>
+      <exercise>
+        <webwork copy="webwork-unit-conversion"/>
+      </exercise>
+      <exercise>
+        <webwork copy="webwork-unit-conversion"/>
+      </exercise>
+      <exercise>
+        <webwork copy="webwork-unit-conversion"/>
+      </exercise>
+      <exercise>
+        <webwork copy="webwork-unit-conversion-2"/>
+      </exercise>
+      <exercise>
+        <webwork copy="webwork-unit-conversion-2"/>
+      </exercise>
+      <exercise>
+        <webwork copy="webwork-unit-conversion-2"/>
+      </exercise>
+      <exercise>
+        <webwork copy="webwork-unit-conversion-with-powers"/>
+      </exercise>
+      <exercise>
+        <webwork copy="webwork-unit-conversion-with-powers"/>
+      </exercise>
+      <exercise>
+        <webwork copy="webwork-speed-conversion"/>
+      </exercise>
+      <exercise>
+        <webwork copy="webwork-area-per-time-conversion"/>
+      </exercise>
+      <exercise>
+        <webwork copy="webwork-mass-per-time-conversion"/>
+      </exercise>
+      <exercise>
+        <webwork copy="webwork-data-transfer-rate-conversion"/>
+      </exercise>
+    </exercisegroup>
+
+    <exercisegroup cols="3">
+      <exercise>
+        <webwork copy="webwork-bedroom-carpet-area-conversion"/>
+      </exercise>
+      <exercise>
+        <webwork copy="webwork-petrol-conversion"/>
+      </exercise>
+      <exercise>
+        <webwork copy="webwork-multiply-speed-by-time"/>
+      </exercise>
+      <exercise>
+        <webwork copy="webwork-multiply-growth-rate-by-time"/>
+      </exercise>
+    </exercisegroup>
+
+    <exercisegroup cols="2">
+      <title>Geometry</title>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/Geometry/RectanglePerimeterArea10.pg" seed="6"/>
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/Geometry/RectanglePerimeterArea10.pg" seed="26"/>
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup cols="3">
+      <exercise>
+        <webwork source="Contrib/PCC/BasicMath/FractionApplication/FractionMultiplicationWordProblems60.pg" seed="44"/>
+      </exercise>
+
+      <exercise>
+        <webwork copy="webwork-find-rectangle-perimeter-and-area"/>
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/Geometry/TrianglePerimeterArea10.pg" seed="49"/>
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/Geometry/TrianglePerimeterArea20.pg" seed="56"/>
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicMath/FractionApplication/MixedNumberMultiplicationWordProblems40.pg"  />
+      </exercise>
+
+      <exercise>
+        <webwork copy="webwork-find-triangle-perimeter-and-area"/>
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/Geometry/RectanglePerimeterArea40.pg" seed="69"/>
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/Geometry/RectanglePerimeterArea50.pg" seed="89"/>
+      </exercise>
+    </exercisegroup>
+
+    <exercisegroup cols="2">
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/EvaluateExpressions/EvaluateFormula10.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/Geometry/CircleCircumferenceArea10.pg" />
+      </exercise>
+    </exercisegroup>
+
+    <exercisegroup cols="3">
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/Geometry/PolygonPerimeterArea20.pg" seed="87"/>
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/Geometry/RectangularPrismVolume10.pg" seed="92"/>
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/Geometry/RectangularPrismVolume20.pg"/>
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/Geometry/CylinderVolume10.pg" seed="138"/>
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/Geometry/CylinderVolume20.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/Geometry/CylinderVolume20.pg" />
+      </exercise>
+
+    </exercisegroup>
+
+    <exercise>
+      <webwork copy="webwork-table-of-geometry-formulas"/>
+    </exercise>
+
+    <exercisegroup cols="2">
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/Geometry/CircleCircumferenceArea30.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/Geometry/CircleCircumferenceArea40.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/Geometry/CircleCircumferenceArea40.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/Geometry/CylinderVolume30.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/Geometry/RectangularPrismVolume30.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/Geometry/TrianglePerimeterArea40.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/Geometry/SimilarTriangles50.pg" seed="1596"/>
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/Geometry/SimilarTriangles60.pg" seed="1601"/>
+      </exercise>
+    </exercisegroup>
+
+  </exercises>
+</section>
+

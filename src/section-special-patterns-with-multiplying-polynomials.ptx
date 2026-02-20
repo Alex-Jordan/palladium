@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2016-2019                                                  -->
+<!-- Portland Community College                                           -->
+<!--                                                                      -->
+<!-- This file is part of Open Resources for Community College Algebra    -->
+<!-- (ORCCA).                                                             -->
+<!--                                                                      -->
+<!-- Open Resources for Community College Algebra is licensed under a     -->
+<!-- Creative Commons Attribution 4.0 International License.              -->
+<!--                                                                      -->
+<!-- Under this license, any user of this textbook or the textbook        -->
+<!-- contents must provide proper attribution as follows.                 -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- include in every digital format page view (including but not         -->
+<!-- limited to EPUB, PDF, and HTML) and on every physical printed page   -->
+<!-- the following attribution:                                           -->
+<!--                                                                      -->
+<!-- Original source material, products with readable and accessible      -->
+<!-- math content, and other information freely available at              -->
+<!-- pcc.edu/orcca.                                                       -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- reproduce any math content (such as math expressions and equations)  -->
+<!-- in a readable manner, and offer math content in at least one web     -->
+<!-- accessible manner.                                                   -->
+<!--                                                                      -->
+<!-- The Portland Community College name, Portland Community College      -->
+<!-- logo, ORCCA name, Open Resources for Community College Algebra name, -->
+<!-- ORCCA logo, and front and back cover designs are not subject to the  -->
+<!-- Creative Commons license and may not be reproduced without the       -->
+<!-- prior and express written consent of Portland Community College.     -->
+<!--                                                                      -->
+<!-- For questions regarding this license, please contact                 -->
+<!-- orcca-group@pcc.edu.                                                 -->
+<!-- *********************************************************************-->
+<section xml:id="section-special-patterns-with-multiplying-polynomials" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Special Patterns with Multiplying Polynomials</title>
+  <objectives>
+    <title>PCC Course Content and Outcome Guide</title>
+    <ul>
+      <li>
+        <xref ref="ccog-add-subtract-multiply-square-polynomials" text="local">MTH 65 CCOG</xref>
+      </li>
+    </ul>
+  </objectives>
+
+  <introduction>
+    <p>
+      We've learned how to multiply polynomials together in general. There are a few special
+      patterns with polynomials being multiplied together that you can learn to recognize. When you
+      see these patterns, you can more quickly write down what it all multiplies to. This is worth
+      learning not only because it improves your speed, but also because it reduces the chances for
+      human artihmetic errors to happen.
+    </p>
+
+    <figure>
+      <caption>Alternative Video Lesson</caption>
+      <video youtubeplaylist="PLmuZCPhWPt-dZn2tR8c6JV0K-vIjwNrjG" />
+    </figure>
+  </introduction>
+
+  <subsection>
+    <title>Squaring a Binomial</title>                                                                        <idx><h>squaring a binomial</h></idx>
+    <example>
+      <p>
+        To <q>square a binomial</q> is to take that binomial and multiply it by itself. Just as
+        <m>4^2</m> means <m>4\cdot 4</m>, it's also true that <m>(x+4)^2</m> means
+        <m>(x+4)(x+4)</m>. So to expand the expression <m>(x+4)^2</m> we can write it as 
+        <m>(x+4)(x+4)</m> and use <acro>FOIL</acro>:
+        <md>
+          <mrow>(x+4)^2 \amp= (x+4)(x+4)</mrow>
+          <mrow>\amp= x^2 + 4x + 4x + 16</mrow>
+          <mrow>\amp= x^2 + 8x + 16</mrow>
+        </md>
+        Similarly, to expand something like <m>(y-7)^2</m> (with subtraction), we could write:
+        <md>
+          <mrow>(y-7)^2 \amp= (y-7)(y-7)</mrow>
+          <mrow>\amp= y^2 - 7y - 7y + 49</mrow>
+          <mrow>\amp= y^2 - 14y + 49</mrow>
+        </md>
+      </p>
+      <p>
+        These two examples might look like any other example of multiplying binomials, but looking
+        closely we can see that something <em>special</em> happened. Focusing on the original
+        expression and the simplified one, we can see a pattern:
+        <md>
+          <mrow>(\firsthighlight{x}+\secondhighlight{4})^2 \amp= \firsthighlight{x}^2 +2(\secondhighlight{4}\firsthighlight{x}) + \secondhighlight{4}^2</mrow>
+          <intertext>And:</intertext>
+          <mrow>(\firsthighlight{y}-\secondhighlight{7})^2 \amp= \firsthighlight{y}^2 -2(\secondhighlight{7}\firsthighlight{y}) + \secondhighlight{7}^2</mrow>
+        </md>
+        Either way, we have:
+        <me>
+          (\text{first}+\text{second})^2=(\text{first})^2\pm2(\text{first})(\text{second})+(\text{second})^2
+        </me>
+        and the choice of <m>+</m> or <m>-</m> matches the original binomial.
+      </p>
+    </example>
+    <p>
+      What we're seeing is a pattern relating two things. The left side is the <term>square of a
+      binomial</term>, and the result on the right is called a <term>perfect square
+      trinomial</term>, a trinomial that was born from something getting squared.                             <idx><h>perfect square trinomial</h></idx>
+    </p>
+    <p>
+      The general way this pattern is established is by squaring the two most general binomials,
+      <m>(a+b)</m> and <m>(a-b)</m>. Once we square them and multiply it all out, we can imagine
+      anything we like in place of <m>a</m> and <m>b</m> and rely on the pattern to simplify squared
+      binomials.
+    </p>
+    <p>
+      We can write <m>(a+b)^2</m> as <m>(a+b)(a+b)</m> and then:
+      <md>
+        <mrow>(\firsthighlight{a}+\secondhighlight{b})^2\amp=(\firsthighlight{a}+\secondhighlight{b})(\firsthighlight{a}+\secondhighlight{b})</mrow>
+        <mrow>\amp=\firsthighlight{a}^2+\firsthighlight{a}\secondhighlight{b}+\secondhighlight{b}\firsthighlight{a}+\secondhighlight{b}^2</mrow>
+        <mrow>\amp=\firsthighlight{a}^2+2\firsthighlight{a}\secondhighlight{b}+\secondhighlight{b}^2</mrow>
+      </md>
+      Notice the final simplification step was to add <m>ab+ba</m>. Since these are like terms, we
+      can combine them into <m>2ab</m>.
+    </p>
+    <p>
+      Similarly, we can find a general formula for <m>(a-b)^2</m>:
+      <md>
+        <mrow>(\firsthighlight{a}-\secondhighlight{b})^2\amp=(\firsthighlight{a}-\secondhighlight{b})(\firsthighlight{a}-\secondhighlight{b})</mrow>
+        <mrow>\amp=\firsthighlight{a}^2-\firsthighlight{a}\secondhighlight{b}-\secondhighlight{b}\firsthighlight{a}+\secondhighlight{b}^2</mrow>
+        <mrow>\amp=\firsthighlight{a}^2-2\firsthighlight{a}\secondhighlight{b}+\secondhighlight{b}^2</mrow>
+      </md>
+    </p>
+    <fact xml:id="fact-squaring-a-binomial">
+      <title>Binomial Squared Formulas</title>                                                                <idx><h>squaring a binomial</h></idx>
+      <statement>
+        <p>
+          If <m>a</m> and <m>b</m> are math expressions, then we have the following formulas:
+          <me>
+            (a+b)^2 = a^2+2ab+b^2
+          </me>
+          <me>
+            (a-b)^2 = a^2-2ab+b^2
+          </me>
+        </p>
+      </statement>
+    </fact>
+    <p>
+      Notice that whether it's <m>(a+b)^2</m> or <m>(a-b)^2</m>, by the time they are expanded the
+      last term is <em>adding</em> <m>b^2</m>. This is because any nonzero number or expression
+      will be positive after it is squared.
+    </p>
+    <p>
+      These formulas allow us to multiply this type of special product more quickly.
+    </p>
+
+    <sidebyside widths="58% 36%" margins="0%">
+      <p>
+        Some students will prefer to memorize the
+        <xref ref="fact-squaring-a-binomial" text="title"/> and apply them by substituting
+        expressions in for <m>a</m> and <m>b</m>. An alternative visualization is presented in
+        <xref ref="figure-vizualizing-binomial-squared"/>.
+      </p>
+
+      <figure xml:id="figure-vizualizing-binomial-squared">
+        <caption>Visualizing the Squaring of a Binomial</caption>
+        <image>
+          <latex-image>
+            \begin{tikzpicture}
+              \node (A) at (0,0) {$a\pm b$};
+              \node[left=0cm of A, inner sep=0pt] (B) {$($};
+              \node[right=0cm of A, inner sep=0pt] (C) {$)^2$};
+              \node (D) at (0,-2) {$ab$};
+              \node (E) at (0,-4) {$a^2\pm 2ab+b^2$};
+              \draw (A.south west) edge[bend right=45,->] node[pos=0.5, left] {square} (E.north west);
+              \draw (A.south east) edge[bend left=45,->] node[pos=0.5, right] {square} (E.north east);
+              \draw (A.south west) edge[bend right=45,->] (D.north west);
+              \draw (A.south east) edge[bend left=45,->] (D.north east);
+              \node at ($1/2*(A) + 1/2*(D)$) {multiply};
+              \draw[->] (D.south) -- node[pos=0.5] {double} (E.north);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </figure>
+    </sidebyside>
+
+    <example xml:id="example-squaring-binomial-using-formula">
+      <p>
+        Expand <m>(2x-3)^2</m> using the <xref ref="fact-squaring-a-binomial" text="title"/>.
+      </p>
+      <p>
+        To apply
+        <xref ref="fact-squaring-a-binomial" text="custom">the formula for squaring a binomial</xref>,
+        we take <m>\firsthighlight{a=2x}</m> and <m>\secondhighlight{b=3}</m>. Expanding this, we
+        have:
+        <md alignment="alignat">
+          <mrow>(\firsthighlight{2x} {}-{} \secondhighlight{3})^2 \amp= \firsthighlight{(2x)}^2 \amp \amp- 2\firsthighlight{(2x)}\secondhighlight{(3)} \amp \amp+ \secondhighlight{(3)}^2</mrow>
+          <mrow>\amp= 4x^2 \amp \amp- 12x \amp \amp+ 9</mrow>
+        </md>
+      </p>
+    </example>
+
+    <exercise>
+      <webwork>
+        <pg-code>
+          Context("Form");
+          Context()->variables->are(x=>'Real',y=>'Real');
+          $a = Formula("25x^2y^2+10xy+1");
+          $b = Formula("36x^2-168x+196");
+        </pg-code>
+        <statement>
+          <p>
+            Expand the following using the Binomial Squared Formula.
+            <ol marker="a." cols="2">
+              <li>
+                <p>
+                  <m>(5xy+1)^2</m>
+                </p>
+                <p>
+                  <var name="$a" width="15"/>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>4(3x-7)^2</m>
+                </p>
+                <p>
+                  <var name="$b" width="15"/>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol marker="a.">
+              <li>
+                <p>
+                  <m>\begin{aligned}[t]
+                  (5xy+1)^2 \amp= (5xy)^2+2(5xy)(1)+1^2\\
+                  \amp= 25x^2y^2+10xy+1\end{aligned}
+                  </m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  With this expression, we will first note that the factor of <m>4</m> is
+                  <em>outside</em> the portion of the expression that is squared. Using the order of
+                  operations, we will first expand <m>(3x-7)^2</m> and then multiply that expression
+                  by <m>4</m>:
+                  <md>
+                    <mrow>4(3x-7)^2 \amp= 4\left((3x)^2-2(3x)(7)+7^2\right)</mrow>
+                    <mrow>\amp= 4\left(9x^2-42x+49\right)</mrow>
+                    <mrow>\amp= 36x^2-168x+196</mrow>
+                  </md>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+
+    <example>
+      <statement>
+        <p>
+          Use the visualization in <xref ref="figure-vizualizing-binomial-squared"/> to expand these
+          binomials squared.
+          <ol marker="a." cols="2">
+            <li>
+              <p>
+                <m>(x+8)^2</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>(2t-7)^2</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a." cols="2">
+            <li>
+              <p>
+                Diagramming the process:
+              </p>
+              <image width="80%">
+                <latex-image>
+                  \begin{tikzpicture}
+                    \node (A) at (0,0) {$x+8$};
+                    \node[left=0cm of A, inner sep=0pt] (B) {$($};
+                    \node[right=0cm of A, inner sep=0pt] (C) {$)^2$};
+                    \node (D) at (0,-2) {$8x$};
+                    \node (E) at (0,-4) {$x^2+16x+64$};
+                    \draw (A.south west) edge[bend right=45,->] node[pos=0.5, left] {square} (E.north west);
+                    \draw (A.south east) edge[bend left=45,->] node[pos=0.5, right] {square} (E.north east);
+                    \draw (A.south west) edge[bend right=45,->] (D.north west);
+                    \draw (A.south east) edge[bend left=45,->] (D.north east);
+                    \node at ($1/2*(A) + 1/2*(D)$) {multiply};
+                    \draw[->] (D.south) -- node[pos=0.5] {double} (E.north);
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+            </li>
+            <li>
+              <p>
+                Diagramming the process:
+              </p>
+              <image width="80%">
+                <latex-image>
+                  \begin{tikzpicture}
+                    \node (A) at (0,0) {$2t-7$};
+                    \node[left=0cm of A, inner sep=0pt] (B) {$($};
+                    \node[right=0cm of A, inner sep=0pt] (C) {$)^2$};
+                    \node (D) at (0,-2) {$-14t$};
+                    \node (E) at (0,-4) {$4t^2-28t+49$};
+                    \draw (A.south west) edge[bend right=45,->] node[pos=0.5, left] {square} (E.north west);
+                    \draw (A.south east) edge[bend left=45,->] node[pos=0.5, right] {square} (E.north east);
+                    \draw (A.south west) edge[bend right=45,->] (D.north west);
+                    \draw (A.south east) edge[bend left=45,->] (D.north east);
+                    \node at ($1/2*(A) + 1/2*(D)$) {multiply};
+                    \draw[->] (D.south) -- node[pos=0.5] {double} (E.north);
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <sidebyside widths="78% 16%" margins="0%">
+          <p>
+            A circle's area can be calculated using the formula
+            <me>
+              A=\pi r^2
+            </me>
+            where <m>A</m> stands for area, and <m>r</m> stands for radius. If a certain circle's
+            radius can be modeled by <m>x-5</m> feet, use an expanded polynomial to model the
+            circle's area.
+          </p>
+          <image>
+            <latex-image>
+              \begin{tikzpicture}
+                \draw (0,0) circle (1.3);
+                \draw (0,0) -- (1.3,0) node[pos=0.5,above] {$x-5$};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </sidebyside>
+      </statement>
+      <solution>
+        <p>
+          The circle's area would be:
+          <md>
+            <mrow>A\amp=\pi r^2</mrow>
+            <mrow>\amp=\pi (x-5)^2\amp\text{Now use a method for squaring this binomial}\ldots</mrow>
+            <mrow>\amp=\pi \left(x^2-10x+25\right)</mrow>
+            <mrow>\amp=\pi x^2-10\pi x+25\pi</mrow>
+          </md>
+          The circle's area can be modeled by <m>\pi x^2-10\pi x+25\pi</m> square feet.
+        </p>
+      </solution>
+    </example>
+
+    <exercise>
+      <webwork>
+          <pg-code>
+            Context("Form");
+            Context()->variables->are(y=>'Real');
+            $answer = Formula("y^6-24y^3+144");
+          </pg-code>
+        <statement>
+          <p>
+            Expand <m>\left(y^3-12\right)^2</m>.
+          </p>
+          <p>
+            <var name="$answer" width="15"/>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\left(y^3-12\right)^2 \amp= \left(y^3\right)^2-2\left(y^3\right)(12)+12^2</mrow>
+              <mrow>\amp= y^6-24y^3+144</mrow>
+            </md>
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+
+    <warning xml:id="warning-freshman-dream">
+      <title>Common Mistakes</title>
+      <p>
+        Now we know how to expand <m>(a+b)^2</m> and <m>(a-b)^2</m>. It is a common mistake to think
+        that these are equal to <m>a^2+b^2</m> and <m>a^2-b^2</m>, as if you could just
+        <q>distribute</q> the exponent. Now we know that actually you get <m>a^2+2ab+b^2</m>
+        and <m>a^2-2ab+b^2</m>. It is worth spending some time studying that <m>(a\pm b)^2</m> is
+        <em>not</em> <m>a^2\pm b^2</m>.
+      </p>
+    </warning>
+
+  </subsection>
+
+  <subsection>
+    <title>The Product of the Sum and Difference of Two Terms</title>
+    <p>
+      To motivate the next <q>special pattern</q> for multiplying polynomials, we'll look at a few
+      examples.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Multiply the following binomials:
+          <ol marker="a." cols="2">
+            <li>
+              <p>
+                <m>(x+5)(x-5)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>(y-8)(y+8)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We can approach these as using distribution, <acro>FOIL</acro>, or generic rectangles, and
+          obtain the following:
+          <ol marker="a.">
+            <li>
+              <p>
+                <m>\begin{aligned}[t]
+                (\firsthighlight{x}+\secondhighlight{5})(\firsthighlight{x}-\secondhighlight{5}) \amp= \firsthighlight{x}^2-\secondhighlight{5}\firsthighlight{x}+\secondhighlight{5}\firsthighlight{x}-\secondhighlight{25}\\
+                \amp= \firsthighlight{x}^2-\secondhighlight{25}\end{aligned}
+                </m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\begin{aligned}[t]
+                (\firsthighlight{y}+\secondhighlight{8})(\firsthighlight{y}-\secondhighlight{8}) \amp= \firsthighlight{y}^2-\secondhighlight{8}\firsthighlight{y}+\secondhighlight{8}\firsthighlight{y}-\secondhighlight{64}\\
+                \amp=  \firsthighlight{y}^2-\secondhighlight{64}\end{aligned}
+                </m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      In these examples, we multiplied the sum of two terms by the difference of the <em>same</em>
+      two terms. Once these expressions were multiplied, the two middle terms were opposite and so
+      they canceled to zero.
+    </p>
+
+    <p>
+      These pairs, generally written as <m>(a+b)</m> and <m>(a-b)</m>, are known as
+      <term>conjugates</term>. If we multiply <m>(a+b)(a-b)</m>, we can see the general pattern               <idx><h>conjugates</h></idx>
+      more clearly:
+      <md>
+        <mrow>(\firsthighlight{a}+\secondhighlight{b})(\firsthighlight{a}-\secondhighlight{b}) \amp= \firsthighlight{a}^2-\firsthighlight{a}\secondhighlight{b}+\firsthighlight{a}\secondhighlight{b}-\secondhighlight{b}^2</mrow>
+        <mrow>\amp= \firsthighlight{a}^2  - \secondhighlight{b}^2</mrow>
+      </md>
+      The left side is the <term>product of a sum and its conjugate</term>, and the result on the
+      right is a <term>difference of squares</term>.                                                          <idx><h>difference of squares</h></idx>
+    </p>
+
+    <fact xml:id="fact-product-of-sum-and-difference">
+      <title>The Product of a Sum and Its Conjugate Formula</title>                                           <idx><h>difference of squares</h></idx>
+                                                                                                              <idx><h>product of a sum and its conjugate</h></idx>
+      <statement>
+        <p>
+          If <m>a</m> and <m>b</m> are math expressions, then we have the following formula:
+          <me>
+            (a+b)(a-b)=a^2-b^2
+          </me>
+        </p>
+      </statement>
+    </fact>
+
+    <example>
+      <statement>
+        <p>
+          Multiply the following using <xref ref="fact-product-of-sum-and-difference"/>.
+          <ol marker="a." cols="2">
+            <li>
+              <p>
+                <m>(4x-7y)(4x+7y)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>-2(3x+1)(3x-1)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The first step to using this method is to identify the values of <m>a</m> and <m>b</m>.
+          <ol marker="a.">
+            <li>
+              <p>
+                In this instance, <m>a=4x</m> and <m>b=7y</m>. Using the formula,
+                <md>
+                  <mrow>(4x-7y)(4x+7y) \amp= (4x)^2-(7y)^2</mrow>
+                  <mrow>\amp= 16x^2-49y^2</mrow>
+                </md>
+              </p>
+            </li>
+            <li>
+              <p>
+                In this instance, we have a constant factor as well as a product of a sum and its
+                conjugate. We first expand <m>(3x+1)(3x-1)</m> by identifying <m>a=3x</m> and
+                <m>b=1</m> and using the formula. Then we will multiply the factor of <m>-2</m>
+                through this expression. So,
+                <md>
+                  <mrow>-2(3x+1)(3x-1)\amp= -2\left((3x)^2-1^2\right)</mrow>
+                  <mrow>\amp= -2\left(9x^2-1\right)</mrow>
+                  <mrow>\amp= -18x^2+2</mrow>
+                </md>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <exercise>
+      <webwork>
+        <pg-code>
+          Context("Form");
+          $answer = Formula("16x^2-4");
+        </pg-code>
+        <statement>
+          <p>
+            Expand <m>(4x+2)(4x-2)</m>.
+          </p>
+          <p>
+            <var name="$answer" width="15"/>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>(4x+2)(4x-2) \amp= (4x)^2 - 2^2</mrow>
+              <mrow>\amp= 16x^2-4</mrow>
+            </md>
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+
+    <exercise>
+      <webwork>
+        <pg-code>
+          Context("Form");
+          $answer = Formula("x^14-81");
+        </pg-code>
+        <statement>
+          <p>
+            Expand <m>\left(x^7+9\right)\left(x^7-9\right)</m>.
+          </p>
+          <p>
+            <var name="$answer" width="15"/>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>\left(x^7+9\right)\left(x^7-9\right) \amp= \left(x^7\right)^2 - 9^2</mrow>
+              <mrow>\amp= x^{14}-81</mrow>
+            </md>
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+  </subsection>
+
+  <subsection>
+    <title>Binomials Raised to Other Powers</title>
+    <example>
+      <p>
+        Simplify the expression <m>(x+5)^3</m> into an expanded polynomial.
+      </p>
+      <p>
+        Before we start expanding this expression, it is important to recognize that
+        <m>(x+5)^3\neq x^3+5^3</m>, similar to the message in <xref ref="warning-freshman-dream"/>.
+        To be sure, we can see that if we evaluate at <m>x=1</m>, we get different results.
+        <md>
+          <mrow>(\substitute{1}+5)^3\amp=6^3\amp \substitute{1}^3+5^3\amp=1+125</mrow>
+          <mrow>\amp=216\amp\amp=126</mrow>
+        </md>
+      </p>
+      <p>
+        We will rely on distribution to expand this expression. The first step in expanding
+        <m>(x+5)^3</m> is to remember that the exponent of <m>3</m> means repeated multiplication:
+        <me>
+          (x+5)^3=\overbrace{(x+5)(x+5)(x+5)}^{3\text{ times }}
+        </me>
+        Once we rewrite this in an expanded form, we next multiply the two binomials on the left and
+        then finish by multiplying that result by the remaining binomial:
+        <md>
+          <mrow>(x+5)^3\amp=\overbrace{(x+5)(x+5)}^{\text{a binomial squared}}(x+5)</mrow>
+          <mrow>\amp=\highlight{\left(x^2+10x+25\right)}(x+5)</mrow>
+          <mrow>\amp=x^3 + 5x^2 + 10x^2 +50x+25x+125</mrow>
+          <mrow>\amp=x^3 + 15x^2  + 75x + 125</mrow>
+        </md>
+      </p>
+    </example>
+
+    <exercise>
+      <webwork>
+        <pg-code>
+          Context("Form");
+          Context()->variables->are(y=>'Real');
+          $answer = Formula("8y^3-72y^2+216y-216");
+        </pg-code>
+        <statement>
+          <p>
+            Expand <m>(2y-6)^3</m>.
+          </p>
+          <p>
+            <var name="$answer" width="15"/>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <md>
+              <mrow>(2y-6)^3\amp=\overbrace{(2y-6)(2y-6)}^{\text{a binomial squared}}(2y-6)</mrow>
+              <mrow>\amp=\highlight{\left(4y^2-24y+36\right)}(2y-6)</mrow>
+              <mrow>\amp=8y^3 - 24y^2 - 48y^2 + 144y + 72y - 216</mrow>
+              <mrow>\amp=8y^3 - 72y^2 + 216y - 216</mrow>
+            </md>
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+
+    <p>
+      Generalizing, if we want to expand a binomial raised to a high whole number power, we can
+      start by rewriting the expression without an exponent. Then it will help some to use the
+      formula for the square of a binomial.
+    </p>
+
+    <example>
+      <p>
+        To multiply <m>(x-3)^4</m>, we'd start by rewriting <m>(x-3)^4</m> in expanded form as:
+        <me>
+          (x-3)^4=\overbrace{(x-3)(x-3)(x-3)(x-3)}^{4\text{ times}}
+        </me>
+        We then multiply pairs of polynomials from the left to the right.
+        <md>
+          <mrow>(x-3)^4\amp=\overbrace{(x-3)(x-3)}^{\text{a perfect square}}\overbrace{(x-3)(x-3)}^{\text{a perfect square}}</mrow>
+          <mrow>\amp=\highlight{\left(x^2-6x+9\right)}\highlight{\left(x^2-6x+9\right)}</mrow>
+          <mrow>\amp=x^4 - 6x^3 + 9x^2 - 6x^3 + 36x^2 - 54x + 9x^2 - 54x + 81 </mrow>
+          <mrow>\amp=x^4 - 12x^3 + 54x^2 - 108x + 81</mrow>
+        </md>
+      </p>
+    </example>
+  </subsection>
+
+  <reading-questions>
+    <exercise>
+      <statement>
+        <p>
+          How many special patterns should you be on the lookout for when multiplying and/or
+          squaring binomials?
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Do you prefer to memorize the formula for the square of a binomial or to visualize the
+          process?
+        </p>
+      </statement>
+    </exercise>
+  </reading-questions>
+
+  <exercises>
+    <subexercises>
+      <title>Review and Warmup</title>
+      <exercisegroup cols="3">
+        <introduction>
+          <p>
+            Use the properties of exponents to simplify the expression.
+          </p>
+        </introduction>
+        <exercise label="exponent-product-to-power-copy4">
+          <webwork copy="webwork-exponent-product-to-power"/>
+        </exercise>
+        <exercise label="exponent-product-to-power-copy5">
+          <webwork copy="webwork-exponent-product-to-power"/>
+        </exercise>
+        <exercise label="exponent-product-with-power-to-power-copy2">
+          <webwork copy="webwork-exponent-product-with-power-to-power"/>
+        </exercise>
+        <exercise label="exponent-product-with-power-to-power-copy3">
+          <webwork copy="webwork-exponent-product-with-power-to-power"/>
+        </exercise>
+        <exercise label="exponent-negative-product-with-power-to-power-copy2">
+          <webwork copy="webwork-exponent-negative-product-with-power-to-power"/>
+        </exercise>
+        <exercise label="exponent-negative-product-with-power-to-power-copy3">
+          <webwork copy="webwork-exponent-negative-product-with-power-to-power"/>
+        </exercise>
+      </exercisegroup>
+    </subexercises>
+
+    <subexercises>
+      <title>Skills Practice</title>
+      <exercisegroup cols="4">
+        <title>Perfect Square Trinomial Formula</title>
+        <introduction>
+          <p>
+            Square the binomial, writing the result as a single expanded polynomial.
+          </p>
+        </introduction>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication190">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication190.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication190-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication190.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication195">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication195.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication195-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication195.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication200">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication200.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication200-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication200.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication205">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication205.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication205-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication205.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication210">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication210.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication210-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication210.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication215">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication215.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication215-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication215.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar100">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar100.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar100-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar100.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar105">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar105.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar105-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar105.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar110">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar110.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar110-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar110.pg"/></webwork>
+        </exercise>
+      </exercisegroup>
+
+      <exercisegroup cols="3">
+        <title>Difference of Squares Formula</title>
+        <introduction>
+          <p>
+            Multiply the polynomials, writing the result as a single expanded polynomial.
+          </p>
+        </introduction>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication160">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication160.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication160-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication160.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication165">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication165.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication165-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication165.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication170">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication170.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication170-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication170.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication175">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication175.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication175-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication175.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication180">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication180.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication180-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication180.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication185">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication185.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication185-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication185.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar115">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar115.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar115-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar115.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar120">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar120.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar120-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar120.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication161">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication161.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication161-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication161.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication166">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication166.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication166-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication166.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication191">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication191.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication191-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication191.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication196">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication196.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication196-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication196.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar125">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar125.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar125-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar125.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar130">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar130.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar130-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar130.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar135">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar135.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar135-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar135.pg"/></webwork>
+        </exercise>
+      </exercisegroup>
+
+      <exercisegroup cols="4">
+        <title>Binomials Raised to Other Powers</title>
+        <introduction>
+          <p>
+            Simplify the given expression into an expanded polynomial.
+          </p>
+        </introduction>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication230">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication230.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication230-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication230.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication235">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication235.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication235-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication235.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication240">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication240.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication240-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication240.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication245">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication245.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication245-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication245.pg"/></webwork>
+        </exercise>
+      </exercisegroup>
+      <exercisegroup cols="2">
+        <introduction>
+          <p>
+            Determine if the following statements are true or false.
+          </p>
+        </introduction>
+        <exercise label="true-false-multiply-polynomials">
+          <webwork>
+            <pg-macros>
+              <macro-file>parserPopUp.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $yes = DropDownTF(1);
+              $no  = DropDownTF(0);
+            </pg-code>
+            <task>
+              <statement>
+                <p>
+                  <m>(a-b)^2=a^2-b^2</m>
+                </p>
+                <p>
+                  <var name="$no" form="popup"/>
+                </p>
+              </statement>
+              <solution>
+                <p>
+                  False, as <m>(a-b)^2=a^2-2ab+b^2</m>.
+                </p>
+              </solution>
+            </task>
+            <task>
+              <statement>
+                <p>
+                  <m>(a+b)^2=a^2+b^2</m>
+                </p>
+                <p>
+                  <var name="$no" form="popup"/>
+                </p>
+              </statement>
+              <solution>
+                <p>
+                  False, as <m>(a+b)^2=a^2+2ab+b^2</m>.
+                </p>
+              </solution>
+            </task>
+            <task>
+              <statement>
+                <p>
+                  <m>(a+b)(a-b)=a^2-b^2</m>
+                </p>
+                <p>
+                  <var name="$yes" form="popup"/>
+                </p>
+              </statement>
+              <solution>
+                <p>
+                  True.
+                </p>
+              </solution>
+            </task>
+          </webwork>
+        </exercise>
+        <exercise label="true-false-multiply-polynomials-2">
+          <webwork>
+            <pg-macros>
+              <macro-file>parserPopUp.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $yes = DropDownTF(1);
+              $no  = DropDownTF(0);
+            </pg-code>
+            <task>
+              <statement>
+                <p>
+                  <m>(2(a-b))^2=4(a-b)^2</m>
+                </p>
+                <p>
+                  <var name="$no" form="popup"/>
+                </p>
+              </statement>
+              <solution>
+                <p>
+                  True, as
+                  <md>
+                    <mrow>(2(a-b))^2\amp=2^2(a-b)^2</mrow>
+                    <mrow>\amp=4(a-b)^2</mrow>
+                  </md>
+                  by the properties of exponents.
+                </p>
+              </solution>
+            </task>
+            <task>
+              <statement>
+                <p>
+                  <m>2(a+b)^2=2a^2+2b^2</m>
+                </p>
+                <p>
+                  <var name="$no" form="popup"/>
+                </p>
+              </statement>
+              <solution>
+                <p>
+                  False, as <m>(a+b)^2=a^2+2ab+b^2</m>, we have
+                  <md>
+                    <mrow>2(a+b)^2\amp=2(a^2+2ab+b^2)</mrow>
+                    <mrow>\amp=2a^2+4ab+2b^2</mrow>
+                  </md>
+                </p>
+              </solution>
+            </task>
+            <task>
+              <statement>
+                <p>
+                  <m>2(a+b)(a-b)=2a^2-2b^2</m>
+                </p>
+                <p>
+                  <var name="$yes" form="popup"/>
+                </p>
+              </statement>
+              <solution>
+                <p>
+                  True, as
+                  <md>
+                    <mrow>2(a+b)(a-b)\amp=2(a^2-b^2)</mrow>
+                    <mrow>\amp=2a^2-2b^2</mrow>
+                  </md>
+                </p>
+              </solution>
+            </task>
+          </webwork>
+        </exercise>
+      </exercisegroup>
+    </subexercises>
+  </exercises>
+</section>
+

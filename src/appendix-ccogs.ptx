@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2016-2019                                                  -->
+<!-- Portland Community College                                           -->
+<!--                                                                      -->
+<!-- This file is part of Open Resources for Community College Algebra    -->
+<!-- (ORCCA).                                                             -->
+<!--                                                                      -->
+<!-- Open Resources for Community College Algebra is licensed under a     -->
+<!-- Creative Commons Attribution 4.0 International License.              -->
+<!--                                                                      -->
+<!-- Under this license, any user of this textbook or the textbook        -->
+<!-- contents must provide proper attribution as follows.                 -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- include in every digital format page view (including but not         -->
+<!-- limited to EPUB, PDF, and HTML) and on every physical printed page   -->
+<!-- the following attribution:                                           -->
+<!--                                                                      -->
+<!-- Original source material, products with readable and accessible      -->
+<!-- math content, and other information freely available at              -->
+<!-- pcc.edu/orcca.                                                       -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- reproduce any math content (such as math expressions and equations)  -->
+<!-- in a readable manner, and offer math content in at least one web     -->
+<!-- accessible manner.                                                   -->
+<!--                                                                      -->
+<!-- The Portland Community College name, Portland Community College      -->
+<!-- logo, ORCCA name, Open Resources for Community College Algebra name, -->
+<!-- ORCCA logo, and front and back cover designs are not subject to the  -->
+<!-- Creative Commons license and may not be reproduced without the       -->
+<!-- prior and express written consent of Portland Community College.     -->
+<!--                                                                      -->
+<!-- For questions regarding this license, please contact                 -->
+<!-- orcca-group@pcc.edu.                                                 -->
+<!-- *********************************************************************-->
+<appendix xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="appendix-ccogs">
+  <title>PCC Course Content and Outcome Guides</title>
+  <introduction>
+    <p>
+      Courses at Portland Community College have fairly detailed <q>Course Content and Outcome
+      Guides</q>. Among other things, these guides enumerate skills that should be learned by
+      students in the course. Here we include the skills sections of the relevant courses for the
+      purposes of cross-referencing sections in this book with skills from these CCOGs.
+    </p>
+  </introduction>
+
+  <section xml:id="ccog-mth60">
+    <title>MTH 60</title>
+    <p>
+      This information is accurate as of July 2024. For the complete, most recent CCOG, visit
+      <url
+        href="https://www.pcc.edu/ccog/default.cfm?fa=ccog&amp;subject=MTH&amp;course=60"
+        visual="www.pcc.edu/ccog/default.cfm?fa=ccog&amp;subject=MTH&amp;course=60"
+        >www.pcc.edu/ccog</url>.
+    </p>
+
+    <list>
+      <title>MTH 60 Skills</title>
+      <ol>
+        <li>
+          <p>
+            Algebraic Expressions and Equations
+            <ol marker="1.">
+              <li xml:id="ccog-simplify-algebraic-expressions"><!-- 1.2, 1.7 -->
+                <p>
+                  Simplify algebraic expressions using the distributive, commutative, and
+                  associative properties.
+                </p>
+              </li>
+              <li xml:id="ccog-evaluate-algebraic-expressions"><!-- 1.1 -->
+                <p>
+                  Evaluate algebraic expressions.
+                </p>
+              </li>
+              <li xml:id="ccog-translate-phrases-sentences"><!-- 1.8 -->
+                <p>
+                  Translate phrases and sentences into algebraic expressions and equations, and vice
+                  versa.
+                </p>
+              </li>
+              <li xml:id="ccog-distinguish-between-factors-terms"><!-- 1.2 -->
+                <p>
+                  Distinguish between factors and terms.
+                </p>
+              </li>
+              <li xml:id="ccog-distinguish-between-evaluating-simplifying-solving"><!-- 2.1 -->
+                <p>
+                  Distinguish between evaluating expressions, simplifying expressions, and solving
+                  equations.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <p>
+            Linear Equations and Inequalities in One Variable
+            <ol marker="1.">
+              <li xml:id="ccog-identify-linear-equations-inequalities"><!-- 1.4 -->
+                <p>
+                  Identify linear equations and inequalities in one variable.
+                </p>
+              </li>
+              <li xml:id="ccog-check-solutions"><!-- 1.4 -->
+                <p>
+                  Use the definition of a solution to an equation or inequality to check if a given
+                  value is a solution.
+                </p>
+              </li>
+              <li xml:id="ccog-solve-linear-equations-symbolically"><!-- 1.5, 1.6, 2.1, 2.2, 2.3, 2.4 -->
+                <p>
+                  Solve linear equations, including proportions, and non-compound linear
+                  inequalities symbolically.
+                </p>
+              </li>
+              <li xml:id="ccog-interval-notation"><!-- 1.3, 1.6, 2.2 -->
+                <p>
+                  Express inequality solution sets graphically and with interval notation.
+                </p>
+              </li>
+              <li xml:id="ccog-create-solve-models"><!-- 1.8, 2.1, 2.2, 2.3 -->
+                <p>
+                  Create and solve linear equations and inequalities in one variable that model real
+                  life situations.
+                  <ol marker="1.">
+                    <li xml:id="ccog-properly-define-variables"><!-- 1.1 -->
+                      <p>
+                        Properly define variables; include units in variable definitions.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        State contextual conclusions using complete sentences.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Use estimation to determine reasonableness of solutions.
+                      </p>
+                    </li>
+                  </ol>
+                </p>
+              </li>
+              <li xml:id="ccog-solve-for-variable-in-terms-of-variables"><!-- 2.5 -->
+                <p>
+                  Solve an equation for a specified variable in terms of other variables.
+                </p>
+              </li>
+              <li xml:id="ccog-applications-with-two-unknowns-and-known-total"><!-- 4.1, 4.2, 4.3 -->
+                <p>
+                  Solve applications in which two values are unknown but their total is known; for
+                  example, a 10-foot board cut into two pieces where one piece is 2.5 feet longer
+                  than the other piece.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <p>
+            Introduction to Tables and Graphs
+            <ol marker="1.">
+              <li xml:id="ccog-plot-cartesian-coordinates"><!-- 3.1 -->
+                <p>
+                  Plot points on the Cartesian coordinate system, including pairs of values from a
+                  table.
+                </p>
+              </li>
+              <li xml:id="ccog-read-cartesian-coordinates"><!-- 3.1 -->
+                <p>
+                  Determine coordinates of points by reading a Cartesian graph.
+                </p>
+              </li>
+              <li xml:id="ccog-create-table-of-values"><!-- 3.2 -->
+                <p>
+                  Create a table of values from an equation or application. Make a plot from the
+                  table. When appropriate, correctly identify the independent variable with the
+                  horizontal axis and the dependent variable with the vertical axis.
+                </p>
+              </li>
+              <li xml:id="ccog-quadrants-axes-origin"><!-- 3.1 -->
+                <p>
+                  Classify points by quadrant or as points on an axis; identify the origin.
+                </p>
+              </li>
+              <li xml:id="ccog-label-and-scale-axes"><!-- 3.2 -->
+                <p>
+                  Label and scale axes on all graphs.
+                </p>
+              </li>
+              <li xml:id="ccog-different-scales"><!-- 3.2 -->
+                <p>
+                  Create graphs where the axes are required to have different scales (<eg/>
+                  <m>-10</m> to <m>10</m> on the horizontal axis and <m>-1000</m> to <m>1000</m> on
+                  the vertical axis).
+                </p>
+              </li>
+              <li xml:id="ccog-interpret-graphs-and-intercepts"><!-- 3.5, 3.6, 3.7 -->
+                <p>
+                  Interpret graphs, intercepts and other points in the context of an application.
+                  Express intercepts as ordered pairs.
+                </p>
+              </li>
+              <li xml:id="ccog-use-meaningful-labels"><!-- 3.3 -->
+                <p>
+                  Create tables and graphs with labels that communicate the context of an
+                  application problem and its dependent and independent quantities.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <p>
+            Slope
+            <ol marker="1.">
+              <li xml:id="ccog-write-slope-as-rate-of-change"><!-- 3.3 -->
+                <p>
+                  Write and interpret a slope as a rate of change in context (include the unit of
+                  the slope).
+                </p>
+              </li>
+              <li xml:id="ccog-find-slope"><!-- 3.3, 3.4 -->
+                <p>
+                  Find the slope of a line from a graph, from two points, and from a table of
+                  values.
+                </p>
+              </li>
+              <li xml:id="ccog-find-slope-from-forms"><!-- 3.5, 3.6, 3.7 -->
+                <p>
+                  Find the slope from all forms of a linear equation.
+                </p>
+              </li>
+              <li xml:id="ccog-identify-positive-negative-zero-undefined-slope"><!-- 3.4, 3.8 -->
+                <p>
+                  Given the graph of a line, identify the slope as positive, negative, zero, or
+                  undefined. Given two non-vertical lines, identify the line with greater slope.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <p>
+            Linear Equations in Two Variables
+            <ol marker="1.">
+              <li xml:id="ccog-identify-linear-equation-in-two-variables"><!-- 3.2 -->
+                <p>
+                  Identify a linear equation in two variables.
+                </p>
+              </li>
+              <li xml:id="ccog-manipulate-into-slope-intercept-form"><!-- 3.6, 3.7 -->
+                <p>
+                  Manipulate a linear equation into slope-intercept form; identify the slope and the
+                  vertical intercept given a linear equation.
+                </p>
+              </li>
+              <li xml:id="ccog-recognize-horizontal-vertical-lines"><!-- 3.8 -->
+                <p>
+                  Recognize equations of horizontal and vertical lines and identify their slopes as
+                  zero or undefined.
+                </p>
+              </li>
+              <li xml:id="ccog-write-slope-intercept-form"><!-- 3.5 -->
+                <p>
+                  Write the equation of a line in slope-intercept form.
+                </p>
+              </li>
+              <li xml:id="ccog-write-point-slope-form"><!-- 3.6 -->
+                <p>
+                  Write the equation of a line in point-slope form.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <p>
+            Graphing Linear Equations in Two Variables
+            <ol marker="1.">
+              <li xml:id="ccog-graph-line-using-point-and-slope"><!-- 3.6 -->
+                <p>
+                  Graph a line with a known point and slope.
+                </p>
+              </li>
+              <li xml:id="ccog-emphasize-graph-solution-set"><!-- 3.2 -->
+                <p>
+                  Emphasize that the graph of a line is a visual representation of the solution set
+                  to a linear equation.
+                </p>
+              </li>
+              <li xml:id="ccog-plot-linear-equation-from-three-solutions"><!-- 3.2 -->
+                <p>
+                  Given a linear equation, find at least three ordered pairs that satisfy the
+                  equation and graph the line using those ordered pairs.
+                </p>
+              </li>
+              <li xml:id="ccog-plot-graph-from-slope-intercept-form"><!-- 3.5, 3.9 -->
+                <p>
+                  Given an equation in slope-intercept form, plot its graph using the slope and
+                  vertical intercept.
+                </p>
+              </li>
+              <li xml:id="ccog-plot-graph-from-point-slope-form"><!-- 3.6, 3.9 -->
+                <p>
+                  Given an equation in point-slope form, plot its graph using the slope and the
+                  suggested point.
+                </p>
+              </li>
+              <li xml:id="ccog-plot-graph-from-standard-form"><!-- 3.7, 3.9 -->
+                <p>
+                  Given an equation in standard form, plot its graph by calculating horizontal and
+                  vertical intercepts, and check with a third point.
+                </p>
+              </li>
+              <li xml:id="ccog-plot-vertical-or-horizontal-line"><!-- 3.8, 3.9 -->
+                <p>
+                  Given an equation for a vertical or horizontal line, plot its graph.
+                </p>
+              </li>
+              <li xml:id="ccog-use-linear-model-to-predict"><!-- 3.5, 3.6 -->
+                <p>
+                  Create and graph a linear model based on data and make predictions based upon the
+                  model.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <p>
+            Systems of Linear Equations in Two Variables
+            <ol marker="1.">
+              <li xml:id="ccog-solve-system-of-linear-equations"><!-- 4.1, 4.2, 4.3 -->
+                <p>
+                  Solve and check systems of equations using the following methods: graphically,
+                  using the substitution method, and using the addition/elimination method.
+                </p>
+              </li>
+              <li xml:id="ccog-model-with-systems"><!-- 4.1, 4.2, 4.3 -->
+                <p>
+                  Create and solve real-world models involving systems of linear equations in two
+                  variables.
+                </p>
+              </li>
+              <li xml:id="ccog-properly-define-variables-in-a-system"><!-- 4.1, 4.2, 4.3 -->
+                <p>
+                  Properly define variables; include units in variable definitions.
+                </p>
+              </li>
+              <li xml:id="ccog-conclusions-complete-sentences-in-a-system"><!-- 4.1, 4.2, 4.3 -->
+                <p>
+                  State contextual conclusions using complete sentences.
+                </p>
+              </li>
+              <li xml:id="ccog-classify-parallel-perpendicular"><!-- 3.8 -->
+                <p>
+                  Given the equations of two lines, classify them as parallel, perpendicular, or
+                  neither.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+      </ol>
+    </list>
+  </section>
+
+  <section xml:id="ccog-mth65">
+    <title>MTH 65</title>
+    <p>
+      This information is accurate as of August 2019.
+      For the complete,
+      most recent CCOG, visit <url href="https://www.pcc.edu/ccog/default.cfm?fa=ccog&amp;subject=MTH&amp;course=65" visual="www.pcc.edu/ccog/default.cfm?fa=ccog&amp;subject=MTH&amp;course=65">www.pcc.edu/ccog</url>.
+    </p>
+
+    <list>
+      <title>MTH 65 Skills</title>
+      <ol>
+        <li>
+          <p>
+            Polynomial Expressions and Exponents
+            <ol>
+              <li xml:id="ccog-develop-exponent-rules">
+                <p>
+                  Develop exponent rules including for negative exponents and apply them when helpful in algebraic manipulations.
+                </p>
+              </li>
+              <li xml:id="ccog-add-subtract-multiply-square-polynomials">
+                <p>
+                  Add, subtract, multiply and square polynomials.
+                </p>
+              </li>
+              <li xml:id="ccog-divide-polynomial-by-monomial">
+                <p>
+                  Divide polynomials by a monomial.
+                </p>
+              </li>
+              <li xml:id="ccog-convert-scientific-notation">
+                <p>
+                  Convert between scientific notation and standard form to demonstrate an understanding of magnitude.
+                </p>
+              </li>
+              <li xml:id="ccog-multiply-and-divide-scientific-notation">
+                <p>
+                  Perform multiplication and division operations in scientific notation in context.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <p>
+            Radical Expressions
+            <ol>
+              <li xml:id="ccog-evaluate-nth-roots">
+                <p>
+                  Evaluate <m>n</m>th roots numerically with and without technology.
+                </p>
+              </li>
+              <li xml:id="ccog-recognize-even-root-of-negative-not-real">
+                <p>
+                  Recognize that an even root of a negative number is not real.
+                </p>
+              </li>
+              <li xml:id="ccog-convert-radical-expressions-to-use-rational-exponents">
+                <p>
+                  Convert radical expressions to expressions with rational exponents and vice versa.
+                </p>
+              </li>
+              <li xml:id="ccog-simplify-radical-expressions">
+                <p>
+                  Simplify, add, subtract, multiply and divide radical expressions.
+                </p>
+              </li>
+              <li xml:id="ccog-use-rational-exponents-to-simplify-radical-expressions">
+                <p>
+                  Use rational exponents to simplify radical expressions.
+                  E.g.<nbsp/><m>\sqrt[3]{x^7}=\cdots=x^2\sqrt[3]{x}</m>,
+                  <m>\sqrt{x}\cdot\sqrt[3]{x}=\cdots=\sqrt[6]{x^5}</m>.
+                </p>
+              </li>
+              <li xml:id="ccog-rationalize-denominators">
+                <p>
+                  Rationalize denominators with square roots in them.
+                  E.g.<nbsp/> <m>\frac{5}{\sqrt{2}}</m>, <m>\frac{5}{1+\sqrt{2}}</m>.
+                </p>
+              </li>
+              <li xml:id="ccog-use-calculator-and-rational-exponents-for-radicals">
+                <p>
+                  Use a calculator to approximate radicals using rational exponents.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <p>
+            Solving Equations in One Variable
+            <ol>
+              <li xml:id="ccog-solve-quadratic-equations-using-square-root">
+                <p>
+                  Solve quadratic equations using the square root property.
+                </p>
+              </li>
+              <li xml:id="ccog-solve-quadratic-equations-using-quadratic-formula">
+                <p>
+                  Solve quadratic equations using the quadratic formula including complex solutions.
+                </p>
+              </li>
+              <li xml:id="ccog-solve-radical-equations">
+                <p>
+                  Solve radical equations that have a single radical term.
+                </p>
+              </li>
+              <li xml:id="ccog-verify-solutions-note-extraneous">
+                <p>
+                  Verify solutions algebraically and graphically, noting when extraneous solutions may result.
+                </p>
+              </li>
+              <li xml:id="ccog-solve-a-formula-for-a-variable">
+                <p>
+                  Solve a formula for a specific variable.
+                </p>
+              </li>
+              <li xml:id="ccog-solve-various-equations-when-mixed-in-a-set">
+                <p>
+                  Solve linear, quadratic, and radical equations when mixed up in a problem set.
+                </p>
+              </li>
+              <li xml:id="ccog-solve-real-world-models">
+                <p>
+                  Solve real-world models involving quadratic and radical equations.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <p>
+            Quadratic Equations in Two Variables
+            <ol>
+              <li xml:id="ccog-find-parabola-axis-of-symmetry">
+                <p>
+                  Algebraically find the vertex (using the formula <m>h=-\frac{b}{2a}</m>), the axis of symmetry, and the vertical and horizontal intercepts.
+                  <ol>
+                    <li>
+                      <p>
+                        The vertex and intercept(s) should be written as ordered pairs.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        The axis of symmetry should be written as an equation.
+                      </p>
+                    </li>
+                  </ol>
+                </p>
+              </li>
+              <li xml:id="ccog-graph-by-hand-quadratic-equation">
+                <p>
+                  Graph by hand a quadratic equation by finding the vertex, plotting at least two additional points on one side and using symmetry to complete the graph.
+                </p>
+              </li>
+              <li xml:id="ccog-create-use-interpret-quadratic-models">
+                <p>
+                  Create, use, and interpret quadratic models of real-world situations algebraically and graphically.
+                  <ol>
+                    <li>
+                      <p>
+                        Interpret the vertex as a maximum or minimum in context with units.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Interpret the intercept(s) in context with units.
+                      </p>
+                    </li>
+                  </ol>
+                </p>
+              </li>
+              <li xml:id="ccog-distinguish-between-linear-and-quadratic">
+                <p>
+                  In a mixed problem set, distinguish between linear and quadratic equations and graph them.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <p>
+            Geometry Applications and Unit Analysis
+            <ol>
+              <li xml:id="ccog-use-appropriate-units">
+                <p>
+                  Know and apply appropriate units for various situations; <eg/><nbsp/>perimeter units, area units, volume units, rate units, <etc/>
+                </p>
+              </li>
+              <li xml:id="ccog-explore-geometry-formulas">
+                <p>
+                  Explore, understand, and apply the formulas for perimeter; area formulas for rectangles, circles, and triangles; and volume formulas for a rectangular solid and a right circular cylinder.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Use similar triangles to find missing sides in a triangle.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Use the Pythagorean Theorem to find a missing side in a right triangle.
+                </p>
+              </li>
+              <li xml:id="ccog-estimation-skills">
+                <p>
+                  Use estimation to determine reasonableness of solution.
+                </p>
+              </li>
+              <li xml:id="ccog-unit-conversion">
+                <p>
+                  Use unit fractions to convert time, length, area, volume, mass, density, and speed to other units, including metric/non-metric conversions.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        <li xml:id="ccog-solve-equations-and-inequalities-graphically">
+          <p>
+            Solving Equations and Inequalities Graphically
+            <ol>
+              <li>
+                <p>
+                  Given an equation, solve using a graphing utility by finding points of intersection.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Given an inequality, solve using a graphing utility and express the solution in interval notation.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+      </ol>
+    </list>
+  </section>
+
+  <!-- <section  xml:id="ccog-mth95">
+    <title>MTH 95</title>
+    <p>
+      This information is accurate as of August 2019.
+      For the complete,
+      most recent CCOG, visit <url href="https://www.pcc.edu/ccog/default.cfm?fa=ccog&amp;subject=MTH&amp;course=95" visual="www.pcc.edu/ccog/default.cfm?fa=ccog&amp;subject=MTH&amp;course=95">www.pcc.edu/ccog</url>.
+    </p>
+
+    <list>
+      <title>MTH 95 Skills</title>
+      <ol>
+        <li>
+          <p>
+            Functions
+            <ol>
+              <li xml:id="ccog-determine-whether-relation-is-function">
+                <p>
+                  Determine whether a relation is a function when the given relation is expressed algebraically, graphically, numerically and/or within real-world contexts by applying the definition of a function.
+                </p>
+              </li>
+              <li xml:id="ccog-domain-and-range">
+                <p>
+                  Domain and Range
+                  <ol>
+                    <li>
+                      <p>
+                        Use the definition of domain and range to determine the domain and range of functions represented graphically, numerically, and verbally.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Determine the domain of a function given algebraically.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        State the domain and range in both interval and set notation.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Understand how the context of a function used as a model can limit the domain and the range.
+                      </p>
+                    </li>
+                  </ol>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Function Notation
+                  <ol>
+                    <li xml:id="ccog-evaluate-function-notation">
+                      <p>
+                        Evaluate functions with given inputs using function notation where functions are represented graphically, algebraically, numerically and verbally (<eg/><nbsp/>evaluate <m>f(7)</m>).
+                      </p>
+                    </li>
+                    <li xml:id="ccog-distinguish-and-simplify-simple-function-composition">
+                      <p>
+                        Distinguish between different expressions such as <m>f(x+2)</m>, <m>f(x)+2</m>, <m>3f(x)</m>, and <m>f(3x)</m>, and simplify each.
+                      </p>
+                    </li>
+                    <li xml:id="ccog-interpret-function-notation">
+                      <p>
+                        Interpret <m>f(a)=b</m> in the appropriate context (<eg/><nbsp/>interpret <m>f(3)=5</m> where <m>f</m> models a real-world function) and understand that <m>f(2)</m> is a number not a point.
+                      </p>
+                    </li>
+                    <li xml:id="ccog-solve-equation-with-function-notation">
+                      <p>
+                        Solve function equations where functions are represented graphically, algebraically, numerically and verbally (<eg/><nbsp/>solve <m>f(x)=b</m> for <m>x</m>).
+                      </p>
+                    </li>
+                  </ol>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <p>
+            Factoring Polynomials
+            <ol>
+              <li xml:id="ccog-factor-gcf">
+                <p>
+                  Factor the greatest common factor from a polynomial.
+                </p>
+              </li>
+              <li xml:id="ccog-factor-by-grouping">
+                <p>
+                  Factor a polynomial of four terms using the grouping method.
+                </p>
+              </li>
+              <li xml:id="ccog-factor-trinomials-when-a-is-one">
+                <p>
+                  Factor trinomials that have leading coefficients of 1.
+                </p>
+              </li>
+              <li xml:id="ccog-factor-trinomials-when-a-is-not-one">
+                <p>
+                  Factor trinomials that have leading coefficients other than 1.
+                </p>
+              </li>
+              <li xml:id="ccog-factor-difference-of-squares">
+                <p>
+                  Factor differences of squares.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <p>
+            Rational Functions
+            <ol>
+              <li xml:id="ccog-domain-of-rational-functions">
+                <p>
+                  Determine the domain of rational functions algebraically and graphically.
+                </p>
+              </li>
+              <li xml:id="ccog-simplify-rational-functions">
+                <p>
+                  Simplify rational functions, understanding that domain conditions lost during simplification must be noted.
+                </p>
+              </li>
+              <li xml:id="ccog-operations-on-rational-functions">
+                <p>
+                  Perform operations on rational expressions (multiplication, division, addition, subtraction) and express the final result in simplified form.
+                </p>
+              </li>
+              <li xml:id="ccog-complex-rational-expressions">
+                <p>
+                  Simplify complex rational expressions. E.g.<nbsp/><m>\frac{\frac{x^2-4}{x^2+x-2}}{x-2}</m>, <m>\frac{x^2-9}{\frac{3x+5}{4x+10}}</m>, and <m>\frac{\frac{x^2-9}{x^2-x-12}}{\frac{6+2x}{x^2-7x+12}}</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <p>
+            Solving Equations and Inequalities Algebraically
+            <ol>
+              <li xml:id="ccog-solve-quadratic-equations-using-zero-product-principle">
+                <p>
+                  Solve quadratic equations using the zero product principle.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Solve quadratic equations that have real and complex solutions using the square root method.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Solve quadratic equations that have real and complex solutions using the quadratic formula.
+                </p>
+              </li>
+              <li xml:id="ccog-solve-by-completing-the-square">
+                <p>
+                  Solve quadratic equations that have real and complex solutions by completing the square (in simpler cases, where <m>a=1</m>, and <m>b</m> is even).
+                </p>
+              </li>
+              <li xml:id="ccog-solve-rational-equations">
+                <p>
+                  Solve rational equations.
+                </p>
+              </li>
+              <li xml:id="ccog-solve-absolute-value-equations">
+                <p>
+                  Solve absolute value equations.
+                </p>
+              </li>
+              <li xml:id="ccog-solve-mixed-equations">
+                <p>
+                  Solve equations (linear, quadratic, rational, radical, absolute value) in a mixed problem set.
+                  <ol>
+                    <li>
+                      <p>
+                        Determine how to proceed in the solving process based on equation given.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Determine when extraneous solutions may result. (Consider using technology to demonstrate that extraneous solutions are not really solutions).
+                      </p>
+                    </li>
+                  </ol>
+                </p>
+              </li>
+              <li xml:id="ccog-check-solutions-to-equations">
+                <p>
+                  Check solutions to equations algebraically.
+                </p>
+              </li>
+              <li xml:id="ccog-solve-rational-equation-with-multiple-variables">
+                <p>
+                  Solve a rational equation with multiple variables for a specific variable.
+                </p>
+              </li>
+              <li xml:id="ccog-solve-applications-involving-quadratic-and-rational-equations">
+                <p>
+                  Solve applications involving quadratic and rational equations (including distance, rate, and time problems and work rate problems).
+                  <ol>
+                    <li>
+                      <p>
+                        Variables used in applications should be well defined.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Conclusions should be stated in sentences with appropriate units.
+                      </p>
+                    </li>
+                  </ol>
+                </p>
+              </li>
+              <li xml:id="ccog-solve-function-equations">
+                <p>
+                  Algebraically solve function equations of the forms:
+                  <ol>
+                    <li>
+                      <p>
+                        <m>f(x)=b</m> where <m>f</m> is a linear, quadratic, rational, radical, or absolute value function.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <m>f(x)=g(x)</m> where <m>f</m> and <m>g</m> are functions such that the equation does not produce anything more difficult than a quadratic or linear equation once a fraction is cleared or a root is removed if one exists.
+                      </p>
+                    </li>
+                  </ol>
+                </p>
+              </li>
+              <li xml:id="ccog-solve-compound-linear-inequalities">
+                <p>
+                  Solve compound linear inequalities algebraically.
+                  <ol>
+                    <li>
+                      <p>
+                        Forms should include:
+                        <ol>
+                          <li>
+                            <p>
+                              the union of two linear inequalities (<q>or</q> statement).
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              the intersection of two linear inequalities (<q>and</q> statement).
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              a three-sided inequality like <m>a\lt f(x)\lt b</m> where <m>f(x)</m> is a linear expression with <m>a</m> and <m>b</m> constants.
+                            </p>
+                          </li>
+                        </ol>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Solution sets should be expressed in interval notation.
+                      </p>
+                    </li>
+                  </ol>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <p>
+            Graphing Concepts
+            <ol>
+              <li>
+                <p>
+                  Brief review of graphs of linear functions, including finding the formula of the function given two ordered pairs in function notation.
+                </p>
+              </li>
+              <li xml:id="ccog-graph-quadratic-functions-by-hand">
+                <p>
+                  Graph quadratic functions by hand.
+                  <ol>
+                    <li>
+                      <p>
+                        Review finding the vertex with the formula <m>h=-\frac{b}{2a}</m>.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Complete the square to put a quadratic function in vertex form.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Given a quadratic function in vertex form, observe the vertical shift and horizontal shift from the graph of <m>y=x^2</m>.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        State the domain and range of a quadratic function.
+                      </p>
+                    </li>
+                  </ol>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Review finding horizontal and vertical intercepts of linear and quadratic functions by hand, expressing them as ordered pairs in abstract examples and interpreting them using complete sentences in application examples.
+                </p>
+              </li>
+              <li xml:id="ccog-solve-equations-graphically-with-technology">
+                <p>
+                  Solve equations graphically with technology.
+                </p>
+              </li>
+              <li xml:id="ccog-explore-functions-graphically-with-technology">
+                <p>
+                  Explore functions graphically with technology.
+                  <ol>
+                    <li>
+                      <p>
+                        Find function values.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Find vertical and horizontal intercepts.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Find the vertex of a parabola.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Create an appropriate viewing window.
+                      </p>
+                    </li>
+                  </ol>
+                </p>
+              </li>
+              <li xml:id="ccog-graphically-solve-quadratic-and-absolute-value-inequalities">
+                <p>
+                  Graphically solve absolute value and quadratic inequalities (<eg/><nbsp/><m>f(x)\lt b</m>, <m>f(x)\gt b</m>) where <m>f</m> is an absolute value function when:
+                <ol>
+                  <li>
+                    <p>
+                      given the graph of the function.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      using technology to graph the function.
+                    </p>
+                  </li>
+                </ol>
+              </p>
+            </li>
+            <li xml:id="ccog-graphically-solve-function-inequalities">
+              <p>
+                Solve function inequalities graphically given <m>f(x)\lt b</m>, <m>f(x)\gt b</m>, <m>f(x)\gt g(x)</m>, and <m>a\lt f(x)\lt b</m> where <m>f</m> and <m>g</m> should include but not be limited to linear functions.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+    </ol>
+  </list>
+</section> -->
+
+</appendix>
+

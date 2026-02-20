@@ -1,0 +1,2841 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2026                                                       -->
+<!-- Alex Jordan                                                          -->
+<!-- *********************************************************************-->
+<section xml:id="section-comparison-symbols-and-notation-for-intervals">
+  <title>Comparison Symbols and Notation for Intervals</title>
+
+  <introduction>
+    <p>
+      Here is a true fact: <m>8</m> is larger than <m>3</m>. That is a comparison between two
+      <em>specific</em> numbers. We can also make comparisons using an <em>unspecified</em> number,
+      like if we say that average rent for an apartment in Portland, OR is more than $1700. We are
+      not saying what the average rent is, just that it's larger than $1700. In the first half of
+      this section, we examine mathematical notation for making these kinds of comparisons.
+    </p>
+
+    <p>
+      In Oregon, only citizens <m>18</m> and older can vote in statewide elections. That is saying
+      something about a large group of citizens, not just those who are <m>18</m>. It's saying that
+      people who are <m>37</m> and <m>62</m> may vote; and people who are <m>12</m> may not. So it's
+      a statement about a large collection of numbers. In the second half of this section, we
+      examine the mathematical notation for large collections of numbers like this.
+    </p>
+
+    <figure xml:id="video-comparison-symbols-and-notation-for-intervals">
+      <caption>Alternative Video Lesson</caption>
+      <video youtubeplaylist="PLmuZCPhWPt-eG16R-Bwkkcna9LWJrMXho" />
+    </figure>
+
+  </introduction>
+
+  <subsection>
+    <title>Comparison Symbols</title>
+    <p>
+      In everyday language you can say something like <q><m>8</m> is larger than <m>3</m></q>. In
+      mathematical writing, we have a shorthand notation for this: <q><m>\gt</m></q>. It's used as
+      follows:
+      <me>
+        8\gt3
+      </me>
+      That short expression is read aloud as <q><m>8</m> is greater than <m>3</m></q>. The symbol
+      <q><m>\gt</m></q> is called the <term>greater-than symbol.</term>                                       <idx><h>Greater-than symbol</h></idx>
+    </p>
+
+    <exercise label="inequalities">
+      <webwork>
+        <pg-code>
+          package context::Ordering::BOP::ordering;
+          *isOrdering = sub {
+            my $self = shift;
+            my $obj = shift;
+            my $class = $obj->class;
+            return $class;
+          };
+          package main;
+          Context("Ordering");
+          Context()->strings->add('age' => {isLetter => 1, TeX => '\text{age}'});
+          Context()->strings->add('a' => {isLetter => 1, TeX => '\text{a}'});
+          Context()->strings->add('x' => {isLetter => 1, TeX => '\text{x}'});
+          $overage = OneOf(Compute("age > 20"), Compute("a > 20"), Compute("x > 20"));
+        </pg-code>
+        <!-- This is not structured with tasks because of a bug with context Ordering in a scaffolded exercise. -->
+        <statement>
+          <p>
+            <ol marker="a.">
+              <li>
+                <p>
+                  Use mathematical notation to write <q><m>11.5</m> is greater than <m>4.2</m></q>.
+                </p>
+                <p>
+                  <var name="'11.5>4.2'" width="15" />
+                </p>
+              </li>
+              <li>
+                <p>
+                  Use mathematical notation to write <q>age is greater than <m>20</m></q>.
+                </p>
+                <p>
+                  <var name="$overage" width="15" />
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol marker="a.">
+              <li>
+                <p>
+                  This is <q><m>11.5\gt4.2</m></q>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  We can use the word <c>age</c> to represent age, and write <m>\text{age}\gt20</m>.
+                  Or we could use an abbreviation like <m>a</m> for age, and write <m>a\gt20</m>. Or
+                  we could use <m>x</m> as a generic variable, and write <m>x\gt20</m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+        <!-- <task>
+          <statement>
+            <p>
+              Use mathematical notation to write <q><m>11.5</m> is greater than <m>4.2</m></q>.
+            </p>
+            <p>
+              <var name="'11.5>4.2'" width="15" />
+            </p>
+          </statement>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Use mathematical notation to write <q>age is greater than <m>20</m></q>.
+            </p>
+            <p>
+              <var name="$overage" width="15" />
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We can use the word <c>age</c> to represent age, and write <m>\text{age}\gt20</m>.
+              Or we could use an abbreviation like <m>a</m> for age, and write <m>a\gt20</m>.
+              Or we could use <m>x</m> as a generic variable, and write <m>x\gt20</m>.
+            </p>
+          </solution>
+        </task> -->
+      </webwork>
+    </exercise>
+
+    <remark>
+      <p>
+        At some point in history, it was settled that <q><m>\gt</m></q> was a good symbol for
+        <q>is greater than</q>. The tall side of the symbol is with the larger of the two numbers,
+        and the small pointed side is with the smaller of the two numbers. One way to remember how
+        this symbol works is to imagine it as an open mouth, and tell yourself that the mouth is
+        hungry and it wants to eat the larger number.
+      </p>
+    </remark>
+
+    <p>
+      We have to be careful when negative numbers are used in a comparison. Is <m>-8</m> greater or
+      less than <m>-3</m>? In one sense <m>-8</m> is larger, because if you owe someone <m>8</m>
+      dollars, that's <q>more</q> than owing them <m>3</m> dollars. But the <q><m>\gt</m></q> symbol
+      does not work that way. This symbol tells you which number is farther to the right on a number
+      line. With that understanding, <m>-3</m> is greater than <m>-8</m>.
+    </p>
+
+    <figure>
+      <caption>How the <m>\gt</m> symbol works.</caption>
+      <image>
+        <shortdescription>
+          a number line with marks at -8, -3, and 8; text indicates the numbers to the left are
+          lesser numbers, and numbers to the right are greater numbers; text indicates that -3 > -8
+          and 8 > -3
+        </shortdescription>
+        <latex-image label="number-line-negative-comparison">
+          \begin{tikzpicture}
+            \begin{axis}[
+                numberline,
+                xtick={-8,-3,8},
+                width=\orccaprintwidth,
+              ]
+                \addplot[soliddot] coordinates {(-8,0)};
+                \addplot[soliddot] coordinates {(-3,0)};
+                \addplot[soliddot] coordinates {(8,0)};
+                \node[above] (A) at (axis cs: -5.5,1.5) {\(-3>-8\)};
+                \draw[] (A) to[out=-90, in=45] (axis cs: -8,0.1);
+                \draw[] (A) to[out=-90, in=135] (axis cs: -3,0.1);
+                \node[above] (B) at (axis cs: 2.5,1.5) {\(8>-3\)};
+                \draw[] (B) to[out=-90, in=135] (axis cs: 8,0.1);
+                \draw[] (B) to[out=-90, in=45] (axis cs: -3,0.1);
+                \node[above left] at (axis cs: 12,0) {\parbox{9ex}{\raggedleft greater numbers}};
+                \node[above right] at (axis cs: -12,0) {\parbox{8ex}{lesser numbers}};
+            \end{axis}
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+
+    <exercise label="ordering">                                                                               <idx><h>Real numbers</h><h>ordering</h></idx>
+      <webwork>
+        <pg-code>
+          Context("Fraction");
+          Context()->flags->set(reduceConstants => 0);
+          Context()->operators->redefine('>',using=>',',from=>'Numeric');
+          Context()->lists->set('List' => {separator => '>'});
+
+          @a = (-7.6, 6, -6, 9.5, 8);
+          $as = '{' . join('}\quad{', @a) . '}';
+          @b = PGsort(sub{$_[0] > $_[1]}, @a);
+          $bs = join('>', @b);
+
+          @a2 = (Real(-5.2), Compute("pi"), Fraction(10, 3), Real(4.6), Real(8));
+          $as2 = '{' . join('}\quad{', map{$_->TeX} (@a2)) . '}';
+          @b2 = PGsort(sub{Real("$_[0]") > Real("$_[1]")}, @a2);
+          $bs2 = join('>', @b2);
+
+          $comparison = Compute("$bs");
+          $comparison2 = Compute("$bs2");
+          $evaluator = $comparison->cmp(ordered => 1);
+          $evaluator2 = $comparison2->cmp(ordered => 1);
+        </pg-code>
+        <introduction>
+          <p>
+            Use the <m>\gt</m> symbol to arrange the following numbers in order from greatest to
+            least.
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              <m><var name="$as" /></m>
+            </p>
+            <instruction>
+              For example, your answer might look like <c>4 &gt; 3 &gt; 2 &gt; 1 &gt; 0</c>.
+              If you need to enter <m>\pi</m>, type <c>pi</c>.
+            </instruction>
+            <p>
+              <var name="$evaluator" width="30" />
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We can order these numbers by placing these numbers on a number line.
+            </p>
+            <image>
+              <latex-image>
+                \begin{tikzpicture}
+                  \begin{axis}
+                    [
+                      numberline,
+                      xmin=-12,
+                      xmax=12,
+                      xlabel={},
+                      xtick={-10,-5,...,10},
+                      minor xtick={-10,-9,...,10},
+                      width=\orccaprintwidth,
+                    ]
+                    \draw[] (axis cs: -7.6,1.5) to[out=-90, in=90] node[pos=0,above] {\(-7.6\)} (axis cs: -7.6,0);
+                    \draw[] (axis cs: -6,1)     to[out=-90, in=90] node[pos=0,above] {\(-6\)}   (axis cs: -6,0);
+                    \draw[] (axis cs: 6,1.5)    to[out=-90, in=90] node[pos=0,above] {\(6\)}    (axis cs: 6,0);
+                    \draw[] (axis cs: 8,1)      to[out=-90, in=90] node[pos=0,above] {\(8\)}    (axis cs: 8,0);
+                    \draw[] (axis cs: 9.5,1.5)  to[out=-90, in=90] node[pos=0,above] {\(9.5\)}  (axis cs: 9.5,0);
+                  \end{axis}
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+            <p>
+              And so we see the answer is <m><var name="$comparison" /></m>.
+            </p>
+          </solution>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <me>
+                <var name="$as2" />
+              </me>
+            </p>
+            <instruction>
+              For example, your answer might look like <c>4 &gt; 3 &gt; 2 &gt; 1 &gt; 0</c>. If you
+              need to enter <m>\pi</m>, type <c>pi</c>.
+            </instruction>
+            <p>
+              <var name="$evaluator2" width="30" />
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We can order these numbers by placing these numbers on a number line. Knowing or
+              computing their decimals helps with this:
+              <m>\pi\approx3.141\ldots</m> and <m>\frac{10}{3}\approx3.333\ldots</m>.
+            </p>
+            <image>
+              <latex-image>
+                \begin{tikzpicture}
+                  \begin{axis}
+                    [
+                      numberline,
+                      xmin=-12,
+                      xmax=12,
+                      xlabel={},
+                      xtick={-10,-5,...,10},
+                      minor xtick={-10,-9,...,10},
+                      width=\orccaprintwidth,
+                    ]
+                    \draw[] (axis cs: -5.2,1.5)  to[out=-90, in=90] node[pos=0,above] {\(-5.2\)}                    (axis cs: -5.2,0);
+                    \draw[] (axis cs: 8,1.5)     to[out=-90, in=90] node[pos=0,above] {\(8\)}                       (axis cs: 8,0);
+                    \draw[] (axis cs: 3.333,1.5) to[out=-90, in=90] node[pos=0,above] {\(\frac{10}{3}\approx3.33\)} (axis cs: 3.333,0);
+                    \draw[] (axis cs: 5.666,1)   to[out=-90, in=90] node[pos=0,above] {\(4.6\)}                       (axis cs: 4.6,0);
+                    \draw[] (axis cs: -1,1)      to[out=-90, in=90] node[pos=0,above] {\(\pi\approx3.14\)}            (axis cs: 3.14159,0);
+                  \end{axis}
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+            <p>
+              And so we see the answer is <m><var name="$comparison2" /></m>.
+            </p>
+          </solution>
+        </task>
+      </webwork>
+    </exercise>
+
+    <p>
+      The greater-than symbol has a close relative: the <term>greater-than-or-equal-to symbol</term>          <idx><h>Greater-than-or-equal-to symbol</h></idx>
+      <q><m>\geq</m></q>. It means just like it sounds; the left number is either greater than or
+      equal to the right number. Consider these examples, five of which are true and one of which is
+      false.
+      <md>
+        <mrow>8\amp\geq3\amp3\amp\geq-8\amp3\amp\geq3</mrow>
+        <mrow>8\amp\gt3\amp3\amp\gt-8\amp3\amp\reject{\gt}3</mrow>
+      </md>
+    </p>
+
+    <p>
+      While it may seem unhelpful to write <m>3\geq3</m> when you could write <m>3=3</m>, the
+      <q><m>\geq</m></q> symbol is useful when at least one of the numbers in a comparison is not
+      specific, like in these examples:
+      <md>
+        <mrow>(\text{hourly pay rate})\amp\geq(\text{minimum wage})\amp(\text{age of a voter})\amp\geq18</mrow>
+      </md>
+    </p>
+
+    <p>
+      Sometimes you want to emphasize that one number is <em>less than</em>  another number. For
+      this, we have symbols that are reversed from <m>\gt</m> and <m>\geq</m>. The symbol
+      <q><m>\lt</m></q> is the <term>less-than symbol</term> and it's used like this:
+      <me>
+        3\lt8
+      </me>
+      and read aloud as <q><m>3</m> is less than <m>8</m></q>.                                                <idx><h>Less-than symbol</h></idx>
+    </p>
+
+    <p>
+      <xref ref="table-comparison-symbols"/> gives the complete list of all six comparison symbols.
+      We've only discussed three of them so far in this section, but you already know the equals
+      symbol. The other two are the <q>less than or equal to</q> symbol, <q><m>\leq</m></q>, and the          <idx><h>Less-than-or-equal-to symbol</h></idx>
+      <q>not equal to</q> symbol, <q><m>\neq</m></q>.                                                         <idx><h>Not-equal-to symbol</h></idx>
+    </p>
+
+    <table xml:id="table-comparison-symbols">
+      <title>Comparison Symbols</title>                                                                       <idx><h>Inequality symbols</h></idx>
+                                                                                                              <idx><h>Symbol</h><h>inequality</h></idx>
+      <tabular valign="bottom">
+        <row bottom="medium">
+          <cell>Symbol</cell>
+          <cell>Means</cell>
+          <cell>True</cell>
+          <cell>True</cell>
+          <cell>False</cell>
+        </row>
+        <row>
+          <cell><m>=</m></cell>
+          <cell>equals</cell>
+          <cell><m>13=13</m></cell>
+          <cell><m>\frac{5}{4}=1.25</m></cell>
+          <cell><m>5\reject{=}6</m></cell>
+        </row>
+        <row>
+          <cell><m>\gt</m></cell>
+          <cell>is greater than</cell>
+          <cell><m>13\gt11</m></cell>
+          <cell><m>\pi\gt3</m></cell>
+          <cell><m>9\reject{\gt}9</m></cell>
+        </row>
+        <row>
+          <cell><m>\geq</m></cell>
+          <cell>is greater than or equal to</cell>
+          <cell><m>13\geq11</m></cell>
+          <cell><m>3\geq3</m></cell>
+          <cell><m>10.2\reject{\geq}11.2</m></cell>
+        </row>
+        <row>
+          <cell><m>\lt</m></cell>
+          <cell>is less than</cell>
+          <cell><m>-3\lt8</m></cell>
+          <cell><m>\frac{1}{2}\lt\frac{2}{3}</m></cell>
+          <cell><m>2\reject{\lt}-2</m></cell>
+        </row>
+        <row>
+          <cell><m>\leq</m></cell>
+          <cell>is less than or equal to</cell>
+          <cell><m>-3\leq8</m></cell>
+          <cell><m>3\leq3</m></cell>
+          <cell><m>\frac{4}{5}\reject{\leq}\frac{3}{5}</m></cell>
+        </row>
+        <row>
+          <cell><m>\neq</m></cell>
+          <cell>is not equal to</cell>
+          <cell><m>10\neq20</m></cell>
+          <cell><m>\frac{1}{2}\neq1.2</m></cell>
+          <cell><m>\frac{3}{8}\reject{\neq}0.375</m></cell>
+        </row>
+      </tabular>
+
+    </table>
+  </subsection>
+
+  <subsection>
+    <title>Set-Builder and Interval Notation</title>
+    <p>
+      If you write
+      <me>
+        (\text{age of a voter})\geq18
+      </me>
+      and have a particular voter in mind, what is that person's age? Maybe they are <m>18</m>, but
+      maybe they are older. It's helpful to use a variable <m>a</m> to represent age (in years) and
+      then to visualize the possibilities with a number line.
+    </p>
+
+    <figure xml:id="figure-voters-age">                                                                       <idx><h>Graphs</h><h>of inequalities</h></idx>
+      <caption><m>(\text{age of a voter})\geq18</m></caption>
+      <image>
+        <shortdescription>
+          a number line, where the number 18 is marked; the portion of the number line to the right
+          of 18 has a thick line overlaying it with an arrow pointing to the right; at 18, there is
+          a left bracket character; text indicates the right area represents possibilities for age
+        </shortdescription>
+        <latex-image label="number-line-interval">
+          \begin{tikzpicture}
+            \begin{axis}[
+                numberline,
+                xmin=-5,
+                xmax=35,
+                xtick={18},
+                xlabel={\(a\)},
+                minor xtick={-5,-4,...,35},
+                width=\orccaprintwidth,
+              ]
+              \addplot+[closedinfiniteinterval] coordinates {(18,0) (36,0)} node[pos=0.5,above] {possibilities for age};
+            \end{axis}
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+
+    <p>
+      The shaded portion of the number line in <xref ref="figure-voters-age"/> is a mathematical
+      <term>interval</term>. That means a collection of certain numbers with a <q>starting point</q>
+      and a <q>ending point</q>. The interval above doesn't really ever end, but we can say
+      <m>\infty</m> (infinity) is the <q>ending point</q> in this situation. So this interval starts
+      at <m>18</m> and <q>ends</q> at <m>\infty</m>.
+   </p>
+
+    <p>
+      The number line in <xref ref="figure-voters-age"/> is a <em>visual</em> representation of a
+      collection of certain numbers. We have notations we can use to write down such collections of
+      numbers.
+    </p>
+
+    <definition xml:id="definition-set-builder-notation">
+      <title>Set-Builder Notation</title>                                                                     <idx><h>Set-builder notation</h></idx>
+      <statement>
+        <p>
+          Set-builder notation attempts to say directly what condition needs to be met by numbers in
+          the interval. We write set-builder notation like:
+          <me>
+            \left\{x\mid\text{condition on }x\right\}
+          </me>
+          and read it aloud as <q>the set of all <m>x</m> such that <ellipsis /></q>.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      For example, <m>\left\{x\mid x\geq18\right\}</m> is read aloud as <q>the set of all <m>x</m>
+      such that <m>x</m> is greater than or equal to <m>18</m></q>. The breakdown is as follows.
+    </p>
+    <tabular>
+      <row>
+        <cell><m>\highlight{\{}x\mid x\geq18\highlight{\}}</m></cell>
+        <cell>the set of</cell>
+      </row>
+      <row>
+        <cell><m>\{\highlight{x}\mid x\geq18\}</m></cell>
+        <cell>all <m>x</m></cell>
+      </row>
+      <row>
+        <cell><m>\{x\highlight{{}\mid{}}x\geq18\}</m></cell>
+        <cell>such that</cell>
+      </row>
+      <row>
+        <cell><m>\{x\mid\highlight{x\geq18}\}</m></cell>
+        <cell><m>x</m> is greater than or equal to <m>18</m></cell>
+      </row>
+    </tabular>
+
+    <example>
+      <p>
+        The set of all positive numbers is <m>\{x\mid x\gt0\}</m>, but the set of all non-negative
+        numbers is <m>\{x\mid x\geq0\}</m>.
+      </p>
+      <p>
+        The set of all possible Celsius temperatures for liquid water is
+        <m>\{x\mid x\gt0\text{ and }x\lt100\}</m>.
+      </p>
+    </example>
+
+    <exercise label="number-line-to-set-builder">
+      <webwork>
+        <pg-code>
+          InequalitySetBuilder::UseVerticalSuchThat();
+          Context("InequalitySetBuilder-Only");
+          $sb[0] = Compute("{ x | x &lt;= 2}");
+          $sb[1] = Compute("{ x | x &lt;  2}");
+          $sb[2] = Compute("{ x | x >=    2}");
+        </pg-code>
+        <introduction>
+          <p>
+            For each interval expressed in the number lines, write the interval using set-builder
+            notation.
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <image>
+              <latex-image>
+                \begin{tikzpicture}
+                  \begin{axis}
+                    [
+                      numberline,
+                      xmin=-6,
+                      xmax=6,
+                      xlabel={\(x\)},
+                      width=\orccaprintwidth,
+                    ]
+                    \addplot[infiniteclosedinterval] coordinates {(-6,0) (2,0)};
+                  \end{axis}
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+            <instruction>
+              If needed, type <c>&gt;=</c> for <m>\geq</m>, and <c>&lt;=</c> for <m>\leq</m>.
+            </instruction>
+            <p>
+              <var name="$sb[0]" width="20" />
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Since all numbers less than or equal to <m>2</m> are shaded, the set-builder notation
+              is <m><var name="$sb[0]" /></m>.
+            </p>
+          </solution>
+        </task>
+        <task>
+          <statement>
+            <image>
+              <latex-image>
+                \begin{tikzpicture}
+                  \begin{axis}
+                    [
+                      numberline,
+                      xmin=-6,
+                      xmax=6,
+                      xlabel={\(x\)},
+                      width=\orccaprintwidth,
+                    ]
+                    \addplot[infiniteopeninterval] coordinates {(-6,0) (2,0)};
+                  \end{axis}
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+            <instruction>
+              If needed, type <c>&gt;=</c> for <m>\geq</m>, and <c>&lt;=</c> for <m>\leq</m>.
+            </instruction>
+            <p>
+              <var name="$sb[1]" width="20" />
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Since all numbers less than to <m>2</m> are shaded, the set-builder notation is
+              <m><var name="$sb[1]" /></m>.
+            </p>
+          </solution>
+        </task>
+        <task>
+          <statement>
+            <image>
+              <latex-image>
+                \begin{tikzpicture}
+                  \begin{axis}
+                    [
+                      numberline,
+                      xmin=-6,
+                      xmax=6,
+                      xlabel={\(x\)},
+                      width=\orccaprintwidth,
+                    ]
+                    \addplot[closedinfiniteinterval] coordinates {(2,0) (6,0)};
+                  \end{axis}
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+            <instruction>
+              If needed, type <c>&gt;=</c> for <m>\geq</m>, and <c>&lt;=</c> for <m>\leq</m>.
+            </instruction>
+            <p>
+              <var name="$sb[2]" width="20" />
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Since all numbers greater than or equal to <m>2</m> are shaded, the set-builder
+              notation is <m><var name="$sb[2]" /></m>.
+            </p>
+          </solution>
+        </task>
+      </webwork>
+    </exercise>
+
+    <p>
+      Set-builder notation is useful, but there is an alternative for intervals that is less
+      cumbersome.
+    </p>
+
+    <definition xml:id="definition-interval-notation">
+      <title>Interval Notation</title>                                                                        <idx><h>Interval notation</h></idx>
+      <statement>
+        <p>
+          Interval notation describes an interval by saying where it <q>starts</q> and <q>ends</q>.
+          It can look like any of these four options:
+          <me>
+            (\text{start},\text{end})\qquad
+            (\text{start},\text{end}]\qquad
+            [\text{start},\text{end})\qquad
+            [\text{start},\text{end}]
+          </me>
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      In <xref ref="figure-voters-age"/>, the interval starts at <m>18</m>. Then it extends forever
+      and has no end, so we use the <m>\infty</m> symbol for where this interval <q>ends</q>. And we
+      write <m>[18,\infty)</m>. There is a subtlety about using the bracket <q><m>[</m></q> on one
+      side and the parenthesis <q><m>)</m></q> on the other side. The bracket tells us that
+      <m>18</m> <em>is</em> part of the interval and the parenthesis tells us that <m>\infty</m> is
+      <em>not</em> part of the interval.
+    </p>
+
+    <p>
+      Imagine if we wanted to describe all the numbers greater than <m>18</m>, including numbers
+      like <m>18.01</m> but not including <m>18</m> itself. Then we would write <m>(18,\infty)</m>.
+    </p>
+
+    <p>
+      So there are four types of infinite intervals. Take note of the different uses of round
+      parentheses and square brackets.
+    </p>
+
+    <figure>
+      <caption>Types of infinite intervals in interval notation</caption>
+      <sbsgroup>
+        <sidebyside widths ="10% 31% 47%" margins="0%">
+          <p>
+            <m>(a,\infty)</m>
+          </p>
+          <p>
+            An <term>open-infinite</term> interval means all numbers <m>a</m> or greater,
+            <em>not</em> including <m>a</m>.
+          </p>
+          <image>
+            <shortdescription>
+              a number line with a mark at a; the portion of the number line from a to the right has
+              a thick line overlaying it; there is a left parenthesis at a and an arrow on the right
+              pointing right
+            </shortdescription>
+            <latex-image label="open-infinite-interval">
+              \begin{tikzpicture}
+                \begin{axis}[
+                    numberline,
+                    xmin=-0.5,
+                    xmax=1.5,
+                    ticks=none,
+                    xmajorticks=false,
+                    ymajorticks=false,
+                    after end axis/.code={},
+                    width=0.47\orccaprintwidth,
+                  ]
+                  \addplot[openinfiniteinterval] coordinates {(0,0) (1.5,0)};
+                  \addplot[mark=none] coordinates {(0,0)} node[below] {\(a\)};
+                \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </sidebyside>
+        <sidebyside widths ="10% 31% 47%" margins="0%">
+          <p>
+            <m>[a,\infty)</m>
+          </p>
+          <p>
+            A <term>closed-infinite</term> interval means all numbers <m>a</m> or greater,
+            <em>including</em> <m>a</m>.
+          </p>
+          <image>
+            <shortdescription>
+              a number line with a mark at a; the portion of the number line from a to the right has
+              a thick line overlaying it; there is a left bracket at a and an arrow on the right
+              pointing right
+            </shortdescription>
+            <latex-image label="closed-infinite-interval">
+              \begin{tikzpicture}
+                \begin{axis}[
+                    numberline,
+                    xmin=-0.5,
+                    xmax=1.5,
+                    ticks=none,
+                    xmajorticks=false,
+                    ymajorticks=false,
+                    after end axis/.code={},
+                    width=0.47\orccaprintwidth,
+                  ]
+                  \addplot[closedinfiniteinterval] coordinates {(0,0) (1.5,0)};
+                  \addplot[mark=none] coordinates {(0,0)} node[below] {\(a\)};
+                \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </sidebyside>
+        <sidebyside widths ="10% 31% 47%" margins="0%">
+          <p>
+            <m>(-\infty,a)</m>
+          </p>
+          <p>
+            An <term>infinite-open</term> interval means all numbers <m>a</m> or less, <em>not</em>
+            including <m>a</m>.
+          </p>
+          <image>
+            <shortdescription>
+              a number line with a mark at a; the portion of the number line from a to the left has
+              a thick line overlaying it; there is a right parenthesis at a and an arrow on the left
+              pointing left
+            </shortdescription>
+            <latex-image label="infinite-open-interval">
+              \begin{tikzpicture}
+                \begin{axis}[
+                    numberline,
+                    xmin=-0.5,
+                    xmax=1.5,
+                    ticks=none,
+                    xmajorticks=false,
+                    ymajorticks=false,
+                    after end axis/.code={},
+                    width=0.47\orccaprintwidth,
+                  ]
+                  \addplot[infiniteopeninterval] coordinates {(-0.5,0) (1,0)};
+                  \addplot[mark=none] coordinates {(1,0)} node[below] {\(a\)};
+                \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </sidebyside>
+        <sidebyside widths ="10% 31% 47%" margins="0%">
+          <p>
+            <m>(-\infty,a]</m>
+          </p>
+          <p>
+            A <term>infinite-closed</term> interval means all numbers <m>a</m> or less,
+            <em>including</em> <m>a</m>.
+          </p>
+          <image>
+            <shortdescription>
+              a number line with a mark at a; the portion of the number line from a to the left has
+              a thick line overlaying it; there is a right bracket at a and an arrow on the left
+              pointing left
+            </shortdescription>
+            <latex-image label="infinite-closed-interval">
+              \begin{tikzpicture}
+                \begin{axis}[
+                    numberline,
+                    xmin=-0.5,
+                    xmax=1.5,
+                    ticks=none,
+                    xmajorticks=false,
+                    ymajorticks=false,
+                    after end axis/.code={},
+                    width=0.47\orccaprintwidth,
+                  ]
+                  \addplot+[infiniteclosedinterval] coordinates {(-0.5,0) (1,0)};
+                  \addplot[mark=none] coordinates {(1,0)} node[below] {\(a\)};
+                \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </sidebyside>
+      </sbsgroup>
+    </figure>
+
+    <exercise xml:id="exercise-number-line-to-interval" label="number-line-to-interval">
+      <title>Interval Notation from Number Lines</title>
+      <webwork>
+        <pg-code>
+          Context("Interval");
+          Context()->flags->set("formatStudentAnswer"=>'parsed');
+          $in[0] = Compute("(-inf, 2]");
+          $in[1] = Compute("(-inf, 2)");
+          $in[2] = Compute("[2, inf)");
+        </pg-code>
+        <introduction>
+          <p>
+            For each interval expressed in the number lines, write the interval notation.
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <image>
+              <latex-image>
+                \begin{tikzpicture}
+                  \begin{axis}
+                    [
+                      numberline,
+                      xmin=-6,
+                      xmax=6,
+                      xlabel={\(x\)},
+                      width=\orccaprintwidth,
+                    ]
+                    \addplot[infiniteclosedinterval] coordinates {(-6,0) (2,0)};
+                  \end{axis}
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+            <instruction>
+              Type <c>inf</c> or <c>infinity</c> for <m>\infty</m>.
+            </instruction>
+            <p>
+              <var name="$in[0]" width="20" />
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The shaded interval <q>starts</q> at <m>-\infty</m> and ends at <m>2</m> (including
+              <m>2</m>) so the interval notation is <m><var name="$in[0]"/></m>.
+            </p>
+          </solution>
+        </task>
+        <task>
+          <statement>
+            <image>
+              <latex-image>
+                \begin{tikzpicture}
+                  \begin{axis}
+                    [
+                      numberline,
+                      xmin=-6,
+                      xmax=6,
+                      xlabel={\(x\)},
+                      width=\orccaprintwidth,
+                    ]
+                    \addplot[infiniteopeninterval] coordinates {(-6,0) (2,0)};
+                  \end{axis}
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+            <instruction>
+              Type <c>inf</c> or <c>infinity</c> for <m>\infty</m>.
+            </instruction>
+            <p>
+              <var name="$in[1]" width="20" />
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The shaded interval <q>starts</q> at <m>-\infty</m> and ends at <m>2</m> (excluding
+              <m>2</m>) so the interval notation is <m><var name="$in[1]"/></m>.
+            </p>
+          </solution>
+        </task>
+        <task>
+          <statement>
+            <image>
+              <latex-image>
+                \begin{tikzpicture}
+                  \begin{axis}
+                    [
+                      numberline,
+                      xmin=-6,
+                      xmax=6,
+                      xlabel={\(x\)},
+                      width=\orccaprintwidth,
+                    ]
+                    \addplot[closedinfiniteinterval] coordinates {(2,0) (6,0)};
+                  \end{axis}
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+            <instruction>
+              Type <c>inf</c> or <c>infinity</c> for <m>\infty</m>.
+            </instruction>
+            <p>
+              <var name="$in[2]" width="20" />
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The shaded interval starts at <m>2</m> (including <m>2</m>) and <q>ends</q> at
+              <m>\infty</m>, so the interval notation is <m><var name="$in[2]"/></m>.
+            </p>
+          </solution>
+        </task>
+      </webwork>
+    </exercise>
+
+    <remark>
+      <title>Alternative Convention for Sketching Intervals</title>
+      <p>
+        When graphing an interval, there is an alternative convention than you might see in other
+        resources explaining algebra. This other convention uses open circles and filled-in circles.
+        An open circle is used in place of a parenthesis, and a filled-in circle is used in place of
+        a bracket, as in this example for the interval <m>[a,b)</m>.
+      </p>
+
+      <image width="47%">
+        <shortdescription>
+          a number line with marks at a and b; the portion of the number line between a and b has a
+          thick line overlaying it; there is a hollow dot at a and solid dot at b
+        </shortdescription>
+        <latex-image label="hollow-solid-dot-convention">
+          \begin{tikzpicture}
+            \begin{axis}[
+                numberline,
+                xmin=-0.5,
+                xmax=1.5,
+                ticks=none,
+                xmajorticks=false,
+                ymajorticks=false,
+                after end axis/.code={},
+                width=0.47\orccaprintwidth,
+              ]
+              \addplot[closedopeninterval, -] coordinates {(-0.5,0) (1,0)};
+              \addplot[soliddot] coordinates {(-0.5,0)};
+              \addplot[hollowdot] coordinates {(1,0)};
+              \addplot[mark=none] coordinates {(1,0)} node[below] {\(b\)};
+              \addplot[mark=none] coordinates {(-0.5,0)} node[below] {\(a\)};
+            \end{axis}
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </remark>
+  </subsection>
+
+  <reading-questions>
+    <exercise label="how-many-inequality-symbols">
+      <statement>
+        <p>
+          How many inequality symbols are there?
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+    <exercise label="open-versus-closed">
+      <statement>
+        <p>
+          What is the difference between the interval <m>[3,\infty)</m>
+          and the interval <m>(3,\infty)</m>?
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+    <exercise label="set-builder-example">
+      <statement>
+        <p>
+          The expression <m>\{x\mid x\leq10\}</m> is an example of <fillin characters="11"/>
+          notation.
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+  </reading-questions>
+
+  <exercises>
+    <subexercises>
+      <title>Prerequisite/Review Skills</title>
+      <introduction>
+        <p>
+          These exercises are only intended for students who are rusty with converting fractions to
+          decimals. If you feel comfortable, proceed to
+          <xref ref="subexercises-comparison-symbols-and-notation-for-intervals-skills-practice" text="title"/>.
+        </p>
+      </introduction>
+
+      <exercisegroup cols="4">
+        <title>Fractions to Decimals</title>
+        <introduction>
+          <p>
+            Without help from a calculator, convert the fraction to a decimal. If the decimal
+            terminates, give its exact value. Otherwise round to at least three significant digits.
+          </p>
+        </introduction>
+
+        <exercise label="convert-fraction-to-decimal-denominator-5">
+          <webwork xml:id="webwork-convert-fraction-to-decimal-denominator-5">
+            <pg-code>
+              ($d,$n) = random_coprime([5],[1..29]);
+              Context("LimitedNumeric");
+              Context()->flags->set(tolType => 'digits', tolerance=>4);
+              $answer = Real($n/$d);
+            </pg-code>
+            <statement>
+              <p>
+                <m>\dfrac{<var name="$n"/>}{<var name="$d"/>}</m>
+              </p>
+              <p>
+                <var name="$answer" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="convert-fraction-to-decimal-denominator-5-copy">
+          <webwork copy="webwork-convert-fraction-to-decimal-denominator-5"/>
+        </exercise>
+
+        <exercise label="convert-fraction-to-decimal-denominator-4">
+          <webwork xml:id="webwork-convert-fraction-to-decimal-denominator-4">
+            <pg-code>
+              ($d,$n) = random_coprime([4],[1..47]);
+              Context("LimitedNumeric");
+              Context()->flags->set(tolType => 'digits', tolerance=>4);
+              $answer = Real($n/$d);
+            </pg-code>
+            <statement>
+              <p>
+                <m>\dfrac{<var name="$n"/>}{<var name="$d"/>}</m>
+              </p>
+              <p>
+                <var name="$answer" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="convert-fraction-to-decimal-denominator-4-copy">
+          <webwork copy="webwork-convert-fraction-to-decimal-denominator-4"/>
+        </exercise>
+
+        <exercise label="convert-fraction-to-decimal-denominator-8">
+          <webwork xml:id="webwork-convert-fraction-to-decimal-denominator-8">
+            <pg-code>
+              ($d,$n) = random_coprime([8],[1..47]);
+              Context("LimitedNumeric");
+              Context()->flags->set(tolType => 'digits', tolerance=>4);
+              $answer = Real($n/$d);
+            </pg-code>
+            <statement>
+              <p>
+                <m>\dfrac{<var name="$n"/>}{<var name="$d"/>}</m>
+              </p>
+              <p>
+                <var name="$answer" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="convert-fraction-to-decimal-denominator-8-copy">
+          <webwork copy="webwork-convert-fraction-to-decimal-denominator-8"/>
+        </exercise>
+
+        <exercise label="convert-fraction-to-decimal-denominator-20">
+          <webwork xml:id="webwork-convert-fraction-to-decimal-denominator-20">
+            <pg-code>
+              ($d,$n) = random_coprime([20],[1..59]);
+              Context("LimitedNumeric");
+              Context()->flags->set(tolType => 'digits', tolerance=>4);
+              $answer = Real($n/$d);
+            </pg-code>
+            <statement>
+              <p>
+                <m>\dfrac{<var name="$n"/>}{<var name="$d"/>}</m>
+              </p>
+              <p>
+                <var name="$answer" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="convert-fraction-to-decimal-denominator-20-copy">
+          <webwork copy="webwork-convert-fraction-to-decimal-denominator-20"/>
+        </exercise>
+
+        <exercise label="convert-fraction-to-decimal-denominator-3">
+          <webwork xml:id="webwork-convert-fraction-to-decimal-denominator-3">
+            <pg-code>
+              ($d,$n) = random_coprime([3],[1..35]);
+              Context("LimitedNumeric");
+              Context()->flags->set(tolType => 'digits');
+              $answer = Real($n/$d);
+            </pg-code>
+            <statement>
+              <p>
+                <m>\dfrac{<var name="$n"/>}{<var name="$d"/>}</m>
+              </p>
+              <p>
+                <var name="$answer" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="convert-fraction-to-decimal-denominator-3-copy">
+          <webwork copy="webwork-convert-fraction-to-decimal-denominator-3"/>
+        </exercise>
+
+        <exercise label="convert-fraction-to-decimal-denominator-6">
+          <webwork xml:id="webwork-convert-fraction-to-decimal-denominator-6">
+            <pg-code>
+              ($d,$n) = random_coprime([6],[1..71]);
+              Context("LimitedNumeric");
+              Context()->flags->set(tolType => 'digits');
+              $answer = Real($n/$d);
+            </pg-code>
+            <statement>
+              <p>
+                <m>\dfrac{<var name="$n"/>}{<var name="$d"/>}</m>
+              </p>
+              <p>
+                <var name="$answer" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="convert-fraction-to-decimal-denominator-6-copy">
+          <webwork copy="webwork-convert-fraction-to-decimal-denominator-6"/>
+        </exercise>
+
+        <exercise label="convert-fraction-to-decimal-denominator-7or11">
+          <webwork xml:id="webwork-convert-fraction-to-decimal-denominator-7or11">
+            <pg-code>
+              ($d,$n) = random_coprime([7,11],[1..40]);
+              Context("LimitedNumeric");
+              Context()->flags->set(tolType => 'digits');
+              $answer = Real($n/$d);
+            </pg-code>
+            <statement>
+              <p>
+                <m>\dfrac{<var name="$n"/>}{<var name="$d"/>}</m>
+              </p>
+              <p>
+                <var name="$answer" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="convert-fraction-to-decimal-denominator-7or11-copy">
+          <webwork copy="webwork-convert-fraction-to-decimal-denominator-7or11"/>
+        </exercise>
+
+        <exercise label="convert-fraction-to-decimal-denominator-9or12">
+          <webwork xml:id="webwork-convert-fraction-to-decimal-denominator-9or12">
+            <pg-code>
+              ($d,$n) = random_coprime([9,12],[1..71]);
+              Context("LimitedNumeric");
+              Context()->flags->set(tolType => 'digits');
+              $answer = Real($n/$d);
+            </pg-code>
+            <statement>
+              <p>
+                <m>\dfrac{<var name="$n"/>}{<var name="$d"/>}</m>
+              </p>
+              <p>
+                <var name="$answer" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="convert-fraction-to-decimal-denominator-9or12-copy">
+          <webwork copy="webwork-convert-fraction-to-decimal-denominator-9or12"/>
+        </exercise>
+      </exercisegroup>
+
+    </subexercises>
+    <subexercises xml:id="subexercises-comparison-symbols-and-notation-for-intervals-skills-practice">
+      <title>Skills Practice</title>
+
+      <exercisegroup cols="4">
+        <title>True or False?</title>
+        <introduction>
+          <p>
+            Decide if each comparison is true or false.
+          </p>
+        </introduction>
+
+        <exercise label="true-false-compare-negative-integers">
+          <webwork xml:id="webwork-true-false-compare-negative-integers">
+            <pg-macros>
+              <macro-file>parserPopUp.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              ($a,$b) = (-99..-1)[NchooseK(99,2)];
+              $comp = list_random('&lt;', '>');
+              $ans = ($a > $b &amp;&amp; $comp eq '>' || $a &lt; $b &amp;&amp; $comp eq '&lt;') ? 'True' : 'False';
+              $comp = list_random('&lt;', '\leq') if ($comp eq '&lt;');
+              $comp = list_random('>', '\geq') if ($comp eq '>');
+              $tf = DropDownTF($ans, showInStatic => 0);
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$a"/> <var name="$comp"/> <var name="$b"/></m>
+              </p>
+              <p>
+                <var name="$tf" form="popup"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="true-false-compare-negative-integers-copy">
+          <webwork copy="webwork-true-false-compare-negative-integers"/>
+        </exercise>
+
+        <exercise label="true-false-compare-negative-decimals">
+          <webwork xml:id="webwork-true-false-compare-negative-decimals">
+            <pg-macros>
+              <macro-file>parserPopUp.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              ($a,$b) = map{$_/100} ((-999..-1)[NchooseK(99,2)]);
+              $comp = list_random('&lt;', '>');
+              $ans = ($a > $b &amp;&amp; $comp eq '>' || $a &lt; $b &amp;&amp; $comp eq '&lt;') ? 'True' : 'False';
+              $comp = list_random('&lt;', '\leq') if ($comp eq '&lt;');
+              $comp = list_random('>', '\geq') if ($comp eq '>');
+              $tf = DropDownTF($ans, showInStatic => 0);
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$a"/> <var name="$comp"/> <var name="$b"/></m>
+              </p>
+              <p>
+                <var name="$tf" form="popup"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="true-false-compare-negative-decimals-copy">
+          <webwork copy="webwork-true-false-compare-negative-decimals"/>
+        </exercise>
+
+        <exercise label="true-false-compare-fractions">
+          <webwork xml:id="webwork-true-false-compare-fractions">
+            <pg-macros>
+              <macro-file>parserPopUp.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              Context("Fraction");
+              @d = (2..9)[NchooseK(8,2)];
+              ($a, $b) = map{Fraction(random_coprime([1..2*$_], [$_]))} (@d);
+              $comp = list_random('&lt;', '>');
+              $ans = ($a > $b &amp;&amp; $comp eq '>' || $a &lt; $b &amp;&amp; $comp eq '&lt;') ? 'True' : 'False';
+              $comp = list_random('&lt;', '\leq') if ($comp eq '&lt;');
+              $comp = list_random('>', '\geq') if ($comp eq '>');
+              $tf = DropDownTF($ans, showInStatic => 0);
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$a"/> <var name="$comp"/> <var name="$b"/></m>
+              </p>
+              <p>
+                <var name="$tf" form="popup"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="true-false-compare-fractions-copy">
+          <webwork copy="webwork-true-false-compare-fractions"/>
+        </exercise>
+
+        <exercise label="true-false-compare-fraction-to-decimal">
+          <webwork xml:id="webwork-true-false-compare-fraction-to-decimal">
+            <pg-macros>
+              <macro-file>parserPopUp.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              Context("Fraction");
+              $d = list_random(2,4,8,5,10,20,40,25,50,100,200);
+              $a = Fraction(random_coprime([1..2*$d], [$d]));
+              $b = Real($a);
+              ($a, $b) = ($a, $b)[NchooseK(2,2)];
+              $comp = list_random('\leq', '\geq', '\neq');
+              $ans = ($comp eq '\neq') ? 'False' : 'True';
+              $tf = DropDownTF($ans, showInStatic => 0);
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$a"/> <var name="$comp"/> <var name="$b"/></m>
+              </p>
+              <p>
+                <var name="$tf" form="popup"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="true-false-compare-fraction-to-decimal-copy">
+          <webwork copy="webwork-true-false-compare-fraction-to-decimal"/>
+        </exercise>
+        <exercise label="true-false-compare-fraction-to-decimal-copy2">
+          <webwork copy="webwork-true-false-compare-fraction-to-decimal"/>
+        </exercise>
+        <exercise label="true-false-compare-fraction-to-decimal-copy3">
+          <webwork copy="webwork-true-false-compare-fraction-to-decimal"/>
+        </exercise>
+      </exercisegroup>
+
+      <exercisegroup cols="4">
+        <title>Compare Two Numbers</title>
+        <introduction>
+          <p>
+            Decide if one given number is greater than, less than, or equal to another given number.
+          </p>
+        </introduction>
+        <exercise label="compare-negative-decimals">
+          <webwork xml:id="webwork-compare-negative-decimals">
+            <pg-code>
+              ($a, $b) = map{$_/100} ((-999..-1)[NchooseK(99,2)]);
+              Context("ArbitraryString");
+              $operator = ($a > $b) ? '>' : '&lt;';
+              $answer = Compute($operator)->cmp(
+                  checker => sub {
+                      my ($correct,$student,$ans) = @_;
+                      $correct = $correct->value;
+                      $student = $student->value;
+                      if ($student =~ /^~~s*$correct~~s*$/) {return 1}
+                      elsif ($student !~ /^~~s*>~~s*$/ &amp;&amp; $student !~ /^~~s*&lt;~~s*$/ &amp;&amp; $student !~ /^~~s*=~~s*$/)
+                          {Value->Error("Answer with >, &lt;, or =.")}
+                      else {return 0};
+                  }
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$a"/></m> <var name="$answer" width="3"/> <m><var name="$b"/></m>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="compare-negative-decimals-copy">
+          <webwork copy="webwork-compare-negative-decimals"/>
+        </exercise>
+
+        <exercise label="compare-positive-fractions">
+          <webwork xml:id="webwork-compare-positive-fractions">
+            <pg-code>
+              Context("Fraction");
+              @d = (2..9)[NchooseK(8,2)];
+              ($a, $b) = map{Fraction(random_coprime([1..2*$_], [$_]))} (@d);
+              Context("ArbitraryString");
+              $operator = ($a > $b) ? '>' : '&lt;';
+              $answer = Compute($operator)->cmp(
+                  checker => sub {
+                      my ($correct,$student,$ans) = @_;
+                      $correct = $correct->value;
+                      $student = $student->value;
+                      if ($student =~ /^~~s*$correct~~s*$/) {return 1}
+                      elsif ($student !~ /^~~s*>~~s*$/ &amp;&amp; $student !~ /^~~s*&lt;~~s*$/ &amp;&amp; $student !~ /^~~s*=~~s*$/)
+                          {Value->Error("Answer with >, &lt;, or =.")}
+                      else {return 0};
+                  }
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$a"/></m> <var name="$answer" width="3"/> <m><var name="$b"/></m>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="compare-positive-fractions-copy">
+          <webwork copy="webwork-compare-positive-fractions"/>
+        </exercise>
+
+        <exercise label="compare-negative-fractions">
+          <webwork xml:id="webwork-compare-negative-fractions">
+            <pg-code>
+              Context("Fraction");
+              @d = (2..9)[NchooseK(8,2)];
+              ($a, $b) = map{-Fraction(random_coprime([1..2*$_], [$_]))} (@d);
+              Context("ArbitraryString");
+              $operator = ($a > $b) ? '>' : '&lt;';
+              $answer = Compute($operator)->cmp(
+                  checker => sub {
+                      my ($correct,$student,$ans) = @_;
+                      $correct = $correct->value;
+                      $student = $student->value;
+                      if ($student =~ /^~~s*$correct~~s*$/) {return 1}
+                      elsif ($student !~ /^~~s*>~~s*$/ &amp;&amp; $student !~ /^~~s*&lt;~~s*$/ &amp;&amp; $student !~ /^~~s*=~~s*$/)
+                          {Value->Error("Answer with >, &lt;, or =.")}
+                      else {return 0};
+                  }
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$a"/></m> <var name="$answer" width="3"/> <m><var name="$b"/></m>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="compare-negative-fractions-copy">
+          <webwork copy="webwork-compare-negative-fractions"/>
+        </exercise>
+
+        <exercise label="compare-fraction-with-decimal">
+          <webwork xml:id="webwork-compare-fraction-with-decimal">
+            <pg-code>
+              Context("Fraction");
+              $d = list_random(4,5,8,10,20,25,40,50);
+              ($d, $n) = random_coprime([$d], [1..2*$d]);
+              $a = Fraction($n, $d);
+              $b = Real($n/$d);
+              Context("ArbitraryString");
+              ($a, $b) = ($a, $b)[NchooseK(2, 2)];
+              $operator = '=';
+              $answer = Compute($operator)->cmp(
+                  checker => sub {
+                      my ($correct,$student,$ans) = @_;
+                      $correct = $correct->value;
+                      $student = $student->value;
+                      if ($student =~ /^~~s*$correct~~s*$/) {return 1}
+                      elsif ($student !~ /^~~s*>~~s*$/ &amp;&amp; $student !~ /^~~s*&lt;~~s*$/ &amp;&amp; $student !~ /^~~s*=~~s*$/)
+                          {Value->Error("Answer with >, &lt;, or =.")}
+                      else {return 0};
+                  }
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$a"/></m> <var name="$answer" width="3"/> <m><var name="$b"/></m>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="compare-fraction-with-decimal-copy">
+          <webwork copy="webwork-compare-fraction-with-decimal"/>
+        </exercise>
+
+        <exercise label="compare-fraction-to-decimal">
+          <webwork xml:id="webwork-compare-fraction-to-decimal">
+            <pg-code>
+              Context("Fraction");
+              $d = list_random(3,6,7,9,11,12,13,14);
+              ($d, $n) = random_coprime([$d], [1..2*$d]);
+              $a = Fraction($n, $d);
+              $b = Real(Round($n/$d, 2));
+              Context("ArbitraryString");
+              ($a, $b) = ($a, $b)[NchooseK(2, 2)];
+              $operator = ($a > $b) ? '>' : '&lt;';
+              $answer = Compute($operator)->cmp(
+                  checker => sub {
+                      my ($correct,$student,$ans) = @_;
+                      $correct = $correct->value;
+                      $student = $student->value;
+                      if ($student =~ /^~~s*$correct~~s*$/) {return 1}
+                      elsif ($student !~ /^~~s*>~~s*$/ &amp;&amp; $student !~ /^~~s*&lt;~~s*$/ &amp;&amp; $student !~ /^~~s*=~~s*$/)
+                          {Value->Error("Answer with >, &lt;, or =.")}
+                      else {return 0};
+                  }
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$a"/></m> <var name="$answer" width="3"/> <m><var name="$b"/></m>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="compare-fraction-to-decimal-copy">
+          <webwork copy="webwork-compare-fraction-to-decimal"/>
+        </exercise>
+      </exercisegroup>
+
+      <exercisegroup cols="2">
+        <title>Ordering Numbers</title>
+        <introduction>
+          <p>
+            Use the <m>\gt</m> symbol to arrange the following numbers in order from greatest to
+            least. For example, your answer might look like <m>4 \gt 3 \gt 2 \gt 1 \gt 0</m>.
+          </p>
+        </introduction>
+
+        <exercise label="ordering-integers">
+          <webwork xml:id="webwork-ordering-integers">
+            <pg-code>
+              Context()->operators->redefine('>',using=>',',from=>'Numeric');
+              Context()->lists->set('List' => {separator => '>'});
+
+              @a = (-10..10)[NchooseK(21,5)];
+              @a = map{Real($_)} (@a);
+              $as = join('\quad', map{'{' . $_ . '}'} (@a));
+              @b = PGsort(sub{$_[0] > $_[1]}, @a);
+              $bs = join('>', @b);
+
+              $comparison = Compute("$bs")->cmp(ordered => 1);
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$as" /></m>
+              </p>
+              <p>
+                <var name="$comparison" width="30" />
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="ordering-integers-copy">
+          <webwork copy="webwork-ordering-integers"/>
+        </exercise>
+
+        <exercise label="ordering-decimals">
+          <webwork xml:id="webwork-ordering-decimals">
+            <pg-code>
+              Context()->operators->redefine('>',using=>',',from=>'Numeric');
+              Context()->lists->set('List' => {separator => '>'});
+
+              @a = (1..99)[NchooseK(99, 5)];
+              @a = map{Real($_/10)} (@a);
+              # make two or three negative
+              $a[0] = -$a[0];
+              $a[1] = -$a[1];
+              $a[2] = list_random($a[2], -$a[2]);
+              # make two of the negatives close together
+              do {
+                $a[1] = $a[0] + non_zero_random(-1,1,0.1);
+              } until (0 > $a[1] &amp;&amp; $a[1] != $a[2]);
+              # shuffle
+              @a = (@a)[NchooseK(5,5)];
+              $as = join('\enspace', map{'{' . $_ . '}'} (@a));
+              @b = PGsort(sub{$_[0] > $_[1]}, @a);
+              $bs = join('>', @b);
+
+              $comparison = Compute("$bs");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$as" /></m>
+              </p>
+              <p>
+                <var name="$comparison" width="30" />
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="ordering-decimals-copy">
+          <webwork copy="webwork-ordering-decimals"/>
+        </exercise>
+
+        <exercise label="ordering-fractions">
+          <webwork xml:id="webwork-ordering-fractions">
+            <pg-code>
+              Context("Fraction-NoDecimals");
+              Context()->operators->redefine('>',using=>',',from=>'Numeric');
+              Context()->lists->set('List' => {separator => '>'});
+
+              @d = (2..9)[NchooseK(8,5)];
+              @a = map{Fraction(random_coprime([1..2*$_], [$_]))} (@d);
+              $as = join('\quad', map{'{' . $_->TeX . '}'} (@a));
+              @b = PGsort(sub{$_[0] > $_[1]}, @a);
+              $bs = join('>', @b);
+
+              $comparison = Compute("$bs");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$as" /></m>
+              </p>
+              <p>
+                <var name="$comparison" width="30" />
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="ordering-fractions-copy">
+          <webwork copy="webwork-ordering-fractions"/>
+        </exercise>
+
+        <exercise label="ordering-specials">
+          <webwork xml:id="webwork-ordering-specials">
+            <pg-code>
+              Context("Fraction");
+              Context()->operators->redefine('>', using => ',' , from => 'Numeric');
+              Context()->lists->set(List => {separator => '>'});
+              Context()->flags->set(reduceConstantFunctions => 0);
+
+              @a = (1..99)[NchooseK(99, 1)];
+              @a = map{Real($_/10)} (@a);
+              do {
+                @d = (2..9)[NchooseK(8,2)];
+                push @a, map{Fraction(random_coprime([$_], [1..2*$_]))} (@d);
+              } until ($a[1] != $a[0] &amp;&amp; $a[2] != $a[0]);
+              push @a, Formula("pi")/list_random(1,2,3,4,6);
+              $a[3] = $a[3]->reduce;
+              push @a, map{Formula("sqrt($_)")} (list_random(2,3,5,6,7,10));
+              @a = (@a)[NchooseK(5,5)];
+
+              $as = join('\quad', map{'{' . $_->TeX . '}'} (@a));
+              @b = PGsort(sub{$_[0] > $_[1]}, @a);
+              $bs = join('>', @b);
+
+              $comparison = Compute("$bs");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$as" /></m>
+              </p>
+              <p>
+                <var name="$comparison" width="30" />
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="ordering-specials-copy">
+          <webwork copy="webwork-ordering-specials"/>
+        </exercise>
+      </exercisegroup>
+
+      <exercisegroup cols="2">
+        <title>Interval on a Number Line</title>
+        <introduction>
+          <p>
+            Express the given interval in set-builder notation and interval notation.
+          </p>
+        </introduction>
+        <exercise label="interval-graph-to-set-builder-and-interval-notation-infinite-open">
+          <webwork xml:id="webwork-interval-graph-to-set-builder-and-interval-notation-infinite-open">
+            <pg-code>
+              $a = random(-7, 7);
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              $set_builder = Compute("{ x | x &lt; $a}");
+              Context("Interval");
+              $interval = Compute("(-inf, $a)");
+            </pg-code>
+            <statement>
+              <image>
+                <shortdescription>
+                  a numberline with a shaded region; the shaded region extends all the way to the
+                  left with an arrowhead; it extends to the right up to <var name="$a"/> where there
+                  is a right parenthesis
+                </shortdescription>
+                <latex-image>
+                  \begin{tikzpicture}
+                    \begin{axis}
+                      [
+                        numberline,
+                        xlabel={\(x\)},
+                        width=0.47\orccaprintwidth,
+                      ]
+                      \addplot[infiniteopeninterval] coordinates {(-12,0) ($a,0)};
+                    \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+              <instruction>
+                In set-builder notation:
+              </instruction>
+              <p>
+                <var name="$set_builder" width="12"/>
+              </p>
+              <instruction>
+                In interval notation:
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                The interval represents all numbers less than <m><var name="$a"/></m>. So in
+                set-builder notation, the interval is <m><var name="$set_builder"/></m>.
+              </p>
+              <p>
+                And we read the number line from left to right, with the shading extending to
+                <m>-\infty</m> on the left and going all the way up to <m><var name="$a"/></m> but
+                not including <m><var name="$a"/></m>. So in interval notation, the interval is
+                <m><var name="$interval"/></m>.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="interval-graph-to-set-builder-and-interval-notation-infinite-open-copy">
+          <webwork copy="webwork-interval-graph-to-set-builder-and-interval-notation-infinite-open"/>
+        </exercise>
+
+        <exercise label="interval-graph-to-set-builder-and-interval-notation-infinite-closed">
+          <webwork xml:id="webwork-interval-graph-to-set-builder-and-interval-notation-infinite-closed">
+            <pg-code>
+              $a = random(-7, 7);
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              $set_builder = Compute("{ x | x &lt;= $a}");
+              Context("Interval");
+              $interval = Compute("(-inf, $a]");
+            </pg-code>
+            <statement>
+              <image>
+                <shortdescription>
+                  a numberline with a shaded region; the shaded region extends all the way to the
+                  left with an arrowhead; it extends to the right up to <var name="$a"/> where there
+                  is a right bracket
+                </shortdescription>
+                <latex-image>
+                  \begin{tikzpicture}
+                    \begin{axis}
+                      [
+                        numberline,
+                        xlabel={\(x\)},
+                        width=0.47\orccaprintwidth,
+                      ]
+                      \addplot[infiniteclosedinterval] coordinates {(-12,0) ($a,0)};
+                    \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+              <instruction>
+                In set-builder notation:
+              </instruction>
+              <p>
+                <var name="$set_builder" width="12"/>
+              </p>
+              <instruction>
+                In interval notation:
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="interval-graph-to-set-builder-and-interval-notation-infinite-closed-copy">
+          <webwork copy="webwork-interval-graph-to-set-builder-and-interval-notation-infinite-closed"/>
+        </exercise>
+
+        <exercise label="interval-graph-to-set-builder-and-interval-notation-closed-infinite">
+          <webwork xml:id="webwork-interval-graph-to-set-builder-and-interval-notation-closed-infinite">
+            <pg-code>
+              $a = random(-7, 7);
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              $set_builder = Compute("{ x | x >= $a}");
+              Context("Interval");
+              $interval = Compute("[$a, inf)");
+            </pg-code>
+            <statement>
+              <image>
+                <shortdescription>
+                  a numberline with a shaded region; the shaded region begins at <var name="$a"/>
+                  where there is a left bracket; it extends to the right all the way with an
+                  arrowhead
+                </shortdescription>
+                <latex-image>
+                  \begin{tikzpicture}
+                    \begin{axis}
+                      [
+                        numberline,
+                        xlabel={\(x\)},
+                        width=0.47\orccaprintwidth,
+                      ]
+                      \addplot[closedinfiniteinterval] coordinates {($a,0) (12,0)};
+                    \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+              <instruction>
+                In set-builder notation:
+              </instruction>
+              <p>
+                <var name="$set_builder" width="12"/>
+              </p>
+              <instruction>
+                In interval notation:
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                The interval represents all numbers greater than or equal to
+                <m><var name="$a"/></m>. So in set-builder notation, the interval is
+                <m><var name="$set_builder"/></m>.
+              </p>
+              <p>
+                And we read the number line from left to right, with the shading starting at
+                <m><var name="$a"/></m> (and including <m><var name="$a"/></m>) and extending on to
+                <m>\infty</m>. So in interval notation, the interval is
+                <m><var name="$interval"/></m>.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="interval-graph-to-set-builder-and-interval-notation-closed-infinite-copy">
+          <webwork copy="webwork-interval-graph-to-set-builder-and-interval-notation-closed-infinite"/>
+        </exercise>
+
+        <exercise label="interval-graph-to-set-builder-and-interval-notation-open-infinite">
+          <webwork xml:id="webwork-interval-graph-to-set-builder-and-interval-notation-open-infinite">
+            <pg-code>
+              $a = random(-7, 7);
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              $set_builder = Compute("{ x | x > $a}");
+              Context("Interval");
+              $interval = Compute("($a, inf)");
+            </pg-code>
+            <statement>
+              <image>
+                <shortdescription>
+                  a numberline with a shaded region; the shaded region begins at <var name="$a"/>
+                  where there is a left parenthesis; it extends to the right all the way with an
+                  arrowhead
+                </shortdescription>
+                <latex-image>
+                  \begin{tikzpicture}
+                    \begin{axis}
+                      [
+                        numberline,
+                        xlabel={\(x\)},
+                        width=0.47\orccaprintwidth,
+                      ]
+                      \addplot[openinfiniteinterval] coordinates {($a,0) (12,0)};
+                    \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+              <instruction>
+                In set-builder notation:
+              </instruction>
+              <p>
+                <var name="$set_builder" width="12"/>
+              </p>
+              <instruction>
+                In interval notation:
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="interval-graph-to-set-builder-and-interval-notation-open-infinite-copy">
+          <webwork copy="webwork-interval-graph-to-set-builder-and-interval-notation-open-infinite"/>
+        </exercise>
+      </exercisegroup>
+
+      <exercisegroup cols="4">
+        <title>Interval in Set-Builder Notation</title>
+        <introduction>
+          <p>
+            Convert the given set-builder notation into a number line graph and interval notation.
+          </p>
+        </introduction>
+        <exercise label="set-builder-notation-to-graph-and-interval-notation-closed-infinite">
+          <webwork xml:id="webwork-set-builder-notation-to-graph-and-interval-notation-closed-infinite">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $a = random(-7, 7);
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              $set_builder = Compute("{ x | x >= $a}");
+              Context("Interval");
+              $interval = Compute("[$a, inf)");
+              $gt = GraphTool("{interval,$interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => 'x',
+                bBox => [ -8, 8 ],
+                ticksDistanceX => 1,
+                minorTicksX => 0,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$set_builder"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In interval notation:
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="set-builder-notation-to-graph-and-interval-notation-closed-infinite-copy">
+          <webwork copy="webwork-set-builder-notation-to-graph-and-interval-notation-closed-infinite"/>
+        </exercise>
+
+        <exercise label="set-builder-notation-to-graph-and-interval-notation-infinite-open">
+          <webwork xml:id="webwork-set-builder-notation-to-graph-and-interval-notation-infinite-open">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $a = random(-7, 7);
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              $set_builder = Compute("{ x | x &lt; $a}");
+              Context("Interval");
+              $interval = Compute("(-inf, $a)");
+              $gt = GraphTool("{interval,$interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => 'x',
+                bBox => [ -8, 8 ],
+                ticksDistanceX => 1,
+                minorTicksX => 0,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$set_builder"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In interval notation:
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="set-builder-notation-to-graph-and-interval-notation-infinite-open-copy">
+          <webwork copy="webwork-set-builder-notation-to-graph-and-interval-notation-infinite-open"/>
+        </exercise>
+
+        <exercise label="set-builder-notation-to-graph-and-interval-notation-infinite-closed">
+          <webwork xml:id="webwork-set-builder-notation-to-graph-and-interval-notation-infinite-closed">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $a = random(-7, 7);
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              $set_builder = Compute("{ x | x &lt;= $a}");
+              Context("Interval");
+              $interval = Compute("(-inf, $a]");
+              $gt = GraphTool("{interval,$interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => 'x',
+                bBox => [ -8, 8 ],
+                ticksDistanceX => 1,
+                minorTicksX => 0,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$set_builder"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In interval notation:
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                The set-builder notation tells us to graph all numbers less than or equal to
+                <m><var name="$a"/></m>. So the shading can start all the way to the left <q>at
+                <m>-\infty</m></q> and extend up to <m><var name="$a"/></m>. There should be a
+                bracket at <m><var name="$a"/></m> to indicate that <m><var name="$a"/></m> is
+                included.
+              </p>
+              <image>
+                <latex-image>
+                  \begin{tikzpicture}
+                    \begin{axis}
+                      [
+                        numberline,
+                        xmin=-8,
+                        xmax=8,
+                        xlabel={\(x\)},
+                        width=0.47\orccaprintwidth,
+                      ]
+                      \addplot[infiniteclosedinterval] coordinates {(-12,0) ($a,0)};
+                    \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+              <p>
+                And we read the number line from left to right, with the shading extending to
+                <m>-\infty</m> and going all the way up to <m><var name="$a"/></m>, including
+                <m><var name="$a"/></m>. So in interval notation, the interval is
+                <m><var name="$interval"/></m>.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="set-builder-notation-to-graph-and-interval-notation-infinite-closed-copy">
+          <webwork copy="webwork-set-builder-notation-to-graph-and-interval-notation-infinite-closed"/>
+        </exercise>
+
+        <exercise label="set-builder-notation-to-graph-and-interval-notation-open-infinite">
+          <webwork xml:id="webwork-set-builder-notation-to-graph-and-interval-notation-open-infinite">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $a = random(-7, 7);
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              $set_builder = Compute("{ x | x > $a}");
+              Context("Interval");
+              $interval = Compute("($a, inf)");
+              $gt = GraphTool("{interval,$interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => 'x',
+                bBox => [ -8, 8 ],
+                ticksDistanceX => 1,
+                minorTicksX => 0,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$set_builder"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In interval notation:
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="set-builder-notation-to-graph-and-interval-notation-open-infinite-copy">
+          <webwork copy="webwork-set-builder-notation-to-graph-and-interval-notation-open-infinite"/>
+        </exercise>
+      </exercisegroup>
+
+      <exercisegroup cols="4">
+        <title>Interval in Interval Notation</title>
+        <introduction>
+          <p>
+            Convert the given interval notation into a number line graph and set-builder notation.
+          </p>
+        </introduction>
+        <exercise label="interval-notation-to-graph-and-set-builder-notation-closed-infinite">
+          <webwork xml:id="webwork-interval-notation-to-graph-and-set-builder-notation-closed-infinite">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $a = random(-7, 7);
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              $set_builder = Compute("{ x | x >= $a}");
+              Context("Interval");
+              $interval = Compute("[$a, inf)");
+              $gt = GraphTool("{interval,$interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => 'x',
+                bBox => [ -8, 8 ],
+                ticksDistanceX => 1,
+                minorTicksX => 0,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$interval"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In set-builder notation:
+              </instruction>
+              <p>
+                <var name="$set_builder" width="12"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="interval-notation-to-graph-and-set-builder-notation-closed-infinite-copy">
+          <webwork copy="webwork-interval-notation-to-graph-and-set-builder-notation-closed-infinite"/>
+        </exercise>
+
+        <exercise label="interval-notation-to-graph-and-set-builder-notation-open-infinite">
+          <webwork xml:id="webwork-interval-notation-to-graph-and-set-builder-notation-open-infinite">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $a = random(-7, 7);
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              $set_builder = Compute("{ x | x > $a}");
+              Context("Interval");
+              $interval = Compute("($a, inf)");
+              $gt = GraphTool("{interval,$interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => 'x',
+                bBox => [ -8, 8 ],
+                ticksDistanceX => 1,
+                minorTicksX => 0,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$interval"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In set-builder notation:
+              </instruction>
+              <p>
+                <var name="$set_builder" width="12"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                The interval notation tells us to graph all numbers between <m><var name="$a"/></m>
+                and <m>\infty</m>. So the shading can start at <m><var name="$a"/></m> and go
+                all the way to the right <q>to <m>\infty</m></q>. There should be a parenthesis at
+                <m><var name="$a"/></m> to indicate that <m><var name="$a"/></m> itself is not
+                included.
+              </p>
+              <image>
+                <latex-image>
+                  \begin{tikzpicture}
+                    \begin{axis}
+                      [
+                        numberline,
+                        xmin=-8,
+                        xmax=8,
+                        xlabel={\(x\)},
+                        width=0.47\orccaprintwidth,
+                      ]
+                      \addplot[openinfiniteinterval] coordinates {($a,0) (12,0)};
+                    \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+              <p>
+                We have shaded all numbers greater than <m><var name="$a"/></m>. So in set-builder
+                notation, the interval is <m><var name="$set_builder"/></m>.
+              </p>
+            </solution>            
+          </webwork>
+        </exercise>
+        <exercise label="interval-notation-to-graph-and-set-builder-notation-open-infinite-copy">
+          <webwork copy="webwork-interval-notation-to-graph-and-set-builder-notation-open-infinite"/>
+        </exercise>
+
+        <exercise label="interval-notation-to-graph-and-set-builder-notation-infinite-open">
+          <webwork xml:id="webwork-interval-notation-to-graph-and-set-builder-notation-infinite-open">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $a = random(-7, 7);
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              $set_builder = Compute("{ x | x &lt; $a}");
+              Context("Interval");
+              $interval = Compute("(-inf, $a)");
+              $gt = GraphTool("{interval,$interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => 'x',
+                bBox => [ -8, 8 ],
+                ticksDistanceX => 1,
+                minorTicksX => 0,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$interval"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In set-builder notation:
+              </instruction>
+              <p>
+                <var name="$set_builder" width="12"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="interval-notation-to-graph-and-set-builder-notation-infinite-open-copy">
+          <webwork copy="webwork-interval-notation-to-graph-and-set-builder-notation-infinite-open"/>
+        </exercise>
+
+        <exercise label="interval-notation-to-graph-and-set-builder-notation-infinite-closed">
+          <webwork xml:id="webwork-interval-notation-to-graph-and-set-builder-notation-infinite-closed">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $a = random(-7, 7);
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              $set_builder = Compute("{ x | x &lt;= $a}");
+              Context("Interval");
+              $interval = Compute("(-inf, $a]");
+              $gt = GraphTool("{interval,$interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => 'x',
+                bBox => [ -8, 8 ],
+                ticksDistanceX => 1,
+                minorTicksX => 0,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$interval"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In set-builder notation:
+              </instruction>
+              <p>
+                <var name="$set_builder" width="12"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="interval-notation-to-graph-and-set-builder-notation-infinite-closed-copy">
+          <webwork copy="webwork-interval-notation-to-graph-and-set-builder-notation-infinite-closed"/>
+        </exercise>
+      </exercisegroup>
+
+    </subexercises>
+    <subexercises>
+      <title>Applications</title>
+      <exercise label="rent-a-car">
+        <webwork xml:id="webwork-rent-a-car">
+          <pg-code>
+            InequalitySetBuilder::UseVerticalSuchThat();
+            Context("InequalitySetBuilder-Only");
+            Context()->variables->add(a => 'Real', age => 'Real', A => 'Real', Age => 'Real');
+            $set_builder = Compute("{ a | a >= 21}");
+            Context("Interval");
+            $interval = Compute("[21, inf)");
+          </pg-code>
+          <statement>
+            <p>
+              In most US states, you must be at least 21 years old to rent a car.
+              Write an interval for the age <m>a</m> of someone who could legally rent a car.
+            </p>
+            <instruction>
+              In set-builder notation:
+            </instruction>
+            <p>
+              <var name="$set_builder" width="12"/>
+            </p>
+            <instruction>
+              In interval notation:
+            </instruction>
+            <p>
+              <var name="$interval" width="12"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+
+      <exercise label="anode-charge">
+        <webwork xml:id="webwork-anode-charge">
+          <pg-code>
+            InequalitySetBuilder::UseVerticalSuchThat();
+            Context("InequalitySetBuilder-Only");
+            Context()->variables->add(C => 'Real', c => 'Real');
+            $set_builder = Compute("{ C | C &lt; 0}");
+            Context("Interval");
+            $interval = Compute("(-inf, 0)");
+          </pg-code>
+          <statement>
+            <p>
+              In a battery, the negatively charged terminal is called the <q>anode</q>.
+              Write an interval for the charge <m>C</m> that could be present on an anode.
+            </p>
+            <instruction>
+              In set-builder notation:
+            </instruction>
+            <p>
+              <var name="$set_builder" width="12"/>
+            </p>
+            <instruction>
+              In interval notation:
+            </instruction>
+            <p>
+              <var name="$interval" width="12"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+
+      <exercise label="minimum-deposit">
+        <webwork xml:id="webwork-minimum-deposit">
+          <pg-code>
+            InequalitySetBuilder::UseVerticalSuchThat();
+            Context("InequalitySetBuilder-Only");
+            Context()->variables->add(D => 'Real', d => 'Real');
+            $set_builder = Compute("{ d | d >= 5000}");
+            Context("Interval");
+            $interval = Compute("[5000, inf)");
+          </pg-code>
+          <statement>
+            <p>
+              A bank offers a higher interest rate on an account if the initial deposit
+              is at least <m>\$5000</m>.
+              Write an interval for the initial deposit <m>d</m> that could trigger the higher rate.
+            </p>
+            <instruction>
+              In set-builder notation:
+            </instruction>
+            <p>
+              <var name="$set_builder" width="12"/>
+            </p>
+            <instruction>
+              In interval notation:
+            </instruction>
+            <p>
+              <var name="$interval" width="12"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+
+      <exercise label="world-record-hammer-throw">
+        <webwork xml:id="webwork-world-record-hammer-throw">
+          <pg-code>
+            InequalitySetBuilder::UseVerticalSuchThat();
+            Context("InequalitySetBuilder-Only");
+            Context()->variables->add(D => 'Real', d => 'Real');
+            $set_builder = Compute("{ d | d > 82.98}");
+            Context("Interval");
+            $interval = Compute("(82.98, inf)");
+          </pg-code>
+          <statement>
+            <p>
+              The world record for the women's hammer throw is held by Anita Włodarczyk, who threw
+              <quantity><mag>82.98</mag><unit base="meter"/></quantity>. Write an interval for the
+              distance <m>d</m> of a throw that could beat her record.
+            </p>
+            <instruction>
+              In set-builder notation:
+            </instruction>
+            <p>
+              <var name="$set_builder" width="12"/>
+            </p>
+            <instruction>
+              In interval notation:
+            </instruction>
+            <p>
+              <var name="$interval" width="12"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+
+      <exercisegroup cols="2">
+        <title>pH Level</title>
+        <introduction>
+          <p>
+            A water-based liquid has a <q>pH</q> level. At room temperature, if the pH level is less
+            than <m>7</m>, then the liquid is a <q>base</q>. If it is greater than <m>7</m>, then
+            the liquid is an <q>acid</q>.
+          </p>
+        </introduction>
+
+        <exercise label="base-pH">
+          <webwork xml:id="webwork-base-pH">
+            <pg-code>
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->variables->add(pH => 'Real', ph => 'Real');
+              Context()->variables->set(pH => {TeX=>'\mathrm{pH}'}, ph => {TeX=>'\mathrm{pH}'});
+              $set_builder = Compute("{ pH | pH &lt; 7}");
+              Context("Interval");
+              $interval = Compute("(-inf, 7)");
+            </pg-code>
+            <statement>
+              <p>
+                Write an interval for the pH level of a base.
+              </p>
+              <instruction>
+                In set-builder notation:
+              </instruction>
+              <p>
+                <var name="$set_builder" width="12"/>
+              </p>
+              <instruction>
+                In interval notation:
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+
+        <exercise label="acid-pH">
+          <webwork xml:id="webwork-acid-pH">
+            <pg-code>
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->variables->add(pH => 'Real', ph => 'Real');
+              Context()->variables->set(pH => {TeX=>'\mathrm{pH}'}, ph => {TeX=>'\mathrm{pH}'});
+              $set_builder = Compute("{ pH | pH > 7}");
+              Context("Interval");
+              $interval = Compute("(7, inf)");
+            </pg-code>
+            <statement>
+              <p>
+                 Write an interval for the pH level of an acid.
+             </p>
+              <instruction>
+                In set-builder notation:
+              </instruction>
+              <p>
+                <var name="$set_builder" width="12"/>
+              </p>
+              <instruction>
+                In interval notation:
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+      </exercisegroup>
+    </subexercises>
+
+    <subexercises>
+      <title>Challenge</title>
+      <exercise label="compare-expressions-in-x-and-y">
+      <!-- Kara's challenge problem -->
+        <webwork>
+          <pg-macros>
+            <macro-file>parserPopUp.pl</macro-file>
+          </pg-macros>
+          <pg-code>
+            $less  = DropDown(['&lt;','>','='], 0, showInStatic => 0);
+            $more  = DropDown(['&lt;','>','='], 1, showInStatic => 0);
+            $equal = DropDown(['&lt;','>','='], 2, showInStatic => 0);
+          </pg-code>
+          <introduction>
+            <p>
+              Choose the correct inequality or equal sign to make the relation true.              
+            </p>
+          </introduction>
+          <task>
+            <statement>
+              <p>
+                Let <m>x</m> and <m>y</m> be integers such that <m>x \lt y</m>. Then <m>x - y</m>
+                <var name="$less" form = "popup"/> <m>y - x</m>.
+              </p>
+            </statement>
+            <solution>
+              <p>
+                Since <m>x \lt y</m>, this means that <m>x-y</m> results in a negative number and
+                <m>y-x</m> results in a positive number. Thus, <m>x-y</m> <var name="$less"/>
+                <m>y-x</m>.
+              </p>
+            </solution>
+          </task>
+          <task>
+            <statement>
+              <p>
+                Let <m>x</m> and <m>y</m> be integers, such that <m>1 \lt x \lt y</m>. Then
+                <m>xy</m> <var name="$more" form = "popup"/> <m>x + y</m>.
+              </p>
+            </statement>
+            <solution>
+              <p>
+                This problem comes down to looking at the impact of multiplying by <m>y</m> compared
+                to the impact of adding <m>y</m>. Since <m>x\gt1</m>, <m>x</m> is at least <m>2</m>.
+                Similarly, <m>y</m> is at least <m>3</m>. Multiplying by <m>y</m> results in a
+                bigger number than adding <m>y</m>.
+              </p>
+            </solution>
+          </task>
+          <task>
+            <statement>
+              <p>
+                Let <m>x</m> and <m>y</m> be fractions such that <m>0 \lt x \lt y \lt 1</m>. Then
+                <m>xy</m> <var name="$less" form = "popup"/> <m>x + y</m>.
+              </p>
+            </statement>
+            <solution>
+              <p>
+                This problem comes down to looking at the impact of multiplying by <m>y</m> compared
+                to the impact of adding <m>y</m>. Since <m>0 \lt y \lt 1</m>, this means that
+                <m>y</m> is a fraction between <m>0</m> and <m>1</m>. Thus, multiplying by <m>y</m>
+                results in a smaller number, whereas adding <m>y</m> results in a bigger number.
+              </p>
+            </solution>
+          </task>
+          <task>
+            <statement>
+              <p>
+                Let <m>x</m> and <m>y</m> be integers, such that <m>x \lt y</m>. Then
+                <m>x + 2y</m> <var name="$more" form = "popup"/> <m>2x + y</m>.
+              </p>
+            </statement>
+            <solution>
+              <p>
+                Notice that <m>x + 2y</m> and <m>2x + y</m> both have an <m>x</m> and a <m>y</m>.
+                Let's subtract an <m>x</m> and a <m>y</m> from those expressions.
+                <md>
+                  <mrow>x + 2y \amp \wonder{\gt} 2x + y</mrow>
+                  <mrow>x + 2y - x - y \amp \wonder{\gt} 2x + y - x - y</mrow>
+                  <mrow>y \amp \wonder{\gt} x</mrow>
+                </md>
+                Since <m>y \gt x</m>, this means that <m>x + 2y \gt 2x + y</m>.
+              </p>
+            </solution>
+          </task>
+        </webwork>
+      </exercise>
+    </subexercises>
+  </exercises>
+
+  <!-- <worksheet>
+    <title>Lecture Note Outlines from <xref ref="video-comparison-symbols-and-notation-for-intervals">Video Playlist</xref></title>
+    <page>
+      <exercise workspace="2.5in">
+        <statement>
+          <p>
+            List the four inequality symbols, write what each means in words,
+            and then list one or two numerical examples showing how each can be used.
+          </p>
+          <sidebyside widths="33% 33% 33%" margins="0%">
+            <p>Inequality Symbol</p>
+            <p>Meaning in Words</p>
+            <p>Examples</p>
+          </sidebyside>
+        </statement>
+      </exercise>
+      <exercise workspace="2.5in">
+        <statement>
+          <p>
+            What is a linear inequality? How is it different from an equation?
+            How is it similar to an equation?
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="2.5in">
+        <statement>
+          <p>
+            In each blank provided,
+            determine if the symbol <m>\lt</m>, <m>\gt</m>, or <m>=</m> makes the statement true.
+            <ol cols="3">
+              <li>
+                <p>
+                  <m>\frac{3}{2}\,<fillin fill="="/>\,1.5</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>-4\,<fillin fill="\gt"/>\,{-7}</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>\frac{2}{5}\,<fillin fill="\lt"/>\,\frac{4}{9}</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+    </page>
+    <page>
+      <exercise workspace="2.5in">
+        <statement>
+          <p>
+            In each blank provided,
+            determine if the symbol <m>\lt</m>, <m>\gt</m>, or <m>=</m> makes the statement true.
+            <ol cols="3">
+              <li>
+                <p>
+                  <m>2\,<fillin fill="\gt"/>\,\frac{7}{4}</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>\abs{-3}\,<fillin fill="="/>\,3</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>\frac{5}{9}\,<fillin fill="\lt"/>\,\frac{2}{3}</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Represent each inequality in various ways.
+          </p>
+          <sbsgroup valign="middle">
+            <sidebyside margins="0%" widths="12% 40% 20% 20%" valign="top">
+              <p>Inequality</p>
+              <p>Graph</p>
+              <p>Interval Notation</p>
+              <p>Set-Builder Notation</p>
+            </sidebyside>
+            <sidebyside margins="0%" widths="12% 40% 20% 20%">
+              <p><m>x\gt-4</m></p>
+              <image>
+                <latex-image label="blank-numberline-a">
+                  \begin{tikzpicture}
+                    \begin{axis}[numberline, width=1.9in]
+                      % hack to widen graph; cannot seem to find a way to get svgmaker
+                      % to leave the whitespace in place without something like this
+                      \node at (axis cs:12, -1)[circle,fill,inner sep=0pt]{};
+                      \node at (axis cs:12, 1)[circle,fill,inner sep=0pt]{};
+                    \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+              <p></p>
+              <p></p>
+            </sidebyside>
+            <sidebyside margins="0%" widths="12% 40% 20% 20%">
+              <p><m>x\lt3</m></p>
+              <image>
+                <latex-image label="blank-numberline-b">
+                  \begin{tikzpicture}
+                    \begin{axis}[numberline, width=1.9in]
+                      % hack to widen graph; cannot seem to find a way to get svgmaker
+                      % to leave the whitespace in place without something like this
+                      \node at (axis cs:12, -1)[circle,fill,inner sep=0pt]{};
+                      \node at (axis cs:12, 1)[circle,fill,inner sep=0pt]{};
+                    \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+              <p></p>
+              <p></p>
+            </sidebyside>
+            <sidebyside margins="0%" widths="12% 40% 20% 20%">
+              <p><m>x\geq1</m></p>
+              <image>
+                <latex-image label="blank-numberline-c">
+                  \begin{tikzpicture}
+                    \begin{axis}[numberline, width=1.9in]
+                      % hack to widen graph; cannot seem to find a way to get svgmaker
+                      % to leave the whitespace in place without something like this
+                      \node at (axis cs:12, -1)[circle,fill,inner sep=0pt]{};
+                      \node at (axis cs:12, 1)[circle,fill,inner sep=0pt]{};
+                    \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+              <p></p>
+              <p></p>
+            </sidebyside>
+            <sidebyside margins="0%" widths="12% 40% 20% 20%">
+              <p><m>x\leq2</m></p>
+              <image>
+                <latex-image label="blank-numberline-d">
+                  \begin{tikzpicture}
+                    \begin{axis}[numberline, width=1.9in]
+                      % hack to widen graph; cannot seem to find a way to get svgmaker
+                      % to leave the whitespace in place without something like this
+                      \node at (axis cs:12, -1)[circle,fill,inner sep=0pt]{};
+                      \node at (axis cs:12, 1)[circle,fill,inner sep=0pt]{};
+                    \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+              <p></p>
+              <p></p>
+            </sidebyside>
+          </sbsgroup>
+        </statement>
+      </exercise>
+    </page>
+  </worksheet> -->
+
+  <!-- <worksheet>
+    <author>Cara Lee</author>
+    <exercise>
+      <statement>
+        <p>
+          Write <m>\lt</m>, <m>\gt</m>, or <m>=</m> to make a true statement.
+          <ol cols="3">
+            <li>
+              <m>1<fillin characters="3"/>-2</m>
+            </li>
+            <li>
+              <m>-\frac{1}{3}<fillin characters="3"/>\frac{2}{5}</m>
+            </li>
+            <li>
+              <m>\frac{1}{3}\cdot\frac{1}{4}<fillin characters="3"/>\frac{1}{3}+\frac{1}{4}</m>
+            </li>
+            <li>
+              <m>\frac{1}{3}<fillin characters="3"/>0.3</m>
+            </li>
+            <li>
+              <m>-\abs{-7}<fillin characters="3"/>\abs{-7}</m>
+            </li>
+            <li>
+              <m>\frac{1}{4}<fillin characters="3"/>0.25</m>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Write whether each comparison is true or false.
+          <ol cols="3">
+            <li>
+              <p><m>-4.5\neq-\frac{9}{2}</m></p>
+            </li>
+            <li>
+              <p><m>-1\leq0</m></p>
+            </li>
+            <li>
+              <p><m>-3\,\frac{1}{4}\leq-3\,\frac{1}{2}</m></p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="10%">
+      <statement>
+        <p>
+          Use the <m>\gt</m> symbol to arrange the following numbers
+          in order from greatest to least: <m>2.5,-\frac{3}{4},\sqrt{16},0,-2</m>.
+        </p>
+      </statement>
+    </exercise>
+    <p>
+      You buy a lottery ticket for $2.
+      Consider your net winnings, including the cost of the ticket.
+      What are all the possibilities for your net winnings?
+    </p>
+    <exercise workspace="20%">
+      <statement>
+        <p>
+          State this in words and symbols. Then define and use a variable.
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="20%">
+      <statement>
+        <p>
+          Draw a number line representing the quantity.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          For each inequality, draw the number line graph
+          and write the interval and set-builder notation.
+        </p>
+        <sidebyside margins="0%" widths="12% 48% 15% 15%">
+          <p>Inequality</p>
+          <p>Number Line Graph</p>
+          <p>Interval</p>
+          <p>Set-Builder Notation</p>
+        </sidebyside>
+        <sidebyside margins="0%" widths="12% 48% 15% 15%">
+          <p><m>t\lt4</m></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </sidebyside>
+        <sidebyside margins="0%" widths="12% 48% 15% 15%">
+          <p><m>x\geq-5</m></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </sidebyside>
+        <sidebyside margins="0%" widths="12% 48% 15% 15%">
+          <p><m>r\gt\frac{1}{2}</m></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </sidebyside>
+        <sidebyside margins="0%" widths="12% 48% 15% 15%">
+          <p><m>y\leq-2.5</m></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </sidebyside>
+      </statement>
+    </exercise>
+  </worksheet> -->
+</section>
+

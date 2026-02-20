@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2026                                                       -->
+<!-- Alex Jordan                                                          -->
+<!-- *********************************************************************-->
+
+<publication>
+    <!-- Relative path, relative to "main" source file -->
+    <source>
+        <directories external="../assets" generated="../generated-assets"/>
+    </source>
+
+    <!-- Common across output formats -->
+    <common>
+        <tableofcontents level="2"/>
+        <exercise-inline     hint="no" answer="no" solution="yes"/>
+        <exercise-divisional hint="no" answer="no" solution="no"/>
+        <fillin textstyle="shade"/>
+    </common>
+
+    <webwork
+        static-processing="local"
+        pg-location="/Users/alex.jordan/pg"
+        server="https://webwork.pcc.edu"
+        course="orcca"
+        user="orcca"
+        password="orcca"
+        task-reveal="all"
+        />
+
+    <!-- HTML-Specific Options -->
+    <html>
+        <baseurl href="https://spot.pcc.edu/math/palladium/html/"/>
+        <knowl example="no" exercise-inline="no"/>
+        <calculator model="geogebra-graphing"/>
+        <index-page ref="frontmatter"/>
+        <video privacy="yes"/>
+    </html>
+
+    <latex print="yes" pageref="no" sides="two" latex-style="ORCCA">
+        <page>
+            <geometry>papersize={8.625in,11.25in},total={350pt,8in},inner=1in</geometry>
+        </page>
+        <insertions pagebreaks=""/>
+    </latex>
+
+</publication>

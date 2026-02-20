@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2016-2019                                                  -->
+<!-- Portland Community College                                           -->
+<!--                                                                      -->
+<!-- This file is part of Open Resources for Community College Algebra    -->
+<!-- (ORCCA).                                                             -->
+<!--                                                                      -->
+<!-- Open Resources for Community College Algebra is licensed under a     -->
+<!-- Creative Commons Attribution 4.0 International License.              -->
+<!--                                                                      -->
+<!-- Under this license, any user of this textbook or the textbook        -->
+<!-- contents must provide proper attribution as follows.                 -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- include in every digital format page view (including but not         -->
+<!-- limited to EPUB, PDF, and HTML) and on every physical printed page   -->
+<!-- the following attribution:                                           -->
+<!--                                                                      -->
+<!-- Original source material, products with readable and accessible      -->
+<!-- math content, and other information freely available at              -->
+<!-- pcc.edu/orcca.                                                       -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- reproduce any math content (such as math expressions and equations)  -->
+<!-- in a readable manner, and offer math content in at least one web     -->
+<!-- accessible manner.                                                   -->
+<!--                                                                      -->
+<!-- The Portland Community College name, Portland Community College      -->
+<!-- logo, ORCCA name, Open Resources for Community College Algebra name, -->
+<!-- ORCCA logo, and front and back cover designs are not subject to the  -->
+<!-- Creative Commons license and may not be reproduced without the       -->
+<!-- prior and express written consent of Portland Community College.     -->
+<!--                                                                      -->
+<!-- For questions regarding this license, please contact                 -->
+<!-- orcca-group@pcc.edu.                                                 -->
+<!-- *********************************************************************-->
+<section xml:id="review-solving-quadratic-equations">
+  <title>Solving Quadratic Equations Chapter Review</title>
+
+  <subsection>
+    <title>Solving Quadratic Equations by Using a Square Root</title>
+    <p>
+      In <xref ref="section-solving-quadratic-equations-by-using-a-square-root">Section</xref>
+      we covered how to solve quadratic equations using the <xref ref="fact-square-root-property" text="custom">square root property</xref>
+      and how to use the <xref ref="theorem-pythagorean-theorem" text="custom">Pythagorean Theorem</xref>.
+    </p>
+
+    <example>
+      <title>Solving Quadratic Equations Using the Square Root Property</title>
+      <statement>
+        <p>
+          Solve for <m>w</m> in <m>3(2-w)^2-24=0</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          It's important here to suppress any urge you may have to expand the squared binomial.
+          We begin by isolating the squared expression.
+          <md>
+            <mrow>3(2-w)^2-24\amp=0</mrow>
+            <mrow>3(2-w)^2\amp=24</mrow>
+            <mrow>(2-w)^2\amp=8</mrow>
+          </md>
+        </p>
+
+        <p>
+          Now that we have the squared expression isolated,
+          we can use the square root property.
+          <md>
+            <mrow>2-w\amp=-\sqrt{8}\amp\text{or}\amp\amp2-w\amp=\sqrt{8}</mrow>
+            <mrow>2-w\amp=-\sqrt{\highlight{4}\cdot2}\amp\text{or}\amp\amp2-w\amp=\sqrt{\highlight{4}\cdot2}</mrow>
+            <mrow>2-w\amp=-\sqrt{\highlight{4}}\cdot\sqrt{2}\amp\text{or}\amp\amp2-w\amp=\sqrt{\highlight{4}}\cdot\sqrt{2}</mrow>
+            <mrow>2-w\amp=-\highlight{2}\sqrt{2}\amp\text{or}\amp\amp2-w\amp=\highlight{2}\sqrt{2}</mrow>
+            <mrow>-w\amp=-2\sqrt{2}-2\amp\text{or}\amp\amp-w\amp=2\sqrt{2}-2</mrow>
+            <mrow>w\amp=2\sqrt{2}+2\amp\text{or}\amp\amp w\amp=-2\sqrt{2}+2</mrow>
+          </md>
+          The solution set is <m>\left\{2\sqrt{2}+2,-2\sqrt{2}+2\right\}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <title>The Pythagorean Theorem</title>
+      <statement>
+        <p>
+          Faven was doing some wood working in her garage.
+          She needed to cut a triangular piece of wood for her project that had a hypotenuse of <m>16</m> inches,
+          and the sides of the triangle should be equal in length.
+          How long should she make her sides?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let's start by representing the length of the triangle,
+          measured in inches, by the letter <m>x</m>.
+          That would also make the other side <m>x</m> inches long.
+        </p>
+
+        <figure>
+          <caption>Piece of wood with labels for Faven</caption>
+          <image width="47%">
+            <shortdescription></shortdescription>
+            <latex-image>
+              <![CDATA[\begin{tikzpicture}
+                \draw[fill=wood] (0,0) --++ (5,0) --++ (0,5) --++ (-5,0) -- cycle;
+                \draw[color=firstcolor, dashed, very thick] (0,0) -- (5,5);
+                \node[rotate=45,above] at (2.5,2.5) {$16\,\text{in}$};
+                \node[below] at (2.5,0) {$x$};
+                \node[right] at (5,2.5) {$x$};
+              \end{tikzpicture}]]>
+            </latex-image>
+          </image>
+        </figure>
+
+        <p>
+          Faven should now set up the Pythagorean theorem regarding the picture.
+          That would be
+          <me>
+            x^2+x^2=16^2
+          </me>
+          Solving this equation, we have:
+          <md>
+            <mrow>x^2+x^2\amp=16^2</mrow>
+            <mrow>2x^2\amp=256</mrow>
+            <mrow>x^2\amp=128</mrow>
+            <mrow>\highlight{\sqrt{\unhighlight{x^2}}}\amp=\highlight{\sqrt{\unhighlight{128}}}</mrow>
+            <mrow>x\amp=\sqrt{\highlight{64}\cdot2}</mrow>
+            <mrow>x\amp=\sqrt{\highlight{64}}\cdot\sqrt{2}</mrow>
+            <mrow>x\amp=\highlight{8}\sqrt{2}</mrow>
+            <mrow>x\amp\approx11.3</mrow>
+          </md>
+          Faven should make the sides of her triangle about <m>11.3</m> inches long to force the hypotenuse to be <m>16</m> inches long.
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection>
+    <title>The Quadratic Formula</title>
+    <p>
+      In <xref ref="section-the-quadratic-formula">Section</xref>
+      we covered how to use the <xref ref="fact-the-quadratic-formula" text="custom">quadratic formula</xref>
+      to solve any quadratic equation.
+    </p>
+
+    <example>
+      <title>Solving Quadratic Equations with the Quadratic Formula</title>
+      <statement>
+        <p>
+          Solve the equations using the quadratic formula.
+
+          <ol marker="a." cols="2">
+            <li>
+              <p>
+                <m>x^2+4x=6</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>5x^2-2x+1=0</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a.">
+            <li>
+              <p>
+                First we should change the equation into standard form.
+                <md>
+                  <mrow>x^2+4x\amp=6</mrow>
+                  <mrow>x^2+4x-6\amp=0</mrow>
+                </md>
+                Next, we check and see that we cannot factor the left side or use the square root property so we must use the quadratic formula.
+                We identify that <m>\substitute{a=1}</m>,
+                <m>\substitute{b=4}</m>, and <m>\substitute{c=-6}</m>.
+                We will substitute them into the quadratic formula:
+                <md>
+                  <mrow>x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}</mrow>
+                  <mrow>x\amp=\frac{-\substitute{4}\pm\sqrt{(\substitute{4})^2-4(\substitute{1})(\substitute{-6})}}{2(\substitute{1})}</mrow>
+                  <mrow>\amp=\frac{-4\pm\sqrt{16+24}}{2}</mrow>
+                  <mrow>\amp=\frac{-4\pm\sqrt{40}}{2}</mrow>
+                  <mrow>\amp=\frac{-4\pm\sqrt{\highlight{4}\cdot10}}{2}</mrow>
+                  <mrow>\amp=\frac{-4\pm\sqrt{\highlight{4}}\cdot\sqrt{10}}{2}</mrow>
+                  <mrow>\amp=\frac{-4\pm\highlight{2}\sqrt{10}}{2}</mrow>
+                  <mrow>\amp=-\frac{4}{2}\pm\frac{2\sqrt{10}}{2}</mrow>
+                  <mrow>\amp=-2\pm\sqrt{10}</mrow>
+                </md>
+                So the solution set is <m>\left\{-2+\sqrt{10},-2-\sqrt{10}\right\}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Since the equation <m>5x^2-2x+1=0</m> is already in standard form,
+                we check and see that we cannot factor the left side or use the square root property so we must use the quadratic formula.
+                We identify that <m>\substitute{a=5}</m>,
+                <m>\substitute{b=-2}</m>, and <m>\substitute{c=1}</m>.
+                We will substitute them into the quadratic formula:
+                <md>
+                  <mrow>x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}</mrow>
+                  <mrow>x\amp=\frac{-\substitute{(-2)}\pm\sqrt{\substitute{(-2)}^2-4(\substitute{5})(\substitute{1})}}{2(\substitute{5})}</mrow>
+                  <mrow>\amp=\frac{2\pm\sqrt{4-20}}{10}</mrow>
+                  <mrow>\amp=\frac{2\pm\sqrt{-16}}{10}</mrow>
+                </md>
+                Since the solutions have square roots of negative numbers,
+                we must conclude that there are no real solutions.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection>
+    <title>Complex Solutions to Quadratic Equations</title>
+    <p>
+      In <xref ref="section-complex-solutions-to-quadratic-equations">Section</xref>
+      we covered what both <xref ref="definition-imaginary-number" text="custom">imaginary numbers</xref>
+      and <xref ref="definition-complex-number" text="custom">complex numbers</xref> are,
+      as well as how to solve quadratic equations where the solutions are imaginary numbers or complex numbers.
+    </p>
+
+    <example>
+      <title>Imaginary Numbers</title>
+      <statement>
+        <p>
+          Simplify the expression <m>\sqrt{-12}</m> using the imaginary number,
+          <m>i</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Start by splitting the <m>-1</m> from the <m>12</m> and by looking for the largest perfect-square factor of <m>-12</m>,
+          which happens to be <m>4</m>.
+          <md>
+            <mrow>\sqrt{-12}\amp=\sqrt{\firsthighlight{4}\cdot\secondhighlight{-1}\cdot3}</mrow>
+            <mrow>\amp=\sqrt{\firsthighlight{4}}\cdot\sqrt{\secondhighlight{-1}}\cdot\sqrt{3}</mrow>
+            <mrow>\amp=\firsthighlight{2}\secondhighlight{i}\sqrt{3}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <title>Solving Quadratic Equations with Imaginary Solutions</title>
+      <statement>
+        <p>
+          Solve for <m>m</m> in <m>2m^2+16=0</m>,
+          where <m>p</m> is an imaginary number.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          There is no <m>m</m> term so we will use the square root method.
+          <md>
+            <mrow>2m^2+16\amp=0</mrow>
+            <!-- <mrow>2m^2+16\subtractright{16}\amp=0\subtractright{16}</mrow> -->
+            <mrow>2m^2\amp=-16</mrow>
+            <!-- <mrow>\divideunder{2m^2}{2}\amp=\divideunder{-16}{2}</mrow> -->
+            <mrow>m^2\amp=-8</mrow>
+          </md>
+          <md>
+            <mrow>m\amp=-\sqrt{-8} \amp\text{ or }\amp\amp m\amp=\sqrt{-8}</mrow>
+            <mrow>m\amp=-\sqrt{\firsthighlight{4}}\cdot\sqrt{\secondhighlight{-1}}\cdot\sqrt{2} \amp\text{ or }\amp\amp m\amp=\sqrt{\firsthighlight{4}}\cdot\sqrt{\secondhighlight{-1}}\cdot\sqrt{2}</mrow>
+            <mrow>m\amp=-\firsthighlight{2}\secondhighlight{i}\sqrt{2}\amp\text{ or }\amp\amp m\amp=\firsthighlight{2}\secondhighlight{i}\sqrt{2}</mrow>
+          </md>
+          The solution set is <m>\left\{-\firsthighlight{2}\secondhighlight{i}\sqrt{2},\firsthighlight{2}\secondhighlight{i}\sqrt{2}\right\}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <title>Solving Quadratic Equations with Complex Solutions</title>
+      <statement>
+        <p>
+          Solve the equation <m>3(v-2)^2+54=0</m>,
+          where <m>v</m> is a complex number.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>3(v-2)^2+54\amp=0</mrow>
+            <!-- <mrow>3(v-2)^2+54\subtractright{54}\amp=0\subtractright{54}</mrow> -->
+            <mrow>3(v-2)^2\amp=-54</mrow>
+            <!-- <mrow>\divideunder{3(v-2)^2}{3}\amp=\divideunder{-54}{3}</mrow> -->
+            <mrow>(v-2)^2\amp=-18</mrow>
+          </md>
+          <md>
+            <mrow>v-2\amp=-\sqrt{-18}\amp\text{ or }\amp\amp v-2\amp=\sqrt{-18}</mrow>
+            <mrow>v-2\amp=-\sqrt{\firsthighlight{9}\cdot\secondhighlight{-1}\cdot2}\amp\text{ or }\amp\amp v-2\amp=\sqrt{\firsthighlight{9}\cdot\secondhighlight{-1}\cdot2}</mrow>
+            <mrow>v-2\amp=-\sqrt{\firsthighlight{9}}\cdot\sqrt{\secondhighlight{-1}}\cdot\sqrt{2}\amp\text{ or }\amp\amp v-2\amp=\sqrt{\firsthighlight{9}}\cdot\sqrt{\secondhighlight{-1}}\cdot\sqrt{2}</mrow>
+            <mrow>v-2\amp=-\firsthighlight{3}\secondhighlight{i}\sqrt{2}\amp\text{ or }\amp\amp v-2\amp=\firsthighlight{3}\secondhighlight{i}\sqrt{2}</mrow>
+            <!-- <mrow>v-2\addright{2}\amp=\addleft{2}\left(-\firsthighlight{3}\secondhighlight{i}\sqrt{2}\right)\amp\text{ or }\amp\amp v-2\addright{2}\amp=\addleft{2}\left(\firsthighlight{3}\secondhighlight{i}\sqrt{2}\right)</mrow> -->
+            <mrow>v\amp=2-\firsthighlight{3}\secondhighlight{i}\sqrt{2}\amp\text{ or }\amp\amp v\amp=2+\firsthighlight{3}\secondhighlight{i}\sqrt{2}</mrow>
+          </md>
+          So, the solution set is <m>\left\{2+\firsthighlight{3}\secondhighlight{i}\sqrt{2},2-\firsthighlight{3}\secondhighlight{i}\sqrt{2}\right\}</m>.
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection>
+    <title>Solving Equations in General</title>
+    <p>
+      In <xref ref="section-solving-multistep-linear-equations">Section</xref> we learned how to solve linear equations.
+      In <xref ref="section-solving-radical-equations">Section</xref> we learned how to solve radical equations.
+      In <xref ref="section-solving-quadratic-equations-by-using-a-square-root">Section</xref>
+      and <xref ref="section-the-quadratic-formula" text="custom">Section</xref>,
+      we learned how to solve quadratic equations.
+    </p>
+
+    <p>
+      Then in <xref ref="section-strategies-for-solving-equations-I">Section</xref> we looked at
+      a few strategies to solve equations in general,
+      often relying on those earlier specific techniques.
+    </p>
+
+    <example>
+      <title>Equations where the Variable Appears Once</title>
+      <statement>
+        <p>
+          Solve the equations using an effective method.
+
+          <ol marker="a." cols="3">
+            <li>
+              <p>
+                <m>(x-4)^2-2=0</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\sqrt{3x+2}-2=5</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>3(5x-6)-7=2</m>
+              </p>
+            </li>
+
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a.">
+            <li>
+              <p>
+                Since the variable <m>x</m> only appears once,
+                we can apply steps one at a time to undo all of the operations that are done to <m>x</m>
+                and eventually isolate it.
+                <md>
+                  <mrow>(x-4)^2-2\amp=0</mrow>
+                  <mrow>(x-4)^2\amp=2</mrow>
+                  <mrow>x-4\amp=\pm\sqrt{2}</mrow>
+                  <mrow>x\amp=4\pm\sqrt{2}</mrow>
+                </md>
+                So the solution set is <m>\left\{4+\sqrt{2},4-\sqrt{2}\right\}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Since the variable <m>x</m> only appears once,
+                we can apply steps one at a time to undo all of the operations that are done to <m>x</m>
+                and eventually isolate it.
+                <md>
+                  <mrow>\sqrt{3x+2}-2\amp=5</mrow>
+                  <mrow>\sqrt{3x+2}\amp=7</mrow>
+                  <mrow>\left(\sqrt{3x+2}\right)^2\amp=7^2</mrow>
+                  <mrow>3x+2\amp=49</mrow>
+                  <mrow>3x\amp=47</mrow>
+                  <mrow>x\amp=\frac{47}{3}</mrow>
+                </md>
+                At this point <m>\frac{47}{3}</m> is only a potential solution.
+                We may have introduced an extraneous solution at the point where we squared both sides.
+                So we should check it.
+                <md>
+                  <mrow>\sqrt{3\cdot\substitute{\frac{47}{3}}+2}-2\amp\wonder{=}5</mrow>
+                  <mrow>\sqrt{47+2}\amp\wonder{=}7</mrow>
+                  <mrow>\sqrt{49}\amp\confirm{=}7</mrow>
+                </md>
+                So, the solution set is <m>\left\{\frac{47}{3}\right\}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Since the variable <m>x</m> only appears once,
+                we can apply steps one at a time to undo all of the operations that are done to <m>x</m>
+                and eventually isolate it.
+                <md>
+                  <mrow>3(5x-6)-7\amp=2</mrow>
+                  <mrow>3(5x-6)\amp=9</mrow>
+                  <mrow>5x-6\amp=3</mrow>
+                  <mrow>5x\amp=9</mrow>
+                  <mrow>x\amp=\frac{9}{5}</mrow>
+                </md>
+                The solution set is <m>\left\{\frac{9}{5}\right\}</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <title>Equations With More Than One Instance of the Variable</title>
+      <statement>
+        <p>
+          Recognize that these equations have more than one instance of the variable,
+          so it is not immediately possible to isolate the variable by undoing the operations that are done to it.
+          Instead, call upon a special technique to solve the equation.
+          <ol marker="a." cols="3">
+            <li>
+              <p>
+                <m>(x-4)^2+2x=0</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>16x-2(3x-1)=7</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\sqrt{x+2}=x-4</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a.">
+
+            <li>
+              <p>
+                To solve the equation <m>(x-4)^2+2x=0</m>,
+                note that it is a quadratic equation, and we can write it in standard form.
+                <md>
+                  <mrow>(x-4)^2+2x\amp=0</mrow>
+                  <mrow>x^2-8x+16+2x\amp=0</mrow>
+                  <mrow>x^2-6x+16\amp=0</mrow>
+                </md>
+                Now we may use the <xref ref="fact-the-quadratic-formula">quadratic formula</xref>.
+                <md>
+                  <mrow>x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}</mrow>
+                  <mrow>x\amp=\frac{-(-6)\pm\sqrt{(-6)^2-4(1)(16)}}{2(1)}</mrow>
+                  <mrow>\amp=\frac{6\pm\sqrt{36-48}}{2}</mrow>
+                  <mrow>\amp=\frac{6\pm\sqrt{-12}}{2}</mrow>
+                  <intertext>At this point, we notice that the solutions are complex. Continue to simplify until they are completely reduced.</intertext>
+                  <mrow>x\amp=\frac{6\pm\sqrt{\firsthighlight{4}\cdot\secondhighlight{-1}\cdot3}}{2}</mrow>
+                  <mrow>\amp=\frac{6\pm\sqrt{\firsthighlight{4}}\cdot\sqrt{\secondhighlight{-1}}\cdot\sqrt{3}}{2}</mrow>
+                  <mrow>\amp=\frac{6\pm\firsthighlight{2}\secondhighlight{i}\sqrt{3}}{2}</mrow>
+                  <mrow>\amp=\frac{6}{2}\pm\frac{2i\sqrt{3}}{2}</mrow>
+                  <mrow>\amp=3\pm i\sqrt{3}</mrow>
+                </md>
+                So the solution set is <m>\left\{3-i\sqrt{3},3+i\sqrt{3}\right\}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To solve the equation <m>16x-2(3x-1)=3</m> we first we first note that it is linear.
+                Since it is linear,
+                we just need to follow the steps outlined in <xref ref="algorithm-solve-multistep-linear-equation">Process</xref>.
+                <md>
+                  <mrow>16x-2(3x-1)\amp=7</mrow>
+                  <mrow>16x-6x+3\amp=7</mrow>
+                  <mrow>10x+3\amp=7</mrow>
+                  <mrow>10x\amp=4</mrow>
+                  <mrow>x\amp=\frac{4}{10}</mrow>
+                  <mrow>x\amp=\frac{2}{5}</mrow>
+                </md>
+                So, the solution set is <m>\left\{\frac{2}{5}\right\}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Since the equation <m>\sqrt{x+2}=x-4</m> is a radical equation, we should isolate the radical (which it already is) and square both sides of the equation.
+                <md>
+                  <mrow>\sqrt{x+2}\amp=x-4</mrow>
+                  <mrow>\left(\sqrt{x+2}\right)^2\amp=\left(x-4\right)^2</mrow>
+                  <mrow>x+2\amp=x^2-8x+16</mrow>
+                  <mrow>0\amp=x^2-9x+14</mrow>
+                </md>
+                Since the equation is now quadratic, we may use the <xref ref="fact-the-quadratic-formula">quadratic formula</xref> to solve it.
+                <md>
+                  <mrow>x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}</mrow>
+                  <mrow>x\amp=\frac{-(-9)\pm\sqrt{(-9)^2-4(1)(14)}}{2(1)}</mrow>
+                  <mrow>\amp=\frac{9\pm\sqrt{81-56}}{2}</mrow>
+                  <mrow>\amp=\frac{9\pm\sqrt{25}}{2}</mrow>
+                  <mrow>\amp=\frac{9\pm5}{2}</mrow>
+                </md>
+                <md>
+                  <mrow>x\amp=\frac{9-5}{2}\amp\amp\text{or}\amp x\amp=\frac{9+5}{2}</mrow>
+                  <mrow>x\amp=\frac{4}{2}\amp\amp\text{or}\amp x\amp=\frac{14}{2}</mrow>
+                  <mrow>x\amp=2\amp\amp\text{or}\amp x\amp=7</mrow>
+                </md>
+                Since this is a radical equation, we should verify our solutions and look out for <q>extraneous solutions</q>.
+                <md>
+                  <mrow>\sqrt{\substitute{2}+2}\amp\wonder{=}\substitute{2}-4\amp\amp\text{or}\amp\sqrt{\substitute{7}+2}\amp\wonder{=}\substitute{7}-4</mrow>
+                  <mrow>\sqrt{4}\amp\reject{=}-2\amp\amp\text{or}\amp\sqrt{9}\amp\confirm{=}3</mrow>
+                </md>
+                So the solution set is <m>\{7\}</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <title>Solving For a Variable in Terms of Other Variables</title>
+      <statement>
+        <p>
+          Often in science classes, you are given a formula that needs to be rearranged to be useful to a situation.
+          Below are a few equations from physics that describe the natural world.
+          <ol marker="a.">
+            <li>
+              <p>
+                Solve the equation <m>v^2=v_0^2+2ax</m> for <m>x</m>.
+                (This equation describes the motion of objects that are accelerating.)
+              </p>
+            </li>
+            <li>
+              <p>
+                Solve the equation <m>c \ell=\ell_0\sqrt{c^2-v^2}</m> for <m>v</m>.
+                (This equation describes the size of things moving at very fast speeds.)
+              </p>
+            </li>
+            <li>
+              <p>
+                Solve the equation <m>y=\frac{\alpha t^2}{2}+vt</m> for <m>t</m>.
+                (This is another equation that describes the motion of objects that are accelerating.)
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a.">
+            <li>
+              <p>
+                Since <m>x</m> only appears once in the equation,
+                we only need to undo the operations that are done to it.
+                <md>
+                  <mrow>v^2\amp=v_0^2+2ax</mrow>
+                  <mrow>v^2-v_0^2\amp=2ax</mrow>
+                  <mrow>\frac{v^2-v_0^2}{2a}\amp=x</mrow>
+                </md>
+                So we find <m>x=\frac{v^2-v_0^2}{2a}</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Since <m>v</m> only appears once in the equation,
+                we only need to undo the operations that are done to it.
+                According to the order of operations, on the right side of the equation,
+                <ol>
+                  <li>
+                    <p>
+                      <m>v</m> is squared.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      The result is negated.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      The result is added to <m>c^2</m>.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      The result has a square root applied.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      The result is multiplied by <m>\ell_0</m>.
+                    </p>
+                  </li>
+                </ol>
+                So we do all of the opposite things in the opposite order.
+                <md>
+                  <mrow>c \ell\amp=\ell_0\sqrt{c^2-v^2}</mrow>
+                  <mrow>\frac{c\cdot \ell}{\ell_0}\amp=\sqrt{c^2-v^2}</mrow>
+                  <mrow>\left(\frac{c\cdot \ell}{\ell_0}\right)^2\amp=\left(\sqrt{c^2-v^2}\right)^2</mrow>
+                  <mrow>\left(\frac{c\cdot \ell}{\ell_0}\right)^2\amp=c^2-v^2</mrow>
+                  <mrow>\left(\frac{c\cdot \ell}{\ell_0}\right)^2-c^2\amp=-v^2</mrow>
+                  <mrow>-\left(\frac{c\cdot \ell}{\ell_0}\right)^2+c^2\amp=v^2</mrow>
+                  <mrow>\pm\sqrt{-\left(\frac{c\cdot \ell}{\ell_0}\right)^2+c^2}\amp=v</mrow>
+                  <mrow>\pm\sqrt{c^2-\left(\frac{c\cdot \ell}{\ell_0}\right)^2}\amp=v</mrow>
+                </md>
+                So, we find <m>v=\pm\sqrt{c^2-\left(\frac{c\cdot \ell}{\ell_0}\right)^2}</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                This is a quadratic equation when we view <m>t</m> as the variable.
+                First, we should rearrange the equation to standard form.
+                <md>
+                  <mrow>y\amp=\frac{\alpha t^2}{2}+vt</mrow>
+                  <mrow>0\amp=\frac{\alpha }{2}t^2+vt-y</mrow>
+                </md>
+                It is helpful with many equations to <q>clear denominators</q>.
+                In this case, that means multiplying each side of the equation by <m>2</m>.
+                <md>
+                  <mrow>0\amp=\alpha t^2+2vt-2y</mrow>
+                </md>
+                Now, we may apply the <xref ref="fact-the-quadratic-formula">quadratic formula</xref>.
+                <md>
+                  <mrow>t\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}</mrow>
+                  <mrow>t\amp=\frac{-2v\pm\sqrt{(2v)^2-4\alpha (-2y)}}{2\alpha}</mrow>
+                  <mrow>t\amp=\frac{-2v\pm\sqrt{4v^2+8\alpha y}}{2\alpha}</mrow>
+                  <mrow>t\amp=\frac{-2v\pm\sqrt{4\left(v^2+2\alpha y\right)}}{2\alpha}</mrow>
+                  <mrow>t\amp=\frac{-2v\pm2\sqrt{v^2+2\alpha y}}{2\alpha}</mrow>
+                  <mrow>t\amp=\frac{-v\pm \sqrt{v^2+2\alpha y}}{\alpha}</mrow>
+                </md>
+                So we find <m>t=\frac{-v\pm\sqrt{v^2+2\alpha y}}{\alpha}</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <exercises>
+    <exercisegroup cols="4">
+      <title>Solving Quadratic Equations by Using a Square Root</title>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad40.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad40.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad60.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad60.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad80.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad80.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad81.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad81.pg" />
+      </exercise>
+    </exercisegroup>
+
+    <exercisegroup cols="2">
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/PythagoreanTheorem/pythagoreanTheorem20.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/PythagoreanTheorem/pythagoreanTheorem20.pg" />
+      </exercise>
+      <!--Specified seeds give triangles wider than they are tall; better for PDF page fit -->
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/PythagoreanTheorem/pythagoreanTheorem60.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/PythagoreanTheorem/pythagoreanTheorem60.pg" />
+      </exercise>
+    </exercisegroup>
+
+    <exercisegroup cols="3">
+      <title>The Quadratic Formula</title>
+        <exercise>
+          <webwork copy="webwork-use-quadratic-formula-integer-roots"/>
+        </exercise>
+        <exercise>
+          <webwork copy="webwork-use-quadratic-formula-no-real-roots"/>
+        </exercise>
+        <exercise>
+          <webwork copy="webwork-use-quadratic-formula-no-real-roots-2"/>
+        </exercise>
+        <exercise>
+          <webwork copy="webwork-use-quadratic-formula-doubled-rational-root"/>
+        </exercise>
+        <exercise>
+          <webwork copy="webwork-use-quadratic-formula-doubled-rational-root-2"/>
+        </exercise>
+        <exercise>
+          <webwork copy="webwork-use-quadratic-formula-doubled-decimal-root-2"/>
+        </exercise>
+        <exercise>
+          <webwork copy="webwork-use-quadratic-formula-decimal-coefficients-irrational-roots-2"/>
+        </exercise>
+        <exercise>
+          <webwork copy="webwork-use-quadratic-formula-integer-and-fraction-roots-2"/>
+        </exercise>
+        <exercise>
+          <webwork copy="webwork-use-quadratic-formula-fraction-roots-4"/>
+        </exercise>
+        <exercise>
+          <webwork copy="webwork-use-quadratic-formula-fraction-roots-5"/>
+        </exercise>
+        <exercise>
+          <webwork copy="webwork-use-quadratic-formula-fraction-coefficients-one-integer-root-3"/>
+        </exercise>
+        <exercise>
+          <webwork copy="webwork-use-quadratic-formula-irrational-roots-6"/>
+        </exercise>
+        <exercise>
+          <webwork copy="webwork-solve-radical-equation-one-extraneous-solution"/>
+        </exercise>
+        <exercise>
+          <webwork copy="webwork-solve-radical-equation-two-integer-solutions-2"/>
+        </exercise>
+    </exercisegroup>
+
+    <exercisegroup cols="2">
+      <title>Complex Solutions to Quadratic Equations</title>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicalsComplex04.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/RadicalsAndRationalExponents/SimplifyRadicalsComplex04.pg" />
+      </exercise>
+
+    </exercisegroup>
+
+    <exercisegroup cols="2">
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexSolutions20.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexSolutions20.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexSolutions25.pg" />
+      </exercise>
+
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexSolutions25.pg" />
+      </exercise>
+    </exercisegroup>
+
+    <exercisegroup cols="3">
+        <title>Solving Equations in General</title>
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/SolvingRadicalEquations/SolvingRadicalEquations4.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/SolvingRadicalEquations/SolvingRadicalEquations4.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses170.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses170.pg" />
+      </exercise>
+      <exercise>
+          <webwork source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad260.pg" />
+      </exercise>
+      <exercise>
+          <webwork source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad260.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveSpecialLinearEquation40.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveSpecialLinearEquation40.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad155.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad155.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad81.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad81.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction290.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationFraction290.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/SolvingRadicalEquations/SolvingRadicalEquations6.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/Math95/SolvingRadicalEquations/SolvingRadicalEquations6.pg" />
+      </exercise>
+      <exercise>
+          <webwork source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad75.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad75.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad305.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad305.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/RadicalEquations/SolvingRadicalEquation80.pg" />
+      </exercise>
+      <exercise>
+        <webwork source="Contrib/PCC/BasicAlgebra/RadicalEquations/SolvingRadicalEquation80.pg" />
+      </exercise>
+    </exercisegroup>
+  </exercises>
+</section>
+

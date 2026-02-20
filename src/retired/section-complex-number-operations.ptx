@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2016-2019                                                  -->
+<!-- Portland Community College                                           -->
+<!--                                                                      -->
+<!-- This file is part of Open Resources for Community College Algebra    -->
+<!-- (ORCCA).                                                             -->
+<!--                                                                      -->
+<!-- Open Resources for Community College Algebra is licensed under a     -->
+<!-- Creative Commons Attribution 4.0 International License.              -->
+<!--                                                                      -->
+<!-- Under this license, any user of this textbook or the textbook        -->
+<!-- contents must provide proper attribution as follows.                 -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- include in every digital format page view (including but not         -->
+<!-- limited to EPUB, PDF, and HTML) and on every physical printed page   -->
+<!-- the following attribution:                                           -->
+<!--                                                                      -->
+<!-- Original source material, products with readable and accessible      -->
+<!-- math content, and other information freely available at              -->
+<!-- pcc.edu/orcca.                                                       -->
+<!--                                                                      -->
+<!-- If you redistribute all or part of this textbook, then you must      -->
+<!-- reproduce any math content (such as math expressions and equations)  -->
+<!-- in a readable manner, and offer math content in at least one web     -->
+<!-- accessible manner.                                                   -->
+<!--                                                                      -->
+<!-- The Portland Community College name, Portland Community College      -->
+<!-- logo, ORCCA name, Open Resources for Community College Algebra name, -->
+<!-- ORCCA logo, and front and back cover designs are not subject to the  -->
+<!-- Creative Commons license and may not be reproduced without the       -->
+<!-- prior and express written consent of Portland Community College.     -->
+<!--                                                                      -->
+<!-- For questions regarding this license, please contact                 -->
+<!-- orcca-group@pcc.edu.                                                 -->
+<!-- *********************************************************************-->
+<section xml:id="section-complex-number-operations" permid="kdV">
+  <title>Complex Number Operations</title>
+  <introduction permid="Ilg">
+    <p permid="yvV">
+      <url href="https://en.wikipedia.org/wiki/Complex_number#Applications">Complex numbers</url><fn>
+      <url href="https://en.wikipedia.org/wiki/Complex_number#Applications">en.wikipedia.org/wiki/Complex_number#Applications</url>
+      </fn> are used in many math, science and engineering applications.
+      In this section,
+      we will learn the basics of complex number operations.
+    </p>
+
+    <figure permid="eDe">
+      <caption>Alternative Video Lesson</caption>
+      <video youtubeplaylist="PL2qOxw8-rmqZ9Cn6N4S9YTZuz1gfsSxdM" />
+    </figure>
+  </introduction>
+
+  <subsection permid="Qle">
+    <title>Adding and Subtracting Complex Numbers</title>
+    <idx><h>addition</h><h>of complex numbers</h></idx>
+
+    <p permid="HPH">
+      Adding and subtracting complex numbers is just like combining like terms.
+      We combine the terms that are real and the terms that are imaginary.
+      Here are some examples
+    </p>
+
+    <example permid="hjp">
+      <statement>
+        <p permid="cNR">
+          Simplify the expression <m>(1-7i)+(5+4i)</m>.
+        </p>
+      </statement>
+      <solution permid="osp">
+        <p permid="WoL">
+          <md permid="YNS">
+            <mrow>(1-7i)+(5+4i)\amp=1+5-7\highlight{i}+4\highlight{i}</mrow>
+            <mrow>\amp=6-3\highlight{i}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example permid="Nqy">
+      <statement>
+        <p permid="IVa">
+          Simplify the expression <m>(3-10i)-(4-6i)</m>.
+        </p>
+      </statement>
+      <solution permid="Uzy">
+        <p permid="CvU">
+          <md permid="EVb">
+            <mrow>(3-10i)-(4-6i)\amp=3-10\highlight{i}-4+6\highlight{i}</mrow>
+            <mrow>\amp=-1-4\highlight{i}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <exercise permid="txH">
+      <webwork>
+            <pg-code>
+                Context("LimitedComplex");
+            </pg-code>
+          <statement>
+            <p permid="KKn">
+              Simplify the expression <m>(8+2i)-(5+3i)</m>.
+            </p>
+
+            <p permid="qRw">
+              <var name="'3-i'" width="6" />
+            </p>
+          </statement>
+          <solution permid="xMb">
+            <p permid="iDd">
+              <md permid="lck">
+                <mrow>(8+2i)-(5+3i)\amp=8+2\highlight{i}-5-3\highlight{i}</mrow>
+                <mrow>\amp=3-\highlight{i}</mrow>
+              </md>
+            </p>
+          </solution>
+      </webwork>
+    </exercise>
+  </subsection>
+
+  <subsection permid="wsn">
+    <title>Multiplying Complex Numbers</title>
+    <idx><h>multiplication</h><h>of complex numbers</h></idx>
+ <!-- TODO: Should we keep this? I don't think it's in the CCOG, but it's interesting! -->
+ <!-- Alex is commenting this out for now. -->
+ <!--       <p>In order to multiply complex numbers, we will look at powers of <m>i</m>. Recall that <m>i</m> is defined as <m>i=\sqrt{-1}</m>. There is an interesting pattern with the exponents of <m>i</m>. Let's look at the first four:<md>
+            <mrow>i^1\amp=i</mrow>
+            <mrow>i^2\amp=(\sqrt{-1})^2=-1</mrow>
+            <mrow>i^3\amp=i^2\cdot i=(-1)\cdot i=-i</mrow>
+            <mrow>i^4\amp=i^2\cdot i^2=(-1)(-1)=1</mrow>
+        </md>Because <m>i^4=1</m>, the pattern starts over and <m>i^5=i</m>. Here are the next few powers of <m>i</m>:<md>
+            <mrow>i^5\amp=i^4\cdot i=(1)\cdot i=i</mrow>
+            <mrow>i^6\amp=i^4\cdot i^2=(1)\cdot(-1)=-1</mrow>
+            <mrow>i^7\amp=i^4\cdot i^3=(1)\cdot(-i)=-i</mrow>
+            <mrow>i^8\amp=i^4\cdot i^4=(1)\cdot(1)=1</mrow>
+            <mrow>i^9\amp=i^4\cdot i^4 \cdot i=(1)(1)(i)=i</mrow>
+            <mrow>\vdots</mrow>
+        </md>We will organize the results and find a pattern:</p>
+
+        <sidebyside>
+            <tabular left="minor" right="minor">
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+                <col halign="center"/>
+                <row>
+                    <cell><m>i^1=i</m></cell>
+                    <cell><m>i^2=-1</m></cell>
+                    <cell><m>i^3=-i</m></cell>
+                    <cell><m>i^4=1</m></cell>
+                </row>
+                <row>
+                    <cell><m>i^5=i</m></cell>
+                    <cell><m>i^6=-1</m></cell>
+                    <cell><m>i^7=-i</m></cell>
+                    <cell><m>i^8=1</m></cell>
+                </row>
+                <row>
+                    <cell><m>i^9=i</m></cell>
+                    <cell><m>i^{10}=-1</m></cell>
+                    <cell><m>i^{11}=-i</m></cell>
+                    <cell><m>i^{12}=1</m></cell>
+                </row>
+            </tabular>
+        </sidebyside>
+
+        <p>Based on the pattern, we can calculate the value of <m>i^n</m>, as in the next example.</p>
+
+            <example>
+                <statement>
+                    <p>Calculate <m>i^{82}</m>.</p>
+                </statement>
+                <solution>
+                    <p>According to the pattern we found above, values of <m>i^n</m> cycle through four values: <m>i, -1, -i, 1</m>.</p>
+
+                    <p>To find the value of <m>i^{82}</m>, we divide the exponent by <m>4</m> and get <m>20</m> with a remainder of <m>2</m>. That means <m>80</m> is the largest multiple of <m>4</m> below <m>82</m>. So <me>i^{82}=i^{80}\cdot i^2=1\cdot-1=-1</me>.</p>
+                </solution>
+            </example>
+
+            <example>
+            <statement>
+                <p>Calculate <m>i^{131}</m>.</p>
+            </statement>
+            <solution>
+                <p>We divide <m>131</m> by <m>4</m> and get <m>32</m> remainder is <m>3</m>. This means that <m>128</m> is the largest multiple of <m>4</m> below <m>131</m>. So <me>i^{131}=i^{128}\cdot i^3=1\cdot-i=-i</me></p>
+            </solution>
+        </example>
+-->
+    <p permid="nWQ">
+      Now let's learn how to multiply complex numbers.
+      It is very similar to multiplying polynomials.
+    </p>
+
+    <example permid="ZEQ">
+      <statement>
+        <p permid="pcj">
+          Simplify the expression <m>2i(3-2i)</m>.
+        </p>
+      </statement>
+      <solution permid="AGH">
+        <p permid="OKm">
+          We distribute the <m>2i</m> to both terms,
+          then we simplify any powers of <m>i</m>.
+          <md permid="Rjt">
+            <mrow>2i(3-2i)\amp=2i\cdot3-2i\cdot2i</mrow>
+            <mrow>\amp=6i-4i^2</mrow>
+            <mrow>\amp=6i-4(-1)</mrow>
+            <mrow>\amp=6i+4</mrow>
+            <mrow>\amp=4+6i</mrow>
+          </md>
+          Note that we always write a complex number in standard form,
+          which is <m>a+bi</m>.
+        </p>
+      </solution>
+    </example>
+
+    <p permid="UdZ">
+      When we multiply two complex numbers we can use the distributive method,
+      <acro>FOIL</acro> method, or generic rectangles.
+      Here is an example of each method.
+    </p>
+
+    <example permid="FLZ">
+      <statement>
+        <p permid="Vjs">
+          Multiply <m>(1+5i)(2-7i)</m>.
+        </p>
+      </statement>
+      <solution permid="gNQ">
+        <p permid="uRv">
+          We will use the distributive method to multiply the two binomials.
+          <md permid="xqC">
+            <mrow>(1+5i)(2-7i)\amp=2(1+5i)-7i(1+5i)</mrow>
+            <mrow>\amp=2+10i-7i-35i^2</mrow>
+            <mrow>\amp=2+10i-7i-35(-1)</mrow>
+            <mrow>\amp=2+3i+35</mrow>
+            <mrow>\amp=37+3i</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example permid="lTi">
+      <statement>
+        <p permid="BqB">
+          Expand and simplify the expression <m>(3-4i)^2</m>.
+        </p>
+      </statement>
+      <solution permid="MUZ">
+        <p permid="aYE">
+          We will use the <acro>FOIL</acro> method to expand this perfect square.
+        </p>
+
+        <figure permid="nmW">
+          <caption>Using the <acro>FOIL</acro> method to expand <m>(3-4i)^2</m>.</caption>
+          <sidebyside widths="20% 47%" permid="eoJ">
+
+            <image permid="zfP">
+              <shortdescription>A diagram that shows 3*3=9, 3*-4i=-12i, -4i*3=-12i and (-4i)^2=16i^2</shortdescription>
+
+            <latex-image>
+                <![CDATA[\begin{tikzpicture}
+                    \draw (0,4) node {$($};
+                    \draw (0.25,4) node {$3$};
+                    \draw (0.5,4) node {$-$};
+                    \draw (0.8,4) node {$4i$};
+                    \draw (1.05,4) node {$)$};
+                    \draw (1.25,4) node {$($};
+                    \draw (1.5,4) node {$3$};
+                    \draw (1.8,4) node {$-$};
+                    \draw (2.1,4) node {$4i$};
+                    \draw (2.3,4) node {$)$};
+                    \draw [<->] (0.25,4.25) .. controls (0.5625,4.5) and (1.1875,4.5) .. (1.5,4.25);
+                    \draw (0.8,4.65) node {$9$};
+                    \draw [<->] (0.75,4.25) .. controls (1.0625,4.5) and (1.6875,4.5) .. (2,4.25);
+                    \draw (1.6,4.65) node {$16i^2$};
+                    \draw [<->] (0.75,3.75) .. controls (0.9375,3.5) and (1.3125,3.5) .. (1.45,3.75);
+                    \draw (1.1,3.3) node {$-12i$};
+                    \draw [<->] (0.25,3.75) .. controls (0.8125,2.75) and (1.5625,2.75) .. (1.95,3.7);
+                    \draw (1.15,2.8) node {$-12i$};
+                \end{tikzpicture}]]>
+            </latex-image>
+            </image>
+
+            <p permid="HfN">
+              <md permid="dxL">
+                <mrow>(3-4i)^2\amp=(3-4i)(3-4i)</mrow>
+                <mrow>\amp=9-12i-12i+16i^2</mrow>
+                <mrow>\amp=9-24i+16(-1)</mrow>
+                <mrow>\amp=9-24i-16</mrow>
+                <mrow>\amp=-7-24i</mrow>
+              </md>
+            </p>
+          </sidebyside>
+
+        </figure>
+      </solution>
+    </example>
+
+    <example permid="Sar">
+      <statement>
+        <p permid="hxK">
+          Multiply <m>(3+4i)(3-4i)</m>.
+        </p>
+      </statement>
+      <solution permid="tci">
+        <p permid="Tuf">
+          We will use the Generic Rectangle Method to multiply those two binomials.
+        </p>
+
+        <figure permid="fIx">
+          <caption>Using the Generic Rectangle Method to multiply <m>(3+4i)(3-4i)</m>.</caption>
+          <sidebyside widths="32% 47%" permid="KvS">
+
+            <image permid="fmY">
+              <shortdescription>A generic rectangle diagram that shows 3*3=9, 3*-4i=-12i, -4i*3=-12i and (-4i)^2=16i^2</shortdescription>
+
+            <latex-image>
+                <![CDATA[\begin{tikzpicture}
+                    \draw (1,0) rectangle (5,4);
+                    \draw (1,2) -- (5,2);
+                    \draw (3,0) -- (3,4);
+                    \draw (2,4.5) node {$3$};
+                    \draw (4,4.5) node {$4i$};
+                    \draw (0.5,3) node {$3$};
+                    \draw (0.5,1) node {$-4i$};
+                    \draw (2,3) node {$9$};
+                    \draw (4,3) node {$12i$};
+                    \draw (2,1) node {$-12i$};
+                    \draw (4,1) node {$-16i^2$};
+                \end{tikzpicture}]]>
+            </latex-image>
+            </image>
+
+            <p permid="zBo">
+              <md permid="JEU">
+                <mrow>(3+4i)(3-4i)\amp=9+12i-12i-16i^2</mrow>
+                <mrow>\amp=9-16(-1)</mrow>
+                <mrow>\amp=9+16</mrow>
+                <mrow>\amp=25</mrow>
+              </md>
+            </p>
+          </sidebyside>
+
+        </figure>
+      </solution>
+    </example>
+
+    <p permid="Ali">
+      As the last example shows,
+      it is possible to multiply two complex numbers and get a real number result.
+      Notice that the middle terms,
+      <m>12i</m> and <m>-12i</m>,
+      are opposites, which makes the result a real number.
+      This happens when we multiply a sum and difference of the same real and imaginary parts,
+      called <term>complex conjugates</term>.
+          <idx><h>complex number</h><h>conjugates</h></idx>
+      This pair of factors results in the difference of squares:
+      <me permid="pMd">
+        (a+b)(a-b)=a^2-b^2
+      </me>.
+    </p>
+
+    <example permid="yhA">
+      <statement>
+        <p permid="NET">
+          Use the sum and difference formula to multiply <m>(5+2i)(5-2i)</m>.
+        </p>
+      </statement>
+      <solution permid="Zjr">
+        <p permid="LPG">
+          <md permid="VTm">
+            <mrow>(5+2i)(5-2i)\amp=5^2-(2i)^2</mrow>
+            <mrow>\amp=25-4i^2</mrow>
+            <mrow>\amp=25-4(-1)</mrow>
+            <mrow>\amp=25+4</mrow>
+            <mrow>\amp=29</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <exercise permid="qDb">
+      <webwork>
+            <pg-code>
+                Context("LimitedComplex");
+            </pg-code>
+          <statement>
+            <p permid="WYF">
+              Multiply <m>(7-9i)(7+9i)</m>.
+            </p>
+
+            <p permid="DfO">
+              <var name="'130'" width="6" />
+            </p>
+          </statement>
+          <solution permid="dTk">
+            <p permid="rWP">
+              <md permid="Cav">
+                <mrow>(7-9i)(7+9i)\amp=(7)^2-(9i)^2</mrow>
+                <mrow>\amp=49-81i^2</mrow>
+                <mrow>\amp=49-81(-1)</mrow>
+                <mrow>\amp=49+81</mrow>
+                <mrow>\amp=130</mrow>
+              </md>
+            </p>
+          </solution>
+      </webwork>
+    </exercise>
+  </subsection>
+
+  <subsection permid="czw">
+    <title>Dividing Complex Numbers</title>
+    <p permid="gsr">
+      When we divide by <m>i</m> we use a process that is similar to rationalizing the denominator.
+      We use the property <m>\sqrt{x}\cdot\sqrt{x}=x</m> when we rationalize the denominator,
+      and we use the property <m>i\cdot i=-1</m> when we have complex numbers.
+      Let's compare these two problems
+      <m>\frac{2}{\sqrt{2}}</m> and <m>\frac{2}{i}</m>:
+    </p>
+
+    <sidebyside widths="47% 47%" margins="0%" permid="PfL">
+      <p permid="mhD">
+        <md permid="ihE">
+          <mrow>\frac{2}{\sqrt{2}}\amp=\frac{2\multiplyright{\sqrt{2}}}{\sqrt{2}\multiplyright{\sqrt{2}}}</mrow>
+          <mrow>\amp=\frac{2\sqrt{2}}{2}</mrow>
+          <mrow>\amp=\sqrt{2}</mrow>
+        </md>
+      </p>
+
+      <p permid="SoM">
+        <md permid="OoN">
+          <mrow>\frac{2}{i}\amp=\frac{2\multiplyright{i}}{i\multiplyright{i}}</mrow>
+          <mrow>\amp=\frac{2i}{-1}</mrow>
+          <mrow>\amp=-2i</mrow>
+        </md>
+      </p>
+    </sidebyside>
+
+    <example permid="WKk">
+      <statement>
+        <p permid="tMc">
+          Rationalize the denominator in the expression <m>-\frac{7}{4i}</m>.
+        </p>
+      </statement>
+      <solution permid="FqA">
+        <p permid="YdY">
+          <md permid="uvW">
+            <mrow>-\frac{7}{4i}\amp=-\frac{7\multiplyright{i}}{4i\multiplyright{i}}</mrow>
+            <mrow>\amp=-\frac{7i}{4(-1)}</mrow>
+            <mrow>\amp=\frac{7i}{4}</mrow>
+            <mrow>\amp=\frac{7}{4}i</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <exercise permid="vmU">
+      <webwork>
+            <pg-code>
+                Context("LimitedComplex");
+            </pg-code>
+          <statement>
+            <p permid="jmX">
+              Rationalize the denominator in the expression <m>\frac{5}{3i}</m>.
+            </p>
+
+            <p permid="Pug">
+              <var name="'-5/3 i'" width="6" />
+            </p>
+          </statement>
+          <solution permid="Kat">
+            <p permid="Elh">
+              <md permid="aDf">
+                <mrow>\frac{5}{3i}\amp=\frac{5\multiplyright{i}}{3i\multiplyright{i}}</mrow>
+                <mrow>\amp=\frac{5i}{3(-1)}</mrow>
+                <mrow>\amp=-\frac{5i}{3}</mrow>
+                <mrow>\amp=-\frac{5}{3}i</mrow>
+              </md>
+            </p>
+          </solution>
+      </webwork>
+    </exercise>
+
+    <p permid="MzA">
+      When the denominator is in the form <m>a+bi</m>,
+      we need to use the complex conjugate to remove the imaginary terms from the denominator.
+      Here is an example.
+    </p>
+
+    <example permid="CRt">
+      <statement>
+        <p permid="ZTl">
+          Simplify the expression <m>\frac{1}{4+3i}</m>.
+        </p>
+      </statement>
+      <solution permid="lxJ">
+        <p permid="ksq">
+          To get a real result in the denominator we multiply the numerator and denominator by <m>4-3i</m>,
+          and we have:
+          <md permid="GKo">
+            <mrow>\frac{1}{4+3i}\amp=\frac{1}{4+3i}\multiplyright{\frac{(4-3i)}{(4-3i)}}</mrow>
+            <mrow>\amp=\frac{4-3i}{16-12i+12i-9i^2}</mrow>
+            <mrow>\amp=\frac{4-3i}{16-9(-1)}</mrow>
+            <mrow>\amp=\frac{4-3i}{16+9}</mrow>
+            <mrow>\amp=\frac{4-3i}{25}</mrow>
+            <mrow>\amp=\frac{4}{25}-\frac{3}{25}i</mrow>
+          </md>
+          Note that we always write complex numbers in standard form which is <m>a+bi</m>.
+        </p>
+      </solution>
+    </example>
+
+    <p permid="sGJ">
+      Now we can divide two complex numbers as in the next example.
+    </p>
+
+    <example permid="iYC">
+      <statement>
+        <p permid="Gau">
+          Simplify the expression <m>\frac{1+2i}{2-4i}</m>.
+        </p>
+      </statement>
+      <solution permid="RES">
+        <p permid="Qzz">
+          To divide complex numbers,
+          we rationalize the denominator using the conjugate <m>2+4i</m>:
+          <md permid="mRx">
+            <mrow>\frac{1+2i}{2-4i}\amp=\frac{(1+2i)}{(2-4i)}\multiplyright{\frac{(2+4i)}{(2+4i)}}</mrow>
+            <mrow>\amp=\frac{2+4i+4i+8i^2}{4+8i-8i-16i^2}</mrow>
+            <mrow>\amp=\frac{2+8i+8(-1)}{4-16(-1)}</mrow>
+            <mrow>\amp=\frac{2+8i-8}{4+16}</mrow>
+            <mrow>\amp=\frac{-6+8i}{20}</mrow>
+            <mrow>\amp=\frac{-6}{20}+\frac{8i}{20}</mrow>
+            <mrow>\amp=-\frac{3}{10}+\frac{2}{5}i</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <exercise permid="bud">
+      <webwork>
+            <pg-code>
+                Context("LimitedComplex");
+            </pg-code>
+          <statement>
+            <p permid="vBp">
+              Simplify the expression <m>\frac{4-7i}{5+i}</m>.
+            </p>
+
+            <p permid="bIy">
+              <var name="'1/2 - 3/2 i'" width="6" />
+            </p>
+          </statement>
+          <solution permid="qhC">
+            <p permid="wGI">
+              To divide, we rationalize the denominator using the conjugate <m>5-i</m>:
+              <md permid="SYG">
+                <mrow>\frac{4-7i}{5+i}\amp=\frac{(4-7i)}{(5+i)}\multiplyright{\frac{(5-i)}{(5-i)}}</mrow>
+                <mrow>\amp=\frac{20-4i-35i+7i^2}{25-5i+5i-i^2}</mrow>
+                <mrow>\amp=\frac{20-39i+7(-1)}{25-1(-1)}</mrow>
+                <mrow>\amp=\frac{20-39i-7}{25+1}</mrow>
+                <mrow>\amp=\frac{13-39i}{26}</mrow>
+                <mrow>\amp=\frac{13}{26}-\frac{39i}{26}</mrow>
+                <mrow>\amp=\frac{1}{2}-\frac{3}{2}i</mrow>
+              </md>
+            </p>
+          </solution>
+      </webwork>
+    </exercise>
+  </subsection>
+
+  <exercises permid="IGF">
+<!--Review and warmup omitted; add if appropriate ones exist-->
+<!--         <exercisegroup>
+            <title>Review and Warmup</title>
+        </exercisegroup>
+ -->
+    <exercisegroup cols="2" permid="oNO">
+      <title>Adding and Subtracting Complex Numbers</title>
+      <exercise permid="HBm">
+        <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexNumberOperations10.pg" />
+      </exercise>
+
+      <exercise permid="nIv">
+        <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexNumberOperations10.pg" />
+      </exercise>
+
+      <exercise permid="TPE">
+        <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexNumberOperations20.pg" />
+      </exercise>
+
+      <exercise permid="zWN">
+        <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexNumberOperations20.pg" />
+      </exercise>
+
+      <exercise permid="gdW">
+        <webwork source="Contrib/PCC/Math95/ComplexNumbers/ComplexNumbers1.pg" />
+      </exercise>
+
+      <exercise permid="Mlf">
+        <webwork source="Contrib/PCC/Math95/ComplexNumbers/ComplexNumbers1.pg" />
+      </exercise>
+
+      <exercise permid="sso">
+        <webwork source="Contrib/PCC/Math95/ComplexNumbers/ComplexNumbers2.pg" />
+      </exercise>
+
+      <exercise permid="Yzx">
+        <webwork source="Contrib/PCC/Math95/ComplexNumbers/ComplexNumbers2.pg" />
+      </exercise>
+
+      <exercise permid="EGG">
+        <webwork source="Contrib/PCC/Math95/ComplexNumbers/ComplexNumbers3.pg" />
+      </exercise>
+
+      <exercise permid="kNP">
+        <webwork source="Contrib/PCC/Math95/ComplexNumbers/ComplexNumbers3.pg" />
+      </exercise>
+
+      <exercise permid="QUY">
+        <webwork source="Contrib/PCC/Math95/ComplexNumbers/ComplexNumbers4.pg" />
+      </exercise>
+
+      <exercise permid="xch">
+        <webwork source="Contrib/PCC/Math95/ComplexNumbers/ComplexNumbers4.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup cols="2" permid="UUX">
+      <title>Multiplying Complex Numbers</title>
+            <!-- <exercise>
+                <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexNumberOperations30.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexNumberOperations30.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexNumberOperations40.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexNumberOperations40.pg" />
+            </exercise> -->
+      <exercise permid="djq">
+        <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexNumberOperations50.pg" />
+      </exercise>
+
+      <exercise permid="Jqz">
+        <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexNumberOperations50.pg" />
+      </exercise>
+
+      <exercise permid="pxI">
+        <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexNumberOperations60.pg" />
+      </exercise>
+
+      <exercise permid="VER">
+        <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexNumberOperations60.pg" />
+      </exercise>
+
+      <exercise permid="BMa">
+        <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexNumberOperations70.pg" />
+      </exercise>
+
+      <exercise permid="hTj">
+        <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexNumberOperations70.pg" />
+      </exercise>
+
+      <exercise permid="Oas">
+        <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexNumberOperations80.pg" />
+      </exercise>
+
+      <exercise permid="uhB">
+        <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexNumberOperations80.pg" />
+      </exercise>
+
+      <exercise permid="aoK">
+        <webwork source="Contrib/PCC/Math95/ComplexNumbers/ComplexNumbers5.pg" />
+      </exercise>
+
+      <exercise permid="GvT">
+        <webwork source="Contrib/PCC/Math95/ComplexNumbers/ComplexNumbers5.pg" />
+      </exercise>
+
+      <exercise permid="mDc">
+        <webwork source="Contrib/PCC/Math95/ComplexNumbers/ComplexNumbers6.pg" />
+      </exercise>
+
+      <exercise permid="SKl">
+        <webwork source="Contrib/PCC/Math95/ComplexNumbers/ComplexNumbers6.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup cols="2" permid="Bcg">
+      <title>Dividing Complex Numbers</title>
+      <exercise permid="yRu">
+        <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexNumberOperations90.pg" />
+      </exercise>
+
+      <exercise permid="eYD">
+        <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexNumberOperations90.pg" />
+      </exercise>
+
+      <exercise permid="LfM">
+        <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexNumberOperations100.pg" />
+      </exercise>
+
+      <exercise permid="rmV">
+        <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexNumberOperations100.pg" />
+      </exercise>
+
+      <exercise permid="Xue">
+        <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexNumberOperations110.pg" />
+      </exercise>
+
+      <exercise permid="DBn">
+        <webwork source="Contrib/PCC/BasicAlgebra/ComplexNumber/complexNumberOperations110.pg" />
+      </exercise>
+
+      <exercise permid="jIw">
+        <webwork source="Contrib/PCC/Math95/ComplexNumbers/ComplexNumbers7.pg" />
+      </exercise>
+
+      <exercise permid="PPF">
+        <webwork source="Contrib/PCC/Math95/ComplexNumbers/ComplexNumbers7.pg" />
+      </exercise>
+
+      <exercise permid="vWO">
+        <webwork source="Contrib/PCC/Math95/ComplexNumbers/ComplexNumbers8.pg" />
+      </exercise>
+
+      <exercise permid="cdX">
+        <webwork source="Contrib/PCC/Math95/ComplexNumbers/ComplexNumbers8.pg" />
+      </exercise>
+
+    </exercisegroup>
+  </exercises>
+</section>
+

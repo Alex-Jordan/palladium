@@ -1,0 +1,1297 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2026                                                       -->
+<!-- Alex Jordan                                                          -->
+<!-- *********************************************************************-->
+<section xml:id="section-multiplying-polynomials" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Multiplying Polynomials</title>
+
+  <introduction>
+    <p>
+      Previously in <xref ref="section-introduction-to-exponent-properties"/>, we learned how to
+      multiply two monomials together (such as <m>4xy\cdot3x^2</m>). And we can add and subtract
+      polynomials even when there is more than one term (such as <m>(4x^2-3x)+(5x^2+x-2)</m>) using
+      like terms. In this section, we will learn how to <em>multiply</em> polynomials with
+      <em>more than one</em> term.
+    </p>
+
+    <figure>
+      <caption>Alternative Video Lesson</caption>
+      <video youtubeplaylist="PLmuZCPhWPt-eCbs7JZnacBJj2YUTmRxY1" />
+    </figure>
+
+    <example xml:id="example-revenue">
+      <title>Revenue</title>
+      <p>
+        Avery owns a local organic jam company that currently sells about <m>1500</m> jars a month
+        at a price of <m>\$13</m> per jar. Avery has found that for each time they would raise the
+        price of a jar by <m>25</m> cents, they will sell <m>50</m> fewer jars of jam per month.
+      </p>
+
+      <p>
+        In general, this company's revenue can be calculated by multiplying the cost per jar by the
+        total number of jars of jam sold. If we let <m>x</m> represent the number of times the price
+        was raised by <m>25</m> cents, then the price will be <m>13+0.25x</m>.
+      </p>
+
+      <p>
+        At the same time, the number of jars the company sells will be the <m>1500</m> that they
+        currently sell each month, minus <m>50</m> times <m>x</m>. This gives us the expression
+        <m>1500-50x</m> to represent how many jars the company will sell after raising the price
+        <m>x</m> times.
+      </p>
+
+      <p>
+        Combining these expressions, we can write a formula for the revenue model:
+        <md>
+          <mrow>\text{revenue} \amp= \left(\text{price per item}\right)\times\left(\text{number of items sold}\right)</mrow>
+          <mrow>R \amp= \left(13+0.25x\right)\left(1500-50x\right)</mrow>
+        </md>
+      </p>
+
+      <p>
+        To simplify the expression <m>\left(13+0.25x\right)\left(1500-50x\right)</m>, we'll need to
+        multiply <m>13+0.25x</m> by <m>1500-50x</m>. In this section, we learn how to do that.
+      </p>
+    </example>
+  </introduction>
+
+  <subsection>
+    <title>Review of the Distributive Property</title>
+    <p>
+      Polynomial multiplication relies on the <xref ref="item-distributive-property" text="title"/>,
+      and may also rely on the
+      <xref ref="list-properties-of-exponents" text="custom">properties of exponents</xref>. When we
+      multiply a monomial with a binomial, we can distribute the monomial to each term in the
+      binomial. For example,
+      <md>
+        <mrow>\highlight{-4x}(3x^2+5) \amp= \multiplyleft{(-4x)}\left(3x^2\right)+\multiplyleft{(-4x)}(5)</mrow>
+        <mrow>\amp=-12x^3-20x</mrow>
+      </md>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          A rectangle's length is <m>4</m> meters longer than its width. Assume its width is
+          <m>w</m> meters. Use a simplified polynomial to model the rectangle's area in terms of
+          <m>w</m> as the only variable.
+        </p>
+      </statement>
+      <solution>
+        <sidebyside widths="37% 22% 37%" margins="0%">
+          <p>
+            Since the rectangle's length is <m>4</m> meters longer than its width, we can model its
+            length as <m>w+4</m> meters.
+          </p>
+          <image>
+            <latex-image>
+              \begin{tikzpicture}
+                \draw (0,0) --++ (3,0) --++ (0,4) --++ (-3,0) -- cycle;
+                \node[below] at (1.5,0) {$w$};
+                \node[right] at (3,2) {$w+4$};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+          <p>
+            The rectangle's area would be:
+            <md>
+              <mrow>A\amp=\ell w</mrow>
+              <mrow>\amp=(w+4)w</mrow>
+              <mrow>\amp=w^2+4w</mrow>
+            </md>
+            The rectangle's area can be modeled by <m>w^2+4w</m> square meters.
+          </p>
+        </sidebyside>
+        <p>
+          In the second line of work above, we recognize that <m>(w+4)w</m> is the same as
+          <m>w(w+4)</m>. Whether the <m>w</m> is written before or after the binomial, we are still
+          able to distribute the <m>w</m> to simplify the product.
+        </p>
+      </solution>
+    </example>
+
+    <exercise>
+      <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplicationApplication10.pg" />
+    </exercise>
+
+    <p>
+      The distributive property can be understood visually with a <term>generic rectangle</term>.             <idx><h>generic rectangle</h></idx>
+    </p>
+
+    <figure>
+      <caption>A Generic Rectangle Modeling <m>2x(3x+4)</m></caption>
+      <image width="40%">
+        <shortdescription>
+          a rectangle with two regions; the region on the left indicates 2x*3x=6x^2; the region on
+          the right indicates that 2x*4=8x; together they add up to 6x^2+8x
+        </shortdescription>
+        <latex-image>
+          <![CDATA[\begin{tikzpicture}
+            \draw (1,0) rectangle (5,1);
+            \draw (3,0) -- (3,1);
+            \draw (0.7,0.5) node {$2x$};
+            \draw (2,1.35) node {$3x$};
+            \draw (4,1.35) node {$4$};
+            \draw (2,0.5) node {$2x\cdot3x$};
+            \draw (4,0.5) node {$2x\cdot4$};
+          \end{tikzpicture}]]>
+        </latex-image>
+      </image>
+    </figure>
+
+    <p>
+      The big rectangle consists of two smaller rectangles. The big rectangle's area is
+      <m>2x(3x+4)</m>, and the sum of those two smaller rectangles is <m>2x\cdot3x+2x\cdot4</m>.
+      Since the sum of the areas of those two smaller rectangles is the same as the bigger
+      rectangle's area, we have:
+      <md>
+        <mrow>2x(3x+4) \amp= 2x\cdot3x+2x\cdot4</mrow>
+        <mrow>\amp= 6x^2+8x</mrow>
+      </md>
+      Generic rectangles can be used to visualize multiplying polynomials.
+    </p>
+  </subsection>
+
+  <subsection xml:id="subsection-approaches-to-multiplying-binomials">
+    <title>Multiplying Binomials</title>
+    <paragraphs>
+      <title>Multiplying Binomials Using Distribution</title>
+      <p>
+        Whether we're multiplying a monomial with a polynomial or two larger polynomials together,
+        the first step is still based on the <xref ref="item-distributive-property" text="title"/>.
+        We'll start with multiplying two binomials and then move on to examples with larger
+        polynomials.
+      </p>
+
+      <p>
+        We know we can distribute the <m>3</m> in <m>(x+2)3</m> to obtain
+        <m>(x+2)\multiplyright{3}=x\multiplyright{3}+2\multiplyright{3}</m>.
+        We can actually distribute <em>anything</em> across <m>(x+2)</m> if it is multiplied.
+        For example:
+        <me>
+          (x+2)\cat=x\cdot \cat + 2\cdot \cat
+        </me>
+      </p>
+
+      <p>
+        Keeping this in mind, we can multiply <m>(x+2)(x+3)</m> by distributing the <m>(x+3)</m>
+        across <m>(x+2)</m>. Think of <m>(x+3)</m> as the cat.
+        <me>
+          (x+2)\highlight{(x+3)} = x\highlight{(x+3)} + 2\highlight{(x+3)}
+        </me>
+        To continue, distribure more:
+        <md>
+          <mrow>(x+2)\highlight{(x+3)} \amp= x\highlight{(x+3)} + 2\highlight{(x+3)}</mrow>
+          <mrow>\amp= x \cdot \highlight{x} + x \cdot \highlight{3} + 2 \cdot \highlight{x} +  2 \cdot \highlight{3}</mrow>
+          <mrow>\amp=x^2+3x+2x+6</mrow>
+          <mrow>\amp=x^2+5x+6</mrow>
+        </md>
+      </p>
+
+      <p>
+        To multiply a binomial by another binomial, we simply used distribution twice and then
+        simplified the resulting terms. (Multiplying any two polynomials can be done using these
+        same steps. We will return to that idea later in the section.)
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Multiplying Binomials Using <acro>FOIL</acro></title>
+      <p>
+        Instead of using two applications of the distributive property, people often memorize a
+        shortcut using the acronym <acro>FOIL</acro>. The letters refer to the pairs of terms from            <idx><h><acro>FOIL</acro></h></idx>
+        each binomial that end up multiplied together.
+      </p>
+
+      <p>
+        If we take a closer look at the example we just completed, <m>(x+2)(x+3)</m>, we can
+        highlight how the <acro>FOIL</acro> process works. <acro>FOIL</acro> is the acronym for
+        <q>First, Outer, Inner, Last</q>.
+        <md>
+          <mrow>(x+2)(x+3)\amp= (\overbrace{{x} \stackrel{}{\cdot} {x}}^{\text{F}}) + (\overbrace{{3} \stackrel{}{\cdot} {x}}^{\text{O}}) + (\overbrace{{2} \stackrel{}{\cdot} {x}}^{\text{I}}) + (\overbrace{{2} \stackrel{}{\cdot} {3}}^{\text{L}})</mrow>
+          <mrow>\amp=x^2+3x+2x+6</mrow>
+          <mrow>\amp=x^2+5x+6</mrow>
+        </md>
+        <dl>
+          <li>
+            <title>F: <m>x^2</m></title>
+            <p>
+              The <m>x^2</m> term comes from the product of <em>first</em> terms from each binomial.
+            </p>
+          </li>
+
+          <li>
+            <title>O: <m>3x</m></title>
+            <p>
+              The <m>3x</m> term comes from the product of the <em>outer</em> terms from each
+              binomial. This was <m>x</m> in the front of the first binomial and <m>3</m> in the
+              back of the second binomial.
+            </p>
+          </li>
+
+          <li>
+            <title>I: <m>2x</m></title>
+            <p>
+              The <m>2x</m> term comes from the product of the <em>inner</em> terms from each
+              binomial. This was <m>2</m> in the back of the first binomial and <m>x</m> in the
+              front of the second binomial.
+            </p>
+          </li>
+
+          <li>
+            <title>L: <m>6</m></title>
+            <p>
+              The constant term <m>6</m> comes from the product of the <em>last</em> terms of each
+              binomial.
+            </p>
+          </li>
+        </dl>
+      </p>
+
+      <figure>
+        <caption>Using <acro>FOIL</acro> Method to multiply <m>(x+2)(x+3)</m></caption>
+        <image width="30%">
+          <shortdescription>a diagram that shows how to multiply using FOIL; x*x + x*3 + 2*x + 6</shortdescription>
+          <latex-image>
+            \begin{tikzpicture}
+              \draw (0,4) node {$($};
+              \draw (0.25,4) node {$x$};
+              \draw (0.5,4) node {$+$};
+              \draw (0.75,4) node {$2$};
+              \draw (1,4) node {$)$};
+              \draw (1.25,4) node {$($};
+              \draw (1.5,4) node {$x$};
+              \draw (1.75,4) node {$+$};
+              \draw (2,4) node {$3$};
+              \draw (2.25,4) node {$)$};
+              \draw [->] (0.25,4.25) .. controls (0.5625,4.75) and (1.1875,4.75) .. (1.5,4.25);
+              \draw (0.7,4.8) node {F};
+              \draw [->] (0.25,4.25) .. controls (0.8125,4.55) and (1.5625,4.5) .. (2,4.25);
+              \draw (1.6,4.65) node {O};
+              \draw [->] (0.75,3.75) .. controls (0.9375,3.25) and (1.3125,3.25) .. (1.5,3.75);
+              \draw (1.1,3.1) node {I};
+              \draw [->] (0.75,3.75) .. controls (1.0625,3.45) and (1.6875,3.45) .. (2,3.75);
+              \draw (1.65,3.3) node {L};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </figure>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Multiplying Binomials Using Generic Rectangles</title>
+      <p>
+        We could approach this same example using the generic rectangle method. To use generic
+        rectangles, we treat <m>x+2</m> as the base of a rectangle, broken up into <m>x</m> and
+        <m>2</m>. Similarly we treat <m>x+3</m> as the height, broken up into <m>x</m> and <m>3</m>.
+        Their product, <m>(x+2)(x+3)</m>, represents the large rectangle's area.
+      </p>
+
+      <figure>
+        <caption>Setting up Generic Rectangles to Multiply <m>(x+2)(x+3)</m></caption>
+        <image width="40%">
+          <shortdescription>
+            a two by two rectangle with the terms x and 2 above the columns and the terms x and 3 on
+            the left side of the rows
+          </shortdescription>
+          <latex-image>
+            <![CDATA[\begin{tikzpicture}
+              \draw (1,0) rectangle (5,2);
+              \draw (1,1) -- (5,1);
+              \draw (3,0) -- (3,2);
+              \draw (2,2.25) node {$x$};
+              \draw (4,2.25) node {$2$};
+              \draw (0.5,1.5) node {$x$};
+              \draw (0.5,0.5) node {$3$};
+            \end{tikzpicture}]]>
+          </latex-image>
+        </image>
+      </figure>
+
+      <p>
+        The big rectangle consists of four smaller rectangles. We can find each small rectangle's
+        area in the next diagram with the area formula for a rectangle:
+        <m>\text{area}=\text{base}\cdot\text{height}</m>.
+      </p>
+
+      <figure>
+        <caption>Using Generic Rectangles to Multiply <m>(x+2)(x+3)</m></caption>
+        <image width="40%">
+          <shortdescription>
+            the previous generic rectangles with the areas computed; x*x=x^2, x*2=2x, 3*x=3x and
+            3*2=6
+          </shortdescription>
+          <latex-image>
+            <![CDATA[\begin{tikzpicture}
+              \draw (1,0) rectangle (5,2);
+              \draw (1,1) -- (5,1);
+              \draw (3,0) -- (3,2);
+              \draw (2,2.25) node {$x$};
+              \draw (4,2.25) node {$2$};
+              \draw (0.5,1.5) node {$x$};
+              \draw (0.5,0.5) node {$3$};
+              \draw (2,1.5) node {$x^2$};
+              \draw (4,1.5) node {$2x$};
+              \draw (2,0.5) node {$3x$};
+              \draw (4,0.5) node {$6$};
+            \end{tikzpicture}]]>
+          </latex-image>
+        </image>
+      </figure>
+
+      <p>
+        To finish finding this product, we add together the areas of the four smaller rectangles:
+        <md>
+          <mrow>(x+2)(x+3)\amp=x^2+3x+2x+6</mrow>
+          <mrow>\amp=x^2+5x+6</mrow>
+        </md>
+      </p>
+    </paragraphs>
+
+    <p>
+      Notice that the areas of the four smaller rectangles are exactly the same as the four terms we
+      obtained using distribution, which are also the same four terms that came from the
+      <acro>FOIL</acro> method. The <acro>FOIL</acro> method and generic rectangles approach are
+      just different ways to represent the distributing.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Multiply <m>(2x-3y)(4x-5y)</m> using distribution.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We first distribute the second binomial across <m>(2x-3y)</m>. Then we'll distribute
+          again, and simplify the terms that are left.
+          <md>
+            <mrow>(2x-3y)\highlight{(4x-5y)}\amp=2x\highlight{(4x-5y)}-3y\highlight{(4x-5y)}</mrow>
+            <mrow>\amp=8x^2-10xy-12xy+15y^2</mrow>
+            <mrow>\amp=8x^2-22xy+15y^2</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Multiply <m>(2x-3y)(4x-5y)</m> using <acro>FOIL</acro>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First, Outer, Inner, Last: Either with arrows on paper or mentally in our heads, we'll
+          pair up the terms from each factor and multiply those pairs together.
+          <md>
+            <mrow>(2x-3y)(4x-5y)\amp=
+            (\overbrace{{\stackrel{}{2x}}\cdot{4x}}^{\large\text{F}})+
+            (\overbrace{{\stackrel{}{2x}}\cdot{(-5y)}}^{\large\text{O}})+
+            (\overbrace{{\stackrel{}{-3y}}\cdot{4x}}^{\large\text{I}})+
+            (\overbrace{{\stackrel{}{-3y}}\cdot{(-5y}}^{\large\text{L}})</mrow>
+            <mrow>\amp=8x^2-10xy-12xy+15y^2</mrow>
+            <mrow>\amp=8x^2-22xy+15y^2</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Multiply <m>(2x-3y)(4x-5y)</m> using generic rectangles.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by drawing four rectangles and marking their bases and heights with terms in the given binomials:
+        </p>
+        <figure>
+          <caption>Setting up Generic Rectangles to Multiply <m>(2x-3y)(4x-5y)</m></caption>
+          <image width="40%">
+            <shortdescription>
+              a two by two rectangle with the terms 2x and -3y above the columns and the terms 4x
+              and -5y on the left of the rows
+            </shortdescription>
+            <latex-image>
+              <![CDATA[\begin{tikzpicture}
+                \draw (1,0) rectangle (5,2);
+                \draw (1,1) -- (5,1);
+                \draw (3,0) -- (3,2);
+                \draw (2,2.25) node {$2x$};
+                \draw (4,2.25) node {$-3y$};
+                \draw (0.5,1.5) node {$4x$};
+                \draw (0.5,0.5) node {$-5y$};
+              \end{tikzpicture}]]>
+            </latex-image>
+          </image>
+        </figure>
+
+        <p>
+          Next, we calculate each inner rectangle's area by multiplying its base with its height:
+        </p>
+
+        <figure>
+          <caption>Using Generic Rectangles to Multiply <m>(2x-3y)(4x-5y)</m></caption>
+          <image width="40%">
+            <shortdescription>
+              the previous generic rectangles with the areas multiplied; 2x*4x=8x^2, 2x*-5y=-10xy,
+              -3y*4x=-12xy and -3y*-5y=15y^2
+            </shortdescription>
+            <latex-image>
+              <![CDATA[\begin{tikzpicture}
+                \draw (1,0) rectangle (5,2);
+                \draw (1,1) -- (5,1);
+                \draw (3,0) -- (3,2);
+                \draw (2,2.25) node {$2x$};
+                \draw (4,2.25) node {$-3y$};
+                \draw (0.5,1.5) node {$4x$};
+                \draw (0.5,0.5) node {$-5y$};
+                \draw (2,1.5) node {$8x^2$};
+                \draw (4,1.5) node {$-12xy$};
+                \draw (2,0.5) node {$-10xy$};
+                \draw (4,0.5) node {$15y^2$};
+              \end{tikzpicture}]]>
+            </latex-image>
+          </image>
+        </figure>
+
+        <p>
+          Finally, we add up all the inner rectangle areas to find the product:
+          <md>
+            <mrow>(2x-3y)(4x-5y)\amp=8x^2-10xy-12xy+15y^2</mrow>
+            <mrow>\amp=8x^2-22xy+15y^2</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example xml:id="example-revenue-multiply">
+      <statement>
+        <p>
+          Multiply and simplify the formula for Avery's organic jam revenue, <m>R</m> (in dollars),
+          from <xref ref="example-revenue"/>. In that example <m>R=(13+0.25x)(1500-50x)</m> and
+          <m>x</m> represents the number of times they raised the price by 25 cents.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To multiply this, we'll use <acro>FOIL</acro>:
+          <md>
+            <mrow>R \amp= \left(13+0.25x\right)\left(1500-50x\right)</mrow>
+            <mrow>\amp= \left(13\cdot1500\right) - \left(13 \cdot 50x  \right) + \left( 0.25x \cdot 1500 \right) - \left( 0.25x \cdot 50x \right)</mrow>
+            <mrow>\amp= 19500  - 650x + 375x - 12.5x^2</mrow>
+            <mrow>\amp= -12.5x^2 - 275x + 19500</mrow>
+          </md>
+          Now we have a formula for Avery's revenue based on how many times they raise the price. If
+          we wanted to, we could study this formula more to find ways to maximize that revenue.
+        </p>
+      </solution>
+    </example>
+
+    <example xml:id="example-multiplying-binomials-artist-revenue">
+      <statement>
+        <p>
+          Tyrone is an artist and he sells each of his paintings for <m>\$200</m>. Currently, he can
+          sell <m>100</m> paintings per year. So his annual revenue from selling paintings is
+          <m>\$200\cdot100=\$20000</m>. He plans to raise the price. However, for each $20 price
+          increase, his customers will buy <m>5</m> fewer paintings each year.
+        </p>
+        <p>
+          Assume Tyrone would raise the price of his paintings <m>x</m> times, each time by $20. Use
+          an expanded polynomial to represent his new revenue per year.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Currently, each painting costs $200. After raising the price <m>x</m> times, each time by
+          $20, each painting's new price would be <m>200+20x</m> dollars.
+        </p>
+        <p>
+          Currently, Tyrone sells <m>100</m> paintings per year. After raising the price <m>x</m>
+          times, each time selling <m>5</m> fewer paintings, he would end up selling <m>100-5x</m>
+          paintings per year.
+        </p>
+        <p>
+          His annual revenue can be calculated by multiplying each painting's price by the number of
+          paintings he would sell:
+          <md>
+            <mrow>\text{annual revenue}\amp=(\text{price})(\text{number of sales})</mrow>
+            <mrow>\amp=(200+20x)(100-5x)</mrow>
+            <mrow>\amp=200(100)+200(-5x)+20x(100)+20x(-5x)</mrow>
+            <mrow>\amp=20000-1000x+2000x-100x^2</mrow>
+            <mrow>\amp=-100x^2+1000x+20000</mrow>
+          </md>
+          After raising the price <m>x</m> times, each time by $20, Tyrone's annual revenue from
+          paintings would be <m>-100x^2+1000x+20000</m> dollars.
+        </p>
+      </solution>
+    </example>
+    <example>
+      <statement>
+        <p>
+          What would happen if we needed to multiply two binomials, but also there is a monomial out
+          front? What is the result for <m>3(x + 2)(2x + 5)</m>?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We recommend focusing first on the two binomials. We can multiply them using
+          <acro>FOIL</acro> even though they are written last in the product.
+          <md>
+            <mrow>3(x + 2)(2x + 5) \amp= 3\left(2x^2 + 5x + 4x + 10\right)</mrow>
+            <mrow>\amp= 3\left(2x^2 + 9x + 10\right)</mrow>
+          </md>
+          Now we can complete the multiplication just by distributing that <m>3</m>.
+          <md>
+            <mrow>3(x + 2)(2x + 5) \amp= 6x^2 + 27x + 30</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection>
+    <title>Multiplying Polynomials Larger Than Binomials</title>
+    <p>
+      To multiply polynomials that have more than two terms, we can use repeated distribution and
+      monomial multiplication. Whether we are working with binomials, trinomials, or even larger
+      polynomials, the process is fundamentally the same.
+    </p>
+
+    <example>
+      <p>
+        Multiply <m>\left( x+5 \right)\left( x^2-4x+6 \right)</m>.
+      </p>
+      <p>
+        We can approach this product using either distribution or generic rectangles. We can't use
+        the <acro>FOIL</acro> method because there will be more than four pieces. However it can
+        still be helpful to draw arrows for the six pairs of products that will occur.
+      </p>
+      <figure>
+        <caption>Multiply Each Term by Each Term</caption>
+        <image width="47%">
+          <latex-image>
+            \begin{tikzpicture}
+              \node (A) at (0,0) {$($};
+              \node[right=0cm of A, inner sep=0pt] (B) {$x+5$};
+              \node[right=0cm of B] (C) {$)$};
+              \node[right=0cm of C] (D) {$\big($};
+              \node[right=0cm of D, inner sep=0pt] (E) {$x^2-4x+6$};
+              \node[right=0cm of E] (F) {$\big)$};
+              \draw (B.north west) edge[bend left=90,->] (E.north west);
+              \draw (B.north west) edge[bend left=90,->] (E.north);
+              \draw (B.north west) edge[bend left=90,->] (E.north east);
+              \draw (B.south east) edge[bend right=90,->] (E.south west);
+              \draw (B.south east) edge[bend right=90,->] (E.south);
+              \draw (B.south east) edge[bend right=90,->] (E.south east);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </figure>
+
+      <p>
+        We begin by distributing over <m>\left(x^2-4x+6 \right)</m>, then perform a second step of
+        distributing, and then combine like terms.
+        <md>
+          <mrow>\left(x+5\right)\highlight{\left( x^2-4x+6 \right)}\amp= x\highlight{\left( x^2-4x+6 \right)}+5\highlight{\left( x^2-4x+6 \right)}</mrow>
+          <mrow>\amp= x\cdot \highlight{x^2} - x\cdot \highlight{4x} +x\cdot \highlight{6}+5\cdot \highlight{x^2} - 5\cdot \highlight{4x} +5\cdot \highlight{6}</mrow>
+          <mrow>\amp= x^3 -4x^2 +6x +5x^2 -20x +30</mrow>
+          <mrow>\amp= x^3+x^2-14x+30</mrow>
+        </md>
+      </p>
+    </example>
+
+    <exercise>
+      <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/polyMultVar145.pg" seed="2"/>
+    </exercise>
+  </subsection>
+
+  <reading-questions>
+    <exercise>
+      <statement>
+        <p>
+          Describe three ways you could go about multiplying <m>(x+3)(2x+5)</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          If you multiplied out <m>(a+b+c)(d+e+f+g)</m>, how many terms would there be? (Try to
+          answer without actually writing them all down.)
+        </p>
+      </statement>
+    </exercise>
+  </reading-questions>
+
+  <exercises>
+    <subexercises>
+      <title>Review and Warmup</title>
+      <exercisegroup cols="3">
+        <introduction>
+          <p>
+            Use the properties of exponents to simplify the expression.
+          </p>
+        </introduction>
+        <exercise label="exponent-variable-power-times-power-copy2">
+          <webwork copy="webwork-exponent-variable-power-times-power"/>
+        </exercise>
+        <exercise label="exponent-variable-power-times-power-copy3">
+          <webwork copy="webwork-exponent-variable-power-times-power"/>
+        </exercise>
+        <exercise label="exponent-product-to-power-copy2">
+          <webwork copy="webwork-exponent-product-to-power"/>
+        </exercise>
+        <exercise label="exponent-product-to-power-copy3">
+          <webwork copy="webwork-exponent-product-to-power"/>
+        </exercise>
+        <exercise label="exponent-product-with-powers-copy2">
+          <webwork copy="webwork-exponent-product-with-powers"/>
+        </exercise>
+        <exercise label="exponent-product-with-powers-copy3">
+          <webwork copy="webwork-exponent-product-with-powers"/>
+        </exercise>
+      </exercisegroup>
+    </subexercises>
+
+    <subexercises>
+      <title>Skills Practice</title>
+      <exercisegroup cols="2">
+        <title>Multiplying Monomials with Binomials</title>
+        <introduction>
+          <p>
+            Multiply the monomial with the binomial, writing the result as a single simplified
+            polynomial.
+          </p>
+        </introduction>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication0">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication0.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication0-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication0.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication5">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication5.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication5-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication5.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication10">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication10.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication10-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication10.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication15">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication15.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication15-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication15.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication20">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication20.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication20-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication20.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar65">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar65.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar65-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar65.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar70">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar70.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar70-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar70.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar75">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar75.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar75-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar75.pg"/></webwork>
+        </exercise>
+      </exercisegroup>
+
+      <exercisegroup cols="3">
+        <title>Multiplying Binomials</title>
+        <introduction>
+          <p>
+            Multiply the binomial with the binomial, writing the result as a single simplified
+            polynomial.
+          </p>
+        </introduction>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication25">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication25.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication25-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication25.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication30">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication30.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication30-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication30.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication35">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication35.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication35-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication35.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication40">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication40.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication40-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication40.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication60">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication60.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication60-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication60.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication65">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication65.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication65-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication65.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication70">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication70.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication70-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication70.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication75">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication75.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication75-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication75.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication80">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication80.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication80-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication80.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication85">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication85.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication85-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication85.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication115">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication115.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication115-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication115.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar80">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar80.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar80-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar80.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar85">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar85.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar85-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar85.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar90">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar90.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar90-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar90.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar95">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar95.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar95-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar95.pg"/></webwork>
+        </exercise>
+        <exercise label="multiply-polynomials">
+          <webwork xml:id="webwork-multiply-polynomials">
+            <pg-code>
+              Context("Numeric");
+              Context()->noreduce('(-x)-y','(-x)+y');
+              $var = RandomVariableName(type=>'variable');
+              Context()->variables->are($var=>'Real');
+              $a = random(2,5,1);
+              $b = non_zero_random(-10,10,1);
+              do {$c = non_zero_random(-10,10,1);} until ($b!=$c);
+              $bPlusC = $b+$c;
+              $bc = $b*$c;
+              $d = $a*$bPlusC;
+              $e = $a*$bc;
+              $binomial1 = Compute("$var+$b")->reduce;
+              $binomial2 = Compute("$var+$c")->reduce;
+              $s1 = Compute("$a*$var+$a*$b")->reduce;
+              $s2 = Compute("$var**2+$bPlusC*$var+$bc")->reduce;
+              $problem = Compute("$a*($var+$b)*($var+$c)")->reduce;
+              $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
+            </pg-code>
+              <statement>
+                <p>
+                  <m><var name="$problem" /></m>
+                </p>
+                <p>
+                  <var name="$ans" width="16" />
+                </p>
+              </statement>
+              <solution>
+                <p>
+                  We could first distribute <m><var name="$a" /></m> into <m><var name="$binomial1" /></m> to get <m><var name="$s1" /></m>,
+                  and then multiply <m><var name="$s1" /></m> and <m><var name="$binomial2" /></m>:
+                  <md>
+                    <mrow><var name="$problem" />\amp=(<var name="$s1" />)(<var name="$binomial2" />)</mrow>
+                    <mrow>\amp=<var name="$ans" /></mrow>
+                  </md>
+                </p>
+                <p>
+                  We could also first multiply <m><var name="$binomial1" /></m> and <m><var name="$binomial2" /></m> to get <m><var name="$s2" /></m>,
+                  and then distribute <m><var name="$a" /></m> into <m><var name="$s2" /></m>:
+                  <md>
+                    <mrow><var name="$problem" />\amp=<var name="$a" />(<var name="$s2" />)</mrow>
+                    <mrow>\amp=<var name="$ans" /></mrow>
+                  </md>
+                </p>
+              </solution>
+          </webwork>
+        </exercise>
+        <exercise label="multiply-polynomials-copy">
+          <webwork copy="webwork-multiply-polynomials"/>
+        </exercise>
+        <exercise label="multiply-polynomials-2">
+          <webwork xml:id="webwork-multiply-polynomials-2">
+            <pg-code>
+              Context("Numeric");
+              Context()->noreduce('(-x)-y','(-x)+y');
+              $var = RandomVariableName(type=>'variable');
+              Context()->variables->are($var=>'Real');
+              $a = -random(1,5,1);
+              $b = non_zero_random(-10,10,1);
+              do {$c = non_zero_random(-10,10,1);} until ($b!=$c);
+              $bPlusC = $b+$c;
+              $bc = $b*$c;
+              $d = $a*$bPlusC;
+              $e = $a*$bc;
+              $binomial1 = Compute("$var+$b")->reduce;
+              $binomial2 = Compute("$var+$c")->reduce;
+              $s1 = Compute("$a*$var+$a*$b")->reduce;
+              $s2 = Compute("$var**2+$bPlusC*$var+$bc")->reduce;
+              $s3 = Compute("$a*($var**2+$bPlusC*$var+$bc)")->reduce;
+              $problem = Compute("$a*($var+$b)*($var+$c)")->reduce;
+              $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
+            </pg-code>
+              <statement>
+                <p>
+                  <m><var name="$problem" /></m>
+                </p>
+                <p>
+                  <var name="$ans" width="16" />
+                </p>
+              </statement>
+              <solution>
+                <p>
+                  We could first distribute <m><var name="$a" /></m> into <m><var name="$binomial1" /></m> to get <m><var name="$s1" /></m>,
+                  and then multiply <m><var name="$s1" /></m> and <m><var name="$binomial2" /></m>:
+                  <md>
+                    <mrow><var name="$problem" />\amp=(<var name="$s1" />)(<var name="$binomial2" />)</mrow>
+                    <mrow>\amp=<var name="$ans" /></mrow>
+                  </md>
+                </p>
+                <p>
+                  We could also first multiply <m><var name="$binomial1" /></m> and <m><var name="$binomial2" /></m> to get <m><var name="$s2" /></m>,
+                  and then distribute <m><var name="$a" /></m> into <m><var name="$s2" /></m>:
+                  <md>
+                    <mrow><var name="$problem" />\amp=<var name="$s3" /></mrow>
+                    <mrow>\amp=<var name="$ans" /></mrow>
+                  </md>
+                </p>
+              </solution>
+          </webwork>
+        </exercise>
+        <exercise label="multiply-polynomials-2-copy">
+          <webwork copy="webwork-multiply-polynomials-2"/>
+        </exercise>
+        <exercise label="multiply-polynomials-3">
+          <webwork xml:id="webwork-multiply-polynomials-3">
+            <pg-code>
+              Context("Numeric");
+              Context()->noreduce('(-x)-y','(-x)+y');
+              $var = RandomVariableName(type=>'variable');
+              Context()->variables->are($var=>'Real');
+              $b = non_zero_random(-10,10,1);
+              do {$c = non_zero_random(-10,10,1);} until ($b!=$c);
+              $bPlusC = $b+$c;
+              $bc = $b*$c;
+              $binomial1 = Compute("$var+$b")->reduce;
+              $binomial2 = Compute("$var+$c")->reduce;
+              $s1 = Compute("$var**2+$b*$var")->reduce;
+              $s2 = Compute("$var**2+$bPlusC*$var+$bc")->reduce;
+              $problem = Compute("$var*($var+$b)*($var+$c)")->reduce;
+              $ans = Compute("$var**3+$bPlusC*$var**2+$bc*$var")->reduce;
+            </pg-code>
+              <statement>
+                <p>
+                  <m><var name="$problem" /></m>
+                </p>
+                <p>
+                  <var name="$ans" width="16" />
+                </p>
+              </statement>
+              <solution>
+                <p>
+                  We could first distribute <m><var name="$var" /></m> into <m><var name="$binomial1" /></m> to get <m><var name="$s1" /></m>,
+                  and then multiply <m><var name="$s1" /></m> and <m><var name="$binomial2" /></m>:
+                  <md>
+                    <mrow><var name="$problem" />\amp=(<var name="$s1" />)(<var name="$binomial2" />)</mrow>
+                    <mrow>\amp=<var name="$ans" /></mrow>
+                  </md>
+                </p>
+                <p>
+                  We could also first multiply <m><var name="$binomial1" /></m> and <m><var name="$binomial2" /></m> to get <m><var name="$s2" /></m>,
+                  and then distribute <m><var name="$var" /></m> into <m><var name="$s2" /></m>:
+                  <md>
+                    <mrow><var name="$problem" />\amp=<var name="$var" />(<var name="$s2" />)</mrow>
+                    <mrow>\amp=<var name="$ans" /></mrow>
+                  </md>
+                </p>
+              </solution>
+          </webwork>
+        </exercise>
+        <exercise label="multiply-polynomials-3-copy">
+          <webwork copy="webwork-multiply-polynomials-3"/>
+        </exercise>
+        <exercise label="multiply-polynomials-4">
+          <webwork xml:id="webwork-multiply-polynomials-4">
+            <pg-code>
+              Context("Numeric");
+              Context()->noreduce('(-x)-y','(-x)+y');
+              $var = RandomVariableName(type=>'variable');
+              Context()->variables->are($var=>'Real');
+              do {$a = random(-5,5,1);} until ($a!=1);
+              $b = non_zero_random(-10,10,1);
+              do {$c = non_zero_random(-10,10,1);} until ($b!=$c);
+              $bPlusC = $b+$c;
+              $bc = $b*$c;
+              $d = $a*$bPlusC;
+              $e = $a*$bc;
+              $binomial1 = Compute("$var+$b")->reduce;
+              $binomial2 = Compute("$var+$c")->reduce;
+              $s1 = Compute("$a*$var**2+$a*$b*$var")->reduce;
+              $s2 = Compute("$var**2+$bPlusC*$var+$bc")->reduce;
+              $s3 = Compute("$a*($var**2+$bPlusC*$var+$bc)")->reduce;
+              $s4 = Compute("$a*$var")->reduce;
+              $problem = Compute("$a*$var*($var+$b)*($var+$c)")->reduce;
+              $ans = Compute("$a*$var**3+$d*$var**2+$e*$var")->reduce;
+            </pg-code>
+              <statement>
+                <p>
+                  <m><var name="$problem" /></m>
+                </p>
+                <p>
+                  <var name="$ans" width="16" />
+                </p>
+              </statement>
+              <solution>
+                <p>
+                  We could first distribute <m><var name="$s4" /></m> into <m><var name="$binomial1" /></m> to get <m><var name="$s1" /></m>,
+                  and then multiply <m><var name="$s1" /></m> and <m><var name="$binomial2" /></m>:
+                  <md>
+                    <mrow><var name="$problem" />\amp=(<var name="$s1" />)(<var name="$binomial2" />)</mrow>
+                    <mrow>\amp=<var name="$ans" /></mrow>
+                  </md>
+                </p>
+                <p>
+                  We could also first multiply <m><var name="$binomial1" /></m> and <m><var name="$binomial2" /></m> to get <m><var name="$s2" /></m>,
+                  and then distribute <m><var name="$a" /><var name="$var" /></m> into <m><var name="$s2" /></m>:
+                  <md>
+                    <mrow><var name="$problem" />\amp=<var name="$s3" /></mrow>
+                    <mrow>\amp=<var name="$ans" /></mrow>
+                  </md>
+                </p>
+              </solution>
+          </webwork>
+        </exercise>
+        <exercise label="multiply-polynomials-4-copy">
+          <webwork copy="webwork-multiply-polynomials-4"/>
+        </exercise>
+        <exercise label="multiply-polynomials-5">
+          <webwork xml:id="webwork-multiply-polynomials-5">
+            <pg-code>
+              Context("Numeric");
+              Context()->noreduce('(-x)-y','(-x)+y');
+              $var = RandomVariableName(type=>'variable');
+              Context()->variables->are($var=>'Real');
+              $a = list_random(-5..-2,2..5);
+              $b = random(2,5,1);
+              do {$c = non_zero_random(-5,5,1);} until (gcd($b,abs($c))==1);
+              $d = non_zero_random(-5,5,1);
+              $ab = $a*$b;
+              $ac = $a*$c;
+              $cd = $c*$d;
+              $e = $b*$d+$c;
+              $binomial1 = Compute("$b*$var+$c")->reduce;
+              $binomial2 = Compute("$var+$d")->reduce;
+              $s1 = Compute("$ab*$var+$ac")->reduce;
+              $s2 = Compute("$b*$var**2+$e*$var+$cd")->reduce;
+              $s3 = Compute("$a*($b*$var**2+$e*$var+$cd)")->reduce;
+              $problem = Compute("$a*($b*$var+$c)*($var+$d)")->reduce;
+              $ans = Compute("$ab*$var**2+$a*$e*$var+$a*$cd")->reduce;
+            </pg-code>
+              <statement>
+                <p>
+                  <m><var name="$problem" /></m>
+                </p>
+                <p>
+                  <var name="$ans" width="16" />
+                </p>
+              </statement>
+              <solution>
+                <p>
+                  We could first distribute <m><var name="$a" /></m> into <m><var name="$binomial1" /></m> to get <m><var name="$s1" /></m>,
+                  and then multiply <m><var name="$s1" /></m> and <m><var name="$binomial2" /></m>:
+                  <md>
+                    <mrow><var name="$problem" />\amp=(<var name="$s1" />)(<var name="$binomial2" />)</mrow>
+                    <mrow>\amp=<var name="$ans" /></mrow>
+                  </md>
+                </p>
+                <p>
+                  We could also first multiply <m><var name="$binomial1" /></m> and <m><var name="$binomial2" /></m> to get <m><var name="$s2" /></m>,
+                  and then distribute <m><var name="$a" /></m> into <m><var name="$s2" /></m>:
+                  <md>
+                    <mrow><var name="$problem" />\amp=<var name="$s3"/></mrow>
+                    <mrow>\amp=<var name="$ans" /></mrow>
+                  </md>
+                </p>
+              </solution>
+          </webwork>
+        </exercise>
+        <exercise label="multiply-polynomials-5-copy">
+          <webwork copy="webwork-multiply-polynomials-5"/>
+        </exercise>
+      </exercisegroup>
+
+      <exercisegroup cols="2">
+        <title>Multiplying Larger Polynomials</title>
+        <introduction>
+          <p>
+            Multiply the polynomials together, writing the result as a single simplified polynomial.
+          </p>
+        </introduction>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication120">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication120.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication120-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication120.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication125">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication125.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication125-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication125.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication145">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication145.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication145-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication145.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar145">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar145.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar145-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar145.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar160">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar160.pg"/></webwork>
+        </exercise>
+        <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar160-copy">
+          <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/polyMultVar160.pg"/></webwork>
+        </exercise>
+      </exercisegroup>
+    </subexercises>
+
+    <subexercises>
+      <title>Applications</title>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication10">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplicationApplication10.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication10-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplicationApplication10.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication20">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplicationApplication20.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication20-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplicationApplication20.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication30">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplicationApplication30.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication30-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplicationApplication30.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication40">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplicationApplication40.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication40-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplicationApplication40.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication50">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplicationApplication50.pg"/></webwork>
+      </exercise>
+      <exercise label="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication50-copy">
+        <webwork><xi:include parse="text" href="../assets/PCC-ORCCA-ed3/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplicationApplication50.pg"/></webwork>
+      </exercise>
+    </subexercises>
+
+    <subexercises>
+      <title>Challenge</title>
+      <exercise>
+        <!-- Kara's challenge problem -->
+        <webwork>
+          <pg-code>
+            Context()->variables->are(x=>'Real',y=>'Real');
+            do {
+              $a = random(-15,-1,2);
+              $b = random(-10,-2,2);
+              $coefficient = $a + $b;
+            } until ($coefficient &lt; -7);
+            $axy = Formula("$a x y")->reduce;
+            $bxy = Formula("$b x y")->reduce;
+            $complete = Formula("$coefficient*x*y")->reduce;
+            $multians = MultiAnswer($axy, $bxy)->with(
+            singleResult => 1,
+              checker => sub {
+                my ( $correct, $student, $self ) = @_;
+                my ( $astu, $bstu ) = @{$student};
+                my ( $acor, $bcor ) = @{$correct};
+                if ( $astu == Formula("0")) {Value::Error('None of your values can be zero.')};
+                if ( $bstu == Formula("0")) {Value::Error('None of your values can be zero.')};
+                if ( $astu == Formula("1")) {Value::Error('None of your values can be one.')};
+                if ( $bstu == Formula("1")) {Value::Error('None of your values can be one.')};
+                if ($astu+$bstu != $complete) {return 0;} else {return 1};
+              }
+            );
+            do {
+              $c = random(-15,-1,2);
+              $d = random(-10,-2,2);
+              $expx = random(15,30,5);
+              $expy = random(2,10,1);
+              $coefficient2 = $c + $d;
+            } until ($coefficient2 &lt; -7);
+            $cexp = Formula("$c*(x**$expx)*(y**$expy)")->reduce;
+            $dexp = Formula("$d*(x**$expx)*(y**$expy)")->reduce;
+            $complete2 = Formula("$coefficient2*(x**$expx)*(y**$expy)");
+            $multians2 = MultiAnswer($cexp, $dexp)->with(
+            singleResult => 1,
+              checker => sub {
+                my ( $correct, $student, $self ) = @_;
+                my ( $cstu, $dstu ) = @{$student};
+                my ( $ccor, $dcor ) = @{$correct};
+                if ( $cstu == 0) {Value::Error('None of your values can be zero.')};
+                if ( $dstu == 0) {Value::Error('None of your values can be zero.')};
+                if ( $cstu == 1) {Value::Error('None of your values can be one.')};
+                if ( $dstu == 1) {Value::Error('None of your values can be one.')};
+                if ($cstu+$dstu != $complete2) {return 0;} else {return 1};
+              }
+            );
+            $coeff3 = list_random(2,3,5,7,11,13,17,19);
+            $exp1 = random(20,50,5);
+            $exp2 = random(10,30,10);
+            $exp3 = $exp1 + $exp2;
+            $expa = random(20,50,5);
+            $expb = random(10,30,10);
+            $expc = $expa + $expb;
+            $ans1 = Formula("(x**$exp1)");
+            $ans2 = Formula("(x**$exp2)");
+            $ans3 = Formula("(y**$expa)");
+            $ans4 = Formula("(y**$expb)");
+            $ans5 = Formula("$coeff3");
+            $complete3 = Formula("$coeff3*(x**$exp3)*(y**$expc)");
+            $multians3 = MultiAnswer($ans1, $ans2, $ans3, $ans4, $ans5)->with(
+            singleResult => 1,
+              checker => sub {
+                my ( $correct, $student, $self ) = @_;
+                my ( $ans1stu, $ans2stu, $ans3stu, $ans4stu, $ans5stu) = @{$student};
+                my ( $ans1cor, $ans2cor, $ans3cor, $ans4cor, $ans5cor ) = @{$correct};
+                if ( $ans1stu == 1) {Value::Error('None of your values can be one.')};
+                if ( $ans2stu == 1) {Value::Error('None of your values can be one.')};
+                if ( $ans3stu == 1) {Value::Error('None of your values can be one.')};
+                if ( $ans4stu == 1) {Value::Error('None of your values can be one.')};
+                if ( $ans5stu == 1) {Value::Error('None of your values can be one.')};
+                if ($ans1stu*$ans2stu*$ans3stu*$ans4stu*$ans5stu != $complete3) {return 0;} else {return 1};
+              }
+            );
+          </pg-code>
+          <statement>
+            <p>
+              Fill in the blanks with algebraic expressions that make the equation true.
+              You may not use <m>0</m> or <m>1</m> in any of the blank spaces.
+              An example is <m> \mathord{?} + \mathord{?} = 8x </m>,
+              where one possible answer is <m> 3x + 5x = 8x </m>.
+              There are infinitely many correct answers to this problem. <em>Be creative.</em>
+              After finding a correct answer,
+              see if you can come up with a different answer that is also correct.
+            </p>
+            <p>
+              <ol marker="a.">
+                <li>
+                  <p>
+                    <var name="$multians" width="10"/> <m> + </m> <var name="$multians" width="10"/> <m> = <var name="$complete"/></m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <var name="$multians2" width="10"/> <m> + </m> <var name="$multians2" width="10"/> <m> = <var name="$complete2"/></m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <var name="$multians3" width="3"/> <m> \cdot </m> <var name="$multians3" width="3"/> <m> \cdot </m> <var name="$multians3" width="3"/> <m> \cdot </m> <var name="$multians3" width="3"/> <m> \cdot </m> <var name="$multians3" width="3"/> <m> = <var name="$complete3"/></m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <ol marker="a.">
+                <li>
+                  <p>
+                    Think about adding like terms.
+                    One possibility is:
+                    <m><var name="$axy"/> + <var name="$bxy"/> = <var name="$complete"/></m>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Think about adding like terms.
+                    One possibility is:
+                    <m><var name="$cexp"/> + <var name="$dexp"/> = <var name="$complete2"/></m>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Think about multiplying exponents.
+                    One possibility is:
+                    <m><var name = "$coeff3"/> \cdot <var name="$ans1"/> \cdot <var name="$ans2"/> \cdot <var name="$ans3"/> \cdot <var name="$ans4"/> = <var name="$complete3"/></m>.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+        </webwork>
+      </exercise>
+    </subexercises>
+  </exercises>
+</section>
+

@@ -1,0 +1,2481 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2026                                                       -->
+<!-- Alex Jordan                                                          -->
+<!-- *********************************************************************-->
+<section xml:id="section-solving-multistep-linear-inequalities">
+  <title>Solving Multistep Linear Inequalities</title>
+
+  <introduction>
+    <p>
+      We solved inequalities in <xref ref="section-solving-one-step-equations"/> where only one step
+      was needed to isolate the variable. Now we will work with inequalities that need more than one
+      step.
+    </p>
+
+    <figure>
+      <caption>Alternative Video Lessons</caption>
+      <video youtubeplaylist="PLmuZCPhWPt-cJeXEsK8ig6AWi0FgfEGuQ" />
+    </figure>
+  </introduction>
+
+  <subsection>
+    <title>Solving Multistep Inequalities</title>
+    <p>
+      When solving a linear inequality, we almost follow the exact same steps as we do in
+      <xref ref="algorithm-solve-multistep-linear-equation">Process</xref>. One difference is that
+      when we multiply or divide by a negative number on both sides of an inequality, the direction
+      of the inequality symbol must switch. The other difference is that checking a solution set
+      takes more effort.
+    </p>
+
+    <algorithm xml:id="algorithm-solve-linear-inequality">
+      <title>Steps to Solve Linear Inequalities</title>                                                       <idx><h>Solving</h><h>linear inequalities</h><h>multistep</h></idx>
+                                                                                                              <idx><h>Linear inequalities</h><h>solving</h></idx>
+                                                                                                              <idx><h>Equation(s)</h><h>using both addition and multiplication properties</h></idx>
+      <p>
+        <dl>
+          <li>
+            <title>Simplify</title>
+            <p>
+              Simplify the expressions on each side of the inequality by distributing and combining
+              like terms.
+            </p>
+          </li>
+
+          <li>
+            <title>Separate</title>
+            <p>
+              Use addition or subtraction to separate the terms so that the variable terms are on
+              one side of the inequality and the constant terms are on the other side of the
+              inequality.
+            </p>
+          </li>
+
+          <li>
+            <title>Clear the Coefficient</title>
+            <p>
+              Use multiplication or division to eliminate the variable term's coefficient. <alert>If
+              you multiply or divide each side by a negative number, switch the direction of the
+              inequality symbol.</alert>
+            </p>
+          </li>
+
+          <li>
+            <title>Check</title>
+            <p>
+              A solution to a linear inequality has a <q>boundary number</q>. Using the original
+              inequality, check (1) a number less than the boundary number, (2) the boundary number
+              itself, and (3) a number greater than the boundary number to confirm what should and
+              shouldn't be solutions are all working as expected. (This can take time, so use your
+              judgment about when you might get away with skipping this checking.)
+            </p>
+          </li>
+
+          <li>
+            <title>Summarize</title>
+            <p>
+              State the solution set. Or in the case of an application problem, summarize the result
+              in a complete sentence using appropriate units.
+            </p>
+          </li>
+        </dl>
+      </p>
+    </algorithm>
+
+    <example xml:id="example-inequality-simple">
+      <statement>
+        <p>
+          Solve for <m>t</m> in the inequality <m>-3t+5\geq11</m>.
+          Write the solution set in both set-builder notation and interval notation.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We'll handle this much like we would handle an equation, at least for the first step.
+          <md>
+            <mrow>-3t+5\amp\geq11</mrow>
+            <mrow>-3t+5\subtractright{5}\amp\geq11\subtractright{5}</mrow>
+            <mrow>-3t\amp\geq6</mrow>
+            <mrow>\divideunder{-3t}{-3}\amp\mathbin{\secondhighlight{\le}}\divideunder{6}{-3}</mrow>
+            <mrow>t\amp\leq-2</mrow>
+          </md>
+        </p>
+
+        <p>
+          Note that when we divided both sides of the inequality by <m>-3</m>, we had to switch the
+          direction of the inequality symbol. At this point we think that the solution set in
+          set-builder notation is <m>\{t\mid t\leq-2\}</m>, and the solution set in interval
+          notation is <m>(-\infty,-2]</m>.
+        </p>
+
+        <p>
+          Since there are infinitely many solutions, it's impossible to literally check them all. We
+          believe that all values of <m>t</m> for which <m>t\leq-2</m> are solutions. We check that
+          one number less than <m>-2</m> (any number, your choice) satisfies the inequality.
+          <em>And</em> that <m>-2</m> satisfies the inequality. <em>And</em> that one number greater
+          than <m>-2</m> (any number, your choice) does <em>not</em> satisfy the inequality. We
+          choose to check the values <m>-10</m>, <m>-2</m>, and <m>0</m>.
+        </p>
+
+        <image>
+          <shortdescription>
+            a number line with a mark at -2; a thick line overlays the number line to the left of -2
+            with an arrow pointing left; there is a right bracket at -2; three arrows point to -10,
+            -2, and 0 on the number line, suggesting that these values will be checked as possible
+            solutions
+          </shortdescription>
+          <latex-image>
+            \begin{tikzpicture}
+              \begin{axis}[
+                  numberline,
+                  xmin=-10,
+                  xmax=10,
+                  xtick={-10,-8,...,10},
+                  minor xtick={-9,-7,...,9},
+                ]
+                \addplot[infiniteclosedinterval] coordinates {(-10,0) (-2,0)};
+                \node (A) at (axis cs:-10,1) {$-10\text{?}$};
+                \draw[->] (A) -- (axis cs:-10,0);
+                \node (B) at (axis cs:-2,2) {$-2\text{?}$};
+                \draw[->] (B) -- (axis cs:-2,0);
+                \node (C) at (axis cs:2,1) {$0\text{?}$};
+                \draw[->] (C) -- (axis cs:0,0);
+              \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+
+        <p>
+          <md>
+            <mrow>\amp\amp -3t+5\amp\ge11\amp \amp</mrow>
+            <mrow>-3(\substitute{-10})+5\amp\wonder{\geq}11\amp -3(\substitute{-2})+5\amp\wonder{\geq}11\amp -3(\substitute{0})+5\amp\wonder{\geq}11</mrow>
+            <mrow>30+5\amp\wonder{\geq}11\amp 6+5\amp\wonder{\geq}11\amp 0+5\amp\wonder{\geq}11</mrow>
+            <mrow>35\amp\confirm{\geq}11\amp 11\amp\confirm{\geq}11\amp 5\amp\reject{\geq}11</mrow>
+          </md>
+          So both <m>-10</m> and <m>-2</m> are solutions as expected, while <m>0</m> is not. This is
+          evidence that our solution set is correct. Making these checks would help us catch an
+          error if we had made one. While it certainly does take time and space to make three checks
+          like this, it has its value.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Solve for <m>z</m> in the inequality <m>(6z+5)-(2z-3)\gt-12</m>.
+          Write the solution set in both set-builder notation and interval notation.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Here, our first step will be simplifying the left side.
+          <md>
+            <mrow>(6z+5)-(2z-3)\amp\gt-12</mrow>
+            <mrow>6z+5-2z+3\amp\gt-12</mrow>
+            <mrow>4z+8\amp\gt-12</mrow>
+            <mrow>4z+8\subtractright{8}\amp\gt-12\subtractright{8}</mrow>
+            <mrow>4z\amp\gt-20</mrow>
+            <mrow>\divideunder{4z}{4}\amp\gt\divideunder{-20}{4}</mrow>
+            <mrow>z\amp\gt -5</mrow>
+          </md>
+        </p>
+
+        <p>
+          Note that we divided both sides of the inequality by <m>4</m> and since this is a positive
+          number we did <em>not</em> need to switch the direction of the inequality symbol. At this
+          point we think that the solution set in set-builder notation is <m>\{z\mid z\gt-5\}</m>,
+          and the solution set in interval notation is <m>(-5,\infty)</m>.
+        </p>
+
+        <p>
+          Since there are infinitely many solutions, it's impossible to literally check them all. We
+          believe that all values of <m>z</m> for which <m>z\gt-5</m> are solutions. We check that
+          one number less than <m>-5</m> (any number, your choice) does <em>not</em> satisfy the
+          inequality. <em>And</em> that <m>-5</m> does <em>not</em> satisfy the inequality.
+          <em>And</em> that one number greater than <m>-5</m> (any number, your choice)
+          <em>does</em> satisfy the inequality. We choose to check the values <m>-10</m>, <m>-5</m>,
+          and <m>0</m>.
+        </p>
+
+        <image>
+          <shortdescription>
+            a number line with a mark at -5; a thick line overlays the number line to the right of
+            -5 with an arrow pointing right; there is a left parenthesis at -5; three arrows point
+            to -10, -5, and 0 on the number line, suggesting that these values will be checked as
+            possible solutions
+          </shortdescription>
+          <latex-image>
+            \begin{tikzpicture}
+              \begin{axis}[
+                  numberline,
+                  xmin=-10,
+                  xmax=10,
+                  xtick={-10,-8,...,10},
+                  minor xtick={-9,-7,...,9},
+                ]
+                  \addplot[openinfiniteinterval] coordinates {(-5,0) (10,0)};
+                  \node (A) at (axis cs:-10,1) {$-10\text{?}$};
+                  \draw[->] (A) -- (axis cs:-10,0);
+                  \node (B) at (axis cs:-5,2) {$-5\text{?}$};
+                  \draw[->] (B) -- (axis cs:-5,0);
+                  \node (C) at (axis cs:0,1) {$0\text{?}$};
+                  \draw[->] (C) -- (axis cs:0,0);
+              \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+
+        <p>
+          <md>
+            <mrow>(6(\substitute{-10})+5)-(2(\substitute{-10})-3)\amp\wonder{\gt}-12</mrow>
+            <mrow>(-60+5)-(-20-3)\amp\wonder{\gt}-12</mrow>
+            <mrow>-55-(-23)\amp\wonder{\gt}-12</mrow>
+            <mrow>-32\amp\reject{\gt}-12</mrow>
+          </md>
+          <md>
+            <mrow>(6(\substitute{-5})+5)-(2(\substitute{-5})-3)\amp\wonder{\gt}-12</mrow>
+            <mrow>(-30+5)-(-10-3)\amp\wonder{\gt}-12</mrow>
+            <mrow>-25-(-13)\amp\wonder{\gt}-12</mrow>
+            <mrow>-12\amp\reject{\gt}-12</mrow>
+          </md>
+          <md>
+            <mrow>(6(\substitute{0})+5)-(2(\substitute{0})-3)\amp\wonder{\gt}-12</mrow>
+            <mrow>(0+5)-(0-3)\amp\wonder{\gt}-12</mrow>
+            <mrow>5-(-3)\amp\wonder{\gt}-12</mrow>
+            <mrow>8\amp\confirm{\gt}-12</mrow>
+          </md>
+          So both <m>-10</m> and <m>-5</m> are not solutions as expected, while <m>0</m> is a
+          solution. This is evidence that our solution set is correct. The solution set in
+          set-builder notation is <m>\{z\mid z\gt-5\}</m>. The solution set in interval notation is
+          <m>(-5,\infty)</m>.
+        </p>
+      </solution>
+    </example>
+
+    <exercise label="solve-inequality">
+      <webwork>
+        <pg-macros>
+          <macro-file>parserGraphTool.pl</macro-file>
+        </pg-macros>
+        <pg-code>
+          Context("Interval");
+          $interval = Interval("(-inf,-1)");
+          InequalitySetBuilder::UseVerticalSuchThat();
+          Context("InequalitySetBuilder-Only");
+          $setbuilder = Compute("{ x | x&lt;-1}");
+          $gt = GraphTool("{interval, $interval}")->with(
+            availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+            numberLine => 1,
+            xAxisLabel => 'x',
+            bBox => [ -8, 8 ],
+            ticksDistanceX => 1,
+            minorTicksX => 0,
+            useBracketEnds => 1,
+            showInStatic => 0,
+            showCoordinateHints => 0,
+          );
+        </pg-code>
+        <statement>
+          <p>
+            Solve the inequality <m>-2-2(2x+1)\gt4-(3-x)</m>. Graph the solution set on a number
+            line. State the solution set using both interval notation and set-builder notation.
+          </p>
+          <p>
+            <var name="$gt" width="1"/>
+          </p>
+          <instruction>
+            In interval notation.
+          </instruction>
+          <p>
+            <var name="$interval" width="12"/>
+          </p>
+          <instruction>
+            In set-builder notation. (If needed, type <c>inf</c> or <c>infinity</c>
+            for <m>\infty</m>, <c>&gt;=</c> for <m>\geq</m>, and <c>&lt;=</c> for <m>\leq</m>.)
+          </instruction>
+          <p>
+            <var name="$setbuilder" width="12"/>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We start by simplifying the two sides.
+            <md>
+              <mrow>-2-2(2x+1)\amp\gt4-(3-x)</mrow>
+              <mrow>-2-4x-2\amp\gt4-3+x</mrow>
+              <mrow>-4x-4\amp\gt1+x</mrow>
+            </md>
+            And now add/subtract terms to separate the variable terms and the constant terms.
+            <md>
+              <mrow>-4x-4\addright{4}\subtractright{x}\amp\gt1+x\addright{4}\subtractright{x}</mrow>
+              <mrow>-5x\amp\gt5</mrow>
+            </md>
+            And now divide each side by <m>-5</m>. Since we are dividing by a negative number, the
+            inequality sign will change direction.
+            <me>x\lt-1</me>
+          </p>
+
+          <p>
+            Graphically, we represent this solution set as:
+          </p>
+
+          <image>
+            <latex-image>
+              \begin{tikzpicture}
+                \begin{axis}[numberline]
+                  \addplot[infiniteopeninterval] coordinates {(-10,0) (-1,0)};
+                \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+
+          <p>
+            Using interval notation, we write the solution set as <m>(-\infty,-1)</m>. Using
+            set-builder notation, we write it as <m>\{x \mid x \lt -1\}</m>.
+          </p>
+
+          <p>
+            We should check that some number less than <m>-11</m> <em>is</em> a solution, that
+            <m>-1</m> itself is <em>not</em> a solution, and that some number greater than <m>-1</m>
+            is <em>not</em> a solution.
+            <md>
+              <mrow>-2-2(2(\substitute{-2})+1)\amp\wonder{\gt}4-(3-(\substitute{-2}))</mrow>
+              <mrow>-2-2(-4+1)\amp\wonder{\gt}4-5</mrow>
+              <mrow>-2-2(-3)\amp\wonder{\gt}-1</mrow>
+              <mrow>-2+6\amp\wonder{\gt}-1</mrow>
+              <mrow>4\amp\confirm{\gt}-1</mrow>
+            </md>
+            <md>
+              <mrow>-2-2(2(\substitute{-1})+1)\amp\wonder{\gt}4-(3-(\substitute{-1})) \amp -2-2(2(\substitute{0})+1)\amp\wonder{\gt}4-(3-(\substitute{0}))</mrow>
+              <mrow>-2-2(-2+1)\amp\wonder{\gt}4-4 \amp -2-2(0+1)\amp\wonder{\gt}4-3</mrow>
+              <mrow>-2-2(-1)\amp\wonder{\gt}0 \amp -2-2(1)\amp\wonder{\gt}1</mrow>
+              <mrow>-2+2\amp\wonder{\gt}0 \amp -2-2\amp\wonder{\gt}1</mrow>
+              <mrow>0\amp\reject{\gt}0 \amp -4\amp\reject{\gt}1</mrow>
+            </md>
+            Everything worked out as expected, so our solution is reasonably checked.
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+  </subsection>
+
+  <subsection>
+    <title>Applications</title>
+    <example>
+      <title>Rate Problem</title>
+      <statement>
+        <p>
+          When an experiment started, the pressure inside a gas container was <m>4.2</m> atm (one
+          atm is the standard pressure air at sea level). As the container was heated, the pressure
+          increased by <m>0.7</m> atm per minute. The maximum pressure the container is rated to
+          handle is <m>21.7</m> atm. Heating must be stopped once the pressure reaches <m>21.7</m>
+          atm. Over what time interval was the container in a safe state (meaning the pressure was
+          less than or equal to <m>21.7</m> atm)?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          This is a situation where something had an initial value (the pressure starts at
+          <m>4.2</m> atm) and then changed at a constant rate (it increased by <m>0.7</m> atm per
+          minute). So we can use
+          <xref ref="men-rate-model" text="custom">the rate model formula</xref>. Except we are not
+          exactly interested in the pressure <em>equaling</em> the final value of <m>21.7</m> atm.
+          Instead, we are asked about when the pressure was <em>less than or equal to</em>
+          <m>21.7</m> atm. So we have the inequality:
+          <md>
+            <mrow>0.7t+4.2\amp\leq21.7</mrow>
+            <mrow>0.7t+4.2\subtractright{4.2}\amp\leq21.7\subtractright{4.2}</mrow>
+            <mrow>0.7t\amp\leq17.5</mrow>
+            <mrow>\divideunder{0.7t}{0.7}\amp\leq\divideunder{17.5}{0.7}</mrow>
+            <mrow>t\amp\leq25</mrow>
+          </md>
+        </p>
+        <p>
+          In summary, the container was safe as long as <m>t\leq25</m>. Assuming that the time
+          <m>t</m> also must be greater than or equal to zero, this means <m>0\leq t\leq 25</m>. We
+          can write this as the time interval as <m>[0,25]</m>. Thus the container was safe between
+          <m>0</m> minutes and <m>25</m> minutes.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <title>Percent Problem</title>
+      <statement>
+        <p>
+          The population of a certain country grew by <m>7\%</m> over the course of the past decade.
+          One town in this country grew in population too, but not as fast as the country did
+          overall. Its current population is <m>22{,}341</m>. What might its population have been
+          ten years ago?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let <m>x</m> be the town's population from ten years ago. If the town had grown by
+          <m>7\%</m>, then it's population would be <m>x + 0.07x</m>. But since it actually grew
+          less quickly than <m>7\%</m> per decade, <m>x + 0.07x</m> would work out to more than the
+          town's current population of <m>22{,}341</m>. So we have the inequality:
+          <md>
+            <mrow>x + 0.07x\amp\gt22341</mrow>
+            <mrow>1.07x\amp\gt22341</mrow>
+            <mrow>\divideunder{1.07x}{1.07}\amp\gt\divideunder{22341}{1.07}</mrow>
+            <mrow>x\amp\gt20879.4\ldots</mrow>
+          </md>
+        </p>
+        <p>
+          So the town's population from ten years ago was at least <m>20880</m>.
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <reading-questions>
+    <exercise label="when-reverse-direction">
+      <statement>
+        <p>
+          When solving an inequality, what are the conditions when you have to reverse the direction
+          of the inequality symbol?
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+    <exercise label="differences-in-solution-sets">
+      <statement>
+        <p>
+          How is the solution set to a linear inequality different from the solution set to a linear
+          equation?
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+    <exercise label="how-to-check-solution-to-inequality">
+      <statement>
+        <p>
+          If you want to check your solution set to a linear inequality, what exactly are you going
+          to do?
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+  </reading-questions>
+
+
+  <exercises>
+    <subexercises>
+      <title>Review and Warmup</title>
+      <exercisegroup cols="4">
+        <title>One-Step Inequalities</title>
+        <introduction>
+          <p>
+            Solve the inequality.
+          </p>
+        </introduction>
+        <exercise label="solve-inequality-add-right-integer">
+          <webwork xml:id="webwork-solve-inequality-add-right-integer">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              $c = random(-6,6);
+              $a = random(1,20);
+              $b = $a + $c;
+              $left = Formula("$var + $a")->reduce;
+              $right = Formula("$b")->reduce;
+              $sign = list_random('\lt', '\gt', '\leq', '\geq');
+              %interval = (
+                '\lt'  => "(-inf, $c)",
+                '\gt'  => "($c, inf)",
+                '\leq' => "(-inf, $c]",
+                '\geq' => "[$c, inf)"
+              );
+              Context("Interval");
+              $interval = Interval($interval{$sign});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->variables->are($var => 'Real');
+              %perlsign = (
+                '\lt'  => "&lt;",
+                '\gt'  => ">",
+                '\leq' => "&lt;=",
+                '\geq' => ">="
+              );
+              $perlsign = $perlsign{$sign};
+              $setbuilder = Compute("{ $var | $var $perlsign $c}");
+              $gt = GraphTool("{interval, $interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => "$var",
+                bBox => [ -8, 8 ],
+                ticksDistanceX => 1,
+                minorTicksX => 0,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/><var name="$sign"/><var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In interval notation.
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+              <instruction>
+                In set-builder notation. (If needed, type <c>inf</c> or <c>infinity</c>
+                for <m>\infty</m>, <c>&gt;=</c> for <m>\geq</m>, and <c>&lt;=</c> for <m>\leq</m>.)
+              </instruction>
+              <p>
+                <var name="$setbuilder" width="12"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="solve-inequality-multiply-integer">
+          <webwork xml:id="webwork-solve-inequality-multiply-integer">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              $c = non_zero_random(-6,6);
+              $a = random(2,20);
+              $b = $a*$c;
+              $left = Formula("$a $var")->reduce;
+              $right = Formula("$b")->reduce;
+              $sign = list_random('\lt', '\gt', '\leq', '\geq');
+              %interval = (
+                '\lt'  => "(-inf, $c)",
+                '\gt'  => "($c, inf)",
+                '\leq' => "(-inf, $c]",
+                '\geq' => "[$c, inf)"
+              );
+              Context("Interval");
+              $interval = Interval($interval{$sign});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->variables->are($var => 'Real');
+              %perlsign = (
+                '\lt'  => "&lt;",
+                '\gt'  => ">",
+                '\leq' => "&lt;=",
+                '\geq' => ">="
+              );
+              $perlsign = $perlsign{$sign};
+              $setbuilder = Compute("{ $var | $var $perlsign $c}");
+              $gt = GraphTool("{interval, $interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => "$var",
+                bBox => [ -8, 8 ],
+                ticksDistanceX => 1,
+                minorTicksX => 0,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+              %words = (
+                '\lt'  => "less than",
+                '\gt'  => "greater than",
+                '\leq' => "less than or equal to",
+                '\geq' => "greater than or equal to"
+              );
+              $words = $words{$sign};
+              if ($sign eq '\lt' || $sign eq '\gt') {
+                $sol[0] = "does not allow";
+                $sol[1] = "parenthesis";
+                $sol[2] = "infiniteopeninterval";
+              } else {
+                $sol[0] = "allows";
+                $sol[1] = "bracket";
+                $sol[2] = "infiniteclosedinterval";
+              }
+              if ($sign eq '\lt' || $sign eq '\leq') {
+                $sol[3] = -12;
+              } else {
+                $sol[3] = 12;
+              }
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/><var name="$sign"/><var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In interval notation.
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+              <instruction>
+                In set-builder notation. (If needed, type <c>inf</c> or <c>infinity</c>
+                for <m>\infty</m>, <c>&gt;=</c> for <m>\geq</m>, and <c>&lt;=</c> for <m>\leq</m>.)
+              </instruction>
+              <p>
+                <var name="$setbuilder" width="12"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                The opposite action to multiplication is division:
+                <md>
+                  <mrow><var name="$left"/><var name="$sign"/><var name="$right"/></mrow>
+                  <mrow>\divideunder{<var name="$left"/>}{<var name="$a"/>}<var name="$sign"/>\divideunder{<var name="$right"/>}{<var name="$a"/>}</mrow>
+                  <mrow><var name="$var"/> <var name="$sign"/> <var name="$c"/></mrow>
+                </md>
+                So in set-builder notation, the solution set is <m><var name="$setbuilder"/></m>.
+              </p>
+              <p>
+                We can graph this by shading all numbers <var name="$words"/>
+                <m><var name="$c"/></m>. Since the sign in the inequality <var name="$sol[0]"/> for
+                <m><var name="$var"/></m> to equal <m><var name="$c"/></m>, we use a
+                <var name="$sol[1]"/> at <m><var name="$c"/></m>.
+              </p>
+              <image>
+                <latex-image>
+                  \begin{tikzpicture}
+                    \begin{axis}[numberline, xlabel={\($var\)}]
+                      \addplot[$sol[2]] coordinates {($sol[3],0) ($c,0)};
+                    \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+              <p>
+                We read the graph from left to right to tell us the interval notation for the
+                solution set: <m><var name="$interval"/></m>.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="solve-inequality-negative-divide-by-integer">
+          <webwork xml:id="webwork-solve-inequality-negative-divide-by-integer">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              $c = list_random(4,6,8,10,12);
+              $a = ($c == 4) ? list_random(2,4) :
+                   ($c == 6) ? list_random(2,3,6) :
+                   ($c == 8) ? list_random(2,4,8) :
+                   ($c == 10) ? list_random(2,5,10) :
+                   list_random(2,3,4,6,12);
+              $c = list_random(-$c, $c);
+              $b = -$c/$a;
+              $left = Formula("-$var/$a")->reduce;
+              $right = Formula("$b")->reduce;
+              $sign = list_random('\lt', '\gt', '\leq', '\geq');
+              %interval = (
+                '\lt'  => "($c, inf)",
+                '\gt'  => "(-inf, $c)",
+                '\leq' => "[$c, inf)",
+                '\geq' => "(-inf, $c]"
+              );
+              Context("Interval");
+              $interval = Interval($interval{$sign});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->variables->are($var => 'Real');
+              %perlsign = (
+                '\lt'  => ">",
+                '\gt'  => "&lt;",
+                '\leq' => ">=",
+                '\geq' => "&lt;="
+              );
+              $perlsign = $perlsign{$sign};
+              $setbuilder = Compute("{ $var | $var $perlsign $c}");
+              $gt = GraphTool("{interval, $interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => "$var",
+                bBox => [ -16, 16 ],
+                ticksDistanceX => 4,
+                minorTicksX => 3,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/><var name="$sign"/><var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In interval notation.
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+              <instruction>
+                In set-builder notation. (If needed, type <c>inf</c> or <c>infinity</c>
+                for <m>\infty</m>, <c>&gt;=</c> for <m>\geq</m>, and <c>&lt;=</c> for <m>\leq</m>.)
+              </instruction>
+              <p>
+                <var name="$setbuilder" width="12"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="solve-inequality-multiply-negative-integer">
+          <webwork xml:id="webwork-solve-inequality-multiply-negative-integer">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              $c = non_zero_random(-6,6);
+              $a = -1*random(2,20);
+              $b = $a*$c;
+              $left = Formula("$a $var")->reduce;
+              $right = Formula("$b")->reduce;
+              $sign = list_random('\lt', '\gt', '\leq', '\geq');
+              %interval = (
+                '\lt'  => "($c, inf)",
+                '\gt'  => "(-inf, $c)",
+                '\leq' => "[$c, inf)",
+                '\geq' => "(-inf, $c]"
+              );
+              Context("Interval");
+              $interval = Interval($interval{$sign});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->variables->are($var => 'Real');
+              %perlsign = (
+                '\lt'  => ">",
+                '\gt'  => "&lt;",
+                '\leq' => ">=",
+                '\geq' => "&lt;="
+              );
+              $perlsign = $perlsign{$sign};
+              $setbuilder = Compute("{ $var | $var $perlsign $c}");
+              $gt = GraphTool("{interval, $interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => "$var",
+                bBox => [ -8, 8 ],
+                ticksDistanceX => 1,
+                minorTicksX => 0,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+              %oppsign = (
+                '\lt'  => '\gt',
+                '\gt'  => '\lt',
+                '\leq' => '\geq',
+                '\geq' => '\leq'
+              );
+              $oppsign = $oppsign{$sign};
+              %words = (
+                '\lt'  => "less than",
+                '\gt'  => "greater than",
+                '\leq' => "less than or equal to",
+                '\geq' => "greater than or equal to"
+              );
+              $words = $words{$oppsign};
+              if ($oppsign eq '\lt' || $oppsign eq '\gt') {
+                $sol[0] = "does not allow";
+                $sol[1] = "parenthesis";
+                $sol[2] = "infiniteopeninterval";
+              } else {
+                $sol[0] = "allows";
+                $sol[1] = "bracket";
+                $sol[2] = "infiniteclosedinterval";
+              }
+              if ($oppsign eq '\lt' || $oppsign eq '\leq') {
+                $sol[3] = -12;
+              } else {
+                $sol[3] = 12;
+              }
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/><var name="$sign"/><var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In interval notation.
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+              <instruction>
+                In set-builder notation. (If needed, type <c>inf</c> or <c>infinity</c>
+                for <m>\infty</m>, <c>&gt;=</c> for <m>\geq</m>, and <c>&lt;=</c> for <m>\leq</m>.)
+              </instruction>
+              <p>
+                <var name="$setbuilder" width="12"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                The opposite action to multiplication is division. When we divide by a negative
+                number, the inequality sign must change direction.
+                <md>
+                  <mrow><var name="$left"/><var name="$sign"/><var name="$right"/></mrow>
+                  <mrow>\divideunder{<var name="$left"/>}{<var name="$a"/>}\highlight{<var name="$oppsign"/>}\divideunder{<var name="$right"/>}{<var name="$a"/>}</mrow>
+                  <mrow><var name="$var"/> <var name="$oppsign"/> <var name="$c"/></mrow>
+                </md>
+                So in set-builder notation, the solution set is <m><var name="$setbuilder"/></m>.
+              </p>
+              <p>
+                We can graph this by shading all numbers <var name="$words"/>
+                <m><var name="$c"/></m>. Since the sign in the inequality <var name="$sol[0]"/> for
+                <m><var name="$var"/></m> to equal <m><var name="$c"/></m>, we use a
+                <var name="$sol[1]"/> at <m><var name="$c"/></m>.
+              </p>
+              <image>
+                <latex-image>
+                  \begin{tikzpicture}
+                    \begin{axis}[numberline, xlabel={\($var\)}]
+                      \addplot[$sol[2]] coordinates {($sol[3],0) ($c,0)};
+                    \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+              <p>
+                We read the graph from left to right to tell us the interval notation for the
+                solution set: <m><var name="$interval"/></m>.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+      </exercisegroup>
+    </subexercises>
+
+    <subexercises>
+      <title>Skills Practice</title>
+
+      <exercisegroup cols="2">
+        <title>Solve the Inequality</title>
+        <introduction>
+          <p>
+            Solve the inequality. Graph the solution set, and write the solution set using both
+            interval notation and set-builder notation.
+          </p>
+        </introduction>
+        <exercise label="integer-mxplusbineqc">
+          <webwork xml:id="webwork-integer-mxplusbineqc">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              $sol = non_zero_random(-6, 6);
+              $m = list_random(2..9);
+              $b = non_zero_random(-9, 9);
+              $c = $m*$sol + $b;
+              $left = Formula("$m $var + $b")->reduce;
+              $right = Formula("$c")->reduce;
+              $sign = list_random('\lt', '\gt', '\leq', '\geq');
+              %interval = (
+                '\lt'  => "(-inf, $sol)",
+                '\gt'  => "($sol, inf)",
+                '\leq' => "(-inf, $sol]",
+                '\geq' => "[$sol, inf)"
+              );
+              Context("Interval");
+              $interval = Interval($interval{$sign});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->variables->are($var => 'Real');
+              %perlsign = (
+                '\lt'  => "&lt;",
+                '\gt'  => ">",
+                '\leq' => "&lt;=",
+                '\geq' => ">="
+              );
+              $perlsign = $perlsign{$sign};
+              $setbuilder = Compute("{ $var | $var $perlsign $sol}");
+              $gt = GraphTool("{interval, $interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => "$var",
+                bBox => [ -8, 8 ],
+                ticksDistanceX => 1,
+                minorTicksX => 0,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+              Context("Fraction")->variables->are($var => 'Real');
+              Context()->flags->set(reduceConstants => 0, reduceFractions => 0);
+              $solleft[0] = Formula("$m $var + $b - $b")->reduce;
+              $solright[0] = Formula("$var - $b")->reduce;
+              $solright[0] = $solright[0]->substitute($var => Formula("$c"));
+              $solleft[1] = Formula("$m $var")->reduce;
+              $solright[1] = Formula("$c - $b")->reduce;
+              $solleft[2] = Formula("($m $var)/$m")->reduce;
+              $solright[2] = Formula("$solright[1]/$m")->reduce;
+              %words = (
+                '\lt'  => "less than",
+                '\gt'  => "greater than",
+                '\leq' => "less than or equal to",
+                '\geq' => "greater than or equal to"
+              );
+              $words = $words{$sign};
+              if ($sign eq '\lt' || $sign eq '\gt') {
+                $sol[0] = "does not allow";
+                $sol[1] = "parenthesis";
+                $sol[2] = "infiniteopeninterval";
+              } else {
+                $sol[0] = "allows";
+                $sol[1] = "bracket";
+                $sol[2] = "infiniteclosedinterval";
+              }
+              if ($sign eq '\lt' || $sign eq '\leq') {
+                $sol[3] = -12;
+              } else {
+                $sol[3] = 12;
+              }
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/><var name="$sign"/><var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In interval notation. (If needed, type <c>inf</c> or <c>infinity</c> for
+                <m>\infty</m>.)
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+              <instruction>
+                In set-builder notation. (If needed, type <c>&gt;=</c> for <m>\geq</m>, and
+                <c>&lt;=</c> for <m>\leq</m>.)
+              </instruction>
+              <p>
+                <var name="$setbuilder" width="12"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                <md>
+                  <mrow><var name="$solleft[0]"/> \amp <var name="$sign"/><var name="$solright[0]"/></mrow>
+                  <mrow><var name="$solleft[1]"/> \amp <var name="$sign"/><var name="$solright[1]"/></mrow>
+                  <mrow><var name="$solleft[2]"/> \amp <var name="$sign"/><var name="$solright[2]"/></mrow>
+                  <mrow><var name="$var"/> \amp <var name="$sign"/><var name="$sol"/></mrow>
+                </md>
+                So in set-builder notation, the solution set is <m><var name="$setbuilder"/></m>.
+              </p>
+              <p>
+                We can graph this by shading all numbers <var name="$words"/>
+                <m><var name="$sol"/></m>. Since the sign in the inequality <var name="$sol[0]"/>
+                for <m><var name="$var"/></m> to equal <m><var name="$sol"/></m>, we use a
+                <var name="$sol[1]"/> at <m><var name="$sol"/></m>.
+              </p>
+              <image>
+                <latex-image>
+                  \begin{tikzpicture}
+                    \begin{axis}[numberline, xlabel={\($var\)}]
+                      \addplot[$sol[2]] coordinates {($sol[3],0) ($sol,0)};
+                    \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+              <p>
+                We read the graph from left to right to tell us the interval notation for the
+                solution set: <m><var name="$interval"/></m>.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="integer-mxplusbineqc-copy">
+          <webwork copy="webwork-integer-mxplusbineqc"/>
+        </exercise>
+        <exercise label="integer-bplusmxineqc">
+          <webwork xml:id="webwork-integer-bplusmxineqc">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              $sol = non_zero_random(-6, 6);
+              $m = list_random(2..9);
+              $b = non_zero_random(-9, 9);
+              $c = $m*$sol + $b;
+              $left = Formula("$b + $m $var")->reduce;
+              $right = Formula("$c")->reduce;
+              $sign = list_random('\lt', '\gt', '\leq', '\geq');
+              %interval = (
+                '\lt'  => "(-inf, $sol)",
+                '\gt'  => "($sol, inf)",
+                '\leq' => "(-inf, $sol]",
+                '\geq' => "[$sol, inf)"
+              );
+              Context("Interval");
+              $interval = Interval($interval{$sign});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->variables->are($var => 'Real');
+              %perlsign = (
+                '\lt'  => "&lt;",
+                '\gt'  => ">",
+                '\leq' => "&lt;=",
+                '\geq' => ">="
+              );
+              $perlsign = $perlsign{$sign};
+              $setbuilder = Compute("{ $var | $var $perlsign $sol}");
+              $gt = GraphTool("{interval, $interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => "$var",
+                bBox => [ -8, 8 ],
+                ticksDistanceX => 1,
+                minorTicksX => 0,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/><var name="$sign"/><var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In interval notation. (If needed, type <c>inf</c> or <c>infinity</c> for
+                <m>\infty</m>.)
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+              <instruction>
+                In set-builder notation. (If needed, type <c>&gt;=</c> for <m>\geq</m>, and
+                <c>&lt;=</c> for <m>\leq</m>.)
+              </instruction>
+              <p>
+                <var name="$setbuilder" width="12"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="integer-bplusmxineqc-copy">
+          <webwork copy="webwork-integer-bplusmxineqc"/>
+        </exercise>
+        <exercise label="integer-negmxplusbineqc">
+          <webwork xml:id="webwork-integer-negmxplusbineqc">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              $sol = non_zero_random(-6, 6);
+              $m = list_random(-9..-2);
+              $b = non_zero_random(-9, 9);
+              $c = $m*$sol + $b;
+              $left = Formula("$m $var + $b")->reduce;
+              $right = Formula("$c")->reduce;
+              $sign = list_random('\lt', '\gt', '\leq', '\geq');
+              %interval = (
+                '\gt'  => "(-inf, $sol)",
+                '\lt'  => "($sol, inf)",
+                '\geq' => "(-inf, $sol]",
+                '\leq' => "[$sol, inf)"
+              );
+              Context("Interval");
+              $interval = Interval($interval{$sign});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->variables->are($var => 'Real');
+              %perlsign = (
+                '\gt'  => "&lt;",
+                '\lt'  => ">",
+                '\geq' => "&lt;=",
+                '\leq' => ">="
+              );
+              $perlsign = $perlsign{$sign};
+              $setbuilder = Compute("{ $var | $var $perlsign $sol}");
+              $gt = GraphTool("{interval, $interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => "$var",
+                bBox => [ -8, 8 ],
+                ticksDistanceX => 1,
+                minorTicksX => 0,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/><var name="$sign"/><var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In interval notation. (If needed, type <c>inf</c> or <c>infinity</c> for
+                <m>\infty</m>.)
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+              <instruction>
+                In set-builder notation. (If needed, type <c>&gt;=</c> for <m>\geq</m>, and
+                <c>&lt;=</c> for <m>\leq</m>.)
+              </instruction>
+              <p>
+                <var name="$setbuilder" width="12"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="integer-negmxplusbineqc-copy">
+          <webwork copy="webwork-integer-negmxplusbineqc"/>
+        </exercise>
+        <exercise label="integer-bplusnegmxineqc">
+          <webwork xml:id="webwork-integer-bplusnegmxineqc">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              $sol = non_zero_random(-6, 6);
+              $m = list_random(-9..-2);
+              $b = non_zero_random(-9, 9);
+              $c = $m*$sol + $b;
+              $left = Formula("$b + $m $var")->reduce;
+              $right = Formula("$c")->reduce;
+              $sign = list_random('\lt', '\gt', '\leq', '\geq');
+              %interval = (
+                '\gt'  => "(-inf, $sol)",
+                '\lt'  => "($sol, inf)",
+                '\geq' => "(-inf, $sol]",
+                '\leq' => "[$sol, inf)"
+              );
+              Context("Interval");
+              $interval = Interval($interval{$sign});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->variables->are($var => 'Real');
+              %perlsign = (
+                '\gt'  => "&lt;",
+                '\lt'  => ">",
+                '\geq' => "&lt;=",
+                '\leq' => ">="
+              );
+              $perlsign = $perlsign{$sign};
+              $setbuilder = Compute("{ $var | $var $perlsign $sol}");
+              $gt = GraphTool("{interval, $interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => "$var",
+                bBox => [ -8, 8 ],
+                ticksDistanceX => 1,
+                minorTicksX => 0,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+              Context("Fraction")->variables->are($var => 'Real');
+              Context()->flags->set(reduceConstants => 0, reduceFractions => 0);
+              Context()->noreduce('(-x)-y', '(-x)+y', '(-x)/y', 'x/(-y)');
+              $solleft[0] = Formula("$b + $m $var - $b")->reduce;
+              $solright[0] = Formula("$var - $b")->reduce;
+              $solright[0] = $solright[0]->substitute($var => Formula("$c"));
+              $solleft[1] = Formula("$m $var")->reduce;
+              $solright[1] = Formula("$c - $b")->reduce;
+              $solleft[2] = Formula("($m $var)/($m)");
+              $solright[2] = Formula("($solright[1])/($m)");
+              %oppsign = (
+                '\lt'  => '\gt',
+                '\gt'  => '\lt',
+                '\leq' => '\geq',
+                '\geq' => '\leq'
+              );
+              $oppsign = $oppsign{$sign};
+              %words = (
+                '\lt'  => "less than",
+                '\gt'  => "greater than",
+                '\leq' => "less than or equal to",
+                '\geq' => "greater than or equal to"
+              );
+              $words = $words{$oppsign};
+              if ($oppsign eq '\lt' || $oppsign eq '\gt') {
+                $sol[0] = "does not allow";
+                $sol[1] = "parenthesis";
+                $sol[2] = "infiniteopeninterval";
+              } else {
+                $sol[0] = "allows";
+                $sol[1] = "bracket";
+                $sol[2] = "infiniteclosedinterval";
+              }
+              if ($oppsign eq '\lt' || $oppsign eq '\leq') {
+                $sol[3] = -12;
+              } else {
+                $sol[3] = 12;
+              }
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/><var name="$sign"/><var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In interval notation. (If needed, type <c>inf</c> or <c>infinity</c> for
+                <m>\infty</m>.)
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+              <instruction>
+                In set-builder notation. (If needed, type <c>&gt;=</c> for <m>\geq</m>, and
+                <c>&lt;=</c> for <m>\leq</m>.)
+              </instruction>
+              <p>
+                <var name="$setbuilder" width="12"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                <md>
+                  <mrow><var name="$solleft[0]"/><var name="$sign"/><var name="$solright[0]"/></mrow>
+                  <mrow><var name="$solleft[1]"/><var name="$sign"/><var name="$solright[1]"/></mrow>
+                  <mrow><var name="$solleft[2]"/><var name="$oppsign"/><var name="$solright[2]"/></mrow>
+                  <mrow><var name="$var"/><var name="$oppsign"/><var name="$sol"/></mrow>
+                </md>
+                So in set-builder notation, the solution set is <m><var name="$setbuilder"/></m>.
+              </p>
+              <p>
+                We can graph this by shading all numbers <var name="$words"/>
+                <m><var name="$sol"/></m>. Since the sign in the inequality <var name="$sol[0]"/>
+                for <m><var name="$var"/></m> to equal <m><var name="$sol"/></m>, we use a
+                <var name="$sol[1]"/> at <m><var name="$sol"/></m>.
+              </p>
+              <image>
+                <latex-image>
+                  \begin{tikzpicture}
+                    \begin{axis}[numberline, xlabel={\($var\)}]
+                      \addplot[$sol[2]] coordinates {($sol[3],0) ($sol,0)};
+                    \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+              <p>
+                We read the graph from left to right to tell us the interval notation for the
+                solution set: <m><var name="$interval"/></m>.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="integer-bplusnegmxineqc-copy">
+          <webwork copy="webwork-integer-bplusnegmxineqc"/>
+        </exercise>
+        <exercise label="integer-aplusmxplusbineqc">
+          <webwork xml:id="webwork-integer-aplusmxplusbineqc">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              $sol = non_zero_random(-6, 6);
+              $m = list_random(2..9);
+              ($a,$b) = random_subset(2,-9..-1,1..9);
+              $c = $a + $m*$sol + $b;
+              $left = Formula("$a + ($m $var + $b)")->reduce;
+              $right = Formula("$c")->reduce;
+              $sign = list_random('\lt', '\gt', '\leq', '\geq');
+              %interval = (
+                '\lt'  => "(-inf, $sol)",
+                '\gt'  => "($sol, inf)",
+                '\leq' => "(-inf, $sol]",
+                '\geq' => "[$sol, inf)"
+              );
+              Context("Interval");
+              $interval = Interval($interval{$sign});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->variables->are($var => 'Real');
+              %perlsign = (
+                '\lt'  => "&lt;",
+                '\gt'  => ">",
+                '\leq' => "&lt;=",
+                '\geq' => ">="
+              );
+              $perlsign = $perlsign{$sign};
+              $setbuilder = Compute("{ $var | $var $perlsign $sol}");
+              $gt = GraphTool("{interval, $interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => "$var",
+                bBox => [ -8, 8 ],
+                ticksDistanceX => 1,
+                minorTicksX => 0,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/><var name="$sign"/><var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In interval notation. (If needed, type <c>inf</c> or <c>infinity</c> for
+                <m>\infty</m>.)
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+              <instruction>
+                In set-builder notation. (If needed, type <c>&gt;=</c> for <m>\geq</m>, and
+                <c>&lt;=</c> for <m>\leq</m>.)
+              </instruction>
+              <p>
+                <var name="$setbuilder" width="12"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="integer-aplusmxplusbineqc-copy">
+          <webwork copy="webwork-integer-aplusmxplusbineqc"/>
+        </exercise>
+        <exercise label="integer-nxplusaplusmxplusbineqc">
+          <webwork xml:id="webwork-integer-nxplusaplusmxplusbineqc">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              $sol = non_zero_random(-6, 6);
+              ($m,$n) = random_subset(2,1..9);
+              ($a,$b) = random_subset(2,-9..-1,1..9);
+              $c = $n*$sol + $a + $m*$sol + $b;
+              $left = Formula("($n $var + $a) + ($m $var + $b)")->reduce;
+              $right = Formula("$c")->reduce;
+              $sign = list_random('\lt', '\gt', '\leq', '\geq');
+              %interval = (
+                '\lt'  => "(-inf, $sol)",
+                '\gt'  => "($sol, inf)",
+                '\leq' => "(-inf, $sol]",
+                '\geq' => "[$sol, inf)"
+              );
+              Context("Interval");
+              $interval = Interval($interval{$sign});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->variables->are($var => 'Real');
+              %perlsign = (
+                '\lt'  => "&lt;",
+                '\gt'  => ">",
+                '\leq' => "&lt;=",
+                '\geq' => ">="
+              );
+              $perlsign = $perlsign{$sign};
+              $setbuilder = Compute("{ $var | $var $perlsign $sol}");
+              $gt = GraphTool("{interval, $interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => "$var",
+                bBox => [ -8, 8 ],
+                ticksDistanceX => 1,
+                minorTicksX => 0,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/><var name="$sign"/><var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In interval notation. (If needed, type <c>inf</c> or <c>infinity</c> for
+                <m>\infty</m>.)
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+              <instruction>
+                In set-builder notation. (If needed, type <c>&gt;=</c> for <m>\geq</m>, and
+                <c>&lt;=</c> for <m>\leq</m>.)
+              </instruction>
+              <p>
+                <var name="$setbuilder" width="12"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="integer-nxplusaplusmxplusbineqc-copy">
+          <webwork copy="webwork-integer-nxplusaplusmxplusbineqc"/>
+        </exercise>
+        <exercise label="integer-aminusmxplusbineqc">
+          <webwork xml:id="webwork-integer-aminusmxplusbineqc">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              $sol = non_zero_random(-6, 6);
+              $m = list_random(2..9);
+              ($a,$b) = random_subset(2,-9..-1,1..9);
+              $c = $a - ($m*$sol + $b);
+              $left = Formula("$a - ($m $var + $b)")->reduce;
+              $right = Formula("$c")->reduce;
+              $sign = list_random('\lt', '\gt', '\leq', '\geq');
+              %interval = (
+                '\gt'  => "(-inf, $sol)",
+                '\lt'  => "($sol, inf)",
+                '\geq' => "(-inf, $sol]",
+                '\leq' => "[$sol, inf)"
+              );
+              Context("Interval");
+              $interval = Interval($interval{$sign});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->variables->are($var => 'Real');
+              %perlsign = (
+                '\gt'  => "&lt;",
+                '\lt'  => ">",
+                '\geq' => "&lt;=",
+                '\leq' => ">="
+              );
+              $perlsign = $perlsign{$sign};
+              $setbuilder = Compute("{ $var | $var $perlsign $sol}");
+              $gt = GraphTool("{interval, $interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => "$var",
+                bBox => [ -8, 8 ],
+                ticksDistanceX => 1,
+                minorTicksX => 0,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/><var name="$sign"/><var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In interval notation. (If needed, type <c>inf</c> or <c>infinity</c> for
+                <m>\infty</m>.)
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+              <instruction>
+                In set-builder notation. (If needed, type <c>&gt;=</c> for <m>\geq</m>, and
+                <c>&lt;=</c> for <m>\leq</m>.)
+              </instruction>
+              <p>
+                <var name="$setbuilder" width="12"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="integer-aminusmxplusbineqc-copy">
+          <webwork copy="webwork-integer-aminusmxplusbineqc"/>
+        </exercise>
+        <exercise label="integer-nxplusaplusmxplusbineqc2">
+          <webwork xml:id="webwork-integer-nxplusaplusmxplusbineqc2">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              $sol = non_zero_random(-6, 6);
+              do {($m,$n) = random_subset(2,-9..-2,2..9)} until ($m + $n != 0);
+              ($a,$b) = random_subset(2,-9..-1,1..9);
+              $c = $n*$sol + $a + $m*$sol + $b;
+              $left = Formula("$n $var + $a + $m $var + $b")->reduce;
+              $right = Formula("$c")->reduce;
+              $sign = list_random('\lt', '\gt', '\leq', '\geq');
+              %interval = (
+                '\lt'  => ($m + $n > 0) ?  "(-inf, $sol)" :  "($sol, inf)",
+                '\gt'  => ($m + $n > 0) ?  "($sol, inf)"  :  "(-inf, $sol)",
+                '\leq' => ($m + $n > 0) ?  "(-inf, $sol]" :  "[$sol, inf)",
+                '\geq' => ($m + $n > 0) ?  "[$sol, inf)"  :  "(-inf, $sol]"
+              );
+              Context("Interval");
+              $interval = Interval($interval{$sign});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->variables->are($var => 'Real');
+              %perlsign = (
+                '\lt'  => ($m + $n > 0) ?  "&lt;"  : ">",
+                '\gt'  => ($m + $n > 0) ?  ">"     : "&lt;",
+                '\leq' => ($m + $n > 0) ?  "&lt;=" : ">=",
+                '\geq' => ($m + $n > 0) ?  ">="    : "&lt;="
+              );
+              $perlsign = $perlsign{$sign};
+              $setbuilder = Compute("{ $var | $var $perlsign $sol}");
+              $gt = GraphTool("{interval, $interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => "$var",
+                bBox => [ -8, 8 ],
+                ticksDistanceX => 1,
+                minorTicksX => 0,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/><var name="$sign"/><var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In interval notation. (If needed, type <c>inf</c> or <c>infinity</c> for
+                <m>\infty</m>.)
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+              <instruction>
+                In set-builder notation. (If needed, type <c>&gt;=</c> for <m>\geq</m>, and
+                <c>&lt;=</c> for <m>\leq</m>.)
+              </instruction>
+              <p>
+                <var name="$setbuilder" width="12"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="integer-nxplusaplusmxplusbineqc2-copy">
+          <webwork copy="webwork-integer-nxplusaplusmxplusbineqc2"/>
+        </exercise>
+        <exercise label="integer-nxplusaminuskmxplusbineqc">
+          <webwork xml:id="webwork-integer-nxplusaminuskmxplusbineqc">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              $sol = non_zero_random(-6, 6);
+              $k = random(2,6);
+              do {($m,$n) = random_subset(2,-9..-2,2..9)} until ($n != $k*$m);
+              ($a,$b) = random_subset(2,-9..-1,1..9);
+              $c = $n*$sol + $a - $k*($m*$sol + $b);
+              $left = Formula("($n $var + $a) - $k($m $var + $b)")->reduce;
+              $right = Formula("$c")->reduce;
+              $sign = list_random('\lt', '\gt', '\leq', '\geq');
+              %interval = (
+                '\lt'  => ($n - $k*$m > 0) ?  "(-inf, $sol)" :  "($sol, inf)",
+                '\gt'  => ($n - $k*$m > 0) ?  "($sol, inf)"  :  "(-inf, $sol)",
+                '\leq' => ($n - $k*$m > 0) ?  "(-inf, $sol]" :  "[$sol, inf)",
+                '\geq' => ($n - $k*$m > 0) ?  "[$sol, inf)"  :  "(-inf, $sol]"
+              );
+              Context("Interval");
+              $interval = Interval($interval{$sign});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->variables->are($var => 'Real');
+              %perlsign = (
+                '\lt'  => ($n - $k*$m > 0) ?  "&lt;"  : ">",
+                '\gt'  => ($n - $k*$m > 0) ?  ">"     : "&lt;",
+                '\leq' => ($n - $k*$m > 0) ?  "&lt;=" : ">=",
+                '\geq' => ($n - $k*$m > 0) ?  ">="    : "&lt;="
+              );
+              $perlsign = $perlsign{$sign};
+              $setbuilder = Compute("{ $var | $var $perlsign $sol}");
+              $gt = GraphTool("{interval, $interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => "$var",
+                bBox => [ -8, 8 ],
+                ticksDistanceX => 1,
+                minorTicksX => 0,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/><var name="$sign"/><var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In interval notation. (If needed, type <c>inf</c> or <c>infinity</c> for
+                <m>\infty</m>.)
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+              <instruction>
+                In set-builder notation. (If needed, type <c>&gt;=</c> for <m>\geq</m>, and
+                <c>&lt;=</c> for <m>\leq</m>.)
+              </instruction>
+              <p>
+                <var name="$setbuilder" width="12"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="integer-nxplusaminuskmxplusbineqc-copy">
+         <webwork copy="webwork-integer-nxplusaminuskmxplusbineqc"/>
+        </exercise>
+        <exercise label="integer-mxplusbineqnxplusc-positive">
+          <webwork xml:id="webwork-integer-mxplusbineqnxplusc-positive">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              $sol = non_zero_random(-6, 6);
+              do {($m, $n) = random_subset(2,-9..-2,2..9)} until ($m - $n != 0);
+              ($m, $n) = ($n, $m) if ($n > $m);
+              $b = non_zero_random(-9,9);
+              $c = $m*$sol + $b - $n*$sol;
+              $left = Formula("$m $var + $b")->reduce;
+              $right = Formula("$n $var + $c")->reduce;
+              $sign = list_random('\lt', '\gt', '\leq', '\geq');
+              %interval = (
+                '\lt'  => ($m - $n > 0) ?  "(-inf, $sol)" :  "($sol, inf)",
+                '\gt'  => ($m - $n > 0) ?  "($sol, inf)"  :  "(-inf, $sol)",
+                '\leq' => ($m - $n > 0) ?  "(-inf, $sol]" :  "[$sol, inf)",
+                '\geq' => ($m - $n > 0) ?  "[$sol, inf)"  :  "(-inf, $sol]"
+              );
+              Context("Interval");
+              $interval = Interval($interval{$sign});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->variables->are($var => 'Real');
+              %perlsign = (
+                '\lt'  => ($m - $n > 0) ?  "&lt;"  : ">",
+                '\gt'  => ($m - $n > 0) ?  ">"     : "&lt;",
+                '\leq' => ($m - $n > 0) ?  "&lt;=" : ">=",
+                '\geq' => ($m - $n > 0) ?  ">="    : "&lt;="
+              );
+              $perlsign = $perlsign{$sign};
+              $setbuilder = Compute("{ $var | $var $perlsign $sol}");
+              $gt = GraphTool("{interval, $interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => "$var",
+                bBox => [ -8, 8 ],
+                ticksDistanceX => 1,
+                minorTicksX => 0,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/><var name="$sign"/><var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In interval notation. (If needed, type <c>inf</c> or <c>infinity</c> for
+                <m>\infty</m>.)
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+              <instruction>
+                In set-builder notation. (If needed, type <c>&gt;=</c> for <m>\geq</m>, and
+                <c>&lt;=</c> for <m>\leq</m>.)
+              </instruction>
+              <p>
+                <var name="$setbuilder" width="12"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="integer-mxplusbineqnxplusc-positive-copy">
+         <webwork copy="webwork-integer-mxplusbineqnxplusc-positive"/>
+        </exercise>
+        <exercise label="integer-mxplusbineqnxplusc-negative">
+          <webwork xml:id="webwork-integer-mxplusbineqnxplusc-negative">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              $sol = non_zero_random(-6, 6);
+              do {($m, $n) = random_subset(2,-9..-2,2..9)} until ($m - $n != 0);
+              ($m, $n) = ($n, $m) if ($m > $n);
+              $b = non_zero_random(-9,9);
+              $c = $m*$sol + $b - $n*$sol;
+              $left = Formula("$m $var + $b")->reduce;
+              $right = Formula("$n $var + $c")->reduce;
+              $sign = list_random('\lt', '\gt', '\leq', '\geq');
+              %interval = (
+                '\lt'  => ($m - $n > 0) ?  "(-inf, $sol)" :  "($sol, inf)",
+                '\gt'  => ($m - $n > 0) ?  "($sol, inf)"  :  "(-inf, $sol)",
+                '\leq' => ($m - $n > 0) ?  "(-inf, $sol]" :  "[$sol, inf)",
+                '\geq' => ($m - $n > 0) ?  "[$sol, inf)"  :  "(-inf, $sol]"
+              );
+              Context("Interval");
+              $interval = Interval($interval{$sign});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->variables->are($var => 'Real');
+              %perlsign = (
+                '\lt'  => ($m - $n > 0) ?  "&lt;"  : ">",
+                '\gt'  => ($m - $n > 0) ?  ">"     : "&lt;",
+                '\leq' => ($m - $n > 0) ?  "&lt;=" : ">=",
+                '\geq' => ($m - $n > 0) ?  ">="    : "&lt;="
+              );
+              $perlsign = $perlsign{$sign};
+              $setbuilder = Compute("{ $var | $var $perlsign $sol}");
+              $gt = GraphTool("{interval, $interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => "$var",
+                bBox => [ -8, 8 ],
+                ticksDistanceX => 1,
+                minorTicksX => 0,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/><var name="$sign"/><var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In interval notation. (If needed, type <c>inf</c> or <c>infinity</c> for
+                <m>\infty</m>.)
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+              <instruction>
+                In set-builder notation. (If needed, type <c>&gt;=</c> for <m>\geq</m>, and
+                <c>&lt;=</c> for <m>\leq</m>.)
+              </instruction>
+              <p>
+                <var name="$setbuilder" width="12"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="integer-mxplusbineqnxplusc-negative-copy">
+         <webwork copy="webwork-integer-mxplusbineqnxplusc-negative"/>
+        </exercise>
+        <exercise label="integer-mxplusbineqnxplusc">
+          <webwork xml:id="webwork-integer-mxplusbineqnxplusc">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              $sol = non_zero_random(-6, 6);
+              do {($m,$n) = random_subset(2,-9..-2,2..9)} until ($m - $n != 0);
+              $b = non_zero_random(-9,9);
+              $c = $m*$sol + $b - $n*$sol;
+              $left = Formula("$m $var + $b")->reduce;
+              $right = Formula("$n $var + $c")->reduce;
+              $sign = list_random('\lt', '\gt', '\leq', '\geq');
+              %interval = (
+                '\lt'  => ($m - $n > 0) ?  "(-inf, $sol)" :  "($sol, inf)",
+                '\gt'  => ($m - $n > 0) ?  "($sol, inf)"  :  "(-inf, $sol)",
+                '\leq' => ($m - $n > 0) ?  "(-inf, $sol]" :  "[$sol, inf)",
+                '\geq' => ($m - $n > 0) ?  "[$sol, inf)"  :  "(-inf, $sol]"
+              );
+              Context("Interval");
+              $interval = Interval($interval{$sign});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->variables->are($var => 'Real');
+              %perlsign = (
+                '\lt'  => ($m - $n > 0) ?  "&lt;"  : ">",
+                '\gt'  => ($m - $n > 0) ?  ">"     : "&lt;",
+                '\leq' => ($m - $n > 0) ?  "&lt;=" : ">=",
+                '\geq' => ($m - $n > 0) ?  ">="    : "&lt;="
+              );
+              $perlsign = $perlsign{$sign};
+              $setbuilder = Compute("{ $var | $var $perlsign $sol}");
+              $gt = GraphTool("{interval, $interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => "$var",
+                bBox => [ -8, 8 ],
+                ticksDistanceX => 1,
+                minorTicksX => 0,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/><var name="$sign"/><var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In interval notation. (If needed, type <c>inf</c> or <c>infinity</c> for
+                <m>\infty</m>.)
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+              <instruction>
+                In set-builder notation. (If needed, type <c>&gt;=</c> for <m>\geq</m>, and
+                <c>&lt;=</c> for <m>\leq</m>.)
+              </instruction>
+              <p>
+                <var name="$setbuilder" width="12"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="integer-mxplusbineqnxplusc-copy">
+         <webwork copy="webwork-integer-mxplusbineqnxplusc"/>
+        </exercise>
+        <exercise label="integer-simplifyfirst">
+          <webwork xml:id="webwork-integer-simplifyfirst">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              $sol = non_zero_random(-6, 6);
+              $k = list_random(-9..2,2..9);
+              do {($m,$n) = random_subset(2,-9..-2,2..9)} until ($k*$m != -$n);
+              ($a,$b,$d) = random_subset(3,-9..-2,2..9);
+              $c = $a + $k*($m*$sol + $b) + $n*$sol + $d;
+              $left = Formula("$a + $k($m $var + $b)")->reduce;
+              $right = Formula("$c - ($n $var + $d)")->reduce;
+              $sign = list_random('\lt', '\gt', '\leq', '\geq');
+              %interval = (
+                '\lt'  => ($k*$m + $n > 0) ?  "(-inf, $sol)" :  "($sol, inf)",
+                '\gt'  => ($k*$m + $n > 0) ?  "($sol, inf)"  :  "(-inf, $sol)",
+                '\leq' => ($k*$m + $n > 0) ?  "(-inf, $sol]" :  "[$sol, inf)",
+                '\geq' => ($k*$m + $n > 0) ?  "[$sol, inf)"  :  "(-inf, $sol]"
+              );
+              Context("Interval");
+              $interval = Interval($interval{$sign});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->variables->are($var => 'Real');
+              %perlsign = (
+                '\lt'  => ($k*$m + $n > 0) ?  "&lt;"  : ">",
+                '\gt'  => ($k*$m + $n > 0) ?  ">"     : "&lt;",
+                '\leq' => ($k*$m + $n > 0) ?  "&lt;=" : ">=",
+                '\geq' => ($k*$m + $n > 0) ?  ">="    : "&lt;="
+              );
+              $perlsign = $perlsign{$sign};
+              $setbuilder = Compute("{ $var | $var $perlsign $sol}");
+              $gt = GraphTool("{interval, $interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => "$var",
+                bBox => [ -8, 8 ],
+                ticksDistanceX => 1,
+                minorTicksX => 0,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/><var name="$sign"/><var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In interval notation. (If needed, type <c>inf</c> or <c>infinity</c> for
+                <m>\infty</m>.)
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+              <instruction>
+                In set-builder notation. (If needed, type <c>&gt;=</c> for <m>\geq</m>, and
+                <c>&lt;=</c> for <m>\leq</m>.)
+              </instruction>
+              <p>
+                <var name="$setbuilder" width="12"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="integer-simplifyfirst-copy">
+         <webwork copy="webwork-integer-simplifyfirst"/>
+        </exercise>
+        <exercise label="integer-simplifyfirst2">
+          <webwork xml:id="webwork-integer-simplifyfirst2">
+            <pg-macros>
+              <macro-file>parserGraphTool.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+              Context()->variables->are($var => 'Real');
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              $sol = non_zero_random(-6, 6);
+              do {($k,$l,$m,$n) = random_subset(4,-9..-2,2..9)} until ($k + $l != $m + $n);
+              ($a,$b,$c) = random_subset(3,-9..-2,2..9);
+              $d = $k*$sol + $a + $l*$sol + $b - $m*$sol - $c - $n*$sol;
+              $left = Formula("$k $var + $a + $l $var + $b")->reduce;
+              $right = Formula("$m $var + $c + $n $var + $d")->reduce;
+              $sign = list_random('\lt', '\gt', '\leq', '\geq');
+              %interval = (
+                '\lt'  => ($k + $l > $m + $n) ?  "(-inf, $sol)" :  "($sol, inf)",
+                '\gt'  => ($k + $l > $m + $n) ?  "($sol, inf)"  :  "(-inf, $sol)",
+                '\leq' => ($k + $l > $m + $n) ?  "(-inf, $sol]" :  "[$sol, inf)",
+                '\geq' => ($k + $l > $m + $n) ?  "[$sol, inf)"  :  "(-inf, $sol]"
+              );
+              Context("Interval");
+              $interval = Interval($interval{$sign});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->variables->are($var => 'Real');
+              %perlsign = (
+                '\lt'  => ($k + $l > $m + $n) ?  "&lt;"  : ">",
+                '\gt'  => ($k + $l > $m + $n) ?  ">"     : "&lt;",
+                '\leq' => ($k + $l > $m + $n) ?  "&lt;=" : ">=",
+                '\geq' => ($k + $l > $m + $n) ?  ">="    : "&lt;="
+              );
+              $perlsign = $perlsign{$sign};
+              $setbuilder = Compute("{ $var | $var $perlsign $sol}");
+              $gt = GraphTool("{interval, $interval}")->with(
+                availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+                numberLine => 1,
+                xAxisLabel => "$var",
+                bBox => [ -8, 8 ],
+                ticksDistanceX => 1,
+                minorTicksX => 0,
+                useBracketEnds => 1,
+                showInStatic => 0,
+                showCoordinateHints => 0,
+              );
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/><var name="$sign"/><var name="$right"/></m>
+              </p>
+              <p>
+                <var name="$gt" width="1"/>
+              </p>
+              <instruction>
+                In interval notation. (If needed, type <c>inf</c> or <c>infinity</c> for
+                <m>\infty</m>.)
+              </instruction>
+              <p>
+                <var name="$interval" width="12"/>
+              </p>
+              <instruction>
+                In set-builder notation. (If needed, type <c>&gt;=</c> for <m>\geq</m>, and
+                <c>&lt;=</c> for <m>\leq</m>.)
+              </instruction>
+              <p>
+                <var name="$setbuilder" width="12"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="integer-simplifyfirst2-copy">
+         <webwork copy="webwork-integer-simplifyfirst2"/>
+        </exercise>
+        <!-- NB:  Add exercises with fraction answers once the graphtool from WW 2.18 is available -->
+      </exercisegroup>
+    </subexercises>
+
+    <subexercises>
+      <title>Applications</title>
+      <exercise label="taxi-inequality">
+        <webwork xml:id="webwork-taxi-inequality">
+          <pg-macros>
+            <macro-file>parserLinearRelation.pl</macro-file>
+          </pg-macros>
+          <pg-code>
+            $b = random(15,25,5);
+            $m = random(2,4,0.5);
+            $sol = random(10,50,2);
+            $c = $m*$sol + $b;
+            $distance = NumberWithUnits($sol, 'mi');
+            Context("Currency")->flags(trimTrailingZeros => 1);
+            $flat = Currency($b);
+            $rate = Currency($m);
+            $cash = Currency($c);
+            Context("Interval");
+            Context()->flags->set(ignoreEndpointTypes => 1);
+            $interval = Interval("[0,$sol]");
+            Context("LinearRelation")->variables->are(x => 'Real');
+            Context()->noreduce('(-x)-y', '(-x)+y');
+            $relation = Formula("$b+$m x &lt;= $c");
+          </pg-code>
+          <introduction>
+            <p>
+              You hail a taxi and can only pay with cash. This cab service charges a flat fee of
+              <m><var name="$flat"/></m> and then charges <m><var name="$rate"/></m> per mile. No
+              tip is expected. You are carrying a total of <m><var name="$cash"/></m> in cash with
+              you. You want to know how many miles you can afford.
+            </p>
+          </introduction>
+          <task>
+            <statement>
+              <p>
+                Write an inequality to represent this situation, using <m>x</m> to represent how
+                many miles you can afford.
+              </p>
+              <p>
+                <var name="$relation" width="16"/>
+              </p>
+            </statement>
+          </task>
+          <task>
+            <statement>
+              <p>
+                Solve this inequality. At most how many miles can you afford?
+              </p>
+              <p>
+                <var name="$distance" width="16"/>
+              </p>
+            </statement>
+          </task>
+          <task>
+            <statement>
+              <p>
+                Use interval notation to express the number of miles you might ride that day.
+              </p>
+              <p>
+                <var name="$interval" width="16"/>
+              </p>
+            </statement>
+          </task>
+        </webwork>
+      </exercise>
+      <exercise label="out-of-gas-inequality">
+        <webwork xml:id="webwork-out-of-gas-inequality">
+          <pg-macros>
+            <macro-file>randomPerson.pl</macro-file>
+            <macro-file>parserLinearRelation.pl</macro-file>
+          </pg-macros>
+          <pg-code>
+            $p = randomPerson();
+            $b = random(12,20);
+            $m = random(0.04, 0.05, 0.002);
+            $sol = Real(($b - 1)/$m);
+            $distance = NumberWithUnits($sol, 'mi');
+            $start = NumberWithUnits($b, 'gal');
+            $rate = NumberWithUnits($m, 'gal/mi');
+            Context("Interval");
+            Context()->flags->set(ignoreEndpointTypes => 1);
+            $interval = Interval("(0,$sol]");
+            Context("LinearRelation")->variables->are(x => 'Real');
+            Context()->noreduce('(-x)-y', '(-x)+y');
+            $relation = Formula("$b - $m x >= 1");
+            Context("Fraction")->variables->are(x => 'Real');
+            Context()->flags->set(reduceConstants => 0, reduceFractions => 0);
+            Context()->noreduce('(-x)-y', '(-x)+y', '(-x)/y', 'x/(-y)');
+            $solleft[0] = Formula("$b - $m x - $b")->reduce;
+            $solright[0] = Formula("x - $b")->reduce;
+            $solright[0] = $solright[0]->substitute(x => Formula("1"));
+            $solleft[1] = Formula("-$m x")->reduce;
+            $solright[1] = Formula("1 - $b")->reduce;
+            $solleft[2] = Formula("(-$m x)/(-$m)");
+            $solright[2] = Formula("($solright[1])/(-$m)");
+        </pg-code>
+          <introduction>
+            <p>
+              <var name="$p"/> is driving on the highway, and presently has <var name="$start"/> of
+              gasoline in <var name="$p->their"/> tank. <var name="$p->Their"/> car, <em>under ideal
+              conditions</em>, uses gas at a rate of <var name="$rate"/>. When the tank reaches only
+              one gallon of gas, the low gas light will turn on and <var name="$p"/> will start
+              looking for a gas station. How far will <var name="$p->they"/> drive before this
+              happens?
+            </p>
+          </introduction>
+          <task>
+            <statement>
+              <p>
+                Write an inequality to represent this situation, using <m>x</m> to represent how
+                many miles <var name="$p"/> might drive before the low gas light turns on.
+              </p>
+              <p>
+                <var name="$relation" width="16"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                This is a rate exercise, and we can use
+                <me>
+                  (\text{initial value}) \pm (\text{rate})\cdot\text{variable} \mathrel{?} (\text{final value})
+                </me>
+                The question mark in the above is not an equal sign, because we are trying to set
+                up an inequality. The initial value for the gas in <var name="$p->their"/> tank is
+                <m><var name="$b"/></m>, <var name="$p"/> is losing gas (so we will subtract, not
+                add), the rate is <m><var name="$m"/></m>, and the gas amount we are interested in
+                reaching is <m>1</m>. We do not know far <var name="$p"/> can drive until the gas
+                gets that low, and we decide to use <m>x</m> to represent that distance. The rate of
+                gas consumption we are using is only valid under ideal conditions. So the quantity
+                <m><var name="$b"/> - <var name="$m"/> x</m> will be <em>greater</em> than or equal
+                to the actual amount of gas left in the tank after driving <m>x</m> miles. And we
+                want this to reach <m>1</m>. So the inequality we set up is:
+                <me>
+                  <var name="$relation"/>
+                </me>
+              </p>
+            </solution>
+          </task>
+          <task>
+            <statement>
+              <p>
+                Solve this inequality. At most how far will <var name="$p"/> drive before the low
+                gas light turns on?
+              </p>
+              <p>
+                <var name="$distance" width="16"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                <md>
+                  <mrow><var name="$solleft[0]"/> \geq <var name="$solright[0]"/></mrow>
+                  <mrow><var name="$solleft[1]"/> \geq <var name="$solright[1]"/></mrow>
+                  <mrow><var name="$solleft[2]"/> \leq <var name="$solright[2]"/></mrow>
+                  <mrow>x \leq <var name="$sol"/></mrow>
+                </md>
+                So <var name="$p"/> can drive at most <m><var name="$sol"/></m> miles.
+              </p>
+            </solution>
+          </task>
+          <task>
+            <statement>
+              <p>
+                Use interval notation to express the number of miles <var name="$p"/> might drive
+                before the low gas light turns on.
+              </p>
+              <p>
+                <var name="$interval" width="16"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                <var name="$p"/> can drive at most <m><var name="$sol"/></m> miles, so the right
+                end of the interval notation for this interval will be <m><var name="$sol"/></m>,
+                with a bracket. We know <var name="$p"/> has more than 1 gallon of gas when this all
+                started, so <var name="$p->they"/> can drive at least some positive number of miles.
+                So the interval notation, accounting for the context of this exercise, is
+                <m><var name="$interval"/></m>.                
+              </p>
+            </solution>
+          </task>
+        </webwork>
+      </exercise>
+      <exercise label="time-to-boil-inequality">
+        <webwork xml:id="webwork-time-to-boil-inequality">
+          <pg-macros>
+            <macro-file>parserLinearRelation.pl</macro-file>
+          </pg-macros>
+          <pg-code>
+            $b = random(40,60);
+            $m = random(20,30);
+            $sol = (212 - $b)/$m;
+            $time = NumberWithUnits($sol, 'min');
+            Context("Interval");
+            Context()->flags->set(ignoreEndpointTypes => 1);
+            $interval = Interval("[$sol,inf)");
+            Context("LinearRelation")->variables->are(x => 'Real');
+            Context()->noreduce('(-x)-y', '(-x)+y');
+            $relation = Formula("$b+$m x >= 212");
+          </pg-code>
+          <introduction>
+            <p>
+              Water straight out of the tap is <m><var name="$b"/></m> degrees Fahrenheit, and you
+              fill a tea kettle. You place the tea kettle on an old stove burner and turn on the
+              burner, but the heating element is old and not working well. At <em>best</em>, it
+              begins raising the temperature inside the kettle at a rate of <m><var name="$m"/></m>
+              degrees Fahrenheit per minute. How long will it take to boil the water? (Water boils
+              at <m>212</m> degrees Fahrenheit.)
+            </p>
+          </introduction>
+          <task>
+            <statement>
+              <p>
+                Write an inequality to represent this situation, using <m>x</m> to represent how
+                many minutes it will take for the water to boil.
+              </p>
+              <p>
+                <var name="$relation" width="16"/>
+              </p>
+            </statement>
+          </task>
+          <task>
+            <statement>
+              <p>
+                Solve this inequality. At best, how long will it take for the water to boil?
+              </p>
+              <p>
+                <var name="$time" width="16"/>
+              </p>
+            </statement>
+          </task>
+          <task>
+            <statement>
+              <p>
+                Use interval notation to express the number of minutes it might take for the water
+                to boil.
+              </p>
+              <p>
+                <var name="$interval" width="16"/>
+              </p>
+            </statement>
+          </task>
+        </webwork>
+      </exercise>
+      <exercise label="electric-bill-inequality">
+        <webwork xml:id="webwork-electric-bill-inequality">
+          <pg-macros>
+            <macro-file>randomPerson.pl</macro-file>
+            <macro-file>parserLinearRelation.pl</macro-file>
+          </pg-macros>
+          <pg-code>
+            $p = randomPerson();
+            $b = random(32,37);
+            $d = random(2,2.5,0.1);
+            $sol = (60 - $b)/$d;
+            $start = NumberWithUnits($b, 'min');
+            $distance = NumberWithUnits($d, 'mi');
+            $rate = NumberWithUnits($sol, 'min/mi');
+            Context("Interval");
+            Context()->flags->set(ignoreEndpointTypes => 1);
+            $interval = OneOf(Interval("(0,$sol)"), Interval("(-inf,$sol)"));
+            Context("LinearRelation")->variables->are(x => 'Real');
+            Context()->noreduce('(-x)-y', '(-x)+y');
+            $relation = Formula("$b+x*$d &lt; 60");
+          </pg-code>
+          <introduction>
+            <p>
+              <var name="$p"/> is a runner, and set out this morning on a jog with a goal to reach a
+              nearby summit and return home in under one hour. <var name="$p->They"/> jogged a
+              steady uphill path to the top of the nearby summit, and it took <var name="$start"/>
+              to get there. Now jogging home, <var name="$p->they"/> will run a distance of
+              <var name="$distance"/>. What will <var name="$p->their"/> rate (in minutes per mile)
+              need to be in order to make the goal of returning home in under 60 minutes?
+            </p>
+          </introduction>
+          <task>
+            <statement>
+              <p>
+                Write an inequality to represent this situation, using <m>x</m> to represent
+                <var name="$p"/>'s jogging rate in minutes per mile.
+              </p>
+              <p>
+                <var name="$relation" width="16"/>
+              </p>
+            </statement>
+          </task>
+          <task>
+            <statement>
+              <p>
+                Solve this inequality. <var name="$p"/>'s jogging rate needs to beat what rate?
+              </p>
+              <p>
+                <var name="$rate" width="16"/>
+              </p>
+            </statement>
+          </task>
+          <task>
+            <statement>
+              <p>
+                Use interval notation to express what <var name="$p"/>'s jogging rate (in minutes
+                per mile) might be.
+              </p>
+              <p>
+                <var name="$interval" width="16"/>
+              </p>
+            </statement>
+          </task>
+        </webwork>
+      </exercise>
+      <exercise label="population-inequality">
+        <webwork xml:id="webwork-population-inequality">
+          <pg-macros>
+            <macro-file>parserLinearRelation.pl</macro-file>
+          </pg-macros>
+          <pg-code>
+            $r = random(5,10);
+            $c = random(80000,100000);
+            $sol = round($c/(1 + $r/100));
+            Context("Interval");
+            Context()->flags->set(ignoreEndpointTypes => 1);
+            $interval = Interval("[10000,$sol)");
+            Context("LinearRelation")->variables->are(x => 'Real');
+            Context()->noreduce('(-x)-y', '(-x)+y');
+            $relation = Formula("x + ($r/100)x &lt; $c");
+          </pg-code>
+          <introduction>
+            <p>
+              The population of a certain country grew by <m><var name="$r"/>\%</m> over the course
+              of the past decade. One city in this country grew in population too, but at an
+              <em>even faster</em> rate than the country grew overall. The city's current population
+              is <m><var name="$c"/></m>. What might its population have been ten years ago? (Note:
+              the population ten years ago is known to have been at least <m>10{,}000</m>.)
+            </p>
+          </introduction>
+          <task>
+            <statement>
+              <p>
+                Write an inequality to represent this situation, using <m>x</m> to represent the
+                city's population from ten years ago.
+              </p>
+              <p>
+                <var name="$relation" width="16"/>
+              </p>
+            </statement>
+          </task>
+          <task>
+            <statement>
+              <p>
+                Solve this inequality. What's the most the population could have been ten years ago?
+              </p>
+              <p>
+                <var name="$sol" width="16"/>
+              </p>
+            </statement>
+          </task>
+          <task>
+            <statement>
+              <p>
+                Use interval notation to express what the city's population could have been ten
+                years ago.
+              </p>
+              <p>
+                <var name="$interval" width="16"/>
+              </p>
+            </statement>
+          </task>
+        </webwork>
+      </exercise>
+      <exercise label="restaurant-tip-inequality">
+        <webwork xml:id="webwork-restaurant-tip-inequality">
+          <pg-macros>
+            <macro-file>randomPerson.pl</macro-file>
+            <macro-file>parserLinearRelation.pl</macro-file>
+          </pg-macros>
+          <pg-code>
+            $p = randomPerson();
+            $r = list_random(18,20);
+            $c = random(85,185,5);
+            $sol = $c/(1 + $r/100);
+            Context("Currency");
+            $bill = Currency("$sol");
+            Context("Interval");
+            Context()->flags->set(ignoreEndpointTypes => 1);
+            $interval = Interval("[50,$sol]");
+            Context("LinearRelation")->variables->are(x => 'Real');
+            Context()->noreduce('(-x)-y', '(-x)+y');
+            $relation = Formula("x + ($r/100)x &lt;= $c");
+          </pg-code>
+          <introduction>
+            <p>
+              The bill at a restaurant came and <var name="$p"/> offered to pay for the whole table.
+              We are not sure what the bill was, but it was at least <m>\$50</m>.
+              <var name="$p"/> added a tip, and the total came to <m>\$<var name="$c"/></m>. We are
+              sure that <var name="$p->they"/> added <em>at least</em> <m><var name="$r"/>\%</m>
+              tip. What might the original bill total have been before tip?
+            </p>
+          </introduction>
+          <task>
+            <statement>
+              <p>
+                Write an inequality to represent this situation, using <m>x</m> to represent the
+                bill total before tip was added.
+              </p>
+              <p>
+                <var name="$relation" width="16"/>
+              </p>
+            </statement>
+          </task>
+          <task>
+            <statement>
+              <p>
+                Solve this inequality. What's the most the bill could have been before tip?
+              </p>
+              <p>
+                <var name="$bill" width="16"/>
+              </p>
+            </statement>
+          </task>
+          <task>
+            <statement>
+              <p>
+                Use interval notation to express what the bill could have been before tip was added.
+              </p>
+              <p>
+                <var name="$interval" width="16"/>
+              </p>
+            </statement>
+          </task>
+        </webwork>
+      </exercise>
+    </subexercises>
+  </exercises>
+</section>
+

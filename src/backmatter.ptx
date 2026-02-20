@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2026                                                       -->
+<!-- Alex Jordan                                                          -->
+<!-- *********************************************************************-->
+<backmatter xml:id="backmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Appendices</title>
+
+  <appendix xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="appendix-basic-algebra-review">
+    <title>Basic Algebra Review</title>
+    <introduction>
+      <p>
+        This appendix is intended to review topics from basic math and basic algebra.
+      </p>
+    </introduction>
+    <xi:include href="section-fractions-and-fraction-arithmetic.ptx"/>
+    <xi:include href="section-order-of-operations.ptx"/>
+    <xi:include href="section-combining-like-terms.ptx"/>
+    <xi:include href="section-algebraic-properties-and-simplifying-expressions.ptx"/>
+    <xi:include href="section-comparison-symbols-and-notation-for-intervals.ptx"/>
+    <xi:include href="section-equations-inequalities-and-solutions.ptx"/>
+    <xi:include href="section-solving-one-step-equations.ptx"/>
+    <xi:include href="section-multiplying-polynomials.ptx"/>
+  </appendix>
+
+  <solutions divisional="answer" admit="odd">
+    <title>Answers to Exercises</title>
+  </solutions>
+
+  <index>
+    <title>Index</title>
+    <index-list/>
+  </index>
+</backmatter>
+
