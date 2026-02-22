@@ -174,8 +174,19 @@
 
 \begin{document}
 \begin{tikzpicture}
-  \begin{axis}[numberline, xlabel={\(z\)}]
-    \addplot[openinfiniteinterval] coordinates {(-4,0) (10,0)};
+  \begin{axis}[
+      xmin = -7,
+      xmax = 7,
+      ymin = -7,
+      ymax = 7,
+      xtick =,
+      ytick =,
+      minor xtick = {-7,...,7},
+      minor ytick = {-7,...,7},
+      grid = minor,
+      width=0.33\orccaprintwidth
+    ]
+    \addplot+[domain=-7:3] {-1*x+-4};
   \end{axis}
 \end{tikzpicture}
 

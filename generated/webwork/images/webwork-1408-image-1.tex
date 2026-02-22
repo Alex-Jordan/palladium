@@ -1,5 +1,6 @@
 \documentclass{standalone}
 \usepackage[svgnames]{xcolor}
+\usepackage{tikz}
 \newlength{\orccaprintwidth}
 \setlength{\orccaprintwidth}{350pt}
 \usepackage{pgfplots}
@@ -20,11 +21,9 @@
 \definecolor{ruby}{HTML}{9e0c0f}
 \definecolor{turquoise}{HTML}{008099}
 \definecolor{emerald}{HTML}{1c8464}
-\definecolor{lightemerald}{HTML}{12A983} %(lightened to contrast ratio just above 7 with black)
-\definecolor{sapphire}{HTML}{3b5a7d}
-\definecolor{lightsapphire}{HTML}{7898bf} %(lightened to contrast ratio just above 7 with black)
 \definecolor{amber}{HTML}{c7502a}
 \definecolor{amethyst}{HTML}{70485b}
+\definecolor{sapphire}{HTML}{263c53}
 \colorlet{firstcolor}{ruby}
 \colorlet{secondcolor}{turquoise}
 \colorlet{thirdcolor}{emerald}
@@ -143,51 +142,55 @@
 %%% other tikz (not pgfplots) settings %%%
 %\tikzset{axisnode/.style={font=\scriptsize,text=black}}
 \tikzset{>=stealth}
-%%% for nested diagram in types of numbers section %%%
-\newcommand\drawnestedsets[4]{
-  \def\position{#1}             % initial position
-  \def\nbsets{#2}               % number of sets
-  \def\listofnestedsets{#3}     % list of sets
-  \def\reversedlistofcolors{#4} % reversed list of colors
-  % position and draw labels of sets
-  \coordinate (circle-0) at (#1);
-  \coordinate (set-0) at (#1);
-  \foreach \set [count=\c] in \listofnestedsets {
-    \pgfmathtruncatemacro{\cminusone}{\c - 1}
-    % label of current set (below previous nested set)
-    \node[below=3pt of circle-\cminusone,inner sep=0]
-    (set-\c) {\set};
-    % current set (fit current label and previous set)
-    \node[circle,inner sep=0,fit=(circle-\cminusone)(set-\c)]
-    (circle-\c) {};
-  }
-  % draw and fill sets in reverse order
-  \begin{scope}[on background layer]
-    \foreach \col[count=\c] in \reversedlistofcolors {
-      \pgfmathtruncatemacro{\invc}{\nbsets-\c}
-      \pgfmathtruncatemacro{\invcplusone}{\invc+1}
-      \node[circle,draw,fill=\col,inner sep=0,
-      fit=(circle-\invc)(set-\invcplusone)] {};
-    }
-  \end{scope}
-  }
+
+%\iffalse
+\colorlet{chaptercolor}{black}
+\colorlet{ruby}{black}
+\colorlet{turquoise}{black}
+\colorlet{emerald}{black}
+\colorlet{amber}{black}
+\colorlet{amethyst}{black}
+\colorlet{sapphire}{black}
+\colorlet{firstcolor}{black}
+\colorlet{secondcolor}{black!70!white}
+\colorlet{thirdcolor}{gray}
+\colorlet{fourthcolor}{gray}
+\colorlet{fifthcolor}{gray}
+\colorlet{sixthcolor}{gray}
+\colorlet{highlightcolor}{gray}
+\colorlet{yellow}{white}
+\colorlet{graphbackground}{white}
+\colorlet{wood}{gray!60!white}
+\colorlet{blue}{black}
+\colorlet{red}{black}
+\colorlet{cyan}{black}
+\colorlet{green}{black!15!white}
+\colorlet{orange}{black!25!white}
+\colorlet{brown}{black!35!white}
+\colorlet{magenta}{gray}
+\definecolor{lightgray}{HTML}{959594}
+\colorlet{lightsapphire}{lightgray!50}
+\colorlet{lightemerald}{lightgray}
+%\fi
 
 \begin{document}
 \begin{tikzpicture}
-  \begin{axis}[
-      width=0.47\orccaprintwidth,
-      xmin=-10,
-      xmax=10,
-      ymin=-10,
-      ymax=10,
-      xtick={-10,-5,5,10},
-      ytick={-10,-5,5,10},
-      minor xtick={-10,...,10},
-      minor ytick={-10,...,10},
-    ]
-    \addplot+[domain=-2.6:1.4] {-5*x + -3};
-  \end{axis}
+\begin{axis}[
+    xmin = -20,
+    xmax = 20,
+    ymin = -18,
+    ymax = 18,
+    xtick =,
+    ytick =,
+    minor xtick = {-20,...,20},
+    minor ytick =,
+  ]
+  \addplot[firstcurve,domain=-20:-1.06580071972344,samples=50] {6/(x - -1)/(x - 4)};
+  \addplot[firstcurve,domain=-0.932419919887737:3.93241991988774,samples=50] {6/(x - -1)/(x - 4)};
+  \addplot[firstcurve,domain=4.06580071972344:20,samples=50] {6/(x - -1)/(x - 4)};
+  \addplot[asymptote] coordinates {(-1,-18) (-1,18)};
+  \addplot[asymptote] coordinates {(4,-18) (4,18)};
+\end{axis}
+
 \end{tikzpicture}
-
-
 \end{document}

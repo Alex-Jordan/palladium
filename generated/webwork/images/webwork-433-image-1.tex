@@ -175,15 +175,17 @@
 \begin{document}
 \begin{tikzpicture}
   \begin{axis}[
-      xmin=-2,
-      xmax=8=,
-      ymin=-2,
-      ymax=8,
-      ytick=,
-      xtick=,
-      width=0.47\orccaprintwidth
+      width=0.47\orccaprintwidth,
+      xmin=-10,
+      xmax=10,
+      ymin=-10,
+      ymax=10,
+      xtick={-10,-5,5,10},
+      ytick={-10,-5,5,10},
+      minor xtick={-10,...,10},
+      minor ytick={-10,...,10},
     ]
-    \addplot+[domain=-2:8] {-1/2*x + 6};
+    \addplot+[domain=-1.4:2.6] {-5*x + 3};
   \end{axis}
 \end{tikzpicture}
 

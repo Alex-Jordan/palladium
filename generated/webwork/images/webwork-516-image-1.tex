@@ -175,11 +175,9 @@
 \begin{document}
 \begin{tikzpicture}
   \begin{axis}[
-      width=0.47\orccaprintwidth,
+      width=0.33\orccaprintwidth,
     ]
-    \addplot+[guideline] coordinates {(1,4) (6,4) (6,6)};
-    \addplot[soliddot] coordinates {(1,4)};
-    \addplot {2/5*(x-1)+4};
+    \addplot[firstcurve, domain=(15/8):7]{(4-(8/3)*(x-3))};
   \end{axis}
 \end{tikzpicture}
 

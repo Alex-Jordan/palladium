@@ -175,10 +175,18 @@
 \begin{document}
 \begin{tikzpicture}
   \begin{axis}[
-      width=0.47\orccaprintwidth
+      xmin=-10,
+      xmax=10,
+      ymin=-10,
+      ymax=10,
+      xtick = {-10,-5,5,10},
+      minor xtick = {-10,...,10},
+      ytick = {-10,-5,5,10},
+      minor ytick = {-10,...,10},
+      width=0.47\orccaprintwidth,
     ]
-    \addplot[firstcurve, domain=-6:7]{x-1};
-    \addplot[secondcurve, domain=-2:7]{5-x};
+    \addplot[firstcurve,-,domain=-10:10]{(2*x-4)};
+    \addplot[secondcurve,-,domain=-10:10]{(-(5/3)*x+7)};
   \end{axis}
 \end{tikzpicture}
 
