@@ -11,7 +11,7 @@
       Imagine an equation with fractions present in the coefficients or terms, for example:                   <idx><h>Equation(s)</h><h>with fractions</h></idx>
       <me>\frac{1}{4}x+\frac{2}{3}=\frac{1}{6}</me>                                                           <idx><h>Fraction</h><h>linear equations with</h></idx>
       We could solve this using the same steps from                                                           <idx><h>Linear equations</h><h>with fractions</h></idx>
-      <xref ref="section-solving-multistep-linear-equations"/>. We'd have to do some fraction
+      <xref ref="section-linear-equations-and-inequalities"/>. We'd have to do some fraction
       subtraction, followed by some fraction division. In other words, we'd use fraction arithmetic,
       which is a bit more likely to lead to human error than whole number arithmetic.
     </p>
@@ -171,7 +171,7 @@
           </p>
           <p>
             From here it is straightforward to use steps from
-            <xref ref="section-solving-multistep-linear-equations"/> to solve the equation. You can
+            <xref ref="section-linear-equations-and-inequalities"/> to solve the equation. You can
             try that on your own and you should find that it will take between <m>21</m> and
             <m>22</m> minutes for the container to only have <m>8</m> ounces of water left.
           </p>

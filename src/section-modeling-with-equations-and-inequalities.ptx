@@ -8,18 +8,18 @@
 
   <introduction>
     <p>
-      Math allows you to model real situations and then use that model to ask and answer questions
-      about the real world. In this section, we practice setting up an equation (or inequality) from
-      a contextualized scenario, which is a form of modeling.
+      Math allows you to model real situations and then use that model to answer questions about the
+      real world. In this section, we practice setting up an equation (or inequality) from a
+      contextualized scenario, which is a form of modeling.
     </p>
 
-    <figure>
+    <!-- <figure>
       <caption>Alternative Video Lesson</caption>
       <video youtubeplaylist="PLmuZCPhWPt-dL4to2zbHwZBLGkJ6cBf0I" />
-    </figure>
+    </figure> -->
   </introduction>
 
-  <subsection>
+  <!-- <subsection>
     <title>Translating Phrases into Algebraic Expressions and Equations/Inequalities</title>
     <p>
       There are certain short phrases and expressions in English that have mathematical meaning,              <idx><h>Algebraic translations of English phrases</h></idx>
@@ -202,7 +202,7 @@
       and inequalities will be helpful for word problems that do have context. In the exercises for
       this section, you will find such practice exercises.
     </p>
-  </subsection>
+  </subsection> -->
 
   <subsection xml:id="subsection-rate-models">
     <title>Rate Models</title>
@@ -210,14 +210,9 @@
       A <term>rate</term> is a measurement that tells us how much one quantity is changing with               <idx><h>Rate</h></idx>
       respect to how some other quantity is changing. For example, the number of people on earth
       is growing by about <m>2.6</m> people per second. Time is passing second by second, and as
-      that change in time happens, we have a net gain of about <m>2.6</m> people. The rate we are
-      discussing is <m>2.6\,\frac{\text{people}}{\text{s}}</m>. Note that the unit on this rate is
+      each second passes, we gain of about <m>2.6</m> people. The rate here is
+      <m>2.6\,\frac{\text{people}}{\text{s}}</m>. Note that the unit on the rate is
       fractional<mdash/>this is common with rates.
-    </p>
-
-    <p>
-      One common class of modeling applications involve rates like these. Let's examine a first
-      example.
     </p>
 
     <example xml:id="example-savings-pattern">
@@ -242,9 +237,9 @@
       </p>
 
       <p>
-        If you have any uncertainty about understanding a rate value, it can help to make a table.
-        We know the account balance is changing month by month, so it makes sense to track the
-        months and the account balance.
+        If there's a rate that you don't quite understand, it can help to make a table. We know the
+        account balance is changing month by month, so it makes sense to track the months and the
+        account balance.
       </p>
 
       <tabular>
@@ -279,32 +274,30 @@
       </tabular>
 
       <p>
-        In the first column, we go up by one month from one row to the next. In the second
-        column, we go up by <m>\$150</m> from one row to the next. If you are able to build a table
-        like this, then you are dealing with a rate. In the second column, values increase by
-        <m>150</m> dollars. In the first column, values increase by <m>1</m> month. The rate we
-        are working with comes from dividing these:
-        <m>\frac{150\,\text{dollars}}{1\,\text{month}}</m>, which is just
+        If you are able to build a table like this, then you are dealing with a rate. In the second
+        column, values increase by <m>150</m> dollars from row to row. In the first column, values
+        increase by <m>1</m> month. The rate we are working with comes from dividing these:
+        <m>\frac{150\,\text{dollars}}{1\,\text{month}}</m>, which is
         <m>150\,\frac{\text{dollar}}{\text{month}}</m>.
       </p>
 
       <p>
-        Now that we've spent time making sure we understand the meaning of the numbers in this
-        story, we can try to do what we were asked to do: write an equation where the solution
-        represents how much time it will take to reach <m>\$1700</m>. It's kind of a big deal to
-        <em>clearly identify what variable</em> we will use. Our task is to write an equation where
-        the solution represents <q>how much time<ellipsis/></q> and we are measuring time in months.
-        So one perfectly fine choice we can make is to let <m>m</m> be our variable, where <m>m</m>
-        stands for the number of months it will take to reach <m>\$1700</m>. (Another common choice
-        would be to use <m>t</m>, since it stands for an amount of time.)
+        We spent time trying to truly understand the meaning of the numbers in this story. So now we
+        will try to do what we were asked to do: write an equation where the solution represents how
+        much time it will take to reach <m>\$1700</m>. It's kind of a big deal to first <em>clearly
+        identify what variable</em> we will use. Since our task is to find
+        <q>how much time<ellipsis/></q> and we are measuring time in months, we choose to let
+        <m>m</m> be our variable. That is, <m>m</m> will stand for the number of months it will take
+        to reach <m>\$1700</m>. (Another good choice would be to use <m>t</m>, since it stands for
+        an amount of time.)
       </p>
 
       <p>
-        What will the equation look like? For this example, let's return to the table we made
-        earlier. Was there a pattern connecting the left column to the right column? For example in
-        the left column there is a row where <m>3</m> months have passed. At that time, we have
-        <m>\$950</m>. How did that <m>\$950</m> come about? Well, we started with <m>\$500</m> and
-        then added <m>\$150</m> not once, not twice, but three times. As an equation:
+        What will the equation look like? For this example, let's return to the table. Was there a
+        pattern connecting the left column to the right column? In the left column there is a row
+        where <m>3</m> months have passed. At that time, we have <m>\$950</m>. How did that
+        <m>\$950</m> come about? Well, we started with <m>\$500</m> and then added <m>\$150</m> not
+        once, not twice, but three times. As an equation:
         <me>
           500+150(3)=950
         </me>
@@ -386,8 +379,8 @@
         (\text{initial value}) \pm (\text{rate})\cdot\text{variable} = (\text{final value})
       </men>
       and the variable represented how much the other quantity (time in this case, not the account
-      balance) has changed. The <m>\pm</m> is a <m>+</m> if the quantity is growing, and is a
-      <m>-</m> if the quantity is reducing. This is a common setup for modeling with rates.
+      balance) has changed. The <m>\pm</m> should be an addition sign if the quantity is growing,
+      and a subtraction sign if the quantity is reducing.
     </p>
 
     <example xml:id="example-bathtub">
@@ -397,8 +390,7 @@
           <quantity>
             <mag>2.5</mag><unit base="foot" exp="3"/>
           </quantity>
-          of water.
-          More water is being poured in at a rate of
+          of water. More water is being poured in at a rate of
           <quantity>
             <mag>1.75</mag><unit base="foot" exp="3"/>
           </quantity>
@@ -411,7 +403,7 @@
       </statement>
       <solution>
         <p>
-          In this example, we have an initial amount of water
+          We have an initial amount of water
           (<quantity>
             <mag>2.5</mag><unit base="foot" exp="3"/>
           </quantity>),
@@ -529,8 +521,8 @@
   <subsection>
     <title>Percent Applications</title>                                                                       <idx><h>Percent</h><h>applications</h></idx>
     <p>
-      Here we look at some scenarios where there is an equation to set up based on percentages.
-      One important consideration is that when doing math with percentages, it's almost always best
+      Here we look at some scenarios where there is an equation to set up based on percentages. An
+      important habit to develop when doing math with percentages, is that it's almost always best
       to rewrite each percentage as a decimal. For example, <m>18\%</m> should be written as                  <idx><h>Percent</h><h>as a decimal</h></idx>
       <m>0.18</m> if you are going to use it to do algebra or arithmetic.
     </p>
@@ -545,8 +537,8 @@
       </statement>
       <solution>
         <p>
-          As soon as you understand that the solution will be Jakobi's salary from last year, that
-          is when you should clearly define a variable. Since it will represent a salary, we choose
+          As soon as you are clear that the solution will be <q>Jakobi's salary from last year</q>,
+          that is when you should define a variable. Since it will represent a salary, we choose
           to use <m>S</m> as the variable. Let <m>S</m> represent Jakobi's salary from last year.
         </p>
         <p>
@@ -574,6 +566,7 @@
       can imagine other applications (like a discount at a clothing store) where the initial value
       is reduced, and then the <m>\pm</m> symbol would be a subtraction sign.
     </p>
+
     <p>
       Note the variable in Jakobi's situation is an initial value and it appears twice in the
       equation. This is common with percent application modeling.
@@ -591,7 +584,7 @@
         <statement>
           <p>
             Kirima offered to pay the bill and tip at a restaurant where she and her friends had
-            dinner. In total she paid <m>\$150</m> even, which meant the tip was a little more than
+            dinner. In total she paid <m>\$150</m> even, where the tip was a little more than
             <m>19\%</m>. We'd like to know what was the bill before tip. Set up an equation for this
             situation.
           </p>
@@ -792,7 +785,7 @@
       </statement>
       <response/>
     </exercise>
-    <exercise label="compare-subtraction-phrases">
+    <!-- <exercise label="compare-subtraction-phrases">
       <statement>
         <p>
           Is there any difference between these three phrases, or do they all mean the same thing?
@@ -804,7 +797,7 @@
         </p>
       </statement>
       <response/>
-    </exercise>
+    </exercise> -->
   </reading-questions>
 
   <exercises>
@@ -1012,7 +1005,7 @@
       </exercise>
     </subexercises>
 
-    <subexercises>
+    <!-- <subexercises>
       <title>Skills Practice</title>
       <exercisegroup cols="2">
         <title>Translating English into Math</title>
@@ -1869,7 +1862,7 @@
           </webwork>
         </exercise>
       </exercisegroup>
-    </subexercises>
+    </subexercises> -->
 
     <subexercises>
       <title>Applications</title>

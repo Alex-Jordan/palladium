@@ -5,8 +5,8 @@
 <!-- *********************************************************************-->
 <docinfo>
   <!-- Thumbnail for HTML -->
-  <brandlogo />
-  <document-id edition="0">palladium</document-id>
+  <!-- <brandlogo source=""/> -->
+  <!-- <document-id edition="0">palladium</document-id> -->
   <!-- For title into HTML head, then tabs, bookmarks, etc -->
   <initialism>Pd</initialism>
   <!-- Items peculiar to an HTML output -->

@@ -4,11 +4,6 @@
 <!-- Alex Jordan                                                          -->
 <!-- *********************************************************************-->
 <frontmatter xml:id="frontmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
-
-  <titlepage>
-    <titlepage-items/>
-  </titlepage>
-
   <bibinfo>
     <!-- <author>
       <personname>Faculty</personname>
@@ -37,5 +32,8 @@
     </copyright>
   </bibinfo>
 
+  <titlepage>
+    <titlepage-items/>
+  </titlepage>
 </frontmatter>
 

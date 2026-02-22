@@ -7,14 +7,15 @@
   <title>Linear</title>
   <introduction>
     <p>
-      In this chapter we learn the mechanical task of solving linear equations and inequalities.
-      For example, starting with an equation like <md>2x+5=7x</md>, a few steps later we will
-      conclude that <m>x</m> must be the number <m>1</m>.
+      This chapter is all about <q>linear</q> math expressions. Without getting into the weeds, an
+      example of a linear math expression is <m>2x+5</m>. A linear expression like this could come
+      out of a word problem, be on one side of an equation like <m>2x+5=7</m>, be part of a function
+      formula like <m>f(x)=2x+5</m>, be part of an equation to graph such as <m>y=2x+5</m>, and much
+      more.
     </p>
   </introduction>
   <xi:include href="section-modeling-with-equations-and-inequalities.ptx"/>
-  <xi:include href="section-solving-multistep-linear-equations.ptx"/>
-  <xi:include href="section-solving-multistep-linear-inequalities.ptx"/>
+  <xi:include href="section-linear-equations-and-inequalities.ptx"/>
   <xi:include href="section-equations-and-inequalities-with-fractions.ptx"/>
   <xi:include href="section-special-solution-sets.ptx"/>
   <xi:include href="section-isolating-a-linear-variable.ptx"/>
