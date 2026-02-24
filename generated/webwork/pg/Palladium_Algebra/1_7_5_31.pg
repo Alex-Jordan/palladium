@@ -1,6 +1,6 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-21T15:38:34-08:00       
+###       on 2026-02-23T21:52:58-08:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -30,9 +30,7 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "niceTables.pl",
-  "contextForm.pl",
-  "parserPopUp.pl",
+  "contextFraction.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -45,65 +43,29 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context('Numeric');
-$m = random(-9,-2,1);
-$absm = abs($m);
-$b = random(50,100,1);
-$f = Formula("$m x + $b");
-$start = random(0,10,1);
-@x = map{$_+$start}(0..5);
-@y = map{$f->eval(x=>$_)}(@x);
-$yes = DropDown(['yes','no'], 0, showInStatic => 0);
-$no = DropDown(['yes','no'], 1, showInStatic => 0);
+@x = num_sort(random_subset(3, 1..9));
+@y = num_sort(random_subset(3, 1..19));
+Context("LimitedFraction")->flags->set(requirePureFractions => 1, showMixedNumbers => 0);
+$m[0] = Fraction($y[1] - $y[0], $x[1] - $x[0]);
+$m[1] = Fraction($y[2] - $y[0], $x[2] - $x[0]);
+$m[2] = Fraction($y[2] - $y[1], $x[2] - $x[1]);
+$m = max(@m);
+Context("Point");
+@p = map {Point($x[$_], $y[$_])} (0..2);
+@p = random_subset(3, @p);
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Does the table show that [`x`] and [`y`] have a linear relationship?
+Determine the steepest slope for a line connecting two points from the list.
 
->> [@DataTable(
-  [
-    [[PGML('[`x`]'),
-      rowbottom => '2',
-      midrule => '1',],
-     PGML('[`y`]'),
-    ],
-    [PGML('[`[$x[0]]`]'),
-     PGML('[`[$y[0]]`]'),
-    ],
-    [PGML('[`[$x[1]]`]'),
-     PGML('[`[$y[1]]`]'),
-    ],
-    [PGML('[`[$x[2]]`]'),
-     PGML('[`[$y[2]]`]'),
-    ],
-    [PGML('[`[$x[3]]`]'),
-     PGML('[`[$y[3]]`]'),
-    ],
-    [PGML('[`[$x[4]]`]'),
-     PGML('[`[$y[4]]`]'),
-    ],
-    [PGML('[`[$x[5]]`]'),
-     PGML('[`[$y[5]]`]'),
-    ],
-  ],
-      align => '*{2}{r}',
-      valign => 'middle',);@]* <<
+[`[$p[0]]\text{,}`] [`[$p[1]]\text{,}`] [`[$p[2]]`]
 
-[_]{$yes}{5}
+[_]{$m}{10}
 
 END_PGML
-
-############################################################
-# Solution
-############################################################
-
-BEGIN_PGML_SOLUTION
-As each [`x`]-value increases by [`1\text{,}`] the [`y`]-value decreases by [`[$absm]\text{.}`] So this table does show that [`x`] and [`y`] have a linear relationship.
-
-END_PGML_SOLUTION
 
 ############################################################
 # End Problem

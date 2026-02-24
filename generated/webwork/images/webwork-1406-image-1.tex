@@ -185,9 +185,11 @@
     minor xtick = {-20,...,20},
     minor ytick =,
   ]
-  \addplot[firstcurve,domain=-20:-3.11111111111111,samples=50] {2/(x - -3)};
-  \addplot[firstcurve,domain=-2.88888888888889:20,samples=50] {2/(x - -3)};
-  \addplot[asymptote] coordinates {(-3,-18) (-3,18)};
+  \addplot[firstcurve,domain=-20:-2.08166599946613,samples=50] {6/(x - -2)/(x - 2)};
+  \addplot[firstcurve,domain=-1.91485421551268:1.91485421551268,samples=50] {6/(x - -2)/(x - 2)};
+  \addplot[firstcurve,domain=2.08166599946613:20,samples=50] {6/(x - -2)/(x - 2)};
+  \addplot[asymptote] coordinates {(-2,-18) (-2,18)};
+  \addplot[asymptote] coordinates {(2,-18) (2,18)};
 \end{axis}
 
 \end{tikzpicture}

@@ -175,9 +175,18 @@
 \begin{document}
 \begin{tikzpicture}
   \begin{axis}[
+      xmin = -1,
+      xmax = 11,
+      ymin = -50,
+      ymax = 600,
+      xtick = {2,4,...,11},
+      minor xtick = {1,...,11},
+      ytick = {100,200,...,600},
+      minor ytick = {50,100,...,600},
       width=0.33\orccaprintwidth,
+      clip=false
     ]
-    \addplot[firstcurve, domain=(15/8):7]{(4-(8/3)*(x-3))};
+    \addplot[firstcurve, domain=-1:11]{(100-20*(x-9))};
   \end{axis}
 \end{tikzpicture}
 

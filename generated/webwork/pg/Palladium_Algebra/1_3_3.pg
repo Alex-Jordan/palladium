@@ -1,6 +1,6 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-12T21:52:51-08:00       
+###       on 2026-02-23T21:52:58-08:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -82,7 +82,7 @@ So to work out when there would be only [`8`] oz of water left, we write the fol
 \end{aligned}
 ```]
 
-From here it is straightforward to use steps from Section[$NBSP]*1 to solve the equation. You can try that on your own and you should find that it will take between [`21`] and [`22`] minutes for the container to only have [`8`] ounces of water left.
+From here it is straightforward to use steps from [|[cross-reference to target(s) "section-solving-multistep-linear-equations" missing or not unique]|]* to solve the equation. You can try that on your own and you should find that it will take between [`21`] and [`22`] minutes for the container to only have [`8`] ounces of water left.
 
 END_PGML_SOLUTION
 

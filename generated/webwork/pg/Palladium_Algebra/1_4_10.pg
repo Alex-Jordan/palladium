@@ -1,6 +1,6 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-21T15:38:34-08:00       
+###       on 2026-02-23T21:52:58-08:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -30,7 +30,9 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "parserNumberWithUnits.pl",
+  "parserOneOf.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -43,24 +45,17 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context('Numeric');
-$newUnits = [
-  {name=>'mL',conversion=>{factor=>1E-6,m=>3}},
-  {name=>'ml',conversion=>{factor=>1E-6,m=>3}},
-  {name=>'milliliters',conversion=>{factor=>1E-6,m=>3}},
-  {name=>'milliliter',conversion=>{factor=>1E-6,m=>3}},
-  {name=>'cc',conversion=>{factor=>1E-6,m=>3}},
-];
-$answer = NumberWithUnits("1.875 mL", {newUnit=>$newUnits});
+Context("FiniteSolutionSets");
+$solution = OneOf(Compute("R"), String("infinitely many solutions"))->cmp(typeMatch => Formula("{1}"));
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Infant Tylenol contains 160 mg of acetaminophen in each 5 mL of liquid. If Bao's baby is prescribed 60 mg of acetaminophen, how many milliliters of liquid should he give the baby?
+Solve for [`x`] in the equation [`3(x+2)-8=(5x+4)-2(x+1)\text{.}`]
 
-[_]{$answer}{10}
+[_]{$solution}{16}
 
 END_PGML
 
@@ -69,21 +64,26 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-Assume Bao should give [`q`] milliliters of liquid medicine, so we can set up the following proportion:
+A lot could be simplified on each side before continuing, by distributing and combining like terms.
 
-[```\newcommand{\multiplyleft}[2][\cdot]{{\highlight{{#2#1{}}}}}\newcommand{\divideunder}[2]{\frac{#1}{{\highlight{{#2}}}}}\newcommand{\amp}{&}
+[```\newcommand{\amp}{&}
 \begin{aligned}
-\frac{\text{amount of liquid medicine in mL}}{\text{amount of acetaminophen in mg}}\amp=\frac{\text{amount of liquid medicine in mL}}{\text{amount of acetaminophen in mg}}\\
-\frac{5\,\text{mL}}{160\,\text{mg}}\amp=\frac{q\,\text{mL}}{60\,\text{mg}}\\
-\frac{5}{160}\amp=\frac{q}{60}\\
-\multiplyleft{160\cdot 60}\cdot\frac{5}{160}\amp=\multiplyleft{160\cdot 60}\cdot\frac{q}{60}\\
-300\amp=160q\\
-\divideunder{300}{160}\amp=\divideunder{160q}{160}\\
-q\amp=1.875
+3(x+2)-8\amp=(5x+4)-2(x+1)\\
+3x+6-8\amp=5x+4-2x-2\\
+3x-2\amp=3x+2
 \end{aligned}
 ```]
 
-So to give 60 mg of acetaminophen to his baby, Bao should measure out 1.875 mL of the liquid medication.
+From here, we subtract [`3x`] from each side:
+
+[```\newcommand{\subtractright}[1]{{\highlight{{{}-#1}}}}\newcommand{\amp}{&}
+\begin{aligned}
+3x-2\subtractright{3x}\amp=3x+2\subtractright{3x}\\
+-2\amp=2
+\end{aligned}
+```]
+
+As the equation [`-2=2`] is outright false, there is no solution to this equation.
 
 END_PGML_SOLUTION
 

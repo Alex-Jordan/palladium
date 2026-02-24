@@ -1,6 +1,6 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-21T15:38:34-08:00       
+###       on 2026-02-23T21:52:58-08:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -30,11 +30,8 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PGlateximage.pl",
-  "PCCmacros.pl",
-  "contextInequalitySetBuilder.pl",
-  "parserGraphTool.pl",
-  "Pd.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -47,50 +44,18 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("Interval");
-$interval = Interval("(-inf,-1)");
-InequalitySetBuilder::UseVerticalSuchThat();
-Context("InequalitySetBuilder-Only");
-$setbuilder = Compute("{ x | x<-1}");
-$gt = GraphTool("{interval, $interval}")->with(
-  availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
-  numberLine => 1,
-  xAxisLabel => 'x',
-  bBox => [ -8, 8 ],
-  ticksDistanceX => 1,
-  minorTicksX => 0,
-  useBracketEnds => 1,
-  showInStatic => 0,
-  showCoordinateHints => 0,
-);
-
-$image_1 = createLaTeXImage();
-$image_1->addToPreamble(latexImagePreamble());
-$image_1->BEGIN_LATEX_IMAGE
-\begin{tikzpicture}
-  \begin{axis}[numberline]
-    \addplot[infiniteopeninterval] coordinates {(-10,0) (-1,0)};
-  \end{axis}
-\end{tikzpicture}
-
-END_LATEX_IMAGE
+Context("FiniteSolutionSets");
+Context()->variables->are(z=>'Real');
+$solution = Formula("{23}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Solve the inequality [`\newcommand{\gt}{>}-2-2(2x+1)\gt4-(3-x)\text{.}`] Graph the solution set on a number line. State the solution set using both interval notation and set-builder notation.
+Solve for [`z`] in [`-\frac{2}{5}z-\frac{3}{2}=-\frac{1}{2}z+\frac{4}{5}\text{.}`]
 
-[_]{$gt}{1}
-
-[@KeyboardInstructions('In interval notation.')@]**
-
-[_]{$interval}{12}
-
-[@KeyboardInstructions('In set-builder notation. (If needed, type [|inf|]* or [|infinity|]* for [`\infty\text{,}`] [|>=|]* for [`\geq\text{,}`] and [|<=|]* for [`\leq\text{.}`])')@]**
-
-[_]{$setbuilder}{12}
+[_]{$solution}{20}
 
 END_PGML
 
@@ -99,58 +64,32 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-We start by simplifying the two sides.
+With fractions present, we decide to identify the LCD. The denominators are [`2`] and [`5\text{,}`] so the LCD is [`10\text{.}`] And so our first algebra step is to multiply each side of the equation by [`10\text{:}`]
 
-[```\newcommand{\gt}{>}\newcommand{\amp}{&}
+[```\newcommand{\multiplyleft}[2][\cdot]{{\highlight{{#2#1{}}}}}\newcommand{\amp}{&}
 \begin{aligned}
--2-2(2x+1)\amp\gt4-(3-x)\\
--2-4x-2\amp\gt4-3+x\\
--4x-4\amp\gt1+x
+-\frac{2}{5}z-\frac{3}{2}\amp=-\frac{1}{2}z+\frac{4}{5}\\
+\multiplyleft{10}\left(-\frac{2}{5}z-\frac{3}{2}\right)\amp=\multiplyleft{10}\left(-\frac{1}{2}z+\frac{4}{5}\right)\\
+10\left(-\frac{2}{5}z\right)-10\left(\frac{3}{2}\right)\amp=10\left(-\frac{1}{2}z\right)+10\left(\frac{4}{5}\right)\\
+-4z-15\amp=-5z+8\\
+z-15\amp=8\\
+z\amp=23
 \end{aligned}
 ```]
 
-And now add/subtract terms to separate the variable terms and the constant terms.
+Checking the solution [`23\text{:}`]
 
-[```\newcommand{\addright}[1]{{\highlight{{{}+#1}}}}\newcommand{\subtractright}[1]{{\highlight{{{}-#1}}}}\newcommand{\gt}{>}\newcommand{\amp}{&}
+[```\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}\newcommand{\confirm}[1]{\stackrel{\checkmark}{#1}}\newcommand{\wonder}[1]{\stackrel{\text{?}}{#1}}\newcommand{\amp}{&}
 \begin{aligned}
--4x-4\addright{4}\subtractright{x}\amp\gt1+x\addright{4}\subtractright{x}\\
--5x\amp\gt5
+-\frac{2}{5}z-\frac{3}{2}\amp=-\frac{1}{2}z+\frac{4}{5}\\
+-\frac{2}{5}(\substitute{23})-\frac{3}{2}\amp\wonder{=}-\frac{1}{2}(\substitute{23})+\frac{4}{5}\\
+-\frac{46}{5}-\frac{3}{2}\amp\wonder{=}-\frac{23}{2}+\frac{4}{5}\\
+-\frac{92}{10}-\frac{15}{10}\amp\wonder{=}-\frac{115}{10}+\frac{8}{10}\\
+-\frac{107}{10}\amp\confirm{=}-\frac{107}{10}
 \end{aligned}
 ```]
 
-And now divide each side by [`-5\text{.}`] Since we are dividing by a negative number, the inequality sign will change direction.
-
-[```\newcommand{\lt}{<}x\lt-1```]
-
-Graphically, we represent this solution set as:
-
->> [@image(insertGraph($image_1), width=>600)@]*  <<
-
-Using interval notation, we write the solution set as [`(-\infty,-1)\text{.}`] Using set-builder notation, we write it as [`\newcommand{\lt}{<}\{x \mid x \lt -1\}\text{.}`]
-
-We should check that some number less than [`-11`] _is_ a solution, that [`-1`] itself is _not_ a solution, and that some number greater than [`-1`] is _not_ a solution.
-
-[```\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}\newcommand{\confirm}[1]{\stackrel{\checkmark}{#1}}\newcommand{\wonder}[1]{\stackrel{\text{?}}{#1}}\newcommand{\gt}{>}\newcommand{\amp}{&}
-\begin{aligned}
--2-2(2(\substitute{-2})+1)\amp\wonder{\gt}4-(3-(\substitute{-2}))\\
--2-2(-4+1)\amp\wonder{\gt}4-5\\
--2-2(-3)\amp\wonder{\gt}-1\\
--2+6\amp\wonder{\gt}-1\\
-4\amp\confirm{\gt}-1
-\end{aligned}
-```]
-
-[```\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}\newcommand{\reject}[1]{\stackrel{\text{no}}{#1}}\newcommand{\wonder}[1]{\stackrel{\text{?}}{#1}}\newcommand{\gt}{>}\newcommand{\amp}{&}
-\begin{aligned}
--2-2(2(\substitute{-1})+1)\amp\wonder{\gt}4-(3-(\substitute{-1})) \amp -2-2(2(\substitute{0})+1)\amp\wonder{\gt}4-(3-(\substitute{0}))\\
--2-2(-2+1)\amp\wonder{\gt}4-4 \amp -2-2(0+1)\amp\wonder{\gt}4-3\\
--2-2(-1)\amp\wonder{\gt}0 \amp -2-2(1)\amp\wonder{\gt}1\\
--2+2\amp\wonder{\gt}0 \amp -2-2\amp\wonder{\gt}1\\
-0\amp\reject{\gt}0 \amp -4\amp\reject{\gt}1
-\end{aligned}
-```]
-
-Everything worked out as expected, so our solution is reasonably checked.
+So the solution is [`23`] and so the solution set is [`\{23\}\text{.}`]
 
 END_PGML_SOLUTION
 

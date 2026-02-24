@@ -1,6 +1,6 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-21T15:38:34-08:00       
+###       on 2026-02-23T21:52:58-08:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -43,26 +43,26 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("LimitedFraction")->flags->set(allowMixedNumbers => 0, showMixedNumbers => 0);
+Context("LimitedFraction")->flags->set(requirePureFractions => 1, showMixedNumbers => 0);
 do {
-  @a = random_subset(8, -9 .. -1, 1 .. 9);
-  @x = map {Fraction($a[$_], $a[$_ + 1])} (0, 2);
-} until ($x[0] != $x[1]); 
-@y = map {Fraction($a[$_], $a[$_ + 1])} (4, 6);
-$A = Point($x[0], $y[0]);
-$B = Point($x[1], $y[1]);
+  $x[0] = Fraction(random_coprime([-9 .. -1, 1 .. 9], [2 .. 9]));
+  $x[1] = Fraction(random_coprime([-9 .. -1, 1 .. 9], [2 .. 9]));
+} until ($x[0] != $x[1]);
+$y[0] = Fraction(random_coprime([-9 .. -1, 1 .. 9], [2 .. 9]));
+$y[1] = Fraction(random_coprime([-9 .. -1, 1 .. 9], [2 .. 9]));
 $m = ($y[1] - $y[0])/($x[1] - $x[0]);
+@p = map {Point($x[$_], $y[$_])} (0,1);
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Find the rate of change between the two given points.
+Find the slope of the line passing through the two given points.
 
-[`[$A]`] and [`[$B]`]
+[`[$p[0]]`] and [`[$p[1]]`]
 
-[_]{$m}{5}
+[_]{$m}{10}
 
 END_PGML
 

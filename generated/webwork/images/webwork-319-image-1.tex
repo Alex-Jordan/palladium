@@ -175,17 +175,18 @@
 \begin{document}
 \begin{tikzpicture}
   \begin{axis}[
-      xmin=-6,
-      ymin=-6,
-      xmax=6,
-      ymax=6,
+      xmin=-10,
+      ymin=-10,
+      xmax=100,
+      ymax=100,
       xtick=,
       ytick=,
-      minor xtick={-5,...,5},
-      minor ytick={-5,...,5},
+      minor xtick=,
+      minor ytick=,
       width=0.33\orccaprintwidth,
     ]
-    \addplot[soliddot] coordinates {(-2,-3) (3,4)};
+    \addplot[soliddot] coordinates {(36,26)} node[above] {(36,26)};
+    \addplot[soliddot] coordinates {(71,74)} node[above] {(71,74)};
   \end{axis}
 \end{tikzpicture}
 

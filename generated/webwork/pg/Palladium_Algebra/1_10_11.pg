@@ -1,6 +1,6 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-21T15:38:35-08:00       
+###       on 2026-02-23T21:52:58-08:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -30,10 +30,10 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
+  "PGlateximage.pl",
   "PCCmacros.pl",
-  "parserAssignment.pl",
-  "parserOneOf.pl",
-  "contextForm.pl",
+  "parserGraphTool.pl",
+  "Pd.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -46,48 +46,88 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-package my::OneOf;
-our @ISA = ('parser::OneOf');
-sub cmp_compare {
-  my ($self,$other,$ans) = @_;
-  foreach $answer (@{$self->{data}}) {
-    if ($answer->typeMatch($other)) {
-      my $result = $answer->cmp->evaluate($other);
-      if ($result->{score}) {
-        $ans->score($result->{score});
-        $ans->{ans_message} = $result->{ans_message};
-        return $ans->{score};
+$gt = GraphTool(
+  "{line, solid, (0, -5), (3, -3)}",
+  "{line, solid, (0, 2), (2, 1)}"
+)->with(
+  availableTools => [ "LineTool" ],
+  showInStatic => 0,
+  cmpOptions => {
+    list_checker => sub {
+      my ($correct, $student, $ans, $value) = @_;
+      return 0 if $ans->{isPreview};
+      my $score = 0; my @errors; my $count = 1;
+      my ($p1x, $p1y) = $correct->[0]->extract(3)->value;
+      my ($p2x, $p2y) = $correct->[0]->extract(4)->value;
+      my ($p3x, $p3y) = $correct->[1]->extract(3)->value;
+      my ($p4x, $p4y) = $correct->[1]->extract(4)->value;
+      my @stdform = (
+        $p1y - $p2y, $p2x - $p1x, $p1x * $p2y - $p2x * $p1y,
+        $p3y - $p4y, $p4x - $p3x, $p3x * $p4y - $p4x * $p3y
+      );
+      my $pointOnLine = sub {
+        my ($a, $b, $c, $point) = @_;  my ($x, $y) = $point->value;
+        return $a * $x + $b * $y + $c == 0;
+      };
+      my @line = (0, 0);
+      for (@$student) {
+        my $nth = Value::List->NameForNumber($count++);
+        if ($pointOnLine->(@stdform[0..2],$_->extract(3)) && $pointOnLine->(@stdform[0..2],$_->extract(4))) {
+          $line[0] = 1; $score += 1; next
+        }
+        if ($pointOnLine->(@stdform[3..5],$_->extract(3)) && $pointOnLine->(@stdform[3..5],$_->extract(4))) {
+          $line[1] = 1; $score += 1; next
+        }
+        push(@errors, "The $nth line graphed is incorrect.");
       }
-      if ($result->{ans_message}) {
-        $ans->{ans_message} = $result->{ans_message}
-          if !$ans->{ans_message} || length($ans->{ans_message}) > length($result->{ans_message});
-      }
+      return (($line[0] && $line[1]) ? $score : 0, @errors);
     }
   }
-  return 0;
-}
-package main;
-sub OneOfForm {my::OneOf->new(@_)}
+);
+Context("Point");
+$solution = Point(6,-1);
 
-Context("Form")->variables->add(y=>'Real');
-parser::Assignment->Allow;
-$ps = OneOfForm(Formula("y=25/12*(x-37)+40"), Formula("y=25/12*(x+11)-60"));
-$si = Formula("y=25/12x-445/12");
+$image_1 = createLaTeXImage();
+$image_1->addToPreamble(latexImagePreamble());
+$image_1->BEGIN_LATEX_IMAGE
+\begin{tikzpicture}
+  \begin{axis}[
+      width=0.47\orccaprintwidth
+    ]
+    \addplot[firstcurve, domain=-3:7]{2/3*x-5} node[pos=0.52,sloped,above] {\(y=\frac{2}{3}x-5\)};
+    \addplot[secondcurve, domain=-7:7]{-1/2*x+2} node[pos=0,sloped,above right] {\(y=-\frac{1}{2}x+2\)};
+    \addplot[guideline,->] coordinates {(0,-5) (3,-5) (3,-3)};
+    \addplot[guideline,->] coordinates {(0,-5) (-3,-5) (-3,-7)};
+    \addplot[guideline,->] coordinates {(0,2) (2,2) (2,1)};
+    \addplot[guideline,->] coordinates {(0,2) (-2,2) (-2,3)};
+    \addplot[soliddot,color=firstcolor] coordinates {(0,-5) (3,-3) (-3,-7)};
+    \addplot[soliddot,color=secondcolor] coordinates {(0,2) (2,1) (-2,3)};
+  \end{axis}
+\end{tikzpicture}
+
+END_LATEX_IMAGE
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-A line passes through [`(37,40)`] and [`(-11,-60)\text{.}`] Find equations for this line using both point-slope and slope-intercept form.
+Solve the following system of equations by graphing.
 
-[@KeyboardInstructions('Enter a point-slope equation here.')@]**
+[```\newcommand{\amp}{&}
+              \left\{
+                \begin{alignedat}{4}
+                  y \amp {}={} \amp \tfrac{2}{3}x \amp {}-{} \amp 5 \\
+                  y \amp {}={} \amp {-\tfrac12x} \amp {}+{} \amp 2
+                \end{alignedat}
+              \right.
+            ```]
 
-[_]{$ps}{16}
+[_]{$gt}{1}
 
-[@KeyboardInstructions('Enter a slope-intercept equation here.')@]**
+[@KeyboardInstructions('Enter the solution here.')@]**
 
-[_]{$si}{16}
+[_]{$solution}{5}
 
 END_PGML
 
@@ -96,34 +136,21 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-First, use the slope formula to find the slope of this line:
+Both equations are written in slope-intercept form. The first equation, [`y=\frac{2}{3}x-5\text{,}`] has slope [`\frac{2}{3}`] and [`y`]-intercept [`(0,-5)\text{.}`] The second equation, [`y=-\frac{1}{2}x+2\text{,}`] has slope [`-\frac{1}{2}`] and [`y`]-intercept [`(0,2)\text{.}`] We can use this information to graph both lines.
 
-[```\newcommand{\amp}{&}
+>> [@image(insertGraph($image_1), width=>282, alt=>qq"a Cartesian grid with two intersecting lines; one line has a y-intercept of -5 and a slope of 2/3; the other line has a y-intercept of 2 and a slope of -1/2")@]*  <<
+
+It appears that the two lines intersect where [`x=6`] and [`y=-1\text{,}`] so the solution to the system of equations would be the point [`(6,-1)\text{.}`] However we should check that [`(6,-1)`] actually works as a solution to each of the original equations.
+
+[```\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}\newcommand{\confirm}[1]{\stackrel{\checkmark}{#1}}\newcommand{\wonder}[1]{\stackrel{\text{?}}{#1}}\newcommand{\amp}{&}
 \begin{aligned}
-m=\frac{y_2-y_1}{x_2-x_1}\amp=\frac{-60-40}{-11-37}\\
-\amp=\frac{-100}{-48}\\
-\amp=\frac{25}{12}\text{.}
+y\amp=\frac{2}{3}x-5\amp y\amp=-\frac{1}{2}x+2\\
+\substitute{-1}\amp\wonder{=}\frac{2}{3}(\substitute{6})-5\amp \substitute{-1}\amp\wonder{=}-\frac{1}{2}(\substitute{6})+2\\
+-1\amp\confirm{=}4-5\amp -1\amp\confirm{=}-3+2
 \end{aligned}
 ```]
 
-The generic point-slope equation is [`y=m(x-x_0)+y_0\text{.}`] We have found the slope, [`m\text{,}`] and we may use [`(37,40)`] for [`(x_0,y_0)\text{.}`] So an equation in point-slope form is [`[$ps]\text{.}`]
-
-To find a slope-intercept form equation, we can take the generic [`y=mx+b`] and substitute in the value of [`m`] we found. Also, we know that [`(x,y)=(-11,-60)`] should make the equation true. So we have
-
-[```\newcommand{\addright}[1]{{\highlight{{{}+#1}}}}\newcommand{\multiplyright}[2][\cdot]{{\highlight{{{}#1#2}}}}\newcommand{\divideunder}[2]{\frac{#1}{{\highlight{{#2}}}}}\newcommand{\amp}{&}
-\begin{aligned}
-y\amp=mx+b\\
--60\amp=\frac{25}{12}(-11)+b\amp\amp\text{(now we may solve for }b\text{)}\\
--60\multiplyright{12}\amp=\left(\frac{25}{12}(-11)+b\right)\multiplyright{12}\amp\amp\text{(clear the denominator)}\\
--720\amp=25(-11)+12b\amp\amp\text{(distribute and multiply)}\\
--720\amp=-275+12b\\
--720\addright{275}\amp=264+12b\addright{275}\\
--445\amp=12b\\
-\divideunder{-445}{12}\amp=\divideunder{12b}{12}\amp\amp b = -\frac{445}{12}\text{.}
-\end{aligned}
-```]
-
-So the slope-intercept equation is [`[$si]\text{.}`] Note that the slope-intercept equation has an unfriendly fraction, and the fact that this can happen is another reason to use the point-slope form whenever it is reasonable to do so.
+This verifies that [`(6,-1)`] is the solution.
 
 END_PGML_SOLUTION
 

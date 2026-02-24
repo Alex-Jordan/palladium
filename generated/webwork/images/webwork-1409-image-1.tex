@@ -176,20 +176,19 @@
 \begin{document}
 \begin{tikzpicture}
 \begin{axis}[
-    xmin = -20,
-    xmax = 20,
-    ymin = -18,
-    ymax = 18,
+    xmin = -7,
+    xmax = 7,
+    ymin = -7,
+    ymax = 7,
     xtick =,
     ytick =,
-    minor xtick = {-20,...,20},
+    minor xtick =,
     minor ytick =,
   ]
-  \addplot[firstcurve,domain=-20:-6.04145188432738,samples=50] {6/(x - -6)/(x - 2)};
-  \addplot[firstcurve,domain=-5.95811402901264:1.95811402901264,samples=50] {6/(x - -6)/(x - 2)};
-  \addplot[firstcurve,domain=2.04145188432738:20,samples=50] {6/(x - -6)/(x - 2)};
-  \addplot[asymptote] coordinates {(-6,-18) (-6,18)};
-  \addplot[asymptote] coordinates {(2,-18) (2,18)};
+  \addplot[firstcurve,domain=-7:-3.2,samples=50] {1/(x--3)+-2};
+  \addplot[firstcurve,domain=-2.88888888888889:7,samples=50] {1/(x--3)+-2};
+  \addplot[asymptote] coordinates {(-3,-7) (-3,7)};
+  \addplot[asymptote] coordinates {(-7,-2) (7,-2)};
 \end{axis}
 
 \end{tikzpicture}

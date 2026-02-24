@@ -175,17 +175,9 @@
 \begin{document}
 \begin{tikzpicture}
   \begin{axis}[
-      xmin=-10,
-      xmax=10,
-      ymin=-10,
-      ymax=10,
-      xtick={-5,0,5},
-      minor xtick={-9,...,9},
-      ytick={-5,0,5},
-      minor ytick={-9,...,9},
       width=0.33\orccaprintwidth
     ]
-    \addplot+[-,domain=-10:10,samples=2] {(-0.571429*(x+3)+3)};
+    \addplot+[-,samples=2] {2};
   \end{axis}
 \end{tikzpicture}
 

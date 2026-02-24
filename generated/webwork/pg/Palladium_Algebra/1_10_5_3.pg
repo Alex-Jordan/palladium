@@ -1,6 +1,6 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-21T15:38:35-08:00       
+###       on 2026-02-23T21:52:58-08:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -30,8 +30,10 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PCCmacros.pl",
+  "PGchoicemacros.pl",
   "contextForm.pl",
+  "contextFraction.pl",
+  "parserPopUp.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -44,33 +46,41 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-($m,$h,$k) = random_subset(3,2..9);
-$h = -$h;
-$m = list_random($m,-$m);
-Context()->noreduce('(-x)-y','(-x)+y');
-$f = Formula("$m(x-$h)+$k")->reduce;
+do {
+  ($x,$y) = (-8..8)[NchooseK(17,2)];
+  @h = (-9..$x-1,$x+1..9)[NchooseK(18,2)];
+  @k = (-9..$y-1,$y+1..9)[NchooseK(18,2)];
+  Context("Fraction");
+  Context()->noreduce('(-x)+y', '(-x)-y');
+  @m = map{Fraction(($y - $k[$_])/($x - $h[$_]))} (0,1);
+} until ($m[0] != 1 && $m[1] != 1 && abs(atan2($m[0],1) - atan2($m[1],1)) > 0.2);
+@n = map{($_->value)[0]} (@m);
+@d = map{($_->value)[1]} (@m);
+@f = map{Formula("$m[$_] (x - $h[$_]) + $k[$_]")->reduce} (0,1);
 Context("Point");
-Context()->parens->set("[" => {type => "Interval", close => "]"});
-Context()->parens->set("{" => {type => "Set", close => "}"});
-Context()->parens->set("<" => {type => "Vector", close => ">"});
-$p = Point("($h,$k)");
+$solution = Point($x,$y);
+$proposed_solution = $solution;
+$dropdown = DropDown(["Yes, it is a solution.", "No, it is not a solution."], 0, showInStatic => 0);
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-A line's equation is given in point-slope form. Identify the slope and the point on the line that is being singled out.
+Check if the given point is a solution to the given system of two linear equations.
 
-[`y=[$f]`]
+Is [`[$proposed_solution]`] a solution?
 
-[@KeyboardInstructions('Enter the slope here.')@]**
+[`\newcommand{\amp}{&}
+                  \left\{
+                    \begin{alignedat}{3}
+                      y \amp= [$f[0]]\\
+                      y \amp= [$f[1]]
+                    \end{alignedat}
+                  \right.
+                `]
 
-[_]{$m}{5}
-
-[@KeyboardInstructions('Enter the point here.')@]**
-
-[_]{$p}{5}
+[_]{$dropdown}{5}
 
 END_PGML
 

@@ -1,0 +1,70 @@
+#############################################
+###       Generated from PreTeXt source      
+###       on 2026-02-23T21:52:58-08:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.2.7.91)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserNumberWithUnits.pl",
+  "randomPerson.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$name = randomPerson();
+$initial = 425;
+$rate = random(20,30);
+$final = random(200,300,25);
+$solution = -($final - $initial)/$rate;
+$time = NumberWithUnits("$solution min");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+[$name] baked a pie at [`[$initial]\,^{\circ}F`] and just took it out of the oven. It immediately starts to cool at a rate of [`[$rate]\,\frac{^{\circ}F}{\text{min}}\text{.}`] How long will it take to cool to [`[$final]\,^{\circ}F\text{?}`]
+
+[_]{$time}{20}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

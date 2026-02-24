@@ -1,6 +1,6 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-21T15:38:35-08:00       
+###       on 2026-02-23T21:52:59-08:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -30,10 +30,10 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
   "PGchoicemacros.pl",
   "contextForm.pl",
-  "contextFraction.pl",
-  "parserPopUp.pl",
+  "parserLinearRelation.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -46,34 +46,73 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("Fraction");
-Context()->noreduce('(-x)+y', '(-x)-y');
-($b[0], $h[0], $k[0], $b[1]) = (-9..-1,1..9)[NchooseK(18,4)];
-$m = Fraction(($k[0]-$b[0])/$h[0]);
-$f[0] = Formula("$m x + $b[0]")->reduce;
-$f[1] = Formula("$m x + $b[1]")->reduce;
-$dropdown = DropDown(["Zero", "One", "Two", "More than two but finitely many", "Infinitely many"], 0, showInStatic => 0);
-$dropdown2 = DropDown(["Dependent", "Inconsistent", "None of the above"], 1, showInStatic => 0);
+($X, $Y) = random_subset(2, 'a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+Context("LinearRelation")->variables->are($X => 'Real', $Y => 'Real');
+Context()->noreduce('(-x)-y', '(-x)+y');
+($x, $y) = (-7..-1, 1..7)[NchooseK(14,2)];
+do {
+  @A = (-5..-2, 2..5)[NchooseK(8,2)];
+  @B = (-5..-2, 2..5)[NchooseK(8,2)];
+} until ($A[0]*$B[1] != $A[1]*$B[0]);
+@C = map{$A[$_]*$x + $B[$_]*$y} (0,1);
+@left = map{Formula("$A[$_] $X + $B[$_] $Y")->reduce} (0,1);
+@f = map{Formula("$left[$_] = $C[$_]")} (0,1);
+$xis = Formula("$X = $x");
+$yis = Formula("$Y = $y");
+$solution = List($xis,$yis);
+Context()->strings->remove("NONE");
+Context()->strings->add(
+  "no solutions" => {},
+);
+for (
+  "no solution",
+  "none",
+  "there are no solutions",
+  "the solution set is empty",
+  "solution set is empty",
+  "empty set",
+  "∅",
+  "{}",
+  "{ }",
+  "{  }",
+  "{   }"
+) {
+  Context()->strings->add($_ => {alias => "no solutions"});
+}
+Context()->strings->add(
+  "infinitely many solutions" => {},
+);
+for (
+  "infinitely many",
+  "infinite solution set",
+  "infinite",
+  "the solution set is infinite",
+  "solution set is infinite"
+) {
+  Context()->strings->add($_ => {alias => "infinitely many solutions"});
+}
+$answer = $solution->cmp(
+  mathQuillOpts => 'disabled'
+);
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Simply by looking closely at the linear equations, determine how many solutions the system will have. And state whether the system is dependent, inconsistent, or neither.
+Solve the system of equations using substitution.
 
-[`\newcommand{\amp}{&}
-                  \left\{
-                    \begin{alignedat}{3}
-                      y \amp= [$f[0]]\\
-                      y \amp= [$f[1]]
-                    \end{alignedat}
+[`\newcommand{\amp}{&}\left\{
+                  \begin{alignedat}{4}
+                  \amp [$f[0]] \\
+                  \amp [$f[1]]
+                  \end{alignedat}
                   \right.
                 `]
 
-[_]{$dropdown}{5}
+[@KeyboardInstructions('Write the solution in the format [`[$X] = \text{number}, [$Y] = \text{number}\text{.}`] If there is no solution, enter [|no solutions|]*. If there are infinitely many solutions, enter [|infinitely many solutions|]*.')@]**
 
-[_]{$dropdown2}{5}
+[_]{$answer}{16}
 
 END_PGML
 

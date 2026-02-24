@@ -1,6 +1,6 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-21T15:38:34-08:00       
+###       on 2026-02-23T21:52:58-08:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -30,10 +30,6 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "niceTables.pl",
-  "parserAssignment.pl",
-  "contextForm.pl",
-  "contextFraction.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -46,59 +42,29 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-@x = random_subset(5, 1..99);
-$f = Formula("1/x");
-Context("Fraction");
-@y = map{Fraction($f->eval(x => $_))} (@x);
-Context("Numeric")->variables->add(y => 'Real');
-parser::Assignment->Allow;
-$eq = Formula("y = $f");
+do {
+  $x[0] = random(-9,9) + random(0.1,0.9,0.1);
+  $x[1] = random(-9,9) + random(0.1,0.9,0.1);
+} until ($x[0] != $x[1]);
+$y[0] = random(-9,9) + random(0.1,0.9,0.1);
+$y[1] = random(-9,9) + random(0.1,0.9,0.1);
+Context("Numeric")->operators->undefine("+","-");
+$m = Real(($y[1] - $y[0])/($x[1] - $x[0]));
+Context("Point");
+@p = map {Point($x[$_], $y[$_])} (0,1);
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Write an equation in the form [`y=\ldots`] suggested by the pattern in the table.
+Find the slope of the line passing through the two given points.
 
->> [@DataTable(
-  [
-    [[PGML('[`x`]'),
-      rowbottom => '2',
-      midrule => '1',],
-     PGML('[`y`]'),
-    ],
-    [PGML('[`[$x[0]]`]'),
-     PGML('[`[$y[0]]`]'),
-    ],
-    [PGML('[`[$x[1]]`]'),
-     PGML('[`[$y[1]]`]'),
-    ],
-    [PGML('[`[$x[2]]`]'),
-     PGML('[`[$y[2]]`]'),
-    ],
-    [PGML('[`[$x[3]]`]'),
-     PGML('[`[$y[3]]`]'),
-    ],
-    [PGML('[`[$x[4]]`]'),
-     PGML('[`[$y[4]]`]'),
-    ],
-  ],
-      align => 'rl',
-      valign => 'middle',);@]* <<
+[`[$p[0]]`] and [`[$p[1]]`]
 
-[_]{$eq}{20}
+[_]{$m}{10}
 
 END_PGML
-
-############################################################
-# Solution
-############################################################
-
-BEGIN_PGML_SOLUTION
-Each [`y`]-value is the reciprocal of the corresponding [`x`]-value. So the equation is [`[$eq]\text{.}`]
-
-END_PGML_SOLUTION
 
 ############################################################
 # End Problem
