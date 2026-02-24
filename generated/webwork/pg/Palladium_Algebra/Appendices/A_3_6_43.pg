@@ -1,6 +1,6 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-19T16:49:03-08:00       
+###       on 2026-02-24T12:55:33-08:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -31,7 +31,9 @@ loadMacros(
   "PGML.pl",
   "AnswerFormatHelp.pl",
   "PGchoicemacros.pl",
+  "contextFiniteSolutionSets.pl",
   "contextForm.pl",
+  "contextFraction.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -44,24 +46,34 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("Form");
-$var = list_random('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+Context("Fraction");
+$var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
 Context()->variables->are($var => 'Real');
-($a, $b, $c) = (2..20)[NchooseK(19,3)];
-$given = Formula("$a $var + $c + $b $var");
-$ab = $a + $b;
-$ans = Formula("$ab $var + $c");
+do {
+  ($a, $b) = random_coprime([1..10], [2..10,12]);
+  ($c, $d) = random_coprime([1..10], [2..10,12]);
+} until ($b != $d);
+$A = Fraction($a, $b);
+$B = Fraction($c, $d);
+$B = random(0,1) ? $B : -$B;
+$left = Formula("$var - $A")->reduce;
+$right = Formula("$B")->reduce;
+($left, $right) = ($left, $right)[NchooseK(2,2)];
+Context("FiniteSolutionSets");
+Context()->variables->are($var => 'Real');
+$solution = $B + $A;
+$solset = Formula("{$solution}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Simplify the given expression. Ideally, you are thinking about how the properties of algebra are helping you simplify.
+Solve the equation.
 
-[`[$given]`]
+[`[$left]=[$right]`]
 
-[_]{$ans}{16}
+[_]{$solset}{10}
 
 END_PGML
 

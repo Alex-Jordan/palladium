@@ -1,6 +1,6 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-19T16:49:03-08:00       
+###       on 2026-02-24T12:55:33-08:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -31,6 +31,7 @@ loadMacros(
   "PGML.pl",
   "AnswerFormatHelp.pl",
   "PGchoicemacros.pl",
+  "contextFiniteSolutionSets.pl",
   "contextForm.pl",
   "PGcourse.pl",
 );
@@ -44,44 +45,28 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$var = list_random('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
-Context("Form")->variables->are($var => 'Real');
-($a, $b) = (2..10)[NchooseK(9,2)];
-$given = Formula("$a($var - $b)");
-$ab = $a*$b;
-$ans = Formula("$a $var - $a*$b");
-$alt = Formula("$a $var - $ab");
-$evaluator = $ans->cmp->withPostFilter(sub {
-  my $ans = shift;
-  $altans = $alt->cmp->evaluate($ans->{original_student_ans});
-  if ($altans->{score} == 1) {
-    return $altans;
-  } else {
-    return $ans;
-  }
-});
+$var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+Context()->variables->are($var => 'Real');
+($a, $b) = (-20..-2,2..20)[NchooseK(38,2)];
+$left = Formula("$a $var")->reduce;
+$right = Formula("$a*$b")->reduce;
+Context("FiniteSolutionSets");
+Context()->variables->are($var => 'Real');
+$solution = $b;
+$solset = Formula("{$solution}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Demonstrate that you know the meanings of the various algebraic properties by applying the given algebraic property to the given expression to get a new expression.
+Solve the equation.
 
-Apply the distributive property to [`[$given]\text{.}`]
+[`[$left]=[$right]`]
 
-[_]{$evaluator}{16}
+[_]{$solset}{10}
 
 END_PGML
-
-############################################################
-# Solution
-############################################################
-
-BEGIN_PGML_SOLUTION
-The expression has a group of two terms multiplied by [`[$a]\text{.}`] To apply the distributive property, we multiply [`[$a]`] by each of those two terms. This gives us [`[$ans]\text{.}`]
-
-END_PGML_SOLUTION
 
 ############################################################
 # End Problem

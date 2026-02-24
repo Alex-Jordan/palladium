@@ -175,9 +175,19 @@
 \begin{document}
 \begin{tikzpicture}
   \begin{axis}[
+      xmin=-10,
+      xmax=100,
+      ymin=-10,
+      ymax=100,
+      xtick=,
+      minor xtick=,
+      ytick=,
+      minor ytick=,
       width=0.33\orccaprintwidth
     ]
-    \addplot+[-,samples=2] {2};
+    \addplot+[-,domain=-10:100,samples=2] {(2.33333*(x-55)+64)};
+    \addplot[soliddot] coordinates {(55,64)} node[above left] {\((55,64)\)};
+    \addplot[soliddot] coordinates {(46,43)} node[below right] {\((46,43)\)};
   \end{axis}
 \end{tikzpicture}
 

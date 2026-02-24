@@ -183,11 +183,12 @@
       minor xtick=,
       ytick=,
       minor ytick=,
-      width=0.33\orccaprintwidth
+      width=0.33\orccaprintwidth,
+      clip=false
     ]
-    \addplot+[-,domain=-10:100,samples=2] {(-8*(x-70)+52)};
-    \addplot[soliddot] coordinates {(70,52)} node[below left] {\((70,52)\)};
-    \addplot[soliddot] coordinates {(67,76)} node[above right] {\((67,76)\)};
+    \addplot+[-,domain=58.815625:74.284375,samples=2] {(-7.11111*(x-70.6)+16.2)};
+    \addplot[soliddot] coordinates {(70.6,16.2)} node[below left] {\((70.6,16.2)\)};
+    \addplot[soliddot] coordinates {(67.9,35.4)} node[above right] {\((67.9,35.4)\)};
   \end{axis}
 \end{tikzpicture}
 

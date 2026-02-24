@@ -177,10 +177,12 @@
   \begin{axis}
     [
       numberline,
+      xmin=-8,
+      xmax=8,
       xlabel={\(x\)},
       width=0.47\orccaprintwidth,
     ]
-    \addplot[closedinfiniteinterval] coordinates {(3,0) (12,0)};
+    \addplot[openinfiniteinterval] coordinates {(3,0) (12,0)};
   \end{axis}
 \end{tikzpicture}
 

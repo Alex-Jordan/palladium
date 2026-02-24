@@ -1,6 +1,6 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-19T16:49:03-08:00       
+###       on 2026-02-24T12:55:33-08:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -30,8 +30,8 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
+  "contextFiniteSolutionSets.pl",
   "contextForm.pl",
-  "contextFraction.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -44,25 +44,26 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$var = list_random('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
-Context("Fraction");
-$b = Fraction(random_coprime([2..10],[2..10]));
-Context("Form")->variables->are($var => 'Real');
-$given = Formula("-($var + $b)");
-Context()->lists->set(AbsoluteValue=>{open=>"(",close=>")"});
-Context()->parens->set("("=>{removable=>0,type=>"AbsoluteValue",close=>")"});
-$ans = Formula("-$var - $b");
+$var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+Context()->variables->are($var => 'Real');
+$b = list_random(-20..-1,1..20);
+$left = Formula("-$var")->reduce;
+$right = Formula("$b")->reduce;
+Context("FiniteSolutionSets");
+Context()->variables->are($var => 'Real');
+$solution = -$b;
+$solset = Formula("{$solution}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Demonstrate that you know the meanings of the various algebraic properties by applying the given algebraic property to the given expression to get a new expression.
+Solve the equation.
 
-Apply the distributive property to [`[$given]\text{.}`]
+[`[$left]=[$right]`]
 
-[_]{$ans}{16}
+[_]{$solset}{10}
 
 END_PGML
 

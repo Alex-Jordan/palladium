@@ -175,20 +175,15 @@
 \begin{document}
 \begin{tikzpicture}
   \begin{axis}[
-      xlabel={time (h)},
-      ylabel={elevation (ft)},
-      xmin=0,
-      xmax=26,
-      ymin=0,
-      ymax=4000,
-      minor xtick={0,...,25},
+      xmin=-2,
+      xmax=8=,
+      ymin=-2,
+      ymax=8,
+      ytick=,
       xtick=,
-      ytick={0,500,...,3500},
-      minor ytick=,
-      width=0.47\orccaprintwidth,
-      axis line style={->},
+      width=0.47\orccaprintwidth
     ]
-    \addplot[firstcurve,-] coordinates {(0,0) (7,3500) (19,3500) (23,0)};
+    \addplot+[domain=-2:8] {-1/2*x + 6};
   \end{axis}
 \end{tikzpicture}
 

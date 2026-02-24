@@ -177,18 +177,10 @@
   \begin{axis}
     [
       numberline,
-      xmin=-12,
-      xmax=12,
-      xlabel={},
-      xtick={-10,-5,...,10},
-      minor xtick={-10,-9,...,10},
-      width=\orccaprintwidth,
+      xlabel={\(x\)},
+      width=0.47\orccaprintwidth,
     ]
-    \draw[] (axis cs: -7.6,1.5) to[out=-90, in=90] node[pos=0,above] {\(-7.6\)} (axis cs: -7.6,0);
-    \draw[] (axis cs: -6,1)     to[out=-90, in=90] node[pos=0,above] {\(-6\)}   (axis cs: -6,0);
-    \draw[] (axis cs: 6,1.5)    to[out=-90, in=90] node[pos=0,above] {\(6\)}    (axis cs: 6,0);
-    \draw[] (axis cs: 8,1)      to[out=-90, in=90] node[pos=0,above] {\(8\)}    (axis cs: 8,0);
-    \draw[] (axis cs: 9.5,1.5)  to[out=-90, in=90] node[pos=0,above] {\(9.5\)}  (axis cs: 9.5,0);
+    \addplot[closedinfiniteinterval] coordinates {(-6,0) (12,0)};
   \end{axis}
 \end{tikzpicture}
 

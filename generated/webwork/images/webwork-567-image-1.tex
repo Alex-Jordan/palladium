@@ -185,8 +185,8 @@
       minor ytick = {-10,...,10},
       width=0.47\orccaprintwidth,
     ]
-    \addplot+[domain=-10:8]{((2/3)*(x+7))};
-    \addplot+[domain=-10:10]{((3/13)*(x+8)+5)};
+    \addplot[firstcurve,-,domain=-10:10]{(5-1.66667*x)};
+    \addplot[secondcurve,-,domain=-10:10]{(-(5/3)*(x-6)-5)};
   \end{axis}
 \end{tikzpicture}
 

@@ -1,6 +1,6 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-19T16:49:03-08:00       
+###       on 2026-02-24T12:55:33-08:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -31,8 +31,8 @@ loadMacros(
   "PGML.pl",
   "AnswerFormatHelp.pl",
   "PGchoicemacros.pl",
+  "contextFiniteSolutionSets.pl",
   "contextForm.pl",
-  "contextFraction.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -45,28 +45,30 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("Fraction");
-$a = Fraction(random_coprime([2..10],[2..10]));
-$f = Fraction(random_coprime([2..10],[2..10]));
-Context("Form");
-$var = list_random('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+$var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
 Context()->variables->are($var => 'Real');
-($b, $c, $d, $e) = (2..9)[NchooseK(8,4)];
-$given = Formula("$a($b $var - $c) + $d($e $var - $f)");
-$abde = $a*$b + $d*$e;
-$acdf = -$a*$c - $d*$f;
-$ans = Formula("$abde $var + $acdf");
+($a, $b) = (0..10)[NchooseK(11,2)];
+($a, $b) = map{$_ + random(0.1, 0.9, 0.1)} ($a, $b);
+$b = random(0,1) ? $b : -$b;
+$left = Formula("$var/$a")->reduce;
+$right = Formula("$b")->reduce;
+($left, $right) = ($left, $right)[NchooseK(2,2)];
+Context("FiniteSolutionSets");
+Context()->flags->remove("NumberCheck");
+Context()->variables->are($var => 'Real');
+$solution = $b*$a;
+$solset = Formula("{$solution}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Simplify the given expression. Ideally, you are thinking about how the properties of algebra are helping you simplify.
+Solve the equation.
 
-[`[$given]`]
+[`[$left]=[$right]`]
 
-[_]{$ans}{16}
+[_]{$solset}{10}
 
 END_PGML
 

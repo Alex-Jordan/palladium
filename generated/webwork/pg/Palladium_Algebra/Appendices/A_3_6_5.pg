@@ -1,6 +1,6 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-19T16:49:03-08:00       
+###       on 2026-02-24T12:55:33-08:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -30,6 +30,8 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
+  "PGchoicemacros.pl",
+  "contextFraction.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -42,18 +44,23 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context('Numeric');
-$n = non_zero_random(-10,9) + random(0.1,0.9,0.1);
-$ans = -$n;
+ Context("LimitedFraction")->flags->set(allowMixedNumbers => 0, showMixedNumbers => 0);
+ ($a, $b) = random_coprime([2..10], [2..10]);
+ $c = (random_coprime([2..10], [$b]))[0];
+ $d = 1;
+ $A = Fraction($a, $b);
+ $B = Fraction($c, $d);
+ ($A, $B) = ($A, $B)[NchooseK(2,2)];
+$ans = $A*$B;
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Find the indicated inverse.
+Multiply the fractions.
 
-Additive inverse of [`[$n]\text{.}`]
+[`[$A]\cdot[$B]`]
 
 [_]{$ans}{5}
 

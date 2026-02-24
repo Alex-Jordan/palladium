@@ -1,6 +1,6 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-19T16:49:03-08:00       
+###       on 2026-02-24T12:55:33-08:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -30,8 +30,9 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PGchoicemacros.pl",
+  "contextFiniteSolutionSets.pl",
   "contextForm.pl",
+  "contextFraction.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -44,27 +45,55 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("Form");
-$var = list_random('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+Context("Fraction");
+$var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
 Context()->variables->are($var => 'Real');
-($a, $b, $c, $d) = (2..9)[NchooseK(8,4)];
-$given = Formula("$a ($b $var + $c) - $d");
-$ab = $a*$b;
-$acd = $a*$c - $d;
-$ans = Formula("$ab $var + $acd");
+do {
+  ($a, $b) = random_coprime([1..10], [2..10,12]);
+  ($c, $d) = random_coprime([1..10], [2..10,12]);
+} until ($b != $d);
+$A = Fraction($a, $b);
+$Ainv = 1/$A;
+$B = Fraction($c, $d);
+$B = random(0,1) ? $B : -$B;
+$left = Formula("$A*$var")->reduce;
+$right = Formula("$B")->reduce;
+$solution = $B / $A;
+Context("FiniteSolutionSets");
+Context()->variables->are($var => 'Real');
+$solset = Formula("{$solution}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Simplify the given expression. Ideally, you are thinking about how the properties of algebra are helping you simplify.
+Solve the equation.
 
-[`[$given]`]
+[`[$left]=[$right]`]
 
-[_]{$ans}{16}
+[_]{$solset}{10}
 
 END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+To undo multiplication by a fraction, we can multiply my its reciprocal.
+
+[```\newcommand{\multiplyleft}[2][\cdot]{{\highlight{{#2#1{}}}}}\newcommand{\amp}{&}
+\begin{aligned}
+[$left] \amp= [$right]\\
+\multiplyleft{[$Ainv]}[$left] \amp= \multiplyleft{[$Ainv]}[$right]\\
+[$var] \amp= [$solution]
+\end{aligned}
+```]
+
+The solution set is [`[$solset]\text{.}`]
+
+END_PGML_SOLUTION
 
 ############################################################
 # End Problem

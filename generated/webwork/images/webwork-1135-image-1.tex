@@ -174,22 +174,12 @@
 
 \begin{document}
 \begin{tikzpicture}
-  \begin{axis}[
-      xmin=-10,
-      xmax=100,
-      ymin=-10,
-      ymax=100,
-      xtick=,
-      minor xtick=,
-      ytick=,
-      minor ytick=,
-      width=0.47\orccaprintwidth,
-      clip=false
-    ]
-    \addplot+[-,domain=-10:100,samples=2] {(-0.5625*(x-57.9)+17.3)};
-    \addplot[soliddot] coordinates {(57.9,17.3)} node[below left] {\((57.9,17.3)\)};
-    \addplot[soliddot] coordinates {(46.7,23.6)} node[above right] {\((46.7,23.6)\)};
-  \end{axis}
+  \draw[fill=wood] (0,0) -| (5,3) -| cycle;
+  \draw[fill=lightemerald] (0.5,0.5) -| (4.5,2.5) -| cycle;
+  \draw[dashed] (2.5,0) -- node[pos=0.5, right] {\(x\)} (2.5,0.5);
+  \draw[dashed] (0,1.5) -- node[pos=0.5, above] {\(x\)} (0.5,1.5);
+  \node[above] at (2.5,0.5) {\(16\) ft};
+  \node[above, rotate=-90] at (0.5,1.5) {\(14\) ft};
 \end{tikzpicture}
 
 

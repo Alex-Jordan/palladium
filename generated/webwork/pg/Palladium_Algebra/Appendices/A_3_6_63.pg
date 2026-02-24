@@ -1,6 +1,6 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-19T16:49:03-08:00       
+###       on 2026-02-24T12:55:33-08:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -30,7 +30,11 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PGessaymacros.pl",
+  "PGlateximage.pl",
+  "PCCmacros.pl",
+  "parserImplicitEquation.pl",
+  "parserNumberWithUnits.pl",
+  "Pd.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -43,50 +47,50 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context('Numeric');
+$rise = random(6.125, 8.75, 0.125);
+Context("ImplicitEquation");
+Context()->variables->are(N => 'Real');
+$answer = 17.5 - $rise;
+Context()->variables->set(N => {limits=>[$answer - 10, $answer + 10]});
+$equation = ImplicitEquation("$rise + N = 17.5");
+$answer = NumberWithUnits("$answer in");
+
+$introduction_image_1 = createLaTeXImage();
+$introduction_image_1->addToPreamble(latexImagePreamble());
+$introduction_image_1->BEGIN_LATEX_IMAGE
+\begin{tikzpicture}[x=0.7mm,y=0.7mm]
+  \foreach \x in {0,...,3}
+    \draw [fill=firstcolor!20] (10*\x, 12*\x) --++ (-30,15) --++ (0,7) --++ (30,-15);
+  \draw (0,0) --++ (0,7) --++ (10,5) --++ (0,7) --++ (10,5) --++ (0,7) --++ (10,5) --++ (0,7) --++ (10,5);
+  \draw (-30,15) --++ (0,7) --++ (10,5) node[pos=0.5, sloped, above] {run} --++ (0,7) --++ (10,5) --++ (0,7) --++ (10,5) --++ (0,7) --++ (10,5);
+  \draw (0,0) -- (40,20) --++ (0,28) --++ (-30,15);
+  \node[left] at (-30,18.5) {rise};
+\end{tikzpicture}
+
+END_LATEX_IMAGE
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Think of a number. Add four to your number. Now double that. Then add six. Then halve it. Finally, subtract [`7\text{.}`] What is the result? Do you always get the same result, regardless of what number you start with? How does this work? Explain using algebra.
+When building a staircase, you want the rise and run to be consistent from one step to the next.
 
-[@ANS(essay_cmp()); essay_box(6,76)@]* [@essay_help()@]*
+>> [@image(insertGraph($introduction_image_1), width=>282, alt=>qq"diagram of a staircase with one stair's height labeled as 'rise' and its width labeled as 'run'")@]*  <<
+
+A convention among contractors is that steps in a staircase should have rise [`S`] and run [`N\text{,}`] both in inches, such that [`S + N = 17.5\text{.}`] To bridge the first floor to the second floor, contractors determined the rise of each stair should be the given number of inches. Write an equation that can be used to find the run of each step. Then solve that equation and report what the run should be.
+
+The rise is [`[$rise]`] inches.
+
+[@KeyboardInstructions('Write the equation here.')@]**
+
+[_]{$equation}{15}
+
+[@KeyboardInstructions('Write the run here.')@]**
+
+[_]{$answer}{10}
 
 END_PGML
-
-############################################################
-# Solution
-############################################################
-
-BEGIN_PGML_SOLUTION
-Let's start with the number [`x`] and follow the instructions: [`x`]
-
-Add four to the number: [`x + 4`]
-
-Now double that: [` 2(x+4)`]
-
-Then add six: [` 2(x+4)+6`]
-
-Then halve it: [` \frac{2(x + 4)+ 6}{2} `]
-
-Finally, subtract 7: [` \frac{2(x + 4)+ 6}{2}-7 `]
-
-This expression can be simplified:
-
-[```\newcommand{\amp}{&}
-\begin{aligned}
-\frac{2(x + 4)+ 6}{2}-7                   \amp = \frac{2x+8+6}{2} - 7\\
-\amp = \frac{2x+14}{2}-7\\
-\amp = x + 7 - 7\\
-\amp = x
-\end{aligned}
-```]
-
-Thus, after following the instructions, you always end up with the original number.
-
-END_PGML_SOLUTION
 
 ############################################################
 # End Problem

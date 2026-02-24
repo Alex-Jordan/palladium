@@ -175,18 +175,18 @@
 \begin{document}
 \begin{tikzpicture}
   \begin{axis}[
-      xmin = (-9),
-      xmax = 9,
+      xmin = -5,
+      xmax = 5,
       ymin = -7,
       ymax = 7,
       xtick =,
       ytick =,
-      minor xtick = {(-9),...,9},
+      minor xtick = {-5,...,5},
       minor ytick = {-7,...,7},
       grid = minor,
       width=0.33\orccaprintwidth
     ]
-    \addplot+[domain=(-9):9] {(1/8)*x+-2};
+    \addplot+[domain=-5:5] {(1/4)*x+-1};
   \end{axis}
 \end{tikzpicture}
 

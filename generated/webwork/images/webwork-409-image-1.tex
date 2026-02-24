@@ -175,20 +175,18 @@
 \begin{document}
 \begin{tikzpicture}
   \begin{axis}[
-      xmin=-10,
-      xmax=100,
-      ymin=-10,
-      ymax=100,
-      xtick=,
-      minor xtick=,
-      ytick=,
-      minor ytick=,
-      width=0.33\orccaprintwidth,
-      clip=false
+      xmin = -7,
+      xmax = 7,
+      ymin = -7,
+      ymax = 7,
+      xtick =,
+      ytick =,
+      minor xtick = {-7,...,7},
+      minor ytick = {-7,...,7},
+      grid = minor,
+      width=0.33\orccaprintwidth
     ]
-    \addplot+[-,domain=-10:100,samples=2] {(-0.52967*(x-30.3)+50.7)};
-    \addplot[soliddot] coordinates {(30.3,50.7)} node[above right] {\((30.3,50.7)\)};
-    \addplot[soliddot] coordinates {(75.8,26.6)} node[below left] {\((75.8,26.6)\)};
+    \addplot+[domain=-7:7] {(2/3)*x+-2};
   \end{axis}
 \end{tikzpicture}
 

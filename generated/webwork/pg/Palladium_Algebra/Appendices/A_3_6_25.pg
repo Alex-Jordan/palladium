@@ -1,6 +1,6 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-19T16:49:03-08:00       
+###       on 2026-02-24T12:55:33-08:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -31,6 +31,7 @@ loadMacros(
   "PGML.pl",
   "AnswerFormatHelp.pl",
   "PGchoicemacros.pl",
+  "contextFiniteSolutionSets.pl",
   "contextForm.pl",
   "PGcourse.pl",
 );
@@ -44,28 +45,28 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$var = list_random('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
-Context("Numeric")->variables->are($var => 'Real');
-($a, $b) = (2..10)[NchooseK(9,2)];
-$given = Formula("$a ($var + $b)");
-$ans = Formula("($var + $b) $a");
-$evaluator = $ans->cmp(checker => sub{
-  my ($correct, $student, $ans) = @_;
-  Value->Error("This is the original expression") if ($student eq $given);
-  Value->Error("This is algebraically equivalent to the given expression, but using commutativity of multiplication would give you something else") if (($student == $correct) && ($student ne $correct));
-  return ($student eq $correct);
-});
+$var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+Context()->variables->are($var => 'Real');
+($a, $b) = (1..20)[NchooseK(20,2)];
+$b = random(0,1) ? $b : -$b;
+$left = Formula("$a + $var")->reduce;
+$right = Formula("$b")->reduce;
+($left, $right) = ($left, $right)[NchooseK(2,2)];
+Context("FiniteSolutionSets");
+Context()->variables->are($var => 'Real');
+$solution = $b - $a;
+$solset = Formula("{$solution}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Demonstrate that you know the meanings of the various algebraic properties by applying the given algebraic property to the given expression to get a new expression.
+Solve the equation.
 
-Apply commutativity of multiplication to [`[$given]\text{.}`]
+[`[$left]=[$right]`]
 
-[_]{$evaluator}{16}
+[_]{$solset}{10}
 
 END_PGML
 

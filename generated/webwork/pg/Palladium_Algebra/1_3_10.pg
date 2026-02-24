@@ -1,6 +1,6 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-23T21:52:58-08:00       
+###       on 2026-02-24T13:47:07-08:00       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -30,7 +30,9 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "parserNumberWithUnits.pl",
+  "niceTables.pl",
+  "parserAssignment.pl",
+  "contextForm.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -43,24 +45,44 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context('Numeric');
-$newUnits = [
-  {name=>'mL',conversion=>{factor=>1E-6,m=>3}},
-  {name=>'ml',conversion=>{factor=>1E-6,m=>3}},
-  {name=>'milliliters',conversion=>{factor=>1E-6,m=>3}},
-  {name=>'milliliter',conversion=>{factor=>1E-6,m=>3}},
-  {name=>'cc',conversion=>{factor=>1E-6,m=>3}},
-];
-$answer = NumberWithUnits("1.875 mL", {newUnit=>$newUnits});
+@x = (0..3);
+$f = Formula("x^2");
+@y = map{$f->eval(x => $_)} (@x);
+Context("Numeric")->variables->add(y => 'Real');
+parser::Assignment->Allow;
+$eq = Formula("y = $f");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Infant Tylenol contains 160 mg of acetaminophen in each 5 mL of liquid. If Bao's baby is prescribed 60 mg of acetaminophen, how many milliliters of liquid should he give the baby?
+Write an equation in the form [`y=\ldots`] suggested by the pattern in the table.
 
-[_]{$answer}{10}
+>> [@DataTable(
+  [
+    [[PGML('[`x`]'),
+      rowbottom => '2',
+      midrule => '1',],
+     PGML('[`y`]'),
+    ],
+    [PGML('[`[$x[0]]`]'),
+     PGML('[`[$y[0]]`]'),
+    ],
+    [PGML('[`[$x[1]]`]'),
+     PGML('[`[$y[1]]`]'),
+    ],
+    [PGML('[`[$x[2]]`]'),
+     PGML('[`[$y[2]]`]'),
+    ],
+    [PGML('[`[$x[3]]`]'),
+     PGML('[`[$y[3]]`]'),
+    ],
+  ],
+      align => 'rl',
+      valign => 'middle',);@]* <<
+
+[_]{$eq}{20}
 
 END_PGML
 
@@ -69,21 +91,34 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-Assume Bao should give [`q`] milliliters of liquid medicine, so we can set up the following proportion:
+Looking for a relationship in each row here, we see that each [`y`]-value is the square of the corresponding [`x`]-value. That may not be obvious to you. It comes down to recognizing what square numbers are. So the equation is [`[$eq]\text{.}`]
 
-[```\newcommand{\multiplyleft}[2][\cdot]{{\highlight{{#2#1{}}}}}\newcommand{\divideunder}[2]{\frac{#1}{{\highlight{{#2}}}}}\newcommand{\amp}{&}
-\begin{aligned}
-\frac{\text{amount of liquid medicine in mL}}{\text{amount of acetaminophen in mg}}\amp=\frac{\text{amount of liquid medicine in mL}}{\text{amount of acetaminophen in mg}}\\
-\frac{5\,\text{mL}}{160\,\text{mg}}\amp=\frac{q\,\text{mL}}{60\,\text{mg}}\\
-\frac{5}{160}\amp=\frac{q}{60}\\
-\multiplyleft{160\cdot 60}\cdot\frac{5}{160}\amp=\multiplyleft{160\cdot 60}\cdot\frac{q}{60}\\
-300\amp=160q\\
-\divideunder{300}{160}\amp=\divideunder{160q}{160}\\
-q\amp=1.875
-\end{aligned}
-```]
+What if we had tried the approach we used in the previous exercise, comparing change from row to row in each column?
 
-So to give 60 mg of acetaminophen to his baby, Bao should measure out 1.875 mL of the liquid medication.
+>> [@DataTable(
+  [
+    [[PGML('[`x`]'),
+      rowbottom => '2',
+      midrule => '1',],
+     PGML('[`y`]'),
+    ],
+    [PGML('[`[$x[0]]`]'),
+     PGML('[`[$y[0]]`]'),
+    ],
+    [PGML('(add [`1`] from previous) [`[$x[1]]`]'),
+     PGML('[`[$y[1]]`] (add [`1`] from previous)'),
+    ],
+    [PGML('(add [`1`] from previous) [`[$x[2]]`]'),
+     PGML('[`[$y[2]]`] (add [`3`] from previous)'),
+    ],
+    [PGML('(add [`1`] from previous) [`[$x[3]]`]'),
+     PGML('[`[$y[3]]`] (add [`5`] from previous)'),
+    ],
+  ],
+      align => 'rl',
+      valign => 'middle',);@]* <<
+
+Here, the rate of change is _not_ constant from one row to the next. While the [`x`]-values are increasing by [`1`] from row to row, the [`y`]-values increase more and more from row to row. Do you notice that there is a pattern there as well? Mathematicians are interested in finding patterns and describing them.
 
 END_PGML_SOLUTION
 

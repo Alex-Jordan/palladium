@@ -175,10 +175,10 @@
 \begin{document}
 \begin{tikzpicture}
   \begin{axis}[
-      width=0.47\orccaprintwidth
+      width=0.33\orccaprintwidth
     ]
-    \addplot[firstcurve, domain=-5:2]{2*x+3} node[pos=0.5,sloped,above left] {\(y=2x+3\)};
-    \addplot[secondcurve, domain=-1:6]{2*(x-4)+3} node[pos=0.5,sloped,above right] {\(y=2(x-4)+3\)};
+    \addplot[firstcurve,domain=-7:(-10/7)]{(-(7/3)*(x+7)+6)};
+    \addplot[secondcurve,domain=-7:5]{((8/9)*(x-5)+7)};
   \end{axis}
 \end{tikzpicture}
 
