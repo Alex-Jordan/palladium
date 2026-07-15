@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2026                                                       -->
+<!-- Alex Jordan                                                          -->
+<!-- *********************************************************************-->
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chapter-linear">
+  <title>Linear</title>
+  <introduction>
+    <p>
+      This chapter is all about <q>linear</q> math expressions. An example of a linear math
+      expression is <m>2x+5</m>. A linear expression like this could come out of a word problem, be
+      on one side of an equation like <md>2x+5=7</md>, be part of a function formula like
+      <m>f(x)=2x+5</m>, be graphed using the equation <m>y=2x+5</m>, or much more.
+    </p>
+  </introduction>
+  <xi:include href="section-modeling-with-equations-and-inequalities.ptx"/>
+  <xi:include href="section-linear-equations-and-inequalities.ptx"/>
+  <xi:include href="section-slope.ptx"/>
+  <xi:include href="section-lines.ptx"/>
+  <xi:include href="section-linear-systems.ptx"/>
+</chapter>
+

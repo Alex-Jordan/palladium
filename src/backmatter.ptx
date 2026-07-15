@@ -13,13 +13,14 @@
         This appendix is intended to review topics from basic math and basic algebra.
       </p>
     </introduction>
-    <xi:include href="section-fractions-and-fraction-arithmetic.ptx"/>
+    <xi:include href="section-fraction-arithmetic.ptx"/>
     <xi:include href="section-order-of-operations.ptx"/>
     <xi:include href="section-combining-like-terms.ptx"/>
     <xi:include href="section-algebraic-properties-and-simplifying-expressions.ptx"/>
     <xi:include href="section-comparison-symbols-and-notation-for-intervals.ptx"/>
     <xi:include href="section-equations-inequalities-and-solutions.ptx"/>
     <xi:include href="section-solving-one-step-equations.ptx"/>
+    <xi:include href="section-introduction-to-exponent-properties.ptx"/>
     <xi:include href="section-multiplying-polynomials.ptx"/>
   </appendix>
 

@@ -10,15 +10,10 @@
     <p>
       Previously in <xref ref="section-introduction-to-exponent-properties"/>, we learned how to
       multiply two monomials together (such as <m>4xy\cdot3x^2</m>). And we can add and subtract
-      polynomials even when there is more than one term (such as <m>(4x^2-3x)+(5x^2+x-2)</m>) using
-      like terms. In this section, we will learn how to <em>multiply</em> polynomials with
-      <em>more than one</em> term.
+      polynomials even when there is more than one term, such as <m>(4x^2-3x)+(5x^2+x-2)</m>, using
+      like terms. In this section, we will learn how to <em>multiply</em> polynomials with more than
+      one term.
     </p>
-
-    <figure>
-      <caption>Alternative Video Lesson</caption>
-      <video youtubeplaylist="PLmuZCPhWPt-eCbs7JZnacBJj2YUTmRxY1" />
-    </figure>
 
     <example xml:id="example-revenue">
       <title>Revenue</title>
@@ -169,17 +164,17 @@
         <m>(x+2)\multiplyright{3}=x\multiplyright{3}+2\multiplyright{3}</m>.
         We can actually distribute <em>anything</em> across <m>(x+2)</m> if it is multiplied.
         For example:
-        <me>
+        <md>
           (x+2)\cat=x\cdot \cat + 2\cdot \cat
-        </me>
+        </md>
       </p>
 
       <p>
         Keeping this in mind, we can multiply <m>(x+2)(x+3)</m> by distributing the <m>(x+3)</m>
         across <m>(x+2)</m>. Think of <m>(x+3)</m> as the cat.
-        <me>
+        <md>
           (x+2)\highlight{(x+3)} = x\highlight{(x+3)} + 2\highlight{(x+3)}
-        </me>
+        </md>
         To continue, distribure more:
         <md>
           <mrow>(x+2)\highlight{(x+3)} \amp= x\highlight{(x+3)} + 2\highlight{(x+3)}</mrow>
@@ -593,8 +588,8 @@
       </figure>
 
       <p>
-        We begin by distributing over <m>\left(x^2-4x+6 \right)</m>, then perform a second step of
-        distributing, and then combine like terms.
+        We distribute once over <m>\left(x^2-4x+6 \right)</m>, then make a second pass, and then
+        combine like terms.
         <md>
           <mrow>\left(x+5\right)\highlight{\left( x^2-4x+6 \right)}\amp= x\highlight{\left( x^2-4x+6 \right)}+5\highlight{\left( x^2-4x+6 \right)}</mrow>
           <mrow>\amp= x\cdot \highlight{x^2} - x\cdot \highlight{4x} +x\cdot \highlight{6}+5\cdot \highlight{x^2} - 5\cdot \highlight{4x} +5\cdot \highlight{6}</mrow>
@@ -628,7 +623,7 @@
   </reading-questions>
 
   <exercises>
-    <subexercises>
+    <!-- <subexercises>
       <title>Review and Warmup</title>
       <exercisegroup cols="3">
         <introduction>
@@ -655,7 +650,7 @@
           <webwork copy="webwork-exponent-product-with-powers"/>
         </exercise>
       </exercisegroup>
-    </subexercises>
+    </subexercises> -->
 
     <subexercises>
       <title>Skills Practice</title>

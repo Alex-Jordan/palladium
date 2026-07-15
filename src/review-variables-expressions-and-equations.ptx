@@ -1776,8 +1776,8 @@
         <!-- <exercise label="salary-linear-inequality-model-copy">
           <webwork copy="webwork-salary-linear-inequality-model"/>
         </exercise>
-        <exercise label="discount-linear-ineequality-model-copy">
-          <webwork copy="webwork-discount-linear-ineequality-model"/>
+        <exercise label="discount-linear-inequality-model-copy">
+          <webwork copy="webwork-discount-linear-inequality-model"/>
         </exercise> -->
         <exercise label="restaurant-bill-linear-inequality-model-copy">
           <webwork copy="webwork-restaurant-bill-linear-inequality-model"/>

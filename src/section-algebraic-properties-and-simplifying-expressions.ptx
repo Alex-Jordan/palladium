@@ -14,11 +14,6 @@
       along with a few other features.
       Understanding these well will help us solve more equations later.
     </p>
-
-    <figure xml:id="video-simplifying-expressions">
-      <caption>Alternative Video Lesson</caption>
-      <video youtubeplaylist="PLmuZCPhWPt-eiwLULOcn5X4ZyZ5kB6H6A" />
-    </figure>
   </introduction>
 
   <subsection>
@@ -29,9 +24,9 @@
       adding <m>0</m> to a number does not change that number's <q>identity</q>.                              <idx><h>Identity</h><h>additive</h></idx>
       If you were playing a <q>game</q> where you needed to add something to <m>x</m>, but you                <idx><h>Addition</h><h>identity property of</h></idx>
       didn't want to change the value, then you would add <m>0</m>:                                           <idx><h>Identity property</h><h>of addition</h></idx>
-      <me>
+      <md>
         x+0=x
-      </me>
+      </md>
       Adding the additive identity to a number does not change that number.
     </p>
 
@@ -41,14 +36,14 @@
       Imagine playing a game where you have a number like <m>2</m>, and you need to add something             <idx><h>Inverse</h><h>additive</h></idx>
       to it to get <m>0</m>. You would add <m>-2</m>:                                                         <idx><h>Opposite</h></idx>
                                                                                                               <idx><h>Inverse property</h><h>of addition</h></idx>
-      <me>
+      <md>
         2+(-2)=0
-      </me>
+      </md>
       It works the other way too when starting with a negative number. Now imagine starting with
       <m>-3</m> and you need to add something to that to get <m>0</m>. You would add <m>3</m>:
-      <me>
+      <md>
         -3+3=0
-      </me>
+      </md>
       The additive inverse of a number is that same number with the opposite sign. And what makes
       that pair of numbers special is that they add to <m>0</m>.
     </p>
@@ -59,9 +54,9 @@
       it does not change that number's <q>identity</q>. Once again, imagine you are playing a game            <idx><h>Multiplication</h><h>identity property of</h></idx>
       where your job is to multiply <m>x</m> by something, but you actually do not want to change
       the number's value. Then you would multiply by <m>1</m>:                                                <idx><h>Identity property</h><h>of multiplication</h></idx>
-      <me>
+      <md>
         x\cdot1=x
-      </me>
+      </md>
     </p>
 
     <p>
@@ -70,15 +65,15 @@
       Strategically, what would you multiply <m>2</m> by to get <m>1</m>?                                     <idx><h>Inverse</h><h>multiplicative</h></idx>
       You could use the fraction <m>\frac12</m>:                                                              <idx><h>Reciprocal</h></idx>
                                                                                                               <idx><h>Inverse property</h><h>of multiplication</h></idx>
-      <me>
+      <md>
         2\cdot\frac12=1
-      </me>
+      </md>
       Or what if you started with a more <q>complicated</q> number like <m>-\frac{2}{3}</m>?
       What could you multiply that by to get <m>1</m>? We would use <m>-\frac{3}{2}</m> so that the
       negative signs cancel, and the product would be <m>\frac{6}{6}</m> which reduces to <m>1</m>:
-      <me>
+      <md>
         -\frac{2}{3}\cdot\left(-\frac{3}{2}\right)=1
-      </me>
+      </md>
       Notice what happens with the numerator and denominator swapping places.
       The multiplicative inverse of a number is also called its <term>reciprocal</term>.
     </p>
@@ -269,17 +264,17 @@
       <p>
         The distributive property also works with multiplication on the other side,
         and with subtraction:
-        <me>
+        <md>
           (a+p)\cdot3 =a\cdot3+p\cdot3\qquad 3(a-p)=3a-3p\qquad (a-p)\cdot3 =a\cdot3-p\cdot3
-        </me>
+        </md>
         although the apples and pears metaphor may be harder to make sense of.
       </p>
       <p>
         And the distributive property works with division too, when there is only one term in the
         denominator:
-        <me>
+        <md>
           \frac{a+p}{3}=\frac{a}{3}+\frac{p}{3}
-        </me>
+        </md>
       </p>
     </paragraphs>
 
@@ -477,9 +472,9 @@
           <solution>
             <p>
               To use the commutative property of multiplication, change the order the two factors are multiplied:
-              <me>
+              <md>
                 53m=m\cdot 53
-              </me>.
+              </md>.
             </p>
           </solution>
         </task>
@@ -496,9 +491,9 @@
             <p>
               To use the associative property of multiplication, leave factors written in their original order,
               but change the grouping symbols so that a different multiplication has higher priority:
-              <me>
+              <md>
                 3(5n)=(3\cdot5)n
-              </me>.
+              </md>.
               You may further simplify by multiplying the two numbers:
               <md>
                 <mrow>3(5n)\amp=(3\cdot5)n</mrow>
@@ -520,9 +515,9 @@
           <solution>
             <p>
               To use the commutative property of addition, change the order the two terms are added:
-              <me>
+              <md>
                 q+84=84+q
-              </me>.
+              </md>.
             </p>
           </solution>
         </task>
@@ -539,9 +534,9 @@
             <p>
               To use the associative property of addition, leave terms written in their original order,
               but change the grouping symbols so that a different addition has higher priority:
-              <me>
+              <md>
                 x+(20+c)=(x+20)+c
-              </me>
+              </md>
             </p>
           </solution>
         </task>
@@ -575,8 +570,8 @@
       One way we use the commutative, associative, and distributive properties is to simplify                 <idx><h>Algebraic expressions</h><h>simplifying</h></idx>
       algebra expressions.
     </p>
-    <paragraphs>                                                                                              <idx><h>Combining like terms</h></idx>
-      <title>Like Terms</title>
+    <paragraphs>
+      <title>Like Terms</title>                                                                               <idx><h>Combining like terms</h></idx>
         <p>
         For example, how we treat like terms (see <xref ref="section-combining-like-terms"/>) is
         actually putting these algebra properties into practice. We combine like terms when we take
@@ -713,14 +708,14 @@
       <title>Adding Expressions</title>
       <p>
         Consider adding an expression like <m>4x+5</m> to an expression like <m>3x+7</m>:
-        <me>
+        <md>
           (4x+5)+(3x+7)
-        </me>
+        </md>
         Can we simplify this? It's great if you already see that the parentheses in this case can
         be removed and it would not change the outcome:
-        <me>
+        <md>
           4x+5+3x+7
-        </me>
+        </md>
         And then using what you know about like terms, you could conclude that this is <m>7x+12</m>.
       </p>
       <p>
@@ -1926,8 +1921,11 @@
 
       <exercise label="disambiguate-addition">
         <webwork>
+          <pg-macros>
+            <macro-file>Pd.pl</macro-file>
+          </pg-macros>
           <pg-code>
-            @var = ('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z')[NchooseK(49,3)];
+            @var = random_subset(3, @ORCCA_variables);
             Context("Numeric");
             Context()->variables->are($var[0]=>'Real' ,$var[1]=>'Real', $var[2]=>'Real');
             Context()->lists->set(AbsoluteValue => {open => "(", close => ")"});

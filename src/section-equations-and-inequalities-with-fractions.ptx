@@ -1975,9 +1975,9 @@
           <statement>
             <p>
               An old cookbook has a recipe for soup that uses <m><var name="$recipe"/></m> g of
-              flour for thickener. The recipe makes <m><var name="$volA"/></m> gal of soup, but
-              you are adjusting it to make only <m><var name="$volB"/></m> gal. How much flour
-              should you use?
+              flour for thickener. The recipe makes <m><var name="$volA"/></m> gal of soup, but you
+              are adjusting it to make <m><var name="$volB"/></m> gal. How much flour should you
+              use?
             </p>
             <p>
               <var name="$answer" width="16"/>

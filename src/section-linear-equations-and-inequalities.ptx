@@ -51,19 +51,19 @@
         </row>
         <row>
           <cell><m>1</m></cell>
-          <cell><m>20</m> (<m>15+5</m>)</cell>
+          <cell><m>20</m></cell>
         </row>
         <row>
           <cell><m>2</m></cell>
-          <cell><m>35</m> (<m>30+5</m>)</cell>
+          <cell><m>35</m></cell>
         </row>
         <row>
           <cell><m>3</m></cell>
-          <cell><m>50</m> (<m>45+5</m>)</cell>
+          <cell><m>50</m></cell>
         </row>
         <row>
           <cell><m>4</m></cell>
-          <cell><m>65</m> (<m>60+5</m>)</cell>
+          <cell><m>65</m></cell>
         </row>
         <row>
           <cell><m>\vdots</m></cell>
@@ -76,15 +76,15 @@
         minutes, we've added <m>15t</m> gallons of water to the <m>5</m> gallons that we started
         with. And after <m>t</m> minutes, we have <m>15t+5</m> gallons total. To find when the tank
         will be full with <m>140</m> gallons, we can write the equation
-        <me>
+        <md>
           15t+5=140
-        </me>
+        </md>
       </p>
 
       <p>
         We follow a simple strategy to solve this equation. First we want to isolate the variable
-        term <m>15t</m>. How to do that? We need to separate it from the <m>5</m> term. We can do
-        this in a legal way using the
+        term <m>15t</m>. How to do that? We need to separate it from the <q><m>5</m></q> term. We
+        can do this in a valid way using the
         <xref ref="fact-properties-of-equivalent-equations" text="custom">subtraction property of equality</xref>,
         subtracting <m>5</m> from each side of the equation.
         <md>
@@ -123,16 +123,16 @@
     </example>
 
     <p>
-      In solving the equation in <xref ref="example-two-step-equation"/>, we first isolated
-      the variable expression <m>15t</m> and then eliminated the coefficient <m>15</m> by dividing
-      each side of the equation by <m>15</m>. These two steps are the heart of our strategy to
-      solving linear equations in general. Try these two steps in the following exercise.
+      In solving the equation in <xref ref="example-two-step-equation"/>, we first isolated the
+      variable expression <m>15t</m> and then eliminated the coefficient <m>15</m> by dividing each
+      side of the equation by <m>15</m>. These two steps are the heart of our strategy to solving
+      linear equations in general. Try these two steps in the following exercise.
     </p>
 
     <exercise label="solve-two-step">
       <webwork>
         <pg-code>
-          Context("FiniteSolutionSets");
+          Context("FiniteSolutionSets")->variables->are(y => 'Real');
           $solution = Formula("{5}");
         </pg-code>
         <statement>
@@ -169,8 +169,8 @@
 
     <p>
       In <xref ref="section-modeling-with-equations-and-inequalities"/>, there was
-      <xref ref="example-savings-pattern"/>. In that example, some background information let us
-      set up an equation, but we didn't try to solve it. Now we can try solving it.
+      <xref ref="example-savings-pattern"/>. In that example, some background information let us set
+      up an equation, but we didn't try to solve it. Now we can try solving it.
     </p>
 
     <exercise label="savings-pattern">
@@ -240,9 +240,9 @@
           <p>
             We find the pattern is that after <m>t</m> months, the total amount saved is
             <m>150t + 500</m>. Using this pattern, we set up the equation
-            <me>
+            <md>
               150t + 500 = 1700
-            </me>
+            </md>
             to represent when we will have saved up <m>\$1700</m>. To solve this equation, we start
             by subtracting <m>500</m> from each side. Then we can divide each side by <m>150</m>.
             <md>
@@ -254,12 +254,12 @@
             </md>
             Checking the solution <m>8</m>:
             <md>
-              <mrow>500+150m\amp=1700</mrow>
-              <mrow>500+150\amp(\substitute{8})\wonder{=}1700</mrow>
-              <mrow>500+1200\amp\confirm{=}1700</mrow>
+              <mrow>500+150m               \amp         = 1700</mrow>
+              <mrow>500+150(\substitute{8})\amp \wonder{=}1700</mrow>
+              <mrow>500+1200               \amp\confirm{=}1700</mrow>
             </md>
-            So <m>8</m> is the solution, and it checks out.
-            This means it will take <m>8</m> months for the account balance to reach <m>\$1700</m>.
+            So <m>8</m> is the solution, and it checks out. This means it will take <m>8</m> months
+            for the account balance to reach <m>\$1700</m>.
           </p>
         </solution>
       </webwork>
@@ -270,8 +270,8 @@
     <title>Solving Multistep Linear Equations</title>
     <p>
       More complicated equations might need a few setup steps before we can do the two important
-      steps of isolating the variable term and eliminating the coefficient. Here is a general
-      guide for what the full process can be like.
+      steps of isolating the variable term and eliminating the coefficient. Here is a general guide
+      for what the full process can be like.
     </p>
     <algorithm xml:id="algorithm-solve-multistep-linear-equation">
       <title>Steps to Solve Linear Equations</title>                                                          <idx><h>Solving</h><h>linear equations</h><h>multistep</h></idx>
@@ -324,10 +324,9 @@
 
     <example>
       <p>
-        Ahmed has <m>\$2500</m> in his savings account and is going to start saving <m>\$550</m> per
-        month. Julia has <m>\$4600</m> in her savings account and is going to start saving
-        <m>\$250</m> per month. If this situation continues, how long will it take for Ahmed to
-        catch up with Julia in savings?
+        Ahmed has <m>\$2500</m> in his savings account and will be saving <m>\$550</m> per month.
+        Julia has <m>\$4600</m> in her savings account and will be saving <m>\$250</m> per month. If
+        this situation continues, how long will it take for Ahmed to catch up to Julia in savings?
       </p>
 
       <p>
@@ -335,19 +334,25 @@
         With the <m>\$2500</m> he started with, after <m>t</m> months he has <m>550t + 2500</m>
         dollars. Similarly, after <m>t</m> months, Julia has <m>250t + 4600</m> dollars. To find
         when those two accounts will have the same amount of money, we write the equation
-        <me>
+        <md>
           550t + 2500 = 250t + 4600
-        </me>
+        </md>
         Each side is simplified, but unlike earlier examples, we have the variable <m>t</m> on
-        <em>both</em> side of the equation. But we can still use
+        <em>both</em> side of the equation. We can still use
         <xref ref="fact-properties-of-equivalent-equations" text="custom">properties of equality</xref>
-        to have only one <m>t</m>-term. We can start by subtracting <m>250t</m> from each side.
+        to end up with only one <m>t</m>-term. We start by subtracting <m>250t</m> from each side.
         <md>
           <mrow>550t+2500\amp=250t+4600</mrow>
           <mrow>550t+2500\subtractright{250t}\amp=250t+4600\subtractright{250t}</mrow>
           <mrow>300t+2500\amp=4600</mrow>
+        </md>
+        And then subtract a constant term from each side.
+        <md>
           <mrow>300t+2500\subtractright{2500}\amp=4600\subtractright{2500}</mrow>
           <mrow>300t\amp=2100</mrow>
+        </md>
+        Now we can divide by the coefficient.
+        <md>
           <mrow>\divideunder{300t}{300}\amp=\divideunder{2100}{300}</mrow>
           <mrow>t\amp=7</mrow>
         </md>
@@ -405,8 +410,8 @@
 
     <p>
       In <xref ref="exercise-two-step-equation-both-sides"/>, we could have moved variable terms to
-      the <em>right</em> side of the equal sign and number terms to the <em>left</em> side. We
-      chose not to, but there's no reason why we couldn't have done that. Let's explore:
+      the <em>right</em> side of the equal sign and number terms to the <em>left</em> side. We chose
+      not to, but there's no reason why we couldn't have done that. Let's explore:
       <md>
         <mrow>5-\nextoperation{2x}\amp=5x-9</mrow>
         <mrow>5-2x\addright{2x}\amp=5x-9\addright{2x}</mrow>
@@ -429,7 +434,8 @@
         <mrow>2\amp=x</mrow>
       </md>
       For the sake of a slow and careful explanation, the examples in this chapter will move
-      variable terms and number terms in separate steps.
+      variable terms and number terms in separate steps. You shoudl feel free to add/subtract more
+      than one term in one step if you are comfortable with that.
     </p>
 
     <p>
@@ -509,7 +515,7 @@
           <p>
             Checking the solution <m>-1</m>:
             <md>
-              <mrow>4-(3-a)\amp=-2-2(2a+1)</mrow>
+              <mrow>4\nextoperation{{}-(3-a)}\amp=-2\nextoperation{{}-2(2a+1)}</mrow>
               <mrow>4-(3-(\substitute{-1}))\amp\wonder{=}-2-2(2(\substitute{-1})+1)</mrow>
               <mrow>4-(4)\amp\wonder{=}-2-2(-1)</mrow>
               <mrow>0\amp\wonder{=}-2+2</mrow>
@@ -570,9 +576,9 @@
     <title>Revisiting Applications</title>
 
     <p>
-      In <xref ref="section-modeling-with-equations-and-inequalities"/>, we explored several
-      <q>word problem</q> scenarios that led to equations, but we did not try to solve those
-      equations. Let's revisit some of those applications and try to solve them.
+      In <xref ref="section-modeling-with-equations-and-inequalities"/>, we explored several <q>word
+      problem</q> scenarios that led to equations, but we did not try to solve those equations.
+      Let's revisit some of those applications and try to solve them.
     </p>
 
     <p>
@@ -604,7 +610,7 @@
           </quantity>),
           a rate at which the amount of water is changing
           (<quantity>
-            <mag>1.75</mag><unit base="foot" exp="3"/>
+            <mag>1.75</mag><unit base="foot" exp="3"/><per base="minute"/>
           </quantity>),
           and a final amount of water we are going to reach
           (<quantity>
@@ -620,9 +626,9 @@
             <mag>6.25</mag><unit base="foot" exp="3"/>
           </quantity>.
           And we have the equation:
-          <me>
+          <md>
             2.5 + 1.75t = 6.25
-          </me>
+          </md>
           Now we have the skills to solve this equation.
           <md>
             <mrow>2.5 + 1.75t \amp= 6.25</mrow>
@@ -657,16 +663,16 @@
           to use <m>S</m> as the variable. Let <m>S</m> represent Jakobi's salary from last year.
         </p>
         <p>
-          To set up the equation, we need to think about how he arrived at this year's salary.
-          His employer took last year's salary and added <m>4\%</m> to that. In words, we have:
-          <me>
-            (\text{last year's salary})+(4\%\text{ of last year's salary}) = (\text{this year's salary})
-          </me>
-          We represent <q><m>4\%</m> of last year's salary</q> with <m>0.04S</m> since <m>0.04</m>
+          To set up the equation, we need to think about how he arrived at this year's salary. His
+          employer took last year's salary and added <m>4\%</m> to that. In words, we have:
+          <md>
+            \text{lastYear'sSalary}+(4\%\text{ of lastYear'sSalary} = \text{thisYear'sSalary}
+          </md>
+          We represent <q><m>4\%</m> of lastYear'sSalary</q> with <m>0.04S</m> since <m>0.04</m>
           is the decimal equivalent to <m>4\%</m>. So out equation is:
-          <me>
+          <md>
             S + 0.04S = 73290
-          </me>
+          </md>
           Now we have the skills to solve this equation.
           <md>
             <mrow>S + 0.04S \amp= 73290</mrow>
@@ -872,10 +878,10 @@
     <title>Solving Multistep Inequalities</title>
     <p>
       When solving a linear inequality, we almost follow the exact same steps as we do in
-      <xref ref="algorithm-solve-multistep-linear-equation">Process</xref>. One difference is that
-      when we multiply or divide by a negative number on both sides of an inequality, the direction
-      of the inequality symbol must switch. The other difference is that checking a solution set
-      takes more effort.
+      <xref ref="algorithm-solve-multistep-linear-equation"/>. One difference is that when we
+      multiply or divide by a negative number on both sides of an inequality, the direction of the
+      inequality symbol must switch. The other difference is that checking a solution set takes more
+      effort.
     </p>
 
     <algorithm xml:id="algorithm-solve-linear-inequality">
@@ -1163,7 +1169,7 @@
             </md>
             And now divide each side by <m>-5</m>. Since we are dividing by a negative number, the
             inequality sign will change direction.
-            <me>x\lt-1</me>
+            <md>x\lt-1</md>
           </p>
 
           <p>
@@ -1208,10 +1214,7 @@
         </solution>
       </webwork>
     </exercise>
-  </subsection>
 
-  <subsection>
-    <title>Applications</title>
     <example>
       <title>Rate Problem</title>
       <statement>
@@ -1280,6 +1283,972 @@
     </example>
   </subsection>
 
+  <subsection>
+    <title>Special Solution Sets</title>
+    <p>
+      Recall that for the equation <m>x+2=5</m>, there is only one number which will make the
+      equation true: <m>3</m>. This means that the solution is <m>3</m>, and we write the
+      <term>solution set</term> as <m>\{3\}</m>. We say the equation's solution set has one
+      <term>element</term>, <m>3</m>.
+    </p>
+
+    <p>
+      We'll now explore equations where <em>all real numbers</em> are solutions, and other equations
+      where <em>no real number</em> is a solution.
+    </p>
+
+    <example>                                                                                                 <idx><h>Linear equations</h><h>with no solution</h></idx>
+      <p>
+        Solve for <m>x</m> in <m>3x=3x+4</m>.
+      </p>
+      <p>
+        To solve this equation, we need to move all terms containing <m>x</m> to one side of the
+        equal sign. We set out to remove the <m>3x</m> from the right side of the equation, by
+        subtracting <m>3x</m> from each side:
+        <md>
+          <mrow>3x\amp=3x+4</mrow>
+          <mrow>3x\subtractright{3x}\amp=3x+4\subtractright{3x}</mrow>
+          <mrow>0\amp=4</mrow>
+        </md>
+      </p>
+      <p>
+        But now <m>x</m> is no longer present in the equation. Our effort to remove <m>3x</m> from            <idx><h>Empty set</h></idx>
+        the <em>right</em> side coincidentally removed it from the <em>left</em> side too. What
+        value can we substitute in for <m>x</m> to make <m>0=4</m> become true? That's a trick
+        question; you could never make <m>0=4</m> become true. We say this equation has <q>no
+        solution</q>. Or we say that the equation has an <q>empty solution set</q>. We can write an
+        empty solution set as <m>\emptyset</m>, or <m>\{\text{ }\}</m>. (Be careful not to confuse
+        the empty set symbol <m>\emptyset</m> with the number zero, <m>0</m>.)
+      </p>
+      <p>
+        The equation <m>0=4</m> is unambiguously false no matter what <m>x</m> might be. This shows
+        us there is no solution to the original equation.
+      </p>
+    </example>
+
+    <example xml:id="example-solving-linear-equation-identity-intro">                                         <idx><h>Linear equations</h><h>with infinitely many solutions</h></idx>
+      <p>
+        Solve for <m>x</m> in <m>2x+1=2x+1</m>.
+      </p>
+      <p>
+        We will move all terms containing <m>x</m> to one side of the equal sign:
+        <md>
+          <mrow>2x+1\amp=2x+1</mrow>
+          <mrow>2x+1\subtractright{2x}\amp=2x+1\subtractright{2x}</mrow>
+          <mrow>1\amp=1</mrow>
+        </md>
+      </p>
+      <p>
+        Once again, <m>x</m> is no longer present in the equation. What value can we substitute in
+        for <m>x</m> to make <m>1=1</m> be true? This is another trick question; <em>any</em> value
+        for <m>x</m> would work. This means that all real numbers are solutions to the equation
+        <m>2x+1=2x+1</m>. We say this equation's solution set contains <em>all real numbers</em>.
+        We can write this set using interval notation as <m>(-\infty,\infty)</m>, or use
+        <m>\mathbb{R}</m> as an abbreviation for the set of all real numbers.
+      </p>
+
+      <p>
+        The equation <m>1=1</m> is unambiguously true no matter what <m>x</m> might be. This shows
+        us that all real numbers are solutions to the original linear equation.
+      </p>
+    </example>
+
+    <remark>
+      <p>
+        What would have happened if we had continued the solving process after we obtained
+        <m>1=1</m> in <xref ref="example-solving-linear-equation-identity-intro"/>?
+        <md>
+          <mrow>1\amp=1</mrow>
+          <mrow>1\subtractright{1}\amp=1\subtractright{1}</mrow>
+          <mrow>0\amp=0</mrow>
+        </md>
+        All we found was another unambiguously true equation, and we still conclude that all real
+        numbers are solutions.
+      </p>
+    </remark>
+
+    <warning>
+      <p>
+        Note that there is a very important difference when our process ends with <m>0=0</m>,
+        compared to when it ends with <m>x=0</m>. The first equation is true no matter what the
+        value of <m>x</m> is, and the solution set is <m>(-\infty,\infty)</m>. The second situation
+        only has one solution, <m>0</m>, and the solution set is <m>\{0\}</m>.
+      </p>
+    </warning>
+
+    <example>                                                                                                 <idx><h>Inequalities</h><h>with infinitely many solutions</h></idx>
+      <p>
+        Solve for <m>t</m> in the inequality <m>4t+5\gt 4t+2</m>.
+      </p>
+      <p>
+        To solve for <m>t</m>, we aim to eliminate that <m>4t</m> on the right side by subtracting
+        <m>4t</m> from each side:
+        <md>
+          <mrow>4t+5\amp\gt 4t+2</mrow>
+          <mrow>4t+5\subtractright{4t}\amp\gt 4t+2\subtractright{4t}</mrow>
+          <mrow>5\amp\gt 2</mrow>
+        </md>
+        We again find ourselves with the variable completely eliminated from <em>both</em> sides.
+        What values of <m>t</m> would make the inequality <m>5\gt 2</m> true? The answer is that
+        <em>all values</em> of <m>t</m> make <m>5\gt 2</m>, which we know is a strange sounding
+        sentence. So our solution set is all real numbers, which we can write as
+        <m>(-\infty,\infty)</m> or <m>\mathbb{R}</m>.
+      </p>
+    </example>
+
+    <example xml:id="example-solving-linear-inequality-false-statement-intro">                                <idx><h>Inequalities</h><h>with no solutions</h></idx>
+      <p>
+        Solve for <m>x</m> in the inequality <m>-5x+1\le -5x</m>.
+      </p>
+
+      <p>
+        To solve for <m>x</m>, we aim to eliminate the <m>5x</m> from the right side by adding
+        <m>5x</m> to each side:
+        <md>
+          <mrow>-5x+1\amp\le -5x</mrow>
+          <mrow>-5x+1\addright{5x}\amp\le -5x\addright{5x}</mrow>
+          <mrow>1\amp\le 0</mrow>
+        </md>
+        And yet again, the variable has gone missing. We can ask ourselves, <q>For which values of
+        <m>x</m> is <m>1\le 0</m> true?</q> The answer is that this is impossible. There is no
+        solution to this inequality. We can write the solution set using <m>\emptyset</m> or just
+        say that there are <q>no solutions</q>.
+      </p>
+    </example>
+
+    <p>
+      Let's summarize these two special cases that sometimes arise when solving linear equations and
+      inequalities.
+    </p>
+
+    <list xml:id="list-special-solution-sets">
+      <title>Special Solution Sets for Equations and Inequalities</title>
+      <dl>
+        <li>
+          <title>All Real Numbers</title>
+          <p>
+            When solving an equation or inequality boils down to an unambiguously true equation or
+            inequality such as <m>2=2</m> or <m>0\lt2</m>, then all real numbers are solutions.
+            We write this solution set as <m>(-\infty,\infty)</m> or <m>\mathbb{R}</m>.
+          </p>
+        </li>
+
+        <li>
+          <title>No Solution</title>
+          <p>
+            When solving an equation or inequality boils down to an outright false statement such as
+            <m>0=2</m> or <m>0\gt2</m>, then no real number is a solution. We write this solution
+            set as either <m>\{\ \}</m> or <m>\emptyset</m> or write in words something like
+            <q>there are no solutions</q>.
+          </p>
+        </li>
+      </dl>
+    </list>
+  </subsection>
+
+  <subsection>
+    <title>Solving for a Variable</title>
+    <sidebyside widths="50% 40%" margins="0%">
+      <p>
+        The formula of calculating a rectangle's area is <m>A=\ell w</m>, where <m>\ell</m> stands
+        for the rectangle's length and <m>w</m> stands for its width. When a rectangle's length and
+        width are given, this formula lets us calculate the rectangle's area.
+      </p>
+
+      <image width="40%">
+        <latex-image label="rectangle-with-known-dimensions">
+          \begin{tikzpicture}
+            \draw[fill=wood] (0,0) --++  (4,0) node[below, pos=0.5]{\(w\checkmark\)} --++ (0,2.5) node[right, pos=0.5]{\(\ell\checkmark\)} -| cycle;
+            \node at (2,1.25) {\(A?\)};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </sidebyside>
+    <sidebyside widths="50% 40%" margins="0%">
+      <p>
+        What if we know a rectangle's <em>area</em> and <em>length</em>, but we need to calculate
+        its width?
+      </p>
+      <image width="40%">
+        <latex-image label="rectangle-with-known-area-and-length">
+          \begin{tikzpicture}
+            \draw[fill=wood] (0,0) --++  (4,0) node[below, pos=0.5]{\(w?\)} --++ (0,2.5) node[right, pos=0.5]{\(\ell\checkmark\)} -| cycle;
+            \node at (2,1.25) {\(A\checkmark\)};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </sidebyside>
+
+    <p>
+      Well, if a rectangle's area is
+      <quantity>
+        <mag>12</mag><unit base="meter" exp="2"/>
+      </quantity>, and its length is
+      <quantity>
+        <mag>4</mag><unit base="meter"/>
+      </quantity>, we <em>could</em> substitute these values into the area formula and then we have
+      only one variable left, <m>w</m>, and we can solve for it:
+      <md>
+        <mrow>\substitute{12}\amp=\substitute{4}w</mrow>
+        <mrow>\divideunder{12}{4}\amp=\divideunder{4w}{4}</mrow>
+        <mrow>3\amp=w\implies w=3</mrow>
+      </md>
+    </p>
+
+    <p>
+      However we can go through the same steps <em>without</em> using specific numbers for <m>A</m>
+      and
+      <m>\ell</m>:
+      <md>
+        <mrow>\substitute{A}\amp=\substitute{\ell}w</mrow>
+        <mrow>\divideunder{A}{\ell}\amp=\divideunder{\ell w}{\ell}</mrow>
+        <mrow>\frac{A}{\ell}\amp=w\implies w =\frac{A}{\ell}</mrow>
+      </md>
+    </p>
+
+    <p>
+      Now we have an equation where <m>w</m> is isolated. For example if we want to find the width
+      when <m>A=12</m> and <m>\ell=4</m>, we have a formula: <m>w=\frac{A}{\ell}=\frac{12}{4}=3</m>.
+      This formula can be used again: what if <m>A=100</m> and <m>\ell=20</m>?  Or if <m>A=23.47</m>
+      and <m>\ell=2.71</m>?  This formula, <m>w=\frac{A}{\ell}</m>, is a handy alternative to the
+      original formula <m>A=\ell w</m> for situations where <m>w</m> is the unknown value.
+    </p>
+
+    <p>
+      Note that when solving for <m>A</m>, we <em>divided</em> each side of the equation by
+      <m>\ell</m>. Why exactly? We were trying to isolate <m>w</m>, and <m>w</m> was being
+      <em>multiplied</em> by <m>\ell</m>. It's key to understand that we applied the opposite action
+      (dividing by <m>\ell</m>) to what was happening to our target variable. We will think in terms
+      of <q>un-doing</q> actions as we continue.
+    </p>
+
+    <example xml:id="example-solve-for-variable-profit-revenue-cost">
+      <p>
+        Solve for <m>R</m> in <m>P=R-C</m>. (This is the relationship in economics between profit,
+        revenue, and cost.)
+      </p>
+      <p>
+        To solve for <m>R</m>, we notice what is happening to <m>R</m> in this equation: <m>C</m>
+        is <em>subtracted</em> from <m>R</m>. To undo this, we <em>add</em> <m>C</m> to each side.
+        As we track our steps below, we'll emphasize which variable it is that we are trying to
+        isolate. With more than one variable here, it can be easy to lose track of which one you are
+        are trying to solve for.
+        <md>
+          <mrow>P\amp=\attention{R}-C</mrow>
+          <mrow>P\addright{C}\amp=\attention{R}-C\addright{C}</mrow>
+          <mrow>P+C\amp=\attention{R}\amp\implies R=P+C</mrow>
+        </md>
+        In other words, revenue is the sum of profit and cost.
+      </p>
+    </example>
+
+    <example xml:id="example-solve-for-variable-slope-intercept">
+      <statement>
+        <p>
+          Solve for <m>x</m> in <m>y=mx+b</m>. (This is a line's equation in slope-intercept form,
+          which we study thoroughly in <xref ref="section-slope"/>.)
+        </p>
+      </statement>
+      <solution>
+        <p>
+          In the equation <m>y=mx+b</m>, we see that <m>x</m> is multiplied by <m>m</m> and then
+          <m>b</m> is added to that. Think of <m>x</m> as a birthday present, enclosed in a box, and
+          then placed in a gift bag. To get your gift, you need to <q>undo</q> those containers in
+          the opposite order: take it out of the bag, then open the box. We need to undo multiplying
+          by <m>m</m> and adding <m>b</m> in the opposite order. So we will start by subtracting
+          <m>b</m>:
+          <md>
+            <mrow>y\amp=m\attention{x}+b</mrow>
+            <mrow>y\subtractright{b}\amp=m\attention{x}+b\subtractright{b}</mrow>
+            <mrow>y-b\amp=m\attention{x}</mrow>
+          </md>
+          And then dividing by <m>m</m>:
+          <md>
+            <mrow>\divideunder{y-b}{m}\amp=\divideunder{m\attention{x}}{m}</mrow>
+            <mrow>\frac{y-b}{m}\amp=\attention{x}\amp\implies x\amp=\frac{y-b}{m}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <warning>
+      <p>
+        In <xref ref="example-solve-for-variable-slope-intercept"/>, each <em>side</em> was divided
+        by <m>m</m>. It's not uncommon for students to have <m>y-b=mx</m> and write something like
+        <m>\frac{y}{m}-b=\frac{mx}{m}</m>, but this is incorrect. If you are going to divide by
+        something as a step in the process, you will need to divide the two <em>sides</em> of the
+        equation, not just parts within those sides.
+      </p>
+    </warning>
+
+    <example>
+      <statement>
+        <p>
+          Solve for <m>b</m> in <m>A=\frac{1}{2}bh</m>. (This is the area formula for a triangle.)
+        </p>
+      </statement>
+      <solution>
+        <p>
+          When an equation has fractions, a helpful first step is to clear denominators. So here we
+          will multiply by <m>2</m> on each side.
+          <md>
+            <mrow>\multiplyleft{2}A\amp=\multiplyleft{2}\frac{1}{2}\attention{b}h</mrow>
+            <mrow>2A\amp=\attention{b}h</mrow>
+          </md>
+          Now our target variable is being multiplied by <m>h</m>, so we apply the opposite action,
+          dividing by <m>h</m>:
+          <md>
+            <mrow>\divideunder{2A}{h}\amp=\divideunder{\attention{b}h}{h}</mrow>
+            <mrow>\frac{2A}{h}\amp=\attention{b}\amp\implies b\amp=\frac{2A}{h}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <exercise label="solve-for-variable-standard-form" xml:id="exercise-solve-for-variable-standard-form">
+      <webwork>
+        <pg-code>
+          Context("Numeric")->variables->add(y=>'Real');
+          parser::Assignment->Allow;
+          $answer = Formula("y=(10-2x)/5");
+        </pg-code>
+        <statement>
+          <p>
+            Solve for <m>y</m> in <m>2x+5y=10</m>.
+          </p>
+          <p>
+            <var name="$answer" width="20"/>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            To solve for <m>y</m>, we first isolate <m>5y</m> by subtracting <m>2x</m> from each
+            side of the equation. After that, we can divide each side by <m>5</m> to finish solving
+            for <m>y</m>:
+            <md>
+              <mrow>2x+5\attention{y}\amp=10</mrow>
+              <mrow>2x+5\attention{y}\subtractright{2x}\amp=10\subtractright{2x}</mrow>
+              <mrow>5\attention{y}\amp=10-2x</mrow>
+              <mrow>\divideunder{5\attention{y}}{5}\amp=\divideunder{10-2x}{5}</mrow>
+              <mrow>y\amp=\frac{10-2x}{5}</mrow>
+            </md>
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+
+    <example xml:id="example-solve-for-variable-celsius-fahrenheit">
+      <statement>
+        <p>
+          Solve for <m>F</m> in <m>C=\frac{5}{9}(F-32)</m>. (This represents the relationship
+          between temperature in degrees Celsius and degrees Fahrenheit.)
+        </p>
+      </statement>
+      <solution>
+        <p>
+          There is more than one way to do this, but we will start by clearing the denominator:
+          <md>
+            <mrow>C\amp=\frac{5}{9}(\attention{F}-32)</mrow>
+            <mrow>\multiplyleft{9}C\amp=\multiplyleft{9}\frac{5}{9}(\attention{F}-32)</mrow>
+            <mrow>9C\amp=5(\attention{F}-32)</mrow>
+          </md>
+          Now what is happening to our target variable <m>F</m>? It has <m>32</m> subtracted from
+          it, and then that result is multiplied by <m>5</m>. So we will do the opposite actions in
+          the opposite order: divide by <m>5</m> and then add <m>32</m>.
+          <md>
+            <mrow>\divideunder{9C}{5}\amp=\divideunder{5(\attention{F}-32)}{5}</mrow>
+            <mrow>\frac{9C}{5}\amp=\attention{F}-32</mrow>
+            <mrow>\frac{9C}{5}\addright{32}\amp=\attention{F}-32\addright{32}</mrow>
+            <mrow>\frac{9C}{5}+32\amp=\attention{F}\amp\implies F\amp=\frac{9}{5}C+32</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection>
+    <title>Clearing Denominators</title>
+
+    <p>
+      Consider an equation with fractions present in the coefficients or terms, for example:                  <idx><h>Equation(s)</h><h>with fractions</h></idx>
+      <md>\frac{1}{4}x+\frac{2}{3}=\frac{1}{6}</md>                                                           <idx><h>Fraction</h><h>linear equations with</h></idx>
+      We could solve this using the same steps from earlier in this section, but we'd have to do              <idx><h>Linear equations</h><h>with fractions</h></idx>
+      some fraction subtraction, followed by some fraction division. In other words, we'd need to do
+      fraction arithmetic, which ismore likely to lead to human error than whole number arithmetic.
+    </p>
+    <p>
+      An alternative is to multiply each side of the equation by a helpful number that <q>clears</q>          <idx><h>Fraction</h><h>clearing denominators</h></idx>
+      the denominator(s). In the above example, the helpful number would be <m>12</m>:
+      <md>
+        <mrow>\frac{1}{4}x+\frac{2}{3}\amp=\frac{1}{6}</mrow>
+        <mrow>\multiplyleft{12}\left(\frac{1}{4}x+\frac{2}{3}\right)\amp=\multiplyleft{12}\left(\frac{1}{6}\right)</mrow>
+        <mrow>3x+8\amp=2</mrow>
+      </md>
+      Somehow multiplying by <m>12</m> cleared all of the fractions from the equation. We could
+      solve this equation easily now. This section covers this technique, which generally makes it
+      easier to solve linear equations and inequalities when fractions are present.
+    </p>
+
+    <figure>
+      <caption>Alternative Video Lessons</caption>
+      <video youtubeplaylist="PLmuZCPhWPt-e_QSbGeacmrdYyommPaxf4" />
+    </figure>
+
+    <example>
+      <sidebyside widths="47% 47%" margins="0%">
+        <stack>
+          <p>
+            Deshawn planted a sapling in his yard that was
+            <quantity><mag>4</mag><unit base="foot"/></quantity> tall. The tree will grow
+            <m>\frac{2}{3}</m> of a foot every year. How many years will it take for his tree to
+            become <quantity><mag>10</mag><unit base="foot"/></quantity> tall?
+          </p>
+
+          <p>
+            We can use a table to help understand the rate of growth and then write a formula that
+            models the tree's growth:
+          </p>
+        </stack>
+
+        <tabular>
+          <col halign="center"/>
+          <col halign="left"/>
+          <row bottom="medium" header="yes">
+            <cell>Years Passed</cell>
+            <cell>Tree's Height (ft)</cell>
+          </row>
+          <row>
+            <cell><m>0</m></cell>
+            <cell><m>4</m></cell>
+          </row>
+          <row>
+            <cell><m>1</m></cell>
+            <cell><m>4+\frac{2}{3}</m></cell>
+          </row>
+          <row>
+            <cell><m>2</m></cell>
+            <cell><m>4+\frac{2}{3}\cdot2</m></cell>
+          </row>
+          <row>
+            <cell><m>3</m></cell>
+            <cell><m>4+\frac{2}{3}\cdot3</m></cell>
+          </row>
+          <row>
+            <cell><m>\vdots</m></cell>
+            <cell><m>\vdots</m></cell>
+          </row>
+          <row>
+            <cell><m>y</m></cell>
+            <cell><m>4+\frac{2}{3}y</m></cell>
+          </row>
+        </tabular>
+
+      </sidebyside>
+
+      <p>
+        We find that <m>y</m> years since the tree was planted, the tree's height is
+        <m>4+\frac{2}{3}y</m> feet. To find when Deshawn's tree will be <m>10</m> feet tall, we set
+        up the equation
+        <md>4+\frac{2}{3}y=10</md>
+        Note that the equation has a fraction present as a coefficient.
+      </p>
+
+      <p>
+        To solve the equation, note that the fraction's denominator is <m>3</m>. As the very first
+        step, multiplying by <m>3</m> on each side of the equation will leave us with no
+        fractions.
+        <md>
+          <mrow>4+\frac{2}{3}y\amp=10</mrow>
+          <mrow>\multiplyleft{3}\left(4+\frac{2}{3}y\right)\amp=\multiplyleft{3}10</mrow>
+          <mrow>3\cdot4+3\cdot\frac{2}{3}y\amp=30</mrow>
+          <mrow>12+2y\amp=30\amp\text{(it's smooth sailing from here)}</mrow>
+          <mrow>2y\amp=18</mrow>
+          <mrow>y\amp=9</mrow>
+        </md>
+      </p>
+
+      <p>
+        Let's check the solution <m>9</m> to be sure:
+        <md>
+          <mrow>4+\frac{2}{3}y\amp=10</mrow>
+          <mrow>4+\frac{2}{3}(\substitute{9})\amp\wonder{=}10</mrow>
+          <mrow>4+6\amp\confirm{=}10</mrow>
+        </md>
+      </p>
+
+      <p>
+        In summary, it will take <m>9</m> years for Deshawn's tree to reach <m>10</m> feet tall. The
+        point of this example was to demonstrate how clearing denominators can make an equation
+        relatively easier to solve.
+      </p>
+    </example>
+
+    <exercise label="water-evaporating">
+      <webwork>
+        <pg-macros>
+          <macro-file>parserLinearRelation.pl</macro-file>
+        </pg-macros>
+        <pg-code>
+          Context("LinearRelation");
+          Context()->variables->are(t => "Real");
+          Context()->operators->undefine("/");
+          Parser::Number::NoDecimals();
+          $equation = Formula("105-3t=40");
+        </pg-code>
+        <statement>
+          <p>
+            In a science lab, a container had <m>21</m> ounces of water at 9:00<nbsp/><am/>. Water
+            has been evaporating at the rate of <m>3</m> ounces every <m>5</m> minutes. When will
+            there be <m>8</m> ounces of water left?
+          </p>
+          <instruction>
+            Write an equation for this scenario, using <m>t</m> as the variable. Then do what is
+            needed to clear the denominators. Enter the equation with cleared denominators.
+          </instruction>
+          <p>
+            <var name="$equation" width="16"/>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Since the container has been losing <m>3</m> oz of water every <m>5</m> minutes, it
+            loses <m>\frac{3}{5}</m> oz every minute. At <m>t</m> minutes past 9:00<nbsp/><am/>, the
+            container will have lost <m>\frac{3}{5}t</m> oz of water. Since the initial amount was
+            <m>21</m> oz, the amount of water in the container (in oz) can be modeled by
+            <m>21-\frac{3}{5}t</m>.
+          </p>
+          <p>
+            So to work out when there would be only <m>8</m> oz of water left, we write the
+            following equation. Note there is a denominator of <m>5</m>, which we can clear.
+            <md>
+              <mrow>21-\frac{3}{5}t\amp=8</mrow>
+              <mrow>\multiplyleft{5}\left(21-\frac{3}{5}t\right)\amp=\multiplyleft{5}8</mrow>
+              <mrow>5\cdot21-5\cdot\frac{3}{5}t\amp=40</mrow>
+              <mrow>105-3t\amp=40</mrow>
+            </md>
+          </p>
+          <p>
+            From here it is straightforward to use steps from
+            <xref ref="section-linear-equations-and-inequalities"/> to solve the equation. You can
+            try that on your own and you should find that it will take between <m>21</m> and
+            <m>22</m> minutes for the container to only have <m>8</m> ounces of water left.
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+
+    <p>
+      The previous examples only had one fraction in the equation. What happens if there are more?
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Solve for <m>x</m> in <m>\frac{1}{4}x+\frac{2}{3}=\frac{1}{6}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Once again, we have an equation with fractions present. This time there are multiple
+          denominators: <m>4</m>, <m>3</m>, and <m>6</m>. Is there <em>one</em> number we could use
+          to clear all three denominators? The <q>Least Common Multiple</q> of the denominators
+          (abbreviated as LCM or LCD) would work. Anything that is a multiple of all three of these
+          denominators would work, and using the smallest such number is just a good habit. In this
+          case, the LCD is <m>12</m>. So we will multiply each side of the equation by <m>12</m>:
+        </p>
+
+        <sidebyside widths="47% 47%" margins="0%">
+          <p>
+            <md>
+              <mrow>\frac{1}{4}x+\frac{2}{3}\amp=\frac{1}{6}</mrow>
+              <mrow>\multiplyleft{12}\left(\frac{1}{4}x+\frac{2}{3}\right)\amp=\multiplyleft{12}\frac{1}{6}</mrow>
+              <mrow>12\cdot\left(\frac{1}{4}x\right)+12\cdot\left(\frac{2}{3}\right)\amp=12\cdot\frac{1}{6}</mrow>
+              <mrow>3x+8\amp=2</mrow>
+              <mrow>3x\amp=-6</mrow>
+              <mrow>x\amp=-2</mrow>
+            </md>
+          </p>
+
+          <p>
+            Checking the solution <m>-2</m>:
+            <md>
+              <mrow>\frac{1}{4}x+\frac{2}{3}\amp=\frac{1}{6}</mrow>
+              <mrow>\frac{1}{4}(\substitute{-2})+\frac{2}{3}\amp\wonder{=}\frac{1}{6}</mrow>
+              <mrow>-\frac{2}{4}+\frac{2}{3}\amp\wonder{=}\frac{1}{6}</mrow>
+              <mrow>-\frac{6}{12}+\frac{8}{12}\amp\wonder{=}\frac{1}{6}</mrow>
+              <mrow>\frac{2}{12}\amp\confirm{=}\frac{1}{6}</mrow>
+            </md>
+          </p>
+        </sidebyside>
+
+        <p>
+          The solution is therefore <m>-2</m> and the solution set is <m>\{-2\}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <exercise label="solve-by-clearing-denominator">
+      <webwork>
+        <pg-code>
+          Context("FiniteSolutionSets");
+          Context()->variables->are(z => 'Real');
+          $solution = Formula("{23}");
+        </pg-code>
+        <statement>
+          <p>
+            Solve for <m>z</m> in <m>-\frac{2}{5}z-\frac{3}{2}=-\frac{1}{2}z+\frac{4}{5}</m>.
+          </p>
+          <p>
+            <var name="$solution" width="20"/>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            With fractions present, we decide to identify the LCD. The denominators are <m>2</m> and
+            <m>5</m>, so the LCD is <m>10</m>. And so our first algebra step is to multiply each
+            side of the equation by <m>10</m>:
+            <md>
+              <mrow>-\frac{2}{5}z-\frac{3}{2}\amp=-\frac{1}{2}z+\frac{4}{5}</mrow>
+              <mrow>\multiplyleft{10}\left(-\frac{2}{5}z-\frac{3}{2}\right)\amp=\multiplyleft{10}\left(-\frac{1}{2}z+\frac{4}{5}\right)</mrow>
+              <mrow>10\left(-\frac{2}{5}z\right)-10\left(\frac{3}{2}\right)\amp=10\left(-\frac{1}{2}z\right)+10\left(\frac{4}{5}\right)</mrow>
+              <mrow>-4z-15\amp=-5z+8</mrow>
+              <mrow>z-15\amp=8</mrow>
+              <mrow>z\amp=23</mrow>
+            </md>
+          </p>
+
+          <p>
+            Checking the solution <m>23</m>:
+            <md>
+              <mrow>-\frac{2}{5}z-\frac{3}{2}\amp=-\frac{1}{2}z+\frac{4}{5}</mrow>
+              <mrow>-\frac{2}{5}(\substitute{23})-\frac{3}{2}\amp\wonder{=}-\frac{1}{2}(\substitute{23})+\frac{4}{5}</mrow>
+              <mrow>-\frac{46}{5}-\frac{3}{2}\amp\wonder{=}-\frac{23}{2}+\frac{4}{5}</mrow>
+              <mrow>-\frac{92}{10}-\frac{15}{10}\amp\wonder{=}-\frac{115}{10}+\frac{8}{10}</mrow>
+              <mrow>-\frac{107}{10}\amp\confirm{=}-\frac{107}{10}</mrow>
+            </md>
+          </p>
+
+          <p>
+            So the solution is <m>23</m> and so the solution set is <m>\{23\}</m>.
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+
+    <example>
+      <statement>
+        <p>
+          Solve for <m>a</m> in the equation <m>\frac{2}{3}(a+1)+5=\frac{1}{3}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          There are two fractions appearing here, and both have the same denominator <m>3</m>.
+          We can multiply by <m>3</m> on each side and that alone will clear the denominators.
+        </p>
+        <sidebyside widths="47% 47%" margins="0%">
+          <p>
+            <md>
+              <mrow>\frac{2}{3}(a+1)+5\amp=\frac{1}{3}</mrow>
+              <mrow>\multiplyleft{3}\left(\frac{2}{3}(a+1)+5\right)\amp=\multiplyleft{3}\frac{1}{3}</mrow>
+              <mrow>2(a+1)+15\amp=1</mrow>
+              <mrow>2a+2+15\amp=1</mrow>
+              <mrow>2a+17\amp=1</mrow>
+              <mrow>2a\amp=-16</mrow>
+              <mrow>a\amp=-8</mrow>
+            </md>
+          </p>
+
+          <p>
+            Checking the solution <m>-8</m>:
+            <md>
+              <mrow>\frac{2}{3}(a+1)+5\amp=\frac{1}{3}</mrow>
+              <mrow>\frac{2}{3}(\substitute{-8}+1)+5\amp\wonder{=}\frac{1}{3}</mrow>
+              <mrow>\frac{2}{3}(-7)+5\amp\wonder{=}\frac{1}{3}</mrow>
+              <mrow>-\frac{14}{3}+\frac{15}{3}\amp\confirm{=}\frac{1}{3}</mrow>
+            </md>
+          </p>
+        </sidebyside>
+
+        <p>
+          The solution is therefore <m>-8</m> and the solution set is <m>\{-8\}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example xml:id="example-cross-multiply-showing-LCD">
+      <statement>
+        <p>
+          Solve for <m>b</m> in the equation <m>\frac{2b+1}{3}=\frac{2}{5}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The structure of the equation is a little different from previous examples, but we can
+          still see that there are denominators <m>3</m> and <m>5</m>, and that their LCM is
+          <m>15</m>. Multiplying each side of the equation by <m>15</m> will help.
+        </p>
+        <sidebyside widths="47% 47%" margins="0%">
+          <p>
+            <md>
+              <mrow>\frac{2b+1}{3}\amp=\frac{2}{5}</mrow>
+              <mrow>\multiplyleft{15}\frac{2b+1}{3}\amp=\multiplyleft{15}\frac{2}{5}</mrow>
+              <mrow>5(2b+1)\amp=6</mrow>
+              <mrow>10b+5\amp=6</mrow>
+              <mrow>10b\amp=1</mrow>
+              <mrow>b\amp=\frac{1}{10}</mrow>
+            </md>
+          </p>
+          <p>
+            Checking the solution <m>\frac{1}{10}</m>:
+            <md>
+              <!-- <mrow>\frac{2b+1}{3}\amp=\frac{2}{5}</mrow> -->
+              <mrow>\frac{2\left(\substitute{\frac{1}{10}}\right)+1}{3}\amp\wonder{=}\frac{2}{5}</mrow>
+              <mrow>\frac{\frac{1}{5}+1}{3}\amp\wonder{=}\frac{2}{5}</mrow>
+              <!-- <mrow>\frac{\frac{1}{5}+\frac{5}{5}}{3}\amp\wonder{=}\frac{2}{5}</mrow> -->
+              <mrow>\frac{\frac{6}{5}}{3}\amp\wonder{=}\frac{2}{5}</mrow>
+              <mrow>\frac{6}{5}\cdot \frac{1}{3}\amp\confirm{=}\frac{2}{5}</mrow>
+            </md>
+          </p>
+        </sidebyside>
+
+        <p>
+          The solution is <m>\frac{1}{10}</m> and the solution set is
+          <m>\left\{\frac{1}{10}\right\}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      In <xref ref="section-modeling-with-equations-and-inequalities"/>, we investigated some
+      proportional equations, but did not solve them. Now we can clear denominators to make it a bit
+      easier to solve them.
+    </p>
+
+    <p>
+      Let's revisit <xref ref="example-proportion-in-price"/>.
+    </p>
+
+    <example>
+      <p>
+        Suppose we know the cost of a <m>21</m>-ounce box of cereal, and we want to know the cost of
+        and <m>18</m>-ounce box assuming that it costs the same per ounce. Letting <m>C</m> be this
+        unknown cost (in dollars), we could set up a proportional equation. Whether we are dealing
+        with the smaller box or the larger box, the ratio of cost to weight is supposed to be the
+        same. So in the following equation on the left, we enter details for the larger box. And on
+        the right, for the smaller box.
+        <md>
+          <mrow>\frac{\text{cost in dollars}}{\text{weight in oz}}\amp=\frac{\text{cost in dollars}}{\text{weight in oz}}</mrow>
+          <mrow>\frac{\$3.99}{21\,\text{oz}}\amp=\frac{\$C}{18\,\text{oz}}</mrow>
+        </md>
+        We can rewrite this equation without the units:
+        <md>
+          \frac{3.99}{21}=\frac{C}{18}
+        </md>
+        And we have an equation with fractions present. We want to multiply each side by the LCD,
+        but this time the denominators are larger than previous examples. Can we still find the LCD?
+        We could! But it is maybe not worth the time and effort. Having the <em>least</em> common
+        multiple is a nice thing, but <em>any</em> common multiple of denominators will work out for
+        our needs. A simple way to get a common multiple is just to multiply the numbers together.
+        So we choose to multiply each side by <m>18\cdot 21</m> instead of whatever the actual LCD
+        is.
+        <md>
+          <mrow>\frac{3.99}{21}\amp=\frac{C}{18}</mrow>
+          <mrow>\multiplyleft{18\cdot21}\frac{3.99}{21}\amp=\multiplyleft{18\cdot21}\frac{3.99}{21}\frac{C}{18}</mrow>
+          <mrow>18\cdot\cancelhighlight{21}\cdot\frac{3.99}{\cancelhighlight{21}}\amp=\cancelhighlight{18}\cdot21\cdot\frac{C}{\cancelhighlight{18}}</mrow>
+          <mrow>71.82\amp=21C</mrow>
+          <mrow>\divideunder{71.82}{21}\amp=\divideunder{21C}{21}</mrow>
+          <mrow>C\amp=3.42</mrow>
+        </md>
+        So assuming the cost is proportional to the cost of the <m>21</m>-ounce box, the cost for an
+        <m>18</m>-ounce box of cereal would be <m>\$3.42</m>.
+      </p>
+    </example>
+
+    <p>
+      Now let's revisit <xref ref="example-proportion-in-taxes"/>.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Property taxes for a residential property are proportional to the assessed value of the
+          property. A certain home is assessed at <m>\$234{,}100</m> and its annual property taxes
+          are <m>\$2{,}518.92</m>. Set up an equation to find the annual property taxes for the
+          house next door that is assessed at <m>\$287{,}500</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let <m>T</m> be the annual property taxes (in dollars) for a property assessed at
+          <m>\$287{,}500</m>. We can write and solve this proportion:
+          <md>
+            <mrow>\frac{\text{tax}}{\text{property value}}\amp=\frac{\text{tax}}{\text{property value}}</mrow>
+            <mrow>\frac{2518.92}{234100}\amp=\frac{T}{287500}</mrow>
+          </md>
+          The least common denominator of this proportion is rather large, so we will instead
+          multiply each side by <m>234100</m> and <m>287500</m> and simplify from there:
+          <md>
+            <mrow>\frac{2518.92}{234100}\amp=\frac{T}{287500}</mrow>
+            <mrow>\multiplyleft{234100\cdot287500}\cdot\frac{2518.92}{234100}\amp=\multiplyleft{234100\cdot287500}\cdot\frac{T}{287500}</mrow>
+            <mrow>287500\cdot2518.92 \amp=234100T </mrow>
+            <mrow>\frac{287500\cdot 2518.92}{234100} \amp=\frac{234100T}{234100}</mrow>
+            <mrow>T\amp\approx3093.50</mrow>
+          </md>
+          The property taxes for a property assessed at
+          <m>\$287{,}500</m> are <m>\$3{,}093.50</m>.
+        </p>
+      </solution>
+    </example>
+
+    <exercise label="tylenol-proportion-solved">
+      <webwork>
+          <pg-code>
+            $newUnits = [
+              {name=>'mL',conversion=>{factor=>1E-6,m=>3}},
+              {name=>'ml',conversion=>{factor=>1E-6,m=>3}},
+              {name=>'milliliters',conversion=>{factor=>1E-6,m=>3}},
+              {name=>'milliliter',conversion=>{factor=>1E-6,m=>3}},
+              {name=>'cc',conversion=>{factor=>1E-6,m=>3}},
+            ];
+            $answer = NumberWithUnits("1.875 mL", {newUnit=>$newUnits});
+          </pg-code>
+        <statement>
+          <p>
+            Infant Tylenol contains
+            <quantity>
+              <mag>160</mag><unit prefix="milli" base="gram"/>
+            </quantity>
+            of acetaminophen in each
+            <quantity>
+              <mag>5</mag><unit prefix="milli" base="liter"/>
+            </quantity>
+            of liquid.
+            If Bao's baby is prescribed
+            <quantity>
+              <mag>60</mag><unit prefix="milli" base="gram"/>
+            </quantity>
+            of acetaminophen,
+            how many milliliters of liquid should he give the baby?
+          </p>
+          <p>
+            <var name="$answer" width="10"/>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Assume Bao should give <m>q</m> milliliters of liquid medicine,
+            so we can set up the following proportion:
+            <md>
+              <mrow>\frac{\text{amount of liquid medicine in mL}}{\text{amount of acetaminophen in mg}}\amp=\frac{\text{amount of liquid medicine in mL}}{\text{amount of acetaminophen in mg}}</mrow>
+              <mrow>\frac{5\,\text{mL}}{160\,\text{mg}}\amp=\frac{q\,\text{mL}}{60\,\text{mg}}</mrow>
+              <mrow>\frac{5}{160}\amp=\frac{q}{60}</mrow>
+              <mrow>\multiplyleft{160\cdot 60}\cdot\frac{5}{160}\amp=\multiplyleft{160\cdot 60}\cdot\frac{q}{60}</mrow>
+              <mrow>300\amp=160q</mrow>
+              <mrow>\divideunder{300}{160}\amp=\divideunder{160q}{160}</mrow>
+              <mrow>q\amp=1.875</mrow>
+            </md>
+            So to give
+            <quantity>
+              <mag>60</mag><unit prefix="milli" base="gram"/>
+            </quantity>
+            of acetaminophen to his baby, Bao should measure out
+            <quantity>
+              <mag>1.875</mag><unit prefix="milli" base="liter"/>
+            </quantity>
+            of the liquid medication.
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+
+    <p>
+      The technique of clearing denominators also applies to inequalities, not just equations.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Solve for <m>x</m> in the inequality <m>\frac{3}{4}x-2\gt\frac{4}{5}x</m>. Write the
+          solution set in both set-builder notation and interval notation.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The LCM of the denominators is <m>20</m>, so we start out multiplying each side of the
+          inequality by <m>20</m>.
+          <md>
+            <mrow>\frac{3}{4}x-2\amp\gt\frac{4}{5}x</mrow>
+            <mrow>\multiplyleft{20}\left(\frac{3}{4}x-2\right)\amp\gt\multiplyleft{20}\frac{4}{5}x</mrow>
+            <mrow>20\cdot\frac{3}{4}x-20\cdot2\amp\gt16x</mrow>
+            <mrow>15x-40\amp\gt16x</mrow>
+            <mrow>-40\amp\gt x</mrow>
+            <mrow>x\amp\lt-40</mrow>
+          </md>
+        </p>
+
+        <p>
+          The solution set in set-builder notation is <m>\{x\mid x\lt-40\}</m>. And in interval
+          notation, it's <m>(-\infty,-40)</m>.
+        </p>
+      </solution>
+    </example>
+
+    <exercise label="inequality-with-clearing-denominators">
+      <webwork>
+        <pg-code>
+          Context("Interval");
+          Context()->flags->set(reduceConstants=>0);
+          $in = Interval("[-1/14,inf)");
+          InequalitySetBuilder::UseVerticalSuchThat();
+          Context("InequalitySetBuilder-Only");
+          Context()->flags->set(reduceConstants=>0);
+          $sb = Compute("{ x | x >= -1/14}");
+        </pg-code>
+        <statement>
+          <p>
+            Solve for <m>x</m> in the inequality <m>\frac{4}{7}-\frac{4}{3}x\le\frac{2}{3}</m>.
+            Write the solution set in both set-builder notation and interval notation.
+          </p>
+          <instruction>
+            In set-builder notation:
+          </instruction>
+          <p>
+            <var name="$sb" width="20"/>
+          </p>
+          <instruction>
+            In interval notation:
+          </instruction>
+          <p>
+            <var name="$in" width="20"/>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The LCM of the denominators is <m>21</m>, so we start out by multiplying each side of
+            the inequality by <m>21</m>.
+            <md>
+              <mrow>\frac{4}{7}-\frac{4}{3}x\amp\le\frac{2}{3}</mrow>
+              <mrow>\multiplyleft{21}\left(\frac{4}{7}-\frac{4}{3}x\right)\amp\le\multiplyleft{21}\left(\frac{2}{3}\right)</mrow>
+              <mrow>21\left(\frac{4}{7}\right)-21\left(\frac{4}{3}x\right)\amp\le21\left(\frac{2}{3}\right)</mrow>
+              <mrow>12-28x\amp\le14</mrow>
+              <mrow>-28x\amp\le2</mrow>
+              <mrow>\divideunder{-28x}{-28}\amp\secondhighlight{{}\ge{}}\divideunder{2}{-28}</mrow>
+              <mrow>x\amp\ge-\frac{1}{14}</mrow>
+            </md>
+          </p>
+
+          <p>
+            Note that when we divided each side of the inequality by <m>-28</m>, the inequality
+            symbol reversed direction. The solution set in set-builder notation is
+            <m>\left\{x\mid x\ge-\frac{1}{14}\right\}</m>. The solution set in interval notation is
+            <m>\left[-\frac{1}{14},\infty\right)</m>.
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+  </subsection>
+
   <reading-questions>
     <exercise label="steps-to-solve-linear-equation">
       <statement>
@@ -1328,6 +2297,83 @@
         <p>
           If you want to check your solution set to a linear inequality, what exactly are you going
           to do?
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+    <exercise label="how-many-solutions-including-special">
+      <statement>
+        <p>
+          With a linear equation in one variable, what are the possibilities for how many solutions
+          it could have? One solution? Two solutions? Are there other possibilities?
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+    <exercise label="how-do-you-know-no-solution">
+      <statement>
+        <p>
+          How will you know when a linear equation or inequality has no solution?
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+    <exercise label="how-do-you-know-all-are-solutions">
+      <statement>
+        <p>
+          How will you know when all numbers are solutions to a linear equation or inequality?
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+    <exercise label="divide-only-some-terms">
+      <statement>
+        <p>
+          Suppose you want to solve the equation <m>mq+b=T</m> for <m>q</m>. What would be wrong
+          with dividing on each side by <m>m</m> to get <m>\frac{mq}{m}+b=\frac{T}{m}</m>?
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+    <exercise label="undo-dividing-by-R">
+      <statement>
+        <p>
+          How do you undo dividing something by <m>R</m>?
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+    <exercise label="why-solve-for-a-variable">
+      <statement>
+        <p>
+          Why we might we want to take a formula like <m>P=IV</m> and isolate <m>I</m>, writing the
+          equation as <m>I=\frac{P}{V}</m>?
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+    <exercise label="what-does-lcd-stand-for">
+      <statement>
+        <p>
+          What does LCD stand for? And using different words, explain what it is.
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+    <exercise label="multiply-which-two-things">
+      <statement>
+        <p>
+          When you clear denominators from an equation like <m>\frac{2}{3}x+5=\frac{2}{7}</m>, you
+          will multiply by <m>21</m>. What are the <em>two</em> things that you multiply by
+          <m>21</m>? Hint: it is not the two fractions.
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+    <exercise label="what-is-a-proportional-equation">
+      <statement>
+        <p>
+          What is a proportional equation?
         </p>
       </statement>
       <response/>
@@ -1758,6 +2804,44 @@
           </webwork>
         </exercise>
       </exercisegroup>
+    </subexercises>
+
+    <subexercises>
+      <title>Notation</title>
+      <exercise label="write-no-solution">
+        <webwork>
+          <pg-code>
+            Context("FiniteSolutionSets");
+            $solution = String("no real solutions")->cmp(typeMatch => Formula("{1}"));
+          </pg-code>
+          <statement>
+            <p>
+              What is one valid way to communicate that there are no solutions to an equation?
+              (There are several correct answers.)
+            </p>
+            <p>
+              <var name="$solution" width="16"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+      <exercise label="write-all-numbers-are-solutions">
+        <webwork>
+          <pg-code>
+            Context("FiniteSolutionSets");
+            $solution = OneOf(Compute("R"), String("infinitely many solutions"))->cmp(typeMatch => Formula("{1}"));
+          </pg-code>
+          <statement>
+            <p>
+              What is one valid way to communicate that all real numbers are solutions to an equation?
+              (There are several correct answers.)
+            </p>
+            <p>
+              <var name="$solution" width="16"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
     </subexercises>
 
     <!-- <subexercises>
@@ -2597,6 +3681,464 @@
         </exercise>
       </exercisegroup>
       <exercisegroup cols="2">
+        <title>Linear Equations with Fractions</title>
+        <introduction>
+          <p>
+            Solve the given equation. Practice clearing the denominator(s) as a first step.
+          </p>
+        </introduction>
+        <exercise label="linear-equation-fractions-b">
+          <webwork xml:id="webwork-linear-equation-fractions-b">
+            <pg-code>
+              Context("Fraction");
+              ($m,$c) = random_subset(2,2..12);
+              $b = Fraction(random_coprime([1..12],[2..12]));
+              $left = Formula("$m x + $b");
+              $right = Formula("$c");
+              $sol = ($c - $b)/$m;
+              Context("FiniteSolutionSets");
+              $solution = Formula("{$sol}");
+              $lcd = ($b->value)[1];
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/> = <var name="$right"/></m>
+              </p>
+              <instruction>
+                What LCD will you use?
+              </instruction>
+              <p>
+                <var name="$lcd" width="4"/>
+              </p>
+              <instruction>
+                Solve the equation.
+              </instruction>
+              <p>
+                <var name="$solution" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="linear-equation-fractions-b-copy">
+          <webwork copy="webwork-linear-equation-fractions-b"/>
+        </exercise>
+        <exercise label="linear-equation-fractions-c">
+          <webwork xml:id="webwork-linear-equation-fractions-c">
+            <pg-code>
+              Context("Fraction");
+              ($m,$b) = random_subset(2,2..12);
+              $c = Fraction(random_coprime([1..12],[2..12]));
+              $left = Formula("$m x + $b");
+              $right = Formula("$c");
+              $sol = ($c - $b)/$m;
+              Context("FiniteSolutionSets");
+              $solution = Formula("{$sol}");
+              $lcd = ($c->value)[1];
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/> = <var name="$right"/></m>
+              </p>
+              <instruction>
+                What LCD will you use?
+              </instruction>
+              <p>
+                <var name="$lcd" width="4"/>
+              </p>
+              <instruction>
+                Solve the equation.
+              </instruction>
+              <p>
+                <var name="$solution" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="linear-equation-fractions-c-copy">
+          <webwork copy="webwork-linear-equation-fractions-c"/>
+        </exercise>
+        <exercise label="linear-equation-fractions-same-denom">
+          <webwork xml:id="webwork-linear-equation-fractions-same-denom">
+            <pg-code>
+              Context("Fraction");
+              $den = random(2,12);
+              @num = random_pairwise_coprime([1..12],[1..12],[$den]);
+              $m = Fraction($num[0]/$den);
+              $c = Fraction($num[1]/$den);
+              $b = non_zero_random(-12,12);
+              $left = Formula("$m x + $b")->reduce;
+              $right = Formula("$c");
+              $sol = ($c - $b)/$m;
+              Context("FiniteSolutionSets");
+              $solution = Formula("{$sol}");
+              $lcd = $den;
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/> = <var name="$right"/></m>
+              </p>
+              <instruction>
+                What LCD will you use?
+              </instruction>
+              <p>
+                <var name="$lcd" width="4"/>
+              </p>
+              <instruction>
+                Solve the equation.
+              </instruction>
+              <p>
+                <var name="$solution" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="linear-equation-fractions-same-denom-copy">
+          <webwork copy="webwork-linear-equation-fractions-same-denom"/>
+        </exercise>
+        <exercise label="linear-equation-fractions-rel-prime-denom">
+          <webwork xml:id="webwork-linear-equation-fractions-rel-prime-denom">
+            <pg-code>
+              Context("Fraction");
+              @den = random_coprime([2..8],[2..8]);
+              @num = (
+                (random_coprime([1..8],[$den[0]]))[0],
+                (random_coprime([1..8],[$den[1]]))[0]
+              );
+              $m = Fraction($num[0]/$den[0]);
+              $b = list_random(-1,1)*Fraction($num[1]/$den[1]);
+              $c = non_zero_random(-8,8);
+              $left = Formula("$m x + $b")->reduce;
+              $right = Formula("$c");
+              $sol = ($c - $b)/$m;
+              Context("FiniteSolutionSets");
+              $solution = Formula("{$sol}");
+              $lcd = lcm(@den);
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/> = <var name="$right"/></m>
+              </p>
+              <instruction>
+                What LCD will you use?
+              </instruction>
+              <p>
+                <var name="$lcd" width="4"/>
+              </p>
+              <instruction>
+                Solve the equation.
+              </instruction>
+              <p>
+                <var name="$solution" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="linear-equation-fractions-rel-prime-denom-copy">
+          <webwork copy="webwork-linear-equation-fractions-rel-prime-denom"/>
+        </exercise>
+        <exercise label="linear-equation-fractions-gcf-denom">
+          <webwork xml:id="webwork-linear-equation-fractions-gcf-denom">
+            <pg-code>
+              Context("Fraction");
+              @den = random_coprime([2..6],[2..6]);
+              $k = random(2,6);
+              @den = map {$_*$k} (@den);
+              @num = (
+                (random_coprime([1..8],[$den[0]]))[0],
+                (random_coprime([1..8],[$den[1]]))[0]
+              );
+              $m = Fraction($num[0]/$den[0]);
+              $c = Fraction($num[1]/$den[1]);
+              $b = non_zero_random(-8,8);
+              $left = Formula("$m x + $b")->reduce;
+              $right = Formula("$c");
+              $sol = ($c - $b)/$m;
+              Context("FiniteSolutionSets");
+              $solution = Formula("{$sol}");
+              $lcd = lcm(@den);
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/> = <var name="$right"/></m>
+              </p>
+              <instruction>
+                What LCD will you use?
+              </instruction>
+              <p>
+                <var name="$lcd" width="4"/>
+              </p>
+              <instruction>
+                Solve the equation.
+              </instruction>
+              <p>
+                <var name="$solution" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="linear-equation-fractions-gcf-denom-copy">
+          <webwork copy="webwork-linear-equation-fractions-gcf-denom"/>
+        </exercise>
+        <exercise label="linear-equation-fractions-pqr-denom">
+          <webwork xml:id="webwork-linear-equation-fractions-pqr-denom">
+            <pg-code>
+              Context("Fraction");
+              @den = random_pairwise_coprime([2..7],[2..7],[2..7]);
+              $lcd = lcm(@den);
+              @den = map {$lcd/$_} (@den);
+              @num = (
+                (random_coprime([1..8],[$den[0]]))[0],
+                (random_coprime([1..8],[$den[1]]))[0],
+                (random_coprime([1..8],[$den[2]]))[0]
+              );
+              $m = Fraction($num[0]/$den[0]);
+              $b = list_random(-1,1)*Fraction($num[1]/$den[1]);
+              $c = Fraction($num[2]/$den[2]);
+              $left = Formula("$m x + $b")->reduce;
+              $right = Formula("$c");
+              $sol = ($c - $b)/$m;
+              Context("FiniteSolutionSets");
+              $solution = Formula("{$sol}");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/> = <var name="$right"/></m>
+              </p>
+              <instruction>
+                What LCD will you use?
+              </instruction>
+              <p>
+                <var name="$lcd" width="4"/>
+              </p>
+              <instruction>
+                Solve the equation.
+              </instruction>
+              <p>
+                <var name="$solution" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="linear-equation-fractions-pqr-denom-copy">
+          <webwork copy="webwork-linear-equation-fractions-pqr-denom"/>
+        </exercise>
+        <exercise label="linear-equation-fractions-two-same">
+          <webwork xml:id="webwork-linear-equation-fractions-two-same">
+            <pg-code>
+              Context("Fraction");
+              Context()->noreduce('(-x)+y', '(-x)-y');
+              do {
+                $den = random(2,12);
+                @den = random_subset(4,$den,$den,1,1);
+                @num = (
+                  (random_coprime([1..12],[$den[0]]))[0],
+                  (random_coprime([-12..-1,1..12],[$den[1]]))[0],
+                  (random_coprime([-12..-1,1..12],[$den[2]]))[0],
+                  (random_coprime([-12..-1,1..12],[$den[3]]))[0]
+                );
+                @c = map{Fraction($num[$_]/$den[$_])} (0..3);
+              } until ($c[0] != $c[2]);
+              $left = Formula("$c[0] x + $c[1]")->reduce;
+              $right = Formula("$c[2] x + $c[3]")->reduce;
+              $sol = ($c[3] - $c[1])/($c[0] - $c[2]);
+              Context("FiniteSolutionSets");
+              $solution = Formula("{$sol}");
+              $lcd = lcm(@den);
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/> = <var name="$right"/></m>
+              </p>
+              <instruction>
+                What LCD will you use?
+              </instruction>
+              <p>
+                <var name="$lcd" width="4"/>
+              </p>
+              <instruction>
+                Solve the equation.
+              </instruction>
+              <p>
+                <var name="$solution" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="linear-equation-fractions-two-same-copy">
+          <webwork copy="webwork-linear-equation-fractions-two-same"/>
+        </exercise>
+        <exercise label="linear-equation-fractions-two-rel-prime">
+          <webwork xml:id="webwork-linear-equation-fractions-two-rel-prime">
+            <pg-code>
+              Context("Fraction");
+              Context()->noreduce('(-x)+y', '(-x)-y');
+              do {
+                @den = random_subset(4,random_coprime([2..12],[2..12]),1,1);
+                @num = (
+                  (random_coprime([1..12],[$den[0]]))[0],
+                  (random_coprime([-12..-1,1..12],[$den[1]]))[0],
+                  (random_coprime([-12..-1,1..12],[$den[2]]))[0],
+                  (random_coprime([-12..-1,1..12],[$den[3]]))[0]
+                );
+                @c = map{Fraction($num[$_]/$den[$_])} (0..3);
+              } until ($c[0] != $c[2]);
+              @sorted_dens = num_sort(@den);
+              $left = Formula("$c[0] x + $c[1]")->reduce;
+              $right = Formula("$c[2] x + $c[3]")->reduce;
+              $sol = ($c[3] - $c[1])/($c[0] - $c[2]);
+              Context("FiniteSolutionSets");
+              $solution = Formula("{$sol}");
+              $lcd = Real(lcm(@den));
+              Context("Fraction");
+              Context()->noreduce('(-x)-y', '(-x)+y');
+              $leftsol[0] = Formula("$lcd*$c[0] x + $lcd*$c[1]")->reduce;
+              $rightsol[0] = Formula("$lcd*$c[2] x + $lcd*$c[3]")->reduce;
+              $leftsol[1] = Formula("$lcd*$c[0] x + $lcd*$c[1] - $lcd*$c[1]")->reduce;
+              $rightsol[1] = Formula("$lcd*$c[2] x + $lcd*$c[3] - $lcd*$c[1]")->reduce;
+              $leftsol[2] = Formula("$lcd*$c[0] x")->reduce;
+              $rightsol[2] = Formula("$lcd*$c[2] x + ($lcd*$c[3] - $lcd*$c[1])")->reduce;
+              $leftsol[3] = Formula("$lcd*$c[0] x - $lcd*$c[2] x")->reduce;
+              $rightsol[3] = Formula("$lcd*$c[2] x + ($lcd*$c[3] - $lcd*$c[1]) - $lcd*$c[2] x")->reduce;
+              $leftsol[4] = Formula("($lcd*$c[0] - $lcd*$c[2])x")->reduce;
+              $rightsol[4] = Formula("$lcd*$c[3] - $lcd*$c[1]")->reduce;
+              $leftsol[5] = Formula("x")->reduce;
+              $rightsol[5] = Formula("($lcd*$c[3] - $lcd*$c[1])/($lcd*$c[0] - $lcd*$c[2])")->reduce;
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/> = <var name="$right"/></m>
+              </p>
+              <instruction>
+                What LCD will you use?
+              </instruction>
+              <p>
+                <var name="$lcd" width="4"/>
+              </p>
+              <instruction>
+                Solve the equation.
+              </instruction>
+              <p>
+                <var name="$solution" width="16"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                This equation has terms with denominators <m><var name="$sorted_dens[2]"/></m> and
+                <m><var name="$sorted_dens[3]"/></m>. The least common multiple of these is
+                <m><var name="$lcd"/></m>. So the first step in solving this equation can be to
+                multiply on each side by <m><var name="$lcd"/></m>.
+                <md>
+                  <mrow><var name="$lcd"/>\left(<var name="$left"/>\right) \amp= <var name="$lcd"/>\left(<var name="$right"/>\right)</mrow>
+                  <mrow><var name="$leftsol[0]"/> \amp= <var name="$rightsol[0]"/></mrow>
+                  <mrow><var name="$leftsol[1]"/> \amp= <var name="$rightsol[1]"/></mrow>
+                  <mrow><var name="$leftsol[2]"/> \amp= <var name="$rightsol[2]"/></mrow>
+                  <mrow><var name="$leftsol[3]"/> \amp= <var name="$rightsol[3]"/></mrow>
+                  <mrow><var name="$leftsol[4]"/> \amp= <var name="$rightsol[4]"/></mrow>
+                  <mrow><var name="$leftsol[5]"/> \amp= <var name="$rightsol[5]"/></mrow>
+                </md>
+                The solution set is <m><var name="$solution"/></m>.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="linear-equation-fractions-two-rel-prime-copy">
+          <webwork copy="webwork-linear-equation-fractions-two-rel-prime"/>
+        </exercise>
+        <exercise label="linear-equation-fractions-two-with-gcf">
+          <webwork xml:id="webwork-linear-equation-fractions-two-with-gcf">
+            <pg-code>
+              Context("Fraction");
+              Context()->noreduce('(-x)+y', '(-x)-y');
+              do {
+                @den = random_coprime([2..6],[2..6]);
+                $k = random(2,7);
+                @den = map{$_*$k}(@den);
+                @den = random_subset(4,(@den,1,1));
+                @num = (
+                  (random_coprime([1..8],[$den[0]]))[0],
+                  (random_coprime([-8..-1,1..8],[$den[1]]))[0],
+                  (random_coprime([-8..-1,1..8],[$den[2]]))[0],
+                  (random_coprime([-8..-1,1..8],[$den[3]]))[0]
+                );
+                @c = map{Fraction($num[$_]/$den[$_])} (0..3);
+              } until ($c[0] != $c[2]);
+              $left = Formula("$c[0] x + $c[1]")->reduce;
+              $right = Formula("$c[2] x + $c[3]")->reduce;
+              $sol = ($c[3] - $c[1])/($c[0] - $c[2]);
+              Context("FiniteSolutionSets");
+              $solution = Formula("{$sol}");
+              $lcd = lcm(@den);
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/> = <var name="$right"/></m>
+              </p>
+              <instruction>
+                What LCD will you use?
+              </instruction>
+              <p>
+                <var name="$lcd" width="4"/>
+              </p>
+              <instruction>
+                Solve the equation.
+              </instruction>
+              <p>
+                <var name="$solution" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="linear-equation-fractions-two-with-gcf-copy">
+          <webwork copy="webwork-linear-equation-fractions-two-with-gcf"/>
+        </exercise>
+        <exercise label="linear-equation-fractions-three-pqr">
+          <webwork xml:id="webwork-linear-equation-fractions-three-pqr">
+            <pg-code>
+              Context("Fraction");
+              Context()->noreduce('(-x)+y', '(-x)-y');
+              do {
+                @den = random_pairwise_coprime([2..6],[2..6],[2..6]);
+                $lcd = lcm(@den);
+                @den = map{$lcd/$_}(@den);
+                @den = random_subset(4,(@den,1));
+                @num = (
+                  (random_coprime([1..8],[$den[0]]))[0],
+                  (random_coprime([-8..-1,1..8],[$den[1]]))[0],
+                  (random_coprime([-8..-1,1..8],[$den[2]]))[0],
+                  (random_coprime([-8..-1,1..8],[$den[3]]))[0]
+                );
+                @c = map{Fraction($num[$_]/$den[$_])} (0..3);
+              } until ($c[0] != $c[2]);
+              $left = Formula("$c[0] x + $c[1]")->reduce;
+              $right = Formula("$c[2] x + $c[3]")->reduce;
+              $sol = ($c[3] - $c[1])/($c[0] - $c[2]);
+              Context("FiniteSolutionSets");
+              $solution = Formula("{$sol}");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/> = <var name="$right"/></m>
+              </p>
+              <instruction>
+                What LCD will you use?
+              </instruction>
+              <p>
+                <var name="$lcd" width="4"/>
+              </p>
+              <instruction>
+                Solve the equation.
+              </instruction>
+              <p>
+                <var name="$solution" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="linear-equation-fractions-three-pqr-copy">
+          <webwork copy="webwork-linear-equation-fractions-three-pqr"/>
+        </exercise>
+      </exercisegroup>
+      <exercisegroup cols="2">
         <title>Solve the Inequality</title>
         <introduction>
           <p>
@@ -3397,7 +4939,7 @@
           </webwork>
         </exercise>
         <exercise label="integer-nxplusaminuskmxplusbineqc-copy">
-         <webwork copy="webwork-integer-nxplusaminuskmxplusbineqc"/>
+          <webwork copy="webwork-integer-nxplusaminuskmxplusbineqc"/>
         </exercise>
         <exercise label="integer-mxplusbineqnxplusc-positive">
           <webwork xml:id="webwork-integer-mxplusbineqnxplusc-positive">
@@ -3472,7 +5014,7 @@
           </webwork>
         </exercise>
         <exercise label="integer-mxplusbineqnxplusc-positive-copy">
-         <webwork copy="webwork-integer-mxplusbineqnxplusc-positive"/>
+          <webwork copy="webwork-integer-mxplusbineqnxplusc-positive"/>
         </exercise>
         <exercise label="integer-mxplusbineqnxplusc-negative">
           <webwork xml:id="webwork-integer-mxplusbineqnxplusc-negative">
@@ -3547,7 +5089,7 @@
           </webwork>
         </exercise>
         <exercise label="integer-mxplusbineqnxplusc-negative-copy">
-         <webwork copy="webwork-integer-mxplusbineqnxplusc-negative"/>
+          <webwork copy="webwork-integer-mxplusbineqnxplusc-negative"/>
         </exercise>
         <exercise label="integer-mxplusbineqnxplusc">
           <webwork xml:id="webwork-integer-mxplusbineqnxplusc">
@@ -3621,7 +5163,7 @@
           </webwork>
         </exercise>
         <exercise label="integer-mxplusbineqnxplusc-copy">
-         <webwork copy="webwork-integer-mxplusbineqnxplusc"/>
+          <webwork copy="webwork-integer-mxplusbineqnxplusc"/>
         </exercise>
         <exercise label="integer-simplifyfirst">
           <webwork xml:id="webwork-integer-simplifyfirst">
@@ -3696,7 +5238,7 @@
           </webwork>
         </exercise>
         <exercise label="integer-simplifyfirst-copy">
-         <webwork copy="webwork-integer-simplifyfirst"/>
+          <webwork copy="webwork-integer-simplifyfirst"/>
         </exercise>
         <exercise label="integer-simplifyfirst2">
           <webwork xml:id="webwork-integer-simplifyfirst2">
@@ -3770,9 +5312,588 @@
           </webwork>
         </exercise>
         <exercise label="integer-simplifyfirst2-copy">
-         <webwork copy="webwork-integer-simplifyfirst2"/>
+          <webwork copy="webwork-integer-simplifyfirst2"/>
         </exercise>
-        <!-- NB:  Add exercises with fraction answers once the graphtool from WW 2.18 is available -->
+        <exercise label="linear-inequality-fractions-b">
+          <webwork xml:id="webwork-linear-inequality-fractions-b">
+            <pg-code>
+              Context("Fraction-NoDecimals");
+              ($m,$c) = random_subset(2,2..12);
+              $b = Fraction(random_coprime([1..12],[2..12]));
+              $left = Formula("$m x + $b");
+              $right = Formula("$c");
+              $sol = ($c - $b)/$m;
+              %cmp = (
+                '\gt'  => {interval => ($m > 0) ? "($sol,inf)"  : "(-inf,$sol)", sign => ($m > 0) ? '>'     : '&lt;' },
+                '\lt'  => {interval => ($m > 0) ? "(-inf,$sol)" : "($sol,inf)",  sign => ($m > 0) ? '&lt;'  : '>'    },
+                '\geq' => {interval => ($m > 0) ? "[$sol,inf)"  : "(-inf,$sol]", sign => ($m > 0) ? '>='    : '&lt;='},
+                '\leq' => {interval => ($m > 0) ? "(-inf,$sol]" : "[$sol,inf)",  sign => ($m > 0) ? '&lt;=' : '>='   },
+              );
+              $texcmp = list_random(lex_sort(keys %cmp));
+              $in = Interval($cmp{$texcmp}{interval});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->flags->set(reduceConstants=>0);
+              $sb = Compute("{ x | x $cmp{$texcmp}{sign} $sol}");
+              $lcd = ($b->value)[1];
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/> <var name="$texcmp"/> <var name="$right"/></m>
+              </p>
+              <instruction>
+                What LCD will you use?
+              </instruction>
+              <p>
+                <var name="$lcd" width="4"/>
+              </p>
+              <instruction>
+                Write the solution set using set-builder notation.
+              </instruction>
+              <p>
+                <var name="$sb" width="16"/>
+              </p>
+              <instruction>
+                Write the solution set using interval notation.
+              </instruction>
+              <p>
+                <var name="$in" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="linear-inequality-fractions-c">
+          <webwork xml:id="webwork-linear-inequality-fractions-c">
+            <pg-code>
+              Context("Fraction-NoDecimals");
+              ($m,$b) = random_subset(2,2..12);
+              $c = Fraction(random_coprime([1..12],[2..12]));
+              $left = Formula("$m x + $b");
+              $right = Formula("$c");
+              $sol = ($c - $b)/$m;
+              %cmp = (
+                '\gt'  => {interval => ($m > 0) ? "($sol,inf)"  : "(-inf,$sol)", sign => ($m > 0) ? '>'     : '&lt;' },
+                '\lt'  => {interval => ($m > 0) ? "(-inf,$sol)" : "($sol,inf)",  sign => ($m > 0) ? '&lt;'  : '>'    },
+                '\geq' => {interval => ($m > 0) ? "[$sol,inf)"  : "(-inf,$sol]", sign => ($m > 0) ? '>='    : '&lt;='},
+                '\leq' => {interval => ($m > 0) ? "(-inf,$sol]" : "[$sol,inf)",  sign => ($m > 0) ? '&lt;=' : '>='   },
+              );
+              $texcmp = list_random(lex_sort(keys %cmp));
+              $in = Interval($cmp{$texcmp}{interval});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->flags->set(reduceConstants=>0);
+              $sb = Compute("{ x | x $cmp{$texcmp}{sign} $sol}");
+              $lcd = ($c->value)[1];
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/> <var name="$texcmp"/> <var name="$right"/></m>
+              </p>
+              <instruction>
+                What LCD will you use?
+              </instruction>
+              <p>
+                <var name="$lcd" width="4"/>
+              </p>
+              <instruction>
+                Write the solution set using set-builder notation.
+              </instruction>
+              <p>
+                <var name="$sb" width="16"/>
+              </p>
+              <instruction>
+                Write the solution set using interval notation.
+              </instruction>
+              <p>
+                <var name="$in" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="linear-inequality-fractions-same-denom">
+          <webwork xml:id="webwork-linear-inequality-fractions-same-denom">
+            <pg-code>
+              Context("Fraction-NoDecimals");
+              $den = random(2,12);
+              @num = random_pairwise_coprime([1..12],[1..12],[$den]);
+              $m = Fraction($num[0]/$den);
+              $c = Fraction($num[1]/$den);
+              $b = non_zero_random(-12,12);
+              $left = Formula("$m x + $b")->reduce;
+              $right = Formula("$c");
+              $sol = ($c - $b)/$m;
+              %cmp = (
+                '\gt'  => {interval => ($m > 0) ? "($sol,inf)"  : "(-inf,$sol)", sign => ($m > 0) ? '>'     : '&lt;' },
+                '\lt'  => {interval => ($m > 0) ? "(-inf,$sol)" : "($sol,inf)",  sign => ($m > 0) ? '&lt;'  : '>'    },
+                '\geq' => {interval => ($m > 0) ? "[$sol,inf)"  : "(-inf,$sol]", sign => ($m > 0) ? '>='    : '&lt;='},
+                '\leq' => {interval => ($m > 0) ? "(-inf,$sol]" : "[$sol,inf)",  sign => ($m > 0) ? '&lt;=' : '>='   },
+              );
+              $texcmp = list_random(lex_sort(keys %cmp));
+              $in = Interval($cmp{$texcmp}{interval});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->flags->set(reduceConstants=>0);
+              $sb = Compute("{ x | x $cmp{$texcmp}{sign} $sol}");
+              $lcd = $den;
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/> <var name="$texcmp"/> <var name="$right"/></m>
+              </p>
+              <instruction>
+                What LCD will you use?
+              </instruction>
+              <p>
+                <var name="$lcd" width="4"/>
+              </p>
+              <instruction>
+                Write the solution set using set-builder notation.
+              </instruction>
+              <p>
+                <var name="$sb" width="16"/>
+              </p>
+              <instruction>
+                Write the solution set using interval notation.
+              </instruction>
+              <p>
+                <var name="$in" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="linear-inequality-fractions-rel-prime-denom">
+          <webwork xml:id="webwork-linear-inequality-fractions-rel-prime-denom">
+            <pg-code>
+              Context("Fraction-NoDecimals");
+              @den = random_coprime([2..8],[2..8]);
+              @num = (
+                (random_coprime([1..8],[$den[0]]))[0],
+                (random_coprime([1..8],[$den[1]]))[0]
+              );
+              $m = Fraction($num[0]/$den[0]);
+              $b = list_random(-1,1)*Fraction($num[1]/$den[1]);
+              $c = non_zero_random(-8,8);
+              $left = Formula("$m x + $b")->reduce;
+              $right = Formula("$c");
+              $sol = ($c - $b)/$m;
+              %cmp = (
+                '\gt'  => {interval => ($m > 0) ? "($sol,inf)"  : "(-inf,$sol)", sign => ($m > 0) ? '>'     : '&lt;' },
+                '\lt'  => {interval => ($m > 0) ? "(-inf,$sol)" : "($sol,inf)",  sign => ($m > 0) ? '&lt;'  : '>'    },
+                '\geq' => {interval => ($m > 0) ? "[$sol,inf)"  : "(-inf,$sol]", sign => ($m > 0) ? '>='    : '&lt;='},
+                '\leq' => {interval => ($m > 0) ? "(-inf,$sol]" : "[$sol,inf)",  sign => ($m > 0) ? '&lt;=' : '>='   },
+              );
+              $texcmp = list_random(lex_sort(keys %cmp));
+              $in = Interval($cmp{$texcmp}{interval});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->flags->set(reduceConstants=>0);
+              $sb = Compute("{ x | x $cmp{$texcmp}{sign} $sol}");
+              $lcd = lcm(@den);
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/> <var name="$texcmp"/> <var name="$right"/></m>
+              </p>
+              <instruction>
+                What LCD will you use?
+              </instruction>
+              <p>
+                <var name="$lcd" width="4"/>
+              </p>
+              <instruction>
+                Write the solution set using set-builder notation.
+              </instruction>
+              <p>
+                <var name="$sb" width="16"/>
+              </p>
+              <instruction>
+                Write the solution set using interval notation.
+              </instruction>
+              <p>
+                <var name="$in" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="linear-inequality-fractions-gcf-denom">
+          <webwork xml:id="webwork-linear-inequality-fractions-gcf-denom">
+            <pg-code>
+              Context("Fraction-NoDecimals");
+              @den = random_coprime([2..6],[2..6]);
+              $k = random(2,6);
+              @den = map {$_*$k} (@den);
+              @num = (
+                (random_coprime([1..8],[$den[0]]))[0],
+                (random_coprime([1..8],[$den[1]]))[0]
+              );
+              $m = Fraction($num[0]/$den[0]);
+              $c = Fraction($num[1]/$den[1]);
+              $b = non_zero_random(-8,8);
+              $left = Formula("$m x + $b")->reduce;
+              $right = Formula("$c");
+              $sol = ($c - $b)/$m;
+              %cmp = (
+                '\gt'  => {interval => ($m > 0) ? "($sol,inf)"  : "(-inf,$sol)", sign => ($m > 0) ? '>'     : '&lt;' },
+                '\lt'  => {interval => ($m > 0) ? "(-inf,$sol)" : "($sol,inf)",  sign => ($m > 0) ? '&lt;'  : '>'    },
+                '\geq' => {interval => ($m > 0) ? "[$sol,inf)"  : "(-inf,$sol]", sign => ($m > 0) ? '>='    : '&lt;='},
+                '\leq' => {interval => ($m > 0) ? "(-inf,$sol]" : "[$sol,inf)",  sign => ($m > 0) ? '&lt;=' : '>='   },
+              );
+              $texcmp = list_random(lex_sort(keys %cmp));
+              $in = Interval($cmp{$texcmp}{interval});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->flags->set(reduceConstants=>0);
+              $sb = Compute("{ x | x $cmp{$texcmp}{sign} $sol}");
+              $lcd = lcm(@den);
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/> <var name="$texcmp"/> <var name="$right"/></m>
+              </p>
+              <instruction>
+                What LCD will you use?
+              </instruction>
+              <p>
+                <var name="$lcd" width="4"/>
+              </p>
+              <instruction>
+                Write the solution set using set-builder notation.
+              </instruction>
+              <p>
+                <var name="$sb" width="16"/>
+              </p>
+              <instruction>
+                Write the solution set using interval notation.
+              </instruction>
+              <p>
+                <var name="$in" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="linear-inequality-fractions-pqr-denom">
+          <webwork xml:id="webwork-linear-inequality-fractions-pqr-denom">
+            <pg-code>
+              Context("Fraction-NoDecimals");
+              @den = random_pairwise_coprime([2..7],[2..7],[2..7]);
+              $lcd = Real(lcm(@den));
+              @den = map {$lcd/$_} (@den);
+              @num = (
+                (random_coprime([1..8],[$den[0]]))[0],
+                (random_coprime([1..8],[$den[1]]))[0],
+                (random_coprime([1..8],[$den[2]]))[0]
+              );
+              $m = Fraction($num[0]/$den[0]);
+              $b = list_random(-1,1)*Fraction($num[1]/$den[1]);
+              $c = Fraction($num[2]/$den[2]);
+              $left = Formula("$m x + $b")->reduce;
+              $right = Formula("$c");
+              $sol = ($c - $b)/$m;
+              %cmp = (
+                '\gt'  => {interval => ($m > 0) ? "($sol,inf)"  : "(-inf,$sol)", sign => ($m > 0) ? '>'     : '&lt;' },
+                '\lt'  => {interval => ($m > 0) ? "(-inf,$sol)" : "($sol,inf)",  sign => ($m > 0) ? '&lt;'  : '>'    },
+                '\geq' => {interval => ($m > 0) ? "[$sol,inf)"  : "(-inf,$sol]", sign => ($m > 0) ? '>='    : '&lt;='},
+                '\leq' => {interval => ($m > 0) ? "(-inf,$sol]" : "[$sol,inf)",  sign => ($m > 0) ? '&lt;=' : '>='   },
+              );
+              $texcmp = list_random(lex_sort(keys %cmp));
+              $in = Interval($cmp{$texcmp}{interval});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->flags->set(reduceConstants=>0);
+              $sb = Compute("{ x | x $cmp{$texcmp}{sign} $sol}");
+              Context("Fraction");
+              $leftsol[0] = Formula("$lcd*$m x + $lcd*$b")->reduce;
+              $rightsol[0] = Formula("$lcd*$c")->reduce;
+              $leftsol[1] = Formula("$lcd*$m x + $lcd*$b - $lcd*$b")->reduce;
+              $rightsol[1] = Formula("x - $lcd*$b")->reduce;
+              $rightsol[1] = $rightsol[1]->substitute(x => Formula($lcd*$c));
+              $leftsol[2] = Formula("$lcd*$m x")->reduce;
+              $rightsol[2] = Formula("$lcd*$c - $lcd*$b")->reduce;
+              $leftsol[3] = Formula("x")->reduce;
+              $rightsol[3] = Formula("($lcd*$c - $lcd*$b) / ($lcd*$m)")->reduce;
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/> <var name="$texcmp"/> <var name="$right"/></m>
+              </p>
+              <instruction>
+                What LCD will you use?
+              </instruction>
+              <p>
+                <var name="$lcd" width="4"/>
+              </p>
+              <instruction>
+                Write the solution set using set-builder notation.
+              </instruction>
+              <p>
+                <var name="$sb" width="16"/>
+              </p>
+              <instruction>
+                Write the solution set using interval notation.
+              </instruction>
+              <p>
+                <var name="$in" width="16"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                This inequality has terms with denominators <m><var name="$den[0]"/></m>,
+                <m><var name="$den[1]"/></m>, and <m><var name="$den[2]"/></m>. The least common
+                multiple of these is <m><var name="$lcd"/></m>. So the first step in solving this
+                inequality can be to multiply on each side by <m><var name="$lcd"/></m>.
+                <md>
+                  <mrow><var name="$lcd"/>\left(<var name="$left"/>\right) \amp<var name="$texcmp"/> <var name="$lcd"/>\left(<var name="$right"/>\right)</mrow>
+                  <mrow><var name="$leftsol[0]"/> \amp<var name="$texcmp"/> <var name="$rightsol[0]"/></mrow>
+                  <mrow><var name="$leftsol[1]"/> \amp<var name="$texcmp"/> <var name="$rightsol[1]"/></mrow>
+                  <mrow><var name="$leftsol[2]"/> \amp<var name="$texcmp"/> <var name="$rightsol[2]"/></mrow>
+                  <mrow><var name="$leftsol[3]"/> \amp<var name="$texcmp"/> <var name="$rightsol[3]"/></mrow>
+                </md>
+                The solution set is
+                <m>\{x\mid x <var name="$texcmp"/> <var name="$sol"/>\}</m> using set-builder
+                notation. In interval notation, we have <m><var name="$in"/></m>.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="linear-inequality-fractions-two-same">
+          <webwork xml:id="webwork-linear-inequality-fractions-two-same">
+            <pg-code>
+              Context("Fraction-NoDecimals");
+              Context()->noreduce('(-x)+y', '(-x)-y');
+              do {
+                $den = random(2,12);
+                @den = random_subset(4,$den,$den,1,1);
+                @num = (
+                  (random_coprime([1..12],[$den[0]]))[0],
+                  (random_coprime([-12..-1,1..12],[$den[1]]))[0],
+                  (random_coprime([-12..-1,1..12],[$den[2]]))[0],
+                  (random_coprime([-12..-1,1..12],[$den[3]]))[0]
+                );
+                @c = map{Fraction($num[$_]/$den[$_])} (0..3);
+              } until ($c[0] != $c[2]);
+              $left = Formula("$c[0] x + $c[1]")->reduce;
+              $right = Formula("$c[2] x + $c[3]")->reduce;
+              $sol = ($c[3] - $c[1])/($c[0] - $c[2]);
+              $m = $c[0] - $c[2];
+              %cmp = (
+                '\gt'  => {interval => ($m > 0) ? "($sol,inf)"  : "(-inf,$sol)", sign => ($m > 0) ? '>'     : '&lt;' },
+                '\lt'  => {interval => ($m > 0) ? "(-inf,$sol)" : "($sol,inf)",  sign => ($m > 0) ? '&lt;'  : '>'    },
+                '\geq' => {interval => ($m > 0) ? "[$sol,inf)"  : "(-inf,$sol]", sign => ($m > 0) ? '>='    : '&lt;='},
+                '\leq' => {interval => ($m > 0) ? "(-inf,$sol]" : "[$sol,inf)",  sign => ($m > 0) ? '&lt;=' : '>='   },
+              );
+              $texcmp = list_random(lex_sort(keys %cmp));
+              $in = Interval($cmp{$texcmp}{interval});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->flags->set(reduceConstants=>0);
+              $sb = Compute("{ x | x $cmp{$texcmp}{sign} $sol}");
+              $lcd = lcm(@den);
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/> <var name="$texcmp"/> <var name="$right"/></m>
+              </p>
+              <instruction>
+                What LCD will you use?
+              </instruction>
+              <p>
+                <var name="$lcd" width="4"/>
+              </p>
+              <instruction>
+                Write the solution set using set-builder notation.
+              </instruction>
+              <p>
+                <var name="$sb" width="16"/>
+              </p>
+              <instruction>
+                Write the solution set using interval notation.
+              </instruction>
+              <p>
+                <var name="$in" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="linear-inequality-fractions-two-rel-prime">
+          <webwork xml:id="webwork-linear-inequality-fractions-two-rel-prime">
+            <pg-code>
+              Context("Fraction-NoDecimals");
+              Context()->noreduce('(-x)+y', '(-x)-y');
+              do {
+                @den = random_subset(4,random_coprime([2..12],[2..12]),1,1);
+                @num = (
+                  (random_coprime([1..12],[$den[0]]))[0],
+                  (random_coprime([-12..-1,1..12],[$den[1]]))[0],
+                  (random_coprime([-12..-1,1..12],[$den[2]]))[0],
+                  (random_coprime([-12..-1,1..12],[$den[3]]))[0]
+                );
+                @c = map{Fraction($num[$_]/$den[$_])} (0..3);
+              } until ($c[0] != $c[2]);
+              $left = Formula("$c[0] x + $c[1]")->reduce;
+              $right = Formula("$c[2] x + $c[3]")->reduce;
+              $sol = ($c[3] - $c[1])/($c[0] - $c[2]);
+              $m = $c[0] - $c[2];
+              %cmp = (
+                '\gt'  => {interval => ($m > 0) ? "($sol,inf)"  : "(-inf,$sol)", sign => ($m > 0) ? '>'     : '&lt;' },
+                '\lt'  => {interval => ($m > 0) ? "(-inf,$sol)" : "($sol,inf)",  sign => ($m > 0) ? '&lt;'  : '>'    },
+                '\geq' => {interval => ($m > 0) ? "[$sol,inf)"  : "(-inf,$sol]", sign => ($m > 0) ? '>='    : '&lt;='},
+                '\leq' => {interval => ($m > 0) ? "(-inf,$sol]" : "[$sol,inf)",  sign => ($m > 0) ? '&lt;=' : '>='   },
+              );
+              $texcmp = list_random(lex_sort(keys %cmp));
+              $in = Interval($cmp{$texcmp}{interval});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->flags->set(reduceConstants=>0);
+              $sb = Compute("{ x | x $cmp{$texcmp}{sign} $sol}");
+              $lcd = lcm(@den);
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/> <var name="$texcmp"/> <var name="$right"/></m>
+              </p>
+              <instruction>
+                What LCD will you use?
+              </instruction>
+              <p>
+                <var name="$lcd" width="4"/>
+              </p>
+              <instruction>
+                Write the solution set using set-builder notation.
+              </instruction>
+              <p>
+                <var name="$sb" width="16"/>
+              </p>
+              <instruction>
+                Write the solution set using interval notation.
+              </instruction>
+              <p>
+                <var name="$in" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="linear-inequality-fractions-two-with-gcf">
+          <webwork xml:id="webwork-linear-inequality-fractions-two-with-gcf">
+            <pg-code>
+              Context("Fraction-NoDecimals");
+              Context()->noreduce('(-x)+y', '(-x)-y');
+              do {
+                @den = random_coprime([2..6],[2..6]);
+                $k = random(2,7);
+                @den = map{$_*$k}(@den);
+                @den = random_subset(4,(@den,1,1));
+                @num = (
+                  (random_coprime([1..8],[$den[0]]))[0],
+                  (random_coprime([-8..-1,1..8],[$den[1]]))[0],
+                  (random_coprime([-8..-1,1..8],[$den[2]]))[0],
+                  (random_coprime([-8..-1,1..8],[$den[3]]))[0]
+                );
+                @c = map{Fraction($num[$_]/$den[$_])} (0..3);
+              } until ($c[0] != $c[2]);
+              $left = Formula("$c[0] x + $c[1]")->reduce;
+              $right = Formula("$c[2] x + $c[3]")->reduce;
+              $sol = ($c[3] - $c[1])/($c[0] - $c[2]);
+              $m = $c[0] - $c[2];
+              %cmp = (
+                '\gt'  => {interval => ($m > 0) ? "($sol,inf)"  : "(-inf,$sol)", sign => ($m > 0) ? '>'     : '&lt;' },
+                '\lt'  => {interval => ($m > 0) ? "(-inf,$sol)" : "($sol,inf)",  sign => ($m > 0) ? '&lt;'  : '>'    },
+                '\geq' => {interval => ($m > 0) ? "[$sol,inf)"  : "(-inf,$sol]", sign => ($m > 0) ? '>='    : '&lt;='},
+                '\leq' => {interval => ($m > 0) ? "(-inf,$sol]" : "[$sol,inf)",  sign => ($m > 0) ? '&lt;=' : '>='   },
+              );
+              $texcmp = list_random(lex_sort(keys %cmp));
+              Context("Fraction-NoDecimals");
+              $in = Interval($cmp{$texcmp}{interval});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->flags->set(reduceConstants=>0);
+              $sb = Compute("{ x | x $cmp{$texcmp}{sign} $sol}");
+              $lcd = lcm(@den);
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/> <var name="$texcmp"/> <var name="$right"/></m>
+              </p>
+              <instruction>
+                What LCD will you use?
+              </instruction>
+              <p>
+                <var name="$lcd" width="4"/>
+              </p>
+              <instruction>
+                Write the solution set using set-builder notation.
+              </instruction>
+              <p>
+                <var name="$sb" width="16"/>
+              </p>
+              <instruction>
+                Write the solution set using interval notation.
+              </instruction>
+              <p>
+                <var name="$in" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="linear-inequality-fractions-three-pqr">
+          <webwork xml:id="webwork-linear-inequality-fractions-three-pqr">
+            <pg-code>
+              Context("Fraction-NoDecimals");
+              Context()->noreduce('(-x)+y', '(-x)-y');
+              do {
+                @den = random_pairwise_coprime([2..6],[2..6],[2..6]);
+                $lcd = lcm(@den);
+                @den = map{$lcd/$_}(@den);
+                @den = random_subset(4,(@den,1));
+                @num = (
+                  (random_coprime([1..8],[$den[0]]))[0],
+                  (random_coprime([-8..-1,1..8],[$den[1]]))[0],
+                  (random_coprime([-8..-1,1..8],[$den[2]]))[0],
+                  (random_coprime([-8..-1,1..8],[$den[3]]))[0]
+                );
+                @c = map{Fraction($num[$_]/$den[$_])} (0..3);
+              } until ($c[0] != $c[2]);
+              $left = Formula("$c[0] x + $c[1]")->reduce;
+              $right = Formula("$c[2] x + $c[3]")->reduce;
+              $sol = ($c[3] - $c[1])/($c[0] - $c[2]);
+              $m = $c[0] - $c[2];
+              %cmp = (
+                '\gt'  => {interval => ($m > 0) ? "($sol,inf)"  : "(-inf,$sol)", sign => ($m > 0) ? '>'     : '&lt;' },
+                '\lt'  => {interval => ($m > 0) ? "(-inf,$sol)" : "($sol,inf)",  sign => ($m > 0) ? '&lt;'  : '>'    },
+                '\geq' => {interval => ($m > 0) ? "[$sol,inf)"  : "(-inf,$sol]", sign => ($m > 0) ? '>='    : '&lt;='},
+                '\leq' => {interval => ($m > 0) ? "(-inf,$sol]" : "[$sol,inf)",  sign => ($m > 0) ? '&lt;=' : '>='   },
+              );
+              $texcmp = list_random(lex_sort(keys %cmp));
+              $in = Interval($cmp{$texcmp}{interval});
+              InequalitySetBuilder::UseVerticalSuchThat();
+              Context("InequalitySetBuilder-Only");
+              Context()->flags->set(reduceConstants=>0);
+              $sb = Compute("{ x | x $cmp{$texcmp}{sign} $sol}");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$left"/> <var name="$texcmp"/> <var name="$right"/></m>
+              </p>
+              <instruction>
+                What LCD will you use?
+              </instruction>
+              <p>
+                <var name="$lcd" width="4"/>
+              </p>
+              <instruction>
+                Write the solution set using set-builder notation.
+              </instruction>
+              <p>
+                <var name="$sb" width="16"/>
+              </p>
+              <instruction>
+                Write the solution set using interval notation.
+              </instruction>
+              <p>
+                <var name="$in" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
       </exercisegroup>
     </subexercises>
 
@@ -3893,7 +6014,7 @@
               This is a rate scenario. The air pressure starts out at <m><var name="$initial"/></m>,
               and increases with a rate of <m><var name="$rate"/></m>. Eventually the pressure
               reaches <m><var name="$final"/></m>. So the equation we set up is:
-              <me><var name="$initial"/>+<var name="$rate"/>t=<var name="$final"/></me>
+              <md><var name="$initial"/>+<var name="$rate"/>t=<var name="$final"/></md>
               where <m>t</m> is the number of minutes the pump runs. Now we follow the standard steps
               to solve this equation.
               <md>
@@ -4494,9 +6615,9 @@
             <solution>
               <p>
                 This is a rate exercise, and we can use
-                <me>
+                <md>
                   (\text{initial value}) \pm (\text{rate})\cdot\text{variable} \mathrel{?} (\text{final value})
-                </me>
+                </md>
                 The question mark in the above is not an equal sign, because we are trying to set
                 up an inequality. The initial value for the gas in <var name="$p->their"/> tank is
                 <m><var name="$b"/></m>, <var name="$p"/> is losing gas (so we will subtract, not
@@ -4507,9 +6628,9 @@
                 <m><var name="$b"/> - <var name="$m"/> x</m> will be <em>greater</em> than or equal
                 to the actual amount of gas left in the tank after driving <m>x</m> miles. And we
                 want this to reach <m>1</m>. So the inequality we set up is:
-                <me>
+                <md>
                   <var name="$relation"/>
-                </me>
+                </md>
               </p>
             </solution>
           </task>
@@ -4805,6 +6926,695 @@
           </task>
         </webwork>
       </exercise>
+      <exercisegroup cols="2">
+        <title>Triangle Area</title>
+        <introduction>
+          <p>
+            The area of a triangle is given by <m>A=\frac12bh</m>, where <m>b</m> is the base width,
+            and <m>h</m> is the height.
+          </p>
+          <image width="33%">
+            <latex-image>
+              \begin{tikzpicture}
+                \draw[fill=firstcolor!20!white,thick] (0,0) -| (3,2) -- cycle;
+                \node at (1.5,0) [below] {base \(b\)};
+                \draw [rightangle] (3,0.2) -| (2.8,0);
+                \node at (3,1) [right] {height \(h\)};
+                \node at (2,1) [below] {area \(A\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </introduction>
+        <exercise label="isolate-triangleareaforbase">
+          <webwork xml:id="webwork-isolate-triangleareaforbase">
+            <pg-code>
+              Context("Fraction")->variables->are(A => 'Real', b => 'Real', h => 'Real');
+              parser::Assignment->Allow;
+              $ans = Assignment("b = (2A)/h");
+            </pg-code>
+            <statement>
+              <p>
+                Solve the equation <m>A=\frac12bh</m> for <m>b</m>.
+              </p>
+              <p>
+                <var name="$ans" width="16"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                We need to keep our focus on <m>b</m> and take algebra steps that bring us closer to
+                isolating <m>b</m>.
+                <md>
+                  <mrow>A \amp= \frac12bh</mrow>
+                  <mrow>2A \amp= bh</mrow>
+                  <mrow>\frac{2A}{h} \amp= b</mrow>
+                  <mrow>b \amp= \frac{2A}{h}</mrow>
+                </md>
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="isolate-triangleareaforheight">
+          <webwork xml:id="webwork-isolate-triangleareaforheight">
+            <pg-code>
+              Context("Fraction")->variables->are(A => 'Real', b => 'Real', h => 'Real');
+              parser::Assignment->Allow;
+              $ans = Assignment("h = (2A)/b");
+            </pg-code>
+            <statement>
+              <p>
+                Solve the equation <m>A=\frac12bh</m> for <m>h</m>.
+              </p>
+              <p>
+                <var name="$ans" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+      </exercisegroup>
+      <exercisegroup cols="2">
+        <title>Slope-Intercept Form</title>
+        <introduction>
+          <p>
+            The equation for a line in <q>slope-intercept form</q> is <m>y=mx+b</m>.
+          </p>
+          <image width="47%">
+            <latex-image>
+              \begin{tikzpicture}
+                \begin{axis}[
+                    xtick={0},
+                    ytick={0},
+                    minor xtick=,
+                    minor ytick=,
+                    ymin=-1,
+                    ymax=5,
+                    width=0.47\orccaprintwidth,
+                    height=0.2\orccaprintwidth,
+                  ]
+                  \addplot+ {1/3*x + 2};
+                  \draw[guideline] (axis cs:0,0) -- (axis cs:0.2,0) -- node[pos=0.5, right]{\(b\)} (axis cs:0.2,2) -- (axis cs:0,2);
+                  \draw[guideline] (axis cs:0,2) -- node[pos=0.5, below]{\(1\)} (axis cs:3,2) -- node[pos=0.5, right]{\(m\)} (axis cs:3,3);
+                \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </introduction>
+        <exercise label="isolate-slopeinterceptform">
+          <webwork xml:id="webwork-isolate-slopeinterceptform">
+            <pg-code>
+              @x = qw(y m x b);
+              Context("Fraction")->variables->are(map {$_ => 'Real'} (@x));
+              parser::Assignment->Allow;
+              $ans = Assignment("m = (y - b)/x");
+            </pg-code>
+            <statement>
+              <p>
+                Solve the equation for <m>m</m>.
+              </p>
+              <p>
+                <var name="$ans" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="isolate-slopeinterceptforb">
+          <webwork xml:id="webwork-isolate-slopeinterceptforb">
+            <pg-code>
+              @x = qw(y m x b);
+              Context("Fraction")->variables->are(map {$_ => 'Real'} (@x));
+              parser::Assignment->Allow;
+              $ans = Assignment("b = y - mx");
+            </pg-code>
+            <statement>
+              <p>
+                Solve the equation for <m>b</m>.
+              </p>
+              <p>
+                <var name="$ans" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+      </exercisegroup>
+      <exercisegroup cols="2">
+        <title>Circle Circumference</title>
+        <introduction>
+          <p>
+            The circumference of a circle can be found with the equation <m>c=2\pi r</m>, where
+            <m>r</m> is the radius, or with the equation <m>c=\pi d</m>, where <m>d</m> is the
+            diameter.
+          </p>
+          <image width="40%">
+            <latex-image>
+              \begin{tikzpicture}[x=1.8cm,y=1.8cm]
+              \draw[
+                  thick,
+                  fill=secondcolor!20!white,
+              ] (1,0) arc (270:-90:1);
+              \path[
+                  postaction={
+                      decorate,
+                      decoration={
+                          text along path,
+                          text align=center,
+                          transform={yshift=1ex},
+                          text={circumference ~~$c~~$}
+                      }
+                  }
+              ] (1,0) arc (270:-90:1);
+              \draw[thick] (1,1) -- node[pos=0.5, above] {radius \(r\)} (2,1);
+              \draw[
+                  thick,
+                  fill=secondcolor!20!white,
+              ] (3.5,0) arc (270:-90:1);
+              \path[
+                  postaction={
+                      decorate,
+                      decoration={
+                          text along path,
+                          text align=center,
+                          transform={yshift=1ex},
+                          text={circumference ~~$c~~$}
+                      }
+                  }
+              ] (3.5,0) arc (270:-90:1);
+              \draw[thick] (2.5,1) -- node[pos=0.5, above] {diameter \(d\)} (4.5,1);
+              \node at (0,2.2) {};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </introduction>
+        <exercise label="isolate-circumferenceforr">
+          <webwork xml:id="webwork-isolate-circumferenceforr">
+            <pg-code>
+              @x = qw(c r);
+              Context("Fraction")->variables->are(map {$_ => 'Real'} (@x));
+              parser::Assignment->Allow;
+              $ans = Assignment("r = c/(2 pi)");
+            </pg-code>
+            <statement>
+              <p>
+                Solve the equation <m>c=2\pi r</m> for <m>r</m>.
+              </p>
+              <instruction>
+                You may type <m>\pi</m> as <c>pi</c> or <c>π</c>.
+              </instruction>
+              <p>
+                <var name="$ans" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="isolate-circumferenceford">
+          <webwork xml:id="webwork-isolate-circumferenceford">
+            <pg-code>
+              @x = qw(c d);
+              Context("Fraction")->variables->are(map {$_ => 'Real'} (@x));
+              parser::Assignment->Allow;
+              $ans = Assignment("d = c/pi");
+            </pg-code>
+            <statement>
+              <p>
+                Solve the equation <m>c=\pi d</m> for <m>d</m>.
+              </p>
+              <instruction>
+                You may type <m>\pi</m> as <c>pi</c> or <c>π</c>.
+              </instruction>
+              <p>
+                <var name="$ans" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+      </exercisegroup>
+      <exercisegroup cols="2">
+        <title>Cylinders</title>
+        <introduction>
+          <p>
+            The volume of a cylinder can be found with the equation <m>V=\pi r^2h</m>, where
+            <m>r</m> is the radius and <m>h</m> is the height. Its surface area can be found with
+            the equation <m>A=2\pi r^2+2\pi rh</m>.
+          </p>
+          <image width="50%">
+            <latex-image>
+              \begin{tikzpicture}
+                \draw[fill=firstcolor!20] (0,0) ellipse (3 and 0.45);
+                \draw[fill=firstcolor!10] (3,0) arc (0:180:3 and -0.45) -- (-3,-2) arc (180:360:3 and 0.5) -- cycle;
+                \draw [dashed] (-3,-2) arc (180:360:3 and -0.5);
+                \draw [dashed] (0,0) -- (3,0) node[pos=0.5,above] {radius \(r\)};
+                \node at (-3,-1) [left] {height \(h\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </introduction>
+        <exercise label="isolate-cylindervolumeforh">
+          <webwork xml:id="webwork-isolate-cylindervolumeforh">
+            <pg-code>
+              @x = qw(V r h);
+              Context("Fraction")->variables->are(map {$_ => 'Real'} (@x));
+              $left = Formula("V")->reduce;
+              $right = Formula("pi r^2 h")->reduce;
+              parser::Assignment->Allow;
+              $ans = Assignment("h = V/(pi r^2)");
+            </pg-code>
+            <statement>
+              <p>
+                Solve <m><var name="$left"/>=<var name="$right"/></m> for <m>h</m>.
+              </p>
+              <instruction>
+                You may type <m>\pi</m> as <c>pi</c> or <c>π</c>.
+              </instruction>
+              <p>
+                <var name="$ans" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="isolate-cylinderareaforh">
+          <webwork xml:id="webwork-isolate-cylinderareaforh">
+            <pg-code>
+              @x = qw(A r h);
+              Context("Fraction")->variables->are(map {$_ => 'Real'} (@x));
+              $left = Formula("A")->reduce;
+              $right = Formula("2 pi r^2 + 2 pi r h")->reduce;
+              parser::Assignment->Allow;
+              $ans = Assignment("h = (A - 2 pi r^2)/(2 pi r)");
+            </pg-code>
+            <statement>
+              <p>
+                Solve <m><var name="$left"/>=<var name="$right"/></m> for <m>h</m>.
+              </p>
+              <instruction>
+                You may type <m>\pi</m> as <c>pi</c> or <c>π</c>.
+              </instruction>
+              <p>
+                <var name="$ans" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+      </exercisegroup>
+      <exercise label="running-with-fractions">
+        <webwork>
+          <pg-macros>
+            <macro-file>randomPerson.pl</macro-file>
+          </pg-macros>
+          <pg-code>
+            $p = randomPerson();
+            $b = random(10,20);
+            do {
+              $m = random(5,5.7,0.01);
+              $d = random(3,6);
+              $n = int($m*$d);
+              $m = $n/$d;
+              $c = random(60,100,5);
+              $sol = ($c - $b)/$m;
+              ($n,$d) = map{$_/gcd($n,$d)} ($n,$d);
+            } until ($d >= 3 &amp;&amp; $m > 4.5 &amp;&amp; $sol != int($sol));
+            $num = NumberWithUnits("$n m");
+            $den = NumberWithUnits("$d s");
+            $initial = NumberWithUnits("$b m");
+            $final = NumberWithUnits("$c m");
+            Context()->flags->set(reduceConstants => 0);
+            $answer = FormulaWithUnits("$sol s");
+          </pg-code>
+          <statement>
+            <p>
+              <var name="$p"/> is running on a track. We start the clock as <var name="$p->they"/>
+              <var name="$p->verb('pass')"/> the <var name="$initial"/> mark, and
+              <var name="$p->they"/> <var name="$p->are"/> running
+              <var name="$num"/> every <var name="$den"/>. How long does it take for
+              <var name="$p"/> to reach the <var name="$final"/> mark?
+            </p>
+            <p>
+              <var name="$answer" width="5"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+      <exercise label="gas-mileage-with-fractions">
+        <webwork>
+          <pg-macros>
+            <macro-file>randomPerson.pl</macro-file>
+          </pg-macros>
+          <pg-code>
+            $name = randomPerson();
+            $initial = random(12, 18);
+            $start = NumberWithUnits("$initial gal");
+            Context("Fraction");
+            @rates = map {Fraction(2/(2*$_-1))} (20..25);
+            push @rates, map {Fraction(3/(3*$_-1))} (20..25);
+            push @rates, map {Fraction(3/(3*$_+1))} (20..25);
+            push @rates, map {Fraction(4/(4*$_-1))} (20..25);
+            push @rates, map {Fraction(4/(4*$_+1))} (20..25);
+            $rate = list_random(@rates);
+            $speed = FormulaWithUnits("$rate gal");
+            $final = 1;
+            $end = NumberWithUnits("$final gal");
+            $solution = ($initial - $final)/$rate;
+            Context("Numeric")->flags->set(reduceConstants => 0);
+            $distance = FormulaWithUnits("$solution mi");
+          </pg-code>
+          <statement>
+            <p>
+              <var name="$name"/> filled the gas tank in <var name="$name->possessive"/> car to
+              <m><var name="$start"/></m>. When the tank reaches <m><var name="$end"/></m>, the low
+              gas light will come on. On average, <var name="$name"/>'s car uses
+              <m><var name="$speed"/></m> per mile driven. How many miles will <var name="$name"/>'s
+              car be able to drive before the low gas light comes on?
+            </p>
+            <p>
+              <var name="$distance" width="20"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+      <exercise label="tree-height-solve-equation-copy3">
+        <webwork copy="webwork-tree-height-solve-equation"/>
+      </exercise>
+      <exercise label="tire-pressure-with-fractions">
+        <webwork>
+          <pg-code>
+            $initial = random(20,25);
+            $start = NumberWithUnits("$initial psi");
+            Context("Fraction");
+            $rate = list_random(
+              [3,2], [5,2], [4,3],  [5,3],  [7,3],  [8,3],  [5,4], [7,4],  [9,4], [11,4],  [6,5],
+              [7,5], [8,5], [9,5], [11,5], [12,5], [13,5], [14,5], [7,6], [11,6], [13,6], [17,6]
+            );
+            $rate = Fraction(($rate->[0])/($rate->[1]));
+            $speed = FormulaWithUnits("$rate psi/min");
+            $final = random(30,34);
+            $end = NumberWithUnits("$final psi");
+            $solution = ($final - $initial)/$rate;
+            Context("Numeric")->flags->set(reduceConstants => 0);
+            $time = FormulaWithUnits("$solution min");
+          </pg-code>
+          <statement>
+            <p>
+              One of the tires on your car looks a little flat. You measure its air pressure
+              and are alarmed to see it so low at <m><var name="$start"/></m>. You have a
+              portable device that can pump air into the tire increasing the pressure at a rate of
+              <m><var name="$speed"/></m>. How long will it take to fill the tire to the
+              manual's recommended pressure of <m><var name="$end"/></m>?
+            </p>
+            <p>
+              <var name="$time" width="20"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+      <exercise label="grade-average">
+        <webwork xml:id="webwork-grade-average">
+          <pg-macros>
+            <macro-file>randomPerson.pl</macro-file>
+          </pg-macros>
+          <pg-code>
+            $p = randomPerson();
+            do {
+              $homework = random(80,100);
+              $midterm = random(70,90);
+              $goal = list_random(70,80,90);
+              $sol = 3*($goal - ($homework/2 + $midterm/6));
+            } until ($goal > 0 &amp;&amp; $goal &lt; 100);
+          </pg-code>
+          <statement>
+            <p>
+              In one college math course, the final grade (out of <m>100</m> points) is calculated
+              by adding one-half of the homework average, one-sixth of the midterm score, and
+              one-third of the final exam score.
+            </p>
+            <p>
+              <var name="$p"/> has <var name="$homework"/> for <var name="$p->their"/> homework
+              average and <var name="$midterm"/> for <var name="$p->their"/> midterm score.
+              <var name="$p->Their"/> goal is to finish the course with a final grade of
+              <var name="$goal"/>. What must <var name="$p->they"/> score on the final exam?
+            </p>
+            <p>
+              <var name="$sol" width="5"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+      <exercise label="grade-average2">
+        <webwork>
+          <pg-macros>
+            <macro-file>randomPerson.pl</macro-file>
+          </pg-macros>
+          <pg-code>
+            $p = randomPerson();
+            do {
+              $homework = random(60,90);
+              $project = random(80,100);
+              $midterm = random(70,90);
+              $goal = list_random(70,80,90);
+              $sol = 4*($goal - ($homework/3 + $project/6 + $midterm/4));
+            } until ($goal > 0 &amp;&amp; $goal &lt; 100);
+          </pg-code>
+          <statement>
+            <p>
+              In one college math course, the final grade (out of <m>100</m> points) is calculated
+              by adding one-third of the homework average, one-sixth of the class project score,
+              one-fourth of the midterm score, and one-fourth of the final exam score.
+            </p>
+            <p>
+              <var name="$p"/> has <var name="$homework"/> for <var name="$p->their"/> homework
+              average, <var name="$project"/> for <var name="$p->their"/> class project score, and
+              <var name="$midterm"/> for <var name="$p->their"/> midterm score.
+              <var name="$p->Their"/> goal is to finish the course with a final grade of
+              <var name="$goal"/>. What must <var name="$p->they"/> score on the final exam?
+            </p>
+            <p>
+              <var name="$sol" width="16"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+      <exercise label="soup-recipe">
+        <webwork xml:id="webwork-soup-recipe">
+          <pg-code>
+            $recipe = random(10,20,5);
+            ($volA, $volB) = random_subset(2, 1, 1.25, 1.5, 1.75, 2.25, 2.5, 2.75);
+            $ans = $volB*$recipe/$volA;
+            $answer = NumberWithUnits("$ans g");
+          </pg-code>
+          <statement>
+            <p>
+              An old cookbook has a recipe for soup that uses <m><var name="$recipe"/></m> g of
+              flour for thickener. The recipe makes <m><var name="$volA"/></m> gal of soup, but you
+              are adjusting it to make <m><var name="$volB"/></m> gal. How much flour should you
+              use?
+            </p>
+            <p>
+              <var name="$answer" width="16"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Let <m>x</m> be how many grams of flour we should use. The amount of flour is
+              proportional to the amount of soup, so we can compare the ratios of flour to soup for
+              our batch with the original recipe:
+              <md>\frac{x}{<var name="$volB"/>} = \frac{<var name="$recipe"/>}{<var name="$volA"/>}</md>
+              These denominators are not whole numbers, and we decide not to try using the least
+              common multiple. Instead, we just multiply on each side by both denominators:
+              <md>
+                <mrow><var name="$volA"/>\cdot <var name="$volB"/>\cdot \frac{x}{<var name="$volB"/>} \amp= <var name="$volA"/>\cdot <var name="$volB"/>\cdot \frac{<var name="$recipe"/>}{<var name="$volA"/>} </mrow>
+                <mrow><var name="$volA"/> x \amp= <var name="$recipe*$volB"/></mrow>
+                <mrow>x \amp= \frac{<var name="$recipe*$volB"/>}{<var name="$volA"/> }</mrow>
+                <mrow>x \amp= <var name="$ans"/></mrow>
+              </md>
+              So we should use <m><var name="$answer"/></m> of flour.
+            </p>
+          </solution>
+        </webwork>
+      </exercise>
+      <exercise label="garam-masala-recipe-solved">
+        <webwork>
+          <pg-code>
+            ($recipeA, $recipeB) = random_subset(2, 1, 1.25, 1.33, 1.5, 1.67, 1.75, 2, 2.25, 2.33, 2.5, 2.67, 2.75);
+            $volA = random(3,4);
+            $ans = $recipeB*$volA/$recipeA;
+            $tbsp = {name => 'tbsp', conversion => {factor =>1.4787*10**-5, m=>3}};
+            $answer = NumberWithUnits("$ans tbsp", {newUnit=>$tbsp});
+            $spice = list_random("cumin", "coriander", "cardamom", "black pepper", "cinnamon", "cloves", "nutmeg");
+          </pg-code>
+          <statement>
+            <p>
+              An internet recipe for <m><var name="$volA"/></m> tbsp of garam masala calls for 
+              <m><var name="$recipeA"/></m> tbsp of ground <var name="$spice"/>. You want to use up
+              the last of your ground <var name="$spice"/> supply, which is
+              <m><var name="$recipeB"/></m> tbsp. Assuming you have enough of all of the other
+              ingredients, how much garam masala will you make?
+            </p>
+            <p>
+              <var name="$answer" width="16"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+      <exercise label="apples-cost-solved">
+        <webwork xml:id="webwork-apples-cost-solved">
+          <pg-macros>
+            <macro-file>randomPerson.pl</macro-file>
+          </pg-macros>
+          <pg-code>
+            @p = randomPerson(n => 2);
+            @w = (random(50,70), random(80,90));
+            do {
+              $price = random(0.7,1.2,0.01);
+            } until ($price != 1);
+            Context("Currency");
+            @c = map {Currency($_*$price)} (@w);
+          </pg-code>
+          <statement>
+            <p>
+              <var name="$p[0]"/> and <var name="$p[1]"/> went to the weekend market to buy apples
+              in bulk for a school event, canning lots of applesauce. <var name="$p[0]"/> bought
+              <var name="$w[0]"/> lb of apples and paid <var name="$c[0]"/>. <var name="$p[1]"/>
+              has bagged <var name="$p[1]->their"/> apples and has <var name="$w[1]"/> lb of apples
+              ready. How much will it <var name="$p[1]"/>'s bag of apples cost?
+            </p>
+            <p>
+              <var name="$c[1]" width="16"/>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+      <exercise label="architect-model-solved">
+        <webwork>
+          <pg-macros>
+            <macro-file>randomPerson.pl</macro-file>
+          </pg-macros>
+          <pg-code>
+            $p = randomPerson();
+            $building = random(30,80,2);
+            $model = random(2,10);
+            Context("Fraction");
+            $ans = $model/($building)*5.5;
+            $answer = FormulaWithUnits("$ans in");
+            @aux[0] = 5.5*$model;
+          </pg-code>
+          <statement>
+            <p>
+              <var name="$p"/> is an architect and <var name="$p->they"/> <var name="$p->are"/>
+              making a scale model of a building. The actual building will be
+              <m><var name="$building"/></m> ft tall. In the model, the height of the building will
+              be <m><var name="$model"/></m> in tall and there will be a little model person
+              standing next to the building. How tall should <var name="$p"/> make the model of that
+              person who is meant to represent a <m>5</m> ft <m>6</m> in tall person?
+            </p>
+            <p>
+              <var name="$answer" width="16"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Let <m>h</m> be the height of the person in <var name="$p"/>'s model, which we'll
+              measure in inches. We'll create a proportional equation that compares the building and
+              person's heights in the model to their heights in real life:
+              <md>
+                <mrow>\frac{\text{height of model building in inches}}{\text{height of actual building in feet}}\amp=\frac{\text{height of model person in inches}}{\text{height of actual person in feet}}</mrow>
+                <mrow>\frac{<var name="$model"/>\,\text{in}}{<var name="$building"/>\,\text{ft}}\amp=\frac{h\,\text{in}}{5\,\text{ft}\,6\text{in}}</mrow>
+              </md>
+              Before we can just eliminate the units, we'll need to convert
+              <quantity>
+                <mag>5</mag><unit base="foot"/>
+              </quantity><nbsp/><quantity>
+                <mag>6</mag><unit base="inch"/>
+              </quantity>
+              to feet:
+              <md>
+                \frac{2\,\text{in}}{30\,\text{ft}}=\frac{h\,\text{in}}{5.5\,\text{ft}}
+              </md>
+              Now we can remove the units and continue solving:
+              <md>
+                <mrow>\frac{<var name="$model"/>}{<var name="$building"/>}\amp=\frac{h}{5.5}</mrow>
+                <mrow>\multiplyleft{<var name="$building"/>\cdot5.5}\frac{<var name="$model"/>}{<var name="$building"/>}\amp=\frac{h}{5.5}\multiplyright{<var name="$building"/>\cdot5.5}</mrow>
+                <mrow>5.5\cdot <var name="$model"/> \amp= <var name="$building"/>h</mrow>
+                <mrow><var name="$aux[0]"/> \amp= <var name="$building"/>h</mrow>
+                <mrow>h\amp\approx <var name="$ans"/></mrow>
+              </md>
+              <var name="$p"/> should make the model be <m><var name="$answer"/></m> tall.
+            </p>
+          </solution>
+        </webwork>
+      </exercise>
+      <exercise label="rocky-mountain-elk-solved">
+        <webwork>
+          <pg-code>
+            $tt = random(30,40);
+            $sp = $tt + random(5,12);
+            $st = random(8,15);
+            $ans = Round($tt*$sp/$st);
+          </pg-code>
+          <statement>
+            <p>
+              To estimate the health of the Rocky Mountain elk population in the Wenaha Wildlife
+              Area, the Oregon Department of Fish and Wildlife caught, tagged, and released
+              <m><var name="$tt" /></m> Rocky Mountain elk. A month later, they returned and
+              observed <m><var name="$sp" /></m> Rocky Mountain elk, <m><var name="$st" /></m> of
+              which had tags. Approximately how many Rocky Mountain elk are in the Wenaha Wildlife
+              Area?
+            </p>
+            <p>
+              <var name="$ans" width="16"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Let <m>x</m> represent how many elk are in the Wenaha Wildlife Area. We set up a
+              proportional equation:
+              <md>
+                <mrow>\frac{\text{tagged elk}}{\text{total elk}} \amp= \frac{\text{tagged elk}}{\text{total elk}}</mrow>
+                <mrow>\frac{<var name="$st" />}{<var name="$sp"/>} \amp= \frac{<var name="$tt"/>}{x}</mrow>
+                <mrow>\frac{<var name="$st" />}{<var name="$sp"/>} \multiplyright{<var name="$sp"/>\cdot x} \amp= \frac{<var name="$tt"/>}{x}\multiplyright{<var name="$sp"/>\cdot x}</mrow>
+                <mrow><var name="$st" /> \cdot x \amp= <var name="$tt"/>\cdot <var name="$sp"/></mrow>
+                <mrow>\divideunder{<var name="$st" /> \cdot x}{<var name="$st" />} \amp= \divideunder{<var name="$tt"/>\cdot <var name="$sp"/>}{<var name="$st" />}</mrow>
+                <mrow>x \amp= <var name="$ans"/></mrow>
+              </md>
+              There are approximately <m><var name="$ans"/></m> elk in the Wenaha Wildlife Area.
+            </p>
+          </solution>
+        </webwork>
+      </exercise>
+      <exercise label="black-tailed-deer-solved">
+        <webwork xml:id="webwork-black-tailed-deer-solved">
+          <pg-code>
+            $tt = random(80,100);
+            $sp = $tt - random(10,18);
+            $st = random(6,12);
+            $ans = Round($tt*$sp/$st);
+          </pg-code>
+          <statement>
+            <p>
+              To estimate the health of the black-tailed deer population in the Jewell Meadow
+              Wildlife Area, the Oregon Department of Fish and Wildlife caught, tagged, and released
+              <m><var name="$tt" /></m> black-tailed deer. A month later, they returned and observed
+              <m><var name="$sp" /></m> black-tailed deer, <m><var name="$st" /></m> of which had
+              tags. Approximately how many black-tailed deer are in the Jewell Meadow Wildlife
+              Area?
+            </p>
+            <p>
+              <var name="$ans" width="16"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Let <m>x</m> represent how many deer are in the Jewell Meadow Area. We set up a
+              proportional equation:
+              <md>
+                <mrow>\frac{\text{tagged deer}}{\text{total deer}} \amp= \frac{\text{tagged deer}}{\text{total deer}}</mrow>
+                <mrow>\frac{<var name="$st" />}{<var name="$sp"/>} \amp= \frac{<var name="$tt"/>}{x}</mrow>
+                <mrow>\frac{<var name="$st" />}{<var name="$sp"/>} \multiplyright{<var name="$sp"/>\cdot x} \amp= \frac{<var name="$tt"/>}{x}\multiplyright{<var name="$sp"/>\cdot x}</mrow>
+                <mrow><var name="$st" /> \cdot x \amp= <var name="$tt"/>\cdot <var name="$sp"/></mrow>
+                <mrow>\divideunder{<var name="$st" /> \cdot x}{<var name="$st" />} \amp= \divideunder{<var name="$tt"/>\cdot <var name="$sp"/>}{<var name="$st" />}</mrow>
+                <mrow>x \amp= <var name="$ans"/></mrow>
+              </md>
+              There are approximately <m><var name="$ans"/></m> deer in the Jewell Meadow Area.
+            </p>
+          </solution>
+        </webwork>
+      </exercise>
     </subexercises>
 
     <subexercises>
@@ -4848,6 +7658,81 @@
               <var name="$solution" evaluator="$evaluator" width="20" />
             </p>
           </statement>
+        </webwork>
+      </exercise>
+      <exercise label="find-equation-with-special-solution-set">
+        <!-- Kara's challenge problem -->
+        <webwork>
+          <pg-code>
+            $a = random(2,20,2);
+            $b = $a-1;
+            $answer = Formula("$a*(x+4)");
+            $answer2 = Formula("$b*x+($a*4+2)");
+            $evaluator2 = $answer2->cmp(
+              checker => sub {
+                my ($correct,$student,$ansHash) = @_;
+                Value::Error('This is not a linear equation.') unless ($student->D('x')->D('x') == 0 );
+                Value::Error('x=2 is not a solution to this equation.') unless ($student->eval(x=>2) == $a*6);
+                Value::Error('This equation has infinitely many solutions, not just 2.') unless ($student != $answer);
+                return 1;
+              }
+            );
+          </pg-code>
+          <statement>
+            <p>
+              Fill in the right side of the equation to create a linear equation that meets the description.
+              <ol marker="a.">
+                <li>
+                  <p>
+                    Create a linear equation with solution set <m>\{2\}</m>.
+                  </p>
+                  <p>
+                    <m> <var name = "$a"/>(x + 4) = </m> <var name="$answer2" evaluator="$evaluator2" width="20"/>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Create a linear equation with <em>infinitely many solutions</em>.
+                  </p>
+                  <p>
+                    <m> <var name = "$a"/>(x + 4) = </m> <var name="$answer" width="20"/>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+        </webwork>
+      </exercise>
+      <exercise label="preschool-ratio">
+      <!-- Kara's challenge problem -->
+        <webwork>
+          <pg-code>
+            $girl = random(2,6,2);
+            $boy = random(3,7,2);
+            $factor = random(5,9,1);
+            $totalgirls = Real($girl*$factor);
+            $total = Real(($girl+$boy)*$factor);
+          </pg-code>
+          <statement>
+            <p>
+              The ratio of girls to boys in a preschool is <var name="$girl"/> to
+              <var name="$boy"/>. If there are <var name="$total"/> kids in the school, how many
+              girls are there in the preschool?
+            </p>
+            <p>
+              <var name="$totalgirls" width="10"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Let <m>x</m> be the number of girls in the preschool. We can represent this situation
+              with the following proportion:
+            </p>
+            <p>
+              <m>\frac{<var name="$girl"/>}{<var name="$girl"/>+<var name="$boy"/>} = \frac{x}{<var name="$total"/>}</m>.
+              Solve this equation for <m>x</m>.
+            </p>
+          </solution>
         </webwork>
       </exercise>
     </subexercises>

@@ -342,7 +342,7 @@
     # omit E since it can be confused with indicating scientific notation
     # omit O since it can be confused with zero
     # omit U since it can be confused with union operator
-    @ORCCA_variables = grep {!/eoEOU/} ('a' .. 'z', 'A' .. 'Z');
+    @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
   </pg-macros>
 
 </docinfo>

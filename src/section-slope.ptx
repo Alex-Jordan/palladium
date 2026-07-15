@@ -8,17 +8,1262 @@
 
   <introduction>
     <p>
-      In <xref ref="section-exploring-two-variable-data-and-rate-of-change">Section</xref>, we
-      saw that a steady, constant rate of change between points means there is a linear
-      relationship between <m>x</m> and <m>y</m>. A steady, constant rate of change has a special
-      name, <em>slope</em>, and we'll explore slope more in this section.
+      A steady, constant rate of change has a special name, <em>slope</em>, and we'll explore slope
+      more in this section.
     </p>
 
-    <figure>
+    <!-- <figure>
       <caption>Alternative Video Lesson</caption>
       <video youtubeplaylist="PLmuZCPhWPt-ehhIZJSr3Tp7xyA450Od5R" />
-    </figure>
+    </figure> -->
   </introduction>
+
+  <subsection>
+    <title>Modeling data with two variables</title>
+    <p>
+      Math helps us understand data from the world around us. Then we can use what we discover to
+      make good decisions. Here's an example with economic data from the US, plotted in a Cartesian
+      plane.
+    </p>
+
+    <p>
+      For the years from 2000 to 2025, consider what percent of American wealth was held by the
+      wealthiest 1% of Americans. The table in <xref ref="figure-top-one-percent"/> gives the
+      numbers (source:
+      <url href="https://www.federalreserve.gov/releases/z1/dataviz/dfa/distribute/table/" visual="federalreserve.gov"/>),
+      but any pattern there might not be apparent when looking at the data organized this way. 
+      Plotting the data in a Cartesian coordinates system can make an overall pattern or trend
+      become visible.
+    </p>
+
+    <figure xml:id="figure-top-one-percent">
+      <caption>Share of all income held by the top 1% of wage earners</caption>
+      <sidebyside widths="47% 50%" margins="0%">
+        <tabular>
+          <col/>
+          <col right="medium"/>
+          <col/>
+          <col/>
+          <row bottom="medium">
+            <cell>year</cell><cell>%</cell>
+            <cell>year</cell><cell>%</cell>
+          </row>
+          <row>
+            <cell>2000</cell><cell>27.4</cell>
+            <cell>2013</cell><cell>29.8</cell>
+          </row>
+          <row>
+            <cell>2001</cell><cell>25.9</cell>
+            <cell>2014</cell><cell>30.4</cell>
+          </row>
+          <row>
+            <cell>2002</cell><cell>25.3</cell>
+            <cell>2015</cell><cell>30.7</cell>
+          </row>
+          <row>
+            <cell>2003</cell><cell>25.4</cell>
+            <cell>2016</cell><cell>30.7</cell>
+          </row>
+          <row>
+            <cell>2004</cell><cell>26.8</cell>
+            <cell>2017</cell><cell>30.7</cell>
+          </row>
+          <row>
+            <cell>2005</cell><cell>27.2</cell>
+            <cell>2018</cell><cell>30.5</cell>
+          </row>
+          <row>
+            <cell>2006</cell><cell>28.0</cell>
+            <cell>2019</cell><cell>30.6</cell>
+          </row>
+          <row>
+            <cell>2007</cell><cell>28.8</cell>
+            <cell>2020</cell><cell>29.9</cell>
+          </row>
+          <row>
+            <cell>2008</cell><cell>28.2</cell>
+            <cell>2021</cell><cell>30.8</cell>
+          </row>
+          <row>
+            <cell>2009</cell><cell>27.8</cell>
+            <cell>2022</cell><cell>29.8</cell>
+          </row>
+          <row>
+            <cell>2010</cell><cell>28.4</cell>
+            <cell>2023</cell><cell>30.1</cell>
+          </row>
+          <row>
+            <cell>2011</cell><cell>29</cell>
+            <cell>2024</cell><cell>30.7</cell>
+          </row>
+          <row>
+            <cell>2012</cell><cell>29.5</cell>
+            <cell>2025</cell><cell>31.2</cell>
+          </row>
+        </tabular>
+
+        <image>
+          <shortdescription>a scatter plot about share of all wealth held by the top 1% in the US</shortdescription>
+          <latex-image label="top-1percent-income-scatterplot">
+            \begin{tikzpicture}
+              \begin{axis}[
+                  xlabel={year},
+                  ylabel={percentage},
+                  xmin=2000,xmax=2030,
+                  ymin=0,ymax=40,
+                  minor ytick=,
+                  axis line style={->},
+                  xtick={2000,2005,...,2030},
+                  xticklabels={2000,2005,...,2030},
+                  xticklabel style={rotate=-45},
+                  ytick={0,5,...,40},
+                  width=0.5\orccaprintwidth
+                ]
+                \addplot[only marks]coordinates{
+                  (2000, 27.4)
+                  (2001, 25.9)
+                  (2002, 25.3)
+                  (2003, 25.4)
+                  (2004, 26.8)
+                  (2005, 27.2)
+                  (2006, 28)
+                  (2007, 28.8)
+                  (2008, 28.2)
+                  (2009, 27.8)
+                  (2010, 28.4)
+                  (2011, 29)
+                  (2012, 29.5)
+                  (2013, 29.8)
+                  (2014, 30.4)
+                  (2015, 30.7)
+                  (2016, 30.7)
+                  (2017, 30.7)
+                  (2018, 30.5)
+                  (2019, 30.6)
+                  (2020, 29.9)
+                  (2021, 30.8)
+                  (2022, 29.8)
+                  (2023, 30.1)
+                  (2024, 30.7)
+                  (2025, 31.2)
+                };
+              \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </sidebyside>
+    </figure>
+
+    <p>
+      What observations do you see now that you couldn't easily see from the numbers in the table?
+      Do you see evidence of the COVID pandemic? Evidence of the Great Recession of 2008?
+    </p>
+    <p>
+      Overall, do you see a larger pattern with wealth distribution? Assuming that you see the
+      rising pattern, is it easier to see that with the graph than with the table?
+    </p>
+  </subsection>
+
+  <subsection>
+    <title>Patterns in Tables</title>
+    <example xml:id="example-three-tables">
+      <statement>
+        <p>
+          Find a pattern in each table, using only the table itself. What is the missing entry in
+          each table? Can you describe each pattern in words and/or mathematics?
+        </p>
+        <figure xml:id="table-patterns-non-math">
+          <caption>Patterns in 3 tables</caption>
+          <sidebyside widths="32% 32% 32%"  margins="0%">
+            <tabular top="major" bottom="minor" left="major" right="minor">
+              <col/>
+              <col right="major"/>
+              <row>
+                <cell>black</cell>
+                <cell>white</cell>
+              </row>
+              <row>
+                <cell>big</cell>
+                <cell>small</cell>
+              </row>
+              <row>
+                <cell>short</cell>
+                <cell>tall</cell>
+              </row>
+              <row bottom="major">
+                <cell>few</cell>
+                <cell/>
+              </row>
+            </tabular>
+            <tabular top="major" bottom="minor" left="major" right="minor">
+              <col/>
+              <col right="major"/>
+              <row>
+                <cell>USA</cell>
+                <cell>Washington</cell>
+              </row>
+              <row>
+                <cell>UK</cell>
+                <cell>London</cell>
+              </row>
+              <row>
+                <cell>France</cell>
+                <cell>Paris</cell>
+              </row>
+              <row bottom="major">
+                <cell>Mexico</cell>
+                <cell/>
+              </row>
+            </tabular>
+            <tabular top="major" bottom="minor" left="major" right="minor">
+              <col/>
+              <col right="major"/>
+              <row>
+                <cell>1</cell>
+                <cell>2</cell>
+              </row>
+              <row>
+                <cell>2</cell>
+                <cell>4</cell>
+              </row>
+              <row>
+                <cell>3</cell>
+                <cell>6</cell>
+              </row>
+              <row bottom="major">
+                <cell>5</cell>
+                <cell/>
+              </row>
+            </tabular>
+          </sidebyside>
+        </figure>
+      </statement>
+      <solution>
+        <p>
+          <dl>
+            <li>
+              <title>First table</title>
+              <p>
+                Each word on the right has the opposite meaning of the word to its left.
+              </p>
+            </li>
+            <li>
+              <title>Second table</title>
+              <p>
+                Each city on the right is the capital of the country to its left.
+              </p>
+            </li>
+            <li>
+              <title>Third table</title>
+              <p>
+                Each number on the right is double the number to its left.
+              </p>
+            </li>
+          </dl>
+        </p>
+        <figure>
+          <caption>Patterns in 3 tables</caption>
+          <sidebyside widths="32% 32% 32%" margins="0%">
+            <tabular top="major" bottom="minor" left="major" right="minor">
+              <col/>
+              <col right="major"/>
+              <row>
+                <cell>black</cell>
+                <cell>white</cell>
+              </row>
+              <row>
+                <cell>big</cell>
+                <cell>small</cell>
+              </row>
+              <row>
+                <cell>short</cell>
+                <cell>tall</cell>
+              </row>
+              <row bottom="major">
+                <cell>few</cell>
+                <cell><em>many</em></cell>
+              </row>
+            </tabular>
+            <tabular top="major" bottom="minor" left="major" right="minor">
+              <col/>
+              <col right="major"/>
+              <row>
+                <cell>USA</cell>
+                <cell>Washington</cell>
+              </row>
+              <row>
+                <cell>UK</cell>
+                <cell>London</cell>
+              </row>
+              <row>
+                <cell>France</cell>
+                <cell>Paris</cell>
+              </row>
+              <row bottom="major">
+                <cell>Mexico</cell>
+                <cell><em>Mexico City</em></cell>
+              </row>
+            </tabular>
+            <tabular top="major" bottom="minor" left="major" right="minor">
+              <col/>
+              <col right="major"/>
+              <row>
+                <cell>1</cell>
+                <cell>2</cell>
+              </row>
+              <row>
+                <cell>2</cell>
+                <cell>4</cell>
+              </row>
+              <row>
+                <cell>3</cell>
+                <cell>6</cell>
+              </row>
+              <row bottom="major">
+                <cell>5</cell>
+                <cell><em>10</em></cell>
+              </row>
+            </tabular>
+          </sidebyside>
+        </figure>
+      </solution>
+    </example>
+    <p>
+      Generally in a table with two columns of data, we can think of the table as <em>assigning</em>
+      value on the right to each value on the left. The first table <em>assigns</em> <q>white</q> to
+      <q>black</q>, as its opposite. The second table <em>assigns</em> <q>Paris</q> to
+      <q>France</q>, as its capital city. The third table <em>assigns</em> <m>10</m> to <m>5</m>, as
+      its double. 
+    </p>
+    <sidebyside widths="60% 33%" margins="0%">
+      <stack>
+        <p>
+          The third table in <xref ref="example-three-tables"/> is numerical. And its <q>function</q>
+          is to take a number as input, and give twice that number as output. Mathematically, we can
+          describe the pattern as <q><m>f(x)=2x</m></q>, pronounced <q>f of x equals
+          <ellipsis/></q>, where <m>x</m> represents the input and <m>f</m> is the name of the
+          process that turns input <m>x</m> into something else. So that <q><m>f(x)</m></q> (again,
+          prounounced <q>f of x</q>) represents whatever <m>f</m> turned <m>x</m> into.
+          Labeling the table with these symbols, we have <xref ref="figure-pattern-double"/>.
+        </p>
+        <p>
+          The formula <m>f(x)=2x</m> summarizes the pattern in the table.
+        </p>
+      </stack>
+      <figure xml:id="figure-pattern-double">
+        <caption>Table with a mathematical pattern</caption>
+        <tabular>
+          <col halign="center"/>
+          <col halign="center"/>
+          <row bottom="medium">
+            <cell>
+              <line><m>x</m></line>
+              <line>(input)</line></cell>
+            <cell>
+              <line><m>f(x)</m></line>
+              <line>(output)</line></cell>
+          </row>
+          <row>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+          </row>
+          <row>
+            <cell><m>2</m></cell>
+            <cell><m>4</m></cell>
+          </row>
+          <row>
+            <cell><m>3</m></cell>
+            <cell><m>6</m></cell>
+          </row>
+          <row>
+            <cell><m>5</m></cell>
+            <cell><m>10</m></cell>
+          </row>
+          <row bottom="medium">
+            <cell><m>10</m></cell>
+            <cell><m>20</m></cell>
+          </row>
+          <row>
+            <cell colspan="2">Pattern: <m>f(x)=2x</m></cell>
+          </row>
+        </tabular>
+      </figure>
+    </sidebyside>
+    <p>
+      Only the third table in <xref ref="example-three-tables"/> is a table of numbers. Let's
+      examine that data graphically.
+    </p>
+    <figure>
+      <caption>The data from the third table in <xref ref="example-three-tables"/></caption>
+      <sidebyside widths="47% 47%" margins="0%">
+        <image>
+          <latex-image label="third-table">
+            \begin{tikzpicture}
+              \begin{axis}[
+                  xmin=0,
+                  ymin=0,
+                  ymax=12,
+                  xtick={1,...,7},
+                  ytick={1,...,12},
+                  minor xtick=,
+                  minor ytick=,
+                  axis line style={->},
+                  width=0.47\orccaprintwidth,
+                  ylabel={\(f(x)\)}
+                ]
+                \addplot[soliddot] coordinates {(1, 2) (2,4) (3,6)};
+              \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+        <image>
+          <latex-image label="third-table-completed">
+            \begin{tikzpicture}
+              \begin{axis}[
+                  xmin=0,
+                  ymin=0,
+                  ymax=12,
+                  xtick={1,...,7},
+                  ytick={1,...,12},
+                  minor xtick=,
+                  minor ytick=,
+                  axis line style={->},
+                  width=0.47\orccaprintwidth,
+                  ylabel={\(f(x)\)}
+                ]
+                \addplot[guideline, dashed, ->] coordinates {(1,2) (4.5,9)};
+                \addplot[soliddot] coordinates {(1, 2) (2,4) (3,6) (5,10)};
+                \addplot[guideline, dashed, ->] coordinates {(5,0) (5,9)};
+              \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </sidebyside>
+    </figure>
+    <p>
+      With the data plotted, and the question being what should happen when <m>x</m> is <m>5</m>,
+      our eyes can converge to the point <m>(5,10)</m> and we conclude the missing value will be
+      <m>10</m>. Graphically, we can see the missing output value should be <m>10</m> without
+      directly using the formula.
+    </p>
+    <p>
+      For each of the following tables, find an equation that describes the pattern you see. Use
+      <q>function notation</q> (<m>f(x)</m>) where appropriate. Numerical pattern recognition may or
+      may not come naturally for you and you may want to use a graph to help visually process the
+      numbers. Either way, pattern recognition is an important mathematical skill that anyone can
+      develop. The solutions for these exercises offer some hints about what patterns you might look
+      for.
+    </p>
+    <exercise label="pattern-from-table-1">
+      <webwork>
+        <pg-code>
+          @x = (0..3);
+          $f = Formula("x + 10");
+          @y = map{$f->eval(x => $_)}(@x);
+          Context("Numeric")->variables->add(y => 'Real');
+          parser::Assignment->Allow;
+          parser::Assignment->Function("f");
+          $eq = Formula("f(x) = $f");
+        </pg-code>
+        <statement>
+          <p>
+            Write an equation in the form <m>f(x)=\ldots</m> suggested by the pattern in the table.
+          </p>
+          <tabular >
+            <col halign="right"/>
+            <col halign="left"/>
+            <row bottom="medium">
+              <cell><m>x</m></cell>
+              <cell><m>f(x)</m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[0]"/></m></cell>
+              <cell><m><var name="$y[0]"/></m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[1]"/></m></cell>
+              <cell><m><var name="$y[1]"/></m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[2]"/></m></cell>
+              <cell><m><var name="$y[2]"/></m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[3]"/></m></cell>
+              <cell><m><var name="$y[3]"/></m></cell>
+            </row>
+          </tabular>
+          <p>
+            <var name="$eq" width="20"/>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            One approach to pattern recognition is to look for a relationship in each row. Here,
+            the output value in each row is always <m>10</m> more than the <m>x</m>-value. So the
+            pattern is described by the equation <m><var name="$eq"/></m>.
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+
+    <exercise xml:id="exercise-linear-data" label="pattern-from-table-2">
+      <webwork>
+        <pg-code>
+          @x = (0..3);
+          $f = Formula("-1 + 3x");
+          @y = map{$f->eval(x => $_)} (@x);
+          Context("Numeric")->variables->add(y => 'Real');
+          parser::Assignment->Allow;
+          parser::Assignment->Function("f");
+          $eq=Formula("f(x) = $f")->reduce;
+          @t = map{$_*3} (@x);
+        </pg-code>
+        <statement>
+          <p>
+            Write an equation in the form <m>f(x)=\ldots</m> suggested by the pattern in the table.
+          </p>
+          <tabular>
+            <col halign="right"/>
+            <col halign="left"/>
+            <row bottom="medium">
+              <cell><m>x</m></cell>
+              <cell><m>f(x)</m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[0]"/></m></cell>
+              <cell><m><var name="$y[0]"/></m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[1]"/></m></cell>
+              <cell><m><var name="$y[1]"/></m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[2]"/></m></cell>
+              <cell><m><var name="$y[2]"/></m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[3]"/></m></cell>
+              <cell><m><var name="$y[3]"/></m></cell>
+            </row>
+          </tabular>
+          <p>
+            <var name="$eq" width="20"/>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The relationship between <m>x</m> and the output in each row is not as clear here.
+            Another popular approach for finding patterns: in each column, consider how the values
+            change from one row to the next. From row to row, the <m>x</m>-value increases by
+            <m>1</m>. Also, the output value increases by <m>3</m> from row to row.
+          </p>
+          <tabular >
+            <col halign="right" right="minor"/>
+            <col halign="left"/>
+            <row bottom="medium">
+              <cell><m>x</m></cell>
+              <cell><m>f(x)</m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[0]"/></m></cell>
+              <cell><m><var name="$y[0]"/></m></cell>
+            </row>
+            <row>
+              <cell>(add <m>1</m> from previous) <m><var name="$x[1]"/></m></cell>
+              <cell><m><var name="$y[1]"/></m> (add <m>3</m> from previous)</cell>
+            </row>
+            <row>
+              <cell>(add <m>1</m> from previous) <m><var name="$x[2]"/></m></cell>
+              <cell><m><var name="$y[2]"/></m> (add <m>3</m> from previous)</cell>
+            </row>
+            <row>
+              <cell>(add <m>1</m> from previous) <m><var name="$x[3]"/></m></cell>
+              <cell><m><var name="$y[3]"/></m> (add <m>3</m> from previous)</cell>
+            </row>
+          </tabular>
+          <p>
+            Since row-to-row change is always <m>1</m> for <m>x</m> and is always <m>3</m> for
+            output, the <em>rate of change</em> from one row to another row is always the same:
+            <m>3</m> units of output for every <m>1</m> unit of <m>x</m>. This suggests that
+            <m>f(x)=3x</m> <em>might</em> be a good equation for the table pattern. But if we try to
+            make a table with that pattern:
+          </p>
+          <tabular halign="center">
+            <row bottom="medium">
+              <cell><m>x</m></cell>
+              <cell><m>3x</m></cell>
+              <cell>Actual value of <m>f(x)</m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[0]"/></m></cell>
+              <cell><m><var name="$t[0]"/></m></cell>
+              <cell><m><var name="$y[0]"/></m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[1]"/></m></cell>
+              <cell><m><var name="$t[1]"/></m></cell>
+              <cell><m><var name="$y[1]"/></m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[2]"/></m></cell>
+              <cell><m><var name="$t[2]"/></m></cell>
+              <cell><m><var name="$y[2]"/></m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[3]"/></m></cell>
+              <cell><m><var name="$t[3]"/></m></cell>
+              <cell><m><var name="$y[3]"/></m></cell>
+            </row>
+          </tabular>
+          <p>
+            We find that the values from <m>f(x)=3x</m> are too large by <m>1</m>. So now we make an
+            adjustment. The equation <m><var name="$eq"/></m> describes the pattern in the
+            table.
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+    <exercise label="pattern-from-table-3">
+      <webwork>
+        <pg-code>
+          @x = (0..3);
+          $f = Formula("x^2");
+          @y = map{$f->eval(x => $_)} (@x);
+          Context("Numeric")->variables->add(y => 'Real');
+          parser::Assignment->Allow;
+          parser::Assignment->Function("f");
+          $eq = Formula("f(x) = $f");
+        </pg-code>
+        <statement>
+          <p>
+            Write an equation in the form <m>f(x)=\ldots</m> suggested by the pattern in the table.
+          </p>
+          <tabular>
+            <col halign="right"/>
+            <col halign="left"/>
+            <row bottom="medium">
+              <cell><m>x</m></cell>
+              <cell><m>f(x)</m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[0]"/></m></cell>
+              <cell><m><var name="$y[0]"/></m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[1]"/></m></cell>
+              <cell><m><var name="$y[1]"/></m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[2]"/></m></cell>
+              <cell><m><var name="$y[2]"/></m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[3]"/></m></cell>
+              <cell><m><var name="$y[3]"/></m></cell>
+            </row>
+          </tabular>
+          <p>
+            <var name="$eq" width="20"/>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Looking for a relationship in each row here, we see that each output value is the
+            square of the corresponding <m>x</m>-value. That may not be obvious to you. It comes
+            down to recognizing what square numbers are. So the equation is <m><var name="$eq"/></m>.
+          </p>
+          <p>
+            What if we had tried the approach we used in the previous exercise, comparing change
+            from row to row in each column?
+          </p>
+          <tabular>
+            <col halign="right"/>
+            <col halign="left"/>
+            <row bottom="medium">
+              <cell><m>x</m></cell>
+              <cell><m>f(x)</m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[0]"/></m></cell>
+              <cell><m><var name="$y[0]"/></m></cell>
+            </row>
+            <row>
+              <cell>(add <m>1</m> from previous) <m><var name="$x[1]"/></m></cell>
+              <cell><m><var name="$y[1]"/></m> (add <m>1</m> from previous)</cell>
+            </row>
+            <row>
+              <cell>(add <m>1</m> from previous) <m><var name="$x[2]"/></m></cell>
+              <cell><m><var name="$y[2]"/></m> (add <m>3</m> from previous)</cell>
+            </row>
+            <row>
+              <cell>(add <m>1</m> from previous) <m><var name="$x[3]"/></m></cell>
+              <cell><m><var name="$y[3]"/></m> (add <m>5</m> from previous)</cell>
+            </row>
+          </tabular>
+          <p>
+            Here, the rate of change is <em>not</em> constant from one row to the next. While the
+            <m>x</m>-values are increasing by <m>1</m> from row to row, the output values increase
+            more and more from row to row. Do you notice that there is a pattern there as well?
+            Mathematicians are interested in finding patterns and describing them.
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+  </subsection>
+
+  <subsection>
+    <title>Rate of Change</title>                                                                             <idx><h>Rate of change</h></idx>
+    <p>
+      For an hourly wage-earner, the amount of money they earn depends on how many hours they work.
+      If a worker earns <m>\$15</m> per hour, then <m>10</m> hours of work corresponds to
+      <m>\$150</m> of pay. Working <em>one</em> additional hour will change <m>10</m> hours to
+      <m>11</m> hours; and this will cause the <m>\$150</m> in pay to rise by <em>fifteen</em>
+      dollars to <m>\$165</m> in pay. Any time we compare how one amount changes (dollars earned)
+      as a consequence of another amount changing (hours worked), we are talking about a
+      <term>rate of change</term>.
+    </p>
+    <p>
+      Given a table of two-variable data, between any two rows we can compute a <term>rate of
+      change</term>.
+    </p>
+    <example xml:id="example-cancer-data">
+      <p>
+        The following data, given in both table and graphed form, gives the counts of cancer
+        diagnoses in Oregon over a period of time.
+        (<url href="https://www.oregon.gov/oha/ph/diseasesconditions/chronicdisease/datareports/pages/cancer-incidence.aspx" visual="oregon.gov/oha/ph/diseasesconditions/chronicdisease/datareports/pages/cancer-incidence.aspx"/>)
+      </p>
+      <tabular valign="top">
+        <col/>
+        <col halign="center" right="minor"/>
+        <col/>
+        <col halign="center"/>
+        <row bottom="medium">
+          <cell>Year</cell>
+          <cell>Cancer Incidents</cell>
+          <cell>Year</cell>
+          <cell>Cancer Incidents</cell>
+        </row>
+        <row><cell>2007</cell><cell>19,417</cell><cell>2015</cell><cell>22,158</cell></row>
+        <row><cell>2008</cell><cell>20,426</cell><cell>2016</cell><cell>22,135</cell></row>
+        <row><cell>2009</cell><cell>19,979</cell><cell>2017</cell><cell>23,052</cell></row>
+        <row><cell>2010</cell><cell>19,861</cell><cell>2018</cell><cell>22,769</cell></row>
+        <row><cell>2011</cell><cell>20,851</cell><cell>2019</cell><cell>24,389</cell></row>
+        <row><cell>2012</cell><cell>20,426</cell><cell>2020</cell><cell>21,766</cell></row>
+        <row><cell>2013</cell><cell>21,346</cell><cell>2021</cell><cell>22,750</cell></row>
+        <row><cell>2014</cell><cell>21,683</cell><cell>2022</cell><cell>22,691</cell></row>
+      </tabular>
+      <image width="100%">
+        <shortdescription></shortdescription>
+        <latex-image label="invasive-cancer-scatterplot">
+          \begin{tikzpicture}
+            \begin{axis}[
+                xlabel={year},
+                ylabel={count},
+                ytick=,
+                xmin=2005,
+                xmax=2025,
+                ymin=15000,
+                ymax=26000,
+                axis line style={->},
+                xtick={2005,2010,...,2025},
+                xticklabels={2005,2010,...,2025},
+                xticklabel style={rotate=-45},
+                axis y discontinuity=crunch,
+                width=\orccaprintwidth,
+                height=0.33\orccaprintwidth,
+              ]
+              \addplot[only marks] coordinates {
+                (2007,19417)
+                (2008,20426)
+                (2009,19979)
+                (2010,19861)
+                (2011,20851)
+                (2012,20426)
+                (2013,21346)
+                (2014,21683)
+                (2015,22158)
+                (2016,22135)
+                (2017,23052)
+                (2018,22769)
+                (2019,24389)
+                (2020,21766)
+                (2021,22750)
+                (2022,22691)
+              };
+            \end{axis}
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+      <p>
+        Note the drop in 2020 is possibly explained by under-diagnosing, when people were in COVID
+        quarantine at home and it was difficult to see a doctor for things like a cancer screening.
+      </p>
+      <p>
+        What was the <term>rate of change</term> in Oregon cancer diagnoses between 2007 and 2010?
+        The total (net) change in diagnoses over that timespan is
+        <md>
+          19861 - 19417 = 444
+        </md>
+        meaning that there were <m>444</m> more cancer incidents in 2010 than in 2007. Since
+        <m>3</m> years passed (which you can calculate as <m>2010-2007</m>), the rate of change is
+        <m>444</m> diagnoses per <m>3</m> years, or
+        <md>
+          \frac{444\,\text{diagnoses}}{3\,\text{year}}=148\,\frac{\text{diagnoses}}{\text{year}}
+        </md>
+        We read that last quantity as <q><m>148</m> diagnoses per year</q>. This rate of change
+        means that between the years <m>2007</m> and <m>2010</m>, there were <m>148</m> more
+        diagnoses <em>each</em> year, on average. This is just an average over those three
+        years<mdash/>it does not mean that the diagnoses grew by exactly this much each year.
+      </p>
+    </example>
+    <exercise xml:id="exercise-cancer-data" label="cancer-data">
+      <webwork>
+        <pg-code>
+            @x = (2007..2022);
+            @y = (19417,20426,19979,19861,20851,20426,21346,21683,22158,22135,23052,22769,24389,21766,22750,22691);
+            %f = map{$_ => $y[$_ - 2007]} (@x);
+            $r[0] = ($f{2017} - $f{2007})/(2017 - 2007);
+            $r[1] = ($f{2022} - $f{2018})/(2019 - 2010);
+            $newUnits = [
+              {name => 'diagnoses'},
+              {name => 'year', conversion => {factor => 365*24*60*60, s => 1}},
+              {name => 'years', conversion => {factor => 365*24*60*60, s => 1}},
+              {name => 'yr', conversion => {factor => 365*24*60*60, s => 1}},
+              {name => 'yrs', conversion => {factor => 365*24*60*60, s => 1}},
+              {name => 'y', conversion => {factor => 365*24*60*60, s => 1}},
+            ];
+            $rate[0] = NumberWithUnits("$r[0] diagnoses/yr", {newUnit => $newUnits});
+            $rate[1] = NumberWithUnits("$r[1] diagnoses/yr", {newUnit => $newUnits});
+        </pg-code>
+        <task>
+          <statement>
+            <p>
+              Use the data in <xref ref="example-cancer-data"/> to find the rate of change in Oregon
+              cancer diagnoses between 2007 and 2017.
+            </p>
+            <instruction>
+              You can type the unit as <c>diagnoses/yr</c>.
+            </instruction>
+            <p>
+              <var name="$rate[0]" width="10"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              To find the rate of change between 2007 and 2017, calculate
+              <md>
+                \frac{23052 - 19417}{2017 - 2007} = 363.5
+              </md>.
+              So the rate of change was <m><var name="$rate[0]"/></m>.
+            </p>
+          </solution>
+        </task>
+        <task>
+          <statement>
+            <p>
+              And what was the rate of change between 2018 and 2012?
+            </p>
+            <p>
+              <var name="$rate[1]" width="10"/>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              To find the rate of change between 2018 and 2022, calculate
+              <md>
+                \frac{22691 - 22769}{2022 - 2018} = -19.5
+              </md>.
+              So the rate of change was <m><var name="$rate[1]"/></m>.
+            </p>
+          </solution>
+        </task>
+      </webwork>
+    </exercise>
+    <p>
+      We are ready to give a formal definition for <q>rate of change</q>. Considering our work from
+      <xref ref="example-cancer-data"/> and <xref ref="exercise-cancer-data"/>, we settle on:
+    </p>
+    <definition xml:id="definition-rate-of-change">
+      <title>Rate of Change</title>                                                                           <idx><h>Rate of change</h></idx>
+      <statement>
+        <p>
+          If <m>\left(x_1,y_1\right)</m> and <m>\left(x_2,y_2\right)</m> are two data points from a
+          set of two-variable data, then the <term>rate of change</term> between them is
+          <md>
+            \frac{\text{change in $y$}}{\text{change in $x$}}=\frac{\Delta y}{\Delta x}=\frac{y_2-y_1}{x_2-x_1}
+          </md>.
+          The Greek letter delta, <m>\Delta</m>, is used to represent <q>change in</q> since it is
+          the first letter of the Greek word for <q>difference</q>.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      In <xref ref="example-cancer-data"/> and <xref ref="exercise-cancer-data"/> we found three
+      rates of change. <xref ref="figure-cancer-data"/> highlights the three pairs of points that
+      were used to make these calculations.
+    </p>
+    <figure xml:id="figure-cancer-data">
+      <caption/>
+      <image width="100%">
+        <shortdescription></shortdescription>
+        <latex-image label="invasive-cancer-scatterplot-with-segments">
+          \begin{tikzpicture}
+            \begin{axis}[
+                xlabel={year},
+                ylabel={count},
+                ytick=,
+                xmin=2005,
+                xmax=2025,
+                ymin=15000,
+                ymax=26000,
+                axis line style={->},
+                xtick={2000,2005,...,2025},
+                xticklabels={2000,2005,...,2025},
+                xticklabel style={rotate=-45},
+                axis y discontinuity=crunch,
+                clip=false,
+                width=\orccaprintwidth,
+                height=0.33\orccaprintwidth,
+              ]
+              \addplot[only marks] coordinates{
+                (2007,19417)
+                (2008,20426)
+                (2009,19979)
+                (2010,19861)
+                (2011,20851)
+                (2012,20426)
+                (2013,21346)
+                (2014,21683)
+                (2015,22158)
+                (2016,22135)
+                (2017,23052)
+                (2018,22769)
+                (2019,24389)
+                (2020,21766)
+                (2021,22750)
+                (2022,22691)
+              };
+              \addplot[-] coordinates {(2007,19417) (2010,19861)} node[pos=0.5, pin=-45:{rate \(444\,\frac{\text{diagnoses}}{\text{year}}\)}]{};
+              \addplot[-] coordinates {(2007,19417) (2017,23052)} node[pos=0.5, pin=90:{rate \(363.5\,\frac{\text{diagnoses}}{\text{year}}\)}]{};
+              \addplot[-] coordinates {(2018,22769) (2022,22691)} node[pos=0.5, pin=-90:{rate \(-19.5\,\frac{\text{diagnoses}}{\text{year}}\)}]{};
+            \end{axis}
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+    <p>
+      Note how the larger the numerical rate of change between two points, the steeper the line is
+      that connects them. Also in the third calculation, when the <m>y</m>-values moved down as you
+      read the graph from left to right, the rate of change was negative. This is such an important
+      observation, we'll put it in an official remark.
+    </p>
+    <remark>
+      <p>
+        The rate of change between two data points is related to the steepness of the line segment
+        that connects those points.
+        <ol>
+          <li>
+            <p>
+              The steeper the line, the larger the rate of change, and vice versa.
+            </p>
+          </li>
+          <li>
+            <p>
+              If one rate of change between two data points equals another rate of change between
+              two different data points, then the corresponding line segments will have the same steepness.
+            </p>
+          </li>
+          <li>
+            <p>
+              We always measure rate of change from left to right. When a line segment between two
+              data points slants up from left to right, the rate of change between those points will
+              be positive. When a line segment between two data points slants down from left to
+              right, the rate of change between those points will be negative.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </remark>
+    <sidebyside widths="47% 47%" margins="0%">
+      <p>
+        In the solution to <xref ref="exercise-linear-data"/>, the key observation was that the rate
+        of change from one row to the next was constant: <m>3</m> units of increase in <m>y</m> for
+        every <m>1</m> unit of increase in <m>x</m>. Graphing this pattern in
+        <xref ref="figure-linear-data"/>, we see that every line segment here has the same steepness,
+        so the whole picture is a straight line.
+      </p>
+      <figure xml:id="figure-linear-data">
+        <caption/>
+        <image>
+          <shortdescription></shortdescription>
+          <latex-image label="consistent-rate-of-change">
+            \begin{tikzpicture}
+              \begin{axis}[
+                  ymin=-5,
+                  ymax=9,
+                  ytick={-4,2,...,8},
+                  minor ytick={-5,-4,...,9},
+                  width=0.47\orccaprintwidth,
+                  height=0.40\orccaprintwidth,
+                ]
+                \addplot[only marks]coordinates{
+                  (0,-1)
+                  (1,2)
+                  (2,5)
+                  (3,8)
+                };
+                \addplot[firstcurve,-] coordinates {(0,-1) (3,8)};
+              \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </figure>
+    </sidebyside>
+    <p>
+      Whenever the rate of change is constant no matter which two <m>(x,y)</m>-pairs (or data pairs)
+      are chosen from a data set, then you can conclude the graph will be a straight line <em>even
+      without making the graph</em>. We call this kind of relationship a <term>linear</term>                  <idx><h>Linear relationship</h></idx>
+      relationship. We'll study linear relationships in more detail throughout this chapter. Right            <idx><h>Relationship</h><h>linear</h></idx>
+      now in this section, we feel it is important to simply identify if data has a linear
+      relationship or not.
+    </p>
+    <exercise label="is-it-linear-1">
+      <webwork>
+        <pg-macros>
+          <macro-file>parserPopUp.pl</macro-file>
+        </pg-macros>
+        <pg-code>
+            @x = (-8,-5,-2,1);
+            @y = (3.1,2.1,1.1,0.1);
+            $popup = DropDown(['The relationship is linear','The relationship is not linear'],0);
+        </pg-code>
+        <statement>
+          <p>
+            Is there a linear relationship in the table?
+          </p>
+          <tabular>
+            <col halign="right"/>
+            <col halign="left"/>
+            <row bottom="medium">
+              <cell><m>x</m></cell>
+              <cell><m>y</m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[0]"/></m></cell>
+              <cell><m><var name="$y[0]"/></m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[1]"/></m></cell>
+              <cell><m><var name="$y[1]"/></m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[2]"/></m></cell>
+              <cell><m><var name="$y[2]"/></m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[3]"/></m></cell>
+              <cell><m><var name="$y[3]"/></m></cell>
+            </row>
+          </tabular>
+          <p>
+            <var name="$popup" form="popup"/>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            From one <m>x</m>-value to the next, the change is always <m>3</m>. From one
+            <m>y</m>-value to the next, the change is always <m>-1</m>. So the rate of change is
+            always <m>\frac{-1}{3}=-\frac{1}{3}</m>. Since the rate of change is constant, the
+            data have a linear relationship.
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+    <exercise label="is-it-linear-2">
+      <webwork>
+        <pg-macros>
+          <macro-file>parserPopUp.pl</macro-file>
+        </pg-macros>
+        <pg-code>
+            @x = (11,13,15,17);
+            @y = (208,210,214,220);
+            $popup = DropDown(['The relationship is linear','The relationship is not linear'],1);
+        </pg-code>
+        <statement>
+          <p>
+            Is there a linear relationship in the table?
+          </p>
+          <tabular>
+            <col halign="right"/>
+            <col halign="left"/>
+            <row bottom="medium">
+              <cell><m>x</m></cell>
+              <cell><m>y</m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[0]"/></m></cell>
+              <cell><m><var name="$y[0]"/></m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[1]"/></m></cell>
+              <cell><m><var name="$y[1]"/></m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[2]"/></m></cell>
+              <cell><m><var name="$y[2]"/></m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[3]"/></m></cell>
+              <cell><m><var name="$y[3]"/></m></cell>
+            </row>
+          </tabular>
+          <p>
+            <var name="$popup" form="popup"/>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The rate of change between the first two points is <m>\frac{210-208}{13-11}=1</m>. The
+            rate of change between the last two points is <m>\frac{220-214}{17-15}=3</m>. This is
+            one way to demonstrate that the rate of change differs for different pairs of points, so
+            this pattern is not linear.
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+    <exercise label="is-it-linear-3">
+      <webwork>
+        <pg-macros>
+          <macro-file>parserPopUp.pl</macro-file>
+        </pg-macros>
+        <pg-code>
+          @x = (3,6,8,12);
+          @y = (-2,-8,-12,-20);
+          $popup = DropDown(['The relationship is linear','The relationship is not linear'],0);
+        </pg-code>
+        <statement>
+          <p>
+            Is there a linear relationship in the table?
+          </p>
+          <tabular>
+            <col halign="right"/>
+            <col halign="left"/>
+            <row bottom="medium">
+              <cell><m>x</m></cell>
+              <cell><m>y</m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[0]"/></m></cell>
+              <cell><m><var name="$y[0]"/></m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[1]"/></m></cell>
+              <cell><m><var name="$y[1]"/></m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[2]"/></m></cell>
+              <cell><m><var name="$y[2]"/></m></cell>
+            </row>
+            <row>
+              <cell><m><var name="$x[3]"/></m></cell>
+              <cell><m><var name="$y[3]"/></m></cell>
+            </row>
+          </tabular>
+          <p>
+            <var name="$popup" form="popup"/>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The changes in <m>x</m> from one row to the next are <m>+3</m>,<m>+2</m>, and <m>+8</m>.
+            That's not a consistent pattern, but we need to consider rates of change between points.
+            The rate of change between the first two points is <m>\frac{-8-(-2)}{6-3}=-2</m>. The
+            rate of change between the next two points is <m>\frac{-12-(-8)}{8-6}=-2</m>. And the
+            rate of change between the last two points is <m>\frac{-20-(-12)}{12-8}=-2</m>. So the
+            rate of change, <m>-2</m>, is constant regardless of which pairs we choose. That means
+            these pairs describe a linear relationship.
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+    <p>
+      Let's return to the data that we opened the section with, in
+      <xref ref="figure-top-one-percent"/>. Is that data linear?  Well, yes and no. To be completely
+      honest, it's not linear. It's easy to pick out pairs of points where the steepness changes
+      from one pair to the next. In other words, the points do not line up into a single straight
+      line.
+    </p>
+    <p>
+      However if we step back, there does seem to be an overall upward trend that is captured by the
+      line overlaying the data in <xref ref="figure-top-one-percent-with-line"/>. Points on the
+      overlaid line <em>do</em> have a linear pattern. Let's estimate the rate of change between
+      some pair of points on this line. We are free to use any pair of points to do this, so let's
+      make this calculation easier by choosing points we can clearly identify on the graph:
+      <m>(2010,28.5)</m> and <m>(2021,31)</m>.
+    </p>
+    <figure xml:id="figure-top-one-percent-with-line">
+      <caption>Share of all income held by the top 1%, United States, 2000<ndash/>2021</caption>
+      <image width="60%">
+        <shortdescription>a scatter plot about share of all income held by the top 1% in the US</shortdescription>
+        <latex-image label="top-one-percent-scatterplot-with-line">
+          \begin{tikzpicture}
+            \begin{axis}[
+                xlabel={year},
+                ylabel={percentage},
+                xmin=2000,xmax=2030,
+                ymin=0,ymax=40,
+                minor ytick=,
+                axis line style={->},
+                xtick={2000,2005,...,2030},
+                xticklabels={2000,2005,...,2030},
+                xticklabel style={rotate=-45},
+                ytick={0,5,...,40},
+                width=0.5\orccaprintwidth
+              ]
+              \addplot[only marks]coordinates{
+                (2000, 27.4)
+                (2001, 25.9)
+                (2002, 25.3)
+                (2003, 25.4)
+                (2004, 26.8)
+                (2005, 27.2)
+                (2006, 28)
+                (2007, 28.8)
+                (2008, 28.2)
+                (2009, 27.8)
+                (2010, 28.4)
+                (2011, 29)
+                (2012, 29.5)
+                (2013, 29.8)
+                (2014, 30.4)
+                (2015, 30.7)
+                (2016, 30.7)
+                (2017, 30.7)
+                (2018, 30.5)
+                (2019, 30.6)
+                (2020, 29.9)
+                (2021, 30.8)
+                (2022, 29.8)
+                (2023, 30.1)
+                (2024, 30.7)
+                (2025, 31.2)
+              };
+              \addplot[firstcurve,domain = 2000:2025,-,ultra thick]{0.20841*(x - 2012.5) + 28.9846};
+            \end{axis}
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+    <p>
+      The rate of change between those two points is
+      <md>
+        \frac{(31-28.5)\,\text{pct. points}}{(2021-2010)\,\text{years}}=\frac{2.5\,\text{pct. points}}{11\,\text{years}}\approx0.227\,\frac{\text{pct. points}}{\text{year}}
+      </md>
+      So we might say that <em>on average</em>, the rate of change expressed by this data is
+      <m>0.227</m> percentage points per year.
+    </p>
+  </subsection>
 
   <subsection>
     <title>What is slope?</title>
@@ -34,7 +1279,7 @@
       </stack>
 
       <figure xml:id="figure-constant-rate-of-change">
-        <caption>Between successive points, the rate of change is always <m>1/2</m>.</caption>
+        <caption>The rate of change is always <m>1/2</m>.</caption>
         <image>
           <shortdescription></shortdescription>
           <latex-image label="consistent-rate-of-change-for-slope">
@@ -74,9 +1319,9 @@
       when <m>x</m> and <m>y</m> are two variables where the rate of change between two points is
       always the same, then you can calculate slope, <m>m</m>, by finding two distinct data points
       <m>(x_1,y_1)</m> and <m>(x_2,y_2)</m>, and calculating
-      <men xml:id="equation-slope-definition">
+      <md number="yes" xml:id="equation-slope-definition">
         m=\frac{\text{change in $y$}}{\text{change in $x$}}=\frac{\Delta y}{\Delta x}=\frac{y_2-y_1}{x_2-x_1}
-      </men>.
+      </md>.
     </p>
 
     <aside>
@@ -154,14 +1399,13 @@
       </p>
 
       <p>
-        We can model the balance, <m>y</m> (measured in dollars) in Yara's savings account <m>x</m>
-        weeks after she started making deposits with an equation. Since Yara started with
-        <m>\$50</m> and adds <m>\$20</m> each week, then <m>x</m> weeks after she started making
-        deposits,
-        <men xml:id="equation-yaras-savings">
-          y = 50 + 20x
-        </men>
-        where <m>y</m> is a dollar amount. Notice that the slope,
+        After <m>x</m> weeks have passed, we can model the account balance <m>f(x)</m> (pronounced
+        <q>f of x</q>) with a formula. Since Yara started with <m>\$50</m> and adds <m>\$20</m> each
+        week, then <m>x</m> weeks later the balance is
+        <md number="yes" xml:id="equation-yaras-savings">
+          f(x) = 50 + 20x
+        </md>
+        where <m>f(x)</m> is a dollar amount. Notice that the slope,
         <m>20\,\frac{\text{dollars}}{\text{wk}}</m>, is used as the multiplier for <m>x</m>, the
         number of weeks that have passed.
       </p>
@@ -184,7 +1428,7 @@
               <line><m>x</m>, weeks</line>
               <line>since Dec.<nbsp/>31</line></cell>
             <cell>
-              <line><m>y</m>, savings account</line>
+              <line><m>f(x)</m>, savings account</line>
               <line>balance (dollars)</line></cell>
             <cell/>
           </row>
@@ -229,18 +1473,18 @@
 
       <p>
         In first rows of the table, we see that when <m>x</m> increases by <m>1</m> (week), then
-        <m>y</m> increases by <m>20</m> (dollars). The row-to-row rate of change is
+        <m>f(x)</m> increases by <m>20</m> (dollars). The row-to-row rate of change is
         <m>\frac{20\,\text{dollars}}{1\,\text{wk}} = 20\,\frac{\text{dollars}}{\text{wk}}</m>,
         which we already know is the slope. In any table showing a linear relationship, whenever
-        <m>x</m> increases by <m>1</m> unit, <m>y</m> will increase by the slope.
+        <m>x</m> increases by <m>1</m> unit, <m>f(x)</m> will increase by the slope.
       </p>
 
       <p>
         In later rows, notice that the change in <m>x</m> is larger than <m>1</m>, but the change in
-        <m>y</m> is also larger than <m>20</m>. The changes in <m>y</m> have grown proportionally
-        with the changes in <m>x</m> and this keeps the <em>rate</em> of change steady. Looking in
-        particular at the last two rows of the table, we see <m>x</m> increases by <m>5</m> and
-        <m>y</m> increases by <m>100</m>, which gives a rate of change
+        <m>f(x)</m> is also larger than <m>20</m>. The changes in <m>f(x)</m> have grown
+        proportionally with the changes in <m>x</m> and this keeps the <em>rate</em> of change
+        steady. Looking in particular at the last two rows of the table, we see <m>x</m> increases
+        by <m>5</m> and <m>f(x)</m> increases by <m>100</m>, which gives a rate of change
         <m>\frac{100\,\text{dollars}}{5\,\text{wk}} = 20\,\frac{\text{dollars}}{\text{wk}}</m>,
         which is once again the value of the slope.
       </p>
@@ -299,10 +1543,10 @@
       </sidebyside>
 
       <p>
-        Every slope triangle on the graph of Yara's savings has the same angles even though some are
-        larger than others. Since the ratio of vertical change to horizontal change is always
-        <m>20\, \frac{\text{dollars}}{\text{wk}}</m>. On any graph of any sloped line, we can draw a
-        slope triangle and compute slope as <q>rise over run</q>.
+        Every slope triangle on the graph of Yara's savings uses the same angles even though some
+        triangles are larger than others. Since the ratio of vertical change to horizontal change is
+        always <m>20\, \frac{\text{dollars}}{\text{wk}}</m>. On any graph of any sloped line, we can
+        draw a slope triangle and compute slope as <q>rise over run</q>.
       </p>
     </example>
 
@@ -431,9 +1675,9 @@
             Notice that the <em>change</em> in <m>y</m> is negative, because the amount of gas is
             decreasing. Since we chose points with integer coordinates, we can easily calculate the
             slope:
-            <me>
+            <md>
               \text{slope}=\frac{-2\,\text{gallons}}{3\,\text{hours}}=-\frac{2}{3}\,\frac{\text{gal}}{\text{h}}
-            </me>.
+            </md>.
             In the given context, this slope implies gas in the tank is <em>decreasing</em> at the
             rate of <m>\frac{2}{3}</m>
             <quantity>
@@ -519,7 +1763,7 @@
             </latex-image>
           </image>
           <p>
-            <me>\text{slope}=\frac{\text{rise}}{\text{run}}=\frac{3}{8}</me>
+            <md>\text{slope}=\frac{\text{rise}}{\text{run}}=\frac{3}{8}</md>
             This line's slope is <m><var name="$m"/></m>.
           </p>
         </solution>
@@ -534,8 +1778,8 @@
         </pg-code>
         <statement>
           <p>
-            Make a table and plot the equation <m>y=\frac{3}{4}x+2</m>, which makes a straight line.
-            Use the plot to determine the slope of this line.
+            Make a table and plot the function <m>f</m>, where <m>f(x)=\frac{3}{4}x+2</m>, which
+            makes a straight line. Use the plot to determine the slope of this line.
           </p>
           <p>
             <var name="$slope" width="10"/>
@@ -552,7 +1796,7 @@
             <col halign="center"/>
             <row bottom="medium">
               <cell><m>x</m></cell>
-              <cell halign="center"><m>y=\frac{3}{4}x+2</m></cell>
+              <cell halign="center"><m>f(x)=\frac{3}{4}x+2</m></cell>
               <cell>Point</cell>
             </row>
             <row>
@@ -609,6 +1853,7 @@
                     ymin = -5,
                     xmax = 7,
                     ymax = 7,
+                    ylabel={\(f(x)\)}
                   ]
                   \addplot+[domain = -5:7] {3/4*x+2};
                   \addplot[soliddot] coordinates {(-2,0.5) (-1,1.25) (0,2) (1,2.75) (2,3.5) (3,4.25) (4,5) (5, 5.75)};
@@ -872,9 +2117,9 @@
               The first segment started at <m>(0,0)</m> and stopped at <m>(7,3500)</m>. This implies
               Kato started at the starting point, traveled <m>7</m> hours and reached a point
               <m>3500</m> feet higher in elevation from the starting point. The slope of the line is
-              <me>
+              <md>
                 \frac{\Delta y}{\Delta x}=\frac{3500\,\text{ft}}{7\,\text{h}}=500\,\frac{\text{ft}}{\text{h}}
-              </me>
+              </md>
               In context, Kato was gaining <m>500</m> feet in elevation per hour.              
             </p>
           </solution>
@@ -894,9 +2139,9 @@
               <m>(19,3500)</m>? This implies he started this portion <m>3500</m> feet high, and
               didn't change elevation for <m>19</m> hours. Maybe some of that time he was running at
               a constant elevation, and some of that time he was resting.
-              <me>
+              <md>
                 \frac{\Delta y}{\Delta x}=\frac{0\,\text{ft}}{12\,\text{h}}=0\,\frac{\text{ft}}{\text{h}}
-              </me>
+              </md>
               In context, Kato was running but neither gaining nor losing elevation.
             </p>
           </solution>
@@ -915,9 +2160,9 @@
               The third segment started at <m>(19,3500)</m> and stopped at <m>(23,0)</m>. This
               implies Kato started this part of his trip from <m>3500</m> feet high, traveled for
               <m>4</m> hours, and returned to the starting elevation. The slope of the line is
-              <me>
+              <md>
                 \frac{\Delta y}{\Delta x}=\frac{-3500\,\text{ft}}{4\,\text{h}}=-875\,\frac{\text{ft}}{\text{h}}
-              </me>
+              </md>
               In context, Kato was dropping in elevation by <m>875</m> feet per hour.
             </p>
           </solution>
@@ -1114,9 +2359,9 @@
 
       <p>
         Now we can write an alternative to <xref ref="equation-slope-definition"/>:
-        <men xml:id="equation-slope-formula">
+        <md number="yes" xml:id="equation-slope-formula">
           \text{slope}=m=\frac{\Delta y}{\Delta x}=\frac{y_2-y_1}{x_2-x_1}
-        </men>
+        </md>
         This is known as the <term>slope formula</term>. The following graphs help to understand why          <idx><h>Slope</h><h>formula</h></idx>
         this formula works. Basically, we are still using a slope triangle to calculate the slope.
       </p>
@@ -1215,9 +2460,9 @@
         <p>
           If you are new to this formula, it may help to label each number before using the formula.
           The two given points are:
-          <me>
+          <md>
             (\overset{x_1}{-5},\overset{y_1}{25}) \qquad (\overset{x_2}{4},\overset{y_2}{-2})
-          </me>
+          </md>
           Now apply the <xref ref="equation-slope-formula" text="custom">slope formula</xref>:
           <md>
             <mrow>\text{slope}\amp=\frac{y_2-y_1}{x_2-x_1}</mrow>
@@ -1252,9 +2497,9 @@
         <solution>
           <p>
             To find a line's slope, we can use the slope formula:
-            <me>\text{slope}=\frac{y_2-y_1}{x_2-x_1}</me>
+            <md>\text{slope}=\frac{y_2-y_1}{x_2-x_1}</md>
             First, we mark which number corresponds to which variable in the formula:
-            <me>(\overset{x_1}{-18},\overset{y_1}{14})\qquad(\overset{x_2}{18},\overset{y_2}{-16})</me>
+            <md>(\overset{x_1}{-18},\overset{y_1}{14})\qquad(\overset{x_2}{18},\overset{y_2}{-16})</md>
             Now we substitute these numbers into the corresponding variables in the slope formula:
             <md>
               <mrow>\text{slope} \amp =\frac{y_2-y_1}{x_2-x_1}</mrow>
@@ -1270,6 +2515,30 @@
   </subsection>
 
   <reading-questions>
+    <exercise label="how-to-calculate-rate-of-change-in-table">
+      <statement>
+        <p>
+          Given a table of data with <m>x</m>- and <m>y</m>-values, explain how to calculate the
+          rate of change from one row to the next.
+        </p>
+      </statement>
+    </exercise>
+    <exercise label="what-is-true-of-rate-of-change-in-straight-line-data">
+      <statement>
+        <p>
+          If there is a table of data with <m>x</m>- and <m>y</m>-values, and the plot of all that
+          data makes a straight line, what is true about the rates of change as you move from row to
+          row in the table?
+        </p>
+      </statement>
+    </exercise>
+    <exercise label="what-does-sign-of-rate-of-change-mean">
+      <statement>
+        <p>
+          What does it mean for a rate of change to be positive versus negative?
+        </p>
+      </statement>
+    </exercise>
     <exercise>
       <statement>
         <p>
@@ -1299,6 +2568,694 @@
   <exercises>
     <subexercises>
       <title>Skills Practice</title>
+      <exercisegroup cols="3">
+        <title>Rate of Change</title>
+        <introduction>
+          <p>
+            Find the rate of change between the two given points.
+          </p>
+        </introduction>
+        <exercise label="rate-of-change-point-coordinates">
+          <webwork xml:id="webwork-rate-of-change-point-coordinates">
+            <pg-code>
+              Context("Point");
+              @a = random_subset(4, -9 .. 9);
+              $A = Point((@a)[0,1]);
+              $B = Point((@a)[2,3]);
+              Context("LimitedFraction")->flags->set(allowMixedNumbers => 0, showMixedNumbers => 0);
+              $m = Fraction($a[3] - $a[1], $a[2] - $a[0]);
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$A"/></m> and <m><var name="$B"/></m> 
+              </p>
+              <p>
+                <var name="$m" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="rate-of-change-point-coordinates-copy">
+          <webwork copy="webwork-rate-of-change-point-coordinates"/>
+        </exercise>
+        <exercise label="rate-of-change-point-coordinates-decimals">
+          <webwork xml:id="webwork-rate-of-change-point-coordinates-decimals">
+            <pg-code>
+              Context("Point");
+              @a = map {$_/10} (random_subset(4, -99 .. 99));
+              $A = Point((@a)[0,1]);
+              $B = Point((@a)[2,3]);
+              Context("Numeric");
+              $m = Real(($a[3] - $a[1])/($a[2] - $a[0]));
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$A"/></m> and <m><var name="$B"/></m> 
+              </p>
+              <p>
+                <var name="$m" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="rate-of-change-point-coordinates-decimals-copy">
+          <webwork copy="webwork-rate-of-change-point-coordinates-decimals"/>
+        </exercise>
+        <exercise label="rate-of-change-point-coordinates-fractions">
+          <webwork xml:id="webwork-rate-of-change-point-coordinates-fractions">
+            <pg-code>
+              Context("LimitedFraction")->flags->set(allowMixedNumbers => 0, showMixedNumbers => 0);
+              do {
+                @a = random_subset(8, -9 .. -1, 1 .. 9);
+                @x = map {Fraction($a[$_], $a[$_ + 1])} (0, 2);
+              } until ($x[0] != $x[1]); 
+              @y = map {Fraction($a[$_], $a[$_ + 1])} (4, 6);
+              $A = Point($x[0], $y[0]);
+              $B = Point($x[1], $y[1]);
+              $m = ($y[1] - $y[0])/($x[1] - $x[0]);
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$A"/></m> and <m><var name="$B"/></m> 
+              </p>
+              <p>
+                <var name="$m" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="rate-of-change-point-coordinates-fractions-copy">
+          <webwork copy="webwork-rate-of-change-point-coordinates-fractions"/>
+        </exercise>
+        <exercise label="rate-of-change-graph">
+          <webwork xml:id="webwork-rate-of-change-graph">
+            <pg-code>
+              Context("Point");
+              @a = random_subset(4, 1 .. 9);
+              $A = Point((@a)[0,1]);
+              $B = Point((@a)[2,3]);
+              Context("LimitedFraction")->flags->set(allowMixedNumbers => 0, showMixedNumbers => 0);
+              $m = Fraction($a[3] - $a[1], $a[2] - $a[0]);
+            </pg-code>
+            <statement>
+              <image>
+                <latex-image>
+                  \begin{tikzpicture}
+                    \begin{axis}[
+                        xmin=-1,
+                        ymin=-1,
+                        xmax=10,
+                        ymax=10,
+                        xtick=,
+                        ytick=,
+                        minor xtick={1,...,9},
+                        minor ytick={1,...,9},
+                        width=0.33\orccaprintwidth,
+                      ]
+                      \addplot[soliddot] coordinates {$A $B};
+                    \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+              <p>
+                <var name="$m" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="rate-of-change-graph-copy">
+          <webwork copy="webwork-rate-of-change-graph"/>
+        </exercise>
+        <exercise label="rate-of-change-graph-neg">
+          <webwork xml:id="webwork-rate-of-change-graph-neg">
+            <pg-code>
+              Context("Point");
+              do {
+                @a = random_subset(4, -5 .. 5)
+              } until (min(@a) &lt; 0 &amp;&amp; max(@a) > 0);
+              $A = Point((@a)[0,1]);
+              $B = Point((@a)[2,3]);
+              Context("LimitedFraction")->flags->set(allowMixedNumbers => 0, showMixedNumbers => 0);
+              $m = Fraction($a[3] - $a[1], $a[2] - $a[0]);
+            </pg-code>
+            <statement>
+              <image>
+                <latex-image>
+                  \begin{tikzpicture}
+                    \begin{axis}[
+                        xmin=-6,
+                        ymin=-6,
+                        xmax=6,
+                        ymax=6,
+                        xtick=,
+                        ytick=,
+                        minor xtick={-5,...,5},
+                        minor ytick={-5,...,5},
+                        width=0.33\orccaprintwidth,
+                      ]
+                      \addplot[soliddot] coordinates {$A $B};
+                    \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+              <p>
+                <var name="$m" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="rate-of-change-graph-neg-copy">
+          <webwork copy="webwork-rate-of-change-graph-neg"/>
+        </exercise>
+        <exercise label="rate-of-change-graph-large">
+          <webwork xml:id="webwork-rate-of-change-graph-large">
+            <pg-code>
+              Context("Point");
+              do {
+                @a = random_subset(4, 10 .. 90);
+                $A = Point((@a)[0,1]);
+                $B = Point((@a)[2,3]);
+                $D = Vector($B - $A);
+              } until ($D->norm > 20);
+              Context("LimitedFraction")->flags->set(allowMixedNumbers => 0, showMixedNumbers => 0);
+              $m = Fraction($a[3] - $a[1], $a[2] - $a[0]);
+            </pg-code>
+            <statement>
+              <image>
+                <latex-image>
+                  \begin{tikzpicture}
+                    \begin{axis}[
+                        xmin=-10,
+                        ymin=-10,
+                        xmax=100,
+                        ymax=100,
+                        xtick=,
+                        ytick=,
+                        minor xtick=,
+                        minor ytick=,
+                        width=0.33\orccaprintwidth,
+                      ]
+                      \addplot[soliddot] coordinates {$A} node[above] {$A};
+                      \addplot[soliddot] coordinates {$B} node[above] {$B};
+                    \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+              <p>
+                <var name="$m" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="rate-of-change-graph-large-copy">
+          <webwork copy="webwork-rate-of-change-graph-large"/>
+        </exercise>
+        <exercise label="rate-of-change-table">
+          <webwork xml:id="webwork-rate-of-change-table">
+            <pg-code>
+              @x = num_sort(random_subset(5, 1 .. 9));
+              @y = num_sort(random_subset(5, 1 .. 9));
+              ($a,$b) = num_sort(random_subset(2, 0 .. 4));
+              Context("LimitedFraction")->flags->set(allowMixedNumbers => 0, showMixedNumbers => 0);
+              $m = Fraction($y[$b] - $y[$a], $x[$b] - $x[$a]);
+            </pg-code>
+            <statement>
+              <tabular halign="right">
+                <col right="medium"/>
+                <col/>
+                <row bottom="medium">
+                  <cell><m>x</m></cell><cell><m>y</m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[0]"/></m></cell><cell><m><var name="$y[0]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[1]"/></m></cell><cell><m><var name="$y[1]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[2]"/></m></cell><cell><m><var name="$y[2]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[3]"/></m></cell><cell><m><var name="$y[3]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[4]"/></m></cell><cell><m><var name="$y[4]"/></m></cell>
+                </row>
+              </tabular>
+              <p>
+                From <m>x=<var name="$x[$a]"/></m> to <m>x=<var name="$x[$b]"/></m>.
+              </p>
+              <p>
+                <var name="$m" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="rate-of-change-table-copy">
+          <webwork copy="webwork-rate-of-change-table"/>
+        </exercise>
+        <exercise label="rate-of-change-table-large">
+          <webwork xml:id="webwork-rate-of-change-table-large">
+            <pg-code>
+              @x = num_sort(random_subset(5, 1 .. 99));
+              @y = num_sort(random_subset(5, 1 .. 999));
+              ($a,$b) = num_sort(random_subset(2, 0 .. 4));
+              Context("LimitedFraction")->flags->set(allowMixedNumbers => 0, showMixedNumbers => 0);
+              $m = Fraction($y[$b] - $y[$a], $x[$b] - $x[$a]);
+            </pg-code>
+            <statement>
+              <tabular halign="right">
+                <col right="medium"/>
+                <col/>
+                <row bottom="medium">
+                  <cell><m>x</m></cell><cell><m>y</m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[0]"/></m></cell><cell><m><var name="$y[0]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[1]"/></m></cell><cell><m><var name="$y[1]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[2]"/></m></cell><cell><m><var name="$y[2]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[3]"/></m></cell><cell><m><var name="$y[3]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[4]"/></m></cell><cell><m><var name="$y[4]"/></m></cell>
+                </row>
+              </tabular>
+              <p>
+                From <m>x=<var name="$x[$a]"/></m> to <m>x=<var name="$x[$b]"/></m>.
+              </p>
+              <p>
+                <var name="$m" width="5"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="rate-of-change-table-large-copy">
+          <webwork copy="webwork-rate-of-change-table-large"/>
+        </exercise>
+      </exercisegroup>
+
+      <exercisegroup cols="4">
+        <title>Linear Relationships</title>
+        <introduction>
+          <p>
+            Does the table show that <m>x</m> and <m>y</m> have a linear relationship?
+          </p>
+        </introduction>
+        <exercise label="determine-if-table-data-is-linear">
+          <webwork xml:id="webwork-determine-if-table-data-is-linear">
+            <pg-macros>
+              <macro-file>parserPopUp.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $m = random(2, 9);
+              $b = random(10, 100);
+              $f = Formula("$m x + $b");
+              @x = (0..5);
+              @y = map{$f->eval(x => $_)} (@x);
+              $yes = DropDown(['yes','no'], 0, showInStatic => 0);
+              $no = DropDown(['yes','no'], 1, showInStatic => 0);
+            </pg-code>
+            <statement>
+              <tabular halign="right">
+                <row bottom="medium">
+                  <cell><m>x</m></cell>
+                  <cell><m>y</m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[0]"/></m></cell>
+                  <cell><m><var name="$y[0]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[1]"/></m></cell>
+                  <cell><m><var name="$y[1]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[2]"/></m></cell>
+                  <cell><m><var name="$y[2]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[3]"/></m></cell>
+                  <cell><m><var name="$y[3]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[4]"/></m></cell>
+                  <cell><m><var name="$y[4]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[5]"/></m></cell>
+                  <cell><m><var name="$y[5]"/></m></cell>
+                </row>
+              </tabular>
+              <p>
+                <var name="$yes" form="popup"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                As each <m>x</m>-value increases by <m>1</m>, the <m>y</m>-value increases by
+                <m><var name="$m"/></m>. So this table does show that <m>x</m> and <m>y</m> have a
+                linear relationship.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="determine-if-table-data-is-linear-copy">
+          <webwork copy="webwork-determine-if-table-data-is-linear"/>
+        </exercise>
+        <exercise label="determine-if-table-data-is-linear-2">
+          <webwork xml:id="webwork-determine-if-table-data-is-linear-2">
+            <pg-macros>
+              <macro-file>parserPopUp.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $m = random(-9,-2,1);
+              $absm = abs($m);
+              $b = random(50,100,1);
+              $f = Formula("$m x + $b");
+              $start = random(0,10,1);
+              @x = map{$_+$start}(0..5);
+              @y = map{$f->eval(x=>$_)}(@x);
+              $yes = DropDown(['yes','no'], 0, showInStatic => 0);
+              $no = DropDown(['yes','no'], 1, showInStatic => 0);
+            </pg-code>
+            <statement>
+              <tabular halign="right">
+                <row bottom="medium">
+                  <cell><m>x</m></cell>
+                  <cell><m>y</m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[0]"/></m></cell>
+                  <cell><m><var name="$y[0]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[1]"/></m></cell>
+                  <cell><m><var name="$y[1]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[2]"/></m></cell>
+                  <cell><m><var name="$y[2]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[3]"/></m></cell>
+                  <cell><m><var name="$y[3]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[4]"/></m></cell>
+                  <cell><m><var name="$y[4]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[5]"/></m></cell>
+                  <cell><m><var name="$y[5]"/></m></cell>
+                </row>
+              </tabular>
+              <p>
+                <var name="$yes" form="popup"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                As each <m>x</m>-value increases by <m>1</m>, the <m>y</m>-value decreases by
+                <m><var name="$absm"/></m>. So this table does show that <m>x</m> and <m>y</m> have a
+                linear relationship.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="determine-if-table-data-is-linear-2-copy">
+          <webwork copy="webwork-determine-if-table-data-is-linear-2"/>
+        </exercise>
+        <exercise label="determine-if-table-data-is-linear-3">
+          <webwork xml:id="webwork-determine-if-table-data-is-linear-3">
+            <pg-macros>
+              <macro-file>parserPopUp.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $a = random(2,5);
+              $b = random(1,20);
+              $f = Formula("$a*x + $b");
+              $start = random(0,10);
+              @x = map{$_ + $start} (0..5);
+              @y = map{$f->eval(x => $_)}(@x);
+              for my $i (0..4) {
+                  $diff[$i] = $y[$i+1] - $y[$i];
+              };
+              $yes = DropDown(['yes','no'], 0, showInStatic => 0);
+              $no = DropDown(['yes','no'], 1, showInStatic => 0);
+            </pg-code>
+            <statement>
+              <tabular halign="right">
+                <row bottom="medium">
+                  <cell><m>x</m></cell>
+                  <cell><m>y</m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[0]"/></m></cell>
+                  <cell><m><var name="$y[0]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[1]"/></m></cell>
+                  <cell><m><var name="$y[1]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[2]"/></m></cell>
+                  <cell><m><var name="$y[2]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[3]"/></m></cell>
+                  <cell><m><var name="$y[3]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[4]"/></m></cell>
+                  <cell><m><var name="$y[4]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[5]"/></m></cell>
+                  <cell><m><var name="$y[5]"/></m></cell>
+                </row>
+              </tabular>
+              <p>
+                <var name="$no" form="popup"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                As each <m>x</m>-value increases by <m>1</m>, the <m>y</m>-values increases by
+                <m><var name="$diff[0]"/></m>, then <m><var name="$diff[1]"/></m>,
+                then <m><var name="$diff[2]"/></m>, then <m><var name="$diff[3]"/></m>,
+                then <m><var name="$diff[4]"/></m>. So this table shows that <m>x</m> and <m>y</m> do
+                not have a linear relationship.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="determine-if-table-data-is-linear-3-copy">
+          <webwork copy="webwork-determine-if-table-data-is-linear-3"/>
+        </exercise>
+        <exercise label="determine-if-table-data-is-linear-4">
+          <webwork xml:id="webwork-determine-if-table-data-is-linear-4">
+            <pg-macros>
+              <macro-file>parserPopUp.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $a = random(2,5,1);
+              $b = random(1,20,1);
+              $f = Formula("x^$a + $b");
+              $start = random(0,2,1);
+              @x = map{$_+$start}(0..5);
+              @y = map{$f->eval(x=>$_)}(@x);
+              for my $i (0..4) {
+                  $diff[$i] = $y[$i+1]-$y[$i];
+              };
+              $yes = DropDown(['yes','no'], 0, showInStatic => 0);
+              $no = DropDown(['yes','no'], 1, showInStatic => 0);
+            </pg-code>
+            <statement>
+              <tabular halign="right">
+                <row bottom="medium">
+                  <cell><m>x</m></cell>
+                  <cell><m>y</m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[0]"/></m></cell>
+                  <cell><m><var name="$y[0]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[1]"/></m></cell>
+                  <cell><m><var name="$y[1]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[2]"/></m></cell>
+                  <cell><m><var name="$y[2]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[3]"/></m></cell>
+                  <cell><m><var name="$y[3]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[4]"/></m></cell>
+                  <cell><m><var name="$y[4]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[5]"/></m></cell>
+                  <cell><m><var name="$y[5]"/></m></cell>
+                </row>
+              </tabular>
+              <p>
+                <var name="$no" form="popup"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                As each <m>x</m>-value increases by <m>1</m>, the <m>y</m>-values increases by
+                <m><var name="$diff[0]"/></m>, then <m><var name="$diff[1]"/></m>,
+                then <m><var name="$diff[2]"/></m>, then <m><var name="$diff[3]"/></m>,
+                then <m><var name="$diff[4]"/></m>. So this table shows that <m>x</m> and <m>y</m> do
+                not have a linear relationship.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="determine-if-table-data-is-linear-4-copy">
+          <webwork copy="webwork-determine-if-table-data-is-linear-4"/>
+        </exercise>
+        <exercise label="determine-if-table-data-is-linear-5">
+          <webwork xml:id="webwork-determine-if-table-data-is-linear-5">
+            <pg-macros>
+              <macro-file>parserPopUp.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $m = non_zero_random(-5,5,0.01);
+              $absm = abs($m);
+              $incdec = ($m>0) ? 'increases' : 'decreases';
+              $b = random(30,100,0.01);
+              $f = Formula("$m*x + $b");
+              $start = random(-10,10,1);
+              @x = map{$_+$start}(0..5);
+              @y = map{$f->eval(x=>$_)}(@x);
+              $yes = DropDown(['yes','no'], 0, showInStatic => 0);
+              $no = DropDown(['yes','no'], 1, showInStatic => 0);
+            </pg-code>
+            <statement>
+              <tabular halign="right">
+                <row bottom="medium">
+                  <cell><m>x</m></cell>
+                  <cell><m>y</m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[0]"/></m></cell>
+                  <cell><m><var name="$y[0]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[1]"/></m></cell>
+                  <cell><m><var name="$y[1]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[2]"/></m></cell>
+                  <cell><m><var name="$y[2]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[3]"/></m></cell>
+                  <cell><m><var name="$y[3]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[4]"/></m></cell>
+                  <cell><m><var name="$y[4]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[5]"/></m></cell>
+                  <cell><m><var name="$y[5]"/></m></cell>
+                </row>
+              </tabular>
+              <p>
+                <var name="$yes" form="popup"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                As each <m>x</m>-value increases by <m>1</m>, the <m>y</m>-value <var name="$incdec"/>
+                by <m><var name="$absm"/></m>. So this table does show that <m>x</m> and <m>y</m> have
+                a linear relationship.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="determine-if-table-data-is-linear-5-copy">
+          <webwork copy="webwork-determine-if-table-data-is-linear-5"/>
+        </exercise>
+        <exercise label="determine-if-table-data-is-linear-6">
+          <webwork xml:id="webwork-determine-if-table-data-is-linear-6">
+            <pg-macros>
+              <macro-file>parserPopUp.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $m = non_zero_random(2,9,1);
+              $b = random(1,100,1);
+              $f = Formula("$m*x + $b");
+              @x = num_sort(NchooseK(20,6));
+              @y = map{$f->eval(x=>$_)}(@x);
+              $yes = DropDown(['yes','no'], 0, showInStatic => 0);
+              $no = DropDown(['yes','no'], 1, showInStatic => 0);
+              $ydiff = $y[1]-$y[0];
+              $xdiff = $x[1]-$x[0];
+            </pg-code>
+            <statement>
+              <tabular halign="right">
+                <row bottom="medium">
+                  <cell><m>x</m></cell>
+                  <cell><m>y</m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[0]"/></m></cell>
+                  <cell><m><var name="$y[0]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[1]"/></m></cell>
+                  <cell><m><var name="$y[1]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[2]"/></m></cell>
+                  <cell><m><var name="$y[2]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[3]"/></m></cell>
+                  <cell><m><var name="$y[3]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[4]"/></m></cell>
+                  <cell><m><var name="$y[4]"/></m></cell>
+                </row>
+                <row>
+                  <cell><m><var name="$x[5]"/></m></cell>
+                  <cell><m><var name="$y[5]"/></m></cell>
+                </row>
+              </tabular>
+              <p>
+                <var name="$yes" form="popup"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                The <m>x</m>-values in this table jump erratically. However, if we compute the rate of
+                change between consecutive rows in the table, the result is always <var name="$m"/>.
+                For example, the rate of change between the first and second rows is
+                <md>
+                  \frac{<var name="$y[1]"/>-<var name="$y[0]"/>}{<var name="$x[1]"/>-<var name="$x[0]"/>}=\frac{<var name="$ydiff"/>}{<var name="$xdiff"/>}=<var name="$m"/>
+                </md>.
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="determine-if-table-data-is-linear-6-copy">
+          <webwork copy="webwork-determine-if-table-data-is-linear-6"/>
+        </exercise>
+      </exercisegroup>
       <exercisegroup cols="3">
         <title>Slope from Coordinates</title>
         <introduction>
@@ -2230,10 +4187,500 @@
         </exercise>
       </exercisegroup>
     </subexercises>
-    
+  
 
     <subexercises>
       <title>Applications</title>
+      <exercise label="portland-population">
+        <webwork xml:id="webwork-portland-population">
+          <pg-code>
+            @x=(2002..2025);
+            @y=(540400,546000,551700,557300,562900,568600,574200,579800,585500,595600,604500,610300,621000,631900,643100,648200,651200,654400,653200,642800,636100,634300,635700,631400);
+            %f=map{$x[$_] => $y[$_]}(0..23);
+            @yr=num_sort(random_subset(4,@x));
+            $n=[
+            {name => 'people'},
+            {name => 'person',conversion => {factor => 1,people => 1}},
+            {name => 'ppl',conversion => {factor => 1,people => 1}},
+            {name => 'year',conversion => {factor => 365*24*60*60,s => 1}},
+            {name => 'years',conversion => {factor => 365*24*60*60,s => 1}},
+            {name => 'yr',conversion => {factor => 365*24*60*60,s => 1}},
+            {name => 'yrs',conversion => {factor => 365*24*60*60,s => 1}},
+            {name => 'y',conversion => {factor => 365*24*60*60,s => 1}}
+            ];
+            @r=map{Real(($f{$yr[2*$_+1]}-$f{$yr[2*$_]})/($yr[2*$_+1]-$yr[2*$_]))}(0,1);
+            @r=map{NumberWithUnits("$_ people/yr",{newUnit => $n})}(@r);
+            Context("Interval");
+            $d=List('[2019,2020],[2020,2021],[2021,2022],[2022,2023],[2024,2025]');
+            $p=join(' ',(map{"($x[$_],$y[$_])"}(0..23)));
+            $s=Interval('[2006,2016]');
+            $t=NumberWithUnits(($y[14]-$y[4])/10,"people/yr",{newUnit => $n});
+          </pg-code>
+          <introduction>
+            <p>
+              This table gives population estimates for Portland, Oregon from 2002 through 2025,
+              gathered from
+              <url href="https://worldpopulationreview.com/us-cities/oregon/portland" visual="worldpopulationreview.com"/>.
+            </p>
+            <tabular>
+              <col halign="right"/>
+              <col right="medium" halign="left"/>
+              <col halign="right"/>
+              <col right="medium" halign="left"/>
+              <col halign="right"/>
+              <col halign="left"/>
+              <row bottom="medium">
+                <cell>Year</cell>
+                <cell>Population</cell>
+                <cell>Year</cell>
+                <cell>Population</cell>
+                <cell>Year</cell>
+                <cell>Population</cell>
+              </row>
+              <row>
+                <cell>2002</cell>
+                <cell>540400</cell>
+                <cell>2010</cell>
+                <cell>585500</cell>
+                <cell>2018</cell>
+                <cell>651200</cell>
+              </row>
+              <row>
+                <cell>2003</cell>
+                <cell>546000</cell>
+                <cell>2011</cell>
+                <cell>595600</cell>
+                <cell>2019</cell>
+                <cell>654400</cell>
+              </row>
+              <row>
+                <cell>2004</cell>
+                <cell>551700</cell>
+                <cell>2012</cell>
+                <cell>604500</cell>
+                <cell>2020</cell>
+                <cell>653200</cell>
+              </row>
+              <row>
+                <cell>2005</cell>
+                <cell>557300</cell>
+                <cell>2013</cell>
+                <cell>610300</cell>
+                <cell>2021</cell>
+                <cell>642800</cell>
+              </row>
+              <row>
+                <cell>2006</cell>
+                <cell>562900</cell>
+                <cell>2014</cell>
+                <cell>621000</cell>
+                <cell>2022</cell>
+                <cell>636100</cell>
+              </row>
+              <row>
+                <cell>2007</cell>
+                <cell>568600</cell>
+                <cell>2015</cell>
+                <cell>631900</cell>
+                <cell>2023</cell>
+                <cell>634300</cell>
+              </row>
+              <row>
+                <cell>2008</cell>
+                <cell>574200</cell>
+                <cell>2016</cell>
+                <cell>643100</cell>
+                <cell>2024</cell>
+                <cell>635700</cell>
+              </row>
+              <row>
+                <cell>2009</cell>
+                <cell>579800</cell>
+                <cell>2017</cell>
+                <cell>648200</cell>
+                <cell>2025</cell>
+                <cell>631400</cell>
+              </row>
+            </tabular>
+            <image width="75%">
+              <latex-image>
+                \begin{tikzpicture}
+                  \begin{axis}[
+                      xmin=2000,
+                      xmax=2025,
+                      xtick={2000,2005,...,2025},
+                      xlabel={year},
+                      ymin=500000,
+                      ymax=700000,
+                      ytick={500000,550000,...,700000},
+                      ylabel={population},
+                      /pgf/number format/.cd,
+                      use comma,
+                      1000 sep={},
+                      axis y discontinuity=crunch,
+                      width=\orccaprintwidth,
+                      height=0.33\orccaprintwidth,
+                      axis line style={->},
+                    ]
+                    \addplot[soliddot]coordinates{$p};
+                  \end{axis}
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+          </introduction>
+          <task>
+            <statement>
+              <p>
+                Find the rate of change in Portland population between <var name="$yr[0]"/> and
+                <var name="$yr[1]"/>.
+              </p>
+              <instruction>
+                You can type the unit as <c>people/yr</c>.
+              </instruction>
+              <p>
+                <var name="$r[0]" width="10"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                To find the rate of change between <var name="$yr[0]"/> and <var name="$yr[1]"/>,
+                calculate
+                <md>
+                  \frac{<var name="$f{$yr[1]}"/>-<var name="$f{$yr[0]}"/>}{<var name="$yr[1]"/>-<var name="$yr[0]"/>}=<var name="$r[0]"/>
+                </md>.
+              </p>
+            </solution>
+          </task>
+          <task>
+            <statement>
+              <p>
+                And what was the rate of change between <var name="$yr[2]"/> and
+                <var name="$yr[3]"/>?
+              </p>
+              <p>
+                <var name="$r[1]" width="10"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                To find the rate of change between <var name="$yr[2]"/> and <var name="$yr[3]"/>,
+                calculate
+                <md>
+                  \frac{<var name="$f{$yr[3]}"/>-<var name="$f{$yr[2]}"/>}{<var name="$yr[3]"/>-<var name="$yr[2]"/>}=<var name="$r[1]"/>
+                </md>.
+              </p>
+            </solution>
+          </task>
+          <task>
+            <statement>
+              <p>
+                List all the year-long intervals where there is a negative rate of change.
+              </p>
+              <instruction>
+                (For example, you might answer with <c>[2000,2001], [2001,2002]</c> if you think
+                those are the year-long intervals where there is a negative rate of change.)
+              </instruction>
+              <p>
+                <var name="$d" width="20"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                The rate of change is negative for the years starting in 2003, 2019, and 2020, and
+                no other years. These are the only years in the data table where the population goes
+                down the next year. So the intervals are <var name="$d"/>.
+              </p>
+            </solution>
+          </task>
+          <task>
+            <statement>
+              <p>
+                Over which decade was the rate of change highest?
+              </p>
+              <instruction>
+                (For example, you might answer with <c>[2000,2010]</c> if you think that is the
+                decade with the highest rate of change.)
+              </instruction>
+              <p>
+                <var name="$s" width="20"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                The steepest rate of change over a ten-year period was from 2006 to 2016. To find
+                this, calculate each of the rates of change from 2000 to 2010, from 2001 to 2011,
+                and so on. Although looking at the graph, you can see that some rates of change are
+                not as steep as others and narrow down the search. 
+              </p>
+              <image width="75%">
+                <latex-image>
+                  \begin{tikzpicture}
+                    \begin{axis}[
+                        xmin=2000,
+                        xmax=2025,
+                        xtick={2000,2005,...,2025},
+                        xlabel={year},
+                        ymin=500000,
+                        ymax=700000,
+                        ytick={500000,550000,...,700000},
+                        ylabel={population},
+                        /pgf/number format/.cd,
+                        use comma,
+                        1000 sep={},
+                        axis y discontinuity=crunch,
+                        width=\orccaprintwidth,
+                        height=0.33\orccaprintwidth,
+                        axis line style={->},
+                      ]
+                      \addplot[soliddot]coordinates{$p};
+                      \addplot[firstcurve,-]coordinates{(2006,541026)(2016,643065)};
+                    \end{axis}
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+            </solution>
+          </task>
+          <task>
+            <statement>
+              <p>
+                What was that rate of change?
+              </p>
+              <instruction>
+                You can type the unit as <c>people/yr</c>.
+              </instruction>
+              <p>
+                <var name="$t" width="10"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                Between 2006 and 2016:
+                <md>
+                  \frac{<var name="$y[16]"/> - <var name="$y[6]"/>}{2016 - 2006} = <var name="$t"/>
+                </md>
+              </p>
+            </solution>
+          </task>
+        </webwork>
+      </exercise>
+      <exercise label="tide-levels">
+        <webwork xml:id="webwork-tide-levels">
+          <pg-code>
+            @x=(0..23);
+            @y=(5.87,5.54,4.66,3.45,2.23,1.34,1.02,1.37,2.33,3.65,4.96,5.92,6.27,5.83,4.64,3.00,1.37,0.18,-0.26,0.19,1.41,3.07,4.74,5.95);
+            %f=map{$x[$_] => $y[$_]}(0..23);
+            @hr=num_sort(random_subset(4,@x));
+            @r=map{Real(($f{$hr[2*$_+1]}-$f{$hr[2*$_]})/($hr[2*$_+1]-$hr[2*$_]))}(0,1);
+            @r=map{NumberWithUnits("$_ ft/hr")}(@r);
+            Context("Interval");
+            $d=List('[0,6],[12,18]');
+            $p=join(' ',(map{"($x[$_],$y[$_])"}(0..23)));
+            $s=Interval('[21,22]');
+            $t=NumberWithUnits($y[22]-$y[21],"ft/hr");
+          </pg-code>
+          <introduction>
+            <p>
+              This table gives the tide level in Lincoln City, Oregon, over one particular 24-hour
+              period, measured in feet above average sea level.
+            </p>
+            <tabular>
+              <col halign="right"/>
+              <col right="medium" halign="left"/>
+              <col halign="right"/>
+              <col right="medium" halign="left"/>
+              <col halign="right"/>
+              <col halign="left"/>
+              <row bottom="medium">
+                <cell>Hour</cell>
+                <cell>Tide Level</cell>
+                <cell>Hour</cell>
+                <cell>Tide Level</cell>
+                <cell>Hour</cell>
+                <cell>Tide Level</cell>
+              </row>
+              <row>
+                <cell><m>0</m></cell>
+                <cell><m>5.87</m></cell>
+                <cell><m>8</m></cell>
+                <cell><m>2.33</m></cell>
+                <cell><m>16</m></cell>
+                <cell><m>1.37</m></cell>
+              </row>
+              <row>
+                <cell><m>1</m></cell>
+                <cell><m>5.54</m></cell>
+                <cell><m>9</m></cell>
+                <cell><m>3.65</m></cell>
+                <cell><m>17</m></cell>
+                <cell><m>0.18</m></cell>
+              </row>
+              <row>
+                <cell><m>2</m></cell>
+                <cell><m>4.66</m></cell>
+                <cell><m>10</m></cell>
+                <cell><m>4.96</m></cell>
+                <cell><m>18</m></cell>
+                <cell><m>-0.26</m></cell>
+              </row>
+              <row>
+                <cell><m>3</m></cell>
+                <cell><m>3.45</m></cell>
+                <cell><m>11</m></cell>
+                <cell><m>5.92</m></cell>
+                <cell><m>19</m></cell>
+                <cell><m>0.19</m></cell>
+              </row>
+              <row>
+                <cell><m>4</m></cell>
+                <cell><m>2.23</m></cell>
+                <cell><m>12</m></cell>
+                <cell><m>6.27</m></cell>
+                <cell><m>20</m></cell>
+                <cell><m>1.41</m></cell>
+              </row>
+              <row>
+                <cell><m>5</m></cell>
+                <cell><m>1.34</m></cell>
+                <cell><m>13</m></cell>
+                <cell><m>5.83</m></cell>
+                <cell><m>21</m></cell>
+                <cell><m>3.07</m></cell>
+              </row>
+              <row>
+                <cell><m>6</m></cell>
+                <cell><m>1.02</m></cell>
+                <cell><m>14</m></cell>
+                <cell><m>4.64</m></cell>
+                <cell><m>22</m></cell>
+                <cell><m>4.74</m></cell>
+              </row>
+              <row>
+                <cell><m>7</m></cell>
+                <cell><m>1.37</m></cell>
+                <cell><m>15</m></cell>
+                <cell><m>3.00</m></cell>
+                <cell><m>23</m></cell>
+                <cell><m>5.95</m></cell>
+              </row>
+            </tabular>
+            <image width="75%">
+              <latex-image>
+                \begin{tikzpicture}
+                  \begin{axis}[
+                      xmin=0,
+                      xmax=24,
+                      xlabel={hour},
+                      xtick=,
+                      minor xtick=,
+                      ymin=-2,
+                      ymax=8,
+                      ylabel={tide level (ft)},
+                      ytick=,
+                      minor ytick=,
+                      width=\orccaprintwidth,
+                      height=0.33\orccaprintwidth,
+                      x axis line style={->},
+                    ]
+                    \addplot[soliddot]coordinates{$p};
+                  \end{axis}
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+          </introduction>
+          <task>
+            <statement>
+              <p>
+                Find the rate of change in the tide level between hours <var name="$hr[0]"/> and
+                <var name="$hr[1]"/>.
+              </p>
+              <p>
+                <var name="$r[0]" width="10"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                To find the rate of change between hours <var name="$hr[0]"/> and
+                <var name="$hr[1]"/>, calculate
+                <md>
+                  \frac{<var name="$f{$hr[1]}"/>-<var name="$f{$hr[0]}"/>}{<var name="$hr[1]"/>-<var name="$hr[0]"/>}=<var name="$r[0]"/>
+                </md>.
+              </p>
+            </solution>
+          </task>
+          <task>
+            <statement>
+              <p>
+                And what was the rate of change between hours <var name="$hr[2]"/> and
+                <var name="$hr[3]"/>?
+              </p>
+              <p>
+                <var name="$r[1]" width="10"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                To find the rate of change between hours <var name="$hr[2]"/> and
+                <var name="$hr[3]"/>, calculate
+                <md>
+                  \frac{<var name="$f{$hr[3]}"/>-<var name="$f{$hr[2]}"/>}{<var name="$hr[3]"/>-<var name="$hr[2]"/>}=<var name="$r[1]"/>
+                </md>.
+              </p>
+            </solution>
+          </task>
+          <task>
+            <statement>
+              <p>
+                List the longest intervals where there is a negative rate of change without any
+                times in between that have positive rates of change.
+              </p>
+              <p>
+                <var name="$d" width="20"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                The rate of change is negative from hour 0 to hour 6, and again from hour 12 to
+                hour 18. So the intervals are <var name="$d"/>.
+              </p>
+            </solution>
+          </task>
+          <task>
+            <statement>
+              <p>
+                Over which hour-long interval was the rate of change highest?
+              </p>
+              <p>
+                <var name="$s" width="20"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                The steepest rate of change happens from hour 21 to hour 22. To find this, we can
+                calculate each of the rates of change from one hour to the next, and the largest
+                result happens from hour 21 to hour 22.
+              </p>
+            </solution>
+          </task>
+          <task>
+            <statement>
+              <p>
+                What was that rate of change?
+              </p>
+              <p>
+                <var name="$t" width="10"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                Between hour 21 and 22:
+                <md>
+                  \frac{<var name="$y[22]"/> - <var name="$y[21]"/>}{22 - 21} = <var name="$t"/>
+                </md>
+              </p>
+            </solution>
+          </task>
+        </webwork>
+      </exercise>
       <exercise label="hood-training">
         <webwork xml:id="webwork-hood-training">
           <pg-macros>
@@ -2474,14 +4921,14 @@
               {name=>'yrs',conversion=>{factor=>365*24*60*60,s=>1}},
               {name=>'y',conversion=>{factor=>365*24*60*60,s=>1}},
             ];
-            $m=Real(274.8155844);
+            $m=Real(248.719);
             Context()->flags->set(tolType=>'absolute',tolerance=>20);
             $rate = NumberWithUnits("$m diagnoses/yr",{newUnit=>$newUnits});
           </pg-code>
           <statement>
             <p>
-              The graph plots the number of invasive cancer diagnoses in Oregon over time, and a
-              trend-line has been drawn.
+              The graph plots the number of cancer diagnoses in Oregon over time, and a trend-line
+              has been drawn.
             </p>
             <image width="75%">
               <latex-image>
@@ -2490,44 +4937,37 @@
                       xlabel={year},
                       ylabel={count},
                       ytick=,
-                      xmin=2000,
-                      xmax=2020,
+                      xmin=2005,
+                      xmax=2025,
                       ymin=15000,
                       ymax=26000,
                       axis line style={->},
-                      xtick={2000,2005,...,2020},
-                      minor xtick={2000,...,2020},
-                      xticklabels={2000,2005,...,2020},
+                      xtick={2005,2010,...,2025},
+                      xticklabels={2005,2010,...,2025},
                       xticklabel style={rotate=-45},
-                      axis x discontinuity=crunch,
                       axis y discontinuity=crunch,
                       width=\orccaprintwidth,
                       height=0.33\orccaprintwidth,
                     ]
                     \addplot[only marks] coordinates {
-                      (2000,17458)
-                      (2001,17862)
-                      (2002,17879)
-                      (2003,17590)
-                      (2004,18497)
-                      (2005,18732)
-                      (2006,19161)
-                      (2007,19430)
-                      (2008,20459)
-                      (2009,20007)
-                      (2010,19887)
-                      (2011,20867)
-                      (2012,20448)
-                      (2013,21354)
-                      (2014,21686)
-                      (2015,22154)
-                      (2016,22128)
-                      (2017,23011)
-                      (2018,22640)
-                      (2019,23755)
-                      (2020,20151)
+                      (2007,19417)
+                      (2008,20426)
+                      (2009,19979)
+                      (2010,19861)
+                      (2011,20851)
+                      (2012,20426)
+                      (2013,21346)
+                      (2014,21683)
+                      (2015,22158)
+                      (2016,22135)
+                      (2017,23052)
+                      (2018,22769)
+                      (2019,24389)
+                      (2020,21766)
+                      (2021,22750)
+                      (2022,22691)
                     };
-                    \addplot+[domain=2000:2020] {274.8155844*(x - 2010) + 20245.52381};
+                    \addplot+[domain=2005:2025] {248.719*(x - 2014.5) + 21606.1875};
                   \end{axis}
                 \end{tikzpicture}
               </latex-image>
@@ -2545,16 +4985,16 @@
           <solution>
             <p>
               Do your best to identify two points on the line (which are not necessarily the plotted
-              data points). With this line, it seems <m>(2000,17500)</m> and <m>(2020,23000)</m> are
+              data points). With this line, it seems <m>(2008,20000)</m> and <m>(2020,23000)</m> are
               two such points.
             </p>
             <p>
-              <me>
-                \frac{\Delta y}{\Delta x}=\frac{(23000-17500)\,\text{diagnoses}}{(2020-2000)\,\text{yr}}=275\,\frac{\text{diagnoses}}{\text{yr}}
-              </me>
+              <md>
+                \frac{\Delta y}{\Delta x}=\frac{(23000-20000)\,\text{diagnoses}}{(2020-2008)\,\text{yr}}=250\,\frac{\text{diagnoses}}{\text{yr}}
+              </md>
             </p>
             <p>
-              So the slope is about <m>275</m> diagnoses per year. This is only an estimate since we
+              So the slope is about <m>250</m> diagnoses per year. This is only an estimate since we
               are not certain the two points we chose are actually on the line.
             </p>
           </solution>

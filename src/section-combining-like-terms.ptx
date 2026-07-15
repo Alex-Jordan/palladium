@@ -8,32 +8,18 @@
 
   <introduction>
     <p>
-      Algebraic expressions can be large and complicated,
-      so anything we can do to rewrite an expression in a simpler way is helpful.
-      One of the fundamental skills we have for simplifying expressions is
-      <em>combining like terms</em>.
+      Algebraic expressions can be large and complicated, so anything we can do to rewrite an
+      expression in a simpler way is helpful. One of the fundamental skills we have for simplifying
+      expressions is <em>combining like terms</em>.
     </p>
-
-    <figure xml:id="video-combining-like-terms">
-      <caption>Alternative Video Lesson</caption>
-      <video youtubeplaylist="PLmuZCPhWPt-dqjDRbGl2sSeMeTvrHik4p" />
-    </figure>
   </introduction>
 
   <subsection>
     <title>Identifying Terms</title>
-    <definition xml:id="definition-term">
-      <statement>
-        <p>
-          In an algebraic expression, the <term>terms</term>                                                  <idx><h>Terms</h></idx>
-          are quantities being added together.                                                                <idx><h>Terms</h><h>of algebraic expressions</h></idx>
-        </p>
-      </statement>
-    </definition>
-
     <p>
-      Note that terms are not the same thing as <term>factors</term>, which are quantities being             <idx><h>Factors</h></idx>
-      multiplied together. Factors are studied more later in this book.
+      In an algebraic expression, the <term>terms</term> are quantities being added together.                 <idx><h>Terms</h></idx>
+      (Note that terms are not the same thing as <term>factors</term>, which are quantities being             <idx><h>Terms</h><h>of algebraic expressions</h></idx>
+      multiplied together.)                                                                                   <idx><h>Factors</h></idx>
     </p>
 
     <example>
@@ -50,8 +36,8 @@
     </example>
 
     <p>
-      When an expression has subtraction, we can rewrite the it using addition of a negative
-      to make it easier to see exactly what the terms are.
+      When an expression has subtraction, we can rewrite the it using addition of a negative to make
+      it easier to see exactly what the terms are.
     </p>
 
     <example>
@@ -62,9 +48,9 @@
       </statement>
       <solution>
         <p>
-          We can rewrite this expression as <m>-3x^2+5x+(-4)</m>
-          to see that the terms are <m>-3x^2</m>, <m>5x</m>, and <m>-4</m>.
-          Note that the third term is <m>-4</m>, not just <m>4</m>.
+          We can rewrite this expression as <m>-3x^2+5x+(-4)</m> to see that the terms are
+          <m>-3x^2</m>, <m>5x</m>, and <m>-4</m>. Note that the third term is <m>-4</m>, not just
+          <m>4</m>.
         </p>
       </solution>
     </example>
@@ -72,25 +58,13 @@
     <example>
       <statement>
         <p>
-          List the terms in the expression
-          <m>3\,\text{cm}+2\,\text{cm}-3\,\text{cm}+2\,\text{cm}</m>.
+          List the terms in <m>3\,\text{cm}+2\,\text{cm}-3\,\text{cm}+2\,\text{cm}</m>.
         </p>
       </statement>
       <solution>
         <p>
-          This expression has four terms:
-          <quantity>
-            <mag>3</mag><unit base="meter" prefix="centi"/>
-          </quantity>,
-          <quantity>
-            <mag>2</mag><unit base="meter" prefix="centi"/>
-          </quantity>,
-          <quantity>
-            <mag>-3</mag><unit base="meter" prefix="centi"/>
-          </quantity>, and
-          <quantity>
-            <mag>2</mag><unit base="meter" prefix="centi"/>
-          </quantity>.
+          This expression has four terms: <m>3\,\text{cm}</m>, <m>2\,\text{cm}</m>,
+          <m>-3\,\text{cm}</m>, and <m>2\,\text{cm}</m>.
         </p>
       </solution>
     </example>
@@ -99,7 +73,7 @@
       <webwork>
         <pg-code>
           Context("Numeric");
-          Context()->variables->are(x=>'Real',z=>'Real');
+          Context()->variables->are(x => 'Real', z => 'Real');
           $terms = List("5x, -4x, 10z");
         </pg-code>
         <statement>
@@ -125,16 +99,12 @@
   <subsection>
     <title>Combining Like Terms</title>                                                                       <idx><h>Combining like terms</h></idx>
     <p>
-      If you have <m>3\,\text{cm}+2\,\text{cm}</m>,
-      it is natural to add those together to get
-      <quantity><mag>5</mag><unit base="meter" prefix="centi"/></quantity>.
-      That works because their units
-      (<quantity><unit base="meter" prefix="centi"/></quantity>) are the same.
-      The same idea applies to other terms, even ones that don't have units.
-      For example, with <m>2x+3x</m>, we have <m>2</m> <em>things</em>
-      and then <m>3</m> more of those <em>things</em>.
-      All together, we have <m>5</m> of those things.
-      So <m>2x+3x</m> is the same as <m>5x</m>.
+      If you have <m>3\,\text{cm}+2\,\text{cm}</m>, it is natural to add those together to get
+      <quantity><mag>5</mag><unit base="meter" prefix="centi"/></quantity>. That works because their
+      units (<quantity><unit base="meter" prefix="centi"/></quantity>) are the same. The same idea
+      applies to other terms, even ones that don't have units. For example, with <m>2x+3x</m>, we
+      have <m>2</m> <em>things</em> and then <m>3</m> more of those <em>things</em>. All together,
+      we have <m>5</m> of those things. So <m>2x+3x</m> is the same as <m>5x</m>.
     </p>
 
     <p>
@@ -143,8 +113,8 @@
       <ul>
         <li>
           <p>
-            Sometimes like terms use a common variable, like how <m>2x+3x</m> has terms that
-            each use <m>x</m>. This simplifies to <m>5x</m>.
+            Sometimes like terms use a common variable, like how <m>2x+3x</m> has terms that each
+            use <m>x</m>. This simplifies to <m>5x</m>.
           </p>
         </li>
         <li>
@@ -317,19 +287,19 @@
                 This expression has two like terms, <m>\frac{5}{7}x</m> and <m>-\frac{2}{7}x</m>,
                 which we can combine. We have to subtract <m>\frac{5}{7}-\frac{2}{7}</m>,
                 which is straightforward since they have the same denominator.
-                <me>
+                <md>
                   \highlight{\frac{5}{7}x-\frac{2}{7}x}+\frac{3}{7}y
                   =\highlight{\frac{3}{7}x}+\frac{3}{7}y
-                </me>
+                </md>
                 We don't combine <m>\frac{3}{7}x</m> and <m>\frac{3}{7}y</m>
                 because <m>x</m> and <m>y</m> are different variables.
               </p>
             </li>
             <li>
               <p>
-                This expression cannot be simplified because the variable parts are not the same.
-                We cannot add <m>x</m>-terms with <m>x^2</m>-terms just like we cannot add feet
-                (a measure of length) with square feet (a measure of area).
+                The terms in this expression cannot be combined because the variable parts are not
+                the same. We cannot add <m>x</m>-terms with <m>x^2</m>-terms just like we cannot add
+                feet (a measure of length) with square feet (a measure of area).
               </p>
             </li>
             <li>
@@ -341,7 +311,7 @@
               <p>
                 The two terms are like terms. To combine them, we need to add
                 <m>\frac{2}{3}+\frac{5}{6}</m>. For a review of adding fractions with different
-                denominators, see <xref ref="section-fractions-and-fraction-arithmetic"/>. In this
+                denominators, see <xref ref="section-fraction-arithmetic"/>. In this
                 case,
                 <md>
                   <mrow>\frac{2}{3}+\frac{5}{6}\amp=\frac{2}{3}\cdot\frac{2}{2}+\frac{5}{6}</mrow>

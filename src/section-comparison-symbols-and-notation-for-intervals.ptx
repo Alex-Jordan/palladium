@@ -22,12 +22,6 @@
       a statement about a large collection of numbers. In the second half of this section, we
       examine the mathematical notation for large collections of numbers like this.
     </p>
-
-    <figure xml:id="video-comparison-symbols-and-notation-for-intervals">
-      <caption>Alternative Video Lesson</caption>
-      <video youtubeplaylist="PLmuZCPhWPt-eG16R-Bwkkcna9LWJrMXho" />
-    </figure>
-
   </introduction>
 
   <subsection>
@@ -36,9 +30,9 @@
       In everyday language you can say something like <q><m>8</m> is larger than <m>3</m></q>. In
       mathematical writing, we have a shorthand notation for this: <q><m>\gt</m></q>. It's used as
       follows:
-      <me>
+      <md>
         8\gt3
-      </me>
+      </md>
       That short expression is read aloud as <q><m>8</m> is greater than <m>3</m></q>. The symbol
       <q><m>\gt</m></q> is called the <term>greater-than symbol.</term>                                       <idx><h>Greater-than symbol</h></idx>
     </p>
@@ -257,9 +251,9 @@
         <task>
           <statement>
             <p>
-              <me>
+              <md>
                 <var name="$as2" />
-              </me>
+              </md>
             </p>
             <instruction>
               For example, your answer might look like <c>4 &gt; 3 &gt; 2 &gt; 1 &gt; 0</c>. If you
@@ -329,9 +323,9 @@
       Sometimes you want to emphasize that one number is <em>less than</em>  another number. For
       this, we have symbols that are reversed from <m>\gt</m> and <m>\geq</m>. The symbol
       <q><m>\lt</m></q> is the <term>less-than symbol</term> and it's used like this:
-      <me>
+      <md>
         3\lt8
-      </me>
+      </md>
       and read aloud as <q><m>3</m> is less than <m>8</m></q>.                                                <idx><h>Less-than symbol</h></idx>
     </p>
 
@@ -404,16 +398,16 @@
     <title>Set-Builder and Interval Notation</title>
     <p>
       If you write
-      <me>
+      <md>
         (\text{age of a voter})\geq18
-      </me>
+      </md>
       and have a particular voter in mind, what is that person's age? Maybe they are <m>18</m>, but
       maybe they are older. It's helpful to use a variable <m>a</m> to represent age (in years) and
       then to visualize the possibilities with a number line.
     </p>
 
-    <figure xml:id="figure-voters-age">                                                                       <idx><h>Graphs</h><h>of inequalities</h></idx>
-      <caption><m>(\text{age of a voter})\geq18</m></caption>
+    <figure xml:id="figure-voters-age">
+      <caption><m>(\text{age of a voter})\geq18</m></caption>                                                 <idx><h>Graphs</h><h>of inequalities</h></idx>
       <image>
         <shortdescription>
           a number line, where the number 18 is marked; the portion of the number line to the right
@@ -458,9 +452,9 @@
         <p>
           Set-builder notation attempts to say directly what condition needs to be met by numbers in
           the interval. We write set-builder notation like:
-          <me>
+          <md>
             \left\{x\mid\text{condition on }x\right\}
-          </me>
+          </md>
           and read it aloud as <q>the set of all <m>x</m> such that <ellipsis /></q>.
         </p>
       </statement>
@@ -625,12 +619,12 @@
         <p>
           Interval notation describes an interval by saying where it <q>starts</q> and <q>ends</q>.
           It can look like any of these four options:
-          <me>
+          <md>
             (\text{start},\text{end})\qquad
             (\text{start},\text{end}]\qquad
             [\text{start},\text{end})\qquad
             [\text{start},\text{end}]
-          </me>
+          </md>
         </p>
       </statement>
     </definition>
@@ -974,7 +968,7 @@
   </reading-questions>
 
   <exercises>
-    <subexercises>
+    <!-- <subexercises>
       <title>Prerequisite/Review Skills</title>
       <introduction>
         <p>
@@ -1170,7 +1164,8 @@
         </exercise>
       </exercisegroup>
 
-    </subexercises>
+    </subexercises> -->
+
     <subexercises xml:id="subexercises-comparison-symbols-and-notation-for-intervals-skills-practice">
       <title>Skills Practice</title>
 
@@ -1580,16 +1575,17 @@
               Context()->lists->set(List => {separator => '>'});
               Context()->flags->set(reduceConstantFunctions => 0);
 
-              @a = (1..99)[NchooseK(99, 1)];
+              @a = random_subset(1, 1 .. 99);
               @a = map{Real($_/10)} (@a);
               do {
-                @d = (2..9)[NchooseK(8,2)];
-                push @a, map{Fraction(random_coprime([$_], [1..2*$_]))} (@d);
-              } until ($a[1] != $a[0] &amp;&amp; $a[2] != $a[0]);
+                @d = random_subset(2, 3 .. 9);
+                @f = map{Fraction(random_coprime([$_], [2 .. 2*$_]))} (@d);
+              } until ($f[0] != $a[0] &amp;&amp; $f[1] != $a[0] &amp;&amp; $f[1] != $f[0]);
+              push @a, @f;
               push @a, Formula("pi")/list_random(1,2,3,4,6);
               $a[3] = $a[3]->reduce;
               push @a, map{Formula("sqrt($_)")} (list_random(2,3,5,6,7,10));
-              @a = (@a)[NchooseK(5,5)];
+              @a = random_subset(5, @a);
 
               $as = join('\quad', map{'{' . $_->TeX . '}'} (@a));
               @b = PGsort(sub{$_[0] > $_[1]}, @a);

@@ -10,9 +10,7 @@
       Needs introduction.
     </p>
   </introduction>
-  <xi:include href="section-factoring-out-the-common-factor.ptx"/>
-  <xi:include href="section-factoring-trinomials-with-leading-coefficient-one.ptx"/>
-  <xi:include href="section-factoring-special-polynomials.ptx"/>
+  <xi:include href="section-factoring.ptx"/>
   <xi:include href="section-solving-quadratic-equations-by-factoring.ptx"/>
   <xi:include href="section-solving-quadratic-equations-by-using-a-square-root.ptx"/>
   <xi:include href="section-the-quadratic-formula.ptx"/>

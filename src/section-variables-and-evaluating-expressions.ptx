@@ -232,7 +232,7 @@
             <mrow>\frac{5}{9}(\substitute{89} - 32)\amp=\frac{5}{9}(57)
                 \amp\amp\text{Review order of operations in }<xref ref="section-order-of-operations"/>\text{.}</mrow>
             <mrow>\amp=\frac{285}{9}
-                \amp\amp\text{Review fraction multiplication in }<xref ref="section-fractions-and-fraction-arithmetic"/>\text{.}</mrow>
+                \amp\amp\text{Review fraction multiplication in }<xref ref="section-fraction-arithmetic"/>\text{.}</mrow>
             <mrow>\amp\approx 31.67</mrow>
           </md>
           This shows us that <m>89^{\circ}F</m> is approximately the same as <m>31.67^{\circ}C</m>.

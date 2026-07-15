@@ -13,7 +13,6 @@
       covers these <q>rules</q> for radicals as well as a few other related topics.
     </p>
   </introduction>
-  <xi:include href="section-introduction-to-exponent-properties.ptx"/>
   <xi:include href="section-more-exponent-properties.ptx"/>
   <xi:include href="section-square-and-nth-root-properties.ptx"/>
   <xi:include href="section-rationalizing-the-denominator.ptx"/>

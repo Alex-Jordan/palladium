@@ -94,10 +94,9 @@
                                                                                                               <idx><h>polynomial</h><h>terms of</h></idx>
       <statement>
         <p>
-          A <term>polynomial</term> is an expression with one or more
-          <xref ref="definition-term" text="custom">terms</xref> added together. A term of a
-          polynomial must either be a number or the product of a number and one or more variables
-          raised to natural number powers.
+          A <term>polynomial</term> is an expression with one or more terms added together. A term
+          of a polynomial must either be a number or the product of a number and one or more
+          variables raised to natural number powers.
         </p>
       </statement>
     </definition>
@@ -493,9 +492,9 @@
         Since Bayani's company only has these two costs, we can find a model for the total
         production costs, <m>C</m> (in thousands of dollars), by adding the supply costs and the
         labor costs:
-        <me>
+        <md>
           C=\left(0.05x^2+2x+30\right)+\left(0.1x^2+4x\right)
-        </me>
+        </md>
       </p>
       <p>
         To finish simplifying our total production cost model, we'll combine the like terms:
@@ -546,9 +545,9 @@
         dollars), from selling the ketchup can be modeled by <m>R=13x</m>, where <m>x</m> stands for
         the number of thousands of jugs of ketchup sold. The company's net profit can be calculated
         using the concept:
-        <me>
+        <md>
           \text{net profit} = \text{revenue} - \text{costs}
-        </me>
+        </md>
         Assuming all products produced will be sold, a polynomial to model the company's net profit,
         <m>P</m> (in thousands of dollars) is:
         <md>

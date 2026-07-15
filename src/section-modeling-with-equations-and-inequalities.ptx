@@ -8,7 +8,7 @@
 
   <introduction>
     <p>
-      Math allows you to model real situations and then use that model to answer questions about the
+      Algebra allows you to model situations and then use that model to answer questions about the
       real world. In this section, we practice setting up an equation (or inequality) from a
       contextualized scenario, which is a form of modeling.
     </p>
@@ -19,415 +19,311 @@
     </figure> -->
   </introduction>
 
-  <!-- <subsection>
-    <title>Translating Phrases into Algebraic Expressions and Equations/Inequalities</title>
-    <p>
-      There are certain short phrases and expressions in English that have mathematical meaning,              <idx><h>Algebraic translations of English phrases</h></idx>
-      and might show up in a modeling scenario. The following table translates some of these phrases          <idx><h>English phrases and sentences</h><h>algebraic translations of</h></idx>
-      into algebra expressions.                                                                               <idx><h>Equation(s)</h><h>translating to</h></idx>
-                                                                                                              <idx><h>Subtraction</h><h>translating phrases</h></idx>
-    </p>
-
-    <table>
-      <title>Translating English Phrases into Math Expressions</title>
-      <tabular valign="top">
-        <col halign="left"/>
-        <col halign="left"/>
-        <row bottom="medium">
-          <cell>English Phrase</cell>
-          <cell>Math Expression</cell>
-        </row>
-        <row>
-          <cell>the sum of <m>2</m> and a number</cell>
-          <cell><m>x+2</m> or <m>2+x</m></cell>
-        </row>
-        <row>
-          <cell><m>2</m> more than a number</cell>
-          <cell><m>x+2</m> or <m>2+x</m></cell>
-        </row>
-        <row>
-          <cell>a number increased by <m>2</m></cell>
-          <cell><m>x+2</m> or <m>2+x</m></cell>
-        </row>
-        <row bottom="medium">
-          <cell>a number and <m>2</m> together</cell>
-          <cell><m>x+2</m> or <m>2+x</m></cell>
-        </row>
-        <row>
-          <cell>the difference between a number and <m>2</m></cell>
-          <cell><m>x-2</m></cell>
-        </row>
-        <row>
-          <cell><m>2</m> less than a number</cell>
-          <cell><m>x-2</m> (<em>not</em> <m>2-x</m>)</cell>
-        </row>
-        <row>
-          <cell>a number decreased by <m>2</m></cell>
-          <cell><m>x-2</m></cell>
-        </row>
-        <row>
-          <cell><m>2</m> subtracted from a number</cell>
-          <cell><m>x-2</m></cell>
-        </row>
-        <row>
-          <cell><m>2</m> decreased by a number</cell>
-          <cell><m>2-x</m></cell>
-        </row>
-        <row bottom="medium">
-          <cell>a number subtracted from <m>2</m></cell>
-          <cell><m>2-x</m></cell>
-        </row>
-        <row>
-          <cell>the product of <m>2</m> and a number</cell>
-          <cell><m>2x</m></cell>
-        </row>
-        <row>
-          <cell>twice a number</cell>
-          <cell><m>2x</m></cell>
-        </row>
-        <row>
-          <cell>a number times 2</cell>
-          <cell><m>x\cdot 2</m> or <m>2x</m></cell>
-        </row>
-        <row>
-          <cell>two thirds of a number</cell>
-          <cell><m>\frac{2}{3}x</m></cell>
-        </row>
-        <row bottom="medium">
-          <cell><m>25\%</m> of a number</cell>
-          <cell><m>0.25x</m></cell>
-        </row>
-        <row>
-          <cell>the quotient of a number and <m>2</m></cell>
-          <cell><m>\sfrac{x}{2}</m></cell>
-        </row>
-        <row>
-          <cell>the quotient of <m>2</m> and a number</cell>
-          <cell><m>\sfrac{2}{x}</m></cell>
-        </row>
-        <row>
-          <cell>the ratio of a number and <m>2</m></cell>
-          <cell><m>\sfrac{x}{2}</m></cell>
-        </row>
-        <row>
-          <cell>the ratio of <m>2</m> and a number</cell>
-          <cell><m>\sfrac{2}{x}</m></cell>
-        </row>
-      </tabular>
-    </table>
-
-    <p>
-      Commas matter in English, and here is an example. An expression like
-    </p>
-    <blockquote>
-      <p>
-        <q>two times a number increased by three</q>
-      </p>
-    </blockquote>
-    <p>
-      means <m>2(x+3)</m>. The multiplication is happening between <q>two</q> and
-      <q>a number increased by three</q>. This is different from
-    </p>
-    <blockquote>
-      <p>
-        <q>two times a number, increased by three</q>
-      </p>
-    </blockquote>
-    <p>
-      which means <m>2x+3</m>. The comma indicates a pause where the multiplication can be
-      concluded, and then the addition can happen.
-    </p>
-    <p>
-      Complete sentences may be communicating an equation or inequality. We suggest breaking up
-      sentences into smaller parts. There is usually a word or phrase that corresponds to the equals
-      sign or one of the inequality symbols. For example <q>is</q> may correspond to an equal sign.
-      These words/phrases are emphasized in this table.
-    </p>
-
-    <table>
-      <title>Translating English Sentences into Math Equations</title>
-      <tabular valign="top">
-        <col halign="left"/>
-        <col halign="center"/>
-        <row bottom="medium">
-          <cell>English Sentence</cell>
-          <cell>
-            <line>Math Equation</line>
-            <line>or Inequality</line></cell>
-        </row>
-        <row>
-          <cell>The sum of <m>2</m> and a number <em>is</em> <m>6</m>.</cell>
-          <cell><m>x+2=6</m></cell>
-        </row>
-        <row>
-          <cell><m>2</m> less than a number <em>is at least</em> <m>6</m>.</cell>
-          <cell><m>x-2\ge6</m></cell>
-        </row>
-        <row>
-          <cell>Twice a number <em>is at most</em> <m>6</m>.</cell>
-          <cell><m>2x\le6</m></cell>
-        </row>
-        <row>
-          <cell><m>6</m> <em>is</em> the quotient of a number and <m>2</m>.</cell>
-          <cell><m>6=\frac{x}{2}</m></cell>
-        </row>
-        <row>
-          <cell><m>4</m> less than twice a number <em>is greater than</em> <m>10</m>.</cell>
-          <cell><m>2x-4\gt10</m></cell>
-        </row>
-        <row>
-          <cell>Twice the difference between <m>4</m> and a number <em>is</em> <m>10</m>.</cell>
-          <cell><m>2(4-x)=10</m></cell>
-        </row>
-        <row>
-          <cell>The product of <m>2</m> and the sum of <m>3</m> and a number <em>is less than</em> <m>10</m>.</cell>
-          <cell><m>2(x+3)\lt10</m></cell>
-        </row>
-        <row>
-          <cell>The product of <m>2</m> and a number, subtracted from <m>5</m>, <em>yields</em> <m>8</m>.</cell>
-          <cell><m>5-2x=8</m></cell>
-        </row>
-        <row>
-          <cell>Two thirds of a number subtracted from <m>10</m> <em>is</em> <m>2</m>.</cell>
-          <cell><m>10-\frac{2}{3}x=2</m></cell>
-        </row>
-        <row>
-          <cell><m>25\%</m> of the sum of 7 and a number <em>is</em> <m>2</m>.</cell>
-          <cell><m>0.25(x+7)=2</m></cell>
-        </row>
-      </tabular>
-    </table>
-    <p>
-      Practice with translating these English phrases and sentences into math expressions, equations,
-      and inequalities will be helpful for word problems that do have context. In the exercises for
-      this section, you will find such practice exercises.
-    </p>
-  </subsection> -->
-
   <subsection xml:id="subsection-rate-models">
     <title>Rate Models</title>
     <p>
-      A <term>rate</term> is a measurement that tells us how much one quantity is changing with               <idx><h>Rate</h></idx>
-      respect to how some other quantity is changing. For example, the number of people on earth
-      is growing by about <m>2.6</m> people per second. Time is passing second by second, and as
-      each second passes, we gain of about <m>2.6</m> people. The rate here is
-      <m>2.6\,\frac{\text{people}}{\text{s}}</m>. Note that the unit on the rate is
-      fractional<mdash/>this is common with rates.
+      A <term>rate</term> is a measurement that tells us how one quantity changes with respect to              <idx><h>Rate</h></idx>
+      how some other quantity is changing. For example, the number of people on earth is growing by
+      about <m>2.6</m> people per second. Time is passing second by second, and as each second
+      passes, we gain of about <m>2.6</m> people. The rate here is
+      <m>2.6\,\frac{\text{people}}{\text{s}}</m>.
     </p>
+
+    <remark>
+      <p>
+        Note that the unit on <m>2.6\,\frac{\text{people}}{\text{s}}</m>. is fractional. This is a
+        good indication that the quantity is
+        a rate.
+      </p>
+    </remark>
 
     <example xml:id="example-savings-pattern">
       <p>
         Your savings account starts with <m>\$500</m>. Then each month, there is an automatic
-        deposit of <m>\$150</m>. You need <m>\$1700</m> to afford a deposit on a new apartment.
-        Write an equation where the solution represents how much time this will take.
+        deposit of <m>\$150</m>. You need <m>\$1700</m> for a deposit on a new apartment. How long
+        will it take to build up enough cash? Write an equation to model this problem.
       </p>
+    </example>
 
+    <p>
+      Pause. The first step for success with word problems is to read and re-read until you
+      feel you understand the scenario, what each number means, and what the ultimate question is.
+      The <m>500</m> is a number that only matters <em>once</em> in the story of this bank
+      account: it's how much money you had when you started making deposits. The <m>1700</m> also
+      only matters <em>once</em>: at the end, you will have that much money.
+    </p>
+
+    <p>
+      But the <m>150</m> is different. Month after month, the account balance goes up
+      by <m>\$150</m>. This number is used repeatedly in the scenario, month after month. It might
+      look like it's just a dollar amount, but it's actually a <em>rate</em>: it's
+      <m>150\,\frac{\text{dollar}}{\text{month}}</m>.
+    </p>
+
+    <p>
+      To understand rates better, it helps to appreciate that rates are used over and over again
+      over time. And using a rate to make a table can help you internalize what that number really
+      means. We know the account balance is changing month by month, so it makes sense to track
+      the months and the account balance.
+    </p>
+
+    <tabular>
+      <col halign="center" />
+      <col halign="center"/>
+      <row header="yes" bottom="medium">
+        <cell>
+          <line>Months Since</line>
+          <line>Saving Started</line>
+        </cell>
+        <cell>
+          <line>Total Amount Saved</line>
+          <line>(in Dollars)</line>
+        </cell>
+      </row>
+      <row>
+        <cell><m>0</m></cell>
+        <cell><m>500</m></cell>
+      </row>
+      <row>
+        <cell><m>1</m></cell>
+        <cell><m>650</m></cell>
+      </row>
+      <row>
+        <cell><m>2</m></cell>
+        <cell><m>800</m></cell>
+      </row>
+      <row>
+        <cell><m>3</m></cell>
+        <cell><m>950</m></cell>
+      </row>
+    </tabular>
+
+    <p>
+      In the first column, values increase by <m>1</m> month. In the second column, values
+      increase by <m>150</m> dollars. The rate we are working with comes from dividing these:
+      <m>\frac{150\,\text{dollars}}{1\,\text{month}}</m>, which is
+      <m>150\,\frac{\text{dollar}}{\text{month}}</m>.
+    </p>
+
+    <p>
+      Good problem-solving strategy starts with spending time reading until you feel that you
+      understand the meaning of the numbers in the story. Now we will try to actually answer the
+      question here. It's kind of a big deal to first <em>clearly identify what variable</em> we
+      will use. Since our task is to find <q>how long will it take<ellipsis/></q>, we choose to let
+      <m>t</m> be our variable, standing for <q>time</q>. It also matters that we will measure
+      <m>t</m> in months, not some other unit like days. So <m>t</m> will stand for the number of
+      months it will take to reach <m>\$1700</m>.
+    </p>
+    
+    <p>
+      Explicitly writing down what variable to use is the next important piece of good
+      problem-solving strategy.
+    </p>
+    
+    <blockquote>
       <p>
-        Do you have an understanding of each of the numbers in this setting, and what they truly
-        mean in context? The <m>500</m> is a number that only matters <em>once</em> in the story of
-        this bank account: it is how much money was there when we started making automatic deposits.
-        The <m>1700</m> also only matters <em>once</em>: at the end, we will have that much money.
+        Let <m>t</m> be the time it will take to reach <m>\$1700</m>, measured in months.
       </p>
+    </blockquote>
 
+    <remark>
       <p>
-        But the <m>150</m> is different. Month after month, the account balance goes up
-        by <m>\$150</m>. This number is used repeatedly in the scenario. It might look like it's
-        just a dollar amount, but it's actually a <em>rate</em>:
-        it's <m>150\,\frac{\text{dollar}}{\text{month}}</m>.
+        There are three points to note about this variable declaration:
+        <ol>
+          <li>
+            <p>
+              It tells everyone what letter you are using as the variable (<m>t</m>).
+            </p>
+          </li>
+          <li>
+            <p>
+              It tells everyone what the variable actually means (the time it takes to reach
+              <m>\$1700</m>).
+            </p>
+          </li>
+          <li>
+            <p>
+              It tells everyone what units are beying used for that variable (months).
+            </p>
+          </li>
+        </ol>
       </p>
+    </remark>
 
-      <p>
-        If there's a rate that you don't quite understand, it can help to make a table. We know the
-        account balance is changing month by month, so it makes sense to track the months and the
-        account balance.
-      </p>
+    <p>
+      Next, what will the equation look like? For this example, let's return to the table. Was
+      there a pattern connecting the left column to the right column? In the left column there is
+      a row where <m>3</m> months have passed. At that time, we have <m>\$950</m>. How did we gt to
+      <m>\$950</m>? Well, we started with <m>\$500</m> and then added <m>\$150</m> not once, not
+      twice, but three times. As an equation:
+      <md>
+        500+150(3)=950
+      </md>
+      Thinking in this way, we can grow the table to show this pattern and extend it to when
+      <m>m</m> months have passed, even without a specific number of months for <m>m</m>.
+    </p>
 
+    <figure xml:id="figure-savings-pattern">
+      <caption>Amount in Savings Account</caption>
       <tabular>
         <col halign="center" />
-        <col halign="center"/>
+        <col halign="left"/>
+        <col halign="left"/>
         <row header="yes" bottom="medium">
           <cell>
             <line>Months Since</line>
             <line>Saving Started</line>
           </cell>
-          <cell>
+          <cell colspan="2">
             <line>Total Amount Saved</line>
             <line>(in Dollars)</line>
           </cell>
         </row>
         <row>
           <cell><m>0</m></cell>
-          <cell><m>500</m></cell>
+          <cell/>
+          <cell><m>\phantom{={}}500</m></cell>
         </row>
         <row>
           <cell><m>1</m></cell>
-          <cell><m>650</m></cell>
+          <cell><m>500+150</m></cell>
+          <cell><m>=650</m></cell>
         </row>
         <row>
           <cell><m>2</m></cell>
-          <cell><m>800</m></cell>
+          <cell><m>500+150(2)</m></cell>
+          <cell><m>=800</m></cell>
         </row>
         <row>
           <cell><m>3</m></cell>
-          <cell><m>950</m></cell>
+          <cell><m>500+150(3)</m></cell>
+          <cell><m>=950</m></cell>
+        </row>
+        <row>
+          <cell><m>4</m></cell>
+          <cell><m>500+150(4)</m></cell>
+          <cell><m>=1100</m></cell>
+        </row>
+        <row>
+          <cell><m>\vdots</m></cell>
+          <cell><m>\phantom{500}\vdots</m></cell>
+          <cell/>
+        </row>
+        <row>
+          <cell><m>m</m></cell>
+          <cell><m>500+150m</m></cell>
+          <cell/>
         </row>
       </tabular>
+    </figure>
 
-      <p>
-        If you are able to build a table like this, then you are dealing with a rate. In the second
-        column, values increase by <m>150</m> dollars from row to row. In the first column, values
-        increase by <m>1</m> month. The rate we are working with comes from dividing these:
-        <m>\frac{150\,\text{dollars}}{1\,\text{month}}</m>, which is
-        <m>150\,\frac{\text{dollar}}{\text{month}}</m>.
-      </p>
+    <p>
+      We want there to be <m>\$1700</m> at the end, so apparently we want:
+      <md>
+        500 + 150m = 1700
+      </md>
+      And that was our objective: to write down that equation. Right now we are not interested in
+      actually solving this equation. The skill of <em>setting up</em> that equation is
+      challenging enough, and this section only focuses on that setup.
+    </p>
 
-      <p>
-        We spent time trying to truly understand the meaning of the numbers in this story. So now we
-        will try to do what we were asked to do: write an equation where the solution represents how
-        much time it will take to reach <m>\$1700</m>. It's kind of a big deal to first <em>clearly
-        identify what variable</em> we will use. Since our task is to find
-        <q>how much time<ellipsis/></q> and we are measuring time in months, we choose to let
-        <m>m</m> be our variable. That is, <m>m</m> will stand for the number of months it will take
-        to reach <m>\$1700</m>. (Another good choice would be to use <m>t</m>, since it stands for
-        an amount of time.)
-      </p>
-
-      <p>
-        What will the equation look like? For this example, let's return to the table. Was there a
-        pattern connecting the left column to the right column? In the left column there is a row
-        where <m>3</m> months have passed. At that time, we have <m>\$950</m>. How did that
-        <m>\$950</m> come about? Well, we started with <m>\$500</m> and then added <m>\$150</m> not
-        once, not twice, but three times. As an equation:
-        <me>
-          500+150(3)=950
-        </me>
-        Thinking in this way, we can grow the table to show this pattern and extend it to when
-        <m>m</m> months have passed, even without a value in mind for <m>m</m>.
-      </p>
-
-      <figure xml:id="figure-savings-pattern">
-        <caption>Amount in Savings Account</caption>
-        <tabular>
-          <col halign="center" />
-          <col halign="left"/>
-          <col halign="left"/>
-          <row header="yes" bottom="medium">
-            <cell>
-              <line>Months Since</line>
-              <line>Saving Started</line>
-            </cell>
-            <cell colspan="2">
-              <line>Total Amount Saved</line>
-              <line>(in Dollars)</line>
-            </cell>
-          </row>
-          <row>
-            <cell><m>0</m></cell>
-            <cell/>
-            <cell><m>500</m></cell>
-          </row>
-          <row>
-            <cell><m>1</m></cell>
-            <cell><m>500+150</m></cell>
-            <cell><m>=650</m></cell>
-          </row>
-          <row>
-            <cell><m>2</m></cell>
-            <cell><m>500+150(2)</m></cell>
-            <cell><m>=800</m></cell>
-          </row>
-          <row>
-            <cell><m>3</m></cell>
-            <cell><m>500+150(3)</m></cell>
-            <cell><m>=950</m></cell>
-          </row>
-          <row>
-            <cell><m>4</m></cell>
-            <cell><m>500+150(4)</m></cell>
-            <cell><m>=1100</m></cell>
-          </row>
-          <row>
-            <cell><m>\vdots</m></cell>
-            <cell halign="center"><m>\vdots</m></cell>
-            <cell/>
-          </row>
-          <row>
-            <cell><m>m</m></cell>
-            <cell><m>500+150m</m></cell>
-            <cell/>
-          </row>
-        </tabular>
-      </figure>
-
-      <p>
-        We want there to be <m>\$1700</m> at the end, so apparently we want:
-        <me>
-          500 + 150m = 1700
-        </me>
-        And that was our objective: to write down that equation. Right now we are not interested in
-        actually solving this equation. The skill of <em>setting up</em> that equation is
-        challenging enough, and this section only focuses on that setup.
-      </p>
-    </example>
+    <algorithm>
+      <title>Strategy to Tackle a Word Problem</title>
+      <statement>
+        <p>
+          The basic strategy to approaching any word problem is to:
+          <ol>
+            <li>
+              <p>
+                Read, read, read until the scenario, the numbers, and the actual question make
+                sense to you.
+              </p>
+            </li>
+            <li>
+              <p>
+                Clearly and explicitly write down a variable declaration. It should give the name
+                of the variable, the meaning of the variable, and the units that it will use.
+                Embrace the tedium of this step. Writing a complete sentence in English can feel
+                tedious, but you are training yourself to solve harder problems in the future by
+                using good habits now.
+              </p>
+            </li>
+            <li>
+              <p>
+                Use the background information, possibly with the help of a table, to set up an
+                equation that uses your variable.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </algorithm>
 
     <p>
       There are some things worth noticing in this last example. There was a <em>starting value</em>
       for the account balance (<m>\$500</m>), a <em>rate</em> at which the account balance was
       changing (<m>150\,\frac{\text{dollars}}{\text{month}}</m>), and a <em>final value</em>
-      (<em>$1700</em>). In the end, we had the equation
-      <men xml:id="men-rate-model">
-        (\text{initial value}) \pm (\text{rate})\cdot\text{variable} = (\text{final value})
-      </men>
-      and the variable represented how much the other quantity (time in this case, not the account
-      balance) has changed. The <m>\pm</m> should be an addition sign if the quantity is growing,
-      and a subtraction sign if the quantity is reducing.
+      (<m>$1700</m>). In the end, we had an equation that used these numbers. There is a pattern
+      here worth studying.
     </p>
+
+    <remark>
+      <p>
+        The rate equation is:
+        <md xml:id="men-rate-model" number="yes">
+          \text{initialValue} \pm \text{rate}\cdot\text{timePassed} = \text{finalValue}
+        </md>
+        The <m>\pm</m> should be an addition sign if the quantity is growing, and a subtraction sign
+        if the quantity is reducing.
+      </p>
+    </remark>
 
     <example xml:id="example-bathtub">
       <statement>
         <p>
           A bathtub contains
           <quantity>
-            <mag>2.5</mag><unit base="foot" exp="3"/>
+            <mag>25</mag><unit base="foot" exp="3"/>
           </quantity>
-          of water. More water is being poured in at a rate of
+          of water. More water is pouring in at a rate of
           <quantity>
-            <mag>1.75</mag><unit base="foot" exp="3"/>
-          </quantity>
-          per minute. Write an equation where the solution represents when the amount of water in
-          the bathtub will reach
-          <quantity>
-            <mag>6.25</mag><unit base="foot" exp="3"/>
+            <mag>1.75</mag><unit base="foot" exp="3"/><per base="minute"/>
           </quantity>.
+          Write an equation where the solution represents how long it will take to fill the bathtub
+          with
+          <quantity>
+            <mag>62.5</mag><unit base="foot" exp="3"/>
+          </quantity>
+          of water.
         </p>
       </statement>
       <solution>
         <p>
           We have an initial amount of water
           (<quantity>
-            <mag>2.5</mag><unit base="foot" exp="3"/>
+            <mag>25</mag><unit base="foot" exp="3"/>
           </quantity>),
           a rate at which the amount of water is changing
           (<quantity>
-            <mag>1.75</mag><unit base="foot" exp="3"/>
+            <mag>1.75</mag><unit base="foot" exp="3"/><per base="minute"/>
           </quantity>),
           and a final amount of water we are going to reach
           (<quantity>
-            <mag>6.25</mag><unit base="foot" exp="3"/>
+            <mag>62.5</mag><unit base="foot" exp="3"/>
           </quantity>).
           So we can use the pattern for rate modeling from <xref ref="men-rate-model"/>.
         </p>
         <p>
-          We should clearly identify the variable first though. The solution is supposed to
-          represent an amount of time. So a reasonable variable to use is <m>t</m>. Let <m>t</m>
-          be the amount of time, in minutes, that it takes for the tub to reach
+          We should clearly identify the variable first. The solution is supposed to represent an
+          amount of time. So a reasonable variable to use is <m>t</m>. Let <m>t</m> be the amount of
+          time, in minutes, that it takes for the tub to reach
           <quantity>
-            <mag>6.25</mag><unit base="foot" exp="3"/>
+            <mag>62.5</mag><unit base="foot" exp="3"/>
           </quantity>.
           And we have the equation:
-          <me>
-            2.5 + 1.75t = 6.25
-          </me>
+          <md>
+            25 + 1.75t = 62.5
+          </md>
           (We are not concerned with solving this equation at this time.)
         </p>
       </solution>
@@ -447,7 +343,7 @@
             In the year 2020, the world population was <m>7.821</m> billion. And it was growing at
             a rate of about <m>0.075\,\frac{\text{billion}}{\text{year}}</m>. At this rate, how many
             years from 2020 will it take for the world population to reach <m>9</m> billion? Set up
-            an equation where the solution is the number of years it will take.
+            an equation to model this question.
           </p>
           <instruction>
             Use <c>t</c> for the variable.
@@ -465,7 +361,7 @@
           <p>
             Now using the pattern for rate modeling from <xref ref="men-rate-model"/>, we have:
             <md>
-              <mrow>(\text{initial value}) + (\text{rate})\cdot\text{variable} \amp= (\text{final value})</mrow>
+              <mrow>\text{initialValue} + \text{rate}\cdot\text{timePassed} \amp= \text{finalValue}</mrow>
               <mrow>7.821 + 0.075t \amp= 9</mrow>
             </md>
             We are not asked to solve this equation, just to write it down.
@@ -506,7 +402,7 @@
           <p>
             Now using the pattern for rate modeling from <xref ref="men-rate-model"/>, we have:
             <md>
-              <mrow>(\text{initial value}) - (\text{rate})\cdot\text{variable} \amp= (\text{final value})</mrow>
+              <mrow>\text{initialValue} - \text{rate}\cdot\text{timePassed} \amp= \text{finalValue}</mrow>
               <mrow>6.934 - 0.046t \amp= 5</mrow>
             </md>
             Notice that because the population is reducing over time, we used subtraction.
@@ -521,7 +417,7 @@
   <subsection>
     <title>Percent Applications</title>                                                                       <idx><h>Percent</h><h>applications</h></idx>
     <p>
-      Here we look at some scenarios where there is an equation to set up based on percentages. An
+      Another type of word problem we will study involves quantities changing by a percentage. An
       important habit to develop when doing math with percentages, is that it's almost always best
       to rewrite each percentage as a decimal. For example, <m>18\%</m> should be written as                  <idx><h>Percent</h><h>as a decimal</h></idx>
       <m>0.18</m> if you are going to use it to do algebra or arithmetic.
@@ -539,29 +435,41 @@
         <p>
           As soon as you are clear that the solution will be <q>Jakobi's salary from last year</q>,
           that is when you should define a variable. Since it will represent a salary, we choose
-          to use <m>S</m> as the variable. Let <m>S</m> represent Jakobi's salary from last year.
+          to use <m>S</m> as the variable.
         </p>
+        <blockquote>
+          <p>
+            Let <m>S</m> represent Jakobi's salary from last year, in dollars.
+          </p>
+        </blockquote>
         <p>
           To set up the equation, we need to think about how he arrived at this year's salary.
           His employer took last year's salary and added <m>4\%</m> to that. In a diagram, we have:
-          <me>
-            (\text{last year's salary})+(4\%\text{ of last year's salary}) = (\text{this year's salary})
-          </me>
-          We represent <q><m>4\%</m> of last year's salary</q> with <m>0.04S</m> since <m>0.04</m>
-          is the decimal equivalent to <m>4\%</m>. So out equation is:
-          <me>
+          <md>
+            \text{lastYear'sSalary}+(4\%\text{ of lastYear'sSalary}) = \text{thisYear'sSalary}
+          </md>
+          We represent <q><m>4\%</m> of lastYear'sSalary</q> as <m>0.04</m> times <m>S</m>. So our
+          equation is:
+          <md>
             S + 0.04S = 73290
-          </me>
+          </md>
           For now we are not trying to solve this equation, just practice setting it up.
         </p>
       </solution>
     </example>
 
     <p>
-      We can see a pattern here that may help with future percent applications.
-      <men xml:id="percent-model">
-        (\text{initial value}) \pm (\text{percent as decimal})\cdot(\text{initial value}) = (\text{final value})
-      </men>
+      We can see another pattern here that may help with future percent applications.
+    </p>
+    <remark>
+      <p>
+        <md xml:id="percent-model" number="yes">
+          \text{initialValue} \pm \text{percentAsDecimal}\cdot\text{initialValue} = \text{finalValue}
+        </md>
+      </p>
+    </remark>
+
+    <p>
       In Jakobi's situation, his salary rose, so the <m>\pm</m> symbol would be an addition sign. We
       can imagine other applications (like a discount at a clothing store) where the initial value
       is reduced, and then the <m>\pm</m> symbol would be a subtraction sign.
@@ -584,7 +492,7 @@
         <statement>
           <p>
             Kirima offered to pay the bill and tip at a restaurant where she and her friends had
-            dinner. In total she paid <m>\$150</m> even, where the tip was a little more than
+            dinner. In total she paid <m>\$150</m>, where the tip was a little more than
             <m>19\%</m>. We'd like to know what was the bill before tip. Set up an equation for this
             situation.
           </p>
@@ -627,14 +535,14 @@
           We'll let <m>p</m> be the original price of the refrigerator. To obtain the discounted
           price, we would have to take the original price and <em>subtract</em> <m>15\%</m> of that
           amount. In a diagram, we have:
-          <me>
-            (\text{original price})-(15\%\text{ of the original price}) = (\text{discounted price})
-          </me>
+          <md>
+            \text{originalPrice}-(15\%\text{ of theOriginalPrice}) = \text{discountedPrice}
+          </md>
           So given the details of this refrigerator sale and our choice to use <m>p</m> to represent
           the original price, we have:
-          <me>
+          <md>
             p - 0.15p = 612
-          </me>
+          </md>
           We are happy to write this equation down and do not need to solve it for now.
         </p>
       </solution>
@@ -677,6 +585,105 @@
   </subsection>
 
   <subsection>
+    <title>Proportional Equations</title>
+    <p>
+      Proportional equations are used to solve many real-life applications where two quantities vary          <idx><h>Proportions</h></idx>
+      together. For example if you have more liquid Tylenol in a medicine cup, then you have more
+      milligrams of the drug itself dissolved in that liquid. The two quantities (volume of liquid
+      and mass of the drug) vary together.
+    </p>
+
+    <example xml:id="example-proportion-in-price">                                                            <idx><h>Proportions</h><h>applications of</h></idx>
+      <p>
+        Suppose we know the cost of a <m>21</m>-ounce box of cereal, and we want to know the cost of
+        and <m>18</m>-ounce box assuming that it costs the same per ounce. Letting <m>C</m> be this
+        unknown cost (in dollars), we could set up a proportional equation. Whether we are dealing
+        with the smaller box or the larger box, the ratio of cost to weight is supposed to be the
+        same. So in the following equation on the left, we enter details for the larger box. And on
+        the right, for the smaller box.
+        <md>
+          <mrow>\frac{\text{cost in dollars}}{\text{weight in oz}}\amp=\frac{\text{cost in dollars}}{\text{weight in oz}}</mrow>
+          <mrow>\frac{\$3.99}{21\,\text{oz}}\amp=\frac{\$C}{18\,\text{oz}}</mrow>
+        </md>
+        We can rewrite this equation without the units:
+        <md>
+          \frac{3.99}{21}=\frac{C}{18}
+        </md>
+        And we have an equation. At this time, we are still only interested in setting up equations,
+        so we are not concerned with solving this equation.
+      </p>
+    </example>
+
+    <example xml:id="example-proportion-in-taxes">
+      <statement>
+        <p>
+          Property taxes for a residential property are proportional to the assessed value of the
+          property. A certain home is assessed at <m>\$234{,}100</m> and its annual property taxes
+          are <m>\$2{,}518.92</m>. Set up an equation to find the annual property taxes for the
+          house next door that is assessed at <m>\$287{,}500</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let <m>T</m> be the annual property taxes (in dollars) for a property assessed at
+          <m>\$287{,}500</m>. We can write and this proportion:
+          <md>
+            <mrow>\frac{\text{tax}}{\text{property value}}\amp=\frac{\text{tax}}{\text{property value}}</mrow>
+            <mrow>\frac{2518.92}{234100}\amp=\frac{T}{287500}</mrow>
+          </md>
+          We're not trying to solve this equation yet.
+        </p>
+      </solution>
+    </example>
+
+    <exercise label="tylenol-proportion">
+      <webwork>
+          <pg-code>
+            Context("ImplicitEquation")->variables->are(q => 'Real');
+            Context()->flags->set(reduceConstants => 0);
+            $answer = ImplicitEquation("5/160 = q/60");
+          </pg-code>
+        <statement>
+          <p>
+            Infant Tylenol contains
+            <quantity>
+              <mag>160</mag><unit prefix="milli" base="gram"/>
+            </quantity>
+            of acetaminophen in each
+            <quantity>
+              <mag>5</mag><unit prefix="milli" base="liter"/>
+            </quantity>
+            of the liquid medication. If Bao's baby is prescribed
+            <quantity>
+              <mag>60</mag><unit prefix="milli" base="gram"/>
+            </quantity>
+            of acetaminophen, set up an equation to find how many milliliters of the liquid 
+            medication he should give the baby.
+          </p>
+          <instruction>
+            Use <c>q</c> for the quantity of liquid medication to give.
+          </instruction>
+          <p>
+            <var name="$answer" width="16"/>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Assume Bao should give <m>q</m> milliliters of liquid medicine, so we can set up the
+            following proportion:
+            <md>
+              <mrow>\frac{\text{amount of liquid medicine in mL}}{\text{amount of acetaminophen in mg}}\amp=\frac{\text{amount of liquid medicine in mL}}{\text{amount of acetaminophen in mg}}</mrow>
+              <mrow>\frac{5\,\text{mL}}{160\,\text{mg}}\amp=\frac{q\,\text{mL}}{60\,\text{mg}}</mrow>
+              <mrow>\frac{5}{160}\amp=\frac{q}{60}</mrow>
+            </md>
+            For now, we are just setting up this equation, and not trying to solve it.
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+  </subsection>
+
+  <subsection>
     <title>Inequalities in Modeling</title>
     <p>
       Occasionally an equation is not the most appropriate tool for a model, and an inequality is
@@ -705,12 +712,12 @@
           This exercise is much like the rate exercises from <xref ref="subsection-rate-models"/>.
           We have an initial expense: the <m>\$35</m> one-time registration fee. We have a rate:
           <m>9.50\,\frac{\text{dollar}}{\text{hour}}</m>. And we have a final cost to work with:
-          <m>\$300</m>. However we are not exactly trying to make Hana blow through her entire
-          budget, so it's not appropriate to write the <em>equation</em> <m>35 + 9.50t = 300</m>.
-          The<m>\$300</m> is her <em>maximum</em>. It's totally fine (and encouraged!) for her to
-          spend less than that. So we need to set this up using an inequality symbol. We need
+          <m>\$300</m>. However we are not trying to make Hana use up her entire budget, so it's not
+          appropriate to write the <em>equation</em> <m>35 + 9.50t = 300</m>. The <m>\$300</m> is
+          her <em>maximum</em>. It's totally fine (and encouraged!) for her to spend less than that.
+          So we need to set up an inequality. We need
           <md>
-            <mrow>(\text{registration fee}) + (\text{cost of hours driven}) \amp\leq (\text{budget maximum})</mrow>
+            <mrow>\text{registrationFee} + \text{rate}\cdot\text{hoursDriven} \amp\leq \text{budgetMaximum}</mrow>
             <mrow>35 + 9.50t \amp\leq 300</mrow>
           </md>
           For now it is enough to write down this inequality, and we will solve it later.
@@ -731,8 +738,8 @@
           <p>
             You read on the internet that from the year 2010 to the year 2023, community colleges
             experienced over <m>37\%</m> enrollment decline. In spring 2023 at Portland Community
-            College, there were <m>25{,}957</m> students. Write an inequality where the solution
-            set represents how many students may have been at PCC in spring 2010.
+            College, there were <m>25{,}957</m> students. Write an inequality where the solution set
+            represents how many students may have been at PCC in spring 2010.
           </p>
           <instruction>
             Use <c>x</c> for the variable.
@@ -749,15 +756,15 @@
             experienced <em>over</em> a <m>37\%</m> enrollment decline, not exactly a <m>37\%</m>
             decline. So we write the following:
             <md>
-              <mrow>(\text{initial value}) \pm (\text{percent as decimal})\cdot(\text{initial value}) \amp\mathrel{?} (\text{final value})</mrow>
+              <mrow>\text{initialValue} \pm \text{rate}\cdot\text{initialValue} \amp\mathrel{?} \text{finalValue}</mrow>
               <mrow>x - 0.37x \amp\mathrel{?} 25957</mrow>
             </md>
             But what inequality symbol makes sense here? If the decline was <em>more</em> than
             <m>37\%</m>, then <m>x</m> started out larger than what it would have to be for
             <m>x - 0.37x</m> to equal <m>25957</m>. So we need a greater than sign:
-            <me>
+            <md>
               x - 0.37x \gt 25957
-            </me>
+            </md>
             Once again, we will not try to solve this at this time.
           </p>
         </solution>
@@ -766,11 +773,26 @@
   </subsection>
 
   <reading-questions>
-    <exercise label="understand-rate-better">
+    <exercise label="first-step-to-word-problems">
       <statement>
         <p>
-          In a word problem where there is some kind of rate, it can help you to understand the
-          pattern if you make a <fillin characters="10"/>.
+          What is the first thing you should do when tackling a word problem?
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+    <exercise label="second-step-to-word-problems">
+      <statement>
+        <p>
+          What is the second thing you should do when tackling a word problem?
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+    <exercise label="equation-patterns">
+      <statement>
+        <p>
+          How many equation patterns were presented in this section, and what are they used for?
         </p>
       </statement>
       <response/>
@@ -785,19 +807,6 @@
       </statement>
       <response/>
     </exercise>
-    <!-- <exercise label="compare-subtraction-phrases">
-      <statement>
-        <p>
-          Is there any difference between these three phrases, or do they all mean the same thing?
-          <ul>
-            <li>ten subtracted from a number</li>
-            <li>ten less than a number</li>
-            <li>ten minus a number</li>
-          </ul>
-        </p>
-      </statement>
-      <response/>
-    </exercise> -->
   </reading-questions>
 
   <exercises>
@@ -1005,872 +1014,14 @@
       </exercise>
     </subexercises>
 
-    <!-- <subexercises>
-      <title>Skills Practice</title>
-      <exercisegroup cols="2">
-        <title>Translating English into Math</title>
-        <introduction>
-          <p>
-            Translate the phrase or sentence into a math expression or equation
-            (whichever is appropriate).
-          </p>
-        </introduction>
-
-        <exercise label="a-more-than-a-number">
-          <webwork xml:id="webwork-a-more-than-a-number">
-            <pg-code>
-              $a = random(1,10);
-              $ans = Compute("x + $a");
-              $numberWorda = numberWord($a);
-            </pg-code>
-            <statement>
-              <p>
-                <var name="$numberWorda"/> more than a number
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="a-less-than-a-number">
-          <webwork xml:id="webwork-a-less-than-a-number">
-            <pg-code>
-              $a = random(1,10);
-              $ans = Compute("x - $a");
-              $numberWorda = numberWord($a);
-            </pg-code>
-            <statement>
-              <p>
-                <var name="$numberWorda"/> less than a number
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="the-sum-of-a-and-a-number">
-          <webwork xml:id="webwork-the-sum-of-a-and-a-number">
-            <pg-code>
-              $a = random(1,10);
-              $ans = Compute("$a + x");
-              $numberWorda = numberWord($a);
-            </pg-code>
-            <statement>
-              <p>
-                the sum of <var name="$numberWorda"/> and a number
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="the-differencee-between-a-number-and-a">
-          <webwork xml:id="webwork-the-differencee-between-a-number-and-a">
-            <pg-code>
-              $a = random(1,10);
-              $ans = Compute("x - $a");
-              $numberWorda = numberWord($a);
-            </pg-code>
-            <statement>
-              <p>
-                the difference between a number and <var name="$numberWorda"/>
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="a-subtracted-from-a-number">
-          <webwork xml:id="webwork-a-subtracted-from-a-number">
-            <pg-code>
-              $a = random(1,10);
-              $ans = Compute("x - $a");
-              $numberWorda = numberWord($a);
-            </pg-code>
-            <statement>
-              <p>
-                <var name="$numberWorda"/> subtracted from a number
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="a-increased-by-a-number">
-          <webwork xml:id="webwork-a-increased-by-a-number">
-            <pg-code>
-              $a = random(1,10);
-              $ans = Compute("$a + x");
-              $numberWorda = numberWord($a);
-            </pg-code>
-            <statement>
-              <p>
-                <var name="$numberWorda"/> increased by a number
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="a-decreased-by-a-number">
-          <webwork xml:id="webwork-a-decreased-by-a-number">
-            <pg-code>
-              $a = random(1,10);
-              $ans = Compute("$a - x");
-              $numberWorda = numberWord($a);
-            </pg-code>
-            <statement>
-              <p>
-                <var name="$numberWorda"/> decreased by a number
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="a-times-a-number,-decreased-by-b">
-          <webwork xml:id="webwork-a-times-a-number-then-decreased-by-b">
-            <pg-code>
-              ($a, $b) = (2..15)[NchooseK(14,2)];
-              $ans = Compute("$a x - $b");
-              $numberWorda = numberWord($a);
-              $numberWordb = numberWord($b);
-            </pg-code>
-            <statement>
-              <p>
-                <var name="$numberWorda"/> times a number, decreased by <var name="$numberWordb"/>
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="a-times-a-number,-increased-by-b">
-          <webwork xml:id="webwork-a-times-a-number-then-increased-by-b">
-            <pg-code>
-              ($a, $b) = (2..15)[NchooseK(14,2)];
-              $ans = Compute("$a x + $b");
-              $numberWorda = numberWord($a);
-              $numberWordb = numberWord($b);
-            </pg-code>
-            <statement>
-              <p>
-                <var name="$numberWorda"/> times a number, increased by <var name="$numberWordb"/>
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="a-times-a-number-decreased-by-b">
-          <webwork xml:id="webwork-a-times-a-number-decreased-by-b">
-            <pg-code>
-              ($a, $b) = (2..15)[NchooseK(14,2)];
-              $ans = Compute("$a(x - $b)");
-              $numberWorda = numberWord($a);
-              $numberWordb = numberWord($b);
-            </pg-code>
-            <statement>
-              <p>
-                <var name="$numberWorda"/> times a number decreased by <var name="$numberWordb"/>
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="a-times-a-number-increased-by-b">
-          <webwork xml:id="webwork-a-times-a-number-increased-by-b">
-            <pg-code>
-              ($a, $b) = (2..15)[NchooseK(14,2)];
-              $ans = Compute("$a(x + $b)");
-              $numberWorda = numberWord($a);
-              $numberWordb = numberWord($b);
-            </pg-code>
-            <statement>
-              <p>
-                <var name="$numberWorda"/> times a number increased by <var name="$numberWordb"/>
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="a-more-than-the-product-of-b-and-a-number">
-          <webwork xml:id="webwork-a-more-than-the-product-of-b-and-a-number">
-            <pg-code>
-              ($a, $b) = (2..15)[NchooseK(14,2)];
-              $ans = Compute("$b x + $a");
-              $numberWorda = numberWord($a);
-              $numberWordb = numberWord($b);
-            </pg-code>
-            <statement>
-              <p>
-                <var name="$numberWorda"/> more than the product of <var name="$numberWordb"/> and
-                a number
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="a-less-than-the-product-of-b-and-a-number">
-          <webwork xml:id="webwork-a-less-than-the-product-of-b-and-a-number">
-            <pg-code>
-              ($a, $b) = (2..15)[NchooseK(14,2)];
-              $ans = Compute("$b x - $a");
-              $numberWorda = numberWord($a);
-              $numberWordb = numberWord($b);
-            </pg-code>
-            <statement>
-              <p>
-                <var name="$numberWorda"/> less than the product of <var name="$numberWordb"/> and
-                a number
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="a-more-than-the-quotient-of-a-number-and-b">
-          <webwork xml:id="webwork-a-more-than-the-quotient-of-a-number-and-b">
-            <pg-code>
-              ($a, $b) = (2..15)[NchooseK(14,2)];
-              $ans = Compute("x/$b + $a");
-              $numberWorda = numberWord($a);
-              $numberWordb = numberWord($b);
-            </pg-code>
-            <statement>
-              <p>
-                <var name="$numberWorda"/> more than the quotient of a number and
-                <var name="$numberWordb"/>
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="a-less-than-the-quotient-of-a-number-and-b">
-          <webwork xml:id="webwork-a-less-than-the-quotient-of-a-number-and-b">
-            <pg-code>
-              ($a, $b) = (2..15)[NchooseK(14,2)];
-              $ans = Compute("x/$b - $a");
-              $numberWorda = numberWord($a);
-              $numberWordb = numberWord($b);
-            </pg-code>
-            <statement>
-              <p>
-                <var name="$numberWorda"/> less than the quotient of a number and
-                <var name="$numberWordb"/>
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="f-of-a-number">
-          <webwork xml:id="webwork-f-of-a-number">
-            <pg-code>
-              Context("Fraction");
-              ($a, $b) = random_coprime([1..15],[2..15]);
-              $f = Fraction($a, $b);
-              $ans = Compute("$f x");
-              $numberWordf = numberWord($a/$b, denominator => $b);
-            </pg-code>
-            <statement>
-              <p>
-                <var name="$numberWordf"/> of a number
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-        <exercise label="f-of-a-number-copy">
-          <webwork copy="webwork-f-of-a-number"/>
-        </exercise>
-
-        <exercise label="a-number-increased-by-f-of-itself">
-          <webwork xml:id="webwork-a-number-increased-by-f-of-itself">
-            <pg-code>
-              Context("Fraction");
-              ($a, $b) = random_coprime([1..15],[2..15]);
-              $f = Fraction($a, $b);
-              $ans = Compute("x + $f x");
-              $numberWordf = numberWord($a/$b, denominator => $b);
-            </pg-code>
-            <statement>
-              <p>
-                a number increased by <var name="$numberWordf"/> of itself
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="a-number-decreased-by-f-of-itself">
-          <webwork xml:id="webwork-a-number-decreased-by-f-of-itself">
-            <pg-code>
-              Context("Fraction");
-              ($a, $b) = random_coprime([1..15],[2..15]);
-              $f = Fraction($a, $b);
-              $ans = Compute("x - $f x");
-              $numberWordf = numberWord($a/$b, denominator => $b);
-            </pg-code>
-            <statement>
-              <p>
-                a number decreased by <var name="$numberWordf"/> of itself
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="a-less-than-b-times-a-number">
-          <webwork xml:id="webwork-a-less-than-b-times-a-number">
-            <pg-code>
-              ($a, $b) = (2..15)[NchooseK(14,2)];
-              $ans = Compute("$b x - $a");
-              $numberWorda = numberWord($a);
-              $numberWordb = numberWord($b);
-            </pg-code>
-            <statement>
-              <p>
-                <var name="$numberWorda"/> less than <var name="$numberWordb"/> times a number
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="a-more-than-b-times-a-number">
-          <webwork xml:id="webwork-a-more-than-b-times-a-number">
-            <pg-code>
-              ($a, $b) = (2..15)[NchooseK(14,2)];
-              $ans = Compute("$b x + $a");
-              $numberWorda = numberWord($a);
-              $numberWordb = numberWord($b);
-            </pg-code>
-            <statement>
-              <p>
-                <var name="$numberWorda"/> more than <var name="$numberWordb"/> times a number
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="a-more-than-a-number-is-b">
-          <webwork xml:id="webwork-a-more-than-a-number-is-b">
-            <pg-macros>
-              <macro-file>parserLinearRelation.pl</macro-file>
-            </pg-macros>
-            <pg-code>
-              ($a, $b) = (11..50)[NchooseK(40,2)];
-              Context("LinearRelation");
-              $ans = LinearRelation("x + $a = $b");
-              $NumberWorda = numberWord($a, capital => 1);
-              $numberWordb = numberWord($b);
-            </pg-code>
-            <statement>
-              <p>
-                <var name="$NumberWorda"/> more than a number is <var name="$numberWordb"/>.
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="a-less-than-a-number-is-b">
-          <webwork xml:id="webwork-a-less-than-a-number-is-b">
-            <pg-macros>
-              <macro-file>parserLinearRelation.pl</macro-file>
-            </pg-macros>
-            <pg-code>
-              ($a, $b) = (11..50)[NchooseK(40,2)];
-              Context("LinearRelation");
-              $ans = LinearRelation("x - $a = $b");
-              $NumberWorda = numberWord($a, capital => 1);
-              $numberWordb = numberWord($b);
-            </pg-code>
-            <statement>
-              <p>
-                <var name="$NumberWorda"/> less than a number is <var name="$numberWordb"/>.
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="a-times-a-number-is-b">
-          <webwork xml:id="webwork-a-times-a-number-is-b">
-            <pg-macros>
-              <macro-file>parserLinearRelation.pl</macro-file>
-            </pg-macros>
-            <pg-code>
-              ($a, $b) = (2..15)[NchooseK(14,2)];
-              Context("LinearRelation");
-              $ans = LinearRelation("$a x = $b");
-              $NumberWorda = numberWord($a, capital => 1);
-              $numberWordb = numberWord($b);
-            </pg-code>
-            <statement>
-              <p>
-                <var name="$NumberWorda"/> times a number is <var name="$numberWordb"/>.
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="a-number-divided-by-a-is-b">
-          <webwork xml:id="webwork-a-number-divided-by-a-is-b">
-            <pg-macros>
-              <macro-file>parserLinearRelation.pl</macro-file>
-            </pg-macros>
-            <pg-code>
-              ($a, $b) = (2..15)[NchooseK(14,2)];
-              Context("LinearRelation");
-              $ans = LinearRelation("x/$a = $b");
-              $numberWorda = numberWord($a);
-              $numberWordb = numberWord($b);
-            </pg-code>
-            <statement>
-              <p>
-                A number divided by <var name="$numberWorda"/> is <var name="$numberWordb"/>.
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="the-sum-of-a-and-a-number-is-b">
-          <webwork xml:id="webwork-the-sum-of-a-and-a-number-is-b">
-            <pg-macros>
-              <macro-file>parserLinearRelation.pl</macro-file>
-            </pg-macros>
-            <pg-code>
-              ($a, $b) = (11..50)[NchooseK(40,2)];
-              Context("LinearRelation");
-              $ans = LinearRelation("$a + x = $b");
-              $numberWorda = numberWord($a);
-              $numberWordb = numberWord($b);
-            </pg-code>
-            <statement>
-              <p>
-                The sum of <var name="$numberWorda"/> and a number is <var name="$numberWordb"/>.
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="the-difference-between-a-number-and-a-is-b">
-          <webwork xml:id="webwork-the-difference-between-a-number-and-a-is-b">
-            <pg-macros>
-              <macro-file>parserLinearRelation.pl</macro-file>
-            </pg-macros>
-            <pg-code>
-              ($a, $b) = (11..50)[NchooseK(40,2)];
-              Context("LinearRelation");
-              $ans = LinearRelation("x - $a = $b");
-              $numberWorda = numberWord($a);
-              $numberWordb = numberWord($b);
-            </pg-code>
-            <statement>
-              <p>
-                The difference between a number and <var name="$numberWorda"/> is <var name="$numberWordb"/>.
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="the-product-of-a-and-a-number-is-b">
-          <webwork xml:id="webwork-the-product-of-a-and-a-number-is-b">
-            <pg-macros>
-              <macro-file>parserLinearRelation.pl</macro-file>
-            </pg-macros>
-            <pg-code>
-              ($a, $b) = (2..15)[NchooseK(14,2)];
-              Context("LinearRelation");
-              $ans = LinearRelation("$a x = $b");
-              $numberWorda = numberWord($a);
-              $numberWordb = numberWord($b);
-            </pg-code>
-            <statement>
-              <p>
-                The product of <var name="$numberWorda"/> and a number is <var name="$numberWordb"/>.
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="the-quotient-of-a-number-and-a-is-b">
-          <webwork xml:id="webwork-the-quotient-of-a-number-and-a-is-b">
-            <pg-macros>
-              <macro-file>parserLinearRelation.pl</macro-file>
-            </pg-macros>
-            <pg-code>
-              ($a, $b) = (2..15)[NchooseK(14,2)];
-              Context("LinearRelation");
-              $ans = LinearRelation("x/$a= $b");
-              $numberWorda = numberWord($a);
-              $numberWordb = numberWord($b);
-            </pg-code>
-            <statement>
-              <p>
-                The quotient of a number and <var name="$numberWorda"/> is <var name="$numberWordb"/>.
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="a-more-than-c-times-a-number-is-b">
-          <webwork xml:id="webwork-a-more-than-c-times-a-number-is-b">
-            <pg-macros>
-              <macro-file>parserLinearRelation.pl</macro-file>
-            </pg-macros>
-            <pg-code>
-              ($a, $b, $c) = (2..15)[NchooseK(14,3)];
-              Context("LinearRelation");
-              $ans = LinearRelation("$c x + $a = $b");
-              $NumberWorda = numberWord($a, capital => 1);
-              $numberWordb = numberWord($b);
-              $numberWordc = numberWord($c);
-            </pg-code>
-            <statement>
-              <p>
-                <var name="$NumberWorda"/> more than <var name="$numberWordc"/> times a number is
-                <var name="$numberWordb"/>.
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="a-less-than-c-times-a-number-is-b">
-          <webwork xml:id="webwork-a-less-than-c-times-a-number-is-b">
-            <pg-macros>
-              <macro-file>parserLinearRelation.pl</macro-file>
-            </pg-macros>
-            <pg-code>
-              ($a, $b, $c) = (2..15)[NchooseK(14,3)];
-              Context("LinearRelation");
-              $ans = LinearRelation("$c x - $a = $b");
-              $NumberWorda = numberWord($a, capital => 1);
-              $numberWordb = numberWord($b);
-              $numberWordc = numberWord($c);
-            </pg-code>
-            <statement>
-              <p>
-                <var name="$NumberWorda"/> less than <var name="$numberWordc"/> times a number is
-                <var name="$numberWordb"/>.
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="a-is-the-product-of-b-and-c-less-than-a-number">
-          <webwork xml:id="webwork-a-is-the-product-of-b-and-c-less-than-a-number">
-            <pg-macros>
-              <macro-file>parserLinearRelation.pl</macro-file>
-            </pg-macros>
-            <pg-code>
-              ($a, $b, $c) = (2..15)[NchooseK(14,3)];
-              Context("LinearRelation");
-              $ans = LinearRelation("$a = $b(x - $c)");
-              $NumberWorda = numberWord($a, capital => 1);
-              $numberWordb = numberWord($b);
-              $numberWordc = numberWord($c);
-            </pg-code>
-            <statement>
-              <p>
-                <var name="$NumberWorda"/> is the product of <var name="$numberWordb"/> and
-                <var name="$numberWordc"/> less than a number.
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="the-product-of-a-and-b-more-than-a-number-is-c">
-          <webwork xml:id="webwork-the-product-of-a-and-b-more-than-a-number-is-c">
-            <pg-macros>
-              <macro-file>parserLinearRelation.pl</macro-file>
-            </pg-macros>
-            <pg-code>
-              ($a, $b, $c) = (2..15)[NchooseK(14,3)];
-              Context("LinearRelation");
-              $ans = LinearRelation("$a(x + $b) = $c");
-              $numberWorda = numberWord($a);
-              $numberWordb = numberWord($b);
-              $numberWordc = numberWord($c);
-            </pg-code>
-            <statement>
-              <p>
-                The product of <var name="$numberWorda"/> and <var name="$numberWordb"/> more than
-                a number is <var name="$numberWordc"/>.
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="the-sum-of-a-and-a-number-is-the-same-as-b-times-that-number">
-          <webwork xml:id="webwork-the-sum-of-a-and-a-number-is-the-same-as-b-times-that-number">
-            <pg-macros>
-              <macro-file>parserLinearRelation.pl</macro-file>
-            </pg-macros>
-            <pg-code>
-              ($a, $b) = (2..15)[NchooseK(14,2)];
-              Context("LinearRelation");
-              $ans = LinearRelation("$a + x = $b x");
-              $numberWorda = numberWord($a);
-              $numberWordb = numberWord($b);
-            </pg-code>
-            <statement>
-              <p>
-                The sum of <var name="$numberWorda"/> and a number is the same as
-                <var name="$numberWordb"/> times that number.
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="a-times-a-number-is-the-same-as-b-less-than-twice-that-number">
-          <webwork xml:id="webwork-a-times-a-number-is-the-same-as-b-less-than-twice-that-number">
-            <pg-macros>
-              <macro-file>parserLinearRelation.pl</macro-file>
-            </pg-macros>
-            <pg-code>
-              ($a, $b) = (2..15)[NchooseK(14,2)];
-              Context("LinearRelation");
-              $ans = LinearRelation("$a x = 2x - $b");
-              $NumberWorda = numberWord($a,capital => 1);
-              $numberWordb = numberWord($b);
-            </pg-code>
-            <statement>
-              <p>
-                <var name="$NumberWorda"/> times a number is the same as <var name="$numberWordb"/>
-                less than twice that number.
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-
-        <exercise label="a-less-than-the-quotient-of-a-number-and-b-is-the-same-as-the-quotient-of-that-number-and-c">
-          <webwork xml:id="webwork-a-less-than-the-quotient-of-a-number-and-b-is-the-same-as-the-quotient-of-that-number-and-c">
-            <pg-macros>
-              <macro-file>parserLinearRelation.pl</macro-file>
-            </pg-macros>
-            <pg-code>
-              ($a, $b, $c) = (2..15)[NchooseK(14,3)];
-              Context("LinearRelation");
-              $ans = LinearRelation("x/$a = $c x - $b");
-              $NumberWorda = numberWord($a, capital => 1);
-              $numberWordb = numberWord($b);
-              $numberWordc = numberWord($c);
-            </pg-code>
-            <statement>
-              <p>
-                <var name="$NumberWorda"/> less than the quotient of a number and
-                <var name="$numberWordb"/> is the same as the quotient of that number and
-                <var name="$numberWordc"/>.
-              </p>
-              <instruction>
-                Use <m>x</m> as the variable.
-              </instruction>
-              <p>
-                <var name="$ans" width="16"/>
-              </p>
-            </statement>
-          </webwork>
-        </exercise>
-      </exercisegroup>
-    </subexercises> -->
-
     <subexercises>
       <title>Applications</title>
       <exercisegroup>
         <title>Modeling with Linear Equations</title>
         <introduction>
           <p>
-            Write an equation to model the scenario. There is no need to solve the equation.
+            Read the scenario. Then write a complete sentence that defines a variable to use.
+            Lastly, write an equation to model the scenario. There is no need to solve the equation.
           </p>
         </introduction>
 
@@ -2028,7 +1179,7 @@
                 You planted a young tree in front of your house, and it was
                 <m><var name="$initial"/></m> feet tall. Ever since, it has been growing by
                 <m><var name="$speed"/></m> each year. How many years will it take for the tree
-                to grow to be <var name="$final"/> feet tall? Write an equation to model this
+                to grow to be <m><var name="$final"/></m> feet tall? Write an equation to model this
                 scenario. There is no need to solve it.
               </p>
               <instruction>
@@ -2075,18 +1226,18 @@
             <solution>
               <p>
                 This is a rate exercise, and we can use
-                <me>
+                <md>
                   (\text{initial value}) \pm (\text{rate})\cdot\text{variable} = (\text{final value})
-                </me>
+                </md>
                 In this case, the initial value for the pressure is <m><var name="$initial"/></m>,
                 the pressure is increasing (so we will add, not subtract), the rate is
                 <m><var name="$rate"/></m>, and the final pressure value is
                 <m><var name="$final"/></m>. The one thing we do not know is how much time it will
                 take to fill the tire, so we decide to use <m>t</m> to represent that time. So the
                 equation to set up is:
-                <me>
+                <md>
                   <var name="$equation"/>
-                </me>
+                </md>
               </p>
             </solution>
           </webwork>
@@ -2113,11 +1264,11 @@
             <statement>
               <p>
                 To save up for a new phone that costs <m><var name="$end"/></m>, <var name="$name"/>
-                sets aside 1% of <var name="$name->possessive"/> pay each week. This works out to
-                <m><var name="$speed"/></m> per week. At present, <var name="$name->subject"/>
-                <var name="$name->have"/> <m><var name="$start"/></m> saved up. How long will it be
-                until <var name="$name"/> has saved up enough? Write an equation to model this
-                scenario. There is no need to solve it.
+                sets aside <m>1\%</m> of <var name="$name->possessive"/> pay each week. This works
+                out to <m><var name="$speed"/></m> per week. At present,
+                <var name="$name->subject"/> <var name="$name->have"/> <m><var name="$start"/></m>
+                saved up. How long will it be until <var name="$name"/> has saved up enough? Write
+                an equation to model this scenario. There is no need to solve it.
               </p>
               <instruction>
                 Use <c>t</c> as the variable.
@@ -2537,18 +1688,18 @@
             <solution>
               <p>
                 This is a percent exercise, and we can use
-                <me>
+                <md>
                   (\text{initial value}) \pm (\text{percent as decimal})\cdot(\text{initial value}) = (\text{final value})
-                </me>
+                </md>
                 In this case, the initial value is the cost before the sales tax is applied, and
                 this is the thing we do not yet know. We decide to use <m>p</m> to represent this
                 quantity, standing for <q>price</q>. The sales tax makes the final cost increase, so
                 we use addition (not subtraction). The decimal for the percent of increase is
                 <m><var name="$decimal"/></m>. And the final value is the total, which is
                 <m><var name="$final"/></m>. So the equation to set up is:
-                <me>
+                <md>
                   <var name="$equation"/>
-                </me>
+                </md>
               </p>
             </solution>
           </webwork>
@@ -2672,6 +1823,249 @@
         </exercise>
         <exercise label="median-rent-linear-model-copy">
           <webwork copy="webwork-median-rent-linear-model"/>
+        </exercise>
+        <exercise label="soup-recipe-linear-model">
+          <webwork xml:id="webwork-soup-recipe-linear-model">
+            <pg-macros>
+              <macro-file>parserLinearRelation.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $recipe = random(10, 20, 5);
+              ($volA, $volB) = random_subset(2, 1, 1.25, 1.5, 1.75, 2.25, 2.5, 2.75);
+              Context("LinearRelation");
+              $equation = LinearRelation("x/$volB = $recipe/$volA");
+            </pg-code>
+            <statement>
+              <p>
+                An old cookbook has a recipe for soup that uses <m><var name="$recipe"/></m> grams
+                of flour for thickener. The recipe makes <m><var name="$volA"/></m> gallons of soup,
+                but you are adjusting it to make <m><var name="$volB"/></m> gallons. How much flour
+                should you use? Set up an equation to answer this question. There is no need to
+                solve it.
+              </p>
+              <instruction>
+                Use <c>x</c> as the variable.
+              </instruction>
+              <p>
+                <var name="$equation" width="16"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                Let <m>x</m> be how many grams of flour we should use. The amount of flour is
+                proportional to the amount of soup, so we can compare the ratios of flour to soup
+                for our batch with the original recipe:
+                <md>
+                  \frac{x}{<var name="$volB"/>} = \frac{<var name="$recipe"/>}{<var name="$volA"/>}
+                </md>
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="garam-masala-recipe">
+          <webwork>
+            <pg-macros>
+              <macro-file>parserLinearRelation.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              ($recipeA, $recipeB) = random_subset(2, 1, 1.25, 1.33, 1.5, 1.67, 1.75, 2, 2.25, 2.33, 2.5, 2.67, 2.75);
+              $volA = random(8, 12, 2);
+              $spice = list_random("cumin", "coriander", "cardamom", "black pepper", "cinnamon", "cloves", "nutmeg");
+              Context("LinearRelation");
+              $equation = LinearRelation("x/$recipeB = $volA/$recipeA");
+            </pg-code>
+            <statement>
+              <p>
+                An internet recipe for <m><var name="$volA"/></m> tbsp of garam masala calls for 
+                <m><var name="$recipeA"/></m> tbsp of ground <var name="$spice"/>. You want to use
+                up the last of your ground <var name="$spice"/> supply, which is
+                <m><var name="$recipeB"/></m> tbsp. Assuming you have enough of all of the other
+                ingredients, how much garam masala will you make? Set up an equation to answer this
+                question. There is no need to solve it.
+              </p>
+              <instruction>
+                Use <c>x</c> as the variable.
+              </instruction>
+              <p>
+                <var name="$equation" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="apples-cost">
+          <webwork xml:id="webwork-apples-cost">
+            <pg-macros>
+              <macro-file>randomPerson.pl</macro-file>
+              <macro-file>parserLinearRelation.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              @p = randomPerson(n => 2);
+              @w = (random(50, 70), random(80, 90));
+              do {
+                $price = random(0.7, 1.2, 0.01);
+              } until ($price != 1);
+              Context("Currency");
+              @creal = map {$_*$price} (@w);
+              @c = map {Currency($_)} @creal;
+              Context("LinearRelation");
+              $equation = LinearRelation("x/$w[1] = $creal[0]/$w[0]");
+            </pg-code>
+            <statement>
+              <p>
+                <var name="$p[0]"/> and <var name="$p[1]"/> went to the weekend market to buy apples
+                in bulk for a school event, canning lots of applesauce. <var name="$p[0]"/> bought
+                <var name="$w[0]"/> lb of apples and paid <var name="$c[0]"/>. <var name="$p[1]"/>
+                has bagged <var name="$p[1]->their"/> apples and has <var name="$w[1]"/> lb of
+                apples ready. How much will it <var name="$p[1]"/>'s bag of apples cost? Set up an 
+                equation to answer this question. There is no need to solve it.
+              </p>
+              <instruction>
+                Use <c>x</c> as the variable.
+              </instruction>
+              <p>
+                <var name="$equation" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="architect-model">
+          <webwork>
+            <pg-macros>
+              <macro-file>randomPerson.pl</macro-file>
+              <macro-file>parserLinearRelation.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $p = randomPerson();
+              $building = random(30,80,2);
+              $model = random(2,10);
+              @aux[0] = 5.5*$model;
+              Context("LinearRelation")->variables->are(h => 'Real');
+              $equation = LinearRelation("h/5.5 = $model/$building");
+            </pg-code>
+            <statement>
+              <p>
+                <var name="$p"/> is an architect and <var name="$p->they"/> <var name="$p->are"/>
+                making a scale model of a building. The actual building will be
+                <m><var name="$building"/></m> ft tall. In the model, the height of the building
+                will be <m><var name="$model"/></m> in tall and there will be a little model person
+                standing next to the building. How tall should <var name="$p"/> make the model of
+                that person who is meant to represent a <m>5</m> ft <m>6</m> in tall person? Set up
+                an equation to answer this question. There is no need to solve it.
+              </p>
+              <instruction>
+                Use <c>h</c> as the variable.
+              </instruction>
+              <p>
+                <var name="$equation" width="16"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                Let <m>h</m> be the height of the person in <var name="$p"/>'s model, which we'll
+                measure in inches. We'll create a proportional equation that compares the building
+                and person's heights in the model to their heights in real life:
+                <md>
+                  <mrow>\frac{\text{height of model building in inches}}{\text{height of actual building in feet}}\amp=\frac{\text{height of model person in inches}}{\text{height of actual person in feet}}</mrow>
+                  <mrow>\frac{<var name="$model"/>\,\text{in}}{<var name="$building"/>\,\text{ft}}\amp=\frac{h\,\text{in}}{5\,\text{ft}\,6\text{in}}</mrow>
+                </md>
+                Before we can just eliminate the units, we'll need to convert
+                <quantity>
+                  <mag>5</mag><unit base="foot"/>
+                </quantity><nbsp/><quantity>
+                  <mag>6</mag><unit base="inch"/>
+                </quantity>
+                to feet:
+                <md>
+                  \frac{<var name="$model"/>\,\text{in}}{<var name="$building"/>\,\text{ft}}\amp=\frac{h\,\text{in}}{5.5\,\text{ft}}
+                </md>
+                And without units:
+                <md>
+                  \frac{<var name="$model"/>}{<var name="$building"/>}\amp=\frac{h}{5.5}
+                </md>
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="rocky-mountain-elk">
+          <webwork>
+            <pg-macros>
+              <macro-file>parserLinearRelation.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $tt = random(30,40);
+              $sp = $tt + random(5,12);
+              $st = random(8,15);
+              Context("LinearRelation");
+              $equation = LinearRelation("x/$tt = $sp/$st");
+            </pg-code>
+            <statement>
+              <p>
+                To estimate the health of the Rocky Mountain elk population in the Wenaha Wildlife
+                Area, the Oregon Department of Fish and Wildlife caught, tagged, and released
+                <m><var name="$tt" /></m> Rocky Mountain elk. A month later, they returned and
+                observed <m><var name="$sp" /></m> Rocky Mountain elk, <m><var name="$st" /></m> of
+                which had tags. Approximately how many Rocky Mountain elk are in the Wenaha Wildlife
+                Area? Set up an equation to answer this question. There is no need to solve it.
+              </p>
+              <instruction>
+                Use <c>x</c> as the variable.
+              </instruction>
+              <p>
+                <var name="$equation" width="16"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                Let <m>x</m> represent how many elk are in the Wenaha Wildlife Area. We set up a
+                proportional equation:
+                <md>
+                  <mrow>\frac{\text{tagged elk}}{\text{total elk}} \amp= \frac{\text{tagged elk}}{\text{total elk}}</mrow>
+                  <mrow>\frac{<var name="$st" />}{<var name="$sp"/>} \amp= \frac{<var name="$tt"/>}{x}</mrow>
+                </md>
+              </p>
+            </solution>
+          </webwork>
+        </exercise>
+        <exercise label="black-tailed-deer">
+          <webwork xml:id="webwork-black-tailed-deer">
+            <pg-macros>
+              <macro-file>parserLinearRelation.pl</macro-file>
+            </pg-macros>
+            <pg-code>
+              $tt = random(80,100);
+              $sp = $tt - random(10,18);
+              $st = random(6,12);
+              Context("LinearRelation");
+              $equation = LinearRelation("x/$tt = $sp/$st");
+            </pg-code>
+            <statement>
+              <p>
+                To estimate the health of the black-tailed deer population in the Jewell Meadow
+                Wildlife Area, the Oregon Department of Fish and Wildlife caught, tagged, and
+                released <m><var name="$tt" /></m> black-tailed deer. A month later, they returned
+                and observed <m><var name="$sp" /></m> black-tailed deer, <m><var name="$st" /></m>
+                of which had tags. Approximately how many black-tailed deer are in the Jewell Meadow
+                Wildlife Area? Set up an equation to answer this question. There is no need to solve
+                it.
+              </p>
+              <instruction>
+                Use <c>x</c> as the variable.
+              </instruction>
+              <p>
+                <var name="$equation" width="16"/>
+              </p>
+            </statement>
+            <solution>
+              <p>
+                Let <m>x</m> represent how many deer are in the Jewell Meadow Area. We set up a
+                proportional equation:
+                <md>
+                  <mrow>\frac{\text{tagged deer}}{\text{total deer}} \amp= \frac{\text{tagged deer}}{\text{total deer}}</mrow>
+                  <mrow>\frac{<var name="$st" />}{<var name="$sp"/>} \amp= \frac{<var name="$tt"/>}{x}</mrow>
+                </md>
+              </p>
+            </solution>
+          </webwork>
         </exercise>
       </exercisegroup>
 
@@ -2819,9 +2213,9 @@
             <solution>
               <p>
                 This is a rate exercise, and we can use
-                <me>
+                <md>
                   (\text{initial value}) \pm (\text{rate})\cdot\text{variable} \mathrel{?} (\text{final value})
-                </me>
+                </md>
                 The question mark in the above is not an equal sign, because we are trying to set
                 up an inequality. The initial value for the altitude is
                 <m><var name="$initial"/></m>, the altitude is decreasing (so we will subtract, not
@@ -2830,9 +2224,9 @@
                 decide to use <m>t</m> to represent that time. At the moment the passenger makes
                 their observation, the plane is still descending, so the altitude is greater than 
                 the final value. So our inequality is:
-                <me>
+                <md>
                   <var name="$inequality"/>
-                </me>
+                </md>
               </p>
             </solution>
           </webwork>
@@ -2886,8 +2280,8 @@
           </webwork>
         </exercise>
 
-        <exercise label="discount-linear-ineequality-model">
-          <webwork xml:id="webwork-discount-linear-ineequality-model">
+        <exercise label="discount-linear-inequality-model">
+          <webwork xml:id="webwork-discount-linear-inequality-model">
             <pg-macros>
               <macro-file>parserLinearRelation.pl</macro-file>
             </pg-macros>
@@ -3045,7 +2439,7 @@
     <author>Ann Cary</author>
     <p>
       This worksheet has the exercises that are worked out in
-      <xref ref="video-simplifying-expressions">Video</xref>.
+      <xref ref="video-simplifying-expressions"/>.
     </p>
     <p>
       Write a linear equation representing each scenario.
