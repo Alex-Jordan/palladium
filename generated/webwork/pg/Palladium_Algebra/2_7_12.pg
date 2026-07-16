@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-12T21:52:52-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,10 +27,6 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PGlateximage.pl",
-  "PCCmacros.pl",
-  "parserGraphTool.pl",
-  "Pd.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -47,43 +40,32 @@ TEXT(beginproblem());
 # PG Setup Code
 ############################################################
 Context("Point");
-Context()->flags->set(reduceConstants=>0);
-$xi=Compute("(4,0)");
-$yi=Compute("(0,-6)");
-$gt = GraphTool("{line, solid, $xi, $yi}")->with(
-  bBox => [-11, 11, 11, -11],
-  showInStatic => 0,
-);
-
-$image_1 = createLaTeXImage();
-$image_1->addToPreamble(latexImagePreamble());
-$image_1->BEGIN_LATEX_IMAGE
-\begin{tikzpicture}
-  \begin{axis}[
-      width=0.47\orccaprintwidth,
-    ]
-    \addplot+[domain=-0.666:7]{-6+1.5*x};
-  \end{axis}
-\end{tikzpicture}
-
-END_LATEX_IMAGE
+$vertex[0] = Point("(-4,10)");
+$vertex[1] = Point("(1,2)");
+$vertex[2] = Point("(10,-5)");
+$vertex[3] = Point("(-7,-13)");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Consider the line with equation [`3x-2y=12\text{.}`] Graph the line by first finding its [`x`]\- and [`y`]-intercepts.
+Find the vertex of each quadratic function.
+a.  [`r(x)=-2(x+4)^2+10`]
 
-[@KeyboardInstructions('Enter the [`x`]-intercept here.')@]**
+    [_]{$vertex[0]}{10}
 
-[_]{$xi}{5}
+a.  [`s(x)=5(x-1)^2+2`]
 
-[@KeyboardInstructions('Enter the [`y`]-intercept here.')@]**
+    [_]{$vertex[1]}{10}
 
-[_]{$yi}{5}
+a.  [`t(x)=(x-10)^2-5`]
 
-[_]{$gt}{1}
+    [_]{$vertex[2]}{10}
+
+a.  [`u(x)=3(x+7)^2-13`]
+
+    [_]{$vertex[3]}{10}
 
 END_PGML
 
@@ -92,35 +74,13 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-To find the [`x`]-intercept:
+a.  The vertex of [`\newcommand{\firsthighlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}\newcommand{\secondhighlight}[1]{\mathchoice{\colorbox{lightemerald}{$\displaystyle #1$}}{\colorbox{lightemerald}{$\textstyle #1$}}{\colorbox{lightemerald}{$\scriptstyle #1$}}{\colorbox{lightemerald}{$\scriptscriptstyle #1$}}}r(x)=-2(x\firsthighlight{{}+4})^2\secondhighlight{{}+10}`] is [`\newcommand{\firsthighlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}\newcommand{\secondhighlight}[1]{\mathchoice{\colorbox{lightemerald}{$\displaystyle #1$}}{\colorbox{lightemerald}{$\textstyle #1$}}{\colorbox{lightemerald}{$\scriptstyle #1$}}{\colorbox{lightemerald}{$\scriptscriptstyle #1$}}}(\firsthighlight{-4},\secondhighlight{10})\text{.}`]
 
-[```\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}\newcommand{\amp}{&}
-\begin{aligned}
-3x-2y\amp=12\\
-3x-2(\substitute{0})\amp=12\\
-3x\amp=12\\
-x\amp=4
-\end{aligned}
-```]
+a.  The vertex of [`\newcommand{\firsthighlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}\newcommand{\secondhighlight}[1]{\mathchoice{\colorbox{lightemerald}{$\displaystyle #1$}}{\colorbox{lightemerald}{$\textstyle #1$}}{\colorbox{lightemerald}{$\scriptstyle #1$}}{\colorbox{lightemerald}{$\scriptscriptstyle #1$}}}s(x)=5(x\firsthighlight{{}-1})^2\secondhighlight{{}+2}`] is [`\newcommand{\firsthighlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}\newcommand{\secondhighlight}[1]{\mathchoice{\colorbox{lightemerald}{$\displaystyle #1$}}{\colorbox{lightemerald}{$\textstyle #1$}}{\colorbox{lightemerald}{$\scriptstyle #1$}}{\colorbox{lightemerald}{$\scriptscriptstyle #1$}}}(\firsthighlight{1},\secondhighlight{2})\text{.}`]
 
-So the [`x`]-intercept is at [`\left(4,0\right)\text{.}`]
+a.  The vertex of [`\newcommand{\firsthighlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}\newcommand{\secondhighlight}[1]{\mathchoice{\colorbox{lightemerald}{$\displaystyle #1$}}{\colorbox{lightemerald}{$\textstyle #1$}}{\colorbox{lightemerald}{$\scriptstyle #1$}}{\colorbox{lightemerald}{$\scriptscriptstyle #1$}}}t(x)=(x\firsthighlight{{}-10})^2\secondhighlight{{}-5}`] is [`\newcommand{\firsthighlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}\newcommand{\secondhighlight}[1]{\mathchoice{\colorbox{lightemerald}{$\displaystyle #1$}}{\colorbox{lightemerald}{$\textstyle #1$}}{\colorbox{lightemerald}{$\scriptstyle #1$}}{\colorbox{lightemerald}{$\scriptscriptstyle #1$}}}(\firsthighlight{10},\secondhighlight{-5})\text{.}`]
 
-To find the [`y`]-intercept:
-
-[```\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}\newcommand{\amp}{&}
-\begin{aligned}
-3x-2y\amp=12\\
-3(\substitute{0})-2y\amp=12\\
--2y\amp=12\\
-y\amp=6\ldots
-\end{aligned}
-```]
-
-So the [`y`]-intercept is at about [`(0,-6)\text{.}`]
-
-So the graph is:
-
->> [@image(insertGraph($image_1), width=>282)@]*  <<
+a.  The vertex of [`\newcommand{\firsthighlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}\newcommand{\secondhighlight}[1]{\mathchoice{\colorbox{lightemerald}{$\displaystyle #1$}}{\colorbox{lightemerald}{$\textstyle #1$}}{\colorbox{lightemerald}{$\scriptstyle #1$}}{\colorbox{lightemerald}{$\scriptscriptstyle #1$}}}u(x)=3(x\firsthighlight{{}+7})^2\secondhighlight{{}-13}`] is [`\newcommand{\firsthighlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}\newcommand{\secondhighlight}[1]{\mathchoice{\colorbox{lightemerald}{$\displaystyle #1$}}{\colorbox{lightemerald}{$\textstyle #1$}}{\colorbox{lightemerald}{$\scriptstyle #1$}}{\colorbox{lightemerald}{$\scriptscriptstyle #1$}}}(\firsthighlight{-7},\secondhighlight{-13})\text{.}`]
 
 END_PGML_SOLUTION
 

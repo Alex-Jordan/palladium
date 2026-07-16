@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-10-28" assembly-id="section-solving-rational-equations-10-10-28">
+  <static seed="1599" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations70.pg">
+    <statement><p>Solve the equation.</p>
+<p><m>\displaystyle{ {\frac{x-4}{x+6}+\frac{6}{x+3}} = 2 }</m></p>
+<p><fillin characters="34" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{-12,-1\right\}</m>
+      </p>
+    </answer>
+    <solution><p>To get rid of fractions, we multiply each term in this equation by the common denominator, which is <m>{\left(x+6\right)\mathopen{}\left(x+3\right)}</m> in this example.</p>
+<p><m>\displaystyle{\begin{aligned}
+   \amp {\frac{x-4}{x+6}+\frac{6}{x+3}} = 2 \\
+   \amp {\frac{x-4}{x+6}\mathopen{}\left(x+6\right)\mathopen{}\left(x+3\right)+\frac{6}{x+3}\mathopen{}\left(x+6\right)\mathopen{}\left(x+3\right)} ={2\mathopen{}\left(x+6\right)\mathopen{}\left(x+3\right)} \\
+   \amp {\left(x-4\right)\mathopen{}\left(x+3\right)+6\mathopen{}\left(x+6\right)} = {2\mathopen{}\left(x^{2}+9x+18\right)} \\
+   \amp {x^{2}-x-12+6x+36} = {2x^{2}+18x+36} \\
+   \amp {x^{2}+5x+24} = {2x^{2}+18x+36} \\
+   \amp {x^{2}+5x+24-2x^{2}-18x-36} = 0 \\
+   \amp {-\left(x^{2}+13x+12\right)} = 0 \\
+   \amp {-\left(x^{2}+13x+12\right)} = 0 \\
+   \amp {-\left(x+12\right)\mathopen{}\left(x+1\right)} = 0 \\
+   \amp {x+12}=0 \:\: or\:\: {x+1}=0 \\
+   \amp x=-12 \:\: or\:\: x=-1
+\end{aligned}
+    }</m></p>
+<p><alert>Checking</alert></p>
+<p>We must check solutions when we solve rational equations. In the original equation, both denominators cannot be <m>0</m>. We set them to <m>0</m>, so we can find out what values to exclude from the solution set.</p>
+<p><m>\displaystyle{\begin{aligned}
+   \amp x+6 = 0 \amp \;\amp  x+3=0 \\
+   \amp x=-6 \amp \;\amp  x=-3
+\end{aligned}
+    }</m></p>
+<p>We must exclude <m>-6</m> and <m>-3</m> from the solution set, so the final solution is <m>x=-12</m> and <m>x=-1</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations70.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations70.pg"/>
+</webwork-reps>

@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_QuadraticEquations_solveQuad81-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_QuadraticEquations_solveQuad81-copy">
+  <static seed="832">
+    <statement><p><m>27 - 6 ( x - 9 )^2 = 3</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{11,7\right\}</m>
+      </p>
+    </answer>
+    <solution><p>There are a few ways to solve quadratic equations- the easiest way to solve this particular type of problem is to use the <em>square root method</em>.</p>
+<p><m>\displaystyle{       \begin{aligned}
+   27 - 6 ( x - 9 )^2 \amp = 3 \\
+   27 - 6 ( x - 9 )^2 \mathbf{{}-27} \amp = 3 \mathbf{{}-27} \\
+   - 6 ( x - 9 )^2 \amp = -24 \\
+   \frac{- 6 ( x - 9 )^2}{-6} \amp = \frac{-24}{-6} \\
+   ( x - 9 )^2 \amp = 4 \\
+   \sqrt{( x - 9 )^2} \amp = \pm\sqrt{4} \\
+   x - 9 \amp = \pm 2 \\
+   x - 9 \mathbf{{} + 9} \amp = \pm 2 \mathbf{{} + 9} \\
+   x \amp = 2 + 9 \text{ or } x=-2 + 9 \\
+   x \amp = 11 \text{ or } x=7
+       \end{aligned}
+    }</m></p>
+<p>Checking solutions is left as exercise.</p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_3_4_28.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Chris Hughes, 2013
+# Portland Community College
+#
+# Template:
+# Solve the following quadratic equation
+#
+#       10-2(x+a)^2 = -40
+#
+# If you need to use the square root symbol, 
+# as in x=sqrt{17}, type it like: *sqrt(17)*
+#
+# a is non-zero integer on [-10,10], 
+# b is integer on [2,12]
+#
+# Last updated: Yao 12/08/2016
+# ENDDESCRIPTION
+
+## DBCCSS('A-REI.4.b')
+## DBsubject('Algebra')
+## DBchapter('Basic Algebra')
+## DBsection('equations', 'Simplification')
+## KEYWORDS('solve','quadratic','equation','square root','add','subtract')
+## Author('Alex Jordan, Carl Yao, Chris Hughes')
+## Institution('PCC')
+
+##############################################
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "contextFiniteSolutionSets.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+
+##############################################
+    
+Context("FiniteSolutionSets");
+
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+$c = random(2,6,1);
+$factor = list_random(1,4,9);
+$dMinusB = $c*$factor;
+$b = non_zero_random(-10,10,1);
+$d = $dMinusB+$b;
+$a = non_zero_random(-10,10,1);
+
+$soln1 = sqrt($factor)-$a;
+$soln2 = -sqrt($factor)-$a;
+$ans = Formula("{$soln1,$soln2}");
+
+##############################################
+
+BEGIN_PGML
+[@ PTX_exercisegroup_introduction('Solve the equation.') @]
+
+[@KeyboardInstructions("If you need to use the square root symbol, as in [`\\sqrt{17}`], type it as [|sqrt(17)|]*. If there are no real solutions, enter [|no real solutions|]*.")@]**
+
+     [` [$d] - [$c] ( [$var]+[$a] )^2 = [$b] `]
+
+     [_]{$ans}{16}
+
+END_PGML
+
+##############################################
+
+
+$showPartialCorrectAnswers = 1;
+
+
+##############################################
+
+$s1 = sqrt($factor);
+
+BEGIN_PGML_SOLUTION
+There are a few ways to solve quadratic equations- the easiest way to solve this particular type of problem is to use the _square root method_. 
+
+    [``
+       \begin{aligned}
+   [$d] - [$c] ( [$var]+[$a] )^2 &= [$b] \\
+   [$d] - [$c] ( [$var]+[$a] )^2 \mathbf{{}-[$d]} &= [$b] \mathbf{{}-[$d]} \\
+   - [$c] ( [$var]+[$a] )^2 &= [$b-$d] \\
+   \frac{- [$c] ( [$var]+[$a] )^2}{-[$c]} &= \frac{[$b-$d]}{-[$c]} \\
+   ( [$var]+[$a] )^2 &= [$factor] \\
+   \sqrt{( [$var]+[$a] )^2} &= \pm\sqrt{[$factor]} \\
+   [$var]+[$a] &= \pm [$s1] \\
+   [$var]+[$a] \mathbf{{}-[$a]} &= \pm [$s1] \mathbf{{}-[$a]} \\
+   [$var] &= [$s1]-[$a] \text{ or } [$var]=-[$s1]-[$a] \\
+   [$var] &= [$soln1] \text{ or } [$var]=[$soln2]
+       \end{aligned}
+    ``]
+
+Checking solutions is left as exercise.
+
+END_PGML_SOLUTION
+
+##############################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

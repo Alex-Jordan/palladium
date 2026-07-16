@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-8-22" assembly-id="section-multiplication-and-division-of-rational-expressions-7-8-22">
+  <static seed="1337" source="Contrib/PCC/Math95/ComplexFractions/ComplexFractions4.pg">
+    <statement><p>Simplify this expression, and if applicable, write the restricted domain.</p>
+<p><m>\displaystyle{\frac{{\frac{z}{\left(z-3\right)^{2}}}}{{\frac{3z}{z^{2}-9}}}=}</m> <fillin characters="40" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{z+3}{3\mathopen{}\left(z-3\right)}, z\ne 0\hbox{ and }z\ne -3</m>
+      </p>
+    </answer>
+    <solution><p>To simply the complex fraction <m>\frac{{\frac{z}{\left(z-3\right)^{2}}}}{{\frac{3z}{z^{2}-9}}}</m>, we multiple the numerator and denominator with the common denominator of <m>{\frac{z}{\left(z-3\right)^{2}}}</m> and <m>{\frac{3z}{z^{2}-9}}</m>.</p>
+<p><m>\displaystyle{\begin{aligned}
+  \frac{{\frac{z}{\left(z-3\right)^{2}}}}{{\frac{3z}{z^{2}-9}}} \amp = \frac{{\frac{z}{\left(z-3\right)^{2}}}}{{\frac{3z}{\left(z+3\right)\mathopen{}\left(z-3\right)}}} \\
+  \amp = \frac{{\frac{z}{\left(z-3\right)^{2}}\mathopen{}\left(z+3\right)\mathopen{}\left(z-3\right)^{2}}}{{\frac{3z}{\left(z+3\right)\mathopen{}\left(z-3\right)}\mathopen{}\left(z+3\right)\mathopen{}\left(z-3\right)^{2}}} \\
+  \amp = \frac{{z\mathopen{}\left(z+3\right)}}{{3z\mathopen{}\left(z-3\right)}},z\ne-3 \\
+  \amp ={\frac{z+3}{3\mathopen{}\left(z-3\right)}, z\ne 0\hbox{ and }z\ne -3}
+\end{aligned}
+    }</m></p>
+<p>Since the factors <m>z</m> and <m>z+3</m> were canceled, the domain condition lost during the simplification is <m>{z \ne -3\hbox{ and }z \ne 0\hbox{ and }z \ne 3}</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/Math95/ComplexFractions/ComplexFractions4.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/Math95/ComplexFractions/ComplexFractions4.pg"/>
+</webwork-reps>

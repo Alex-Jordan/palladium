@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication30-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication30-copy">
+  <static seed="2704">
+    <statement><p>A trapezoid<rsq/>s top base is <m>7</m> feet longer than its height, and its bottom base is <m>3</m> feet longer than its height. If we use <m>h</m> to represent the trapezoid<rsq/>s height, use a polynomial to represent the trapezoid<rsq/>s area in expanded form. A trapezoid<rsq/>s area can be calculated by <m>A=\frac{1}{2}(a+b)h</m>, where <m>a</m> stands for the top base, <m>b</m> stands for the bottom base, and <m>h</m> stands for height.</p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>h^{2}+5h</m>
+      </p>
+    </answer>
+    <solution><p>The trapezoid<rsq/>s height is <m>h</m> feet. Since the trapezoid<rsq/>s top base is <m>7</m> feet longer than its height, its top base is <m>h+7</m> feet; similarly, its bottom base is <m>h+7</m> feet. We substitute those values into a trapezoid<rsq/>s area formula, and we have:</p>
+<p><m>\displaystyle{\begin{aligned}
+   A \amp = \frac{1}{2}(a+b)h \\
+      \amp = \frac{1}{2}(h+7+h+3)h \\
+      \amp = \frac{1}{2}h(2h+10) \\
+      \amp = \frac{1}{2}2h^2+\frac{1}{2}10h \\
+      \amp = {h^{2}+5h}
+\end{aligned}
+    }</m></p>
+<p>The trapezoid<rsq/>s area is <m>{h^{2}+5h}</m> square feet.</p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/Appendices/A_9_5_72.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Carl Yao
+# Portland Community College
+#
+# Polynomial multiplication application problem.
+# Calculate the area of a trapezoid.
+# Answer is 1/2 h (h+3+h+5)=h^2+4h
+# 
+# Last updated: Carl Yao, 11/29/2016
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Polynomial and Rational Functions')
+## DBsection('Polynomial Functions')
+## KEYWORDS('exponent','multiply','polynomial','distribute','monomial')
+## DBCCSS('A-APR.1')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Alex Jordan, Carl Yao, Chris Hughes')
+## Institution('PCC')
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "contextLimitedPolynomial.pl",
+  "PGcourse.pl",
+);
+
+##############################################
+
+Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = 'h';
+Context()->variables->are($var=>'Real');
+
+do {
+   $a = random(1,10,1);
+   do {$b = random(1,10,1);} until ($a!=$b);
+} until (($a+$b)%2==0);
+
+$c = ($a+$b)/2;
+
+$ans = Compute("h**2+$c*h")->reduce;
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->add($var=>'Real');
+$ans = Formula($ans)->reduce;
+
+
+##############################################
+TEXT(beginproblem());
+
+BEGIN_PGML
+
+A trapezoid's top base is [`[$a]`] feet longer than its height, and its bottom base is [`[$b]`] feet longer than its height. If we use [`h`] to represent the trapezoid's height, use a polynomial to represent the trapezoid's area in expanded form. A trapezoid's area can be calculated by [` A=\frac{1}{2}(a+b)h `], where [`a`] stands for the top base, [`b`] stands for the bottom base, and [`h`] stands for height.
+
+[_]{$ans}{16}
+
+END_PGML
+
+##########################################################
+
+BEGIN_PGML_SOLUTION
+
+The trapezoid's height is [`h`] feet. Since the trapezoid's top base is [`[$a]`] feet longer than its height, its top base is [`h+[$a]`] feet; similarly, its bottom base is [`h+[$a]`] feet. We substitute those values into a trapezoid's area formula, and we have:
+
+    [``
+\begin{aligned}
+   A &= \frac{1}{2}(a+b)h \\
+      &= \frac{1}{2}(h+[$a]+h+[$b])h \\
+      &= \frac{1}{2}h(2h+[$a+$b]) \\
+      &= \frac{1}{2}2h^2+\frac{1}{2}[$a+$b]h \\
+      &= [$ans]
+\end{aligned}
+    ``]
+
+The trapezoid's area is [`[$ans]`] square feet.
+
+END_PGML_SOLUTION
+##############################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-quadratic-equations-by-factoring-7-3-7" assembly-id="section-solving-quadratic-equations-by-factoring-7-3-7">
+  <static seed="798" source="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication40.pg">
+    <statement><p>A rectangle<rsq/>s base is <m>{5\ {\rm in}}</m> shorter than four times its height. The rectangle<rsq/>s area is <m>{21\ {\rm in^{2}}}</m>. Find this rectangle<rsq/>s dimensions.</p>
+<p>The rectangle<rsq/>s height is <fillin characters="11" name="AnSwEr0001"/>.</p>
+<p>The rectangle<rsq/>s base is <fillin characters="11" name="AnSwEr0002"/>.</p>
+</statement>
+    <answer>
+      <p>
+        <m>3\ {\rm in}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>7\ {\rm in}</m>
+      </p>
+    </answer>
+    <solution><p>Let the rectangle<rsq/>s height be <m>x</m> inches.  Then its base is <m>4x-5</m> inches.</p>
+<p>It<rsq/>s given that the rectangle<rsq/>s area is <m>{21\ {\rm in^{2}}}</m>, so we can write and solve the equation:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   x(4x-5) \amp = 21 \\
+   4x^{2}-5x \amp = 21 \\
+   4x^{2}-5x - 21 \amp = 0 \\
+\end{aligned}
+    }</m></p>
+<p>The polynomial can be factored, so we will first solve this equation by factoring:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   (4x+7)(x-3) \amp =0 \\
+   4x+7=0 \amp \text{  or  } x-3=0  \\
+   4x=-7 \amp \text{  or  } x=3 \\
+   x=\text{a negative number} \amp \text{  or  } x=3
+\end{aligned}
+    }</m></p>
+<p>We could also solve the equation by the Quadratic Formula.</p>
+<p>Identify that <m>a=4,b=-5,c=-21</m>.</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   x \amp = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a} \\
+   x \amp = \frac{-(-5) \pm \sqrt{(-5)^{2}-4(4)(-21)}}{2(4)} \\
+   x \amp = \frac{5 \pm \sqrt{361}}{8} \\
+   x \amp = \frac{5 \pm 19}{8} \\
+   x \amp = \frac{5 + 19}{8}  \text{  or  } x= \frac{5 - 19}{8} \\
+   x\amp =3 \text{  or  } x= \text{a negative number}
+\end{aligned}
+    }</m></p>
+<p>Notice that there is no need to calculate the negative result, as a rectangle<rsq/>s height cannot be negative. The height is <m>{3\ {\rm in}}</m>.</p>
+<p>Recall that the rectangle<rsq/>s base is <m>4x-5</m> inches, where <m>x</m> is the height. Thus the base is <m>4 \cdot {3\ {\rm in}} - {5\ {\rm in}}</m>, which is <m>{7\ {\rm in}}</m>.</p>
+<p>So the rectangle<rsq/>s height is <m>{3\ {\rm in}}</m>, and its base is <m>{7\ {\rm in}}</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication40.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication40.pg"/>
+</webwork-reps>

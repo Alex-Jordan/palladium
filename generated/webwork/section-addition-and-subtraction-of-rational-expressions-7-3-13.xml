@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-addition-and-subtraction-of-rational-expressions-7-3-13" assembly-id="section-addition-and-subtraction-of-rational-expressions-7-3-13">
+  <static seed="1388" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions110.pg">
+    <statement><p>Add or subtract the rational expressions to a single rational expression and then simplify. If applicable, state the restricted domain.</p>
+<p><m>\displaystyle{{\frac{1}{r+6}-\frac{6}{r+5}} =}</m> <fillin characters="40" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{-5r-31}{\left(r+6\right)\mathopen{}\left(r+5\right)}, \left(-\infty ,\infty \right)</m>
+      </p>
+    </answer>
+    <solution><p><m>\displaystyle{\begin{aligned}
+   {\frac{1}{r+6}-\frac{6}{r+5}} 
+      \amp = {\frac{1}{r+6}} \cdot \frac{(r+5)}{(r+5)} -\frac{6}{r+5} \cdot \frac{(r+6)}{(r+6)}  \\
+      \amp = {\frac{r+5-6\mathopen{}\left(r+6\right)}{\left(r+6\right)\mathopen{}\left(r+5\right)}} \\
+      \amp = {\frac{r+5-6r-36}{\left(r+6\right)\mathopen{}\left(r+5\right)}} \\
+      \amp = {\frac{-5r-31}{\left(r+6\right)\mathopen{}\left(r+5\right)}}
+\end{aligned}
+    }</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions110.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions110.pg"/>
+</webwork-reps>

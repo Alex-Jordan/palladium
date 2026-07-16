@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-leaning-ladder-unknown-length" assembly-id="leaning-ladder-unknown-length">
+  <static seed="861">
+    <statement><p>To hang some decorations on a home<rsq/>s roof line, you need a ladder that can reach <m>16</m> feet. However, the base of the ladder needs to be at least <m>16</m> feet removed from direcly below the roofline because of some bushes at the base of the house. Rounding up to the nearest foot, how long of a ladder do you need?</p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>18\ {\rm ft}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_3_4_57.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.3.4.57)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserNumberWithUnits.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$base = random(6 .. 8);
+$height = random(16 .. 30);
+$ladder = NumberWithUnits(int(sqrt($base**2 + $height**2) - 0.00001) + 1, 'ft');
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+To hang some decorations on a home's roof line, you need a ladder that can reach [`[$height]`] feet. However, the base of the ladder needs to be at least [`[$height]`] feet removed from direcly below the roofline because of some bushes at the base of the house. Rounding up to the nearest foot, how long of a ladder do you need?
+
+[_]{$ladder}{16}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-graphing-quadratic-expressions-8-4-9" assembly-id="section-graphing-quadratic-expressions-8-4-9">
+  <static seed="1061" source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticApplications/FlyingObjectApp40.pg">
+    <statement><p>A submarine is traveling in the sea. Its depth, in meters, can be modeled by <m>d={-0.2t^{2}+2.4t-10.2}</m>, where <m>t</m> stands for time in seconds. The submarine <ul form="popup" name="AnSwEr0001"><li>
+<p>?</p>
+</li><li>
+<p>will</p>
+</li><li>
+<p>will not</p>
+</li></ul> hit the sea surface along this route.</p>
+</statement>
+    <answer>
+      <p>
+        <m>\text{will not}</m>
+      </p>
+    </answer>
+    <solution><p>To determine whether the submarine will surface, we substitute <m>d(t)=0</m> into <m>d(t)={-0.2t^{2}+2.4t-10.2}</m>, and solve the equation by the Quadratic Formula:</p>
+<p><m>\displaystyle{
+        \begin{aligned}
+            t \amp  = \frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+              \amp  = \frac{-({2.4})\pm\sqrt{({2.4})^2-4(-0.2)({-10.2})}}{2(-0.2)}\\
+                   \amp  = \frac{{-2.4}\pm\sqrt{{5.76}-{8.16}}}{-0.4}\\
+                   \amp  = \frac{{-2.4}\pm\sqrt{{-2.4}}}{-0.4}\\
+                  
+        \end{aligned}
+     }</m></p>
+<p>Since the equation has no real solution, the submarine will not surface along this route.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="PCC-ORCCA-ed3/BasicAlgebra/QuadraticApplications/FlyingObjectApp40.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticApplications/FlyingObjectApp40.pg"/>
+</webwork-reps>

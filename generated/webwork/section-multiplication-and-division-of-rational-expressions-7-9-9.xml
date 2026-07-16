@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-9-9" assembly-id="section-multiplication-and-division-of-rational-expressions-7-9-9">
+  <static seed="1347" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions30.pg">
+    <statement><p>Simplify this expression.</p>
+<p><m>\displaystyle{{\frac{x^{2}t^{4}}{3}} \div {\frac{x^{2}t^{3}}{18}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>6t</m>
+      </p>
+    </answer>
+    <solution><p><m>\displaystyle{\begin{aligned}
+   {\frac{x^{2}t^{4}}{3}} \div {\frac{x^{2}t^{3}}{18}} 
+      \amp = {\frac{x^{2}t^{4}}{3}} \cdot {\frac{18}{x^{2}t^{3}}} \\
+      \amp = {6t}
+\end{aligned}
+    }</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions30.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions30.pg"/>
+</webwork-reps>

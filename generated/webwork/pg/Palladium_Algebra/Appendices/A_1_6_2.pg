@@ -1,0 +1,71 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(A.1.6.2)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFraction.pl",
+  "parserGraphTool.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Fraction");
+$a = Fraction(random(7, 15, 4), 4);
+$numberline = GraphTool("{point, ($a, 0)}")->with(
+    numberLine          => 1,
+    bBox                => [ -1, 0.4, 4, -0.4 ],
+    availableTools      => [ 'PointTool' ],
+    snapSizeX           => 1/4,
+    ticksDistanceX      => 1,
+    minorTicksX         => 3,
+    showCoordinateHints => 0
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the fraction [`[$a]`] on the numberline.
+
+[_]{$numberline}{1}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

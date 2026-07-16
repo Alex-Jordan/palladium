@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-complex-fractions-5-3-10" assembly-id="section-complex-fractions-5-3-10">
+  <static seed="1461" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions40.pg">
+    <statement><p>Simplify this expression.</p>
+<p><m>\displaystyle{{\frac{\frac{4}{t}-\frac{8}{x}}{\frac{20}{t}+\frac{4}{x}}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{x-2t}{5x+t}</m>
+      </p>
+    </answer>
+    <solution><p>To simplify a complex fraction, we find the common denominator of all fractions. In this case, it is <m>{tx}</m>. We multiply the complex fraction<rsq/>s numerator and denominator by this common denominator, and we have:</p>
+<p><m>\displaystyle{\begin{aligned}
+   {\frac{\frac{4}{t}-\frac{8}{x}}{\frac{20}{t}+\frac{4}{x}}} 
+      \amp = {\frac{\frac{4}{t}-\frac{8}{x}}{\frac{20}{t}+\frac{4}{x}}} \cdot \frac{{tx}}{{tx}} \\
+      \amp = {\frac{\left(\frac{4}{t}-\frac{8}{x}\right)tx}{\left(\frac{20}{t}+\frac{4}{x}\right)tx}} \\
+      \amp = \frac{\frac{4}{t} \cdot t x  -\frac{8}{x} \cdot t x }{\frac{20}{t} \cdot t x +\frac{4}{x} \cdot t x } \\
+      \amp = \frac{4 x - 8 t}{20 x + 4 t} \\
+      \amp = {\frac{4\mathopen{}\left(x-2t\right)}{4\mathopen{}\left(5x+t\right)}} \\
+      \amp = {\frac{x-2t}{5x+t}}
+\end{aligned}
+    }</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions40.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions40.pg"/>
+</webwork-reps>

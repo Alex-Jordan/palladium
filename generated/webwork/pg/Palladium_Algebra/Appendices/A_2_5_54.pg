@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:10-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -43,20 +40,19 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$n = random(1,10,1);
-($a,$c) = (2..9)[NchooseK(8,2)];
-$b = $n**2 - $c;
+$grouping = list_random(['(',')'],['[',']']);
+($a,$b) = (2..9)[NchooseK(8,2)];
 Context("LimitedNumeric");
-$answer = Real($a+sqrt($b+$c));
+$answer = Real(-($a-$b));
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Use the order of operations to simplify the expression that has absolute value or implied grouping.
+Use the order of operations to simplify the expression.
 
-[`[$a]+\sqrt{[$b]+[$c]}`]
+[`-[$grouping->[0]] [$a] - [$b] [$grouping->[1]]`]
 
 [_]{$answer}{5}
 

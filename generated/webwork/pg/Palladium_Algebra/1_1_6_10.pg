@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-20T13:16:08-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -31,7 +28,8 @@ loadMacros(
   "PGML.pl",
   "AnswerFormatHelp.pl",
   "PCCmacros.pl",
-  "PGchoicemacros.pl",
+  "contextCurrency.pl",
+  "parserLinearRelation.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -44,24 +42,29 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context('Numeric');
-($a, $b) = (2..15)[NchooseK(14,2)];
-$ans = Compute("$a x - $b");
-$numberWorda = numberWord($a);
-$numberWordb = numberWord($b);
+$rate = random(60000,200000,5000);
+Context("Currency")->flags->set(trimTrailingZeros => 1);
+$speed = Currency("$rate");
+$final = random(1000000,2000000,10000);
+$end = Currency("$final");
+$total = $end*list_random(5,10);
+$initial = $final/list_random(2,4,5);
+$start = Currency("$initial");
+Context("LinearRelation")->variables->are(t => 'Real');
+$equation = LinearRelation("$initial + $rate t = $final");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Translate the phrase or sentence into a math expression or equation (whichever is appropriate).
+Read the scenario. Then write a complete sentence that defines a variable to use. Lastly, write an equation to model the scenario. There is no need to solve the equation.
 
-[$numberWorda] times a number, decreased by [$numberWordb]
+A small town would like to replace its aging water treatment system. This will cost [`[$total]\text{,}`] but the town just needs [`[$end]`] up front for downpayment on a loan that will cover the rest. The town treasury has [`[$start]`] in it already for this need, and the town can gather [`[$speed]`] per month from taxes. How long will it take to reach enough for downpayment on that loan? Write an equation to model this scenario. There is no need to solve it.
 
-[@KeyboardInstructions('Use [`x`] as the variable.')@]**
+[@KeyboardInstructions('Use [|t|]* as the variable.')@]**
 
-[_]{$ans}{16}
+[_]{$equation}{20}
 
 END_PGML
 

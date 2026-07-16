@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-6-3" assembly-id="section-multiplication-and-division-of-rational-expressions-7-6-3">
+  <static seed="1305" source="Contrib/PCC/BasicAlgebra/RationalFunctions/reduceRationalFunction10.pg">
+    <statement><p>Simplify the function formula, and if applicable, write the restricted domain.</p>
+<p><m>\displaystyle{ h(y) = {\frac{y+9}{y^{2}+14y+45}} }</m></p>
+<p>Reduced <m>h(y)=</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{1}{y+5}, y\ne -9</m>
+      </p>
+    </answer>
+    <solution><p>To simplify the expression, we first factor both the numerator and denominator, and then cancel common factors.</p>
+<p><m>\displaystyle{\begin{aligned}
+   h(y) \amp = {\frac{y+9}{y^{2}+14y+45}} \\
+                 \amp = \frac{{y+9}}{{\left(y+9\right)\mathopen{}\left(y+5\right)}} \\
+                 \amp = {\frac{1}{y+5}, y\ne -9}
+\end{aligned}
+    }</m></p>
+<p>Since the factor <m>y+9</m> was canceled, the domain condition lost during the reduction is <m>y \ne -9</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalFunctions/reduceRationalFunction10.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalFunctions/reduceRationalFunction10.pg"/>
+</webwork-reps>

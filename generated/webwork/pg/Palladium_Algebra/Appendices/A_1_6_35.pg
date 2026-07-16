@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-18T21:12:34-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,8 +27,7 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "contextFiniteSolutionSets.pl",
-  "contextForm.pl",
+  "contextFraction.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -44,26 +40,29 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
-Context()->variables->are($var => 'Real');
-$b = list_random(-20..-1,1..20);
-$left = Formula("-$var")->reduce;
-$right = Formula("$b")->reduce;
-Context("FiniteSolutionSets");
-Context()->variables->are($var => 'Real');
-$solution = -$b;
-$solset = Formula("{$solution}");
+Context("LimitedFraction")->flags->set(
+    allowMixedNumbers => 0,
+    reduceConstants => 1,
+    showMixedNumbers => 0
+);
+Parser::Number::NoDecimals;
+do {
+  ($n[0], $d[0]) = random_pairwise_coprime([1 .. 9], [2 .. 9]);
+  ($n[1], $d[1]) = random_pairwise_coprime([1 .. 9], [2 .. 9]);
+} until (gcd($n[0], $n[1]) != 1 || gcd($d[0], $d[1]));
+@f = map {Fraction($n[$_], $d[$_])} (0, 1);
+$ans = Fraction($n[0]*$d[1], $d[0]*$n[1])->cmp(studentsMustReduceFractions => 1);
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Solve the equation.
+Multiply or divide the fractions.
 
-[`[$left]=[$right]`]
+[`\displaystyle [$f[0]]\div [$f[1]]`]
 
-[_]{$solset}{10}
+[_]{$ans}{6}
 
 END_PGML
 

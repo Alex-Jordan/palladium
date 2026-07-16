@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:10-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,9 +27,9 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PGchoicemacros.pl",
-  "contextForm.pl",
-  "contextFraction.pl",
+  "PCCmacros.pl",
+  "contextInequalitySetBuilder.pl",
+  "parserGraphTool.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -45,38 +42,38 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("Fraction");
-Context()->operators->redefine('>', using => ',' , from => 'Numeric');
-Context()->lists->set(List => {separator => '>'});
-Context()->flags->set(reduceConstantFunctions => 0);
-
-@a = (1..99)[NchooseK(99, 1)];
-@a = map{Real($_/10)} (@a);
-do {
-  @d = (2..9)[NchooseK(8,2)];
-  push @a, map{Fraction(random_coprime([$_], [1..2*$_]))} (@d);
-} until ($a[1] != $a[0] && $a[2] != $a[0]);
-push @a, Formula("pi")/list_random(1,2,3,4,6);
-$a[3] = $a[3]->reduce;
-push @a, map{Formula("sqrt($_)")} (list_random(2,3,5,6,7,10));
-@a = (@a)[NchooseK(5,5)];
-
-$as = join('\quad', map{'{' . $_->TeX . '}'} (@a));
-@b = PGsort(sub{$_[0] > $_[1]}, @a);
-$bs = join('>', @b);
-
-$comparison = Compute("$bs");
+$a = random(-7, 7);
+InequalitySetBuilder::UseVerticalSuchThat();
+Context("InequalitySetBuilder-Only");
+$set_builder = Compute("{ x | x > $a}");
+Context("Interval");
+$interval = Compute("($a, inf)");
+$gt = GraphTool("{interval,$interval}")->with(
+  availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+  numberLine => 1,
+  xAxisLabel => 'x',
+  bBox => [ -8, 8 ],
+  ticksDistanceX => 1,
+  minorTicksX => 0,
+  useBracketEnds => 1,
+  showInStatic => 0,
+  showCoordinateHints => 0,
+);
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Use the [`\newcommand{\gt}{>}\gt`] symbol to arrange the following numbers in order from greatest to least. For example, your answer might look like [`\newcommand{\gt}{>}4 \gt 3 \gt 2 \gt 1 \gt 0\text{.}`]
+Convert the given set-builder notation into a number line graph and interval notation.
 
-[`[$as]`]
+[`[$set_builder]`]
 
-[_]{$comparison}{30}
+[_]{$gt}{1}
+
+[@KeyboardInstructions('In interval notation:')@]**
+
+[_]{$interval}{12}
 
 END_PGML
 

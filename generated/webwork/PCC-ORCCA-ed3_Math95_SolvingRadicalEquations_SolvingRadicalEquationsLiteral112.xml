@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_SolvingRadicalEquations_SolvingRadicalEquationsLiteral112" assembly-id="PCC-ORCCA-ed3_Math95_SolvingRadicalEquations_SolvingRadicalEquationsLiteral112">
+  <static seed="2045">
+    <statement><p>In an electric circuit, resonance occurs when the frequency <m>f</m>, inductance <m>L</m>, and capacitance <m>C</m> fulfill the following equation:</p>
+<p><me>{f} = {\frac{1}{2\pi \sqrt{LC}}}</me></p>
+<p>The frequency is measured in Hertz, the inductance in Henry, and the capacitance in Farad.</p>
+<p>Solve the equation for the inductance  <m>L</m>.</p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>L = \frac{1}{4\pi ^{2}Cf^{2}}</m>
+      </p>
+    </answer>
+    <solution><p>Since there is no addition or subtraction in this problem, we can square the equation at any point. We will do that again as our first step. So to get rid of the square root, we square the left side and the right side of the equation, using exponent rules to simplify.</p>
+<p><m>\displaystyle{\begin{aligned}
+   {f} \amp = {\frac{1}{2\pi \sqrt{LC}}} \\
+   \left(f\right)^2 \amp = \left(\frac{1}{2\pi\sqrt{LC}}\right)^2 \\
+   f^2 \amp = \frac{1}{4\pi^2LC} \\
+\end{aligned}
+    }</m></p>
+<p>In order to solve for <m>L</m>, we need to get it out of the denominator by multiplying with <m>L</m> (which is also <m>\frac{L}{1}</m>) on both sides:</p>
+<p><m>\displaystyle{\begin{aligned}
+   f^2 \amp = \frac{1}{4\pi^2LC} \\
+   f^2\cdot L \amp = \frac{1}{4\pi^2LC}\cdot \frac{L}{1} \\
+   f^2L \amp = \frac{1}{4\pi^2C} \\
+\end{aligned}
+    }</m></p>
+<p>Since we want to solve for <m>L</m>, we need to divide by <m>f^2</m>. Since we have a fraction on the right side, we will multiply by the reciprocal of <m>f^2</m> instead.</p>
+<p><m>\displaystyle{\begin{aligned}
+   f^2L \amp = \frac{1}{4\pi^2C} \\
+   \frac{f^2L}{f^2} \amp = \frac{1}{4\pi^2C}\cdot \frac{1}{f^2} \\
+   L \amp = \frac{1}{4\pi^2Cf^2} \\
+\end{aligned}
+    }</m></p>
+<p>So <m>L={L = \frac{1}{4\pi ^{2}Cf^{2}}}</m> is the solution when we solve <m>{f}={\frac{1}{2\pi \sqrt{LC}}}</m> for <m>L</m>.</p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/4_5_4_24.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+#
+# Template:
+# Solve the following radical equation
+#
+#       f = 1/(2pi*sqrt(LC))     solve for L
+#
+#
+# Last updated: Spoddeck 12/22/15
+# ENDDESCRIPTION
+ 
+## DBsubject('')
+## DBchapter('')
+## DBsection('')
+## KEYWORDS('')
+## DBCCSS('')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Alex Jordan', 'Heiko Spoddeck")
+## Institution('PCC')
+
+
+##############################################
+
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",  
+  "contextLimitedRadical.pl",
+  "PGML.pl",
+  "PCCmacros.pl",
+  "parserAssignment.pl",
+  "PGcourse.pl",
+);
+
+
+##############################################
+
+Context("LimitedRadical");
+Context()->variables->are(f=>'Real',L=>'Real',C=>'Real');
+parser::Assignment->Allow;
+
+$left = Formula("f");
+$right = Formula("1/(2 pi sqrt(L C))");
+
+$ans = Formula("L = 1/(4 pi^2 C f^2)");
+
+
+##############################################
+
+
+BEGIN_PGML
+
+In an electric circuit, resonance occurs when the frequency [`f`], inductance [`L`], and capacitance [`C`] fulfill the following equation:
+
+[```[$left] = [$right]```]
+
+The frequency is measured in Hertz, the inductance in Henry, and the capacitance in Farad.
+
+Solve the equation for the inductance  [`L`].
+
+[@KeyboardInstructions('Enter your answer in the form [|L=...|]*. If you need to use a square root, type [|sqrt(23)|]* for [`\sqrt{23}`] (for example).')@]**
+
+[_]{$ans}{16}
+
+END_PGML
+
+
+##############################################
+
+
+BEGIN_PGML_SOLUTION
+
+
+Since there is no addition or subtraction in this problem, we can square the equation at any point. We will do that again as our first step. So to get rid of the square root, we square the left side and the right side of the equation, using exponent rules to simplify.
+
+    [``
+\begin{aligned}
+   [$left] &= [$right] \\
+   \left(f\right)^2 &= \left(\frac{1}{2\pi\sqrt{LC}}\right)^2 \\
+   f^2 &= \frac{1}{4\pi^2LC} \\
+\end{aligned}
+    ``]
+
+In order to solve for [`L`], we need to get it out of the denominator by multiplying with [`L`] (which is also [`\frac{L}{1}`]) on both sides:
+
+    [``
+\begin{aligned}
+   f^2 &= \frac{1}{4\pi^2LC} \\
+   f^2\cdot L &= \frac{1}{4\pi^2LC}\cdot \frac{L}{1} \\
+   f^2L &= \frac{1}{4\pi^2C} \\
+\end{aligned}
+    ``]
+
+Since we want to solve for [`L`], we need to divide by [`f^2`]. Since we have a fraction on the right side, we will multiply by the reciprocal of [`f^2`] instead.
+
+    [``
+\begin{aligned}
+   f^2L &= \frac{1}{4\pi^2C} \\
+   \frac{f^2L}{f^2} &= \frac{1}{4\pi^2C}\cdot \frac{1}{f^2} \\
+   L &= \frac{1}{4\pi^2Cf^2} \\
+\end{aligned}
+    ``]
+
+So [`L=[$ans]`] is the solution when we solve [`[$left]=[$right]`] for [`L`].
+
+END_PGML_SOLUTION
+
+
+##############################################
+
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

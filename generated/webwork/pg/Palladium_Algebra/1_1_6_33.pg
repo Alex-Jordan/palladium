@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-20T13:16:08-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -31,7 +28,6 @@ loadMacros(
   "PGML.pl",
   "AnswerFormatHelp.pl",
   "PCCmacros.pl",
-  "PGchoicemacros.pl",
   "parserLinearRelation.pl",
   "PGcourse.pl",
 );
@@ -45,27 +41,42 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-($a, $b, $c) = (2..15)[NchooseK(14,3)];
+$tt = random(30,40);
+$sp = $tt + random(5,12);
+$st = random(8,15);
 Context("LinearRelation");
-$ans = LinearRelation("$c x - $a = $b");
-$NumberWorda = numberWord($a, capital => 1);
-$numberWordb = numberWord($b);
-$numberWordc = numberWord($c);
+$equation = LinearRelation("x/$tt = $sp/$st");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Translate the phrase or sentence into a math expression or equation (whichever is appropriate).
+Read the scenario. Then write a complete sentence that defines a variable to use. Lastly, write an equation to model the scenario. There is no need to solve the equation.
 
-[$NumberWorda] less than [$numberWordc] times a number is [$numberWordb].
+To estimate the health of the Rocky Mountain elk population in the Wenaha Wildlife Area, the Oregon Department of Fish and Wildlife caught, tagged, and released [`[$tt]`] Rocky Mountain elk. A month later, they returned and observed [`[$sp]`] Rocky Mountain elk, [`[$st]`] of which had tags. Approximately how many Rocky Mountain elk are in the Wenaha Wildlife Area? Set up an equation to answer this question. There is no need to solve it.
 
-[@KeyboardInstructions('Use [`x`] as the variable.')@]**
+[@KeyboardInstructions('Use [|x|]* as the variable.')@]**
 
-[_]{$ans}{16}
+[_]{$equation}{16}
 
 END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Let [`x`] represent how many elk are in the Wenaha Wildlife Area. We set up a proportional equation:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+\frac{\text{tagged elk}}{\text{total elk}} \amp= \frac{\text{tagged elk}}{\text{total elk}}\\
+\frac{[$st]}{[$sp]} \amp= \frac{[$tt]}{x}
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
 
 ############################################################
 # End Problem

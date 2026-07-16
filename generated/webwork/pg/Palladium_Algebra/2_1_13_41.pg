@@ -1,0 +1,71 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.1.13.41)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+@ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+$var = list_random(@ORCCA_variables);
+Context("Form")->variables->are($var=>'Real');
+do {
+  ($a, $b, $c) = random_coprime([1 .. 9], [1 .. 9], [1 .. 9]);
+} until (($a > 1 || $b > 1 || $c > 1) && sqrt(abs($b**2 - 4*$a*$c)) !~ /\d*/);
+$g = list_random(2 .. 9);
+($ga, $gb, $gc) = map {$_*$g} ($a, $b, $c);
+$f = Compute("$ga $var^3 + $gb $var^2 + $gc $var");
+$answer = Compute("$g $var($a $var^2 + $b $var + $c)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Factor the given polynomial.
+
+[`[$f]`]
+
+[_]{$answer}{16}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

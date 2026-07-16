@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-15-1-2-14" assembly-id="section-factoring-15-1-2-14">
+  <static seed="18" source="Contrib/PCC/BasicAlgebra/Factoring/factoring30.pg">
+    <statement><p>Find the greatest common factor of the following terms.</p>
+<p><m>{3x^{17}y^{6}}</m>, <m>{-9x^{16}y^{18}}</m>, <m>{27x^{6}y^{20}}</m></p>
+<p><fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>3x^{6}y^{6}\hbox{ or }-3x^{6}y^{6}</m>
+      </p>
+    </answer>
+    <solution><p>There are three things to look for in this problem:
+<ul label="disc">
+<li>
+<p>the greatest common <em>numerical</em> factor is <m>3</m></p>
+</li>
+<li>
+<p>the greatest common power of <m>x</m> is <m>x^{6}</m>, since it has the <em>lowest</em> exponent.</p>
+</li>
+<li>
+<p>the greatest common power of <m>y</m> is <m>y^{6}</m>, since it has the <em>lowest</em> exponent.</p>
+</li>
+</ul></p>
+<p>The greatest common factor of the three terms is <m>{3x^{6}y^{6}\hbox{ or }-3x^{6}y^{6}}</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/Factoring/factoring30.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/Factoring/factoring30.pg"/>
+</webwork-reps>

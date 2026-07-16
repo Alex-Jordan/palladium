@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-restaurant-bill-linear-model" assembly-id="restaurant-bill-linear-model">
+  <static seed="30">
+    <statement><p>The final bill at a restaurant one night was <m>{\$79.30}\text{,}</m> including a <m>{19\%}</m> tip. What was the bill before the tip was added? Set up an equation to answer this question. There is no need to solve it.</p>
+<p><fillin characters="20" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>b+0.19b = 79.3</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/1_1_5_25.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.5.25)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextCurrency.pl",
+  "contextPercent.pl",
+  "parserLinearRelation.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Currency")->flags->set(trimTrailingZeros => 1);
+$final = 90 + random(-30, 30, 0.05);
+$current = Currency($final);
+Context("Percent");
+$decimal = random(0.16,0.20,0.01);
+$percent = Percent($decimal);
+Context("LinearRelation")->variables->are(b => 'Real');
+$equation = LinearRelation("b + $decimal b = $final");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Write an equation to model the scenario. There is no need to solve the equation.
+
+The final bill at a restaurant one night was [`[$current]\text{,}`] including a [`[$percent]`] tip. What was the bill before the tip was added? Set up an equation to answer this question. There is no need to solve it.
+
+[@KeyboardInstructions('Use [|b|]* as the variable.')@]**
+
+[_]{$equation}{20}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

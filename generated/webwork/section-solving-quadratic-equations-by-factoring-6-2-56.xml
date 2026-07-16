@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-quadratic-equations-by-factoring-6-2-56" assembly-id="section-solving-quadratic-equations-by-factoring-6-2-56">
+  <static seed="219" source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad360.pg">
+    <statement><p>Solve the equation.</p>
+<p><m>{x\mathopen{}\left(x^{2}-9\right)} = 0</m></p>
+<p><fillin characters="20" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{-3,3,0\right\}</m>
+      </p>
+    </answer>
+    <solution><p>Note that this is <em>not</em> a quadratic equation, as its degree is <m>3</m>. However, 
+the factoring technique still applies</p>
+<p><m>\begin{aligned}
+                {x\mathopen{}\left(x^{2}-9\right)} = 0 \amp \Rightarrow {x\mathopen{}\left(x+3\right)\mathopen{}\left(x-3\right)}=0\\
+                                \amp \Rightarrow x=-3\text{ or } x=3 \text{ or }x=0\\
+        \end{aligned}</m></p>
+<p>Each solution can be checked by substituting it into the original equation- this is left as an exercise.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad360.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad360.pg"/>
+</webwork-reps>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-key-features-of-quadratic-graphs-8-3-11" assembly-id="section-key-features-of-quadratic-graphs-8-3-11">
+  <static seed="997" source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex90.pg">
+    <statement><p>Find the axis of symmetry and vertex of the quadratic function.</p>
+<p><m>{y}={-1-x^{2}}</m></p>
+<p>Axis of symmetry: <fillin characters="13" name="AnSwEr0001"/></p>
+<p>Vertex: <fillin characters="13" name="AnSwEr0002"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>x = 0</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\left(0,-1\right)</m>
+      </p>
+    </answer>
+    <solution><p>This quadratic function is not given in standard form. First, we reorder the equation into standard form:</p>
+<p><m>\displaystyle{ {y}={-x^{2}-1} }</m></p>
+<p>Now we can identify that:</p>
+<p><m>\displaystyle{ a=-1,b=0,c=-1 }</m></p>
+<p>To find the parabola<rsq/>s axis, we use the formula <m>\displaystyle{x=-\frac{b}{2a}}</m></p>
+<p><m>\displaystyle{\begin{aligned}[t]
+  x \amp = -\frac{b}{2a} \\
+    \amp = -\frac{0}{2(-1)} \\
+    \amp = 0
+\end{aligned}
+    }</m></p>
+<p>This parabola<rsq/>s axis of symmetry is <m>\displaystyle{x=0}</m>.</p>
+<p>Next, we substitute <m>\displaystyle{x=0}</m> into <m>\displaystyle{{y}={-x^{2}-1}}</m></p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   y \amp = -1(0)^{2} - 1 \\
+    \amp = -1 \cdot 0  - 1 \\
+    \amp = {-1}
+\end{aligned}
+    }</m></p>
+<p>This parabola<rsq/>s vertex is <m>\displaystyle{(0,{-1})}</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex90.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex90.pg"/>
+</webwork-reps>

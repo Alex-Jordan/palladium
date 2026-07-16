@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-graphing-quadratic-expressions-8-1-9" assembly-id="section-graphing-quadratic-expressions-8-1-9">
+  <static seed="1029" source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticEquations/solveQuad70.pg">
+    <statement><p><m>17x^2  - 61= 0</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{\frac{\sqrt{1037}}{17},\frac{-\sqrt{1037}}{17}\right\}</m>
+      </p>
+    </answer>
+    <solution><p>There are a few ways to solve quadratic equations- the easiest way to solve this particular 
+type of problem is to use the <em>square root method</em>.</p>
+<p><m>\begin{aligned}
+                 17x^2-61 = 0\amp  \Rightarrow 17x^2=61 \\
+                                     \amp  \Rightarrow x^2=\frac{61}{17} \\
+                                    \amp  \Rightarrow x= -\sqrt{\frac{61}{17}}\text{ or } x=\sqrt{\frac{61}{17}}\\
+                                    \amp  \Rightarrow x= -\frac{\sqrt{61}}{\sqrt{17}}\cdot\frac{\sqrt{17}}{\sqrt{17}}\text{ or } x=\frac{\sqrt{61}}{\sqrt{17}}\cdot\frac{\sqrt{17}}{\sqrt{17}}\\
+                                    \amp  \Rightarrow x= -\frac{\sqrt{1037}}{17}\text{ or } x=\frac{\sqrt{1037}}{17}\\
+       \end{aligned}</m></p>
+<p>Note that <em>all</em> quadratic equations have <alert>two</alert> (possibly repeated) solutions; in this problem both solutions are real. Each solution can be checked by substituting it into the original equation- this is left as an exercise.  We rationalized the denominator in each solution by multiplying by a factor of <m>1</m> using <m>\frac{\sqrt{17}}{\sqrt{17}}</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="PCC-ORCCA-ed3/BasicAlgebra/QuadraticEquations/solveQuad70.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticEquations/solveQuad70.pg"/>
+</webwork-reps>

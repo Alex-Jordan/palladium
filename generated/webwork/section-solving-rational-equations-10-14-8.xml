@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-14-8" assembly-id="section-solving-rational-equations-10-14-8">
+  <static seed="1629" source="Contrib/PCC/BasicAlgebra/RationalEquations/rationalEquationApplication40.pg">
+    <statement><p>Town A and Town B are <m>330</m> miles apart. A boat traveled from Town A to Town B, and then back to Town A. Since the river flows from Town B to Town A, the boat<rsq/>s speed was <m>25</m> miles per hour faster when it traveled from Town B to Town A. The whole trip took <m>11</m> hours. Answer the following questions:</p>
+<p>The boat traveled from Town A to Town B at the speed of <fillin characters="6" name="AnSwEr0001"/> miles per hour.</p>
+<p>The boat traveled from Town B back to Town A at the speed of <fillin characters="6" name="AnSwEr0002"/> miles per hour.</p>
+</statement>
+    <answer>
+      <p>
+        <m>50</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>75</m>
+      </p>
+    </answer>
+    <solution><p>Assume that the boat traveled from Town A to Town B at <m>x</m> miles per hour.</p>
+<p>Then, it traveled from Town B back to Town A at <m>x+25</m> miles per hour.</p>
+<p>Using the formula <m>time=\frac{distance}{speed}</m>, we know the boat traveled from Town A to Town B in <m>\frac{330}{x}</m> hours; and it traveled back from Town B to Town A in <m>\frac{330}{x+25}</m> hours.</p>
+<p>It<rsq/>s given that the whole trip took <m>11</m> hours, so we can write an equation and solve it:</p>
+<p><m>\displaystyle{\begin{aligned}
+  \amp \frac{330}{x}+\frac{330}{x+25} = 11 \\
+  \amp \frac{330}{x} \cdot {x\mathopen{}\left(x+25\right)} +\frac{330}{x+25} \cdot {x\mathopen{}\left(x+25\right)} = 11 \cdot {x\mathopen{}\left(x+25\right)} \\
+  \amp 330(x+25) + 330x = 11x(x+25) \\
+  \amp 330x+8250 +330x = 11x^{2}+275x \\
+  \amp 660x+8250 = 11x^{2}+275x \\
+  \amp  0= 11x^{2}+275x -660x -8250 \\
+  \amp  0= 11x^{2} - 385x -8250
+\end{aligned}
+    }</m></p>
+<p>When numbers are big, we use the quadratic formula to solve the quadratic equation:</p>
+<p><m>\displaystyle{\begin{aligned}
+   x \amp = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a} \\
+   x \amp = \frac{-(-385) \pm \sqrt{(-385)^{2}-4 \cdot (11) \cdot (-8250)}}{2 \cdot 11} \\
+   x \amp = \frac{385 \pm \sqrt{511225}}{22} \\
+   x \amp = \frac{385 \pm 715}{22} \\
+   x \amp = \frac{385 + 715}{22} \:\: or \:\: x= \frac{385 - 715}{22} \\
+   x \amp = 50 \:\: or \:\: x= -15
+\end{aligned}
+    }</m></p>
+<p>In this situation, <m>x=-15</m> is not a valid solution, since speed cannot be negative, <m>x=50</m> is the only solution. The boat traveled from Town A to Town B at the speed of <m>{50}</m> miles per hour.</p>
+<p>The boat traveled from Town B back to Town A at the speed of <m>{50}+25={75}</m> miles per hour.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/rationalEquationApplication40.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalEquations/rationalEquationApplication40.pg"/>
+</webwork-reps>

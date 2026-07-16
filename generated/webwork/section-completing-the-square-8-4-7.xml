@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-4-7" assembly-id="section-completing-the-square-8-4-7">
+  <static seed="1192" source="Contrib/PCC/BasicAlgebra/QuadraticFunctions/QuadraticDomainRange30.pg">
+    <statement><p>Complete the square to convert the quadratic function from standard form to vertex form, and use the result to find the function<rsq/>s domain and range.</p>
+<p><m>f(x) = {4x^{2}-80x+404}</m></p>
+<p>The domain of <m>f</m> is <fillin characters="14" name="AnSwEr0001"/></p>
+<p>The range of <m>f</m> is <fillin characters="14" name="AnSwEr0002"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left(-\infty ,\infty \right)</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\left[4,\infty \right)</m>
+      </p>
+    </answer>
+    <solution><p>We have to factor out the leading coefficient <m>4</m> first:</p>
+<p><m>\displaystyle{\begin{aligned}
+   f(x) \amp = {4x^{2}-80x+404} \\
+         \amp = 4({x^{2}-20x})+404 \\
+\end{aligned}
+    }</m></p>
+<p>One way to change a quadratic function from standard form to vertex form is to use the skill of <lq/>completing the square.<rq/></p>
+<p>To use the skill of <lq/>completing the square,<rq/> we need to use the perfect square formula:</p>
+<p><m>\displaystyle{ x^2+2ax+a^2 = (x+a)^2 }</m></p>
+<p>Step 1: By the formula <m>x^2+2ax+a^2 = (x+a)^2</m>, we have <m>x^2 - 20x+...= (x - 10)^{2}</m>.</p>
+<p>Step 2: By the formula <m>x^2+2ax+a^2 = (x+a)^2</m>, we have <m>x^2 - 20x+100=(x - 10)^{2}</m>.</p>
+<p>The full solution is:</p>
+<p><m>\displaystyle{\begin{aligned}
+   f(x) \amp = {4x^{2}-80x+404} \\
+         \amp = 4({x^{2}-20x})+404 \\
+         \amp = 4(x^{2} - 20x+100 -100) +404 \\
+         \amp = 4[(x - 10)^{2} -100] +404 \\
+         \amp = 4(x - 10)^{2} -400 +404 \\
+         \amp = 4(x - 10)^{2} +4 \\
+\end{aligned}
+    }</m></p>
+<p>Once we change the function<rsq/>s equation to vertex form, we can see the parabola<rsq/>s vertex is <m>{\left(10,4\right)}</m>. This parabola faces upward because its leading coefficient is positive.</p>
+<p>With this information, we can determine its domain and range:</p>
+<p>domain: <m>{\left(-\infty ,\infty \right)}</m></p>
+<p>range: <m>{\left[4,\infty \right)}</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/QuadraticFunctions/QuadraticDomainRange30.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/QuadraticFunctions/QuadraticDomainRange30.pg"/>
+</webwork-reps>

@@ -1,0 +1,79 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.13.156)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserRadioButtons.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$fst = random(111, 999, 222);
+$snd = random(222, 888, 222);
+$plus = $fst + $snd;
+$minus = $fst - $snd;
+$answer = RadioButtons([
+  {"$plus($plus)" => general_math_ev3("$plus($plus)")},
+  {"$plus($minus)" => general_math_ev3("$plus($minus)")},
+  {"$minus($minus)" => general_math_ev3("$minus($minus)")},
+  'none of the above'],
+1);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Without using a calculator, factor [`[$fst]^2-[$snd]^2\text{.}`] Then select the expression below which is equivalent.
+
+[_]{$answer}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Notice that [`[$fst]^2-[$snd]^2`] is the difference of two squares. Thus, we can factor it into [`([$fst]+[$snd])([$fst]-[$snd])\text{,}`] which equals [` [$plus] \cdot [$minus]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:08-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -54,7 +51,7 @@ $newUnits = [
   {name=>'yrs',conversion=>{factor=>365*24*60*60,s=>1}},
   {name=>'y',conversion=>{factor=>365*24*60*60,s=>1}},
 ];
-$m=Real(274.8155844);
+$m=Real(248.719);
 Context()->flags->set(tolType=>'absolute',tolerance=>20);
 $rate = NumberWithUnits("$m diagnoses/yr",{newUnit=>$newUnits});
 
@@ -66,44 +63,37 @@ $image_1->BEGIN_LATEX_IMAGE
       xlabel={year},
       ylabel={count},
       ytick=,
-      xmin=2000,
-      xmax=2020,
+      xmin=2005,
+      xmax=2025,
       ymin=15000,
       ymax=26000,
       axis line style={->},
-      xtick={2000,2005,...,2020},
-      minor xtick={2000,...,2020},
-      xticklabels={2000,2005,...,2020},
+      xtick={2005,2010,...,2025},
+      xticklabels={2005,2010,...,2025},
       xticklabel style={rotate=-45},
-      axis x discontinuity=crunch,
       axis y discontinuity=crunch,
       width=\orccaprintwidth,
       height=0.33\orccaprintwidth,
     ]
     \addplot[only marks] coordinates {
-      (2000,17458)
-      (2001,17862)
-      (2002,17879)
-      (2003,17590)
-      (2004,18497)
-      (2005,18732)
-      (2006,19161)
-      (2007,19430)
-      (2008,20459)
-      (2009,20007)
-      (2010,19887)
-      (2011,20867)
-      (2012,20448)
-      (2013,21354)
-      (2014,21686)
-      (2015,22154)
-      (2016,22128)
-      (2017,23011)
-      (2018,22640)
-      (2019,23755)
-      (2020,20151)
+      (2007,19417)
+      (2008,20426)
+      (2009,19979)
+      (2010,19861)
+      (2011,20851)
+      (2012,20426)
+      (2013,21346)
+      (2014,21683)
+      (2015,22158)
+      (2016,22135)
+      (2017,23052)
+      (2018,22769)
+      (2019,24389)
+      (2020,21766)
+      (2021,22750)
+      (2022,22691)
     };
-    \addplot+[domain=2000:2020] {274.8155844*(x - 2010) + 20245.52381};
+    \addplot+[domain=2005:2025] {248.719*(x - 2014.5) + 21606.1875};
   \end{axis}
 \end{tikzpicture}
 
@@ -114,7 +104,7 @@ END_LATEX_IMAGE
 ############################################################
 
 BEGIN_PGML
-The graph plots the number of invasive cancer diagnoses in Oregon over time, and a trend-line has been drawn.
+The graph plots the number of cancer diagnoses in Oregon over time, and a trend-line has been drawn.
 
 >> [@image(insertGraph($image_1), width=>450)@]*  <<
 
@@ -131,13 +121,13 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-Do your best to identify two points on the line (which are not necessarily the plotted data points). With this line, it seems [`(2000,17500)`] and [`(2020,23000)`] are two such points.
+Do your best to identify two points on the line (which are not necessarily the plotted data points). With this line, it seems [`(2008,20000)`] and [`(2020,23000)`] are two such points.
 
 [```
-                \frac{\Delta y}{\Delta x}=\frac{(23000-17500)\,\text{diagnoses}}{(2020-2000)\,\text{yr}}=275\,\frac{\text{diagnoses}}{\text{yr}}
+                \frac{\Delta y}{\Delta x}=\frac{(23000-20000)\,\text{diagnoses}}{(2020-2008)\,\text{yr}}=250\,\frac{\text{diagnoses}}{\text{yr}}
               ```]
 
-So the slope is about [`275`] diagnoses per year. This is only an estimate since we are not certain the two points we chose are actually on the line.
+So the slope is about [`250`] diagnoses per year. This is only an estimate since we are not certain the two points we chose are actually on the line.
 
 END_PGML_SOLUTION
 

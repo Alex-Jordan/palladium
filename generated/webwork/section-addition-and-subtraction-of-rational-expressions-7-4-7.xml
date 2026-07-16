@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-addition-and-subtraction-of-rational-expressions-7-4-7" assembly-id="section-addition-and-subtraction-of-rational-expressions-7-4-7">
+  <static seed="1420" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions60.pg">
+    <statement><p>Add or subtract the rational expressions to a single rational expression and then simplify.</p>
+<p><m>\displaystyle{{-\frac{2x}{5y^{3}}-\frac{2}{3xy}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{-6x^{2}-10y^{2}}{15xy^{3}}\hbox{, }\frac{2\mathopen{}\left(-3x^{2}-5y^{2}\right)}{15xy^{3}}\hbox{, or }-\frac{2\mathopen{}\left(3x^{2}+5y^{2}\right)}{15xy^{3}}</m>
+      </p>
+    </answer>
+    <solution><p><m>\displaystyle{\begin{aligned}
+   {-\frac{2x}{5y^{3}}-\frac{2}{3xy}} 
+      \amp = \frac{{-2x}\cdot3x}{{5y^{3}}\cdot3x} - \frac{2 \cdot 5 y^{2}}{3 x y \cdot 5 y^{2}} \\
+      \amp = \frac{-6x^{2}}{15xy^{3}} - \frac{10 y^{2}}{15 x y^{3}} \\
+      \amp = {\frac{-6x^{2}-10y^{2}}{15xy^{3}}}
+\end{aligned}
+    }</m></p>
+<p>Notice that <m>{-\frac{2\mathopen{}\left(3x^{2}+5y^{2}\right)}{15xy^{3}}}</m> is also correct. We should actually factor whenever possible, in case we can reduce the rational expression.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions60.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions60.pg"/>
+</webwork-reps>

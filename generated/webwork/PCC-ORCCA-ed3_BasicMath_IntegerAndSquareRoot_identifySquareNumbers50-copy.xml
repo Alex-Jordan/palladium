@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers50-copy" assembly-id="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers50-copy">
+  <static seed="1801">
+    <introduction/>
+    <task>
+      <statement><p><m>\displaystyle{ \sqrt{25} }</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>        5</m>
+        </p>
+      </answer>
+      <solution><p>Just knowing the first few square numbers, <m>\sqrt{25} = 5</m>.</p>
+</solution>
+    </task>
+    <task>
+      <statement><p><m>\displaystyle{ \sqrt{2500} }</m></p>
+<p><fillin characters="16" name="AnSwEr0002"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>       50</m>
+        </p>
+      </answer>
+      <solution><p>Since <m>2500=25\cdot100</m>, we have <m>\sqrt{2500}=\sqrt{25\cdot100}=5\cdot10=50</m>.</p>
+</solution>
+    </task>
+    <task>
+      <statement><p><m>\displaystyle{ \sqrt{250000} }</m></p>
+<p><fillin characters="16" name="AnSwEr0003"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>      500</m>
+        </p>
+      </answer>
+      <solution><p>Since <m>250000=25\cdot10000</m>, we have <m>\sqrt{250000}=\sqrt{25\cdot10000}=5\cdot100=500</m>.</p>
+</solution>
+    </task>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/4_2_10_10.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Carl Yao
+# Portland Community College
+#
+# Find square root of 25, 2500, 250000
+#
+# Last edited: Carl Yao 12/20/13
+#
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Basic Algebra')
+## DBsection('Exponents and Radicals')
+## KEYWORDS('radical','square root','square number','decimal')
+## DBCCSS('8.EE')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Carl Yao')
+## Institution('PCC')
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "scaffold.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+
+##############################################
+TEXT(beginproblem());
+
+Context("LimitedNumeric");
+Context()->{format}{number} = "%9d";
+
+@squareNums = (1,4,9,16,25,36,49,64,81,121,144);
+
+$num1=$squareNums[random(0,$#squareNums,1)];
+$num2=$num1*100;
+$num3=$num1*10000;
+
+
+$ans1 = sqrt($num1);
+$ans2 = sqrt($num2);
+$ans3 = sqrt($num3);
+
+##############################################
+
+BEGIN_PGML
+[@ PTX_exercisegroup_introduction('Evaluate the expression without using a calculator.') @]
+END_PGML
+
+Scaffold::Begin(numbered => 1,is_open => "correct_or_first_incorrect",can_open => always,);
+
+Section::Begin("");
+BEGIN_PGML
+[`` \sqrt{[$num1]} ``]
+
+[_]{$ans1}{16}
+END_PGML
+
+BEGIN_PGML_SOLUTION
+Just knowing the first few square numbers, [`\sqrt{[$num1]} = [$ans1]`].
+END_PGML_SOLUTION
+Section::End();
+
+Section::Begin("");
+BEGIN_PGML
+[`` \sqrt{[$num2]} ``]
+
+[_]{$ans2}{16}
+END_PGML
+
+BEGIN_PGML_SOLUTION
+Since [`[$num2]=[$num1]\cdot100`], we have [`\sqrt{[$num2]}=\sqrt{[$num1]\cdot100}=[$ans1]\cdot10=[$ans2]`].
+END_PGML_SOLUTION
+Section::End();
+
+Section::Begin("");
+BEGIN_PGML
+[`` \sqrt{[$num3]} ``]
+
+[_]{$ans3}{16}
+END_PGML
+
+BEGIN_PGML_SOLUTION
+Since [`[$num3]=[$num1]\cdot10000`], we have [`\sqrt{[$num3]}=\sqrt{[$num1]\cdot10000}=[$ans1]\cdot100=[$ans3]`].
+END_PGML_SOLUTION
+Section::End();
+
+Scaffold::End();
+
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

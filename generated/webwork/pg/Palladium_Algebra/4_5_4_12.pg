@@ -1,116 +1,105 @@
-# WeBWorK problem written by Chris Hughes
+# WeBWorK problem written by Carl Yao
 # Portland Community College
 #
-# Template:
+# Solve sqrt(x+p)=r-sqrt(x)
 #
-#  Rewrite the following expression using only positive exponents.
-#
-#   x^-n * x^m
-#
-#
-# We make sure that n>m so that x is raised to a negative power
-# 
-# Last updated: Carl Yao, 7/03/13
+# Last updated: Yao 1/7/2017
 # ENDDESCRIPTION
 
+## DBCCSS('A-REI.4.b')
 ## DBsubject('Algebra')
 ## DBchapter('Basic Algebra')
-## DBsection('Exponents and Radicals')
-## KEYWORDS('exponent','negative','fraction','simplify')
-## DBCCSS('8.EE.1')
-## TitleText1('')
-## EditionText1('')
-## AuthorText1('')
-## Section1('')
-## Problem1('')
+## DBsection('equations', 'Simplification')
+## KEYWORDS('solve','quadratic','equation','square root')
 ## Author('Alex Jordan, Carl Yao, Chris Hughes')
 ## Institution('PCC')
 
 ##############################################
-
 DOCUMENT();
 
 loadMacros(
-  "PGstandard.pl",
-  "MathObjects.pl",
-  "PGML.pl",
-  "PCCmacros.pl",
-  "contextRationalFunction.pl",
-  "bizarroArithmetic.pl",
-  "PGcourse.pl",
+   "PGstandard.pl",
+   "MathObjects.pl",
+   "parserAssignment.pl",
+   "answerHints.pl",
+   "PGML.pl",
+   "contextFiniteSolutionSets.pl",
+   "PCCmacros.pl",
+   "PGcourse.pl",
 );
 
 ##############################################
-
-Context("RationalFunction-Strict");
+    
+Context("FiniteSolutionSets");
 $var = RandomVariableName(type=>'variable');
 Context()->variables->are($var=>'Real');
+                               
 
-Context()->operators->set(
-   '/' => {class => 'bizarro::BOP::divide', isCommand => 1},
-   '/ ' => {class => 'bizarro::BOP::divide', isCommand => 1},
-   ' /' => {class => 'bizarro::BOP::divide', isCommand => 1},
-   '//' => {class => 'bizarro::BOP::divide', isCommand => 1},
-   '*' => {class => 'bizarro::BOP::multiply', isCommand => 1},
-   '* ' => {class => 'bizarro::BOP::multiply', isCommand => 1},
-   ' *' => {class => 'bizarro::BOP::multiply', isCommand => 1});
+do {
+   do {
+      $r = non_zero_random(-20,20,1);
+      do {$p = non_zero_random(-20,20,1);} until (abs($r)!=abs($p));
+      $s = ($r**2-$p)/(2*$r);
+      $solution = $s**2;
+      $left = Compute("sqrt($var+$p)")->reduce;
+      $right = Compute("sqrt($var)-$r")->reduce;
+   } until ( $s>0 );
+} until (sqrt($s)==int(sqrt($s)) and $left->eval($var=>$solution) == $right->eval($var=>$solution));
 
-
-# exponents
-$n = random(3,20,1);
-$m = random(2,$n-1,1);
-
-# total
-$total = (($n)*(-1)+$m)*(-1);
-$ans = Formula("1/($var^($total))");
+$ans = Formula("{$solution}");
 
 ##############################################
-TEXT(beginproblem());
 
 BEGIN_PGML
 
-[@ PTX_exercisegroup_introduction('Use the properties of exponents to simplify the expression.') @]
+[@ PTX_exercisegroup_introduction('Solve the equation.') @]
 
-[`[$var]^{[$n*(-1)]}\cdot [$var]^{[$m]}`]
+     [`` [$left] = [$right] ``]
 
-[____________]
+     [_]{$ans}{16}
 
 END_PGML
 
-
-ANS($ans -> cmp(
-   checker=>sub{
-      my ( $correct, $student, $ansHash ) = @_;
-      Context()->flags->set(limits=>[0.95,1.05]);
-      return 0 if $ansHash->{isPreview} || $correct != $student;
-      $student = $ansHash->{student_formula};
-      $correct = $correct->{original_formula} if defined $correct->{original_formula};
-      $student = Formula("$student"); $correct = Formula("$correct");
-      return 0 unless ($correct == $student);
-      Context()->flags->set(bizarroDiv=>1,bizarroMul=>0);
-      delete $correct->{test_values}, $student->{test_values};
-      Context()->flags->set(limits=>[0.25,0.4]);
-      Value->Error("Your answer is correct, but please simplify it further") unless (($correct == $student) or ($student == $correct));
-      Context()->flags->set(bizarroDiv=>0,bizarroMul=>0);
-      return 1;
-}
-)); 
+##############################################
 
 
 BEGIN_PGML_SOLUTION
 
-We use the properties of exponents to help us here, remember that [`a^m\cdot a^n = a^{m+n}`]
+Sometimes we need to square both sides of an equation twice.
 
-    [`
-           \begin{aligned}
-                 [$var]^{[$n*(-1)]}\cdot [$var]^{[$m]} &= [$var]^{[$n*(-1)]+[$m]}\\
-                                                       & =[$var]^{[$total*(-1)]}\\
-                                    & = [$ans]
-           \end{aligned}
-    `]
+    [``
+\begin{aligned}
+   [$left] &= [$right] \\
+   ([$left])^2 &= ([$right])^2 \\
+   [$var]+[$p] &= (\sqrt{[$var]})^2-2\cdot[$r]\sqrt{[$var]}+([$r])^2 \\
+   [$var]+[$p] &= [$var]-[$r*2]\sqrt{[$var]}+[$r*$r] \\
+   [$var]+[$p] \mathbf{{}-[$var]} &= [$var]-[$r*2]\sqrt{[$var]}+[$r*$r] \mathbf{{}-[$var]} \\
+   [$p] &= -[$r*2]\sqrt{[$var]}+[$r*$r] \\
+   [$p-$r*$r] &= -[$r*2]\sqrt{[$var]} \\
+   \frac{[$p-$r*$r]}{-[$r*2]} &= \frac{-[$r*2]\sqrt{[$var]}}{-[$r*2]} \\
+   [$s] &= \sqrt{[$var]} \\
+   ([$s])^2 &= (\sqrt{[$var]})^2 \\
+   [$solution] &= [$var]
+\end{aligned}
+    ``]
+
+Whenever we square both sides of an equation, we could create extraneous solutions. We must check our solution.
+
+We will substitute [`[$var]=[$solution]`] into [`[$left]=[$right]`], and we have:
+
+    [``
+\begin{aligned}
+   [$left] &= [$right] \\
+   \sqrt{[$solution]+[$p]} &\stackrel{?}{=} \sqrt{[$solution]}-[$r] \\
+   \sqrt{[$solution+$p]} &\stackrel{?}{=} [$s]-[$r] \\
+   [$s-$r] &\stackrel{?}{=} [$s-$r] \\
+\end{aligned}
+    ``]
+
+We checked that [`[$var]=[$solution]`] is a solution. 
 
 END_PGML_SOLUTION
-##############################################
 
+##############################################
 
 ENDDOCUMENT();

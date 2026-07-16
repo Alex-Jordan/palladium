@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-fraction-arithmetic-8-3-4" assembly-id="section-fraction-arithmetic-8-3-4">
+  <static seed="112">
+    <statement><p>Given that <m>a\neq0\text{,}</m> simplify <m>\displaystyle{}{\frac{4}{a}-\frac{2}{5a}}\text{.}</m></p>
+<p><fillin characters="10" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{18}{5a}</m>
+      </p>
+    </answer>
+    <solution><p>Since the fractions don<rsq/>t have the same denominator, we have to make them have like denominators. Multiply the first fraction by <m>\frac{5}{5}\text{.}</m></p>
+<p><me>\begin{aligned}
+{\frac{4}{a}-\frac{2}{5a}} \amp = {\frac{4}{a}}\cdot \frac{5}{5} - {\frac{2}{5a}}\\
+\amp = \frac{20}{5a} - {\frac{2}{5a}}\\
+\amp = {\frac{18}{5a}}
+\end{aligned}</me></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/Appendices/A_1_6_105.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(A.1.6.105)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "contextRationalFunction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->are(a=>'Real');
+$p = random(1,9,1);
+$q = list_random(1..4,6..9);
+$numerator = (5*$p-$q);
+$left = Formula("$p/a");
+$right = Formula("$q/(5a)");
+$expression = $left - $right;
+$p5 = 5*$p;
+Context("RationalFunction-Strict");
+Context()->variables->are(a=>'Real');
+$answer = Formula("$numerator/(5a)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Given that [`a\neq0\text{,}`] simplify [`\displaystyle{}[$expression]\text{.}`]
+
+[_]{$answer}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Since the fractions don't have the same denominator, we have to make them have like denominators. Multiply the first fraction by [`\frac{5}{5}\text{.}`]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$expression] \amp = [$left]\cdot \frac{5}{5} - [$right]\\
+\amp = \frac{[$p5]}{5a} - [$right]\\
+\amp = [$answer]
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

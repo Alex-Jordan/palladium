@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-addition-and-subtraction-of-rational-expressions-7-4-2" assembly-id="section-addition-and-subtraction-of-rational-expressions-7-4-2">
+  <static seed="1415" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions20.pg">
+    <statement><p>Add or subtract the rational expressions to a single rational expression and then simplify.</p>
+<p><m>\displaystyle{{\frac{64r^{2}}{8r-5x}-\frac{25x^{2}}{8r-5x}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>8r+5x</m>
+      </p>
+    </answer>
+    <solution><p><m>\displaystyle{\begin{aligned}
+   {\frac{64r^{2}}{8r-5x}-\frac{25x^{2}}{8r-5x}} 
+      \amp = \frac{{64r^{2}-25x^{2}}}{{8r-5x}} \\
+      \amp = \frac{{\left(8r-5x\right)\mathopen{}\left(8r+5x\right)}}{{8r-5x}} \\
+      \amp = {8r+5x}
+\end{aligned}
+    }</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions20.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions20.pg"/>
+</webwork-reps>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-quadratic-equations-by-factoring-7-2-24" assembly-id="section-solving-quadratic-equations-by-factoring-7-2-24">
+  <static seed="757" source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad275.pg">
+    <statement><p>Solve the equation.</p>
+<p><m>{9x^{2}} = {-81x}</m></p>
+<p><fillin characters="20" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{0,-9\right\}</m>
+      </p>
+    </answer>
+    <solution><p>There are a few ways to solve quadratic equations- the easiest way to solve this particular 
+type of problem is to use the <em>zero product principle</em>.</p>
+<p><m>\begin{aligned}
+                {9x^{2}} = {-81x} \amp \Rightarrow {9x^{2}+81x}=0\\
+                                \amp \Rightarrow {9x\mathopen{}\left(x+9\right)}=0\\
+                                \amp \Rightarrow x=0\text{ or } x=-9\\
+        \end{aligned}</m></p>
+<p>Note that <em>all</em> quadratic equations have <alert>two</alert> (possibly repeated) solutions; in this problem both solutions are real. Each solution can be checked by substituting it into the original equation- this is left as an exercise.</p>
+<p>You might have solved the equation using the Quadratic Formula- the final 
+result is the same.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad275.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad275.pg"/>
+</webwork-reps>

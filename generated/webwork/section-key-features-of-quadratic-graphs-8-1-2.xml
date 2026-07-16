@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-key-features-of-quadratic-graphs-8-1-2" assembly-id="section-key-features-of-quadratic-graphs-8-1-2">
+  <static seed="980" source="Contrib/PCC/BasicAlgebra/EquationsAndInequalitiesInTwoVariables/TableForLine40.pg">
+    <statement><p>Make a table for the equation.</p>
+<p>The first row is an example.</p>
+<tabular valign="top">
+<col halign="center"/>
+<col halign="center"/>
+<col halign="center"/>
+<row>
+<cell><m>x</m></cell>
+<cell><m>y=-x+6</m></cell>
+<cell>Points</cell>
+</row>
+<row>
+<cell><m>-3</m></cell>
+<cell><m>9</m></cell>
+<cell><m>\left(-3,9\right)</m></cell>
+</row>
+<row>
+<cell><m>-2</m></cell>
+<cell><fillin characters="3" name="AnSwEr0001"/></cell>
+<cell><fillin characters="6" name="AnSwEr0002"/></cell>
+</row>
+<row>
+<cell><m>-1</m></cell>
+<cell><fillin characters="3" name="AnSwEr0003"/></cell>
+<cell><fillin characters="6" name="AnSwEr0004"/></cell>
+</row>
+<row>
+<cell><m>0</m></cell>
+<cell><fillin characters="3" name="AnSwEr0005"/></cell>
+<cell><fillin characters="6" name="AnSwEr0006"/></cell>
+</row>
+<row>
+<cell><m>1</m></cell>
+<cell><fillin characters="3" name="AnSwEr0007"/></cell>
+<cell><fillin characters="6" name="AnSwEr0008"/></cell>
+</row>
+<row>
+<cell><m>2</m></cell>
+<cell><fillin characters="3" name="AnSwEr0009"/></cell>
+<cell><fillin characters="6" name="AnSwEr0010"/></cell>
+</row>
+</tabular>
+<tabular>
+<col width="50%"/>
+<row>
+<cell>
+Values of <m>x</m> and <m>y</m> satisfying the equation <m>y=-x+6</m>
+</cell>
+</row>
+</tabular>
+</statement>
+    <answer>
+      <p>
+        <m>8</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\left(-2,8\right)</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>7</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\left(-1,7\right)</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>6</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\left(0,6\right)</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>5</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\left(1,5\right)</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>4</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\left(2,4\right)</m>
+      </p>
+    </answer>
+    <solution><tabular valign="top">
+<col halign="center"/>
+<col halign="center"/>
+<col halign="center"/>
+<row>
+<cell><m>x</m></cell>
+<cell><m>y</m></cell>
+<cell>Points</cell>
+</row>
+<row>
+<cell><m>-2</m></cell>
+<cell><m>y= - (-2) +6 = 8</m></cell>
+<cell><m>\left(-2,8\right)</m></cell>
+</row>
+<row>
+<cell><m>-1</m></cell>
+<cell><m>y= - (-1) +6 = 7</m></cell>
+<cell><m>\left(-1,7\right)</m></cell>
+</row>
+<row>
+<cell><m>0</m></cell>
+<cell><m>y= - (0) +6 = 6</m></cell>
+<cell><m>\left(0,6\right)</m></cell>
+</row>
+<row>
+<cell><m>1</m></cell>
+<cell><m>y= - (1) +6 = 5</m></cell>
+<cell><m>\left(1,5\right)</m></cell>
+</row>
+<row>
+<cell><m>2</m></cell>
+<cell><m>y= - (2) +6 = 4</m></cell>
+<cell><m>\left(2,4\right)</m></cell>
+</row>
+</tabular>
+<tabular>
+<col width="50%"/>
+<row>
+<cell>
+Values of <m>x</m> and <m>y</m> satisfying the equation <m>y=-x+6</m>
+</cell>
+</row>
+</tabular>  
+
+
+
+
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/EquationsAndInequalitiesInTwoVariables/TableForLine40.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/EquationsAndInequalitiesInTwoVariables/TableForLine40.pg"/>
+</webwork-reps>

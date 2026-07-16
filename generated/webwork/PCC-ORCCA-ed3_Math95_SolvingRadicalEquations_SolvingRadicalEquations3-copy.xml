@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_SolvingRadicalEquations_SolvingRadicalEquations3-copy" assembly-id="PCC-ORCCA-ed3_Math95_SolvingRadicalEquations_SolvingRadicalEquations3-copy">
+  <static seed="2041">
+    <statement><p><m>\displaystyle{ {\sqrt{6t+7}+7} = {11} }</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{\frac{3}{2}\right\}</m>
+      </p>
+    </answer>
+    <solution><p>The first step is to get the square root on one side of the equation and everything else on the other side.</p>
+<p><m>\displaystyle{\begin{aligned}
+   {\sqrt{6t+7}+7} \amp = {11} \\
+   {\sqrt{6t+7}+7}-7 \amp = {11}-7 \\
+   \sqrt{6t+7} \amp = 4 \\
+\end{aligned}
+    }</m></p>
+<p>To get rid of the square root, we square the left side and the right side of the equation.</p>
+<p><m>\displaystyle{\begin{aligned}
+   \sqrt{6t+7} \amp = 4 \\
+   \left(\sqrt{6t+7}\right)^2 \amp = \left(4\right)^2 \\
+   6t+7 \amp = 16 \\
+   6t+7-7 \amp = 16-7 \\
+   6t \amp = 9 \\
+   \frac{6t}{6} \amp = \frac{9}{6} \\
+   t \amp = {{\frac{3}{2}}} \\
+\end{aligned}
+    }</m></p>
+<p>We must check our solutions when we solve radical equations. We therefore substitute our answer into the original equation:</p>
+<p><m>\displaystyle{\begin{aligned}
+   {\sqrt{6t+7}+7} \amp \stackrel{?}{=} {11} \\
+   \sqrt{6\cdot{{\frac{3}{2}}}+7}+7 \amp \stackrel{?}{=} 11 \\
+   \sqrt{{9}+7}+7 \amp \stackrel{?}{=} 11 \\
+   \sqrt{{16}}+7 \amp \stackrel{?}{=} 11 \\
+   {4}+7 \amp \stackrel{?}{=} 11 \\
+   11 \amp \stackrel{?}{=} 11 \\
+\end{aligned}
+    }</m></p>
+<p>That is true, so the solution set is <m>\{{{\frac{3}{2}}}\}</m>.</p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/4_5_4_20.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+#
+# Template:
+# Solve the following radical equation
+#
+#       sqrt(ax+b)+c = d
+#
+#
+# Last updated: Spoddeck 12/22/15
+# ENDDESCRIPTION
+
+
+##############################################
+
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",  
+  "contextFraction.pl",
+  "PCCmacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "PGML.pl",
+  "PGcourse.pl",
+);
+
+
+##############################################
+
+
+TEXT(beginproblem());
+
+Context("Fraction");
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+$a = random(2,10,1);
+$b = random(2,10,1);
+$c = random(2,10,1);
+$d = $c + random(2,10,1);
+$h1 = $d - $c;                             #helper variable 1
+
+
+$left = Formula("sqrt($a $var+$b)+$c");
+$right = Formula("$d")->reduce;
+
+
+$r[0] = Fraction("($d-$c)**2-$b","$a");
+$h2 = sqrt($a*$r[0]+$b);                             #helper variable 2
+
+
+Context("FiniteSolutionSets");
+Context()->variables->are($var=>'Real');
+$ans = Formula("{$r[0]}");
+
+
+##############################################
+
+BEGIN_PGML
+
+[@ PTX_exercisegroup_introduction('Solve the equation.') @]
+
+     [`` [$left] = [$right] ``]
+
+     [_]{$ans}{16}
+
+END_PGML
+
+##############################################
+
+
+BEGIN_PGML_SOLUTION
+
+The first step is to get the square root on one side of the equation and everything else on the other side.
+
+    [``
+\begin{aligned}
+   [$left] &= [$right] \\
+   [$left]-[$c] &= [$right]-[$c] \\
+   \sqrt{[$a][$var]+[$b]} &= [$d-$c] \\
+\end{aligned}
+    ``]
+
+To get rid of the square root, we square the left side and the right side of the equation.
+
+    [``
+\begin{aligned}
+   \sqrt{[$a][$var]+[$b]} &= [$d-$c] \\
+   \left(\sqrt{[$a][$var]+[$b]}\right)^2 &= \left([$d-$c]\right)^2 \\
+   [$a][$var]+[$b] &= [$h1**2] \\
+   [$a][$var]+[$b]-[$b] &= [$h1**2]-[$b] \\
+   [$a][$var] &= [$h1**2-$b] \\
+   \frac{[$a][$var]}{[$a]} &= \frac{[$h1**2-$b]}{[$a]} \\
+   [$var] &= [$r[0]] \\
+\end{aligned}
+    ``]
+
+We must check our solutions when we solve radical equations. We therefore substitute our answer into the original equation:
+
+    [``
+\begin{aligned}
+   [$left] &\stackrel{?}{=} [$right] \\
+   \sqrt{[$a]\cdot[$r[0]]+[$b]}+[$c] &\stackrel{?}{=} [$d] \\
+   \sqrt{[$a*$r[0]]+[$b]}+[$c] &\stackrel{?}{=} [$d] \\
+   \sqrt{[$a*$r[0]+$b]}+[$c] &\stackrel{?}{=} [$d] \\
+   [$h2]+[$c] &\stackrel{?}{=} [$d] \\
+   [$d] &\stackrel{?}{=} [$d] \\
+\end{aligned}
+    ``]
+
+That is true, so the solution set is [`\{[$r[0]]\}`].
+
+END_PGML_SOLUTION
+
+
+##############################################
+
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

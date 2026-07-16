@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-15-1-3-35" assembly-id="section-factoring-15-1-3-35">
+  <static seed="55" source="Contrib/PCC/BasicAlgebra/Factoring/factoring145.pg">
+    <statement><p>Factor the given polynomial.</p>
+<p><m>{8x^{5}y^{7}z^{9}+16x^{4}y^{7}z^{8}+36x^{3}y^{7}z^{7}}=</m> <fillin characters="31" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>4x^{3}y^{7}z^{7}\mathopen{}\left(2x^{2}z^{2}+4xz+9\right)</m>
+      </p>
+    </answer>
+    <solution><p>The greatest common factor is <m>4x^3y^{7}z^{7}</m>, so we can factor the polynomial as follows:</p>
+<p><m>{8x^{5}y^{7}z^{9}+16x^{4}y^{7}z^{8}+36x^{3}y^{7}z^{7}}={4x^{3}y^{7}z^{7}\mathopen{}\left(2x^{2}z^{2}+4xz+9\right)}</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/Factoring/factoring145.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/Factoring/factoring145.pg"/>
+</webwork-reps>

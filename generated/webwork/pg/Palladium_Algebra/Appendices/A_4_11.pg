@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:10-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -31,7 +28,6 @@ loadMacros(
   "PGML.pl",
   "AnswerFormatHelp.pl",
   "scaffold.pl",
-  "PCCmacros.pl",
   "contextForm.pl",
   "PGcourse.pl",
 );
@@ -46,21 +42,16 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("Form")->variables->are(c => "Real");
-$ans1 = Formula("13c");
-Context("Form")->variables->are(q => "Real");
-$ans2 = Formula("-8q^2");
-Context("Form")->variables->add(y => "Real");
-$ans3 = Formula("5x-5y");
-Context("Form")->variables->add(y => "Real", z => "Real");
-$ans4 = Formula("2x-3y+4z");
+Context("Form");
+$ans1 = Formula("6x+8");
+$ans2 = Formula("-x-4");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Where possible, simplify the following expressions by combining like terms.
+Use the associative, commutative, and distributive properties to simplify the following expressions as much as possible.
 
 END_PGML
 
@@ -75,9 +66,7 @@ Scaffold::Begin(numbered => 1,is_open => "correct_or_first_incorrect",can_open =
 Section::Begin("");
 
 BEGIN_PGML
-[`6c+12c-5c`]
-
-[@KeyboardInstructions('If it cannot be simplified, just enter it as is.')@]**
+[`(2x+3)+(4x+5)`]
 
 [_]{$ans1}{20}
 
@@ -88,14 +77,17 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-All three terms are like terms, so they may combined. We combine them two at a time:
 
 [```\newcommand{\amp}{&}
 \begin{aligned}
-6c+12c-5c \amp=(6c+12c)-5c\\
-\amp=(6+12)c-5c\\
-\amp=18c-5c\\
-\amp=(18-5)c=13c
+\amp(2x+3)+(4x+5)\\
+\amp=((2x+3)+4x)+5\amp\amp\text{using the associative property of addition}\\
+\amp=(2x+(3+4x))+5\amp\amp\text{using the associative property of addition}\\
+\amp=(2x+(4x+3))+5\amp\amp\text{using the commutative property of addition}\\
+\amp=((2x+4x)+3)+5\amp\amp\text{using the associative property of addition}\\
+\amp=(2x+4x)+(3+5)\amp\amp\text{using the associative property of addition}\\
+\amp=(2+4)x+(3+5)\amp\amp\text{using the distributive property}\\
+\amp=6x+8\amp\amp\text{using addition}
 \end{aligned}
 ```]
 
@@ -109,9 +101,7 @@ Section::End();
 Section::Begin("");
 
 BEGIN_PGML
-[`-5q^2-3q^2`]
-
-[@KeyboardInstructions('If it cannot be simplified, just enter it as is.')@]**
+[`(-5x+3)+(4x-7)`]
 
 [_]{$ans2}{20}
 
@@ -122,77 +112,20 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-The terms [`-5q^2`] and [`-3q^2`] are like terms, so we may combine them. Note we are using one of the subtraction versions of the distributive property.
 
 [```\newcommand{\amp}{&}
 \begin{aligned}
--5q^2-3q^2 \amp=(-5-3)q^2\\
-\amp=-8q^2
+\amp(-5x+3)+(4x-7)\\
+\amp=((-5x+3)+4x)+(-7)\amp\amp\text{using the associative property of addition}\\
+\amp=(-5x+(3+4x))+(-7)\amp\amp\text{using the associative property of addition}\\
+\amp=(-5x+(4x+3))+(-7)\amp\amp\text{using the commutative property of addition}\\
+\amp=((-5x+4x)+3)+(-7)\amp\amp\text{using the associative property of addition}\\
+\amp=(-5x+4x)+(3+(-7))\amp\amp\text{using the associative property of addition}\\
+\amp=(-5+4)x+(3+(-7))\amp\amp\text{using the distributive property}\\
+\amp=-1x+(-4)\amp\amp\text{using addition}\\
+\amp=-x-4
 \end{aligned}
 ```]
-
-END_PGML_SOLUTION
-
-Section::End();
-
-############################################################
-# Section
-############################################################
-Section::Begin("");
-
-BEGIN_PGML
-[`x-5y+4x`]
-
-[@KeyboardInstructions('If it cannot be simplified, just enter it as is.')@]**
-
-[_]{$ans3}{20}
-
-END_PGML
-
-############################################################
-# Solution
-############################################################
-
-BEGIN_PGML_SOLUTION
-The terms [`x`] and [`4x`] are like terms, while the other term is different. Using the associative and commutative properties of addition early in the process allows us to place the two like terms next to each other, and then combine them:
-
-[```\newcommand{\amp}{&}
-\begin{aligned}
-x-5y+4x \amp=x+(-5y)+4x\\
-\amp=x+((-5y)+4x)\\
-\amp=x+(4x+(-5y))\\
-\amp=(x+4x)+(-5y)\\
-\amp=(1+4)x+(-5y)\\
-\amp=5x+(-5y)=5x-5y
-\end{aligned}
-```]
-
-This walkthrough uses the algebra properties cleanly and clearly one step at a time, but if you are combining like terms more quickly, there's nothing at all wrong with that.
-
-END_PGML_SOLUTION
-
-Section::End();
-
-############################################################
-# Section
-############################################################
-Section::Begin("");
-
-BEGIN_PGML
-[`2x-3y+4z`]
-
-[@KeyboardInstructions('If it cannot be simplified, just enter it as is.')@]**
-
-[_]{$ans4}{20}
-
-END_PGML
-
-############################################################
-# Solution
-############################################################
-
-BEGIN_PGML_SOLUTION
-The expression [`2x-3y+4z`] cannot be simplified as there are no like terms.
 
 END_PGML_SOLUTION
 

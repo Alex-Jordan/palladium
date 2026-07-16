@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-12T21:52:51-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,7 +27,8 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "contextFraction.pl",
+  "PGchoicemacros.pl",
+  "contextForm.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -43,28 +41,46 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("LimitedFraction")->flags->set(allowMixedNumbers => 0, showMixedNumbers => 0);
-($run, $rise) = random_coprime([2 .. 9], [-9 .. -1]);
-$m = Fraction($rise, $run);
-$x[0] = non_zero_random(-9, 9);
-$x[1] = $x[0] + $run;
-$y[0] = non_zero_random(-9, 9);
-$y[1] = $y[0] + $rise;
-Context("Point");
-@p = map {Point($x[$_], $y[$_])} (0,1);
+Context()->variables->are(a=>'Real',b=>'Real',c=>'Real');
+($a,$c) = (-5..-1,1..5)[NchooseK(10,2)];
+$b = list_random(-9..-4);
+$d = Formula("b^2-4ac");
+$answer = $d->eval(a=>$a,b=>$b,c=>$c);
+Context()->flags->set(reduceConstants=>0);
+$substituted = $d->substitute(a=>$a,b=>$b,c=>$c);
+$b2 = $b**2;
+$ac4 = 4*$a*$c;
+$solutionstep = Formula("$b2-$ac4");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Find the slope of the line passing through the two given points.
+Evaluate the given expression for the given values.
 
-[`[$p[0]]`] and [`[$p[1]]`]
+[`[$d]`] for [`a=[$a]\text{,}`] [`b=[$b]\text{,}`] and [`c=[$c]`]
 
-[_]{$m}{10}
+[_]{$answer}{10}
 
 END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Substituting in the three values,
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$d]\amp=[$substituted]\\
+\amp=[$solutionstep]\\
+\amp=[$answer]
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
 
 ############################################################
 # End Problem

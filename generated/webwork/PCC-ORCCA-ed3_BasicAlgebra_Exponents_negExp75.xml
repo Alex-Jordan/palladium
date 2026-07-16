@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp75" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp75">
+  <static seed="1739">
+    <statement><p><m>6^{-3}</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>{\frac{1}{216}}</m>
+      </p>
+    </answer>
+    <solution><p>We evaluate the expression by remembering that <m>x^{-n}</m> is the same thing as <m>\displaystyle{\frac{1}{x^n}}</m> 
+for any non-zero,
+real value of <m>x</m></p>
+<p><m>\displaystyle{      \begin{aligned}
+            6^{-3} \amp  = \frac{1}{6^{3}}\\
+                             \amp  = \frac{1}{{216}}
+      \end{aligned}
+    }</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/4_1_7_81.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Chris Hughes
+# Portland Community College
+#
+# Template:
+# Rewrite the expression simplified and using only positive exponents.
+#
+#    a^-n
+#
+#  
+#  
+#
+# a is the base, and is integer on [2,10]. 
+#
+# n is integer on [2,3].
+# 
+# Last updated: Carl Yao, 7/03/13
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Basic Algebra')
+## DBsection('Exponents and Radicals')
+## KEYWORDS('exponent','negative','fraction','simplify','evaluate')
+## DBCCSS('8.EE.1')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Alex Jordan, Carl Yao, Chris Hughes')
+## Institution('PCC')
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "contextFraction.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+
+##############################################
+
+Context("Numeric");
+
+# the base
+$a = random(2,10,1);
+
+# the exponent
+$n = random(2,3,1);
+
+$denominator = Compute("$a**$n");
+
+
+Context("LimitedFraction");
+Context()->flags->set(showMixedNumbers=>0, requireProperFractions=>1);
+$ans = Fraction("1/($denominator)")->reduce;
+
+##############################################
+TEXT(beginproblem());
+
+BEGIN_PGML
+
+[@ PTX_exercisegroup_introduction('Use the properties of exponents to simplify the expression.') @]
+
+[`[$a]^{[$n*(-1)]}`]
+
+[_]{$ans}{16}
+
+END_PGML
+
+
+BEGIN_PGML_SOLUTION
+
+We evaluate the expression by remembering that [`x^{-n}`] is the same thing as [``\frac{1}{x^n}``] 
+for any non-zero,
+real value of [`x`]
+
+    [``
+      \begin{aligned}
+            [$a]^{[$n*(-1)]} & = \frac{1}{[$a]^{[$n]}}\\
+                             & = \frac{1}{[$denominator]}
+      \end{aligned}
+    ``]
+END_PGML_SOLUTION
+##############################################
+
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

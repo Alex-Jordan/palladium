@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-14-18" assembly-id="section-solving-rational-equations-10-14-18">
+  <static seed="1639" source="Contrib/PCC/Math95/RatEqApplications/RatEqApplications6.pg">
+    <statement><p>It takes one employee <m>3.5\ {\rm hr}</m> longer to mow a football field than it does a more experienced employee.  Together they can mow the grass in <m>1.9\ {\rm hr}</m>.  How long does it take each person to mow the football field working alone?</p>
+<p>The more experienced worker takes <fillin characters="15" name="AnSwEr0001"/> to mow the field alone, and the less experienced worker takes <fillin characters="15" name="AnSwEr0002"/>.</p>
+</statement>
+    <answer>
+      <p>
+        <m>2.73\ {\rm hr}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>6.23\ {\rm hr}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/Math95/RatEqApplications/RatEqApplications6.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/Math95/RatEqApplications/RatEqApplications6.pg"/>
+</webwork-reps>

@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-12T21:52:51-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,6 +27,11 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "PGchoicemacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -42,28 +44,71 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-@x = map {$_/10} (num_sort(random_subset(3, -90..90)));
-@y = map {$_/10} (num_sort(random_subset(3, -90..90)));
-$m[0] = ($y[1] - $y[0])/($x[1] - $x[0]);
-$m[1] = ($y[2] - $y[0])/($x[2] - $x[0]);
-$m[2] = ($y[2] - $y[1])/($x[2] - $x[1]);
-$m = max(@m);
-Context("Point");
-@p = map {Point($x[$_], $y[$_])} (0..2);
-@p = random_subset(3, @p);
+do {
+  ($a,$c) = (-9..-2,2..9)[NchooseK(18,2)];
+  $b = ($a*$c > 0) ? random(int(sqrt(4*$a*$c))+1,20,1) * list_random(-1,1) : non_zero_random(-9,9,1);
+} until (sqrt($b**2-4*$a*$c) != int(sqrt($b**2-4*$a*$c)));
+Context()->noreduce('(-x)-y','(-x)+y');
+$f = Formula("$a x^2+$b x+$c")->reduce;
+$disc = $b**2-4*$a*$c;
+$squarepart = 1;
+$squarefree = $disc;
+for $i (2,3,5,7) {
+  while ($squarefree % $i**2 == 0) {
+    $squarepart *= $i**2;
+    $squarefree /= $i**2;
+  }
+}
+$pull = sqrt($squarepart);
+Context("Fraction");
+$B = Fraction($b,2*$a);
+$P = Fraction($pull,2*$a);
+if ($P == 1) {$P = ''};
+if ($pull == 1) {$pull = ''};
+$negb = -$b;
+$a2 = 2*$a;
+$bsquared = ($b)**2;
+$discriminant = ($b)**2 - 4*$a*$c;
+Context("FiniteSolutionSets");
+($r,$s) = (Formula("-$B - $P sqrt($squarefree)"),Formula("-$B + $P sqrt($squarefree)"));
+$solutions = Formula("{$r,$s}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Determine the steepest slope for a line connecting two points from the list.
+Use the quadratic formula to solve the equation.
 
-[`[$p[0]]\text{,}`] [`[$p[1]]\text{,}`] [`[$p[2]]`]
+[`[$f]=0`]
 
-[_]{$m}{10}
+[@KeyboardInstructions('If you need to enter a square root like [`\sqrt{17}\text{,}`] type [|sqrt(17)|]*. If there is no real solution, enter [|no real solution|]*.')@]**
+
+[_]{$solutions}{40}
 
 END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+To use the quadratic formula, we identify [`a=[$a]\text{,}`] [`b=[$b]\text{,}`] and [`c=[$c]\text{.}`]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{[$negb]\pm\sqrt{[$bsquared]-4([$a])([$c])}}{2([$a])}\\
+\amp=\frac{[$negb]\pm\sqrt{[$discriminant]}}{[$a2]}\\
+\amp=\frac{[$negb]\pm[$pull]\sqrt{[$squarefree]}}{[$a2]}\\
+x\amp=\frac{[$negb]-[$pull]\sqrt{[$squarefree]}}{[$a2]}\quad\text{or}\quad x=\frac{[$negb]+[$pull]\sqrt{[$squarefree]}}{[$a2]}\\
+x\amp=[$r]\quad\text{or}\quad x=[$s]
+\end{aligned}
+```]
+
+The solution set is [`[$solutions]\text{.}`]
+
+END_PGML_SOLUTION
 
 ############################################################
 # End Problem

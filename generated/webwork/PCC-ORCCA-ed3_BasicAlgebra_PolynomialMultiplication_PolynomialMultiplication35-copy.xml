@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication35-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication35-copy">
+  <static seed="2654">
+    <statement><p><m>\left({t+5}\right)\left({t-8}\right)</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>t^{2}-3t-40</m>
+      </p>
+    </answer>
+    <solution><p>We use the FOIL technique- <alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast</p>
+<p><m>\begin{aligned}
+              \left({t+5}\right)({t-8})\amp ={t^{2}-8t+5t-40}\\
+                                \amp ={t^{2}-3t-40}
+      \end{aligned}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/Appendices/A_9_5_22.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Chris Hughes
+# Portland Community College
+#
+# Template:
+# Find product of the two binomials
+#
+#    (x+a)(x+b)
+#
+#
+# a is an integer on the interval [1,10], and
+# b is an integer on the interval [-10,1]
+# 
+# Last updated: Carl Yao, 7/04/13
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Polynomial and Rational Functions')
+## DBsection('Polynomial Functions')
+## KEYWORDS('exponent','multiply','polynomial','binomial','FOIL')
+## DBCCSS('A-APR.1')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Alex Jordan, Carl Yao, Chris Hughes')
+## Institution('PCC')
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "PCCmacros.pl",
+  "contextLimitedPolynomial.pl",
+  "PGcourse.pl",
+);
+
+##############################################
+
+Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+# setup the first binomial: (x+$a)
+$a = random(1,10,1);
+@poly1array = (1,$a);
+
+# setup the binomial: (x+$b)
+$b = random(-10,-1,1);
+@poly2array = (1,$b);
+
+# reduction check
+$poly1 = Formula(PolyString(~~@poly1array,order=>descending,var=>$var))->reduce->reduce;
+$poly2 = Formula(PolyString(~~@poly2array,order=>descending,var=>$var))->reduce->reduce;
+
+
+# for the solution
+
+$ans = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>simplified,var=>$var))->reduce->reduce;
+
+$soln1 = Formula(PolyMult(~~@poly1array,~~@poly2array,output=>unsimplified,var=>$var))->reduce->reduce;
+
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var=>'Real');
+$ans = Formula($ans);
+
+
+##############################################
+TEXT(beginproblem());
+
+BEGIN_PGML
+
+[@ PTX_exercisegroup_introduction('Multiply the polynomials.') @]
+
+[`\left([$poly1]\right)\left([$poly2]\right)`]
+
+[_]{$ans}{16}
+
+END_PGML
+
+
+BEGIN_PGML_SOLUTION
+
+We use the FOIL technique- *F*irst *O*utside *I*nside *L*ast
+
+    [`
+      \begin{aligned}
+              \left([$poly1]\right)([$poly2])&=[$soln1]\\
+                                &=[$ans]
+      \end{aligned}
+    `]
+END_PGML_SOLUTION
+##############################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

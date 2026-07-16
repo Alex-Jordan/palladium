@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-4-5" assembly-id="section-factoring-4-5">
+  <static seed="572">
+    <task>
+      <statement><p>The greatest common factor between <m>6x</m> and <m>8x</m> is <fillin characters="3" name="AnSwEr0001"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>2x</m>
+        </p>
+      </answer>
+      <solution><p>Since <m>6x</m> completely factors as <m>\attention{2}\cdot3\cdot \attention{x}</m> ... and <m>8x</m> completely factors as <m>\attention{2}\cdot2\cdot2\cdot \attention{x}\text{,}</m> ...</p>
+<p>... the greatest common factor is <m>2x\text{.}</m></p>
+</solution>
+    </task>
+    <task>
+      <statement><p>The greatest common factor between <m>14x^2</m> and <m>10x</m> is <fillin characters="3" name="AnSwEr0002"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>2x</m>
+        </p>
+      </answer>
+      <solution><p>Since <m>14x^2</m> completely factors as <m>\attention{2}\cdot7\cdot \attention{x}\cdot x</m> ... and <m>10x</m> completely factors as <m>\attention{2}\cdot5\cdot \attention{x}\text{,}</m> ...</p>
+<p>... the greatest common factor is <m>2x\text{.}</m></p>
+</solution>
+    </task>
+    <task>
+      <statement><p>The greatest common factor between <m>6y^2</m> and <m>7y^2</m> is <fillin characters="3" name="AnSwEr0003"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>y^{2}</m>
+        </p>
+      </answer>
+      <solution><p>Since <m>6y^2</m> completely factors as <m>2\cdot3\cdot \attention{y}\cdot \attention{y}</m> ... and <m>7y^2</m> completely factors as <m>7\cdot\attention{y}\cdot\attention{y}\text{,}</m> ...</p>
+<p>... the greatest common factor is <m>y^2\text{.}</m></p>
+</solution>
+    </task>
+    <task>
+      <statement><p>The greatest common factor between <m>12xy^2</m> and <m>9xy</m> is <fillin characters="3" name="AnSwEr0004"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>3xy</m>
+        </p>
+      </answer>
+      <solution><p>Since <m>12xy^2</m> completely factors as <m>2\cdot2\cdot\attention{3}\cdot \attention{x}\cdot \attention{y}\cdot y</m> ... and <m>9xy</m> completely factors as <m>\attention{3}\cdot3\cdot \attention{x}\cdot \attention{y}\text{,}</m> ...</p>
+<p>... the greatest common factor is <m>3xy\text{.}</m></p>
+</solution>
+    </task>
+    <task>
+      <statement><p>The greatest common factor between <m>6x^3\text{,}</m> <m>2x^2\text{,}</m> and <m>8x</m> is <fillin characters="3" name="AnSwEr0005"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>2x</m>
+        </p>
+      </answer>
+      <solution><p>Since <m>6x^3</m> completely factors as <m>\attention{2}\cdot3\cdot \attention{x}\cdot x\cdot x</m> ... <m>2x^2</m> completely factors as <m>\attention{2}\cdot\attention{x}\cdot x\text{,}</m> ... and <m>8x</m> completely factors as <m>\attention{2}\cdot2\cdot2\cdot\attention{x}\text{,}</m> ...</p>
+<p>... the greatest common factor is <m>2x\text{.}</m></p>
+</solution>
+    </task>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_1_3.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.1.3)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "scaffold.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+COMMENT('This problem is scaffolded with multiple parts');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context()->variables->are(x => 'Real', y => 'Real');
+
+############################################################
+# Body
+############################################################
+
+############################################################
+# Scaffold
+############################################################
+Scaffold::Begin(numbered => 1,is_open => "correct_or_first_incorrect",can_open => always,);
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+The greatest common factor between [`6x`] and [`8x`] is [_]{'2x'}{3}.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Since [`6x`] completely factors as [`\newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}\attention{2}\cdot3\cdot \attention{x}`] ... and [`8x`] completely factors as [`\newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}\attention{2}\cdot2\cdot2\cdot \attention{x}\text{,}`] ...
+
+... the greatest common factor is [`2x\text{.}`]
+
+END_PGML_SOLUTION
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+The greatest common factor between [`14x^2`] and [`10x`] is [_]{'2x'}{3}.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Since [`14x^2`] completely factors as [`\newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}\attention{2}\cdot7\cdot \attention{x}\cdot x`] ... and [`10x`] completely factors as [`\newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}\attention{2}\cdot5\cdot \attention{x}\text{,}`] ...
+
+... the greatest common factor is [`2x\text{.}`]
+
+END_PGML_SOLUTION
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+The greatest common factor between [`6y^2`] and [`7y^2`] is [_]{'y^2'}{3}.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Since [`6y^2`] completely factors as [`\newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}2\cdot3\cdot \attention{y}\cdot \attention{y}`] ... and [`7y^2`] completely factors as [`\newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}7\cdot\attention{y}\cdot\attention{y}\text{,}`] ...
+
+... the greatest common factor is [`y^2\text{.}`]
+
+END_PGML_SOLUTION
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+The greatest common factor between [`12xy^2`] and [`9xy`] is [_]{'3xy'}{3}.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Since [`12xy^2`] completely factors as [`\newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}2\cdot2\cdot\attention{3}\cdot \attention{x}\cdot \attention{y}\cdot y`] ... and [`9xy`] completely factors as [`\newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}\attention{3}\cdot3\cdot \attention{x}\cdot \attention{y}\text{,}`] ...
+
+... the greatest common factor is [`3xy\text{.}`]
+
+END_PGML_SOLUTION
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+The greatest common factor between [`6x^3\text{,}`] [`2x^2\text{,}`] and [`8x`] is [_]{'2x'}{3}.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Since [`6x^3`] completely factors as [`\newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}\attention{2}\cdot3\cdot \attention{x}\cdot x\cdot x`] ... [`2x^2`] completely factors as [`\newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}\attention{2}\cdot\attention{x}\cdot x\text{,}`] ... and [`8x`] completely factors as [`\newcommand{\attention}[1]{\mathord{\overset{\downarrow}{#1}}}\attention{2}\cdot2\cdot2\cdot\attention{x}\text{,}`] ...
+
+... the greatest common factor is [`2x\text{.}`]
+
+END_PGML_SOLUTION
+
+Section::End();
+
+Scaffold::End();
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

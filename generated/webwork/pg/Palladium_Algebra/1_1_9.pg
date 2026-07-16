@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:06-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -44,19 +41,19 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("LinearRelation")->variables->are(x => 'Real');
-$equation = LinearRelation("x - 0.2x = 51");
+Context("LinearRelation")->variables->are(t => 'Real');
+$equation = LinearRelation("6.934 - 0.046t = 5");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-A shirt is on sale for [`20\%`] off. The sale price is [`\$51.00\text{.}`] Write an equation based on this scenario where the solution represents the shirt's original price.
+In the year 2020, the population of Bulgaria was [`6.934`] million. And it was declining at a rate of about [`0.046\,\frac{\text{million}}{\text{year}}\text{.}`] At this rate, how many years from 2020 will it take for Bulgaria's population to reach [`5`] million? Set up an equation where the solution is the number of years it will take.
 
-[@KeyboardInstructions('Use [|x|]* for the variable.')@]**
+[@KeyboardInstructions('Use [|t|]* for the variable.')@]**
 
-[_]{$equation}{25}
+[_]{$equation}{20}
 
 END_PGML
 
@@ -65,15 +62,18 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-Let [`x`] represent the original price of the shirt. Since [`20\%`] is removed to bring the cost down to [`\$51\text{,}`] we can set up the equation:
+Since the solution will represent an amount of time, we choose to use [`t`] as the variable. Let [`t`] be the number of years from 2020 until Bulgaria's population reaches 5 million.
 
-[```\newcommand{\pinover}[2]{\overset{\overset{\mathrm{\ #2\ }}{|}}{\strut #1 \strut}}\newcommand{\amp}{&}
+Now using the pattern for rate modeling from (1.1.1), we have:
+
+[```\newcommand{\amp}{&}
 \begin{aligned}
-\pinover{x}{original}\pinover{-}{minus}\pinover{0.20}{20\%}\pinover{\cdot}{of}\pinover{x}{original}\amp\pinover{=}{is}\pinover{51}{\$51}
+\text{initialValue} - \text{rate}\cdot\text{timePassed} \amp= \text{finalValue}\\
+6.934 - 0.046t \amp= 5
 \end{aligned}
 ```]
 
-This equation's solution will be the original price of the shirt, but for now we do not need to solve the equation.
+Notice that because the population is reducing over time, we used subtraction. In effect, the rate of "growth" is negative. We are not asked to solve this equation, just to write it down.
 
 END_PGML_SOLUTION
 

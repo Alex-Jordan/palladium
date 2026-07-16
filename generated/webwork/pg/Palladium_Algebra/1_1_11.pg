@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:06-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -45,16 +42,16 @@ TEXT(beginproblem());
 # PG Setup Code
 ############################################################
 Context("LinearRelation")->variables->are(x => 'Real');
-$equation = LinearRelation("x - 0.37x > 25957");
+$equation = LinearRelation("x + 0.19x = 150");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-You read on the internet that from the year 2010 to the year 2023, community colleges experienced over [`37\%`] enrollment decline. In spring 2023 at Portland Community College, there were [`25{,}957`] students. Write an inequality where the solution set represents how many students may have been at PCC in spring 2010.
+Kirima offered to pay the bill and tip at a restaurant where she and her friends had dinner. In total she paid [`\$150`] even, where the tip was a little more than [`19\%\text{.}`] We'd like to know what was the bill before tip. Set up an equation for this situation.
 
-[@KeyboardInstructions('Use [|x|]* for the variable.')@]**
+[@KeyboardInstructions('Use [|x|]* for any variable you define and use.')@]**
 
 [_]{$equation}{25}
 
@@ -65,22 +62,17 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-We decide to let [`x`] represent the number of students enrolled at PCC in spring 2010. This is an "initial value" in the sense of (1.1.2). But we do not want to write an equation, because we were told that community colleges experienced _over_ a [`37\%`] enrollment decline, not exactly a [`37\%`] decline. So we write the following:
+A common mistake is to translate a question like this into "what is [`19\%`] of [`\$150\text{?}`]" as a way to calculate the tip amount, and then subtract that from [`\$150\text{.}`] But that is not how tipping works. The [`19\%`] is applied to the _original bill_, not the _final total_. So please read carefully.
 
-[```\newcommand{\amp}{&}
+If we let [`x`] represent the original bill, we can apply (1.1.2) and we have:
+
+[```\newcommand{\pinover}[2]{\overset{\overset{\mathrm{\ #2\ }}{|}}{\strut #1 \strut}}\newcommand{\amp}{&}
 \begin{aligned}
-(\text{initial value}) \pm (\text{percent as decimal})\cdot(\text{initial value}) \amp\mathrel{?} (\text{final value})\\
-x - 0.37x \amp\mathrel{?} 25957
+\pinover{x}{bill}\pinover{+}{plus}\pinover{0.19}{19\%}\pinover{\cdot}{of}\pinover{x}{bill}\amp\pinover{=}{is}\pinover{150}{\$150}
 \end{aligned}
 ```]
 
-But what inequality symbol makes sense here? If the decline was _more_ than [`37\%\text{,}`] then [`x`] started out larger than what it would have to be for [`x - 0.37x`] to equal [`25957\text{.}`] So we need a greater than sign:
-
-[```\newcommand{\gt}{>}
-              x - 0.37x \gt 25957
-            ```]
-
-Once again, we will not try to solve this at this time.
+Again, we are not currently trying to solve this equation, just write it down.
 
 END_PGML_SOLUTION
 

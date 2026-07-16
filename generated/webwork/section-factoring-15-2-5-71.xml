@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-15-2-5-71" assembly-id="section-factoring-15-2-5-71">
+  <static seed="243" source="Contrib/PCC/BasicAlgebra/Factoring/factoring510.pg">
+    <statement><p>Factor the given polynomial.</p>
+<p><m>{2t^{3}+128t}=</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>2t\mathopen{}\left(t^{2}+64\right)</m>
+      </p>
+    </answer>
+    <solution><p>We note that <m>2t</m> is common to both 
+terms</p>
+<p><m>{2t^{3}+128t}  =  {2t\mathopen{}\left(t^{2}+64\right)}</m></p>
+<p>We can not factor the expression further, since the binomial is a sum of squares.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/Factoring/factoring510.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/Factoring/factoring510.pg"/>
+</webwork-reps>

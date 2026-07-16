@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers10" assembly-id="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers10">
+  <static seed="1792">
+    <statement><p><ul form="checkboxes" name="AnSwEr0001">
+<li>
+<p>78</p>
+</li>
+<li>
+<p>121</p>
+</li>
+<li>
+<p>118</p>
+</li>
+<li>
+<p>89</p>
+</li>
+<li>
+<p>36</p>
+</li>
+<li>
+<p>4</p>
+</li>
+</ul></p>
+</statement>
+    <answer>
+      <p>
+        <m>\text{121, 36, 4}</m>
+      </p>
+    </answer>
+    <solution><p>You can quickly find the first few square numbers on scratch paper:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   1^{2} \amp = 1 \\
+   2^{2} \amp = 4 \\
+   3^{2} \amp = 9 \\
+   4^{2} \amp = 16 \\
+   5^{2} \amp = 25 \\
+   6^{2} \amp = 36 \\
+   7^{2} \amp = 49 \\
+   8^{2} \amp = 64 \\
+   9^{2} \amp = 81 \\
+   10^{2} \amp = 100 \\
+   11^{2} \amp = 121 \\
+   12^{2} \amp = 144 \\
+\end{aligned}
+   }</m></p>
+<p>It would be very helpful if you can memorize the above 12 square numbers.</p>
+<p>So the correct answers are <m>36</m>, <m>4</m>, and <m>121</m>.</p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/4_2_10_1.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Carl Yao
+# Portland Community College
+#
+# 
+# Identify square numbers smaller than or equal to 144.
+#
+# Last edited: Carl Yao 9/22/13
+#
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Basic Algebra')
+## DBsection('Exponents and Radicals')
+## KEYWORDS('radical','square root','square number','identify')
+## DBCCSS('8.EE')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Carl Yao')
+## Institution('PCC')
+
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGchoicemacros.pl",
+  "PGML.pl",
+  "PCCmacros.pl",
+  "parserCheckboxList.pl",
+  "PGcourse.pl",
+);
+
+##############################################
+TEXT(beginproblem());
+
+Context("Numeric");
+
+@given = ();
+$numCorrect = 3;
+
+@squareNums = (1,4,9,16,25,36,49,64,81,100,121,144);
+
+for my $i (0..$numCorrect-1) {
+   push(@given,splice(@squareNums,random(0,$#squareNums,1),1));
+}
+
+$nonSquare = 0;
+for my $i (0..$numCorrect-1) {
+   do {$nonSquare=random(2,143,1);} until
+        (sqrt($nonSquare)!=int(sqrt($nonSquare)));
+   push(@given,$nonSquare);
+}
+
+$checkboxes = CheckboxList([~~@given], [0,1,2]);
+
+##############################################
+
+BEGIN_PGML
+
+[@ PTX_exercisegroup_introduction('Which of the following are square numbers? There may be more than one correct answer.') @]
+
+[_]{$checkboxes}
+
+END_PGML
+
+##############################################
+$showPartialCorrectAnswers = 0;
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+You can quickly find the first few square numbers on scratch paper:
+
+    [``
+\begin{aligned}[t]
+   1^{2} &= 1 \\
+   2^{2} &= 4 \\
+   3^{2} &= 9 \\
+   4^{2} &= 16 \\
+   5^{2} &= 25 \\
+   6^{2} &= 36 \\
+   7^{2} &= 49 \\
+   8^{2} &= 64 \\
+   9^{2} &= 81 \\
+   10^{2} &= 100 \\
+   11^{2} &= 121 \\
+   12^{2} &= 144 \\
+\end{aligned}
+   ``]
+
+It would be very helpful if you can memorize the above 12 square numbers.
+
+So the correct answers are [`[$given[0]]`], [`[$given[1]]`], and [`[$given[2]]`].
+
+END_PGML_SOLUTION
+
+
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

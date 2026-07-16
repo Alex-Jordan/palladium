@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-more-step-integer-mgroupxplusbequalsnxplusc" assembly-id="more-step-integer-mgroupxplusbequalsnxplusc">
+  <static seed="97">
+    <statement><p><m>{-6\mathopen{}\left(L+3\right)}={-4L-14}</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{-2\right\}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/1_2_9_37.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.2.9.37)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$x = list_random('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
+Context()->variables->are($x => 'Real');
+$sol = non_zero_random(-9, 9);
+($m, $n) = random_subset(2, -9..-2, 2..9);
+$b = non_zero_random(-9, 9);
+$c = ($m - $n)*$sol + $m*$b;
+Context()->noreduce('(-x)-y', '(-x)+y');
+$left = Formula("$m($x + $b)")->reduce;
+$right = Formula("$n $x + $c")->reduce;
+Context("FiniteSolutionSets");
+Context()->variables->are($x => 'Real');
+$solset = Formula("{$sol}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve the equation.
+
+[`[$left]=[$right]`]
+
+[_]{$solset}{16}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

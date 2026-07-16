@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-quadratic-graphs-and-vertex-form-4-16" assembly-id="section-quadratic-graphs-and-vertex-form-4-16">
+  <static seed="1068">
+    <statement><p>Identify the domain and range of each quadratic function.
+<ol label="a.">
+<li>
+<p><m>w(x)=-3(x+10)^2-11</m></p>
+<p>The domain is <fillin characters="5" name="AnSwEr0001"/> and the range is <fillin characters="5" name="AnSwEr0002"/>.</p>
+</li>
+<li>
+<p><m>u(x)=4(x-7)^2+20</m></p>
+<p>The domain is <fillin characters="5" name="AnSwEr0003"/> and the range is <fillin characters="5" name="AnSwEr0004"/>.</p>
+</li>
+<li>
+<p><m>y(x)=-(x-1)^2</m></p>
+<p>The domain is <fillin characters="5" name="AnSwEr0005"/> and the range is <fillin characters="5" name="AnSwEr0006"/>.</p>
+</li>
+<li>
+<p><m>z(x)=3(x+9)^2-4</m></p>
+<p>The domain is <fillin characters="5" name="AnSwEr0007"/> and the range is <fillin characters="5" name="AnSwEr0008"/>.</p>
+</li>
+</ol></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left(-\infty ,\infty \right)</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\left(-\infty ,-11\right]</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\left(-\infty ,\infty \right)</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\left[20,\infty \right)</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\left(-\infty ,\infty \right)</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\left(-\infty ,0\right]</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\left(-\infty ,\infty \right)</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\left[-4,\infty \right)</m>
+      </p>
+    </answer>
+    <solution><p><ol label="a.">
+<li>
+<p>The domain of <m>w</m> is <m>(-\infty,\infty)\text{.}</m> The parabola opens downward so the range is <m>(-\infty,-11]\text{.}</m></p>
+</li>
+<li>
+<p>The domain of <m>u</m> is <m>(-\infty,\infty)\text{.}</m> The parabola opens upward so the range is <m>[20,\infty)\text{.}</m></p>
+</li>
+<li>
+<p>The domain of <m>y</m> is <m>(-\infty,\infty)\text{.}</m> The parabola opens downward so the range is <m>(-\infty,0]\text{.}</m></p>
+</li>
+<li>
+<p>The domain of <m>z</m> is <m>(-\infty,\infty)\text{.}</m> The parabola opens upward so the range is <m>[-4,\infty)\text{.}</m></p>
+</li>
+</ol></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_7_17.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.7.17)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Interval");
+$domain = Interval("(-inf,inf)");
+$range[0] = Interval("(-inf,-11]");
+$range[1] = Interval("[20,inf)");
+$range[2] = Interval("(-inf,0]");
+$range[3] = Interval("[-4,inf)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Identify the domain and range of each quadratic function.
+a.  [`w(x)=-3(x+10)^2-11`]
+
+    The domain is [_]{$domain}{5} and the range is [_]{$range[0]}{5}.
+
+a.  [`u(x)=4(x-7)^2+20`]
+
+    The domain is [_]{$domain}{5} and the range is [_]{$range[1]}{5}.
+
+a.  [`y(x)=-(x-1)^2`]
+
+    The domain is [_]{$domain}{5} and the range is [_]{$range[2]}{5}.
+
+a.  [`z(x)=3(x+9)^2-4`]
+
+    The domain is [_]{$domain}{5} and the range is [_]{$range[3]}{5}.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  The domain of [`w`] is [`(-\infty,\infty)\text{.}`] The parabola opens downward so the range is [`(-\infty,-11]\text{.}`]
+
+a.  The domain of [`u`] is [`(-\infty,\infty)\text{.}`] The parabola opens upward so the range is [`[20,\infty)\text{.}`]
+
+a.  The domain of [`y`] is [`(-\infty,\infty)\text{.}`] The parabola opens downward so the range is [`(-\infty,0]\text{.}`]
+
+a.  The domain of [`z`] is [`(-\infty,\infty)\text{.}`] The parabola opens upward so the range is [`[-4,\infty)\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

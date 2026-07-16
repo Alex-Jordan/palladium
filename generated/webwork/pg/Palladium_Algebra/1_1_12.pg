@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-20T13:16:07-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -45,16 +42,16 @@ TEXT(beginproblem());
 # PG Setup Code
 ############################################################
 Context("LinearRelation")->variables->are(x => 'Real');
-$equation = LinearRelation("x - 0.2x = 51");
+$equation = LinearRelation("x + 0.19x = 150");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-A shirt is on sale for [`20\%`] off. The sale price is [`\$51.00\text{.}`] Write an equation based on this scenario where the solution represents the shirt's original price.
+Kirima offered to pay the bill and tip at a restaurant where she and her friends had dinner. In total she paid [`\$150\text{,}`] where the tip was a little more than [`19\%\text{.}`] We'd like to know what was the bill before tip. Set up an equation for this situation.
 
-[@KeyboardInstructions('Use [|x|]* for the variable.')@]**
+[@KeyboardInstructions('Use [|x|]* for any variable you define and use.')@]**
 
 [_]{$equation}{25}
 
@@ -65,15 +62,17 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-Let [`x`] represent the original price of the shirt. Since [`20\%`] is removed to bring the cost down to [`\$51\text{,}`] we can set up the equation:
+A common mistake is to translate a question like this into "what is [`19\%`] of [`\$150\text{?}`]" as a way to calculate the tip amount, and then subtract that from [`\$150\text{.}`] But that is not how tipping works. The [`19\%`] is applied to the _original bill_, not the _final total_. So please read carefully.
+
+If we let [`x`] represent the original bill, we can apply (1.1.2) and we have:
 
 [```\newcommand{\pinover}[2]{\overset{\overset{\mathrm{\ #2\ }}{|}}{\strut #1 \strut}}\newcommand{\amp}{&}
 \begin{aligned}
-\pinover{x}{original}\pinover{-}{minus}\pinover{0.20}{20\%}\pinover{\cdot}{of}\pinover{x}{original}\amp\pinover{=}{is}\pinover{51}{\$51}
+\pinover{x}{bill}\pinover{+}{plus}\pinover{0.19}{19\%}\pinover{\cdot}{of}\pinover{x}{bill}\amp\pinover{=}{is}\pinover{150}{\$150}
 \end{aligned}
 ```]
 
-This equation's solution will be the original price of the shirt, but for now we do not need to solve the equation.
+Again, we are not currently trying to solve this equation, just write it down.
 
 END_PGML_SOLUTION
 

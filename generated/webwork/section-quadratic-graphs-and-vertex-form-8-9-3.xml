@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-quadratic-graphs-and-vertex-form-8-9-3" assembly-id="section-quadratic-graphs-and-vertex-form-8-9-3">
+  <static seed="1124">
+    <statement><p>Let <m>F</m> be defined by <m>F(x)={3.5\mathopen{}\left(x+3\right)^{2}+4}\text{.}</m>
+<ol label="a.">
+<li>
+<p>What is the domain of <m>F\text{?}</m></p>
+<p><fillin characters="10" name="AnSwEr0001"/></p>
+</li>
+<li>
+<p>What is the range of <m>F\text{?}</m></p>
+<p><fillin characters="10" name="AnSwEr0002"/></p>
+</li>
+</ol></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left(-\infty ,\infty \right)</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\left[4,\infty \right)</m>
+      </p>
+    </answer>
+    <solution><p><ol label="a.">
+<li>
+<p>The function is quadratic, so the domain is <m>{\left(-\infty ,\infty \right)}\text{.}</m> There are no invalid inputs for this function.</p>
+</li>
+<li>
+<p>Since the formula is in vertex form, we can see that the graph of <m>F</m> has a vertex at <m>{\left(-3,4\right)}\text{.}</m> Since the leading coefficient is <m>3.5</m> which is positive, the parabola opens upward. So the range is all numbers greater than or equal to <m>4\text{.}</m> So the range is <m>{\left[4,\infty \right)}\text{.}</m></p>
+</li>
+</ol></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_7_6_63.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.7.6.63)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$f = RandomVariableName(type=>'function');
+$a = random(0.1,9.9,0.2);
+$h = non_zero_random(-9,9,1);
+$k = non_zero_random(-9,9,1);
+Context()->noreduce('(-x)+y','(-x)-y');
+$formula = Formula("$a(x - $h)^2 + $k")->reduce;
+Context("Interval");
+$domain = Compute("(-inf,inf)");
+$range = Compute("[$k,inf)");
+Context("Point");
+$vertex = Compute("($h,$k)");
+$posneg = ($a > 0) ? "positive" : "negative";
+$updown = ($a > 0) ? "upward" : "downward";
+$greatless = ($a > 0) ? "greater" : "less";
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Let [`[$f]`] be defined by [`[$f](x)=[$formula]\text{.}`]
+a.  What is the domain of [`[$f]\text{?}`]
+
+    [_]{$domain}{10}
+
+a.  What is the range of [`[$f]\text{?}`]
+
+    [_]{$range}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  The function is quadratic, so the domain is [`[$domain]\text{.}`] There are no invalid inputs for this function.
+
+a.  Since the formula is in vertex form, we can see that the graph of [`[$f]`] has a vertex at [`[$vertex]\text{.}`] Since the leading coefficient is [`[$a]`] which is [$posneg], the parabola opens [$updown]. So the range is all numbers [$greatless] than or equal to [`[$k]\text{.}`] So the range is [`[$range]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

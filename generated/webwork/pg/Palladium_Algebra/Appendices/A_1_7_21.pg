@@ -1,0 +1,65 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(A.1.7.21)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+($n[0], $d[0], $n[1], $d[1]) = random_pairwise_coprime([1 .. 9], [2 .. 9], [1 .. 9], [2 .. 9]);
+Context("Fraction");
+@f = map {Fraction($n[$_], $d[$_])} (0, 1);
+$ans = Fraction($n[0]*$n[1], $d[0]*$d[1])->cmp(studentsMustReduceFractions => 1);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Multiply or divide the fractions.
+
+[`\displaystyle [$f[0]]\cdot [$f[1]]`]
+
+[_]{$ans}{6}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

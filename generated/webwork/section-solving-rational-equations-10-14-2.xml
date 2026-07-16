@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-14-2" assembly-id="section-solving-rational-equations-10-14-2">
+  <static seed="1623" source="Contrib/PCC/BasicAlgebra/RationalEquations/rationalEquationApplication10.pg">
+    <statement><p>Sharell and Henry are working together to paint a room. If Sharell paints the room alone, it would take her <m>18</m> hours to complete the job. If Henry paints the room alone, it would take him <m>9</m> hours to complete the job. Answer the following question:</p>
+<p>If they work together, it would take them <fillin characters="8" name="AnSwEr0001"/> hours to complete the job. Use a decimal in your answer if needed.</p>
+</statement>
+    <answer>
+      <p>
+        <m>6</m>
+      </p>
+    </answer>
+    <solution><p>Let<rsq/>s understand how to use fractions to model work problems. Assume it takes a person <m>5</m> hours to complete a job. If we treat the whole job as one whole, each hour, this person would complete <m>\frac{1}{5}</m> of the job.</p>
+<p>Similarly, if it takes a person <m>x</m> hours to complete a job, each hour, this person would complete <m>\frac{1}{x}</m> of the job.</p>
+<p>Now we are ready to model this situation with math.</p>
+<p>It<rsq/>s given that, if Sharell paints the room alone, it would take her <m>18</m> hours to complete the job. Each hour, Sharell does <m>\frac{1}{18}</m> of the whole job.</p>
+<p>Similarly, if Henry paints the room alone, it would take him <m>9</m> hours to complete the job. Each hour, Henry does <m>\frac{1}{9}</m> of the whole job.</p>
+<p>Assume that, if they work together, it would take them <m>x</m> hours to complete the job. Thus, each hour, they can complete <m>\frac{1}{x}</m> of the whole job.</p>
+<p>Now we can write an equation and solve it:</p>
+<p><m>\displaystyle{\begin{aligned}
+  \amp \frac{1}{18}+\frac{1}{9} = \frac{1}{x} \\
+  \amp \frac{1}{18} \cdot {18\cdot 9x} +\frac{1}{9} \cdot {18\cdot 9x} = \frac{1}{x} \cdot {18\cdot 9x} \\
+  \amp 9x + 18x = 18 \cdot 9 \\
+  \amp 27x = 162 \\
+  \amp  \frac{27x}{27} = \frac{162}{27} \\
+  \amp  x={6}
+\end{aligned}
+    }</m></p>
+<p>In the second step, to get rid of all fractions, we multiplied each term with the common denominator <m>{18\cdot 9x}</m>.</p>
+<p>By the solution we got, if they work together, it would take them <m>{6}</m> hours to complete the job.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/rationalEquationApplication10.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalEquations/rationalEquationApplication10.pg"/>
+</webwork-reps>

@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:10-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -43,19 +40,18 @@ TEXT(beginproblem());
 # PG Setup Code
 ############################################################
 $grouping = list_random(['(',')'],['[',']']);
-$b = random(2,4,1);
-$a = random(2,100**(1/$b),1);
+($a, $b, $c) = random_subset(3, 2 .. 9);
 Context("LimitedNumeric");
-$answer = Real((-$a)**$b);
+$answer = Real(($a-$b)*$c);
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Use the order of operations to simplify the expression that has grouping symbols.
+Use the order of operations to simplify the expression.
 
-[`[$grouping->[0]] -[$a] [$grouping->[1]]^{[$b]}`]
+[`[$grouping->[0]][$a] - [$b][$grouping->[1]] [$c]`]
 
 [_]{$answer}{5}
 

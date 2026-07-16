@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:10-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -32,7 +29,6 @@ loadMacros(
   "AnswerFormatHelp.pl",
   "PCCmacros.pl",
   "contextInequalitySetBuilder.pl",
-  "parserGraphTool.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -45,34 +41,23 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$a = random(-7, 7);
 InequalitySetBuilder::UseVerticalSuchThat();
 Context("InequalitySetBuilder-Only");
-$set_builder = Compute("{ x | x < $a}");
+Context()->variables->add(D => 'Real', d => 'Real');
+$set_builder = Compute("{ d | d >= 5000}");
 Context("Interval");
-$interval = Compute("(-inf, $a)");
-$gt = GraphTool("{interval,$interval}")->with(
-  availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
-  numberLine => 1,
-  xAxisLabel => 'x',
-  bBox => [ -8, 8 ],
-  ticksDistanceX => 1,
-  minorTicksX => 0,
-  useBracketEnds => 1,
-  showInStatic => 0,
-  showCoordinateHints => 0,
-);
+$interval = Compute("[5000, inf)");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Convert the given set-builder notation into a number line graph and interval notation.
+A bank offers a higher interest rate on an account if the initial deposit is at least [`\$5000\text{.}`] Write an interval for the initial deposit [`d`] that could trigger the higher rate.
 
-[`[$set_builder]`]
+[@KeyboardInstructions('In set-builder notation:')@]**
 
-[_]{$gt}{1}
+[_]{$set_builder}{12}
 
 [@KeyboardInstructions('In interval notation:')@]**
 

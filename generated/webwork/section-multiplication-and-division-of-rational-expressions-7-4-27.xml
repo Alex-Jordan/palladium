@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-4-27" assembly-id="section-multiplication-and-division-of-rational-expressions-7-4-27">
+  <static seed="1292" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions170.pg">
+    <statement><p>Simplify the following expression, and if applicable, write the restricted domain on the simplified expression.</p>
+<p><m>\displaystyle{{\frac{x^{6}-5x^{5}+4x^{4}}{x^{6}-7x^{5}+6x^{4}}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{x-4}{x-6}, x\ne 1\hbox{ and }x\ne 0</m>
+      </p>
+    </answer>
+    <solution><p>To simplify the expression, we first factor both the numerator and denominator, and then cross out common factors:</p>
+<p><m>\displaystyle{\begin{aligned}
+   {\frac{x^{6}-5x^{5}+4x^{4}}{x^{6}-7x^{5}+6x^{4}}} \amp = \frac{{x^{4}\mathopen{}\left(x^{2}-5x+4\right)}}{{x^{4}\mathopen{}\left(x^{2}-7x+6\right)}} \\
+                     \amp = \frac{{x^{4}\mathopen{}\left(x-1\right)\mathopen{}\left(x-4\right)}}{{x^{4}\mathopen{}\left(x-1\right)\mathopen{}\left(x-6\right)}} \\
+                     \amp = {\frac{x-4}{x-6}, x\ne 1\hbox{ and }x\ne 0}
+\end{aligned}
+    }</m></p>
+<p>Since the factors <m>x^{4}</m> and <m>x - 1</m> were crossed out, the domain conditions lost during the simplification are <m>x \ne 0</m> and <m>x \ne 1</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions170.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions170.pg"/>
+</webwork-reps>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-12-2" assembly-id="section-solving-rational-equations-10-12-2">
+  <static seed="1609" source="Contrib/PCC/BasicAlgebra/RationalLiteralEquations/LiteralEquation260.pg">
+    <statement><p>Solve this equation for <m>A</m>:</p>
+<p><m>\displaystyle{ r = \frac{m}{A} }</m></p>
+<p><fillin characters="7" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>A = \frac{m}{r}</m>
+      </p>
+    </answer>
+    <solution><p><m>\displaystyle{\begin{aligned}
+   r \amp = \frac{m}{A} \\
+   r \cdot A \amp = \frac{m}{A} \cdot A \\
+   r \cdot A \amp = m \\
+   \frac{r \cdot A}{r} \amp = \frac{m}{r} \\
+   A \amp = \frac{m}{r} 
+\end{aligned}
+}</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalLiteralEquations/LiteralEquation260.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalLiteralEquations/LiteralEquation260.pg"/>
+</webwork-reps>

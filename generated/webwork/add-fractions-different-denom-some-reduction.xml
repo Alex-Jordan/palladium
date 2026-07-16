@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-add-fractions-different-denom-some-reduction" assembly-id="add-fractions-different-denom-some-reduction">
+  <static seed="54">
+    <statement><p><m>\displaystyle {{\frac{9}{8}}} + {{\frac{3}{4}}}</m></p>
+<p><fillin characters="6" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>{\frac{15}{8}}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/Appendices/A_1_6_47.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(A.1.6.47)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Fraction");
+Parser::Number::NoDecimals;
+do {
+  ($n[0], $d[0]) = random_pairwise_coprime([1 .. 9], [2 .. 9]);
+  $d[1] = list_random(grep {$_ != $d[0]} (2 .. 9));
+  ($n[1], $d[1]) = random_pairwise_coprime([1 .. 9], [$d[1]]);
+} until (gcd($n[0]*$d[1] + $n[1]*$d[0], $d[0]*$d[1]) != 1);
+@f = map {Fraction($n[$_], $d[$_])} (0, 1);
+$ans = Fraction($f[0] + $f[1])->cmp(studentsMustReduceFractions => 1);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Add or subtract the fractions.
+
+[`\displaystyle [$f[0]] + [$f[1]]`]
+
+[_]{$ans}{6}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

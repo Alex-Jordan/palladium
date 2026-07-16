@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-parabola-equation-circle-isolate-y" assembly-id="parabola-equation-circle-isolate-y">
+  <static seed="842">
+    <statement><p>The equation for a circle centered at the origin with radius <m>r</m> is <m>x^2+y^2=r^2\text{.}</m> Solve this equation for <m>y\text{.}</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>y = \sqrt{r^{2}-x^{2}}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_3_4_38.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.3.4.38)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "parserAssignment.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context()->variables->are(x => 'Real', y => 'Real', r => 'Real');
+parser::Assignment->Allow;
+$answer = Formula("y = sqrt(r^2-x^2)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+In the given scenario, isolate the variable that is requested.
+
+The equation for a circle centered at the origin with radius [`r`] is [`x^2+y^2=r^2\text{.}`] Solve this equation for [`y\text{.}`]
+
+[@KeyboardInstructions('Give your answer in the form [|y = ...|]*.')@]**
+
+[_]{$answer}{16}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

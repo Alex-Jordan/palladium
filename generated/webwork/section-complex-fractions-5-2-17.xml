@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-complex-fractions-5-2-17" assembly-id="section-complex-fractions-5-2-17">
+  <static seed="1448" source="Contrib/PCC/Math95/ComplexFractions/ComplexFractions9.pg">
+    <statement><p>Simplify this expression, and if applicable, write the restricted domain.</p>
+<p><m>\displaystyle{\frac{{\frac{7}{b-1}-5}}{{\frac{1}{b-1}+\frac{1}{b-10}}}=}</m> <fillin characters="40" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>-\frac{\left(5b-12\right)\mathopen{}\left(b-10\right)}{2b-11}, b\ne 1\hbox{ and }b\ne 10</m>
+      </p>
+    </answer>
+    <solution><p>To simply the complex fraction <m>\frac{{\frac{7}{b-1}-5}}{{\frac{1}{b-1}+\frac{1}{b-10}}}</m>, we multiple the numerator and denominator with the common denominator of <m>{\frac{7}{b-1}-5}</m> and <m>{\frac{1}{b-1}+\frac{1}{b-10}}</m>, which is <m>{\left(b-1\right)\mathopen{}\left(b-10\right)}</m>.</p>
+<p><m>\displaystyle{\begin{aligned}
+  \frac{{\frac{7}{b-1}-5}}{{\frac{1}{b-1}+\frac{1}{b-10}}} \amp = \frac{({\frac{7}{b-1}-5})\cdot{\left(b-1\right)\mathopen{}\left(b-10\right)}}{({\frac{1}{b-1}+\frac{1}{b-10}})\cdot{\left(b-1\right)\mathopen{}\left(b-10\right)}} \\
+    \amp = \frac{{\frac{7}{b-1}\mathopen{}\left(b-1\right)\mathopen{}\left(b-10\right)-5\mathopen{}\left(b-1\right)\mathopen{}\left(b-10\right)}}{{\frac{1}{b-1}\mathopen{}\left(b-1\right)\mathopen{}\left(b-10\right)+\frac{1}{b-10}\mathopen{}\left(b-1\right)\mathopen{}\left(b-10\right)}} \\
+    \amp = \frac{{7\mathopen{}\left(b-10\right)-5\mathopen{}\left(b^{2}-11b+10\right)}}{{b-10+b-1}}, b \ne 1 \text{ and } b \ne 10 \\
+    \amp = \frac{{7b-70-5b^{2}+55b-50}}{{2b-11}}, b \ne 1 \text{ and }  b \ne 10 \\
+    \amp = \frac{{-5b^{2}+62b-50}}{{2b-11}}, b \ne 1 \text{ and }  b \ne 10 \\
+    \amp = {-\frac{\left(5b-12\right)\mathopen{}\left(b-10\right)}{2b-11}, b\ne 1\hbox{ and }b\ne 10}
+\end{aligned}
+    }</m></p>
+<p>Since <m>b-1</m> and <m>b-10</m> were canceled, <m>b \ne 1</m> and <m>b \ne 10</m> are in the lost domain condition.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/Math95/ComplexFractions/ComplexFractions9.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/Math95/ComplexFractions/ComplexFractions9.pg"/>
+</webwork-reps>

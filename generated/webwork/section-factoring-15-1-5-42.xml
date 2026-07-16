@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-15-1-5-42" assembly-id="section-factoring-15-1-5-42">
+  <static seed="140" source="Contrib/PCC/BasicAlgebra/Factoring/factoring515.pg">
+    <statement><p>Factor the given polynomial.</p>
+<p><m>{108-3r^{2}}=</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>3\mathopen{}\left(6+r\right)\mathopen{}\left(6-r\right)</m>
+      </p>
+    </answer>
+    <solution><p>Notice that <m>3</m> is common to both terms, so let<rsq/>s begin by factoring 
+that from both terms; the resulting expression is  the <em>difference of squares</em></p>
+<p><m>\begin{aligned}
+                {108-3r^{2}} \amp  = 3(6^2-{r}^2)\\
+                            \amp  = {3\mathopen{}\left(6+r\right)\mathopen{}\left(6-r\right)}
+            \end{aligned}</m></p>
+<p>Note that this answer can be checked by using the FOIL (<alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast) technique (exercise).</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/Factoring/factoring515.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/Factoring/factoring515.pg"/>
+</webwork-reps>

@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-television-set" assembly-id="television-set">
+  <static seed="863">
+    <statement><p>Kaeden is designing a <m>43</m>-inch TV, which means that the diagonal of the TV<rsq/>s screen will be <m>43</m> inches long.</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/television-set-image-1" width="50%">
+<shortdescription>a rectangle representing the TV with a diagonal line drawn and labeled c=43 in;</shortdescription>
+</image>
+<p>He needs the screen<rsq/>s width-to-height ratio to be <m>4:3\text{.}</m> Find the TV screen<rsq/>s width and height.</p>
+<p><fillin characters="6" name="AnSwEr0001"/></p>
+<p><fillin characters="6" name="AnSwEr0002"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>34.4\ {\rm in}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>25.8\ {\rm in}</m>
+      </p>
+    </answer>
+    <solution><p>Let <m>x</m> represent the height of the screen, in inches. Since the screen<rsq/>s width-to-height ratio will be <m>4:3\text{,}</m> then the width is <m>\frac{4}{3}</m> times as long as the height. The width is <m>\frac{4}{3}x</m> inches. We can draw a diagram.</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/television-set-image-2" width="50%">
+<shortdescription>The previous image of the TV with the height labeled x in and the base width labeled 4/3 in</shortdescription>
+</image>
+<p>Now we can use the Pythagorean Theorem to write and solve an equation:</p>
+<p><me>\begin{aligned}
+a^2+b^2\amp=c^2\\
+\left(\frac{4}{3}x\right)^2+x^2\amp=43^2\\
+\frac{16}{9}x^2+\frac{9}{9}x^2\amp=1849\\
+\frac{25}{9}x^2\amp=1849\\
+\multiplyleft{\frac{9}{16}}\frac{25}{9}x^2\amp=\multiplyleft{\frac{9}{16}}1849\\
+x^2\amp=665.64\\
+x\amp=25.8
+\end{aligned}</me></p>
+<p>Since the screen<rsq/>s height is <m>{25.8\ {\rm in}}\text{,}</m> its width is <m>\frac{4}{3}25.8=1183.36</m> inches.</p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_3_4_59.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.3.4.59)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGlateximage.pl",
+  "PCCmacros.pl",
+  "parserNumberWithUnits.pl",
+  "randomPerson.pl",
+  "Pd.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$name = randomPerson();
+$size = list_random(43, 50, 55, 65);
+$ratio = list_random('16:9', '4:3');
+($w, $h) = split(':', $ratio);
+$width = NumberWithUnits($size/sqrt(1+($h/$w)**2), 'in');
+$height = NumberWithUnits($size/sqrt(1+($w/$h)**2), 'in');
+$aux = $size**2/(1+($w/$h)**2);
+$auxw = $size**2/(1+($h/$w)**2);
+
+$image_1 = createLaTeXImage();
+$image_1->addToPreamble(latexImagePreamble());
+$image_1->BEGIN_LATEX_IMAGE
+\begin{tikzpicture}[]
+  \draw[fill=firstcolor] (-0.2,-0.2) rectangle (4.2,3.2);
+  \draw[rounded corners=2ex,fill=secondcolor!10] (0,0) rectangle (4,3);
+  \draw (0,0) -- (4,3);
+  \draw (2,1.5) node [above, rotate=36.9]{\($size\) in};
+\end{tikzpicture}
+
+END_LATEX_IMAGE
+
+$image_2 = createLaTeXImage();
+$image_2->addToPreamble(latexImagePreamble());
+$image_2->BEGIN_LATEX_IMAGE
+\begin{tikzpicture}[]
+  \draw[fill=firstcolor] (-0.2,-0.2) rectangle (4.2,3.2);
+  \draw[rounded corners=2ex,fill=secondcolor!10] (0,0) rectangle (4,3);
+  \draw (0,0) -- (4,3);
+  \draw [above] (2,0) node {\(\frac{$w}{$h}x\) in};
+  \draw (4,1.5) node[above,rotate=90] {\(x\) in};
+  \draw (2,1.5) node [above, rotate=36.9]{\($size\) in};
+\end{tikzpicture}
+
+END_LATEX_IMAGE
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+[$name] is designing a [`[$size]`]-inch TV, which means that the diagonal of the TV's screen will be [`[$size]`] inches long.
+
+>> [@image(insertGraph($image_1), width=>300, alt=>qq"a rectangle representing the TV with a diagonal line drawn and labeled c=$size in;")@]*  <<
+
+[$name->They] [$name->verb('need')] the screen's width-to-height ratio to be [`[$ratio]\text{.}`] Find the TV screen's width and height.
+
+[@KeyboardInstructions('Enter the width here.')@]**
+
+[_]{$width}{6}
+
+[@KeyboardInstructions('Enter the height here.')@]**
+
+[_]{$height}{6}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Let [`x`] represent the height of the screen, in inches. Since the screen's width-to-height ratio will be [`[$ratio]\text{,}`] then the width is [`\frac{[$w]}{[$h]}`] times as long as the height. The width is [`\frac{[$w]}{[$h]}x`] inches. We can draw a diagram.
+
+>> [@image(insertGraph($image_2), width=>300, alt=>qq"The previous image of the TV with the height labeled x in and the base width labeled $w/$h in")@]*  <<
+
+Now we can use the Pythagorean Theorem to write and solve an equation:
+
+[```\newcommand{\multiplyleft}[2][\cdot]{{\highlight{{#2#1{}}}}}\newcommand{\amp}{&}
+\begin{aligned}
+a^2+b^2\amp=c^2\\
+\left(\frac{[$w]}{[$h]}x\right)^2+x^2\amp=[$size]^2\\
+\frac{[$w**2]}{[$h**2]}x^2+\frac{[$h**2]}{[$h**2]}x^2\amp=[$size**2]\\
+\frac{[$w**2 + $h**2]}{[$h**2]}x^2\amp=[$size**2]\\
+\multiplyleft{\frac{[$h**2]}{[$w**2]}}\frac{[$w**2 + $h**2]}{[$h**2]}x^2\amp=\multiplyleft{\frac{[$h**2]}{[$w**2]}}[$size**2]\\
+x^2\amp=[$aux]\\
+x\amp=[$aux**0.5]
+\end{aligned}
+```]
+
+Since the screen's height is [`[$height]\text{,}`] its width is [`\frac{[$w]}{[$h]}[$aux**0.5]=[$auxw]`] inches.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-10-7" assembly-id="section-solving-rational-equations-10-10-7">
+  <static seed="1578" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations3.pg">
+    <statement><p>Solve the equation.</p>
+<p><m>\displaystyle{ {\frac{r+1}{5r-9}} = \frac{3}{8} }</m></p>
+<p><fillin characters="34" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{5\right\}</m>
+      </p>
+    </answer>
+    <solution><p>To get rid of all fractions in this equation, we multiple all terms with the common denominator. In this equation, the common denominator is <m>{8\mathopen{}\left(5r-9\right)}</m>.</p>
+<p><m>\displaystyle{\begin{aligned}
+   {\frac{r+1}{5r-9}} \amp = \frac{3}{8} \\
+   {\frac{r+1}{5r-9}} \cdot {8\mathopen{}\left(5r-9\right)} \amp = \frac{3}{8} \cdot {8\mathopen{}\left(5r-9\right)} \\
+   8(r+1) \amp = 3(5r - 9) \\
+   8r+8 \amp = 15r - 27 \\
+   8r+8  \mathbf{-15r-8} \amp = 15r - 27 \mathbf{-15r-8}  \\
+   -7r \amp = -35 \\
+   \frac{-7r}{-7} \amp = \frac{-35}{-7} \\
+   r \amp = 5
+\end{aligned}
+    }</m></p>
+<p>We must check solutions when we solve rational equations. By the original equation, the domain condition is <m>{8\mathopen{}\left(5r-9\right)} \ne 0</m>, or <m>r \ne \frac{9}{5}</m>. This doesn<rsq/>t conflict with the solution above, so the solution is <m>r = 5</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations3.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations3.pg"/>
+</webwork-reps>

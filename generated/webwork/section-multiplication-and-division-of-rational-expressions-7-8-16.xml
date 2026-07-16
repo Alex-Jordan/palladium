@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-8-16" assembly-id="section-multiplication-and-division-of-rational-expressions-7-8-16">
+  <static seed="1331" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions40.pg">
+    <statement><p>Simplify this expression, and if applicable, write the restricted domain.</p>
+<p><m>\displaystyle{{\frac{9y^{2}-49}{3y^{2}+16y+21}} \div ({7-3y}) =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>-\frac{1}{y+3}, y\ne 2.33333\hbox{ and }y\ne -2.33333</m>
+      </p>
+    </answer>
+    <solution><p><m>\displaystyle{\begin{aligned}
+   {\frac{9y^{2}-49}{3y^{2}+16y+21}} \div {7-3y} 
+      \amp = {\frac{9y^{2}-49}{3y^{2}+16y+21}} \div \frac{{7-3y}}{1} \\
+      \amp = {\frac{9y^{2}-49}{3y^{2}+16y+21}} \cdot {\frac{1}{7-3y}} \\
+      \amp =  \frac{{\left(3y+7\right)\mathopen{}\left(3y-7\right)}}{{\left(3y+7\right)\mathopen{}\left(y+3\right)}} \cdot \frac{{1}}{{-\left(3y-7\right)}} \\
+      \amp = {-\frac{1}{y+3}, y\ne 2.33333\hbox{ and }y\ne -2.33333}
+\end{aligned}
+    }</m></p>
+<p>Since the factors <m>3y+7</m> and <m>3y-7</m> were canceled, the domain condition lost during the simplification are <m>y \ne {{\frac{7}{3}}\; and \;-{\frac{7}{3}}}</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions40.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions40.pg"/>
+</webwork-reps>

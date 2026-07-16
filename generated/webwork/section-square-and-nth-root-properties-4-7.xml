@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-square-and-nth-root-properties-4-7" assembly-id="section-square-and-nth-root-properties-4-7">
+  <static seed="1786">
+    <statement><p>Estimate <m>\sqrt{19}</m> without a calculator.</p>
+<p><fillin characters="5" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>4.35</m>
+      </p>
+    </answer>
+    <solution><p>The radicand, <m>19\text{,}</m> is between <m>16</m> and <m>25\text{,}</m> so <m>\sqrt{19}</m> is between <m>\sqrt{16}</m> and <m>\sqrt{25}\text{,}</m> or between <m>4</m> and <m>5\text{.}</m> We notice that <m>19</m> is in the middle between <m>16</m> and <m>25</m> but closer to <m>16\text{.}</m> We estimate <m>\sqrt{19}</m> to be about <m>4.4\text{.}</m></p>
+<p>We can check our estimate by calculating:</p>
+<p><me>4.4^2=19.36</me></p>
+<p>So <m>4.4^2</m> is close to <m>19\text{,}</m> and <m>4.4</m> is close to <m>\sqrt{19}\text{.}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/4_2_7.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.2.7)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedNumeric");
+Context()->flags->set(tolType=>'absolute',tolerance=>'0.15');
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Estimate [`\sqrt{19}`] without a calculator.
+
+[_]{'4.35'}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The radicand, [`19\text{,}`] is between [`16`] and [`25\text{,}`] so [`\sqrt{19}`] is between [`\sqrt{16}`] and [`\sqrt{25}\text{,}`] or between [`4`] and [`5\text{.}`] We notice that [`19`] is in the middle between [`16`] and [`25`] but closer to [`16\text{.}`] We estimate [`\sqrt{19}`] to be about [`4.4\text{.}`]
+
+We can check our estimate by calculating:
+
+[```
+              4.4^2=19.36
+            ```]
+
+So [`4.4^2`] is close to [`19\text{,}`] and [`4.4`] is close to [`\sqrt{19}\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

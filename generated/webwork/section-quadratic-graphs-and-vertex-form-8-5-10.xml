@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-quadratic-graphs-and-vertex-form-8-5-10" assembly-id="section-quadratic-graphs-and-vertex-form-8-5-10">
+  <static seed="1104">
+    <statement><p>A farmer purchased <m>320</m> meters of fencing, and will build a rectangular pen with it. To enclose the largest possible area, what should the pen<rsq/>s length and width be? Model the pen<rsq/>s area with a function, and then find its maximum value.</p>
+<p>Use a comma to separate your answers.</p>
+<p>To enclose the largest possible area, the pen<rsq/>s length and width should be <fillin characters="10" name="AnSwEr0001"/> meters.</p>
+</statement>
+    <answer>
+      <p>
+        <m>80, 80</m>
+      </p>
+    </answer>
+    <solution><p>Assume the rectangle<rsq/>s length is <m>l</m> meters, and its width is <m>w</m> meters. Since the rectangle<rsq/>s perimeter is given as <m>320</m> meters, we have:</p>
+<p><me>\begin{aligned}
+P\amp=2(l+w)\\
+320\amp=2(l+w)\\
+160\amp=l+w\\
+160-l\amp=w
+\end{aligned}</me></p>
+<p>The area of the pen is <m>A=lw\text{.}</m> Substitute <m>w=160-l</m> into <m>A=lw\text{,}</m> we have:</p>
+<p><me>\begin{aligned}
+A\amp=lw\\
+A\amp=l(160-l)\\
+A\amp=-l^2+160l
+\end{aligned}</me></p>
+<p>Next, we use technology to graph the function <m>A=-l^2+160l\text{,}</m> and then find the parabola<rsq/>s vertex <m>(80,{6400})\text{.}</m></p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-quadratic-graphs-and-vertex-form-8-5-10-image-1.png" width="47%"/>
+<p>According to the vertex point <m>(80,{6400})\text{,}</m> when the pen<rsq/>s length is <m>80</m> meters, the pen has the maximum area <m>{6400}</m> square meters.</p>
+<p>When <m>l=80\text{,}</m> we have:</p>
+<p><me>\begin{aligned}
+w\amp=160-l\\
+\amp=160-80\\
+\amp=80
+\end{aligned}</me></p>
+<p>To maximize the pen<rsq/>s area, the length and width should both be <m>80</m> meters. This implies the pen is a square.</p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_7_6_43.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.7.6.43)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGgraphmacros.pl",
+  "PCCgraphMacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->add(l => 'Real');
+Context()->flags->set(showExtraParens=>0, reduceConstants=>0);
+Context()->noreduce("(-x)-y","(-x)+y");
+Context()->flags->set(
+  tolerance => 0.005,
+  tolType => "absolute",
+);
+
+$length = random(50,200,10);
+$width = $length;
+$area = $length**2;
+$perimeter = 4*$length;
+$pHalf = $perimeter/2;
+
+$func = Compute("-l**2+$pHalf*l")->reduce;
+$funcX = Compute("-x**2+$pHalf*x")->reduce;
+
+$xVertex = $length;
+$yVertex = $func->eval(l=>$xVertex);
+$a = -1;
+$b = $pHalf;
+$c = 0;
+$dis = ($b)**2-4*$a*$c;
+$xInt2 = (-$b-sqrt($dis))/(2*$a);
+
+$alt="This picture shows the graph of a parabola for the function A(l)=$func. The vertex ($xVertex,$yVertex) is labeled.";
+
+($min[0], $max[0], $min[1], $max[1], $ticknum[0], $ticknum[1], $xticks_ref, $yticks_ref, $marksep[0], $marksep[1]) = NiceGraphParameters([0,$xInt2],[$yVertex,0]);
+
+@xticks = @$xticks_ref;
+@yticks = @$yticks_ref;
+
+$gr = init_graph($min[0],$min[1],$max[0],$max[1],
+   axes=>[0,0],
+   grid=>[$ticknum[0],$ticknum[1]],
+   size=>[xPixels(),yPixels()]
+);
+$gr->lb('reset');
+for my $j (@xticks) {
+    if (abs($j) < 10**(-10)) {next;}
+    $gr->lb( new Label($j, -$marksep[1]/8, $j,'black','center','top'));
+}
+$gr->lb( new Label($max[0]-$marksep[0]/2, $marksep[1]/8, l,'black','center','bottom'));
+$gr->lb( new Label($marksep[0]/8, $max[1]-$marksep[1]/2, A,'black','left','middle'));
+
+for my $j (@yticks) {
+    if (Real($j) == 0) {next;}
+    $gr->lb( new Label(-$marksep[0]/8, $j, $j,'black','right','middle'));
+}
+
+add_functions($gr, "$funcX for x in < $min[0],$max[0]> using color:red and weight:1");
+
+$lx = ($xVertex+$xInt2)/2;
+$ly = $func->eval(l=>$lx);
+$gr->lb( new Label($lx-$marksep[0]/8, $ly, "A(l)",'red','right','middle'));
+
+$gr->stamps( closed_circle($xVertex,$yVertex,'red') );
+$gr->lb( new Label($xVertex, $yVertex+$marksep[1]/4, "($xVertex,$yVertex)",'red','center','bottom'));
+
+$ans = List($length,$width);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+A farmer purchased [`[$perimeter]`] meters of fencing, and will build a rectangular pen with it. To enclose the largest possible area, what should the pen's length and width be? Model the pen's area with a function, and then find its maximum value.
+
+Use a comma to separate your answers.
+
+To enclose the largest possible area, the pen's length and width should be [_]{$ans}{10} meters.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Assume the rectangle's length is [`l`] meters, and its width is [`w`] meters. Since the rectangle's perimeter is given as [`[$perimeter]`] meters, we have:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+P\amp=2(l+w)\\
+[$perimeter]\amp=2(l+w)\\
+[$pHalf]\amp=l+w\\
+[$pHalf]-l\amp=w
+\end{aligned}
+```]
+
+The area of the pen is [`A=lw\text{.}`] Substitute [`w=[$pHalf]-l`] into [`A=lw\text{,}`] we have:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+A\amp=lw\\
+A\amp=l([$pHalf]-l)\\
+A\amp=-l^2+[$pHalf]l
+\end{aligned}
+```]
+
+Next, we use technology to graph the function [`A=-l^2+[$pHalf]l\text{,}`] and then find the parabola's vertex [`([$xVertex],[$yVertex])\text{.}`]
+
+>> [@image(insertGraph($gr), width=>282)@]*  <<
+
+According to the vertex point [`([$xVertex],[$yVertex])\text{,}`] when the pen's length is [`[$xVertex]`] meters, the pen has the maximum area [`[$yVertex]`] square meters.
+
+When [`l=[$xVertex]\text{,}`] we have:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+w\amp=[$pHalf]-l\\
+\amp=[$pHalf]-[$xVertex]\\
+\amp=[$width]
+\end{aligned}
+```]
+
+To maximize the pen's area, the length and width should both be [`[$width]`] meters. This implies the pen is a square.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

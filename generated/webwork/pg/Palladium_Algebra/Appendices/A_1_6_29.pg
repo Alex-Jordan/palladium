@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-18T21:12:34-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,9 +27,7 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PGchoicemacros.pl",
-  "contextFiniteSolutionSets.pl",
-  "contextForm.pl",
+  "contextFraction.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -45,49 +40,28 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
-Context()->variables->are($var => 'Real');
-($a, $b) = (2..20)[NchooseK(19,2)];
-$b = random(0,1) ? $b : -$b;
-$left = Formula("$var/$a")->reduce;
-$right = Formula("$b")->reduce;
-($left, $right) = ($left, $right)[NchooseK(2,2)];
-Context("FiniteSolutionSets");
-Context()->variables->are($var => 'Real');
-$solution = $b*$a;
-$solset = Formula("{$solution}");
+($n[0], $d[0], $n[1], $d[1], $n[2], $d[2]) = random_pairwise_coprime([1 .. 13], [2 .. 13], [1 .. 13], [2 .. 13], [1 .. 13], [2 .. 13]);
+Context("LimitedFraction")->flags->set(
+    allowMixedNumbers => 0,
+    reduceConstants => 1,
+    showMixedNumbers => 0
+);
+Parser::Number::NoDecimals;
+@f = map {Fraction($n[$_], $d[$_])} (0, 1, 2);
+$ans = Fraction($n[0]*$n[1]*$n[2], $d[0]*$d[1]*$d[2])->cmp(studentsMustReduceFractions => 1);
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Solve the equation.
+Multiply or divide the fractions.
 
-[`[$left]=[$right]`]
+[`\displaystyle [$f[0]]\cdot [$f[1]]\cdot [$f[2]]`]
 
-[_]{$solset}{10}
+[_]{$ans}{6}
 
 END_PGML
-
-############################################################
-# Solution
-############################################################
-
-BEGIN_PGML_SOLUTION
-The opposite action to division is multiplication.
-
-[```\newcommand{\multiplyleft}[2][\cdot]{{\highlight{{#2#1{}}}}}\newcommand{\amp}{&}
-\begin{aligned}
-[$left] \amp= [$right]\\
-\multiplyleft{[$a]}[$left] \amp= \multiplyleft{[$a]}[$right]\\
-[$var] \amp= [$solution]
-\end{aligned}
-```]
-
-The solution set is [`[$solset]\text{.}`]
-
-END_PGML_SOLUTION
 
 ############################################################
 # End Problem

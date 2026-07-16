@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-20T13:16:08-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -31,7 +28,8 @@ loadMacros(
   "PGML.pl",
   "AnswerFormatHelp.pl",
   "PCCmacros.pl",
-  "PGchoicemacros.pl",
+  "contextCurrency.pl",
+  "contextPercent.pl",
   "parserLinearRelation.pl",
   "PGcourse.pl",
 );
@@ -45,24 +43,27 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-($a, $b) = (11..50)[NchooseK(40,2)];
-Context("LinearRelation");
-$ans = LinearRelation("x - $a = $b");
-$NumberWorda = numberWord($a, capital => 1);
-$numberWordb = numberWord($b);
+Context("Currency")->flags->set(trimTrailingZeros => 1);
+$final = 90 + random(-30, 30, 0.05);
+$current = Currency($final);
+Context("Percent");
+$decimal = random(0.16,0.20,0.01);
+$percent = Percent($decimal);
+Context("LinearRelation")->variables->are(b => 'Real');
+$equation = LinearRelation("b + $decimal b = $final");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Translate the phrase or sentence into a math expression or equation (whichever is appropriate).
+Read the scenario. Then write a complete sentence that defines a variable to use. Lastly, write an equation to model the scenario. There is no need to solve the equation.
 
-[$NumberWorda] less than a number is [$numberWordb].
+The final bill at a restaurant one night was [`[$current]\text{,}`] including a [`[$percent]`] tip. What was the bill before the tip was added? Set up an equation to answer this question. There is no need to solve it.
 
-[@KeyboardInstructions('Use [`x`] as the variable.')@]**
+[@KeyboardInstructions('Use [|b|]* as the variable.')@]**
 
-[_]{$ans}{16}
+[_]{$equation}{20}
 
 END_PGML
 

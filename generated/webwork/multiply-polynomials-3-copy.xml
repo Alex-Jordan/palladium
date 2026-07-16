@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-multiply-polynomials-3-copy" assembly-id="multiply-polynomials-3-copy">
+  <static seed="2684">
+    <statement><p><m>{x\mathopen{}\left(x+10\right)\mathopen{}\left(x+5\right)}</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>x^{3}+15x^{2}+50x</m>
+      </p>
+    </answer>
+    <solution><p>We could first distribute <m>x</m> into <m>{x+10}</m> to get <m>{x^{2}+10x}\text{,}</m> and then multiply <m>{x^{2}+10x}</m> and <m>{x+5}\text{:}</m></p>
+<p><me>\begin{aligned}
+{x\mathopen{}\left(x+10\right)\mathopen{}\left(x+5\right)}\amp=({x^{2}+10x})({x+5})\\
+\amp={x^{3}+15x^{2}+50x}
+\end{aligned}</me></p>
+<p>We could also first multiply <m>{x+10}</m> and <m>{x+5}</m> to get <m>{x^{2}+15x+50}\text{,}</m> and then distribute <m>x</m> into <m>{x^{2}+15x+50}\text{:}</m></p>
+<p><me>\begin{aligned}
+{x\mathopen{}\left(x+10\right)\mathopen{}\left(x+5\right)}\amp=x({x^{2}+15x+50})\\
+\amp={x^{3}+15x^{2}+50x}
+\end{aligned}</me></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/Appendices/A_9_5_51.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg copied-from="multiply-polynomials-3"><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(A.9.5.52)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+$b = non_zero_random(-10,10,1);
+do {$c = non_zero_random(-10,10,1);} until ($b!=$c);
+$bPlusC = $b+$c;
+$bc = $b*$c;
+$binomial1 = Compute("$var+$b")->reduce;
+$binomial2 = Compute("$var+$c")->reduce;
+$s1 = Compute("$var**2+$b*$var")->reduce;
+$s2 = Compute("$var**2+$bPlusC*$var+$bc")->reduce;
+$problem = Compute("$var*($var+$b)*($var+$c)")->reduce;
+$ans = Compute("$var**3+$bPlusC*$var**2+$bc*$var")->reduce;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Multiply the binomial with the binomial, writing the result as a single simplified polynomial.
+
+[`[$problem]`]
+
+[_]{$ans}{16}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+We could first distribute [`[$var]`] into [`[$binomial1]`] to get [`[$s1]\text{,}`] and then multiply [`[$s1]`] and [`[$binomial2]\text{:}`]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$problem]\amp=([$s1])([$binomial2])\\
+\amp=[$ans]
+\end{aligned}
+```]
+
+We could also first multiply [`[$binomial1]`] and [`[$binomial2]`] to get [`[$s2]\text{,}`] and then distribute [`[$var]`] into [`[$s2]\text{:}`]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$problem]\amp=[$var]([$s2])\\
+\amp=[$ans]
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

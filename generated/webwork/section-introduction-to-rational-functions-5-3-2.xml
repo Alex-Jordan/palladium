@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-introduction-to-rational-functions-5-3-2" assembly-id="section-introduction-to-rational-functions-5-3-2">
+  <static seed="1213" source="Contrib/PCC/BasicAlgebra/FunctionBasics/Functions200.pg">
+    <statement><p>Find the domain of <m>\displaystyle{h}</m> where <m>\displaystyle{h(x)={\frac{4x}{x+2}}}</m>.</p>
+<p><fillin characters="13" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left(-\infty ,-2\right)\cup \left(-2,\infty \right)</m>
+      </p>
+    </answer>
+    <solution><p>Since we are not allowed to divide by zero, the denominator of <m>h</m> cannot be zero. If <m>x</m> takes on the value <m>-2</m> then the denominator will equal zero.  So <m>x</m> can be any number but <m>-2</m>.   Therefore the domain of <m>h</m> is <m>{\left(-\infty ,-2\right)\cup \left(-2,\infty \right)}</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/FunctionBasics/Functions200.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/FunctionBasics/Functions200.pg"/>
+</webwork-reps>

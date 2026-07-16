@@ -1,0 +1,70 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.1.13.69)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+@r = (1, list_random(2..9));
+$g = list_random(2..9);
+$b = $g*($r[0] + $r[1]);
+$c = $g*$r[0]*$r[1];
+@ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+$var = list_random(@ORCCA_variables);
+Context("Form")->variables->are($var=>'Real');
+$f = Compute("$g $var^2 - $b $var + $c")->reduce;
+$answer = Compute("$g ($var - $r[0])($var - $r[1])");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Factor the given polynomial.
+
+[`[$f]`]
+
+[_]{$answer}{16}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

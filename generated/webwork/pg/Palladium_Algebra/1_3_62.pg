@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:07-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -46,12 +43,13 @@ TEXT(beginproblem());
 # PG Setup Code
 ############################################################
 Context()->operators->set(
-  '+'=>{class=>'bizarro::BOP::add',isCommand=>1},
-  '-'=>{class=>'bizarro::BOP::subtract',isCommand=>1},
+'+'=>{class=>'bizarro::BOP::add',isCommand=>1},
+'-'=>{class=>'bizarro::BOP::subtract',isCommand=>1},
 );
+Context()->flags->set(reduceConstants=>0);
 parser::Assignment->Allow;
 Context()->variables->add(y=>'Real');
-$eq=Formula("y=-40x+30");
+$eq=Formula("y=5/3x+23/4");
 $ev=$eq->cmp(checker=>sub{
 my($co,$st,$aH)=@_;
 return 0 if$aH->{isPreview}||$co!=$st;
@@ -75,7 +73,7 @@ return $ans;
 ############################################################
 
 BEGIN_PGML
-Find the slope-intercept form of an equation for the line that passes through the points [`(-3,150)`] and [`(0,30)\text{.}`]
+Find the slope-intercept form of an equation for the line that passes through the points [`\left(-3,\frac{3}{4}\right)`] and [`\left(-6,-\frac{17}{4}\right)\text{.}`]
 
 [_]{$ev}{10}
 
@@ -86,18 +84,31 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-We first find the slope between our two points: [`(\overset{x_1}{-3},\overset{y_1}{150})`] and [`(\overset{x_2}{0},\overset{y_2}{30})\text{.}`] Using the slope formula, we have:
+First find the slope through our points: [`\left(-3,\frac{3}{4}\right)`] and [`\left(-6,-\frac{17}{4}\right)\text{.}`]
 
 [```\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}\newcommand{\amp}{&}
 \begin{aligned}
 m\amp=\frac{y_2-y_1}{x_2-x_1}\\
-\amp=\frac{\substitute{30}-\substitute{150}}{\substitute{0}-\substitute{(-3)}}\\
-\amp=\frac{-120}{3}\\
-\amp=-40
+\amp=\frac{\substitute{-\frac{17}{4}}-\substitute{\frac{3}{4}}}{\substitute{-6}-\substitute{(-3)}}\\
+\amp=\frac{\frac{-20}{4}}{-3}\\
+\amp=\frac{-5}{-3}=\frac{5}{3}
 \end{aligned}
 ```]
 
-Now we can write [`y=-40x+b`] and to find [`b`] we need look no further than one of the given points: [`(0,30)\text{.}`] The value of [`b`] is [`30\text{.}`] So, the slope-intercept form of the line is [`y=-40x+30\text{.}`]
+At this point we have [`y=\frac{5}{3}x+b\text{.}`] Now we need to solve for [`b`] since neither of the points given to us were the vertical intercept. To do this, we choose one of the two points and plug it into our equation. We choose [`\left(-3,\frac{3}{4}\right)\text{.}`]
+
+[```\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}\newcommand{\addright}[1]{{\highlight{{{}+#1}}}}\newcommand{\amp}{&}
+\begin{aligned}
+y\amp=\frac{5}{3}x+b\\
+\substitute{\frac{3}{4}}\amp=\frac{5}{3}(\substitute{-3})+b\\
+\frac{3}{4}\amp=-5+b\\
+\frac{3}{4}\addright{5}\amp=-5+b\addright{5}\\
+\frac{3}{4}+\frac{20}{4}\amp=b\\
+\frac{23}{4}\amp=b
+\end{aligned}
+```]
+
+So we have [`y=\frac{5}{3}x+\frac{23}{4}\text{.}`]
 
 END_PGML_SOLUTION
 

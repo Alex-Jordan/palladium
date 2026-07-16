@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:07-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -46,26 +43,26 @@ TEXT(beginproblem());
 # PG Setup Code
 ############################################################
 @x = (0..3);
-$f = Formula("-1 + 3x");
+$f = Formula("x^2");
 @y = map{$f->eval(x => $_)} (@x);
 Context("Numeric")->variables->add(y => 'Real');
 parser::Assignment->Allow;
-$eq=Formula("y = $f")->reduce;
-@t = map{$_*3} (@x);
+parser::Assignment->Function("f");
+$eq = Formula("f(x) = $f");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Write an equation in the form [`y=\ldots`] suggested by the pattern in the table.
+Write an equation in the form [`f(x)=\ldots`] suggested by the pattern in the table.
 
 >> [@DataTable(
   [
     [[PGML('[`x`]'),
       rowbottom => '2',
       midrule => '1',],
-     PGML('[`y`]'),
+     PGML('[`f(x)`]'),
     ],
     [PGML('[`[$x[0]]`]'),
      PGML('[`[$y[0]]`]'),
@@ -92,62 +89,34 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-The relationship between [`x`] and [`y`] in each row is not as clear here. Another popular approach for finding patterns: in each column, consider how the values change from one row to the next. From row to row, the [`x`]-value increases by [`1\text{.}`] Also, the [`y`]-value increases by [`3`] from row to row.
+Looking for a relationship in each row here, we see that each output value is the square of the corresponding [`x`]-value. That may not be obvious to you. It comes down to recognizing what square numbers are. So the equation is [`[$eq]\text{.}`]
+
+What if we had tried the approach we used in the previous exercise, comparing change from row to row in each column?
 
 >> [@DataTable(
   [
     [[PGML('[`x`]'),
       rowbottom => '2',
       midrule => '1',],
-     PGML('[`y`]'),
+     PGML('[`f(x)`]'),
     ],
     [PGML('[`[$x[0]]`]'),
      PGML('[`[$y[0]]`]'),
     ],
     [PGML('(add [`1`] from previous) [`[$x[1]]`]'),
-     PGML('[`[$y[1]]`] (add [`3`] from previous)'),
+     PGML('[`[$y[1]]`] (add [`1`] from previous)'),
     ],
     [PGML('(add [`1`] from previous) [`[$x[2]]`]'),
      PGML('[`[$y[2]]`] (add [`3`] from previous)'),
     ],
     [PGML('(add [`1`] from previous) [`[$x[3]]`]'),
-     PGML('[`[$y[3]]`] (add [`3`] from previous)'),
+     PGML('[`[$y[3]]`] (add [`5`] from previous)'),
     ],
   ],
-      align => 'r|l',
+      align => 'rl',
       valign => 'middle',);@]* <<
 
-Since row-to-row change is always [`1`] for [`x`] and is always [`3`] for [`y\text{,}`] the _rate of change_ from one row to another row is always the same: [`3`] units of [`y`] for every [`1`] unit of [`x\text{.}`] This suggests that [`y=3x`] _might_ be a good equation for the table pattern. But if we try to make a table with that pattern:
-
->> [@DataTable(
-  [
-    [[PGML('[`x`]'),
-      rowbottom => '2',
-      midrule => '1',],
-     PGML('[`3x`]'),
-     PGML('Actual value of [`y`]'),
-    ],
-    [PGML('[`[$x[0]]`]'),
-     PGML('[`[$t[0]]`]'),
-     PGML('[`[$y[0]]`]'),
-    ],
-    [PGML('[`[$x[1]]`]'),
-     PGML('[`[$t[1]]`]'),
-     PGML('[`[$y[1]]`]'),
-    ],
-    [PGML('[`[$x[2]]`]'),
-     PGML('[`[$t[2]]`]'),
-     PGML('[`[$y[2]]`]'),
-    ],
-    [PGML('[`[$x[3]]`]'),
-     PGML('[`[$t[3]]`]'),
-     PGML('[`[$y[3]]`]'),
-    ],
-  ],
-      align => '*{3}{c}',
-      valign => 'middle',);@]* <<
-
-We find that the values from [`y=3x`] are too large by [`1\text{.}`] So now we make an adjustment. The equation [`[$eq]`] describes the pattern in the table.
+Here, the rate of change is _not_ constant from one row to the next. While the [`x`]-values are increasing by [`1`] from row to row, the output values increase more and more from row to row. Do you notice that there is a pattern there as well? Mathematicians are interested in finding patterns and describing them.
 
 END_PGML_SOLUTION
 

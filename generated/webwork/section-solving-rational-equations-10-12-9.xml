@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-12-9" assembly-id="section-solving-rational-equations-10-12-9">
+  <static seed="1616" source="Contrib/PCC/BasicAlgebra/RationalLiteralEquations/LiteralEquation290.pg">
+    <statement><p>Solve this equation for <m>a</m>:</p>
+<p><m>\displaystyle{ \frac{1}{q} = \frac{8}{a+4} }</m></p>
+<p><fillin characters="7" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>a = 8q-4</m>
+      </p>
+    </answer>
+    <solution><p>To solve this equation, we multiple both sides with the common denominator <m>{q\mathopen{}\left(a+4\right)}</m>:</p>
+<p><m>\displaystyle{\begin{aligned}
+   \frac{1}{q} \amp = \frac{8}{a+4}   \\
+   \frac{1}{q} \cdot q(a+4) \amp = \frac{8}{a+4} \cdot q(a+4) \\
+   a+4 \amp = 8q \\
+   a \amp = 8q - 4
+\end{aligned}
+}</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalLiteralEquations/LiteralEquation290.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalLiteralEquations/LiteralEquation290.pg"/>
+</webwork-reps>

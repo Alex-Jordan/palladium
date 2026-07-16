@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_SolvingRadicalEquations_SolvingRadicalEquations5-copy" assembly-id="PCC-ORCCA-ed3_Math95_SolvingRadicalEquations_SolvingRadicalEquations5-copy">
+  <static seed="2043">
+    <statement><p><m>\displaystyle{ \sqrt[3]{x-11} = {-9} }</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{-718\right\}</m>
+      </p>
+    </answer>
+    <solution><p>To get rid of the cube root in this equation, we raise the left side and the right side of the equation each to the third power.</p>
+<p><m>\displaystyle{\begin{aligned}
+   \sqrt[3]{x-11} \amp = {-9} \\
+   \left(\sqrt[3]{x-11}\right)^3 \amp = \left(-9\right)^3 \\
+   x-11 \amp = -729 \\
+   x-11+11 \amp = -729+11 \\
+   x \amp = {-718} \\
+\end{aligned}
+    }</m></p>
+<p>We must check our solutions when we solve radical equations. We therefore substitute our answer into the original equation:</p>
+<p><m>\displaystyle{\begin{aligned}
+   \sqrt[3]{x-11} \amp \stackrel{?}{=} {-9} \\
+   \sqrt[3]{{-718}-11} \amp \stackrel{?}{=} -9 \\
+   \sqrt[3]{} \amp \stackrel{?}{=} -9 \\
+   -9 \amp \stackrel{?}{=} -9 \\
+\end{aligned}
+    }</m></p>
+<p>That is true, so the solution set is <m>\{{-718}\}</m>.</p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/4_5_4_22.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+#
+# Template:
+# Solve the following radical equation
+#
+#       CubeRoot(x-a) = b               b is negative
+#
+#
+# Last updated: Spoddeck 12/22/15
+# ENDDESCRIPTION
+
+
+##############################################
+
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",  
+  "contextFraction.pl",
+  "PCCmacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "PGML.pl",
+  "PGcourse.pl",
+);
+
+
+##############################################
+
+
+TEXT(beginproblem());
+
+Context("Fraction");
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+$a = random(1,12,1);
+$b = non_zero_random(-10,10,1);
+
+
+$left = "\sqrt[3]{$var-$a}";
+$right = Formula("$b")->reduce;
+
+
+$r[0] = Fraction("$b**3+$a","1");
+
+Context("FiniteSolutionSets");
+Context()->variables->are($var=>'Real');
+$ans = Formula("{$r[0]}");
+
+
+
+##############################################
+
+BEGIN_PGML
+
+[@ PTX_exercisegroup_introduction('Solve the equation.') @]
+
+     [`` [$left] = [$right] ``]
+
+     [_]{$ans}{16}
+
+END_PGML
+
+##############################################
+
+
+BEGIN_PGML_SOLUTION
+
+To get rid of the cube root in this equation, we raise the left side and the right side of the equation each to the third power.
+
+    [``
+\begin{aligned}
+   [$left] &= [$right] \\
+   \left([$left]\right)^3 &= \left([$b]\right)^3 \\
+   [$var]-[$a] &= [$b**3] \\
+   [$var]-[$a]+[$a] &= [$b**3]+[$a] \\
+   [$var] &= [$r[0]] \\
+\end{aligned}
+    ``]
+
+We must check our solutions when we solve radical equations. We therefore substitute our answer into the original equation:
+
+    [``
+\begin{aligned}
+   [$left] &\stackrel{?}{=} [$right] \\
+   \sqrt[3]{[$r[0]]-[$a]} &\stackrel{?}{=} [$b] \\
+   \sqrt[3]{[$r[0]-[$a]]} &\stackrel{?}{=} [$b] \\
+   [$b] &\stackrel{?}{=} [$b] \\
+\end{aligned}
+    ``]
+
+That is true, so the solution set is [`\{[$r[0]]\}`].
+
+END_PGML_SOLUTION
+
+
+##############################################
+
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator35" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator35">
+  <static seed="1936">
+    <statement><p><m>\displaystyle{ \frac{1}{\sqrt{t}} }</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{\sqrt{t}}{t}</m>
+      </p>
+    </answer>
+    <solution><p>We need to legally remove the radical <m>\sqrt{t}</m> from the denominator.</p>
+<p>We will use this property:</p>
+<p><m>\displaystyle{ \sqrt{t} \cdot \sqrt{t} = t }</m></p>
+<p>We will multiply both the numerator and denominator by <m>\sqrt{t}</m>, and we have:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   \frac{1}{\sqrt{t}} \amp = \frac{1}{\sqrt{t}}\cdot \frac{\sqrt{t}}{\sqrt{t}}\\
+      \amp = \frac{1 \cdot \sqrt{t}}{\sqrt{t} \cdot \sqrt{t}} \\
+      \amp = \frac{1 \cdot \sqrt{t}}{t}
+\end{aligned}
+    }</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/4_3_4_25.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Carl Yao
+# Portland Community College
+#
+# Rationalize denominator. 2/\sqrt(x)
+#
+# Last edited: Carl Yao 8/5/16,
+#
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Basic Algebra')
+## DBsection('Exponents and Radicals')
+## KEYWORDS('simplify','radical','square root','rationalize','denominator')
+## DBCCSS('8.EE')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Alex Jordan, Carl Yao, Chris Hughes')
+## Institution('PCC')
+
+ 
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "contextLimitedRadical.pl",
+  "answerHints.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+
+######################################
+
+TEXT(beginproblem());
+
+Context("LimitedRadical");
+$var = list_random('x','y','z','t','r','m','n','a','b','c');
+#do {$var2 = list_random('x','y','z','t','r','m','n','a','b','c');} until ($var1 ne $var2);
+Context()->variables->are($var=>'Real');
+
+$num = random(1,5,1);
+$ans = ($num != 1) ? Formula("$num sqrt($var)/$var") : Formula("sqrt($var)/$var");
+
+Context()->{error}{msg}{"You must simplify your answer further"} 
+  = "Either your answer is not fully simplified or it has an irrational denominator";
+
+#####################################################
+
+BEGIN_PGML
+
+[@ PTX_exercisegroup_introduction('Simplify the expression. If the result has a denominator, it must be rationalized.') @]
+
+[`` \frac{[$num]}{\sqrt{[$var]}} ``]
+
+[_]{$ans}{16}
+
+END_PGML
+
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+
+We need to legally remove the radical [`\sqrt{[$var]}`] from the denominator.
+
+We will use this property:
+
+    [`` \sqrt{[$var]} \cdot \sqrt{[$var]} = [$var] ``]
+
+We will multiply both the numerator and denominator by [` \sqrt{[$var]} `], and we have:
+
+    [``
+\begin{aligned}[t]
+   \frac{[$num]}{\sqrt{[$var]}} &= \frac{[$num]}{\sqrt{[$var]}}\cdot \frac{\sqrt{[$var]}}{\sqrt{[$var]}}\\
+      &= \frac{[$num] \cdot \sqrt{[$var]}}{\sqrt{[$var]} \cdot \sqrt{[$var]}} \\
+      &= \frac{[$num] \cdot \sqrt{[$var]}}{[$var]}
+\end{aligned}
+    ``]
+
+END_PGML_SOLUTION
+
+######################################
+
+
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

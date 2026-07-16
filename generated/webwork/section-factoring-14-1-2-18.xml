@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-14-1-2-18" assembly-id="section-factoring-14-1-2-18">
+  <static seed="4">
+    <statement><p>A WeBWorK problem right here was meant to be a copy of another problem, but potentially with different randomization, but there was a failure. The <c>@copy</c> attribute was set to <c>webwork-multiply-polynomials-2</c>. Please report me, so the publisher can get more details by searching the runtime output for <lq/><c>PTX:ERROR</c><rq/>.</p>
+</statement>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/1_1_12_17.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.12.17)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Multiply the polynomials.
+
+A WeBWorK problem right here was meant to be a copy of another problem, but potentially with different randomization, but there was a failure. The [|@copy|]* attribute was set to [|webwork-multiply-polynomials-2|]*. Please report me, so the publisher can get more details by searching the runtime output for "[|PTX:ERROR|]*".
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

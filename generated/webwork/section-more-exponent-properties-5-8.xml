@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-more-exponent-properties-5-8" assembly-id="section-more-exponent-properties-5-8">
+  <static seed="1655">
+    <statement><p>Simplify the following expressions. Assume all variables represent nonzero real numbers.
+<ol label="a.">
+<li>
+<p><m>\left(173 x^4 y^{251}\right)^0</m></p>
+<p><fillin characters="10" name="AnSwEr0001"/></p>
+</li>
+<li>
+<p><m>(-8)^0</m></p>
+<p><fillin characters="10" name="AnSwEr0002"/></p>
+</li>
+<li>
+<p><m>-8^0</m></p>
+<p><fillin characters="10" name="AnSwEr0003"/></p>
+</li>
+<li>
+<p><m>3x^0</m></p>
+<p><fillin characters="10" name="AnSwEr0004"/></p>
+</li>
+</ol></p>
+</statement>
+    <answer>
+      <p>
+        <m>1</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>1</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>-1</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>3</m>
+      </p>
+    </answer>
+    <solution><p>To simplify any of these expressions, it is critical that we remember an exponent only applies to what it is touching or immediately next to.
+<ol label="a.">
+<li>
+<p>In the expression <m>\left(173 x^4 y^{251}\right)^0\text{,}</m> the exponent <m>0</m> applies to everything inside the parentheses.</p>
+<p><me>\left(173 x^4 y^{251}\right)^0 =  1</me></p>
+</li>
+<li>
+<p>In the expression <m>(-8)^0</m> the exponent applies to everything inside the parentheses, <m>-8\text{.}</m></p>
+<p><me>(-8)^0  =  1</me></p>
+</li>
+<li>
+<p>In contrast to the previous example, the exponent only applies to the <m>8\text{.}</m> The exponent has a higher priority than negation in the order of operations. We should consider that <m>-8^0 = -\mathopen{}\left(8^0\right)\mathclose{}\text{,}</m> and so:</p>
+<p><me>\begin{aligned}
+    -8^0  \amp=  -\mathopen{}\left(8^0\right)\mathclose{}\\
+    \amp=  -1
+    \end{aligned}</me></p>
+</li>
+<li>
+<p>In the expression <m>3x^0\text{,}</m> the exponent <m>0</m> only applies to the <m>x\text{:}</m></p>
+<p><me>\begin{aligned}
+    3x^0 \amp= 3\cdot x^0\\
+    \amp= 3\cdot 1\\
+    \amp= 3
+    \end{aligned}</me></p>
+</li>
+</ol></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/4_1_9.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.1.9)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "bizarroArithmetic.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context()->operators->set(
+    '**' => {class => 'bizarro::BOP::power', isCommand => 1, perl=>undef},
+    '^' => {class => 'bizarro::BOP::power', isCommand => 1, perl=>undef},
+);
+@answer = (Formula("1"),Formula("1"),Formula("-1"),Formula("3"));
+for $i (0..3) {
+    $evaluator[$i] = $answer[$i] -> cmp(
+        checker=>sub{
+            my ( $correct, $student, $ansHash ) = @_;
+            return 0 if $ansHash->{isPreview} || $correct != $student;
+            $student = $ansHash->{student_formula};
+            $correct = $correct->{original_formula} if defined $correct->{original_formula};
+            $student = Formula("$student"); $correct = Formula("$correct");
+            return 0 unless ($correct == $student);
+            Context()->flags->set(bizarroPow=>1,);
+            delete $correct->{test_values};
+            delete $student->{test_values};
+            my $OK = (($correct == $student) or ($student == $correct));
+            Context()->flags->set(bizarroPow=>0);
+            Value::Error("Your answer is not fully simplified.") unless $OK;
+            return $OK;
+        }
+    );
+}
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Simplify the following expressions. Assume all variables represent nonzero real numbers.
+a.  [`\left(173 x^4 y^{251}\right)^0`]
+
+    [_]{$evaluator[0]}{10}
+
+a.  [`(-8)^0`]
+
+    [_]{$evaluator[1]}{10}
+
+a.  [`-8^0`]
+
+    [_]{$evaluator[2]}{10}
+
+a.  [`3x^0`]
+
+    [_]{$evaluator[3]}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+To simplify any of these expressions, it is critical that we remember an exponent only applies to what it is touching or immediately next to.
+a.  In the expression [`\left(173 x^4 y^{251}\right)^0\text{,}`] the exponent [`0`] applies to everything inside the parentheses.
+
+    [```
+                      \left(173 x^4 y^{251}\right)^0 =  1
+                    ```]
+
+a.  In the expression [`(-8)^0`] the exponent applies to everything inside the parentheses, [`-8\text{.}`]
+
+    [```
+                      (-8)^0  =  1
+                    ```]
+
+a.  In contrast to the previous example, the exponent only applies to the [`8\text{.}`] The exponent has a higher priority than negation in the order of operations. We should consider that [`-8^0 = -\mathopen{}\left(8^0\right)\mathclose{}\text{,}`] and so:
+
+    [```\newcommand{\amp}{&}
+    \begin{aligned}
+    -8^0  \amp=  -\mathopen{}\left(8^0\right)\mathclose{}\\
+    \amp=  -1
+    \end{aligned}
+    ```]
+
+a.  In the expression [`3x^0\text{,}`] the exponent [`0`] only applies to the [`x\text{:}`]
+
+    [```\newcommand{\amp}{&}
+    \begin{aligned}
+    3x^0 \amp= 3\cdot x^0\\
+    \amp= 3\cdot 1\\
+    \amp= 3
+    \end{aligned}
+    ```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

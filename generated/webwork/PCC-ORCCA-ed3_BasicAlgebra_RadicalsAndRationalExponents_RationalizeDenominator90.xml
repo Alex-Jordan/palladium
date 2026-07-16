@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator90" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator90">
+  <static seed="1928">
+    <statement><p><m>\displaystyle{ \sqrt{\frac{13}{36}} }</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{\sqrt{13}}{6}</m>
+      </p>
+    </answer>
+    <solution><p>We need to use this property for this problem:</p>
+<p><m>\displaystyle{ \sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}} }</m></p>
+<p>Thus we have:</p>
+<p><m>\displaystyle{\begin{aligned}
+   \sqrt{\frac{13}{36}} 
+      \amp = \frac{\sqrt{13}}{\sqrt{36}} \\
+      \amp = \frac{\sqrt{13}}{6}
+\end{aligned}
+    }</m></p>
+<p>Since no radicals are left in the denominator, there is no need to further simplify this expression.</p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/4_3_4_17.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Carl Yao
+# Portland Community College
+#
+# Rationalize denominator. Problem is given as a fraction.
+# Denominator is a square number.
+#
+# Last edited: Jordan 9/8/13; Carl Yao 8/31/13,
+#
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Basic Algebra')
+## DBsection('Exponents and Radicals')
+## KEYWORDS('simplify','radical','square root','rationalize','denominator')
+## DBCCSS('8.EE')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Alex Jordan, Carl Yao, Chris Hughes')
+## Institution('PCC')
+
+ 
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "contextFraction.pl",
+  "contextLimitedRadical.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+
+######################################
+
+TEXT(beginproblem());
+Context("Numeric");
+
+$denAns = random(2,10,1);
+$den = $denAns**2;
+do {$num = list_random(2,3,5,6,7,10,11,13,14,15);} until (gcd($num,$denAns)==1);
+
+Context("LimitedRadical");
+$ans = Formula("sqrt($num)/$denAns");
+
+Context()->{error}{msg}{"You must simplify your answer further"} 
+  = "Either your answer is not fully simplified or it has an irrational denominator";
+
+
+#####################################################
+
+BEGIN_PGML
+
+[@ PTX_exercisegroup_introduction('Simplify the expression. If the result has a denominator, it must be rationalized.') @]
+
+[`` \sqrt{\frac{[$num]}{[$den]}} ``]
+
+[_]{$ans}{16}
+
+END_PGML
+
+############################################################
+
+
+BEGIN_PGML_SOLUTION
+
+We need to use this property for this problem:
+
+    [`` \sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}} ``]
+
+Thus we have:
+
+    [``
+\begin{aligned}
+   \sqrt{\frac{[$num]}{[$den]}} 
+      &= \frac{\sqrt{[$num]}}{\sqrt{[$den]}} \\
+      &= \frac{\sqrt{[$num]}}{[$denAns]}
+\end{aligned}
+    ``]
+
+Since no radicals are left in the denominator, there is no need to further simplify this expression.
+
+END_PGML_SOLUTION
+
+######################################
+
+
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

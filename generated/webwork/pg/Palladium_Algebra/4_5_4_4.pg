@@ -1,93 +1,87 @@
-# WeBWorK problem written by Chris Hughes, 2013
+# WeBWorK problem written by Carl Yao
 # Portland Community College
 #
-# Template:
-# Simplify the following expression
-#     (x^m)^n
+# Solve \sqrt{ax}=b
 #
-# We use a randomly-named variable (could be x, y, z, etc) from
-# PCCmacros.pl
-#
-# This problem chooes m and n to be POSITIVE
-#
-# Last edited: Carl Yao 6/28/13
-#
+# Last updated: Yao 1/7/2017
 # ENDDESCRIPTION
 
+## DBCCSS('A-REI.4.b')
 ## DBsubject('Algebra')
-## DBchapter('Polynomial and Rational Functions')
-## DBsection('Polynomial Functions')
-## KEYWORDS('multiply','exponent','simplify')
-## DBCCSS('8.EE.1')
-## TitleText1('')
-## EditionText1('')
-## AuthorText1('')
-## Section1('')
-## Problem1('')
+## DBchapter('Basic Algebra')
+## DBsection('equations', 'Simplification')
+## KEYWORDS('solve','quadratic','equation','square root')
 ## Author('Alex Jordan, Carl Yao, Chris Hughes')
 ## Institution('PCC')
 
 ##############################################
-
 DOCUMENT();
 
 loadMacros(
-  "PGstandard.pl",
-  "MathObjects.pl",
-  "PGML.pl",
-  "PCCmacros.pl",
-  "contextLimitedPolynomial.pl",
-  "answerHints.pl",
-  "PGcourse.pl",
+   "PGstandard.pl",
+   "MathObjects.pl",
+   "parserAssignment.pl",
+   "answerHints.pl",
+   "PGML.pl",
+   "contextFiniteSolutionSets.pl",
+   "PCCmacros.pl",
+   "PGcourse.pl",
 );
 
 ##############################################
+    
+Context("FiniteSolutionSets");
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0, formatStudentAnswer=>parsed);
+                               
 
-Context("LimitedPolynomial-Strict");
 
-# m and n are the exponents
-$m=random(2,12,1);
-$n=random(2,12,1);
+   $a = random(2,5,1);
+   $f = random(2,5,1);
+   $b = $a*$f;
+   $b2 = $b**2;
+$solution = $b2/$a;
 
-# myvar is the variable- could be x, y, z, ..., anything in PCCmacros.pl
-$myvar = RandomVariableName(type=>'variable');
-Context()->variables->are($myvar=>'Real');
 
-# custom error message
-Context()->{error}{msg}{"A variable can appear only once in each term of a polynomial"}
-  = "Your answer must be fully simplified";
-
-# compute the answer
-$total = $m*$n;
-$ans = Formula("$myvar^($total)");
-
+$left = Compute("sqrt($a*$var)")->reduce;
+$right = Compute("$b")->reduce;
+$ans = Formula("{$solution}");
 
 ##############################################
-TEXT(beginproblem());
 
 BEGIN_PGML
 
-[@ PTX_exercisegroup_introduction('Use the properties of exponents to simplify the expression.') @]
+[@ PTX_exercisegroup_introduction('Solve the equation.') @]
 
-[``\left([$myvar]^{[$m]}\right)^{[$n]}``]
+     [`` [$left] = [$right] ``]
 
-[____________]
+     [_]{$ans}{16}
 
 END_PGML
 
-$wrong=$m+$n;
-ANS($ans -> cmp() ->
-  withPostFilter(AnswerHints(
-    [Compute("$myvar^($wrong)")] =>
-    "When raising terms to a power, you do not add the exponents.")));
+##############################################
+
 
 BEGIN_PGML_SOLUTION
-We _multiply_ the exponents as follows: [```\begin{aligned}
-           \left([$myvar]^{[$m]}\right)^{[$n]}&=[$myvar]^{[$m]\cdot[$n]}\\
-                             &=[$myvar]^{[$total]}
-       \end{aligned}```]
+
+To remove the square root, we square both sides of the equation:
+
+    [``
+\begin{aligned}
+   [$left] &= [$right] \\
+   ([$left])^2 &= ([$right])^2 \\
+   [$a][$var] &= [$b2] \\
+   \frac{[$a][$var]}{[$a]} &= \frac{[$b2]}{[$a]} \\
+   [$var] &= [$solution]
+\end{aligned}
+    ``]
+
+Whenever we square both sides of an equation, we could create extraneous solutions. We must check our solution. This part is left as exercise.
+
 
 END_PGML_SOLUTION
+
 ##############################################
 
 ENDDOCUMENT();

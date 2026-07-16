@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-14-11" assembly-id="section-solving-rational-equations-10-14-11">
+  <static seed="1632" source="Contrib/PCC/BasicAlgebra/RationalEquations/rationalEquationApplication50.pg">
+    <statement><p>Town A and Town B are <m>700</m> miles apart. With a constant still-water speed, a boat traveled from Town A to Town B, and then back to Town A. During this whole trip, the river flew from Town A to Town B at <m>20</m> miles per hour. The whole trip took <m>12</m> hours. Answer the following question:</p>
+<p>During this trip, the boat<rsq/>s speed on still water was <fillin characters="6" name="AnSwEr0001"/> miles per hour.</p>
+</statement>
+    <answer>
+      <p>
+        <m>120</m>
+      </p>
+    </answer>
+    <solution><p>Assume that the boat<rsq/>s still-water speed was <m>x</m> miles per hour.</p>
+<p>Since the river flows from Town A to Town B at <m>20</m> miles per hour, the boat traveled from Town A  toTown B (along the current) at <m>x+20</m> miles per hour, and then traveled back from Town B to Town A (against the current) at <m>x-20</m> miles per hour.</p>
+<p>Using the formula <m>time=\frac{distance}{speed}</m>, we know the boat traveled from Town A to Town B in <m>\frac{700}{x+20}</m> hours; and it traveled back from Town B to Town A in <m>\frac{700}{x-20}</m> hours.</p>
+<p>It<rsq/>s given that the whole trip took <m>12</m> hours, so we can write an equation and solve it:</p>
+<p><m>\displaystyle{\begin{aligned}
+  \amp \frac{700}{x+20}+\frac{700}{x-20} = 12 \\
+  \amp \frac{700}{x+20} \cdot {\left(x+20\right)\mathopen{}\left(x-20\right)} +\frac{700}{x-20} \cdot {\left(x+20\right)\mathopen{}\left(x-20\right)} = 12 \cdot {\left(x+20\right)\mathopen{}\left(x-20\right)} \\
+  \amp 700(x-20) + 700(x+20) = 12(x^{2}-400) \\
+  \amp 700x-14000 +700x+14000 = 12x^{2}-4800 \\
+  \amp 1400x = 12x^{2}-4800  \\
+  \amp  0= 12x^{2}-1400x -4800
+\end{aligned}
+    }</m></p>
+<p>When numbers are big, we use the quadratic formula to solve the quadratic equation:</p>
+<p><m>\displaystyle{\begin{aligned}
+   x \amp = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a} \\
+   x \amp = \frac{-(-1400) \pm \sqrt{(-1400)^{2}-4 \cdot (12) \cdot (-4800)}}{2 \cdot 12} \\
+   x \amp = \frac{1400 \pm \sqrt{2190400}}{24} \\
+   x \amp = \frac{1400 \pm 1480}{24} \\
+   x \amp = \frac{1400 + 1480}{24} \:\: or \:\: x= \frac{1400 - 1480}{24} \\
+   x \amp = 120 \:\: or \:\: x= -3.33333333333333
+\end{aligned}
+    }</m></p>
+<p>In this situation, <m>x=-3.33333333333333</m> is not a valid solution, since speed cannot be negative. <m>x=120</m> is the only solution.</p>
+<p>During this trip, the boat<rsq/>s speed on still water was <m>{120}</m> miles per hour.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/rationalEquationApplication50.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalEquations/rationalEquationApplication50.pg"/>
+</webwork-reps>

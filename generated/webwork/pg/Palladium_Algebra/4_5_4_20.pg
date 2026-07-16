@@ -1,89 +1,121 @@
-# WeBWorK problem written by Carl Yao
+# WeBWorK problem written by Alex Jordan 
 # Portland Community College
 #
-# Evaluate an expression with a fractional exponent.
+# Template:
+# Solve the following radical equation
 #
-# Last edited: Carl Yao 7/21/16,
+#       sqrt(ax+b)+c = d
 #
+#
+# Last updated: Spoddeck 12/22/15
 # ENDDESCRIPTION
 
-## DBsubject('Algebra')
-## DBchapter('Basic Algebra')
-## DBsection('Exponents and Radicals')
-## KEYWORDS('simplify','radical','estimate')
-## DBCCSS('8.EE')
-## TitleText1('')
-## EditionText1('')
-## AuthorText1('')
-## Section1('')
-## Problem1('')
-## Author('Alex Jordan, Carl Yao, Chris Hughes')
-## Institution('PCC')
 
- 
+##############################################
+
+
 DOCUMENT();
 
 loadMacros(
   "PGstandard.pl",
-  "MathObjects.pl",
-  "PGML.pl",
+  "MathObjects.pl",  
+  "contextFraction.pl",
   "PCCmacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "PGML.pl",
   "PGcourse.pl",
 );
 
-######################################
+
+##############################################
+
 
 TEXT(beginproblem());
-Context("LimitedNumeric");
 
-$radD = random(2,5,1);
-if ($radD==5) {$num=2**5;}
-elsif ($radD==4) {$num=(random(2,3,1))**4;}
-elsif ($radD==3) {$num=(random(2,5,1))**3;}
-else {$num=(random(2,10,1))**2;}
+Context("Fraction");
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
 
-if ($radD>2) {do{$radN = random(2,$radD-1,1);}until(gcd($radN,$radD)==1);}
-else {$radN = 3;}
-
-$root = $num**(1/$radD);
-$ans = $num**($radN/$radD);
+$a = random(2,10,1);
+$b = random(2,10,1);
+$c = random(2,10,1);
+$d = $c + random(2,10,1);
+$h1 = $d - $c;                             #helper variable 1
 
 
-#####################################################
+$left = Formula("sqrt($a $var+$b)+$c");
+$right = Formula("$d")->reduce;
+
+
+$r[0] = Fraction("($d-$c)**2-$b","$a");
+$h2 = sqrt($a*$r[0]+$b);                             #helper variable 2
+
+
+Context("FiniteSolutionSets");
+Context()->variables->are($var=>'Real');
+$ans = Formula("{$r[0]}");
+
+
+##############################################
 
 BEGIN_PGML
 
-[@ PTX_exercisegroup_introduction('Evaluate the expression without help from a calculator.') @]
+[@ PTX_exercisegroup_introduction('Solve the equation.') @]
 
-    [`` \sqrt[[$radD]]{[$num]^{[$radN]}} ``]
+     [`` [$left] = [$right] ``]
 
-    [_]{$ans}{16}
+     [_]{$ans}{16}
 
 END_PGML
 
-############################################################
+##############################################
 
 
 BEGIN_PGML_SOLUTION
 
-Radicals can be converted into fractional exponents this way:
+The first step is to get the square root on one side of the equation and everything else on the other side.
 
-    [`` \sqrt[n]{x^{m}} = (x^{m})^{\frac{1}{n}} = x^{\frac{m}{n}} ``]
+    [``
+\begin{aligned}
+   [$left] &= [$right] \\
+   [$left]-[$c] &= [$right]-[$c] \\
+   \sqrt{[$a][$var]+[$b]} &= [$d-$c] \\
+\end{aligned}
+    ``]
 
-For this problem, we have:
+To get rid of the square root, we square the left side and the right side of the equation.
 
-    [`` \sqrt[[$radD]]{[$num]^{[$radN]}} = ([$num]^{[$radN]})^{\frac{1}{[$radD]}} = [$num]^{\frac{[$radN]}{[$radD]}} ``]
+    [``
+\begin{aligned}
+   \sqrt{[$a][$var]+[$b]} &= [$d-$c] \\
+   \left(\sqrt{[$a][$var]+[$b]}\right)^2 &= \left([$d-$c]\right)^2 \\
+   [$a][$var]+[$b] &= [$h1**2] \\
+   [$a][$var]+[$b]-[$b] &= [$h1**2]-[$b] \\
+   [$a][$var] &= [$h1**2-$b] \\
+   \frac{[$a][$var]}{[$a]} &= \frac{[$h1**2-$b]}{[$a]} \\
+   [$var] &= [$r[0]] \\
+\end{aligned}
+    ``]
 
-Next, notice that [`[$num]`] is a special number in that [`[$num]=[$root]^{[$radD]}`]. We will do a substitution, and we have:
+We must check our solutions when we solve radical equations. We therefore substitute our answer into the original equation:
 
-    [`` [$num]^{\frac{[$radN]}{[$radD]}}=([$root]^{[$radD]})^{\frac{[$radN]}{[$radD]}} = [$root]^{[$radN]} ``]
+    [``
+\begin{aligned}
+   [$left] &\stackrel{?}{=} [$right] \\
+   \sqrt{[$a]\cdot[$r[0]]+[$b]}+[$c] &\stackrel{?}{=} [$d] \\
+   \sqrt{[$a*$r[0]]+[$b]}+[$c] &\stackrel{?}{=} [$d] \\
+   \sqrt{[$a*$r[0]+$b]}+[$c] &\stackrel{?}{=} [$d] \\
+   [$h2]+[$c] &\stackrel{?}{=} [$d] \\
+   [$d] &\stackrel{?}{=} [$d] \\
+\end{aligned}
+    ``]
 
-You can enter either [`[$root]`]^[`[$radN]`] or [`[$ans]`].
+That is true, so the solution set is [`\{[$r[0]]\}`].
 
 END_PGML_SOLUTION
 
-######################################
 
+##############################################
 
 
 ENDDOCUMENT();

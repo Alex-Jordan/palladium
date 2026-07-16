@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-1-5" assembly-id="section-solving-rational-equations-10-1-5">
+  <static seed="1470" source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses120.pg">
+    <statement><p>Solve the equation.</p>
+<p><m>\displaystyle{ {8}={1-7\mathopen{}\left(m-8\right)}  }</m></p>
+<p><fillin characters="31" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\{7\}</m>
+      </p>
+    </answer>
+    <solution><p>Two alternative approaches are shown.</p>
+<p><m>\displaystyle{\begin{aligned}
+ 8       \amp = 1 -7(m-8)
+          \amp  8       \amp = 1 -7(m-8) \\
+ 8       \amp = 1 +(-7) \cdot (m+(-8))
+          \amp  8\mathbf{{}-1} \amp = 1 -7(m-8)\mathbf{{}-1} \\
+ 8       \amp = 1 +(-7) \cdot m+(-7) \cdot (-8)
+          \amp  7 \amp = -7(m-8) \\
+ 8       \amp = 1 -7m +56
+          \amp  \frac{7}{-7} \amp = \frac{-7(m-8)}{-7} \\
+ 8       \amp =      -7m +(1+56)
+          \amp  -1 \amp = m-8 \\
+ 8       \amp =       -7m +57
+          \amp  -1\mathbf{{}+8} \amp = m-8\mathbf{{}+8} \\
+ 8\mathbf{{}-57}       \amp =       -7m +57\mathbf{{}-57}
+          \amp  7 \amp = m \\
+ -49   \amp =   -7m
+          \amp  m \amp = 7 \\
+ \frac{-49}{-7}  \amp =    \frac{-7m}{-7} \\
+ 7     \amp =      m\\
+ m     \amp =      7
+\end{aligned}
+    }</m></p>
+<p>The solution to this equation is <m>7</m>. To stress that this is a value assigned to <m>m</m>, some report <m>m = 7</m>. We can also say that the solution set is <m>\{7\}</m>, or that <m>m\in\left\{7\right\}</m>. If we substitute <m>7</m> in for <m>m</m> in the original equation <m>8=1-7\mathopen{}\left(m-8\right)</m>, the equation will be true. Please check this on your own; it is an important habit.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses120.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses120.pg"/>
+</webwork-reps>

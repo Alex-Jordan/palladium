@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-introduction-to-exponent-properties-6-4-2" assembly-id="section-introduction-to-exponent-properties-6-4-2">
+  <static seed="631">
+    <task>
+      <statement><p>Let <m>x^{14}\cdot x^{a}=x^{32}\text{,}</m> where <m>a</m> is a natural number. How many possibilities are there for <m>a\text{?}</m></p>
+<p><fillin characters="10" name="AnSwEr0001"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <solution><p>Let <m>x^{14}\cdot x^{a}=x^{32}\text{.}</m> Then <m>a</m> must be <m>32-14\text{.}</m> So there is only one possibility for <m>a\text{.}</m></p>
+</solution>
+    </task>
+    <task>
+      <statement><p>Let <m>x^{b}\cdot x^{c}=x^{95}\text{,}</m> where <m>b</m> and <m>c</m> are natural numbers. How many possibilities are there for <m>b\text{?}</m></p>
+<p><fillin characters="10" name="AnSwEr0002"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>94</m>
+        </p>
+      </answer>
+      <solution><p>Let <m>x^{b}\cdot x^{c}=x^{95}\text{.}</m> Many possibilities exist for <m>b</m> and <m>c\text{.}</m> Since <m>b</m> and <m>c</m> must be natural numbers, let<rsq/>s start with <m>b</m> equal to <m>1\text{.}</m> Then <m>c</m> must equal 94, because <m>x^{1}\cdot x^{94}=x^{95}\text{.}</m> Considering all of the possibilities for <m>b\text{,}</m> notice that <m>b</m> can equal <m>1,2,3,\ldots,94\text{.}</m> Therefore, there are 94 possibilities for <m>b\text{.}</m> Note that <m>b</m> can<rsq/>t equal 95 because that would force <m>c</m> to be zero,which is not a natural number.</p>
+</solution>
+    </task>
+    <task>
+      <statement><p>Let <m>x^{d}\cdot x^{e}=x^{1000}</m> where <m>d</m> and <m>e</m> are natural numbers. How many possibilities are there for <m>d\text{?}</m></p>
+<p><fillin characters="10" name="AnSwEr0003"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>999</m>
+        </p>
+      </answer>
+      <solution><p>Let <m>x^{d}\cdot x^{e}=x^{1000}\text{.}</m> Many possibilities exist for <m>d</m> and <m>e\text{.}</m> Since <m>d</m> and <m>e</m> must be natural numbers, let<rsq/>s start with <m>d</m> equal to <m>1\text{.}</m> Then <m>e</m> must equal 999, because <m>x^{1}\cdot x^{999}=x^{1000}\text{.}</m> Considering all of the possibilities for <m>d\text{,}</m> notice that <m>d</m> can equal <m>1,2,3,\ldots,999\text{.}</m> Therefore, there are 999 possibilities for <m>d\text{.}</m> Note that <m>d</m> can<rsq/>t equal 1000 because that would force <m>e</m> to be zero, which is not a natural number.</p>
+</solution>
+    </task>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/Appendices/A_8_4_67.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(A.8.4.67)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "scaffold.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+COMMENT('This problem is scaffolded with multiple parts');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$m = random(5,15,1);
+$n = $m + random(10,20,1);
+$p = random(50,100,5);
+$answerb = $p-1;
+$q = random(500,2000,50);
+$answerc = $q-1;
+
+############################################################
+# Body
+############################################################
+
+############################################################
+# Scaffold
+############################################################
+Scaffold::Begin(numbered => 1,is_open => "correct_or_first_incorrect",can_open => always,);
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+Let [`x^{[$m]}\cdot x^{a}=x^{[$n]}\text{,}`] where [`a`] is a natural number. How many possibilities are there for [`a\text{?}`]
+
+[_]{'1'}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Let [`x^{[$m]}\cdot x^{a}=x^{[$n]}\text{.}`] Then [`a`] must be [`[$n]-[$m]\text{.}`] So there is only one possibility for [`a\text{.}`]
+
+END_PGML_SOLUTION
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+Let [`x^{b}\cdot x^{c}=x^{[$p]}\text{,}`] where [`b`] and [`c`] are natural numbers. How many possibilities are there for [`b\text{?}`]
+
+[_]{$answerb}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Let [`x^{b}\cdot x^{c}=x^{[$p]}\text{.}`] Many possibilities exist for [`b`] and [`c\text{.}`] Since [`b`] and [`c`] must be natural numbers, let's start with [`b`] equal to [`1\text{.}`] Then [`c`] must equal [$p-1], because [`x^{1}\cdot x^{[$p-1]}=x^{[$p]}\text{.}`] Considering all of the possibilities for [`b\text{,}`] notice that [`b`] can equal [`1,2,3,\ldots,[$p-1]\text{.}`] Therefore, there are [$p-1] possibilities for [`b\text{.}`] Note that [`b`] can't equal [$p] because that would force [`c`] to be zero,which is not a natural number.
+
+END_PGML_SOLUTION
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+Let [`x^{d}\cdot x^{e}=x^{[$q]}`] where [`d`] and [`e`] are natural numbers. How many possibilities are there for [`d\text{?}`]
+
+[_]{$answerc}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Let [`x^{d}\cdot x^{e}=x^{[$q]}\text{.}`] Many possibilities exist for [`d`] and [`e\text{.}`] Since [`d`] and [`e`] must be natural numbers, let's start with [`d`] equal to [`1\text{.}`] Then [`e`] must equal [$q-1], because [`x^{1}\cdot x^{[$q-1]}=x^{[$q]}\text{.}`] Considering all of the possibilities for [`d\text{,}`] notice that [`d`] can equal [`1,2,3,\ldots,[$q-1]\text{.}`] Therefore, there are [$q-1] possibilities for [`d\text{.}`] Note that [`d`] can't equal [$q] because that would force [`e`] to be zero, which is not a natural number.
+
+END_PGML_SOLUTION
+
+Section::End();
+
+Scaffold::End();
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

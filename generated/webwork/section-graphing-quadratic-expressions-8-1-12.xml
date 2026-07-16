@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-graphing-quadratic-expressions-8-1-12" assembly-id="section-graphing-quadratic-expressions-8-1-12">
+  <static seed="1032" source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticEquations/solveQuad176.pg">
+    <statement><p>Solve the equation.</p>
+<p><m>{2x^{2}-x+10}= 0</m></p>
+<p><fillin characters="23" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\text{no real solutions}</m>
+      </p>
+    </answer>
+    <solution><p>This equation does 
+not easily factor, so we will use the Quadratic Formula:</p>
+<p><m>\begin{aligned}
+            x \amp  = \frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+                   \amp  = \frac{1\pm\sqrt{1-80}}{4}\\
+                   \amp  = \frac{1\pm\sqrt{-79}}{4}\\
+        \end{aligned}</m></p>
+<p>The square root of a negative number is <em>not</em> real, so we conclude that there are <alert>no real solutions</alert> to this
+equation.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="PCC-ORCCA-ed3/BasicAlgebra/QuadraticEquations/solveQuad176.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticEquations/solveQuad176.pg"/>
+</webwork-reps>

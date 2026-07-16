@@ -1,0 +1,69 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.1.13.5)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserOneOf.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+@ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+$var = list_random(@ORCCA_variables);
+Context()->variables->are($var=>'Real');
+($a, $b) = random_subset(2, 2 .. 9);
+$b = -$b;
+($m, $n) = num_sort(random_subset(2, 2 .. 6));
+$answer = OneOf(Compute("$a $var^$m"),Compute("-$a $var^$m"));
+@terms = random_subset(2, Compute("$a $var^$m"), Compute("$a*$b $var^$n"));
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the greatest common factor (GCF) of the given terms.
+
+[`[$terms[0]], [$terms[1]]`]
+
+[_]{$answer}{6}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-20T13:16:08-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -31,7 +28,7 @@ loadMacros(
   "PGML.pl",
   "AnswerFormatHelp.pl",
   "PCCmacros.pl",
-  "PGchoicemacros.pl",
+  "parserNumberWithUnits.pl",
   "parserLinearRelation.pl",
   "PGcourse.pl",
 );
@@ -45,27 +42,48 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-($a, $b, $c) = (2..15)[NchooseK(14,3)];
-Context("LinearRelation");
-$ans = LinearRelation("x/$a = $c x - $b");
-$NumberWorda = numberWord($a, capital => 1);
-$numberWordb = numberWord($b);
-$numberWordc = numberWord($c);
+$final = random(5000, 10000, 100);
+$end = NumberWithUnits("$final ft");
+$rate = random(500, 1000, 10);
+$speed = NumberWithUnits("$rate ft/min");
+$initial = random(33000, 42000, 1000);
+$start = NumberWithUnits("$initial ft");
+Context("LinearRelation")->variables->are(t => 'Real');
+$inequality = LinearRelation("$initial - $rate t > $final");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Translate the phrase or sentence into a math expression or equation (whichever is appropriate).
+Write an inequality to model the scenario. There is no need to solve the inequality.
 
-[$NumberWorda] less than the quotient of a number and [$numberWordb] is the same as the quotient of that number and [$numberWordc].
+An airplane was cruising at [`[$start]\text{,}`] and then began its descent. Because of some air traffic congestion, it will descend to [`[$end]`] and then circle the airport for a while. It descends at a rate of [`[$speed]\text{.}`] A passenger notices the plane is still descending. Set up an inequality where the solution set represents how much time might have passed since the plane started its descent. There is no need to solve it.
 
-[@KeyboardInstructions('Use [`x`] as the variable.')@]**
+[@KeyboardInstructions('Use [|t|]* as the variable.')@]**
 
-[_]{$ans}{16}
+[_]{$inequality}{20}
 
 END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+This is a rate exercise, and we can use
+
+[```
+                  (\text{initial value}) \pm (\text{rate})\cdot\text{variable} \mathrel{?} (\text{final value})
+                ```]
+
+The question mark in the above is not an equal sign, because we are trying to set up an inequality. The initial value for the altitude is [`[$initial]\text{,}`] the altitude is decreasing (so we will subtract, not add), the rate is [`[$rate]\text{,}`] and the final altitude is [`[$final]\text{.}`] We do not know is how much time has passed, so we decide to use [`t`] to represent that time. At the moment the passenger makes their observation, the plane is still descending, so the altitude is greater than the final value. So our inequality is:
+
+[```
+                  [$inequality]
+                ```]
+
+END_PGML_SOLUTION
 
 ############################################################
 # End Problem

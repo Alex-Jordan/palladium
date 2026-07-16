@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-quadratic-equations-by-factoring-6-3-4" assembly-id="section-solving-quadratic-equations-by-factoring-6-3-4">
+  <static seed="225" source="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication30.pg">
+    <statement><p>A rectangle<rsq/>s base is <m>{9\ {\rm cm}}</m> longer than its height. The rectangle<rsq/>s area is <m>{162\ {\rm cm^{2}}}</m>. Find this rectangle<rsq/>s dimensions.</p>
+<p>The rectangle<rsq/>s height is <fillin characters="11" name="AnSwEr0001"/>.</p>
+<p>The rectangle<rsq/>s base is <fillin characters="11" name="AnSwEr0002"/>.</p>
+</statement>
+    <answer>
+      <p>
+        <m>9\ {\rm cm}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>18\ {\rm cm}</m>
+      </p>
+    </answer>
+    <solution><p>Let the rectangle<rsq/>s height be <m>x</m> centimeters. Then its base is <m>x+9</m> centimeters.</p>
+<p>It<rsq/>s given that the rectangle<rsq/>s area is <m>{162\ {\rm cm^{2}}}</m>, so we can write and solve the equation:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   x(x+9) \amp = 162 \\
+   x^{2}+9x \amp = 162 \\
+   x^{2}+9x - 162 \amp = 0 \\
+\end{aligned}
+    }</m></p>
+<p>The polynomial can be factored, so we will solve this equation by factoring:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   (x-9)(x+18) \amp =0 \\
+   x-9=0 \quad \amp \text{or} \quad x +18=0 \\
+   x=9 \quad \amp \text{or} \quad x= -18
+\end{aligned}
+    }</m></p>
+<p>The solution <m>x= -18</m> will not be considered, as a rectangle<rsq/>s height must be positive. The height is <m>{9\ {\rm cm}}</m>.</p>
+<p>Recall that the rectangle<rsq/>s base is <m>x+9</m> centimeters, where <m>x</m> is the height. Thus the base is <m>{9\ {\rm cm}} + {9\ {\rm cm}}</m>, or <m>{18\ {\rm cm}}</m>.</p>
+<p>So the rectangle<rsq/>s height is <m>{9\ {\rm cm}}</m>, and its base is <m>{18\ {\rm cm}}</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication30.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication30.pg"/>
+</webwork-reps>

@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:10-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -31,6 +28,7 @@ loadMacros(
   "PGML.pl",
   "AnswerFormatHelp.pl",
   "niceTables.pl",
+  "PGchoicemacros.pl",
   "parserVectorUtils.pl",
   "contextForm.pl",
   "parserPopUp.pl",
@@ -46,12 +44,12 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$actual_solution = Real(random(-9,9) + random(1,9)/10);
-$m = random(2,9);
-$b = non_zero_random(-9,9,0.1);
-$left = Formula("$m x + $b")->reduce;
-$right = Formula($left->eval(x => $actual_solution))->reduce;
-$proposed_solution = random(0,2) ? $actual_solution : $actual_solution + non_zero_random(-3,3,0.1);
+$actual_solution = Real(random(-6,-1));
+($a, $b) = (2..9)[NchooseK(8,2)];
+$b = list_random($b, -$b);
+$left = Formula("$a x^2 + $b x")->reduce;
+$right = $left->eval(x => $actual_solution);
+$proposed_solution = random(0,2) ? $actual_solution : $actual_solution + non_zero_random(-3,3);
 Context("LimitedNumeric");
 $lefteval = Real($left->eval(x => $proposed_solution));
 $righteval = Real($right->eval(x => $proposed_solution));

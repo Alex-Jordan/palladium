@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-10-5" assembly-id="section-solving-rational-equations-10-10-5">
+  <static seed="1576" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations2.pg">
+    <statement><p>Solve the equation.</p>
+<p><m>\displaystyle{ {\frac{r}{r+4}} = {3} }</m></p>
+<p><fillin characters="34" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{-6\right\}</m>
+      </p>
+    </answer>
+    <solution><p>To get rid of all fractions in this equation, we multiple all terms with the common denominator. In this equation, the common denominator is <m>{r+4}</m>.</p>
+<p><m>\displaystyle{\begin{aligned}
+   {\frac{r}{r+4}} \amp = {3} \\
+   {\frac{r}{r+4}} \cdot ({r+4}) \amp = {3} \cdot ({r+4}) \\
+   r \amp = 3r+12 \\
+   r \mathbf{-3r} \amp = 3r+12 \mathbf{-3r} \\
+   -2r \amp = 12 \\
+   \frac{-2r}{-2} \amp = \frac{12}{-2} \\
+   r \amp = -6
+\end{aligned}
+    }</m></p>
+<p>We must check solutions when we solve rational equations. By the original equation, the domain condition is <m>r+4 \ne 0</m>, or <m>r \ne -4</m>. This doesn<rsq/>t conflict with the solution above, so the solution is <m>r = -6</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations2.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations2.pg"/>
+</webwork-reps>

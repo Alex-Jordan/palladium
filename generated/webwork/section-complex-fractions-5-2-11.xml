@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-complex-fractions-5-2-11" assembly-id="section-complex-fractions-5-2-11">
+  <static seed="1442" source="Contrib/PCC/Math95/ComplexFractions/ComplexFractions6.pg">
+    <statement><p>Simplify this expression, and if applicable, write the restricted domain.</p>
+<p><m>\displaystyle{\frac{{9+\frac{1}{q-10}}}{{\frac{1}{q-10}-\frac{1}{7}}}=}</m> <fillin characters="40" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{7\mathopen{}\left(9q-89\right)}{-q+17}, q\ne 10</m>
+      </p>
+    </answer>
+    <solution><p>To simply the complex fraction <m>\frac{{9+\frac{1}{q-10}}}{{\frac{1}{q-10}-\frac{1}{7}}}</m>, we multiple the numerator and denominator with the common denominator of <m>{9+\frac{1}{q-10}}</m> and <m>{\frac{1}{q-10}-\frac{1}{7}}</m>, which is <m>{7\mathopen{}\left(q-10\right)}</m>.</p>
+<p><m>\displaystyle{\begin{aligned}
+  \frac{{9+\frac{1}{q-10}}}{{\frac{1}{q-10}-\frac{1}{7}}} \amp = \frac{({9+\frac{1}{q-10}})\cdot{7\mathopen{}\left(q-10\right)}}{({\frac{1}{q-10}-\frac{1}{7}})\cdot{7\mathopen{}\left(q-10\right)}} \\
+    \amp = \frac{{9\cdot 7\mathopen{}\left(q-10\right)+\frac{1}{q-10}\cdot 7\mathopen{}\left(q-10\right)}}{{\frac{1}{q-10}\cdot 7\mathopen{}\left(q-10\right)-\frac{1}{7}\cdot 7\mathopen{}\left(q-10\right)}} \\
+    \amp = \frac{{63\mathopen{}\left(q-10\right)+7}}{{7-\left(q-10\right)}} , q\ne10 \\
+    \amp = \frac{{63q-630+7}}{{7-q+10}}, q\ne10  \\
+    \amp = \frac{{63q-623}}{{17-q}}, q\ne10 \\
+    \amp = {\frac{7\mathopen{}\left(9q-89\right)}{-q+17}, q\ne 10}
+\end{aligned}
+    }</m></p>
+<p>Since the factors <m>q-10</m> was canceled, the domain condition lost during the simplification is <m>q \ne 10</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/Math95/ComplexFractions/ComplexFractions6.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/Math95/ComplexFractions/ComplexFractions6.pg"/>
+</webwork-reps>

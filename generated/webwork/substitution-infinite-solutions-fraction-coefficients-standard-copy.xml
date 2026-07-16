@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-substitution-infinite-solutions-fraction-coefficients-standard-copy" assembly-id="substitution-infinite-solutions-fraction-coefficients-standard-copy">
+  <static seed="557">
+    <statement><p><m>\left\{
+                  \begin{alignedat}{4}
+                  \amp {{\frac{5}{6}}I+{\frac{4}{3}}w} = {{\frac{4}{3}}} \\
+                  \amp {{\frac{4}{3}}I+{\frac{32}{15}}w} = {{\frac{32}{15}}}
+                  \end{alignedat}
+                  \right.</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\text{infinitely many solutions}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/1_5_8_89.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg copied-from="substitution-infinite-solutions-fraction-coefficients-standard"><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.5.8.90)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "parserAssignment.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+($X, $Y) = random_subset(2, 'a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
+Context("Fraction")->variables->are($X => 'Real', $Y => 'Real');
+Context()->noreduce('(-x)-y', '(-x)+y');
+parser::Assignment->Allow;
+$A[0] = Fraction(random_coprime([1..5],[2..6]));
+$B[0] = Fraction(random_coprime([-5..-1,1..5],[2..6]));
+$A[1] = Fraction(random_coprime([1..5],[2..6]));
+$B[1] = $B[0]*$A[1]/$A[0];
+$C[0] = Fraction(random_coprime([-5..-1,1..5],[2..6]));
+$C[1] = $C[0]*$A[1]/$A[0];
+Context()->strings->remove("NONE");
+Context()->strings->add(
+  "no solutions" => {},
+);
+for (
+  "no solution",
+  "none",
+  "there are no solutions",
+  "the solution set is empty",
+  "solution set is empty",
+  "empty set",
+  "∅",
+  "{}",
+  "{ }",
+  "{  }",
+  "{   }"
+) {
+  Context()->strings->add($_ => {alias => "no solutions"});
+}
+Context()->strings->add(
+  "infinitely many solutions" => {},
+);
+for (
+  "infinitely many",
+  "infinite solution set",
+  "infinite",
+  "the solution set is infinite",
+  "solution set is infinite"
+) {
+  Context()->strings->add($_ => {alias => "infinitely many solutions"});
+}
+$solution = Compute("infinitely many solutions");
+$answer = $solution->cmp(
+  typeMatch => List("$X = 0, $Y = 0"),
+  mathQuillOpts => 'disabled'
+);
+@left = map{Formula("$A[$_] $X + $B[$_] $Y")->reduce} (0,1);
+@right = map{Formula("$C[$_]")} (0,1);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve the system of equations using substitution.
+
+[`\newcommand{\amp}{&}\left\{
+                  \begin{alignedat}{4}
+                  \amp [$left[0]] = [$right[0]] \\
+                  \amp [$left[1]] = [$right[1]]
+                  \end{alignedat}
+                  \right.
+                `]
+
+[@KeyboardInstructions('Write the solution in the format [`[$X] = \text{number}, [$Y] = \text{number}\text{.}`] If there is no solution, enter [|no solutions|]*. If there are infinitely many solutions, enter [|infinitely many solutions|]*.')@]**
+
+[_]{$answer}{16}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

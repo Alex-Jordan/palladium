@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-graphing-quadratic-expressions-8-4-2" assembly-id="section-graphing-quadratic-expressions-8-4-2">
+  <static seed="1054" source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticApplications/FlyingObjectApp10.pg">
+    <statement><p>An object was shot up into the air with an initial vertical speed of <m>544</m> feet per second. Its height as time passes can be modeled by the quadratic equation <m>y={-16t^{2}+544t}</m>. Here <m>t</m> represents the number of seconds since the object<rsq/>s release, and <m>y</m> represents the object<rsq/>s height in feet.</p>
+<p><ol label="a.">
+<li>
+<p>After <fillin characters="12" name="AnSwEr0001"/>, this object reached its maximum height of <fillin characters="11" name="AnSwEr0002"/>.</p>
+</li>
+<li>
+<p>This object flew for <fillin characters="12" name="AnSwEr0003"/> before it landed on the ground.</p>
+</li>
+<li>
+<p>This object was <fillin characters="12" name="AnSwEr0004"/> in the air <m>{23\ {\rm s}}</m> after its release.</p>
+</li>
+<li>
+<p>This object was <m>{1488\ {\rm ft}}</m> high at two times: once <fillin characters="12" name="AnSwEr0005"/> after its release, and again later <fillin characters="12" name="AnSwEr0006"/> after its release.</p>
+</li>
+</ol></p>
+</statement>
+    <answer>
+      <p>
+        <m>17\ {\rm s}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>4624\ {\rm ft}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>34\ {\rm s}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>4048\ {\rm ft}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>3\ {\rm s}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>31\ {\rm s}</m>
+      </p>
+    </answer>
+    <solution><p>The function <m>f</m> given by the rule <m>f(t)={-16t^{2}+544t}</m> is quadratic. Identify that <m>a=-16, b=544, c=0</m>.</p>
+<p><ol label="1.">
+<li>
+<p>Since <m>a\lt 0</m>, this parabola opens down. Its vertex represents the maximum height the object can go and when it got there.</p>
+</li>
+</ol></p>
+<p>To find the vertex, we first find the parabola<rsq/>s axis of symmetry by the axis formula:</p>
+<p><m>\begin{aligned}
+  t \amp = -\frac{b}{2a} \\
+  t \amp = -\frac{544}{2(-16)} \\
+  t \amp =  17
+\end{aligned}</m></p>
+<p>Next, we substitute <m>t= 17</m> into <m>f</m><rsq/>s formula, and we have:</p>
+<p><m>\begin{aligned}
+  f(t) \amp =  {-16t^{2}+544t}  \\
+  f(17) \amp =  -16(17)^2+544(17)  \\
+  f(17) \amp =  {4624} 
+\end{aligned}</m></p>
+<p>The parabola<rsq/>s vertex is at <m>{\left(17,4624\right)}</m>. This implies that <m>{17\ {\rm s}}</m> after the release, the object reached its maximum height of <m>{4624\ {\rm ft}}</m>.</p>
+<p><ol label="1.">
+<li>
+<p>The parabola<rsq/>s <m>x</m>-intercepts represent the moments when the object was at a height of <m>0</m>: on the ground. We will solve the equation <m>f(t)=0</m> to find its <m>x</m>-intercepts. We have:</p>
+<p><m>\begin{aligned}
+   f(t) \amp = {-16t^{2}+544t} \\
+   0    \amp = {-16t^{2}+544t} \\
+   0    \amp = -t({16t-544}) \\
+   -t \amp = 0 \amp  \text{or} \amp \amp  {16t-544}\amp =0 \\
+   t \amp = 0 \amp  \text{or} \amp \amp  {16t}\amp =544 \\
+   t \amp = 0 \amp  \text{or} \amp \amp  t\amp =34
+\end{aligned}</m></p>
+</li>
+</ol></p>
+<p>This parabola has two <m>x</m>-intercepts: <m>(0,0)</m> and <m>(34,0)</m>. The point <m>(0,0)</m> represents the moment when the object was released; the point <m>(34,0)</m> implies the object fell back to the ground after <m>{34\ {\rm s}}</m>.</p>
+<p><ol label="1.">
+<li>
+<p>To find the object<rsq/>s height <m>23</m> seconds after it was released, we substitute <m>t=23</m> into the fomrula for <m>f</m>, and we have:</p>
+<p><m>\begin{aligned}
+   f(t)   \amp = {-16t^{2}+544t} \\
+   f(23) \amp = -16(23)^2+544(23) \\
+   f(23) \amp = {4048}
+\end{aligned}</m></p>
+</li>
+</ol></p>
+<p>This result shows that <m>{23\ {\rm s}}</m> after the object was released, it was <m>{4048\ {\rm ft}}</m> high in the air.</p>
+<p><ol label="1.">
+<li>
+<p>To find when the object was <m>{1488\ {\rm ft}}</m> high, we solve the equation <m>f(t)={1488}</m>.</p>
+<p><m>\begin{aligned}
+   f(t) \amp = {-16t^{2}+544t} \\
+   {1488} \amp = {-16t^{2}+544t} \\
+   0   \amp = {-16t^{2}+544t-1488} 
+\end{aligned}</m></p>
+</li>
+</ol></p>
+<p>For such big numbers, it<rsq/>s easier to use the Quadratic Formula to solve this equation. Identify that <m>a=-16,b=544,c={-1488}</m>. We have:</p>
+<p><m>\begin{aligned}
+   t \amp = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a} \\
+   t \amp = \frac{-(544) \pm \sqrt{(544)^{2}-4(-16)({-1488})}}{2(-16)} \\
+   t \amp = \frac{-544 \pm \sqrt{{200704}}}{-32} \\
+   t \amp = \frac{-544 \pm {448}}{-32} \\
+   t \amp = \frac{-544 + {448}}{-32} \amp  \text{or} \amp \amp  t=\frac{-544 - {448}}{-32} \\
+   t \amp = 3 \amp  \text{or} \amp \amp  t=31
+\end{aligned}</m></p>
+<p>This result shows that the object was <m>{1488\ {\rm ft}}</m> high twice during its flight: once <m>{3\ {\rm s}}</m> after it was released (on its way up), and another time <m>31</m> seconds after it was released (on its way down).</p>
+<!-- PTX:WARNING: PGML wanted to place a horizontal rule here. -->
+<p>It<rsq/>s important to understand the role of each part of this question in the graph of <m>f</m>.</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-graphing-quadratic-expressions-8-4-2-image-1.png" width="40%"/>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="PCC-ORCCA-ed3/BasicAlgebra/QuadraticApplications/FlyingObjectApp10.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticApplications/FlyingObjectApp10.pg"/>
+</webwork-reps>

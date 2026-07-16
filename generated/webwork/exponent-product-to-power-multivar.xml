@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-product-to-power-multivar" assembly-id="exponent-product-to-power-multivar">
+  <static seed="2582">
+    <statement><p><m>{\left(2xj\right)^{4}}</m></p>
+<p><fillin characters="6" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>16x^{4}j^{4}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/Appendices/A_8_4_15.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(A.8.4.15)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+($x, $y) = random_subset(2, 'a' .. 'k', 'm', 'n', 'p' .. 'r', 't' .. 'z');
+Context("Form")->variables->are($x => 'Real', $y => 'Real');
+$b = random(2,5);
+$m = random(2,4);
+$bm = $b**$m;
+$given = Formula("($b $x $y)^$m");
+$ans = Formula("$bm $x^$m $y^$m");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use the properties of exponents to simplify the expression.
+
+[`[$given]`]
+
+[_]{$ans}{6}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

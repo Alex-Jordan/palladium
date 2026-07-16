@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-15-2-5-68" assembly-id="section-factoring-15-2-5-68">
+  <static seed="240" source="Contrib/PCC/BasicAlgebra/Factoring/factoring650.pg">
+    <statement><p>Factor the given polynomial.</p>
+<p><m>{3r^{4}-243}=</m> <fillin characters="27" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>3\mathopen{}\left(r-3\right)\mathopen{}\left(r+3\right)\mathopen{}\left(r^{2}+9\right)</m>
+      </p>
+    </answer>
+    <solution><p>Once we remove the common factor of <m>3</m> the given expression is the <em>difference of squares</em> and 
+we will need to make <alert>two</alert> factorizations</p>
+<p><m>\begin{aligned}
+                {3r^{4}-243} \amp  = 3(({r}^2)^2-9^2)\\
+                            \amp  = {3\mathopen{}\left(r^{2}-9\right)\mathopen{}\left(r^{2}+9\right)}\\
+                            \amp  = {3\mathopen{}\left(r-3\right)\mathopen{}\left(r+3\right)\mathopen{}\left(r^{2}+9\right)}
+            \end{aligned}</m></p>
+<p>Note that this answer can be checked by using the FOIL (<alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast) technique (exercise).</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/Factoring/factoring650.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/Factoring/factoring650.pg"/>
+</webwork-reps>

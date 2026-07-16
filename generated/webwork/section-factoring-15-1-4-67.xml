@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-15-1-4-67" assembly-id="section-factoring-15-1-4-67">
+  <static seed="86" source="Contrib/PCC/BasicAlgebra/Factoring/factoring650.pg">
+    <statement><p>Factor the given polynomial.</p>
+<p><m>{14r^{4}-14}=</m> <fillin characters="27" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>14\mathopen{}\left(r-1\right)\mathopen{}\left(r+1\right)\mathopen{}\left(r^{2}+1\right)</m>
+      </p>
+    </answer>
+    <solution><p>Once we remove the common factor of <m>14</m> the given expression is the <em>difference of squares</em> and 
+we will need to make <alert>two</alert> factorizations</p>
+<p><m>\begin{aligned}
+                {14r^{4}-14} \amp  = 14(({r}^2)^2-1^2)\\
+                            \amp  = {14\mathopen{}\left(r^{2}-1\right)\mathopen{}\left(r^{2}+1\right)}\\
+                            \amp  = {14\mathopen{}\left(r-1\right)\mathopen{}\left(r+1\right)\mathopen{}\left(r^{2}+1\right)}
+            \end{aligned}</m></p>
+<p>Note that this answer can be checked by using the FOIL (<alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast) technique (exercise).</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/Factoring/factoring650.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/Factoring/factoring650.pg"/>
+</webwork-reps>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-quadratic-graphs-and-vertex-form-8-8-2" assembly-id="section-quadratic-graphs-and-vertex-form-8-8-2">
+  <static seed="1119" source="Contrib/PCC/BasicAlgebra/QuadraticFunctions/QuadraticVertexForm10.pg">
+    <statement><p>Write the vertex form for the quadratic function <m>f</m>, whose vertex is <m>(-8,-4)</m> and has leading coefficient <m>a=8</m>.</p>
+<p><fillin characters="17" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>f\mathopen{}\left(x\right) = 8\mathopen{}\left(x--8\right)^{2}+-4</m>
+      </p>
+    </answer>
+    <solution><p>A quadratic function<rsq/>s vertex form looks like <m>f(x) = a(x-h)^2+k</m>, where <m>(h, k)</m> is the parabola<rsq/>s vertex.</p>
+<p>The solution is <m>f(x) = 8(x + 8)^2 - 4</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/QuadraticFunctions/QuadraticVertexForm10.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/QuadraticFunctions/QuadraticVertexForm10.pg"/>
+</webwork-reps>

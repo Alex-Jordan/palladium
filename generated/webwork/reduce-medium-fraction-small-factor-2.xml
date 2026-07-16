@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-reduce-medium-fraction-small-factor-2" assembly-id="reduce-medium-fraction-small-factor-2">
+  <static seed="2070">
+    <statement><p><m>\dfrac{27}{33}</m></p>
+<p><fillin characters="6" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>{\frac{9}{11}}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/Appendices/A_1_6_13.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg copied-from="reduce-medium-fraction-small-factor"><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(A.1.6.14)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedFraction")->flags->set(
+    allowMixedNumbers => 0,
+    reduceConstants => 1,
+    showMixedNumbers => 0
+);
+Parser::Number::NoDecimals;
+$f = Fraction(random_coprime([6 .. 20], [11 .. 19]));
+$k = random(3 .. 5);
+$n = $k*$f->num;
+$d = $k*$f->den;
+$f = $f->cmp(studentsMustReduceFractions => 1);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Reduce the fraction.
+
+[`\dfrac{[$n]}{[$d]}`]
+
+[_]{$f}{6}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

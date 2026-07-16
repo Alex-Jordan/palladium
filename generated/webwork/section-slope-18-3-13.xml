@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-slope-18-3-13" assembly-id="section-slope-18-3-13">
+  <static seed="453" source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/FindLineEquationApplication80.pg">
+    <statement><p>Scientists are conducting an experiment with a gas in a sealed container. The mass of the gas is measured, and the scientists realize that the gas is leaking over time in a linear way. Each minute, they lose <m>6.6</m> grams. Eight minutes since the experiment started, the remaining gas had a mass of <m>217.8</m> grams.</p>
+<p>Let <m>x</m> be the number of minutes that have passed since the experiment started, and let <m>y</m> be the mass of the gas in grams at that moment. Use a linear equation to model the weight of the gas over time.
+<ol label="a.">
+<li>
+<p>This line<rsq/>s slope-intercept equation is <fillin characters="14" name="AnSwEr0001"/>.</p>
+</li>
+<li>
+<p><m>40</m> minutes after the experiment started, there would be <fillin characters="11" name="AnSwEr0002"/> grams of gas left.</p>
+</li>
+<li>
+<p>If a linear model continues to be accurate, <fillin characters="11" name="AnSwEr0003"/> minutes since the experiment started, all gas in the container will be gone.</p>
+</li>
+</ol></p>
+</statement>
+    <answer>
+      <p>
+        <m>y = -6.6x+270.6</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>6.6</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>41</m>
+      </p>
+    </answer>
+    <solution><p><ol label="a.">
+<li>
+<p>A line<rsq/>s equation in slope-intercept form looks like <m>y=mx+b</m>, where <m>m</m> is the slope, and <m>y</m> is the <m>y</m>-coordinate of the <m>y</m>-intercept. Since the gas is leaking at a rate of <m>6.6</m> grams per minute, we know that the slope of the linear model is <m>-6.6</m>.</p>
+<p>So now we have that <m>y=-6.6x+b</m>. The next step is to find the value of <m>b</m>. There are at least two ways.</p>
+<!-- PTX:WARNING: PGML wanted to make this a level 4 header. -->
+<p>
+One way
+is to substitute a known point into <m>y=-6.6x+b</m>.  We use the point <m>(8,217.8)</m>.</p>
+<p><m>\begin{aligned}
+  y \amp = -6.6x + b \\
+  217.8 \amp = -6.6 \cdot 8 + b \\
+  217.8 \amp = -52.8 + b \\
+  217.8\mathbf{{} + 52.8} \amp = -52.8 + b\mathbf{{} + 52.8} \\
+  270.6 \amp = b\\
+  b \amp = 270.6
+\end{aligned}</m></p>
+<p>This line<rsq/>s slope-intercept equation is <m>y=-6.6x+270.6</m>.</p>
+<!-- PTX:WARNING: PGML wanted to make this a level 4 header. -->
+<p>
+Another way
+is to use the line<rsq/>s point-slope equation <m>y-y_{1}=m(x-x_{1})</m>. Again, we use the point <m>(8,217.8)</m>.</p>
+<p><m>\begin{aligned}
+  y-y_{1} \amp = m(x-x_{1}) \\
+  y-217.8 \amp = -6.6(x-8) \\
+  y-217.8 \amp = -6.6x - 6.6 \cdot (-8) \\
+  y-217.8 \amp = -6.6x+52.8 \\
+  y-217.8\mathbf{{}+217.8} \amp = -6.6x+52.8\mathbf{{}+217.8} \\
+  y       \amp = -6.6x+270.6
+\end{aligned}</m></p>
+<p>This is the second way to find <m>b</m>, and thus the line<rsq/>s slope-intercept equation is <m>y=-6.6x+270.6</m>.
+<!-- PTX:WARNING: PGML wanted to place a horizontal rule here. --></p>
+</li>
+<li>
+<p>After <m>40</m> minutes, we can find the mass of the remaining gas if we substitute <m>40</m> in for <m>x</m> in the equation <m>y=-6.6x+270.6</m>.  We have:</p>
+<p><m>\displaystyle{\begin{aligned}
+  y \amp = -6.6x+270.6 \\
+  y \amp = -6.6 \cdot 40 +270.6 \\
+  y \amp = -264+270.6 \\
+  y \amp = 6.59999999999997
+\end{aligned}
+}</m></p>
+<p>So after <m>40</m> minutes, there are <m>6.59999999999997</m> grams of gas remaining.
+<!-- PTX:WARNING: PGML wanted to place a horizontal rule here. --></p>
+</li>
+<li>
+<p>To find when the gas will be all gone, we need to find when there are  <m>0</m> grams of gas left.  We can substitute <m>0</m> in for <m>y</m> in the equation <m>y=-6.6x+270.6</m>, and we have:</p>
+<p><m>\displaystyle{\begin{aligned}
+  y \amp = -6.6x+270.6 \\
+  0 \amp = -6.6x +270.6 \\
+  0\mathbf{{}-270.6} \amp = -6.6x +270.6\mathbf{{}-270.6}\\
+  -270.6 \amp = -6.6x \\
+  \frac{-270.6}{-6.6} \amp = \frac{-6.6x}{-6.6} \\
+  41 \amp = x
+\end{aligned}
+}</m></p>
+<p>So after <m>41</m> minutes, the gas will be all gone.</p>
+</li>
+</ol></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/LinearEquationApplications/FindLineEquationApplication80.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/FindLineEquationApplication80.pg"/>
+</webwork-reps>

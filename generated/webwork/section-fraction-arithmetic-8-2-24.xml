@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-fraction-arithmetic-8-2-24" assembly-id="section-fraction-arithmetic-8-2-24">
+  <static seed="106" source="Contrib/PCC/BasicMath/FractionApplication/MixedNumberAdditionWordProblems10.pg">
+    <statement><p>Each page of a book consists of a header, a footer and the middle part. The header is <m>{{\frac{1}{6}}}</m> inches in height; the footer is <m>{{\frac{11}{12}}}</m> inches in height; and the middle part is <m>{4{\textstyle\frac{1}{6}}}</m> inches in height.</p>
+<p>What is the total height of each page in this book? Use mixed number in your answer if needed.</p>
+<p>Each page in this book is <fillin characters="11" name="AnSwEr0001"/> inches in height.</p>
+</statement>
+    <answer>
+      <p>
+        <m>5{\textstyle\frac{1}{4}}</m>
+      </p>
+    </answer>
+    <solution><p>We add up the height of the header, middle part and footer to find the total height of a page:</p>
+<p><m>\displaystyle{ 
+\begin{aligned}[t]
+   {{\frac{1}{6}}} + {4{\textstyle\frac{1}{6}}} + {{\frac{11}{12}}}
+      \amp =    {{\frac{1}{6}}} + 4 + {{\frac{1}{6}}} + {{\frac{11}{12}}} \\
+      \amp =    4 + {{\frac{1}{6}}} + {{\frac{1}{6}}} + {{\frac{11}{12}}} \\
+      \amp = 4 + \frac{1\cdot2}{6\cdot2} + \frac{1\cdot2}{6\cdot2} + \frac{11}{12}  \\
+      \amp = 4 + \frac{2}{12} +  \frac{2}{12} + \frac{11}{12} \\
+      \amp = 4 + \frac{2+2+11}{12} \\
+      \amp = 4 + \frac{15}{12} \\
+      \amp = 4 + \frac{5}{4} \\
+      \amp = 4 + 1 \frac{1}{4} \\
+      \amp = {5{\textstyle\frac{1}{4}}}
+\end{aligned}
+    }</m></p>
+<p>Each page in this book is <m>{5{\textstyle\frac{1}{4}}}</m> inches in height.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicMath/FractionApplication/MixedNumberAdditionWordProblems10.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicMath/FractionApplication/MixedNumberAdditionWordProblems10.pg"/>
+</webwork-reps>

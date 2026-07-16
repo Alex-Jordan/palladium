@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:10-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,6 +27,9 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
+  "PGchoicemacros.pl",
+  "contextFraction.pl",
+  "parserPopUp.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -42,21 +42,25 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-($d,$n) = random_coprime([20],[1..59]);
-Context("LimitedNumeric");
-Context()->flags->set(tolType => 'digits', tolerance=>4);
-$answer = Real($n/$d);
+Context("Fraction");
+$d = list_random(2,4,8,5,10,20,40,25,50,100,200);
+$a = Fraction(random_coprime([1..2*$d], [$d]));
+$b = Real($a);
+($a, $b) = ($a, $b)[NchooseK(2,2)];
+$comp = list_random('\leq', '\geq', '\neq');
+$ans = ($comp eq '\neq') ? 'False' : 'True';
+$tf = DropDownTF($ans, showInStatic => 0);
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Without help from a calculator, convert the fraction to a decimal. If the decimal terminates, give its exact value. Otherwise round to at least three significant digits.
+Decide if each comparison is true or false.
 
-[`\dfrac{[$n]}{[$d]}`]
+[`[$a] [$comp] [$b]`]
 
-[_]{$answer}{5}
+[_]{$tf}{5}
 
 END_PGML
 

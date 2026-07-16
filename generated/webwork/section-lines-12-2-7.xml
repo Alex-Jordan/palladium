@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-lines-12-2-7" assembly-id="section-lines-12-2-7">
+  <static seed="441" source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/FindPSEquationApplication10.pg">
+    <statement><p>By your cell phone contract, you pay a monthly fee plus some money for each minute you use the phone during the month. In one month, you spent <m>270</m> minutes on the phone, and paid <m>{\$32.85}</m>. In another month, you spent <m>400</m> minutes on the phone, and paid <m>{\$40.00}</m>.</p>
+<p>Let <m>x</m> be the number of minutes you talk over the phone in a month, and let <m>y</m> be your cell phone bill, in dollars, for that month. Use a linear equation to model your monthly bill based on the number of minutes you talk over the phone. 
+<ol label="a.">
+<li>
+<p>A point-slope equation to model this is <fillin characters="14" name="AnSwEr0001"/>.</p>
+</li>
+<li>
+<p>If you spent <m>120</m> minutes over the phone in a month, you would pay <fillin characters="11" name="AnSwEr0002"/>.</p>
+</li>
+<li>
+<p>If in a month, you paid <m>{\$41.10}</m> of cell phone bill, you must have spent <fillin characters="11" name="AnSwEr0003"/> minutes on the phone in that month.</p>
+</li>
+</ol></p>
+</statement>
+    <answer>
+      <p>
+        <m>y = 0.055\mathopen{}\left(x-270\right)+32.85\hbox{ or }y = 0.055\mathopen{}\left(x-400\right)+40</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\$24.60</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>420</m>
+      </p>
+    </answer>
+    <solution><p><ol label="a.">
+<li>
+<p>A line<rsq/>s equation in point-slope form looks like <m>y=m(x-x_0)+y_0</m>, where <m>m</m> is the slope, and <m>(x_0,y_0)</m> is some point we know to be on the line. We first need to find the line<rsq/>s slope. To find the slope, we need two points on the line. We have been given that <m>(270,32.85)</m> and <m>(400,40)</m> are points on the linear model, so we can use the slope formula:</p>
+<p><m>\displaystyle{ \text{slope}=\frac{y_{2}-y_{1}}{x_{2}-x_{1}} }</m></p>
+<p>First, we mark which number corresponds to which variable in the formula:</p>
+<p><m>\displaystyle{ (270,32.85) \longrightarrow (x_{1},y_{1}) }</m></p>
+<p><m>\displaystyle{ (400,40) \longrightarrow (x_{2},y_{2}) }</m></p>
+<p>Now we substitute these numbers into the corresponding variables in the slope formula:</p>
+<p><m>\displaystyle{ \begin{aligned}\text{slope}\amp =\frac{y_{2}-y_{1}}{x_{2}-x_{1}}\\\amp =\frac{40-32.85}{400-270}\\\amp =\frac{7.15}{130}\\\amp =0.055 \end{aligned}}</m></p>
+<p>This line<rsq/>s slope is <m>0.055</m>. This implies you have to pay <m>{\$0.06}</m> per minute that you use the phone.</p>
+<p>So now we have that <m>y=0.055(x-x_0)+y_0</m>. We can either use <m>(x_0,y_0)=(270,32.85)</m> or <m>(x_0,y_0)=(400,40)</m> to get <m>{y = 0.055\mathopen{}\left(x-270\right)+32.85\hbox{ or }y = 0.055\mathopen{}\left(x-400\right)+40}</m>.</p>
+</li>
+<li>
+<p>In one month, you spent <m>120</m> minutes on the phone. To find out the bill, we substitute <m>120</m> in for <m>x</m> in the equation <m>y=0.055(x-270)+32.85</m>, and we have:</p>
+<p><m>\displaystyle{\begin{aligned}
+  y \amp = 0.055(120-270) +32.85 \\
+  y \amp = 24.6
+\end{aligned}
+}</m></p>
+<p>If you spent <m>120</m> minutes over the phone in a month, your bill for that month would be <m>{\$24.60}</m>.</p>
+</li>
+<li>
+<p>In one month, you had a cell phone bill of <m>{\$41.10}</m>. To find how many minutes you spent on the phone that month, we substitute <m>41.1</m> in for <m>y</m> in the equation <m>y=0.055(x-270)+32.85</m>, and we have:</p>
+<p><m>\displaystyle{\begin{aligned}
+  y \amp = 0.055(x-270) +32.85 \\
+  41.1 \amp = 0.055(x-270) +32.85 \\
+  8.25 \amp = 0.055(x-270)\\ 
+  \frac{8.25}{0.055} \amp = x - 270\\
+  150 \amp = x - 270\\
+  420 \amp = x\\
+  420 \amp = x
+\end{aligned}
+}</m></p>
+<p>If your bill was <m>{\$41.10}</m> in one month, you must have spent <m>420</m> minutes on the phone.</p>
+</li>
+</ol></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/LinearEquationApplications/FindPSEquationApplication10.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/FindPSEquationApplication10.pg"/>
+</webwork-reps>

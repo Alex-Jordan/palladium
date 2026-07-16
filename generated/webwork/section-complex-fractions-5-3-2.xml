@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-complex-fractions-5-3-2" assembly-id="section-complex-fractions-5-3-2">
+  <static seed="1453" source="Contrib/PCC/Math95/ComplexFractions/ComplexFractions1.pg">
+    <statement><p>Simplify this expression.</p>
+<p><m>\displaystyle{\frac{{\frac{m}{n}}}{{\frac{6m}{5n^{2}}}}=}</m><fillin characters="40" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{5n}{6}</m>
+      </p>
+    </answer>
+    <solution><p>To simply the complex fraction <m>\frac{{\frac{m}{n}}}{{\frac{6m}{5n^{2}}}}</m>, we multiple the numerator and denominator with the common denominator of <m>{\frac{m}{n}}</m> and <m>{\frac{6m}{5n^{2}}}</m>, which is <m>{5n^{2}}</m>.</p>
+<p><m>\displaystyle{\begin{aligned}
+  \frac{{\frac{m}{n}}}{{\frac{6m}{5n^{2}}}} \amp = \frac{{\frac{m}{n}}\cdot{5n^{2}}}{{\frac{6m}{5n^{2}}}\cdot{5n^{2}}} \\
+    \amp = \frac{{5mn}}{{6m}} \amp  \\
+    \amp = {\frac{5n}{6}}
+\end{aligned}
+    }</m></p>
+<p>Note that you are not required to enter lost domain conditions in this problem, but it<rsq/>s good to know the following.</p>
+<p>Since <m>m</m> and <m>n</m> were canceled, <m>m \ne 0</m> and <m>n \ne 0</m> are in the lost domain condition.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/Math95/ComplexFractions/ComplexFractions1.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/Math95/ComplexFractions/ComplexFractions1.pg"/>
+</webwork-reps>

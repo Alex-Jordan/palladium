@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-10-9" assembly-id="section-solving-rational-equations-10-10-9">
+  <static seed="1580" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations4.pg">
+    <statement><p>Solve the equation.</p>
+<p><m>\displaystyle{ {\frac{t-4}{t-5}} = {\frac{t}{t-3}} }</m></p>
+<p><fillin characters="34" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{6\right\}</m>
+      </p>
+    </answer>
+    <solution><p>To get rid of all fractions in this equation, we multiple all terms with the common denominator. In this equation, the common denominator is <m>{\left(t-5\right)\mathopen{}\left(t-3\right)}</m>.</p>
+<p><m>\displaystyle{\begin{aligned}
+   {\frac{t-4}{t-5}} \amp = {\frac{t}{t-3}} \\
+   {\frac{t-4}{t-5}} \cdot {\left(t-5\right)\mathopen{}\left(t-3\right)} \amp = {\frac{t}{t-3}} \cdot {\left(t-5\right)\mathopen{}\left(t-3\right)} \\
+   {\left(t-4\right)\mathopen{}\left(t-3\right)} \amp = {t\mathopen{}\left(t-5\right)} \\
+   {t^{2}-3t-4t+12} \amp = {t^{2}-5t} \\
+   -2t \amp = -12 \\
+   t \amp = 6
+\end{aligned}
+    }</m></p>
+<p>We must check solutions when we solve rational equations. By the original equation, the domain condition is <m>{\left(t-5\right)\mathopen{}\left(t-3\right)} \ne 0</m>, which is equivalent to <m>t \ne 5</m> and <m>t \ne 3</m>. This doesn<rsq/>t conflict with the solution above, so the solution is <m>t = 6</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations4.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations4.pg"/>
+</webwork-reps>

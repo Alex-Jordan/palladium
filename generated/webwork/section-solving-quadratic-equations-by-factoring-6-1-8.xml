@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-quadratic-equations-by-factoring-6-1-8" assembly-id="section-solving-quadratic-equations-by-factoring-6-1-8">
+  <static seed="161" source="Contrib/PCC/BasicAlgebra/Factoring/factoring71.pg">
+    <statement><p>Factor the given polynomial.</p>
+<p><m>{81t^{2}+81t+36}=</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>9\mathopen{}\left(9t^{2}+9t+4\right)</m>
+      </p>
+    </answer>
+    <solution><p>The greatest common factor is <m>9</m>, so we can factor the polynomial as follows:</p>
+<p><m>{81t^{2}+81t+36}={9\mathopen{}\left(9t^{2}+9t+4\right)}</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/Factoring/factoring71.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/Factoring/factoring71.pg"/>
+</webwork-reps>

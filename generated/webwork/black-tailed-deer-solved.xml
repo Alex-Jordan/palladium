@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-black-tailed-deer-solved" assembly-id="black-tailed-deer-solved">
+  <static seed="219">
+    <statement><p>To estimate the health of the black-tailed deer population in the Jewell Meadow Wildlife Area, the Oregon Department of Fish and Wildlife caught, tagged, and released <m>85</m> black-tailed deer. A month later, they returned and observed <m>67</m> black-tailed deer, <m>6</m> of which had tags. Approximately how many black-tailed deer are in the Jewell Meadow Wildlife Area?</p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>949</m>
+      </p>
+    </answer>
+    <solution><p>Let <m>x</m> represent how many deer are in the Jewell Meadow Area. We set up a proportional equation:</p>
+<p><me>\begin{aligned}
+\frac{\text{tagged deer}}{\text{total deer}} \amp= \frac{\text{tagged deer}}{\text{total deer}}\\
+\frac{6}{67} \amp= \frac{85}{x}\\
+\frac{6}{67} \multiplyright{67\cdot x} \amp= \frac{85}{x}\multiplyright{67\cdot x}\\
+6 \cdot x \amp= 85\cdot 67\\
+\divideunder{6 \cdot x}{6} \amp= \divideunder{85\cdot 67}{6}\\
+x \amp= 949
+\end{aligned}</me></p>
+<p>There are approximately <m>949</m> deer in the Jewell Meadow Area.</p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/1_2_9_159.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.2.9.159)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$tt = random(80,100);
+$sp = $tt - random(10,18);
+$st = random(6,12);
+$ans = Round($tt*$sp/$st);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+To estimate the health of the black-tailed deer population in the Jewell Meadow Wildlife Area, the Oregon Department of Fish and Wildlife caught, tagged, and released [`[$tt]`] black-tailed deer. A month later, they returned and observed [`[$sp]`] black-tailed deer, [`[$st]`] of which had tags. Approximately how many black-tailed deer are in the Jewell Meadow Wildlife Area?
+
+[_]{$ans}{16}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Let [`x`] represent how many deer are in the Jewell Meadow Area. We set up a proportional equation:
+
+[```\newcommand{\multiplyright}[2][\cdot]{{\highlight{{{}#1#2}}}}\newcommand{\divideunder}[2]{\frac{#1}{{\highlight{{#2}}}}}\newcommand{\amp}{&}
+\begin{aligned}
+\frac{\text{tagged deer}}{\text{total deer}} \amp= \frac{\text{tagged deer}}{\text{total deer}}\\
+\frac{[$st]}{[$sp]} \amp= \frac{[$tt]}{x}\\
+\frac{[$st]}{[$sp]} \multiplyright{[$sp]\cdot x} \amp= \frac{[$tt]}{x}\multiplyright{[$sp]\cdot x}\\
+[$st] \cdot x \amp= [$tt]\cdot [$sp]\\
+\divideunder{[$st] \cdot x}{[$st]} \amp= \divideunder{[$tt]\cdot [$sp]}{[$st]}\\
+x \amp= [$ans]
+\end{aligned}
+```]
+
+There are approximately [`[$ans]`] deer in the Jewell Meadow Area.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-graphing-quadratic-expressions-8-4-7" assembly-id="section-graphing-quadratic-expressions-8-4-7">
+  <static seed="1059" source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticApplications/FlyingObjectApp30.pg">
+    <statement><p>A remote control aircraft will perform a stunt by flying toward the ground and then up. Its height, in feet, can be modeled by the equation <m>h={1.4t^{2}-14t+40}</m>, where <m>t</m> is in seconds. The plane <ul form="popup" name="AnSwEr0001"><li>
+<p>?</p>
+</li><li>
+<p>will</p>
+</li><li>
+<p>will not</p>
+</li></ul> hit the ground during this stunt.</p>
+</statement>
+    <answer>
+      <p>
+        <m>\text{will not}</m>
+      </p>
+    </answer>
+    <solution><p>To determine whether the plane will hit the ground, we substitute <m>h(t)=0</m> into <m>h(t)={1.4t^{2}-14t+40}</m>, and solve the equation by the Quadratic Formula:</p>
+<p><m>\displaystyle{
+        \begin{aligned}
+            t \amp  = \frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+              \amp  = \frac{-({-14})\pm\sqrt{({-14})^2-4(1.4)({40})}}{2(1.4)}\\
+                   \amp  = \frac{{14}\pm\sqrt{{196}-{224}}}{2.8}\\
+                   \amp  = \frac{{14}\pm\sqrt{{-28}}}{2.8}\\
+                  
+        \end{aligned}
+     }</m></p>
+<p>Since the equation has no real solution, the plane will not hit the ground during the stunt.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="PCC-ORCCA-ed3/BasicAlgebra/QuadraticApplications/FlyingObjectApp30.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticApplications/FlyingObjectApp30.pg"/>
+</webwork-reps>

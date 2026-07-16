@@ -1,101 +1,123 @@
-# WeBWorK problem written by Carl Yao
+# WeBWorK problem written by Heiko Spoddeck 
 # Portland Community College
 #
-# Simplify cube root of (a/b); the answer is a fraction.
+# Template:
+# Solve the following radical equation
 #
-# Last edited: Carl Yao, 7/22/16
+#       T = 2pi*sqrt(L/32))     solve for L
 #
+#
+# Last updated: Spoddeck 12/7/15
 # ENDDESCRIPTION
-
-## DBsubject('Algebra')
-## DBchapter('Basic Algebra')
-## DBsection('Exponents and Radicals')
-## KEYWORDS('cube root','radical','simplify')
-## DBCCSS('8.EE')
+ 
+## DBsubject('')
+## DBchapter('')
+## DBsection('')
+## KEYWORDS('')
+## DBCCSS('')
 ## TitleText1('')
 ## EditionText1('')
 ## AuthorText1('')
 ## Section1('')
 ## Problem1('')
-## Author('Alex Jordan, Carl Yao, Chris Hughes')
-## Institution('Portland Community College')
+## Author('Alex Jordan', 'Heiko Spoddeck")
+## Institution('PCC')
+
+
+##############################################
+
 
 DOCUMENT();
 
-########Begin Load Macro Files############
-
 loadMacros(
-  "PGstandard.pl",       #Always needed
-  "MathObjects.pl",      #Almost always needed
-  "PGML.pl",             #Almost always needed
-  "contextFraction.pl",
+  "PGstandard.pl",
+  "MathObjects.pl",  
   "contextLimitedRadical.pl",
+  "PGML.pl",
   "PCCmacros.pl",
+  "parserAssignment.pl",
   "PGcourse.pl",
 );
 
-########Begin Problem Setup############
 
-Context("Fraction");    
+##############################################
 
-do {
-   $a = random(1,5,1);
-   $b = random(1,5,1);
-}  while (gcd($b,$a)!=1 or $a>$b);
-$answer = -Fraction($a,$b);
-$a3 = $a**3;
-$b3 = $b**3;
-$num = $answer**3;
-
-Context("LimitedRadical");
-
-$answer = -Formula("$a/$b");
-
-Context()->strings->add("not a real number"=>{});
-#For good measure, add shortcuts a student might try:
-Context()->strings->add("not real"=>{alias=>"not a real number"});
-
-########Begin What the Student Sees############
 
 TEXT(beginproblem());
-# Best practices always include this command here
+
+Context("LimitedRadical");
+Context()->variables->are(T=>'Real',L=>'Real');
+parser::Assignment->Allow;
+
+
+$left = Formula("T");
+$right = Formula("2 pi sqrt(L/32)");
+
+$ans = Formula("L = 8 T^2 / pi^2");
+
+
+##############################################
+
 
 BEGIN_PGML
 
-[@ PTX_exercisegroup_introduction('Evaluate the expression without help from a calculator.') @]
+A pendulum has length [`L`]. The time period [`T`] that it takes to once swing back and forth can be found with the following formula:
 
-    [`` \sqrt[3]{[$num]} ``]
+[```[$left] = [$right]```]
 
-    [_]{$answer}{16}
+The length is measured in feet and the time period in seconds.
+
+Solve the equation for the length [`L`].
+
+[@KeyboardInstructions('Enter your answer in the form [|L=...|]*. If you need to use a square root, type [|sqrt(23)|]* for [`\sqrt{23}`] (for example).')@]**
+
+[____________________]{$ans}{16}
 
 END_PGML
 
-#######################################
+
+##############################################
+
 
 BEGIN_PGML_SOLUTION
 
-    [``
-\begin{aligned}[t]
-   \sqrt[3]{[$num]} &= -\frac{\sqrt[3]{[$a3]}}{\sqrt[3]{[$b3]}} \\
-                &= [$answer]
-\end{aligned}
-   ``]
 
-Note that we can take out the negative sign, because only a negative number's cube can produce a negative number like [`[$num]`].
-
-It's useful to recognize the following perfect cube numbers:
+Since there is no addition or subtraction in this problem, we can square the equation at any point. We will do that again as our first step. So to get rid of the square root, we square the left side and the right side of the equation, using exponent rules to simplify.
 
     [``
-\begin{aligned}[t]
-   1^{3} &= 1 \\
-   2^{3} &= 8 \\
-   3^{3} &= 27 \\
-   4^{3} &= 64 \\
-   5^{3} &= 125 
+\begin{aligned}
+   [$left] &= [$right] \\
+   \left(T\right)^2 &= \left(2\pi\sqrt{\frac{L}{32}}\right)^2 \\
+   T^2 &= 4\pi^2\frac{L}{32} \\
 \end{aligned}
-   ``]
+    ``]
+
+In order to solve for [`L`], we need to move everything else to the other side using algebra:
+
+    [``
+\begin{aligned}
+   T^2 &= 4\pi^2\frac{L}{32} \\
+   T^2\cdot 32 &= 4\pi^2\frac{L}{32}\cdot \frac{32}{1} \\
+   32T^2 &= 4\pi^2L \\
+\end{aligned}
+    ``]
+
+Since we want to solve for [`L`], we need to divide by [`4\pi^2`].
+
+    [``
+\begin{aligned}
+   32T^2 &= 4\pi^2L \\
+   \frac{32T^2}{4\pi^2} &= \frac{4\pi^2L}{4\pi^2} \\
+   \frac{8T^2}{\pi^2} &= L \\
+\end{aligned}
+    ``]
+
+So [`L=[$ans]`] is the solution when we solve [`[$left]=[$right]`] for [`L`].
 
 END_PGML_SOLUTION
 
+
+##############################################
+
+
 ENDDOCUMENT();
- 

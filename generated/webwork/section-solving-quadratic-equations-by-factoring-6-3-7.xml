@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-quadratic-equations-by-factoring-6-3-7" assembly-id="section-solving-quadratic-equations-by-factoring-6-3-7">
+  <static seed="228" source="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication40.pg">
+    <statement><p>A rectangle<rsq/>s base is <m>{8\ {\rm in}}</m> shorter than five times its height. The rectangle<rsq/>s area is <m>{4\ {\rm in^{2}}}</m>. Find this rectangle<rsq/>s dimensions.</p>
+<p>The rectangle<rsq/>s height is <fillin characters="11" name="AnSwEr0001"/>.</p>
+<p>The rectangle<rsq/>s base is <fillin characters="11" name="AnSwEr0002"/>.</p>
+</statement>
+    <answer>
+      <p>
+        <m>2\ {\rm in}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>2\ {\rm in}</m>
+      </p>
+    </answer>
+    <solution><p>Let the rectangle<rsq/>s height be <m>x</m> inches.  Then its base is <m>5x-8</m> inches.</p>
+<p>It<rsq/>s given that the rectangle<rsq/>s area is <m>{4\ {\rm in^{2}}}</m>, so we can write and solve the equation:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   x(5x-8) \amp = 4 \\
+   5x^{2}-8x \amp = 4 \\
+   5x^{2}-8x - 4 \amp = 0 \\
+\end{aligned}
+    }</m></p>
+<p>The polynomial can be factored, so we will first solve this equation by factoring:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   (5x+2)(x-2) \amp =0 \\
+   5x+2=0 \amp \text{  or  } x-2=0  \\
+   5x=-2 \amp \text{  or  } x=2 \\
+   x=\text{a negative number} \amp \text{  or  } x=2
+\end{aligned}
+    }</m></p>
+<p>We could also solve the equation by the Quadratic Formula.</p>
+<p>Identify that <m>a=5,b=-8,c=-4</m>.</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   x \amp = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a} \\
+   x \amp = \frac{-(-8) \pm \sqrt{(-8)^{2}-4(5)(-4)}}{2(5)} \\
+   x \amp = \frac{8 \pm \sqrt{144}}{10} \\
+   x \amp = \frac{8 \pm 12}{10} \\
+   x \amp = \frac{8 + 12}{10}  \text{  or  } x= \frac{8 - 12}{10} \\
+   x\amp =2 \text{  or  } x= \text{a negative number}
+\end{aligned}
+    }</m></p>
+<p>Notice that there is no need to calculate the negative result, as a rectangle<rsq/>s height cannot be negative. The height is <m>{2\ {\rm in}}</m>.</p>
+<p>Recall that the rectangle<rsq/>s base is <m>5x-8</m> inches, where <m>x</m> is the height. Thus the base is <m>5 \cdot {2\ {\rm in}} - {8\ {\rm in}}</m>, which is <m>{2\ {\rm in}}</m>.</p>
+<p>So the rectangle<rsq/>s height is <m>{2\ {\rm in}}</m>, and its base is <m>{2\ {\rm in}}</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication40.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication40.pg"/>
+</webwork-reps>

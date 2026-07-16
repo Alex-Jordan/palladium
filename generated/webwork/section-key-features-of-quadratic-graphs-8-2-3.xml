@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-key-features-of-quadratic-graphs-8-2-3" assembly-id="section-key-features-of-quadratic-graphs-8-2-3">
+  <static seed="986" source="Library/FortLewis/Algebra/1-1-Expressions/MCH1-1-1-02-Expressions.pg">
+    <statement><p>Evaluate the expression <m>-16t^{2}+64t+128</m> when <m>t=-3</m>.</p>
+<p><fillin characters="10" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>-208</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data sourceFilePath="Library/FortLewis/Algebra/1-1-Expressions/MCH1-1-1-02-Expressions.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Library/FortLewis/Algebra/1-1-Expressions/MCH1-1-1-02-Expressions.pg"/>
+</webwork-reps>

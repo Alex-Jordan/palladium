@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:10-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -31,8 +28,8 @@ loadMacros(
   "PGML.pl",
   "AnswerFormatHelp.pl",
   "niceTables.pl",
+  "PGchoicemacros.pl",
   "contextForm.pl",
-  "contextFraction.pl",
   "parserPopUp.pl",
   "PGcourse.pl",
 );
@@ -46,18 +43,22 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("Fraction");
-$actual_solution = Fraction(random_coprime([1..9],[2..9]));
-$a = ($actual_solution->value)[1];
-$b = non_zero_random(-9,9);
-$left = Formula("$a x^2 + $b x");
-$left -= Fraction($left->eval(x => $actual_solution));
-$left = $left->reduce;
-$right = Fraction($left->eval(x => $actual_solution));
-$proposed_solution = random(0,1) ? $actual_solution : $actual_solution + non_zero_random(-3,3)/($actual_solution->value)[1];
-Context("LimitedFraction")->flags->set(allowMixedNumbers => 0, showMixedNumbers => 0);
-$lefteval = Fraction($left->eval(x => $proposed_solution));
-$righteval = Fraction($right->eval(x => $proposed_solution));
+Context()->noreduce('(-x)-y', '(-x)+y');
+$actual_solution = Real(random(-9,9) + random(1,9)/10);
+($m, $n) = (2..9)[NchooseK(8,2)];
+$b = non_zero_random(-9,9,0.1);
+$left = Formula("abs($m x + $b)")->reduce;
+$right = Formula("$n x");
+$right += $left->eval(x => $actual_solution) - $right->eval(x => $actual_solution);
+if (random(0,1)) {
+  $right = Formula("-$n x") - $right->eval(x => 0);
+}
+$right = $right->reduce;
+$right = Formula("abs($right)");
+$proposed_solution = random(0,1) ? $actual_solution : $actual_solution + non_zero_random(-3,3,0.1);
+Context("LimitedNumeric");
+$lefteval = Real($left->eval(x => $proposed_solution));
+$righteval = Real($right->eval(x => $proposed_solution));
 $dropdown = DropDown(["Yes, it is a solution.", "No, it is not a solution."], ($lefteval == $righteval) ? 0 : 1, showInStatic => 0);
 
 ############################################################
@@ -77,7 +78,7 @@ Is [`[$proposed_solution]`] a solution to [`[$left]=[$right]\text{?}`]
     ],
     [PGML('[_]{$lefteval}{3}'),
      PGML('[`\wonder{=}`]'),
-     PGML('[`[$righteval->TeX]`]'),
+     PGML('[_]{$righteval}{3}'),
     ],
   ],
       align => 'rcl',

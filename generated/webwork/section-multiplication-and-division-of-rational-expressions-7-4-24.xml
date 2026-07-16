@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-4-24" assembly-id="section-multiplication-and-division-of-rational-expressions-7-4-24">
+  <static seed="1289" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions150.pg">
+    <statement><p>Simplify the following expression, and if applicable, write the restricted domain on the simplified expression.</p>
+<p><m>\displaystyle{{\frac{5r^{2}+7r+2}{-7r-5-2r^{2}}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>-\frac{5r+2}{2r+5}, r\ne -1</m>
+      </p>
+    </answer>
+    <solution><p>To simplify the expression, we first factor both the numerator and denominator, and then cross out common factors:</p>
+<p><m>\displaystyle{\begin{aligned}
+   {\frac{5r^{2}+7r+2}{-7r-5-2r^{2}}} \amp = \frac{{\left(5r+2\right)\mathopen{}\left(r+1\right)}}{{-2r^{2}-7r-5}} \\
+                     \amp = \frac{{\left(5r+2\right)\mathopen{}\left(r+1\right)}}{{-\left(2r^{2}+7r+5\right)}} \\
+                     \amp = \frac{{\left(5r+2\right)\mathopen{}\left(r+1\right)}}{{-\left(2r+5\right)\mathopen{}\left(r+1\right)}} \\
+                     \amp = {-\frac{5r+2}{2r+5}, r\ne -1}
+\end{aligned}
+    }</m></p>
+<p>Since the factor <m>r+1</m> was crossed out, the domain condition lost during the simplification is <m>r \ne -1</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions150.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions150.pg"/>
+</webwork-reps>

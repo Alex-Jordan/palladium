@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentDivision5" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentDivision5">
+  <static seed="1677">
+    <statement><p><m>-35^0</m></p>
+<p><fillin characters="12" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>-1</m>
+      </p>
+    </answer>
+    <solution><p>The zero-exponent definition says that <m>a^0=1</m> where <m>a</m> is any real number; notice that 
+the exponent applies to <m>35</m>, <em>not</em> to <m>\left(-35\right)</m> so</p>
+<p><m>\begin{aligned}
+               -35^0 \amp  = (-1)\cdot \left(35\right)^0\\
+                            \amp  = -1\cdot 1\\
+                            \amp  = -1
+        \end{aligned}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/4_1_7_19.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Chris Hughes, 2013
+# Portland Community College
+#
+# Template:
+# Simplify the following expression
+#     
+#      -a^0
+#
+# We use an INTEGER value for a on the interval [2,50]
+#
+# Last edited: Hughes 7/22/13, Carl Yao 6/28/13
+#
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Polynomial and Rational Functions')
+## DBsection('Polynomial Functions')
+## KEYWORDS('exponent','simplify','zero')
+## DBCCSS('8.EE.1')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Alex Jordan, Carl Yao, Chris Hughes')
+## Institution('PCC')
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "PCCmacros.pl",
+  "answerHints.pl",
+  "PGcourse.pl",
+);
+
+##############################################
+
+Context("LimitedNumeric");
+Context()->{error}{msg}{"Can't use '^' in this context"} 
+  = "Please simplify your answer";
+
+$mybase=random(2,50,1);
+$ans = Compute((-1)*$mybase**0);
+
+##############################################
+TEXT(beginproblem());
+BEGIN_PGML
+
+[@ PTX_exercisegroup_introduction('Use the properties of exponents to simplify the expression.') @]
+
+[`-[$mybase]^0`]
+
+[____________]
+
+END_PGML
+
+ANS($ans -> cmp() ->
+  withPostFilter(AnswerHints(
+    [Compute("0")] =>
+    "The answer is not 0; have a look at the zero-exponent rule and try again.")));
+
+
+BEGIN_PGML_SOLUTION
+The zero-exponent definition says that [`a^0=1`] where [`a`] is any real number; notice that 
+the exponent applies to [`[$mybase]`], _not_ to [`\left(-[$mybase]\right)`] so
+
+    [`
+        \begin{aligned}
+               -[$mybase]^0 & = (-1)\cdot \left([$mybase]\right)^0\\
+                            & = -1\cdot 1\\
+                            & = -1
+        \end{aligned}
+    `]
+
+END_PGML_SOLUTION
+##############################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

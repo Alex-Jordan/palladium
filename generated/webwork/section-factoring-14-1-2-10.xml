@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-14-1-2-10" assembly-id="section-factoring-14-1-2-10">
+  <static seed="15" source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication25.pg">
+    <statement><p>Multiply the polynomials.</p>
+<p><m>\left({r+9}\right)\left({r+1}\right)=</m><fillin characters="32" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>r^{2}+10r+9</m>
+      </p>
+    </answer>
+    <solution><p>We use the FOIL technique- <alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast</p>
+<p><m>\begin{aligned}
+              \left({r+9}\right)({r+1})\amp ={r^{2}+r+9r+9}\\
+                                \amp ={r^{2}+10r+9}
+      \end{aligned}</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication25.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication25.pg"/>
+</webwork-reps>

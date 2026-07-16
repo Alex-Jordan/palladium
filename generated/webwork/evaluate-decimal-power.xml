@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-evaluate-decimal-power" assembly-id="evaluate-decimal-power">
+  <static seed="569">
+    <introduction/>
+    <task>
+      <statement><p><m>2.5^4</m></p>
+<p><fillin characters="6" name="AnSwEr0001"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>39.0625</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement><p><m>(-3.5)^4</m></p>
+<p><fillin characters="6" name="AnSwEr0002"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>150.062</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement><p><m>(-1.2)^5</m></p>
+<p><fillin characters="6" name="AnSwEr0003"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-2.48832</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement><p><m>-2.9^2</m></p>
+<p><fillin characters="6" name="AnSwEr0004"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-8.41</m>
+        </p>
+      </answer>
+    </task>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/Appendices/A_8_4_5.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(A.8.4.5)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "scaffold.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+COMMENT('This problem is scaffolded with multiple parts');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+@a = (random(2,5), random(-5,-2), random(-5,-2));
+$a[3] = $a[0];
+@a = map {$_ + random(0.1,0.9,0.1)} @a;
+@n = (random(2,5), list_random(2,4), list_random(3,5), list_random(2,4));
+@answer = map {Real($a[$_]**$n[$_])} (0..3);
+$answer[3] = -$answer[3];
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Evaluate each power expression.
+
+END_PGML
+
+############################################################
+# Scaffold
+############################################################
+Scaffold::Begin(numbered => 1,is_open => "correct_or_first_incorrect",can_open => always,);
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+[`[$a[0]]^[$n[0]]`]
+
+[_]{$answer[0]}{6}
+
+END_PGML
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+[`([$a[1]])^[$n[1]]`]
+
+[_]{$answer[1]}{6}
+
+END_PGML
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+[`([$a[2]])^[$n[2]]`]
+
+[_]{$answer[2]}{6}
+
+END_PGML
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+[`-[$a[3]]^[$n[3]]`]
+
+[_]{$answer[3]}{6}
+
+END_PGML
+
+Section::End();
+
+Scaffold::End();
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

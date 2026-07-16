@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar70" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar70">
+  <static seed="2645">
+    <statement><p><m>{9a^{13}b^{3}}\left({-6a^{18}b^{10}+5a^{4}b^{15}}\right)</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>-54a^{31}b^{13}+45a^{17}b^{18}</m>
+      </p>
+    </answer>
+    <solution><p>We multiply the polynomials using the rule <m>a^m\cdot a^n = a^{m+n}</m> 
+to guide us</p>
+<p><m>\displaystyle{    \begin{aligned}
+        \left({9a^{13}b^{3}}\right)\left({-6a^{18}b^{10}+5a^{4}b^{15}}\right)\amp = -54a^{13+18}b^{3+10}+45a^{13+4}b^{3+15}\\
+                      \amp  = {-54a^{31}b^{13}+45a^{17}b^{18}}
+    \end{aligned}
+}</m></p>
+<p>Note that we are using the <em>distributive</em> property of multiplication in this problem: <m>x(y+z)=xy+xz</m>.</p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/Appendices/A_9_5_13.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Chris Hughes, 2013
+# Portland Community College
+#
+# Template:
+#
+# Find the product
+#
+#   a x^m y^n (b x^p y^q  + c x^r y^s )
+#
+#   a, b, c are integer on [-10,10]
+#   m, n, p, q, r, s integer on [3,20].
+#
+# Last updated: Carl Yao, 7/21/13, Hughes, 7/8/13
+# ENDDESCRIPTION
+ 
+## DBsubject('Algebra')
+## DBchapter('Basic Algebra')
+## DBsection('Algebraic Expressions')
+## KEYWORDS('multivariable','multiply','polynomial','distributive')
+## DBCCSS('A-APR.1')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Alex Jordan, Carl Yao, Chris Hughes')
+## Institution('PCC')
+ 
+##############################################
+DOCUMENT();
+ 
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "contextLimitedPolynomial.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+ 
+##############################################
+ 
+Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+ 
+# construct polynomials using $a, $b
+$a = (random(1.5,9.5,1)+0.5)*random(-1,1,2);
+$b=$a;
+$b = (random(1.5,9.5,1)+0.5)*random(-1,1,2) while(abs($a)==abs($b));
+$c = $b;
+$c = (random(1.5,9.5,1)+0.5)*random(-1,1,2) while(abs($c)==abs($b));
+
+# exponents of first polynomial
+$m = random(3,20,1);
+$n=$m;
+$n = random(3,20,1)while($n==$m);
+
+# exponents of second polynomial
+$p = random(3,20,1);
+$q = $p;
+$q = random(3,20,1)while($q==$p);
+$r = random(3,20,1);
+$s = $r;
+$s = random(3,20,1)while($s==$r);
+
+# could replace these with other letters if desired
+$var1 = 'a';
+$var2 = 'b';
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+
+# the polynomial
+$poly1 = Formula("$a*$var1^$m*$var2^$n")->reduce;
+$poly2 = Formula("$b*$var1^$p*$var2^$q+$c*$var1^$r*$var2^$s")->reduce;
+$ans = Formula("$a*$b*$var1^($m+$p)*$var2^($n+$q)+$a*$c*$var1^($m+$r)*$var2^($n+$s)")->reduce;
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->are($var1=>'Real',$var2=>'Real');
+$ans = Formula($ans);
+ 
+
+##############################################
+TEXT(beginproblem());
+ 
+BEGIN_PGML
+
+[@ PTX_exercisegroup_introduction('Multiply the polynomials.') @]
+
+[`[$poly1]\left([$poly2]\right)`]
+
+[_]{$ans}{16}
+
+END_PGML
+
+BEGIN_PGML_SOLUTION
+ 
+We multiply the polynomials using the rule [`a^m\cdot a^n = a^{m+n}`] 
+to guide us
+
+[``
+    \begin{aligned}
+        \left([$poly1]\right)\left([$poly2]\right)&= [$a*$b][$var1]^{[$m]+[$p]}[$var2]^{[$n]+[$q]}+[$a*$c][$var1]^{[$m]+[$r]}[$var2]^{[$n]+[$s]}\\
+                      & = [$ans]
+    \end{aligned}
+``]
+
+Note that we are using the _distributive_ property of multiplication in this problem: [`x(y+z)=xy+xz`].
+END_PGML_SOLUTION
+##############################################
+ 
+ 
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

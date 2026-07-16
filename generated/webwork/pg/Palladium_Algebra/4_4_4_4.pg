@@ -1,18 +1,24 @@
-# WeBWorK problem written by Carl Yao
+# WeBWorK problem written by Chris Hughes, 2013
 # Portland Community College
 #
-# Rationalize denominator. Radical cannot be simplified.
-# Answer has no fraction. Problems like 6/sqrt(3)
+# Template:
+# Simplify the following expression
+#     (x^m)^n
 #
-# Last edited: Jordan 9/8/13; Carl Yao 8/31/13,
+# We use a randomly-named variable (could be x, y, z, etc) from
+# PCCmacros.pl
+#
+# This problem chooes m and n to be POSITIVE
+#
+# Last edited: Carl Yao 6/28/13
 #
 # ENDDESCRIPTION
 
 ## DBsubject('Algebra')
-## DBchapter('Basic Algebra')
-## DBsection('Exponents and Radicals')
-## KEYWORDS('simplify','radical','square root','rationalize','denominator')
-## DBCCSS('8.EE')
+## DBchapter('Polynomial and Rational Functions')
+## DBsection('Polynomial Functions')
+## KEYWORDS('multiply','exponent','simplify')
+## DBCCSS('8.EE.1')
 ## TitleText1('')
 ## EditionText1('')
 ## AuthorText1('')
@@ -21,86 +27,67 @@
 ## Author('Alex Jordan, Carl Yao, Chris Hughes')
 ## Institution('PCC')
 
- 
+##############################################
+
 DOCUMENT();
 
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "PGML.pl",
-  "contextFraction.pl",
-  "contextLimitedRadical.pl",
   "PCCmacros.pl",
+  "contextLimitedPolynomial.pl",
+  "answerHints.pl",
   "PGcourse.pl",
 );
 
-######################################
+##############################################
 
+Context("LimitedPolynomial-Strict");
+
+# m and n are the exponents
+$m=random(2,12,1);
+$n=random(2,12,1);
+
+# myvar is the variable- could be x, y, z, ..., anything in PCCmacros.pl
+$myvar = RandomVariableName(type=>'variable');
+Context()->variables->are($myvar=>'Real');
+
+# custom error message
+Context()->{error}{msg}{"A variable can appear only once in each term of a polynomial"}
+  = "Your answer must be fully simplified";
+
+# compute the answer
+$total = $m*$n;
+$ans = Formula("$myvar^($total)");
+
+
+##############################################
 TEXT(beginproblem());
-Context("Numeric");
-
-$rad = list_random(2,3,5,6,7,10);
-$numAns = random(1,5,1);
-$num = $rad*$numAns;
-
-Context("LimitedRadical");
-if ($numAns!=1) {
-   $ans = Formula("$numAns*sqrt($rad)");
-} else {
-   $ans = Formula("sqrt($rad)");
-};
-
-Context()->{error}{msg}{"You must simplify your answer further"} 
-  = "Either your answer is not fully simplified or it has an irrational denominator";
-
-
-#####################################################
 
 BEGIN_PGML
 
-[@ PTX_exercisegroup_introduction('Simplify the expression. If the result has a denominator, it must be rationalized.') @]
+[@ PTX_exercisegroup_introduction('Use the properties of exponents to simplify the expression.') @]
 
-[`` \frac{[$num]}{\sqrt{[$rad]}} ``]
+[``\left([$myvar]^{[$m]}\right)^{[$n]}``]
 
-[_]{$ans}{16}
+[____________]
 
 END_PGML
 
-############################################################
-
-
-
-if ($numAns==1) {$numOutput = "";}
-else {$numOutput = "$numAns";}
+$wrong=$m+$n;
+ANS($ans -> cmp() ->
+  withPostFilter(AnswerHints(
+    [Compute("$myvar^($wrong)")] =>
+    "When raising terms to a power, you do not add the exponents.")));
 
 BEGIN_PGML_SOLUTION
-
-We need to legally remove the radical [`\sqrt{[$rad]}`] from the denominator.
-
-We will use this property:
-
-    [`` \sqrt{x} \cdot \sqrt{x} = x ``]
-
-In this case, we have:
-
-    [`` \sqrt{[$rad]} \cdot \sqrt{[$rad]} = [$rad] ``]
-
-Multiply both the numerator and denominator by [` \sqrt{[$rad]} `], and we have:
-
-    [``
-\begin{aligned}[t]
-   \frac{[$num]}{\sqrt{[$rad]}} &= \frac{[$num]}{\sqrt{[$rad]}}\cdot\frac{\sqrt{[$rad]}}{\sqrt{[$rad]}}\\
-      &= \frac{[$num] \cdot \sqrt{[$rad]}}{\sqrt{[$rad]} \cdot \sqrt{[$rad]}} \\
-      &= \frac{[$num] \sqrt{[$rad]}}{[$rad]} &\text{We can divide both the numerator and denominator by [$rad].}\\
-      &= [$numOutput] \sqrt{[$rad]}
-\end{aligned}
-    ``]
-
+We _multiply_ the exponents as follows: [```\begin{aligned}
+           \left([$myvar]^{[$m]}\right)^{[$n]}&=[$myvar]^{[$m]\cdot[$n]}\\
+                             &=[$myvar]^{[$total]}
+       \end{aligned}```]
 
 END_PGML_SOLUTION
-
-######################################
-
-
+##############################################
 
 ENDDOCUMENT();

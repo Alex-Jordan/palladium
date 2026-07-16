@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-addition-and-subtraction-of-rational-expressions-7-4-11" assembly-id="section-addition-and-subtraction-of-rational-expressions-7-4-11">
+  <static seed="1424" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions101.pg">
+    <statement><p>Add or subtract the rational expressions to a single rational expression and then simplify.</p>
+<p><m>\displaystyle{{-\frac{10rx}{r^{2}-4rx+3x^{2}}+\frac{5r}{r-3x}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{5r}{r-x}</m>
+      </p>
+    </answer>
+    <solution><p><m>\displaystyle{\begin{aligned}
+   {-\frac{10rx}{r^{2}-4rx+3x^{2}}+\frac{5r}{r-3x}} 
+      \amp = {-\frac{10rx}{\left(r-3x\right)\mathopen{}\left(r-x\right)}+\frac{5r}{r-3x}} \\
+      \amp = {-\frac{10rx}{\left(r-3x\right)\mathopen{}\left(r-x\right)}+\frac{5r}{r-3x}} \cdot \frac{(r - 1x)}{(r - 1x)} \\
+      \amp = {-\frac{10rx}{\left(r-3x\right)\mathopen{}\left(r-x\right)}+\frac{5r\mathopen{}\left(r-x\right)}{\left(r-3x\right)\mathopen{}\left(r-x\right)}} \\
+      \amp = {\frac{-10rx+5r\mathopen{}\left(r-x\right)}{\left(r-3x\right)\mathopen{}\left(r-x\right)}} \\
+      \amp = {\frac{-10rx+5r^{2}-5rx}{\left(r-3x\right)\mathopen{}\left(r-x\right)}} \\
+      \amp = {\frac{5r^{2}-15rx}{\left(r-3x\right)\mathopen{}\left(r-x\right)}} \\
+      \amp = \frac{{5r\mathopen{}\left(r-3x\right)}}{{\left(r-3x\right)\mathopen{}\left(r-x\right)}} \\
+      \amp = {\frac{5r}{r-x}}
+\end{aligned}
+    }</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions101.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions101.pg"/>
+</webwork-reps>

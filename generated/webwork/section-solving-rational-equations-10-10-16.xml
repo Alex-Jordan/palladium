@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-10-16" assembly-id="section-solving-rational-equations-10-10-16">
+  <static seed="1587" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations30.pg">
+    <statement><p>Solve the equation.</p>
+<p><m>\displaystyle{ {\frac{r-2}{r^{2}+4}} = 0 }</m></p>
+<p><fillin characters="34" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{2\right\}</m>
+      </p>
+    </answer>
+    <solution><p>If a fraction<rsq/>s value is <m>0</m>, like <m>\frac{x}{y}=0</m>, then we can tell the numerator<rsq/>s value must be <m>0</m>, or <m>x=0</m> in this example.</p>
+<p>The solution is:</p>
+<p><m>\displaystyle{\begin{aligned}
+   {\frac{r-2}{r^{2}+4}} \amp = 0 \\
+   r - 2 \amp =0 \\
+   r \amp = 2
+\end{aligned}
+    }</m></p>
+<p>We must check solutions when we solve rational equations. In the denominator <m>r^2+4</m>, since <m>r^2 \ge 0</m>, we have <m>r^2+4 \gt 0</m>. In other words, the denominator<rsq/>s value cannot be <m>0</m>, so there is no domain constraints for this equation. The solution is <m>r = 2</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations30.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations30.pg"/>
+</webwork-reps>

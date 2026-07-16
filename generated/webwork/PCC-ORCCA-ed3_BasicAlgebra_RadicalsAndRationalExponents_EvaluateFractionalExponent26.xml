@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateFractionalExponent26" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateFractionalExponent26">
+  <static seed="4">
+    <statement><p><m>\displaystyle{ \left(\frac{1}{81}\right)^{-\frac{3}{4}} }</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>27</m>
+      </p>
+    </answer>
+    <solution><p>We need to review that <m>\frac{1}{x^n} = x^{-n}</m>.</p>
+<p>Recognize that <m>81=3^{4}</m>, and we have:</p>
+<p><m>\displaystyle{ 
+\begin{aligned}
+   \amp \phantom{{}=}(\frac{1}{81})^{-\frac{3}{4}} \\
+   \amp =(\frac{1}{3^{4}})^{-\frac{3}{4}} \\
+   \amp =(3^{-4})^{-\frac{3}{4}} \\
+   \amp =3^{3} \\
+   \amp ={27}
+\end{aligned}
+    }</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/4_4_4_17.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Carl Yao
+# Portland Community College
+#
+# Evaluate an expression with a fractional exponent.
+#
+# Last edited: Carl Yao 7/26/16,
+#
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Basic Algebra')
+## DBsection('Exponents and Radicals')
+## KEYWORDS('simplify','radical','cube root','estimate')
+## DBCCSS('8.EE')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Alex Jordan, Carl Yao, Chris Hughes')
+## Institution('PCC')
+
+ 
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "contextFraction.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+
+######################################
+
+TEXT(beginproblem());
+Context("Fraction");
+
+$a =list_random(2,3,5);
+if ($a==2) {
+   do {
+      $b=random(1,7,1);
+      $c=random(2,7,1);
+      $bc=$b*$c;
+      $d=random(1,6,1);
+      $bd=$b*$d;
+   } until ( (gcd($d,$c)==1) && ($bd<=7) && ($bc<=7) ); 
+} elsif ($a==3) {
+   do {
+      $b=random(1,4,1);
+      $c=random(2,4,1);
+      $bc=$b*$c;
+      $d=random(1,4,1);
+      $bd=$b*$d;
+   } until ( (gcd($d,$c)==1) && ($bd<=4) && ($bc<=4) ); 
+} elsif ($a==5) {
+   do {
+      $b=random(1,3,1);
+      $c=random(2,3,1);
+      $bc=$b*$c;
+      $d=random(1,3,1);
+      $bd=$b*$d;
+   } until ( (gcd($d,$c)==1) && ($bd<=3) && ($bc<=3) ); 
+}
+$num = $a**($bc);
+
+$ans = $a**$bd;
+$ans = Compute("$ans");
+
+#####################################################
+
+BEGIN_PGML
+
+[@ PTX_exercisegroup_introduction('Evaluate the expression without help from a calculator.') @]
+
+    [`` \left(\frac{1}{[$num]}\right)^{-\frac{[$d]}{[$c]}} ``]
+
+    [_]{$ans}{16}
+
+END_PGML
+
+############################################################
+
+
+BEGIN_PGML_SOLUTION
+
+We need to review that [` \frac{1}{x^n} = x^{-n} `].
+
+Recognize that [`[$num]=[$a]^{[$bc]}`], and we have:
+
+    [`` 
+\begin{aligned}
+   &\phantom{{}=}(\frac{1}{[$num]})^{-\frac{[$d]}{[$c]}} \\
+   &=(\frac{1}{[$a]^{[$bc]}})^{-\frac{[$d]}{[$c]}} \\
+   &=([$a]^{-[$bc]})^{-\frac{[$d]}{[$c]}} \\
+   &=[$a]^{[$bd]} \\
+   &=[$ans]
+\end{aligned}
+    ``]
+
+END_PGML_SOLUTION
+
+######################################
+
+
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-8-1" assembly-id="section-multiplication-and-division-of-rational-expressions-7-8-1">
+  <static seed="1316" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions50.pg">
+    <statement><p>Simplify this expression, and if applicable, write the restricted domain.</p>
+<p><m>\displaystyle{{\frac{r^{2}-9r+20}{r-1}} \cdot {\frac{3r-3}{r-4}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>3\mathopen{}\left(r-5\right), r\ne 4\hbox{ and }r\ne 1</m>
+      </p>
+    </answer>
+    <solution><p><m>\displaystyle{\begin{aligned}
+   {\frac{r^{2}-9r+20}{r-1}} \cdot {\frac{3r-3}{r-4}} 
+      \amp = \frac{{\left(r-4\right)\mathopen{}\left(r-5\right)}}{{r-1}} \cdot \frac{{3\mathopen{}\left(r-1\right)}}{{r-4}} \\
+      \amp = {3\mathopen{}\left(r-5\right), r\ne 4\hbox{ and }r\ne 1}
+\end{aligned}
+    }</m></p>
+<p>Since the factors <m>r - 4</m> and <m>r - 1</m> were canceled, the domain condition lost during the simplification is <m>r \ne {4, 1}</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions50.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions50.pg"/>
+</webwork-reps>

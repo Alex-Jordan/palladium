@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-introduction-to-rational-functions-5-1-2" assembly-id="section-introduction-to-rational-functions-5-1-2">
+  <static seed="1207" source="Contrib/PCC/BasicAlgebra/RationalFunctions/rationalFunctionApplication10.pg">
+    <statement><p>The population of deer in a forest can be modeled by</p>
+<p><me>P(x) = {\frac{3360x+3240}{8x+9}}</me></p>
+<p>where <m>x</m> is the number of years since the year 1900.</p>
+<p><ol label="a.">
+<li>
+<p>How many deer lived in this forest in the year 1900?</p>
+<p><fillin characters="10" name="AnSwEr0001"/></p>
+</li>
+<li>
+<p>How many deer live in this forest <m>9</m> years after 1900?</p>
+<p><fillin characters="10" name="AnSwEr0002"/></p>
+</li>
+<li>
+<p>How many years since 1900 was it (or will it be) when the deer population was (or will be) <m>417</m>?</p>
+<p><fillin characters="10" name="AnSwEr0003"/></p>
+</li>
+<li>
+<p>Use a calculator or graphing calculator to answer this question: As time goes on, the population levels off at about how many deer?</p>
+<p><fillin characters="10" name="AnSwEr0004"/></p>
+</li>
+</ol></p>
+</statement>
+    <answer>
+      <p>
+        <m>360</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>413</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>21</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>420</m>
+      </p>
+    </answer>
+    <solution><p><ol label="a.">
+<li>
+<p>How many deer live in this forest this year? To answer this question, we substitute <m>x</m> with <m>0</m>, and we have:</p>
+<p><m>\displaystyle{ P(0) = \frac{3360(0)+3240}{8(0)+9} = \frac{3240}{9} = 360 }</m></p>
+<p>About <m>360</m> deer live in this forest this year.</p>
+</li>
+<li>
+<p>How many deer will live in this forest <m>9</m> years later? To answer this question, we substitute <m>x</m> with <m>9</m>, and we have:</p>
+<p><m>\displaystyle{ P(9) = \frac{3360(9)+3240}{8(9)+9} = \frac{33480}{81} \approx 413 }</m></p>
+<p>About <m>413</m> deer will live in this forest <m>9</m> years later.</p>
+</li>
+<li>
+<p>After how many years, the deer population will be <m>417</m>? To answer this question, we substitute <m>P(x)</m> with <m>417</m>, and then solve for <m>x</m>:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   P(x) \amp = {\frac{3360x+3240}{8x+9}} \\
+   417 \amp = {\frac{3360x+3240}{8x+9}} \\
+   417 (8x+9) \amp = {\frac{3360x+3240}{8x+9}}(8x+9) \\
+   3336x+3753 \amp = 3360x+3240 \\
+   3336x+3753 \mathbf{{}-3360x-3753} \amp = 3360x+3240 \mathbf{{}-3360x-3753} \\
+   -24x \amp = -513 \\
+   x \amp = 21.375 \\
+   x \amp \approx 21
+\end{aligned}
+    }</m></p>
+<p>After about <m>21</m> years, the deer population will be <m>417</m>.</p>
+</li>
+<li>
+<p>Use a graphing calculator to answer this question: <em>Very many</em> years in the future, about how many deer will live in this forest? To answer this question, we substitute <m>x</m> with a very big number, like <m>10{,}000</m>, and we have:</p>
+<p><m>\displaystyle{ P(10000) = \frac{3360(10000)+3240}{8(10000)+9} = \frac{33603240}{80009} \approx 420 }</m></p>
+<p>Many years in the future, about <m>420</m> deer will live in this forest.</p>
+</li>
+</ol></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalFunctions/rationalFunctionApplication10.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalFunctions/rationalFunctionApplication10.pg"/>
+</webwork-reps>

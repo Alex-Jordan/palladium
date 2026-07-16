@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:10-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,7 +27,6 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PGchoicemacros.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -43,11 +39,9 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-($a,$answer,$c) = (2..9)[NchooseK(8,3)];
-($answer,$a) = num_sort($a,$answer);
-$b = ($a-$answer)*$c;
+($a, $b, $c) = random_subset(3, 2 .. 9);
 Context("LimitedNumeric");
-$answer = Real($a-$b/$c);
+$answer = Real($a - $b*$c);
 
 ############################################################
 # Body
@@ -56,7 +50,7 @@ $answer = Real($a-$b/$c);
 BEGIN_PGML
 Use the order of operations to simplify the expression.
 
-[`[$a] - [$b]/[$c]`]
+[`[$a] - [$b]([$c])`]
 
 [_]{$answer}{5}
 

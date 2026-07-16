@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-15-2-5-10" assembly-id="section-factoring-15-2-5-10">
+  <static seed="182" source="Contrib/PCC/BasicAlgebra/Factoring/factoring452.pg">
+    <statement><p>Factor the given polynomial.</p>
+<p><m>{64x^{2}t^{2}-81}=</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left(8xt+9\right)\mathopen{}\left(8xt-9\right)</m>
+      </p>
+    </answer>
+    <solution><p>We will factor <m>64x^{2}t^{2}-81</m> where <m>a=64</m>, <m>b=0</m>, and <m>c=-81</m>.</p>
+<p><alert>Difference of Squares Formula: </alert>The formula for a difference of squares is <me>a^2-b^2 = (a+b)(a-b)</me> Note that the polynomial <m>64x^{2}t^{2}-81</m> matches the formula's right side, and we have: <me>\begin{aligned}[t]64x^{2}t^{2}-81\amp =\left(8xt\right)^2-\left(9\right)^2\newline \amp =\left(8xt+9\right)\mathopen{}\left(8xt-9\right)\end{aligned}</me></p>
+<p><alert>AC Method: </alert>In this method, we first calculate the product of <m>a</m> and <m>c</m> in <m>ax^2+bx+c</m>. For this problem, we have <m>(64) \cdot (-81) = -5184</m>.</p>
+<p>The number <m>-5184</m> can be factored into the product of two numbers in the following ways: <me>\begin{array}{lll}1(-5184)\amp -1(5184)\amp 2(-2592)\amp -2(2592)\newline3(-1728)\amp -3(1728)\amp 4(-1296)\amp -4(1296)\newline6(-864)\amp -6(864)\amp 8(-648)\amp -8(648)\newline9(-576)\amp -9(576)\amp 12(-432)\amp -12(432)\newline16(-324)\amp -16(324)\amp 18(-288)\amp -18(288)\newline24(-216)\amp -24(216)\amp 27(-192)\amp -27(192)\newline32(-162)\amp -32(162)\amp 36(-144)\amp -36(144)\newline48(-108)\amp -48(108)\amp 54(-96)\amp -54(96)\newline64(-81)\amp -64(81)\amp 72(-72)\amp -72(72)\newline\end{array}</me> Looking at the corresponding sums, we want a sum of <m>0</m>, and this sum happens with <m>(-72)+72=0</m> So we write <me>\begin{aligned}[t]64x^{2}t^{2}-81\amp =64x^{2}t^{2}-72xt+72xt-81\newline \amp =8xt\mathopen{}\left(8xt-9\right)+9\mathopen{}\left(8xt-9\right)\newline \amp =\left(8xt+9\right)\mathopen{}\left(8xt-9\right)\end{aligned}</me><alert>Generic Rectangles Method: </alert>First, we set up generic rectangles by putting the first term and third term in <m>64x^{2}t^{2}-81</m> into the top left and bottom right rectangles:</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-factoring-15-2-5-10-image-1.png" width="66%"/>
+<p>The first term's coefficient, <m>64</m>, can be factored into the product of two numbers (where the first factor is positive) in the following ways: <me>\begin{array}{llll}1(64)\amp 2(32)\amp 4(16)\amp 8(8)\newline\end{array}</me></p>
+<p>The third term, <m>-81</m>, can be factored into the product of two numbers in the following ways: <me>\begin{array}{llll}1(-81)\amp -1(81)\amp 3(-27)\amp -3(27)\newline9(-9)\amp -9(9)\amp \end{array}</me></p>
+<p>We put each pair into the corresponding places next to those generic rectangles, and try to match the area of those rectangles with <m>64x^{2}t^{2}-81</m> by guess-and-check. The following generic rectangles show the solution:</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-factoring-15-2-5-10-image-2.png" width="66%"/>
+<p>Dimensions of those generic rectangles in the diagram give us the solution: <me>\begin{aligned}[t]64x^{2}t^{2}-81\amp =\left(8xt+9\right)\mathopen{}\left(8xt-9\right)\end{aligned}</me></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/Factoring/factoring452.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/Factoring/factoring452.pg"/>
+</webwork-reps>

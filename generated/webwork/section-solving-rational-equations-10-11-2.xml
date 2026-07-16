@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-11-2" assembly-id="section-solving-rational-equations-10-11-2">
+  <static seed="1602" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations27.pg">
+    <statement><p>Solve the equation.</p>
+<p><m>\displaystyle{ {-\frac{4}{y+4}}={-\left(\frac{3}{y-4}+\frac{6}{y^{2}-16}\right)}  }</m></p>
+<p><fillin characters="31" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{34\right\}</m>
+      </p>
+    </answer>
+    <solution><p>To clear fractions in an equation, multiply each side of the equation by a common denominator. For this problem, a common denominator is <m>{\left(y+4\right)\mathopen{}\left(y-4\right)}</m>.</p>
+<p><m>\displaystyle{\begin{aligned}
+  {-\frac{4}{y+4}} \amp = {-\left(\frac{3}{y-4}+\frac{6}{y^{2}-16}\right)} \\
+  {-\frac{4}{y+4}} \amp = {-\frac{3}{y-4}-\frac{6}{\left(y+4\right)\mathopen{}\left(y-4\right)}} \\
+  {-\frac{4}{y+4}\mathopen{}\left(y+4\right)\mathopen{}\left(y-4\right)} \amp = {-\frac{3}{y-4}\mathopen{}\left(y+4\right)\mathopen{}\left(y-4\right)-\frac{6}{\left(y+4\right)\mathopen{}\left(y-4\right)}\mathopen{}\left(y+4\right)\mathopen{}\left(y-4\right)} \\
+  {-4\mathopen{}\left(y-4\right)} \amp = {-3\mathopen{}\left(y+4\right)-6} \\
+  {-4y+16} \amp = {-3y-12-6} \\
+  {-4y+16} \mathbf{  + 3y  - 16} \amp = {-3y-12-6} \mathbf{  + 3y  - 16} \\
+  {-y} \amp = {-34} \\
+  (-1) \cdot (-y) \amp = (-1) \cdot (-34) \\
+  y \amp = 34
+\end{aligned}
+    }</m></p>
+<p>We must check solutions when we solve rational equations. In the original equation, both denominators cannot be <m>0</m>. We set them to <m>0</m>, so we can find out what values to exclude from the solution set.</p>
+<p><m>\displaystyle{\begin{aligned}
+   \amp y^{2}-16 = 0 \amp \;\amp  y+4=0 \amp \;\amp  y-4=0 \\
+   \amp (y+4)(y-4) = 0 \amp \;\amp  y=-4 \amp \;\amp  y=4 \\
+   \amp y+4=0 \:\: or \:\: y-4=0 \\
+   \amp y=-4 \:\: or \:\: y=4 \\
+\end{aligned}
+    }</m></p>
+<p>We must exclude <m>-4</m> and <m>4</m> from the solution set. These values are not in the solution set we got, so the final solution is <m>y=34</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations27.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations27.pg"/>
+</webwork-reps>

@@ -1,100 +1,95 @@
-# WeBWorK problem written by Alex Jordan 
+# WeBWorK problem written by Carl Yao
 # Portland Community College
 #
-# Template:
-# Rationalize the denominator
+# Evaluate an expression with a fractional exponent.
 #
-#       a/(sqrt(b)+c)
+# Last edited: Carl Yao 7/21/16,
 #
-#
-# Last updated: Spoddeck 11/11/15
 # ENDDESCRIPTION
 
+## DBsubject('Algebra')
+## DBchapter('Basic Algebra')
+## DBsection('Exponents and Radicals')
+## KEYWORDS('simplify','radical','cube root','estimate')
+## DBCCSS('8.EE')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Alex Jordan, Carl Yao, Chris Hughes')
+## Institution('PCC')
 
-##############################################
-
-
+ 
 DOCUMENT();
 
 loadMacros(
-      "PGstandard.pl", 
-      "MathObjects.pl",
-      "contextForm.pl",
-      "PGML.pl",
-      "PCCmacros.pl",
-      "PGcourse.pl",
-      "parserOneOf.pl",
-    );
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "scaffold.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+
+######################################
 
 TEXT(beginproblem());
+Context("Numeric");
 
-##############################################
+$a = (random(2,5,1))**3;
+$b = 1;
+$c = 3;
 
-do{
-$a = random(2,9,1);
-$b = list_random(2,3,5,6,7,10,11,13,14,15,17,19,21,22,23);
-$c = random(2,9,1);
-
-$d = $a*$c;
-$e = $c**2-$b;
-} until (gcd($d,$e)==1 and gcd($a,$e)==1);
-
-$expression = "\dfrac{$a}{\sqrt{$b}+$c}";
-$stringans = "($d-$a sqrt($b))/$e";
-if ($e == 1) {$stringans = "$d-$a sqrt($b)";};
-if ($e == -1) {$stringans = "-$d+$a sqrt($b)";};
-$G = gcd($a,$d);
-$D = $d/$G;
-$A = $a/$G;
-$factored = "$G($D-$A sqrt($b))/$e";
-if ($e == 1) {$factored = "$G($D-$A sqrt($b))";};
-if ($e == -1) {$factored = "$G(-$D+$A sqrt($b))";};
-
-Context("Form");
-$ans = Formula("$stringans");
-#if ($G != 1) {$ans = OneOf(Formula("$stringans"),Formula("$factored"));};
+$ans1 = ($a)**($b/$c);
+$ans1 = Compute("$ans1");
+$ans2 = Compute("-$ans1");
+$ans3 = Compute("-$ans1");
 
 
-##############################################
-
+#####################################################
 
 BEGIN_PGML
+[@ PTX_exercisegroup_introduction('Evaluate the expression without help from a calculator.') @]
 
-[@ PTX_exercisegroup_introduction('Simplify the expression. If the result has a denominator, it must be rationalized.') @]
-
-[`` [$expression] ``]
-
-[_]{$ans}{16}
-
+[@KeyboardInstructions('If a value is not defined as a real number, type [|DNE|]* for "does not exist".')@]**
 END_PGML
 
+Scaffold::Begin(numbered => 1,is_open => "correct_or_first_incorrect",can_open => always,);
 
-##############################################
+Section::Begin("");
+BEGIN_PGML
+[`` [$a]^{\frac{[$b]}{[$c]}} ``]
 
-
+[_]{$ans1}{16}
+END_PGML
 BEGIN_PGML_SOLUTION
-
-We will use the Difference of Squares formula:
-
-    [`` (a+b)(a-b) = a^2-b^2 ``]
-
-This will help us get rid of the radical in the denominator by multiplying with the conjugate:
-
-    [``
-\begin{aligned}
-   \dfrac{[$a]}{\sqrt{[$b]}+[$c]}
-                &= \dfrac{[$a]}{\sqrt{[$b]}+[$c]}\cdot\dfrac{\sqrt{[$b]}-[$c]}{\sqrt{[$b]}-[$c]} \\
-                &= \dfrac{[$a]\sqrt{[$b]}-([$a])([$c])}{\left(\sqrt{[$b]}\right)^2-([$c])^2} \\
-                &= \dfrac{[$a]\sqrt{[$b]}-[$a*$c]}{[$b]-[$c**2]} \\
-                &= \dfrac{[$a]\sqrt{[$b]}-[$a*$c]}{[$b-$c**2]} \\
-\end{aligned}
-    ``]
-
-
+Since [` x^{1/3}=\sqrt[3]{x} `], we have [`` [$a]^{\frac{[$b]}{[$c]}} = \sqrt[3]{[$a]} = [$ans1] ``].
 END_PGML_SOLUTION
+Section::End();
 
+Section::Begin("");
+BEGIN_PGML
+[`` (-[$a])^{\frac{[$b]}{[$c]}} ``]
 
-##############################################
+[_]{$ans2}{16}
+END_PGML
+BEGIN_PGML_SOLUTION
+Since [` x^{1/3}=\sqrt[3]{x} `], we have [`` (-[$a])^{\frac{[$b]}{[$c]}} = \sqrt[3]{-[$a]} = [$ans2] ``].
+END_PGML_SOLUTION
+Section::End();
 
+Section::Begin("");
+BEGIN_PGML
+[`` -[$a]^{\frac{[$b]}{[$c]}} ``]
+
+[_]{$ans3}{16}
+END_PGML
+BEGIN_PGML_SOLUTION
+Since [` x^{1/3}=\sqrt[3]{x} `], we have [`` -[$a]^{\frac{[$b]}{[$c]}} = -\sqrt[3]{[$a]} = [$ans3] ``].
+END_PGML_SOLUTION
+Section::End();
+
+Scaffold::End();
 
 ENDDOCUMENT();

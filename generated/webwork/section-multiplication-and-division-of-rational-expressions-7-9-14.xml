@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-9-14" assembly-id="section-multiplication-and-division-of-rational-expressions-7-9-14">
+  <static seed="1352" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions56.pg">
+    <statement><p>Simplify this expression.</p>
+<p><m>\displaystyle{{\frac{r^{2}}{r^{2}x-r}} \div {\frac{1}{r^{2}x^{2}-4rx+3}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>r\mathopen{}\left(rx-3\right)</m>
+      </p>
+    </answer>
+    <solution><p><m>\displaystyle{\begin{aligned}
+   {\frac{r^{2}}{r^{2}x-r}} \div {\frac{1}{r^{2}x^{2}-4rx+3}} 
+      \amp = {\frac{r^{2}}{r^{2}x-r}} \cdot {\frac{r^{2}x^{2}-4rx+3}{1}} \\
+      \amp = \frac{{r^{2}}}{{r\mathopen{}\left(rx-1\right)}} \cdot \frac{{\left(rx-1\right)\mathopen{}\left(rx-3\right)}}{{1}} \\
+      \amp = {r\mathopen{}\left(rx-3\right)}
+\end{aligned}
+    }</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions56.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions56.pg"/>
+</webwork-reps>

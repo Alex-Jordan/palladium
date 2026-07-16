@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-18T21:12:34-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,9 +27,7 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PCCmacros.pl",
-  "parserImplicitEquation.pl",
-  "contextCurrency.pl",
+  "contextFraction.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -45,64 +40,31 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$m = random(10, 90, 5);
-$mdecimal = $m/100;
-$wdecimal = random(5, 20, 0.05);
-Context("ImplicitEquation");
-Context()->variables->are(s => 'Real');
-$r = 1 - $mdecimal;
-$answerdecimal = Real(Round($wdecimal/$r, 2));
-Context()->variables->set(s => {limits=>[$answerdecimal - 100, $answerdecimal + 100]});
-$equation = ImplicitEquation("s(1 - $mdecimal) = $wdecimal");
-Context("Currency")->flags->set(trimTrailingZeros => 1);
-$w = Currency($wdecimal);
-$answer = Currency($answerdecimal);
+Context("LimitedFraction")->flags->set(
+    allowMixedNumbers => 0,
+    reduceConstants => 1,
+    showMixedNumbers => 0
+);
+Parser::Number::NoDecimals;
+($n[0], $d[0]) = random_pairwise_coprime([1 .. 9], [2 .. 9]);
+$d[1] = 1;
+$n[1] = list_random(1 .. 9);
+@f = map {Fraction($n[$_], $d[$_])} (0, 1);
+@f = random_subset(2, @f);
+$ans = Fraction($f[0] - $f[1])->cmp(studentsMustReduceFractions => 1);
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-In retail, the "profit margin" [`m`] of an item being sold is a number that explains what percentage of the item's shelf price is profit. For example if the profit margin is 15% or 0.15, it means that 15% of the shelf price is profit for the store. If the shelf price [`s`] is what a customer pays to buy the item and the item has a wholesale price [`w`] that the store pays to obtain the item, then these numbers are related by the formula [`s(1-m)=w\text{.}`]
+Add or subtract the fractions.
 
-Suppose the profit margin is [`[$m]\%`] and the wholesale price is [`[$w]\text{.}`] Write an equation that could be used to find the shelf price. Then find the shelf price.
+[`\displaystyle [$f[0]] - [$f[1]]`]
 
-[@KeyboardInstructions('Write the equation here.')@]**
-
-[_]{$equation}{15}
-
-[@KeyboardInstructions('Write the shelf price here.')@]**
-
-[_]{$answer}{10}
+[_]{$ans}{6}
 
 END_PGML
-
-############################################################
-# Solution
-############################################################
-
-BEGIN_PGML_SOLUTION
-We start with the equation [`s(1-m)=w`] and substitute in what we know. The value for [`m`] should be [`[$mdecimal]`] and the value for [`w`] should be [`[$wdecimal]\text{.}`] So we have the equation
-
-[```\newcommand{\amp}{&}
-\begin{aligned}
-s(1-[$mdecimal]) \amp= [$wdecimal]\\
-s([$r]) \amp= [$wdecimal]
-\end{aligned}
-```]
-
-Now to solve for [`s\text{,}`] divide on each side by [`[$r]\text{:}`]
-
-[```\newcommand{\divideunder}[2]{\frac{#1}{{\highlight{{#2}}}}}\newcommand{\amp}{&}
-\begin{aligned}
-\divideunder{s([$r])}{[$r]} \amp= \divideunder{[$wdecimal]}{[$r]}\\
-s \amp= [$answerdecimal]
-\end{aligned}
-```]
-
-So the shelf price is [$answer].
-
-END_PGML_SOLUTION
 
 ############################################################
 # End Problem

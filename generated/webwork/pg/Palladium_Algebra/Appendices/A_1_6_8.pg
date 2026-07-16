@@ -1,0 +1,95 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(A.1.6.8)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGlateximage.pl",
+  "contextFraction.pl",
+  "Pd.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedFraction")->flags->set(
+    allowMixedNumbers => 0,
+    reduceConstants => 1,
+    showMixedNumbers => 0
+);
+Parser::Number::NoDecimals;
+$d = list_random(3 .. 6);
+$max = random(6 .. 9);
+$min = $max - 1;
+($d, $n) = random_coprime([$d], [($max - 1)*$d + 1, $max*$d - 1]);
+$frac = Fraction(-$n, $d);
+$xmax = -(($max - 1) - 3/$d);
+$xmin = -($max + 3/$d);
+$inc = $xmin + 1/$d;
+
+$image_1 = createLaTeXImage();
+$image_1->addToPreamble(latexImagePreamble());
+$image_1->BEGIN_LATEX_IMAGE
+\begin{tikzpicture}
+  \begin{axis}[
+    numberline,
+    xmin=$xmin,
+    xmax=$xmax,
+    xtick={-$max,-$min},
+    minor xtick={$xmin,$inc,...,$xmax},
+    after end axis/.code=,
+  ]
+  \addplot[soliddot] coordinates {($frac, 0)};
+  \end{axis}
+\end{tikzpicture}
+
+END_LATEX_IMAGE
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+What fraction is represented on the numberline?
+
+>> [@image(insertGraph($image_1), width=>600)@]*  <<
+
+[_]{$frac}{6}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-addition-and-subtraction-of-rational-expressions-7-3-6" assembly-id="section-addition-and-subtraction-of-rational-expressions-7-3-6">
+  <static seed="1381" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions30.pg">
+    <statement><p>Add or subtract the rational expressions to a single rational expression and then simplify. If applicable, state the restricted domain.</p>
+<p><m>\displaystyle{{\frac{6}{t^{2}-12t+32}-\frac{t-2}{t^{2}-12t+32}} =}</m> <fillin characters="40" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>-\frac{1}{t-4}, t\ne 8</m>
+      </p>
+    </answer>
+    <solution><p><m>\displaystyle{\begin{aligned}
+   {\frac{6}{t^{2}-12t+32}-\frac{t-2}{t^{2}-12t+32}} 
+      \amp = \frac{{6-\left(t-2\right)}}{{t^{2}-12t+32}} \\
+      \amp = \frac{{6-t+2}}{{\left(t-8\right)\mathopen{}\left(t-4\right)}} \\
+      \amp = \frac{{-t+8}}{{\left(t-8\right)\mathopen{}\left(t-4\right)}} \\
+      \amp = \frac{{-\left(t-8\right)}}{{\left(t-8\right)\mathopen{}\left(t-4\right)}} \\
+      \amp = {-\frac{1}{t-4}, t\ne 8}
+\end{aligned}
+    }</m></p>
+<p>Since the factor <m>t-8</m> was canceled, the domain condition lost during the simplification is <m>t \ne {8}</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions30.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions30.pg"/>
+</webwork-reps>

@@ -1,0 +1,71 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(A.1.6.75)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedFraction")->flags->set(
+    allowMixedNumbers => 0,
+    reduceConstants => 1,
+    showMixedNumbers => 0
+);
+Parser::Number::NoDecimals;
+($n[0], $d[0]) = random_pairwise_coprime([1 .. 9], [2 .. 9]);
+$n = list_random(11 .. 19);
+@f = map {Fraction($n[$_], $d[$_])} (0);
+$ans = Fraction($n + $f[0])->cmp(studentsMustReduceFractions => 1);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Convert the mixed number to an improper fraction
+
+[`\displaystyle [$n]\,[$f[0]]`]
+
+[_]{$ans}{6}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

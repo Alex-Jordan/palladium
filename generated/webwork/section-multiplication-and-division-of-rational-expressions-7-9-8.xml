@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-9-8" assembly-id="section-multiplication-and-division-of-rational-expressions-7-9-8">
+  <static seed="1346" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions30.pg">
+    <statement><p>Simplify this expression.</p>
+<p><m>\displaystyle{{\frac{xt^{3}}{3}} \div {\frac{xt}{9}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>3t^{2}</m>
+      </p>
+    </answer>
+    <solution><p><m>\displaystyle{\begin{aligned}
+   {\frac{xt^{3}}{3}} \div {\frac{xt}{9}} 
+      \amp = {\frac{xt^{3}}{3}} \cdot {\frac{9}{xt}} \\
+      \amp = {3t^{2}}
+\end{aligned}
+    }</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions30.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions30.pg"/>
+</webwork-reps>

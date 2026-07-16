@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-20T13:16:08-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -31,6 +28,10 @@ loadMacros(
   "PGML.pl",
   "AnswerFormatHelp.pl",
   "PCCmacros.pl",
+  "parserFormulaWithUnits.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "parserLinearRelation.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -43,23 +44,26 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context('Numeric');
-$a = random(1,10);
-$ans = Compute("x - $a");
-$numberWorda = numberWord($a);
+Context("Fraction");
+$rate = Fraction(random(1,11),12);
+$speed = FormulaWithUnits("$rate ft");
+$initial = random(4,6);
+$final = random(10,12);
+Context("LinearRelation")->variables->are(t => 'Real');
+$equation = LinearRelation("$initial + $rate t = $final");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Translate the phrase or sentence into a math expression or equation (whichever is appropriate).
+Read the scenario. Then write a complete sentence that defines a variable to use. Lastly, write an equation to model the scenario. There is no need to solve the equation.
 
-[$numberWorda] subtracted from a number
+You planted a young tree in front of your house, and it was [`[$initial]`] feet tall. Ever since, it has been growing by [`[$speed]`] each year. How many years will it take for the tree to grow to be [`[$final]`] feet tall? Write an equation to model this scenario. There is no need to solve it.
 
-[@KeyboardInstructions('Use [`x`] as the variable.')@]**
+[@KeyboardInstructions('Use [|t|]* as the variable.')@]**
 
-[_]{$ans}{16}
+[_]{$equation}{20}
 
 END_PGML
 

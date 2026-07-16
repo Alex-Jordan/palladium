@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-addition-and-subtraction-of-rational-expressions-7-3-8" assembly-id="section-addition-and-subtraction-of-rational-expressions-7-3-8">
+  <static seed="1383" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions30.pg">
+    <statement><p>Add or subtract the rational expressions to a single rational expression and then simplify. If applicable, state the restricted domain.</p>
+<p><m>\displaystyle{{\frac{6}{x^{2}-x-30}-\frac{x}{x^{2}-x-30}} =}</m> <fillin characters="40" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>-\frac{1}{x+5}, x\ne 6</m>
+      </p>
+    </answer>
+    <solution><p><m>\displaystyle{\begin{aligned}
+   {\frac{6}{x^{2}-x-30}-\frac{x}{x^{2}-x-30}} 
+      \amp = \frac{{6-x}}{{x^{2}-x-30}} \\
+      \amp = \frac{{6-x}}{{\left(x-6\right)\mathopen{}\left(x+5\right)}} \\
+      \amp = \frac{{-x+6}}{{\left(x-6\right)\mathopen{}\left(x+5\right)}} \\
+      \amp = \frac{{-\left(x-6\right)}}{{\left(x-6\right)\mathopen{}\left(x+5\right)}} \\
+      \amp = {-\frac{1}{x+5}, x\ne 6}
+\end{aligned}
+    }</m></p>
+<p>Since the factor <m>x-6</m> was canceled, the domain condition lost during the simplification is <m>x \ne {6}</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions30.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions30.pg"/>
+</webwork-reps>

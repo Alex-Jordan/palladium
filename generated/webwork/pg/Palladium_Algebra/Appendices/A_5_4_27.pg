@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:10-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,8 +27,8 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PGchoicemacros.pl",
-  "contextArbitraryString.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -44,29 +41,39 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-($a, $b) = map{$_/100} ((-999..-1)[NchooseK(99,2)]);
-Context("ArbitraryString");
-$operator = ($a > $b) ? '>' : '<';
-$answer = Compute($operator)->cmp(
-    checker => sub {
-        my ($correct,$student,$ans) = @_;
-        $correct = $correct->value;
-        $student = $student->value;
-        if ($student =~ /^~~s*$correct~~s*$/) {return 1}
-        elsif ($student !~ /^~~s*>~~s*$/ && $student !~ /^~~s*<~~s*$/ && $student !~ /^~~s*=~~s*$/)
-            {Value->Error("Answer with >, <, or =.")}
-        else {return 0};
-    }
-);
+Context("Fraction");
+Context()->operators->redefine('>', using => ',' , from => 'Numeric');
+Context()->lists->set(List => {separator => '>'});
+Context()->flags->set(reduceConstantFunctions => 0);
+
+@a = random_subset(1, 1 .. 99);
+@a = map{Real($_/10)} (@a);
+do {
+  @d = random_subset(2, 3 .. 9);
+  @f = map{Fraction(random_coprime([$_], [2 .. 2*$_]))} (@d);
+} until ($f[0] != $a[0] && $f[1] != $a[0] && $f[1] != $f[0]);
+push @a, @f;
+push @a, Formula("pi")/list_random(1,2,3,4,6);
+$a[3] = $a[3]->reduce;
+push @a, map{Formula("sqrt($_)")} (list_random(2,3,5,6,7,10));
+@a = random_subset(5, @a);
+
+$as = join('\quad', map{'{' . $_->TeX . '}'} (@a));
+@b = PGsort(sub{$_[0] > $_[1]}, @a);
+$bs = join('>', @b);
+
+$comparison = Compute("$bs");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Decide if one given number is greater than, less than, or equal to another given number.
+Use the [`\newcommand{\gt}{>}\gt`] symbol to arrange the following numbers in order from greatest to least. For example, your answer might look like [`\newcommand{\gt}{>}4 \gt 3 \gt 2 \gt 1 \gt 0\text{.}`]
 
-[`[$a]`] [_]{$answer}{3} [`[$b]`]
+[`[$as]`]
+
+[_]{$comparison}{30}
 
 END_PGML
 

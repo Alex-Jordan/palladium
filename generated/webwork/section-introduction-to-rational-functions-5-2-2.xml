@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-introduction-to-rational-functions-5-2-2" assembly-id="section-introduction-to-rational-functions-5-2-2">
+  <static seed="1211" source="Contrib/PCC/BasicAlgebra/RationalFunctions/rationalFunctionDefinition10.pg">
+    <statement><p>Select all rational functions. There are several correct answers.</p>
+<p><var form="checkboxes">
+<li>
+<p><m>a(x)=\frac{2 x^2 + 2 x - 6}{6 - 2 x^{2}}</m></p>
+</li>
+<li>
+<p><m>n(x)=\frac{2 x^2 + 2 \sqrt{x} - 6}{6 - 2 x^{2}}</m></p>
+</li>
+<li>
+<p><m>s(x)=\frac{\sqrt{2} x^2 + 2 x - 6}{6 - 2 x^{2}}</m></p>
+</li>
+<li>
+<p><m>b(x)=\frac{2 x^2 + 2 x - 6}{6}</m></p>
+</li>
+<li>
+<p><m>h(x)=\frac{6}{2 x^2 + 2 x - 6}</m></p>
+</li>
+<li>
+<p><m>c(x)=\frac{2 x^2 + 2 x - 6}{6 + \lvert x \rvert }</m></p>
+</li>
+<li>
+<p><m>m(x)=\frac{2 x + 2}{2 x +2}</m></p>
+</li>
+<li>
+<p><m>r(x)=\frac{2 x^2 + 2 x - 6}{6 - 2 x^{-2}}</m></p>
+</li>
+<li>
+<p><m>t(x)=\frac{6 - 2 x^3}{2 x^{0.7} + 2 x - 6}</m></p>
+</li>
+</var></p>
+</statement>
+    <solution><p>The correct answer is ACDEG.</p>
+<p>Definition: A rational function is a function that can be written as the ratio of two polynomials where the denominator isn't zero, as in  <m>f(x)=\frac{p(x)}{q(x)}</m>, where <m>p(x)</m> and <m>q(x)</m> are both polynomials.</p>
+<p>Note that a constant function like <m>g(x)=6</m> is a polynomial.</p>
+<p>A polynomial can have radical coefficient, like <m>s(x)=\frac{\sqrt{2} x^2 + 2 x - 6}{6 - 2 x^{2}}</m>.</p>
+<p>But a polynomial may not have radical terms, like <m>n(x)=\frac{2 x^2 + 2 \sqrt{x} - 6}{6 - 2 x^{2}}</m>.</p>
+<p>A polynomial may not have x terms inside absolute value symbols, like <m>c(x)=\frac{2 x^2 + 2 x - 6}{6 + \lvert x \rvert }</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalFunctions/rationalFunctionDefinition10.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalFunctions/rationalFunctionDefinition10.pg"/>
+</webwork-reps>

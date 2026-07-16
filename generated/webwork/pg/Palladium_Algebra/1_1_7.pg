@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:06-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,8 +27,7 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PCCmacros.pl",
-  "parserLinearRelation.pl",
+  "contextForm.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -44,19 +40,17 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("LinearRelation")->variables->are(x => 'Real');
-$equation = LinearRelation("x + 0.19x = 150");
+Context("Form");
+$answer = Formula("4x(x^2+3x-3)");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Kirima offered to pay the bill and tip at a restaurant where she and her friends had dinner. In total she paid [`\$150`] even, where the tip was a little more than [`19\%\text{.}`] We'd like to know what was the bill before tip. Set up an equation for this situation.
+Factor the polynomial [`4x^3+12x^2-12x\text{.}`]
 
-[@KeyboardInstructions('Use [|x|]* for any variable you define and use.')@]**
-
-[_]{$equation}{25}
+[_]{$answer}{20}
 
 END_PGML
 
@@ -65,17 +59,40 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-A common mistake is to translate a question like this into "what is [`19\%`] of [`\$150\text{?}`]" as a way to calculate the tip amount, and then subtract that from [`\$150\text{.}`] But that is not how tipping works. The [`19\%`] is applied to the _original bill_, not the _final total_. So please read carefully.
+In this exercise, [`4x`] is the greatest common factor. We find
 
-If we let [`x`] represent the original bill, we can apply (1.1.2) and we have:
-
-[```\newcommand{\pinover}[2]{\overset{\overset{\mathrm{\ #2\ }}{|}}{\strut #1 \strut}}\newcommand{\amp}{&}
+[```\newcommand{\amp}{&}
 \begin{aligned}
-\pinover{x}{bill}\pinover{+}{plus}\pinover{0.19}{19\%}\pinover{\cdot}{of}\pinover{x}{bill}\amp\pinover{=}{is}\pinover{150}{\$150}
+4x^3+12x^2-12x\amp=4x(\phantom{x^2}+\phantom{3x}-\phantom{3})\\
+\amp=4x(x^2+\phantom{3x}-\phantom{3})\\
+\amp=4x(x^2+3x-\phantom{3})\\
+\amp=4x(x^2+3x-3)
 \end{aligned}
 ```]
 
-Again, we are not currently trying to solve this equation, just write it down.
+Note that you might fail to recognize that [`4x`] is the greatest common factor. At first you might only see that, say, [`4`] is a common factor. This is OK! You can factor out the [`4`] and then keep looking for more to factor out:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+4x^3+12x^2-12x\amp=4(\phantom{x^3}+\phantom{3x^2}-\phantom{3})\\
+\amp=4(x^3+\phantom{3x^2}-\phantom{3x})\\
+\amp=4(x^3+3x^2-\phantom{3x})\\
+\amp=4(x^3+3x^2-3x)
+\end{aligned}
+```]
+
+Now examine the polynomial that remained in the parentheses. There is _still_ a common factor, [`x\text{.}`] Factoring this out too:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+\amp=4x(\phantom{x^2}+\phantom{3x}-\phantom{3})\\
+\amp=4x(x^2+\phantom{3x}-\phantom{3})\\
+\amp=4x(x^2+3x-\phantom{3})\\
+\amp=4x(x^2+3x-3)
+\end{aligned}
+```]
+
+So there is more than one way to find the answer.
 
 END_PGML_SOLUTION
 

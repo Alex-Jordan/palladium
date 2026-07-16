@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-fractions-and-fraction-arithmetic-9-6-27" assembly-id="section-fractions-and-fraction-arithmetic-9-6-27">
+  <static seed="293" source="Contrib/PCC/BasicMath/FractionApplication/MixedNumberMultiplicationWordProblems20.pg">
+    <statement><p>A cake recipe needs <m>{2{\textstyle\frac{1}{4}}}</m> cups of flour. Using this recipe, to bake <m>9</m> cakes, how many cups of flour are needed?</p>
+<p>To bake <m>9</m> cakes, <fillin characters="9" name="AnSwEr0001"/> cups of flour are needed.</p>
+</statement>
+    <answer>
+      <p>
+        <m>20{\textstyle\frac{1}{4}}</m>
+      </p>
+    </answer>
+    <solution><p>Each cake needs <m>{2{\textstyle\frac{1}{4}}}</m> cups of flour. To find how many cups of flour are needed to bake <m>9</m> cakes, we use multiplication:</p>
+<p><m>\displaystyle{ 
+\begin{aligned}[t]
+   {2{\textstyle\frac{1}{4}}} \cdot 9
+      \amp = \frac{9}{4} \cdot \frac{9}{1} \\
+      
+      \amp = \frac{81}{4} \\
+      \amp = {20{\textstyle\frac{1}{4}}}
+\end{aligned}
+    }</m></p>
+<p>To bake <m>9</m> cakes, <m>{20{\textstyle\frac{1}{4}}}</m> cups of flour are needed.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicMath/FractionApplication/MixedNumberMultiplicationWordProblems20.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicMath/FractionApplication/MixedNumberMultiplicationWordProblems20.pg"/>
+</webwork-reps>

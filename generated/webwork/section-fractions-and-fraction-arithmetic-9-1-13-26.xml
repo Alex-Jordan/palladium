@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-fractions-and-fraction-arithmetic-9-1-13-26" assembly-id="section-fractions-and-fraction-arithmetic-9-1-13-26">
+  <static seed="76" source="Contrib/PCC/BasicMath/FractionsCalculation/AddThreeFractions40.pg">
+    <statement><p>Add: <m>\displaystyle{ {{\frac{3}{5}}} + {{\frac{9}{10}}} + {{\frac{5}{8}}} }</m></p>
+<p><fillin characters="11" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>2{\textstyle\frac{1}{8}}</m>
+      </p>
+    </answer>
+    <solution><p>To add fractions with different denominators, we need to find the common denominator first. One way is to list the multiples of the largest denominator, until all <m>3</m> denominators divide into the multiple.</p>
+<p>The largest denominator is <m>10</m>. We list its first few multiples:</p>
+<p><m>\displaystyle{ 10, 20, 30, 40 }</m></p>
+<p>Note that all denominators, <m>5, 10 \text{ and } 8</m> each divide into <m>40</m>.</p>
+<p>The full computation is:</p>
+<p><m>\displaystyle{\begin{aligned}
+   \frac{3}{5} + \frac{9}{10} + \frac{5}{8}
+      \amp = \frac{3 \cdot 8}{5 \cdot 8} + \frac{9 \cdot 4}{10 \cdot 4} + \frac{5 \cdot 5}{8 \cdot 5} \\
+      \amp = \frac{24}{40} + \frac{36}{40} + \frac{25}{40} \\
+      \amp = \frac{24+36+25}{40} \\
+      \amp = \frac{85}{40} \\
+      \amp = \frac{17}{8} \\
+        \amp = {2{\textstyle\frac{1}{8}}}
+\end{aligned}
+    }</m></p>
+<p>Don<rsq/>t forget to reduce the fraction <m>\frac{85}{40}</m> by dividing <m>5</m> into both the numerator and the denominator.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicMath/FractionsCalculation/AddThreeFractions40.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicMath/FractionsCalculation/AddThreeFractions40.pg"/>
+</webwork-reps>

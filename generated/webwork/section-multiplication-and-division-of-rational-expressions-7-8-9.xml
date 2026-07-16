@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-8-9" assembly-id="section-multiplication-and-division-of-rational-expressions-7-8-9">
+  <static seed="1324" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions10.pg">
+    <statement><p>Simplify this expression, and if applicable, write the restricted domain.</p>
+<p><m>\displaystyle{{\frac{r}{r+8}} \div {4r^{2}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{1}{4r\mathopen{}\left(r+8\right)}, \left(-\infty ,\infty \right)</m>
+      </p>
+    </answer>
+    <solution><p><m>\displaystyle{\begin{aligned}
+   {\frac{r}{r+8}} \div {4r^{2}} 
+      \amp = {\frac{r}{r+8}} \cdot {\frac{1}{4r^{2}}} \\
+      \amp = {\frac{1}{4r\mathopen{}\left(r+8\right)}, \left(-\infty ,\infty \right)}
+\end{aligned}
+    }</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions10.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions10.pg"/>
+</webwork-reps>

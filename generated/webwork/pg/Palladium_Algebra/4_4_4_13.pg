@@ -1,19 +1,25 @@
-# WeBWorK problem written by Carl Yao
+# WeBWorK problem written by Chris Hughes
 # Portland Community College
 #
-# Rationalize denominator. Radical cannot be simplified.
-# Answer is a fraction. No fraction reduction is needed.
-# There is a number outside the radical in the denominator.
+# Template:
 #
-# Last edited: Jordan 9/8/13; Carl Yao 8/31/13,
+#  Rewrite the following expression using only positive exponents.
 #
+#   a x^-n * b x^m
+#
+#
+# We make sure that n>m so that x is raised to a negative power
+#
+# a and b are integers on [-10,10], non-zero, non-one
+# 
+# Last updated: Hughes 9/4/13, Carl Yao, 7/03/13
 # ENDDESCRIPTION
 
 ## DBsubject('Algebra')
 ## DBchapter('Basic Algebra')
 ## DBsection('Exponents and Radicals')
-## KEYWORDS('simplify','radical','square root','rationalize','denominator')
-## DBCCSS('8.EE')
+## KEYWORDS('exponent','negative','fraction','simplify')
+## DBCCSS('8.EE.1')
 ## TitleText1('')
 ## EditionText1('')
 ## AuthorText1('')
@@ -22,78 +28,106 @@
 ## Author('Alex Jordan, Carl Yao, Chris Hughes')
 ## Institution('PCC')
 
- 
+##############################################
+
 DOCUMENT();
 
 loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "PGML.pl",
-  "contextFraction.pl",
-  "contextLimitedRadical.pl",
   "PCCmacros.pl",
+  "contextRationalFunction.pl",
+  "bizarroArithmetic.pl",
   "PGcourse.pl",
 );
 
-######################################
+##############################################
 
+Context("RationalFunction-Strict");
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+
+Context()->operators->set(
+   '/' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '/ ' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   ' /' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '//' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '*' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+   '* ' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+   ' *' => {class => 'bizarro::BOP::multiply', isCommand => 1});
+
+
+# exponents
+$n = random(3,20,1);
+$m = random(2,$n-1,1);
+
+# coefficients
+$a = (random(1.5,9.5)+0.5)*random(-1,1,2);
+$b = (random(1.5,9.5)+0.5)*random(-1,1,2);
+
+# total coefficient
+$totalCoeff = $a*$b;
+
+# total exponent
+$total = (($n)*(-1)+$m)*(-1);
+$ans = Formula("$totalCoeff/($var^($total))");
+
+##############################################
 TEXT(beginproblem());
-Context("Numeric");
-
-$rad = list_random(2,3,5,6,7,10);
-do {$num=random(2,10,1);} until (gcd($num,$rad)==1);
-do {$out=random(2,10,1);} until (gcd($num,$out)==1);
-$den = $out*$rad;
-
-Context("LimitedRadical");
-$ans = Formula("$num*sqrt($rad)/$den");
-
-Context()->{error}{msg}{"You must simplify your answer further"} 
-  = "Either your answer is not fully simplified or it has an irrational denominator";
-
-
-#####################################################
 
 BEGIN_PGML
 
-[@ PTX_exercisegroup_introduction('Simplify the expression. If the result has a denominator, it must be rationalized.') @]
+[@ PTX_exercisegroup_introduction('Use the properties of exponents to simplify the expression.') @]
 
-[`` \frac{[$num]}{[$out]\sqrt{[$rad]}} ``]
+[`([$a][$var]^{[$n*(-1)]})\cdot ([$b][$var]^{[$m]})`]
 
-[_]{$ans}{16}
+[____________]
 
 END_PGML
 
-############################################################
+ANS($ans -> cmp(
+   checker=>sub{
+      my ( $correct, $student, $ansHash ) = @_;
+      Context()->flags->set(limits=>[0.95,1.05]);
+      return 0 if $ansHash->{isPreview} || $correct != $student;
+      $student = $ansHash->{student_formula};
+      $correct = $correct->{original_formula} if defined $correct->{original_formula};
+      $student = Formula("$student"); $correct = Formula("$correct");
+      return 0 unless ($correct == $student);
+      Context()->flags->set(bizarroDiv=>1,bizarroMul=>1);
+      delete $correct->{test_values}, $student->{test_values};
+      Context()->flags->set(limits=>[0.25,0.4]);
+      Value->Error("Your answer is correct, but please simplify it further") unless (($correct == $student) or ($student == $correct));
+      Context()->flags->set(bizarroDiv=>0,bizarroMul=>0);
+      return 1;
+}
+)); 
 
+
+#Move negative sign to front of fraction for display purpose
+if ($totalCoeff<0) {
+   $top = -$totalCoeff;
+   $output = "-\frac{$top}{$var^{$total}}";
+}
+else {
+   $output = "\frac{$totalCoeff}{$var^{$total}}";
+}
 
 BEGIN_PGML_SOLUTION
 
-We need to legally remove the radical [`\sqrt{[$rad]}`] from the denominator.
+We use the properties of exponents to help us here, remember that [`a^m\cdot a^n = a^{m+n}`]
 
-We will use this property:
-
-    [`` \sqrt{x} \cdot \sqrt{x} = x ``]
-
-In this case, we have:
-
-    [`` \sqrt{[$rad]} \cdot \sqrt{[$rad]} = [$rad] ``]
-
-We will multiply both the numerator and denominator by [` \sqrt{[$rad]} `], and we have:
-
-    [``
-\begin{aligned}[t]
-   \frac{[$num]}{[$out]\sqrt{[$rad]}} &= \frac{[$num]}{[$out]\sqrt{[$rad]}}\cdot\frac{\sqrt{[$rad]}}{\sqrt{[$rad]}}\\
-      &= \frac{[$num] \cdot \sqrt{[$rad]}}{[$out]\sqrt{[$rad]} \cdot \sqrt{[$rad]}} \\
-      &= \frac{[$num] \sqrt{[$rad]}}{[$out] \cdot [$rad]} \\
-      &= \frac{[$num] \sqrt{[$rad]}}{[$den]}
-\end{aligned}
-    ``]
+    [`
+           \begin{aligned}
+                         ([$a][$var]^{[$n*(-1)]})\cdot ([$b][$var]^{[$m]}) &= ([$a])\cdot([$b])[$var]^{[$n*(-1)]+[$m]}\\
+                                                       & =[$totalCoeff][$var]^{[$total*(-1)]}\\
+                                    & = [$output]
+           \end{aligned}
+    `]
 
 END_PGML_SOLUTION
-
-######################################
-
+##############################################
 
 
 ENDDOCUMENT();

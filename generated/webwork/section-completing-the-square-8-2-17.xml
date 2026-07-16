@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-2-17" assembly-id="section-completing-the-square-8-2-17">
+  <static seed="1180">
+    <statement><p>Solve the equation by completing the square.</p>
+<p><m>{2r^{2}+7r+2}={0}</m></p>
+<p><fillin characters="25" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{\frac{-7}{4}-\frac{1}{4}\sqrt{33},\frac{-7}{4}+\frac{1}{4}\sqrt{33}\right\}</m>
+      </p>
+    </answer>
+    <solution><p>Move the constant term to the other side to get <m>{2r^{2}+7r} = {-2}\text{.}</m></p>
+<p>Divide through by <m>2</m> to get <m>{r^{2}+{\frac{7}{2}}r} = {-1}\text{.}</m></p>
+<p>Compute <m>\left(\frac{{{\frac{7}{2}}}}{2}\right)^2={{\frac{49}{16}}}\text{.}</m> Then</p>
+<p><me>\begin{aligned}
+{r^{2}+{\frac{7}{2}}r}+{{\frac{49}{16}}}\amp = {-1}+{{\frac{49}{16}}}\\
+{r^{2}+{\frac{7}{2}}r}+{{\frac{49}{16}}}\amp = {{\frac{33}{16}}}\\
+\left({r+\frac{7}{4}}\right)^2\amp = {{\frac{33}{16}}}
+\end{aligned}</me></p>
+<p><me>\begin{aligned}
+{r+\frac{7}{4}} \amp = -{\frac{1}{4}\sqrt{33}}\amp\amp\text{or}\amp {r+\frac{7}{4}} \amp = {\frac{1}{4}\sqrt{33}}\\
+r \amp = {\frac{-7}{4}-\frac{1}{4}\sqrt{33}}\amp\amp\text{or}\amp r \amp = {\frac{-7}{4}+\frac{1}{4}\sqrt{33}}
+\end{aligned}</me></p>
+<p>So the solution set is <m>{\left\{\frac{-7}{4}-\frac{1}{4}\sqrt{33},\frac{-7}{4}+\frac{1}{4}\sqrt{33}\right\}}\text{.}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_8_6_27.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg copied-from="section-completing-the-square-8-2-16"><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.8.6.28)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$x = RandomVariableName(type=>'variable');
+Context("Fraction");
+Context()->variables->are($x=>'Real');
+@squares = map{$_**2} (2..23);
+do {
+  do {
+    $a = 2;#random(2,9,1);
+    $b = non_zero_random(-9,9,1);
+    $c = non_zero_random(-5,5,1);
+    $discriminant = $b**2 - 4*$a*$c;
+  } until ($discriminant > 0);
+  $B = Fraction($b,$a);
+  $C = Fraction($c,$a);
+  ($Bnum,$Bden) = $B->value;
+  $absBnum = abs($Bnum);
+  ($Cnum,$Cden) = $C->value;
+  $absCnum = abs($Cnum);
+  $helper = $B/2;
+  $helpersquared = $helper**2;
+  $rightplushelpersquared = Fraction("-$C + $helpersquared");
+  $squarenumpart = 1;
+  $squaredenpart = 1;
+  for my $square (@squares) {
+    $squarenumpart = $square if (($rightplushelpersquared->value)[0] % $square == 0);
+    $squaredenpart = $square if (($rightplushelpersquared->value)[1] % $square == 0);
+  }
+  $nonsquarenumpart = ($rightplushelpersquared->value)[0]/$squarenumpart;
+  $nonsquaredenpart = ($rightplushelpersquared->value)[1]/$squaredenpart;
+} until ($nonsquarenumpart > 1);
+$reducednumpart = sqrt($squarenumpart);
+$reduceddenpart = sqrt($squaredenpart);
+$reducedpartMargin = Fraction($reducednumpart, $reduceddenpart * $nonsquaredenpart);
+$nonsquarepartMargin = Fraction($nonsquarenumpart * $nonsquaredenpart,1);
+$left0 = Formula("$a $x^2 + $b $x + $c")->reduce;
+$right0 = Formula("0")->reduce;
+$left1 = Formula("$a $x^2 + $b $x")->reduce;
+$right1 = Formula("-$c")->reduce;
+$left = ($B > 0) ? Formula("$x^2 + $B $x") : Formula("$x^2 - $absBnum/$Bden $x");
+$right = ($C > 0) ? Formula("-$C") : Formula("$absCnum/$Cden");
+Context("FiniteSolutionSets");
+Context()->variables->are($x=>'Real');
+$margin = ($reducedpartMargin == 1) ? Formula("sqrt($nonsquarepartMargin)") : Formula("$reducedpartMargin sqrt($nonsquarepartMargin)");
+$nhelper = -$helper;
+$sol1 = Formula("$nhelper-$margin");
+$sol2 = Formula("$nhelper+$margin");
+if (int(sqrt($nonsquarepartMargin)) == sqrt($nonsquarepartMargin)) {
+  $mycontext = Context();
+  Context("Fraction");
+  $sol1 = Compute("$sol1");
+  $sol2 = Compute("$sol2");
+  Context($mycontext);
+}
+$solstep1 = Formula("-$helper - $margin");
+$solstep2 = Formula("-$helper + $margin");
+$answer = Formula("{$sol1, $sol2}");
+($num,$den) = $helper->value;
+$absnum = abs($num);
+if ($den != 1) {$linear = ($helper > 0) ? Formula("$x + $helper") : Formula("$x - $absnum/$den");}
+else {$linear = ($helper > 0) ? Formula("$x + $helper") : Formula("$x - $absnum");}
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve the equation by completing the square.
+
+[`[$left0]=[$right0]`]
+
+[_]{$answer}{25}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Move the constant term to the other side to get [`[$left1] = [$right1]\text{.}`]
+
+Divide through by [`[$a]`] to get [`[$left] = [$right]\text{.}`]
+
+Compute [`\left(\frac{[$B]}{2}\right)^2=[$helpersquared]\text{.}`] Then
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$left]+[$helpersquared]\amp = [$right]+[$helpersquared]\\
+[$left]+[$helpersquared]\amp = [$rightplushelpersquared]\\
+\left([$linear]\right)^2\amp = [$rightplushelpersquared]
+\end{aligned}
+```]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$linear] \amp = -[$margin]\amp\amp\text{or}\amp [$linear] \amp = [$margin]\\
+[$x] \amp = [$sol1]\amp\amp\text{or}\amp [$x] \amp = [$sol2]
+\end{aligned}
+```]
+
+So the solution set is [`[$answer]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

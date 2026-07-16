@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-14-12" assembly-id="section-solving-rational-equations-10-14-12">
+  <static seed="1633" source="Contrib/PCC/BasicAlgebra/RationalEquations/rationalEquationApplication60.pg">
+    <statement><p>Town A and Town B are <m>300</m> miles apart. With a constant still-water speed of <m>36</m> miles per hour, a boat traveled from Town A to Town B, and then back to Town A. During this whole trip, the river flew from Town B to Town A at a constant speed. The whole trip took <m>30</m> hours. Answer the following question:</p>
+<p>During this trip, the river<rsq/>s speed was <fillin characters="6" name="AnSwEr0001"/> miles per hour.</p>
+</statement>
+    <answer>
+      <p>
+        <m>24</m>
+      </p>
+    </answer>
+    <solution><p>Assume the river<rsq/>s speed was <m>x</m> miles per hour. It<rsq/>s give that the boat<rsq/>s still-water speed was <m>36</m> miles per hour.</p>
+<p>Since the river flows from Town B to Town A, the boat traveled from Town A to Town B (against the current) at <m>36-x</m> miles per hour, and then traveled back from Town B to Town A (along the current) at <m>36+x</m> miles per hour.</p>
+<p>Using the formula <m>time=\frac{distance}{speed}</m>, we know the boat traveled from Town A to Town B in <m>\frac{300}{36-x}</m> hours; and it traveled back from Town B to Town A in <m>\frac{300}{36+x}</m> hours.</p>
+<p>It<rsq/>s given that the whole trip took <m>30</m> hours, so we can write an equation and solve it:</p>
+<p><m>\displaystyle{\begin{aligned}
+  \amp \frac{300}{36-x}+\frac{300}{36+x} = 30 \\
+  \amp \frac{300}{36-x} \cdot {\left(36-x\right)\mathopen{}\left(36+x\right)} +\frac{300}{36+x} \cdot {\left(36-x\right)\mathopen{}\left(36+x\right)} = 30 \cdot {\left(36-x\right)\mathopen{}\left(36+x\right)} \\
+  \amp 300(36+x) + 300(36-x) = 30(1296-x^{2}) \\
+  \amp 10800+300x +10800-300x = 38880-30x^{2} \\
+  \amp 21600 = 38880-30x^{2} \\
+  \amp 30x^{2} = 38880-21600 \\
+  \amp 30x^{2} = 17280 \\
+  \amp x^{2} = \frac{17280}{30} \\
+  \amp x^{2} = 576 \\
+  \amp  x=\pm \sqrt{576} \\
+  \amp  x=\pm 24
+\end{aligned}
+    }</m></p>
+<p>In this situation, <m>x=-24</m> is not a valid solution, since speed cannot be negative. <m>x=24</m> is the only solution.</p>
+<p>During this trip, the river<rsq/>s speed was <m>{24}</m> miles per hour.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/rationalEquationApplication60.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalEquations/rationalEquationApplication60.pg"/>
+</webwork-reps>

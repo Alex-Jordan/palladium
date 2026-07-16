@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-fractions-and-fraction-arithmetic-9-6-4" assembly-id="section-fractions-and-fraction-arithmetic-9-6-4">
+  <static seed="270" source="Contrib/PCC/BasicMath/FractionApplication/FractionAdditionWordProblems20.pg">
+    <statement><p>Gregory and Chris are sharing a pizza. Gregory ate <m>{{\frac{1}{10}}}</m> of the pizza, and Chris ate <m>{{\frac{1}{6}}}</m> of the pizza. How much of the pizza was eaten in total?</p>
+<p>They ate <fillin characters="11" name="AnSwEr0001"/> of the pizza.</p>
+</statement>
+    <answer>
+      <p>
+        <m>{\frac{4}{15}}</m>
+      </p>
+    </answer>
+    <solution><p>This is an addition problem.</p>
+<p><m>\displaystyle{ 
+\begin{aligned}[t]
+   {{\frac{1}{10}}} + {{\frac{1}{6}}} 
+      \amp = \frac{1 \cdot 3}{10 \cdot 3}+\frac{1 \cdot 5}{6 \cdot 5} \\
+      \amp = \frac{3}{30} + \frac{5}{30} \\
+      \amp = \frac{3+5}{30} \\
+      \amp = \frac{8}{30} \\
+      \amp = {{\frac{4}{15}}}
+\end{aligned}
+    }</m></p>
+<p>They ate <m>{{\frac{4}{15}}}</m> of the pizza.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicMath/FractionApplication/FractionAdditionWordProblems20.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicMath/FractionApplication/FractionAdditionWordProblems20.pg"/>
+</webwork-reps>

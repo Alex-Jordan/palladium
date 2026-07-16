@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-16T16:27:29-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,7 +27,8 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "contextCurrency.pl",
+  "PCCmacros.pl",
+  "parserLinearRelation.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -43,18 +41,19 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("Currency")->currency->addSymbol("dollars","dollar");
-Context()->flags->set(trimTrailingZeros=>1);
-$cost = Currency(63.75);
+Context("LinearRelation")->variables->are(x => 'Real');
+$equation = LinearRelation("x - 0.2x = 51");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-A shirt is on sale for [`20\%`] off. The sale price is [`\$51.00\text{.}`] What was the shirt's original price?
+A shirt is on sale for [`20\%`] off. The sale price is [`\$51.00\text{.}`] Write an equation based on this scenario where the solution represents the shirt's original price.
 
-[_]{$cost}{16}
+[@KeyboardInstructions('Use [|x|]* for the variable.')@]**
+
+[_]{$equation}{25}
 
 END_PGML
 
@@ -71,18 +70,7 @@ Let [`x`] represent the original price of the shirt. Since [`20\%`] is removed t
 \end{aligned}
 ```]
 
-Now we have the skills to solve this equation.
-
-[```\newcommand{\divideunder}[2]{\frac{#1}{{\highlight{{#2}}}}}\newcommand{\amp}{&}
-\begin{aligned}
-x - 0.20x \amp= 51\\
-0.80x \amp= 51\\
-\divideunder{0.80x}{0.80}\amp=\divideunder{51}{0.80}\\
-x\amp=63.75
-\end{aligned}
-```]
-
-The shirt's original price was [`\$63.75\text{.}`]
+This equation's solution will be the original price of the shirt, but for now we do not need to solve the equation.
 
 END_PGML_SOLUTION
 

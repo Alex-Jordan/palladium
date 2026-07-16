@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-slope-18-2-14" assembly-id="section-slope-18-2-14">
+  <static seed="440" source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/FindPSEquationApplication40.pg">
+    <statement><p>Scientists are conducting an experiment with a gas in a sealed container. The mass of the gas is measured, and the scientists realize that the gas is leaking over time in a linear way.</p>
+<p>Six minutes since the experiment started, the gas had a mass of <m>94.3</m> grams.</p>
+<p>Thirteen minutes since the experiment started, the gas had a mass of <m>78.2</m> grams.</p>
+<p>Let <m>x</m> be the number of minutes that have passed since the experiment started, and let <m>y</m> be the mass of the gas in grams at that moment. Use a linear equation to model the weight of the gas over time.
+<ol label="a.">
+<li>
+<p>A point-slope equation to model this is <fillin characters="14" name="AnSwEr0001"/>.</p>
+</li>
+<li>
+<p><m>31</m> minutes after the experiment started, there would be <fillin characters="11" name="AnSwEr0002"/> grams of gas left.</p>
+</li>
+<li>
+<p>If a linear model continues to be accurate, <fillin characters="11" name="AnSwEr0003"/> minutes since the experiment started, all gas in the container will be gone.</p>
+</li>
+</ol></p>
+</statement>
+    <answer>
+      <p>
+        <m>y = -2.3\mathopen{}\left(x-6\right)+94.3\hbox{ or }y = -2.3\mathopen{}\left(x-13\right)+78.2</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>36.8</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>47</m>
+      </p>
+    </answer>
+    <solution><p><ol label="a.">
+<li>
+<p>A line<rsq/>s equation in point-slope form looks like <m>y=m(x-x_0)+y_0</m>, where <m>m</m> is the slope, and <m>(x_0,y_0)</m> is some point we know to be on the line. We first need to find the line<rsq/>s slope. To find the slope, we need two points on the line. We have been given that <m>(6,94.3)</m> and <m>(13,78.2)</m> are points on the linear model, so we can use the slope formula:</p>
+<p><m>\displaystyle{ \text{slope}=\frac{y_{2}-y_{1}}{x_{2}-x_{1}} }</m></p>
+<p>First, we mark which number corresponds to which variable in the formula:</p>
+<p><m>\displaystyle{ (6,94.3) \longrightarrow (x_{1},y_{1}) }</m></p>
+<p><m>\displaystyle{ (13,78.2) \longrightarrow (x_{2},y_{2}) }</m></p>
+<p>Now we substitute these numbers into the corresponding variables in the slope formula:</p>
+<p><m>\displaystyle{ \begin{aligned}\text{slope}\amp =\frac{y_{2}-y_{1}}{x_{2}-x_{1}}\\\amp =\frac{78.2-94.3}{13-6}\\\amp =\frac{-16.1}{7}\\\amp =-2.3 \end{aligned}}</m></p>
+<p>This line<rsq/>s slope is <m>-2.3</m>. This implies that the gas is leaking with a rate of <m>2.3</m> grams per minute.</p>
+<p>So now we have that <m>y=-2.3(x-x_0)+y_0</m>. We can either use <m>(x_0,y_0)=(6,94.3)</m> or <m>(x_0,y_0)=(13,78.2)</m> to get <m>{y = -2.3\mathopen{}\left(x-6\right)+94.3\hbox{ or }y = -2.3\mathopen{}\left(x-13\right)+78.2}</m>.</p>
+</li>
+<li>
+<p>After <m>31</m> minutes, we can find the mass of the remaining gas if we substitute <m>31</m> in for <m>x</m> in the equation <m>y=-2.3(x-6)+94.3</m>, and we have:</p>
+<p><m>\displaystyle{\begin{aligned}
+  y \amp = -2.3(31-6) +94.3 \\
+  y \amp = 36.8
+\end{aligned}
+}</m></p>
+<p>So after <m>31</m> minutes, there are <m>36.8</m> grams of gas remaining.</p>
+</li>
+<li>
+<p>To find when the gas will be all gone, we need to find when there are  <m>0</m> grams of gas left.  We can substitute <m>0</m> in for <m>y</m> in the equation <m>y=-2.3(x-6)+94.3</m>, and we have:</p>
+<p><m>\displaystyle{\begin{aligned}
+  y \amp = -2.3(x-6) +94.3 \\
+  0 \amp = -2.3(x-6) +94.3 \\
+  -94.3 \amp = -2.3(x-6)\\
+  \frac{-94.3}{-2.3} \amp = x - 6\\
+  41 \amp = x - 6\\
+  47 \amp = x\\
+  47 \amp = x
+\end{aligned}
+}</m></p>
+<p>So after <m>47</m> minutes, the gas will be all gone.</p>
+</li>
+</ol></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/LinearEquationApplications/FindPSEquationApplication40.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/FindPSEquationApplication40.pg"/>
+</webwork-reps>

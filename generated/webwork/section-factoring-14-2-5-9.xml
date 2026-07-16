@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-14-2-5-9" assembly-id="section-factoring-14-2-5-9">
+  <static seed="181" source="Contrib/PCC/BasicAlgebra/Factoring/factoring452.pg">
+    <statement><p>Factor the given polynomial.</p>
+<p><m>{121x^{2}r^{2}-36}=</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left(11xr+6\right)\mathopen{}\left(11xr-6\right)</m>
+      </p>
+    </answer>
+    <solution><p>We will factor <m>121x^{2}r^{2}-36</m> where <m>a=121</m>, <m>b=0</m>, and <m>c=-36</m>.</p>
+<p><alert>Difference of Squares Formula: </alert>The formula for a difference of squares is <me>a^2-b^2 = (a+b)(a-b)</me> Note that the polynomial <m>121x^{2}r^{2}-36</m> matches the formula's right side, and we have: <me>\begin{aligned}[t]121x^{2}r^{2}-36\amp =\left(11xr\right)^2-\left(6\right)^2\newline \amp =\left(11xr+6\right)\mathopen{}\left(11xr-6\right)\end{aligned}</me></p>
+<p><alert>AC Method: </alert>In this method, we first calculate the product of <m>a</m> and <m>c</m> in <m>ax^2+bx+c</m>. For this problem, we have <m>(121) \cdot (-36) = -4356</m>.</p>
+<p>The number <m>-4356</m> can be factored into the product of two numbers in the following ways: <me>\begin{array}{lll}1(-4356)\amp -1(4356)\amp 2(-2178)\amp -2(2178)\newline3(-1452)\amp -3(1452)\amp 4(-1089)\amp -4(1089)\newline6(-726)\amp -6(726)\amp 9(-484)\amp -9(484)\newline11(-396)\amp -11(396)\amp 12(-363)\amp -12(363)\newline18(-242)\amp -18(242)\amp 22(-198)\amp -22(198)\newline33(-132)\amp -33(132)\amp 36(-121)\amp -36(121)\newline44(-99)\amp -44(99)\amp 66(-66)\amp -66(66)\newline\end{array}</me> Looking at the corresponding sums, we want a sum of <m>0</m>, and this sum happens with <m>(-66)+66=0</m> So we write <me>\begin{aligned}[t]121x^{2}r^{2}-36\amp =121x^{2}r^{2}-66xr+66xr-36\newline \amp =11xr\mathopen{}\left(11xr-6\right)+6\mathopen{}\left(11xr-6\right)\newline \amp =\left(11xr+6\right)\mathopen{}\left(11xr-6\right)\end{aligned}</me><alert>Generic Rectangles Method: </alert>First, we set up generic rectangles by putting the first term and third term in <m>121x^{2}r^{2}-36</m> into the top left and bottom right rectangles:</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-factoring-14-2-5-9-image-1.png" width="66%"/>
+<p>The first term's coefficient, <m>121</m>, can be factored into the product of two numbers (where the first factor is positive) in the following ways: <me>\begin{array}{llll}1(121)\amp 11(11)\amp \end{array}</me></p>
+<p>The third term, <m>-36</m>, can be factored into the product of two numbers in the following ways: <me>\begin{array}{llll}1(-36)\amp -1(36)\amp 2(-18)\amp -2(18)\newline3(-12)\amp -3(12)\amp 4(-9)\amp -4(9)\newline6(-6)\amp -6(6)\amp \end{array}</me></p>
+<p>We put each pair into the corresponding places next to those generic rectangles, and try to match the area of those rectangles with <m>121x^{2}r^{2}-36</m> by guess-and-check. The following generic rectangles show the solution:</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-factoring-14-2-5-9-image-2.png" width="66%"/>
+<p>Dimensions of those generic rectangles in the diagram give us the solution: <me>\begin{aligned}[t]121x^{2}r^{2}-36\amp =\left(11xr+6\right)\mathopen{}\left(11xr-6\right)\end{aligned}</me></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/Factoring/factoring452.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/Factoring/factoring452.pg"/>
+</webwork-reps>

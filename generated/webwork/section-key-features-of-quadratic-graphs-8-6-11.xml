@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-key-features-of-quadratic-graphs-8-6-11" assembly-id="section-key-features-of-quadratic-graphs-8-6-11">
+  <static seed="1017" source="Contrib/PCC/BasicAlgebra/QuadraticApplications/MaxMinApplication40.pg">
+    <statement><p>You will build two identical rectangular enclosures next to a each other, sharing a side.
+You have a total of <m>372</m> feet of fence to use. Find the dimensions of each pen such that you can enclose the maximum possible area.
+One approach is to let <m>x</m> represent the length of fencing that the two pens share, and write a formula for the total area of the enclosures.
+Then find its vertex and interpret it.</p>
+<p>The length of each pen (along the wall that they share) should be <fillin characters="12" name="AnSwEr0001"/>, the width should be <fillin characters="12" name="AnSwEr0002"/>, and the maximum possible area of each pen is <fillin characters="12" name="AnSwEr0003"/>.</p>
+</statement>
+    <answer>
+      <p>
+        <m>62\ {\rm ft}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>46.5\ {\rm ft}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>2883\ {\rm ft^{2}}</m>
+      </p>
+    </answer>
+    <solution><p>Drawing a diagram should help us write an expression for the area of the pen.</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-key-features-of-quadratic-graphs-8-6-11-image-1.png" width="66%"/>
+<p>Let the width be <m>w</m> ft, and the length be <m>\ell</m> ft. Since there is a total of 372 feet of fence, we have:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+4w+3\ell \amp = 372 \\
+4w    \amp = 372-3\ell \\
+\frac{4w}{4} \amp = \frac{372}{4}-\frac{3\ell}{4} \\
+w     \amp = 93-0.75\ell
+\end{aligned}
+}</m></p>
+<p>If each pen<rsq/>s length is <m>\ell</m> feet, then its width is <m>93-0.75\ell</m> feet. Now we can write an expression for the area of each pen:</p>
+<p><m>\displaystyle{\begin{align}
+\text{area}\amp =(93-0.75\ell)\ell\\
+\amp =-0.75\ell^{2}+93 \ell
+\end{align}
+}</m></p>
+<p>Identify that <m>a=-0.75</m>, <m>b=93</m>, <m>c=0</m>. The maximum area happens at the parabola<rsq/>s vertex.</p>
+<p>To find the vertex, we first find the parabola<rsq/>s axis of symmetry by using the axis formula:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+  h \amp = -\frac{b}{2a} \\
+  h \amp = -\frac{93}{2(-0.75)} \\
+  h \amp =  62
+\end{aligned}
+}</m></p>
+<p>Next, we substitute <m>\ell= 62</m> into the expression, and we have:</p>
+<p><m>\displaystyle{\begin{aligned}[t] 
+ -0.75(62)^2+93(62) \amp =  {2883} 
+\end{aligned}
+}</m></p>
+<p>The parabola<rsq/>s vertex is at <m>{\left(62,2883\right)}</m>. This implies that each pen<rsq/>s maximum area is <m>{2883}</m> square feet.
+This happens when the length is <m>{62\ {\rm ft}}</m> feet, and the width is <m>93 - 0.75 \cdot 62</m>, or <m>46.5</m>, feet.</p>
+<p>So when the length is <m>{62\ {\rm ft}}</m> and the width is <m>{46.5\ {\rm ft}}</m>, each pen has a maximum area of <m>{2883\ {\rm ft^{2}}}</m>.</p>
+<p>The following graph illustrates our findings.</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-key-features-of-quadratic-graphs-8-6-11-image-2.png" width="40%"/>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/QuadraticApplications/MaxMinApplication40.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/QuadraticApplications/MaxMinApplication40.pg"/>
+</webwork-reps>

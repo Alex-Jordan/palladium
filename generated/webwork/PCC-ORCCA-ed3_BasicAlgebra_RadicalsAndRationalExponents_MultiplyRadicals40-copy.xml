@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_MultiplyRadicals40-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_MultiplyRadicals40-copy">
+  <static seed="1835">
+    <statement><p><m>\displaystyle{ {\sqrt{2}} \cdot {8\sqrt{8}} }</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>32</m>
+      </p>
+    </answer>
+    <solution><p>We will use the multiplication property of radicals:</p>
+<p><m>\displaystyle{ \sqrt{a} \cdot \sqrt{b} = \sqrt{ab} }</m></p>
+<p>We have:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   {\sqrt{2}} \cdot {8\sqrt{8}} 
+     \amp = 8 \sqrt{2} \cdot \sqrt{8} \\
+     \amp = 8 \sqrt{2 \cdot 8} \\
+     \amp = 8 \sqrt{16} \\
+     \amp = 8 \cdot 4 \\
+     \amp = {32}
+\end{aligned}
+    }</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/4_2_10_44.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Carl Yao
+# Portland Community College
+#
+# Multiply two radicals. Answer is an integer.
+#
+# Last edited: Carl Yao 8/31/13,
+#
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Basic Algebra')
+## DBsection('Exponents and Radicals')
+## KEYWORDS('simplify','radical','square root','multiply')
+## DBCCSS('8.EE')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Alex Jordan, Carl Yao, Chris Hughes')
+## Institution('PCC')
+
+ 
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "contextFraction.pl",
+  "contextLimitedRadical.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+
+######################################
+TEXT(beginproblem());
+Context("Numeric");
+
+$a = list_random(4,6,8,9,10);
+$a2 = $a**2;
+
+do {$rad1 = random(2,int(sqrt($a2)),1);} until (($a2%$rad1==0) && ($rad1!=$a));
+$rad2 = $a2/$rad1;
+
+$coef2 = random(2,10,1);
+$ans = $coef2*$a;
+
+Context("LimitedRadical");
+$sqrt1 = Formula("sqrt($rad1)");
+$sqrt2 = Formula("$coef2*sqrt($rad2)");
+$ans = Formula("$ans");
+
+##########################################
+
+BEGIN_PGML
+
+[@ PTX_exercisegroup_introduction('Simplify the expression.') @]
+
+[@KeyboardInstructions("Use [|sqrt()|]* for the square root symbol. For example: [`\\sqrt{2}=`][|sqrt(2)|]*.")@]**
+
+    [`` [$sqrt1] \cdot [$sqrt2] ``]
+
+    [_]{$ans}{16}
+
+END_PGML
+
+############################################################
+
+BEGIN_PGML_SOLUTION
+
+We will use the multiplication property of radicals:
+
+    [`` \sqrt{a} \cdot \sqrt{b} = \sqrt{ab} ``]
+
+We have:
+
+    [``
+\begin{aligned}[t]
+   [$sqrt1] \cdot [$sqrt2] 
+     &= [$coef2] \sqrt{[$rad1]} \cdot \sqrt{[$rad2]} \\
+     &= [$coef2] \sqrt{[$rad1] \cdot [$rad2]} \\
+     &= [$coef2] \sqrt{[$a2]} \\
+     &= [$coef2] \cdot [$a] \\
+     &= [$ans]
+\end{aligned}
+    ``]
+
+
+END_PGML_SOLUTION
+
+######################################
+
+
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-key-features-of-quadratic-graphs-8-6-6" assembly-id="section-key-features-of-quadratic-graphs-8-6-6">
+  <static seed="1012" source="Contrib/PCC/BasicAlgebra/QuadraticApplications/MaxMinApplication30.pg">
+    <statement><p>You will build a rectangular sheep enclosure next to a river.
+There is no need to build a fence along the river, so you only need to build on three sides.
+You have a total of <m>400</m> feet of fence to use. Find the dimensions of the pen such that you can enclose the maximum possible area.
+One approach is to let <m>x</m> represent the length of fencing that runs perpendicular to the river, and write an expression for the area of the enclosure.
+Then find its vertex and interpret it.</p>
+<p>The length of the pen (parallel to the river) should be <fillin characters="12" name="AnSwEr0001"/>, the width (perpendicular to the river) should be <fillin characters="12" name="AnSwEr0002"/>, and the maximum possible area is <fillin characters="12" name="AnSwEr0003"/>.</p>
+</statement>
+    <answer>
+      <p>
+        <m>200\ {\rm ft}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>100\ {\rm ft}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>20000\ {\rm ft^{2}}</m>
+      </p>
+    </answer>
+    <solution><p>Drawing a diagram should help us write an expression for the area of the pen.</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-key-features-of-quadratic-graphs-8-6-6-image-1.png" width="66%"/>
+<p>Let the width be <m>w</m> ft, and the length be <m>\ell</m> ft. Since there are only three sides of the fence, we have:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+\ell+2w \amp = 400 \\
+\ell    \amp = 400-2w
+\end{aligned}
+}</m></p>
+<p>If the pen<rsq/>s width is <m>w</m> feet, then its length is <m>400-2w</m> feet.
+Now we can write an expression for the area of the pen:</p>
+<p><m>\displaystyle{\begin{align}
+\text{area}\amp = (400-2w)w\\
+\amp = -2w^{2}+400 w
+\end{align}}</m></p>
+<p>Identify that <m>a=-2</m>, <m>b=400</m>, and <m>c=0</m>. The maximum area happens at the parabola<rsq/>s vertex.</p>
+<p>To find the vertex, we first find the parabola<rsq/>s axis of symmetry by using the axis formula:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+  h \amp = -\frac{b}{2a} \\
+  h \amp = -\frac{400}{2(-2)} \\
+  h \amp =  100
+\end{aligned}
+}</m></p>
+<p>Next, we substitute <m>w= 100</m> into the expression, and we have:</p>
+<p><m>\displaystyle{\begin{aligned}[t] 
+  {-2w^{2}+400w} \amp =  -2(100)^2+400(100)  \\
+  \amp =  {20000} 
+\end{aligned}
+}</m></p>
+<p>The parabola<rsq/>s vertex is at <m>{\left(100,20000\right)}</m>.
+This implies that the pen<rsq/>s maximum area is <m>{20000}</m> square feet.
+This happens when the width is <m>100</m> feet, and the length is <m>400 - 2(100)</m>, or <m>200</m>, feet.</p>
+<p>So when the length is <m>200</m> feet and the width is <m>100</m> feet, the pen has a maximum possible area of <m>{20000}</m> square feet.</p>
+<p>The following graph illustrates our findings.</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-key-features-of-quadratic-graphs-8-6-6-image-2.png" width="40%"/>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/QuadraticApplications/MaxMinApplication30.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/QuadraticApplications/MaxMinApplication30.pg"/>
+</webwork-reps>

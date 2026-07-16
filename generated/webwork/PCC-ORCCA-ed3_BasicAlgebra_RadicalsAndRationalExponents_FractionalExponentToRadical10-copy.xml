@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_FractionalExponentToRadical10-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_FractionalExponentToRadical10-copy">
+  <static seed="2001">
+    <statement><p><m>m^{\frac{3}{8}}</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\sqrt[8]{m^{3}}</m>
+      </p>
+    </answer>
+    <solution><p>Fraction exponents can be converted into radicals this way:</p>
+<p><m>\displaystyle{ x^{\frac{m}{n}} = (x^{m})^{\frac{1}{n}} =  \sqrt[n]{x^{m}} }</m></p>
+<p>For this problem, we have:</p>
+<p><m>\displaystyle{ m^{\frac{3}{8}} = (m^3)^{\frac{1}{8}} = \sqrt[8]{m^3} }</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/4_4_4_54.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Carl Yao
+# Portland Community College
+#
+# Convert fractional exponent to radical.
+#
+# Last edited: Carl Yao 7/26/16
+#
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Basic Algebra')
+## DBsection('Exponents and Radicals')
+## KEYWORDS('simplify','radical','exponent')
+## DBCCSS('8.EE')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Alex Jordan, Carl Yao, Chris Hughes')
+## Institution('PCC')
+
+ 
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "contextForm.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+
+######################################
+
+TEXT(beginproblem());
+Context("Form");
+$var = list_random('x','y','z','t','r','m','n','a','b','c');
+Context()->variables->are($var=>'Real');
+Context()->variables->set($var=>{limits=>[1,10]});
+$showPartialCorrectAnswers = 1;
+
+do {
+   $a = random(2,5,1);
+   $b = random($a+1,8,1);
+} until (gcd($a,$b)==1);
+
+
+$answer = Formula("root($b,$var^$a)");
+
+#####################################################
+
+BEGIN_PGML
+
+[@ PTX_exercisegroup_introduction('Convert the expression to use radical notation.') @]
+
+[@KeyboardInstructions("To enter [`\\sqrt[n]{x}`], type [|root(n,x)|]*.");@]**
+
+[` [$var]^{\frac{[$a]}{[$b]}} `]
+
+[_]{$answer}{16}
+
+END_PGML
+
+############################################################
+
+BEGIN_PGML_SOLUTION
+
+Fraction exponents can be converted into radicals this way:
+
+    [`` x^{\frac{m}{n}} = (x^{m})^{\frac{1}{n}} =  \sqrt[n]{x^{m}} ``]
+
+For this problem, we have:
+
+    [`` [$var]^{\frac{[$a]}{[$b]}} = ([$var]^[$a])^{\frac{1}{[$b]}} = \sqrt[[$b]]{[$var]^[$a]} ``]
+
+
+END_PGML_SOLUTION
+
+######################################
+
+
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

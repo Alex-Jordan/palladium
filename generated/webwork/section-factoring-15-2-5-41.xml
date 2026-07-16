@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-15-2-5-41" assembly-id="section-factoring-15-2-5-41">
+  <static seed="213" source="Contrib/PCC/BasicAlgebra/Factoring/factoring555.pg">
+    <statement><p>Factor the given polynomial.</p>
+<p><m>{64r^{2}-48rx+9x^{2}}=</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left(8r-3x\right)\mathopen{}\left(8r-3x\right)</m>
+      </p>
+    </answer>
+    <solution><p>We will factor <m>64r^{2}-48rx+9x^{2}</m> where <m>a=64</m>, <m>b=-48</m>, and <m>c=9</m>.</p>
+<p><alert>Perfect Square Formula: </alert>The formula for perfect square trinomials is <me>(a \pm b)^2=a^2 \pm 2ab + b^2</me>. Note that the polynomial <m>64r^{2}-48rx+9x^{2}</m> matches the formula's right side, and we have: <me>\begin{aligned}[t]64r^{2}-48rx+9x^{2}\amp =\left(8r\right)^2-2\left(8r\right)\left(3x\right)+\left(3x\right)^2\newline \amp =\left(8r-3x\right)\mathopen{}\left(8r-3x\right)\newline \amp =\left(8r-3x\right)^{2}\end{aligned}</me></p>
+<p><alert>AC Method: </alert>In this method, we first calculate the product of <m>a</m> and <m>c</m> in <m>ax^2+bx+c</m>. For this problem, we have <m>(64) \cdot (9) = 576</m>.</p>
+<p>The number <m>576</m> can be factored into the product of two numbers in the following ways: <me>\begin{array}{lll}1(576)\amp -1(-576)\amp 2(288)\amp -2(-288)\newline3(192)\amp -3(-192)\amp 4(144)\amp -4(-144)\newline6(96)\amp -6(-96)\amp 8(72)\amp -8(-72)\newline9(64)\amp -9(-64)\amp 12(48)\amp -12(-48)\newline16(36)\amp -16(-36)\amp 18(32)\amp -18(-32)\newline24(24)\amp -24(-24)\amp \end{array}</me> Looking at the corresponding sums, we want a sum of <m>-48</m>, and this sum happens with <m>(-24)+(-24)=-48</m> So we write <me>\begin{aligned}[t]64r^{2}-48rx+9x^{2}\amp =64r^{2}-24rx-24rx+9x^{2}\newline \amp =8r\mathopen{}\left(8r-3x\right)-3x\mathopen{}\left(8r-3x\right)\newline \amp =\left(8r-3x\right)\mathopen{}\left(8r-3x\right)\newline \amp =\left(8r-3x\right)^{2}\end{aligned}</me><alert>Generic Rectangles Method: </alert>First, we set up generic rectangles by putting the first term and third term in <m>64r^{2}-48rx+9x^{2}</m> into the top left and bottom right rectangles:</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-factoring-15-2-5-41-image-1.png" width="66%"/>
+<p>The first term's coefficient, <m>64</m>, can be factored into the product of two numbers (where the first factor is positive) in the following ways: <me>\begin{array}{llll}1(64)\amp 2(32)\amp 4(16)\amp 8(8)\newline\end{array}</me></p>
+<p>The third term's coefficient, <m>9</m>, can be factored into the product of two numbers in the following ways: <me>\begin{array}{llll}1(9)\amp -1(-9)\amp 3(3)\amp -3(-3)\newline\end{array}</me></p>
+<p>We put each pair into the corresponding places next to those generic rectangles, and try to match the area of those rectangles with <m>64r^{2}-48rx+9x^{2}</m> by guess-and-check. The following generic rectangles show the solution:</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-factoring-15-2-5-41-image-2.png" width="66%"/>
+<p>Dimensions of those generic rectangles in the diagram give us the solution: <me>\begin{aligned}[t]64r^{2}-48rx+9x^{2}\amp =\left(8r-3x\right)\mathopen{}\left(8r-3x\right)\newline \amp =\left(8r-3x\right)^{2}\end{aligned}</me></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/Factoring/factoring555.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/Factoring/factoring555.pg"/>
+</webwork-reps>

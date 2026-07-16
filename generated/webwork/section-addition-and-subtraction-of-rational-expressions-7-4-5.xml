@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-addition-and-subtraction-of-rational-expressions-7-4-5" assembly-id="section-addition-and-subtraction-of-rational-expressions-7-4-5">
+  <static seed="1418" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions50.pg">
+    <statement><p>Add or subtract the rational expressions to a single rational expression and then simplify.</p>
+<p><m>\displaystyle{{\frac{3x}{10t}-\frac{4x}{5t}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>-\frac{x}{2t}</m>
+      </p>
+    </answer>
+    <solution><p><m>\displaystyle{\begin{aligned}
+   {\frac{3x}{10t}-\frac{4x}{5t}} 
+      \amp = {\frac{3x}{10t}} -\frac{4 x \cdot 2}{5 t \cdot 2} \\
+      \amp = {\frac{3x}{10t}} -\frac{8 x}{10 t} \\
+      \amp = \frac{{3x-8x}}{10t} \\
+      \amp = \frac{{-5x}}{10t} \\
+      \amp = {-\frac{x}{2t}}
+\end{aligned}
+    }</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions50.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions50.pg"/>
+</webwork-reps>

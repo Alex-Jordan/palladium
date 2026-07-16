@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-8-5" assembly-id="section-multiplication-and-division-of-rational-expressions-7-8-5">
+  <static seed="1320" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions70.pg">
+    <statement><p>Simplify this expression, and if applicable, write the restricted domain.</p>
+<p><m>\displaystyle{{\frac{8x-32}{-28-35x-7x^{2}}} \cdot {\frac{x^{2}+2x+1}{4x^{2}-16x}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>-\frac{2\mathopen{}\left(x+1\right)}{7x\mathopen{}\left(x+4\right)}, x\ne 4\hbox{ and }x\ne -1</m>
+      </p>
+    </answer>
+    <solution><p><m>\displaystyle{\begin{aligned}
+   {\frac{8x-32}{-28-35x-7x^{2}}} \cdot {\frac{x^{2}+2x+1}{4x^{2}-16x}} 
+      \amp = \frac{{8x-32}}{-7x^2-35x - 28} \cdot {\frac{x^{2}+2x+1}{4x^{2}-16x}} \\
+      \amp = \frac{{8\mathopen{}\left(x-4\right)}}{{-7\mathopen{}\left(x^{2}+5x+4\right)}} \cdot \frac{{\left(x+1\right)^{2}}}{{4x\mathopen{}\left(x-4\right)}} \\
+      \amp = \frac{{8\mathopen{}\left(x-4\right)}}{{-7\mathopen{}\left(x+1\right)\mathopen{}\left(x+4\right)}} \cdot \frac{{\left(x+1\right)^{2}}}{{4x\mathopen{}\left(x-4\right)}} \\
+      \amp = {-\frac{2\mathopen{}\left(x+1\right)}{7x\mathopen{}\left(x+4\right)}, x\ne 4\hbox{ and }x\ne -1}
+\end{aligned}
+    }</m></p>
+<p>Since the factors <m>x-4</m> and <m>x + 1</m> were canceled, the domain condition lost during the simplification is <m>x \ne {4, -1}</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions70.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions70.pg"/>
+</webwork-reps>

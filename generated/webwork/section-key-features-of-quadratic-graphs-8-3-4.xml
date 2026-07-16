@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-key-features-of-quadratic-graphs-8-3-4" assembly-id="section-key-features-of-quadratic-graphs-8-3-4">
+  <static seed="990" source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex60.pg">
+    <statement><p>Find the axis of symmetry and vertex of the quadratic function.</p>
+<p><m>{y}={4-20x-2x^{2}}</m></p>
+<p>Axis of symmetry: <fillin characters="13" name="AnSwEr0001"/></p>
+<p>Vertex: <fillin characters="13" name="AnSwEr0002"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>x = -5</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\left(-5,54\right)</m>
+      </p>
+    </answer>
+    <solution><p>This quadratic function is not in standard form. We need to re-order it into standard form:</p>
+<p><m>\displaystyle{{y}={-2x^{2}-20x+4}}</m></p>
+<p>Now we can identify that:</p>
+<p><m>\displaystyle{ a=-2,b=-20,c=4 }</m></p>
+<p>To find the parabola<rsq/>s axis of symmetry, we use the formula <m>\displaystyle{x=-\frac{b}{2a}}</m></p>
+<p><m>\displaystyle{\begin{aligned}[t]
+  x \amp = -\frac{b}{2a} \\
+   \amp = -\frac{-20}{2(-2)} \\
+   \amp = -5
+\end{aligned}
+    }</m></p>
+<p>This parabola<rsq/>s axis is <m>\displaystyle{x=-5}</m>.</p>
+<p>Next we substitute <m>\displaystyle{x=-5}</m> into <m>\displaystyle{{y}={-2x^{2}-20x+4}}</m>:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   y \amp = -2(-5)^{2} - 20(-5)+4 \\
+    \amp = -2 \cdot 25 + 100 + 4 \\
+    \amp = {54}
+\end{aligned}
+    }</m></p>
+<p>This parabola<rsq/>s vertex is <m>\displaystyle{(-5,{54})}</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex60.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex60.pg"/>
+</webwork-reps>

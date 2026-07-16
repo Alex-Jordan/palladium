@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-14-17" assembly-id="section-solving-rational-equations-10-14-17">
+  <static seed="1638" source="Contrib/PCC/Math95/RatEqApplications/RatEqApplications5.pg">
+    <statement><p>When there is a <m>17.3\ {\textstyle\frac{\rm\mathstrut mi}{\rm\mathstrut hr}}</m> wind, an airplane can fly <m>860\ {\rm mi}</m> with the wind in the same time that it can fly <m>752\ {\rm mi}</m> against the wind. Find the speed of the plane when there is no wind.</p>
+<p>The plane's airspeed is <fillin characters="15" name="AnSwEr0001"/> when there is no wind.</p>
+</statement>
+    <answer>
+      <p>
+        <m>258.219\ {\textstyle\frac{\rm\mathstrut mi}{\rm\mathstrut hr}}</m>
+      </p>
+    </answer>
+    <solution><p>Assume the plane travels at <m>x</m> miles per hour when there is no wind. It<rsq/>s given that the wind speed is <m>17.3</m> miles per hour. Then, the plane flies at <m>x+17.3</m> miles per hour with the wind, and at <m>x-17.3</m> miles per hour against the wind.</p>
+<p>Using the formula <m>\text{time}=\frac{\text{distance}}{\text{speed}}</m>, we know the plane can travel <m>860</m> miles with the wind in <m>\frac{860}{x+17.3}</m> hours; and it can travel <m>752</m> miles against the wind in <m>\frac{752}{x-17.3}</m> hours.</p>
+<p>It<rsq/>s given that it takes the same time in both trips, so we can write an equation and solve it:</p>
+<p><m>\displaystyle{\begin{aligned}
+  \amp \frac{860}{x+17.3} = \frac{752}{x-17.3} \\
+  \amp \frac{860}{x+17.3} \cdot {\left(x+17.3\right)\mathopen{}\left(x-17.3\right)} = \frac{752}{x-17.3} \cdot {\left(x+17.3\right)\mathopen{}\left(x-17.3\right)} \\
+  \amp 860(x-17.3) = 752(x+17.3) \\
+  \amp 860x-14878 = 752x+13009.6 \\
+  \amp 108x=27887.6 \\
+  \amp x \approx {258.219\ {\textstyle\frac{\rm\mathstrut mi}{\rm\mathstrut hr}}}
+\end{aligned}
+    }</m></p>
+<p>THe plane<rsq/>s airspeed is <m>{258.219\ {\textstyle\frac{\rm\mathstrut mi}{\rm\mathstrut hr}}}</m> when there is no wind.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/Math95/RatEqApplications/RatEqApplications5.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/Math95/RatEqApplications/RatEqApplications5.pg"/>
+</webwork-reps>

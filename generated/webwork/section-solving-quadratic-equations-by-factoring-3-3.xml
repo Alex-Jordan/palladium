@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-quadratic-equations-by-factoring-3-3" assembly-id="section-solving-quadratic-equations-by-factoring-3-3">
+  <static seed="1">
+    <statement><p>Identify which of the items are quadratic equations.
+<ol label="a.">
+<li>
+<p>The equation <m>2x^2+5x=7</m> <ul form="popup" name="AnSwEr0001"><li>
+<p>?</p>
+</li><li>
+<p>is</p>
+</li><li>
+<p>is not</p>
+</li></ul> a quadratic equation.</p>
+</li>
+<li>
+<p>The equation <m>5-2x=3</m> <ul form="popup" name="AnSwEr0002"><li>
+<p>?</p>
+</li><li>
+<p>is</p>
+</li><li>
+<p>is not</p>
+</li></ul> a quadratic equation.</p>
+</li>
+<li>
+<p>The equation <m>15-x^3=3x^2+9x</m> <ul form="popup" name="AnSwEr0003"><li>
+<p>?</p>
+</li><li>
+<p>is</p>
+</li><li>
+<p>is not</p>
+</li></ul> a quadratic equation.</p>
+</li>
+<li>
+<p>The equation <m>(x+3)(x-4)=0</m> <ul form="popup" name="AnSwEr0004"><li>
+<p>?</p>
+</li><li>
+<p>is</p>
+</li><li>
+<p>is not</p>
+</li></ul> a quadratic equation.</p>
+</li>
+<li>
+<p>The equation <m>x(x+1)(x-1)=0</m> <ul form="popup" name="AnSwEr0005"><li>
+<p>?</p>
+</li><li>
+<p>is</p>
+</li><li>
+<p>is not</p>
+</li></ul> a quadratic equation.</p>
+</li>
+<li>
+<p>The expression <m>x^2-5x+6</m> <ul form="popup" name="AnSwEr0006"><li>
+<p>?</p>
+</li><li>
+<p>is</p>
+</li><li>
+<p>is not</p>
+</li></ul> a quadratic equation.</p>
+</li>
+<li>
+<p>The equation <m>(2x-3)(x+5)=12</m> <ul form="popup" name="AnSwEr0007"><li>
+<p>?</p>
+</li><li>
+<p>is</p>
+</li><li>
+<p>is not</p>
+</li></ul> a quadratic equation.</p>
+</li>
+</ol></p>
+</statement>
+    <answer>
+      <p>
+        <m>\text{is}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\text{is not}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\text{is not}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\text{is}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\text{is not}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\text{is not}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\text{is}</m>
+      </p>
+    </answer>
+    <solution><p><ol label="a.">
+<li>
+<p>The equation <m>2x^2+5x=7</m> <em>is</em> a quadratic equation. To write it in standard form, simply subtract <m>7</m> from both sides.</p>
+</li>
+<li>
+<p>The equation <m>5-2x=3</m> <em>is not</em> quadratic. It is a linear equation.</p>
+</li>
+<li>
+<p>The equation <m>15+x^3=3x^2+9x</m> <em>is not</em> a quadratic equation because of the <m>x^3</m> term.</p>
+</li>
+<li>
+<p>The equation <m>(x+3)(x-4)=0</m> <em>is</em> a quadratic equation. If we expand the left-hand side of the equation, we would get something in standard form.</p>
+</li>
+<li>
+<p>The equation <m>x(x+1)(x-1)=0</m> <em>is not</em> a quadratic equation. If we expanded the left-hand side of the equation, we would have an expression with an <m>x^3</m> term, which automatically makes it not quadratic.</p>
+</li>
+<li>
+<p>The expression <m>x^2-5x+6</m> <em>is not</em> a quadratic equation; it<rsq/>s not an <em>equation</em> at all. Instead, this is a quadratic <em>expression</em>.</p>
+</li>
+<li>
+<p>The equation <m>(2x-3)(x+5)=12</m> <em>is</em> a quadratic equation. Multiplying out the left-hand side, and subtracting <m>12</m> form both sides, we would have a quadratic equation in standard form.</p>
+</li>
+</ol></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/1_1_2.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.2)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserPopUp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$yes=PopUp(['?','is', 'is not'],1);
+$no=PopUp(['?','is', 'is not'],2);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Identify which of the items are quadratic equations.
+a.  The equation [`2x^2+5x=7`] [_]{$yes}{5} a quadratic equation.
+
+a.  The equation [`5-2x=3`] [_]{$no}{5} a quadratic equation.
+
+a.  The equation [`15-x^3=3x^2+9x`] [_]{$no}{5} a quadratic equation.
+
+a.  The equation [`(x+3)(x-4)=0`] [_]{$yes}{5} a quadratic equation.
+
+a.  The equation [`x(x+1)(x-1)=0`] [_]{$no}{5} a quadratic equation.
+
+a.  The expression [`x^2-5x+6`] [_]{$no}{5} a quadratic equation.
+
+a.  The equation [`(2x-3)(x+5)=12`] [_]{$yes}{5} a quadratic equation.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  The equation [`2x^2+5x=7`] _is_ a quadratic equation. To write it in standard form, simply subtract [`7`] from both sides.
+
+a.  The equation [`5-2x=3`] _is not_ quadratic. It is a linear equation.
+
+a.  The equation [`15+x^3=3x^2+9x`] _is not_ a quadratic equation because of the [`x^3`] term.
+
+a.  The equation [`(x+3)(x-4)=0`] _is_ a quadratic equation. If we expand the left-hand side of the equation, we would get something in standard form.
+
+a.  The equation [`x(x+1)(x-1)=0`] _is not_ a quadratic equation. If we expanded the left-hand side of the equation, we would have an expression with an [`x^3`] term, which automatically makes it not quadratic.
+
+a.  The expression [`x^2-5x+6`] _is not_ a quadratic equation; it's not an _equation_ at all. Instead, this is a quadratic _expression_.
+
+a.  The equation [`(2x-3)(x+5)=12`] _is_ a quadratic equation. Multiplying out the left-hand side, and subtracting [`12`] form both sides, we would have a quadratic equation in standard form.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

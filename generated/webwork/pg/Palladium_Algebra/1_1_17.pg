@@ -1,0 +1,84 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.17)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "parserImplicitEquation.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("ImplicitEquation")->variables->are(q => 'Real');
+Context()->flags->set(reduceConstants => 0);
+$answer = ImplicitEquation("5/160 = q/60");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Infant Tylenol contains 160 mg of acetaminophen in each 5 mL of the liquid medication. If Bao's baby is prescribed 60 mg of acetaminophen, set up an equation to find how many milliliters of the liquid medication he should give the baby.
+
+[@KeyboardInstructions('Use [|q|]* for the quantity of liquid medication to give.')@]**
+
+[_]{$answer}{16}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Assume Bao should give [`q`] milliliters of liquid medicine, so we can set up the following proportion:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+\frac{\text{amount of liquid medicine in mL}}{\text{amount of acetaminophen in mg}}\amp=\frac{\text{amount of liquid medicine in mL}}{\text{amount of acetaminophen in mg}}\\
+\frac{5\,\text{mL}}{160\,\text{mg}}\amp=\frac{q\,\text{mL}}{60\,\text{mg}}\\
+\frac{5}{160}\amp=\frac{q}{60}
+\end{aligned}
+```]
+
+For now, we are just setting up this equation, and not trying to solve it.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

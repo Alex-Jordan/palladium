@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-subtract-fractions-rel-prime-denoms-some-reduction" assembly-id="subtract-fractions-rel-prime-denoms-some-reduction">
+  <static seed="68" failure="compile">
+    <statement>
+      <p>PTX:ERROR: WeBWorK problem Palladium_Algebra/Appendices/A_1_6_61.pg with seed 68 is either empty or failed to compile  
+  Use -a to halt with full PG and returned content
+</p>
+    </statement>
+  </static>
+  <rendering-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTtDb250ZXh0KCdOdW1lcmljJyk7CgpCRUdJTl9QR01MCldlQldvcksgUHJvYmxlbSBEb2VzIE5vdCBFeGlzdCBPciBEaWQgTm90IENvbXBpbGUKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+DOCUMENT();
+loadMacros('PGstandard.pl','PGML.pl','PGcourse.pl');
+TEXT(beginproblem());
+BEGIN_PGML
+PTX:ERROR: WeBWorK problem Palladium_Algebra/Appendices/A_1_6_61.pg with seed 68 is either empty or failed to compile  
+  Use -a to halt with full PG and returned content
+END_PGML
+ENDDOCUMENT();]]></pg>
+</webwork-reps>

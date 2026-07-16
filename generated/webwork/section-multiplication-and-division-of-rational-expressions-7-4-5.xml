@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-4-5" assembly-id="section-multiplication-and-division-of-rational-expressions-7-4-5">
+  <static seed="1270" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions50.pg">
+    <statement><p>Simplify the following expression, and if applicable, write the restricted domain on the simplified expression.</p>
+<p><m>\displaystyle{{\frac{\left(r-7\right)\mathopen{}\left(r-3\right)}{3-r}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>-r+7, r\ne 3</m>
+      </p>
+    </answer>
+    <solution><p>By the formula <m>x-y = -(y-x)</m>, we have <m>3-r = -(r-3)</m>. Now we can simplify the expression:</p>
+<p><m>\displaystyle{\begin{aligned}
+   {\frac{\left(r-7\right)\mathopen{}\left(r-3\right)}{3-r}} \amp = \frac{{\left(r-7\right)\mathopen{}\left(r-3\right)}}{-(r-3)} \\
+                     \amp = \frac{r - 7}{-1} \\
+                     \amp = {-r+7, r\ne 3}
+\end{aligned}
+    }</m></p>
+<p>Since the factor <m>r-3</m> was crossed out, the domain condition lost during the simplification is <m>r \ne {3}</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions50.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions50.pg"/>
+</webwork-reps>

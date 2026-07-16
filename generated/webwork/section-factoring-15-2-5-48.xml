@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-15-2-5-48" assembly-id="section-factoring-15-2-5-48">
+  <static seed="220" source="Contrib/PCC/BasicAlgebra/Factoring/factoring500.pg">
+    <statement><p>Factor the given polynomial.</p>
+<p><m>{2y^{3}-18y}=</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>2y\mathopen{}\left(y+3\right)\mathopen{}\left(y-3\right)</m>
+      </p>
+    </answer>
+    <solution><p>The first thing to observe is that <m>2y</m> is common to both 
+terms; once we have factored this out, what remains is the <em>difference of squares</em></p>
+<p><m>\begin{aligned}
+                {2y^{3}-18y} \amp  = 2y({y}^2-9)\\
+                            \amp  = 2y({y}^2-3^2)\\
+                            \amp  = {2y\mathopen{}\left(y+3\right)\mathopen{}\left(y-3\right)}
+            \end{aligned}</m></p>
+<p>Note that this answer can be checked by using the FOIL (<alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast) technique (exercise).</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/Factoring/factoring500.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/Factoring/factoring500.pg"/>
+</webwork-reps>

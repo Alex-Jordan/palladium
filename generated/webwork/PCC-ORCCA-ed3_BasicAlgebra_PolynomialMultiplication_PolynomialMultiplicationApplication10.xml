@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication10" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication10">
+  <static seed="2699">
+    <statement><p>A rectangle<rsq/>s length is <m>9</m> feet shorter than <m>5 \text{ times}</m> its width. If we use <m>w</m> to represent the rectangle<rsq/>s width, use a polynomial to represent the rectangle<rsq/>s area in expanded form.</p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>5w^{2}-9w</m>
+      </p>
+    </answer>
+    <solution><p>The rectangle<rsq/>s width is <m>w</m> feet. Since the rectangle<rsq/>s length is <m>9</m> feet shorter than <m>5 \text{ times}</m> its width, its length is <m>5w-9</m> feet. A rectangle<rsq/>s area formula is:</p>
+<p><m>\displaystyle{ \text{area}=(\text{length})\cdot(\text{width}) }</m></p>
+<p>After substitution, we have:</p>
+<p><m>\displaystyle{\begin{aligned}
+   \text{area} \amp = (\text{length})\cdot(\text{width}) \\
+                     \amp = (5w-9)w \\
+                     \amp ={5w^{2}-9w}
+\end{aligned}
+    }</m></p>
+<p>The rectangle<rsq/>s area is <m>{5w^{2}-9w}</m> square feet.</p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/Appendices/A_9_5_67.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Carl Yao
+# Portland Community College
+#
+# Polynomial multiplication application problem.
+# Calculate a rectangle's area.
+# Answer is b(2b-4)=2b^2-4b
+# 
+# Last updated: Carl Yao, 11/29/2016
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Polynomial and Rational Functions')
+## DBsection('Polynomial Functions')
+## KEYWORDS('exponent','multiply','polynomial','distribute','monomial')
+## DBCCSS('A-APR.1')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Alex Jordan, Carl Yao, Chris Hughes')
+## Institution('PCC')
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "contextLimitedPolynomial.pl",
+  "PGcourse.pl",
+);
+
+##############################################
+
+Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = 'w';
+Context()->variables->are($var=>'Real');
+
+$a = random(1,10,1);
+$b = random(2,5,1);
+
+$numText = ($b==2) ? "\text{twice}" : "$b \text{ times}";
+
+$ans = Compute("$b*w**2-$a*w")->reduce;
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->add($var=>'Real');
+$ans = Formula($ans);
+
+
+##############################################
+TEXT(beginproblem());
+
+BEGIN_PGML
+
+A rectangle's length is [`[$a]`] feet shorter than [`[$numText]`] its width. If we use [`w`] to represent the rectangle's width, use a polynomial to represent the rectangle's area in expanded form.
+
+[_]{$ans}{16}
+
+END_PGML
+
+##########################################################
+
+BEGIN_PGML_SOLUTION
+
+The rectangle's width is [`w`] feet. Since the rectangle's length is [`[$a]`] feet shorter than [`[$numText]`] its width, its length is [`[$b]w-[$a]`] feet. A rectangle's area formula is:
+
+    [`` \text{area}=(\text{length})\cdot(\text{width}) ``]
+
+After substitution, we have:
+
+    [``
+\begin{aligned}
+   \text{area} &= (\text{length})\cdot(\text{width}) \\
+                     &= ([$b]w-[$a])w \\
+                     &=[$ans]
+\end{aligned}
+    ``]
+
+The rectangle's area is [`[$ans]`] square feet.
+
+END_PGML_SOLUTION
+##############################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

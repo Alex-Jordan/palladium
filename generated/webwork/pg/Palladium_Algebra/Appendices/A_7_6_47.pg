@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:10-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,9 +27,9 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "contextFiniteSolutionSets.pl",
-  "contextForm.pl",
-  "contextFraction.pl",
+  "PCCmacros.pl",
+  "parserImplicitEquation.pl",
+  "parserNumberWithUnits.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -45,29 +42,32 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("Fraction");
-$var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
-Context()->variables->are($var => 'Real');
-($c, $d) = random_coprime([1..10], [2..10,12]);
-$B = Fraction($c, $d);
-$B = random(0,1) ? $B : -$B;
-$left = Formula("-$var")->reduce;
-$right = Formula("$B")->reduce;
-$solution = -$B;
-Context("FiniteSolutionSets");
-Context()->variables->are($var => 'Real');
-$solset = Formula("{$solution}");
+$vdecimal = random(45, 90, 1);
+$tdecimal = Round((-$vdecimal - sqrt($vdecimal**2 + 3840))/-32,1);
+$t = NumberWithUnits($tdecimal, "s");
+$newv = (-6 + 16*$tdecimal**2)/$tdecimal;
+Context("ImplicitEquation");
+Context()->variables->are(v => 'Real');
+Context()->variables->set(v => {limits=>[$newv - 10, $newv + 10]});
+$equation = ImplicitEquation("-16*($tdecimal)**2 + $tdecimal v + 6 = 0");
+$answer = NumberWithUnits("$newv ft/s");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Solve the equation.
+On Earth, if you throw a baseball straight up at speed [`v`] (in feet per second), the height of the ball [`t`] seconds later is given by [`-16t^2+vt+6\text{.}`] Suppose a ball is thrown straight up and takes the given number of seconds to hit the ground, where the height is [`0`] feet. Write an equation that can be used to find the initial speed the ball was thrown with. Then solve that equation and report what that speed was.
 
-[`[$left]=[$right]`]
+The ball lands after [`[$t]`] seconds.
 
-[_]{$solset}{10}
+[@KeyboardInstructions('Write the equation here.')@]**
+
+[_]{$equation}{16}
+
+[@KeyboardInstructions('Write the initial speed here.')@]**
+
+[_]{$answer}{10}
 
 END_PGML
 

@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:10-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -33,7 +30,6 @@ loadMacros(
   "niceTables.pl",
   "PGchoicemacros.pl",
   "contextForm.pl",
-  "contextFraction.pl",
   "parserPopUp.pl",
   "PGcourse.pl",
 );
@@ -47,26 +43,21 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("Fraction");
-$actual_solution = Fraction(random_coprime([1..9],[2..9]));
-($m, $n) = (2..9)[NchooseK(8,2)];
-$b = Fraction(random_coprime([-9..-1,1..9],[2..9]));
-$left = Formula("$m x + $b")->reduce;
+($actual_solution, $root) = num_sort((1..9)[NchooseK(9,2)]);
+$square = $root**2;
+$m = int($square / $actual_solution);
+$b = $square % $actual_solution;
+$left = Formula("sqrt($m x + $b)")->reduce;
+$n = non_zero_random(-2,2);
 $right = Formula("$n x");
-$right += $left->eval(x => $actual_solution) - $right->eval(x => $actual_solution);
+$right += ($left->eval(x => $actual_solution) - $right->eval(x => $actual_solution) + (random(0,1) ? 0 : non_zero_random(-3,3)));
 $right = $right->reduce;
-$proposed_solution = random(0,1) ? $actual_solution : $actual_solution + non_zero_random(-3,3)/($actual_solution->value)[1];
-Context("LimitedFraction")->flags->set(allowMixedNumbers => 0, showMixedNumbers => 0);
-$lefteval = Fraction($left->eval(x => $proposed_solution));
-$righteval = Fraction($right->eval(x => $proposed_solution));
+($left, $right) = ($left, $right)[NchooseK(2,2)];
+$proposed_solution = $actual_solution;
+Context("LimitedNumeric");
+$lefteval = Real($left->eval(x => $proposed_solution));
+$righteval = Real($right->eval(x => $proposed_solution));
 $dropdown = DropDown(["Yes, it is a solution.", "No, it is not a solution."], ($lefteval == $righteval) ? 0 : 1, showInStatic => 0);
-if ($lefteval == $righteval) {
-  $sol[0] = "Since these are equal, ";
-  $sol[1] = " is a solution to ";
-} else {
-  $sol[0] = "Since these are not equal,";
-  $sol[1] = " is not a solution to ";
-}
 
 ############################################################
 # Body
@@ -94,15 +85,6 @@ Is [`[$proposed_solution]`] a solution to [`[$left]=[$right]\text{?}`]
 [_]{$dropdown}{5}
 
 END_PGML
-
-############################################################
-# Solution
-############################################################
-
-BEGIN_PGML_SOLUTION
-We have to substitute [`[$proposed_solution]`] in for [`x`] and simplify each side. The left side simplifies to [`[$lefteval]`] and the right side simplifies to [`[$righteval]\text{.}`] [$sol[0]] [`[$proposed_solution]`] [$sol[1]] [`[$left]=[$right]\text{.}`]
-
-END_PGML_SOLUTION
 
 ############################################################
 # End Problem

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-fractions-and-fraction-arithmetic-9-1-10-25" assembly-id="section-fractions-and-fraction-arithmetic-9-1-10-25">
+  <static seed="79" source="Contrib/PCC/BasicMath/FractionsCalculation/AddThreeFractions40.pg">
+    <statement><p>Add: <m>\displaystyle{ {{\frac{9}{10}}} + {{\frac{7}{9}}} + {{\frac{3}{5}}} }</m></p>
+<p><fillin characters="11" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>2{\textstyle\frac{5}{18}}</m>
+      </p>
+    </answer>
+    <solution><p>To add fractions with different denominators, we need to find the common denominator first. One way is to list the multiples of the largest denominator, until all <m>3</m> denominators divide into the multiple.</p>
+<p>The largest denominator is <m>10</m>. We list its first few multiples:</p>
+<p><m>\displaystyle{ 10, 20, 30, 40, 50, 60, 70, 80, 90 }</m></p>
+<p>Note that all denominators, <m>10, 9 \text{ and } 5</m> each divide into <m>90</m>.</p>
+<p>The full computation is:</p>
+<p><m>\displaystyle{\begin{aligned}
+   \frac{9}{10} + \frac{7}{9} + \frac{3}{5}
+      \amp = \frac{9 \cdot 9}{10 \cdot 9} + \frac{7 \cdot 10}{9 \cdot 10} + \frac{3 \cdot 18}{5 \cdot 18} \\
+      \amp = \frac{81}{90} + \frac{70}{90} + \frac{54}{90} \\
+      \amp = \frac{81+70+54}{90} \\
+      \amp = \frac{205}{90} \\
+      \amp = \frac{41}{18} \\
+        \amp = {2{\textstyle\frac{5}{18}}}
+\end{aligned}
+    }</m></p>
+<p>Don<rsq/>t forget to reduce the fraction <m>\frac{205}{90}</m> by dividing <m>5</m> into both the numerator and the denominator.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicMath/FractionsCalculation/AddThreeFractions40.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicMath/FractionsCalculation/AddThreeFractions40.pg"/>
+</webwork-reps>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-fractions-and-fraction-arithmetic-9-1-12-5" assembly-id="section-fractions-and-fraction-arithmetic-9-1-12-5">
+  <static seed="31" source="Contrib/PCC/BasicAlgebra/FractionArithmetic/MultiplyFractions20.pg">
+    <statement><p>Multiply: <m>\displaystyle{ \frac{8}{7} \cdot \frac{5}{6} }</m></p>
+<p><fillin characters="10" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>{\frac{20}{21}}</m>
+      </p>
+    </answer>
+    <solution><p>To multiply two fractions, usually we simply multiply both numerators and both denominators. However, it<rsq/>s easier to reduce fractions before multiplying:</p>
+<p><m>\displaystyle{ 
+\begin{aligned}[t]
+   \frac{8}{7} \cdot \frac{5}{6}
+           \amp = \frac{8 \cdot 5}{7 \cdot 6} \\
+           \amp = \frac{4 \cdot 5}{7 \cdot 3} \\
+           \amp = \frac{20}{21}
+\end{aligned}
+    }</m></p>
+<p>The answer to this question is <m>\displaystyle{\frac{20}{21}}</m>.</p>
+<p>Note that we divided the first numerator and the second denominator by <m>2</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/FractionArithmetic/MultiplyFractions20.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/FractionArithmetic/MultiplyFractions20.pg"/>
+</webwork-reps>

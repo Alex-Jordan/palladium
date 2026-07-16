@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_NegativeExponents_NegativeExponents3" assembly-id="PCC-ORCCA-ed3_Math95_NegativeExponents_NegativeExponents3">
+  <static seed="1705">
+    <statement><p><m>\displaystyle {\frac{10x^{-10}}{x}}</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{10}{x^{11}}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/4_1_7_47.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+      "PGstandard.pl", 
+      "MathObjects.pl",
+      "contextLimitedPowers.pl",
+      "contextFraction.pl",
+      "PGML.pl",
+      "PCCmacros.pl",
+      "contextRationalFunction.pl"
+    );
+
+
+##############################################
+
+TEXT(beginproblem());
+Context("Numeric");
+$n = random(3,12,1);
+$a = random(5,20,1);
+
+$show = Compute("$a x^(-$n)/x");
+
+Context("RationalFunction");
+Context()->flags->set(singleQuotients=>1,);
+Context()->flags->set(singleFactors=>1);
+
+LimitedPowers::OnlyPositiveIntegers();
+
+$tell = Compute("$a/ x^($n+1)")->reduce;
+
+
+
+##############################################
+
+BEGIN_PGML
+
+[@ PTX_exercisegroup_introduction('Use the properties of exponents to simplify the expression.') @]
+
+[`\displaystyle [$show]`]
+
+[_]{$tell}{16}
+
+END_PGML
+
+##############################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

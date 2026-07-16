@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-12T21:52:51-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,8 +27,9 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "contextFraction.pl",
-  "parserGraphTool.pl",
+  "PCCmacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -44,78 +42,53 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-($rise, $run) = random_coprime([-5..-1],[2..5]);
-Context("Numeric");
-@A = ();
-for my $x (-8..(8-$run)) {
-for my $y (-8..(-9+$rise)) {
-push(@A, Point($x,$y));
-}
-}
-for my $x (-8..(-9+$run)) {
-for my $y ((-8+$rise)..(8-$rise)) {
-push(@A, Point($x,$y));
-}
-}
-%B = map{$_ => $_+Point($run,$rise)}(@A);
-@gtlines = map{'{line,solid,' . $_ . ',' . $B{$_} .'}'} (@A);
-Context("Fraction");
-$m = Fraction($rise,$run);
-$gt = GraphTool(join(',',@gtlines))->with(
-showInStatic => 0,
-availableTools => ["LineTool"],
-bBox => [-8, 8, 8, -8],
-cmpOptions => {
-list_checker => sub {
-my ($correct, $student, $ans, $value) = @_;
-return 0 if $ans->{isPreview};
-my @errors;
-my $count = 0;
-my $extra = 0;
-my $distinct = 0;
-STUDENTS:
-for my $j (@$student) {
-my $nth = Value::List->NameForNumber(++$count);
-my ($p1x, $p1y) = $j->extract(3)->value;
-my ($p2x, $p2y) = $j->extract(4)->value;
-if ($p1x == $p2x) {
-push(@errors, "The $nth plotted line is a vertical line, and therefore does not have slope $m.");
-$extra++;
-next STUDENTS;
-}
-my $context = Context();
-Context("Fraction");
-my $slope = Fraction($p2y - $p1y, $p2x - $p1x);
-Context($context);
-if ($slope != $m) {
-push(@errors, "The $nth plotted line has slope $slope, not slope $m.");
-$extra++;
-next STUDENTS;
-}
-for my $i (0..($count-2)) {
-my ($x,$y) = $student->[$i]->extract(3)->value;
-next STUDENTS if ($y == $m*($x - $p1x) + $p1y);
-}
-$distinct++;
-}
-push(@errors, "You've only plotted $distinct correct line".(($distinct > 1)?'s':'').".") if ($distinct > 0 && $distinct < 3);
-return (scalar(@{$correct})*min($distinct,3)/3/(($extra)?2:1), @errors);
-}
-}
-);
+$r = non_zero_random(-9,9,1)+non_zero_random(-0.9,0.9,0.1);
+$b = -2*$r;
+$c = ($r)**2;
+Context()->noreduce('(-x)-y','(-x)+y');
+$f = Formula("x^2+$b x+$c")->reduce;
+Context("FiniteSolutionSets");
+Context()->flags->remove("NumberCheck");
+Context()->flags->set(useBizarro=>0);
+$solutions = Formula("{$r}");
+$negb = -$b;
+$bsquared = ($b)**2;
+$discriminant = 0;
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Plot at least three lines that each have slope the given slope.
+Use the quadratic formula to solve the equation.
 
-[`[$m]`]
+[`[$f]=0`]
 
-[_]{$gt}{1}
+[@KeyboardInstructions('If you need to enter a square root like [`\sqrt{17}\text{,}`] type [|sqrt(17)|]*. If there is no real solution, enter [|no real solution|]*.')@]**
+
+[_]{$solutions}{40}
 
 END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+To use the quadratic formula, we identify [`a=1\text{,}`] [`b=[$b]\text{,}`] and [`c=[$c]\text{.}`]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{[$negb]\pm\sqrt{[$bsquared]-4(1)([$c])}}{2}\\
+\amp=\frac{[$negb]\pm\sqrt{[$discriminant]}}{2}\\
+\amp=\frac{[$negb]}{2}
+\end{aligned}
+```]
+
+Since the disciriminant (that number in the radical) is [`0\text{,}`] there is only one solution. The solution set is [`[$solutions]\text{.}`]
+
+END_PGML_SOLUTION
 
 ############################################################
 # End Problem

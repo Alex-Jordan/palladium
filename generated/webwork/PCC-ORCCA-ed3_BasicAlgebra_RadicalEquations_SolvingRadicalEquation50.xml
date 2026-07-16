@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation50" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation50">
+  <static seed="2030">
+    <statement><p><m>\displaystyle{ {2\sqrt{-9-t}-1} = {7} }</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{-25\right\}</m>
+      </p>
+    </answer>
+    <solution><p>To solve an equation with radicals, we first separate the radical on one side of the equation, and then square both sides:</p>
+<p><m>\displaystyle{\begin{aligned}
+   {2\sqrt{-9-t}-1} \amp = {7} \\
+   {2\sqrt{-9-t}-1} \mathbf{{} + 1} \amp = {7} \mathbf{{} + 1}  \\
+   2\sqrt{-9-t} \amp = {8} \\
+   \frac{2\sqrt{-9-t}}{2} \amp = \frac{{8}}{2} \\
+   \sqrt{-9-t} \amp = 4 \\
+   (\sqrt{-9-t})^2 \amp = (4)^2 \\
+   -9-t \amp = 16 \\
+   -9-t \mathbf{{} + 9} \amp = 16 \mathbf{{} + 9}  \\
+   -t \amp = 25 \\
+   t \amp = -25
+\end{aligned}
+    }</m></p>
+<p>Whenever we square both sides of an equation, we could create extraneous solutions. We must check our solution. This part is left as exercise.</p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/4_5_4_9.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Carl Yao
+# Portland Community College
+#
+# Solve a\sqrt{b-x}+c=d
+#
+# Last updated: Yao 1/7/2017
+# ENDDESCRIPTION
+
+## DBCCSS('A-REI.4.b')
+## DBsubject('Algebra')
+## DBchapter('Basic Algebra')
+## DBsection('equations', 'Simplification')
+## KEYWORDS('solve','quadratic','equation','square root')
+## Author('Alex Jordan, Carl Yao, Chris Hughes')
+## Institution('PCC')
+
+##############################################
+DOCUMENT();
+
+loadMacros(
+   "PGstandard.pl",
+   "MathObjects.pl",
+   "parserAssignment.pl",
+   "answerHints.pl",
+   "PGML.pl",
+   "contextFiniteSolutionSets.pl",
+   "PCCmacros.pl",
+   "PGcourse.pl",
+);
+
+##############################################
+    
+Context("FiniteSolutionSets");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0, formatStudentAnswer=>parsed);
+                               
+
+
+
+$rad = (random(1,10,1))**2;
+$b = non_zero_random(-10,10,1);
+$solution = $b-$rad;
+$a = non_zero_random(-5,5,1);
+$c = non_zero_random(-10,10,1);
+$d = $a*sqrt($rad)+$c;
+
+
+$left = Compute("$a*sqrt($b-$var)+$c")->reduce;
+$right = Compute("$d")->reduce;
+$ans = Formula("{$solution}");
+
+##############################################
+
+BEGIN_PGML
+
+[@ PTX_exercisegroup_introduction('Solve the equation.') @]
+
+     [`` [$left] = [$right] ``]
+
+     [_]{$ans}{16}
+
+END_PGML
+
+##############################################
+
+
+$s1 = sqrt($rad);
+
+BEGIN_PGML_SOLUTION
+
+To solve an equation with radicals, we first separate the radical on one side of the equation, and then square both sides:
+
+    [``
+\begin{aligned}
+   [$left] &= [$right] \\
+   [$left] \mathbf{{}-[$c]} &= [$right] \mathbf{{}-[$c]}  \\
+   [$a]\sqrt{[$b]-[$var]} &= [$right-$c] \\
+   \frac{[$a]\sqrt{[$b]-[$var]}}{[$a]} &= \frac{[$right-$c]}{[$a]} \\
+   \sqrt{[$b]-[$var]} &= [$s1] \\
+   (\sqrt{[$b]-[$var]})^2 &= ([$s1])^2 \\
+   [$b]-[$var] &= [$rad] \\
+   [$b]-[$var] \mathbf{{}-[$b]} &= [$rad] \mathbf{{}-[$b]}  \\
+   -[$var] &= [$rad-$b] \\
+   [$var] &= [$solution]
+\end{aligned}
+    ``]
+
+Whenever we square both sides of an equation, we could create extraneous solutions. We must check our solution. This part is left as exercise.
+
+END_PGML_SOLUTION
+
+##############################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

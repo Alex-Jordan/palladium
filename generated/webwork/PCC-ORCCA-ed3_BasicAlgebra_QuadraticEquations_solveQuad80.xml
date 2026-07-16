@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_QuadraticEquations_solveQuad80" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_QuadraticEquations_solveQuad80">
+  <static seed="825">
+    <statement><p><m>\left(x - 3\right)^2 = 25</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{8,-2\right\}</m>
+      </p>
+    </answer>
+    <solution><p>There are a few ways to solve quadratic equations- the easiest way to solve this particular 
+type of problem is to use the <em>square root method</em>.</p>
+<p><m>\begin{aligned}
+               \left(x - 3\right)^2 = 25\amp  \Rightarrow x - 3 = 5\text{ or } x=-5\\
+                                    \amp  \Rightarrow x=8\text{ or } x=-2
+       \end{aligned}</m></p>
+<p>Note that <em>all</em> quadratic equations have <alert>two</alert> (possibly repeated) solutions; in this problem both solutions are real. Each solution can be checked by substituting it into the original equation- this is left as an exercise.</p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_3_4_21.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Chris Hughes, 2013
+# Portland Community College
+#
+# Template:
+# Solve the following quadratic equation
+#
+#       (x+a)^2 = * b^2
+#
+# If you need to use the square root symbol, 
+# as in x=sqrt{17}, type it like: *sqrt(17)*
+#
+# a is non-zero integer on [-10,10], 
+# b is integer on [2,12]
+#
+# Last updated: Hughes, 8/4/13
+# ENDDESCRIPTION
+
+## DBCCSS('A-REI.4.b')
+## DBsubject('Algebra')
+## DBchapter('Basic Algebra')
+## DBsection('equations', 'Simplification')
+## KEYWORDS('solve','quadratic','equation','square root','add','subtract')
+## Author('Alex Jordan, Carl Yao, Chris Hughes')
+## Institution('PCC')
+
+##############################################
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "parserAssignment.pl",
+  "answerHints.pl",
+  "PGML.pl",
+  "contextFiniteSolutionSets.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+
+##############################################
+    
+Context("FiniteSolutionSets");
+
+$var = "x";
+#Context()->variables->are($var=>'Real');
+$a = non_zero_random(-10,10,1);
+$b = random(2,12,1);
+$soln1 = $b-$a;
+$soln2 = -$b-$a;
+$ans = Formula("{$soln1,$soln2}");
+
+##############################################
+
+BEGIN_PGML
+[@ PTX_exercisegroup_introduction('Solve the equation.') @]
+
+[@KeyboardInstructions("If you need to use the square root symbol, as in [`\\sqrt{17}`], type it as [|sqrt(17)|]*. If there are no real solutions, enter [|no real solutions|]*.")@]**
+
+     [` \left([$var]+[$a]\right)^2 = [$b**2] `]
+
+     [_]{$ans}{16}
+
+END_PGML
+
+##############################################
+
+
+$showPartialCorrectAnswers = 1;
+
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+There are a few ways to solve quadratic equations- the easiest way to solve this particular 
+type of problem is to use the _square root method_. 
+
+    [`
+       \begin{aligned}
+               \left([$var]+[$a]\right)^2 = [$b**2]& \Rightarrow [$var]+[$a] = [$b]\text{ or } [$var]=[$b*-1]\\
+                                    & \Rightarrow [$var]=[$soln1]\text{ or } [$var]=[$soln2]
+       \end{aligned}
+    `]
+
+Note that _all_ quadratic equations have *two* (possibly repeated) solutions; in this problem both solutions are real. Each solution can be checked by substituting it into the original equation- this is left as an exercise.
+END_PGML_SOLUTION
+
+##############################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

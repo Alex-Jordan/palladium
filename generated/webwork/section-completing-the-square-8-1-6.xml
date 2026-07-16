@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-1-6" assembly-id="section-completing-the-square-8-1-6">
+  <static seed="1157">
+    <statement><p>Use a square root to solve <m>{\left(x+7\right)^{2}}={3}\text{.}</m></p>
+<p><fillin characters="25" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{-7+\sqrt{3},-7-\sqrt{3}\right\}</m>
+      </p>
+    </answer>
+    <solution><p>Using the square root property:</p>
+<p><me>\begin{aligned}
+{x+7}\amp=\sqrt{3}\amp\amp\text{or}\amp {x+7}\amp=-\sqrt{3}\\
+x\amp={-7+\sqrt{3}}\amp\amp\text{or}\amp x\amp={-7-\sqrt{3}}
+\end{aligned}</me></p>
+<p>So the solution set is <m>{\left\{-7+\sqrt{3},-7-\sqrt{3}\right\}}\text{.}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_8_6_5.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.8.6.5)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$x = RandomVariableName(type=>'variable');
+$m = 1;
+$b = non_zero_random(-9,9,1);
+$c = list_random(2,3,5,6,7,10,11,13,14,15,17,19);
+Context()->variables->are($x=>'Real');
+$linear = Formula("$m $x + $b")->reduce;
+$left = Formula("($linear)^2");
+$leftexpanded = Formula("$m^2 $x^2 + 2*$m*$b $x + ($b)^2")->reduce;
+$right = Formula("$c");
+Context("FiniteSolutionSets");
+$nb = -$b;
+$sol1 = Formula("$nb+sqrt($c)");
+$sol2 = Formula("$nb-sqrt($c)");
+Context()->variables->are($x=>'Real');
+$answer = Formula("{$sol1, $sol2}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use a square root to solve [`[$left]=[$right]\text{.}`]
+
+[_]{$answer}{25}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Using the square root property:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$linear]\amp=\sqrt{[$c]}\amp\amp\text{or}\amp [$linear]\amp=-\sqrt{[$c]}\\
+[$x]\amp=[$sol1]\amp\amp\text{or}\amp [$x]\amp=[$sol2]
+\end{aligned}
+```]
+
+So the solution set is [`[$answer]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

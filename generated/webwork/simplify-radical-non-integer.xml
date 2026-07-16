@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-radical-non-integer" assembly-id="simplify-radical-non-integer">
+  <static seed="1884">
+    <statement><p><m>{\sqrt[5]{96}}\text{.}</m></p>
+<p><fillin characters="30" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>2\sqrt[5]{3}</m>
+      </p>
+    </answer>
+    <solution><p><me>\begin{aligned}
+{\sqrt[5]{96}}\amp = \sqrt[5]{32\cdot 3}\\
+\amp = \sqrt[5]{32}\cdot \sqrt[5]{3}\\
+\amp = {2\sqrt[5]{3}}
+\end{aligned}</me></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/4_2_10_93.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.2.10.93)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Form");
+do {
+  $n = random(3,6,1);
+  $r = random(2,5,1);
+  $x = $r**($n);
+  $y = ($n % 2 == 0) ? list_random(2,3,5..7,10,11) : list_random(2..7,9..12);
+  $X = $x*$y;
+} until ($x <= 125 and $X <= 200);
+$expression = Formula("root($n,$X)");
+$answer = Formula("$r root($n,$y)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Simplify the higher index radical.
+
+[`[$expression]\text{.}`]
+
+[@KeyboardInstructions('To enter [`\sqrt[n]{x}\text{,}`] type [|root(n, x)|]*. If the value is not a real number, enter [|not a real number|]*.')@]**
+
+[_]{$answer}{30}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$expression]\amp = \sqrt[[$n]]{[$x]\cdot [$y]}\\
+\amp = \sqrt[[$n]]{[$x]}\cdot \sqrt[[$n]]{[$y]}\\
+\amp = [$answer]
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

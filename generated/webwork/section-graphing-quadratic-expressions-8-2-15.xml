@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-graphing-quadratic-expressions-8-2-15" assembly-id="section-graphing-quadratic-expressions-8-2-15">
+  <static seed="1047" source="PCC-ORCCA-ed3/BasicAlgebra/GraphingQuadratics/ParabolaIntercepts90.pg">
+    <statement><p>Find the <m>y</m>-intercept and any <m>x</m>-intercept(s) of the quadratic curve.</p>
+<p><m>{y}={x^{2}+7x+9}</m></p>
+<p><m>y</m>-intercept: <fillin characters="16" name="AnSwEr0001"/></p>
+<p><m>x</m>-intercept(s): <fillin characters="17" name="AnSwEr0002"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left(0,9\right)</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\left(-1.69722,0\right), \left(-5.30278,0\right)</m>
+      </p>
+    </answer>
+    <solution><p>To find a parabola<rsq/>s <m>y</m>-intercept, we substitute <m>x=0</m> into <m>{y}={x^{2}+7x+9}</m>, and we have <m>y=9</m>.</p>
+<p>The parabola<rsq/>s <m>y</m>-intercept is <m>(0,9)</m>.</p>
+<p>To find a parabola<rsq/>s <m>x</m>-intercept, we substitute <m>y=0</m> into <m>{y}={x^{2}+7x+9}</m>, and then solve for <m>x</m>:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   y \amp = {x^{2}+7x+9} \\
+   0 \amp = {x^{2}+7x+9} \\
+\end{aligned}
+    }</m></p>
+<p>The polynomial cannot be factored, so we use the Quadratic Formula to solve this equation.</p>
+<p>Identify that <m>a=1,b=7,c=9</m>. We have:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   x \amp = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a} \\
+   x \amp = \frac{-(7) \pm \sqrt{(7)^{2}-4(1)(9)}}{2(1)} \\
+   x \amp = \frac{-7 \pm \sqrt{13}}{2} \\
+   x \amp  \approx -1.69722436226801 \text{ or } x \approx -5.30277563773199
+\end{aligned}
+    }</m></p>
+<p>The parabola has two <m>x</m>-intercepts: <m>(-1.69722436226801,0)</m> and <m>(-5.30277563773199,0)</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="PCC-ORCCA-ed3/BasicAlgebra/GraphingQuadratics/ParabolaIntercepts90.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="PCC-ORCCA-ed3/BasicAlgebra/GraphingQuadratics/ParabolaIntercepts90.pg"/>
+</webwork-reps>

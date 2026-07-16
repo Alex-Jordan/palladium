@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-20T13:16:08-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -31,7 +28,7 @@ loadMacros(
   "PGML.pl",
   "AnswerFormatHelp.pl",
   "PCCmacros.pl",
-  "PGchoicemacros.pl",
+  "parserNumberWithUnits.pl",
   "parserLinearRelation.pl",
   "PGcourse.pl",
 );
@@ -45,25 +42,27 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-($a, $b, $c) = (2..15)[NchooseK(14,3)];
-Context("LinearRelation");
-$ans = LinearRelation("$a(x + $b) = $c");
-$numberWorda = numberWord($a);
-$numberWordb = numberWord($b);
-$numberWordc = numberWord($c);
+$final = random(1600, 2000, 100);
+$end = NumberWithUnits("$final lb");
+$rate = 8.3454;
+$speed = NumberWithUnits("$rate lb/gal");
+$initial = random(80, 100, 5);
+$start = NumberWithUnits("$initial lb");
+Context("LinearRelation")->variables->are(V => 'Real');
+$inequality = LinearRelation("$initial + $rate V <= $final");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Translate the phrase or sentence into a math expression or equation (whichever is appropriate).
+Write an inequality to model the scenario. There is no need to solve the inequality.
 
-The product of [$numberWorda] and [$numberWordb] more than a number is [$numberWordc].
+A flatbed truck that hauls water is able to carry a maximum of [`[$end]\text{.}`] Water weighs [`[$speed]\text{,}`] and the plastic tank on the truck that holds the water weighs [`[$start]\text{.}`] How many gallons of water can the truck haul? Set up an inequality to answer this question. There is no need to solve it.
 
-[@KeyboardInstructions('Use [`x`] as the variable.')@]**
+[@KeyboardInstructions('Use [|V|]* as the variable.')@]**
 
-[_]{$ans}{16}
+[_]{$inequality}{20}
 
 END_PGML
 

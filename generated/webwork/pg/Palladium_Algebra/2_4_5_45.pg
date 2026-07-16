@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-12T21:52:51-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,11 +27,9 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PGlateximage.pl",
   "PCCmacros.pl",
-  "parserNumberWithUnits.pl",
-  "randomPerson.pl",
-  "Pd.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -47,76 +42,55 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context('Numeric');
-$p = randomPerson();
-$newUnits = [
-  {name=>'feet',conversion=>{factor=>12*2.54/100,m=>1}},
-  {name=>'foot',conversion=>{factor=>12*2.54/100,m=>1}},
-  {name=>'ft',conversion=>{factor=>12*2.54/100,m=>1}},
-  {name=>'hour',conversion=>{factor=>60*60,s=>1}},
-  {name=>'hours',conversion=>{factor=>60*60,s=>1}},
-  {name=>'hr',conversion=>{factor=>60*60,s=>1}},
-  {name=>'hrs',conversion=>{factor=>60*60,s=>1}},
-  {name=>'h',conversion=>{factor=>60*60,s=>1}},
-];
-@s=(
-  NumberWithUnits("375 ft/h",{newUnit=>$newUnits}),
-  NumberWithUnits("125 ft/h",{newUnit=>$newUnits}),
-  NumberWithUnits("0 ft/h",{newUnit=>$newUnits}),
-  NumberWithUnits("-500 ft/h",{newUnit=>$newUnits})
-);
-
-$image_1 = createLaTeXImage();
-$image_1->addToPreamble(latexImagePreamble());
-$image_1->BEGIN_LATEX_IMAGE
-\begin{tikzpicture}
-  \begin{axis}[
-        xlabel={time (h)},
-        ylabel={elevation (ft)},
-        xmin=0,
-        xmax=30,
-        ymin=0,
-        ymax=4000,
-        minor xtick={0,...,30},
-        xtick=,
-        ytick={0,500,...,3500},
-        minor ytick=,
-        width=\orccaprintwidth,
-        height=0.33\orccaprintwidth,
-        axis line style={->},
-      ]
-    \addplot[firstcurve,-] coordinates {(0,0) (8,3000) (12,3500) (21, 3500) (28,0)};
-  \end{axis}
-\end{tikzpicture}
-
-END_LATEX_IMAGE
+$r = non_zero_random(-9,9,1)+non_zero_random(-0.9,0.9,0.1);
+$a = non_zero_random(-9,9,1)+non_zero_random(-0.9,0.9,0.1);
+$b = -2*$a*$r;
+$c = $a*($r)**2;
+Context()->noreduce('(-x)-y','(-x)+y');
+$f = Formula("$a x^2+$b x+$c")->reduce;
+Context("FiniteSolutionSets");
+Context()->flags->remove("NumberCheck");
+Context()->flags->set(useBizarro=>0);
+$solutions = Formula("{$r}");
+$negb = -$b;
+$bsquared = ($b)**2;
+$discriminant = 0;
+$a2 = 2*$a;
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-[$p] is training for a race up the slope of Mt.[$NBSP]*Hood, from Sandy to Government Camp, and then back. The graph below models [$p->their] elevation from their starting point as time passes. Find the slopes of the four line segments, and interpret their meanings in this context.
+Use the quadratic formula to solve the equation.
 
->> [@image(insertGraph($image_1), width=>450)@]*  <<
+[`[$f]=0`]
 
-[@KeyboardInstructions(q"Enter the first segment's slope here.")@]**
+[@KeyboardInstructions('If you need to enter a square root like [`\sqrt{17}\text{,}`] type [|sqrt(17)|]*. If there is no real solution, enter [|no real solution|]*.')@]**
 
-[_]{$s[0]}{5}
-
-[@KeyboardInstructions(q"Enter the second segment's slope here.")@]**
-
-[_]{$s[1]}{5}
-
-[@KeyboardInstructions(q"Enter the third segment's slope here.")@]**
-
-[_]{$s[2]}{5}
-
-[@KeyboardInstructions(q"Enter the fourth segment's slope here.")@]**
-
-[_]{$s[3]}{5}
+[_]{$solutions}{40}
 
 END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+To use the quadratic formula, we identify [`a=[$a]\text{,}`] [`b=[$b]\text{,}`] and [`c=[$c]\text{.}`]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{[$negb]\pm\sqrt{[$bsquared]-4([$a])([$c])}}{2([$a])}\\
+\amp=\frac{[$negb]\pm\sqrt{[$discriminant]}}{[$a2]}\\
+\amp=\frac{[$negb]}{[$a2]}
+\end{aligned}
+```]
+
+Since the disciriminant (that number in the radical) is [`0\text{,}`] there is only one solution. The solution set is [`[$solutions]\text{.}`]
+
+END_PGML_SOLUTION
 
 ############################################################
 # End Problem

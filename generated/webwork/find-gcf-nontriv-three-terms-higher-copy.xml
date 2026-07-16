@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-find-gcf-nontriv-three-terms-higher-copy" assembly-id="find-gcf-nontriv-three-terms-higher-copy">
+  <static seed="593">
+    <statement><p><m>{56I^{9}}, {42I^{8}}, {35I^{3}}</m></p>
+<p><fillin characters="6" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>7I^{3}\hbox{ or }-7I^{3}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_1_13_15.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg copied-from="find-gcf-nontriv-three-terms-higher"><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.1.13.16)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserOneOf.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+@ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+$var = list_random(@ORCCA_variables);
+Context()->variables->are($var=>'Real');
+($a, $b, $c) = random_coprime([2 .. 9], [2 .. 9], [2 .. 9]);
+($m, $n, $k) = random_subset(3, 2 .. 9);
+$min = min($m, $n, $k);
+$g = list_random(2 .. 9);
+$answer = OneOf(Compute("$g $var^$min"), Compute("-$g $var^$min"));
+@terms = random_subset(3, Compute("$a*$g $var^$m"), Compute("$b*$g $var^$n"), Compute("$c*$g $var^$k"));
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the greatest common factor (GCF) of the given terms.
+
+[`[$terms[0]], [$terms[1]], [$terms[2]]`]
+
+[_]{$answer}{6}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

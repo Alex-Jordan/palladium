@@ -1,0 +1,87 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(A.1.7.5)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGlateximage.pl",
+  "contextFraction.pl",
+  "Pd.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Fraction");
+$d = list_random(3 .. 10);
+($d, $n) = random_coprime([$d], [2, $d - 1]);
+$frac = Fraction($n, $d);
+$xmin = -3/$d;
+$xmax = 1+3/$d;
+$inc = $xmin + 1/$d;
+
+$image_1 = createLaTeXImage();
+$image_1->addToPreamble(latexImagePreamble());
+$image_1->BEGIN_LATEX_IMAGE
+\begin{tikzpicture}
+  \begin{axis}[
+    numberline,
+    xmin=$xmin,
+    xmax=$xmax,
+    xtick={0,1},
+    minor xtick={$xmin,$inc,...,$xmax},
+  ]
+  \addplot[soliddot] coordinates {($frac, 0)};
+  \end{axis}
+\end{tikzpicture}
+
+END_LATEX_IMAGE
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+What fraction is represented on the numberline?
+
+>> [@image(insertGraph($image_1), width=>600)@]*  <<
+
+[_]{$frac}{6}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-addition-and-subtraction-of-rational-expressions-7-1-9" assembly-id="section-addition-and-subtraction-of-rational-expressions-7-1-9">
+  <static seed="1368" source="Contrib/PCC/BasicAlgebra/FractionArithmetic/SubtractFractions10.pg">
+    <statement><p>Subtract: <m>\displaystyle{\frac{3}{8} - \frac{1}{16}}</m></p>
+<p><fillin characters="11" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>{\frac{5}{16}}</m>
+      </p>
+    </answer>
+    <solution><p>To subtract two fractions with different denominators, we first have to find a common denominator.</p>
+<p>In this case, the least common multiple of <m>8</m> and <m>16</m> is <m>16</m>.</p>
+<p>Look at the first fraction <m>\displaystyle{\frac{3}{8}}</m>. To change the denominator to <m>16</m>, we multiply <m>2</m> at both the top and bottom, and we have:</p>
+<p><m>\displaystyle{ \begin{aligned}\frac{3}{8} \amp = \frac{3 \cdot 2}{8 \cdot 2}\\ \amp = \frac{6}{16} \end{aligned}}</m></p>
+<p>The second fraction already has the common denominator.</p>
+<p>Finally, we can do the subtraction. The whole process is:</p>
+<p><m>\displaystyle{\begin{aligned}
+   \frac{3}{8} - \frac{1}{16}
+        \amp = \frac{6}{16} - \frac{1}{16} \\
+        \amp = \frac{6 - 1}{16} \\
+        \amp = \frac{5}{16}
+\end{aligned}
+    }</m></p>
+<p>The answer is  <m>\displaystyle{\frac{5}{16}}</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/FractionArithmetic/SubtractFractions10.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/FractionArithmetic/SubtractFractions10.pg"/>
+</webwork-reps>

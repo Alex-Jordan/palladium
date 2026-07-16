@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:10-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -31,6 +28,7 @@ loadMacros(
   "PGML.pl",
   "AnswerFormatHelp.pl",
   "scaffold.pl",
+  "PCCmacros.pl",
   "contextForm.pl",
   "PGcourse.pl",
 );
@@ -45,55 +43,23 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("Numeric")->variables->add(c=>'Real',m=>'Real',n=>'Real',q=>'Real',r=>'Real');
-Context()->reduction->set('(-x)-y'=>0,'(-x)+y'=>0);
-$giv1=Formula("53m");
-$ans1=Formula("m*53");
-$ev1=$ans1->cmp(checker=>sub{
-  my ($correct,$student,$ans)=@_;
-  Value->Error("This is the original expression") if ($student eq $giv1);
-  Value->Error("This is algebraically equivalent to the given expression, but using the commutative property of multiplication would give you something else") if (($student == $correct) && ($student ne $correct));
-  return ($student eq $correct);
-});
-Context()->flags->set(reduceConstants=>0);
-Context()->lists->set(AbsoluteValue=>{open=>"(",close=>")"});
-Context()->parens->set("("=>{removable=>0,type=>"AbsoluteValue",close=>")"});
-$giv2=Formula("3*(5 n)");
-$ans2=Formula("(3*5)*n");
-$alt2=Formula("15*n");
-$ev2=$ans2->cmp(checker=>sub{
-  my ($correct,$student,$ans)=@_;
-  $student->{test_at}=[[0,0,-1,0,0,0],[0,0,1,0,0,0]];
-  $correct->{test_at}=[[0,0,-1,0,0,0],[0,0,1,0,0,0]];
-  Value->Error("This is algebraically equivalent to the given expression, but using the associative property of multiplication would give you something else") if (($student == $giv2) || (($student == $correct) && ($student ne $correct) && ($student ne $alt2)));
-  return (($student eq $correct) or ($student eq $alt2));
-});
-$giv3=Formula("q+84");
-$ans3=Formula("84+q");
-$ev3=$ans3->cmp(checker=>sub{
-  my ($correct,$student,$ans)=@_;
-  Value->Error("This is the original expression") if ($student eq $giv3);
-  Value->Error("This is algebraically equivalent to the given expression, but using the commutative property of addition would give you something else") if (($student == $correct) && ($student ne $correct));
-  return ($student eq $correct);
-});
-$giv4=Compute("x+(20+c)");
-$amb4=Compute("x+20+c");
-$ans4=Compute("(x+20)+c");
-$ev4=$ans4->cmp(checker=>sub{
-  my ($correct,$student,$ans)=@_;
-  for my $x ($giv4,$student,$amb4,$correct) {
-    $x->{test_at}=[[-21,0,0,0,0,-21],[-21,0,0,0,0,-19],[-19,0,0,0,0,-21],[-19,0,0,0,0,-19]];
-  }
-  Value->Error("This expression is algebraically equivalent to the given expression, but using the associative property of addition would give you something else") if (($student == $giv4) || ($student == $amb4) || (($student == $correct) && ($student ne $correct)));
-  return ($student eq $correct);
-});
-$giv5=Compute("3*(r+7)")->reduce;
-Context("Form")->variables->are(r=>'Real');
-$ans5=Compute("3*r+3*7");
+Context("Form")->variables->are(c => "Real");
+$ans1 = Formula("13c");
+Context("Form")->variables->are(q => "Real");
+$ans2 = Formula("-8q^2");
+Context("Form")->variables->add(y => "Real");
+$ans3 = Formula("5x-5y");
+Context("Form")->variables->add(y => "Real", z => "Real");
+$ans4 = Formula("2x-3y+4z");
 
 ############################################################
 # Body
 ############################################################
+
+BEGIN_PGML
+Where possible, simplify the following expressions by combining like terms.
+
+END_PGML
 
 ############################################################
 # Scaffold
@@ -106,36 +72,11 @@ Scaffold::Begin(numbered => 1,is_open => "correct_or_first_incorrect",can_open =
 Section::Begin("");
 
 BEGIN_PGML
-Use the commutative property of multiplication to write an equivalent expression to [`[$giv1]\text{.}`]
+[`6c+12c-5c`]
 
-[_]{$ev1}{10}
+[@KeyboardInstructions('If it cannot be simplified, just enter it as is.')@]**
 
-END_PGML
-
-############################################################
-# Solution
-############################################################
-
-BEGIN_PGML_SOLUTION
-To use the commutative property of multiplication, change the order the two factors are multiplied:
-
-[```
-                53m=m\cdot 53
-              \text{.}```]
-
-END_PGML_SOLUTION
-
-Section::End();
-
-############################################################
-# Section
-############################################################
-Section::Begin("");
-
-BEGIN_PGML
-Use the associative property of multiplication to write an equivalent expression to [`[$giv2]\text{.}`]
-
-[_]{$ev2}{10}
+[_]{$ans1}{20}
 
 END_PGML
 
@@ -144,23 +85,17 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-To use the associative property of multiplication, leave factors written in their original order, but change the grouping symbols so that a different multiplication has higher priority:
-
-[```
-                3(5n)=(3\cdot5)n
-              \text{.}```]
-
-You may further simplify by multiplying the two numbers:
+All three terms are like terms, so they may combined. We combine them two at a time:
 
 [```\newcommand{\amp}{&}
 \begin{aligned}
-3(5n)\amp=(3\cdot5)n\\
-\amp=15n
+6c+12c-5c \amp=(6c+12c)-5c\\
+\amp=(6+12)c-5c\\
+\amp=18c-5c\\
+\amp=(18-5)c=13c
 \end{aligned}
 ```]
 
-but that is going a step beyond simply using the associative property.
-
 END_PGML_SOLUTION
 
 Section::End();
@@ -171,36 +106,11 @@ Section::End();
 Section::Begin("");
 
 BEGIN_PGML
-Use the commutative property of addition to write an equivalent expression to [`[$giv3]\text{.}`]
+[`-5q^2-3q^2`]
 
-[_]{$ev3}{10}
+[@KeyboardInstructions('If it cannot be simplified, just enter it as is.')@]**
 
-END_PGML
-
-############################################################
-# Solution
-############################################################
-
-BEGIN_PGML_SOLUTION
-To use the commutative property of addition, change the order the two terms are added:
-
-[```
-                q+84=84+q
-              \text{.}```]
-
-END_PGML_SOLUTION
-
-Section::End();
-
-############################################################
-# Section
-############################################################
-Section::Begin("");
-
-BEGIN_PGML
-Use the associative property of addition to write an equivalent expression to [`[$giv4]\text{.}`]
-
-[_]{$ev4}{10}
+[_]{$ans2}{20}
 
 END_PGML
 
@@ -209,41 +119,77 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-To use the associative property of addition, leave terms written in their original order, but change the grouping symbols so that a different addition has higher priority:
-
-[```
-                x+(20+c)=(x+20)+c
-              ```]
-
-END_PGML_SOLUTION
-
-Section::End();
-
-############################################################
-# Section
-############################################################
-Section::Begin("");
-
-BEGIN_PGML
-Use the distributive property to write an equivalent expression to [`[$giv5]`] that has no grouping symbols.
-
-[_]{$ans5}{10}
-
-END_PGML
-
-############################################################
-# Solution
-############################################################
-
-BEGIN_PGML_SOLUTION
-To use the distributive property, multiply the number outside the parentheses, [`3\text{,}`] with each term inside the parentheses:
+The terms [`-5q^2`] and [`-3q^2`] are like terms, so we may combine them. Note we are using one of the subtraction versions of the distributive property.
 
 [```\newcommand{\amp}{&}
 \begin{aligned}
-3(r+7)\amp=3\cdot r+3\cdot7\\
-\amp=3r+21\text{.}
+-5q^2-3q^2 \amp=(-5-3)q^2\\
+\amp=-8q^2
 \end{aligned}
 ```]
+
+END_PGML_SOLUTION
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+[`x-5y+4x`]
+
+[@KeyboardInstructions('If it cannot be simplified, just enter it as is.')@]**
+
+[_]{$ans3}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The terms [`x`] and [`4x`] are like terms, while the other term is different. Using the associative and commutative properties of addition early in the process allows us to place the two like terms next to each other, and then combine them:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+x-5y+4x \amp=x+(-5y)+4x\\
+\amp=x+((-5y)+4x)\\
+\amp=x+(4x+(-5y))\\
+\amp=(x+4x)+(-5y)\\
+\amp=(1+4)x+(-5y)\\
+\amp=5x+(-5y)=5x-5y
+\end{aligned}
+```]
+
+This walkthrough uses the algebra properties cleanly and clearly one step at a time, but if you are combining like terms more quickly, there's nothing at all wrong with that.
+
+END_PGML_SOLUTION
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+[`2x-3y+4z`]
+
+[@KeyboardInstructions('If it cannot be simplified, just enter it as is.')@]**
+
+[_]{$ans4}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The expression [`2x-3y+4z`] cannot be simplified as there are no like terms.
 
 END_PGML_SOLUTION
 

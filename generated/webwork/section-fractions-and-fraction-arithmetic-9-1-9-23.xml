@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-fractions-and-fraction-arithmetic-9-1-9-23" assembly-id="section-fractions-and-fraction-arithmetic-9-1-9-23">
+  <static seed="51" source="Contrib/PCC/BasicAlgebra/FractionArithmetic/DivideFractions40.pg">
+    <statement><p>Divide: <m>\displaystyle{-\frac{8}{5} \div (-10)  }</m></p>
+<p><fillin characters="11" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>{\frac{4}{25}}</m>
+      </p>
+    </answer>
+    <solution><p>When a negative number is divided by a negative number, the result is positive. We can simply ignore those two negative signs:</p>
+<p><m>\displaystyle{ -\frac{8}{5} \div (-10) = \frac{8}{5} \div 10 }</m></p>
+<p>When we do fraction multiplication/division, we need to rewrite any integer as a fraction. In this problem, we will do this with:</p>
+<p><m>\displaystyle{10 = \frac{10}{1} }</m></p>
+<p>Next, we change division to multiplication, and at the same time flip the second fraction. In this case, we have</p>
+<p><m>\displaystyle{ \frac{8}{5} \cdot \frac{1}{10} }</m></p>
+<p>Next, we do the fraction multiplication. The full process is:</p>
+<p><m>\displaystyle{\begin{aligned}
+   \left(-\frac{8}{5}\right) \div (-10)
+       \amp = \frac{8}{5} \div 10 \\
+       \amp = \frac{8}{5} \div \frac{10}{1} \\
+       \amp = \frac{8}{5} \cdot \frac{1}{10} \amp \hbox{We can simplify by dividing 8 and 10 by 2, making the numbers smaller.}\\
+       \amp = \frac{4}{5}\cdot \frac{1}{5} \\
+       \amp = \frac{4 \cdot 1}{5 \cdot 5} \\
+       \amp = \frac{4}{25}
+\end{aligned}
+    }</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/FractionArithmetic/DivideFractions40.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/FractionArithmetic/DivideFractions40.pg"/>
+</webwork-reps>

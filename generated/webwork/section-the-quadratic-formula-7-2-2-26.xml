@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-the-quadratic-formula-7-2-2-26" assembly-id="section-the-quadratic-formula-7-2-2-26">
+  <static seed="903">
+    <statement><p><m>{81x^{2}+90x+25}=0</m></p>
+<p><fillin characters="40" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{\frac{-5}{9}\right\}</m>
+      </p>
+    </answer>
+    <solution><p>To use the quadratic formula, we identify <m>a=81\text{,}</m> <m>b={90}\text{,}</m> and <m>c={25}\text{.}</m></p>
+<p><me>\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{{-90}\pm\sqrt{{8100}-4(1)({25})}}{2(81)}\\
+\amp=\frac{{-90}\pm\sqrt{0}}{162}\\
+\amp=\frac{{-90}}{162}
+\end{aligned}</me></p>
+<p>Since the disciriminant (that number in the radical) is <m>0\text{,}</m> there is only one solution. The solution set is <m>{\left\{\frac{-5}{9}\right\}}\text{.}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_4_5_37.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.4.5.37)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Fraction");
+do {$r = Fraction(non_zero_random(-9,9,1),random(2,9,1))} until (($r->value)[1] != 1);
+$B = -2*$r;
+$C = ($r)**2;
+$a = lcm(($B->value)[1],($C->value)[1]);
+$b = $a*$B;
+$c = $a*$C;
+Context()->noreduce('(-x)-y','(-x)+y');
+$f = Formula("$a x^2+$b x+$c")->reduce;
+$negb = -$b;
+$bsquared = ($b)**2;
+$a2 = 2*$a;
+$discriminant = 0;
+Context("FiniteSolutionSets");
+$solutions = Formula("{$r}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use the quadratic formula to solve the equation.
+
+[`[$f]=0`]
+
+[@KeyboardInstructions('If you need to enter a square root like [`\sqrt{17}\text{,}`] type [|sqrt(17)|]*. If there is no real solution, enter [|no real solution|]*.')@]**
+
+[_]{$solutions}{40}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+To use the quadratic formula, we identify [`a=[$a]\text{,}`] [`b=[$b]\text{,}`] and [`c=[$c]\text{.}`]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{[$negb]\pm\sqrt{[$bsquared]-4(1)([$c])}}{2([$a])}\\
+\amp=\frac{[$negb]\pm\sqrt{[$discriminant]}}{[$a2]}\\
+\amp=\frac{[$negb]}{[$a2]}
+\end{aligned}
+```]
+
+Since the disciriminant (that number in the radical) is [`0\text{,}`] there is only one solution. The solution set is [`[$solutions]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-fractions-and-fraction-arithmetic-9-2-4" assembly-id="section-fractions-and-fraction-arithmetic-9-2-4">
+  <static seed="95" source="Contrib/PCC/BasicMath/FractionApplication/FractionAdditionWordProblems20.pg">
+    <statement><p>Selena and Anthony are sharing a pizza. Selena ate <m>{{\frac{1}{8}}}</m> of the pizza, and Anthony ate <m>{{\frac{2}{7}}}</m> of the pizza. How much of the pizza was eaten in total?</p>
+<p>They ate <fillin characters="11" name="AnSwEr0001"/> of the pizza.</p>
+</statement>
+    <answer>
+      <p>
+        <m>{\frac{23}{56}}</m>
+      </p>
+    </answer>
+    <solution><p>This is an addition problem.</p>
+<p><m>\displaystyle{ 
+\begin{aligned}[t]
+   {{\frac{1}{8}}} + {{\frac{2}{7}}} 
+      \amp = \frac{1 \cdot 7}{8 \cdot 7}+\frac{2 \cdot 8}{7 \cdot 8} \\
+      \amp = \frac{7}{56} + \frac{16}{56} \\
+      \amp = \frac{7+16}{56} \\
+      
+      \amp = {{\frac{23}{56}}}
+\end{aligned}
+    }</m></p>
+<p>They ate <m>{{\frac{23}{56}}}</m> of the pizza.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicMath/FractionApplication/FractionAdditionWordProblems20.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicMath/FractionApplication/FractionAdditionWordProblems20.pg"/>
+</webwork-reps>

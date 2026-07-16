@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-quadratic-graphs-and-vertex-form-8-1-10" assembly-id="section-quadratic-graphs-and-vertex-form-8-1-10">
+  <static seed="1078" source="Contrib/PCC/BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation20.pg">
+    <statement><p>For the interval expressed in the number line, write it using set-builder notation and interval notation.</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-quadratic-graphs-and-vertex-form-8-1-10-image-1" width="60%">
+<shortdescription>Graph of an interval on a number line. There is a left bracket at -1 and everything right of that is shaded. To the right of the axis, there is a letter i.</shortdescription>
+</image>
+<p><fillin characters="30" name="AnSwEr0001"/></p>
+<p><fillin characters="30" name="AnSwEr0002"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{i \mid i\ge -1\right\}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\left[-1,\infty \right)</m>
+      </p>
+    </answer>
+    <solution><p>Since the given graph shades all the values greater than <m>-1</m> (and equal to <m>-1</m>) the graph represents the inequality <m>i \ge -1</m>.</p>
+<p>The corresponding set notation is <m>{\{ i \mid i \ge -1 \}}</m>.</p>
+<p>The corresponding interval notation is <m>{\left[-1,\infty \right)}</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation20.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation20.pg"/>
+</webwork-reps>

@@ -1,0 +1,78 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(A.8.4.62)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserRadioButtons.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$m = random(2, 3);
+$mraised = 100*$m;
+$p = random(4, 5);
+$praised = 100*$p;
+$buttons = RadioButtons(
+  ["\($m^{$p}\)", "\($p^{$m}\)", 'They are equal.'],
+  ($m**$p > $p**$m) ? 0 : 1,
+  showInStatic => 0
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Which number is greater, [`[$m]^{[$praised]}`] or [`[$p]^{[$mraised]}\text{?}`]
+
+[_]{$buttons}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Trying to calculate [`[$m]^{[$praised]}`] or [`[$p]^{[$mraised]}`] results in very large numbers. Notice that [`[$m]^{[$praised]}=[$m]^{([$p]\cdot 100)}\text{.}`] Also, notice that [`[$p]^{[$mraised]}=[$p]^{([$m]\cdot100)}\text{.}`] So to know if [`[$m]^{[$praised]}`] or [`[$p]^{[$mraised]}`] is bigger, we only have to compare [`[$m]^{[$p]}`] with [`[$p]^{[$m]}\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

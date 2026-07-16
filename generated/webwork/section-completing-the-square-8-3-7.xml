@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-3-7" assembly-id="section-completing-the-square-8-3-7">
+  <static seed="1186">
+    <statement><p>Consider <m>h(t)={3t^{2}+3t-1}\text{.}</m>
+<ol label="a.">
+<li>
+<p>Give the formula for <m>h</m> in vertex form.</p>
+<p><fillin characters="20" name="AnSwEr0001"/></p>
+</li>
+<li>
+<p>What is the vertex of the parabola graph of <m>h\text{?}</m></p>
+<p><fillin characters="20" name="AnSwEr0002"/></p>
+</li>
+</ol></p>
+</statement>
+    <answer>
+      <p>
+        <m>h\mathopen{}\left(t\right) = 3\mathopen{}\left(t+\frac{1}{2}\right)^{2}-\frac{7}{4}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\left(\frac{-1}{2},\frac{-7}{4}\right)</m>
+      </p>
+    </answer>
+    <solution><p>First factor out the leading coefficient from the first two terms, giving <m>h(t)={3\mathopen{}\left(t^{2}+t\right)-1}\text{.}</m> Then compute <m>\left(\frac{1}{2}\right)^2={{\frac{1}{4}}}\text{.}</m> Then</p>
+<p><me>\begin{aligned}
+h(t)\amp = {3\mathopen{}\left(t^{2}+t+{\frac{1}{4}}-{\frac{1}{4}}\right)-1}\\
+\amp = {3\mathopen{}\left(t^{2}+t+{\frac{1}{4}}\right)-{\frac{3}{4}}-1}\\
+\amp = {3\mathopen{}\left(t^{2}+t+{\frac{1}{4}}\right)-{\frac{7}{4}}}\\
+\amp={3\mathopen{}\left(t+\frac{1}{2}\right)^{2}-\frac{7}{4}}
+\end{aligned}</me></p>
+<p>From the vertex form, we can see the vertex is <m>{\left(\frac{-1}{2},\frac{-7}{4}\right)}\text{.}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_8_6_33.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg copied-from="section-completing-the-square-8-3-6"><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.8.6.34)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "bizarroArithmetic.pl",
+  "parserAssignment.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$f = RandomVariableName(type=>'function');
+$x = RandomVariableName(type=>'variable');
+Context()->variables->are($x=>'Real');
+$a = random(2,9,1);
+$bovera = non_zero_random(-9,9,1);
+$b = $a*$bovera;
+$c = non_zero_random(-5,5,1);
+$absc = abs($c);
+$formula = Formula("$a $x^2 + $b $x + $c")->reduce;
+$nonconstant = Formula("$a ($x^2 + $bovera $x)")->reduce;
+$partlyfactored = ($c > 0) ? $nonconstant + $c : Formula("$nonconstant - $absc");
+Context("Fraction");
+Context()->variables->are($x=>'Real');
+$h = Fraction(-$b, 2*$a)->reduce;
+$k = Fraction($formula->eval($x=>$h))->reduce;
+$helper = Fraction($bovera,2);
+$helpersquared = $helper**2;
+$perfectsquare = $nonconstant+$helpersquared;
+($num,$den) = $helper->value;
+$absnum = abs($num);
+if ($den != 1) {$linear = ($helper > 0) ? Formula("$x + $helper") : Formula("$x - $absnum/$den");}
+{$linear = ($helper > 0) ? Formula("$x + $helper") : Formula("$x - $absnum");};
+$inner = Formula("$x^2 + $bovera $x")->reduce;
+$solutionstep[0] = ($c > 0) ? Formula("$a($inner + $helpersquared - $helpersquared) + $c") : Formula("$a($inner + $helpersquared - $helpersquared) - $absc");
+$ah2 = $a*$helpersquared;
+$solutionstep[1] = ($c > 0) ? Formula("$a($inner + $helpersquared) - $ah2 + $c") : Formula("$a($inner + $helpersquared) - $ah2 - $absc");
+$ah2pc = -$a*$helpersquared+$c;
+$absah2pc = abs($ah2pc);
+$solutionstep[2] = ($ah2pc > 0) ? Formula("$a($inner + $helpersquared) + $ah2pc") : Formula("$a($inner + $helpersquared) - $absah2pc");
+Context("Point");
+Context()->flags->set(reduceConstants=>0);
+$vertex = Formula("($h,$k)");
+Context("Numeric");
+Parser::Number::NoDecimals();
+parser::Assignment->Allow;
+parser::Assignment->Function("$f");
+Context()->variables->are($x=>'Real');
+Context()->noreduce('(-x)-y','(-x)+y');
+Context()->flags->set(reduceConstants=>0);
+Context()->operators->set(
+  '+' => {class => 'bizarro::BOP::add', isCommand => 1},
+  '-' => {class => 'bizarro::BOP::subtract', isCommand => 1},
+  '*' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+  ' *' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+  '* ' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+  '/' => {class => 'bizarro::BOP::divide', isCommand => 1},
+  ' /' => {class => 'bizarro::BOP::divide', isCommand => 1},
+  '/ ' => {class => 'bizarro::BOP::divide', isCommand => 1},
+  '//' => {class => 'bizarro::BOP::divide', isCommand => 1},
+);
+($hnum,$hden) = $h->value;
+$abshnum = abs($hnum);
+if ($hden != 1) {$hshift = ($h > 0) ? Formula("$x - $h") : Formula("$x + $abshnum/$hden")}
+else {$hshift = ($h > 0) ? Formula("$x - $h") : Formula("$x + $abshnum")};
+($knum,$kden) = $k->value;
+$absknum = abs($knum);
+if ($kden != 1) {$vshift = ($k > 0) ? Formula("$x + $k") : Formula("$x - $absknum/$kden")}
+else {$vshift = ($k > 0) ? Formula("$x + $k") : Formula("$x - $absknum")};
+$vform = Formula("$a $x^2")->reduce;
+$vform = $vshift->substitute($x => $vform)->substitute($x => $hshift);
+$fxvform = Formula("$f($x)=$vform");
+$evaluator = $fxvform->cmp(checker=>sub{
+  my ( $correct, $student, $ansHash ) = @_;
+  return 0 if $ansHash->{isPreview} || $correct != $student;
+  $student = $ansHash->{student_formula};
+  $correct = $correct->{original_formula} if defined $correct->{original_formula};
+  $student = Formula("$student"); $correct = Formula("$correct");
+  return 0 unless ($correct == $student);
+  Context()->flags->set(bizarroAdd=>1,bizarroSub=>1,bizarroMul=>1,bizarroDiv=>1);
+  delete $correct->{test_values}, $student->{test_values};
+  my $OK = (($correct == $student) or ($student == $correct));
+  Context()->flags->set(bizarroAdd=>0,bizarroSub=>0,bizarroMul=>0,bizarroDiv=>0);
+  Value::Error("Your answer is a formula for $f, but not in vertex form") unless $OK;
+  return $OK;
+});
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Consider [`[$f]([$x])=[$formula]\text{.}`]
+a.  Give the formula for [`[$f]`] in vertex form.
+
+    [@KeyboardInstructions('Use function notation with your answer.')@]**
+
+    [_]{$evaluator}{20}
+
+a.  What is the vertex of the parabola graph of [`[$f]\text{?}`]
+
+    [_]{$vertex}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+First factor out the leading coefficient from the first two terms, giving [`[$f]([$x])=[$partlyfactored]\text{.}`] Then compute [`\left(\frac{[$bovera]}{2}\right)^2=[$helpersquared]\text{.}`] Then
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$f]([$x])\amp = [$solutionstep[0]]\\
+\amp = [$solutionstep[1]]\\
+\amp = [$solutionstep[2]]\\
+\amp=[$vform]
+\end{aligned}
+```]
+
+From the vertex form, we can see the vertex is [`[$vertex]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

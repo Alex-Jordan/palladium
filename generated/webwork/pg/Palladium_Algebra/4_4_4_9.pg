@@ -1,91 +1,123 @@
-# WeBWorK problem written by Danielle Rice
+# WeBWorK problem written by Chris Hughes, 2013
 # Portland Community College
 #
-# Simplify a/sqrt(b), where b is a square number.
+# Template:
+# Simplify the following expression
+#     x^m
+#     ---
+#     x^n
 #
-# Last edited: Jordan 9/8/13; Carl Yao 7/26/2013
+# We use a randomly-named variable (could be x, y, z, etc) from
+# PCCmacros.pl
+#
+# This problem chooes m and n to be POSITIVE, with n<m
+#
+# Last edited: Hughes 9/6/13, Carl Yao 6/28/13
 #
 # ENDDESCRIPTION
 
-## Problem Tagging Information
 ## DBsubject('Algebra')
-## DBchapter('Basic Algebra')
-## DBsection('Exponents and Radicals')
-## KEYWORDS('simplify','radical','denominator','rationalize','square root')
-## DBCCSS('8.EE')
+## DBchapter('Polynomial and Rational Functions')
+## DBsection('Polynomial Functions')
+## KEYWORDS('exponent','simplify','fraction','divide')
+## DBCCSS('8.EE.1')
 ## TitleText1('')
 ## EditionText1('')
 ## AuthorText1('')
 ## Section1('')
 ## Problem1('')
-## Author('Danielle Rice, Alex Jordan, Carl Yao, Chris Hughes')
+## Author('Alex Jordan, Carl Yao, Chris Hughes')
 ## Institution('PCC')
+
+##############################################
 
 DOCUMENT();
 
-########Begin Load Macro Files############
-#This section loads any and all .pl files that contain useful subroutines for the problem.
-
 loadMacros(
-  "PGstandard.pl",       #Always needed
-  "MathObjects.pl",      #Almost always needed
-  "PGML.pl",             #Almost always needed
-  "contextFraction.pl",
-  "contextLimitedRadical.pl",
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
   "PCCmacros.pl",
+  "contextLimitedPolynomial.pl",
+  "answerHints.pl",
+  "bizarroArithmetic.pl",
   "PGcourse.pl",
 );
 
-########Begin Problem Setup############
-#This is where you initialize variables and run computations
+##############################################
 
-Context("LimitedRadical");      
-#Almost always declare the context right away. Here we are declaring the most basic context, Numeric.
+Context("LimitedPolynomial-Strict");
+Context()->operators->set(
+   '/' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '/ ' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   ' /' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '//' => {class => 'bizarro::BOP::divide', isCommand => 1},
+   '*' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+   '* ' => {class => 'bizarro::BOP::multiply', isCommand => 1},
+   ' *' => {class => 'bizarro::BOP::multiply', isCommand => 1});
 
-#Create some random integers.
-$a = random(1,10,2);     #a random number from 1 to 9 taking steps of size 1
-do {$b = random(2,10,1);} until (gcd($a,$b)==1);
-$c = Real($b**2);
+# m and n are the exponents
+$m=random(3,20,1);
+$n=random(1,$m-1,1);
 
-($a,$b) = ($a/gcd($a,$b), $b/gcd($a,$b));
-$answer = Formula("$a/$b");
-#Create a Math Object Real that will be the problem's answer. This is much more intricate than a simple Perl scalar that would result from .
+# myvar is the variable- could be x, y, z, ..., anything in PCCmacros.pl
+$myvar = RandomVariableName(type=>'variable');
+Context()->variables->are($myvar=>'Real');
+
+# custom error message
+Context()->{error}{msg}{"A variable can appear only once in each term of a polynomial"}
+  = "Your answer must be fully simplified";
+
+# quick reduction check (if $m or $n is 1)
+$myvar1 = Formula("$myvar^$m")->reduce;
+$myvar2 = Formula("$myvar^$n")->reduce;
+$total = $m-$n;
+$ans = Formula("$myvar^($total)");
 
 
+##############################################
 TEXT(beginproblem());
-# Best practices always include this command here. It is responsible for the gray box around the problem, problem enumeration, and the path to the source .pg file.
 
-#Current best practice is to use the PGML environment to write the body.
 BEGIN_PGML
+[@ PTX_exercisegroup_introduction('Use the properties of exponents to simplify the expression.') @]
+   
+[`\displaystyle\frac{[$myvar1]}{[$myvar2]}`]
 
-[@ PTX_exercisegroup_introduction('Simplify the expression. If the result has a denominator, it must be rationalized.') @]
-
-[`` \frac{[$a]}{\sqrt{[$c]}} ``]
-
-[_]{$answer}{16}
+[___________]
 
 END_PGML
 
-########Begin more complicated answer processing (if needed)############
-
-#Not needed in this template.
-
-########Begin answer hints.############
-
-#Not used in this template. For the PCC coding projects, I think that this feature will rarely be used the first go-around.
-
-########Begin solution.############
-
-#The walk-through solution is presented to students after the due date, and may soon also be used with a "show me how to do this" button that gives a walk-through for a similar but randomly generated problem.
+$wrong=$m*$n;
+ANS($ans -> cmp(
+   checker=>sub{
+      my ( $correct, $student, $ansHash ) = @_;
+      Context()->flags->set(limits=>[0.95,1.05]);
+      return 0 if $ansHash->{isPreview} || $correct != $student;
+      $student = $ansHash->{student_formula};
+      $correct = $correct->{original_formula} if defined $correct->{original_formula};
+      $student = Formula("$student"); $correct = Formula("$correct");
+      return 0 unless ($correct == $student);
+      Context()->flags->set(bizarroDiv=>1,bizarroMul=>1);
+      delete $correct->{test_values}, $student->{test_values};
+      Context()->flags->set(limits=>[0.25,0.4]);
+      Value->Error("Your answer is correct, but please simplify it further") unless (($correct == $student) or ($student == $correct));
+      Context()->flags->set(bizarroDiv=>0,bizarroMul=>0);
+      return 1;
+}
+) ->
+  withPostFilter(AnswerHints(
+    [Compute("$myvar^($wrong)")] =>
+    "When dividing terms with the same base, you do not multiply the exponents.")));
 
 BEGIN_PGML_SOLUTION
-Because the denominator in this problem is a perfect square, we can easily evaluate the square root:
+We _subtract_ the exponents as follows
 
-    [`` \frac{[$a]}{\sqrt{[$c]}} = \frac{[$a]}{[$b]} ``]
+    [`\begin{aligned}
+           \frac{[$myvar]^{[$m]}}{[$myvar]^{[$n]}}&=[$myvar]^{[$m]-[$n]}\\
+                             &=[$myvar]^{[$total]}
+       \end{aligned}`]
 
 END_PGML_SOLUTION
-
-
+##############################################
 
 ENDDOCUMENT();
- 

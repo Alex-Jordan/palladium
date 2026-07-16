@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-multiply-fractions-reduce-copy" assembly-id="multiply-fractions-reduce-copy">
+  <static seed="493">
+    <statement><p><m>{{\frac{7}{32}}}\cdot{14}</m></p>
+<p><fillin characters="5" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>{\frac{49}{16}}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/Appendices/A_7_6_3.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg copied-from="multiply-fractions-reduce"><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(A.7.6.4)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGchoicemacros.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedFraction")->flags->set(allowMixedNumbers => 0, showMixedNumbers => 0);
+do {
+  ($a, $b) = random_coprime([2..10], [2..10]);
+  $c = (random_coprime([2..10], [$b]))[0];
+  $d = (random_coprime([2..10], [$c]))[0];
+} until (gcd($a, $d) == 1);
+$k = (random_coprime([2..10], [$a], [$d]))[0];
+$A = Fraction($a, $b*$k);
+$B = Fraction($c*$k, $d);
+($A, $B) = ($A, $B)[NchooseK(2,2)];
+$ans = $A*$B;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Multiply the fractions.
+
+[`[$A]\cdot[$B]`]
+
+[_]{$ans}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

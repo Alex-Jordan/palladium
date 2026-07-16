@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-10-10" assembly-id="section-solving-rational-equations-10-10-10">
+  <static seed="1581" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations10.pg">
+    <statement><p>Solve the equation.</p>
+<p><m>\displaystyle{ {\frac{3}{x}} = {4+\frac{23}{x}} }</m></p>
+<p><fillin characters="34" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{-5\right\}</m>
+      </p>
+    </answer>
+    <solution><p>To get rid of all fractions in this equation, we multiple all terms with the common denominator. In this equation, the common denominator is <m>{x}</m>.</p>
+<p><m>\displaystyle{\begin{aligned}
+   {\frac{3}{x}} \amp = {4+\frac{23}{x}} \\
+   \frac{3}{x} \cdot x \amp = 4 \cdot x +\frac{23}{x} \cdot x \\
+   3 \amp = 4 x  + 23 \\
+   3 \mathbf{ - 23} \amp = 4 x  + 23 \mathbf{ - 23} \\
+   -20 \amp = 4 x \\
+   \frac{-20}{4} \amp = \frac{4 x}{4} \\
+   -5 \amp = x \\
+   x \amp = -5
+\end{aligned}
+    }</m></p>
+<p>We must check solutions when we solve rational equations. By the original equation, the domain condition is <m>x \ne 0</m>. This doesn<rsq/>t conflict with the solution above, so the solution is <m>x = -5</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations10.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations10.pg"/>
+</webwork-reps>

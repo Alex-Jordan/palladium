@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:10-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,7 +27,6 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PGchoicemacros.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -43,18 +39,22 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-($a,$b,$c) = (2..9)[NchooseK(8,3)];
+$grouping = list_random(['(',')'],['[',']']);
+($answer, $bminusc) = random_subset(2, 3 .. 9);
+$a = $answer*$bminusc;
+$c = random(1,5,1);
+$b = $bminusc + $c;
 Context("LimitedNumeric");
-$answer = Real(abs($a-$b)*$c);
+$answer = Real($a/($b-$c));
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Use the order of operations to simplify the expression that has absolute value or implied grouping.
+Use the order of operations to simplify the expression.
 
-[`\definecolor{sapphire}{RGB}{59,90,125}\newcommand{\abs}[1]{\left\lvert#1\right\rvert}\abs{[$a] - [$b]} \cdot [$c]`]
+[`[$a] \div [$grouping->[0]] [$b] - [$c] [$grouping->[1]]`]
 
 [_]{$answer}{5}
 

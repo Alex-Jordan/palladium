@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-12T21:52:51-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,8 +27,10 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
   "contextFraction.pl",
-  "parserGraphTool.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -44,74 +43,85 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-($rise, $run) = random_coprime([-5..-1],[2..5]);
-($h,$k) = random_subset(2, -3..-1,1..3);
-($u,$v) = ($h+$run,$k+$rise);
-Context("Numeric");
-$A = Point($h,$k);
-$B = Point($u,$v);
 Context("Fraction");
-$m = Fraction($rise,$run);              
-$gt = GraphTool("{line,solid,$A,$B}")->with(
-showInStatic => 0,
-availableTools => ["LineTool"],
-showCoordinateHints => 0,
-bBox => [-8, 8, 8, -8],
-cmpOptions => {
-list_checker => sub {
-my ($correct, $student, $ans, $value) = @_;
-return 0 if $ans->{isPreview};
-my @errors;
-my $count = 0;
-my $distinct = 0;
-my $extra = 0;
-STUDENTS:
-for my $j (@$student) {
-my $nth = Value::List->NameForNumber(++$count);
-my ($p1x, $p1y) = $j->extract(3)->value;
-my ($p2x, $p2y) = $j->extract(4)->value;
-if ($p1x == $p2x) {
-push(@errors, "The $nth plotted line is a vertical line, and therefore does not have slope $m.");
-$extra++;
-next STUDENTS;
+do {
+  do {
+    $cd = random(2,3,1);
+    $cn = non_zero_random(-5,5,1);
+    $c = Fraction($cn,$cd);
+  } until (($c->value)[1] != 1);
+  if ($c > 0) {
+    $bd = random(2,3,1);
+    $bn = random(int(sqrt(4*$c)*$bd)+1,6) * list_random(-1,1);
+    $b = Fraction($bn,$bd);
+  } else {
+    $bd = 2;
+    $bn = non_zero_random(-3,3,1);
+    $b = Fraction($bn,$bd);
+  }
+} until (sqrt($bn**2*$cd**2 - 4*$cn*$cd*$bd**2) != int(sqrt($bn**2*$cd**2 - 4*$cn*$cd*$bd**2)));
+Context()->noreduce('(-x)-y','(-x)+y');
+$f = Formula("x^2+$b x+$c")->reduce;
+$disc = ($b)**2-4*$c;
+($discn,$discd) = $disc->value;
+($newdiscn,$newdiscd) = ($discn*$discd,$discd*$discd);
+$squarepart = 1;
+$squarefree = $newdiscn;
+for $i (2,3,5,7,11,13,17) {
+  while ($squarefree % $i**2 == 0) {
+    $squarepart *= $i**2;
+    $squarefree /= $i**2;
+  }
 }
-my $context = Context();
+$pull = sqrt($squarepart);
 Context("Fraction");
-my $slope = Fraction($p2y - $p1y, $p2x - $p1x);
-Context($context);
-if ($slope != $m) {
-push(@errors, "The $nth plotted line has slope $slope, not slope $m.");
-$extra++;
-next STUDENTS;
-}
-if ($k != $slope*($h - $p1x) + $p1y) {
-push(@errors, "The $nth plotted line does not pass through $A.");
-$extra++;
-next STUDENTS;
-}
-for my $i (0..($count-2)) {
-my ($x,$y) = $student->[$i]->extract(3)->value;
-next STUDENTS if ($y == $m*($x - $p1x) + $p1y);
-}
-$distinct++;
-}
-return (max(scalar(@{$correct}),scalar(@{$student}))*min($distinct,1)/1/(($extra)?2:1), @errors);
-}
-}
-);
+$B = Fraction($b/2);
+$P = Fraction($pull/(2*$newdiscd));
+if ($P == 1) {$P = ''};
+if ($pull == 1) {$pull = ''};
+$negb = -$b;
+$bsquared = ($b)**2;
+$discriminant = ($b)**2 - 4*1*$c;
+Context("FiniteSolutionSets");
+($r,$s) = (Formula("-$B - $P sqrt($squarefree)"),Formula("-$B + $P sqrt($squarefree)"));
+$solutions = Formula("{$r,$s}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Plot a line through the given point that has the given slope.
+Use the quadratic formula to solve the equation.
 
-Through [`[$A]`] with slope [`[$m]\text{.}`]
+[`[$f]=0`]
 
-[_]{$gt}{1}
+[@KeyboardInstructions('If you need to enter a square root like [`\sqrt{17}\text{,}`] type [|sqrt(17)|]*. If there is no real solution, enter [|no real solution|]*.')@]**
+
+[_]{$solutions}{40}
 
 END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+To use the quadratic formula, we identify [`a=1\text{,}`] [`b=[$b]\text{,}`] and [`c=[$c]\text{.}`]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{[$negb]\pm\sqrt{[$bsquared]-4(1)\left([$c]\right)}}{2}\\
+\amp=\frac{[$negb]\pm\sqrt{[$discriminant]}}{2}\\
+\amp=\frac{[$negb]\pm[$pull]\sqrt{[$squarefree]}}{2}\\
+x\amp=\frac{[$negb]-[$pull]\sqrt{[$squarefree]}}{2}\quad\text{or}\quad x=\frac{[$negb]+[$pull]\sqrt{[$squarefree]}}{2}\\
+x\amp=[$r]\quad\text{or}\quad x=[$s]
+\end{aligned}
+```]
+
+The solution set is [`[$solutions]\text{.}`]
+
+END_PGML_SOLUTION
 
 ############################################################
 # End Problem

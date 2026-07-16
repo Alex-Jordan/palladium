@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-the-quadratic-formula-7-2-2-40" assembly-id="section-the-quadratic-formula-7-2-2-40">
+  <static seed="917">
+    <statement><p><m>{0.6x^{2}+8.6x-8.8}=0</m></p>
+<p><fillin characters="40" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{-15.2924,0.959081\right\}</m>
+      </p>
+    </answer>
+    <solution><p>To use the quadratic formula, we identify <m>a=0.6\text{,}</m> <m>b=8.6\text{,}</m> and <m>c=-8.8\text{.}</m></p>
+<p><me>\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{-8.6\pm\sqrt{73.96-4(0.6)(-8.8)}}{2(0.6)}\\
+\amp=\frac{-8.6\pm\sqrt{95.08}}{1.2}\\
+\amp\approx\frac{-8.6\pm{9.7509}}{1.2}\\
+x\amp\approx\frac{-8.6-{9.7509}}{1.2}\quad\text{or}\quad x\approx\frac{-8.6+{9.7509}}{1.2}\\
+x\amp\approx{-15.2924}\quad\text{or}\quad x\approx{0.959081}
+\end{aligned}</me></p>
+<p>The solution set is approximately <m>{\left\{-15.2924,0.959081\right\}}\text{.}</m> Note that since we started with decimal coefficients, we felt it was acceptible to round the solutions to decimal approximations rather than keep to the exact solutions.</p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_4_5_51.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.4.5.51)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+do {
+  $a = non_zero_random(-9,9,1)+non_zero_random(-0.9,0.9,0.1);
+  $c = non_zero_random(-9,9,1)+non_zero_random(-0.9,0.9,0.1);
+  if ($a*$c > 0) {
+    $b = (random(int(sqrt(4*$a*$c))+1,20,1) + random(0.1,0.9,0.1)) * list_random(-1,1);
+  } else {
+    $b = non_zero_random(-9,9,1)+non_zero_random(-0.9,0.9,0.1);
+  }
+} until (sqrt(($b**2-4*$a*$c)*10) != int(sqrt(($b**2-4*$a*$c)*10)));
+Context()->noreduce('(-x)-y','(-x)+y');
+$f = Formula("$a x^2+$b x+$c")->reduce;
+$disc = $b**2-4*$a*$c;
+$denom = 2*$a;
+$B = $b/$denom;
+$negb = -$b;
+$a2 = 2*$a;
+$bsquared = ($b)**2;
+$discriminant = ($b)**2 - 4*$a*$c;
+$sqrtdisc = Real(sqrt($discriminant));
+Context("FiniteSolutionSets");
+Context()->flags->remove("NumberCheck");
+Context()->flags->set(useBizarro=>0);
+$r = Real(-$B - 1/$denom*sqrt($disc));
+$s = Real(-$B + 1/$denom*sqrt($disc));
+$solutions = Formula("{$r,$s}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use the quadratic formula to solve the equation.
+
+[`[$f]=0`]
+
+[@KeyboardInstructions('If you need to enter a square root like [`\sqrt{17}\text{,}`] type [|sqrt(17)|]*. If there is no real solution, enter [|no real solution|]*.')@]**
+
+[_]{$solutions}{40}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+To use the quadratic formula, we identify [`a=[$a]\text{,}`] [`b=[$b]\text{,}`] and [`c=[$c]\text{.}`]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{[$negb]\pm\sqrt{[$bsquared]-4([$a])([$c])}}{2([$a])}\\
+\amp=\frac{[$negb]\pm\sqrt{[$discriminant]}}{[$a2]}\\
+\amp\approx\frac{[$negb]\pm[$sqrtdisc]}{[$a2]}\\
+x\amp\approx\frac{[$negb]-[$sqrtdisc]}{[$a2]}\quad\text{or}\quad x\approx\frac{[$negb]+[$sqrtdisc]}{[$a2]}\\
+x\amp\approx[$r]\quad\text{or}\quad x\approx[$s]
+\end{aligned}
+```]
+
+The solution set is approximately [`[$solutions]\text{.}`] Note that since we started with decimal coefficients, we felt it was acceptible to round the solutions to decimal approximations rather than keep to the exact solutions.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-fractions-and-fraction-arithmetic-9-2-19" assembly-id="section-fractions-and-fraction-arithmetic-9-2-19">
+  <static seed="110" source="Contrib/PCC/BasicMath/FractionApplication/FractionDivisionWordProblems40.pg">
+    <statement><p>A construction team maintains a <m>{42}</m>-mile-long sewage pipe. Each day, the team
+can cover <m>{{\frac{3}{4}}}</m> of a mile. How many days will it take the team to complete the maintenance of the entire sewage pipe?</p>
+<p>It will take the team <fillin characters="9" name="AnSwEr0001"/> days to complete maintaining the entire sewage pipe.</p>
+</statement>
+    <answer>
+      <p>
+        <m>56</m>
+      </p>
+    </answer>
+    <solution><p>In this problem, the team maintains <m>{{\frac{3}{4}}}</m> miles of sewage pipe every day, until they complete all <m>{42}</m> miles. This is like repeatedly taking away <m>{{\frac{3}{4}}}</m> miles from <m>{42}</m> miles, a division problem.</p>
+<p><m>\displaystyle{ 
+\begin{aligned}[t]
+   {42} \div {{\frac{3}{4}}} 
+      \amp = \frac{{42}}{1} \div \frac{3}{4}  \\
+      \amp = \frac{{42}}{1} \cdot \frac{4}{3}  \\
+      \amp = \frac{{14}}{1} \cdot \frac{4}{1}  \\
+      \amp = \frac{{14} \cdot 4}{1 \cdot 1} \\
+      \amp = {56}
+\end{aligned}
+    }</m></p>
+<p>It will take the team <m>{56}</m> days to complete maintaining the entire sewage pipe.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicMath/FractionApplication/FractionDivisionWordProblems40.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicMath/FractionApplication/FractionDivisionWordProblems40.pg"/>
+</webwork-reps>

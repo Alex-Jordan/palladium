@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-complex-fractions-5-1-2" assembly-id="section-complex-fractions-5-1-2">
+  <static seed="1425" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions10.pg">
+    <statement><p>Calculate the following. Use an improper fraction in your answer.</p>
+<p><ol label="a.">
+<li>
+<p><m>\displaystyle{\frac{ \frac{25}{8} }{ \frac{5}{9} } =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</li>
+<li>
+<p><m>\displaystyle{\frac{ \frac{t}{r} }{ \frac{y}{x} } =}</m> <fillin characters="19" name="AnSwEr0002"/></p>
+</li>
+</ol></p>
+</statement>
+    <answer>
+      <p>
+        <m>{\frac{45}{8}}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\frac{tx}{ry}</m>
+      </p>
+    </answer>
+    <solution><p><alert>Problem 1</alert></p>
+<p>To simplify a complex fraction, we find the common denominator of all fractions. In this case, it is <m>72</m>. We multiply the complex fraction<rsq/>s numerator and denominator by this common denominator, and we have:</p>
+<p><m>\displaystyle{\begin{aligned}
+    
+      \amp = \frac{ \frac{25}{8} \cdot 72 }{ \frac{5}{9} \cdot 72 } \\
+      \amp = \frac{ 225 }{ 40 } \\
+      \amp = {{\frac{45}{8}}}
+\end{aligned}
+    }</m></p>
+<p>Here is a simple way to do fraction multiplication:</p>
+<p><m>\displaystyle{ \frac{25}{8} \cdot 72 = 72 \div 8 \cdot 25 = 225 }</m></p>
+<p><alert>Problem 2</alert></p>
+<p>To simplify a complex fraction, we find the common denominator of all fractions. In this case, it is <m>{rx}</m>. We multiply the complex fraction<rsq/>s numerator and denominator by this common denominator, and we have:</p>
+<p><m>\displaystyle{\begin{aligned}
+    
+      \amp = \frac{ \frac{t}{r} \cdot {rx} }{ \frac{y}{x} \cdot {rx} } \\
+      \amp = {\frac{tx}{ry}}
+\end{aligned}
+    }</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions10.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions10.pg"/>
+</webwork-reps>

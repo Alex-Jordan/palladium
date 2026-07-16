@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:10-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,9 +27,9 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PGchoicemacros.pl",
-  "parserCheckboxList.pl",
+  "niceTables.pl",
   "contextForm.pl",
+  "parserPopUp.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -45,47 +42,44 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("Numeric");
-Context()->variables->are(x=>'Real',y=>'Real',z=>'Real',r=>'Real',q=>'Real',p=>'Real',V=>'Real',);
-Context()->noreduce('(-x)-y');
-@allvars=('x','y','z','r','q','p','V');
-@var=(
-    list_random(@allvars),
-    (@allvars)[NchooseK(7,2)],
-    list_random(@allvars),
-    list_random(@allvars),
-    list_random(@allvars),
-    'r',
+$b = random(80, 150, 10);
+$r = random(36, 44, 4);
+$n = random(18, 26);
+$total = $b + $r*$n;
+Context()->variables->are(n => 'Real');
+$proposed_solution = (random(0,2)) ? $n : $n + non_zero_random(-3, 3);
+$left = Formula("$b + $r n");
+$right = Formula($total);
+Context("LimitedNumeric");
+$lefteval = Real($left->eval(n => $proposed_solution));
+$righteval = Real($right->eval(n => $proposed_solution));
+$dropdown = DropDown(
+  ["Yes, it is a solution.", "No, it is not a solution."],
+  ($lefteval <= $righteval) ? 0 : 1, showInStatic => 0
 );
-@left=(
-    Formula(non_zero_random(-9, 9) . " $var[0] + " . non_zero_random(-19, 19))->reduce,
-    Formula(random(1, 9) . " $var[1] + " . random(1, 9) . " $var[2]^2")->reduce,
-    Formula(random(1, 9) . ' + ' . non_zero_random(-9, 9) . "$var[3]^2")->reduce,
-    Formula(random(0.1, 9, 0.1) . $var[4])->reduce,
-    Formula("sqrt(" . non_zero_random(-9, 9, 0.1) . "$var[5] + " . non_zero_random(-9, 9) . ")")->reduce,
-    Formula("2 pi r")->reduce
-);
-@right=(
-    Compute(random(-9, 9)),
-    Compute(random(2, 29)),
-    Compute(random(-29, 29)),
-    Compute(random(-9, 9, 0.1)),
-    Compute(random(0, 9)),
-    Formula(random(1, 20).'pi')->reduce
-);
-@symbol = map{(random(0, 1)) ? '=' : list_random('\lt', '\gt', '\leq', '\geq', '\neq')} (0..5);
-@type = map{($_ eq '=') ? 'equation' : 'inequality'} (@symbol);
-@eq = map{$BM . $left[$_]->TeX . $symbol[$_] . $right[$_]->TeX . $EM} (0..5);
-$options = CheckboxList([~~@eq, "None of the above"], [0,3,5]);
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Select the equations/inequalities that are linear with one variable.
+An elementary school classroom needs a minimum of [`[$b]`] square feet for the teacher plus a minimum of [`[$r]`] square feet per student. So if there are [`n`] students, the total necessary area is [`[$left]`] square feet. If a classroom has [`[$total]`] square feet of area, then we have an inequality [`[$left]\leq[$right]\text{.}`] Could this classroom support [`[$proposed_solution]`] students?
 
-[_]{$options}{5}
+>> [@DataTable(
+  [
+    [PGML('[`[$left->TeX]`]'),
+     PGML('[`\leq`]'),
+     PGML('[`[$right->TeX]`]'),
+    ],
+    [PGML('[_]{$lefteval}{3}'),
+     PGML('[`\wonder{\leq}`]'),
+     PGML('[`[$righteval->TeX]`]'),
+    ],
+  ],
+      align => 'rcl',
+      valign => 'middle',);@]* <<
+
+[_]{$dropdown}{5}
 
 END_PGML
 

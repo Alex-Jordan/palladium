@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_QuadraticEquations_solveQuad75-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_QuadraticEquations_solveQuad75-copy">
+  <static seed="824">
+    <statement><p><m>41x^2  + 11= 0</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\text{no real solutions}</m>
+      </p>
+    </answer>
+    <solution><p>Let<rsq/>s try to rearrange the equation so that <m>x</m> is isolated</p>
+<p><m>\begin{aligned}
+                 41x^2+11 = 0\amp  \Rightarrow 41x^2=-11 \\
+                                    \amp  \Rightarrow x^2=-\frac{11}{41} \\
+       \end{aligned}</m></p>
+<p>The square root of a negative number is <em>not</em> real, so we conclude that there are <alert>no real solutions</alert> to this
+equation.  Note that <em>all</em> quadratic equations have <alert>two</alert> (possibly repeated) solutions; in this problem both solutions are <em>not</em> real.</p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_3_4_20.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Chris Hughes, 2013
+# Portland Community College
+#
+# Template:
+# Solve the following quadratic equation
+#
+#       b x^2  + a = 0
+#
+# If you need to use the square root symbol, 
+# as in x=sqrt{17}, type it like: *sqrt(17)*
+#
+# a and b are both prime numbers
+#
+# There are no real solutions to these equations.
+#
+# Last updated: Hughes 8/4/13
+# ENDDESCRIPTION
+
+## DBCCSS('A-REI.4.b')
+## DBsubject('Algebra')
+## DBchapter('Basic Algebra')
+## DBsection('equations', 'Simplification')
+## KEYWORDS('solve','quadratic','equation','square root','prime','subtract')
+## Author('Alex Jordan, Carl Yao, Chris Hughes')
+## Institution('PCC')
+
+##############################################
+DOCUMENT();
+
+loadMacros(
+      "PGstandard.pl",
+      "MathObjects.pl",
+      "answerHints.pl",
+      "PGML.pl",
+      "contextLimitedRadical.pl",
+      "contextFiniteSolutionSets.pl",
+      "PCCmacros.pl",
+    ,
+  "PGcourse.pl",
+);
+
+##############################################
+    
+Context("LimitedRadical");
+#Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0, formatStudentAnswer=>parsed);
+                               
+Context()->operators->redefine(',',using=>',',from=>'Numeric');
+Context()->operators->redefine('or',using=>',',from=>'Numeric');
+Context()->operators->set(
+      ','=>{string=>' or ',TeX=>'\hbox{ or }'},
+      'or'=>{string=>' or ',TeX=>'\hbox{ or }'}
+    );
+Context()->lists->set(List => {separator => " or "});
+
+# add solution strings to context- this means that if
+# students enter these (and they are not correct), then 
+# WW will not give a Context warning
+Context()->strings->add("no real solutions"=>{},
+  "no real solution"=>{alias=>'no real solutions'}, 
+  "none"=>{alias=>'no real solutions'}, 
+  );
+
+$mymsg = "Are you sure your solution satisfies the equation?";
+Context()->{error}{msg}{"Unexpected character '='"} 
+  = "$mymsg";
+
+$var = "x";
+@primes = (2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67);
+$index1 = random(0,$#primes,1);
+$index2 = $index1;
+$index2 = random(0,$#primes,1) while($index2==$index1);
+
+# choose $a and $b
+$a = $primes[$index1];
+$b = $primes[$index2];
+
+# for the answer
+
+Context("FiniteSolutionSets");
+$ans = Compute("no real solutions");
+
+##############################################
+
+BEGIN_PGML
+[@ PTX_exercisegroup_introduction('Solve the equation.') @]
+
+[@KeyboardInstructions("If you need to use the square root symbol, as in [`\\sqrt{17}`], type it as [|sqrt(17)|]*. If there are no real solutions, enter [|no real solutions|]*.")@]**
+
+     [` [$b][$var]^2  + [$a]= 0 `]
+
+     [_]{$ans}{16}
+
+END_PGML
+
+##############################################
+
+
+
+##############################################
+
+BEGIN_PGML_SOLUTION
+Let's try to rearrange the equation so that [`[$var]`] is isolated
+
+    [`
+       \begin{aligned}
+                 [$b][$var]^2+[$a] = 0& \Rightarrow [$b][$var]^2=-[$a] \\
+                                    & \Rightarrow [$var]^2=-\frac{[$a]}{[$b]} \\
+       \end{aligned}
+    `]
+
+The square root of a negative number is _not_ real, so we conclude that there are *no real solutions* to this
+equation.  Note that _all_ quadratic equations have *two* (possibly repeated) solutions; in this problem both solutions are _not_ real. 
+END_PGML_SOLUTION
+
+##############################################
+
+ENDDOCUMENT();
+
+]]></pg>
+</webwork-reps>

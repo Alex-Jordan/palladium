@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-quadratic-equations-by-factoring-6-3-3" assembly-id="section-solving-quadratic-equations-by-factoring-6-3-3">
+  <static seed="224" source="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication10.pg">
+    <statement><p>Two numbers<rsq/> sum is <m>-1</m>, and their product is <m>-72</m>. Find these two numbers.</p>
+<p>These two numbers are <fillin characters="11" name="AnSwEr0001"/>.</p>
+</statement>
+    <answer>
+      <p>
+        <m>8, -9</m>
+      </p>
+    </answer>
+    <solution><p>Let<rsq/>s call the first number <m>x</m>. Since these two numbers<rsq/> sum is <m>-1</m>, the second number must be <m>-1-x</m>.</p>
+<p>It<rsq/>s given that their product is <m>-72</m>, so we can write and solve the equation:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   x(-1-x) \amp = -72 \\
+   {-x-x^{2}} \amp = -72 \\
+   {-x^{2}-x+72} \amp = 0 \\
+\end{aligned}
+    }</m></p>
+<p>To get rid of the leading negative sign, we multiple each term in the equation by <m>-1</m>:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   (-1)({-x^{2}-x+72}) \amp = (-1) \cdot 0 \\
+   {x^{2}+x-72} \amp = 0
+\end{aligned}
+    }</m></p>
+<p>The polynomial can be factored, so we will solve the equation by factoring:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   (x-8)(x + 9) \amp = 0 \\
+   x-8 \amp = 0 \amp \text{or} \amp \amp  x + 9\amp =0 \\
+   x\amp =8 \amp \text{or} \amp \amp  x\amp =-9
+\end{aligned}
+    }</m></p>
+<p>This result shows the first number could be <m>8</m> or <m>-9</m>.</p>
+<p>Recall that the second number is <m>-1-x</m>, where <m>x</m> is the first number.</p>
+<p>If the first number is <m>8</m>, the second number is <m>-1-(8)=-9</m>. If the first number is <m>-9</m>, the second number is <m>-1-(-9)=8</m>. Either way, the two numbers are <m>8</m> and <m>-9</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication10.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication10.pg"/>
+</webwork-reps>

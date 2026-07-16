@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-fractions-and-fraction-arithmetic-9-5-30" assembly-id="section-fractions-and-fraction-arithmetic-9-5-30">
+  <static seed="260" source="Contrib/PCC/BasicAlgebra/FractionArithmetic/SubtractFractions30.pg">
+    <statement><p>Subtract: <m>\displaystyle{\frac{17}{18} - \frac{4}{9}}</m></p>
+<p><fillin characters="11" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>{\frac{1}{2}}</m>
+      </p>
+    </answer>
+    <solution><p>To subtract two fractions with different denominators, we first have to find a common denominator.</p>
+<p>In this case, the least common multiple of <m>18</m> and <m>9</m> is <m>18</m>.</p>
+<p>The first fraction already has the common denominator.</p>
+<p>Look at the second fraction <m>\displaystyle{\frac{4}{9}}</m>. To change the denominator to <m>18</m>, we multiply <m>2</m> at both the top and bottom, and we have:</p>
+<p><m>\displaystyle{ \begin{aligned}\frac{4}{9} \amp = \frac{4 \cdot 2}{9 \cdot 2}\\ \amp = \frac{8}{18} \end{aligned}}</m></p>
+<p>Finally, we can do the subtraction. The whole process is:</p>
+<p><m>\displaystyle{\begin{aligned}
+   \frac{17}{18} - \frac{4}{9}
+        \amp =  \frac{17}{18} - \frac{8}{18} \\
+        \amp = \frac{17 - 8}{18} \\
+        \amp = \frac{9}{18} \amp  \hbox{We can reduce this by dividing 9 into both the numerator and the denominator.
+}\\
+        \amp = \frac{1}{2}
+\end{aligned}
+    }</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/FractionArithmetic/SubtractFractions30.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/FractionArithmetic/SubtractFractions30.pg"/>
+</webwork-reps>

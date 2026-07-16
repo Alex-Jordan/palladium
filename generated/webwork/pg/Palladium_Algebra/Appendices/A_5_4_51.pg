@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:10-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,10 +27,9 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PGlateximage.pl",
   "PCCmacros.pl",
   "contextInequalitySetBuilder.pl",
-  "Pd.pl",
+  "parserGraphTool.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -49,42 +45,35 @@ TEXT(beginproblem());
 $a = random(-7, 7);
 InequalitySetBuilder::UseVerticalSuchThat();
 Context("InequalitySetBuilder-Only");
-$set_builder = Compute("{ x | x > $a}");
+$set_builder = Compute("{ x | x <= $a}");
 Context("Interval");
-$interval = Compute("($a, inf)");
-
-$image_1 = createLaTeXImage();
-$image_1->addToPreamble(latexImagePreamble());
-$image_1->BEGIN_LATEX_IMAGE
-\begin{tikzpicture}
-  \begin{axis}
-    [
-      numberline,
-      xlabel={\(x\)},
-      width=0.47\orccaprintwidth,
-    ]
-    \addplot[openinfiniteinterval] coordinates {($a,0) (12,0)};
-  \end{axis}
-\end{tikzpicture}
-
-END_LATEX_IMAGE
+$interval = Compute("(-inf, $a]");
+$gt = GraphTool("{interval,$interval}")->with(
+  availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
+  numberLine => 1,
+  xAxisLabel => 'x',
+  bBox => [ -8, 8 ],
+  ticksDistanceX => 1,
+  minorTicksX => 0,
+  useBracketEnds => 1,
+  showInStatic => 0,
+  showCoordinateHints => 0,
+);
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Express the given interval in set-builder notation and interval notation.
+Convert the given interval notation into a number line graph and set-builder notation.
 
->> [@image(insertGraph($image_1), width=>600, alt=>qq"a numberline with a shaded region; the shaded region begins at $a where there is a left parenthesis; it extends to the right all the way with an arrowhead")@]*  <<
+[`[$interval]`]
+
+[_]{$gt}{1}
 
 [@KeyboardInstructions('In set-builder notation:')@]**
 
 [_]{$set_builder}{12}
-
-[@KeyboardInstructions('In interval notation:')@]**
-
-[_]{$interval}{12}
 
 END_PGML
 

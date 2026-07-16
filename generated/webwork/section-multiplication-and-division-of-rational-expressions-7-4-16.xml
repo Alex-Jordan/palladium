@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-4-16" assembly-id="section-multiplication-and-division-of-rational-expressions-7-4-16">
+  <static seed="1281" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions110.pg">
+    <statement><p>Simplify the following expression, and if applicable, write the restricted domain on the simplified expression.</p>
+<p><m>\displaystyle{{\frac{-t^{2}-5t}{10-3t-t^{2}}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{t}{t-2}, t\ne -5</m>
+      </p>
+    </answer>
+    <solution><p>To simplify the expression, we first factor both the numerator and denominator, and then cross out common factors.</p>
+<p>If a polynomial is not in order, we order it by the variable<rsq/>s degrees.</p>
+<p>If the leading coefficient is negative, we factor out <m>-1</m>.</p>
+<p><m>\displaystyle{\begin{aligned}
+   {\frac{-t^{2}-5t}{10-3t-t^{2}}} \amp = \frac{{-\left(t^{2}+5t\right)}}{{-t^{2}-3t+10}} \\
+                     \amp = \frac{{-t\mathopen{}\left(t+5\right)}}{{-\left(t^{2}+3t-10\right)}} \\
+                     \amp = \frac{{-t\mathopen{}\left(t+5\right)}}{{-\left(t+5\right)\mathopen{}\left(t-2\right)}} \\
+                     \amp = {\frac{t}{t-2}, t\ne -5}
+\end{aligned}
+    }</m></p>
+<p>Since the factor <m>t+5</m> was crossed out, the domain condition lost during the simplification is <m>t \ne -5</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions110.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions110.pg"/>
+</webwork-reps>

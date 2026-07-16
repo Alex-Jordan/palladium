@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-multiply-polynomials" assembly-id="multiply-polynomials">
+  <static seed="2679">
+    <statement><p><m>{4\mathopen{}\left(r+3\right)\mathopen{}\left(r+7\right)}</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>4r^{2}+40r+84</m>
+      </p>
+    </answer>
+    <solution><p>We could first distribute <m>4</m> into <m>{r+3}</m> to get <m>{4r+12}\text{,}</m> and then multiply <m>{4r+12}</m> and <m>{r+7}\text{:}</m></p>
+<p><me>\begin{aligned}
+{4\mathopen{}\left(r+3\right)\mathopen{}\left(r+7\right)}\amp=({4r+12})({r+7})\\
+\amp={4r^{2}+40r+84}
+\end{aligned}</me></p>
+<p>We could also first multiply <m>{r+3}</m> and <m>{r+7}</m> to get <m>{r^{2}+10r+21}\text{,}</m> and then distribute <m>4</m> into <m>{r^{2}+10r+21}\text{:}</m></p>
+<p><me>\begin{aligned}
+{4\mathopen{}\left(r+3\right)\mathopen{}\left(r+7\right)}\amp=4({r^{2}+10r+21})\\
+\amp={4r^{2}+40r+84}
+\end{aligned}</me></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/Appendices/A_9_5_47.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(A.9.5.47)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+$a = random(2,5,1);
+$b = non_zero_random(-10,10,1);
+do {$c = non_zero_random(-10,10,1);} until ($b!=$c);
+$bPlusC = $b+$c;
+$bc = $b*$c;
+$d = $a*$bPlusC;
+$e = $a*$bc;
+$binomial1 = Compute("$var+$b")->reduce;
+$binomial2 = Compute("$var+$c")->reduce;
+$s1 = Compute("$a*$var+$a*$b")->reduce;
+$s2 = Compute("$var**2+$bPlusC*$var+$bc")->reduce;
+$problem = Compute("$a*($var+$b)*($var+$c)")->reduce;
+$ans = Compute("$a*$var**2+$d*$var+$e")->reduce;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Multiply the binomial with the binomial, writing the result as a single simplified polynomial.
+
+[`[$problem]`]
+
+[_]{$ans}{16}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+We could first distribute [`[$a]`] into [`[$binomial1]`] to get [`[$s1]\text{,}`] and then multiply [`[$s1]`] and [`[$binomial2]\text{:}`]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$problem]\amp=([$s1])([$binomial2])\\
+\amp=[$ans]
+\end{aligned}
+```]
+
+We could also first multiply [`[$binomial1]`] and [`[$binomial2]`] to get [`[$s2]\text{,}`] and then distribute [`[$a]`] into [`[$s2]\text{:}`]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$problem]\amp=[$a]([$s2])\\
+\amp=[$ans]
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

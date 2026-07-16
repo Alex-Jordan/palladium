@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-quotient-with-powers-copy" assembly-id="exponent-quotient-with-powers-copy">
+  <static seed="2595">
+    <statement><p><m>{\frac{h^{2}}{9}\frac{h^{3}}{6}}</m></p>
+<p><fillin characters="6" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{h^{0}}{54}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/Appendices/A_8_4_27.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg copied-from="exponent-quotient-with-powers"><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(A.8.4.28)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$x = list_random('a' .. 'k', 'm', 'n', 'p' .. 'r', 't' .. 'z');
+Context("Form")->variables->are($x => 'Real');
+@b = random_subset(2, 2 .. 9);
+@m = random_subset(2, 2 .. 9);
+$total = $m + $n;
+$b = $b[0] * $b[1];
+$given = Formula("($x^$m[0]/$b[0])($x^$m[1]/$b[1])");
+$ans = Formula("$x^$total/$b");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use the properties of exponents to simplify the expression.
+
+[`[$given]`]
+
+[_]{$ans}{6}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

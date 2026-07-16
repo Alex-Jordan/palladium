@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-fractions-and-fraction-arithmetic-9-1-7-7" assembly-id="section-fractions-and-fraction-arithmetic-9-1-7-7">
+  <static seed="23" source="Contrib/PCC/BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction30.pg">
+    <statement><p>Reduce the fraction <m>\displaystyle{ \frac{210}{63} }</m>.</p>
+<p><fillin characters="7" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>{\frac{10}{3}}</m>
+      </p>
+    </answer>
+    <solution><p>There are at least two methods to reduce the fraction <m>\displaystyle{ \frac{210}{63} }</m>.</p>
+<!-- PTX:WARNING: PGML wanted to make this a level 4 header. -->
+<p>
+Method 1:We find a number that divides into both the numerator <m>210</m>, and the denominator <m>63</m>.</p>
+<p>Check the first few prime numbers one by one: <m>2, 3, 5, 7, \ldots</m></p>
+<p>In this case, <m>3</m> divides into both the numerator and denominator of <m>\displaystyle{ \frac{210}{63} }</m>. We divide <m>3</m> into both numbers, and we have:</p>
+<p><m>\displaystyle{ \begin{aligned}\frac{210}{63} \amp = \frac{210 \div 3}{63\div 3}\\ \amp = \frac{70}{21} \end{aligned}}</m></p>
+<p>Next, check again whether any prime number divides into both the numerator and denominator. We need to keep trying until no prime numbers divide into both numbers. In this problem, <m>7</m> divides into both the numerator and denominator for <m>\displaystyle{ \frac{70}{21} }</m>. We divide <m>7</m> into both numbers, and we have:</p>
+<p><m>\displaystyle{ \begin{aligned}\frac{70}{21} \amp = \frac{70 \div 7}{21\div 7}\\\amp  = \frac{10}{3} \end{aligned}}</m></p>
+<p>Finally, we have: <m>\displaystyle{ \frac{210}{63} = \frac{10}{3} }</m></p>
+<!-- PTX:WARNING: PGML wanted to make this a level 4 header. -->
+<p>
+Method 2:</p>
+<p>A second method to reduce fraction is to prime factor both the numerator and the denominator, and then cancel out factors in pairs: one from the numerator and one from the denominator.</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   \frac{210}{63} \amp = \frac{2 \cdot 3 \cdot 5 \cdot 7}{3 \cdot 3 \cdot 7} \\
+                           \amp =\frac{2 \cdot 5}{3}\\
+                           \amp = \frac{10}{3}
+\end{aligned}
+    }</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction30.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/FractionMixedNumbersBasics/ReduceFraction30.pg"/>
+</webwork-reps>

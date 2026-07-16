@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-15-1-4-72" assembly-id="section-factoring-15-1-4-72">
+  <static seed="91" source="Contrib/PCC/BasicAlgebra/Factoring/factoring510.pg">
+    <statement><p>Factor the given polynomial.</p>
+<p><m>{7x^{3}+28x}=</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>7x\mathopen{}\left(x^{2}+4\right)</m>
+      </p>
+    </answer>
+    <solution><p>We note that <m>7x</m> is common to both 
+terms</p>
+<p><m>{7x^{3}+28x}  =  {7x\mathopen{}\left(x^{2}+4\right)}</m></p>
+<p>We can not factor the expression further, since the binomial is a sum of squares.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/Factoring/factoring510.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/Factoring/factoring510.pg"/>
+</webwork-reps>

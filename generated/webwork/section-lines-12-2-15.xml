@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-lines-12-2-15" assembly-id="section-lines-12-2-15">
+  <static seed="449" source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem60.pg">
+    <statement><p>Brandon has <m>{\$85}</m> in his piggy bank. He plans to purchase some Pokemon cards, which costs <m>{\$1.95}</m> each. He plans to save <m>{\$51.85}</m> to purchase another toy. At most how many Pokemon cards can he purchase?</p>
+<p>Write an equation to solve this problem.</p>
+<p>Brandon can purchase at most <fillin characters="10" name="AnSwEr0001"/> Pokemon cards.</p>
+</statement>
+    <answer>
+      <p>
+        <m>17</m>
+      </p>
+    </answer>
+    <solution><p>Assume Brandon can purchase <m>x</m> Pokemon cards.</p>
+<p>Each card costs <m>{\$1.95}</m>,  so <m>x</m> cards will cost <m>1.95x</m> dollars.</p>
+<p>Currently, Brandon has <m>{\$85}</m> in his piggy bank. After spending <m>1.95x</m> dollars, he would have <m>85-1.95x</m> dollars left.</p>
+<p>Brandon will keep <m>{\$51.85}</m> unspent. Now we can write an equation:</p>
+<p><m>\displaystyle{ 85-1.95x = 51.85 }</m></p>
+<p>Next, we solve for <m>x</m>:</p>
+<p><m>\begin{aligned}
+  85-1.95x \amp = 51.85 \\
+  85-1.95x \mathbf{{}-85} \amp = 51.85 \mathbf{{}-85} \\
+  -1.95x      \amp = -33.15 \\
+  \frac{-1.95x}{-1.95} \amp = \frac{-33.15}{-1.95} \\
+  x   \amp = 17
+\end{aligned}</m></p>
+<p>Brandon can purchase at most <m>17</m> Pokemon cards.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem60.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem60.pg"/>
+</webwork-reps>

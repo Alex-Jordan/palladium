@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator60-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator60-copy">
+  <static seed="1915">
+    <statement><p><m>\displaystyle{ \frac{4}{\sqrt{2}} }</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>2\sqrt{2}</m>
+      </p>
+    </answer>
+    <solution><p>We need to legally remove the radical <m>\sqrt{2}</m> from the denominator.</p>
+<p>We will use this property:</p>
+<p><m>\displaystyle{ \sqrt{x} \cdot \sqrt{x} = x }</m></p>
+<p>In this case, we have:</p>
+<p><m>\displaystyle{ \sqrt{2} \cdot \sqrt{2} = 2 }</m></p>
+<p>Multiply both the numerator and denominator by <m>\sqrt{2}</m>, and we have:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   \frac{4}{\sqrt{2}} \amp = \frac{4}{\sqrt{2}}\cdot\frac{\sqrt{2}}{\sqrt{2}}\\
+      \amp = \frac{4 \cdot \sqrt{2}}{\sqrt{2} \cdot \sqrt{2}} \\
+      \amp = \frac{4 \sqrt{2}}{2} \amp \text{We can divide both the numerator and denominator by 2.}\\
+      \amp = 2 \sqrt{2}
+\end{aligned}
+    }</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/4_3_4_4.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Carl Yao
+# Portland Community College
+#
+# Rationalize denominator. Radical cannot be simplified.
+# Answer has no fraction. Problems like 6/sqrt(3)
+#
+# Last edited: Jordan 9/8/13; Carl Yao 8/31/13,
+#
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Basic Algebra')
+## DBsection('Exponents and Radicals')
+## KEYWORDS('simplify','radical','square root','rationalize','denominator')
+## DBCCSS('8.EE')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Alex Jordan, Carl Yao, Chris Hughes')
+## Institution('PCC')
+
+ 
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "contextFraction.pl",
+  "contextLimitedRadical.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+
+######################################
+
+TEXT(beginproblem());
+Context("Numeric");
+
+$rad = list_random(2,3,5,6,7,10);
+$numAns = random(1,5,1);
+$num = $rad*$numAns;
+
+Context("LimitedRadical");
+if ($numAns!=1) {
+   $ans = Formula("$numAns*sqrt($rad)");
+} else {
+   $ans = Formula("sqrt($rad)");
+};
+
+Context()->{error}{msg}{"You must simplify your answer further"} 
+  = "Either your answer is not fully simplified or it has an irrational denominator";
+
+
+#####################################################
+
+BEGIN_PGML
+
+[@ PTX_exercisegroup_introduction('Simplify the expression. If the result has a denominator, it must be rationalized.') @]
+
+[`` \frac{[$num]}{\sqrt{[$rad]}} ``]
+
+[_]{$ans}{16}
+
+END_PGML
+
+############################################################
+
+
+
+if ($numAns==1) {$numOutput = "";}
+else {$numOutput = "$numAns";}
+
+BEGIN_PGML_SOLUTION
+
+We need to legally remove the radical [`\sqrt{[$rad]}`] from the denominator.
+
+We will use this property:
+
+    [`` \sqrt{x} \cdot \sqrt{x} = x ``]
+
+In this case, we have:
+
+    [`` \sqrt{[$rad]} \cdot \sqrt{[$rad]} = [$rad] ``]
+
+Multiply both the numerator and denominator by [` \sqrt{[$rad]} `], and we have:
+
+    [``
+\begin{aligned}[t]
+   \frac{[$num]}{\sqrt{[$rad]}} &= \frac{[$num]}{\sqrt{[$rad]}}\cdot\frac{\sqrt{[$rad]}}{\sqrt{[$rad]}}\\
+      &= \frac{[$num] \cdot \sqrt{[$rad]}}{\sqrt{[$rad]} \cdot \sqrt{[$rad]}} \\
+      &= \frac{[$num] \sqrt{[$rad]}}{[$rad]} &\text{We can divide both the numerator and denominator by [$rad].}\\
+      &= [$numOutput] \sqrt{[$rad]}
+\end{aligned}
+    ``]
+
+
+END_PGML_SOLUTION
+
+######################################
+
+
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

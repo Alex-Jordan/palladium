@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-simplify-two-terms-subtraction-copy" assembly-id="exponent-simplify-two-terms-subtraction-copy">
+  <static seed="2621">
+    <statement><p><m>{5e^{4}\cdot 9e^{9}-3e^{8}\cdot 6e^{5}}</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>27e^{13}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/Appendices/A_8_4_53.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg copied-from="exponent-simplify-two-terms-subtraction"><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(A.8.4.54)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$x = list_random('a' .. 'k', 'm', 'n', 'p' .. 'r', 't' .. 'z');
+Context("Form")->variables->are($x => 'Real');
+@m = num_sort(random_subset(3, 1 .. 9));
+$m = $m[0] + $m[2];
+push @m, $m[0] + $m[2] - $m[1];
+do {
+  @b = random_subset(4, -9 .. -2, 2 .. 9);
+  $b[0] = abs($b[0]);
+  $b = $b[0]*$b[1] - $b[2]*$b[3];
+} until ($b != 0);
+$given = Formula("($b[0] $x^$m[0])($b[1] $x^$m[2]) - ($b[2] $x^$m[1])($b[3] $x^$m[3]) ")->reduce;
+$ans = Formula("$b $x^$m")->reduce;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Simplify the given expression.
+
+[`[$given]`]
+
+[_]{$ans}{16}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

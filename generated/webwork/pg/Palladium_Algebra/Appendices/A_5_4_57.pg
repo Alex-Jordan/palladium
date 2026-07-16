@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:10-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,11 +27,8 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PGlateximage.pl",
   "PCCmacros.pl",
   "contextInequalitySetBuilder.pl",
-  "parserGraphTool.pl",
-  "Pd.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -47,71 +41,32 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$a = random(-7, 7);
 InequalitySetBuilder::UseVerticalSuchThat();
 Context("InequalitySetBuilder-Only");
-$set_builder = Compute("{ x | x <= $a}");
+Context()->variables->add(pH => 'Real', ph => 'Real');
+Context()->variables->set(pH => {TeX=>'\mathrm{pH}'}, ph => {TeX=>'\mathrm{pH}'});
+$set_builder = Compute("{ pH | pH < 7}");
 Context("Interval");
-$interval = Compute("(-inf, $a]");
-$gt = GraphTool("{interval,$interval}")->with(
-  availableTools => ['IntervalTool', 'IncludeExcludePointTool'],
-  numberLine => 1,
-  xAxisLabel => 'x',
-  bBox => [ -8, 8 ],
-  ticksDistanceX => 1,
-  minorTicksX => 0,
-  useBracketEnds => 1,
-  showInStatic => 0,
-  showCoordinateHints => 0,
-);
-
-$image_1 = createLaTeXImage();
-$image_1->addToPreamble(latexImagePreamble());
-$image_1->BEGIN_LATEX_IMAGE
-\begin{tikzpicture}
-  \begin{axis}
-    [
-      numberline,
-      xmin=-8,
-      xmax=8,
-      xlabel={\(x\)},
-      width=0.47\orccaprintwidth,
-    ]
-    \addplot[infiniteclosedinterval] coordinates {(-12,0) ($a,0)};
-  \end{axis}
-\end{tikzpicture}
-
-END_LATEX_IMAGE
+$interval = Compute("(-inf, 7)");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Convert the given set-builder notation into a number line graph and interval notation.
+A water-based liquid has a "pH" level. At room temperature, if the pH level is less than [`7\text{,}`] then the liquid is a "base". If it is greater than [`7\text{,}`] then the liquid is an "acid".
 
-[`[$set_builder]`]
+Write an interval for the pH level of a base.
 
-[_]{$gt}{1}
+[@KeyboardInstructions('In set-builder notation:')@]**
+
+[_]{$set_builder}{12}
 
 [@KeyboardInstructions('In interval notation:')@]**
 
 [_]{$interval}{12}
 
 END_PGML
-
-############################################################
-# Solution
-############################################################
-
-BEGIN_PGML_SOLUTION
-The set-builder notation tells us to graph all numbers less than or equal to [`[$a]\text{.}`] So the shading can start all the way to the left "at [`-\infty`]" and extend up to [`[$a]\text{.}`] There should be a bracket at [`[$a]`] to indicate that [`[$a]`] is included.
-
->> [@image(insertGraph($image_1), width=>600)@]*  <<
-
-And we read the number line from left to right, with the shading extending to [`-\infty`] and going all the way up to [`[$a]\text{,}`] including [`[$a]\text{.}`] So in interval notation, the interval is [`[$interval]\text{.}`]
-
-END_PGML_SOLUTION
 
 ############################################################
 # End Problem

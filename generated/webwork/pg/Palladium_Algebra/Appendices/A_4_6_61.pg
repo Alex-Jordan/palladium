@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:10-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -31,8 +28,8 @@ loadMacros(
   "PGML.pl",
   "AnswerFormatHelp.pl",
   "scaffold.pl",
-  "PGchoicemacros.pl",
   "contextForm.pl",
+  "Pd.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -46,7 +43,8 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-@var = ('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z')[NchooseK(49,3)];
+@ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+@var = random_subset(3, @ORCCA_variables);
 Context("Numeric");
 Context()->variables->are($var[0]=>'Real' ,$var[1]=>'Real', $var[2]=>'Real');
 Context()->lists->set(AbsoluteValue => {open => "(", close => ")"});

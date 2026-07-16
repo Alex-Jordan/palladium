@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplying-polynomials-5-4" assembly-id="section-multiplying-polynomials-5-4">
+  <static seed="2" source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/polyMultVar145.pg">
+    <statement><p>Multiply the polynomials.</p>
+<p><m>\displaystyle{({a-3b})({a^{2}+7ab+9b^{2}}) = }</m><fillin characters="28" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>a^{3}+4a^{2}b-12ab^{2}-27b^{3}</m>
+      </p>
+    </answer>
+    <solution><p>We multiply the polynomials by using the terms from <m>{a-3b}</m>
+successively. <me>\begin{aligned}
+        \left({a-3b}\right)\left({a^{2}+7ab+9b^{2}}\right)\amp = {aa^{2}+a\cdot 7ab+a\cdot 9b^{2}-3ba^{2}-3b\cdot 7ab-3b\cdot 9b^{2}}\\
+                      \amp  = {a^{3}+4a^{2}b-12ab^{2}-27b^{3}}
+    \end{aligned}</me></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/polyMultVar145.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/polyMultVar145.pg"/>
+</webwork-reps>

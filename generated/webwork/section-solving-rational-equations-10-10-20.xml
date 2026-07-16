@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-10-20" assembly-id="section-solving-rational-equations-10-10-20">
+  <static seed="1591" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations50.pg">
+    <statement><p>Solve the equation.</p>
+<p><m>\displaystyle{ {\frac{x+9}{x^{2}-81}} = 0 }</m></p>
+<p><fillin characters="34" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\text{no real solutions}</m>
+      </p>
+    </answer>
+    <solution><p>If a fraction<rsq/>s value is <m>0</m>, like <m>\frac{x}{y}=0</m>, then we can tell the numerator<rsq/>s value must be <m>0</m>, or <m>x=0</m> in this example.</p>
+<p>We apply the same rule for this question:</p>
+<p><m>\displaystyle{\begin{aligned}
+   {\frac{x+9}{x^{2}-81}} \amp = 0 \\
+   x+9 \amp =0 \\
+   x \amp = -9
+\end{aligned}
+    }</m></p>
+<p>We must check solutions when we solve rational equations. Since the denominator cannot be <m>0</m>, we set the denominator to <m>0</m> and solve for <m>x</m>. Those are the values we must exclude from the solutions.</p>
+<p><m>\displaystyle{\begin{aligned}
+   \amp {x^{2}-81} =0 \\
+   \amp {\left(x+9\right)\mathopen{}\left(x-9\right)} = 0 \\
+   \amp x + 9=0 \:\: or \:\: x  - 9=0 \\
+   \amp x = -9 \:\: or \:\: x = 9
+\end{aligned}
+    }</m></p>
+<p>The values <m>-9</m> and <m>9</m> must be excluded from the solution.</p>
+<p>The solution we got was <m>x = -9</m>. Since we have to exclude it from the solution set, there is no solution for this equation.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations50.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations50.pg"/>
+</webwork-reps>

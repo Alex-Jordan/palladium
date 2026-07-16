@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-20T13:16:08-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,11 +27,9 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PCCmacros.pl",
-  "parserFormulaWithUnits.pl",
-  "contextForm.pl",
-  "contextFraction.pl",
-  "parserLinearRelation.pl",
+  "PGchoicemacros.pl",
+  "contextCurrency.pl",
+  "contextPercent.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -47,28 +42,34 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("Fraction");
-$rate = Fraction(random(1,11),12);
-$speed = FormulaWithUnits("$rate ft");
-$initial = random(4,6);
-$final = random(10,12);
-Context("LinearRelation")->variables->are(t => 'Real');
-$equation = LinearRelation("$initial + $rate t = $final");
+Context("Percent");
+($p, $q) = map{Percent($_*0.005 + 0.01)} (0..4)[NchooseK(5,2)];
+Context("Currency");
+Context()->currency->addSymbol("dollars", "dollar");
+Context()->flags->set(trimTrailingZeros => 1);
+$original = random(9, 11, 0.25);
+$current = Currency(round($original*(1 + $p->value)*(1 + $q->value)));
+$original = Currency($current / (1 + $p) / (1 + $q));
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Write an equation to model the scenario. There is no need to solve the equation.
+Last year, Joan received a [`[$p]`] raise. This year, she received a [`[$q]`] raise. Her current wage is [`[$current]`] an hour. What was her wage before the two raises?
 
-You planted a young tree in front of your house, and it was [`[$initial]`] feet tall. Ever since, it has been growing by [`[$speed]`] each year. How many years will it take for the tree to grow to be [$final] feet tall? Write an equation to model this scenario. There is no need to solve it.
-
-[@KeyboardInstructions('Use [|t|]* as the variable.')@]**
-
-[_]{$equation}{20}
+[_]{$original}{10}
 
 END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+We can represent this situation with the equation: [` x \cdot (1 + [$p->value]) \cdot (1 + [$q->value]) = [$current->value]\text{.}`] Solve this equation for [`x\text{.}`]
+
+END_PGML_SOLUTION
 
 ############################################################
 # End Problem

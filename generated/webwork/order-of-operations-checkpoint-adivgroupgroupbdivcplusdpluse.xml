@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-order-of-operations-checkpoint-adivgroupgroupbdivcplusdpluse" assembly-id="order-of-operations-checkpoint-adivgroupgroupbdivcplusdpluse">
+  <static seed="2138">
+    <statement><p>Simplify <m>24\div(15\div 3+1)+2\text{.}</m></p>
+<p><fillin characters="10" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>6</m>
+      </p>
+    </answer>
+    <solution><p>With the expression <m>24\div(15\div 3+1) +2\text{,}</m> we<rsq/>ll simplify what<rsq/>s inside the parentheses according to the order of operations, and then take <m>24</m> divided by that expression as our last step:</p>
+<p><me>\begin{aligned}
+\amp 24\div(15\div 3+1)+2  \amp\amp\nextoperation{15\div 3}\\
+\amp=24\div(5+1)+2         \amp\amp\nextoperation{5+1}\\
+\amp=24\div \highlight{6}+2\amp\amp\nextoperation{24\div 6}\\
+\amp=\highlight{4}+2\\
+\amp=\highlight{6}
+\end{aligned}</me></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/Appendices/A_2_8.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(A.2.8)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedNumeric");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Simplify [`24\div(15\div 3+1)+2\text{.}`]
+
+[_]{6}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+With the expression [`24\div(15\div 3+1) +2\text{,}`] we'll simplify what's inside the parentheses according to the order of operations, and then take [`24`] divided by that expression as our last step:
+
+[```\newcommand{\highlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}\newcommand{\nextoperation}[1]{\mathord{\boxed{#1}}}\newcommand{\amp}{&}
+\begin{aligned}
+\amp 24\div(15\div 3+1)+2  \amp\amp\nextoperation{15\div 3}\\
+\amp=24\div(5+1)+2         \amp\amp\nextoperation{5+1}\\
+\amp=24\div \highlight{6}+2\amp\amp\nextoperation{24\div 6}\\
+\amp=\highlight{4}+2\\
+\amp=\highlight{6}
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

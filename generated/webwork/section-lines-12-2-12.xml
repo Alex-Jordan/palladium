@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-lines-12-2-12" assembly-id="section-lines-12-2-12">
+  <static seed="446" source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem30.pg">
+    <statement><p>A school purchased a batch of T-shirts from a company. The company charged <m>{\$6}</m> per T-shirt, and gave the school a <m>{\$50}</m> rebate. If the school had a net expense of <m>{\$2{,}590}</m> from the purchase, how many T-shirts did the school buy?</p>
+<p>The school purchased <fillin characters="10" name="AnSwEr0001"/> T-shirts.</p>
+</statement>
+    <answer>
+      <p>
+        <m>440</m>
+      </p>
+    </answer>
+    <solution><p>Let <m>x</m> be the number of T-shirts the school purchased.</p>
+<p>Each T-shirt costs <m>{\$6}</m>, so <m>x</m> T-shirts cost <m>6x</m> dollars. After that expense, there was a rebate of 50 dollars.</p>
+<p>Now we can write an equation:</p>
+<p><m>\displaystyle{ 6x-50 = 2590 }</m></p>
+<p>Next, we solve for <m>x</m>:</p>
+<p><m>\begin{aligned}
+  6x -50 \amp = 2590 \\
+  6x -50\mathbf{{}+50} \amp = 2590\mathbf{{}+50} \\
+  6x      \amp = 2640 \\
+  \frac{6x}{6} \amp = \frac{2640}{6} \\
+  x   \amp = 440
+\end{aligned}</m></p>
+<p>The school purchased <m>440</m> T-shirts.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem30.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem30.pg"/>
+</webwork-reps>

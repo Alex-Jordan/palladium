@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-slope-from-coordinates-fraction" assembly-id="slope-from-coordinates-fraction">
+  <static seed="266">
+    <statement><p><m>{\left(3,3\right)}</m> and <m>{\left(8,9\right)}</m></p>
+<p><fillin characters="10" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>{\frac{6}{5}}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/1_3_8_33.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.3.8.33)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedFraction")->flags->set(allowMixedNumbers => 0, showMixedNumbers => 0);
+($run, $rise) = random_coprime([2 .. 9], [1 .. 9]);
+$m = Fraction($rise, $run);
+$x[0] = non_zero_random(-9, 9);
+$x[1] = $x[0] + $run;
+$y[0] = non_zero_random(-9, 9);
+$y[1] = $y[0] + $rise;
+Context("Point");
+@p = map {Point($x[$_], $y[$_])} (0,1);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the slope of the line passing through the two given points.
+
+[`[$p[0]]`] and [`[$p[1]]`]
+
+[_]{$m}{10}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

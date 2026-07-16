@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-19T15:37:07-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,6 +27,7 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
+  "PGchoicemacros.pl",
   "contextFraction.pl",
   "PGcourse.pl",
 );
@@ -44,19 +42,27 @@ TEXT(beginproblem());
 # PG Setup Code
 ############################################################
 Context("LimitedFraction")->flags->set(allowMixedNumbers => 0, showMixedNumbers => 0);
-$root = Fraction(random_coprime([1..10], [2..10]));
-$square = $root**2;
+do {
+  ($a, $b) = random_coprime([2..10], [2..10]);
+  $c = (random_coprime([2..10], [$b]))[0];
+  $d = (random_coprime([2..10], [$c]))[0];
+} until (gcd($a, $d) == 1);
+$k = (random_coprime([2..10], [$a], [$d]))[0];
+$A = Fraction($a, $b*$k);
+$B = Fraction($c*$k, $d);
+($A, $B) = ($A, $B)[NchooseK(2,2)];
+$ans = $A*$B;
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Find the square root.
+Multiply the fractions.
 
-[`\sqrt{[$square]}`]
+[`[$A]\cdot[$B]`]
 
-[_]{$root}{3}
+[_]{$ans}{5}
 
 END_PGML
 

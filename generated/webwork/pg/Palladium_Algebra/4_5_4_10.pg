@@ -1,123 +1,96 @@
-# WeBWorK problem written by Chris Hughes, 2013
+# WeBWorK problem written by Carl Yao
 # Portland Community College
 #
-# Template:
-# Simplify the following expression
-#     x^m
-#     ---
-#     x^n
+# Solve a\sqrt{b-x}+c=d
 #
-# We use a randomly-named variable (could be x, y, z, etc) from
-# PCCmacros.pl
-#
-# This problem chooes m and n to be POSITIVE, with n<m
-#
-# Last edited: Hughes 9/6/13, Carl Yao 6/28/13
-#
+# Last updated: Yao 1/7/2017
 # ENDDESCRIPTION
 
+## DBCCSS('A-REI.4.b')
 ## DBsubject('Algebra')
-## DBchapter('Polynomial and Rational Functions')
-## DBsection('Polynomial Functions')
-## KEYWORDS('exponent','simplify','fraction','divide')
-## DBCCSS('8.EE.1')
-## TitleText1('')
-## EditionText1('')
-## AuthorText1('')
-## Section1('')
-## Problem1('')
+## DBchapter('Basic Algebra')
+## DBsection('equations', 'Simplification')
+## KEYWORDS('solve','quadratic','equation','square root')
 ## Author('Alex Jordan, Carl Yao, Chris Hughes')
 ## Institution('PCC')
 
 ##############################################
-
 DOCUMENT();
 
 loadMacros(
-  "PGstandard.pl",
-  "MathObjects.pl",
-  "PGML.pl",
-  "PCCmacros.pl",
-  "contextLimitedPolynomial.pl",
-  "answerHints.pl",
-  "bizarroArithmetic.pl",
-  "PGcourse.pl",
+   "PGstandard.pl",
+   "MathObjects.pl",
+   "parserAssignment.pl",
+   "answerHints.pl",
+   "PGML.pl",
+   "contextFiniteSolutionSets.pl",
+   "PCCmacros.pl",
+   "PGcourse.pl",
 );
 
 ##############################################
+    
+Context("FiniteSolutionSets");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = RandomVariableName(type=>'variable');
+Context()->variables->are($var=>'Real');
+Context()->flags->set(reduceConstants=>0, reduceConstantFunctions=>0, formatStudentAnswer=>parsed);
+                               
 
-Context("LimitedPolynomial-Strict");
-Context()->operators->set(
-   '/' => {class => 'bizarro::BOP::divide', isCommand => 1},
-   '/ ' => {class => 'bizarro::BOP::divide', isCommand => 1},
-   ' /' => {class => 'bizarro::BOP::divide', isCommand => 1},
-   '//' => {class => 'bizarro::BOP::divide', isCommand => 1},
-   '*' => {class => 'bizarro::BOP::multiply', isCommand => 1},
-   '* ' => {class => 'bizarro::BOP::multiply', isCommand => 1},
-   ' *' => {class => 'bizarro::BOP::multiply', isCommand => 1});
 
-# m and n are the exponents
-$m=random(3,20,1);
-$n=random(1,$m-1,1);
 
-# myvar is the variable- could be x, y, z, ..., anything in PCCmacros.pl
-$myvar = RandomVariableName(type=>'variable');
-Context()->variables->are($myvar=>'Real');
+$rad = (random(1,10,1))**2;
+$b = non_zero_random(-10,10,1);
+$solution = $b-$rad;
+$a = non_zero_random(-5,5,1);
+$c = non_zero_random(-10,10,1);
+$d = $a*sqrt($rad)+$c;
 
-# custom error message
-Context()->{error}{msg}{"A variable can appear only once in each term of a polynomial"}
-  = "Your answer must be fully simplified";
 
-# quick reduction check (if $m or $n is 1)
-$myvar1 = Formula("$myvar^$m")->reduce;
-$myvar2 = Formula("$myvar^$n")->reduce;
-$total = $m-$n;
-$ans = Formula("$myvar^($total)");
-
+$left = Compute("$a*sqrt($b-$var)+$c")->reduce;
+$right = Compute("$d")->reduce;
+$ans = Formula("{$solution}");
 
 ##############################################
-TEXT(beginproblem());
 
 BEGIN_PGML
-[@ PTX_exercisegroup_introduction('Use the properties of exponents to simplify the expression.') @]
-   
-[`\displaystyle\frac{[$myvar1]}{[$myvar2]}`]
 
-[___________]
+[@ PTX_exercisegroup_introduction('Solve the equation.') @]
+
+     [`` [$left] = [$right] ``]
+
+     [_]{$ans}{16}
 
 END_PGML
 
-$wrong=$m*$n;
-ANS($ans -> cmp(
-   checker=>sub{
-      my ( $correct, $student, $ansHash ) = @_;
-      Context()->flags->set(limits=>[0.95,1.05]);
-      return 0 if $ansHash->{isPreview} || $correct != $student;
-      $student = $ansHash->{student_formula};
-      $correct = $correct->{original_formula} if defined $correct->{original_formula};
-      $student = Formula("$student"); $correct = Formula("$correct");
-      return 0 unless ($correct == $student);
-      Context()->flags->set(bizarroDiv=>1,bizarroMul=>1);
-      delete $correct->{test_values}, $student->{test_values};
-      Context()->flags->set(limits=>[0.25,0.4]);
-      Value->Error("Your answer is correct, but please simplify it further") unless (($correct == $student) or ($student == $correct));
-      Context()->flags->set(bizarroDiv=>0,bizarroMul=>0);
-      return 1;
-}
-) ->
-  withPostFilter(AnswerHints(
-    [Compute("$myvar^($wrong)")] =>
-    "When dividing terms with the same base, you do not multiply the exponents.")));
+##############################################
+
+
+$s1 = sqrt($rad);
 
 BEGIN_PGML_SOLUTION
-We _subtract_ the exponents as follows
 
-    [`\begin{aligned}
-           \frac{[$myvar]^{[$m]}}{[$myvar]^{[$n]}}&=[$myvar]^{[$m]-[$n]}\\
-                             &=[$myvar]^{[$total]}
-       \end{aligned}`]
+To solve an equation with radicals, we first separate the radical on one side of the equation, and then square both sides:
+
+    [``
+\begin{aligned}
+   [$left] &= [$right] \\
+   [$left] \mathbf{{}-[$c]} &= [$right] \mathbf{{}-[$c]}  \\
+   [$a]\sqrt{[$b]-[$var]} &= [$right-$c] \\
+   \frac{[$a]\sqrt{[$b]-[$var]}}{[$a]} &= \frac{[$right-$c]}{[$a]} \\
+   \sqrt{[$b]-[$var]} &= [$s1] \\
+   (\sqrt{[$b]-[$var]})^2 &= ([$s1])^2 \\
+   [$b]-[$var] &= [$rad] \\
+   [$b]-[$var] \mathbf{{}-[$b]} &= [$rad] \mathbf{{}-[$b]}  \\
+   -[$var] &= [$rad-$b] \\
+   [$var] &= [$solution]
+\end{aligned}
+    ``]
+
+Whenever we square both sides of an equation, we could create extraneous solutions. We must check our solution. This part is left as exercise.
 
 END_PGML_SOLUTION
+
 ##############################################
 
 ENDDOCUMENT();

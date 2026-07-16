@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-fractions-and-fraction-arithmetic-9-2-3-4" assembly-id="section-fractions-and-fraction-arithmetic-9-2-3-4">
+  <static seed="24" source="Contrib/PCC/BasicMath/FractionsCalculation/EquivalentFraction10.pg">
+    <statement><p>Find an equivalent fraction to <m>\frac{5}{7}</m> with denominator <m>35</m>.</p>
+<p><fillin characters="8" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{25}{35}</m>
+      </p>
+    </answer>
+    <solution><p>From <m>7</m> to <m>35</m>, we multiplied by <m>35\div7=5</m>.</p>
+<p>For a fraction, when we multiply the same number in both the numerator and denominator, the fraction<rsq/>s value doesn<rsq/>t change. We have:</p>
+<p><m>\displaystyle{ \frac{5}{7}=\frac{5\cdot5}{7\cdot5} = \frac{25}{35} }</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicMath/FractionsCalculation/EquivalentFraction10.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicMath/FractionsCalculation/EquivalentFraction10.pg"/>
+</webwork-reps>

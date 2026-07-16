@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-property-tax-linear-model" assembly-id="property-tax-linear-model">
+  <static seed="24">
+    <statement><p>Mackenzie<rsq/>s annual property tax had been <m>{\$4{,}770}\text{.}</m> But she did some renovation to her house that added more square footage, and now the annual property tax is <m>{\$5{,}490}\text{.}</m> The county assesses property tax at a rate of <m>{\$2.27}</m> per square foot. How much area did Mackenzie add to her home? Write an equation to model this scenario. There is no need to solve it.</p>
+<p><fillin characters="20" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>4770+2.27A = 5490</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/1_1_6_18.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.6.18)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextCurrency.pl",
+  "parserLinearRelation.pl",
+  "randomPerson.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$name = randomPerson();
+$initial = random(4000,5000,5);
+Context("Currency")->flags->set(trimTrailingZeros => 1);
+$start = Currency($initial);
+$rate = random(1.5,2.5,0.01);
+$speed = Currency($rate);
+$final = $initial + random(400,1000,5);
+$end = Currency($final);
+Context("LinearRelation")->variables->are(A => 'Real');
+$equation = LinearRelation("$initial + $rate A = $final");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Read the scenario. Then write a complete sentence that defines a variable to use. Lastly, write an equation to model the scenario. There is no need to solve the equation.
+
+[$name]'s annual property tax had been [`[$start]\text{.}`] But [$name->subject] did some renovation to [$name->possessive] house that added more square footage, and now the annual property tax is [`[$end]\text{.}`] The county assesses property tax at a rate of [`[$speed]`] per square foot. How much area did [$name] add to [$name->possessive] home? Write an equation to model this scenario. There is no need to solve it.
+
+[@KeyboardInstructions('Use [|A|]* as the variable.')@]**
+
+[_]{$equation}{20}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

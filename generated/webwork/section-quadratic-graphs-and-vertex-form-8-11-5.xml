@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-quadratic-graphs-and-vertex-form-8-11-5" assembly-id="section-quadratic-graphs-and-vertex-form-8-11-5">
+  <static seed="895" source="Contrib/PCC/BasicAlgebra/QuadraticFunctions/QuadraticFunctionForms10.pg">
+    <statement><p>The quadratic expression <m>{\left(x-1\right)^{2}-36}</m> is written in vertex form.</p>
+<p><ol label="a.">
+<li>
+<p>Write the expression in standard form.</p>
+<p><fillin characters="17" name="AnSwEr0001"/></p>
+</li>
+<li>
+<p>Write the expression in factored form.</p>
+<p><fillin characters="17" name="AnSwEr0002"/></p>
+</li>
+</ol></p>
+</statement>
+    <answer>
+      <p>
+        <m>x^{2}-2x-35</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\left(x+5\right)\mathopen{}\left(x-7\right)</m>
+      </p>
+    </answer>
+    <solution><p><ol label="a.">
+<li>
+<p>If we expand the given polynomial:</p>
+<p><m>\begin{aligned} {\left(x-1\right)^{2}-36} \amp  = (x-1)(x-1)-36\\
+\amp = x^2-1x-1x+1^2-36\\
+\amp = {x^{2}-2x-35}\end{aligned}</m></p>
+</li>
+<li>
+<p>One way to find the factored form is to examine the expanded form, and factor it in the usual way. Here we look for two numbers that multiply to -35 and add to -2. Two such numbers are 5 and -7. Since the leading coefficient is <m>1</m>, these two numbers are the constant terms of two factors. And the factored form is</p>
+<p><m>{\left(x+5\right)\mathopen{}\left(x-7\right)}</m></p>
+<p>Another way to find the factored form is to find the roots of the polynomial. If we set the vertex form equal to <m>0</m>, we find</p>
+<p><m>\begin{aligned} {\left(x-1\right)^{2}-36} \amp = 0\\
+(x-1)^2\amp =36\\
+x-1\amp = 6\amp \amp \text{or }\amp x-1\amp =-6\\
+x\amp =7\amp \amp \text{or }\amp x\amp =-5\end{aligned}</m></p>
+<p>With these two roots, the factored form of the equation must be</p>
+<p><m>k(x-(-5))(x-7)</m></p>
+<p>Since the leading coefficient is <m>1</m>, <m>k</m> must be <m>1</m>, and the factored form is <m>{\left(x+5\right)\mathopen{}\left(x-7\right)}</m>.</p>
+</li>
+</ol></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/QuadraticFunctions/QuadraticFunctionForms10.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/QuadraticFunctions/QuadraticFunctionForms10.pg"/>
+</webwork-reps>

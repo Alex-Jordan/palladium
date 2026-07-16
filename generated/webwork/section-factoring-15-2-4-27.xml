@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-15-2-4-27" assembly-id="section-factoring-15-2-4-27">
+  <static seed="102" source="Contrib/PCC/BasicAlgebra/Factoring/factoring355.pg">
+    <statement><p>Factor the given polynomial.</p>
+<p><m>{y^{2}-2y+9}=</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\text{prime}</m>
+      </p>
+    </answer>
+    <solution><p>The number <m>9</m> can be factored into the product of two numbers in the following ways:</p>
+<p>\[1(9),-1(-9),3(3),-3(-3)\]</p>
+<p>Since no pair<rsq/>s sum is <m>-2</m>, we conclude that this polynomial is <alert>prime</alert>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/Factoring/factoring355.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/Factoring/factoring355.pg"/>
+</webwork-reps>

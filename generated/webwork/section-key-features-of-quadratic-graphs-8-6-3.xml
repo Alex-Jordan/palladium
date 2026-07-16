@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-key-features-of-quadratic-graphs-8-6-3" assembly-id="section-key-features-of-quadratic-graphs-8-6-3">
+  <static seed="1009" source="Contrib/PCC/BasicAlgebra/QuadraticApplications/MaxMinApplication10.pg">
+    <statement><p>Consider two numbers where one number is <m>9</m> less than a second number.
+Find a pair of such numbers that has the least product possible.
+One approach is to let <m>x</m> represent the smaller number, and write an expression for the product of the two numbers.
+Then find its vertex and interpret it.</p>
+<p>These two numbers are <fillin characters="11" name="AnSwEr0001"/> and the least possible product is <fillin characters="11" name="AnSwEr0002"/>.</p>
+</statement>
+    <answer>
+      <p>
+        <m>-4.5, 4.5</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>-20.25</m>
+      </p>
+    </answer>
+    <solution><p>If we call the first number <m>x</m>, then the second number is <m>x+9</m>.
+The product of the two numbers is:</p>
+<p><m>x(x+9)</m></p>
+<p>This is a quadratic expression. We will rewrite it in standard form first:</p>
+<p><m>{x^{2}+9x}</m></p>
+<p>Identify that <m>a=1, b=9, c=0</m>. The smallest possible product happens at the parabola<rsq/>s vertex.</p>
+<p>To find the parabola<rsq/>s vertex, we first find the parabola<rsq/>s axis of symmetry by the axis formula:</p>
+<p><m>\begin{aligned}
+  h \amp = -\frac{b}{2a} \\
+  h \amp = -\frac{9}{2(1)} \\
+  h \amp =  -4.5
+\end{aligned}</m></p>
+<p>Next, we substitute <m>x= -4.5</m> into the expression and we have:</p>
+<p><m>\begin{aligned}
+  {x^{2}+9x} \amp =  (-4.5)^2+9(-4.5)  \\
+   \amp =  {-20.25} 
+\end{aligned}</m></p>
+<p>The parabola<rsq/>s vertex is at <m>{\left(-4.5,-20.25\right)}</m>. This implies that the minimum product of such pairs is <m>{-20.25}</m>.
+This happens when one number is <m>-4.5</m>, and the other number is <m>-4.5+9</m>, or rather <m>4.5</m>.</p>
+<p>So these two numbers are <m>-4.5</m> and <m>4.5</m>. The minimum product is <m>{-20.25}</m>.</p>
+<p>The following graph of <m>y={x^{2}+9x}</m> illustrates our findings.</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-key-features-of-quadratic-graphs-8-6-3-image-1.png" width="40%"/>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/QuadraticApplications/MaxMinApplication10.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/QuadraticApplications/MaxMinApplication10.pg"/>
+</webwork-reps>

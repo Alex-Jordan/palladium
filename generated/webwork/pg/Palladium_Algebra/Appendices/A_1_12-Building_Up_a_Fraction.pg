@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:09-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -63,7 +60,7 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-To change the denominator from [`25`] to [`100\text{,}`] it needs to be multiplied by [`4\text{.}`] So we calculate
+To change the denominator from [`25`] to [`100\text{,}`] it needs to be multiplied by [`4\text{.}`] And then we are obligated to also multiply the nuemrator by [`4\text{.}`] So we have:
 
 [```\newcommand{\amp}{&}
 \begin{aligned}
@@ -72,7 +69,7 @@ To change the denominator from [`25`] to [`100\text{,}`] it needs to be multipli
 \end{aligned}
 ```]
 
-So the fraction [`\frac{21}{25}`] is equivalent to [`\frac{84}{100}\text{.}`] (This means Sayid scored an [`84\%\text{.}`])
+And the fraction [`\frac{21}{25}`] is equivalent to [`\frac{84}{100}\text{.}`] (This means Sayid scored an [`84\%\text{.}`])
 
 END_PGML_SOLUTION
 

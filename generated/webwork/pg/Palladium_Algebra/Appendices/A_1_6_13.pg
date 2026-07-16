@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-18T21:12:34-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,6 +27,7 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
+  "contextFraction.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -42,16 +40,28 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context('Numeric');
+Context("LimitedFraction")->flags->set(
+    allowMixedNumbers => 0,
+    reduceConstants => 1,
+    showMixedNumbers => 0
+);
+Parser::Number::NoDecimals;
+$f = Fraction(random_coprime([6 .. 20], [11 .. 19]));
+$k = random(3 .. 5);
+$n = $k*$f->num;
+$d = $k*$f->den;
+$f = $f->cmp(studentsMustReduceFractions => 1);
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Add or subtract the fractions.
+Reduce the fraction.
 
-A WeBWorK problem right here was meant to be a copy of another problem, but potentially with different randomization, but there was a failure. The [|@copy|]* attribute was set to [|webwork-add-integer-fraction|]*. Please report me, so the publisher can get more details by searching the runtime output for "[|PTX:ERROR|]*".
+[`\dfrac{[$n]}{[$d]}`]
+
+[_]{$f}{6}
 
 END_PGML
 

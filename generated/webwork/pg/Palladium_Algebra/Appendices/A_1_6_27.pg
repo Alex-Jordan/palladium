@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-18T21:12:34-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,9 +27,7 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PGchoicemacros.pl",
-  "contextFiniteSolutionSets.pl",
-  "contextForm.pl",
+  "contextFraction.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -45,27 +40,30 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
-Context()->variables->are($var => 'Real');
-($a, $b) = (1..20)[NchooseK(20,2)];
-$b = random(0,1) ? $b : -$b;
-$left = Formula("$var - $a")->reduce;
-$right = Formula("$b")->reduce;
-Context("FiniteSolutionSets");
-Context()->variables->are($var => 'Real');
-$solution = $b + $a;
-$solset = Formula("{$solution}");
+($n[0], $d[0], $n[1], $d[1], $k, $m) = random_pairwise_coprime([1 .. 9], [2 .. 9], [1 .. 9], [2 .. 9], [2 .. 9], [2 .. 9]);
+$n[0] *= $k;
+$d[1] *= $k;
+$n[1] *= $m;
+$d[0] *= $m;
+Context("LimitedFraction")->flags->set(
+    allowMixedNumbers => 0,
+    reduceConstants => 1,
+    showMixedNumbers => 0
+);
+Parser::Number::NoDecimals;
+@f = map {Fraction($n[$_], $d[$_])} (0, 1);
+$ans = Fraction($n[0]*$n[1], $d[0]*$d[1])->cmp(studentsMustReduceFractions => 1);
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Solve the equation.
+Multiply or divide the fractions.
 
-[`[$left]=[$right]`]
+[`\displaystyle [$f[0]]\cdot [$f[1]]`]
 
-[_]{$solset}{10}
+[_]{$ans}{6}
 
 END_PGML
 

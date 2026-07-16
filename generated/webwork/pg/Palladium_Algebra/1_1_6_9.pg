@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-20T13:16:08-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -31,6 +28,9 @@ loadMacros(
   "PGML.pl",
   "AnswerFormatHelp.pl",
   "PCCmacros.pl",
+  "contextCurrency.pl",
+  "parserLinearRelation.pl",
+  "randomPerson.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -43,23 +43,29 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context('Numeric');
-$a = random(1,10);
-$ans = Compute("$a - x");
-$numberWorda = numberWord($a);
+$name = randomPerson();
+$rate = random(4,8,0.01);
+Context("Currency")->flags->set(trimTrailingZeros => 1);
+$speed = Currency("$rate");
+$initial = random(300,400,0.25);
+$start = Currency("$initial");
+$final = random(600,800,5);
+$end = Currency("$final");
+Context("LinearRelation")->variables->are(t => 'Real');
+$equation = LinearRelation("$initial + $rate t = $final");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Translate the phrase or sentence into a math expression or equation (whichever is appropriate).
+Read the scenario. Then write a complete sentence that defines a variable to use. Lastly, write an equation to model the scenario. There is no need to solve the equation.
 
-[$numberWorda] decreased by a number
+To save up for a new phone that costs [`[$end]\text{,}`] [$name] sets aside [`1\%`] of [$name->possessive] pay each week. This works out to [`[$speed]`] per week. At present, [$name->subject] [$name->have] [`[$start]`] saved up. How long will it be until [$name] has saved up enough? Write an equation to model this scenario. There is no need to solve it.
 
-[@KeyboardInstructions('Use [`x`] as the variable.')@]**
+[@KeyboardInstructions('Use [|t|]* as the variable.')@]**
 
-[_]{$ans}{16}
+[_]{$equation}{20}
 
 END_PGML
 

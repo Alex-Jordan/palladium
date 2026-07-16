@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-quadratic-graphs-and-vertex-form-8-6-2" assembly-id="section-quadratic-graphs-and-vertex-form-8-6-2">
+  <static seed="1106" source="Contrib/PCC/Math95/ParabolaVertex/ParabolaVertex3.pg">
+    <statement><p>Find the vertex of the graph of <m>y=-\left(x-2\right)^{2}+7</m>.</p>
+<p><fillin characters="20" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left(2,7\right)</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/Math95/ParabolaVertex/ParabolaVertex3.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/Math95/ParabolaVertex/ParabolaVertex3.pg"/>
+</webwork-reps>

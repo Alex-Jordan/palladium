@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:09-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,6 +27,7 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
+  "contextFraction.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -42,16 +40,22 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context('Numeric');
+Context("LimitedFraction")->flags->set(
+    allowMixedNumbers => 0,
+    reduceConstants => 1,
+    showMixedNumbers => 0
+);
+Parser::Number::NoDecimals;
+$ans = Fraction(-1, 2);
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Simplify [`24\div(15\div 3+1)+2\text{.}`]
+Simplify [`(20-4^2)\div(4-6)^3\text{.}`]
 
-[_]{6}{10}
+[_]{$ans}{10}
 
 END_PGML
 
@@ -60,15 +64,16 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-With the expression [`24\div(15\div 3+1) +2\text{,}`] we'll simplify what's inside the parentheses according to the order of operations, and then take [`24`] divided by that expression as our last step:
+The expression [`(20-4^2)(4-6)^3`] has two sets of parentheses, so our first step will be to simplify what's inside each of those first according to the order of operations. Once we've done that, we'll apply the exponent and then finally divide:
 
 [```\newcommand{\highlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}\newcommand{\nextoperation}[1]{\mathord{\boxed{#1}}}\newcommand{\amp}{&}
 \begin{aligned}
-24\div(15\div 3+1) +2\amp= 24\div(\nextoperation{15\div 3}+1) +2\\
-\amp=24\div(\nextoperation{\highlight{5}+1}) +2\\
-\amp=\nextoperation{24\div \highlight{6}}+2\\
-\amp=\highlight{4}+2\\
-\amp=\highlight{6}
+\amp(20-4^2)\div(4-6)^3         \amp\amp\nextoperation{4^2}\\
+\amp= (20-\highlight{16})(4-6)^3\amp\amp\nextoperation{20-\highlight{16}}\\
+\amp= \highlight{4}(4-6)^3      \amp\amp\nextoperation{4-6}\\
+\amp= 4(\highlight{-2})^3       \amp\amp\nextoperation{(\highlight{-2})^3}\\
+\amp= 4(\highlight{-8})\\
+\amp= \highlight{-32}
 \end{aligned}
 ```]
 

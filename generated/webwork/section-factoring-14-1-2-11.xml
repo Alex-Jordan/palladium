@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-14-1-2-11" assembly-id="section-factoring-14-1-2-11">
+  <static seed="16" source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication25.pg">
+    <statement><p>Multiply the polynomials.</p>
+<p><m>\left({t+6}\right)\left({t+5}\right)=</m><fillin characters="32" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>t^{2}+11t+30</m>
+      </p>
+    </answer>
+    <solution><p>We use the FOIL technique- <alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast</p>
+<p><m>\begin{aligned}
+              \left({t+6}\right)({t+5})\amp ={t^{2}+5t+6t+30}\\
+                                \amp ={t^{2}+11t+30}
+      \end{aligned}</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication25.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication25.pg"/>
+</webwork-reps>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-graphing-quadratic-expressions-8-1-11" assembly-id="section-graphing-quadratic-expressions-8-1-11">
+  <static seed="1031" source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticEquations/solveQuad175.pg">
+    <statement><p>Solve the equation.</p>
+<p><m>{7x^{2}-4x-2}= 0</m></p>
+<p><fillin characters="29" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{\frac{2-3\sqrt{2}}{7},\frac{2+3\sqrt{2}}{7}\right\}</m>
+      </p>
+    </answer>
+    <solution><p>This equation does 
+not easily factor, so we will use the Quadratic Formula:</p>
+<p><m>\begin{aligned}
+            x \amp  = \frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+                   \amp  = \frac{4\pm\sqrt{16 + 56}}{14}\\
+                   \amp  = \frac{4\pm\sqrt{72}}{14}\\
+                   \amp  = \frac{4\pm6\sqrt{2}}{14}\\
+        \end{aligned}</m></p>
+<p>So <m>{\left\{\frac{2-3\sqrt{2}}{7},\frac{2+3\sqrt{2}}{7}\right\}}</m>.</p>
+<p>Note that <em>all</em> quadratic equations have <alert>two</alert> (possibly repeated) solutions; in this problem both solutions are real. Each solution can be checked by substituting it into the original equation- this is left as an exercise.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="PCC-ORCCA-ed3/BasicAlgebra/QuadraticEquations/solveQuad175.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticEquations/solveQuad175.pg"/>
+</webwork-reps>

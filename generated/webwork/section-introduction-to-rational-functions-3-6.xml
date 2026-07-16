@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-introduction-to-rational-functions-3-6" assembly-id="section-introduction-to-rational-functions-3-6">
+  <static seed="1206">
+    <statement><p>Identify which of the following are rational functions and which are not.
+<ol label="a.">
+<li>
+<p><m>f</m> defined by <m>f(x)=\frac{25x^2+3}{25x^2+3}</m> <ul form="popup" name="AnSwEr0001"><li>
+<p>?</p>
+</li><li>
+<p>is</p>
+</li><li>
+<p>is not</p>
+</li></ul> a rational function.</p>
+</li>
+<li>
+<p><m>Q</m> defined by <m>Q(x)=\frac{5x^2+3\sqrt{x}}{2x}</m> <ul form="popup" name="AnSwEr0002"><li>
+<p>?</p>
+</li><li>
+<p>is</p>
+</li><li>
+<p>is not</p>
+</li></ul> a rational function.</p>
+</li>
+<li>
+<p><m>g</m> defined by <m>g(t)=\frac{t\sqrt{5} -t^3}{2t+1}</m> <ul form="popup" name="AnSwEr0003"><li>
+<p>?</p>
+</li><li>
+<p>is</p>
+</li><li>
+<p>is not</p>
+</li></ul> a rational function.</p>
+</li>
+<li>
+<p><m>P</m> defined by <m>P(x)=\frac{5x+3}{\abs{2x+1}}</m> <ul form="popup" name="AnSwEr0004"><li>
+<p>?</p>
+</li><li>
+<p>is</p>
+</li><li>
+<p>is not</p>
+</li></ul> a rational function.</p>
+</li>
+<li>
+<p><m>h</m> defined by <m>h(x)=\frac{3^x+1}{x^2+1}</m> <ul form="popup" name="AnSwEr0005"><li>
+<p>?</p>
+</li><li>
+<p>is</p>
+</li><li>
+<p>is not</p>
+</li></ul> a rational function.</p>
+</li>
+</ol></p>
+</statement>
+    <answer>
+      <p>
+        <m>\text{is}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\text{is not}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\text{is}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\text{is not}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\text{is not}</m>
+      </p>
+    </answer>
+    <solution><p><ol label="a.">
+<li>
+<p><m>f</m> defined by <m>f(x)=\frac{25x^2+3}{25x^2+3}</m> is a rational function as its formula is a polynomial divided by another polynomial.</p>
+</li>
+<li>
+<p><m>Q</m> defined by <m>Q(x)=\frac{5x^2+3\sqrt{x}}{2x}</m> is not a rational function because the numerator contains <m>\sqrt{x}</m> and is therefore not a polynomial.</p>
+</li>
+<li>
+<p><m>g</m> defined by <m>g(t)=\frac{t\sqrt{5} -t^3}{2t+1}</m> is a rational function as its formula is a polynomial divided by another polynomial.</p>
+</li>
+<li>
+<p><m>P</m> defined by <m>P(x)=\frac{5x+3}{\abs{2x+1}}</m> is not a rational function because the denominator contains the absolute value of an expression with variables in it.</p>
+</li>
+<li>
+<p><m>h</m> defined by <m>h(x)=\frac{3^x+1}{x^2+1}</m> is not a rational function because the numerator contains <m>3^x\text{,}</m> which has a variable in the exponent.</p>
+</li>
+</ol></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/3_1_7.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(3.1.7)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserPopUp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$yes=PopUp(['?','is', 'is not'],1);
+$no=PopUp(['?','is', 'is not'],2);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Identify which of the following are rational functions and which are not.
+a.  [`f`] defined by [`f(x)=\frac{25x^2+3}{25x^2+3}`] [_]{$yes}{5} a rational function.
+
+a.  [`Q`] defined by [`Q(x)=\frac{5x^2+3\sqrt{x}}{2x}`] [_]{$no}{5} a rational function.
+
+a.  [`g`] defined by [`g(t)=\frac{t\sqrt{5} -t^3}{2t+1}`] [_]{$yes}{5} a rational function.
+
+a.  [`P`] defined by [`\definecolor{sapphire}{RGB}{59,90,125}\newcommand{\abs}[1]{\left\lvert#1\right\rvert}P(x)=\frac{5x+3}{\abs{2x+1}}`] [_]{$no}{5} a rational function.
+
+a.  [`h`] defined by [`h(x)=\frac{3^x+1}{x^2+1}`] [_]{$no}{5} a rational function.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  [`f`] defined by [`f(x)=\frac{25x^2+3}{25x^2+3}`] is a rational function as its formula is a polynomial divided by another polynomial.
+
+a.  [`Q`] defined by [`Q(x)=\frac{5x^2+3\sqrt{x}}{2x}`] is not a rational function because the numerator contains [`\sqrt{x}`] and is therefore not a polynomial.
+
+a.  [`g`] defined by [`g(t)=\frac{t\sqrt{5} -t^3}{2t+1}`] is a rational function as its formula is a polynomial divided by another polynomial.
+
+a.  [`P`] defined by [`\definecolor{sapphire}{RGB}{59,90,125}\newcommand{\abs}[1]{\left\lvert#1\right\rvert}P(x)=\frac{5x+3}{\abs{2x+1}}`] is not a rational function because the denominator contains the absolute value of an expression with variables in it.
+
+a.  [`h`] defined by [`h(x)=\frac{3^x+1}{x^2+1}`] is not a rational function because the numerator contains [`3^x\text{,}`] which has a variable in the exponent.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

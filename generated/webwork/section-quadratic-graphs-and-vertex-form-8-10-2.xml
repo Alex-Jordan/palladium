@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-quadratic-graphs-and-vertex-form-8-10-2" assembly-id="section-quadratic-graphs-and-vertex-form-8-10-2">
+  <static seed="1133">
+    <statement><p>Consider the graph of the equation <m>y={\left(x+1\right)^{2}-5}\text{.}</m> Compared to the graph of <m>y=x^2\text{,}</m> the vertex has been shifted <fillin characters="5" name="AnSwEr0001"/> units <ul form="popup" name="MuLtIaNsWeR_AnSwEr0001_1"><li>
+<p>?</p>
+</li><li>
+<p>left</p>
+</li><li>
+<p>right</p>
+</li></ul> and <fillin characters="5" name="AnSwEr0002"/> units <ul form="popup" name="MuLtIaNsWeR_AnSwEr0002_1"><li>
+<p>?</p>
+</li><li>
+<p>down</p>
+</li><li>
+<p>up</p>
+</li></ul>.</p>
+</statement>
+    <answer>
+      <p>
+        <m>1;\,\text{left}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>5;\,\text{down}</m>
+      </p>
+    </answer>
+    <solution><p>Since the vertex is <m>(-1,-5)\text{,}</m> the graph is the graph of <m>y=x^2</m> shifted 1 units left and 5 units down.</p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_7_6_71.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg copied-from="section-quadratic-graphs-and-vertex-form-8-10-1"><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.7.6.72)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserMultiAnswer.pl",
+  "parserPopUp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+do {
+  $h = non_zero_random(-9,9,1);
+  $k = non_zero_random(-9,9,1);
+} until (abs($h) != abs($k));
+Context()->noreduce('(-x)+y','(-x)-y');
+$formula = Formula("(x - $h)^2 + $k")->reduce;
+$hdir = ($h > 0) ? PopUp(['?','left','right'],2) : PopUp(['?','left','right'],1);
+$horizontal = MultiAnswer(abs($h),$hdir)->with(
+  singleResult => 1,
+  checker => sub {
+    my ($correct, $student, $self) = @_;
+    my @co = @{$correct};
+    my @st = @{$student};
+    return 1 if ($co[0] == $st[0] and $co[1] == $st[1] or $co[0] == -$st[0] and (lex_sort($co[1], $st[1]))[0] eq 'left' and (lex_sort($co[1], $st[1]))[1] eq 'right');
+    return 0;
+  }
+);
+$vdir = ($k > 0) ? PopUp(['?','down','up'],2) : PopUp(['?','down','up'],1);
+$vertical = MultiAnswer(abs($k),$vdir)->with(
+  singleResult => 1,
+  checker => sub {
+    my ($correct, $student, $self) = @_;
+    my @co = @{$correct};
+    my @st = @{$student};
+    return 1 if ($co[0] == $st[0] and $co[1] == $st[1] or $co[0] == -$st[0] and (lex_sort($co[1], $st[1]))[0] eq 'down' and (lex_sort($co[1], $st[1]))[1] eq 'up');
+    return 0;
+  }
+);
+$hshift = ($h > 0) ? abs($h)." units right" : abs($h)." units left";
+$vshift = ($k > 0) ? abs($k)." units up" : abs($k)." units down";
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Consider the graph of the equation [`y=[$formula]\text{.}`] Compared to the graph of [`y=x^2\text{,}`] the vertex has been shifted [_]{$horizontal}{5} units [_]{$horizontal}{5} and [_]{$vertical}{5} units [_]{$vertical}{5}.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Since the vertex is [`([$h],[$k])\text{,}`] the graph is the graph of [`y=x^2`] shifted [$hshift] and [$vshift].
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

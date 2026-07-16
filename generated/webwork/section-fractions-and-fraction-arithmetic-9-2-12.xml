@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-fractions-and-fraction-arithmetic-9-2-12" assembly-id="section-fractions-and-fraction-arithmetic-9-2-12">
+  <static seed="103" source="Contrib/PCC/BasicMath/FractionApplication/FractionSubtractionWordProblems60.pg">
+    <statement><p>A school had a fund-raising event. The revenue came from three resources: ticket sales, auction sales, and donations. Ticket sales account for <m>{{\frac{3}{5}}}</m> of the total revenue; auction sales account for <m>{{\frac{1}{4}}}</m> of the total revenue. What fraction of the revenue came from donations?</p>
+<p><fillin characters="10" name="AnSwEr0001"/> of the revenue came from donations.</p>
+</statement>
+    <answer>
+      <p>
+        <m>{\frac{3}{20}}</m>
+      </p>
+    </answer>
+    <solution><p>The revenue consists of <m>3</m> parts. The total revenue is like a big <m>1</m>; ticket sales account for <m>{{\frac{3}{5}}}</m>; auction sales account for <m>{{\frac{1}{4}}}</m>. To find the missing piece (from donations), we use subtraction.</p>
+<p>Note that a common denominator of <m>1</m>, <m>{{\frac{3}{5}}}</m> and <m>{{\frac{1}{4}}}</m> is <m>20</m>.</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   1 - {{\frac{3}{5}}} - {{\frac{1}{4}}}
+      \amp = \frac{20}{20} - \frac{3\cdot4}{5\cdot4} - \frac{1\cdot5}{4\cdot5} \\
+      \amp = \frac{20-12-5}{20} \\
+      
+      \amp = {{\frac{3}{20}}}
+\end{aligned}
+    }</m></p>
+<p>So <m>{{\frac{3}{20}}}</m> of the revenue came from donations.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicMath/FractionApplication/FractionSubtractionWordProblems60.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicMath/FractionApplication/FractionSubtractionWordProblems60.pg"/>
+</webwork-reps>

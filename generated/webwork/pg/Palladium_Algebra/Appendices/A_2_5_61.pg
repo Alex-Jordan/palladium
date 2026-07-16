@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:10-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -43,57 +40,18 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-($u,$v) = (1..4)[NchooseK(4,2)];
-($p,$q) = (2..4)[NchooseK(3,2)];
-$frac[0] = $p*$q*$u*$v;
-$frac[1] = $p*$q;
-@op = ('+','-','*','/')[NchooseK(4,2)];
-$op[2] = list_random('+','-','*');
-$c = random(2,9,1);
-%latex = ('+'=>'+', '-'=>'-', '*'=>'\cdot ', '/'=>'\div ');
-Context("Numeric");
-for my $i (0,1) {
-  if ($op[$i] eq '+') {
-    $b[$i] = random(2,9,1);
-    $a[$i] = $frac[$i] - $b[$i];
-  }
-  elsif ($op[$i] eq '-') {
-    $b[$i] = random(2,9,1);
-    $a[$i] = $frac[$i] + $b[$i];
-  }
-  elsif ($op[$i] eq '*') {
-    if ($i == 0) {
-      $b[$i] = $u*$p;
-      $a[$i] = $v*$q;
-    } else {
-      $b[$i] = $q;
-      $a[$i] = $p;
-    }
-  }
-  elsif ($op[$i] eq '/') {
-    $b[$i] = random(2,max(2,min(100/$frac[$i],9)),1);
-    $a[$i] = $frac[$i] * $b[$i];
-  }
-}
-if (list_random(0,1)) {
-  $answer = Real("$c $op[2] ($a[0] $op[0] $b[0]) / ($a[1] $op[1] $b[1])");
-  $expression = "$c $latex{$op[2]} \dfrac{$a[0] $latex{$op[0]} $b[0]}{$a[1] $latex{$op[1]} $b[1]}";
-
-} else {
-  $answer = Real("($a[0] $op[0] $b[0]) / ($a[1] $op[1] $b[1]) $op[2] $c");
-  $expression = "\dfrac{$a[0] $latex{$op[0]} $b[0]}{$a[1] $latex{$op[1]} $b[1]} $latex{$op[2]} $c";
-}
+($a,$b,$c) = (2..9)[NchooseK(8,3)];
 Context("LimitedNumeric");
-$answer = Real($answer);
+$answer = Real(abs($a-$b)*$c);
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Use the order of operations to simplify the expression that has absolute value or implied grouping.
+Use the order of operations to simplify the expression.
 
-[`[$expression]`]
+[`\definecolor{sapphire}{RGB}{59,90,125}\newcommand{\abs}[1]{\left\lvert#1\right\rvert}\abs{[$a] - [$b]} \cdot [$c]`]
 
 [_]{$answer}{5}
 

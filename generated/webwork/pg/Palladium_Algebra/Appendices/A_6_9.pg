@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:10-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -46,9 +43,9 @@ TEXT(beginproblem());
 ############################################################
 Context("LimitedNumeric");
 $yesno=RadioButtons([
-  "So -3 is a solution to this equation.",
-  "So -3 is not a solution to this equation.",
-  ], 1, showInStatic => 0
+  "So 2 is a solution to this inequality.",
+  "So 2 is not a solution to this inequality.",
+  ], 0, showInStatic => 0
 );
 
 ############################################################
@@ -56,17 +53,17 @@ $yesno=RadioButtons([
 ############################################################
 
 BEGIN_PGML
-Is [`-3`] a solution to the equation [`2x-3=5-(4+x)\text{?}`]
+Is [`2`] a solution to the inequality [`\newcommand{\lt}{<}\frac{z+3}{z-1}\lt\sqrt{18z}\text{?}`]
 
 >> [@DataTable(
   [
-    [PGML('[`2x-3`]'),
-     PGML('[`{}={}`]'),
-     PGML('[`5-(4+x)`]'),
+    [PGML('[`\dfrac{z+3}{z-1}`]'),
+     PGML('[`{}\lt{}`]'),
+     PGML('[`\sqrt{18z}`]'),
     ],
-    [PGML('[_]{-9}{3}'),
-     PGML('[`{}\wonder{=}{}`]'),
-     PGML('[_]{4}{3}'),
+    [PGML('[_]{5}{2}'),
+     PGML('[`{}\wonder{\lt}{}`]'),
+     PGML('[_]{6}{2}'),
     ],
   ],
       align => 'rcl',
@@ -81,18 +78,18 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-We have to substitute [`-3`] in for [`x`] and simplify each side:
+We have to substitute [`2`] in for [`z`] and simplify each side:
 
-[```\newcommand{\highlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}\newcommand{\reject}[1]{\stackrel{\text{no}}{#1}}\newcommand{\wonder}[1]{\stackrel{\text{?}}{#1}}\newcommand{\amp}{&}
+[```\newcommand{\highlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}\newcommand{\confirm}[1]{\stackrel{\checkmark}{#1}}\newcommand{\wonder}[1]{\stackrel{\text{?}}{#1}}\newcommand{\lt}{<}\newcommand{\amp}{&}
 \begin{aligned}
-2x-3\amp=5-(4+x)\\
-2(\substitute{-3})-3\amp\wonder{=}5-(4+(\substitute{-3}))\\
-\highlight{-6}-3\amp\wonder{=} 5-(\highlight{1})\\
-\highlight{-9}\amp\reject{=}\highlight{4}
+\frac{z+3}{z-1}\amp\lt\sqrt{18z}\\
+\frac{\substitute{2}+3}{\substitute{2}-1}\amp\wonder{\lt}\sqrt{18(\substitute{2})}\\
+\frac{\highlight{5}}{\highlight{1}}\amp\wonder{\lt}\sqrt{\highlight{36}}\\
+\highlight{5}\amp\confirm{\lt}\highlight{6}
 \end{aligned}
 ```]
 
-Since [`-9=4`] is false, [`-3`] is not a solution to this equation.
+Since [`\newcommand{\lt}{<}5\lt6`] is true, [`2`] is indeed a solution to this inequality.
 
 END_PGML_SOLUTION
 

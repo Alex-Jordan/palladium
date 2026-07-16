@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-addition-and-subtraction-of-rational-expressions-7-3-10" assembly-id="section-addition-and-subtraction-of-rational-expressions-7-3-10">
+  <static seed="1385" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions40.pg">
+    <statement><p>Add or subtract the rational expressions to a single rational expression and then simplify. If applicable, state the restricted domain.</p>
+<p><m>\displaystyle{{\frac{4y}{3}+\frac{y}{15}} =}</m> <fillin characters="40" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{7y}{5}, \left(-\infty ,\infty \right)</m>
+      </p>
+    </answer>
+    <solution><p><m>\displaystyle{\begin{aligned}
+   {\frac{4y}{3}+\frac{y}{15}} 
+      \amp = \frac{4y\cdot5}{{3}\cdot5} +{\frac{y}{15}} \\
+      \amp = \frac{20y}{15} +{\frac{y}{15}} \\
+      \amp = \frac{20y+{y}}{15} \\
+      \amp = \frac{21y}{15} \\
+      \amp = {\frac{7y}{5}, \left(-\infty ,\infty \right)}
+\end{aligned}
+    }</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions40.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions40.pg"/>
+</webwork-reps>

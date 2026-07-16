@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-12-5" assembly-id="section-solving-rational-equations-10-12-5">
+  <static seed="1612" source="Contrib/PCC/BasicAlgebra/RationalLiteralEquations/LiteralEquation270.pg">
+    <statement><p>Solve this equation for <m>C</m>:</p>
+<p><m>\displaystyle{ c = \frac{C}{n} }</m></p>
+<p><fillin characters="7" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>C = cn</m>
+      </p>
+    </answer>
+    <solution><p><m>\displaystyle{\begin{aligned}
+   c \amp = \frac{C}{n} \\
+   c \cdot n \amp = \frac{C}{n} \cdot n \\
+   c \cdot n \amp = C \\
+   C \amp = c \cdot n
+\end{aligned}
+}</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalLiteralEquations/LiteralEquation270.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalLiteralEquations/LiteralEquation270.pg"/>
+</webwork-reps>

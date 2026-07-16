@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-complex-fractions-5-2-13" assembly-id="section-complex-fractions-5-2-13">
+  <static seed="1444" source="Contrib/PCC/Math95/ComplexFractions/ComplexFractions7.pg">
+    <statement><p>Simplify this expression, and if applicable, write the restricted domain.</p>
+<p><m>\displaystyle{\frac{{\frac{1}{k-5}+\frac{3}{k+5}}}{{1-\frac{1}{k+5}}}=}</m> <fillin characters="40" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{2\mathopen{}\left(2k-5\right)}{\left(k+4\right)\mathopen{}\left(k-5\right)}, k\ne -5</m>
+      </p>
+    </answer>
+    <solution><p>To simply the complex fraction <m>\frac{{\frac{1}{k-5}+\frac{3}{k+5}}}{{1-\frac{1}{k+5}}}</m>, we multiple the numerator and denominator with the common denominator of <m>{\frac{1}{k-5}+\frac{3}{k+5}}</m> and <m>{1-\frac{1}{k+5}}</m>, which is <m>{\left(k-5\right)\mathopen{}\left(k+5\right)}</m>.</p>
+<p><m>\displaystyle{\begin{aligned}
+  \frac{{\frac{1}{k-5}+\frac{3}{k+5}}}{{1-\frac{1}{k+5}}} \amp = \frac{({\frac{1}{k-5}+\frac{3}{k+5}})\cdot{\left(k-5\right)\mathopen{}\left(k+5\right)}}{({1-\frac{1}{k+5}})\cdot{\left(k-5\right)\mathopen{}\left(k+5\right)}} \\
+    \amp = \frac{{\frac{1}{k-5}\mathopen{}\left(k-5\right)\mathopen{}\left(k+5\right)+\frac{3}{k+5}\mathopen{}\left(k-5\right)\mathopen{}\left(k+5\right)}}{{\left(k-5\right)\mathopen{}\left(k+5\right)-\frac{1}{k+5}\mathopen{}\left(k-5\right)\mathopen{}\left(k+5\right)}} \\
+    \amp = \frac{{k+5+3\mathopen{}\left(k-5\right)}}{{k^{2}-25-\left(k-5\right)}}, k \ne -5 \text{ and }  k \ne 5 \\
+    \amp = \frac{{k+5+3k-15}}{{k^{2}-25-k+5}}, k \ne -5 \text{ and }  k \ne 5 \\
+    \amp = \frac{{4k-10}}{{k^{2}-k-20}}, k \ne -5 \text{ and }  k \ne 5 \\
+    \amp = {\frac{2\mathopen{}\left(2k-5\right)}{\left(k+4\right)\mathopen{}\left(k-5\right)}, k\ne -5}
+\end{aligned}
+    }</m></p>
+<p>Since <m>k + 5</m> was canceled, <m>k \ne -5</m> is a lost domain condition.</p>
+<p>Although <m>k - 5</m> was also canceled, <m>k \ne 5</m> is not a lost domain condition because it is implied in the solution.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/Math95/ComplexFractions/ComplexFractions7.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/Math95/ComplexFractions/ComplexFractions7.pg"/>
+</webwork-reps>

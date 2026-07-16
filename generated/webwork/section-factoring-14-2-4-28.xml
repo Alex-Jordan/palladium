@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-14-2-4-28" assembly-id="section-factoring-14-2-4-28">
+  <static seed="103" source="Contrib/PCC/BasicAlgebra/Factoring/factoring355.pg">
+    <statement><p>Factor the given polynomial.</p>
+<p><m>{y^{2}+5y+8}=</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\text{prime}</m>
+      </p>
+    </answer>
+    <solution><p>The number <m>8</m> can be factored into the product of two numbers in the following ways:</p>
+<p>\[1(8),-1(-8),2(4),-2(-4)\]</p>
+<p>Since no pair<rsq/>s sum is <m>5</m>, we conclude that this polynomial is <alert>prime</alert>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/Factoring/factoring355.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/Factoring/factoring355.pg"/>
+</webwork-reps>

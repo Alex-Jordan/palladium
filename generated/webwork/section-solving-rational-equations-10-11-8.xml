@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-11-8" assembly-id="section-solving-rational-equations-10-11-8">
+  <static seed="1608" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations66.pg">
+    <statement><p>Solve the equation.</p>
+<p><m>\displaystyle{ {-\frac{2}{x-4}+4\frac{x}{x-8}}={-\frac{2}{x^{2}-12x+32}}  }</m></p>
+<p><fillin characters="31" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{3,\frac{3}{2}\right\}</m>
+      </p>
+    </answer>
+    <solution><p>To clear fractions in an equation, multiply each side of the equation by a common denominator. For this problem, a common denominator is <m>{\left(x-4\right)\mathopen{}\left(x-8\right)}</m>.</p>
+<p><m>\displaystyle{\begin{aligned}
+  \amp {-\frac{2}{x-4}+4\frac{x}{x-8}} = {-\frac{2}{x^{2}-12x+32}} \\
+  \amp {-\frac{2}{x-4}+4\frac{x}{x-8}} = {-\frac{2}{\left(x-4\right)\mathopen{}\left(x-8\right)}} \\
+  \amp {-\frac{2}{x-4}\mathopen{}\left(x-4\right)\mathopen{}\left(x-8\right)+4\frac{x}{x-8}\mathopen{}\left(x-4\right)\mathopen{}\left(x-8\right)} = {-\frac{2}{\left(x-4\right)\mathopen{}\left(x-8\right)}\mathopen{}\left(x-4\right)\mathopen{}\left(x-8\right)} \\
+  \amp {-2\mathopen{}\left(x-8\right)+4x\mathopen{}\left(x-4\right)} = -2 \\
+  \amp {-2x+16+4x^{2}-16x} = -2 \\
+  \amp {4x^{2}-18x+16} = -2 \\
+  \amp {4x^{2}-18x+18} = 0 \\
+  \amp {2\mathopen{}\left(2x^{2}-9x+9\right)} = 0 \\
+  \amp ({2x-3})({x-3}) = 0 \\
+   \amp {2x-3}=0 \:\: or\:\: {x-3}=0 \\
+   \amp x={{\frac{3}{2}}} \:\: or\:\: x={3}
+\end{aligned}
+    }</m></p>
+<p>We must check solutions when we solve rational equations. In the original equation, both denominators cannot be <m>0</m>. We set them to <m>0</m>, so we can find out what values to exclude from the solution set.</p>
+<p>For this example, it<rsq/>s easy to see we must exclude <m>4</m> and <m>8</m> from the solution set. There is no conflict with those two solutions we got, so the final solution is <m>x={{\frac{3}{2}}}</m> and <m>x={3}</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations66.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations66.pg"/>
+</webwork-reps>

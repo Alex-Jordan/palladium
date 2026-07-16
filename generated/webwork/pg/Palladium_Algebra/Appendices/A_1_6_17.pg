@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-18T21:12:34-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,6 +27,8 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -42,16 +41,26 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context('Numeric');
+Context("Fraction");
+$f = Fraction(random_coprime([2 .. 9], [2 .. 9]));
+$k = random(6 .. 9);
+$num = $f->num;
+$den = $f->den;
+$n = $k*$num;
+$d = $k*$den;
+Context("Form");
+$ans = Formula("$n/$d");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Add or subtract the fractions.
+Find an equivalent fraction with the given denominator.
 
-A WeBWorK problem right here was meant to be a copy of another problem, but potentially with different randomization, but there was a failure. The [|@copy|]* attribute was set to [|webwork-subtract-fractions-one-build-no-reduce|]*. Please report me, so the publisher can get more details by searching the runtime output for "[|PTX:ERROR|]*".
+[`\dfrac{[$num]}{[$den]}`] with denominator [`[$d]`]
+
+[_]{$ans}{6}
 
 END_PGML
 

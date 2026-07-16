@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-complex-fractions-5-3-8" assembly-id="section-complex-fractions-5-3-8">
+  <static seed="1459" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions50.pg">
+    <statement><p>Simplify this expression.</p>
+<p><m>\displaystyle{{\frac{\frac{2}{r}}{12+\frac{2t}{5}}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{5}{r\mathopen{}\left(t+30\right)}\hbox{ or }\frac{5}{rt+30r}</m>
+      </p>
+    </answer>
+    <solution><p>To simplify a complex fraction, we find the common denominator of all fractions. In this case, it is <m>{5r}</m>. We multiply the complex fraction<rsq/>s numerator and denominator by this common denominator, and we have:</p>
+<p><m>\displaystyle{\begin{aligned}
+   {\frac{\frac{2}{r}}{12+\frac{2t}{5}}} 
+      \amp = {\frac{\frac{2}{r}}{12+\frac{2t}{5}}} \cdot \frac{{5r}}{{5r}} \\
+      \amp = \frac{ \frac{2}{r} \cdot 5 r}{(12+\frac{2 t}{5}) \cdot 5 r} \\
+      \amp = \frac{2 \cdot 5}{12 \cdot 5 r + \frac{2 t}{5} \cdot 5 r} \\
+      \amp = \frac{10}{60 r + 2 r t} \\
+      \amp = \frac{10}{2 r (30 + t)} \\
+      \amp = {\frac{5}{r\mathopen{}\left(t+30\right)}\hbox{ or }\frac{5}{rt+30r}}
+\end{aligned}
+    }</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions50.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions50.pg"/>
+</webwork-reps>

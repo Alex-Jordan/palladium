@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_NegativeExponents_NegativeExponents1" assembly-id="PCC-ORCCA-ed3_Math95_NegativeExponents_NegativeExponents1">
+  <static seed="1701">
+    <statement><p><m>\displaystyle {16x^{-6}}</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{16}{x^{6}}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/4_1_7_43.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+      "PGstandard.pl", 
+      "MathObjects.pl",
+      "contextLimitedPowers.pl",
+      "contextFraction.pl",
+      "PGML.pl",
+      "PCCmacros.pl",
+      "contextRationalFunction.pl"
+    );
+
+
+##############################################
+
+TEXT(beginproblem());
+Context("Numeric");
+$n = random(3,12,1);
+$a = random(5,20,1);
+
+$show = Compute("$a x^(-$n)");
+
+Context("RationalFunction");
+LimitedPowers::OnlyPositiveIntegers();
+
+$tell = Compute("$a/x^($n)");
+
+
+
+##############################################
+
+BEGIN_PGML
+
+[@ PTX_exercisegroup_introduction('Use the properties of exponents to simplify the expression.') @]
+
+[`\displaystyle [$show]`]
+
+[_]{$tell}{16}
+
+END_PGML
+
+
+##############################################
+
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

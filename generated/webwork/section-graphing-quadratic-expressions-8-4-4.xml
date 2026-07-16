@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-graphing-quadratic-expressions-8-4-4" assembly-id="section-graphing-quadratic-expressions-8-4-4">
+  <static seed="1056" source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticApplications/FlyingObjectApp20.pg">
+    <statement><p>From an oceanside clifftop <m>{200\ {\rm m}}</m> above sea level, an object was shot into the air with an initial vertical speed of <m>{284.2\ {\textstyle\frac{\rm\mathstrut m}{\rm\mathstrut s}}}</m>. It fell into the ocean. Its height (above sea level) as time passes can be modeled by the quadratic equation <m>y={-4.9t^{2}+284.2t+200}</m>. Here <m>t</m> represents the number of seconds since the object<rsq/>s release, and <m>y</m> represents the object<rsq/>s height (above sea level) in meters.</p>
+<p><ol label="a.">
+<li>
+<p>After <fillin characters="12" name="AnSwEr0001"/>, this object reached its maximum height of <fillin characters="11" name="AnSwEr0002"/>.</p>
+</li>
+<li>
+<p>This object flew for <fillin characters="12" name="AnSwEr0003"/> before it landed in the ocean.</p>
+</li>
+<li>
+<p>This object was <fillin characters="12" name="AnSwEr0004"/> above sea level <m>{1\ {\rm s}}</m> after its release.</p>
+</li>
+<li>
+<p>This object was <m>{3492.8\ {\rm m}}</m> above sea level twice: once <fillin characters="12" name="AnSwEr0005"/> after its release, and again later <fillin characters="12" name="AnSwEr0006"/> after its release.</p>
+</li>
+</ol></p>
+</statement>
+    <answer>
+      <p>
+        <m>29\ {\rm s}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>4320.9\ {\rm m}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>58.6954\ {\rm s}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>479.3\ {\rm m}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>16\ {\rm s}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>42\ {\rm s}</m>
+      </p>
+    </answer>
+    <solution><p>The function <m>f</m> given by the rule <m>f(t)={-4.9t^{2}+284.2t+200}</m> is quadratic. Identify that <m>a=-4.9, b=284.2, c=200</m>.</p>
+<p><ol label="1.">
+<li>
+<p>Since <m>a\lt 0</m>, this parabola opens down. Its vertex represents the maximum height the object can go and when it got there.</p>
+</li>
+</ol></p>
+<p>To find the vertex, we first find the parabola<rsq/>s axis of symmetry by the axis formula:</p>
+<p><m>\begin{aligned}
+  t \amp = -\frac{b}{2a} \\
+  t \amp = -\frac{284.2}{2(-4.9)} \\
+  t \amp =  {29}
+\end{aligned}</m></p>
+<p>Next, we substitute <m>t= {29}</m> into <m>f</m><rsq/>s formula, and we have:</p>
+<p><m>\begin{aligned}
+  f(t) \amp =  {-4.9t^{2}+284.2t+200}  \\
+  f({29}) \amp =  -4.9(29)^2+284.2(29)+200  \\
+  f({29}) \amp =  {4320.9} 
+\end{aligned}</m></p>
+<p>The parabola<rsq/>s vertex is at <m>{\left(29,4320.9\right)}</m>. This implies that <m>{29\ {\rm s}}</m> after the release, the object reached its maximum height of <m>{4320.9\ {\rm m}}</m>.</p>
+<p><ol label="1.">
+<li>
+<p>The parabola<rsq/>s <m>x</m>-intercepts represent the moments when the object was at a height of <m>0</m>: at sea level. We will solve the equation <m>f(t)=0</m> to find its <m>x</m>-intercepts. We have:</p>
+<p><m>\begin{aligned}
+   f(t) \amp = {-4.9t^{2}+284.2t+200} \\
+   0    \amp = {-4.9t^{2}+284.2t+200} \\
+   t \amp = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a} \\
+   t \amp = \frac{-(284.2) \pm \sqrt{(284.2)^{2}-4(-4.9)(200)}}{2(-4.9)} \\
+   t \amp = \frac{-284.2 \pm \sqrt{84689.64}}{-9.8} \\
+   t \amp \approx \frac{-284.2 \pm {291.015}}{-9.8} \\
+   t \amp \approx \frac{-284.2 + {291.015}}{-9.8} \amp  \text{or} \amp \amp  t \amp \approx \frac{-284.2 - {291.015}}{-9.8} \\
+   t \amp \approx -0.70 \amp  \text{or} \amp \amp  t \amp \approx 58.70
+\end{aligned}</m></p>
+</li>
+</ol></p>
+<p>This parabola has two <m>x</m>-intercepts: <m>(-0.70,0)</m> and <m>(58.70,0)</m>. The point <m>(-0.70,0)</m> represents an imaginary moment before the object was released, as if it had shot up from the ocean to the clifftop before its journey upward. The point <m>(58.70,0)</m> implies the object fell into the ocean after <m>{58.6954\ {\rm s}}</m>.</p>
+<p><ol label="1.">
+<li>
+<p>To find the object<rsq/>s height <m>1</m> seconds after it was released, we substitute <m>t=1</m> into the formula for <m>f</m>, and we have:</p>
+<p><m>\begin{aligned}
+   f(t)   \amp = {-4.9t^{2}+284.2t+200} \\
+   f(1) \amp = -4.9(1)^2+284.2(1)+200 \\
+   f(1) \amp = {479.3}
+\end{aligned}</m></p>
+</li>
+</ol></p>
+<p>This result shows that <m>{1\ {\rm s}}</m> after the object was released, it was <m>{479.3\ {\rm m}}</m> high in the air.</p>
+<p><ol label="1.">
+<li>
+<p>To find when the object was <m>{3492.8\ {\rm m}}</m> high, we solve the equation <m>f(t)={3492.8}</m>.</p>
+<p><m>\begin{aligned}
+   f(t) \amp = {-4.9t^{2}+284.2t+200} \\
+   {3492.8} \amp = {-4.9t^{2}+284.2t+200} \\
+   0   \amp = {-4.9t^{2}+284.2t-3292.8} 
+\end{aligned}</m></p>
+</li>
+</ol></p>
+<p>We will use the Quadratic Formula to solve this equation. Identify that <m>a=-4.9,b=284.2,c={-3292.8}</m>. We have:</p>
+<p><m>\begin{aligned}
+   t \amp = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a} \\
+   t \amp = \frac{-(284.2) \pm \sqrt{(284.2)^{2}-4(-4.9)({-3292.8})}}{2(-4.9)} \\
+   t \amp = \frac{-284.2 \pm \sqrt{{16230.8}}}{-9.8} \\
+   t \amp  \approx \frac{-284.2 \pm {127.4}}{-9.8} \\
+   t \amp \approx \frac{-284.2 + {127.4}}{-9.8} \amp  \text{or} \amp \amp  t \amp \approx \frac{-284.2 - {127.4}}{-9.8} \\
+   t \amp \approx 16 \amp  \text{or} \amp \amp  t \amp \approx {42}
+\end{aligned}</m></p>
+<p>This result shows that the object was <m>{3492.8\ {\rm m}}</m> high twice during its flight: once <m>{16\ {\rm s}}</m> after it was released (on its way up), and another time <m>{42\ {\rm s}}</m> after it was released (on its way down).</p>
+<!-- PTX:WARNING: PGML wanted to place a horizontal rule here. -->
+<p>It<rsq/>s important to understand the role of each part of this question in the graph of <m>f</m>.</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-graphing-quadratic-expressions-8-4-4-image-1.png" width="40%"/>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="PCC-ORCCA-ed3/BasicAlgebra/QuadraticApplications/FlyingObjectApp20.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticApplications/FlyingObjectApp20.pg"/>
+</webwork-reps>

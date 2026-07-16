@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-14-5" assembly-id="section-solving-rational-equations-10-14-5">
+  <static seed="1626" source="Contrib/PCC/BasicAlgebra/RationalEquations/rationalEquationApplication25.pg">
+    <statement><p>Two pipes are being used to fill a tank. Pipe A can fill the tank <m>6.5</m> times as fast as Pipe B does. When both pipes are turned on, it takes <m>13</m> hours to fill the tank. Answer the following questions:</p>
+<p>If only Pipe A is turned on, it would take <fillin characters="6" name="AnSwEr0001"/> hours to fill the tank.</p>
+<p>If only Pipe B is turned on, it would take <fillin characters="6" name="AnSwEr0002"/> hours to fill the tank.</p>
+</statement>
+    <answer>
+      <p>
+        <m>15</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>97.5</m>
+      </p>
+    </answer>
+    <solution><p>Let<rsq/>s understand how to use fractions to model work problems. Assume it takes a pipe <m>5</m> hours to fill a tank. If we treat the whole job as one whole, each hour, the pipe would fill <m>\frac{1}{5}</m> of the tank.</p>
+<p>Similarly, if it takes a pipe <m>x</m> hours to fill a tank, each hour, the pipe would fill <m>\frac{1}{x}</m> of the tank.</p>
+<p>Now we are ready to model this situation with math.</p>
+<p>Assume that it would take Pipe A <m>x</m> hours to fill the tank. Each hour, Pipe A fills <m>\frac{1}{x}</m> of the tank.</p>
+<p>Since Pipe A can fill the tank <m>6.5</m> times as fast as Pipe B does, it would take Pipe B <m>6.5x</m> hours to fill the tank (Pipe B is slower!). Each hour, Pipe B fills <m>\frac{1}{6.5x}</m> of the tank.</p>
+<p>It<rsq/>s given that, when both pipes are turned on, it would take them <m>13</m> hours to fill the tank. Each hour, they can fill <m>\frac{1}{13}</m> of the tank.</p>
+<p>Now we can write an equation and solve it:</p>
+<p><m>\displaystyle{\begin{aligned}
+  \amp \frac{1}{x}+\frac{1}{6.5x} = \frac{1}{13} \\
+  \amp \frac{1}{x} \cdot {6.5\cdot 13x} +\frac{1}{6.5x} \cdot {6.5\cdot 13x} = \frac{1}{13} \cdot {6.5\cdot 13x} \\
+  \amp 6.5 \cdot 13 + 13 = 6.5x \\
+  \amp 84.5+13 = 6.5x \\
+  \amp 97.5 = 6.5x \\
+  \amp  \frac{97.5}{6.5} = \frac{6.5x}{6.5} \\
+  \amp  {15} = x
+\end{aligned}
+    }</m></p>
+<p>In the second step, to get rid of all fractions, we multiplied each term with the common denominator <m>{6.5\cdot 13x}</m>.</p>
+<p>By the solution we got, it would take Pipe A <m>{15}</m> hours to fill the tank.</p>
+<p>Since Pipe A can fill the tank <m>6.5</m> times as fast as Pipe B does, it would take Pipe B <m>6.5\cdot{15}={97.5}</m> hours to fill the tank.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/rationalEquationApplication25.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalEquations/rationalEquationApplication25.pg"/>
+</webwork-reps>

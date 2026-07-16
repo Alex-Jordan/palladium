@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-11-1" assembly-id="section-solving-rational-equations-10-11-1">
+  <static seed="1601" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations27.pg">
+    <statement><p>Solve the equation.</p>
+<p><m>\displaystyle{ {\frac{3}{y+6}}={\frac{6}{y-6}+\frac{6}{y^{2}-36}}  }</m></p>
+<p><fillin characters="31" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{-20\right\}</m>
+      </p>
+    </answer>
+    <solution><p>To clear fractions in an equation, multiply each side of the equation by a common denominator. For this problem, a common denominator is <m>{\left(y+6\right)\mathopen{}\left(y-6\right)}</m>.</p>
+<p><m>\displaystyle{\begin{aligned}
+  {\frac{3}{y+6}} \amp = {\frac{6}{y-6}+\frac{6}{y^{2}-36}} \\
+  {\frac{3}{y+6}} \amp = {\frac{6}{y-6}+\frac{6}{\left(y+6\right)\mathopen{}\left(y-6\right)}} \\
+  {\frac{3}{y+6}\mathopen{}\left(y+6\right)\mathopen{}\left(y-6\right)} \amp = {\frac{6}{y-6}\mathopen{}\left(y+6\right)\mathopen{}\left(y-6\right)+\frac{6}{\left(y+6\right)\mathopen{}\left(y-6\right)}\mathopen{}\left(y+6\right)\mathopen{}\left(y-6\right)} \\
+  {3\mathopen{}\left(y-6\right)} \amp = {6\mathopen{}\left(y+6\right)+6} \\
+  {3y-18} \amp = {6y+36+6} \\
+  {3y-18} \mathbf{ -6y +18} \amp = {6y+36+6} \mathbf{ -6y +18} \\
+  {-3y} \amp = {60} \\
+  \frac{-3 y}{-3} \amp = \frac{60}{-3} \\
+  y \amp = -20
+\end{aligned}
+    }</m></p>
+<p>We must check solutions when we solve rational equations. In the original equation, both denominators cannot be <m>0</m>. We set them to <m>0</m>, so we can find out what values to exclude from the solution set.</p>
+<p><m>\displaystyle{\begin{aligned}
+   \amp y^{2}-36 = 0 \amp \;\amp  y+6=0 \amp \;\amp  y-6=0 \\
+   \amp (y+6)(y-6) = 0 \amp \;\amp  y=-6 \amp \;\amp  y=6 \\
+   \amp y+6=0 \:\: or \:\: y-6=0 \\
+   \amp y=-6 \:\: or \:\: y=6 \\
+\end{aligned}
+    }</m></p>
+<p>We must exclude <m>-6</m> and <m>6</m> from the solution set. These values are not in the solution set we got, so the final solution is <m>y=-20</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations27.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations27.pg"/>
+</webwork-reps>

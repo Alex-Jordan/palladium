@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-order-of-operations-adivgroupbtimesc" assembly-id="order-of-operations-adivgroupbtimesc">
+  <static seed="2188">
+    <statement><p><m>360 \div ( 5 \cdot 9 )</m></p>
+<p><fillin characters="5" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>8</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/Appendices/A_2_5_47.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(A.2.5.47)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$grouping = list_random(['(',')'],['[',']']);
+($b, $c, $answer) = random_subset(3, 2 .. 9);
+$a = $answer*$b*$c;
+Context("LimitedNumeric");
+$answer = Real($a/($b*$c));
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use the order of operations to simplify the expression.
+
+[`[$a] \div [$grouping->[0]] [$b] \cdot [$c] [$grouping->[1]]`]
+
+[_]{$answer}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

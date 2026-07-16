@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:08-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -47,7 +44,8 @@ TEXT(beginproblem());
 # PG Setup Code
 ############################################################
 $gt = GraphTool(
-  "{line, solid, (0, -5), (8, 0)}",
+  "{line, solid, (0, 3), (1, 5)}",
+  "{line, solid, (4, 3), (5, 5)}",
 )->with(
   availableTools => [ "LineTool" ],
   showInStatic => 0,
@@ -58,22 +56,28 @@ $gt = GraphTool(
       my $score = 0; my @errors; my $count = 1;
       my ($p1x, $p1y) = $correct->[0]->extract(3)->value;
       my ($p2x, $p2y) = $correct->[0]->extract(4)->value;
+      my ($p3x, $p3y) = $correct->[1]->extract(3)->value;
+      my ($p4x, $p4y) = $correct->[1]->extract(4)->value;
       my @stdform = (
         $p1y - $p2y, $p2x - $p1x, $p1x * $p2y - $p2x * $p1y,
+        $p3y - $p4y, $p4x - $p3x, $p3x * $p4y - $p4x * $p3y
       );
       my $pointOnLine = sub {
         my ($a, $b, $c, $point) = @_;  my ($x, $y) = $point->value;
         return $a * $x + $b * $y + $c == 0;
       };
-      my @line = (0);
+      my @line = (0, 0);
       for (@$student) {
         my $nth = Value::List->NameForNumber($count++);
         if ($pointOnLine->(@stdform[0..2],$_->extract(3)) && $pointOnLine->(@stdform[0..2],$_->extract(4))) {
           $line[0] = 1; $score += 1; next
         }
+        if ($pointOnLine->(@stdform[3..5],$_->extract(3)) && $pointOnLine->(@stdform[3..5],$_->extract(4))) {
+          $line[1] = 1; $score += 1; next
+        }
         push(@errors, "The $nth line graphed is incorrect.");
       }
-      return (($line[0]) ? $score : 0, @errors);
+      return (($line[0] && $line[1]) ? $score : 0, @errors);
     }
   }
 );
@@ -109,7 +113,7 @@ for (
 ) {
   Context()->strings->add($_ => {alias => "infinitely many solutions"});
 }
-$solution = Compute("infinitely many solutions")->cmp(
+$solution = Compute("no solutions")->cmp(
   typeMatch => Point(1,2),
   mathQuillOpts => 'disabled'
 );
@@ -121,8 +125,8 @@ $image_1->BEGIN_LATEX_IMAGE
   \begin{axis}[
       width=0.47\orccaprintwidth
     ]
-    \addplot[firstcurve, domain=-3:7]{5/8*x-5.05} node[pos=1,sloped,above left] {\(5x-8y=40\)};
-    \addplot[secondcurve, domain=-3:7]{5/8*x-4.95} node[pos=0.9,sloped,below left] {\(y=\frac{5}{8}(x+8)-10\)};
+    \addplot[firstcurve, domain=-5:2]{2*x+3} node[pos=0.5,sloped,above left] {\(y=2x+3\)};
+    \addplot[secondcurve, domain=-1:6]{2*(x-4)+3} node[pos=0.5,sloped,above right] {\(y=2(x-4)+3\)};
   \end{axis}
 \end{tikzpicture}
 
@@ -138,8 +142,8 @@ Solve the following system of equations by graphing.
 [```\newcommand{\amp}{&}
               \left\{
                 \begin{alignedat}{3}
-                  \amp5x-8y = 40\\
-                  \amp y=\tfrac{5}{8}(x+8)-10
+                  \amp y = 2x + 3\\
+                  \amp y  =2(x - 4) + 3
                 \end{alignedat}
               \right.
             ```]
@@ -157,11 +161,11 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-If we graph these lines, we find they are the same line.
+If we graph these lines, we find they are parallel and never cross.
 
 >> [@image(insertGraph($image_1), width=>282, alt=>qq"a coordinate plot of two lines that are coinciding; they each have a y-intercept of (0,-5) and an x-intercept of (8,0)")@]*  <<
 
-So there are infinitely many solutions: all points [`(x_1,y_1)`] on that common line.
+So there are no solutions to this system.
 
 END_PGML_SOLUTION
 

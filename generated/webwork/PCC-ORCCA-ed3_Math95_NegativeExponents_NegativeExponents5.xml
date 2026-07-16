@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_NegativeExponents_NegativeExponents5" assembly-id="PCC-ORCCA-ed3_Math95_NegativeExponents_NegativeExponents5">
+  <static seed="1709">
+    <statement><p><m>\displaystyle {\frac{8x^{-9}}{9x^{-28}}}</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{8x^{19}}{9}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/4_1_7_51.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+# ENDDESCRIPTION
+
+
+
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+      "PGstandard.pl", 
+      "MathObjects.pl",
+      "contextLimitedPowers.pl",
+      "contextFraction.pl",
+      "PGML.pl",
+      "PCCmacros.pl",
+      "contextRationalFunction.pl"
+    );
+
+
+##############################################
+
+TEXT(beginproblem());
+Context("Numeric");
+$n = random(3,30,1);
+$m = $n+ non_zero_random(-$n+2,20,1);
+$a = random(5,20,1);
+$b = $a+1;
+
+
+$show = Compute("$a x^(-$n)/($b x^(-$m))");
+
+Context("RationalFunction");
+Context()->flags->set(singleQuotients=>1,);
+Context()->flags->set(singleFactors=>1);
+
+LimitedPowers::OnlyPositiveIntegers();
+
+if (-$n+$m<0) 
+{$tell = Compute("$a/ ($b x^($n-$m))")->reduce;}
+else {$tell = Compute("$a x^($m-$n)/$b")->reduce;}
+
+
+
+##############################################
+
+BEGIN_PGML
+
+[@ PTX_exercisegroup_introduction('Use the properties of exponents to simplify the expression.') @]
+
+[`\displaystyle [$show]`]
+
+[_]{$tell}{16}
+
+END_PGML
+
+##############################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

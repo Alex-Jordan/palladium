@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-gas-mileage-linear-model" assembly-id="gas-mileage-linear-model">
+  <static seed="11">
+    <statement><p>Dane filled the gas tank in his car to <m>{14\ {\rm gal}}\text{.}</m> When the tank reaches <m>{1\ {\rm gal}}\text{,}</m> the low gas light will come on. On average, Dane<rsq/>s car uses <m>{0.043\ {\textstyle\frac{\rm\mathstrut gal}{\rm\mathstrut mi}}}</m> per mile driven. How many miles will Dane<rsq/>s car be able to drive before the low gas light comes on? Write an equation to model this scenario. There is no need to solve it.</p>
+<p><fillin characters="20" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>14-0.043d = 1</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/1_1_5_6.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.5.6)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "parserNumberWithUnits.pl",
+  "parserLinearRelation.pl",
+  "randomPerson.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$name = randomPerson();
+$initial = random(12, 18);
+$start = NumberWithUnits("$initial gal");
+$rate = random(0.04,0.05,0.001);
+$speed = NumberWithUnits("$rate gal/mi");
+$final = 1;
+$end = NumberWithUnits("$final gal");
+Context("LinearRelation")->variables->are(d => 'Real');
+$equation = LinearRelation("$initial - $rate d = $final");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Write an equation to model the scenario. There is no need to solve the equation.
+
+[$name] filled the gas tank in [$name->possessive] car to [`[$start]\text{.}`] When the tank reaches [`[$end]\text{,}`] the low gas light will come on. On average, [$name]'s car uses [`[$speed]`] per mile driven. How many miles will [$name]'s car be able to drive before the low gas light comes on? Write an equation to model this scenario. There is no need to solve it.
+
+[@KeyboardInstructions('Use [|d|]* as the variable.')@]**
+
+[_]{$equation}{20}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

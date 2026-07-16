@@ -1,0 +1,93 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(A.1.7.15)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "bizarroArithmetic.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Fraction");
+$f = Fraction(random_coprime([1], [2 .. 9]));
+$k = random(2 .. 5);
+$num = $f->num;
+$den = $f->den;
+$n = $k*$num;
+$d = $k*$den;
+Context("Numeric");
+Context()->flags->set(reduceConstants=>0);
+Context()->flags->set(showStudentAnswer=>'parsed');
+Context()->operators->set(
+    '/' => {class => 'bizarro::BOP::divide', isCommand => 1},
+);
+$ans = Formula("$n/$d")->cmp(
+  checker=>sub{
+    my ( $c, $s, $aH ) = @_;
+    return 0 if $aH->{isPreview} || $c != $s;
+    $s = $aH->{student_formula};
+    $c = $c->{original_formula} if defined $c->{original_formula};
+    $s = Formula("$s"); $c = Formula("$c");
+    return 0 unless ($c == $s);
+    Context()->flags->set(bizarroDiv => 1);
+    delete $c->{test_values};
+    delete $s->{test_values};
+    my $OK = (($c == $s) or ($s == $c));
+    Context()->flags->set(bizarroDiv => 0);
+    Value::Error("Your fraction is equivalent to the given fraction but it does not have denominator $d.") unless $OK;
+    return $OK;
+  }
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find an equivalent fraction with the given denominator.
+
+[`\dfrac{[$num]}{[$den]}`] with denominator [`[$d]`]
+
+[_]{$ans}{6}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

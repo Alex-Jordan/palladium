@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-distribute-monomial-linear-copy" assembly-id="exponent-distribute-monomial-linear-copy">
+  <static seed="2599">
+    <statement><p><m>{2u\mathopen{}\left(6u+10\right)}</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>u^{2}+u</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/Appendices/A_8_4_31.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg copied-from="exponent-distribute-monomial-linear"><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(A.8.4.32)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$x = list_random('a' .. 'k', 'm', 'n', 'p' .. 'r', 't' .. 'z');
+Context("Form")->variables->are($x => 'Real');
+($a, $b, $c) = random_subset(3, -10 .. -2, 2..10);
+$b = abs($b);
+$given = Formula("$a $x * ($b $x + $c)")->reduce;
+$ans = Formula("$ab $x^2 + $ac $x")->reduce;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use the properties of exponents together with the distributive property to write the expression in a new simplified way where there are no grouping symbols.
+
+[`[$given]`]
+
+[_]{$ans}{16}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

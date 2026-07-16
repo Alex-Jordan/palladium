@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-1-4" assembly-id="section-completing-the-square-8-1-4">
+  <static seed="1155">
+    <statement><p>Use a square root to solve <m>{\left(6t-4\right)^{2}}={9}\text{.}</m></p>
+<p><fillin characters="25" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{\frac{7}{6},\frac{1}{6}\right\}</m>
+      </p>
+    </answer>
+    <solution><p>Using the square root property:</p>
+<p><me>\begin{aligned}
+{6t-4}\amp=\sqrt{{9}}\amp\amp\text{or}\amp {6t-4}\amp=-\sqrt{{9}}\\
+{6t-4}\amp=3\amp\amp\text{or}\amp {6t-4}\amp=-3\\
+6t\amp=7\amp\amp\text{or}\amp 6t\amp=1\\
+t\amp={{\frac{7}{6}}}\amp\amp\text{or}\amp t\amp={{\frac{1}{6}}}
+\end{aligned}</me></p>
+<p>So the solution set is <m>{\left\{\frac{7}{6},\frac{1}{6}\right\}}\text{.}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_8_6_3.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.8.6.3)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$x = RandomVariableName(type=>'variable');
+$m = random(2,9,1);
+$b = non_zero_random(-9,9,1);
+$c = random(2,9,1);
+Context()->variables->are($x=>'Real');
+$linear = Formula("$m $x + $b")->reduce;
+$left = Formula("($linear)^2");
+$right = Formula("$c^2");
+Context("Fraction");
+$solnum1 = $c-$b;
+$solnum2 = -$c-$b;
+$sol1 = Fraction($solnum1,$m);
+$sol2 = Fraction($solnum2,$m);
+Context("FiniteSolutionSets");
+Context()->variables->are($x=>'Real');
+$answer = Formula("{$sol1, $sol2}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use a square root to solve [`[$left]=[$right]\text{.}`]
+
+[_]{$answer}{25}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Using the square root property:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$linear]\amp=\sqrt{[$right]}\amp\amp\text{or}\amp [$linear]\amp=-\sqrt{[$right]}\\
+[$linear]\amp=[$c]\amp\amp\text{or}\amp [$linear]\amp=-[$c]\\
+[$m][$x]\amp=[$solnum1]\amp\amp\text{or}\amp [$m][$x]\amp=[$solnum2]\\
+[$x]\amp=[$sol1]\amp\amp\text{or}\amp [$x]\amp=[$sol2]
+\end{aligned}
+```]
+
+So the solution set is [`[$answer]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

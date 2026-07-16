@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-savings-account-linear-model" assembly-id="savings-account-linear-model">
+  <static seed="15">
+    <statement><p>To save up for a new phone that costs <m>{\$600}\text{,}</m> Makayla sets aside <m>1\%</m> of her pay each week. This works out to <m>{\$7.59}</m> per week. At present, she has <m>{\$301.50}</m> saved up. How long will it be until Makayla has saved up enough? Write an equation to model this scenario. There is no need to solve it.</p>
+<p><fillin characters="20" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>301.5+7.59t = 600</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/1_1_6_9.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.6.9)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextCurrency.pl",
+  "parserLinearRelation.pl",
+  "randomPerson.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$name = randomPerson();
+$rate = random(4,8,0.01);
+Context("Currency")->flags->set(trimTrailingZeros => 1);
+$speed = Currency("$rate");
+$initial = random(300,400,0.25);
+$start = Currency("$initial");
+$final = random(600,800,5);
+$end = Currency("$final");
+Context("LinearRelation")->variables->are(t => 'Real');
+$equation = LinearRelation("$initial + $rate t = $final");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Read the scenario. Then write a complete sentence that defines a variable to use. Lastly, write an equation to model the scenario. There is no need to solve the equation.
+
+To save up for a new phone that costs [`[$end]\text{,}`] [$name] sets aside [`1\%`] of [$name->possessive] pay each week. This works out to [`[$speed]`] per week. At present, [$name->subject] [$name->have] [`[$start]`] saved up. How long will it be until [$name] has saved up enough? Write an equation to model this scenario. There is no need to solve it.
+
+[@KeyboardInstructions('Use [|t|]* as the variable.')@]**
+
+[_]{$equation}{20}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

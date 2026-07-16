@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-12T21:52:51-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,6 +27,9 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
   "contextFraction.pl",
   "PGcourse.pl",
 );
@@ -43,29 +43,52 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-@x = num_sort(random_subset(3, 1..9));
-@y = num_sort(random_subset(3, 1..19));
-Context("LimitedFraction")->flags->set(requirePureFractions => 1, showMixedNumbers => 0);
-$m[0] = Fraction($y[1] - $y[0], $x[1] - $x[0]);
-$m[1] = Fraction($y[2] - $y[0], $x[2] - $x[0]);
-$m[2] = Fraction($y[2] - $y[1], $x[2] - $x[1]);
-$m = max(@m);
-Context("Point");
-@p = map {Point($x[$_], $y[$_])} (0..2);
-@p = random_subset(3, @p);
+Context("Fraction");
+do {$r = Fraction(non_zero_random(-9,9,1),random(2,9,1))} until (($r->value)[1] != 1);
+$b = -2*$r;
+$c = ($r)**2;
+Context()->noreduce('(-x)-y','(-x)+y');
+$f = Formula("x^2+$b x+$c")->reduce;
+$negb = -$b;
+$bsquared = ($b)**2;
+$discriminant = 0;
+Context("FiniteSolutionSets");
+$solutions = Formula("{$r}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Determine the steepest slope for a line connecting two points from the list.
+Use the quadratic formula to solve the equation.
 
-[`[$p[0]]\text{,}`] [`[$p[1]]\text{,}`] [`[$p[2]]`]
+[`[$f]=0`]
 
-[_]{$m}{10}
+[@KeyboardInstructions('If you need to enter a square root like [`\sqrt{17}\text{,}`] type [|sqrt(17)|]*. If there is no real solution, enter [|no real solution|]*.')@]**
+
+[_]{$solutions}{40}
 
 END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+To use the quadratic formula, we identify [`a=1\text{,}`] [`b=[$b]\text{,}`] and [`c=[$c]\text{.}`]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{[$negb]\pm\sqrt{[$bsquared]-4(1)\left([$c]\right)}}{2}\\
+\amp=\frac{[$negb]\pm\sqrt{[$discriminant]}}{2}\\
+\amp=\frac{[$negb]}{2}
+\end{aligned}
+```]
+
+Since the disciriminant (that number in the radical) is [`0\text{,}`] there is only one solution. The solution set is [`[$solutions]\text{.}`]
+
+END_PGML_SOLUTION
 
 ############################################################
 # End Problem

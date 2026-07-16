@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-15-1-4-42" assembly-id="section-factoring-15-1-4-42">
+  <static seed="61" source="Contrib/PCC/BasicAlgebra/Factoring/factoring555.pg">
+    <statement><p>Factor the given polynomial.</p>
+<p><m>{25t^{2}-30tx+9x^{2}}=</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left(5t-3x\right)\mathopen{}\left(5t-3x\right)</m>
+      </p>
+    </answer>
+    <solution><p>We will factor <m>25t^{2}-30tx+9x^{2}</m> where <m>a=25</m>, <m>b=-30</m>, and <m>c=9</m>.</p>
+<p><alert>Perfect Square Formula: </alert>The formula for perfect square trinomials is <me>(a \pm b)^2=a^2 \pm 2ab + b^2</me>. Note that the polynomial <m>25t^{2}-30tx+9x^{2}</m> matches the formula's right side, and we have: <me>\begin{aligned}[t]25t^{2}-30tx+9x^{2}\amp =\left(5t\right)^2-2\left(5t\right)\left(3x\right)+\left(3x\right)^2\newline \amp =\left(5t-3x\right)\mathopen{}\left(5t-3x\right)\newline \amp =\left(5t-3x\right)^{2}\end{aligned}</me></p>
+<p><alert>AC Method: </alert>In this method, we first calculate the product of <m>a</m> and <m>c</m> in <m>ax^2+bx+c</m>. For this problem, we have <m>(25) \cdot (9) = 225</m>.</p>
+<p>The number <m>225</m> can be factored into the product of two numbers in the following ways: <me>\begin{array}{lll}1(225)\amp -1(-225)\amp 3(75)\amp -3(-75)\newline5(45)\amp -5(-45)\amp 9(25)\amp -9(-25)\newline15(15)\amp -15(-15)\amp \end{array}</me> Looking at the corresponding sums, we want a sum of <m>-30</m>, and this sum happens with <m>(-15)+(-15)=-30</m> So we write <me>\begin{aligned}[t]25t^{2}-30tx+9x^{2}\amp =25t^{2}-15tx-15tx+9x^{2}\newline \amp =5t\mathopen{}\left(5t-3x\right)-3x\mathopen{}\left(5t-3x\right)\newline \amp =\left(5t-3x\right)\mathopen{}\left(5t-3x\right)\newline \amp =\left(5t-3x\right)^{2}\end{aligned}</me><alert>Generic Rectangles Method: </alert>First, we set up generic rectangles by putting the first term and third term in <m>25t^{2}-30tx+9x^{2}</m> into the top left and bottom right rectangles:</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-factoring-15-1-4-42-image-1.png" width="66%"/>
+<p>The first term's coefficient, <m>25</m>, can be factored into the product of two numbers (where the first factor is positive) in the following ways: <me>\begin{array}{llll}1(25)\amp 5(5)\amp \end{array}</me></p>
+<p>The third term's coefficient, <m>9</m>, can be factored into the product of two numbers in the following ways: <me>\begin{array}{llll}1(9)\amp -1(-9)\amp 3(3)\amp -3(-3)\newline\end{array}</me></p>
+<p>We put each pair into the corresponding places next to those generic rectangles, and try to match the area of those rectangles with <m>25t^{2}-30tx+9x^{2}</m> by guess-and-check. The following generic rectangles show the solution:</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-factoring-15-1-4-42-image-2.png" width="66%"/>
+<p>Dimensions of those generic rectangles in the diagram give us the solution: <me>\begin{aligned}[t]25t^{2}-30tx+9x^{2}\amp =\left(5t-3x\right)\mathopen{}\left(5t-3x\right)\newline \amp =\left(5t-3x\right)^{2}\end{aligned}</me></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/Factoring/factoring555.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/Factoring/factoring555.pg"/>
+</webwork-reps>

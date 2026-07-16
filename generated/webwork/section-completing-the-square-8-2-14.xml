@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-2-14" assembly-id="section-completing-the-square-8-2-14">
+  <static seed="1177">
+    <statement><p>Solve the equation by completing the square.</p>
+<p><m>{3y^{2}-10y+7}={0}</m></p>
+<p><fillin characters="25" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{1,\frac{7}{3}\right\}</m>
+      </p>
+    </answer>
+    <solution><p>Move the constant term to the other side to get <m>{3y^{2}-10y} = {-7}\text{.}</m></p>
+<p>Divide through by <m>3</m> to get <m>{y^{2}-{\frac{10}{3}}y} = {-{\frac{7}{3}}}\text{.}</m></p>
+<p>Compute <m>\left(\frac{{-{\frac{10}{3}}}}{2}\right)^2={{\frac{25}{9}}}\text{.}</m> Then</p>
+<p><me>\begin{aligned}
+{y^{2}-{\frac{10}{3}}y}+{{\frac{25}{9}}}\amp = {-{\frac{7}{3}}}+{{\frac{25}{9}}}\\
+{y^{2}-{\frac{10}{3}}y}+{{\frac{25}{9}}}\amp = {{\frac{4}{9}}}\\
+\left({y-\frac{5}{3}}\right)^2\amp = {{\frac{4}{9}}}
+\end{aligned}</me></p>
+<p><me>\begin{aligned}
+{y-\frac{5}{3}} \amp = -{{\frac{2}{3}}}\amp\amp\text{or}\amp {y-\frac{5}{3}} \amp = {{\frac{2}{3}}}\\
+y \amp = {1}\amp\amp\text{or}\amp y \amp = {{\frac{7}{3}}}
+\end{aligned}</me></p>
+<p>So the solution set is <m>{\left\{1,\frac{7}{3}\right\}}\text{.}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_8_6_25.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.8.6.25)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$x = RandomVariableName(type=>'variable');
+Context("Fraction");
+Context()->variables->are($x=>'Real');
+do {
+  $m1 = random(1,9,1);
+  $m2 = random(1,9,1);
+  $b1 = non_zero_random(-9,9,1);
+  $b2 = non_zero_random(-9,9,1);
+  $a = $m1*$m2;
+  $b = $m1*$b2 + $m2*$b1;
+  $c = $b1*$b2;
+  $B = Fraction($b,$a);
+  $C = Fraction($c,$a);
+  ($Bnum,$Bden) = $B->value;
+  $absBnum = abs($Bnum);
+  ($Cnum,$Cden) = $C->value;
+  $absCnum = abs($Cnum);
+  $helper = $B/2;
+  $helpersquared = $helper**2;
+  $rightplushelpersquared = Fraction("-$C + $helpersquared");
+} until (gcd($m1,$b1) == 1 and gcd($m2,$b2) == 1 and $m1 != $m2 and ($rightplushelpersquared->value)[0] <= 10 and ($rightplushelpersquared->value)[1] < 10);
+$left0 = Formula("$a $x^2 + $b $x + $c")->reduce;
+$right0 = Formula("0")->reduce;
+$left1 = Formula("$a $x^2 + $b $x")->reduce;
+$right1 = Formula("-$c")->reduce;
+$left = ($B > 0) ? Formula("$x^2 + $B $x") : Formula("$x^2 - $absBnum/$Bden $x");
+$right = ($C > 0) ? Formula("-$C") : Formula("$absCnum/$Cden");
+$sol1 = Fraction(-$b1,$m1);
+$sol2 = Fraction(-$b2,$m2);
+($sol1, $sol2) = (min($sol1, $sol2), max($sol1, $sol2));
+$margin = Fraction(sqrt(($rightplushelpersquared->value)[0]),sqrt(($rightplushelpersquared->value)[1]));
+$solstep1 = -$helper - $margin;
+$solstep2 = -$helper + $margin;
+Context("FiniteSolutionSets");
+Context()->variables->are($x=>'Real');
+$answer = Formula("{$sol1, $sol2}");
+($num,$den) = $helper->value;
+$absnum = abs($num);
+$linear = ($helper > 0) ? Formula("$x + $helper") : Formula("$x - $absnum/$den");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve the equation by completing the square.
+
+[`[$left0]=[$right0]`]
+
+[_]{$answer}{25}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Move the constant term to the other side to get [`[$left1] = [$right1]\text{.}`]
+
+Divide through by [`[$a]`] to get [`[$left] = [$right]\text{.}`]
+
+Compute [`\left(\frac{[$B]}{2}\right)^2=[$helpersquared]\text{.}`] Then
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$left]+[$helpersquared]\amp = [$right]+[$helpersquared]\\
+[$left]+[$helpersquared]\amp = [$rightplushelpersquared]\\
+\left([$linear]\right)^2\amp = [$rightplushelpersquared]
+\end{aligned}
+```]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$linear] \amp = -[$margin]\amp\amp\text{or}\amp [$linear] \amp = [$margin]\\
+[$x] \amp = [$sol1]\amp\amp\text{or}\amp [$x] \amp = [$sol2]
+\end{aligned}
+```]
+
+So the solution set is [`[$answer]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

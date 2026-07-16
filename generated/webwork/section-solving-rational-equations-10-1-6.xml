@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-1-6" assembly-id="section-solving-rational-equations-10-1-6">
+  <static seed="1471" source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses160.pg">
+    <statement><p>Solve the equation.</p>
+<p><m>\displaystyle{ {4\mathopen{}\left(p+1\right)-8\mathopen{}\left(p-3\right)}={8}  }</m></p>
+<p><fillin characters="31" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\{5\}</m>
+      </p>
+    </answer>
+    <solution><p><m>\displaystyle{\begin{aligned}
+4(p +1) -8(p-3)       \amp = 8 \\
+4(p +1) +(-8)(p+(-3)) \amp = 8 \\
+4p +4 \cdot 1 +(-8) \cdot p +(-8) \cdot (-3) \amp = 8 \\
+4p +4 -8p +24 \amp = 8 \\
+4p -8p +4+24 \amp = 8 \\
+      -4p +28 \amp = 8 \\
+      -4p +28\mathbf{{}-28} \amp = 8\mathbf{{}-28} \\
+      -4p             \amp = -20 \\
+      \frac{-4p}{-4} \amp = \frac{-20}{-4} \\
+      p                      \amp = 5
+\end{aligned}
+    }</m></p>
+<p>The solution to this equation is <m>5</m>. To stress that this is a value assigned to <m>p</m>, some report <m>p = 5</m>. We can also say that the solution set is <m>\{5\}</m>, or that <m>p\in\left\{5\right\}</m>. If we substitute <m>5</m> in for <m>p</m> in the original equation <m>4\mathopen{}\left(p+1\right)-8\mathopen{}\left(p-3\right)=8</m>, the equation will be true. Please check this on your own; it is an important habit.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses160.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses160.pg"/>
+</webwork-reps>

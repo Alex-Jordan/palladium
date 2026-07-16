@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-9-11" assembly-id="section-multiplication-and-division-of-rational-expressions-7-9-11">
+  <static seed="1349" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions45.pg">
+    <statement><p>Simplify this expression.</p>
+<p><m>\displaystyle{({y^{4}-8y^{3}x+16y^{2}x^{2}}) \div ({y^{5}-4y^{4}x}) =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{y-4x}{y^{2}}</m>
+      </p>
+    </answer>
+    <solution><p><m>\displaystyle{\begin{aligned}
+   ({y^{4}-8y^{3}x+16y^{2}x^{2}}) \div ({y^{5}-4y^{4}x}) 
+      \amp = \frac{{y^{4}-8y^{3}x+16y^{2}x^{2}}}{1} \div \frac{{y^{5}-4y^{4}x}}{1} \\
+      \amp = \frac{{y^{4}-8y^{3}x+16y^{2}x^{2}}}{1} \cdot {\frac{1}{y^{5}-4y^{4}x}} \\
+      \amp = \frac{{y^{2}\mathopen{}\left(y^{2}-8yx+16x^{2}\right)}}{1} \cdot \frac{1}{{y^{4}\mathopen{}\left(y-4x\right)}} \\
+      \amp = \frac{{y^{2}\mathopen{}\left(y-4x\right)^{2}}}{1} \cdot \frac{1}{{y^{4}\mathopen{}\left(y-4x\right)}} \\
+      \amp = {\frac{y-4x}{y^{2}}}
+\end{aligned}
+    }</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions45.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions45.pg"/>
+</webwork-reps>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-quadratic-equations-by-factoring-6-3-2" assembly-id="section-solving-quadratic-equations-by-factoring-6-3-2">
+  <static seed="223" source="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication10.pg">
+    <statement><p>Two numbers<rsq/> sum is <m>12</m>, and their product is <m>35</m>. Find these two numbers.</p>
+<p>These two numbers are <fillin characters="11" name="AnSwEr0001"/>.</p>
+</statement>
+    <answer>
+      <p>
+        <m>7, 5</m>
+      </p>
+    </answer>
+    <solution><p>Let<rsq/>s call the first number <m>x</m>. Since these two numbers<rsq/> sum is <m>12</m>, the second number must be <m>12-x</m>.</p>
+<p>It<rsq/>s given that their product is <m>35</m>, so we can write and solve the equation:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   x(12-x) \amp = 35 \\
+   {12x-x^{2}} \amp = 35 \\
+   {-x^{2}+12x-35} \amp = 0 \\
+\end{aligned}
+    }</m></p>
+<p>To get rid of the leading negative sign, we multiple each term in the equation by <m>-1</m>:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   (-1)({-x^{2}+12x-35}) \amp = (-1) \cdot 0 \\
+   {x^{2}-12x+35} \amp = 0
+\end{aligned}
+    }</m></p>
+<p>The polynomial can be factored, so we will solve the equation by factoring:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   (x-7)(x-5) \amp = 0 \\
+   x-7 \amp = 0 \amp \text{or} \amp \amp  x-5\amp =0 \\
+   x\amp =7 \amp \text{or} \amp \amp  x\amp =5
+\end{aligned}
+    }</m></p>
+<p>This result shows the first number could be <m>7</m> or <m>5</m>.</p>
+<p>Recall that the second number is <m>12-x</m>, where <m>x</m> is the first number.</p>
+<p>If the first number is <m>7</m>, the second number is <m>12-(7)=5</m>. If the first number is <m>5</m>, the second number is <m>12-(5)=7</m>. Either way, the two numbers are <m>7</m> and <m>5</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication10.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication10.pg"/>
+</webwork-reps>

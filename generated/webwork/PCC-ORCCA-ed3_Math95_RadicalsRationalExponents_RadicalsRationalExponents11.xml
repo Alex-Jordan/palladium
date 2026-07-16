@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents11" assembly-id="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents11">
+  <static seed="1986">
+    <statement><p><m>\displaystyle{\sqrt[7]{b}}</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>b^{\frac{1}{7}}</m>
+      </p>
+    </answer>
+    <solution><p><m>\displaystyle{\begin{aligned}
+   \sqrt[7]{b} \amp = {b^{\frac{1}{7}}} \\
+\end{aligned}
+    }</m></p>
+<p>The answer in calculator/WeBWorK notation is <m>b</m>^<m>(1/7)</m>.</p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/4_4_4_39.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Alex Jordan 
+# Portland Community College
+#
+# Template:
+# Use rational exponents to write the expression. 
+#
+#       sqrt(x)
+#
+#
+# Last updated: Yao 1/5/2017
+# ENDDESCRIPTION
+
+
+##############################################
+
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "contextLimitedPowers.pl",
+  "PGML.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+
+
+##############################################
+
+
+TEXT(beginproblem());
+
+Context("Numeric");
+$var = list_random('x','y','z','t','r','m','n','a','b','c');
+Context()->variables->are($var=>'Real');
+Context()->flags->set(reduceConstants=>0);
+
+$n = random(2,9,1);
+
+if ($n==2) {$problem="\sqrt{$var}";}
+else {$problem = "\sqrt[$n]{$var}";}
+
+Context()->functions->undefine('sqrt');
+
+$ans = Formula("$var^(1/$n)");
+Context()->flags->set(limits=>[0.5,5]);
+
+##############################################
+
+
+BEGIN_PGML
+
+[@ PTX_exercisegroup_introduction('Use rational exponents to write the expression.') @] 
+
+[@KeyboardInstructions('To enter [`x^{m/n}`], type [|x^(m/n)|]*.') @]**  
+
+    [``[$problem]``]
+
+    [_]{$ans}{16}
+
+END_PGML
+
+##############################################
+
+
+BEGIN_PGML_SOLUTION
+
+    [``
+\begin{aligned}
+   [$problem] &= [$ans] \\
+\end{aligned}
+    ``]
+
+The answer in calculator/WeBWorK notation is [`[$var]`]^[`(1/[$n])`].
+
+END_PGML_SOLUTION
+
+
+##############################################
+
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

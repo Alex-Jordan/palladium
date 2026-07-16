@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-15-1-5-4" assembly-id="section-factoring-15-1-5-4">
+  <static seed="96" source="Contrib/PCC/BasicAlgebra/Factoring/factoring445.pg">
+    <statement><p>Factor the given polynomial.</p>
+<p><m>{r^{2}-81}=</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left(r+9\right)\mathopen{}\left(r-9\right)</m>
+      </p>
+    </answer>
+    <solution><p>We will factor <m>r^{2}-81</m> where <m>a=1</m>, <m>b=0</m>, and <m>c=-81</m>.</p>
+<p><alert>Difference of Squares Formula: </alert>The formula for a difference of squares is <me>a^2-b^2 = (a+b)(a-b)</me> Note that the polynomial <m>r^{2}-81</m> matches the formula's right side, and we have: <me>\begin{aligned}[t]r^{2}-81\amp =\left(r\right)^2-\left(9\right)^2\newline \amp =\left(r+9\right)\mathopen{}\left(r-9\right)\end{aligned}</me></p>
+<p><alert>Mental Method: </alert>When we factor a polynomial in the form of <m>x^2+bx+c</m>, <m>x^2+bxy+cy^2</m>, or <m>x^2y^2+bxy+c</m> we can use mental math to factor. We need to find two numbers whose product is <m>c</m>, and whose sum is <m>b</m>.</p>
+<p>For <m>r^{2}-81</m>, since the product of <m>9</m> and <m>-9</m> is <m>-81</m>, and the sum of <m>9</m> and <m>-9</m> is <m>0</m>, the factorization is <me>\begin{aligned}[t]r^{2}-81\amp =\left(r+9\right)\mathopen{}\left(r-9\right)\end{aligned}</me></p>
+<p><alert>AC Method: </alert>In this method, we first calculate the product of <m>a</m> and <m>c</m> in <m>ax^2+bx+c</m>. For this problem, we have <m>(1) \cdot (-81) = -81</m>.</p>
+<p>The number <m>-81</m> can be factored into the product of two numbers in the following ways: <me>\begin{array}{lll}1(-81)\amp -1(81)\amp 3(-27)\amp -3(27)\newline9(-9)\amp -9(9)\amp \end{array}</me> Looking at the corresponding sums, we want a sum of <m>0</m>, and this sum happens with <m>(-9)+9=0</m> So we write <me>\begin{aligned}[t]r^{2}-81\amp =r^{2}-9r+9r-81\newline \amp =r\mathopen{}\left(r-9\right)+9\mathopen{}\left(r-9\right)\newline \amp =\left(r+9\right)\mathopen{}\left(r-9\right)\end{aligned}</me><alert>Generic Rectangles Method: </alert>First, we set up generic rectangles by putting the first term and third term in <m>r^{2}-81</m> into the top left and bottom right rectangles:</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-factoring-15-1-5-4-image-1.png" width="66%"/>
+<p>The first term's coefficient, <m>1</m>, can be factored into the product of two numbers (where the first factor is positive) in the following ways: <me>\begin{array}{llll}1(1)\amp \end{array}</me></p>
+<p>The third term, <m>-81</m>, can be factored into the product of two numbers in the following ways: <me>\begin{array}{llll}1(-81)\amp -1(81)\amp 3(-27)\amp -3(27)\newline9(-9)\amp -9(9)\amp \end{array}</me></p>
+<p>We put each pair into the corresponding places next to those generic rectangles, and try to match the area of those rectangles with <m>r^{2}-81</m> by guess-and-check. The following generic rectangles show the solution:</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-factoring-15-1-5-4-image-2.png" width="66%"/>
+<p>Dimensions of those generic rectangles in the diagram give us the solution: <me>\begin{aligned}[t]r^{2}-81\amp =\left(r+9\right)\mathopen{}\left(r-9\right)\end{aligned}</me></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/Factoring/factoring445.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/Factoring/factoring445.pg"/>
+</webwork-reps>

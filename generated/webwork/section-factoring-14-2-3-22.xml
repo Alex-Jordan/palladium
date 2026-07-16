@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-14-2-3-22" assembly-id="section-factoring-14-2-3-22">
+  <static seed="69" source="Contrib/PCC/BasicAlgebra/Factoring/factoring90.pg">
+    <statement><p>Factor the given polynomial.</p>
+<p><m>{7xy+7y}=</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>7y\mathopen{}\left(x+1\right)</m>
+      </p>
+    </answer>
+    <solution><p>The greatest common factor is <m>7y</m>, so we can factor the polynomial as follows:</p>
+<p><m>{7xy+7y}={7y\mathopen{}\left(x+1\right)}</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/Factoring/factoring90.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/Factoring/factoring90.pg"/>
+</webwork-reps>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-14-9" assembly-id="section-solving-rational-equations-10-14-9">
+  <static seed="1630" source="Contrib/PCC/BasicAlgebra/RationalEquations/rationalEquationApplication44.pg">
+    <statement><p>A river flows at <m>13</m> miles per hour. A boat traveled with the current from Town A to Town B, which are <m>280</m> miles apart. Then, the boat turned around, and traveled against the current to reach Town C, which is <m>120</m> miles away from Town B. The second leg of the trip (Town B to Town C) took the same time as the first leg (Town A to Town B). During this whole trip, the boat was driving at a constant still-water speed. Answer the following question:</p>
+<p>During this trip, the boat<rsq/>s speed on still water was <fillin characters="6" name="AnSwEr0001"/> miles per hour.</p>
+</statement>
+    <answer>
+      <p>
+        <m>32.5</m>
+      </p>
+    </answer>
+    <solution><p>Assume that the boat<rsq/>s still-water speed was <m>x</m> miles per hour.</p>
+<p>Since the current<rsq/>s speed was <m>13</m> miles per hour, the boat traveled from Town A  to Town B (with the current) at <m>x+13</m> miles per hour, and from Town B to Town C (against the current) at <m>x-13</m> miles per hour.</p>
+<p>Using the formula <m>\text{time}=\frac{\text{distance}}{\text{speed}}</m>, we know the boat traveled from Town A to Town B in <m>\frac{280}{x+13}</m> hours; and it traveled from Town B to Town C in <m>\frac{120}{x-13}</m> hours.</p>
+<p>It<rsq/>s given that those two legs took the same amount of time, so we can write an equation and solve it:</p>
+<p><m>\displaystyle{\begin{aligned}
+  \amp \frac{280}{x+13}=\frac{120}{x-13}\\
+  \amp \frac{280}{x+13} \cdot {\left(x+13\right)\mathopen{}\left(x-13\right)} = \frac{120}{x-13} \cdot {\left(x+13\right)\mathopen{}\left(x-13\right)} \\
+  \amp 280(x-13) = 120(x+13) \\
+  \amp 280x-3640 = 120x+1560  \\
+  \amp 280x-120x = 1560+3640 \\
+  \amp 160x = 5200 \\
+  \amp  \frac{160x}{160} = \frac{5200}{160} \\
+  \amp  x = 32.5
+\end{aligned}
+    }</m></p>
+<p>The boat<rsq/>s still-water speed was <m>32.5</m> miles per hour.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/rationalEquationApplication44.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalEquations/rationalEquationApplication44.pg"/>
+</webwork-reps>

@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-kids-birthday-venue-linear-model" assembly-id="kids-birthday-venue-linear-model">
+  <static seed="23">
+    <statement><p>For Julien<rsq/>s 8th birthday party, his parents rented a venue that charges a flat fee of <m>{\$85}</m> plus <m>{\$14}</m> per guest. Ultimately it cost Julien<rsq/>s parents <m>{\$379}\text{.}</m> How many guests were there? Write an equation to model this scenario. There is no need to solve it.</p>
+<p><fillin characters="20" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>85+14n = 379</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/1_1_6_17.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.6.17)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextCurrency.pl",
+  "parserLinearRelation.pl",
+  "randomPerson.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$name = randomPerson();
+$initial = random(80,120,5);
+Context("Currency")->flags->set(trimTrailingZeros => 1);
+$start = Currency($initial);
+$rate = random(12,18);
+$speed = Currency($rate);
+$final = $initial + $rate*random(12,23);
+$end = Currency($final);
+Context("LinearRelation")->variables->are(n => 'Real');
+$equation = LinearRelation("$initial + $rate n = $final");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Read the scenario. Then write a complete sentence that defines a variable to use. Lastly, write an equation to model the scenario. There is no need to solve the equation.
+
+For [$name]'s 8th birthday party, [$name->possessive] parents rented a venue that charges a flat fee of [`[$start]`] plus [`[$speed]`] per guest. Ultimately it cost [$name]'s parents [`[$end]\text{.}`] How many guests were there? Write an equation to model this scenario. There is no need to solve it.
+
+[@KeyboardInstructions('Use [|n|]* as the variable.')@]**
+
+[_]{$equation}{20}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:08-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -49,9 +46,9 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-@x=(2000..2022);
-@y=(529897,535753,539892,541447,535366,536827,541026,549781,559504,569796,585476,595610,604521,610254,620975,631945,643065,648176,651154,654378,652388,641162,635067);
-%f=map{$x[$_] => $y[$_]}(0..21);
+@x=(2002..2025);
+@y=(540400,546000,551700,557300,562900,568600,574200,579800,585500,595600,604500,610300,621000,631900,643100,648200,651200,654400,653200,642800,636100,634300,635700,631400);
+%f=map{$x[$_] => $y[$_]}(0..23);
 @yr=num_sort(random_subset(4,@x));
 $n=[
 {name => 'people'},
@@ -66,10 +63,10 @@ $n=[
 @r=map{Real(($f{$yr[2*$_+1]}-$f{$yr[2*$_]})/($yr[2*$_+1]-$yr[2*$_]))}(0,1);
 @r=map{NumberWithUnits("$_ people/yr",{newUnit => $n})}(@r);
 Context("Interval");
-$d=List('[2003,2004],[2019,2020],[2020,2021], [2021,2022]');
-$p=join(' ',(map{"($x[$_],$y[$_])"}(0..21)));
+$d=List('[2019,2020],[2020,2021],[2021,2022],[2022,2023],[2024,2025]');
+$p=join(' ',(map{"($x[$_],$y[$_])"}(0..23)));
 $s=Interval('[2006,2016]');
-$t=NumberWithUnits(($y[16]-$y[6])/10,"people/yr",{newUnit => $n});
+$t=NumberWithUnits(($y[14]-$y[4])/10,"people/yr",{newUnit => $n});
 
 $image_1 = createLaTeXImage();
 $image_1->addToPreamble(latexImagePreamble());
@@ -131,7 +128,7 @@ END_LATEX_IMAGE
 ############################################################
 
 BEGIN_PGML
-This table gives population estimates for Portland, Oregon from 2000 through 2021, gathered from Google in February of 2024.
+This table gives population estimates for Portland, Oregon from 2002 through 2025, gathered from [@htmlLink("https://worldpopulationreview.com/us-cities/oregon/portland","https://worldpopulationreview.com/us-cities/oregon/portland","TARGET='_blank'")@]*.
 
 >> [@DataTable(
   [
@@ -144,61 +141,61 @@ This table gives population estimates for Portland, Oregon from 2000 through 202
      PGML('Year'),
      PGML('Population'),
     ],
-    [PGML('2000'),
-     PGML('529897'),
-     PGML('2008'),
-     PGML('559504'),
-     PGML('2016'),
-     PGML('643065'),
-    ],
-    [PGML('2001'),
-     PGML('535753'),
-     PGML('2009'),
-     PGML('569796'),
-     PGML('2017'),
-     PGML('648176'),
-    ],
     [PGML('2002'),
-     PGML('539892'),
+     PGML('540400'),
      PGML('2010'),
-     PGML('585476'),
+     PGML('585500'),
      PGML('2018'),
-     PGML('651154'),
+     PGML('651200'),
     ],
     [PGML('2003'),
-     PGML('541447'),
+     PGML('546000'),
      PGML('2011'),
-     PGML('595610'),
+     PGML('595600'),
      PGML('2019'),
-     PGML('654378'),
+     PGML('654400'),
     ],
     [PGML('2004'),
-     PGML('535366'),
+     PGML('551700'),
      PGML('2012'),
-     PGML('604521'),
+     PGML('604500'),
      PGML('2020'),
-     PGML('652388'),
+     PGML('653200'),
     ],
     [PGML('2005'),
-     PGML('536827'),
+     PGML('557300'),
      PGML('2013'),
-     PGML('610254'),
+     PGML('610300'),
      PGML('2021'),
-     PGML('641162'),
+     PGML('642800'),
     ],
     [PGML('2006'),
-     PGML('541026'),
+     PGML('562900'),
      PGML('2014'),
-     PGML('620975'),
+     PGML('621000'),
      PGML('2022'),
-     PGML('635067'),
+     PGML('636100'),
     ],
     [PGML('2007'),
-     PGML('549781'),
+     PGML('568600'),
      PGML('2015'),
-     PGML('631945'),
-     PGML(''),
-     PGML(''),
+     PGML('631900'),
+     PGML('2023'),
+     PGML('634300'),
+    ],
+    [PGML('2008'),
+     PGML('574200'),
+     PGML('2016'),
+     PGML('643100'),
+     PGML('2024'),
+     PGML('635700'),
+    ],
+    [PGML('2009'),
+     PGML('579800'),
+     PGML('2017'),
+     PGML('648200'),
+     PGML('2025'),
+     PGML('631400'),
     ],
   ],
       align => 'rl!{\vrule width 0.07em}rl!{\vrule width 0.07em}rl',

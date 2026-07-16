@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-fractions-and-fraction-arithmetic-9-2-18" assembly-id="section-fractions-and-fraction-arithmetic-9-2-18">
+  <static seed="109" source="Contrib/PCC/BasicMath/FractionApplication/FractionDivisionWordProblems30.pg">
+    <statement><p>A food bank just received <m>16</m> kilograms of emergency food. Each family in need is to receive <m>{{\frac{2}{5}}}</m> kilograms of food. How many families can be served with the <m>16</m> kilograms of food?</p>
+<p><fillin characters="10" name="AnSwEr0001"/> families can be served with the <m>16</m> kilograms of food.</p>
+</statement>
+    <answer>
+      <p>
+        <m>40</m>
+      </p>
+    </answer>
+    <solution><p>We can address this problem as repeatedly taking away <m>{{\frac{2}{5}}}</m> kilograms from <m>16</m> kilograms, which implies a division problem:</p>
+<p><m>\displaystyle{ 
+\begin{aligned}[t]
+   16 \div {{\frac{2}{5}}} 
+      \amp = \frac{16}{1} \cdot \frac{5}{2}  \\
+      \amp = \frac{8}{1} \cdot \frac{5}{1}  \\
+      \amp = \frac{8\cdot5}{1 \cdot 1} \\
+      \amp = {40}
+\end{aligned}
+    }</m></p>
+<p><m>{40}</m> families can be served with the <m>16</m> kilograms of food.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicMath/FractionApplication/FractionDivisionWordProblems30.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicMath/FractionApplication/FractionDivisionWordProblems30.pg"/>
+</webwork-reps>

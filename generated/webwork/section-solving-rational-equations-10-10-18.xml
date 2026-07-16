@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-10-18" assembly-id="section-solving-rational-equations-10-10-18">
+  <static seed="1589" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations40.pg">
+    <statement><p>Solve the equation.</p>
+<p><m>\displaystyle{ {\frac{3}{t}} = 0 }</m></p>
+<p><fillin characters="34" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>{\rm no\ real\ solutions}</m>
+      </p>
+    </answer>
+    <solution><p>If a fraction<rsq/>s value is <m>0</m>, like <m>\frac{x}{y}=0</m>, then we can tell the numerator<rsq/>s value must be <m>0</m>, or <m>x=0</m> in this example.</p>
+<p>For this equation, <m>{\frac{3}{t}} = 0</m>, since the numerator<rsq/>s value is never <m>0</m>, there is no solution.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations40.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations40.pg"/>
+</webwork-reps>

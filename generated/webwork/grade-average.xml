@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-grade-average" assembly-id="grade-average">
+  <static seed="1645">
+    <statement><p>In one college math course, the final grade (out of <m>100</m> points) is calculated by adding one-half of the homework average, one-sixth of the midterm score, and one-third of the final exam score.</p>
+<p>Camilla has 84 for her homework average and 81 for her midterm score. Her goal is to finish the course with a final grade of 80. What must she score on the final exam?</p>
+<p><fillin characters="5" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>73.5</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/3_5_8_180.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(3.5.8.180)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "randomPerson.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$p = randomPerson();
+do {
+  $homework = random(80,100);
+  $midterm = random(70,90);
+  $goal = list_random(70,80,90);
+  $sol = 3*($goal - ($homework/2 + $midterm/6));
+} until ($goal > 0 && $goal < 100);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+In one college math course, the final grade (out of [`100`] points) is calculated by adding one-half of the homework average, one-sixth of the midterm score, and one-third of the final exam score.
+
+[$p] has [$homework] for [$p->their] homework average and [$midterm] for [$p->their] midterm score. [$p->Their] goal is to finish the course with a final grade of [$goal]. What must [$p->they] score on the final exam?
+
+[_]{$sol}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-rationalizing-the-denominator-4-4" assembly-id="section-rationalizing-the-denominator-4-4">
+  <static seed="1911">
+    <statement><p>Rationalize the denominator in <m>\frac{\sqrt{3}}{3-2\sqrt{3}}\text{.}</m></p>
+<p><fillin characters="20" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>-\sqrt{3}-2</m>
+      </p>
+    </answer>
+    <solution><p>To remove the radical in <m>3-2\sqrt{3}</m> with the difference of squares formula, we multiply it with <m>3+2\sqrt{3}\text{.}</m></p>
+<p><me>\begin{aligned}
+\frac{\sqrt{3}}{3-2\sqrt{3}}\amp=\frac{\sqrt{3}}{(3-2\sqrt{3})}\multiplyright{\frac{(3+2\sqrt{3})}{(3+2\sqrt{3})}}\\
+\amp=\frac{\multiplyleft{3}\sqrt{3}+\multiplyleft{2\sqrt{3}}\sqrt{3}}{(3)^2-\left(2\sqrt{3}\right)^2}\\
+\amp=\frac{3\sqrt{3}+2\cdot 3}{9-2^2\left(\sqrt{3}\right)^2}\\
+\amp=\frac{3\sqrt{3}+6}{9-4(3)}\\
+\amp=\frac{3\left(\sqrt{3}+2\right)}{9-12}\\
+\amp=\frac{3\left(\sqrt{3}+2\right)}{-3}\\
+\amp=\frac{\sqrt{3}+2}{-1}\\
+\amp=-\sqrt{3}-2
+\end{aligned}</me></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/4_3_6.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.3.6)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Form");
+$answer = Formula("-sqrt(3)-2");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Rationalize the denominator in [`\frac{\sqrt{3}}{3-2\sqrt{3}}\text{.}`]
+
+[_]{$answer}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+To remove the radical in [`3-2\sqrt{3}`] with the difference of squares formula, we multiply it with [`3+2\sqrt{3}\text{.}`]
+
+[```\newcommand{\multiplyright}[2][\cdot]{{\highlight{{{}#1#2}}}}\newcommand{\multiplyleft}[2][\cdot]{{\highlight{{#2#1{}}}}}\newcommand{\amp}{&}
+\begin{aligned}
+\frac{\sqrt{3}}{3-2\sqrt{3}}\amp=\frac{\sqrt{3}}{(3-2\sqrt{3})}\multiplyright{\frac{(3+2\sqrt{3})}{(3+2\sqrt{3})}}\\
+\amp=\frac{\multiplyleft{3}\sqrt{3}+\multiplyleft{2\sqrt{3}}\sqrt{3}}{(3)^2-\left(2\sqrt{3}\right)^2}\\
+\amp=\frac{3\sqrt{3}+2\cdot 3}{9-2^2\left(\sqrt{3}\right)^2}\\
+\amp=\frac{3\sqrt{3}+6}{9-4(3)}\\
+\amp=\frac{3\left(\sqrt{3}+2\right)}{9-12}\\
+\amp=\frac{3\left(\sqrt{3}+2\right)}{-3}\\
+\amp=\frac{\sqrt{3}+2}{-1}\\
+\amp=-\sqrt{3}-2
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

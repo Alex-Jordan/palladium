@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-fraction-arithmetic-8-2-9" assembly-id="section-fraction-arithmetic-8-2-9">
+  <static seed="91" source="Contrib/PCC/BasicMath/FractionApplication/FractionSubtractionWordProblems30.pg">
+    <statement><p>Each page of a book is <m>{7{\textstyle\frac{1}{4}}}</m> inches in height, and consists of a header (a top margin), a footer (a bottom margin), and the middle part (the body). The header is <m>{{\frac{9}{10}}}</m> of an inch thick and the middle part is <m>{6{\textstyle\frac{3}{10}}}</m> inches from top to bottom.</p>
+<p>What is the thickness of the footer?</p>
+<p>The footer is <fillin characters="11" name="AnSwEr0001"/> of an inch thick.</p>
+</statement>
+    <answer>
+      <p>
+        <m>{\frac{1}{20}}</m>
+      </p>
+    </answer>
+    <solution><p>From a page<rsq/>s total height, we subtract the thickness of the header and the height of the body to find the thickness of the footer:</p>
+<p><m>\displaystyle{ 
+\begin{aligned}[t]
+   {7{\textstyle\frac{1}{4}}} - {{\frac{9}{10}}} - {6{\textstyle\frac{3}{10}}}
+      \amp = 7 + \frac{1}{4} -{{\frac{9}{10}}} - 6 - {{\frac{3}{10}}} \\
+      \amp = 1 + \frac{1}{4} -{{\frac{9}{10}}} - {{\frac{3}{10}}} \\
+      \amp = \frac{1}{1} + \frac{1}{4} -{{\frac{9}{10}}} - {{\frac{3}{10}}} \\
+      \amp = \frac{1 \cdot 20}{1 \cdot 20} + \frac{1\cdot5}{4\cdot5} - \frac{9\cdot2}{10\cdot2} - \frac{3\cdot2}{10\cdot2} \\
+      \amp =  \frac{20}{20} + \frac{5}{20} - \frac{18}{20} - \frac{6}{20} \\
+      \amp = \frac{20+5-18-6}{20} \\
+      \amp = {{\frac{1}{20}}}
+\end{aligned}
+    }</m></p>
+<p>The footer is <m>{{\frac{1}{20}}}</m> inches thick.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicMath/FractionApplication/FractionSubtractionWordProblems30.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicMath/FractionApplication/FractionSubtractionWordProblems30.pg"/>
+</webwork-reps>

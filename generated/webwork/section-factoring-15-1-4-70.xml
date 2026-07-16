@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-15-1-4-70" assembly-id="section-factoring-15-1-4-70">
+  <static seed="89" source="Contrib/PCC/BasicAlgebra/Factoring/factoring505.pg">
+    <statement><p>Factor the given polynomial.</p>
+<p><m>{t^{2}+9}=</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\text{prime}</m>
+      </p>
+    </answer>
+    <solution><p>A <em>sum</em> of squares can <em>not</em> be factored (in the real numbers), so it is <alert>prime</alert>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/Factoring/factoring505.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/Factoring/factoring505.pg"/>
+</webwork-reps>

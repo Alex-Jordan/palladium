@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-15-2-5-42" assembly-id="section-factoring-15-2-5-42">
+  <static seed="214" source="Contrib/PCC/BasicAlgebra/Factoring/factoring555.pg">
+    <statement><p>Factor the given polynomial.</p>
+<p><m>{121r^{2}-66rt+9t^{2}}=</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left(11r-3t\right)\mathopen{}\left(11r-3t\right)</m>
+      </p>
+    </answer>
+    <solution><p>We will factor <m>121r^{2}-66rt+9t^{2}</m> where <m>a=121</m>, <m>b=-66</m>, and <m>c=9</m>.</p>
+<p><alert>Perfect Square Formula: </alert>The formula for perfect square trinomials is <me>(a \pm b)^2=a^2 \pm 2ab + b^2</me>. Note that the polynomial <m>121r^{2}-66rt+9t^{2}</m> matches the formula's right side, and we have: <me>\begin{aligned}[t]121r^{2}-66rt+9t^{2}\amp =\left(11r\right)^2-2\left(11r\right)\left(3t\right)+\left(3t\right)^2\newline \amp =\left(11r-3t\right)\mathopen{}\left(11r-3t\right)\newline \amp =\left(11r-3t\right)^{2}\end{aligned}</me></p>
+<p><alert>AC Method: </alert>In this method, we first calculate the product of <m>a</m> and <m>c</m> in <m>ax^2+bx+c</m>. For this problem, we have <m>(121) \cdot (9) = 1089</m>.</p>
+<p>The number <m>1089</m> can be factored into the product of two numbers in the following ways: <me>\begin{array}{lll}1(1089)\amp -1(-1089)\amp 3(363)\amp -3(-363)\newline9(121)\amp -9(-121)\amp 11(99)\amp -11(-99)\newline33(33)\amp -33(-33)\amp \end{array}</me> Looking at the corresponding sums, we want a sum of <m>-66</m>, and this sum happens with <m>(-33)+(-33)=-66</m> So we write <me>\begin{aligned}[t]121r^{2}-66rt+9t^{2}\amp =121r^{2}-33rt-33rt+9t^{2}\newline \amp =11r\mathopen{}\left(11r-3t\right)-3t\mathopen{}\left(11r-3t\right)\newline \amp =\left(11r-3t\right)\mathopen{}\left(11r-3t\right)\newline \amp =\left(11r-3t\right)^{2}\end{aligned}</me><alert>Generic Rectangles Method: </alert>First, we set up generic rectangles by putting the first term and third term in <m>121r^{2}-66rt+9t^{2}</m> into the top left and bottom right rectangles:</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-factoring-15-2-5-42-image-1.png" width="66%"/>
+<p>The first term's coefficient, <m>121</m>, can be factored into the product of two numbers (where the first factor is positive) in the following ways: <me>\begin{array}{llll}1(121)\amp 11(11)\amp \end{array}</me></p>
+<p>The third term's coefficient, <m>9</m>, can be factored into the product of two numbers in the following ways: <me>\begin{array}{llll}1(9)\amp -1(-9)\amp 3(3)\amp -3(-3)\newline\end{array}</me></p>
+<p>We put each pair into the corresponding places next to those generic rectangles, and try to match the area of those rectangles with <m>121r^{2}-66rt+9t^{2}</m> by guess-and-check. The following generic rectangles show the solution:</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-factoring-15-2-5-42-image-2.png" width="66%"/>
+<p>Dimensions of those generic rectangles in the diagram give us the solution: <me>\begin{aligned}[t]121r^{2}-66rt+9t^{2}\amp =\left(11r-3t\right)\mathopen{}\left(11r-3t\right)\newline \amp =\left(11r-3t\right)^{2}\end{aligned}</me></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/Factoring/factoring555.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/Factoring/factoring555.pg"/>
+</webwork-reps>

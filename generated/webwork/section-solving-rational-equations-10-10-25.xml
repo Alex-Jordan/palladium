@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-10-25" assembly-id="section-solving-rational-equations-10-10-25">
+  <static seed="1596" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations60.pg">
+    <statement><p>Solve the equation.</p>
+<p><m>\displaystyle{ {\frac{1}{r-5}-\frac{5}{r^{2}-5r}} = -\frac{1}{3} }</m></p>
+<p><fillin characters="34" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{-3\right\}</m>
+      </p>
+    </answer>
+    <solution><p>To get rid of fractions, we multiply each term in this equation by the common denominator, which is <m>{3r\mathopen{}\left(r-5\right)}</m> in this example.</p>
+<p><m>\displaystyle{\begin{aligned}
+   \amp {\frac{1}{r-5}-\frac{5}{r^{2}-5r}} = -\frac{1}{3} \\
+   \amp {\frac{1}{r-5}-\frac{5}{r\mathopen{}\left(r-5\right)}} =-\frac{1}{3} \\
+   \amp {\frac{1}{r-5}\cdot 3r\mathopen{}\left(r-5\right)-\frac{5}{r\mathopen{}\left(r-5\right)}\cdot 3r\mathopen{}\left(r-5\right)} = -\frac{1}{3} \cdot 3 r (r-5) \\
+   \amp {3r-15} = {5r-r^{2}} \\
+   \amp {3r-15+r^{2}-5r} = 0 \\
+   \amp {r^{2}-2r-15} = 0 \\
+   \amp {\left(r-5\right)\mathopen{}\left(r+3\right)} = 0 \\
+   \amp r - 5=0 \:\: or\:\: r+3=0 \\
+   \amp r=5 \:\: or\:\: r=-3
+\end{aligned}
+    }</m></p>
+<p><alert>Checking</alert></p>
+<p>We must check solutions when we solve rational equations. In the original equation, both denominators cannot be <m>0</m>. We set them to <m>0</m>, so we can find out what values to exclude from the solution set.</p>
+<p><m>\displaystyle{\begin{aligned}
+   \amp r^2 - 5r = 0 \amp \;\amp  r - 5=0 \\
+   \amp r(r - 5) =0 \amp \;\amp  r=5 \\
+   \amp r=0 \:\:or\:\: r - 5=0 \\
+   \amp r=0 \:\:or\:\: r=5
+\end{aligned}
+    }</m></p>
+<p>We must exclude <m>0</m> and <m>5</m> from the solution set. We can see <m>r=5</m> is an extraneous solution, so the final solution is <m>r=-3</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations60.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations60.pg"/>
+</webwork-reps>

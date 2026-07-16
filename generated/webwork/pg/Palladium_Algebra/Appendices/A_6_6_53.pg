@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:10-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,11 +27,9 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "niceTables.pl",
   "PGchoicemacros.pl",
-  "parserVectorUtils.pl",
+  "parserCheckboxList.pl",
   "contextForm.pl",
-  "parserPopUp.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -47,63 +42,47 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$actual_solution = random(1,9,1);
-@square = map{$_**2} ((1..10)[NchooseK(9,2)]);
-@m = map{int($_ / $actual_solution) + 1} (@square);
-@b = map{$_ % $actual_solution - $actual_solution} (@square);
-$left = Formula("sqrt($m[0] x + $b[0])")->reduce;
-$right = Formula("sqrt($m[1] x + $b[1])")->reduce;
-$right += ($left->eval(x => $actual_solution) - $right->eval(x => $actual_solution) + (random(0,2) ? 0 : non_zero_random(-3,3)));
-$right = $right->reduce;
-$proposed_solution = $actual_solution;
-($left, $right) = ($left, $right)[NchooseK(2,2)];
-Context("LimitedNumeric");
-$lefteval = Real($left->eval(x => $proposed_solution));
-$righteval = Real($right->eval(x => $proposed_solution));
-$inequality = list_random('\lt', '\gt', '\leq', '\geq', '\neq');
-$truefalse = (
-  ($inequality eq '\lt') ?
-  ($lefteval < $righteval) :
-  (
-    ($inequality eq '\gt') ?
-    ($lefteval > $righteval) :
-    (
-      ($inequality eq '\leq') ?
-      ($lefteval <= $righteval) :
-      (
-        ($inequality eq '\geq') ?
-        ($lefteval >= $righteval) :
-        ($lefteval != $righteval)
-      )
-    )
-  )
+Context("Numeric");
+Context()->variables->are(x=>'Real',y=>'Real',z=>'Real',r=>'Real',q=>'Real',p=>'Real',V=>'Real',);
+Context()->noreduce('(-x)-y');
+@allvars=('x','y','z','r','q','p','V');
+@var=(
+    list_random(@allvars),
+    (@allvars)[NchooseK(7,2)],
+    list_random(@allvars),
+    list_random(@allvars),
+    list_random(@allvars),
+    'r',
 );
-$dropdown = DropDown(["Yes, it is a solution.", "No, it is not a solution."], $truefalse ? 0 : 1, showInStatic => 0);
+@left=(
+    Formula(non_zero_random(-9, 9) . " $var[0] + " . non_zero_random(-19, 19))->reduce,
+    Formula(random(1, 9) . " $var[1] + " . random(1, 9) . " $var[2]^2")->reduce,
+    Formula(random(1, 9) . ' + ' . non_zero_random(-9, 9) . "$var[3]^2")->reduce,
+    Formula(random(0.1, 9, 0.1) . $var[4])->reduce,
+    Formula("sqrt(" . non_zero_random(-9, 9, 0.1) . "$var[5] + " . non_zero_random(-9, 9) . ")")->reduce,
+    Formula("2 pi r")->reduce
+);
+@right=(
+    Compute(random(-9, 9)),
+    Compute(random(2, 29)),
+    Compute(random(-29, 29)),
+    Compute(random(-9, 9, 0.1)),
+    Compute(random(0, 9)),
+    Formula(random(1, 20).'pi')->reduce
+);
+@symbol = map{(random(0, 1)) ? '=' : list_random('\lt', '\gt', '\leq', '\geq', '\neq')} (0..5);
+@type = map{($_ eq '=') ? 'equation' : 'inequality'} (@symbol);
+@eq = map{$BM . $left[$_]->TeX . $symbol[$_] . $right[$_]->TeX . $EM} (0..5);
+$options = CheckboxList([~~@eq, "None of the above"], [0,3,5]);
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Check if the given number is a solution to the given inequality.
+Select the equations/inequalities that are linear with one variable.
 
-Is [`[$proposed_solution]`] a solution to [`[$left][$inequality][$right]\text{?}`]
-
->> [@DataTable(
-  [
-    [PGML('[`[$left->TeX]`]'),
-     PGML('[`[$inequality]`]'),
-     PGML('[`[$right->TeX]`]'),
-    ],
-    [PGML('[_]{$lefteval}{3}'),
-     PGML('[`\wonder{[$inequality]}`]'),
-     PGML('[_]{$righteval}{3}'),
-    ],
-  ],
-      align => 'rcl',
-      valign => 'middle',);@]* <<
-
-[_]{$dropdown}{5}
+[_]{$options}{5}
 
 END_PGML
 

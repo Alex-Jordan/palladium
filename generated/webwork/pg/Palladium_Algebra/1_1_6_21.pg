@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-20T13:16:08-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -31,7 +28,9 @@ loadMacros(
   "PGML.pl",
   "AnswerFormatHelp.pl",
   "PCCmacros.pl",
-  "contextFraction.pl",
+  "contextCurrency.pl",
+  "contextPercent.pl",
+  "parserLinearRelation.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -44,26 +43,60 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("Fraction");
-($a, $b) = random_coprime([1..15],[2..15]);
-$f = Fraction($a, $b);
-$ans = Compute("x - $f x");
-$numberWordf = numberWord($a/$b, denominator => $b);
+$item = list_random(
+  'A bicycle',
+  'A dishwasher',
+  'A cell phone',
+  'A television',
+  'A car stereo',
+  'A formal suit',
+  'A designer dress',
+  'A tool shed',
+  'A tablet',
+  'An annual wine subscription',
+);
+Context("Currency")->flags->set(trimTrailingZeros => 1);
+$final = 400 + random(-100,100);
+$current = Currency($final);
+Context("Percent");
+$decimal = random(0.04,0.07,0.001);
+$percent = Percent($decimal);
+Context("LinearRelation")->variables->are(p => 'Real');
+$equation = LinearRelation("p + $decimal p = $final");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Translate the phrase or sentence into a math expression or equation (whichever is appropriate).
+Read the scenario. Then write a complete sentence that defines a variable to use. Lastly, write an equation to model the scenario. There is no need to solve the equation.
 
-a number decreased by [$numberWordf] of itself
+[$item] is for sale in a state where sales tax applies. The sales tax rate is [`[$percent]`] and the total was [`[$current]\text{.}`] What was the price before sales tax? Set up an equation to answer this question. There is no need to solve it.
 
-[@KeyboardInstructions('Use [`x`] as the variable.')@]**
+[@KeyboardInstructions('Use [|p|]* as the variable.')@]**
 
-[_]{$ans}{16}
+[_]{$equation}{20}
 
 END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+This is a percent exercise, and we can use
+
+[```
+                  (\text{initial value}) \pm (\text{percent as decimal})\cdot(\text{initial value}) = (\text{final value})
+                ```]
+
+In this case, the initial value is the cost before the sales tax is applied, and this is the thing we do not yet know. We decide to use [`p`] to represent this quantity, standing for "price". The sales tax makes the final cost increase, so we use addition (not subtraction). The decimal for the percent of increase is [`[$decimal]\text{.}`] And the final value is the total, which is [`[$final]\text{.}`] So the equation to set up is:
+
+[```
+                  [$equation]
+                ```]
+
+END_PGML_SOLUTION
 
 ############################################################
 # End Problem

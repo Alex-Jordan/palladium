@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication20-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication20-copy">
+  <static seed="2702">
+    <statement><p>A triangle<rsq/>s height is <m>2</m> feet longer than <m>6 \text{ times}</m> its base. If we use <m>b</m> to represent the triangle<rsq/>s base, use a polynomial to represent the triangle<rsq/>s area in expanded form. A triangle<rsq/>s area can be calculated by <m>A=\frac{1}{2}bh</m>, where <m>b</m> stands for base, and <m>h</m> stands for height.</p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>3b^{2}+b</m>
+      </p>
+    </answer>
+    <solution><p>The triangle<rsq/>s base is <m>b</m> feet. Since the triangle<rsq/>s height is <m>2</m> feet longer than <m>6 \text{ times}</m> its base, its height is <m>6b+2</m> feet. We substitute those two values into a triangle<rsq/>s area formula, and we have:</p>
+<p><m>\displaystyle{\begin{aligned}
+   A \amp = \frac{1}{2}bh \\
+      \amp = \frac{1}{2}b(6b+2) \\
+      \amp = \frac{1}{2}6b^2+\frac{1}{2}2b \\
+      \amp ={3b^{2}+b}
+\end{aligned}
+    }</m></p>
+<p>The triangle<rsq/>s area is <m>{3b^{2}+b}</m> square feet.</p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/Appendices/A_9_5_70.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Carl Yao
+# Portland Community College
+#
+# Polynomial multiplication application problem.
+# Calculate the area of a triangle.
+# Answer is 1/2 b (2b-4)=b^2-2b
+# 
+# Last updated: Carl Yao, 11/29/2016
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Polynomial and Rational Functions')
+## DBsection('Polynomial Functions')
+## KEYWORDS('exponent','multiply','polynomial','distribute','monomial')
+## DBCCSS('A-APR.1')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Alex Jordan, Carl Yao, Chris Hughes')
+## Institution('PCC')
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "contextLimitedPolynomial.pl",
+  "PGcourse.pl",
+);
+
+##############################################
+
+Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = 'b';
+Context()->variables->are($var=>'Real');
+
+$a = random(2,10,2);
+$b = random(2,6,2);
+
+$numText = ($b==2) ? "\text{twice}" : "$b \text{ times}";
+
+$c = $a/2;
+$d = $b/2;
+
+$ans = Compute("$d*b**2+$c*b")->reduce;
+
+Context("LimitedPolynomial-Strict");
+Context()->variables->add($var=>'Real');
+$ans = Formula($ans)->reduce;
+
+
+##############################################
+TEXT(beginproblem());
+
+BEGIN_PGML
+
+A triangle's height is [`[$a]`] feet longer than [`[$numText]`] its base. If we use [`b`] to represent the triangle's base, use a polynomial to represent the triangle's area in expanded form. A triangle's area can be calculated by [` A=\frac{1}{2}bh `], where [`b`] stands for base, and [`h`] stands for height.
+
+[_]{$ans}{16}
+
+END_PGML
+
+##########################################################
+
+BEGIN_PGML_SOLUTION
+
+The triangle's base is [`b`] feet. Since the triangle's height is [`[$a]`] feet longer than [`[$numText]`] its base, its height is [`[$b]b+[$a]`] feet. We substitute those two values into a triangle's area formula, and we have:
+
+    [``
+\begin{aligned}
+   A &= \frac{1}{2}bh \\
+      &= \frac{1}{2}b([$b]b+[$a]) \\
+      &= \frac{1}{2}[$b]b^2+\frac{1}{2}[$a]b \\
+      &=[$ans]
+\end{aligned}
+    ``]
+
+The triangle's area is [`[$ans]`] square feet.
+
+END_PGML_SOLUTION
+##############################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-11-7" assembly-id="section-factoring-11-7">
+  <static seed="577">
+    <statement><p>Factor <m>16q^2+56q+49\text{.}</m></p>
+<p><fillin characters="25" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left(4q+7\right)^{2}</m>
+      </p>
+    </answer>
+    <solution><p>The first term, <m>16q^2\text{,}</m> is a perfect square because it equals <m>(4q)^2\text{.}</m> So we could take <m>A=4q\text{.}</m> The last term, <m>49\text{,}</m> is also a perfect square since it is equal to <m>7^2\text{.}</m> So we could take <m>B=7\text{.}</m> Now we multiply <m>2AB=2\cdot(4q)\cdot7\text{,}</m> and the result is <m>56q\text{.}</m> This is the middle term, which is what we hope to see.</p>
+<p>So we can use The Perfect Square Trinomial Formula:</p>
+<p><me>\begin{aligned}
+16q^2+56q+49\amp=(A+B)^2\\
+\amp=(4q+7)^2
+\end{aligned}</me></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_1_30.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.1.30)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "contextLimitedFactor.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedFactor");
+Context()->variables->are(q=>'Real');
+$answer = Formula("(4q+7)^2");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Factor [`16q^2+56q+49\text{.}`]
+
+[_]{$answer}{25}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The first term, [`16q^2\text{,}`] is a perfect square because it equals [`(4q)^2\text{.}`] So we could take [`A=4q\text{.}`] The last term, [`49\text{,}`] is also a perfect square since it is equal to [`7^2\text{.}`] So we could take [`B=7\text{.}`] Now we multiply [`2AB=2\cdot(4q)\cdot7\text{,}`] and the result is [`56q\text{.}`] This is the middle term, which is what we hope to see.
+
+So we can use The Perfect Square Trinomial Formula:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+16q^2+56q+49\amp=(A+B)^2\\
+\amp=(4q+7)^2
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

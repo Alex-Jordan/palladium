@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-19T15:37:07-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,9 +27,11 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PGchoicemacros.pl",
-  "parserCheckboxList.pl",
-  "contextForm.pl",
+  "PGlateximage.pl",
+  "PCCmacros.pl",
+  "parserImplicitEquation.pl",
+  "parserNumberWithUnits.pl",
+  "Pd.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -45,66 +44,50 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("Numeric");
-Context()->variables->are(x=>'Real',y=>'Real',z=>'Real',r=>'Real',q=>'Real',p=>'Real',V=>'Real',);
-Context()->noreduce('(-x)-y');
-Context()->flags->set(reduceConstantFunctions => 0);
-@allvars=('x','y','z','r','q','p','V');
-@var=(
-    (@allvars)[NchooseK(7,2)],
-    (@allvars)[NchooseK(7,2)],
-    list_random(@allvars),
-    list_random(@allvars),
-    'r',
-    list_random(@allvars),
-);
-@left=(
-    Formula(non_zero_random(1, 9) . "$var[0]$var[1]")->reduce,
-    Formula("$var[2]^2 + $var[3]^2")->reduce,
-    Formula(random(1, 19) . "$var[4] + " . non_zero_random(-9, 9))->reduce,
-    Formula("$var[5] sqrt(" . list_random(2, 3 , 5..8, 10..15, 17..24, 26..35) . ')'),
-    Formula("pi r^2")->reduce,
-    Formula("abs(" . non_zero_random(-9, 9, 0.1) . "$var[7] + " . non_zero_random(-9, 9) . ")")->reduce
-);
-@right=(
-    Compute(random(-99, 99)),
-    Compute(random(-99, 99)),
-    Compute(random(-99, 99)),
-    Compute(random(-99, 99)),
-    Formula(random(1, 99).'pi')->reduce,
-    Compute(random(-99, 99))
-);
-@symbol = map{(random(0, 1)) ? '=' : list_random('\lt', '\gt', '\leq', '\geq', '\neq')} (0..5);
-@type = map{($_ eq '=') ? 'equation' : 'inequality'} (@symbol);
-@eq = map{$left[$_]->TeX . $symbol[$_] . $right[$_]->TeX} (0..5);
-@meq = map{$BM . $_ . $EM} (@eq);
-$options = CheckboxList([~~@meq, "None of the above"], [2,3]);
+$rise = random(6.125, 8.75, 0.125);
+Context("ImplicitEquation");
+Context()->variables->are(N => 'Real');
+$answer = 17.5 - $rise;
+Context()->variables->set(N => {limits=>[$answer - 10, $answer + 10]});
+$equation = ImplicitEquation("$rise + N = 17.5");
+$answer = NumberWithUnits("$answer in");
+
+$introduction_image_1 = createLaTeXImage();
+$introduction_image_1->addToPreamble(latexImagePreamble());
+$introduction_image_1->BEGIN_LATEX_IMAGE
+\begin{tikzpicture}[x=0.7mm,y=0.7mm]
+  \foreach \x in {0,...,3}
+    \draw [fill=firstcolor!20] (10*\x, 12*\x) --++ (-30,15) --++ (0,7) --++ (30,-15);
+  \draw (0,0) --++ (0,7) --++ (10,5) --++ (0,7) --++ (10,5) --++ (0,7) --++ (10,5) --++ (0,7) --++ (10,5);
+  \draw (-30,15) --++ (0,7) --++ (10,5) node[pos=0.5, sloped, above] {run} --++ (0,7) --++ (10,5) --++ (0,7) --++ (10,5) --++ (0,7) --++ (10,5);
+  \draw (0,0) -- (40,20) --++ (0,28) --++ (-30,15);
+  \node[left] at (-30,18.5) {rise};
+\end{tikzpicture}
+
+END_LATEX_IMAGE
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Select the equations/inequalities that are linear with one variable.
+When building a staircase, you want the rise and run to be consistent from one step to the next.
 
-[_]{$options}{5}
+>> [@image(insertGraph($introduction_image_1), width=>282, alt=>qq"diagram of a staircase with one stair's height labeled as 'rise' and its width labeled as 'run'")@]*  <<
+
+A convention among contractors is that steps in a staircase should have rise [`S`] and run [`N\text{,}`] both in inches, such that [`S + N = 17.5\text{.}`] To bridge the first floor to the second floor, contractors determined the rise of each stair should be the given number of inches. Write an equation that can be used to find the run of each step. Then solve that equation and report what the run should be.
+
+The rise is [`[$rise]`] inches.
+
+[@KeyboardInstructions('Write the equation here.')@]**
+
+[_]{$equation}{15}
+
+[@KeyboardInstructions('Write the run here.')@]**
+
+[_]{$answer}{10}
 
 END_PGML
-
-############################################################
-# Solution
-############################################################
-
-BEGIN_PGML_SOLUTION
-[`[$eq[0]]`] is not linear because it multiplies two variables together.
-
-[`[$eq[1]]`] and [`[$eq[4]]`] are not linear because variables are raised to the second power.
-
-[`[$eq[5]]`] is not linear because a variable is within absolute value bars.
-
-That leaves [`[$eq[2]]`] and [`[$eq[3]]\text{,}`] which are both linear.
-
-END_PGML_SOLUTION
 
 ############################################################
 # End Problem

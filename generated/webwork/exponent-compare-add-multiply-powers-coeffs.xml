@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-compare-add-multiply-powers-coeffs" assembly-id="exponent-compare-add-multiply-powers-coeffs">
+  <static seed="2612">
+    <introduction/>
+    <task>
+      <statement><p><m>{7e^{2}+5e^{2}}</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>12e^{2}</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement><p><m>\left(7e^2\right)\cdot\left(5e^2\right)</m></p>
+<p><fillin characters="16" name="AnSwEr0002"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>35e^{4}</m>
+        </p>
+      </answer>
+    </task>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/Appendices/A_8_4_45.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(A.8.4.45)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "scaffold.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+COMMENT('This problem is scaffolded with multiple parts');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$x = list_random('a' .. 'k', 'm', 'n', 'p' .. 'r', 't' .. 'z');
+Context("Form")->variables->are($x => 'Real');
+$m = random(2,9);
+$m2 = 2*$m;
+@c = random_subset(2 .. 9);
+$c2 = $c[0] + $c[1];
+$c22 = $c[0]*$c[1];
+$g[0] = Formula("$c[0] $x^$m + $c[1] $x^$m");
+$g[1] = Formula("($c[0]$x^$m) * ($c[1] $x^$m)");
+$ans[0] = Formula("$c2 $x^$m");
+$ans[1] = Formula("$c22 $x^($m2)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Simplify each expression, taking note of the different behavior when adding versus multiplying. If it's not possible to simplify an expression more than it already is, then the answer should just be the same given expression.
+
+END_PGML
+
+############################################################
+# Scaffold
+############################################################
+Scaffold::Begin(numbered => 1,is_open => "correct_or_first_incorrect",can_open => always,);
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+[`[$g[0]]`]
+
+[_]{$ans[0]}{16}
+
+END_PGML
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+[`\left([$c[0]][$x]^[$m]\right)\cdot\left([$c[1]][$x]^[$m]\right)`]
+
+[_]{$ans[1]}{16}
+
+END_PGML
+
+Section::End();
+
+Scaffold::End();
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

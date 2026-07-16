@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication50-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication50-copy">
+  <static seed="2708">
+    <statement><p>An artist sells her paintings at <m>{\$19.00}</m> per piece. Currently, she can sell <m>130</m> paintings per year. So her annual income from paintings is <m>19\cdot130=2470</m> dollars. She plans to raise the price. However, for each <m>{\$4.00}</m> of price increase per painting, her customers would buy <m>9</m> fewer paintings annually.</p>
+<p>Assume the artist would raise the price of her painting <m>x</m> times, each time by <m>{\$4.00}</m>. Use an expanded polynomial to represent her new income per year.</p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>-36x^{2}+349x+2470</m>
+      </p>
+    </answer>
+    <solution><p>Currently, each painting costs <m>{\$19.00}</m>. After raising the price <m>x</m> times, each time by <m>{\$4.00}</m>, each painting<rsq/>s new price would be <m>{19+4x}</m> dollars.</p>
+<p>Currently, the artist sells <m>130</m> paintings per year. After raising the price <m>x</m> times, each time selling <m>9</m> fewer paintings, he would sell <m>{130-9x}</m> paintings per year.</p>
+<p>His annual income can be calculated by multiplying each painting<rsq/>s price with the number of paintings he would sell:</p>
+<p><m>\displaystyle{\begin{aligned}
+   \text{annual income} \amp =  ({19+4x})({130-9x}) \\
+                     \amp = {\left(19+4x\right)\mathopen{}\left(130-9x\right)} \\
+                     \amp = {130\mathopen{}\left(19+4x\right)-9x\mathopen{}\left(19+4x\right)} \\
+                     \amp = {2470+520x-171x-36x^{2}} \\
+                     \amp = {-36x^{2}+349x+2470}
+\end{aligned}
+    }</m></p>
+<p>After raising the price <m>x</m> times, each time by <m>{\$4.00}</m>, the artist<rsq/>s annual income from paintings would be <m>{-36x^{2}+349x+2470}</m> dollars.</p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/Appendices/A_9_5_76.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+# WeBWorK problem written by Carl Yao
+# Portland Community College
+#
+# Polynomial multiplication application problem.
+# 
+# Answer is (10+2x)(100-5x)=-10x^2+50x+1000
+# 
+# Last updated: Carl Yao, 11/29/2016
+# ENDDESCRIPTION
+
+## DBsubject('Algebra')
+## DBchapter('Polynomial and Rational Functions')
+## DBsection('Polynomial Functions')
+## KEYWORDS('exponent','multiply','polynomial','distribute','monomial')
+## DBCCSS('A-APR.1')
+## TitleText1('')
+## EditionText1('')
+## AuthorText1('')
+## Section1('')
+## Problem1('')
+## Author('Alex Jordan, Carl Yao, Chris Hughes')
+## Institution('PCC')
+
+##############################################
+
+DOCUMENT();
+
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "contextCurrency.pl",
+  "contextLimitedPolynomial.pl",
+  "randomPerson.pl",
+  "PGcourse.pl",
+);
+
+##############################################
+
+Context("Numeric");
+Context()->noreduce('(-x)-y','(-x)+y');
+$var = 'x';
+#Context()->variables->are($var=>'Real');
+
+$a = random(10,20,1);
+$b = random(100,150,10);
+$c = random(2,5,1);
+$d = random(5,10,1);
+
+$ad = $a*$d;
+$ab = $a*$b;
+$bc = $b*$c;
+$cd = $c*$d;
+
+$e = $bc-$ad;
+
+$poly1 = Compute("$a+$c*x")->reduce;
+$poly2 = Compute("$b-$d*x")->reduce;
+$ans = Compute("-$cd*x**2+$e*x+$ab")->reduce;
+
+$step1 = Compute("($poly1)*($poly2)")->reduce;
+$step2 = Compute("$b($a+$c*x)-$d*x($a+$c*x)")->reduce;
+$step3 = Compute("$ab+$bc*x-$ad*x-$cd*x**2")->reduce;
+
+Context("Currency");
+$aC = Currency($a);
+$cC = Currency($c);
+
+Context("LimitedPolynomial-Strict");
+#Context()->variables->add($var=>'Real');
+$ans = Formula($ans);
+
+$p = randomPerson();
+
+##############################################
+TEXT(beginproblem());
+
+BEGIN_PGML
+
+An artist sells [@ $p->their @] paintings at [`[$aC]`] per piece. Currently, [@ $p->they @] can sell [`[$b]`] paintings per year. So [@ $p->their @] annual income from paintings is [`[$a]\cdot[$b]=[$a*$b]`] dollars. [@ $p->They @] [@ $p->verb('plan') @] to raise the price. However, for each [`[$cC]`] of price increase per painting, [@ $p->their @] customers would buy [`[$d]`] fewer paintings annually.
+
+Assume the artist would raise the price of [@ $p->their @] painting [`x`] times, each time by [`[$cC]`]. Use an expanded polynomial to represent [@ $p->their @] new income per year.
+
+[_]{$ans}{16}
+
+END_PGML
+
+##########################################################
+
+BEGIN_PGML_SOLUTION
+
+Currently, each painting costs [`[$aC]`]. After raising the price [`x`] times, each time by [`[$cC]`], each painting's new price would be [`[$poly1]`] dollars.
+
+Currently, the artist sells [`[$b]`] paintings per year. After raising the price [`x`] times, each time selling [`[$d]`] fewer paintings, he would sell [`[$poly2]`] paintings per year.
+
+His annual income can be calculated by multiplying each painting's price with the number of paintings he would sell:
+
+    [``
+\begin{aligned}
+   \text{annual income} &=  ([$poly1])([$poly2]) \\
+                     &= [$step1] \\
+                     &= [$step2] \\
+                     &= [$step3] \\
+                     &= [$ans]
+\end{aligned}
+    ``]
+
+After raising the price [`x`] times, each time by [`[$cC]`], the artist's annual income from paintings would be [`[$ans]`] dollars.
+
+END_PGML_SOLUTION
+##############################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

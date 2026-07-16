@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-10-13" assembly-id="section-solving-rational-equations-10-10-13">
+  <static seed="1584" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations20.pg">
+    <statement><p>Solve the equation.</p>
+<p><m>\displaystyle{ {\frac{5}{3b}+\frac{1}{2b}}={-2}  }</m></p>
+<p><fillin characters="31" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{\frac{-13}{12}\right\}</m>
+      </p>
+    </answer>
+    <solution><p>To clear fractions in an equation, multiply each side of the equation by a common denominator. For this problem, a common denominator is <m>{6b}</m>.</p>
+<p><m>\displaystyle{\begin{aligned}
+  {\frac{5}{3b}+\frac{1}{2b}} \amp = {-2} \\
+  {\frac{5}{3b}\cdot 6b+\frac{1}{2b}\cdot 6b} \amp = {-2\cdot 6b} \\
+  10+3 \amp = {-12b} \\
+  13 \amp = {-12b} \\
+  \frac{13}{-12} \amp = \frac{{-12b}}{-12} \\
+  {\left\{\frac{-13}{12}\right\}} \amp = b \\
+  b \amp  = {\left\{\frac{-13}{12}\right\}}
+\end{aligned}
+    }</m></p>
+<p>We must check solutions when we solve rational equations. By the original equation, the domain condition is <m>b \ne 0</m>. This doesn<rsq/>t conflict with the solution above, so the solution is <m>b = {\left\{\frac{-13}{12}\right\}}</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations20.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations20.pg"/>
+</webwork-reps>

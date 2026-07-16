@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-the-quadratic-formula-7-3-5" assembly-id="section-the-quadratic-formula-7-3-5">
+  <static seed="968">
+    <statement><p>An robot on Mars makes a running jump off a cliff onto a broad flat plain. The clifftop is 11 m higher than the plain. Because of the slight upward jump, the robot<rsq/>s height from the plain, in meters, <m>t</m> seconds after the jump is <m>{-1.85t^{2}+3.2t+13}\text{.}</m> How long will it be until the robot lands in the plain?</p>
+<p><fillin characters="20" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>3.65324\ {\rm s}</m>
+      </p>
+    </answer>
+    <solution><p>When the robot lands, the height will be <m>0\text{.}</m> So we must solve the equation <m>{-1.85t^{2}+3.2t+13}=0\text{.}</m> Using the quadratic formula:</p>
+<p><me>\begin{aligned}
+t\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{-3.2\pm\sqrt{3.2^2-4\left(-1.85\right)\left(13\right)}}{2\left(-1.85\right)}\\
+\amp=\frac{-3.2\pm\sqrt{106.44}}{-3.7}\\
+\amp\approx\frac{-3.2\pm{10.317}}{-3.7}\\
+t\amp\approx\frac{-3.2-{10.317}}{-3.7}\quad\text{or}\quad t\approx\frac{-3.2+{10.317}}{-3.7}\\
+t\amp\approx{3.65324}\quad\text{or}\quad t\approx{-1.92351}
+\end{aligned}</me></p>
+<p>Only the solution <m>t\approx{3.65324}</m> makes sense in this situation. So it will takes <m>{3.65324\ {\rm s}}</m> for the robot to land.</p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_4_5_102.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.4.5.102)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserNumberWithUnits.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$g = -3.7;
+$gU = NumberWithUnits("$g m/s^2");
+$h = random(10,20,1);
+$hU = NumberWithUnits("$h m");
+$v = random(2,4,0.1);
+$vU = NumberWithUnits("$v m/s");
+Context()->variables->are(t=>'Real');
+$a = $g/2;
+$b = $v;
+$c = $h+2;
+$f = Formula("$a t^2 + $b t + $c");
+$s = Real((-$b + sqrt(($b)**2 - 4*$a*$c))/(2*$a));
+$t = Real((-$b - sqrt(($b)**2 - 4*$a*$c))/(2*$a));
+$tU = NumberWithUnits("$t s");
+$negb = -$b;
+$discriminant = $b**2 - 4*$a*$c;
+$sqrtdisc = Real(sqrt($discriminant));
+$a2 = 2*$a;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+An robot on Mars makes a running jump off a cliff onto a broad flat plain. The clifftop is [$hU] higher than the plain. Because of the slight upward jump, the robot's height from the plain, in meters, [`t`] seconds after the jump is [`[$f]\text{.}`] How long will it be until the robot lands in the plain?
+
+[_]{$tU}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+When the robot lands, the height will be [`0\text{.}`] So we must solve the equation [`[$f]=0\text{.}`] Using the quadratic formula:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+t\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{[$negb]\pm\sqrt{[$b]^2-4\left([$a]\right)\left([$c]\right)}}{2\left([$a]\right)}\\
+\amp=\frac{[$negb]\pm\sqrt{[$discriminant]}}{[$a2]}\\
+\amp\approx\frac{[$negb]\pm[$sqrtdisc]}{[$a2]}\\
+t\amp\approx\frac{[$negb]-[$sqrtdisc]}{[$a2]}\quad\text{or}\quad t\approx\frac{[$negb]+[$sqrtdisc]}{[$a2]}\\
+t\amp\approx[$t]\quad\text{or}\quad t\approx[$s]
+\end{aligned}
+```]
+
+Only the solution [`t\approx[$t]`] makes sense in this situation. So it will takes [`[$tU]`] for the robot to land.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-fractions-and-fraction-arithmetic-9-1-9-12" assembly-id="section-fractions-and-fraction-arithmetic-9-1-9-12">
+  <static seed="40" source="Contrib/PCC/BasicAlgebra/FractionArithmetic/MultiplyFractions40.pg">
+    <statement><p>Multiply: <m>\displaystyle{-\frac{10}{11} \cdot \frac{13}{4}}</m></p>
+<p><fillin characters="9" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>-{\frac{65}{22}}</m>
+      </p>
+    </answer>
+    <solution><p>To multiply two fractions, multiply both numerators and both denominators. Don<rsq/>t forget to reduce the fraction if possible.</p>
+<p>Remember: a positive number times a negative number is a negative number.</p>
+<p>We have:</p>
+<p><m>\displaystyle{\begin{aligned}
+    -\frac{10}{11} \cdot \frac{13}{4}
+    \amp =-\frac{5\cdot2}{11} \cdot \frac{13}{2\cdot2} \\
+    \amp =-\frac{5}{11} \cdot \frac{13}{2}\\ 
+    \amp = -\frac{65}{22} 
+    \end{aligned}}</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/FractionArithmetic/MultiplyFractions40.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/FractionArithmetic/MultiplyFractions40.pg"/>
+</webwork-reps>

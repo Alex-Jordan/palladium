@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-graphing-quadratic-expressions-8-4-12" assembly-id="section-graphing-quadratic-expressions-8-4-12">
+  <static seed="1064" source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication90.pg">
+    <statement><p>Currently, an artist can sell <m>280</m> paintings every year at the price of <m>{\$70.00}</m> per painting. Each time he raises the price per painting by <m>{\$10.00}</m>, he sells <m>10</m> fewer paintings every year.</p>
+<p>Assume he will raise the price per painting <m>x</m> times, then he will sell <m>280-10x</m> paintings every year at the price of <m>70+10x</m> dollars. His yearly income can be modeled by the equation: <me>i=(70+10x)(280-10x)</me> where <m>i</m> stands for his yearly income in dollars. If the artist wants to earn <m>{\$21{,}600.00}</m> per year from selling paintings, what new price should he set?</p>
+<p>To earn <m>{\$21{,}600.00}</m> per year, the artist could sell his paintings at two different prices. The lower price is <fillin characters="11" name="AnSwEr0001"/> per painting, and the higher price is <fillin characters="11" name="AnSwEr0002"/> per painting.</p>
+</statement>
+    <answer>
+      <p>
+        <m>\$80.00</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\$270.00</m>
+      </p>
+    </answer>
+    <solution><p>If the artist wants to make <m>{\$21{,}600.00}</m> per year, the equation becomes:</p>
+<p><m>\displaystyle{ 21600=(70+10x)(280-10x) }</m></p>
+<p>We will change the equation to standard form:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   21600 \amp = (70+10x)(280-10x) \\
+   21600 \amp = 19600-700x+2800x-100x^2 \\
+   21600 \amp = -100x^2+2100x+19600 \\
+   0 \amp = -100x^2+2100x - 2000 \\
+\end{aligned}
+    }</m></p>
+<p>Next, we can solve this quadratic equation with the Quadratic Formula. Identify that <m>a=-100,b=2100,c=-2000</m>.</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   x \amp = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a} \\
+   x \amp = \frac{-(2100) \pm \sqrt{(2100)^{2}-4(-100)(-2000)}}{2(-100)} \\
+   x \amp = \frac{-2100 \pm \sqrt{3610000}}{-200} \\
+   x \amp = \frac{-2100 \pm 1900}{-200} \\
+   x\amp =\frac{-2100 + 1900}{-200} \text{  or  } x=\frac{-2100 - 1900}{-200} \\
+   x\amp =1 \text{  or  } x=20
+\end{aligned}
+    }</m></p>
+<p>If the artist raises the price <m>1</m> times, the new price would be <m>70+10\cdot1=80</m> dollars per painting.</p>
+<p>If the artist raises the price <m>20</m> times, the new price would be <m>70+10\cdot20=270</m> dollars per painting.</p>
+<p>To earn <m>{\$21{,}600.00}</m> per year, the artist could sell his paintings at two different prices. The lower price is <m>{\$80.00}</m> per painting, and the higher price is <m>{\$270.00}</m> dollars per painting.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="PCC-ORCCA-ed3/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication90.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication90.pg"/>
+</webwork-reps>

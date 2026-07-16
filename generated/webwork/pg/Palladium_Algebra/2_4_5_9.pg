@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-12T21:52:51-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,7 +27,7 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "contextFraction.pl",
+  "contextForm.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -43,27 +40,22 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("LimitedFraction")->flags->set(requirePureFractions => 1, showMixedNumbers => 0);
-($run, $rise) = random_coprime([2 .. 6], [1 .. 9]);
-$m = Fraction($rise, $run);
-$k = random(2,7);
-$x[0] = non_zero_random(-9, 9);
-$x[1] = $x[0] + $k*$run;
-$y[0] = non_zero_random(-9, 9);
-$y[1] = $y[0] + $k*$rise;
-Context("Point");
-@p = map {Point($x[$_], $y[$_])} (0,1);
+$b = list_random(2,3,5,6,7,10,11,13,14,15);
+$a = random(2,int(sqrt(100/$b)),1);
+$r = $a**2*$b;
+Context("Form");
+$answer = Formula("$a sqrt($b)");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Find the slope of the line passing through the two given points.
+Simplify the radical.
 
-[`[$p[0]]`] and [`[$p[1]]`]
+[`\sqrt{[$r]}`]
 
-[_]{$m}{10}
+[_]{$answer}{20}
 
 END_PGML
 

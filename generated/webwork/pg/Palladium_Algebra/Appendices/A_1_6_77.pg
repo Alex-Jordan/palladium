@@ -1,0 +1,84 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(A.1.6.77)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+Context()->variables->are(a => 'Real');
+($p, $q) = random_subset(2, 1 .. 9);
+$numerator = $p + $q;
+$left = Formula("$p/a");
+$right = Formula("$q/a");
+$expression = $left + $right;
+Context("Form")->variables->are(a => 'Real');
+$answer = Formula("$numerator/a");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Given that [`a\neq0\text{,}`] simplify [`\displaystyle{}[$expression]\text{.}`]
+
+[_]{$answer}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Since the fractions have the same denominator, we can just add numerators and keep that denominator.
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$expression] \amp= \frac{[$p]+[$q]}{a}\\
+\amp = [$answer]
+\end{aligned}
+```]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

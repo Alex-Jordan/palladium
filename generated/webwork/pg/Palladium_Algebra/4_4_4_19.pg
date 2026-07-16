@@ -1,17 +1,16 @@
 # WeBWorK problem written by Carl Yao
 # Portland Community College
 #
-# Rationalize denominator. Problem is given as a fraction.
-# Numerator is a square number.
+# Evaluate an expression with a fractional exponent.
 #
-# Last edited: Jordan 9/8/13; Carl Yao 8/31/13,
+# Last edited: Carl Yao 7/21/16,
 #
 # ENDDESCRIPTION
 
 ## DBsubject('Algebra')
 ## DBchapter('Basic Algebra')
 ## DBsection('Exponents and Radicals')
-## KEYWORDS('simplify','radical','square root','rationalize','denominator')
+## KEYWORDS('simplify','radical','estimate')
 ## DBCCSS('8.EE')
 ## TitleText1('')
 ## EditionText1('')
@@ -28,8 +27,6 @@ loadMacros(
   "PGstandard.pl",
   "MathObjects.pl",
   "PGML.pl",
-  "contextFraction.pl",
-  "contextLimitedRadical.pl",
   "PCCmacros.pl",
   "PGcourse.pl",
 );
@@ -37,60 +34,51 @@ loadMacros(
 ######################################
 
 TEXT(beginproblem());
-Context("Numeric");
+Context("LimitedNumeric");
 
-do {
-$num = list_random(4,9,16,25,36,49,64,81,100);
-$den = random(2,3,5,6,7,10,11,13,14,15);
-} until (gcd($num,$den)==1);
+$radD = random(2,5,1);
+if ($radD==5) {$num=2**5;}
+elsif ($radD==4) {$num=(random(2,3,1))**4;}
+elsif ($radD==3) {$num=(random(2,5,1))**3;}
+else {$num=(random(2,10,1))**2;}
 
-$numAns = sqrt($num);
+if ($radD>2) {do{$radN = random(2,$radD-1,1);}until(gcd($radN,$radD)==1);}
+else {$radN = 3;}
 
-Context("LimitedRadical");
-$ans = Formula("$numAns*sqrt($den)/$den");
+$root = $num**(1/$radD);
+$ans = $num**($radN/$radD);
 
-Context()->{error}{msg}{"You must simplify your answer further"} 
-  = "Either your answer is not fully simplified or it has an irrational denominator";
 
 #####################################################
 
 BEGIN_PGML
 
-[@ PTX_exercisegroup_introduction('Simplify the expression. If the result has a denominator, it must be rationalized.') @]
+[@ PTX_exercisegroup_introduction('Evaluate the expression without help from a calculator.') @]
 
-[`` \sqrt{\frac{[$num]}{[$den]}} ``]
+    [`` \sqrt[[$radD]]{[$num]^{[$radN]}} ``]
 
-[_]{$ans}{16}
+    [_]{$ans}{16}
 
 END_PGML
 
-##############################################
+############################################################
+
 
 BEGIN_PGML_SOLUTION
 
-We need to use this property for this problem:
+Radicals can be converted into fractional exponents this way:
 
-    [`` \sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}} ``]
+    [`` \sqrt[n]{x^{m}} = (x^{m})^{\frac{1}{n}} = x^{\frac{m}{n}} ``]
 
-Thus we have:
+For this problem, we have:
 
-    [``
-\begin{aligned}
-   \sqrt{\frac{[$num]}{[$den]}} 
-      &= \frac{\sqrt{[$num]}}{\sqrt{[$den]}} \\
-      &= \frac{[$numAns]}{\sqrt{[$den]}}
-\end{aligned}
-    ``]
+    [`` \sqrt[[$radD]]{[$num]^{[$radN]}} = ([$num]^{[$radN]})^{\frac{1}{[$radD]}} = [$num]^{\frac{[$radN]}{[$radD]}} ``]
 
-Next, we multiply the numerator and denominator by [`\sqrt{[$den]}`]:
+Next, notice that [`[$num]`] is a special number in that [`[$num]=[$root]^{[$radD]}`]. We will do a substitution, and we have:
 
-    [``
-\begin{aligned}[t]
-\frac{[$numAns]}{\sqrt{[$den]}} &= \frac{[$numAns]}{\sqrt{[$den]}}\cdot\frac{\sqrt{[$den]}}{\sqrt{[$den]}}\\
-   &= \frac{[$numAns] \cdot \sqrt{[$den]}}{\sqrt{[$den]} \cdot \sqrt{[$den]}} \\
-   &= \frac{[$numAns] \sqrt{[$den]}}{[$den]}
-\end{aligned}
-    ``]
+    [`` [$num]^{\frac{[$radN]}{[$radD]}}=([$root]^{[$radD]})^{\frac{[$radN]}{[$radD]}} = [$root]^{[$radN]} ``]
+
+You can enter either [`[$root]`]^[`[$radN]`] or [`[$ans]`].
 
 END_PGML_SOLUTION
 

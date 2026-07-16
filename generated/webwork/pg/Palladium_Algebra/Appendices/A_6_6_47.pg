@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:10-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -31,7 +28,6 @@ loadMacros(
   "PGML.pl",
   "AnswerFormatHelp.pl",
   "niceTables.pl",
-  "PGchoicemacros.pl",
   "parserVectorUtils.pl",
   "contextForm.pl",
   "parserPopUp.pl",
@@ -47,12 +43,11 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$actual_solution = Real(random(1,6));
-($a, $b, $c) = (2..9)[NchooseK(8,3)];
-$c = list_random($c, -$c);
-$left = Formula("$a x^2 + $c")->reduce;
-$right = Formula("$b x");
-$right += $left->eval(x => $actual_solution) - $right->eval(x => $actual_solution);
+$actual_solution = Real(non_zero_random(-9,9));
+$m = random(2,9);
+$b = non_zero_random(-9,9);
+$left = Formula("abs($m x + $b)")->reduce;
+$right = Formula($left->eval(x => $actual_solution))->reduce;
 $proposed_solution = random(0,2) ? $actual_solution : $actual_solution + non_zero_random(-3,3);
 Context("LimitedNumeric");
 $lefteval = Real($left->eval(x => $proposed_solution));
@@ -94,7 +89,7 @@ Is [`[$proposed_solution]`] a solution to [`[$left][$inequality][$right]\text{?}
     ],
     [PGML('[_]{$lefteval}{3}'),
      PGML('[`\wonder{[$inequality]}`]'),
-     PGML('[_]{$righteval}{3}'),
+     PGML('[`[$righteval->TeX]`]'),
     ],
   ],
       align => 'rcl',

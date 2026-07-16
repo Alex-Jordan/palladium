@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-graphing-quadratic-expressions-8-4-11" assembly-id="section-graphing-quadratic-expressions-8-4-11">
+  <static seed="1063" source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication80.pg">
+    <statement><p>An object is launched upward at the height of <m>340</m> meters. Its height can be modeled by <me>h=-4.9t^2+80t+340</me>, where <m>h</m> stands for the object<rsq/>s height in meters, and <m>t</m> stands for time passed in seconds since its launch. The object<rsq/>s height will be <m>390</m> meters twice before it hits the ground. Find how many seconds since the launch would the object<rsq/>s height be <m>390</m> meters. Round your answers to two decimal places if needed.</p>
+<p>The object<rsq/>s height would be <m>390</m> meters the first time at <fillin characters="12" name="AnSwEr0001"/> seconds, and then the second time at <fillin characters="12" name="AnSwEr0002"/> seconds.</p>
+</statement>
+    <answer>
+      <p>
+        <m>0.650954</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>15.6756</m>
+      </p>
+    </answer>
+    <solution><p>When the object<rsq/>s height is <m>390</m> meters, the equation becomes</p>
+<p><m>\displaystyle{ 390=-4.9t^2+80t+340 }</m></p>
+<p>We will change the equation to standard form:</p>
+<p><m>\displaystyle{ 0=-4.9t^2+80t - 50 }</m></p>
+<p>Next, we can solve this quadratic equation with the Quadratic Formula. Identify that <m>a=-4.9,b=80,c=-50</m>.</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   x \amp = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a} \\
+   x \amp = \frac{-(80) \pm \sqrt{(80)^{2}-4(-4.9)(-50)}}{2(-4.9)} \\
+   x \amp = \frac{-80 \pm \sqrt{5420}}{-9.8} \\
+   x \amp \approx \frac{-80 \pm 73.6206492772238}{-9.8} \\
+   x\amp \approx\frac{-80 + 73.6206492772238}{-9.8} \text{  or  } x\approx \frac{-80 - 73.6206492772238}{-9.8} \\
+   x\amp \approx0.65 \text{  or  } x\approx15.68
+\end{aligned}
+    }</m></p>
+<p>The object<rsq/>s height would be <m>390</m> meters the first time at <m>0.65</m> seconds, and then the second time at <m>15.68</m> seconds.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="PCC-ORCCA-ed3/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication80.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication80.pg"/>
+</webwork-reps>

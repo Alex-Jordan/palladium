@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-introduction-to-rational-functions-5-1-5" assembly-id="section-introduction-to-rational-functions-5-1-5">
+  <static seed="2" source="Contrib/PCC/BasicAlgebra/RationalFunctions/rationalFunctionApplication20.pg">
+    <statement><p>In a certain store, cashiers can serve <m>55</m> customers per hour on average. If <m>x</m> customers arrive at the store in a given hour, then the average number of customers <m>C</m> waiting in line can be modeled by the function</p>
+<p><me>C(x) = {\frac{x^{2}}{3025-55x}}</me></p>
+<p>where <m>x\lt 55</m>.</p>
+<p>Answer the following questions with a graphing calculator. Round your answers to integers.</p>
+<p><ol label="a.">
+<li>
+<p>If <m>48</m> customers arrived in the store in the past hour, there are approximately <fillin characters="10" name="AnSwEr0001"/> customers waiting in line.</p>
+</li>
+<li>
+<p>If there are <m>2</m> customers waiting in line, approximately <fillin characters="10" name="AnSwEr0002"/> customers arrived in the past hour.</p>
+</li>
+</ol></p>
+</statement>
+    <answer>
+      <p>
+        <m>6</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>40</m>
+      </p>
+    </answer>
+    <solution><p><ol label="a.">
+<li>
+<p>If <m>48</m> customers arrived in the store in the past hour, approximately how many customers are waiting in line. To answer this question, we substitute <m>x</m> with <m>48</m>, and we have:</p>
+<p><m>\displaystyle{ C(48) = \frac{48^{2}}{3025-55(48)} \approx {5.98442} \approx 6 }</m></p>
+<p>If <m>48</m> customers arrived in the store in the past hour, there are approximately <m>6</m> customers waiting in line.</p>
+</li>
+<li>
+<p>If there are <m>2</m> customers waiting in line, approximately how many customers arrived in the past hour? To answer this question, we substitute <m>C</m> with <m>2</m>, and we have:</p>
+<p><m>\displaystyle{ 2= {\frac{x^{2}}{3025-55x}} }</m></p>
+<p>We will use a graphing calculator<rsq/>s <c>solve()</c> function to solve this equation. For a TI-89, press <c>Home</c>, <c>F2</c>, choose <c>solve(</c>, press <c>Enter</c>. Then, type in the equation:</p>
+<pre>solve(2 = x^2/(3025 - 55x), x)</pre>
+<p>For Casio ClassPad 300, tap <c>Main</c>, <c>Action</c> in the menu, <c>Advanced</c>, <c>solve</c>, and then type in the same equation above.</p>
+<p>Ignore the unreasonable solution, and round the reasonable solution to <m>40</m>.</p>
+<p>If there are <m>2</m> customers waiting in line, approximately <m>40</m> customers arrived in the past hour.</p>
+</li>
+</ol></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalFunctions/rationalFunctionApplication20.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalFunctions/rationalFunctionApplication20.pg"/>
+</webwork-reps>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-1-2" assembly-id="section-solving-rational-equations-10-1-2">
+  <static seed="1467" source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/solveLinearEqnMultiSteps110.pg">
+    <statement><p>Solve the equation.</p>
+<p><m>{6c+5} = {c+45}</m></p>
+<p><fillin characters="31" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\{8\}</m>
+      </p>
+    </answer>
+    <solution><p>The first step is to subtract terms in order to separate the variable and non-variable terms. <me>\begin{aligned}
+ 6c  +5 \amp = c  +45 \\
+6c  +5\mathbf{{}-c-5} \amp = c  +45\mathbf{{}-c-5} \\
+ 5c \amp = 40 \\
+ \frac{5c}{5} \amp  = \frac{40}{5} \\
+ c      \amp = 8
+\end{aligned}</me></p>
+<p>The solution to this equation is <m>8</m>. To stress that this is a value assigned to <m>c</m>, some report <m>c = 8</m>. We can also say that the solution set is <m>\{8\}</m>, or that <m>c\in\left\{8\right\}</m>. If we substitute <m>8</m> in for <m>c</m> in the original equation <m>6c+5=c+45</m>, the equation will be true. Please check this on your own; it is an important habit.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/SolveLinearEquations/solveLinearEqnMultiSteps110.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/solveLinearEqnMultiSteps110.pg"/>
+</webwork-reps>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-lines-12-2-14" assembly-id="section-lines-12-2-14">
+  <static seed="448" source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem50.pg">
+    <statement><p>A certain country has <m>451.5</m> million acres of forest. Every year, the country loses <m>6.45</m> million acres of forest mainly due to deforestation for farming purposes. If this situation continues at this pace, how many years later will the country have only <m>251.55</m> million acres of forest left? (Use an equation to solve this problem.)</p>
+<p>After <fillin characters="10" name="AnSwEr0001"/> years, this country would have <m>251.55</m> million acres of forest left.</p>
+</statement>
+    <answer>
+      <p>
+        <m>31</m>
+      </p>
+    </answer>
+    <solution><p>Assume after <m>y</m> years, this country will have <m>251.55</m> million acres of forest left.</p>
+<p>The country loses <m>6.45</m> million acres of forest every year. In <m>y</m> years, the country will lose a total of <m>6.45y</m> million acres of forest.</p>
+<p>Currently, the country has <m>451.5</m> million acres of forest. In <m>y</m> years, with a loss of <m>6.45y</m> million acres, there would be <m>451.5-6.45y</m> million acres of forest left.</p>
+<p>The question asks when there would be <m>251.55</m> million acres of forest left. Now we can write an equation:</p>
+<p><m>\displaystyle{ 451.5-6.45y = 251.55 }</m></p>
+<p>Next, we solve for <m>y</m>:</p>
+<p><m>\begin{aligned}
+  451.5-6.45y \amp = 251.55 \\
+  451.5-6.45y \mathbf{{}-451.5} \amp = 251.55 \mathbf{{}-451.5} \\
+  -6.45y      \amp = -199.95 \\
+  \frac{-6.45y}{-6.45} \amp = \frac{-199.95}{-6.45} \\
+  y   \amp = {31}
+\end{aligned}</m></p>
+<p>After <m>{31}</m> years, this country would have <m>251.55</m> million acres of forest left.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem50.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/LinearEquationApplications/MXPlusBWordProblem50.pg"/>
+</webwork-reps>

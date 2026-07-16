@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-key-features-of-quadratic-graphs-8-6-14" assembly-id="section-key-features-of-quadratic-graphs-8-6-14">
+  <static seed="709" source="Contrib/PCC/BasicAlgebra/QuadraticApplications/MaxMinApplication60.pg">
+    <statement><p>Currently, an artist can sell <m>240</m> paintings every year at the price of <m>{\$90.00}</m> per painting.
+Each time he raises the price per painting by <m>{\$15.00}</m>, he sells <m>5</m> fewer paintings every year.</p>
+<p><ol label="a.">
+<li>
+<p>To obtain maximum income of <fillin characters="10" name="AnSwEr0001"/>, the artist should set the price per painting at <fillin characters="11" name="AnSwEr0002"/>.</p>
+</li>
+<li>
+<p>To earn <m>{\$43{,}875.00}</m> per year, the artist could sell his paintings at two different prices. The lower price is <fillin characters="11" name="AnSwEr0003"/> per painting, and the higher price is <fillin characters="11" name="AnSwEr0004"/> per painting.</p>
+</li>
+</ol></p>
+</statement>
+    <answer>
+      <p>
+        <m>\$54{,}675.00</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\$405.00</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\$225.00</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\$585.00</m>
+      </p>
+    </answer>
+    <solution><p>Assume the artist will raise the price per painting <m>x</m> times.</p>
+<p>The current price per painting is <m>{\$90.00}</m>.
+After raising the price <m>x</m> times, each time by <m>{\$15.00}</m>, the new price per painting will become <m>90+15x</m> dollars.</p>
+<p>Currently he sells <m>240</m> paintings per year. It<rsq/>s given that he will sell <m>5</m> fewer paintings each time he raises the price.
+After raising the price per painting <m>x</m> times, he will sell <m>240-5x</m> paintings every year.</p>
+<p>The artist<rsq/>s income can be calculated by multiplying the number of paintings sold with price per painting.
+If he raises the price per painting <m>x</m> times, his new yearly income can be modeled by the expression:</p>
+<p><m>\displaystyle{ (90+15x)(240-5x) }</m></p>
+<p>which gives his yearly income in dollars.</p>
+<p>We can write this quadratic expression in standard form:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   (90+15x)(240-5x)
+        \amp = 21600-450x+3600x - 75x^2 \\
+        \amp = -75x^2+3150x+21600
+\end{aligned}
+    }</m></p>
+<p>Written in standard form, we can see:</p>
+<p><m>\displaystyle{ a=-75, b=3150, c=21600 }</m></p>
+<!-- PTX:WARNING: PGML wanted to make this a level 3 header. -->
+<p>
+Part a:</p>
+<p>The graph of <m>y = -75x^2+3150x+21600</m> is an upside-down parabola.
+The maximum income he can make is represented by the parabola<rsq/>s vertex.
+To locate its vertex, we first find its axis by the axis formula:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   h \amp = -\frac{b}{2a} \\
+     \amp = -\frac{3150}{2(-75)} \\
+     \amp = 21
+\end{aligned}
+    }</m></p>
+<p>Next, we substitute <m>x=21</m> into the expression to find its vertex<rsq/>s <m>y</m>-value:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   -75x^2+3150x+21600 \amp = -75(21)^2+3150(21)+21600 \\
+              \amp = {54675}
+\end{aligned}
+    }</m></p>
+<p>The vertex is at <m>{\left(21,54675\right)}</m>. This implies the artist can earn a maximum yearly income of <m>{\$54{,}675.00}</m>.
+This happens if he increases the price per painting <m>21</m> times, making the new price <m>90+21\cdot15=405</m> dollars.</p>
+<!-- PTX:WARNING: PGML wanted to make this a level 3 header. -->
+<p>
+Part b:</p>
+<p>If the artist wants to make <m>{\$43{,}875.00}</m> per year, we will set the expression representing income equal to <m>43875</m>, and we have:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   43875 \amp = -75x^2+3150x+21600 \\
+   0 \amp = -75x^2+3150x - 22275 \\
+\end{aligned}
+    }</m></p>
+<p>Next, we can solve this quadratic equation with the Quadratic Formula. Identify that <m>a=-75,b=3150,c=-22275</m>.</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   x \amp = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a} \\
+   x \amp = \frac{-(3150) \pm \sqrt{(3150)^{2}-4(-75)(-22275)}}{2(-75)} \\
+   x \amp = \frac{-3150 \pm \sqrt{3240000}}{-150} \\
+   x \amp = \frac{-3150 \pm 1800}{-150} \\
+   x\amp =\frac{-3150 + 450}{-150} \text{  or  } x=\frac{-3150 - 450}{-150} \\
+   x\amp =9 \text{  or  } x=33
+\end{aligned}
+    }</m></p>
+<p>If the artist raises the price <m>9</m> times, the new price would be <m>90+15\cdot9=225</m> dollars per painting.</p>
+<p>If the artist raises the price <m>33</m> times, the new price would be <m>90+15\cdot33=585</m> dollars per painting.</p>
+<p>To earn <m>{\$43{,}875.00}</m> per year, the artist could sell his paintings at two different prices. The lower price is <m>{\$225.00}</m> per painting,
+and the higher price is <m>{\$585.00}</m> dollars per painting.</p>
+<p>The following graph shows the points representing the solutions above:</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-key-features-of-quadratic-graphs-8-6-14-image-1.png" width="40%"/>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/QuadraticApplications/MaxMinApplication60.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/QuadraticApplications/MaxMinApplication60.pg"/>
+</webwork-reps>

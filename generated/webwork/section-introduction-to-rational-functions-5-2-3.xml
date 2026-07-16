@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-introduction-to-rational-functions-5-2-3" assembly-id="section-introduction-to-rational-functions-5-2-3">
+  <static seed="1212" source="Contrib/PCC/BasicAlgebra/RationalFunctions/rationalFunctionDefinition10.pg">
+    <statement><p>Select all rational functions. There are several correct answers.</p>
+<p><var form="checkboxes">
+<li>
+<p><m>r(x)=\frac{3 x^2 + 7 x - 2}{4 - 2 x^{-3}}</m></p>
+</li>
+<li>
+<p><m>s(x)=\frac{\sqrt{3} x^2 + 7 x - 2}{4 - 2 x^{3}}</m></p>
+</li>
+<li>
+<p><m>b(x)=\frac{3 x^2 + 7 x - 2}{4}</m></p>
+</li>
+<li>
+<p><m>h(x)=\frac{4}{3 x^2 + 7 x - 2}</m></p>
+</li>
+<li>
+<p><m>n(x)=\frac{3 x^2 + 7 \sqrt{x} - 2}{4 - 2 x^{3}}</m></p>
+</li>
+<li>
+<p><m>a(x)=\frac{3 x^2 + 7 x - 2}{4 - 2 x^{3}}</m></p>
+</li>
+<li>
+<p><m>t(x)=\frac{4 - 2 x^3}{3 x^{0.7} + 7 x - 2}</m></p>
+</li>
+<li>
+<p><m>c(x)=\frac{3 x^2 + 7 x - 2}{4 + \lvert x \rvert }</m></p>
+</li>
+<li>
+<p><m>m(x)=\frac{3 x + 7}{3 x +7}</m></p>
+</li>
+</var></p>
+</statement>
+    <solution><p>The correct answer is BCDFI.</p>
+<p>Definition: A rational function is a function that can be written as the ratio of two polynomials where the denominator isn't zero, as in  <m>f(x)=\frac{p(x)}{q(x)}</m>, where <m>p(x)</m> and <m>q(x)</m> are both polynomials.</p>
+<p>Note that a constant function like <m>g(x)=4</m> is a polynomial.</p>
+<p>A polynomial can have radical coefficient, like <m>s(x)=\frac{\sqrt{3} x^2 + 7 x - 2}{4 - 2 x^{3}}</m>.</p>
+<p>But a polynomial may not have radical terms, like <m>n(x)=\frac{3 x^2 + 7 \sqrt{x} - 2}{4 - 2 x^{3}}</m>.</p>
+<p>A polynomial may not have x terms inside absolute value symbols, like <m>c(x)=\frac{3 x^2 + 7 x - 2}{4 + \lvert x \rvert }</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalFunctions/rationalFunctionDefinition10.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalFunctions/rationalFunctionDefinition10.pg"/>
+</webwork-reps>

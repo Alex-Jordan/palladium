@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:10-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -46,8 +43,8 @@ TEXT(beginproblem());
 ############################################################
 Context("LimitedNumeric");
 $yesno=RadioButtons([
-  "So 2 is a solution to this inequality.",
-  "So 2 is not a solution to this inequality.",
+  "So -3 is a solution to this equation.",
+  "So -3 is not a solution to this equation.",
   ], 0, showInStatic => 0
 );
 
@@ -56,17 +53,17 @@ $yesno=RadioButtons([
 ############################################################
 
 BEGIN_PGML
-Is [`2`] a solution to the inequality [`\newcommand{\lt}{<}\frac{z+3}{z-1}\lt\sqrt{18z}\text{?}`]
+Is [`-3`] a solution to the equation [`x^2+x+1=\frac{3x+2}{x+2}\text{?}`]
 
 >> [@DataTable(
   [
-    [PGML('[`\dfrac{z+3}{z-1}`]'),
-     PGML('[`{}\lt{}`]'),
-     PGML('[`\sqrt{18z}`]'),
+    [PGML('[`x^2+x+1`]'),
+     PGML('[`{}={}`]'),
+     PGML('[`\dfrac{3x+2}{x+2}`]'),
     ],
-    [PGML('[_]{5}{2}'),
-     PGML('[`{}\wonder{\lt}{}`]'),
-     PGML('[_]{6}{2}'),
+    [PGML('[_]{7}{2}'),
+     PGML('[`{}\wonder{=}{}`]'),
+     PGML('[_]{7}{2}'),
     ],
   ],
       align => 'rcl',
@@ -81,18 +78,19 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-We have to substitute [`2`] in for [`z`] and simplify each side:
+We have to substitute [`-3`] in for [`x`] and simplify each side:
 
-[```\newcommand{\highlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}\newcommand{\confirm}[1]{\stackrel{\checkmark}{#1}}\newcommand{\wonder}[1]{\stackrel{\text{?}}{#1}}\newcommand{\lt}{<}\newcommand{\amp}{&}
+[```\newcommand{\highlight}[1]{\mathchoice{\colorbox{lightsapphire}{$\displaystyle #1$}}{\colorbox{lightsapphire}{$\textstyle #1$}}{\colorbox{lightsapphire}{$\scriptstyle #1$}}{\colorbox{lightsapphire}{$\scriptscriptstyle #1$}}}\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}\newcommand{\confirm}[1]{\stackrel{\checkmark}{#1}}\newcommand{\wonder}[1]{\stackrel{\text{?}}{#1}}\newcommand{\amp}{&}
 \begin{aligned}
-\frac{z+3}{z-1}\amp\lt\sqrt{18z}\\
-\frac{\substitute{2}+3}{\substitute{2}-1}\amp\wonder{\lt}\sqrt{18(\substitute{2})}\\
-\frac{\highlight{5}}{\highlight{1}}\amp\wonder{\lt}\sqrt{\highlight{36}}\\
-\highlight{5}\amp\confirm{\lt}\highlight{6}
+x^2+x+1\amp=\frac{3x+2}{x+2}\\
+(\substitute{-3})^2+(\substitute{-3})+1\amp\wonder{=}\frac{3(\substitute{-3})+2}{\substitute{-3}+2}\\
+\highlight{9}-3+1\amp\wonder{=}\frac{\highlight{-9}+2}{\highlight{-1}}\\
+\highlight{6}+1\amp\wonder{=}\frac{\highlight{-7}}{-1}\\
+\highlight{7}\amp\confirm{=}\highlight{7}
 \end{aligned}
 ```]
 
-Since [`\newcommand{\lt}{<}5\lt6`] is true, [`2`] is indeed a solution to this inequality.
+Since [`7=7`] is true, [`-3`] is indeed a solution to this equation.
 
 END_PGML_SOLUTION
 

@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:07-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -45,9 +42,9 @@ TEXT(beginproblem());
 # PG Setup Code
 ############################################################
 Context('Numeric');
-@x = (11,13,15,17);
-@y = (208,210,214,220);
-$popup = DropDown(['The relationship is linear','The relationship is not linear'],1);
+@x = (3,6,8,12);
+@y = (-2,-8,-12,-20);
+$popup = DropDown(['The relationship is linear','The relationship is not linear'],0);
 
 ############################################################
 # Body
@@ -88,7 +85,7 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-The rate of change between the first two points is [`\frac{210-208}{13-11}=1\text{.}`] The rate of change between the last two points is [`\frac{220-214}{17-15}=3\text{.}`] This is one way to demonstrate that the rate of change differs for different pairs of points, so this pattern is not linear.
+The changes in [`x`] from one row to the next are [`+3\text{,}`][`+2\text{,}`] and [`+8\text{.}`] That's not a consistent pattern, but we need to consider rates of change between points. The rate of change between the first two points is [`\frac{-8-(-2)}{6-3}=-2\text{.}`] The rate of change between the next two points is [`\frac{-12-(-8)}{8-6}=-2\text{.}`] And the rate of change between the last two points is [`\frac{-20-(-12)}{12-8}=-2\text{.}`] So the rate of change, [`-2\text{,}`] is constant regardless of which pairs we choose. That means these pairs describe a linear relationship.
 
 END_PGML_SOLUTION
 

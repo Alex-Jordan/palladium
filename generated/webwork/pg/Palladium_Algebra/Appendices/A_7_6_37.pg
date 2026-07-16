@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:10-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -47,13 +44,15 @@ TEXT(beginproblem());
 ############################################################
 $var = list_random('a'..'n','p'..'z','A'..'D', 'F'..'N','P'..'T','V'..'Z');
 Context()->variables->are($var => 'Real');
-($a, $b) = (-20..-2,2..20)[NchooseK(38,2)];
-$c = (random_coprime([2..20], [$a]))[0];
-$left = Formula("($a $var)/$c")->reduce;
-$right = Formula("$a*$b")->reduce;
+($a, $b) = (0..10)[NchooseK(11,2)];
+($a, $b) = map{$_ + random(0.1, 0.9, 0.1)} ($a, $b);
+$b = random(0,1) ? $b : -$b;
+$left = Formula("$a $var")->reduce;
+$right = Formula("$b")->reduce;
 Context("FiniteSolutionSets");
+Context()->flags->remove("NumberCheck");
 Context()->variables->are($var => 'Real');
-$solution = $b*$c;
+$solution = $b/$a;
 $solset = Formula("{$solution}");
 
 ############################################################

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-15-2-2-10" assembly-id="section-factoring-15-2-2-10">
+  <static seed="45" source="Contrib/PCC/BasicAlgebra/Factoring/factoring25.pg">
+    <statement><p>Find the greatest common factor of the following terms.</p>
+<p><m>{6t^{15}}</m>, <m>{-24t^{10}}</m>, <m>{24t^{5}}</m></p>
+<p><fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>6t^{5}\hbox{ or }-6t^{5}</m>
+      </p>
+    </answer>
+    <solution><p>There are two things to look for in this problem:
+<ul label="disc">
+<li>
+<p>the greatest common <em>numerical</em> factor is <m>6</m></p>
+</li>
+<li>
+<p>the greatest common <em>algebraic</em> factor is <m>t^{5}</m>, since it hase the <em>lowest</em> exponent.</p>
+</li>
+</ul></p>
+<p>The greatest common factor of <m>{6t^{15}}</m>, <m>{-24t^{10}}</m> and <m>{24t^{5}}</m> is <m>{6t^{5}\hbox{ or }-6t^{5}}</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/Factoring/factoring25.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/Factoring/factoring25.pg"/>
+</webwork-reps>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-14-1-2-8" assembly-id="section-factoring-14-1-2-8">
+  <static seed="13" source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication15.pg">
+    <statement><p>Multiply the polynomials.</p>
+<p><m>{-7y^{2}}\left({7y^{2}+5y}\right)=</m><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>-49y^{4}-35y^{3}</m>
+      </p>
+    </answer>
+    <solution><p>We multiply the monomial by each term in the binomial, using 
+the properties of exponents to help us</p>
+<p><m>\begin{aligned}
+              {-7y^{2}}({7y^{2}+5y})\amp ={-49y^{4}-35y^{3}}
+      \end{aligned}</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication15.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication15.pg"/>
+</webwork-reps>

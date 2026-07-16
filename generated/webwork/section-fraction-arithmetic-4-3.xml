@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-fraction-arithmetic-4-3" assembly-id="section-fraction-arithmetic-4-3">
+  <static seed="2052">
+    <introduction><p>Simplify these whole number and fraction products.</p>
+</introduction>
+    <task>
+      <statement><p><m>5\cdot\dfrac{2}{9}=</m><fillin characters="10" name="AnSwEr0001"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>{\frac{10}{9}}</m>
+        </p>
+      </answer>
+      <solution><p>Multiplying the <m>5</m> with the numerator <m>2</m> gives a new numerator <m>10\text{.}</m> We keep the denominator <m>9</m> and the answer is <m>\frac{10}{9}\text{.}</m></p>
+</solution>
+    </task>
+    <task>
+      <statement><p><m>12\left(\dfrac{7}{3}\right)=</m><fillin characters="10" name="AnSwEr0002"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>28</m>
+        </p>
+      </answer>
+      <solution><p>Before we multiply, we can do some simplfication first. We want to make <m>\frac{12\cdot7}{3}\text{,}</m> but now we can cancel a factor of <m>3\text{.}</m> We have, <m>\frac{\cancelto{12}{4}\cdot7}{\cancelto{3}{1}}\text{.}</m> So we have <m>\frac{28}{1}\text{,}</m> or just <m>28\text{.}</m></p>
+</solution>
+    </task>
+    <task>
+      <statement><p><m>14\cdot\dfrac{5}{6}=</m><fillin characters="10" name="AnSwEr0003"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>{\frac{35}{3}}</m>
+        </p>
+      </answer>
+      <solution><p>Before we multiply, we can do some simplfication first. We want to make <m>\frac{14\cdot5}{6}\text{,}</m> but now we can cancel a factor of <m>2\text{.}</m> We have, <m>\frac{\cancelto{14}{7}\cdot5}{\cancelto{6}{3}}\text{.}</m> So we have <m>\frac{35}{3}\text{.}</m></p>
+</solution>
+    </task>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/Appendices/A_1_7-Whole_NumberFraction_Multiplication.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(A.1.7)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "scaffold.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+COMMENT('This problem is scaffolded with multiple parts');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("LimitedFraction")->flags->set(
+    allowMixedNumbers => 0,
+    reduceConstants => 1,
+    showMixedNumbers => 0
+);
+Parser::Number::NoDecimals;
+@f=(
+  Fraction(10, 9)->cmp(studentsMustReduceFractions => 1),
+  Fraction(28, 1)->cmp(studentsMustReduceFractions => 1),
+  Fraction(35, 3)->cmp(studentsMustReduceFractions => 1)
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Simplify these whole number and fraction products.
+
+END_PGML
+
+############################################################
+# Scaffold
+############################################################
+Scaffold::Begin(numbered => 1,is_open => "correct_or_first_incorrect",can_open => always,);
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+[`5\cdot\dfrac{2}{9}=`][_]{$f[0]}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Multiplying the [`5`] with the numerator [`2`] gives a new numerator [`10\text{.}`] We keep the denominator [`9`] and the answer is [`\frac{10}{9}\text{.}`]
+
+END_PGML_SOLUTION
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+[`12\left(\dfrac{7}{3}\right)=`][_]{$f[1]}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Before we multiply, we can do some simplfication first. We want to make [`\frac{12\cdot7}{3}\text{,}`] but now we can cancel a factor of [`3\text{.}`] We have, [`\frac{\cancelto{12}{4}\cdot7}{\cancelto{3}{1}}\text{.}`] So we have [`\frac{28}{1}\text{,}`] or just [`28\text{.}`]
+
+END_PGML_SOLUTION
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+[`14\cdot\dfrac{5}{6}=`][_]{$f[2]}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Before we multiply, we can do some simplfication first. We want to make [`\frac{14\cdot5}{6}\text{,}`] but now we can cancel a factor of [`2\text{.}`] We have, [`\frac{\cancelto{14}{7}\cdot5}{\cancelto{6}{3}}\text{.}`] So we have [`\frac{35}{3}\text{.}`]
+
+END_PGML_SOLUTION
+
+Section::End();
+
+Scaffold::End();
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

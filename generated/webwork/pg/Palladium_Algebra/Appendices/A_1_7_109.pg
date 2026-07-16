@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-24T13:47:09-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -47,15 +44,14 @@ TEXT(beginproblem());
 Context("Numeric");
 Context()->variables->are(a=>'Real');
 $p = random(1,9,1);
-$q = list_random(1..4,6..9);
-$numerator = (5*$p-$q);
+$q = random(1,9,1);
+$numerator = $p+$q;
 $left = Formula("$p/a");
-$right = Formula("$q/(5a)");
-$expression = $left - $right;
-$p5 = 5*$p;
+$right = Formula("$q/a");
+$expression = $left + $right;
 Context("RationalFunction-Strict");
 Context()->variables->are(a=>'Real');
-$answer = Formula("$numerator/(5a)");
+$answer = Formula("$numerator/a");
 
 ############################################################
 # Body
@@ -73,12 +69,11 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-Since the fractions don't have the same denominator, we have to make them have like denominators. Multiply the first fraction by [`\frac{5}{5}\text{.}`]
+Since the fractions have the same denominator, we can just add numerators and keep that denominator.
 
 [```\newcommand{\amp}{&}
 \begin{aligned}
-[$expression] \amp = [$left]\cdot \frac{5}{5} - [$right]\\
-\amp = \frac{[$p5]}{5a} - [$right]\\
+[$expression] \amp= \frac{[$p]+[$q]}{a}\\
 \amp = [$answer]
 \end{aligned}
 ```]

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-quadratic-equations-by-factoring-6-2-29" assembly-id="section-solving-quadratic-equations-by-factoring-6-2-29">
+  <static seed="192" source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad290.pg">
+    <statement><p>Solve the equation.</p>
+<p><m>{x^{2}-8x+16}=0</m></p>
+<p><fillin characters="20" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{4\right\}</m>
+      </p>
+    </answer>
+    <solution><p>There are a few ways to solve quadratic equations- the easiest way to solve this particular 
+type of problem is to use the <em>zero product principle</em>.</p>
+<p><m>\begin{aligned}
+                 {x^{2}-8x+16}=0 \amp \Rightarrow {\left(x-4\right)\mathopen{}\left(x-4\right)}=0 \\
+                                    \amp  \Rightarrow {\left\{4\right\}}
+       \end{aligned}</m></p>
+<p>In this problem there is just <alert>one</alert>, <em>repeated</em> solution.</p>
+<p>The solution can be checked by substituting it into the original equation- this is left as an exercise.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad290.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad290.pg"/>
+</webwork-reps>

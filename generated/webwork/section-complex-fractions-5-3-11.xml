@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-complex-fractions-5-3-11" assembly-id="section-complex-fractions-5-3-11">
+  <static seed="1462" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions40.pg">
+    <statement><p>Simplify this expression.</p>
+<p><m>\displaystyle{{\frac{\frac{2}{t}+\frac{8}{y}}{\frac{10}{t}-\frac{2}{y}}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{y+4t}{5y-t}</m>
+      </p>
+    </answer>
+    <solution><p>To simplify a complex fraction, we find the common denominator of all fractions. In this case, it is <m>{ty}</m>. We multiply the complex fraction<rsq/>s numerator and denominator by this common denominator, and we have:</p>
+<p><m>\displaystyle{\begin{aligned}
+   {\frac{\frac{2}{t}+\frac{8}{y}}{\frac{10}{t}-\frac{2}{y}}} 
+      \amp = {\frac{\frac{2}{t}+\frac{8}{y}}{\frac{10}{t}-\frac{2}{y}}} \cdot \frac{{ty}}{{ty}} \\
+      \amp = {\frac{\left(\frac{2}{t}+\frac{8}{y}\right)ty}{\left(\frac{10}{t}-\frac{2}{y}\right)ty}} \\
+      \amp = \frac{\frac{2}{t} \cdot t y +\frac{8}{y} \cdot t y }{\frac{10}{t} \cdot t y  - \frac{2}{y} \cdot t y } \\
+      \amp = \frac{2 y + 8 t}{10 y - 2 t} \\
+      \amp = {\frac{2\mathopen{}\left(y+4t\right)}{2\mathopen{}\left(5y-t\right)}} \\
+      \amp = {\frac{y+4t}{5y-t}}
+\end{aligned}
+    }</m></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions40.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions40.pg"/>
+</webwork-reps>

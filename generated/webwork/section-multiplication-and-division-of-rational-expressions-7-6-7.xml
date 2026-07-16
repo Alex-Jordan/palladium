@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-6-7" assembly-id="section-multiplication-and-division-of-rational-expressions-7-6-7">
+  <static seed="1309" source="Contrib/PCC/BasicAlgebra/RationalFunctions/reduceRationalFunction30.pg">
+    <statement><p>Simplify the function formula, and if applicable, write the restricted domain.</p>
+<p><m>\displaystyle{ f(t) = {\frac{t^{4}+8t^{3}+16t^{2}}{5t^{4}+22t^{3}+8t^{2}}} }</m></p>
+<p>Reduced <m>f(t)=</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{t+4}{5t+2}, t\ne -4\hbox{ and }t\ne 0</m>
+      </p>
+    </answer>
+    <solution><p>To simplify the expression, we first factor both the numerator and denominator, and then cancel common factors.</p>
+<p><m>\displaystyle{\begin{aligned}
+   f(t) \amp = {\frac{t^{4}+8t^{3}+16t^{2}}{5t^{4}+22t^{3}+8t^{2}}} \\
+                 \amp = \frac{{t^{2}\mathopen{}\left(t^{2}+8t+16\right)}}{{t^{2}\mathopen{}\left(5t^{2}+22t+8\right)}} \\
+                 \amp = \frac{{t^{2}\mathopen{}\left(t+4\right)^{2}}}{{t^{2}\mathopen{}\left(5t+2\right)\mathopen{}\left(t+4\right)}} \\
+                 \amp = {\frac{t+4}{5t+2}, t\ne -4\hbox{ and }t\ne 0}
+\end{aligned}
+    }</m></p>
+<p>Since <m>t^{2}(t+4)</m> was canceled, the domain condition lost during the reduction is <m>t \ne {-4, 0}</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalFunctions/reduceRationalFunction30.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalFunctions/reduceRationalFunction30.pg"/>
+</webwork-reps>

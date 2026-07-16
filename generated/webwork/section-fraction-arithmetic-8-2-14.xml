@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-fraction-arithmetic-8-2-14" assembly-id="section-fraction-arithmetic-8-2-14">
+  <static seed="96" source="Contrib/PCC/BasicMath/FractionApplication/FractionMultiplicationWordProblems10.pg">
+    <statement><p>A few years back, a car was purchased for <m>{\$22{,}500}</m>. Today it is worth <m>{{\frac{1}{5}}}</m> of its original value. What is the car<rsq/>s current value?</p>
+<p>The car<rsq/>s current value is <fillin characters="7" name="AnSwEr0001"/>.</p>
+</statement>
+    <answer>
+      <p>
+        <m>\$4{,}500</m>
+      </p>
+    </answer>
+    <solution><p>When we use the word <lq/>of<rq/> in situations like <lq/><m>{{\frac{1}{5}}}</m> of <m>{\$22{,}500}</m>,<rq/> we can translate <lq/>of<rq/> into the multiplication symbol.</p>
+<p>In this problem, to find <m>{{\frac{1}{5}}}</m> of <m>{\$22{,}500}</m>, we do:</p>
+<p><m>\displaystyle{ 
+\begin{aligned}[t]
+   {{\frac{1}{5}}} \cdot 22500 
+      \amp = {{\frac{1}{5}}} \cdot \frac{22500}{1}  \\
+      \amp = \frac{1}{1} \cdot \frac{4500}{1}  \\
+      \amp = 4500
+\end{aligned}
+    }</m></p>
+<p>The car is worth <m>{\$4{,}500}</m> now.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicMath/FractionApplication/FractionMultiplicationWordProblems10.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicMath/FractionApplication/FractionMultiplicationWordProblems10.pg"/>
+</webwork-reps>

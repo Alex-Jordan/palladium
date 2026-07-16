@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-9-3" assembly-id="section-multiplication-and-division-of-rational-expressions-7-9-3">
+  <static seed="1341" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions20.pg">
+    <statement><p>Simplify this expression.</p>
+<p><m>\displaystyle{{\frac{18\mathopen{}\left(y+t\right)}{y-t}} \cdot {\frac{y-t}{6\mathopen{}\left(3y+t\right)}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{3\mathopen{}\left(y+t\right)}{3y+t}</m>
+      </p>
+    </answer>
+    <solution><p>We cancel the factor <m>(y-t)</m> and reduce the fraction:</p>
+<p><m>\displaystyle{\begin{aligned}
+   {\frac{18\mathopen{}\left(y+t\right)}{y-t}} \cdot {\frac{y-t}{6\mathopen{}\left(3y+t\right)}} \amp = {\frac{3\mathopen{}\left(y+t\right)}{3y+t}}
+\end{aligned}
+    }</m></p>
+<p>Note that we may not further reduce <m>{\frac{3\mathopen{}\left(y+t\right)}{3y+t}}</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions20.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions20.pg"/>
+</webwork-reps>

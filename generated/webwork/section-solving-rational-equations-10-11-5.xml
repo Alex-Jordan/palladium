@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-11-5" assembly-id="section-solving-rational-equations-10-11-5">
+  <static seed="1605" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations65.pg">
+    <statement><p>Solve the equation.</p>
+<p><m>\displaystyle{ {-\frac{6}{r-6}+\frac{2r}{r-5}}={-\frac{6}{r^{2}-11r+30}}  }</m></p>
+<p><fillin characters="31" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{3\right\}</m>
+      </p>
+    </answer>
+    <solution><p>To clear fractions in an equation, multiply each side of the equation by a common denominator. For this problem, a common denominator is <m>{\left(r-6\right)\mathopen{}\left(r-5\right)}</m>.</p>
+<p><m>\displaystyle{\begin{aligned}
+  \amp {-\frac{6}{r-6}+\frac{2r}{r-5}} = {-\frac{6}{r^{2}-11r+30}} \\
+  \amp {-\frac{6}{r-6}+\frac{2r}{r-5}} = {-\frac{6}{\left(r-6\right)\mathopen{}\left(r-5\right)}} \\
+  \amp {-\frac{6}{r-6}\mathopen{}\left(r-6\right)\mathopen{}\left(r-5\right)+\frac{2r}{r-5}\mathopen{}\left(r-6\right)\mathopen{}\left(r-5\right)} = {-\frac{6}{\left(r-6\right)\mathopen{}\left(r-5\right)}\mathopen{}\left(r-6\right)\mathopen{}\left(r-5\right)} \\
+  \amp {-6\mathopen{}\left(r-5\right)+2r\mathopen{}\left(r-6\right)} = -6 \\
+  \amp {-6r+30+2r^{2}-12r} = -6 \\
+  \amp {2r^{2}-18r+30} = -6 \\
+  \amp {2r^{2}-18r+36} = 0 \\
+  \amp {2\mathopen{}\left(r^{2}-9r+18\right)} = 0 \\
+  \amp {2\mathopen{}\left(r-3\right)\mathopen{}\left(r-6\right)} =0 \\
+  \amp r-3=0 \:\: or \:\: r - 6=0 \\
+  \amp r=3 \:\: or \:\: r=6
+\end{aligned}
+    }</m></p>
+<p>We must check solutions when we solve rational equations. In the original equation, both denominators cannot be <m>0</m>. We set them to <m>0</m>, so we can find out what values to exclude from the solution set.</p>
+<p>For this example, it<rsq/>s easy to see we must exclude <m>6</m> and <m>5</m> from the solution set. As a result, <m>r=6</m> is an extraneous solution, so the final solution is <m>r=3</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations65.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations65.pg"/>
+</webwork-reps>

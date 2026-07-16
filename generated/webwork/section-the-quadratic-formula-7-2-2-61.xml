@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-the-quadratic-formula-7-2-2-61" assembly-id="section-the-quadratic-formula-7-2-2-61">
+  <static seed="938">
+    <statement><p><m>{x^{2}+7}={-6x}</m></p>
+<p><fillin characters="40" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{-3-\sqrt{2},-3+\sqrt{2}\right\}</m>
+      </p>
+    </answer>
+    <solution><p>To use the quadratic formula, we write the equation in standard form:</p>
+<p><me>{x^{2}+6x+7}=0</me></p>
+<p>and identify <m>a=1\text{,}</m> <m>b=6\text{,}</m> and <m>c=7\text{.}</m></p>
+<p><me>\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{-6\pm\sqrt{36-4(1)(7)}}{2}\\
+\amp=\frac{-6\pm\sqrt{8}}{2}\\
+\amp=\frac{-6\pm2\sqrt{2}}{2}\\
+x\amp=\frac{-6-2\sqrt{2}}{2}\quad\text{or}\quad x=\frac{-6+2\sqrt{2}}{2}\\
+x\amp={-3-\sqrt{2}}\quad\text{or}\quad x={-3+\sqrt{2}}
+\end{aligned}</me></p>
+<p>The solution set is <m>{\left\{-3-\sqrt{2},-3+\sqrt{2}\right\}}\text{.}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_4_5_71.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg copied-from="section-the-quadratic-formula-7-2-2-60"><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.4.5.72)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "PGchoicemacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+do {
+  $c = non_zero_random(-9,9,1);
+  $b = ($c > 0) ? random(int(sqrt(4*$c))+1,9,1) : non_zero_random(-9,9,1);
+} until (sqrt($b**2-4*$c) != int(sqrt($b**2-4*$c)));
+Context()->noreduce('(-x)-y','(-x)+y');
+$f = Formula("x^2 + $b x + $c")->reduce;
+($left,$right) = (Formula("-$b x"),Formula("-$c"))[NchooseK(2,2)];
+$left = Formula("x^2-$left")->reduce;
+$right = $right->reduce;
+$disc = $b**2-4*$c;
+$squarepart = 1;
+$squarefree = $disc;
+for $i (2,3,5,7) {
+  while ($squarefree % $i**2 == 0) {
+    $squarepart *= $i**2;
+    $squarefree /= $i**2;
+  }
+}
+$pull = sqrt($squarepart);
+Context("Fraction");
+$B = Fraction($b,2);
+$P = Fraction($pull,2);
+if ($P == 1) {$P = ''};
+if ($pull == 1) {$pull = ''};
+$negb = -$b;
+$bsquared = ($b)**2;
+$discriminant = ($b)**2 - 4*1*$c;
+Context("FiniteSolutionSets");
+($r,$s) = (Formula("-$B - $P sqrt($squarefree)"),Formula("-$B + $P sqrt($squarefree)"));
+$solutions = Formula("{$r,$s}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use the quadratic formula to solve the equation.
+
+[`[$left]=[$right]`]
+
+[@KeyboardInstructions('If you need to enter a square root like [`\sqrt{17}\text{,}`] type [|sqrt(17)|]*. If there is no real solution, enter [|no real solution|]*.')@]**
+
+[_]{$solutions}{40}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+To use the quadratic formula, we write the equation in standard form:
+
+[```[$f]=0```]
+
+and identify [`a=1\text{,}`] [`b=[$b]\text{,}`] and [`c=[$c]\text{.}`]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{[$negb]\pm\sqrt{[$bsquared]-4(1)([$c])}}{2}\\
+\amp=\frac{[$negb]\pm\sqrt{[$discriminant]}}{2}\\
+\amp=\frac{[$negb]\pm[$pull]\sqrt{[$squarefree]}}{2}\\
+x\amp=\frac{[$negb]-[$pull]\sqrt{[$squarefree]}}{2}\quad\text{or}\quad x=\frac{[$negb]+[$pull]\sqrt{[$squarefree]}}{2}\\
+x\amp=[$r]\quad\text{or}\quad x=[$s]
+\end{aligned}
+```]
+
+The solution set is [`[$solutions]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

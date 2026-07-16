@@ -1,8 +1,5 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2026-02-16T16:27:29-08:00       
-###   A recent stable commit (2022-07-01):   
-### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
 ###         https://pretextbook.org          
 ###                                          
@@ -30,9 +27,11 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "contextFiniteSolutionSets.pl",
-  "contextForm.pl",
-  "contextFraction.pl",
+  "PCCmacros.pl",
+  "contextCurrency.pl",
+  "contextPercent.pl",
+  "parserLinearRelation.pl",
+  "randomPerson.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -45,30 +44,40 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$x = list_random('a'..'n', 'p'..'z', 'A'..'D', 'F'..'N', 'P'..'T', 'V'..'Z');
-Context('Fraction')->variables->are($x => 'Real');
-do {
-  ($m, $n) = random_subset(2, -9..-1, 1..9);
-  $b = list_random(-9..-2, 2..9);
-  $sol = Fraction($b, $m - $n);
-} until (($sol->value)[1] != 1);
-Context()->noreduce('(-x)-y', '(-x)+y');
-$left = Formula("$m $x")->reduce;
-$right = Formula("$n $x + $b")->reduce;
-Context("FiniteSolutionSets");
-Context()->variables->are($x => 'Real');
-$solset = Formula("{$sol}");
+$name = randomPerson();
+$profession = list_random(
+  'a radiography technician',
+  'a microelectronics engineer',
+  'a dental hygienist',
+  'a high school teacher',
+  'an office manager',
+  'a restaurant manager',
+  'a web designer',
+  'a tax accountant',
+  'a paralegal',
+  'a structural engineer'
+);
+Context("Currency")->flags->set(trimTrailingZeros => 1);
+$final = 65000 + random(-8000,8000);
+$current = Currency($final);
+Context("Percent");
+$decimal = random(0.02,0.06,0.001);
+$percent = Percent($decimal);
+Context("LinearRelation")->variables->are(S => 'Real');
+$equation = LinearRelation("S + $decimal S = $final");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Solve the equation.
+Read the scenario. Then write a complete sentence that defines a variable to use. Lastly, write an equation to model the scenario. There is no need to solve the equation.
 
-[`[$left]=[$right]`]
+[$name]'s current annual salary as [$profession] is [`[$current]\text{.}`] This is with a raise of [`[$percent]`] over last year's salary. What was [$name->possessive] salary last year? Set up an equation to answer this question. There is no need to solve it.
 
-[_]{$solset}{16}
+[@KeyboardInstructions('Use [|S|]* as the variable.')@]**
+
+[_]{$equation}{20}
 
 END_PGML
 

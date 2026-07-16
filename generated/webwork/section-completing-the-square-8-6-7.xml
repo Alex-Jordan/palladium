@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-6-7" assembly-id="section-completing-the-square-8-6-7">
+  <static seed="1200" source="Contrib/PCC/Math95/ParabolaVertex/ParabolaVertex7.pg">
+    <statement><p>Find the range of the function</p>
+<p><me>f(x)=9x-9x^{2}-10</me></p>
+<p><fillin characters="20" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left(-\infty ,\frac{-31}{4}\right]</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/Math95/ParabolaVertex/ParabolaVertex7.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/Math95/ParabolaVertex/ParabolaVertex7.pg"/>
+</webwork-reps>

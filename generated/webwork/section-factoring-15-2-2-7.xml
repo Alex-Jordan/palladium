@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-factoring-15-2-2-7" assembly-id="section-factoring-15-2-2-7">
+  <static seed="42" source="Contrib/PCC/BasicAlgebra/Factoring/factoring15.pg">
+    <statement><p>Find the greatest common factor of the following terms.</p>
+<p><m>{6r^{3}}</m>   and    <m>{-48r^{4}}</m></p>
+<p><fillin characters="19" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>6r^{3}\hbox{ or }-6r^{3}</m>
+      </p>
+    </answer>
+    <solution><p>The greatest common factor of <m>{6r^{3}}</m> and <m>{-48r^{4}}</m> is <m>{6r^{3}\hbox{ or }-6r^{3}}</m>.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/Factoring/factoring15.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/Factoring/factoring15.pg"/>
+</webwork-reps>
