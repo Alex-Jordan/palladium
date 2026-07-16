@@ -1925,6 +1925,7 @@
             <macro-file>Pd.pl</macro-file>
           </pg-macros>
           <pg-code>
+            @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
             @var = random_subset(3, @ORCCA_variables);
             Context("Numeric");
             Context()->variables->are($var[0]=>'Real' ,$var[1]=>'Real', $var[2]=>'Real');

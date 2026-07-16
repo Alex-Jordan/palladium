@@ -1368,6 +1368,7 @@
             <macro-file>Pd.pl</macro-file>
           </pg-macros>
           <pg-code>
+            @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
             $var = list_random(@ORCCA_variables);
             $scale = random(2,9);
             $scaleWord = numberWord($scale);
@@ -1395,6 +1396,7 @@
             <macro-file>Pd.pl</macro-file>
           </pg-macros>
           <pg-code>
+            @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
             $var = list_random(@ORCCA_variables);
             $scale = random(2,9);
             $scaleWord = numberWord($scale);

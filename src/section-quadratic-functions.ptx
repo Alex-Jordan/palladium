@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2026                                                       -->
+<!-- Alex Jordan                                                          -->
+<!-- *********************************************************************-->
+
+<section xml:id="section-quadratic-functions">
+  <title>Quadratic Functions</title>
+
+  <introduction>
+    <p>
+      The next <q>flavor</q> of functions following linear functions is
+      <term>quadratic functions</term>. In this section, we familiarize ourselves with their
+      features and some vocabulary.
+    </p>
+  </introduction>
+
+  <subsection>
+    <title>Quadratic Function Formulas</title>
+    <p>
+      A function <m>f</m> is <term>quadratic</term> if it has a formula in the form
+      <md>
+        f(x)=ax^2+bx+c
+      </md>
+      for some numbers <m>a</m>, <m>b</m>, and <m>c</m>. While <m>b</m> and <m>c</m> are allowed to
+      be <m>0</m>, the number <m>a</m> must not be <m>0</m> (or else we would just have a linear
+      function).
+    </p>
+    <example>
+      <title>
+    </example>
+  </subsection>
+</section>

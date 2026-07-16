@@ -6,315 +6,171 @@
 <section xml:id="section-solving-quadratic-equations-by-factoring">
   <title>Solving Quadratic Equations by Factoring</title>
 
-  <subsection>
-    <title>Introduction</title>
+  <introduction>
     <p>
       We have learned how to factor trinomials like <m>x^2+5x+6</m> into <m>(x+2)(x+3)</m>. This
-      skill can be used to solve an equation like <m>x^2+5x+6=0</m>, which is a quadratic equation.
+      skill can be used to solve quadratic equations like <m>x^2+5x+6=0</m>.
     </p>
+
+    <!-- <figure>
+      <caption>Alternative Video Lesson</caption>
+      <video youtubeplaylist="PLfPh0EsBc0yIyYh6GTj-BgwXXeBxQCq1L" />
+    </figure> -->
+  </introduction>
+
+  <subsection>
+    <title>Quadratic Equations</title>
+  
     <definition xml:id="definition-quadratic-equation">
-      <title>Quadratic Equation</title>
-      <idx><h>quadratic</h><h>equation in standard form</h></idx>
-      <idx><h>standard form of a quadratic equation</h></idx>
-      <idx><h>quadratic</h><h>equation</h></idx>
-      <idx><h>equation</h><h>quadratic</h></idx>
+      <title>Quadratic Equation</title>                                                                       <idx><h>quadratic</h><h>equation in standard form</h></idx>
+                                                                                                              <idx><h>standard form of a quadratic equation</h></idx>
+                                                                                                              <idx><h>quadratic</h><h>equation</h></idx>
+                                                                                                              <idx><h>equation</h><h>quadratic</h></idx>
       <statement>
         <p>
-          A <term>quadratic equation</term> is is an equation in the form <m>ax^2+bx+c=0</m> with <m>a\neq0</m>.
-          We also consider equations such as <m>x^2=x+3</m> and
-          <m>5x^2+3= (x+1)^2 + (x + 1)(x-3)</m> to be quadratic equations,
-          because we can expand any multiplication,
-          add or subtract terms from both sides,
-          and combine like terms to get the form <m>ax^2+bx+c=0</m>.
-          The form <m>ax^2+bx+c=0</m> is called the
+          A <term>quadratic equation</term> is is an equation in the form
+          <md>ax^2+bx+c=0</md>
+          with <m>a\neq0</m>. We also consider equations such as <m>x^2=x+3</m> and
+          <m>5x^2+3= (x+1)^2 + (x + 1)(x-3)</m> to be quadratic equations, because we can expand
+          multiplication, add or subtract terms from both sides, and combine like terms to get these
+          into the form <m>ax^2+bx+c=0</m>. The form <m>ax^2+bx+c=0</m> is called the
           <term>standard form</term> of a quadratic equation.
         </p>
       </statement>
     </definition>
 
-    <figure>
-      <caption>Alternative Video Lesson</caption>
-      <video youtubeplaylist="PLfPh0EsBc0yIyYh6GTj-BgwXXeBxQCq1L" />
-    </figure>
-
     <p>
-      Before we begin exploring the method of solving quadratic equations by factoring,
-      we'll identify what types of equations are quadratic and which are not.
-    </p>
-
-    <exercise>
-      <webwork>
-            <pg-code>
-                $yes=PopUp(['?','is', 'is not'],1);
-                $no=PopUp(['?','is', 'is not'],2);
-            </pg-code>
-          <statement>
-            <p>
-              Identify which of the items are quadratic equations.
-
-              <ol marker="a">
-                <li>
-                  <p>
-                    The equation <m>2x^2+5x=7</m> <var name="$yes" form="popup"/> a quadratic equation.
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    The equation <m>5-2x=3</m> <var name="$no" form="popup"/> a quadratic equation.
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    The equation <m>15-x^3=3x^2+9x</m> <var name="$no" form="popup"/> a quadratic equation.
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    The equation <m>(x+3)(x-4)=0</m> <var name="$yes" form="popup"/> a quadratic equation.
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    The equation <m>x(x+1)(x-1)=0</m> <var name="$no" form="popup"/> a quadratic equation.
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    The expression <m>x^2-5x+6</m> <var name="$no" form="popup"/> a quadratic equation.
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    The equation <m>(2x-3)(x+5)=12</m> <var name="$yes" form="popup"/> a quadratic equation.
-                  </p>
-                </li>
-              </ol>
-            </p>
-          </statement>
-          <solution>
-            <p>
-              <ol marker="a">
-                <li>
-                  <p>
-                    The equation <m>2x^2+5x=7</m> <em>is</em> a quadratic equation.
-                    To write it in standard form,
-                    simply subtract <m>7</m> from both sides.
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    The equation <m>5-2x=3</m> <em>is not</em> quadratic.
-                    It is a linear equation.
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    The equation <m>15+x^3=3x^2+9x</m> <em>is not</em>
-                    a quadratic equation because of the <m>x^3</m> term.
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    The equation <m>(x+3)(x-4)=0</m>
-                    <em>is</em> a quadratic equation.
-                    If we expand the left-hand side of the equation,
-                    we would get something in standard form.
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    The equation <m>x(x+1)(x-1)=0</m>
-                    <em>is not</em> a quadratic equation.
-                    If we expanded the left-hand side of the equation,
-                    we would have an expression with an <m>x^3</m> term,
-                    which automatically makes it not quadratic.
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    The expression <m>x^2-5x+6</m> <em>is not</em> a quadratic equation;
-                    it's not an <em>equation</em> at all.
-                    Instead, this is a quadratic <em>expression</em>.
-                  </p>
-                </li>
-
-                <li>
-                  <p>
-                    The equation <m>(2x-3)(x+5)=12</m>
-                    <em>is</em> a quadratic equation.
-                    Multiplying out the left-hand side,
-                    and subtracting <m>12</m> form both sides,
-                    we would have a quadratic equation in standard form.
-                  </p>
-                </li>
-              </ol>
-            </p>
-          </solution>
-      </webwork>
-    </exercise>
-
-    <p>
-      Now we'll look at an application that demonstrates the need and method for solving a quadratic equation by factoring.
+      Quadratic equations arise in many science and engineering settings. One source of quadratic
+      equations is the physics of a falling object.
     </p>
 
     <sidebyside widths="47% 47%" margins="0%">
       <p>
-        Nita is in a physics class that launches a tennis ball from a rooftop <m>80</m> feet above the ground.
-        They fire it directly upward at a speed of <m>64</m> feet per second
-        and measure the time it takes for the ball to hit the ground below.
-        We can model the height of the tennis ball, <m>h</m>,
-        in feet, with the quadratic equation
-        <me>
-          h=-16t^2+64t+80
-        </me>,
+        Nita launches a tennis ball from a rooftop <m>80</m> feet above the ground. They fire it
+        directly upward at a speed of <m>64</m> feet per second and measure the time it takes for
+        the ball to hit the ground below. We can model the height of the tennis ball, <m>h</m>, in
+        feet, with a quadratic function:
+        <md>
+          h(t) = -16t^2 + 64t + 80
+        </md>,
         where <m>t</m> represents the time in seconds after the launch.
-        Using the model we can predict when the ball will hit the ground.
       </p>
 
       <figure xml:id="figure-ball-thrown-diagram">
         <caption>A Diagram of the Ball Thrown from the Roof</caption>
         <image>
-          <shortdescription>A drawing of a tall building and a tennis ball being launched upward; the path of the ball is an arc that goes upward and then downward to the ground</shortdescription>
-
-            <latex-image>
-                <![CDATA[\begin{tikzpicture}
-                    \begin{axis}[axis x line=none,
-                                axis y line=none,
-                                xmin=-3,xmax=6,
-                                ymin=-10,
-                                ymax=150,
-                                grid=none]
-                        \addplot[color=firstcolor, fill=firstcolor!30] coordinates{(-1.5,0)(-1.5,80)(0.5,80)(0.5,0)(-1.5,0)};
-                        \addplot[color=black,fill=white] coordinates{(0.2,8)(0,8)(0,3)(0.2,3)(0.2,8)(0,8)(0.1,8)(0.1,3)(0.1,5.5)(0,5.5)(0.2,5.5)};
-                        \addplot[color=black,fill=white] coordinates{(-1,8)(-1.2,8)(-1.2,3)(-1,3)(-1,8)(-1.2,8)(-1.1,8)(-1.1,3)(-1.1,5.5)(-1.2,5.5)(-1,5.5)};
-                        \addplot[color=black,fill=black!40] coordinates{(-0.3,9)(-0.3,0)(-0.7,0)(-0.7,9)(-0.3,9)};
-                        \addplot[color=black] coordinates{(-0.5,0)(-0.5,9)};
-                        \foreach \x in {0,...,2}
-                            \foreach \y in {0,...,5}
-                                {\addplot[color=black,fill=white] coordinates{(0.6*\x-1,18+10*\y)(0.6*\x-1.2,18+10*\y)(0.6*\x-1.2,13+10*\y)(0.6*\x-1,13+10*\y)(0.6*\x-1,18+10*\y)(0.6*\x-1.2,18+10*\y)(0.6*\x-1.1,18+10*\y)(0.6*\x-1.1,13+10*\y)(0.6*\x-1.1,15.5+10*\y)(0.6*\x-1.2,15.5+10*\y)(0.6*\x-1,15.5+10*\y)};}
-                        \addplot[color=black] coordinates{(-3,0)(6,0)};
-                        \addplot[mark=*, samples=15, variable=\t, domain=0:5, smooth, -, color=secondcolor] ({t}, {-16*t^2+64*t+80});
-                    \end{axis}
-                \end{tikzpicture}]]>
-            </latex-image>
+          <shortdescription>
+            A drawing of a tall building and a tennis ball being launched upward; the path of the
+            ball is an arc that goes upward and then downward to the ground
+          </shortdescription>
+          <latex-image>
+            \begin{tikzpicture}
+              \begin{axis}[
+                  axis x line=none,
+                  axis y line=none,
+                  xmin=-3,
+                  xmax=6,
+                  ymin=-10,
+                  ymax=150,
+                  grid=none
+                ]
+                \addplot[color=firstcolor, fill=firstcolor!30] coordinates{(-1.5,0)(-1.5,80)(0.5,80)(0.5,0)(-1.5,0)};
+                \addplot[color=black,fill=white] coordinates{(0.2,8)(0,8)(0,3)(0.2,3)(0.2,8)(0,8)(0.1,8)(0.1,3)(0.1,5.5)(0,5.5)(0.2,5.5)};
+                \addplot[color=black,fill=white] coordinates{(-1,8)(-1.2,8)(-1.2,3)(-1,3)(-1,8)(-1.2,8)(-1.1,8)(-1.1,3)(-1.1,5.5)(-1.2,5.5)(-1,5.5)};
+                \addplot[color=black,fill=black!40] coordinates{(-0.3,9)(-0.3,0)(-0.7,0)(-0.7,9)(-0.3,9)};
+                \addplot[color=black] coordinates{(-0.5,0)(-0.5,9)};
+                \foreach \x in {0,...,2}
+                    \foreach \y in {0,...,5}
+                        {\addplot[color=black,fill=white] coordinates{(0.6*\x-1,18+10*\y)(0.6*\x-1.2,18+10*\y)(0.6*\x-1.2,13+10*\y)(0.6*\x-1,13+10*\y)(0.6*\x-1,18+10*\y)(0.6*\x-1.2,18+10*\y)(0.6*\x-1.1,18+10*\y)(0.6*\x-1.1,13+10*\y)(0.6*\x-1.1,15.5+10*\y)(0.6*\x-1.2,15.5+10*\y)(0.6*\x-1,15.5+10*\y)};}
+                \addplot[color=black] coordinates{(-3,0)(6,0)};
+                \addplot[mark=*, samples=15, variable=\t, domain=0:5, smooth, -, color=secondcolor] ({t}, {-16*t^2+64*t+80});
+              \end{axis}
+            \end{tikzpicture}
+          </latex-image>
         </image>
-
       </figure>
     </sidebyside>
 
     <p>
-      The ground has a height of <m>0</m>, or <m>h=0</m>.
-      We will substitute <m>0</m> for <m>h</m> in the equation and we have
-      <me>
-        -16t^2+64t+80=0
-      </me>
-      We need to solve this quadratic equation for <m>t</m> to find when the ball will hit the ground.
+      The <m>80</m> in the formula is of course the initial height of the ball. The <m>64</m> in the
+      formula is the object's initial speed, but notice that when you throw a ball straight up, its
+      speed will start to change over time. This is where the <q>quadratic</q> term <m>-16t^2</m>
+      comes into play. The strength of gravity on Earth is reflected by that number <m>-16</m>. It
+      is negative because gravity is always pulling the ball down.
     </p>
-
     <p>
-      The key strategy for solving a <em>linear</em>
-      equation is to separate the variable terms from the constant terms on either side of the equal sign.
-      It turns out that this same method
-      <em>will not work</em> for quadratic equations.
-      Fortunately,
-      we already have spent a good amount of time discussing a method that
-      <em>will</em> work: factoring.
-      If we can factor the polynomial on the left-hand side,
-      we will be on the home stretch to solving the whole equation.
+      Using the model we can predict when the ball will hit the ground. The ground has a height of
+      <m>0</m>, so we are interested in the time <m>t</m> when <m>h(t)=0</m>. We have the equation
+      <md>
+        -16t^2 + 64t + 80=0
+      </md>
+      Solving this quadratic equation for <m>t</m> will tell us when the ball will hit the ground.
     </p>
-
     <p>
-      We will look for a common factor first,
-      and see that we can factor out <m>-16</m>.
-      Then we can finish factoring the trinomial:
+      The key strategy for solving a <em>linear</em> equation is to separate the variable terms from
+      the constant terms on either side of the equal sign. We need a different strategy for solving
+      a quadratic equation. Fortunately, we already have learned about factoring, which is one
+      strategy that will help us now.
+    </p>
+    <p>
+      We look for a greatest common factor first, and find <m>-16</m>. After factoring that out, we
+      are left with a monic quadratic trinomial that we can fullt factor:
       <md>
         <mrow>-16t^2+64t+80\amp=0</mrow>
         <mrow>-16(t^2-4t-5)\amp=0</mrow>
         <mrow>-16(t+1)(t-5)\amp=0</mrow>
       </md>
     </p>
-
     <p>
-      In order to finish solving the equation,
-      we need to understand the following property.
-      This property explains why it was
-      <em>incredibly important</em>
-      to <m>not</m> move the <m>80</m> in our example over to the other side of the equation before trying to factor.
+      To finish solving the equation, we need to understand an important feature of numbers. 
     </p>
 
     <fact xml:id="fact-zero-product-property">
-      <title>Zero Product Property</title>
-      <idx><h>zero product property</h></idx>
-      <idx><h>properties</h><h>zero product property</h></idx>
+      <title>Zero Product Property</title>                                                                    <idx><h>zero product property</h></idx>
+                                                                                                              <idx><h>properties</h><h>zero product property</h></idx>
       <statement>
         <p>
-          If the product of two or more numbers is equal to zero,
-          then at least one of the numbers must be zero.
+          If the product of two or more numbers is equal to zero, then at least one of the numbers
+          must be zero.
         </p>
       </statement>
     </fact>
 
     <p>
-      One way to understand this property is to think about the equation <m>a\cdot b=0</m>.
-      Maybe <m>b=0</m>,
-      because that would certainly cause the equation to be true.
-      But suppose that <m>b\neq0</m>.
-      Then it is safe to divide both sides by <m>b</m>,
-      and the resulting equation says that <m>a=0</m>.
-      So no matter what, either <m>a=0</m> or <m>b=0</m>.
+      One way to understand this property is to think about the equation <m>a\cdot b=0</m>. Maybe
+      <m>b=0</m>, because that would certainly cause the equation to be true. But suppose that
+      <m>b\neq0</m>. Then it is safe to divide both sides by <m>b</m>, and the resulting equation
+      says that <m>a=0</m>. So no matter what, either <m>a=0</m> or <m>b=0</m>.
     </p>
-
     <p>
-      To understand this property more,
-      let's look at a few products:
+      Or consider these numerical examples:
       <md>
         <mrow>4\cdot7\amp=28\amp4\cdot0\amp=0\amp4\cdot7\cdot3\amp=84</mrow>
         <mrow>0\cdot7\amp=0\amp-4\cdot0\amp=0\amp4\cdot0\cdot3\amp=0</mrow>
       </md>
-      When none of the factors are <m>0</m>,
-      the result is never <m>0</m>.
-      The only way to get a product of <m>0</m> is when one of the factors is <m>0</m>.
-      This property is unique to the number <m>0</m> and can be used no matter how many numbers are multiplied together.
+      Whenever none of the factors are <m>0</m>, the result is not <m>0</m>. The only way to get a
+      product of <m>0</m> is when one of the factors is <m>0</m>.
     </p>
-
     <p>
-      Now we can see the value of factoring.
-      We have three factors in our equation
-      <me>
+      Our factored equation is
+      <md>
         -16(t+1)(t-5)=0
-      </me>.
-      The first factor is the number <m>-16</m>.
-      The second and third factors,
-      <m>t+1</m> and <m>t-5</m>, are expressions that represent numbers.
-      Since the product of the three factors is equal to <m>0</m>,
-      one of the factors must be zero.
+      </md>
+      with three factors. The first factor is the number <m>-16</m>. The second and third factors,
+      <m>t+1</m> and <m>t-5</m>, are algebra expressions. Since the product of the three factors is
+      equal to <m>0</m>, one of those factors must be zero.
     </p>
-
     <p>
-      Since <m>-16</m> is not <m>0</m>,
-      either <m>t+1</m> or <m>t-5</m> must be <m>0</m>.
-      This gives us two equations to solve:
+      Obviously, the number <m>-16</m> is not <m>0</m>. So either <m>t+1</m> or <m>t-5</m> must be
+      responsible for it all equalling <m>0</m>. This gives us two small linear equations to solve:
       <md>
         <mrow>t+1\amp=0\amp\amp\text{or}\amp t-5\amp=0</mrow>
         <mrow>t+1\subtractright{1}\amp=0\subtractright{1}\amp\amp\text{or}\amp t-5\addright{5}\amp=0\addright{5}</mrow>
         <mrow>t\amp=-1\amp\amp\text{or}\amp t\amp=5</mrow>
       </md>
-      We have found two solutions, <m>-1</m> and <m>5</m>.
-      A quadratic expression will have at most two linear factors,
-      not including any constants, so it can have up to two solutions.
+      We have found two solutions, <m>-1</m> and <m>5</m>. A quadratic expression will have at most
+      two linear factors, not including any constants, so it can have up to two solutions.
     </p>
-
     <p>
       Let's check each of our two solutions <m>-1</m> and <m>5</m>:
       <md>
@@ -325,32 +181,23 @@
         <mrow>0\amp\confirm{=}0\amp\amp\amp0\amp\confirm{=}0</mrow>
       </md>
     </p>
-
     <p>
-      We have verified our solutions.
-      While there are two solutions to the equation,
-      the solution <m>-1</m> is not relevant to this physics model
-      because it is a negative time which would tell us something about the ball's height
-      <em>before</em> it was launched.
-      The solution <m>5</m> does make sense.
-      According to the model,
-      the tennis ball will hit the ground <m>5</m> seconds after it is launched.
+      We have verified our solutions. While there are two solutions to the algebra equation, the
+      solution <m>-1</m> is not relevant to this physics setting. It is a negative time which would
+      tell us something about the ball's height <em>before</em> it was launched. Howeer the solution
+      <m>5</m> makes sense. According to the model, the tennis ball will hit the ground <m>5</m>
+      seconds after it is launched.
+    </p>
+    <p>
+      The important takeaway is that we used factoring to solve a quadratic equation.
     </p>
   </subsection>
 
   <subsection>
-    <title>Further Examples</title>
-    <idx><h>solving</h><h>quadratic equations</h><h>factoring</h></idx>
-
-    <p>
-      We'll now look at further examples of solving quadratic equations by factoring.
-      The general process is outlined here:
-    </p>
+    <title>Solving Quadratic Equations by Factoring</title>                                                   <idx><h>solving</h><h>quadratic equations</h><h>factoring</h></idx>
 
     <algorithm xml:id="algorithm-solving-quadratic-equations-by-factoring">
-      <title>Solving Quadratic Equations by Factoring</title>
-      <idx><h>solving</h><h>quadratic equations</h><h>by factoring</h></idx>
-
+      <title>Solving Quadratic Equations by Factoring</title>                                                 <idx><h>solving</h><h>quadratic equations</h><h>by factoring</h></idx>
       <p>
         <dl>
           <li>
@@ -359,32 +206,30 @@
               Simplify the equation using distribution and by combining like terms.
             </p>
           </li>
-
           <li>
             <title>Isolate</title>
             <p>
-              Move all terms onto one side of the equation so that the other side has <m>0</m>.
+              Use addition and/or subtraction to move all terms onto one side of the equation so
+              that the other side is just <m>0</m>.
             </p>
           </li>
-
           <li>
             <title>Factor</title>
             <p>
-              Factor the quadratic expression.
+              Factor the quadratic expression. (If it's not possible to factor, then this technique
+              won't work. Other techniques, studied later, can be used.)
             </p>
           </li>
-
           <li>
             <title>Apply the Zero Product Property</title>
             <p>
               Apply the <xref ref="fact-zero-product-property" text="title" />.
             </p>
           </li>
-
           <li>
             <title>Solve</title>
             <p>
-              Solve the equation(s) that result after the zero product property was applied.
+              Solve the linear equation(s) that result after the zero product property was applied.
             </p>
           </li>
         </dl>
@@ -408,8 +253,7 @@
             <mrow>x-7\addright{7}\amp=0\addright{7}\amp\amp\text{or}\amp x+2\subtractright{2}\amp=0\subtractright{2}</mrow>
             <mrow>x\amp=7\amp\amp\text{or}\amp x\amp=-2</mrow>
           </md>
-          The solutions are <m>-2</m> and <m>7</m>,
-          so the solution set is written as <m>\{-2, 7\}</m>.
+          The solutions are <m>-2</m> and <m>7</m>, so the solution set is <m>\{-2, 7\}</m>.
         </p>
       </solution>
     </example>
@@ -422,10 +266,9 @@
       </statement>
       <solution>
         <p>
-          We have already solved the equation <m>x^2-5x-14=0</m> by factoring
-          in <xref ref="example-first-solving-with-factoring">Example</xref>,
-          and now we can analyze the significance of the solutions graphically.
-          What will <m>-2</m> and <m>7</m> mean on the graph?
+          We have already solved this in <xref ref="example-first-solving-with-factoring"/>, and now
+          we can explore the significance of the solutions graphically. Will <m>-2</m> and <m>7</m>
+          have any special meaning on the graph?
         </p>
 
         <sidebyside widths="47% 47%" margins="0%">
@@ -439,22 +282,23 @@
             <image>
             <shortdescription></shortdescription>
               <latex-image>
-                  <![CDATA[\begin{tikzpicture}
-                      \begin{axis}[xmin=-5,
-                                  xmax=10,
-                                  xtick={-4,-3,...,9},
-                                  minor xtick=,
-                                  ymin=-21,
-                                  ymax=18,
-                                  ytick={-18,-12,...,15},
-                                  minor ytick=,
-                                  ]
-                          \addplot+[domain=-3.685:8.685] {x^2-5*x-14} node[pos=0.9, left] {$y=x^2-5x-14$};
-                          \addplot+[domain=-5:10] {0} node[pos=0.5, above] {$y=0$};
-                          \addplot[soliddot,color=fifthcolor] coordinates {(-2,0)} node[above left] {$(-2,0)$};
-                          \addplot[soliddot,color=fifthcolor] coordinates {(7,0)} node[above right] {$(7,0)$};
-                      \end{axis}
-                  \end{tikzpicture}]]>
+                \begin{tikzpicture}
+                  \begin{axis}[
+                      xmin=-5,
+                      xmax=10,
+                      xtick={-4,-3,...,9},
+                      minor xtick=,
+                      ymin=-21,
+                      ymax=18,
+                      ytick={-18,-12,...,15},
+                      minor ytick=,
+                    ]
+                    \addplot+[domain=-3.685:8.685] {x^2-5*x-14} node[pos=0.9, left] {\(y=x^2-5x-14\)};
+                    \addplot+[domain=-5:10] {0} node[pos=0.5, above] {\(y=0\)};
+                    \addplot[soliddot,color=fifthcolor] coordinates {(-2,0)} node[above left] {\((-2,0)\)};
+                    \addplot[soliddot,color=fifthcolor] coordinates {(7,0)} node[above right] {\((7,0)\)};
+                  \end{axis}
+                \end{tikzpicture}
               </latex-image>
             </image>
           </figure>
@@ -467,16 +311,14 @@
     </example>
 
     <p>
-      If the two factors of a polynomial happen to be the same,
-      the equation will only have one solution.
-      Let's look at an example of that.
+      Sometimes a quadratic equation will have only one solution.
     </p>
 
     <example>
       <title>A Quadratic Equation with Only One Solution</title>
       <statement>
         <p>
-          Solve <m>x^2-10x+25=0</m> by factoring.
+          If <m>f(x)=x^2-10x+25</m>, use factoring to solve the equation <m>f(x)=0</m>.
         </p>
       </statement>
       <solution>
@@ -505,21 +347,22 @@
             <image>
             <shortdescription></shortdescription>
               <latex-image>
-                  <![CDATA[\begin{tikzpicture}
-                      \begin{axis}[xmin=-2,
-                                  xmax=12,
-                                  xtick={-1,0,...,11},
-                                  minor xtick=,
-                                  ymin=-6,
-                                  ymax=40,
-                                  ytick={0,5,...,35},
-                                  minor ytick=,
-                                  ]
-                          \addplot+[domain=-1.325:11.325] {x^2-10*x+25} node[pos=0.9, left] {$y=x^2-10x+25$};
-                          \addplot+[domain=-4:14] {0} node[pos=0.7, above] {$y=0$};
-                          \addplot[soliddot,color=fifthcolor] coordinates {(5,0)} node[above] {$(5,0)$};
-                      \end{axis}
-                  \end{tikzpicture}]]>
+                \begin{tikzpicture}
+                  \begin{axis}[
+                      xmin=-2,
+                      xmax=12,
+                      xtick={-1,0,...,11},
+                      minor xtick=,
+                      ymin=-6,
+                      ymax=40,
+                      ytick={0,5,...,35},
+                      minor ytick=,
+                    ]
+                    \addplot+[domain=-1.325:11.325] {x^2-10*x+25} node[pos=0.9, left] {\(y=x^2-10x+25\)};
+                    \addplot+[domain=-4:14] {0} node[pos=0.7, above] {\(y=0\)};
+                    \addplot[soliddot,color=fifthcolor] coordinates {(5,0)} node[above] {\((5,0)\)};
+                  \end{axis}
+                \end{tikzpicture}
               </latex-image>
             </image>
           </figure>
@@ -540,8 +383,7 @@
       </statement>
       <solution>
         <p>
-          Note that the terms are all divisible by <m>5</m>,
-          so we can factor that out to start.
+          Note that the terms are all divisible by <m>5</m>, so we can factor that out to start.
           <md>
             <mrow>5x^2+55x+120\amp=0</mrow>
             <mrow>5(x^2+11x+24)\amp=0</mrow>
@@ -556,54 +398,25 @@
       </solution>
     </example>
 
-    <example>
-      <title>Factoring Using the AC Method</title>
-      <statement>
-        <p>
-          Solve <m>3x^2-7x+2=0</m> by factoring.
-        </p>
-      </statement>
-      <solution>
-        <p>
-          Recall that we multiply <m>3\cdot2=6</m> and find a factor pair that multiplies to <m>6</m> and adds to <m>-7</m>.
-          The factors are <m>-6</m> and <m>-1</m>.
-          We use the two factors to replace the middle term with <m>-6x</m> and <m>-x</m>.
-          <md>
-            <mrow>3x^2-7x+2\amp=0</mrow>
-            <mrow>3x^2-6x-x+2\amp=0</mrow>
-            <mrow>(3x^2-6x)+(-x+2)\amp=0</mrow>
-            <mrow>3x(x-2)-1(x-2)\amp=0</mrow>
-            <mrow>(3x-1)(x-2)\amp=0</mrow>
-          </md>
-          <md>
-            <mrow>3x-1\amp=0\amp\amp\text{or}\amp x-2\amp=0</mrow>
-            <mrow>3x\amp=1\amp\amp\text{or}\amp x\amp=2</mrow>
-            <mrow>x\amp=\frac{1}{3}\amp\amp\text{or}\amp x\amp=2</mrow>
-          </md>
-          The solution set is <m>\left\{\frac{1}{3}, 2\right\}</m>.
-        </p>
-      </solution>
-    </example>
-
     <p>
-      So far the equations have been written in standard form, which is
-      <me>
-        ax^2+bx+c=0
-      </me>
-      If an equation is not given in standard form then we must rearrange it in order to use the <xref ref="fact-zero-product-property" text="title" />.
+      So far the equations in our examples have been written in standard form, <m>ax^2+bx+c=0</m>.
+      If an equation does not start out in standard form, we must rearrange it in order to use the
+      <xref ref="fact-zero-product-property" text="title" />. It's important to get to the point
+      where <m>0</m> is the only thing on one side of the equation.
     </p>
 
     <example>
       <title>Writing in Standard Form</title>
       <statement>
         <p>
-          Solve <m>x^2-10x=24</m> by factoring.
+          If <m>g</m> is defined by <m>g(x)=x^2-10x</m>, solve the equation <m>g(x)=24</m>.
         </p>
       </statement>
       <solution>
         <p>
-          There is nothing like the <xref ref="fact-zero-product-property" text="title" /> for the number <m>24</m>.
-          We must have a <m>0</m> on one side of the equation to solve quadratic equations using factoring.
+          We need to solve <m>x^2-10x=24</m>. But there is no counterpart to the
+          <xref ref="fact-zero-product-property" text="title" /> for the number <m>24</m>. We have
+          to move that term to the other side first.
           <md>
             <mrow>x^2-10x\amp=24</mrow>
             <mrow>x^2-10x\subtractright{24}\amp=24\subtractright{24}</mrow>
@@ -628,8 +441,7 @@
       </statement>
       <solution>
         <p>
-          Again, there is nothing like the <xref ref="fact-zero-product-property" text="title" /> for a number like <m>18</m>.
-          We must expand the left side and subtract <m>18</m> from both sides.
+          We must expand the left side and then subtract <m>18</m> from both sides.
           <md>
             <mrow>(x+4)(x-3)\amp=18</mrow>
             <mrow>x^2+x-12\amp=18</mrow>
@@ -655,12 +467,10 @@
       </statement>
       <solution>
         <p>
-          It may be tempting to divide both sides of the equation by <m>x</m>.
-          But <m>x</m> is a variable, and for all we know, maybe <m>x=0</m>.
-          So it is not safe to divide by <m>x</m>.
-          As a general rule,
-          never divide an equation by a variable in the solving process.
-          Instead, we will put the equation in standard form.
+          It may be tempting to divide both sides of the equation by <m>x</m>. But <m>x</m> is a
+          variable, and for all we know, maybe <m>x=0</m>. So it is not safe to divide by <m>x</m>.
+          As a general rule, avoid dividing an equation by a variable. Instead, we will use algebra
+          to arrange the equation into standard form.
           <md>
             <mrow>2x^2\amp=5x</mrow>
             <mrow>2x^2\subtractright{5x}\amp=5x\subtractright{5x}</mrow>
@@ -673,12 +483,12 @@
             <mrow>x\amp=0\amp\amp\text{or}\amp 2x\amp=5</mrow>
             <mrow>x\amp=0\amp\amp\text{or}\amp x\amp=\frac{5}{2}</mrow>
           </md>
-          The solution set is <m>\left\{0, \frac{5}{2}\right\}</m>.
-          In general, if a quadratic equation does not have a constant term,
-          then <m>0</m> will be one of the solutions.
+          The solution set is <m>\left\{0, \frac{5}{2}\right\}</m>. In general, if a quadratic
+          equation does not have a constant term, then <m>0</m> will be one of the solutions.
         </p>
         <p>
-          While we are examining this problem, let's compare the algebraic solution to a graphical solution.
+          While we are examining this problem, let's compare the algebraic solution to a graphical
+          solution.
         </p>
         <sidebyside widths="47% 47%" margins="0%">
           <p>
@@ -691,22 +501,23 @@
             <image>
             <shortdescription></shortdescription>
               <latex-image>
-                  <![CDATA[\begin{tikzpicture}
-                      \begin{axis}[xmin=-5,
-                                  xmax=5,
-                                  xtick={-4,-3,-2,-1,2,3,4},
-                                  minor xtick={-5,-4,...,5},
-                                  ymin=-6,
-                                  ymax=20,
-                                  ytick={-4,-2,...,18},
-                                  minor ytick={-5,-4,...,20}
-                                  ]
-                          \addplot+[domain=-3.162:3.162] {2*x^2} node[pos=0.3, left] {$y=2x^2$};
-                          \addplot+[domain=-1.2:4] {5*x} node[pos=0.05, left] {$y=5x$};
-                          \addplot[soliddot,color=fifthcolor] coordinates {(0,0)} node[below right] {$(0,0)$};
-                          \addplot[soliddot,color=fifthcolor] coordinates {(2.5,12.5)} node[right] {$(\frac{5}{2},12.5)$};
-                      \end{axis}
-                  \end{tikzpicture}]]>
+                \begin{tikzpicture}
+                  \begin{axis}[
+                      xmin=-5,
+                      xmax=5,
+                      xtick={-4,-3,-2,-1,2,3,4},
+                      minor xtick={-5,-4,...,5},
+                      ymin=-6,
+                      ymax=20,
+                      ytick={-4,-2,...,18},
+                      minor ytick={-5,-4,...,20}
+                    ]
+                    \addplot+[domain=-3.162:3.162] {2*x^2} node[pos=0.3, left] {\(y=2x^2\)};
+                    \addplot+[domain=-1.2:4] {5*x} node[pos=0.05, left] {\(y=5x\)};
+                    \addplot[soliddot,color=fifthcolor] coordinates {(0,0)} node[below right] {\((0,0)\)};
+                    \addplot[soliddot,color=fifthcolor] coordinates {(2.5,12.5)} node[right] {\((\frac{5}{2},12.5)\)};
+                  \end{axis}
+                \end{tikzpicture}
               </latex-image>
             </image>
           </figure>
@@ -720,7 +531,7 @@
     </example>
 
     <example>
-      <title>Factoring a Special Polynomial</title>
+      <title>Recognizing a Special Pattern</title>
       <statement>
         <p>
           Solve <m>x^2=9</m> by factoring.
@@ -728,8 +539,8 @@
       </statement>
       <solution>
         <p>
-          We can put the equation in standard form and use factoring.
-          In this case, we find a difference of squares.
+          We can rearrange the equation into standard form and use factoring. In this case, we find
+          that we have a difference of squares.
           <md>
             <mrow>x^2\amp=9</mrow>
             <mrow>x^2-9\amp=0</mrow>
@@ -753,8 +564,8 @@
       </statement>
       <solution>
         <p>
-          Although this equation is not quadratic,
-          it does factor so we can solve it by factoring.
+          Although this equation is not quadratic, the left side still factors, so we can solve it
+          by factoring.
           <md>
             <mrow>2x^3-10x^2-28x\amp=0</mrow>
             <mrow>2x(x^2-5x-14)\amp=0</mrow>
@@ -777,22 +588,20 @@
       <statement>
         <sidebyside widths="47% 47%" margins="0%">
           <p>
-            Some time in the recent past, Filip traveled to Mars for a vacation with his kids, Henrik and Karina,
-            who wanted to kick a soccer ball around in the comparatively reduced gravity.
-            <!-- Mars was lush and green after the terraforming, and the kids went out into a grassy field with their dad. -->
-            Karina stood at point <m>K</m> and kicked the ball over her dad standing at point <m>F</m>
-            to Henrik standing at point <m>H</m>.
-            The height of the ball off the ground, <m>h</m> in feet,
-            can be modeled by the equation <m>h=-0.01\left(x^2-70x-1800\right)</m>,
-            where <m>x</m> is how far to the right the ball is from Filip.
-            Note that distances to the left of Filip will be negative.
+            Filip lives on Mars with his children, Henrik and Karina. One afternoon, the children
+            wanted to kick a soccer ball outside in the relatively lighter Martian gravity. Karina
+            stood at point <m>K</m> and kicked the ball over her dad standing at point <m>F</m> to
+            Henrik standing at point <m>H</m>. The height of the ball from the ground, <m>h</m> in
+            feet, is a function of how far left or right the ball is from Filip. It has the formula
+            <m>h(x) = -0.01\left(x^2-70x-1800\right)</m>, where <m>x</m> is how far to the right
+            from Filip the ball is. Note that positions to the left of Filip have a negative value
+            for <m>x</m>.
             <ol marker="a.">
               <li>
                 <p>
                   Find out how high the ball was above the ground when it passed over Filip's head.
                 </p>
               </li>
-
               <li>
                 <p>
                   Find the distance from Karina to Henrik.
@@ -803,64 +612,69 @@
           <figure>
             <caption>A Soccer Kick on Mars</caption>
             <image width="47%">
-              <shortdescription>a coordinate plane with a dot for Karina, Filip and Henrik; There is an arc from Karina to Henrik that goes over Filip</shortdescription>
+              <shortdescription>
+                a coordinate plane with a dot for Karina, Filip and Henrik; There is an arc from
+                Karina to Henrik that goes over Filip
+              </shortdescription>
               <latex-image>
-                <![CDATA[\begin{tikzpicture}
-                  \begin{axis}[axis x line=none,
-                              axis y line=none,
-                              xmin=-30,
-                              xmax=100,
-                              ymin=-5,
-                              ymax=35]
+                \begin{tikzpicture}
+                  \begin{axis}[
+                      axis x line=none,
+                      axis y line=none,
+                      xmin=-30,
+                      xmax=100,
+                      ymin=-5,
+                      ymax=35
+                    ]
                     \addplot[domain=-20:90, mark=*, samples=15, smooth, dashed, thin, color=firstcolor]  {-0.01*(x^2-70*x-1800};
-                    \addplot[soliddot, color=fifthcolor] coordinates{(-20,0)} node[above left] {K};
-                    \addplot[soliddot, color=fifthcolor] coordinates{(0,0)} node[above] {F};
-                    \addplot[soliddot, color=fifthcolor] coordinates{(90,0)} node[above right] {H};
+                    \addplot[soliddot, color=fifthcolor] coordinates{(-20,0)} node[above left] {\(K\)};
+                    \addplot[soliddot, color=fifthcolor] coordinates{(0,0)} node[above] {\(F\)};
+                    \addplot[soliddot, color=fifthcolor] coordinates{(90,0)} node[above right] {\(H\)};
                     \addplot[color=fourthcolor, thick] coordinates{(-30,0)(100,0)};
                   \end{axis}
-                \end{tikzpicture}]]>
+                \end{tikzpicture}
               </latex-image>
             </image>
           </figure>
         </sidebyside>
-
       </statement>
       <solution>
         <p>
           <ol marker="a.">
             <li>
               <p>
-                The ball was neither left nor right of Filip when it went over him,
-                so <m>x=0</m>.
-                Plugging that value into our equation for <m>x</m>,
+                At the moment the ball passes over Filip, <m>x=0</m>. So <m>h(0)</m> should tell us
+                the answer. We find:
                 <md>
-                  <mrow>h\amp=-0.01\left(0^2-70(0)-1800\right)</mrow>
+                  <mrow>h(0)\amp=-0.01\left(0^2-70(0)-1800\right)</mrow>
                   <mrow>\amp=-0.01(-1800)</mrow>
                   <mrow>\amp=18</mrow>
                 </md>
-                It seems that the soccer ball was <m>18</m> feet above the ground when it flew over Filip.
+                It seems that the soccer ball was <m>18</m> feet above the ground when it passed over
+                Filip.
               </p>
             </li>
-
             <li>
               <p>
-                The distance from Karina to Henrik is the same as the distance from point <m>K</m> to point <m>H</m>.
-                These are the horizontal intercepts of the graph of the given formula:
-                <m>h=-0.01\left(x^2-70x-1800\right)</m>.
-                To find the horizontal intercepts,
-                set <m>h=0</m> and solve for <m>x</m>.
+                The distance from Karina to Henrik is the distance from point <m>K</m>to point
+                <m>H</m> in the diagram. These are the horizontal intercepts of the graph of the
+                function. They happen where the <em>output</em> of the function is <m>0</m>. So we
+                want to solve <m>h(x)=0</m>, or rather:
                 <md>
-                  <mrow>0=-0.01\left(x^2-70x-1800\right)</mrow>
-                  <intertext>Note that we can divide by <m>-0.01</m> on both sides of the equation to simplify.</intertext>
-                  <mrow>0\amp=x^2-70x-1800</mrow>
-                  <mrow>0\amp=(x-90)(x+20)</mrow>
+                  -0.01\left(x^2-70x-1800\right)=0
+                </md>
+                Note that we can divide each side by <m>-0.01</m> to simplify.
+                <md>
+                  <mrow>x^2-70x-1800\amp=0</mrow>
+                  <mrow>(x-90)(x+20)\amp=0</mrow>
                   <intertext>So, either:</intertext>
                   <mrow>x-90\amp=0\amp\text{or}\amp\amp x+20\amp=0</mrow>
                   <mrow>x\amp=90\amp\text{or}\amp\amp x\amp=-20</mrow>
                 </md>
                 Since the <m>x</m>-values are how far right or left the points are from Filip,
-                Karina is standing <m>20</m> feet left of Filip and Henrik is standing <m>90</m> feet right of Filip.
-                Thus, the two kids are <m>110</m> feet apart.
+                Karina is standing <m>20</m> feet to the left of Filip and Henrik is standing
+                <m>90</m> feet to the right of Filip. Therefore the children are <m>110</m> feet
+                apart.
               </p>
             </li>
           </ol>
@@ -868,37 +682,43 @@
 
         <sidebyside widths="47% 47%" margins="0%">
           <p>
-            It is worth noting that if this same kick,
-            with same initial force at the same angle, took place on Earth,
-            the ball would have traveled less than <m>30</m> feet from Karina before landing!
+            It is interesting to note that if this same kick took place on Earth, with the same
+            initial force at the same angle, the ball would have traveled less than <m>30</m> feet
+            from Karina before landing!
           </p>
 
           <figure>
             <caption>A Soccer Kick on Mars and the Same Kick on Earth</caption>
             <image width="47%">
-              <shortdescription>The previous coordinate plane with a scale added so that Filip is standing at the origin; the scale on the x-axis is 20 feet and the scale on the y-axis is 10 feet; there is an arc for the soccer ball on Earth that would travel 30 feet; the arc for the ball kicked on the moon would travel 110 feet</shortdescription>
-
+              <shortdescription>
+                The previous coordinate plane with a scale added so that Filip is standing at the
+                origin; the scale on the x-axis is 20 feet and the scale on the y-axis is 10 feet;
+                there is an arc for the soccer ball on Earth that would travel 30 feet; the arc for
+                the ball kicked on the moon would travel 110 feet
+              </shortdescription>
               <latex-image>
-                <![CDATA[\begin{tikzpicture}
-                    \begin{axis}[axis x line=middle,
-                                axis y line=middle,
-                                xmin=-30,
-                                xmax=100,
-                                ymin=-10,
-                                ymax=40,
-                                grid=both,
-                                xtick={-20,0,...,80},
-                                ytick={10,20,30},
-                                minor xtick={-30,-20,...,100},
-                                minor ytick={-10,0,...,40}]
-                        \addplot[domain=-20:90, mark=*, samples=15, smooth, dashed, thin, color=firstcolor]  {-0.01*(x^2-70*x-1800)} node[above left] {Mars};
-                        \addplot[color=fourthcolor, thick] coordinates{(-30,0)(100,0)};
-                        \addplot[domain=-20:8.039, mark=*, samples=7, smooth, dashed, thin, color=secondcolor] {-0.03857558*x^2-0.46141508*x+6.2019337} node[above right] {Earth};
-                        \addplot[soliddot, color=fifthcolor] coordinates{(-20,0)};
-                        \addplot[soliddot, color=fifthcolor] coordinates{(0,0)};
-                        \addplot[soliddot, color=fifthcolor] coordinates{(90,0)};
-                    \end{axis}
-                \end{tikzpicture}]]>
+                \begin{tikzpicture}
+                  \begin{axis}[
+                      axis x line=middle,
+                      axis y line=middle,
+                      xmin=-30,
+                      xmax=100,
+                      ymin=-10,
+                      ymax=40,
+                      grid=both,
+                      xtick={-20,0,...,80},
+                      ytick={10,20,30},
+                      minor xtick={-30,-20,...,100},
+                      minor ytick={-10,0,...,40}
+                    ]
+                    \addplot[domain=-20:90, mark=*, samples=15, smooth, dashed, thin, color=firstcolor]  {-0.01*(x^2-70*x-1800)} node[above left] {Mars};
+                    \addplot[color=fourthcolor, thick] coordinates{(-30,0)(100,0)};
+                    \addplot[domain=-20:8.039, mark=*, samples=7, smooth, dashed, thin, color=secondcolor] {-0.03857558*x^2-0.46141508*x+6.2019337} node[above right] {Earth};
+                    \addplot[soliddot, color=fifthcolor] coordinates{(-20,0)};
+                    \addplot[soliddot, color=fifthcolor] coordinates{(0,0)};
+                    \addplot[soliddot, color=fifthcolor] coordinates{(90,0)};
+                  \end{axis}
+                \end{tikzpicture}
               </latex-image>
             </image>
           </figure>
@@ -910,8 +730,7 @@
       <title>An Area Application</title>
       <statement>
         <p>
-          Rajesh has a hot tub and he wants to build a deck around it.
-          The hot tub is
+          Rajesh has a hot tub and he wants to build a deck around it. The hot tub is
           <quantity>
             <mag>7</mag><unit base="foot"/>
           </quantity>
@@ -928,44 +747,44 @@
       </statement>
       <solution>
         <p>
-          We will define <m>x</m> to represent the width of the deck
-          (in feet).
-          Here is a diagram to help us understand the scenario.
+          We will define <m>x</m> to represent the width of the deck (in feet). Here is a diagram to
+          help us understand the scenario.
         </p>
 
         <figure>
           <caption>Diagram for the Deck</caption>
           <image width="47%">
-            <shortdescription>A diagram with a 7x5 rectangle for the hot tub; there is a larger rectangle around the hot tub for the deck, which extends x feet on each side of the hot tub</shortdescription>
-
+            <shortdescription>
+              A diagram with a 7x5 rectangle for the hot tub; there is a larger rectangle around the
+              hot tub for the deck, which extends x feet on each side of the hot tub
+            </shortdescription>
             <latex-image>
-                <![CDATA[\begin{tikzpicture}[x=0.7cm,y=0.7cm]
-                    \draw [very thick, fill=wood] (1,1) rectangle (12,10);
-                    \draw [very thick, fill=white!80!secondcolor] (3,3) rectangle (10,8);
-                    \draw [dotted, <->, thick] (3,4) -- (10,4) node[pos=0.5,above] {$7$ ft};
-                    \draw [dotted, <->, thick] (9,3) -- (9,8) node[pos=0.5,left] {$5$ ft};
-                    \draw [dotted, <->, thick] (1,5.5) -- (3,5.5) node[pos=0.5,above] {$x$};
-                    \draw [dotted, <->, thick] (10,5.5) -- (12,5.5) node[pos=0.5,above] {$x$};
-                    \draw [dotted, <->, thick] (6.5,1) -- (6.5,3) node[pos=0.5,left] {$x$};
-                    \draw [dotted, <->, thick] (6.5,8) -- (6.5,10) node[pos=0.5,left] {$x$};
-                \end{tikzpicture}]]>
+              \begin{tikzpicture}[x=0.7cm,y=0.7cm]
+                \draw [very thick, fill=wood] (1,1) rectangle (12,10);
+                \draw [very thick, fill=white!80!secondcolor] (3,3) rectangle (10,8);
+                \draw [dotted, &lt;->, thick] (3,4) &#45;- (10,4) node[pos=0.5,above] {\(7\) ft};
+                \draw [dotted, &lt;->, thick] (9,3) &#45;- (9,8) node[pos=0.5,left] {\(5\) ft};
+                \draw [dotted, &lt;->, thick] (1,5.5) &#45;- (3,5.5) node[pos=0.5,above] {\(x\)};
+                \draw [dotted, &lt;->, thick] (10,5.5) &#45;- (12,5.5) node[pos=0.5,above] {\(x\)};
+                \draw [dotted, &lt;->, thick] (6.5,1) &#45;- (6.5,3) node[pos=0.5,left] {\(x\)};
+                \draw [dotted, &lt;->, thick] (6.5,8) &#45;- (6.5,10) node[pos=0.5,left] {\(x\)};
+              \end{tikzpicture}
             </latex-image>
           </image>
-
         </figure>
 
         <p>
-          The overall length is <m>7+2x</m> feet,
-          because Rajesh is adding <m>x</m> feet on each side.
-          Similarly, the overall width is <m>5+2x</m> feet.
+          The overall length is <m>7+2x</m> feet, because Rajesh is adding <m>x</m> feet on each
+          side. Similarly, the overall width is <m>5+2x</m> feet.
         </p>
 
         <p>
-          The formula for the area of a rectangle is <m>\text{area}=\text{length}\cdot\text{width}</m>.
-          Since the total area of the roof is
+          The formula for the area of a rectangle is
+          <m>\text{area}=\text{length}\cdot\text{width}</m>. Since the total area of the roof is
           <quantity>
             <mag>99</mag><unit base="foot" exp="2"/>
-          </quantity>, we can write and solve the equation:
+          </quantity>,
+          we can write and solve the equation:
           <md>
             <mrow>(7+2x)(5+2x)=99</mrow>
             <mrow>4x^2+24x+35=99</mrow>
@@ -979,10 +798,8 @@
             <mrow>x\amp=-8\amp\amp\text{or}\amp x\amp=2</mrow>
           </md>
         </p>
-
         <p>
-          Since a length cannot be negative,
-          we take <m>x=2</m> as the only applicable solution.
+          Since a length cannot be negative, we take <m>x=2</m> as the only applicable solution.
           Rajesh should make the deck
           <quantity>
             <mag>2</mag><unit base="foot"/>
@@ -997,18 +814,17 @@
     <exercise>
       <statement>
         <p>
-          If you use factoring to solve a polynomial equation,
-          what number should be the only thing on one side of the equation?
+          If you use factoring to solve a polynomial equation, what number should be the only thing
+          on one side of the equation?
         </p>
       </statement>
     </exercise>
     <exercise>
       <statement>
         <p>
-          When you are trying to solve a quadratic equation where the leading coefficient is not <m>1</m>m
-          and you want to use factoring,
-          and you have moved all terms to one side so that the other side is <m>0</m>,
-          what should you look for before trying anything else?
+          When you are trying to solve a quadratic equation where the leading coefficient is not
+          <m>1</m>, and you want to use factoring, and you have moved all terms to one side so that
+          the other side is <m>0</m>, what should you look for before trying anything else?
         </p>
       </statement>
     </exercise>

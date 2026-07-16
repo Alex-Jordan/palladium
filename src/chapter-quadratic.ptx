@@ -7,10 +7,13 @@
   <title>Quadratic</title>
   <introduction>
     <p>
-      Needs introduction.
+      In this chapter, we move beyond linear functions to study the next most evolved type of
+      function, a <term>quadratic function</term>. To understand quadratic functions better, we also
+      learn some things about <term>polynomials</term> in general. 
     </p>
   </introduction>
   <xi:include href="section-factoring.ptx"/>
+  <xi:include href="section-quadratic-functions.ptx"/>
   <xi:include href="section-solving-quadratic-equations-by-factoring.ptx"/>
   <xi:include href="section-solving-quadratic-equations-by-using-a-square-root.ptx"/>
   <xi:include href="section-the-quadratic-formula.ptx"/>

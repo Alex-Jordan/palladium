@@ -5,15 +5,14 @@
 <!-- *********************************************************************-->
 
 <section xml:id="section-factoring">
-  <title>Factoring Out the Common Factor</title>
+  <title>Factoring</title>
 
   <introduction>
     <p>
-      You might already know how to multiply polynomials. For example starting with
-      <m>(x+2)(x+3)</m> and ending up with <m>x^2+5x+6</m>. This section is about the
-      <em>opposite</em> process. We will start with something like <m>x^2+5x+6</m> and it's a bit
-      like we reverse engineer that it comes from <m>(x+2)(x+3)</m>. This is called
-      <term>factoring</term>.
+      You might already know how to multiply polynomials. That's the process where you start with
+      something like <m>(x+2)(x+3)</m> and end up with <m>x^2+5x+6</m>. This section is about the
+      <em>opposite</em> process. We start with something like <m>x^2+5x+6</m> and we need to reverse
+      engineer that it comes from <m>(x+2)(x+3)</m>. This is called <term>factoring</term>.
     </p>
 
     <!-- <figure>
@@ -37,40 +36,43 @@
       <m>\frac{7\cdot19}{9\cdot19}</m>. Now you can see that the factors of <m>19</m> cancel. We
       actually have a less intimidating fraction to work with: <m>\frac79</m>.
     </p>
-    <sidebyside widths="47% 47%" margins="0%">
-      <p>
-        There are more reasons to learn and appreciate factoring. One of them is that there is a
-        relationship between a factored polynomial function and the horizontal intercepts of its
-        graph. For example in the graph of <m>f</m> where <m>f(x)=(x+2)(x-3)</m>, the horizontal
-        intercepts are <m>(-2,0)</m> and <m>(3,0)</m>. The <m>x</m>-values for these intercepts
-        are <m>-2</m> and <m>3</m>. Think about what happens when you subsitutue those numbers in
-        for <m>x</m> in <m>f(x)=(x+2)(x-3)</m>.
-      </p>
-      <figure>
-        <caption>A graph of <m>y=(x+2)(x-3)</m></caption>
-        <image>
-          <shortdescription></shortdescription>
-          <latex-image>
-            \begin{tikzpicture}
-              \begin{axis}[
-                  xmin=-4,
-                  xmax=5,
-                  ymin=-8,
-                  ymax=10,
-                  xtick={-3,-2,...,4},
-                  minor xtick={-4,-3,...,5},
-                  ytick={-6,-4,...,8},
-                  minor ytick={-8,-7,...,10},
-                ]
-                \addplot[firstcurve,domain=-3.531:4.531] {x^2-x-6};
-                \addplot[color=secondcolor,soliddot] coordinates {(3,0)} node[above left] {$(3,0)$};
-                \addplot[color=secondcolor,soliddot] coordinates {(-2,0)} node[above right] {$(-2,0)$};
-              \end{axis}
-            \end{tikzpicture}
-          </latex-image>
-        </image>
-      </figure>
-    </sidebyside>
+    <p>
+      There are more reasons to learn and appreciate factoring. One of them is that there is a
+      relationship between a factored polynomial function and the horizontal intercepts of its
+      graph. For example in the graph of <m>f</m> where <m>f(x)=(x+2)(x-3)</m>, the horizontal
+      intercepts are <m>(-2,0)</m> and <m>(3,0)</m>. The <m>x</m>-values for these intercepts
+      are <m>-2</m> and <m>3</m>. Think about what happens when you subsitutue those numbers into
+      the formula for <m>f</m>.
+    </p>
+    <figure>
+      <caption>A graph of <m>y=(x+2)(x-3)</m></caption>
+      <image width="60%">
+        <shortdescription></shortdescription>
+        <latex-image>
+          \begin{tikzpicture}
+            \begin{axis}[
+                xmin=-4,
+                xmax=5,
+                ymin=-8,
+                ymax=10,
+                xtick={-3,-2,...,4},
+                minor xtick={-4,-3,...,5},
+                ytick={-6,-4,...,8},
+                minor ytick={-8,-7,...,10},
+                width=0.6\orccaprintwidth
+              ]
+              \addplot[firstcurve,domain=-3.531:4.531] {x^2-x-6};
+              \addplot[color=secondcolor,soliddot] coordinates {(3,0)} node[above left] {$(3,0)$};
+              \addplot[color=secondcolor,soliddot] coordinates {(-2,0)} node[above right] {$(-2,0)$};
+            \end{axis}
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+    <p>
+      So having the factored expression for <m>f</m>, <m>f()=(x+2)(x-3)</m>, can reveal to us
+      immediately where the horizontal intercepts are.
+    </p>
   </subsection>
 
   <subsection>
@@ -119,6 +121,9 @@
               Since <m>6x</m> completely factors as <m>\attention{2}\cdot3\cdot \attention{x}</m>
               <ellipsis/> and <m>8x</m> completely factors as
               <m>\attention{2}\cdot2\cdot2\cdot \attention{x}</m>, <ellipsis/>
+            </p>
+            <p>
+              <ellipsis/> the greatest common factor is <m>2x</m>.
             </p>
           </solution>
         </task>
@@ -251,6 +256,7 @@
           </li>
           <li>
             <p>
+              Write some of the answer down, leaving space for terms we will find in a last step:
               <m>3x(\phantom{4x}+\phantom{5})</m>
             </p>
           </li>
@@ -277,21 +283,21 @@
           </li>
           <li>
             <p>
-              We write: <me>3x^3+3x^2-9=3(\phantom{x^2}+\phantom{x^2}-\phantom{3})</me>.
+              We write: <md>3x^3+3x^2-9=3(\phantom{x^2}+\phantom{x^2}-\phantom{3})</md>.
             </p>
           </li>
           <li>
             <p>
-              We ask the question <q><m>3</m> times what gives <m>3x^3</m>?</q> The answer is
-              <m>x^3</m>. Now we have: <me>3x^3+3x^2-9=3(x^3+\phantom{x^2}-\phantom{3})</me>.
+              We ask the question, <m>3</m> times what gives <m>3x^3</m>? The answer is
+              <m>x^3</m>. Now we have: <md>3x^3+3x^2-9=3(x^3+\phantom{x^2}-\phantom{3})</md>.
             </p>
             <p>
-              We ask the question <q><m>3</m> times what gives <m>3x^2</m>?</q> The answer is
-              <m>x^2</m>. Now we have: <me>3x^3+3x^2-9=3(x^3+x^2-\phantom{3})</me>.
+              We ask the question, <m>3</m> times what gives <m>3x^2</m>? The answer is
+              <m>x^2</m>. Now we have: <md>3x^3+3x^2-9=3(x^3+x^2-\phantom{3})</md>.
             </p>
             <p>
-              We ask the question <q><m>3</m> times what gives <m>9</m>?</q> The answer is <m>3</m>.
-              Now we have: <me>3x^3+3x^2-9=3(x^3+x^2-3)</me>.
+              We ask the question, <m>3</m> times what gives <m>9</m>? The answer is <m>3</m>.
+              Now we have: <md>3x^3+3x^2-9=3(x^3+x^2-3)</md>.
             </p>
           </li>
         </ol>
@@ -481,9 +487,9 @@
         Notice that the terms are not in the standard order where the powers of <m>n</m> decrease as
         you read left to right. It's usually best practice to rearrange the terms into standard
         order first.
-        <me>
+        <md>
           14-7n^2+28n^4-21n=28n^4-7n^2-21n+14
-        </me>.
+        </md>.
       </p>
       <p>
         Now this is like earlier examples. The number <m>7</m> divides all of the numerical
@@ -522,12 +528,18 @@
     </example>
   </subsection>
 
-  <subsection>
-    <title>Factoring Trinomials by Listing Factor Pairs</title>                                               <idx><h>factoring</h><h>with factor pairs</h></idx>
+  <subsection xml:id="subsection-factoring-monic-quadratic-trinomials">
+    <title>Factoring Monic Quadratic Trinomials</title>                                                       <idx><h>factoring</h><h>with factor pairs</h></idx>
     <p>
-      A trinomial like <m>x^2+5x+6</m> doesn't have a greatest common factor, and yet it
-      <em>can</em> be factored as <m>(x+2)(x+3)</m>. Now we will learn a process for factoring
-      polynomials like this one.
+      A trinomial like <m>x^2+5x+6</m> is a <q>monic, quadratic trinomial</q>. It's a
+      <q>trinomial</q> because it has three terms. It is <q>quadratic</q> because the highest degree
+      term is degree <m>2</m>. And it's <q>monic</q> because the leading coefficient (the number
+      being multiplied by <m>x^2</m>) is <m>1</m>.
+    </p>
+    <p>
+      When a a polynomial is a monic, quadratic trinomial, it doesn't have a greatest common factor,
+      and yet it <em>might</em> be factorable. In this case, <m>x^2+5x+6</m> can be factored as
+      <m>(x+2)(x+3)</m>. Now we will learn a process for factoring polynomials like this one.
     </p>
 
     <p>
@@ -689,7 +701,8 @@
       <sidebyside widths="47% 47%" margins="0%">
         <p>
           <md>
-            <mrow>(x+5)(x+8)\amp=(x+5)\cdot x+(x+5)\cdot8</mrow>
+            <mrow>\amp(x+5)(x+8)</mrow>
+            <mrow>\amp=(x+5)\cdot x+(x+5)\cdot8</mrow>
             <mrow>\amp=x^2+5x+8x+40</mrow>
             <mrow>\amp\confirm{=}x^2+13x+40</mrow>
           </md>
@@ -748,7 +761,7 @@
       <solution>
         <p>
           We need a pair of numbers that multiply to <m>24</m> and add to <m>-11</m>. Note that we
-          <em>do</em> track that the mystery numbers need to add to a negative total.
+          will track that the mystery numbers need to add to a <em>negative</em> total.
         </p>
         <sidebyside widths="47% 47%">
           <tabular>
@@ -856,8 +869,8 @@
       </statement>
       <solution>
         <p>
-          We need a pair of numbers that multiply to <m>-6</m> and add to <m>5</m>. We <em>do</em>
-          track that the mystery numbers need to multiply to a negative product.
+          We need a pair of numbers that multiply to <m>-6</m> and add to <m>5</m>. We will track
+          that the mystery numbers need to multiply to a <em>negative</em> product.
         </p>
 
         <sidebyside widths="47% 47%">
@@ -1014,9 +1027,9 @@
       <solution>
         <p>
           We first factor out the common factor, <m>2</m>:
-          <me>
+          <md>
             2z^2-6z-80=2\left(z^2-3z-40\right)
-          </me>
+          </md>
           Now we are left with a factored expression that might factor more. Looking inside the
           parentheses, what two numbers multiply to be <m>-40</m> and add to be <m>-3</m>? Since
           <m>5</m> and <m>-8</m> do the job, the full factorization is:
@@ -1039,11 +1052,11 @@
           The three terms don't exactly have a common factor, but as discussed in
           <xref ref="example-negative-leading-coefficient"/>, when the leading term has a negative
           sign, we recommend that you factor out that negative sign:
-          <me>
+          <md>
             -r^2+2r+24=-\mathopen{}\left(r^2-2r-24\right)\mathclose{}
-          </me>.
+          </md>.
           Looking inside the parentheses, what two numbers multiply to make <m>-24</m> and add to
-          make <m>-2</m>?</q> Since <m>-6</m> and <m>4</m> work here and the full factorization is
+          make <m>-2</m>? Since <m>-6</m> and <m>4</m> work here and the full factorization is
           shown:
           <md>
             <mrow>-r^2+2r+24\amp=-\mathopen{}\left(r^2-2r-24\right)\mathclose{}</mrow>
@@ -1063,9 +1076,9 @@
         <mrow>\amp=x^2-b^2</mrow>
       </md>.
       The <m>-bx</m> and the <m>+bx</m> cancel each other out. So this is telling us that
-      <me>
+      <md>
         x^2-b^2=(x-b)(x+b)
-      </me>.
+      </md>.
       And so if we ever encounter a polynomial of the form <m>x^2-b^2</m> (a <q>difference of
       squares</q>) then we have a quick formula for factoring it. Just identify what <q><m>b</m></q>
       is, and use that in <m>(x-b)(x+b)</m>.
@@ -1075,6 +1088,352 @@
       To use this formula, it's important to recognize which numbers are perfect squares, as in
       <xref ref="figure-perfect-squares"/>.
     </p>
+
+    <figure xml:id="figure-perfect-squares">
+      <caption>Multiplication table with squares</caption>
+      <tabular top="major" bottom="minor" left="major" right="minor" halign="center">
+        <col right="medium" />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col right="major"/>
+        <row bottom="medium">
+          <cell><m>\times</m></cell>
+          <cell><m>1</m></cell>
+          <cell><m>2</m></cell>
+          <cell><m>3</m></cell>
+          <cell><m>4</m></cell>
+          <cell><m>5</m></cell>
+          <cell><m>6</m></cell>
+          <cell><m>7</m></cell>
+          <cell><m>8</m></cell>
+          <cell><m>9</m></cell>
+          <cell><m>10</m></cell>
+          <cell><m>11</m></cell>
+          <cell><m>12</m></cell>
+          <cell><m>13</m></cell>
+          <cell><m>14</m></cell>
+          <cell><m>15</m></cell>
+          <cell><m>16</m></cell>
+        </row>
+        <row>
+          <cell><m>1</m></cell>
+          <cell><m>1</m></cell>
+          <cell><m>\lowlight{2}</m></cell>
+          <cell><m>\lowlight{3}</m></cell>
+          <cell><m>\lowlight{4}</m></cell>
+          <cell><m>\lowlight{5}</m></cell>
+          <cell><m>\lowlight{6}</m></cell>
+          <cell><m>\lowlight{7}</m></cell>
+          <cell><m>\lowlight{8}</m></cell>
+          <cell><m>\lowlight{9}</m></cell>
+          <cell><m>\lowlight{10}</m></cell>
+          <cell><m>\lowlight{11}</m></cell>
+          <cell><m>\lowlight{12}</m></cell>
+          <cell><m>\lowlight{13}</m></cell>
+          <cell><m>\lowlight{14}</m></cell>
+          <cell><m>\lowlight{15}</m></cell>
+          <cell><m>\lowlight{16}</m></cell>
+        </row>
+        <row>
+          <cell><m>2</m></cell>
+          <cell><m>\lowlight{2}</m></cell>
+          <cell><m>4</m></cell>
+          <cell><m>\lowlight{6}</m></cell>
+          <cell><m>\lowlight{8}</m></cell>
+          <cell><m>\lowlight{10}</m></cell>
+          <cell><m>\lowlight{12}</m></cell>
+          <cell><m>\lowlight{14}</m></cell>
+          <cell><m>\lowlight{16}</m></cell>
+          <cell><m>\lowlight{18}</m></cell>
+          <cell><m>\lowlight{20}</m></cell>
+          <cell><m>\lowlight{22}</m></cell>
+          <cell><m>\lowlight{24}</m></cell>
+          <cell><m>\lowlight{26}</m></cell>
+          <cell><m>\lowlight{28}</m></cell>
+          <cell><m>\lowlight{30}</m></cell>
+          <cell><m>\lowlight{32}</m></cell>
+        </row>
+        <row>
+          <cell><m>3</m></cell>
+          <cell><m>\lowlight{3}</m></cell>
+          <cell><m>\lowlight{6}</m></cell>
+          <cell><m>9</m></cell>
+          <cell><m>\lowlight{12}</m></cell>
+          <cell><m>\lowlight{15}</m></cell>
+          <cell><m>\lowlight{18}</m></cell>
+          <cell><m>\lowlight{21}</m></cell>
+          <cell><m>\lowlight{24}</m></cell>
+          <cell><m>\lowlight{27}</m></cell>
+          <cell><m>\lowlight{30}</m></cell>
+          <cell><m>\lowlight{33}</m></cell>
+          <cell><m>\lowlight{36}</m></cell>
+          <cell><m>\lowlight{39}</m></cell>
+          <cell><m>\lowlight{42}</m></cell>
+          <cell><m>\lowlight{45}</m></cell>
+          <cell><m>\lowlight{48}</m></cell>
+        </row>
+        <row>
+          <cell><m>4</m></cell>
+          <cell><m>\lowlight{4}</m></cell>
+          <cell><m>\lowlight{8}</m></cell>
+          <cell><m>\lowlight{12}</m></cell>
+          <cell><m>16</m></cell>
+          <cell><m>\lowlight{20}</m></cell>
+          <cell><m>\lowlight{24}</m></cell>
+          <cell><m>\lowlight{28}</m></cell>
+          <cell><m>\lowlight{32}</m></cell>
+          <cell><m>\lowlight{36}</m></cell>
+          <cell><m>\lowlight{40}</m></cell>
+          <cell><m>\lowlight{44}</m></cell>
+          <cell><m>\lowlight{48}</m></cell>
+          <cell><m>\lowlight{52}</m></cell>
+          <cell><m>\lowlight{56}</m></cell>
+          <cell><m>\lowlight{60}</m></cell>
+          <cell><m>\lowlight{64}</m></cell>
+        </row>
+        <row>
+          <cell><m>5</m></cell>
+          <cell><m>\lowlight{5}</m></cell>
+          <cell><m>\lowlight{10}</m></cell>
+          <cell><m>\lowlight{15}</m></cell>
+          <cell><m>\lowlight{20}</m></cell>
+          <cell><m>25</m></cell>
+          <cell><m>\lowlight{30}</m></cell>
+          <cell><m>\lowlight{35}</m></cell>
+          <cell><m>\lowlight{40}</m></cell>
+          <cell><m>\lowlight{45}</m></cell>
+          <cell><m>\lowlight{50}</m></cell>
+          <cell><m>\lowlight{55}</m></cell>
+          <cell><m>\lowlight{60}</m></cell>
+          <cell><m>\lowlight{65}</m></cell>
+          <cell><m>\lowlight{70}</m></cell>
+          <cell><m>\lowlight{75}</m></cell>
+          <cell><m>\lowlight{80}</m></cell>
+        </row>
+        <row>
+          <cell><m>6</m></cell>
+          <cell><m>\lowlight{6}</m></cell>
+          <cell><m>\lowlight{12}</m></cell>
+          <cell><m>\lowlight{18}</m></cell>
+          <cell><m>\lowlight{24}</m></cell>
+          <cell><m>\lowlight{30}</m></cell>
+          <cell><m>36</m></cell>
+          <cell><m>\lowlight{42}</m></cell>
+          <cell><m>\lowlight{48}</m></cell>
+          <cell><m>\lowlight{54}</m></cell>
+          <cell><m>\lowlight{60}</m></cell>
+          <cell><m>\lowlight{66}</m></cell>
+          <cell><m>\lowlight{72}</m></cell>
+          <cell><m>\lowlight{78}</m></cell>
+          <cell><m>\lowlight{84}</m></cell>
+          <cell><m>\lowlight{90}</m></cell>
+          <cell><m>\lowlight{96}</m></cell>
+        </row>
+        <row>
+          <cell><m>7</m></cell>
+          <cell><m>\lowlight{7}</m></cell>
+          <cell><m>\lowlight{14}</m></cell>
+          <cell><m>\lowlight{21}</m></cell>
+          <cell><m>\lowlight{28}</m></cell>
+          <cell><m>\lowlight{35}</m></cell>
+          <cell><m>\lowlight{42}</m></cell>
+          <cell><m>49</m></cell>
+          <cell><m>\lowlight{56}</m></cell>
+          <cell><m>\lowlight{63}</m></cell>
+          <cell><m>\lowlight{70}</m></cell>
+          <cell><m>\lowlight{77}</m></cell>
+          <cell><m>\lowlight{84}</m></cell>
+          <cell><m>\lowlight{91}</m></cell>
+          <cell><m>\lowlight{98}</m></cell>
+          <cell><m>\lowlight{105}</m></cell>
+          <cell><m>\lowlight{112}</m></cell>
+        </row>
+        <row>
+          <cell><m>8</m></cell>
+          <cell><m>\lowlight{8}</m></cell>
+          <cell><m>\lowlight{16}</m></cell>
+          <cell><m>\lowlight{24}</m></cell>
+          <cell><m>\lowlight{32}</m></cell>
+          <cell><m>\lowlight{40}</m></cell>
+          <cell><m>\lowlight{48}</m></cell>
+          <cell><m>\lowlight{56}</m></cell>
+          <cell><m>64</m></cell>
+          <cell><m>\lowlight{72}</m></cell>
+          <cell><m>\lowlight{80}</m></cell>
+          <cell><m>\lowlight{88}</m></cell>
+          <cell><m>\lowlight{96}</m></cell>
+          <cell><m>\lowlight{104}</m></cell>
+          <cell><m>\lowlight{112}</m></cell>
+          <cell><m>\lowlight{120}</m></cell>
+          <cell><m>\lowlight{128}</m></cell>
+        </row>
+        <row>
+          <cell><m>9</m></cell>
+          <cell><m>\lowlight{9}</m></cell>
+          <cell><m>\lowlight{18}</m></cell>
+          <cell><m>\lowlight{27}</m></cell>
+          <cell><m>\lowlight{36}</m></cell>
+          <cell><m>\lowlight{45}</m></cell>
+          <cell><m>\lowlight{54}</m></cell>
+          <cell><m>\lowlight{63}</m></cell>
+          <cell><m>\lowlight{72}</m></cell>
+          <cell><m>81</m></cell>
+          <cell><m>\lowlight{90}</m></cell>
+          <cell><m>\lowlight{99}</m></cell>
+          <cell><m>\lowlight{108}</m></cell>
+          <cell><m>\lowlight{117}</m></cell>
+          <cell><m>\lowlight{126}</m></cell>
+          <cell><m>\lowlight{135}</m></cell>
+          <cell><m>\lowlight{144}</m></cell>
+        </row>
+        <row>
+          <cell><m>10</m></cell>
+          <cell><m>\lowlight{10}</m></cell>
+          <cell><m>\lowlight{20}</m></cell>
+          <cell><m>\lowlight{30}</m></cell>
+          <cell><m>\lowlight{40}</m></cell>
+          <cell><m>\lowlight{50}</m></cell>
+          <cell><m>\lowlight{60}</m></cell>
+          <cell><m>\lowlight{70}</m></cell>
+          <cell><m>\lowlight{80}</m></cell>
+          <cell><m>\lowlight{90}</m></cell>
+          <cell><m>100</m></cell>
+          <cell><m>\lowlight{110}</m></cell>
+          <cell><m>\lowlight{120}</m></cell>
+          <cell><m>\lowlight{130}</m></cell>
+          <cell><m>\lowlight{140}</m></cell>
+          <cell><m>\lowlight{150}</m></cell>
+          <cell><m>\lowlight{160}</m></cell>
+        </row>
+        <row>
+          <cell><m>11</m></cell>
+          <cell><m>\lowlight{11}</m></cell>
+          <cell><m>\lowlight{22}</m></cell>
+          <cell><m>\lowlight{33}</m></cell>
+          <cell><m>\lowlight{44}</m></cell>
+          <cell><m>\lowlight{55}</m></cell>
+          <cell><m>\lowlight{66}</m></cell>
+          <cell><m>\lowlight{77}</m></cell>
+          <cell><m>\lowlight{88}</m></cell>
+          <cell><m>\lowlight{99}</m></cell>
+          <cell><m>\lowlight{110}</m></cell>
+          <cell><m>121</m></cell>
+          <cell><m>\lowlight{132}</m></cell>
+          <cell><m>\lowlight{143}</m></cell>
+          <cell><m>\lowlight{154}</m></cell>
+          <cell><m>\lowlight{165}</m></cell>
+          <cell><m>\lowlight{176}</m></cell>
+        </row>
+        <row>
+          <cell><m>12</m></cell>
+          <cell><m>\lowlight{12}</m></cell>
+          <cell><m>\lowlight{24}</m></cell>
+          <cell><m>\lowlight{36}</m></cell>
+          <cell><m>\lowlight{48}</m></cell>
+          <cell><m>\lowlight{60}</m></cell>
+          <cell><m>\lowlight{72}</m></cell>
+          <cell><m>\lowlight{84}</m></cell>
+          <cell><m>\lowlight{96}</m></cell>
+          <cell><m>\lowlight{108}</m></cell>
+          <cell><m>\lowlight{120}</m></cell>
+          <cell><m>\lowlight{132}</m></cell>
+          <cell><m>144</m></cell>
+          <cell><m>\lowlight{156}</m></cell>
+          <cell><m>\lowlight{168}</m></cell>
+          <cell><m>\lowlight{180}</m></cell>
+          <cell><m>\lowlight{192}</m></cell>
+        </row>
+        <row>
+          <cell><m>13</m></cell>
+          <cell><m>\lowlight{13}</m></cell>
+          <cell><m>\lowlight{26}</m></cell>
+          <cell><m>\lowlight{39}</m></cell>
+          <cell><m>\lowlight{52}</m></cell>
+          <cell><m>\lowlight{65}</m></cell>
+          <cell><m>\lowlight{78}</m></cell>
+          <cell><m>\lowlight{91}</m></cell>
+          <cell><m>\lowlight{104}</m></cell>
+          <cell><m>\lowlight{117}</m></cell>
+          <cell><m>\lowlight{130}</m></cell>
+          <cell><m>\lowlight{143}</m></cell>
+          <cell><m>\lowlight{156}</m></cell>
+          <cell><m>169</m></cell>
+          <cell><m>\lowlight{182}</m></cell>
+          <cell><m>\lowlight{195}</m></cell>
+          <cell><m>\lowlight{208}</m></cell>
+        </row>
+        <row>
+          <cell><m>14</m></cell>
+          <cell><m>\lowlight{14}</m></cell>
+          <cell><m>\lowlight{28}</m></cell>
+          <cell><m>\lowlight{42}</m></cell>
+          <cell><m>\lowlight{56}</m></cell>
+          <cell><m>\lowlight{70}</m></cell>
+          <cell><m>\lowlight{84}</m></cell>
+          <cell><m>\lowlight{98}</m></cell>
+          <cell><m>\lowlight{112}</m></cell>
+          <cell><m>\lowlight{126}</m></cell>
+          <cell><m>\lowlight{140}</m></cell>
+          <cell><m>\lowlight{154}</m></cell>
+          <cell><m>\lowlight{168}</m></cell>
+          <cell><m>\lowlight{182}</m></cell>
+          <cell><m>196</m></cell>
+          <cell><m>\lowlight{210}</m></cell>
+          <cell><m>\lowlight{224}</m></cell>
+        </row>
+        <row>
+          <cell><m>15</m></cell>
+          <cell><m>\lowlight{15}</m></cell>
+          <cell><m>\lowlight{30}</m></cell>
+          <cell><m>\lowlight{45}</m></cell>
+          <cell><m>\lowlight{60}</m></cell>
+          <cell><m>\lowlight{75}</m></cell>
+          <cell><m>\lowlight{90}</m></cell>
+          <cell><m>\lowlight{105}</m></cell>
+          <cell><m>\lowlight{120}</m></cell>
+          <cell><m>\lowlight{135}</m></cell>
+          <cell><m>\lowlight{150}</m></cell>
+          <cell><m>\lowlight{165}</m></cell>
+          <cell><m>\lowlight{180}</m></cell>
+          <cell><m>\lowlight{195}</m></cell>
+          <cell><m>\lowlight{210}</m></cell>
+          <cell><m>225</m></cell>
+          <cell><m>\lowlight{240}</m></cell>
+        </row>
+        <row bottom="major">
+          <cell><m>16</m></cell>
+          <cell><m>\lowlight{16}</m></cell>
+          <cell><m>\lowlight{32}</m></cell>
+          <cell><m>\lowlight{48}</m></cell>
+          <cell><m>\lowlight{64}</m></cell>
+          <cell><m>\lowlight{80}</m></cell>
+          <cell><m>\lowlight{96}</m></cell>
+          <cell><m>\lowlight{112}</m></cell>
+          <cell><m>\lowlight{128}</m></cell>
+          <cell><m>\lowlight{144}</m></cell>
+          <cell><m>\lowlight{160}</m></cell>
+          <cell><m>\lowlight{176}</m></cell>
+          <cell><m>\lowlight{192}</m></cell>
+          <cell><m>\lowlight{208}</m></cell>
+          <cell><m>\lowlight{224}</m></cell>
+          <cell><m>\lowlight{240}</m></cell>
+          <cell><m>256</m></cell>
+        </row>
+      </tabular>
+    </figure>
 
     <example>
       <statement>
@@ -1102,9 +1461,6 @@
       </introduction>
 
       <webwork>
-        <pg-macros>
-          <macro-file>contextLimitedFactor.pl</macro-file>
-        </pg-macros>
         <pg-code>
           Context("LimitedFactor");
           $answer = Formula("(x-7)(x+7)");
@@ -1140,9 +1496,9 @@
       <statement>
         <p>
           If <m>A</m> and <m>B</m> are any algebraic expressions, then:
-          <me>
+          <md>
             A^2 - B^2 = (A-B)(A+B)
-          </me>.
+          </md>.
         </p>
       </statement>
     </fact>
@@ -1167,27 +1523,6 @@
       </solution>
     </example>
 
-    <example>
-      <statement>
-        <p>
-          Factor <m>m^2n^2-4</m>.
-        </p>
-      </statement>
-      <solution>
-        <p>
-          Is the <q><m>m^2n^2</m></q> at the beginning of this expression a perfect square? By the
-          properties of exponents, it is the same as <m>(mn)^2</m>, so yes, it is a perfect square
-          and we may take <m>A=mn</m>. The <q><m>4</m></q> being subtracted here is also perfect
-          square. We can take <m>B=2</m>. <xref ref="fact-difference-of-squares" text="title"/>
-          tells us:
-          <md>
-            <mrow>m^2n^2-4\amp=(A-B)(A+B)</mrow>
-            <mrow>\amp=(mn-2)(mn+2)</mrow>
-          </md>
-        </p>
-      </solution>
-    </example>
-
     <exercise>
       <introduction>
         <p>
@@ -1196,9 +1531,6 @@
       </introduction>
 
       <webwork>
-        <pg-macros>
-          <macro-file>contextLimitedFactor.pl</macro-file>
-        </pg-macros>
         <pg-code>
           Context("LimitedFactor");
           Context()->variables->are(z=>'Real');
@@ -1270,9 +1602,9 @@
       </md>.
       The <m>BA</m> and the <m>AB</m> equal each other and double up when added together. So this is
       telling us that
-      <me>
+      <md>
         A^2+2AB+B^2=(A+B)^2
-      </me>.
+      </md>.
       And so if we ever encounter a polynomial of the form <m>A^2+2AB+B^2</m> (a <q>perfect square
       trinomial</q>) then we have a quick formula for factoring it.
     </p>
@@ -1336,34 +1668,7 @@
       </solution>
     </example>
 
-    <example>
-      <statement>
-        <p>
-          Factor <m>4x^2-20xy+25y^2</m>.
-        </p>
-      </statement>
-      <solution>
-        <p>
-          The first term, <m>4x^2</m>, is a perfect square because it equals <m>(2x)^2</m>. So we
-          could take <m>A=2x</m>. The last term, <m>25y^2</m>, is also a perfect square since it is
-          equal to <m>(5y)^2</m>. So we could take <m>B=5y</m>. Now we multiply
-          <m>2AB=2\cdot (2x)\cdot(5y)</m>, and the result is <m>20xy</m>. This is the
-          <em>negative</em> of the middle term, which we can work with. The factored form will be
-          <m>(A-B)^2</m> instead of <m>(A+B)^2</m>.
-        </p>
-
-        <p>
-          So we can use <xref ref="fact-perfect-square-trinomial" text="title"/>:
-          <md>
-            <mrow>4x^2-20xy+25y^2\amp=(A-B)^2</mrow>
-            <mrow>\amp=(2x-5y)^2</mrow>
-          </md>
-        </p>
-      </solution>
-    </example>
-
     <exercise>
-
       <introduction>
         <p>
           Try to factor one yourself:
@@ -1371,9 +1676,6 @@
       </introduction>
 
       <webwork>
-        <pg-macros>
-          <macro-file>contextLimitedFactor.pl</macro-file>
-        </pg-macros>
         <pg-code>
           Context("LimitedFactor");
           Context()->variables->are(q=>'Real');
@@ -1421,10 +1723,10 @@
     <remark>
       <p>
         To factor these perfect square trinomials, we <em>could</em> use methods from
-        <xref ref="section-factoring-trinomials-with-leading-coefficient-one"/>. As an exercise for
-        yourself, try to factor each of the three previous examples using those methods. The
-        advantage to using <xref ref="fact-perfect-square-trinomial" text="title"/> is that it is
-        much faster. With some practice, all of the work for using it can be done mentally.
+        <xref ref="subsection-factoring-monic-quadratic-trinomials"/>. As an exercise for yourself,
+        try to factor each of the three previous examples using those methods. The advantage to
+        using <xref ref="fact-perfect-square-trinomial" text="title"/> is that it is much faster.
+        With some practice, all of the work for using it can be done mentally.
       </p>
     </remark>
   </subsection>
@@ -1450,9 +1752,9 @@
         <p>
           The two terms of this polynomial have greatest common factor <m>3z</m>, so the first step
           in factoring should be to factor this out:
-          <me>
+          <md>
             3z\left(4z^2-9\right)
-          </me>.
+          </md>.
           Now we have two factors. There is nothing for us to do with <m>3z</m>, but we should ask
           if <m>\left(4z^2-9\right)</m> can factor further. And in fact, that is a difference of
           squares. So we can apply <xref ref="fact-difference-of-squares" text="title"/>. The full
@@ -1484,34 +1786,49 @@
         </p>
       </solution>
     </example>
+  </subsection>
 
-    <example>
-      <statement>
-        <p>
-          Factor <m>32x^6y^2-48x^5y+18x^4</m>.
-        </p>
-      </statement>
-      <solution>
-        <p>
-          The first step of factoring any polynomial is to factor out the common factor if possible.
-          For this trinomial, the common factor is <m>2x^4</m>, so we write
-          <me>
-            32x^6y^2-48x^5y+18x^4=2x^4(16x^2y^2-24xy+9)
-          </me>.
-        </p>
-
-        <p>
-          The square numbers <m>16</m> and <m>9</m> in <m>16x^2y^2-24xy+9</m> hint that maybe we
-          could use <xref ref="fact-perfect-square-trinomial" text="title"/>. Taking <m>A=4xy</m>
-          and <m>B=3</m>, we multiply <m>2AB=2\cdot(4xy)\cdot 3</m>. The result is <m>24xy</m>,
-          which is the negative of our middle term. So the whole process is:
-          <md>
-            <mrow>32x^6y^2-48x^5y+18x^4\amp=2x^4(16x^2y^2-24xy+9)</mrow>
-            <mrow>\amp=2x^4(4xy-3)^2</mrow>
-          </md>
-        </p>
-      </solution>
-    </example>
+  <subsection>
+    <title>Non-monic Quadratic Trinomials</title>
+    <p>
+      When a quadratic trinomial is not monic (that is, when the leading coefficient is not
+      <m>1</m>) then can it be factored? Sometimes. Is there a process we can follow to factoring
+      it? Yes. For reference, we briefly describe that process here, but there will be no exercises
+      over this skill at the end of the section.
+    </p>
+    <p>
+      For example, consider <m>3x^2-14x-5</m>. This is a quadratic polynomial, but it is not monic.
+      And there is no GCF that we could factor out. One process we can follow is to identify the
+      leading coefficient is <m>3</m>, and then multiply the whole thing by <m>\frac13\cdot3</m> as
+      follows:
+      <md>
+        <mrow>3x^2-14x-5\amp=\frac13\cdot3\left(3x^2-14x-5\right)</mrow>
+        <mrow>\amp=\frac13\left(9x^2-42x-15\right)</mrow>
+      </md>
+      Note that we distributed the <m>3</m> through, but not the fraction <m>\frac13</m>. Now the
+      first term is a perfect square, and the middle term is guaranteed to be divisible by <m>3</m>.
+      So we may write as follows, and introduce a temporary variable <m>y</m> to take the place of
+      <m>3x</m>.
+      <md>
+        <mrow>\frac13\left(9x^2-42x-15\right)\amp=\frac13\left((3x)^2-14(3x)-15\right)</mrow>
+        <mrow>\amp=\frac13\left(y^2-14y-15\right)</mrow>
+      </md>
+      At this point, we <em>do</em> have a monic, quadratic trinomial. We can use the techniqe from
+      <xref ref="subsection-factoring-monic-quadratic-trinomials"/>, followed by recalling that
+      <m>y</m> is just a temporary placeholder standing for <m>3x</m>:
+      <md>
+        <mrow>\frac13\left(y^2-14y-15\right)\amp=\frac13(y-15)(y+1)</mrow>
+        <mrow>\frac13(y-15)(y+1)\amp=\frac13(3x-15)(3x+1)</mrow>
+      </md>
+      At least one (if not both) of the two factors has a GCF that we may factor out, and it is
+      guaranteed that this will cancel the fraction that we've been writing out front:
+      <md>
+        <mrow>\frac13(3x-15)(3x+1)\amp=\frac13\cdot3(x-5)(3x+1)</mrow>
+        <mrow>\amp=(x-5)(3x+1)</mrow>
+      </md>
+      So what we started with, <m>3x^2-14x-5</m>, factors as <m>(x-5)(3x+1)</m>.
+    </p>
+    
   </subsection>
 
   <reading-questions>
@@ -1547,6 +1864,14 @@
     <exercise>
       <statement>
         <p>
+          Describe three ways you could use to check your answer when your task was to factor a
+          polynomial.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
           Describe two special patterns where it is possible to memorize a quick factoring shortcut
           as discussed in this section.
         </p>
@@ -1556,777 +1881,1829 @@
 
   <exercises>
     <subexercises>
-      <title>Review and Warmup</title>
-      <exercisegroup cols="3">
-        <introduction>
-          <p>
-            Multiply the polynomials.
-          </p>
-        </introduction>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication0.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication0.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication5.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication5.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication10.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication10.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication15.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication15.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication25.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication25.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication35.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication35.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication40.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication40.pg"/>
-        </exercise>
-        <exercise>
-          <webwork seed="2" copy="webwork-multiply-polynomials"/>
-        </exercise>
-        <exercise>
-          <webwork seed="3" copy="webwork-multiply-polynomials"/>
-        </exercise>
-        <exercise>
-          <webwork seed="4" copy="webwork-multiply-polynomials-2"/>
-        </exercise>
-        <exercise>
-          <webwork seed="5" copy="webwork-multiply-polynomials-2"/>
-        </exercise>
-      </exercisegroup>
-      <exercisegroup>
-        <introduction>
-          <p>
-            Recognize a special pattern and use that to multiply the polynomials.
-          </p>
-        </introduction>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication195.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication195.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication200.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication200.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication215.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication215.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication160.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication160.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication165.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication165.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication180.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication180.pg"/>
-        </exercise>
-      </exercisegroup>
-    </subexercises>
-
-    <subexercises>
       <title>Skills Practice</title>
       <exercisegroup cols="3">
         <title>Identifying Common Factors</title>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring5.pg"/>
+        <introduction>
+          <p>
+            Find the greatest common factor (GCF) of the given terms.
+          </p>
+        </introduction>
+        <exercise label="find-gcf">
+          <webwork xml:id="webwork-find-gcf">
+            <pg-code>
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context()->variables->are($var=>'Real');
+              ($a, $b) = random_subset(2, 2 .. 9);
+              $answer = OneOf(Compute("$a"),Compute("-$a"));
+              @terms = random_subset(2, Compute("$a $var"), Compute("$a*$b"));
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$terms[0]"/>, <var name="$terms[1]"/></m> 
+              </p>
+              <p>
+                <var name="$answer" width="6"/>
+              </p>
+            </statement>
+          </webwork>
         </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring5.pg"/>
+        <exercise label="find-gcf-copy">
+          <webwork copy="webwork-find-gcf"/>
         </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring10.pg"/>
+        <exercise label="find-gcf-lin-quad">
+          <webwork xml:id="webwork-find-gcf-lin-quad">
+            <pg-code>
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context()->variables->are($var=>'Real');
+              ($a, $b) = random_subset(2, 2 .. 9);
+              $answer = OneOf(Compute("$a $var"),Compute("-$a $var"));
+              @terms = random_subset(2, Compute("$a $var"), Compute("$a*$b $var^2"));
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$terms[0]"/>, <var name="$terms[1]"/></m> 
+              </p>
+              <p>
+                <var name="$answer" width="6"/>
+              </p>
+            </statement>
+          </webwork>
         </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring10.pg"/>
+        <exercise label="find-gcf-lin-quad-copy">
+          <webwork copy="webwork-find-gcf-lin-quad"/>
         </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring15.pg"/>
+        <exercise label="find-gcf-one-neg">
+          <webwork xml:id="webwork-find-gcf-one-neg">
+            <pg-code>
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context()->variables->are($var=>'Real');
+              ($a, $b) = random_subset(2, 2 .. 9);
+              $b = -$b;
+              ($m, $n) = num_sort(random_subset(2, 2 .. 6));
+              $answer = OneOf(Compute("$a $var^$m"),Compute("-$a $var^$m"));
+              @terms = random_subset(2, Compute("$a $var^$m"), Compute("$a*$b $var^$n"));
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$terms[0]"/>, <var name="$terms[1]"/></m> 
+              </p>
+              <p>
+                <var name="$answer" width="6"/>
+              </p>
+            </statement>
+          </webwork>
         </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring15.pg"/>
+        <exercise label="find-gcf-one-neg-copy">
+          <webwork copy="webwork-find-gcf-one-neg"/>
         </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring20.pg"/>
+        <exercise label="find-gcf-nontriv">
+          <webwork xml:id="webwork-find-gcf-nontriv">
+            <pg-code>
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context()->variables->are($var=>'Real');
+              ($a, $b) = random_coprime([2 .. 9], [2 .. 9]);
+              $g = list_random(2 .. 9);
+              $answer = OneOf(Compute("$g"), Compute("-$g"));
+              @terms = random_subset(2, Compute("$a*$g $var"), Compute("$b*$g"));
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$terms[0]"/>, <var name="$terms[1]"/></m> 
+              </p>
+              <p>
+                <var name="$answer" width="6"/>
+              </p>
+            </statement>
+          </webwork>
         </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring20.pg"/>
+        <exercise label="find-gcf-nontriv-copy">
+          <webwork copy="webwork-find-gcf-nontriv"/>
         </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring25.pg"/>
+        <exercise label="find-gcf-nontriv-lin-quad">
+          <webwork xml:id="webwork-find-gcf-nontriv-lin-quad">
+            <pg-code>
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context()->variables->are($var=>'Real');
+              ($a, $b) = random_coprime([2 .. 9], [2 .. 9]);
+              $g = list_random(2 .. 9);
+              $answer = OneOf(Compute("$g $var"), Compute("-$g $var"));
+              @terms = random_subset(2, Compute("$a*$g $var"), Compute("$b*$g $var^2"));
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$terms[0]"/>, <var name="$terms[1]"/></m> 
+              </p>
+              <p>
+                <var name="$answer" width="6"/>
+              </p>
+            </statement>
+          </webwork>
         </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring25.pg"/>
+        <exercise label="find-gcf-nontriv-lin-quad-copy">
+          <webwork copy="webwork-find-gcf-nontriv-lin-quad"/>
         </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring30.pg"/>
+        <exercise label="find-gcf-nontriv-one-neg">
+          <webwork xml:id="webwork-find-gcf-nontriv-one-neg">
+            <pg-code>
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context()->variables->are($var=>'Real');
+              ($a, $b) = random_coprime([2 .. 9], [2 .. 9]);
+              $b = -$b;
+              $g = list_random(2 .. 9);
+              ($m, $n) = num_sort(random_subset(2, 2 .. 6));
+              $answer = OneOf(Compute("$g $var^$m"), Compute("-$g $var^$m"));
+              @terms = random_subset(2, Compute("$a*$g $var^$m"), Compute("$b*$g $var^$n"));
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$terms[0]"/>, <var name="$terms[1]"/></m> 
+              </p>
+              <p>
+                <var name="$answer" width="6"/>
+              </p>
+            </statement>
+          </webwork>
         </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring30.pg"/>
+        <exercise label="find-gcf-nontriv-one-neg-copy">
+          <webwork copy="webwork-find-gcf-nontriv-one-neg"/>
+        </exercise>
+        <exercise label="find-gcf-nontriv-three-terms">
+          <webwork xml:id="webwork-find-gcf-nontriv-three-terms">
+            <pg-code>
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context()->variables->are($var=>'Real');
+              ($a, $b, $c) = random_coprime([2 .. 9], [2 .. 9], [2 .. 9]);
+              $g = list_random(2 .. 9);
+              $answer = OneOf(Compute("$g"), Compute("-$g"));
+              @terms = random_subset(3, Compute("$a*$g"), Compute("$b*$g $var"), Compute("$c*$g $var^2"));
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$terms[0]"/>, <var name="$terms[1]"/>, <var name="$terms[2]"/></m> 
+              </p>
+              <p>
+                <var name="$answer" width="6"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="find-gcf-nontriv-three-terms-copy">
+          <webwork copy="webwork-find-gcf-nontriv-three-terms"/>
+        </exercise>
+        <exercise label="find-gcf-nontriv-three-terms-higher">
+          <webwork xml:id="webwork-find-gcf-nontriv-three-terms-higher">
+            <pg-code>
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context()->variables->are($var=>'Real');
+              ($a, $b, $c) = random_coprime([2 .. 9], [2 .. 9], [2 .. 9]);
+              ($m, $n, $k) = random_subset(3, 2 .. 9);
+              $min = min($m, $n, $k);
+              $g = list_random(2 .. 9);
+              $answer = OneOf(Compute("$g $var^$min"), Compute("-$g $var^$min"));
+              @terms = random_subset(3, Compute("$a*$g $var^$m"), Compute("$b*$g $var^$n"), Compute("$c*$g $var^$k"));
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$terms[0]"/>, <var name="$terms[1]"/>, <var name="$terms[2]"/></m> 
+              </p>
+              <p>
+                <var name="$answer" width="6"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="find-gcf-nontriv-three-terms-higher-copy">
+          <webwork copy="webwork-find-gcf-nontriv-three-terms-higher"/>
         </exercise>
       </exercisegroup>
 
       <exercisegroup cols="2">
-        <title>Factoring out the Common Factor</title>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring36.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring36.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring37.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring37.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring38.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring38.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring41.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring41.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring56.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring56.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring71.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring71.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring76.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring76.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring77.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring77.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring80.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring80.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring85.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring85.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring90.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring90.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring95.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring95.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring100.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring100.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring145.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring145.pg"/>
-        </exercise>
-      </exercisegroup>
-
-      <exercisegroup cols="3">
-        <title>Factoring Trinomials with Leading Coefficient One</title>
-          <!-- One variable trinomial with no GCF -->
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring170.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring170.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring170.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring170.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring175.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring175.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring175.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring175.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring180.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring180.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring180.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring180.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring340.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring340.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring340.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring340.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring345.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring345.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring345.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring345.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring350.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring350.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring350.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring350.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring355.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring355.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring355.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring355.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring520.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring520.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring520.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring520.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring525.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring525.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring525.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring525.pg"/>
-        </exercise>
-          <!-- One variable, GCF -->
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring380.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring380.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring380.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring380.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring385.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring385.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring385.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring385.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring390.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring390.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring390.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring390.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring395.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring395.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring395.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring395.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring400.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring400.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring400.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring400.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring440.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring440.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring440.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring440.pg"/>
-        </exercise>
-          <!-- Multiple variable, no GCF -->
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring360.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring360.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring365.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring365.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring370.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring370.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring540.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring540.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring545.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring545.pg"/>
-        </exercise>
-          <!-- Multiple variable, GCF -->
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring375.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring375.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring405.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring405.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring410.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring410.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring415.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring415.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring420.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring420.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring425.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring425.pg"/>
-        </exercise>
-          <!-- something more -->
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring430.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring430.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring361.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring361.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring366.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring366.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring371.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring371.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring376.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring376.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring381.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring381.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring416.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring416.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring435.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring435.pg"/>
-        </exercise>
-      </exercisegroup>
-
-      <exercisegroup cols="3">
-        <title>Factoring</title>
+        <title>Factoring out the Greatest Common Factor</title>
         <introduction>
           <p>
-            Factor the polynomial. With these exercises, it is important to try to recongize a
-            special pattern can be used. If you factor these using another method, you are missing
-            the opportunity to practice learning the special patterns.
+            Factor the given polynomial.
           </p>
         </introduction>
-        <!-- difference of squares -->
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring445.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring445.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring450.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring450.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring451.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring451.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring452.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring452.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring455.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring455.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring460.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring460.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring465.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring465.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring470.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring470.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring475.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring475.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring480.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring480.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring485.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring485.pg"/>
-        </exercise>
-        <!-- trinomials -->
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring520.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring520.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring525.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring525.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring530.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring530.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring535.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring535.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring536.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring536.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring540.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring540.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring545.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring545.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring550.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring550.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring555.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring555.pg"/>
-        </exercise>
-        <!-- stages -->
-        <!-- diff of squares -->
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring490.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring490.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring495.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring495.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring500.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring500.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring501.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring501.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring515.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring515.pg"/>
-        </exercise>
-        <!-- trinomials -->
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring560.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring560.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring561.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring561.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring565.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring565.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring570.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring570.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring575.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring575.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring580.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring580.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring585.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring585.pg"/>
-        </exercise>
-        <!-- squares -->
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring650.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring650.pg"/>
-        </exercise>
-        <!-- something more -->
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring505.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring505.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring510.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring510.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring640.pg"/>
-        </exercise>
-        <exercise>
-          <webwork source="Contrib/PCC/BasicAlgebra/Factoring/factoring640.pg"/>
+        <exercise label="factor-mxplusm">
+          <webwork xml:id="webwork-factor-mxplusm">
+            <pg-code>
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $m = list_random(2 .. 9);
+              $f = Compute("$m $var + $m");
+              $answer = Compute("$m($var + 1)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m> 
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mxplusm-copy">
+          <webwork copy="webwork-factor-mxplusm"/>
+        </exercise>
+        <exercise label="factor-mxminusm">
+          <webwork xml:id="webwork-factor-mxminusm">
+            <pg-code>
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $m = list_random(2 .. 9);
+              $f = Compute("$m $var - $m");
+              $answer = Compute("$m($var - 1)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m> 
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mxminusm-copy">
+          <webwork copy="webwork-factor-mxminusm"/>
+        </exercise>
+        <exercise label="factor-negmxplusm">
+          <webwork xml:id="webwork-factor-negmxplusm">
+            <pg-code>
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $m = list_random(2 .. 9);
+              $f = Compute("-$m $var - $m");
+              $answer = Compute("-$m($var + 1)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m> 
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-negmxplusm-copy">
+          <webwork copy="webwork-factor-negmxplusm"/>
+        </exercise>
+        <exercise label="factor-mxplusmb">
+          <webwork xml:id="webwork-factor-mxplusmb">
+            <pg-code>
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              ($m,$b) = random_subset(2, 2 .. 9);
+              $mb = $m*$b;
+              $f = Compute("$m $var + $mb");
+              $answer = Compute("$m($var + $b)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m> 
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mxplusmb-copy">
+          <webwork copy="webwork-factor-mxplusmb"/>
+        </exercise>
+        <exercise label="factor-mxminusmb">
+          <webwork xml:id="webwork-factor-mxminusmb">
+            <pg-code>
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              ($m,$b) = random_subset(2, 2 .. 9);
+              $mb = $m*$b;
+              $f = Compute("$m $var - $mb");
+              $answer = Compute("$m($var - $b)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m> 
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mxminusmb-copy">
+          <webwork copy="webwork-factor-mxminusmb"/>
+        </exercise>
+        <exercise label="factor-negmxplusmb">
+          <webwork xml:id="webwork-factor-negmxplusmb">
+            <pg-code>
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              ($m,$b) = random_subset(2, 2 .. 9);
+              $mb = $m*$b;
+              $f = Compute("-$m $var - $mb");
+              $answer = Compute("-$m($var + $b)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m> 
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-negmxplusmb-copy">
+          <webwork copy="webwork-factor-negmxplusmb"/>
+        </exercise>
+        <exercise label="factor-mx2plusb">
+          <webwork xml:id="webwork-factor-mx2plusb">
+            <pg-code>
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              ($m, $b) = random_coprime([2 .. 9], [2 .. 9]);
+              $g = list_random(2 .. 9);
+              ($mg, $bg) = map {$_*$g} ($m, $b);
+              $f = Compute("$mg $var^2 + $bg");
+              $answer = Compute("$g($m $var + $b)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m> 
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mx2plusb-copy">
+          <webwork copy="webwork-factor-mx2plusb"/>
+        </exercise>
+        <exercise label="factor-mx2minusb">
+          <webwork xml:id="webwork-factor-mx2minusb">
+            <pg-code>
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              ($m, $b) = random_coprime([2 .. 9], [2, 3, 5, 6, 7, 8]);
+              $g = list_random(2 .. 9);
+              ($mg, $bg) = map {$_*$g} ($m, $b);
+              $f = Compute("$mg $var^2 - $bg");
+              $answer = Compute("$g($m $var - $b)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m> 
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mx2minusb-copy">
+          <webwork copy="webwork-factor-mx2minusb"/>
+        </exercise>
+        <exercise label="factor-prime-linear">
+          <webwork xml:id="webwork-factor-prime-linear">
+            <pg-code>
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              ($m, $b) = random_coprime([2 .. 9], [2 .. 9]);
+              $b *= list_random(-1, 1);
+              $f = Compute("$m $var + $b");
+              $answer = Compute("$m $var + $b");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m> 
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-prime-linear-copy">
+          <webwork copy="webwork-factor-prime-linear"/>
+        </exercise>
+        <exercise label="factor-prime-quadratic">
+          <webwork xml:id="webwork-factor-prime-quadratic">
+            <pg-code>
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              ($m, $b) = random_coprime([2 .. 9], [2, 3, 5, 6, 7, 8]);
+              $b *= list_random(-1, 1);
+              $f = Compute("$m $var^2 + $b");
+              $answer = Compute("$m $var^2 + $b");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m> 
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-prime-quadratic-copy">
+          <webwork copy="webwork-factor-prime-quadratic"/>
+        </exercise>
+        <exercise label="factor-gcf-trinomial">
+          <webwork xml:id="webwork-factor-gcf-trinomial">
+            <pg-code>
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              do {
+                ($a, $b, $c) = random_coprime([1 .. 9], [1 .. 9], [1 .. 9]);
+              } until (($a > 1 || $b > 1 || $c > 1) &amp;&amp; sqrt(abs($b**2 - 4*$a*$c)) !~ /\d*/);
+              $g = list_random(2 .. 9);
+              ($ga, $gb, $gc) = map {$_*$g} ($a, $b, $c);
+              $f = Compute("$ga $var^2 + $gb $var + $gc");
+              $answer = Compute("$g($a $var^2 + $b $var + $c)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m> 
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-gcf-trinomial-copy">
+          <webwork copy="webwork-factor-gcf-trinomial"/>
+        </exercise>
+        <exercise label="factor-gcf-trinomial-negb">
+          <webwork xml:id="webwork-factor-gcf-trinomial-negb">
+            <pg-code>
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              do {
+                ($a, $b, $c) = random_coprime([1 .. 9], [1 .. 9], [1 .. 9]);
+              } until (($a > 1 || $b > 1 || $c > 1) &amp;&amp; sqrt(abs($b**2 - 4*$a*$c)) !~ /\d*/);
+              $g = list_random(2 .. 9);
+              ($ga, $gb, $gc) = map {$_*$g} ($a, $b, $c);
+              $f = Compute("$ga $var^2 - $gb $var + $gc");
+              $answer = Compute("$g($a $var^2 - $b $var + $c)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m> 
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-gcf-trinomial-negb-copy">
+          <webwork copy="webwork-factor-gcf-trinomial-negb"/>
+        </exercise>
+        <exercise label="factor-gcf-trinomial-higher">
+          <webwork xml:id="webwork-factor-gcf-trinomial-higher">
+            <pg-code>
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              do {
+                ($a, $b, $c) = random_coprime([1 .. 9], [1 .. 9], [1 .. 9]);
+              } until (($a > 1 || $b > 1 || $c > 1) &amp;&amp; sqrt(abs($b**2 - 4*$a*$c)) !~ /\d*/);
+              $g = list_random(2 .. 9);
+              ($ga, $gb, $gc) = map {$_*$g} ($a, $b, $c);
+              $f = Compute("$ga $var^3 + $gb $var^2 + $gc $var");
+              $answer = Compute("$g $var($a $var^2 + $b $var + $c)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m> 
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-gcf-trinomial-higher-copy">
+          <webwork copy="webwork-factor-gcf-trinomial-higher"/>
+        </exercise>  
+      </exercisegroup>
+
+      <exercisegroup cols="3">
+        <title>Factoring Monic Quadratic Trinomials</title>
+        <introduction>
+          <p>
+            Factor the given polynomial.
+          </p>
+        </introduction>
+        <exercise label="factor-mqt-neg-roots">
+          <webwork xml:id="webwork-factor-mqt-neg-roots">
+            <pg-code>
+              @r = random_subset(2, 2..9);
+              $b = $r[0] + $r[1];
+              $c = $r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$var^2 + $b $var + $c")->reduce;
+              $answer = Compute("($var + $r[0])($var + $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mqt-neg-roots-copy">
+          <webwork copy="webwork-factor-mqt-neg-roots"/>
+        </exercise>
+        <exercise label="factor-mqt-neg-roots-one">
+          <webwork xml:id="webwork-factor-mqt-neg-roots-one">
+            <pg-code>
+              @r = (1, list_random(2..9));
+              $b = $r[0] + $r[1];
+              $c = $r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$var^2 + $b $var + $c")->reduce;
+              $answer = Compute("($var + $r[0])($var + $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mqt-neg-roots-one-copy">
+          <webwork copy="webwork-factor-mqt-neg-roots-one"/>
+        </exercise>
+        <exercise label="factor-mqt-pos-roots-one">
+          <webwork xml:id="webwork-factor-mqt-pos-roots-one">
+            <pg-code>
+              @r = (1, list_random(2..9));
+              $b = $r[0] + $r[1];
+              $c = $r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$var^2 - $b $var + $c")->reduce;
+              $answer = Compute("($var - $r[0])($var - $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mqt-pos-roots-one-copy">
+          <webwork copy="webwork-factor-mqt-pos-roots-one"/>
+        </exercise>
+        <exercise label="factor-mqt-pos-roots">
+          <webwork xml:id="webwork-factor-mqt-pos-roots">
+            <pg-code>
+              @r = random_subset(2, 2..9);
+              $b = $r[0] + $r[1];
+              $c = $r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$var^2 - $b $var + $c")->reduce;
+              $answer = Compute("($var - $r[0])($var - $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mqt-pos-roots-copy">
+          <webwork copy="webwork-factor-mqt-pos-roots"/>
+        </exercise>
+        <exercise label="factor-mqt-lg-root-neg">
+          <webwork xml:id="webwork-factor-mqt-lg-root-neg">
+            <pg-code>
+              @r = num_sort(random_subset(2, 2..9));
+              $b = -$r[0] + $r[1];
+              $c = $r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$var^2 + $b $var - $c")->reduce;
+              $answer = Compute("($var - $r[0])($var + $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mqt-lg-root-neg-copy">
+          <webwork copy="webwork-factor-mqt-lg-root-neg"/>
+        </exercise>
+        <exercise label="factor-mqt-lg-root-pos">
+          <webwork xml:id="webwork-factor-mqt-lg-root-pos">
+            <pg-code>
+              @r = num_sort(random_subset(2, 2..9));
+              $b = -$r[0] + $r[1];
+              $c = $r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$var^2 - $b $var - $c")->reduce;
+              $answer = Compute("($var + $r[0])($var - $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mqt-lg-root-pos-copy">
+          <webwork copy="webwork-factor-mqt-lg-root-pos"/>
+        </exercise>
+        <exercise label="factor-mqt-mixed-sign-one">
+          <webwork xml:id="webwork-factor-mqt-mixed-sign-one">
+            <pg-code>
+              @r = (1, list_random(2..9));
+              $r[list_random(0,1)] *= -1;
+              $b = -$r[0] - $r[1];
+              $c = $r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$var^2 + $b $var + $c")->reduce;
+              $answer = Compute("($var - $r[0])($var - $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mqt-mixed-sign-one-copy">
+          <webwork copy="webwork-factor-mqt-mixed-sign-one"/>
+        </exercise>
+        <exercise label="factor-mqt-neg-roots-larger">
+          <webwork xml:id="webwork-factor-mqt-neg-roots-larger">
+            <pg-code>
+              @r = (list_random(4, 6, 9, 10), list_random(8, 12, 18, 27));
+              $b = $r[0] + $r[1];
+              $c = $r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$var^2 + $b $var + $c")->reduce;
+              $answer = Compute("($var + $r[0])($var + $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mqt-neg-roots-larger-copy">
+          <webwork copy="webwork-factor-mqt-neg-roots-larger"/>
+        </exercise>
+        <exercise label="factor-mqt-pos-roots-larger">
+          <webwork xml:id="webwork-factor-mqt-pos-roots-larger">
+            <pg-code>
+              @r = (list_random(4, 6, 9, 10), list_random(8, 12, 18, 27));
+              $b = $r[0] + $r[1];
+              $c = $r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$var^2 - $b $var + $c")->reduce;
+              $answer = Compute("($var - $r[0])($var - $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mqt-pos-roots-larger-copy">
+          <webwork copy="webwork-factor-mqt-pos-roots-larger"/>
+        </exercise>
+        <exercise label="factor-mqt-lg-root-neg-larger">
+          <webwork xml:id="webwork-factor-mqt-lg-root-neg-larger">
+            <pg-code>
+              @r = (list_random(4, 6, 9, 10), list_random(8, 12, 18, 27));
+              $b = -$r[0] + $r[1];
+              $c = $r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$var^2 + $b $var - $c")->reduce;
+              $answer = Compute("($var - $r[0])($var + $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mqt-lg-root-neg-larger-copy">
+          <webwork copy="webwork-factor-mqt-lg-root-neg-larger"/>
+        </exercise>
+        <exercise label="factor-mqt-lg-root-pos-larger">
+          <webwork xml:id="webwork-factor-mqt-lg-root-pos-larger">
+            <pg-code>
+              @r = (list_random(4, 6, 9, 10), list_random(8, 12, 18, 27));
+              $b = -$r[0] + $r[1];
+              $c = $r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$var^2 - $b $var - $c")->reduce;
+              $answer = Compute("($var + $r[0])($var - $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mqt-lg-root-pos-larger-copy">
+          <webwork copy="webwork-factor-mqt-lg-root-pos-larger"/>
+        </exercise>
+        <exercise label="factor-mqt-neg-roots-with-gcf">
+          <webwork xml:id="webwork-factor-mqt-neg-roots-with-gcf">
+            <pg-code>
+              @r = random_subset(2, 2..9);
+              $g = list_random(2..9);
+              $b = $g*($r[0] + $r[1]);
+              $c = $g*$r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$g*$var^2 + $b $var + $c")->reduce;
+              $answer = Compute("$g ($var + $r[0])($var + $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mqt-neg-roots-with-gcf-copy">
+          <webwork copy="webwork-factor-mqt-neg-roots-with-gcf"/>
+        </exercise>
+        <exercise label="factor-mqt-neg-roots-one-with-gcf">
+          <webwork xml:id="webwork-factor-mqt-neg-roots-one-with-gcf">
+            <pg-code>
+              @r = (1, list_random(2..9));
+              $g = list_random(2..9);
+              $b = $g*($r[0] + $r[1]);
+              $c = $g*$r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$g $var^2 + $b $var + $c")->reduce;
+              $answer = Compute("$g ($var + $r[0])($var + $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mqt-neg-roots-one-with-gcf-copy">
+          <webwork copy="webwork-factor-mqt-neg-roots-one-with-gcf"/>
+        </exercise>
+        <exercise label="factor-mqt-pos-roots-one-with-gcf">
+          <webwork xml:id="webwork-factor-mqt-pos-roots-one-with-gcf">
+            <pg-code>
+              @r = (1, list_random(2..9));
+              $g = list_random(2..9);
+              $b = $g*($r[0] + $r[1]);
+              $c = $g*$r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$g $var^2 - $b $var + $c")->reduce;
+              $answer = Compute("$g ($var - $r[0])($var - $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mqt-pos-roots-one-with-gcf-copy">
+          <webwork copy="webwork-factor-mqt-pos-roots-one-with-gcf"/>
+        </exercise>
+        <exercise label="factor-mqt-pos-roots-with-gcf">
+          <webwork xml:id="webwork-factor-mqt-pos-roots-with-gcf">
+            <pg-code>
+              @r = random_subset(2, 2..9);
+              $g = list_random(2..9);
+              $b = $g*($r[0] + $r[1]);
+              $c = $g*$r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$g $var^2 - $b $var + $c")->reduce;
+              $answer = Compute("$g ($var - $r[0])($var - $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mqt-pos-roots-with-gcf-copy">
+          <webwork copy="webwork-factor-mqt-pos-roots-with-gcf"/>
+        </exercise>
+        <exercise label="factor-mqt-lg-root-neg-with-gcf">
+          <webwork xml:id="webwork-factor-mqt-lg-root-neg-with-gcf">
+            <pg-code>
+              @r = num_sort(random_subset(2, 2..9));
+              $g = list_random(2..9);
+              $b = $g*(-$r[0] + $r[1]);
+              $c = $g*$r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$g $var^2 + $b $var - $c")->reduce;
+              $answer = Compute("$g ($var - $r[0])($var + $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mqt-lg-root-neg-with-gcf-copy">
+          <webwork copy="webwork-factor-mqt-lg-root-neg-with-gcf"/>
+        </exercise>
+        <exercise label="factor-mqt-lg-root-pos-with-gcf">
+          <webwork xml:id="webwork-factor-mqt-lg-root-pos-with-gcf">
+            <pg-code>
+              @r = num_sort(random_subset(2, 2..9));
+              $g = list_random(2..9);
+              $b = $g*(-$r[0] + $r[1]);
+              $c = $g*$r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$g $var^2 - $b $var - $c")->reduce;
+              $answer = Compute("$g ($var + $r[0])($var - $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mqt-lg-root-pos-with-gcf-copy">
+          <webwork copy="webwork-factor-mqt-lg-root-pos-with-gcf"/>
+        </exercise>
+        <exercise label="factor-mqt-neg-roots-one-with-gcf-higher">
+          <webwork xml:id="webwork-factor-mqt-neg-roots-one-with-gcf-higher">
+            <pg-code>
+              @r = (1, list_random(2..9));
+              $g = list_random(2..9);
+              $b = $g*($r[0] + $r[1]);
+              $c = $g*$r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$g $var^3 + $b $var^2 + $c $var")->reduce;
+              $answer = Compute("$g $var ($var + $r[0])($var + $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mqt-neg-roots-one-with-gcf-higher-copy">
+          <webwork copy="webwork-factor-mqt-neg-roots-one-with-gcf-higher"/>
+        </exercise>
+        <exercise label="factor-mqt-pos-roots-one-with-gcf-higher">
+          <webwork xml:id="webwork-factor-mqt-pos-roots-one-with-gcf-higher">
+            <pg-code>
+              @r = (1, list_random(2..9));
+              $g = list_random(2..9);
+              $b = $g*($r[0] + $r[1]);
+              $c = $g*$r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$g $var^3 - $b $var^2 + $c $var")->reduce;
+              $answer = Compute("$g $var ($var - $r[0])($var - $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mqt-pos-roots-one-with-gcf-higher-copy">
+          <webwork copy="webwork-factor-mqt-pos-roots-one-with-gcf-higher"/>
+        </exercise>
+        <exercise label="factor-mqt-pos-roots-with-gcf-higher">
+          <webwork xml:id="webwork-factor-mqt-pos-roots-with-gcf-higher">
+            <pg-code>
+              @r = random_subset(2, 2..9);
+              $g = list_random(2..9);
+              $b = $g*($r[0] + $r[1]);
+              $c = $g*$r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$g $var^4 - $b $var^3 + $c $var^2")->reduce;
+              $answer = Compute("$g $var^2($var - $r[0])($var - $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mqt-pos-roots-with-gcf-higher-copy">
+          <webwork copy="webwork-factor-mqt-pos-roots-with-gcf-higher"/>
+        </exercise>
+        <exercise label="factor-mqt-lg-root-pos-with-gcf-higher">
+          <webwork xml:id="webwork-factor-mqt-lg-root-pos-with-gcf-higher">
+            <pg-code>
+              @r = num_sort(random_subset(2, 2..9));
+              $g = list_random(2..9);
+              $b = $g*(-$r[0] + $r[1]);
+              $c = $g*$r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $m = random(5,9);
+              $f = Compute("$g $var^($m+2) - $b $var^($m+1) - $c $var^$m")->reduce;
+              $answer = Compute("$g $var^$m ($var + $r[0])($var - $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mqt-lg-root-pos-with-gcf-higher-copy">
+          <webwork copy="webwork-factor-mqt-lg-root-pos-with-gcf-higher"/>
+        </exercise>
+        <exercise label="factor-mqt-neg-roots-with-neg-gcf">
+          <webwork xml:id="webwork-factor-mqt-neg-roots-with-neg-gcf">
+            <pg-code>
+              @r = random_subset(2, 2..9);
+              $g = list_random(2..9);
+              $b = $g*($r[0] + $r[1]);
+              $c = $g*$r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("-$g*$var^2 - $b $var - $c")->reduce;
+              $answer = Compute("-$g ($var + $r[0])($var + $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mqt-neg-roots-with-neg-gcf-copy">
+          <webwork copy="webwork-factor-mqt-neg-roots-with-neg-gcf"/>
+        </exercise>
+        <exercise label="factor-mqt-pos-roots-one-with-neg-gcf">
+          <webwork xml:id="webwork-factor-mqt-pos-roots-one-with-neg-gcf">
+            <pg-code>
+              @r = (1, list_random(2..9));
+              $g = list_random(2..9);
+              $b = $g*($r[0] + $r[1]);
+              $c = $g*$r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("-$g $var^2 + $b $var - $c")->reduce;
+              $answer = Compute("-$g ($var - $r[0])($var - $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mqt-pos-roots-one-with-neg-gcf-copy">
+          <webwork copy="webwork-factor-mqt-pos-roots-one-with-neg-gcf"/>
+        </exercise>
+        <exercise label="factor-mqt-lg-root-neg-with-neg-gcf">
+          <webwork xml:id="webwork-factor-mqt-lg-root-neg-with-neg-gcf">
+            <pg-code>
+              @r = num_sort(random_subset(2, 2..9));
+              $g = list_random(2..9);
+              $b = $g*(-$r[0] + $r[1]);
+              $c = $g*$r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("-$g $var^2 - $b $var + $c")->reduce;
+              $answer = Compute("-$g ($var - $r[0])($var + $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-mqt-lg-root-neg-with-neg-gcf-copy">
+          <webwork copy="webwork-factor-mqt-lg-root-neg-with-neg-gcf"/>
+        </exercise>
+        <exercise label="factor-with-decimals">
+          <webwork xml:id="webwork-factor-with-decimals">
+            <pg-code>
+              @r = random_subset(2, map {$_/10} (1..9));
+              $b = -$r[0] - $r[1];
+              $c = $r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              Context()->flags->remove("NumberCheck");
+              $f = Compute("$var^2 + $b $var + $c")->reduce;
+              $answer = Compute("($var - $r[0])($var - $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-with-decimals-copy">
+          <webwork copy="webwork-factor-with-decimals"/>
+        </exercise>
+        <exercise label="factor-with-fractions">
+          <webwork xml:id="webwork-factor-with-fractions">
+            <pg-code>
+              Context("Fraction");
+              @r = (1, Fraction(random_coprime([1..9], [2..9])));
+              $b = $r[0] + $r[1];
+              $c = $r[0]*$r[1];
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$var^2 + $b $var + $c");
+              $answer = Compute("($var + $r[0])($var + $r[1])");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-with-fractions-copy">
+          <webwork copy="webwork-factor-with-fractions"/>
+        </exercise>
+      </exercisegroup>
+
+      <exercisegroup cols="3">
+        <title>Factoring Special Patterns</title>
+        <introduction>
+          <p>
+            Factor the polynomial. It is important to try to recognize a special pattern can be
+            used. If you factor these using another method, you are missing the opportunity to
+            practice learning the special patterns.
+          </p>
+        </introduction>
+        <exercise label="factor-diff-sq-one">
+          <webwork xml:id="webwork-factor-diff-sq-one">
+            <pg-code>
+              $r = 1;
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$var^2 - $r**2")->reduce;
+              $answer = Compute("($var + $r)($var - $r)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-diff-sq-one-copy">
+          <webwork copy="webwork-factor-diff-sq-one"/>
+        </exercise>
+        <exercise label="factor-diff-sq-med">
+          <webwork xml:id="webwork-factor-diff-sq-med">
+            <pg-code>
+              $r = list_random(2..10);
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$var^2 - $r**2")->reduce;
+              $answer = Compute("($var + $r)($var - $r)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-diff-sq-med-copy">
+          <webwork copy="webwork-factor-diff-sq-med"/>
+        </exercise>
+        <exercise label="factor-diff-sq-large">
+          <webwork xml:id="webwork-factor-diff-sq-large">
+            <pg-code>
+              $r = list_random(11..16);
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$var^2 - $r**2")->reduce;
+              $answer = Compute("($var + $r)($var - $r)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-diff-sq-large-copy">
+          <webwork copy="webwork-factor-diff-sq-large"/>
+        </exercise>
+        <exercise label="factor-diff-sq-lc">
+          <webwork xml:id="webwork-factor-diff-sq-lc">
+            <pg-code>
+              ($a, $b) = random_coprime([2..9],[2..9]);
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$a**2 $var^2 - $b**2")->reduce;
+              $answer = Compute("($a $var + $b)($a $var - $b)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-diff-sq-lc-copy">
+          <webwork copy="webwork-factor-diff-sq-lc"/>
+        </exercise>
+        <exercise label="factor-diff-sq-lc-one">
+          <webwork xml:id="webwork-factor-diff-sq-lc-one">
+            <pg-code>
+              ($a, $b) = (list_random(2..9), 1);
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$a**2 $var^2 - $b**2")->reduce;
+              $answer = Compute("($a $var + $b)($a $var - $b)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-diff-sq-lc-one-copy">
+          <webwork copy="webwork-factor-diff-sq-lc-one"/>
+        </exercise>
+        <exercise label="factor-diff-sq-lc-large">
+          <webwork xml:id="webwork-factor-diff-sq-lc-large">
+            <pg-code>
+              ($a, $b) = random_coprime([11..16],[11..16]);
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$a**2 $var^2 - $b**2")->reduce;
+              $answer = Compute("($a $var + $b)($a $var - $b)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-diff-sq-lc-large-copy">
+          <webwork copy="webwork-factor-diff-sq-lc-large"/>
+        </exercise>
+        <exercise label="factor-diff-sq-med-reverse">
+          <webwork xml:id="webwork-factor-diff-sq-med-reverse">
+            <pg-code>
+              $r = list_random(2..10);
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$r**2 - $var^2")->reduce;
+              $answer = Compute("($r + $var)($r - $var)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-diff-sq-med-reverse-copy">
+          <webwork copy="webwork-factor-diff-sq-med-reverse"/>
+        </exercise>
+        <exercise label="factor-diff-sq-lc-reverse">
+          <webwork xml:id="webwork-factor-diff-sq-lc-reverse">
+            <pg-code>
+              ($a, $b) = random_coprime([2..9],[2..9]);
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$b**2 - $a**2 $var^2")->reduce;
+              $answer = Compute("($b + $a $var)($b - $a $var)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-diff-sq-lc-reverse-copy">
+          <webwork copy="webwork-factor-diff-sq-lc-reverse"/>
+        </exercise>
+        <exercise label="factor-diff-sq-med-4th">
+          <webwork xml:id="webwork-factor-diff-sq-med-4th">
+            <pg-code>
+              $r = list_random(2,3,5..8);
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$var^4 - $r**2")->reduce;
+              $answer = Compute("($var^2 + $r)($var^2 - $r)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-diff-sq-med-4th-copy">
+          <webwork copy="webwork-factor-diff-sq-med-4th"/>
+        </exercise>
+        <exercise label="factor-diff-sq-med-higher">
+          <webwork xml:id="webwork-factor-diff-sq-med-higher">
+            <pg-code>
+              $r = list_random(2,3,5,6,7,10);
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $n = random(3 .. 9);
+              $f = Compute("$var^(2*$n) - $r**2")->reduce;
+              $answer = Compute("($var^$n + $r)($var^$n - $r)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-diff-sq-med-higher-copy">
+          <webwork copy="webwork-factor-diff-sq-med-higher"/>
+        </exercise>
+        <exercise label="factor-pst-one">
+          <webwork xml:id="webwork-factor-pst-one">
+            <pg-code>
+              $r = 1;
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$var^2 + 2 $var + 1")->reduce;
+              $answer = Compute("($var + 1)^2");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-pst-one-copy">
+          <webwork copy="webwork-factor-pst-one"/>
+        </exercise>
+        <exercise label="factor-pst-one-neg">
+          <webwork xml:id="webwork-factor-pst-one-neg">
+            <pg-code>
+              $r = 1;
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$var^2 - 2 $var + 1")->reduce;
+              $answer = Compute("($var - 1)^2");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-pst-one-neg-copy">
+          <webwork copy="webwork-factor-pst-one-neg"/>
+        </exercise>
+        <exercise label="factor-pst-med">
+          <webwork xml:id="webwork-factor-pst-med">
+            <pg-code>
+              $r = list_random(2..10);
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$var^2 + 2*$r $var + $r**2")->reduce;
+              $answer = Compute("($var + $r)^2");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-pst-med-copy">
+          <webwork copy="webwork-factor-pst-med"/>
+        </exercise>
+        <exercise label="factor-pst-med-neg">
+          <webwork xml:id="webwork-factor-pst-med-neg">
+            <pg-code>
+              $r = list_random(2..10);
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$var^2 - 2*$r $var + $r**2")->reduce;
+              $answer = Compute("($var - $r)^2");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-pst-med-neg-copy">
+          <webwork copy="webwork-factor-pst-med-neg"/>
+        </exercise>
+        <exercise label="factor-pst-med-lc-neg">
+          <webwork xml:id="webwork-factor-pst-med-lc-neg">
+            <pg-code>
+              ($a, $b) = random_coprime([2..9],[2..9]);
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$a**2 $var^2 - 2*$a*$b $var + $b**2")->reduce;
+              $answer = Compute("($a $var - $b)^2");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-pst-med-lc-neg-copy">
+          <webwork copy="webwork-factor-pst-med-lc-neg"/>
+        </exercise>
+        <exercise label="factor-pst-med-lc">
+          <webwork xml:id="webwork-factor-pst-med-lc">
+            <pg-code>
+              ($a, $b) = random_coprime([2..9],[2..9]);
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$a**2 $var^2 + 2*$a*$b $var + $b**2")->reduce;
+              $answer = Compute("($a $var + $b)^2");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-pst-med-lc-copy">
+          <webwork copy="webwork-factor-pst-med-lc"/>
+        </exercise>
+        <exercise label="factor-x4minus1">
+          <webwork xml:id="webwork-factor-x4minus1">
+            <pg-code>
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$var^4 -1")->reduce;
+              $answer = Compute("($var^2 + 1)($var + 1)($var - 1)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-x4minus1-copy">
+          <webwork copy="webwork-factor-x4minus1"/>
+        </exercise>
+        <exercise label="factor-x4minusr4">
+          <webwork xml:id="webwork-factor-x4minusr4">
+            <pg-code>
+              $r = list_random(2..5);
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$var^4 - $r**4")->reduce;
+              $answer = Compute("($var^2 + $r**2)($var + $r)($var - $r)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-x4minusr4-copy">
+          <webwork copy="webwork-factor-x4minusr4"/>
+        </exercise>
+        <exercise label="factor-x2plusr2">
+          <webwork xml:id="webwork-factor-x2plusr2">
+            <pg-code>
+              $r = list_random(2..16);
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$var^2 + $r**2")->reduce;
+              $answer = Compute("$var^2 + $r**2");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-x2plusr2-copy">
+          <webwork copy="webwork-factor-x2plusr2"/>
+        </exercise>
+        <exercise label="factor-diff-sq-one-gcf">
+          <webwork xml:id="webwork-factor-diff-sq-one-gcf">
+            <pg-code>
+              $r = 1;
+              $g = list_random(2..9);
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$g $var^2 - $g*$r**2")->reduce;
+              $answer = Compute("$g($var + $r)($var - $r)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-diff-sq-one-gcf-copy">
+          <webwork copy="webwork-factor-diff-sq-one-gcf"/>
+        </exercise>
+        <exercise label="factor-diff-sq-med-gcf">
+          <webwork xml:id="webwork-factor-diff-sq-med-gcf">
+            <pg-code>
+              $r = list_random(2..10);
+              $g = list_random(2..9);
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$g $var^2 - $g*$r**2")->reduce;
+              $answer = Compute("$g ($var + $r)($var - $r)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-diff-sq-med-gcf-copy">
+          <webwork copy="webwork-factor-diff-sq-med-gcf"/>
+        </exercise>
+        <exercise label="factor-diff-sq-lc-gcf">
+          <webwork xml:id="webwork-factor-diff-sq-lc-gcf">
+            <pg-code>
+              ($a, $b) = random_coprime([2..9],[2..9]);
+              $g = list_random(2..9);
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$g*$a**2 $var^2 - $g*$b**2")->reduce;
+              $answer = Compute("$g ($a $var + $b)($a $var - $b)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-diff-sq-lc-gcf-copy">
+          <webwork copy="webwork-factor-diff-sq-lc-gcf"/>
+        </exercise>
+        <exercise label="factor-diff-sq-one-gcfx">
+          <webwork xml:id="webwork-factor-diff-sq-one-gcfx">
+            <pg-code>
+              $r = 1;
+              $g = list_random(2..9);
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$g $var^3 - $g*$r**2 $var")->reduce;
+              $answer = Compute("$g $var ($var + $r)($var - $r)");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-diff-sq-one-gcfx-copy">
+          <webwork copy="webwork-factor-diff-sq-one-gcfx"/>
+        </exercise>
+        <exercise label="factor-pst-one-gcf">
+          <webwork xml:id="webwork-factor-pst-one-gcf">
+            <pg-code>
+              $r = 1;
+              $g = list_random(2..9);
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$g$var^2 + 2*$g $var + $g")->reduce;
+              $answer = Compute("$g ($var + 1)^2");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-pst-one-gcf-copy">
+          <webwork copy="webwork-factor-pst-one-gcf"/>
+        </exercise>
+        <exercise label="factor-pst-med-gcf">
+          <webwork xml:id="webwork-factor-pst-med-gcf">
+            <pg-code>
+              $r = list_random(2..10);
+              $g = list_random(2..9);
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$g $var^2 + 2*$r*$g $var + $g*$r**2")->reduce;
+              $answer = Compute("$g ($var + $r)^2");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-pst-med-gcf-copy">
+          <webwork copy="webwork-factor-pst-med-gcf"/>
+        </exercise>
+        <exercise label="factor-pst-med-lc-neg-gcf">
+          <webwork xml:id="webwork-factor-pst-med-lc-neg-gcf">
+            <pg-code>
+              ($a, $b) = random_coprime([2..9],[2..9]);
+              $g = list_random(2..9);
+              @ORCCA_variables = grep {!/[eoEOU]/} ('a' .. 'z', 'A' .. 'Z');
+              $var = list_random(@ORCCA_variables);
+              Context("Form")->variables->are($var=>'Real');
+              $f = Compute("$g*$a**2 $var^2 - 2*$a*$b*$g $var + $g*$b**2")->reduce;
+              $answer = Compute("$g ($a $var - $b)^2");
+            </pg-code>
+            <statement>
+              <p>
+                <m><var name="$f"/></m>
+              </p>
+              <p>
+                <var name="$answer" width="16"/>
+              </p>
+            </statement>
+          </webwork>
+        </exercise>
+        <exercise label="factor-pst-med-lc-neg-gcf-copy">
+          <webwork copy="webwork-factor-pst-med-lc-neg-gcf"/>
         </exercise>
       </exercisegroup>
     </subexercises>
@@ -2355,7 +3732,6 @@
               push(@b, $smalls[$j - 1] + $bigs[$j - 1]);
             }
             $answer = List(@b);
-
             Context()->variables->add(b => 'Real');
             $expression = Formula("x^2 + bx + $c")->reduce;
           </pg-code>
@@ -2380,40 +3756,6 @@
             <p>
               Think about all of ways to factor <var name="$c"/>. The list of possible
               <m>b</m>-values is <var name="$answer"/>.
-            </p>
-          </solution>
-        </webwork>
-      </exercise>
-      <exercise>
-        <!-- Kara's challenge problem -->
-        <webwork>
-          <pg-code>
-            $fst = random(111, 999, 222);
-            $snd = random(222, 888, 222);
-            $plus = $fst + $snd;
-            $minus = $fst - $snd;
-            $answer = RadioButtons([
-              {"$plus($plus)" => general_math_ev3("$plus($plus)")},
-              {"$plus($minus)" => general_math_ev3("$plus($minus)")},
-              {"$minus($minus)" => general_math_ev3("$minus($minus)")},
-              'none of the above'],
-            1);
-          </pg-code>
-          <statement>
-            <p>
-              Without using a calculator, factor <m><var name="$fst"/>^2-<var name="$snd"/>^2</m>.
-              Then select the expression below which is equivalent.
-            </p>
-            <p>
-              <var name="$answer" form="buttons"/>
-            </p>
-          </statement>
-          <solution>
-            <p>
-              Notice that <m><var name="$fst"/>^2-<var name="$snd"/>^2</m> is the difference of two
-              squares. Thus, we can factor it into
-              <m>(<var name="$fst"/>+<var name="$snd"/>)(<var name="$fst"/>-<var name="$snd"/>)</m>,
-              which equals <m> <var name="$plus"/> \cdot <var name="$minus"/></m>.
             </p>
           </solution>
         </webwork>

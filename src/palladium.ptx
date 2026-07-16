@@ -10,9 +10,9 @@
     <xi:include href="./frontmatter.ptx"/>
 
     <xi:include href="./chapter-linear.ptx"/>
-    <!-- <xi:include href="./chapter-quadratic.ptx"/>
+    <xi:include href="./chapter-quadratic.ptx"/>
     <xi:include href="./chapter-rational-functions-and-equations.ptx"/>
-    <xi:include href="./chapter-radical-expressions-and-equations.ptx"/> -->
+    <xi:include href="./chapter-radical-expressions-and-equations.ptx"/>
 
     <xi:include href="./backmatter.ptx"/>
   </book>
