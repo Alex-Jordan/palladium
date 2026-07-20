@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-subtract-fractions-two-build-no-reduce" assembly-id="subtract-fractions-two-build-no-reduce">
-  <static seed="2256">
-    <statement><p><m>{{\frac{3}{40}}}-{{\frac{2}{45}}}</m></p>
+  <static seed="2120">
+    <statement><p><m>{{\frac{9}{10}}}-{{\frac{7}{16}}}</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{11}{360}}</m>
+        <m>{\frac{37}{80}}</m>
       </p>
     </answer>
   </static>

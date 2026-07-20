@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-complex-fractions-5-3-5" assembly-id="section-complex-fractions-5-3-5">
-  <static seed="1456" source="Contrib/PCC/Math95/ComplexFractions/ComplexFractions2.pg">
+  <static seed="1320" source="Contrib/PCC/Math95/ComplexFractions/ComplexFractions2.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{\frac{{\frac{ab^{2}}{10c}}}{{\frac{a}{8bc}}}=}</m><fillin characters="40" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{\frac{{\frac{xy^{2}}{4z}}}{{\frac{x}{2yz}}}=}</m><fillin characters="40" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{4b^{3}}{5}</m>
+        <m>\frac{y^{3}}{2}</m>
       </p>
     </answer>
-    <solution><p>To simply the complex fraction <m>\frac{{\frac{ab^{2}}{10c}}}{{\frac{a}{8bc}}}</m>, we multiple the numerator and denominator with the common denominator of <m>{\frac{ab^{2}}{10c}}</m> and <m>{\frac{a}{8bc}}</m>, which is <m>{40bc}</m>.</p>
+    <solution><p>To simply the complex fraction <m>\frac{{\frac{xy^{2}}{4z}}}{{\frac{x}{2yz}}}</m>, we multiple the numerator and denominator with the common denominator of <m>{\frac{xy^{2}}{4z}}</m> and <m>{\frac{x}{2yz}}</m>, which is <m>{4yz}</m>.</p>
 <p><m>\displaystyle{\begin{aligned}
-  \frac{{\frac{ab^{2}}{10c}}}{{\frac{a}{8bc}}} \amp = \frac{{\frac{ab^{2}}{10c}}\cdot{40bc}}{{\frac{a}{8bc}}\cdot{40bc}} \\
-    \amp = {\frac{4b^{3}}{5}}
+  \frac{{\frac{xy^{2}}{4z}}}{{\frac{x}{2yz}}} \amp = \frac{{\frac{xy^{2}}{4z}}\cdot{4yz}}{{\frac{x}{2yz}}\cdot{4yz}} \\
+    \amp = {\frac{y^{3}}{2}}
 \end{aligned}
     }</m></p>
 <p>Note that you are not required to enter lost domain conditions in this problem, but it<rsq/>s good to know the following.</p>
-<p>Since <m>b</m> and <m>c</m> were canceled, <m>b \ne 0</m> and <m>c \ne 0</m> are in the lost domain condition.</p>
+<p>Since <m>y</m> and <m>z</m> were canceled, <m>y \ne 0</m> and <m>z \ne 0</m> are in the lost domain condition.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/Math95/ComplexFractions/ComplexFractions2.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

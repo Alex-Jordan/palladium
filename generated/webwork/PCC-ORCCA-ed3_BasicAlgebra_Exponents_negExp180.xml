@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp180" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp180">
-  <static seed="1781">
-    <statement><p><m>\displaystyle \left( \frac{x^{6}y^{6}z^{4}}{x^{-7}y^{-2}z^{-5}}\right)^{-2}</m></p>
+  <static seed="1645">
+    <statement><p><m>\displaystyle \left( \frac{x^{5}y^{7}z^{6}}{x^{-7}y^{-3}z^{-4}}\right)^{-4}</m></p>
 <p><fillin characters="22" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{1}{x^{26}y^{16}z^{18}}</m>
+        <m>\frac{1}{x^{48}y^{40}z^{40}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remember that <m>a^m\cdot a^n = a^{m+n}</m> and <m>\left(a^m\right)^n=a^{mn}</m>.</p>
 <p><m>\begin{aligned}
-\left( \frac{x^{6}y^{6}z^{4}}{x^{-7}y^{-2}z^{-5}}\right)^{-2}
-                  \amp =  \left( x^{6+7}y^{6+2}z^{4+5}\right)^{-2}\\
-                  \amp =  \left( x^{13}y^{8}z^{9}\right)^{-2}\\
-                  \amp =  x^{13\cdot(-2)}y^{8\cdot(-2)}z^{9\cdot(-2)}\\
-                  \amp =  x^{-26}y^{-16}z^{-18}\\
-                  \amp  = {\frac{1}{x^{26}y^{16}z^{18}}}
+\left( \frac{x^{5}y^{7}z^{6}}{x^{-7}y^{-3}z^{-4}}\right)^{-4}
+                  \amp =  \left( x^{5+7}y^{7+3}z^{6+4}\right)^{-4}\\
+                  \amp =  \left( x^{12}y^{10}z^{10}\right)^{-4}\\
+                  \amp =  x^{12\cdot(-4)}y^{10\cdot(-4)}z^{10\cdot(-4)}\\
+                  \amp =  x^{-48}y^{-40}z^{-40}\\
+                  \amp  = {\frac{1}{x^{48}y^{40}z^{40}}}
            \end{aligned}</m></p>
 </solution>
   </static>

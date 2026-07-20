@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-isolate-yequalsaxplusb" assembly-id="isolate-yequalsaxplusb">
-  <static seed="1561">
-    <statement><p><m>x</m> in <m>{y}={tx+C}</m></p>
+  <static seed="1425">
+    <statement><p><m>x</m> in <m>{y}={Jx+S}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>x = \frac{y-C}{t}</m>
+        <m>x = \frac{y-S}{J}</m>
       </p>
     </answer>
   </static>

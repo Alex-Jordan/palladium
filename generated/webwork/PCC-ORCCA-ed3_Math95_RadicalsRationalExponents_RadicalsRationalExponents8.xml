@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents8" assembly-id="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents8">
-  <static seed="1996">
-    <statement><p><m>\displaystyle{{x^{\frac{2}{9}}}}</m></p>
+  <static seed="1860">
+    <statement><p><m>\displaystyle{{c^{\frac{5}{3}}}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\sqrt[9]{x^{2}}</m>
+        <m>\sqrt[3]{c^{5}}</m>
       </p>
     </answer>
     <solution><p>When we have fractions as exponents, the numerator indicates the power while the denominator indicates the radical: <m>x^\frac{m}{n} = \sqrt[n]{x^m}</m>. So we can rewrite our expression as follows:</p>
 <p><m>\displaystyle{\begin{aligned}
-   x^\frac{2}{9} \amp = \sqrt[9]{x^2} \\
+   c^\frac{5}{3} \amp = \sqrt[3]{c^5} \\
 \end{aligned}
     }</m></p>
 </solution>

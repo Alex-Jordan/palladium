@@ -1,29 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-the-quadratic-formula-7-2-2-68" assembly-id="section-the-quadratic-formula-7-2-2-68">
-  <static seed="945">
-    <statement><p><m>{5x^{2}+17x}={-3}</m></p>
+  <static seed="478">
+    <statement><p><m>{7x^{2}+5}={-16x}</m></p>
 <p><fillin characters="40" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{-\frac{17}{10}-\frac{1}{10}\sqrt{229},-\frac{17}{10}+\frac{1}{10}\sqrt{229}\right\}</m>
+        <m>\left\{-\frac{8}{7}-\frac{1}{7}\sqrt{29},-\frac{8}{7}+\frac{1}{7}\sqrt{29}\right\}</m>
       </p>
     </answer>
     <solution><p>To use the quadratic formula, we write the equation in standard form:</p>
-<p><me>{5x^{2}+17x+3}=0</me></p>
-<p>and identify <m>a=5\text{,}</m> <m>b=17\text{,}</m> and <m>c=3\text{.}</m></p>
+<p><me>{7x^{2}+16x+5}=0</me></p>
+<p>and identify <m>a=7\text{,}</m> <m>b=16\text{,}</m> and <m>c=5\text{.}</m></p>
 <p><me>\begin{aligned}
 x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
-\amp=\frac{-17\pm\sqrt{289-4(5)(3)}}{2(5)}\\
-\amp=\frac{-17\pm\sqrt{229}}{10}\\
-\amp=\frac{-17\pm\sqrt{229}}{10}\\
-x\amp=\frac{-17-\sqrt{229}}{10}\quad\text{or}\quad x=\frac{-17+\sqrt{229}}{10}\\
-x\amp={-\frac{17}{10}-\frac{1}{10}\sqrt{229}}\quad\text{or}\quad x={-\frac{17}{10}+\frac{1}{10}\sqrt{229}}
+\amp=\frac{-16\pm\sqrt{256-4(7)(5)}}{2(7)}\\
+\amp=\frac{-16\pm\sqrt{116}}{14}\\
+\amp=\frac{-16\pm2\sqrt{29}}{14}\\
+x\amp=\frac{-16-2\sqrt{29}}{14}\quad\text{or}\quad x=\frac{-16+2\sqrt{29}}{14}\\
+x\amp={-\frac{8}{7}-\frac{1}{7}\sqrt{29}}\quad\text{or}\quad x={-\frac{8}{7}+\frac{1}{7}\sqrt{29}}
 \end{aligned}</me></p>
-<p>The solution set is <m>{\left\{-\frac{17}{10}-\frac{1}{10}\sqrt{229},-\frac{17}{10}+\frac{1}{10}\sqrt{229}\right\}}\text{.}</m></p>
+<p>The solution set is <m>{\left\{-\frac{8}{7}-\frac{1}{7}\sqrt{29},-\frac{8}{7}+\frac{1}{7}\sqrt{29}\right\}}\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_4_5_79.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_5_5_79.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -40,7 +40,7 @@ x\amp={-\frac{17}{10}-\frac{1}{10}\sqrt{229}}\quad\text{or}\quad x={-\frac{17}{1
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.4.5.79)
+## Problem1(1.5.5.79)
 ## Author()
 ## Institution()
 ## Language(en-US)

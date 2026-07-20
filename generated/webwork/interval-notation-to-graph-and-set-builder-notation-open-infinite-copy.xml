@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-interval-notation-to-graph-and-set-builder-notation-open-infinite-copy" assembly-id="interval-notation-to-graph-and-set-builder-notation-open-infinite-copy">
-  <static seed="2426">
-    <statement><p><m>{\left(2,\infty \right)}</m></p>
+  <static seed="2290">
+    <statement><p><m>{\left(1,\infty \right)}</m></p>
 <p><fillin name="AnSwEr0001"/></p>
 <p><fillin characters="12" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\text{interval}, \left(2,\infty \right)\right\}</m>
+        <m>\left\{\text{interval}, \left(1,\infty \right)\right\}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left\{x \mid x &gt; 2\right\}</m>
+        <m>\left\{x \mid x &gt; 1\right\}</m>
       </p>
     </answer>
-    <solution><p>The interval notation tells us to graph all numbers between <m>2</m> and <m>\infty\text{.}</m> So the shading can start at <m>2</m> and go all the way to the right <lq/>to <m>\infty</m><rq/>. There should be a parenthesis at <m>2</m> to indicate that <m>2</m> itself is not included.</p>
+    <solution><p>The interval notation tells us to graph all numbers between <m>1</m> and <m>\infty\text{.}</m> So the shading can start at <m>1</m> and go all the way to the right <lq/>to <m>\infty</m><rq/>. There should be a parenthesis at <m>1</m> to indicate that <m>1</m> itself is not included.</p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/interval-notation-to-graph-and-set-builder-notation-open-infinite-copy-image-1" width="100%"/>
-<p>We have shaded all numbers greater than <m>2\text{.}</m> So in set-builder notation, the interval is <m>{\{ x \mid x &gt; 2 \}}\text{.}</m></p>
+<p>We have shaded all numbers greater than <m>1\text{.}</m> So in set-builder notation, the interval is <m>{\{ x \mid x &gt; 1 \}}\text{.}</m></p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/Appendices/A_5_4_47.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

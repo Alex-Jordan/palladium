@@ -1,29 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-classroom-area-check-solution" assembly-id="classroom-area-check-solution">
-  <static seed="2501">
-    <statement><p>An elementary school classroom needs a minimum of <m>150</m> square feet for the teacher plus a minimum of <m>40</m> square feet per student. So if there are <m>n</m> students, the total necessary area is <m>{150+40n}</m> square feet. If a classroom has <m>990</m> square feet of area, then we have an inequality <m>{150+40n}\leq{990}\text{.}</m> Could this classroom support <m>20</m> students?</p>
+  <static seed="2365">
+    <statement><p>An elementary school classroom needs a minimum of <m>140</m> square feet for the teacher plus a minimum of <m>44</m> square feet per student. So if there are <m>n</m> students, the total necessary area is <m>{140+44n}</m> square feet. If a classroom has <m>1196</m> square feet of area, then we have an inequality <m>{140+44n}\leq{1196}\text{.}</m> Could this classroom support <m>24</m> students?</p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>150+40n</m></cell>
+<cell><m>140+44n</m></cell>
 <cell><m>\leq</m></cell>
-<cell><m>990</m></cell>
+<cell><m>1196</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
 <cell><m>\wonder{\leq}</m></cell>
-<cell><m>990</m></cell>
+<cell><m>1196</m></cell>
 </row>
 </tabular>
 <p><fillin name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>950</m>
+        <m>1196</m>
       </p>
     </answer>
     <answer>

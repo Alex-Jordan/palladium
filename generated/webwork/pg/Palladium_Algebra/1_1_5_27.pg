@@ -27,10 +27,8 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PCCmacros.pl",
-  "contextCurrency.pl",
-  "contextPercent.pl",
-  "parserLinearRelation.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -43,27 +41,24 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("Currency")->flags->set(trimTrailingZeros => 1);
-$final = 1400 + random(-300, 300, 10);
-$current = Currency($final);
-Context("Percent");
-$decimal = random(0.01,0.03,0.001);
-$percent = Percent($decimal);
-Context("LinearRelation")->variables->are(r => 'Real');
-$equation = LinearRelation("r + $decimal r = $final");
+$r = 0;
+($a,$s) = random_coprime([2..9], [-9..-2,2..9]);
+Context()->noreduce('(-x)-y');
+$left = Formula("$a x^2")->reduce;
+$right = Formula("$s x")->reduce;
+Context("FiniteSolutionSets");
+$sols = Formula("{$r,$s/$a}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Write an equation to model the scenario. There is no need to solve the equation.
+Solve the equation by factoring.
 
-One year, the median rent for a one-bedroom apartment in a city was reported to be [`[$current]\text{.}`] This was reported to be an increase of [`[$percent]`] over the previous year. Based on this reporting, what was the median rent for of a one-bedroom apartment the previous year? Set up an equation to answer this question. There is no need to solve it.
+[`[$left] = [$right]`]
 
-[@KeyboardInstructions('Use [|r|]* as the variable.')@]**
-
-[_]{$equation}{20}
+[_]{$sols}{16}
 
 END_PGML
 

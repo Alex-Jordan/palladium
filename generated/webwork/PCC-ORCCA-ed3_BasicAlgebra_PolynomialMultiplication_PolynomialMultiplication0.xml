@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication0" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication0">
-  <static seed="2633">
-    <statement><p><m>{x}\left({x-7}\right)</m></p>
+  <static seed="2497">
+    <statement><p><m>{-10x}\left({x-8}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>x^{2}-7x</m>
+        <m>-10x^{2}+80x</m>
       </p>
     </answer>
     <solution><p>We multiply the monomial by each term in the binomial, using 
 the properties of exponents to help us.</p>
 <p><m>\begin{aligned}
-              {x}({x-7})\amp ={x^{2}-7x}
+              {-10x}({x-8})\amp ={-10x^{2}+80x}
       \end{aligned}</m></p>
 </solution>
   </static>

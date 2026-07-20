@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-introduction-to-rational-functions-5-3-3" assembly-id="section-introduction-to-rational-functions-5-3-3">
-  <static seed="1214" source="Contrib/PCC/BasicAlgebra/FunctionBasics/Functions200.pg">
-    <statement><p>Find the domain of <m>\displaystyle{h}</m> where <m>\displaystyle{h(x)={\frac{8x}{x+9}}}</m>.</p>
+  <static seed="1078" source="Contrib/PCC/BasicAlgebra/FunctionBasics/Functions200.pg">
+    <statement><p>Find the domain of <m>\displaystyle{h}</m> where <m>\displaystyle{h(x)={\frac{2x}{x+4}}}</m>.</p>
 <p><fillin characters="13" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left(-\infty ,-9\right)\cup \left(-9,\infty \right)</m>
+        <m>\left(-\infty ,-4\right)\cup \left(-4,\infty \right)</m>
       </p>
     </answer>
-    <solution><p>Since we are not allowed to divide by zero, the denominator of <m>h</m> cannot be zero. If <m>x</m> takes on the value <m>-9</m> then the denominator will equal zero.  So <m>x</m> can be any number but <m>-9</m>.   Therefore the domain of <m>h</m> is <m>{\left(-\infty ,-9\right)\cup \left(-9,\infty \right)}</m>.</p>
+    <solution><p>Since we are not allowed to divide by zero, the denominator of <m>h</m> cannot be zero. If <m>x</m> takes on the value <m>-4</m> then the denominator will equal zero.  So <m>x</m> can be any number but <m>-4</m>.   Therefore the domain of <m>h</m> is <m>{\left(-\infty ,-4\right)\cup \left(-4,\infty \right)}</m>.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/FunctionBasics/Functions200.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

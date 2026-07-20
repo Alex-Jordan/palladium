@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication0-copy2" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication0-copy2">
-  <static seed="1948">
-    <statement><p><m>{t^{15}}\cdot{t^{18}}</m></p>
+  <static seed="1812">
+    <statement><p><m>{x^{14}}\cdot{x^{4}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>t^{33}</m>
+        <m>x^{18}</m>
       </p>
     </answer>
     <solution><p>We <em>add</em> the exponents as follows: <me>\begin{aligned}
-           t^{15}\cdot t^{18}\amp =t^{15+18}\\
-                             \amp =t^{33}
+           x^{14}\cdot x^{4}\amp =x^{14+4}\\
+                             \amp =x^{18}
        \end{aligned}</me></p>
 </solution>
   </static>

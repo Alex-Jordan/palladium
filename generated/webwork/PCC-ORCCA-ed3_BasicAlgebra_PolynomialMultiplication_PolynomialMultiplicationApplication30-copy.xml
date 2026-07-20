@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication30-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication30-copy">
-  <static seed="2704">
-    <statement><p>A trapezoid<rsq/>s top base is <m>7</m> feet longer than its height, and its bottom base is <m>3</m> feet longer than its height. If we use <m>h</m> to represent the trapezoid<rsq/>s height, use a polynomial to represent the trapezoid<rsq/>s area in expanded form. A trapezoid<rsq/>s area can be calculated by <m>A=\frac{1}{2}(a+b)h</m>, where <m>a</m> stands for the top base, <m>b</m> stands for the bottom base, and <m>h</m> stands for height.</p>
+  <static seed="2568">
+    <statement><p>A trapezoid<rsq/>s top base is <m>4</m> feet longer than its height, and its bottom base is <m>6</m> feet longer than its height. If we use <m>h</m> to represent the trapezoid<rsq/>s height, use a polynomial to represent the trapezoid<rsq/>s area in expanded form. A trapezoid<rsq/>s area can be calculated by <m>A=\frac{1}{2}(a+b)h</m>, where <m>a</m> stands for the top base, <m>b</m> stands for the bottom base, and <m>h</m> stands for height.</p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
@@ -9,10 +9,10 @@
         <m>h^{2}+5h</m>
       </p>
     </answer>
-    <solution><p>The trapezoid<rsq/>s height is <m>h</m> feet. Since the trapezoid<rsq/>s top base is <m>7</m> feet longer than its height, its top base is <m>h+7</m> feet; similarly, its bottom base is <m>h+7</m> feet. We substitute those values into a trapezoid<rsq/>s area formula, and we have:</p>
+    <solution><p>The trapezoid<rsq/>s height is <m>h</m> feet. Since the trapezoid<rsq/>s top base is <m>4</m> feet longer than its height, its top base is <m>h+4</m> feet; similarly, its bottom base is <m>h+4</m> feet. We substitute those values into a trapezoid<rsq/>s area formula, and we have:</p>
 <p><m>\displaystyle{\begin{aligned}
    A \amp = \frac{1}{2}(a+b)h \\
-      \amp = \frac{1}{2}(h+7+h+3)h \\
+      \amp = \frac{1}{2}(h+4+h+6)h \\
       \amp = \frac{1}{2}h(2h+10) \\
       \amp = \frac{1}{2}2h^2+\frac{1}{2}10h \\
       \amp = {h^{2}+5h}

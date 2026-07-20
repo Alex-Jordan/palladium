@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-x-squared-linear-copy" assembly-id="solve-x-squared-linear-copy">
+  <static seed="832">
+    <statement><p><m>{x^{2}}={3x}</m></p>
+<p><fillin characters="6" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{0,3\right\}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_2_8_97.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg copied-from="solve-x-squared-linear"><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.2.8.98)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$left = Formula("x^2")->reduce;
+$m = list_random(1..20);
+$right = Formula("$m x")->reduce;
+$x1 = 0;
+$x2 = $m;
+Context("FiniteSolutionSets");
+Context()->flags->remove("NumberCheck");
+$sols = Formula("{$x1,$x2}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use a graphing app to solve the equation graphically. Make sure you follow a process that involves making two curves and looking at their intersection points.
+
+[`[$left]=[$right]`]
+
+[_]{$sols}{6}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

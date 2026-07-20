@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-combine-three-terms-two-combine-distinct-powers-decimals" assembly-id="combine-three-terms-two-combine-distinct-powers-decimals">
-  <static seed="2284">
-    <statement><p><m>{5.1U^{6}-3.5U^{3}+2.7U^{6}}</m></p>
+  <static seed="2148">
+    <statement><p><m>{-4.2S^{5}-1.1S^{5}+9.8S^{2}}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-3.5U^{3}+7.8U^{6}</m>
+        <m>9.8S^{2}-5.3S^{5}</m>
       </p>
     </answer>
   </static>

@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication30-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication30-copy">
-  <static seed="2652">
-    <statement><p><m>\left({3r+4}\right)\left({r+3}\right)</m></p>
+  <static seed="2516">
+    <statement><p><m>\left({5r+7}\right)\left({r+10}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>3r^{2}+13r+12</m>
+        <m>5r^{2}+57r+70</m>
       </p>
     </answer>
     <solution><p>We use the FOIL technique- <alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast</p>
 <p><m>\begin{aligned}
-              \left({3r+4}\right)({r+3})\amp ={3r^{2}+9r+4r+12}\\
-                                \amp ={3r^{2}+13r+12}
+              \left({5r+7}\right)({r+10})\amp ={5r^{2}+50r+7r+70}\\
+                                \amp ={5r^{2}+57r+70}
       \end{aligned}</m></p>
 </solution>
   </static>

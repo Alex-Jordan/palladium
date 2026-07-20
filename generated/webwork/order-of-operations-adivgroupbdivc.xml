@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-order-of-operations-adivgroupbdivc" assembly-id="order-of-operations-adivgroupbdivc">
-  <static seed="2189">
-    <statement><p><m>350 \div ( 10 \div 5 )</m></p>
+  <static seed="2053">
+    <statement><p><m>588 \div ( 28 \div 7 )</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>175</m>
+        <m>147</m>
       </p>
     </answer>
   </static>

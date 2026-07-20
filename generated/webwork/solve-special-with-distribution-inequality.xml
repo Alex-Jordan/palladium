@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-special-with-distribution-inequality" assembly-id="solve-special-with-distribution-inequality">
-  <static seed="1537">
-    <statement><p><m>{-6\mathopen{}\left(n+5\right)}\geq{-6\mathopen{}\left(n+1\right)}</m></p>
+  <static seed="1401">
+    <statement><p><m>{-7\mathopen{}\left(Y-9\right)}\leq{-7\mathopen{}\left(Y+7\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>

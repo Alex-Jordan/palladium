@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-compare-xminusbequalsc-copy" assembly-id="compare-xminusbequalsc-copy">
-  <static seed="1550">
+  <static seed="1414">
     <introduction/>
     <task>
-      <statement><p><m>{F-7}={6}</m> for <m>F\text{.}</m></p>
+      <statement><p><m>{C-4}={5}</m> for <m>C\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>\left\{13\right\}</m>
+          <m>\left\{9\right\}</m>
         </p>
       </answer>
     </task>
     <task>
-      <statement><p><m>{F-l}={X}</m> for <m>F\text{.}</m></p>
+      <statement><p><m>{C-z}={l}</m> for <m>C\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>F = X+l</m>
+          <m>C = l+z</m>
         </p>
       </answer>
     </task>

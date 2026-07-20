@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-linear-equation-fractions-two-same" assembly-id="linear-equation-fractions-two-same">
-  <static seed="1491">
-    <statement><p><m>{3x+{\frac{11}{2}}} = {-{\frac{11}{2}}x-2}</m></p>
+  <static seed="1355">
+    <statement><p><m>{{\frac{7}{2}}x+10} = {11x-{\frac{11}{2}}}</m></p>
 <p><fillin characters="4" name="AnSwEr0001"/></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
@@ -12,7 +12,7 @@
     </answer>
     <answer>
       <p>
-        <m>\left\{\frac{-15}{17}\right\}</m>
+        <m>\left\{\frac{31}{15}\right\}</m>
       </p>
     </answer>
   </static>

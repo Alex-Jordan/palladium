@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-order-of-operations-adivbslashc" assembly-id="order-of-operations-adivbslashc">
-  <static seed="2160">
-    <statement><p><m>96 \div 12/4</m></p>
+  <static seed="2024">
+    <statement><p><m>200 \div 20/5</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>

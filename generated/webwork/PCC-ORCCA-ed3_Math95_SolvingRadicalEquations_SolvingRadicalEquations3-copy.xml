@@ -1,43 +1,43 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_SolvingRadicalEquations_SolvingRadicalEquations3-copy" assembly-id="PCC-ORCCA-ed3_Math95_SolvingRadicalEquations_SolvingRadicalEquations3-copy">
-  <static seed="2041">
-    <statement><p><m>\displaystyle{ {\sqrt{6t+7}+7} = {11} }</m></p>
+  <static seed="1905">
+    <statement><p><m>\displaystyle{ {\sqrt{9t+10}+4} = {6} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\frac{3}{2}\right\}</m>
+        <m>\left\{\frac{-2}{3}\right\}</m>
       </p>
     </answer>
     <solution><p>The first step is to get the square root on one side of the equation and everything else on the other side.</p>
 <p><m>\displaystyle{\begin{aligned}
-   {\sqrt{6t+7}+7} \amp = {11} \\
-   {\sqrt{6t+7}+7}-7 \amp = {11}-7 \\
-   \sqrt{6t+7} \amp = 4 \\
+   {\sqrt{9t+10}+4} \amp = {6} \\
+   {\sqrt{9t+10}+4}-4 \amp = {6}-4 \\
+   \sqrt{9t+10} \amp = 2 \\
 \end{aligned}
     }</m></p>
 <p>To get rid of the square root, we square the left side and the right side of the equation.</p>
 <p><m>\displaystyle{\begin{aligned}
-   \sqrt{6t+7} \amp = 4 \\
-   \left(\sqrt{6t+7}\right)^2 \amp = \left(4\right)^2 \\
-   6t+7 \amp = 16 \\
-   6t+7-7 \amp = 16-7 \\
-   6t \amp = 9 \\
-   \frac{6t}{6} \amp = \frac{9}{6} \\
-   t \amp = {{\frac{3}{2}}} \\
+   \sqrt{9t+10} \amp = 2 \\
+   \left(\sqrt{9t+10}\right)^2 \amp = \left(2\right)^2 \\
+   9t+10 \amp = 4 \\
+   9t+10-10 \amp = 4-10 \\
+   9t \amp = -6 \\
+   \frac{9t}{9} \amp = \frac{-6}{9} \\
+   t \amp = {-{\frac{2}{3}}} \\
 \end{aligned}
     }</m></p>
 <p>We must check our solutions when we solve radical equations. We therefore substitute our answer into the original equation:</p>
 <p><m>\displaystyle{\begin{aligned}
-   {\sqrt{6t+7}+7} \amp \stackrel{?}{=} {11} \\
-   \sqrt{6\cdot{{\frac{3}{2}}}+7}+7 \amp \stackrel{?}{=} 11 \\
-   \sqrt{{9}+7}+7 \amp \stackrel{?}{=} 11 \\
-   \sqrt{{16}}+7 \amp \stackrel{?}{=} 11 \\
-   {4}+7 \amp \stackrel{?}{=} 11 \\
-   11 \amp \stackrel{?}{=} 11 \\
+   {\sqrt{9t+10}+4} \amp \stackrel{?}{=} {6} \\
+   \sqrt{9\cdot{-{\frac{2}{3}}}+10}+4 \amp \stackrel{?}{=} 6 \\
+   \sqrt{{-6}+10}+4 \amp \stackrel{?}{=} 6 \\
+   \sqrt{{4}}+4 \amp \stackrel{?}{=} 6 \\
+   {2}+4 \amp \stackrel{?}{=} 6 \\
+   6 \amp \stackrel{?}{=} 6 \\
 \end{aligned}
     }</m></p>
-<p>That is true, so the solution set is <m>\{{{\frac{3}{2}}}\}</m>.</p>
+<p>That is true, so the solution set is <m>\{{-{\frac{2}{3}}}\}</m>.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/4_5_4_20.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

@@ -1,40 +1,40 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-complex-fractions-5-3-7" assembly-id="section-complex-fractions-5-3-7">
-  <static seed="1458" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions12.pg">
+  <static seed="1322" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions12.pg">
     <statement><p>Simplify this expression.</p>
 <p><ol label="a.">
 <li>
-<p><m>\displaystyle{\frac{ \frac{y}{x} }{ r } =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{\frac{ \frac{y}{r} }{ t } =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </li>
 <li>
-<p><m>\displaystyle{\frac{ y }{ \frac{x}{r} } =}</m> <fillin characters="19" name="AnSwEr0002"/></p>
+<p><m>\displaystyle{\frac{ y }{ \frac{r}{t} } =}</m> <fillin characters="19" name="AnSwEr0002"/></p>
 </li>
 </ol></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{y}{xr}</m>
+        <m>\frac{y}{rt}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\frac{yr}{x}</m>
+        <m>\frac{yt}{r}</m>
       </p>
     </answer>
     <solution><p><alert>Problem 1</alert></p>
-<p>We multiply the complex fraction<rsq/>s numerator and denominator by <m>x</m>, and we have:</p>
+<p>We multiply the complex fraction<rsq/>s numerator and denominator by <m>r</m>, and we have:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \frac{ \frac{y}{x} }{ r } 
-      \amp = \frac{ \frac{y}{x} \cdot x }{ r \cdot x } \\
-      \amp = {\frac{y}{xr}}
+   \frac{ \frac{y}{r} }{ t } 
+      \amp = \frac{ \frac{y}{r} \cdot r }{ t \cdot r } \\
+      \amp = {\frac{y}{rt}}
 \end{aligned}
     }</m></p>
 <p><alert>Problem 2</alert></p>
-<p>We multiply the complex fraction<rsq/>s numerator and denominator by <m>r</m>, and we have:</p>
+<p>We multiply the complex fraction<rsq/>s numerator and denominator by <m>t</m>, and we have:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \frac{ y }{ \frac{x}{r} } 
-      \amp = \frac{ y \cdot r } { \frac{x}{r} \cdot r }\\
-      \amp = {\frac{yr}{x}}
+   \frac{ y }{ \frac{r}{t} } 
+      \amp = \frac{ y \cdot t } { \frac{r}{t} \cdot t }\\
+      \amp = {\frac{yt}{r}}
 \end{aligned}
     }</m></p>
 </solution>

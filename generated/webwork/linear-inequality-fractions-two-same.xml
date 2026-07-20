@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-linear-inequality-fractions-two-same" assembly-id="linear-inequality-fractions-two-same">
-  <static seed="1505">
-    <statement><p><m>{2x-{\frac{10}{9}}} \lt {{\frac{10}{9}}x+7}</m></p>
+  <static seed="1369">
+    <statement><p><m>{{\frac{7}{8}}x-11} \gt {4x-{\frac{5}{8}}}</m></p>
 <p><fillin characters="4" name="AnSwEr0001"/></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 <p><fillin characters="16" name="AnSwEr0003"/></p>
 </statement>
     <answer>
       <p>
-        <m>9</m>
+        <m>8</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left\{x \mid x &lt; \frac{73}{8}\right\}</m>
+        <m>\left\{x \mid x &lt; \frac{-83}{25}\right\}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(-\infty ,{\frac{73}{8}}\right)</m>
+        <m>\left(-\infty ,-{\frac{83}{25}}\right)</m>
       </p>
     </answer>
   </static>

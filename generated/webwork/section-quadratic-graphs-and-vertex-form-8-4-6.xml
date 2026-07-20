@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-quadratic-graphs-and-vertex-form-8-4-6" assembly-id="section-quadratic-graphs-and-vertex-form-8-4-6">
-  <static seed="1093">
-    <statement><p>Let <m>f(x)={1.2x^{2}-2x+1.8}\text{.}</m> Use technology to find the following.</p>
+  <static seed="626">
+    <statement><p>Let <m>h(x)={-0.2x^{2}+2.9x+2.2}\text{.}</m> Use technology to find the following.</p>
 <p><ol label="a.">
 <li>
 <p>The vertex is <fillin characters="5" name="AnSwEr0001"/>.</p>
@@ -13,35 +13,35 @@
 <p>The <m>x</m>-intercept(s) is/are <fillin characters="10" name="AnSwEr0003"/>.</p>
 </li>
 <li>
-<p>The domain of <m>f</m> is <fillin characters="5" name="AnSwEr0004"/>.</p>
+<p>The domain of <m>h</m> is <fillin characters="5" name="AnSwEr0004"/>.</p>
 </li>
 <li>
-<p>The range of <m>f</m> is <fillin characters="5" name="AnSwEr0005"/>.</p>
+<p>The range of <m>h</m> is <fillin characters="5" name="AnSwEr0005"/>.</p>
 </li>
 <li>
-<p>Calculate <m>f(2)\text{.}</m> <fillin characters="5" name="AnSwEr0006"/>.</p>
+<p>Calculate <m>h(4)\text{.}</m> <fillin characters="5" name="AnSwEr0006"/>.</p>
 </li>
 <li>
-<p>Solve <m>f(x)=6\text{.}</m> <fillin characters="5" name="AnSwEr0007"/></p>
+<p>Solve <m>h(x)=3\text{.}</m> <fillin characters="5" name="AnSwEr0007"/></p>
 </li>
 <li>
-<p>Solve <m>f(x)&gt;6\text{.}</m> <fillin characters="10" name="AnSwEr0008"/></p>
+<p>Solve <m>h(x)\lt 3\text{.}</m> <fillin characters="10" name="AnSwEr0008"/></p>
 </li>
 </ol></p>
 </statement>
     <answer>
       <p>
-        <m>\left(0.833333,0.966667\right)</m>
+        <m>\left(7.25,12.7125\right)</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(0,1.8\right)</m>
+        <m>\left(0,2.2\right)</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\text{NONE}</m>
+        <m>\left(15.2226,0\right), \left(-0.722609,0\right)</m>
       </p>
     </answer>
     <answer>
@@ -51,26 +51,26 @@
     </answer>
     <answer>
       <p>
-        <m>\left[0.966667,\infty \right)</m>
+        <m>\left(-\infty ,12.7125\right]</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>2.6</m>
+        <m>10.6</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left\{-1.2147,2.88137\right\}</m>
+        <m>\left\{0.28132,14.2187\right\}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(-\infty ,-1.2147\right)\cup \left(2.88137,\infty \right)</m>
+        <m>\left(-\infty ,0.28132\right)\cup \left(14.2187,\infty \right)</m>
       </p>
     </answer>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_7_6_31.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_8_6_31.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg copied-from="section-quadratic-graphs-and-vertex-form-8-4-5"><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -87,7 +87,7 @@
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.7.6.32)
+## Problem1(1.8.6.32)
 ## Author()
 ## Institution()
 ## Language(en-US)

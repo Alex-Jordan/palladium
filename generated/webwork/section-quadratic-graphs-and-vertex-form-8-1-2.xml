@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-quadratic-graphs-and-vertex-form-8-1-2" assembly-id="section-quadratic-graphs-and-vertex-form-8-1-2">
-  <static seed="1070" source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication35.pg">
+  <static seed="603" source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication35.pg">
     <statement><p>Multiply the polynomials.</p>
-<p><m>\left({y+2}\right)\left({y-2}\right)=</m><fillin characters="32" name="AnSwEr0001"/></p>
+<p><m>\left({t+5}\right)\left({t-9}\right)=</m><fillin characters="32" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>y^{2}-4</m>
+        <m>t^{2}-4t-45</m>
       </p>
     </answer>
     <solution><p>We use the FOIL technique- <alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast</p>
 <p><m>\begin{aligned}
-              \left({y+2}\right)({y-2})\amp ={y^{2}-2y+2y-4}\\
-                                \amp ={y^{2}-4}
+              \left({t+5}\right)({t-9})\amp ={t^{2}-9t+5t-45}\\
+                                \amp ={t^{2}-4t-45}
       \end{aligned}</m></p>
 </solution>
   </static>

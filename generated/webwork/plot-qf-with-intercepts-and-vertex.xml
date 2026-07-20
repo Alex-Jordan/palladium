@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-plot-qf-with-intercepts-and-vertex" assembly-id="plot-qf-with-intercepts-and-vertex">
+  <static seed="889">
+    <statement><p><m>f(x) = {x^{2}+6x+5}</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+<p><fillin characters="16" name="AnSwEr0002"/></p>
+<p><fillin characters="16" name="AnSwEr0003"/></p>
+<p><fillin name="AnSwEr0004"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left(-1,0\right), \left(-5,0\right)</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\left(0,5\right)</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\left(-3,-4\right)</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\left\{\text{quadratic}, \text{solid}, \left(0,5\right), \left(-1,0\right), \left(-5,0\right)\right\}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_3_6_53.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.3.6.53)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextForm.pl",
+  "parserGraphTool.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context()->noreduce('(-x)-y','(-x)+y');
+$r = list_random(-5..-1,1..5);
+do {
+  $s = ($r % 2)
+    ? random(-5, 5, 2)
+    : non_zero_random(-4,4,2);
+} until (abs($r) != abs($s));
+$f = Formula("x^2 - ($r + $s) x + $r*$s")->reduce;
+Context("Point");
+$hi = List(Point("($r,0)"), Point("($s,0)"));
+$vi = Point("(0,$r*$s)");
+$vx = Point(($r+$s)/2, $f->eval(x => ($r+$s)/2));
+$gt = GraphTool(
+    "{quadratic,solid,$vi,($r,0),($s,0)}"
+)->with(
+    availableTools => ["QuadraticTool"],
+    showInStatic => 0,
+    bBox => [
+      -10,
+      max(10,$r*$s+2,($vx->value)[1]+1),
+      10,
+      min(-10,$r*$s-2,($vx->value)[1]-1)
+    ]
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the quadratic function's horizontal and vertical intercepts. Find the vertex. Use these points to sketch a graph the function.
+
+[`f(x) = [$f]`]
+
+[@KeyboardInstructions('Enter the horizontal intercepts here.')@]**
+
+[_]{$hi}{16}
+
+[@KeyboardInstructions('Enter the vertical intercept here.')@]**
+
+[_]{$vi}{16}
+
+[@KeyboardInstructions('Enter the vertex coordinates here.')@]**
+
+[_]{$vx}{16}
+
+[@KeyboardInstructions('Make a plot of the function.')@]**
+
+[_]{$gt}{11}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

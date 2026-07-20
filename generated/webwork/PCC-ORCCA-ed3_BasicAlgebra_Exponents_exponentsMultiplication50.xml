@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication50" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication50">
-  <static seed="1673">
-    <statement><p><m>-3\left(-8x^{4}\right)^2</m></p>
+  <static seed="1537">
+    <statement><p><m>-4\left(-6t^{4}\right)^3</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-192x^{8}</m>
+        <m>864t^{12}</m>
       </p>
     </answer>
     <solution><p>We <em>multiply</em> the exponents and apply the rule <m>(ab)^m=a^m\cdot b^m</m> as follows</p>
 <p><m>\begin{aligned}
-           -3\left(-8x^{4}\right)^{2}\amp =-3(-8)^{2}x^{4\cdot2}\\
-                             \amp =-3\cdot64x^{8}\\
-                             \amp =-192x^{8}
+           -4\left(-6t^{4}\right)^{3}\amp =-4(-6)^{3}t^{4\cdot3}\\
+                             \amp =-4\cdot-216t^{12}\\
+                             \amp =864t^{12}
        \end{aligned}</m></p>
 </solution>
   </static>

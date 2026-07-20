@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-linear-equation-fractions-b" assembly-id="linear-equation-fractions-b">
-  <static seed="1479">
-    <statement><p><m>{10x+{\frac{5}{2}}} = {12}</m></p>
+  <static seed="1343">
+    <statement><p><m>{9x+{\frac{8}{5}}} = {4}</m></p>
 <p><fillin characters="4" name="AnSwEr0001"/></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>2</m>
+        <m>5</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left\{\frac{19}{20}\right\}</m>
+        <m>\left\{\frac{4}{15}\right\}</m>
       </p>
     </answer>
   </static>

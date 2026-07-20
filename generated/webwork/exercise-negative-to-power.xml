@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exercise-negative-to-power" assembly-id="exercise-negative-to-power">
-  <static seed="2141">
+  <static seed="2005">
     <introduction><p>Compute the following. In each part, the first expression asks you to exponentiate and then negate the result. The second expression has a negative number raised to a power.</p>
 </introduction>
     <task>

@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-9-2" assembly-id="section-multiplication-and-division-of-rational-expressions-7-9-2">
-  <static seed="1340" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions20.pg">
+  <static seed="1204" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions20.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{{\frac{16\mathopen{}\left(y+x\right)}{y-x}} \cdot {\frac{y-x}{4\mathopen{}\left(3y+x\right)}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{15\mathopen{}\left(y+r\right)}{y-r}} \cdot {\frac{y-r}{5\mathopen{}\left(2y+r\right)}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{4\mathopen{}\left(y+x\right)}{3y+x}</m>
+        <m>\frac{3\mathopen{}\left(y+r\right)}{2y+r}</m>
       </p>
     </answer>
-    <solution><p>We cancel the factor <m>(y-x)</m> and reduce the fraction:</p>
+    <solution><p>We cancel the factor <m>(y-r)</m> and reduce the fraction:</p>
 <p><m>\displaystyle{\begin{aligned}
-   {\frac{16\mathopen{}\left(y+x\right)}{y-x}} \cdot {\frac{y-x}{4\mathopen{}\left(3y+x\right)}} \amp = {\frac{4\mathopen{}\left(y+x\right)}{3y+x}}
+   {\frac{15\mathopen{}\left(y+r\right)}{y-r}} \cdot {\frac{y-r}{5\mathopen{}\left(2y+r\right)}} \amp = {\frac{3\mathopen{}\left(y+r\right)}{2y+r}}
 \end{aligned}
     }</m></p>
-<p>Note that we may not further reduce <m>{\frac{4\mathopen{}\left(y+x\right)}{3y+x}}</m>.</p>
+<p>Note that we may not further reduce <m>{\frac{3\mathopen{}\left(y+r\right)}{2y+r}}</m>.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions20.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

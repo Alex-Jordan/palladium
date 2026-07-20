@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-list-terms-distinct-variables" assembly-id="list-terms-distinct-variables">
-  <static seed="2262">
-    <statement><p><m>{-60K-88P+2.1s}</m></p>
+  <static seed="2126">
+    <statement><p><m>{Z-e-75d}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-60K, -88P, 2.1s</m>
+        <m>Z, -e, -75d</m>
       </p>
     </answer>
   </static>

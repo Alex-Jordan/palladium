@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-square-roots-and-the-quadratic-formula-9-1-4-10" assembly-id="section-square-roots-and-the-quadratic-formula-9-1-4-10">
+  <static seed="958">
+    <statement><p><m>{x^{2}-{\frac{4}{3}}x-{\frac{4}{3}}}=0</m></p>
+<p><fillin characters="40" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{\frac{-2}{3},2\right\}</m>
+      </p>
+    </answer>
+    <solution><p>To use the quadratic formula, we identify <m>a=1\text{,}</m> <m>b={-{\frac{4}{3}}}\text{,}</m> and <m>c={-{\frac{4}{3}}}\text{.}</m></p>
+<p><me>\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{{{\frac{4}{3}}}\pm\sqrt{{{\frac{16}{9}}}-4(1)({-{\frac{4}{3}}})}}{2}\\
+\amp=\frac{{{\frac{4}{3}}}\pm\sqrt{{{\frac{64}{9}}}}}{2}\\
+\amp=\frac{{{\frac{4}{3}}}\pm{{\frac{8}{3}}}}{2}\\
+x\amp=\frac{{{\frac{4}{3}}}-{{\frac{8}{3}}}}{2}\quad\text{or}\quad x=\frac{{{\frac{4}{3}}}+{{\frac{8}{3}}}}{2}\\
+x\amp={-{\frac{2}{3}}}\quad\text{or}\quad x=2
+\end{aligned}</me></p>
+<p>The solution set is <m>{\left\{\frac{-2}{3},2\right\}}\text{.}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_4_7_49.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.4.7.49)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Fraction");
+do {$r = Fraction(non_zero_random(-9,9,1),random(2,9,1))} until (($r->value)[1] != 1);
+$s = non_zero_random(-9,9,1);
+($r,$s) = num_sort($r,$s);
+$b = -($r + $s);
+$c = $r*$s;
+Context()->noreduce('(-x)-y','(-x)+y');
+$f = Formula("x^2+$b x+$c")->reduce;
+$negb = -$b;
+$bsquared = ($b)**2;
+$discriminant = ($b)**2 - 4*1*$c;
+$sqrtdisc = Fraction(sqrt($discriminant));
+Context("FiniteSolutionSets");
+$solutions = Formula("{$r,$s}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use the quadratic formula to solve the equation.
+
+[`[$f]=0`]
+
+[@KeyboardInstructions('If you need to enter a square root like [`\sqrt{17}\text{,}`] type [|sqrt(17)|]*. If there is no real solution, enter [|no real solution|]*.')@]**
+
+[_]{$solutions}{40}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+To use the quadratic formula, we identify [`a=1\text{,}`] [`b=[$b]\text{,}`] and [`c=[$c]\text{.}`]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{[$negb]\pm\sqrt{[$bsquared]-4(1)([$c])}}{2}\\
+\amp=\frac{[$negb]\pm\sqrt{[$discriminant]}}{2}\\
+\amp=\frac{[$negb]\pm[$sqrtdisc]}{2}\\
+x\amp=\frac{[$negb]-[$sqrtdisc]}{2}\quad\text{or}\quad x=\frac{[$negb]+[$sqrtdisc]}{2}\\
+x\amp=[$r]\quad\text{or}\quad x=[$s]
+\end{aligned}
+```]
+
+The solution set is [`[$solutions]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

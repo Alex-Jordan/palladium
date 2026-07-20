@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-create-equation-with-greatest-solution" assembly-id="create-equation-with-greatest-solution">
-  <static seed="2564">
-    <statement><p>Fill in the blanks with the numbers 46 and 87 (using each number only once) to create an equation where <m>x</m> has the greatest possible value.
+  <static seed="2428">
+    <statement><p>Fill in the blanks with the numbers 44 and 99 (using each number only once) to create an equation where <m>x</m> has the greatest possible value.
 <ol label="a.">
 <li>
 <p><fillin characters="3" name="AnSwEr0001"/> <m>{}+x={}</m> <fillin characters="3" name="AnSwEr0002"/></p>
@@ -13,30 +13,30 @@
 </statement>
     <answer>
       <p>
-        <m>46</m>
+        <m>44</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>87</m>
+        <m>99</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>87</m>
+        <m>99</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>46</m>
+        <m>44</m>
       </p>
     </answer>
     <solution><p><ol label="a.">
 <li>
-<p>Consider which is greater: <m>87 - 46</m> or <m>46 - 87\text{?}</m> To make the largest value for <m>x\text{,}</m> you must put 46 in the left blank and 87 in the right blank because you solve this equation by subtracting 46 from both sides. This makes <m>x = 87 - 46\text{,}</m> which is the largest possible value for <m>x\text{.}</m></p>
+<p>Consider which is greater: <m>99 - 44</m> or <m>44 - 99\text{?}</m> To make the largest value for <m>x\text{,}</m> you must put 44 in the left blank and 99 in the right blank because you solve this equation by subtracting 44 from both sides. This makes <m>x = 99 - 44\text{,}</m> which is the largest possible value for <m>x\text{.}</m></p>
 </li>
 <li>
-<p>Consider which is larger: <m>\frac{87}{46}</m> or <m>\frac{46}{87}\text{?}</m> To make the largest value for <m>x\text{,}</m> you must put 87 in the left blank and 46 in the right blank because you solve this equation by dividing both sides by 46. This makes <m>x = \frac{87}{46}\text{,}</m> which is the largest possible value for <m>x\text{.}</m></p>
+<p>Consider which is larger: <m>\frac{99}{44}</m> or <m>\frac{44}{99}\text{?}</m> To make the largest value for <m>x\text{,}</m> you must put 99 in the left blank and 44 in the right blank because you solve this equation by dividing both sides by 44. This makes <m>x = \frac{99}{44}\text{,}</m> which is the largest possible value for <m>x\text{.}</m></p>
 </li>
 </ol></p>
 </solution>

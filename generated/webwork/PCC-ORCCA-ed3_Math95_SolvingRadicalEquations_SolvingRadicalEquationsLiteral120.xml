@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_SolvingRadicalEquations_SolvingRadicalEquationsLiteral120" assembly-id="PCC-ORCCA-ed3_Math95_SolvingRadicalEquations_SolvingRadicalEquationsLiteral120">
-  <static seed="2044">
+  <static seed="1908">
     <statement><p>A pendulum has length <m>L</m>. The time period <m>T</m> that it takes to once swing back and forth can be found with the following formula:</p>
 <p><me>{T} = {2\pi \sqrt{\frac{L}{32}}}</me></p>
 <p>The length is measured in feet and the time period in seconds.</p>

@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-solution-linear-equation-two-variable-instances-integer" assembly-id="check-solution-linear-equation-two-variable-instances-integer">
-  <static seed="2447">
-    <statement><p>Is <m>{8}</m> a solution to <m>{5x-7}={9x-39}\text{?}</m></p>
+  <static seed="2311">
+    <statement><p>Is <m>{7}</m> a solution to <m>{7x+6}={3x+34}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>5x-7</m></cell>
+<cell><m>7x+6</m></cell>
 <cell><m>=</m></cell>
-<cell><m>9x-39</m></cell>
+<cell><m>3x+34</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
@@ -24,12 +24,12 @@
 </statement>
     <answer>
       <p>
-        <m>33</m>
+        <m>55</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>33</m>
+        <m>55</m>
       </p>
     </answer>
     <answer>

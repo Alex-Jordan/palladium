@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-number-line-to-set-builder" assembly-id="number-line-to-set-builder">
-  <static seed="2377">
+  <static seed="2241">
     <introduction><p>For each interval expressed in the number lines, write the interval using set-builder notation.</p>
 </introduction>
     <task>

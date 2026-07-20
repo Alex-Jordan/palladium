@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication20-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication20-copy">
-  <static seed="1666">
-    <statement><p><m>\displaystyle{\left(y^{7}\right)^{11}}</m></p>
+  <static seed="1530">
+    <statement><p><m>\displaystyle{\left(r^{6}\right)^{4}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>y^{77}</m>
+        <m>r^{24}</m>
       </p>
     </answer>
     <solution><p>We <em>multiply</em> the exponents as follows: <me>\begin{aligned}
-           \left(y^{7}\right)^{11}\amp =y^{7\cdot11}\\
-                             \amp =y^{77}
+           \left(r^{6}\right)^{4}\amp =r^{6\cdot4}\\
+                             \amp =r^{24}
        \end{aligned}</me></p>
 </solution>
   </static>

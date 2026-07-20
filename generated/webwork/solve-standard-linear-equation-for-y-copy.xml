@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-standard-linear-equation-for-y-copy" assembly-id="solve-standard-linear-equation-for-y-copy">
-  <static seed="1566">
-    <statement><p><m>{6x+3y}={-30}</m></p>
+  <static seed="1430">
+    <statement><p><m>{24x+3y}={51}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>y = -2x-10</m>
+        <m>y = -8x+17</m>
       </p>
     </answer>
     <solution><p><me>\begin{aligned}
-{6x+3y} \amp = {-30}\\
-{6x+3y-6x} \amp = {-30-6x}\\
-{3y} \amp = {-30-6x}\\
-{\frac{3y}{3}} \amp = {\frac{-30-6x}{3}}\\
-{y} \amp = {-2x-10}
+{24x+3y} \amp = {51}\\
+{24x+3y-24x} \amp = {51-24x}\\
+{3y} \amp = {51-24x}\\
+{\frac{3y}{3}} \amp = {\frac{51-24x}{3}}\\
+{y} \amp = {-8x+17}
 \end{aligned}</me></p>
 </solution>
   </static>

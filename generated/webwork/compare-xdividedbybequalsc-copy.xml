@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-compare-xdividedbybequalsc-copy" assembly-id="compare-xdividedbybequalsc-copy">
-  <static seed="1554">
+  <static seed="1418">
     <introduction/>
     <task>
-      <statement><p><m>{\frac{d}{6}}={7}</m> for <m>d\text{.}</m></p>
+      <statement><p><m>{\frac{a}{4}}={5}</m> for <m>a\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>\left\{42\right\}</m>
+          <m>\left\{20\right\}</m>
         </p>
       </answer>
     </task>
     <task>
-      <statement><p><m>{\frac{d}{R}}={F}</m> for <m>d\text{.}</m></p>
+      <statement><p><m>{\frac{a}{h}}={W}</m> for <m>a\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>d = FR</m>
+          <m>a = Wh</m>
         </p>
       </answer>
     </task>

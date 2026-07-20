@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-find-step-run" assembly-id="find-step-run">
-  <static seed="2555">
-    <statement><p>The rise is <m>8.5</m> inches.</p>
+  <static seed="2419">
+    <statement><p>The rise is <m>8.375</m> inches.</p>
 <p><fillin characters="15" name="AnSwEr0001"/></p>
 <p><fillin characters="10" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>8.5+N = 17.5</m>
+        <m>8.375+N = 17.5</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>9\ {\rm in}</m>
+        <m>9.125\ {\rm in}</m>
       </p>
     </answer>
   </static>

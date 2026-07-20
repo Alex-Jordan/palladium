@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-with-distributive-subtract-number-copy" assembly-id="simplify-with-distributive-subtract-number-copy">
-  <static seed="2357">
-    <statement><p><m>{7\mathopen{}\left(4Y+2\right)-3}</m></p>
+  <static seed="2221">
+    <statement><p><m>{9\mathopen{}\left(6W+7\right)-8}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>28Y+11</m>
+        <m>54W+55</m>
       </p>
     </answer>
   </static>

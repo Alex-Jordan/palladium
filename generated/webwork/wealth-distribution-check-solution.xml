@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-wealth-distribution-check-solution" assembly-id="wealth-distribution-check-solution">
-  <static seed="2504">
-    <statement><p>Since the year 2010, the percent of wealth in the United States that is held by the wealthiest 1% has followed the formula <m>p=0.34(n-2010)+28.3</m> where <m>n</m> is the year. If you want to know when the top 1% held 31.36% of the wealth, you have the equation <m>{31.36}={0.34\mathopen{}\left(n-2010\right)+28.3}\text{.}</m> Does this happen in the year <m>2019\text{?}</m></p>
+  <static seed="2368">
+    <statement><p>Since the year 2010, the percent of wealth in the United States that is held by the wealthiest 1% has followed the formula <m>p=0.34(n-2010)+28.3</m> where <m>n</m> is the year. If you want to know when the top 1% held 31.02% of the wealth, you have the equation <m>{31.02}={0.34\mathopen{}\left(n-2010\right)+28.3}\text{.}</m> Does this happen in the year <m>2018\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>31.36</m></cell>
+<cell><m>31.02</m></cell>
 <cell><m>=</m></cell>
 <cell><m>0.34\mathopen{}\left(n-2010\right)+28.3</m></cell>
 </row>
 <row>
-<cell><m>31.36</m></cell>
+<cell><m>31.02</m></cell>
 <cell><m>\wonder{=}</m></cell>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
@@ -23,7 +23,7 @@
 </statement>
     <answer>
       <p>
-        <m>31.36</m>
+        <m>31.02</m>
       </p>
     </answer>
     <answer>

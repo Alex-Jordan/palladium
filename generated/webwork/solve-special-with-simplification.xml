@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-special-with-simplification" assembly-id="solve-special-with-simplification">
-  <static seed="1519">
-    <statement><p><m>{-4\mathopen{}\left(C-4\right)-\left(-19C-7\right)}={-5-5\mathopen{}\left(-6-3C\right)}</m></p>
+  <static seed="1383">
+    <statement><p><m>{-4\mathopen{}\left(q+8\right)-\left(-10q+6\right)}={-41-2\mathopen{}\left(-2-3q\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>

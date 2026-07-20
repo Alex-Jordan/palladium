@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-compare-negative-decimals-copy" assembly-id="compare-negative-decimals-copy">
-  <static seed="2390">
-    <statement><p><m>-9.37</m> <fillin characters="3" name="AnSwEr0001"/> <m>-9.8</m></p>
+  <static seed="2254">
+    <statement><p><m>-9.43</m> <fillin characters="3" name="AnSwEr0001"/> <m>-9.52</m></p>
 </statement>
     <answer>
       <p>

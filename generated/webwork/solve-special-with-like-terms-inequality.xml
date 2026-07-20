@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-special-with-like-terms-inequality" assembly-id="solve-special-with-like-terms-inequality">
-  <static seed="1533">
-    <statement><p><m>{5V+4-7V}\lt{7-2V-3}</m></p>
+  <static seed="1397">
+    <statement><p><m>{4J-15-2J}\gt{-7+2J-8}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>

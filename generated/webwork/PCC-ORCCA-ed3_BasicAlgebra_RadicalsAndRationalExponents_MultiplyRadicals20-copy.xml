@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_MultiplyRadicals20-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_MultiplyRadicals20-copy">
-  <static seed="1831">
-    <statement><p><m>7\sqrt{7} \cdot 6\sqrt{{4}}</m></p>
+  <static seed="1695">
+    <statement><p><m>7\sqrt{13} \cdot 8\sqrt{{25}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>84\sqrt{7}</m>
+        <m>280\sqrt{13}</m>
       </p>
     </answer>
-    <solution><p>To simplify the expression <m>7\sqrt{7} \cdot 6\sqrt{{4}}</m>, first simplify the square roots.</p>
-<p>This gives <m>7\sqrt{7} \cdot 6\cdot2</m>.</p>
-<p>Next multiply all values not under the radical: <m>7\cdot6\cdot2={84}</m>. So we have <m>{84\sqrt{7}}</m>.</p>
+    <solution><p>To simplify the expression <m>7\sqrt{13} \cdot 8\sqrt{{25}}</m>, first simplify the square roots.</p>
+<p>This gives <m>7\sqrt{13} \cdot 8\cdot5</m>.</p>
+<p>Next multiply all values not under the radical: <m>7\cdot8\cdot5={280}</m>. So we have <m>{280\sqrt{13}}</m>.</p>
 <p>Now that we have thought about how to simplify this expression, we can write the entire process as follows.</p>
 <p><m>\displaystyle{ 
 \begin{aligned}
-7\sqrt{7} \cdot 6\sqrt{{4}}\amp =7\sqrt{7} \cdot 6\cdot2\\
-\amp =7\cdot6\cdot2\sqrt{7}\\
-\amp ={84\sqrt{7}}\\
+7\sqrt{13} \cdot 8\sqrt{{25}}\amp =7\sqrt{13} \cdot 8\cdot5\\
+\amp =7\cdot8\cdot5\sqrt{13}\\
+\amp ={280\sqrt{13}}\\
 \end{aligned}
 }</m></p>
 </solution>

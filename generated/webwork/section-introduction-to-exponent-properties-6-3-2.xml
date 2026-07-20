@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-introduction-to-exponent-properties-6-3-2" assembly-id="section-introduction-to-exponent-properties-6-3-2">
-  <static seed="2628">
+  <static seed="2492">
     <task>
-      <statement><p>Let <m>x^{15}\cdot x^{a}=x^{30}\text{,}</m> where <m>a</m> is a natural number. How many possibilities are there for <m>a\text{?}</m></p>
+      <statement><p>Let <m>x^{15}\cdot x^{a}=x^{33}\text{,}</m> where <m>a</m> is a natural number. How many possibilities are there for <m>a\text{?}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
       <answer>
@@ -10,31 +10,31 @@
           <m>1</m>
         </p>
       </answer>
-      <solution><p>Let <m>x^{15}\cdot x^{a}=x^{30}\text{.}</m> Then <m>a</m> must be <m>30-15\text{.}</m> So there is only one possibility for <m>a\text{.}</m></p>
+      <solution><p>Let <m>x^{15}\cdot x^{a}=x^{33}\text{.}</m> Then <m>a</m> must be <m>33-15\text{.}</m> So there is only one possibility for <m>a\text{.}</m></p>
 </solution>
     </task>
     <task>
-      <statement><p>Let <m>x^{b}\cdot x^{c}=x^{70}\text{,}</m> where <m>b</m> and <m>c</m> are natural numbers. How many possibilities are there for <m>b\text{?}</m></p>
+      <statement><p>Let <m>x^{b}\cdot x^{c}=x^{85}\text{,}</m> where <m>b</m> and <m>c</m> are natural numbers. How many possibilities are there for <m>b\text{?}</m></p>
 <p><fillin characters="10" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>69</m>
+          <m>84</m>
         </p>
       </answer>
-      <solution><p>Let <m>x^{b}\cdot x^{c}=x^{70}\text{.}</m> Many possibilities exist for <m>b</m> and <m>c\text{.}</m> Since <m>b</m> and <m>c</m> must be natural numbers, let<rsq/>s start with <m>b</m> equal to <m>1\text{.}</m> Then <m>c</m> must equal 69, because <m>x^{1}\cdot x^{69}=x^{70}\text{.}</m> Considering all of the possibilities for <m>b\text{,}</m> notice that <m>b</m> can equal <m>1,2,3,\ldots,69\text{.}</m> Therefore, there are 69 possibilities for <m>b\text{.}</m> Note that <m>b</m> can<rsq/>t equal 70 because that would force <m>c</m> to be zero,which is not a natural number.</p>
+      <solution><p>Let <m>x^{b}\cdot x^{c}=x^{85}\text{.}</m> Many possibilities exist for <m>b</m> and <m>c\text{.}</m> Since <m>b</m> and <m>c</m> must be natural numbers, let<rsq/>s start with <m>b</m> equal to <m>1\text{.}</m> Then <m>c</m> must equal 84, because <m>x^{1}\cdot x^{84}=x^{85}\text{.}</m> Considering all of the possibilities for <m>b\text{,}</m> notice that <m>b</m> can equal <m>1,2,3,\ldots,84\text{.}</m> Therefore, there are 84 possibilities for <m>b\text{.}</m> Note that <m>b</m> can<rsq/>t equal 85 because that would force <m>c</m> to be zero,which is not a natural number.</p>
 </solution>
     </task>
     <task>
-      <statement><p>Let <m>x^{d}\cdot x^{e}=x^{1950}</m> where <m>d</m> and <m>e</m> are natural numbers. How many possibilities are there for <m>d\text{?}</m></p>
+      <statement><p>Let <m>x^{d}\cdot x^{e}=x^{1500}</m> where <m>d</m> and <m>e</m> are natural numbers. How many possibilities are there for <m>d\text{?}</m></p>
 <p><fillin characters="10" name="AnSwEr0003"/></p>
 </statement>
       <answer>
         <p>
-          <m>1949</m>
+          <m>1499</m>
         </p>
       </answer>
-      <solution><p>Let <m>x^{d}\cdot x^{e}=x^{1950}\text{.}</m> Many possibilities exist for <m>d</m> and <m>e\text{.}</m> Since <m>d</m> and <m>e</m> must be natural numbers, let<rsq/>s start with <m>d</m> equal to <m>1\text{.}</m> Then <m>e</m> must equal 1949, because <m>x^{1}\cdot x^{1949}=x^{1950}\text{.}</m> Considering all of the possibilities for <m>d\text{,}</m> notice that <m>d</m> can equal <m>1,2,3,\ldots,1949\text{.}</m> Therefore, there are 1949 possibilities for <m>d\text{.}</m> Note that <m>d</m> can<rsq/>t equal 1950 because that would force <m>e</m> to be zero, which is not a natural number.</p>
+      <solution><p>Let <m>x^{d}\cdot x^{e}=x^{1500}\text{.}</m> Many possibilities exist for <m>d</m> and <m>e\text{.}</m> Since <m>d</m> and <m>e</m> must be natural numbers, let<rsq/>s start with <m>d</m> equal to <m>1\text{.}</m> Then <m>e</m> must equal 1499, because <m>x^{1}\cdot x^{1499}=x^{1500}\text{.}</m> Considering all of the possibilities for <m>d\text{,}</m> notice that <m>d</m> can equal <m>1,2,3,\ldots,1499\text{.}</m> Therefore, there are 1499 possibilities for <m>d\text{.}</m> Note that <m>d</m> can<rsq/>t equal 1500 because that would force <m>e</m> to be zero, which is not a natural number.</p>
 </solution>
     </task>
   </static>

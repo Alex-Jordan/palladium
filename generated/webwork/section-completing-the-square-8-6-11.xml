@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-6-11" assembly-id="section-completing-the-square-8-6-11">
-  <static seed="1204" source="Contrib/PCC/Math95/ParabolaVertex/ParabolaVertex9.pg">
-    <statement><p>If a ball is throw straight up with a speed of <m>56\ {\textstyle\frac{\rm\mathstrut ft}{\rm\mathstrut s}}</m>, its height at time <m>t</m> (in seconds) is given by</p>
-<p><me>h(t)=-8t^{2}+56t+2</me></p>
+  <static seed="737" source="Contrib/PCC/Math95/ParabolaVertex/ParabolaVertex9.pg">
+    <statement><p>If a ball is throw straight up with a speed of <m>62\ {\textstyle\frac{\rm\mathstrut ft}{\rm\mathstrut s}}</m>, its height at time <m>t</m> (in seconds) is given by</p>
+<p><me>h(t)=-8t^{2}+62t+2</me></p>
 <p>Find the maximum height the ball reaches.</p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>100\ {\rm ft}</m>
+        <m>122.125\ {\rm ft}</m>
       </p>
     </answer>
   </static>

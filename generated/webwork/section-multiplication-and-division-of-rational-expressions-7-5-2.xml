@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-5-2" assembly-id="section-multiplication-and-division-of-rational-expressions-7-5-2">
-  <static seed="1296" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions81.pg">
+  <static seed="1160" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions81.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{{\frac{yr-y^{2}r^{2}}{y^{2}r^{2}-2yr+1}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{3yt-y^{2}t^{2}}{y^{2}t^{2}+2yt-15}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-\frac{yr}{yr-1}</m>
+        <m>-\frac{yt}{yt+5}</m>
       </p>
     </answer>
     <solution><p>To simplify the expression, we first factor both the numerator and denominator, and then cross out common terms:</p>
 <p><m>\displaystyle{\begin{aligned}
-   {\frac{yr-y^{2}r^{2}}{y^{2}r^{2}-2yr+1}} \amp = \frac{{yr\mathopen{}\left(1-yr\right)}}{{\left(yr-1\right)\mathopen{}\left(yr-1\right)}} \\
-                     \amp = \frac{{-yr\mathopen{}\left(yr-1\right)}}{{\left(yr-1\right)\mathopen{}\left(yr-1\right)}} \\
-                     \amp = {-\frac{yr}{yr-1}}
+   {\frac{3yt-y^{2}t^{2}}{y^{2}t^{2}+2yt-15}} \amp = \frac{{yt\mathopen{}\left(3-yt\right)}}{{\left(yt-3\right)\mathopen{}\left(yt+5\right)}} \\
+                     \amp = \frac{{-yt\mathopen{}\left(yt-3\right)}}{{\left(yt-3\right)\mathopen{}\left(yt+5\right)}} \\
+                     \amp = {-\frac{yt}{yt+5}}
 \end{aligned}
     }</m></p>
 </solution>

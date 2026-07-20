@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-mxplusbequalsmxplusb-inequality-copy" assembly-id="solve-mxplusbequalsmxplusb-inequality-copy">
-  <static seed="1532">
-    <statement><p><m>{7H-1}\geq{7H-1}</m></p>
+  <static seed="1396">
+    <statement><p><m>{6M+5}\gt{5+6M}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left(-\infty ,\infty \right)\hbox{ or }\text{infinitely many solutions}</m>
+        <m>\text{no real solutions}</m>
       </p>
     </answer>
   </static>

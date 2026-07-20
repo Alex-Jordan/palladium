@@ -1,0 +1,66 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.8.47)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+($a,$b,$c) = random_subset(3, 1 .. 9);
+$f = Formula("$a x^2 + $b x + $c")->reduce;
+Context("Point");
+$h = -$b/(2*$a);
+$v = Point($h, $f->eval(x=>$h));
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the coordinates of the vertex.
+
+[`f(x)=[$f]`]
+
+[_]{$v}{6}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

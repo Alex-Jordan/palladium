@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-addition-and-subtraction-of-rational-expressions-7-3-14" assembly-id="section-addition-and-subtraction-of-rational-expressions-7-3-14">
-  <static seed="1389" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions110.pg">
+  <static seed="1253" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions110.pg">
     <statement><p>Add or subtract the rational expressions to a single rational expression and then simplify. If applicable, state the restricted domain.</p>
-<p><m>\displaystyle{{\frac{5}{t+4}-\frac{1}{t-3}} =}</m> <fillin characters="40" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{5}{r+4}+\frac{1}{r-3}} =}</m> <fillin characters="40" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{4t-19}{\left(t+4\right)\mathopen{}\left(t-3\right)}, \left(-\infty ,\infty \right)</m>
+        <m>\frac{6r-11}{\left(r+4\right)\mathopen{}\left(r-3\right)}, \left(-\infty ,\infty \right)</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   {\frac{5}{t+4}-\frac{1}{t-3}} 
-      \amp = {\frac{5}{t+4}} \cdot \frac{(t - 3)}{(t - 3)} -\frac{1}{t - 3} \cdot \frac{(t+4)}{(t+4)}  \\
-      \amp = {\frac{5\mathopen{}\left(t-3\right)-\left(t+4\right)}{\left(t+4\right)\mathopen{}\left(t-3\right)}} \\
-      \amp = {\frac{5t-15-t-4}{\left(t+4\right)\mathopen{}\left(t-3\right)}} \\
-      \amp = {\frac{4t-19}{\left(t+4\right)\mathopen{}\left(t-3\right)}}
+   {\frac{5}{r+4}+\frac{1}{r-3}} 
+      \amp = {\frac{5}{r+4}} \cdot \frac{(r - 3)}{(r - 3)} +\frac{1}{r - 3} \cdot \frac{(r+4)}{(r+4)}  \\
+      \amp = {\frac{5\mathopen{}\left(r-3\right)+r+4}{\left(r+4\right)\mathopen{}\left(r-3\right)}} \\
+      \amp = {\frac{5r-15+r+4}{\left(r+4\right)\mathopen{}\left(r-3\right)}} \\
+      \amp = {\frac{6r-11}{\left(r+4\right)\mathopen{}\left(r-3\right)}}
 \end{aligned}
     }</m></p>
 </solution>

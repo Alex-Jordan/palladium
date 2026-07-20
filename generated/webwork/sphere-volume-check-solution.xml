@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-sphere-volume-check-solution" assembly-id="sphere-volume-check-solution">
-  <static seed="2508">
-    <statement><p>The formula for a sphere<rsq/>s volume is <m>V=\frac{4}{3}\pi r^3\text{,}</m> where <m>V</m> is the volume and <m>r</m> is the radius. And <m>\pi</m> is a number that is about <m>3.14\text{.}</m> If we know the volume of a sphere is <m>{{\frac{256}{1029}}\pi }</m> then we have the equation <m>{{\frac{256}{1029}}\pi }={{\frac{4}{3}}\pi r^{3}}\text{.}</m> Is the radius <m>{{\frac{6}{7}}}\text{?}</m></p>
+  <static seed="2372">
+    <statement><p>The formula for a sphere<rsq/>s volume is <m>V=\frac{4}{3}\pi r^3\text{,}</m> where <m>V</m> is the volume and <m>r</m> is the radius. And <m>\pi</m> is a number that is about <m>3.14\text{.}</m> If we know the volume of a sphere is <m>{{\frac{256}{81}}\pi }</m> then we have the equation <m>{{\frac{256}{81}}\pi }={{\frac{4}{3}}\pi r^{3}}\text{.}</m> Is the radius <m>{2}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>{\frac{256}{1029}}\pi</m></cell>
+<cell><m>{\frac{256}{81}}\pi</m></cell>
 <cell><m>=</m></cell>
 <cell><m>{\frac{4}{3}}\pi r^{3}</m></cell>
 </row>
 <row>
-<cell><m>\frac{256}{1029}\pi</m></cell>
+<cell><m>\frac{256}{81}\pi</m></cell>
 <cell><m>\wonder{=}</m></cell>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
@@ -23,7 +23,7 @@
 </statement>
     <answer>
       <p>
-        <m>\frac{216}{343}\pi </m>
+        <m>8\pi </m>
       </p>
     </answer>
     <answer>

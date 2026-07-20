@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-1-7" assembly-id="section-completing-the-square-8-1-7">
-  <static seed="1158">
-    <statement><p>Use a square root to solve <m>{\left(x+1\right)^{2}}={6}\text{.}</m></p>
+  <static seed="691">
+    <statement><p>Use a square root to solve <m>{\left(r+7\right)^{2}}={17}\text{.}</m></p>
 <p><fillin characters="25" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{-1+\sqrt{6},-1-\sqrt{6}\right\}</m>
+        <m>\left\{-7+\sqrt{17},-7-\sqrt{17}\right\}</m>
       </p>
     </answer>
     <solution><p>Using the square root property:</p>
 <p><me>\begin{aligned}
-{x+1}\amp=\sqrt{6}\amp\amp\text{or}\amp {x+1}\amp=-\sqrt{6}\\
-x\amp={-1+\sqrt{6}}\amp\amp\text{or}\amp x\amp={-1-\sqrt{6}}
+{r+7}\amp=\sqrt{17}\amp\amp\text{or}\amp {r+7}\amp=-\sqrt{17}\\
+r\amp={-7+\sqrt{17}}\amp\amp\text{or}\amp r\amp={-7-\sqrt{17}}
 \end{aligned}</me></p>
-<p>So the solution set is <m>{\left\{-1+\sqrt{6},-1-\sqrt{6}\right\}}\text{.}</m></p>
+<p>So the solution set is <m>{\left\{-7+\sqrt{17},-7-\sqrt{17}\right\}}\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_8_6_5.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_9_6_5.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg copied-from="section-completing-the-square-8-1-6"><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -34,7 +34,7 @@ x\amp={-1+\sqrt{6}}\amp\amp\text{or}\amp x\amp={-1-\sqrt{6}}
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.8.6.6)
+## Problem1(1.9.6.6)
 ## Author()
 ## Institution()
 ## Language(en-US)

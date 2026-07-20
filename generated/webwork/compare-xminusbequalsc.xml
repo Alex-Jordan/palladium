@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-compare-xminusbequalsc" assembly-id="compare-xminusbequalsc">
-  <static seed="1549">
+  <static seed="1413">
     <introduction/>
     <task>
-      <statement><p><m>{z-9}={6}</m> for <m>z\text{.}</m></p>
+      <statement><p><m>{w-6}={4}</m> for <m>w\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>\left\{15\right\}</m>
+          <m>\left\{10\right\}</m>
         </p>
       </answer>
     </task>
     <task>
-      <statement><p><m>{z-D}={A}</m> for <m>z\text{.}</m></p>
+      <statement><p><m>{w-S}={Q}</m> for <m>w\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>z = A+D</m>
+          <m>w = Q+S</m>
         </p>
       </answer>
     </task>

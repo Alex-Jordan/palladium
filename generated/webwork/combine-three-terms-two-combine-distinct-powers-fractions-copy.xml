@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-combine-three-terms-two-combine-distinct-powers-fractions-copy" assembly-id="combine-three-terms-two-combine-distinct-powers-fractions-copy">
-  <static seed="2283">
-    <statement><p><m>{-{\frac{3}{5}}P^{6}+{\frac{3}{10}}P+{\frac{8}{5}}P}</m></p>
+  <static seed="2147">
+    <statement><p><m>{{\frac{5}{2}}L^{6}+{\frac{5}{2}}L^{4}+{\frac{3}{8}}L^{6}}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{19}{10}P-\frac{3}{5}P^{6}</m>
+        <m>\frac{5}{2}L^{4}+\frac{23}{8}L^{6}</m>
       </p>
     </answer>
   </static>

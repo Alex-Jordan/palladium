@@ -1,28 +1,28 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-10-6" assembly-id="section-solving-rational-equations-10-10-6">
-  <static seed="1577" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations3.pg">
+  <static seed="1441" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations3.pg">
     <statement><p>Solve the equation.</p>
-<p><m>\displaystyle{ {\frac{r+3}{2r+3}} = \frac{4}{7} }</m></p>
+<p><m>\displaystyle{ {\frac{r-3}{5r+9}} = \frac{3}{7} }</m></p>
 <p><fillin characters="34" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{9\right\}</m>
+        <m>\left\{-6\right\}</m>
       </p>
     </answer>
-    <solution><p>To get rid of all fractions in this equation, we multiple all terms with the common denominator. In this equation, the common denominator is <m>{7\mathopen{}\left(2r+3\right)}</m>.</p>
+    <solution><p>To get rid of all fractions in this equation, we multiple all terms with the common denominator. In this equation, the common denominator is <m>{7\mathopen{}\left(5r+9\right)}</m>.</p>
 <p><m>\displaystyle{\begin{aligned}
-   {\frac{r+3}{2r+3}} \amp = \frac{4}{7} \\
-   {\frac{r+3}{2r+3}} \cdot {7\mathopen{}\left(2r+3\right)} \amp = \frac{4}{7} \cdot {7\mathopen{}\left(2r+3\right)} \\
-   7(r+3) \amp = 4(2r+3) \\
-   7r+21 \amp = 8r+12 \\
-   7r+21  \mathbf{-8r-21} \amp = 8r+12 \mathbf{-8r-21}  \\
-   -1r \amp = -9 \\
-   \frac{-1r}{-1} \amp = \frac{-9}{-1} \\
-   r \amp = 9
+   {\frac{r-3}{5r+9}} \amp = \frac{3}{7} \\
+   {\frac{r-3}{5r+9}} \cdot {7\mathopen{}\left(5r+9\right)} \amp = \frac{3}{7} \cdot {7\mathopen{}\left(5r+9\right)} \\
+   7(r - 3) \amp = 3(5r+9) \\
+   7r - 21 \amp = 15r+27 \\
+   7r - 21  \mathbf{-15r + 21} \amp = 15r+27 \mathbf{-15r + 21}  \\
+   -8r \amp = 48 \\
+   \frac{-8r}{-8} \amp = \frac{48}{-8} \\
+   r \amp = -6
 \end{aligned}
     }</m></p>
-<p>We must check solutions when we solve rational equations. By the original equation, the domain condition is <m>{7\mathopen{}\left(2r+3\right)} \ne 0</m>, or <m>r \ne -\frac{3}{2}</m>. This doesn<rsq/>t conflict with the solution above, so the solution is <m>r = 9</m>.</p>
+<p>We must check solutions when we solve rational equations. By the original equation, the domain condition is <m>{7\mathopen{}\left(5r+9\right)} \ne 0</m>, or <m>r \ne -\frac{9}{5}</m>. This doesn<rsq/>t conflict with the solution above, so the solution is <m>r = -6</m>.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations3.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

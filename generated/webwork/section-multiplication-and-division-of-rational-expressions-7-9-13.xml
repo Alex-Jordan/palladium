@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-9-13" assembly-id="section-multiplication-and-division-of-rational-expressions-7-9-13">
-  <static seed="1351" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions55.pg">
+  <static seed="1215" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions55.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{{\frac{1}{r^{2}+10ry+24y^{2}}} \div {\frac{r^{3}}{r^{2}+6ry}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{1}{r^{2}-7ry+6y^{2}}} \div {\frac{r^{2}}{r^{2}-6ry}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{1}{r^{2}\mathopen{}\left(r+4y\right)}</m>
+        <m>\frac{1}{r\mathopen{}\left(r-y\right)}</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   {\frac{1}{r^{2}+10ry+24y^{2}}} \div {\frac{r^{3}}{r^{2}+6ry}} 
-      \amp = {\frac{1}{r^{2}+10ry+24y^{2}}} \cdot {\frac{r^{2}+6ry}{r^{3}}} \\
-      \amp = \frac{{1}}{{\left(r+6y\right)\mathopen{}\left(r+4y\right)}} \cdot \frac{{r\mathopen{}\left(r+6y\right)}}{{r^{3}}} \\
-      \amp = {\frac{1}{r^{2}\mathopen{}\left(r+4y\right)}}
+   {\frac{1}{r^{2}-7ry+6y^{2}}} \div {\frac{r^{2}}{r^{2}-6ry}} 
+      \amp = {\frac{1}{r^{2}-7ry+6y^{2}}} \cdot {\frac{r^{2}-6ry}{r^{2}}} \\
+      \amp = \frac{{1}}{{\left(r-6y\right)\mathopen{}\left(r-y\right)}} \cdot \frac{{r\mathopen{}\left(r-6y\right)}}{{r^{2}}} \\
+      \amp = {\frac{1}{r\mathopen{}\left(r-y\right)}}
 \end{aligned}
     }</m></p>
 </solution>

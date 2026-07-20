@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-a-solution-to-linear" assembly-id="check-a-solution-to-linear">
-  <static seed="2438">
+  <static seed="2302">
     <statement><p>Is <m>-3</m> a solution to the equation <m>2x-3=5-(4+x)\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>

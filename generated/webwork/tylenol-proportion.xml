@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-tylenol-proportion" assembly-id="tylenol-proportion">
-  <static seed="1465">
+  <static seed="1329">
     <statement><p>Infant Tylenol contains 160 mg of acetaminophen in each 5 mL of liquid. If Bao<rsq/>s baby is prescribed 60 mg of acetaminophen, how many milliliters of liquid should he give the baby?</p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>

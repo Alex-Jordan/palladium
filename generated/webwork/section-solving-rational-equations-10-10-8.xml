@@ -1,26 +1,26 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-10-8" assembly-id="section-solving-rational-equations-10-10-8">
-  <static seed="1579" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations4.pg">
+  <static seed="1443" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations4.pg">
     <statement><p>Solve the equation.</p>
-<p><m>\displaystyle{ {\frac{3t+4}{t+6}} = {\frac{3t}{t+4}} }</m></p>
+<p><m>\displaystyle{ {\frac{-2t+5}{t+5}} = {-\frac{2t}{t+10}} }</m></p>
 <p><fillin characters="34" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{8\right\}</m>
+        <m>\left\{10\right\}</m>
       </p>
     </answer>
-    <solution><p>To get rid of all fractions in this equation, we multiple all terms with the common denominator. In this equation, the common denominator is <m>{\left(t+6\right)\mathopen{}\left(t+4\right)}</m>.</p>
+    <solution><p>To get rid of all fractions in this equation, we multiple all terms with the common denominator. In this equation, the common denominator is <m>{\left(t+5\right)\mathopen{}\left(t+10\right)}</m>.</p>
 <p><m>\displaystyle{\begin{aligned}
-   {\frac{3t+4}{t+6}} \amp = {\frac{3t}{t+4}} \\
-   {\frac{3t+4}{t+6}} \cdot {\left(t+6\right)\mathopen{}\left(t+4\right)} \amp = {\frac{3t}{t+4}} \cdot {\left(t+6\right)\mathopen{}\left(t+4\right)} \\
-   {\left(3t+4\right)\mathopen{}\left(t+4\right)} \amp = {3t\mathopen{}\left(t+6\right)} \\
-   {3t^{2}+12t+4t+16} \amp = {3t^{2}+18t} \\
-   -2t \amp = -16 \\
-   t \amp = 8
+   {\frac{-2t+5}{t+5}} \amp = {-\frac{2t}{t+10}} \\
+   {\frac{-2t+5}{t+5}} \cdot {\left(t+5\right)\mathopen{}\left(t+10\right)} \amp = {-\frac{2t}{t+10}} \cdot {\left(t+5\right)\mathopen{}\left(t+10\right)} \\
+   {\left(-2t+5\right)\mathopen{}\left(t+10\right)} \amp = {-2t\mathopen{}\left(t+5\right)} \\
+   {-2t^{2}-20t+5t+50} \amp = {-2t^{2}-10t} \\
+   -5t \amp = -50 \\
+   t \amp = 10
 \end{aligned}
     }</m></p>
-<p>We must check solutions when we solve rational equations. By the original equation, the domain condition is <m>{\left(t+6\right)\mathopen{}\left(t+4\right)} \ne 0</m>, which is equivalent to <m>t \ne -6</m> and <m>t \ne -4</m>. This doesn<rsq/>t conflict with the solution above, so the solution is <m>t = 8</m>.</p>
+<p>We must check solutions when we solve rational equations. By the original equation, the domain condition is <m>{\left(t+5\right)\mathopen{}\left(t+10\right)} \ne 0</m>, which is equivalent to <m>t \ne -5</m> and <m>t \ne -10</m>. This doesn<rsq/>t conflict with the solution above, so the solution is <m>t = 10</m>.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations4.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

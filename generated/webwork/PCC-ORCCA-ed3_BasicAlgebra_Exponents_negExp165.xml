@@ -1,27 +1,27 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp165" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp165">
-  <static seed="1775">
-    <statement><p><m>\displaystyle\left(\frac{r^{12}}{x^{7}}\right)^{-5}</m></p>
+  <static seed="1639">
+    <statement><p><m>\displaystyle\left(\frac{y^{3}}{x^{9}}\right)^{-5}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{x^{35}}{r^{60}}</m>
+        <m>\frac{x^{45}}{y^{15}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\left(a^m\right)^{n}=a^{mn}</m></p>
 <p><m>\begin{aligned}
-                 \left(\frac{r^{12}}{x^{7}}\right)^{-5}
-                      \amp = \frac{r^{12\cdot(-5)}}{x^{7\cdot(-5)}}\\
-                      \amp = \frac{r^{-60}}{x^{-35}}\\
-                                    \amp  = {\frac{x^{35}}{r^{60}}}
+                 \left(\frac{y^{3}}{x^{9}}\right)^{-5}
+                      \amp = \frac{y^{3\cdot(-5)}}{x^{9\cdot(-5)}}\\
+                      \amp = \frac{y^{-15}}{x^{-45}}\\
+                                    \amp  = {\frac{x^{45}}{y^{15}}}
            \end{aligned}</m></p>
 <p>Alternatively, you may prefer</p>
 <p><m>\begin{aligned}
-                 \left(\frac{r^{12}}{x^{7}}\right)^{-5}
-                      \amp = \left(\frac{x^{7}}{r^{12}}\right)^{5}\\
-                      \amp  = \frac{x^{7\cdot(5)}}{r^{12\cdot(5)}}\\
-                                    \amp  = {\frac{x^{35}}{r^{60}}}
+                 \left(\frac{y^{3}}{x^{9}}\right)^{-5}
+                      \amp = \left(\frac{x^{9}}{y^{3}}\right)^{5}\\
+                      \amp  = \frac{x^{9\cdot(5)}}{y^{3\cdot(5)}}\\
+                                    \amp  = {\frac{x^{45}}{y^{15}}}
            \end{aligned}</m></p>
 </solution>
   </static>

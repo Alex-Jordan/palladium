@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication20-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication20-copy">
-  <static seed="2642">
-    <statement><p><m>{-7r^{2}}\left({-2r^{2}-5r+9}\right)</m></p>
+  <static seed="2506">
+    <statement><p><m>{9y^{2}}\left({-8y^{2}-9y+6}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>14r^{4}+35r^{3}-63r^{2}</m>
+        <m>-72y^{4}-81y^{3}+54y^{2}</m>
       </p>
     </answer>
     <solution><p>We multiply the monomial by each term in the trinomial, using 
 the properties of exponents to help us</p>
 <p><m>\begin{aligned}
-              {-7r^{2}}({-2r^{2}-5r+9})\amp ={14r^{4}+35r^{3}-63r^{2}}
+              {9y^{2}}({-8y^{2}-9y+6})\amp ={-72y^{4}-81y^{3}+54y^{2}}
       \end{aligned}</m></p>
 </solution>
   </static>

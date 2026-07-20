@@ -1,46 +1,46 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-14-19" assembly-id="section-solving-rational-equations-10-14-19">
-  <static seed="1640" source="Contrib/PCC/Math95/RatEqApplications/RatEqApplications7.pg">
-    <statement><p>It takes one painter <m>16\ {\rm hr}</m> longer to paint a house than it does a more experienced painter.  Together they can paint the house in <m>30\ {\rm hr}</m>.  How long does it take for each painter to paint the house working alone?</p>
+  <static seed="1504" source="Contrib/PCC/Math95/RatEqApplications/RatEqApplications7.pg">
+    <statement><p>It takes one painter <m>15\ {\rm hr}</m> longer to paint a house than it does a more experienced painter.  Together they can paint the house in <m>22\ {\rm hr}</m>.  How long does it take for each painter to paint the house working alone?</p>
 <p>The more experienced painter takes <fillin characters="15" name="AnSwEr0001"/> to paint the house alone, and the less experienced painter takes <fillin characters="15" name="AnSwEr0002"/>.</p>
 </statement>
     <answer>
       <p>
-        <m>53.05\ {\rm hr}</m>
+        <m>37.74\ {\rm hr}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>69.05\ {\rm hr}</m>
+        <m>52.74\ {\rm hr}</m>
       </p>
     </answer>
     <solution><p>Let<rsq/>s understand how to use fractions to model work problems. Assume it takes a person <m>5</m> hours to complete a job. If we treat the whole job as one whole, each hour, this person would complete <m>\frac{1}{5}</m> of the job.</p>
 <p>Similarly, if it takes a person <m>x</m> hours to complete a job, each hour, this person would complete <m>\frac{1}{x}</m> of the job.</p>
 <p>Now we are ready to model this situation with math.</p>
 <p>Assume that, if the experienced painter paints the house alone, it would take <m>x</m> hours to complete the job. Each hour, the experiended painter does <m>\frac{1}{x}</m> of the whole job.</p>
-<p>It<rsq/>s given that, if the slower painter works alone, it would take <m>16</m> more hours to complete the job. So it would take the slower painter <m>x+16</m> hours to complete the job. Each hour, the slower painter does <m>\frac{1}{x+16}</m> of the whole job.</p>
-<p>It<rsq/>s given that, if they work together, it took them <m>30</m> hours to complete the job. Each hour, they can complete <m>\frac{1}{30}</m> of the whole job.</p>
+<p>It<rsq/>s given that, if the slower painter works alone, it would take <m>15</m> more hours to complete the job. So it would take the slower painter <m>x+15</m> hours to complete the job. Each hour, the slower painter does <m>\frac{1}{x+15}</m> of the whole job.</p>
+<p>It<rsq/>s given that, if they work together, it took them <m>22</m> hours to complete the job. Each hour, they can complete <m>\frac{1}{22}</m> of the whole job.</p>
 <p>Now we can write an equation and solve it:</p>
 <p><m>\displaystyle{\begin{aligned}
-  \amp \frac{1}{x}+\frac{1}{x+16} = \frac{1}{30} \\
-  \amp \frac{1}{x} \cdot {30x\mathopen{}\left(x+16\right)} +\frac{1}{x+16} \cdot {30x\mathopen{}\left(x+16\right)} = \frac{1}{30} \cdot {30x\mathopen{}\left(x+16\right)} \\
-  \amp 30(x+16) + 30x = x(x+16) \\
-  \amp 30x+480 +30x = x^{2}+16x \\
-  \amp  0= x^{2} - 44x -480 \\
+  \amp \frac{1}{x}+\frac{1}{x+15} = \frac{1}{22} \\
+  \amp \frac{1}{x} \cdot {22x\mathopen{}\left(x+15\right)} +\frac{1}{x+15} \cdot {22x\mathopen{}\left(x+15\right)} = \frac{1}{22} \cdot {22x\mathopen{}\left(x+15\right)} \\
+  \amp 22(x+15) + 22x = x(x+15) \\
+  \amp 22x+330 +22x = x^{2}+15x \\
+  \amp  0= x^{2} - 29x -330 \\
 \end{aligned}
     }</m></p>
-<p>In the second step, to get rid of all fractions, we multiplied each term with the common denominator <m>{30x\mathopen{}\left(x+16\right)}</m>.</p>
+<p>In the second step, to get rid of all fractions, we multiplied each term with the common denominator <m>{22x\mathopen{}\left(x+15\right)}</m>.</p>
 <p>When numbers are big, we use the quadratic formula to solve the quadratic equation:</p>
 <p><m>\displaystyle{\begin{aligned}
    x \amp = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a} \\
-   x \amp = \frac{-(-44) \pm \sqrt{(-44)^{2}-4 \cdot (1) \cdot (-480)}}{2 \cdot (1)} \\
-   x \amp = \frac{44 \pm \sqrt{3856}}{2} \\
-   x \amp = \frac{44 + \sqrt{3856}}{2} \:\: or \:\: x= \frac{44 - \sqrt{3856}}{2} \\
-   x \amp \approx 53.05 \:\: or \:\: x \approx -9.05
+   x \amp = \frac{-(-29) \pm \sqrt{(-29)^{2}-4 \cdot (1) \cdot (-330)}}{2 \cdot (1)} \\
+   x \amp = \frac{29 \pm \sqrt{2161}}{2} \\
+   x \amp = \frac{29 + \sqrt{2161}}{2} \:\: or \:\: x= \frac{29 - \sqrt{2161}}{2} \\
+   x \amp \approx 37.74 \:\: or \:\: x \approx -8.74
 \end{aligned}
     }</m></p>
-<p>In this situation, <m>x=-9.05</m> is not a valid solution, since hours cannot be negative. <m>x=53.05</m> is the only solution. It would take the more experienced painter <m>53.05</m> hours to complete the job.</p>
-<p>Since, if the less experienced painter works alone, it would take <m>16</m> more hours to complete the job. So it would take the less experienced painter <m>53.05+16=69.05</m> hours to complete the job.</p>
+<p>In this situation, <m>x=-8.74</m> is not a valid solution, since hours cannot be negative. <m>x=37.74</m> is the only solution. It would take the more experienced painter <m>37.74</m> hours to complete the job.</p>
+<p>Since, if the less experienced painter works alone, it would take <m>15</m> more hours to complete the job. So it would take the less experienced painter <m>37.74+15=52.74</m> hours to complete the job.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/Math95/RatEqApplications/RatEqApplications7.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

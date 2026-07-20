@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-dilated-volume" assembly-id="simplify-dilated-volume">
-  <static seed="2624">
-    <statement><p>If a cube has sides of length <m>B\text{,}</m> its volume is <m>B^3\text{.}</m> If we grew the side lengths to make them eight times as long, the volume would become <m>(8B)^3\text{.}</m> Simplify this expression using the product-to-power rule.</p>
+  <static seed="2488">
+    <statement><p>If a cube has sides of length <m>y\text{,}</m> its volume is <m>y^3\text{.}</m> If we grew the side lengths to make them three times as long, the volume would become <m>(3y)^3\text{.}</m> Simplify this expression using the product-to-power rule.</p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>512B^{3}</m>
+        <m>27y^{3}</m>
       </p>
     </answer>
   </static>

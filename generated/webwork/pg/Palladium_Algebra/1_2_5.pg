@@ -1,0 +1,148 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.2.5)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "scaffold.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+COMMENT('This problem is scaffolded with multiple parts');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Fraction");
+@ans = (Real(8), Real(5), Fraction(-5,2));
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Let [`f`] be the function defined by [`f(x)=4x^2-3x-2\text{.}`]
+
+END_PGML
+
+############################################################
+# Scaffold
+############################################################
+Scaffold::Begin(numbered => 1,is_open => "correct_or_first_incorrect",can_open => always,);
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+Find [`f(2)\text{.}`]
+
+ [_]{$ans[0]}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}\newcommand{\amp}{&}\begin{aligned}
+                  f(\substitute{2})\amp=4(\substitute{2})^2-3(\substitute{2})-2\\
+                  \amp=16-6-2=8
+                \end{aligned}`]
+
+END_PGML_SOLUTION
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+Find [`f(-1)\text{.}`]
+
+ [_]{$ans[1]}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}\newcommand{\amp}{&}\begin{aligned}
+                  f(\substitute{-1})\amp=4(\substitute{-1})^2-3(\substitute{-1})-2\\
+                  \amp=4+3-2=5
+                \end{aligned}`]
+
+END_PGML_SOLUTION
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+Find [`f\mathopen{}\left(\frac{1}{2}\right)\mathclose{}\text{.}`]
+
+ [_]{$ans[2]}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}\newcommand{\amp}{&}\begin{aligned}
+                  f\mathopen{}\left(\substitute{\frac{1}{2}}\right)\mathclose{}
+                    \amp=4\left(\substitute{\frac{1}{2}}\right)^2-3\left(\substitute{\frac{1}{2}}\right)-2\\
+                  \amp=4\left(\frac{1}{4}\right)-\frac{3}{2}-2\\
+                  \amp=1-\frac{3}{2}-2=-\frac{5}{2}
+                \end{aligned}`]
+
+END_PGML_SOLUTION
+
+Section::End();
+
+Scaffold::End();
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-subsection-graphs-of-quadratic-functions-7" assembly-id="subsection-graphs-of-quadratic-functions-7">
+  <static seed="727">
+    <introduction><p>Consider the function <m>f</m> defined by <m>f(x)=2x^2 + x - 5\text{.}</m></p>
+</introduction>
+    <task>
+      <statement><p>If you were sketching the graph of <m>f</m> by hand, where on the <m>y</m>-axis would you start?</p>
+<p><fillin characters="6" name="AnSwEr0001"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\left(0,-5\right)</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement><p>What would the slope be right where you start sketching?</p>
+<p><fillin characters="6" name="AnSwEr0002"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement><p>Would the parabola open upward or downward?</p>
+<p><fillin name="AnSwEr0003"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{upward}</m>
+        </p>
+      </answer>
+    </task>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_2_8.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.2.8)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "scaffold.pl",
+  "parserPopUp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+COMMENT('This problem is scaffolded with multiple parts');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Point");
+$iv = Point("(0,-5)");
+$is = Real(1);
+$ud = DropDown(['upward', 'downward'], 0, showInStatic => 0);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Consider the function [`f`] defined by [`f(x)=2x^2 + x - 5\text{.}`]
+
+END_PGML
+
+############################################################
+# Scaffold
+############################################################
+Scaffold::Begin(numbered => 1,is_open => "correct_or_first_incorrect",can_open => always,);
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+If you were sketching the graph of [`f`] by hand, where on the [`y`]-axis would you start?
+
+[_]{$iv}{6}
+
+END_PGML
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+What would the slope be right where you start sketching?
+
+[_]{$is}{6}
+
+END_PGML
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+Would the parabola open upward or downward?
+
+[_]{$ud}{5}
+
+END_PGML
+
+Section::End();
+
+Scaffold::End();
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

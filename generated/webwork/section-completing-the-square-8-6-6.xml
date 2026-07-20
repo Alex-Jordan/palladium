@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-6-6" assembly-id="section-completing-the-square-8-6-6">
-  <static seed="1199" source="Contrib/PCC/Math95/ParabolaVertex/ParabolaVertex7.pg">
+  <static seed="732" source="Contrib/PCC/Math95/ParabolaVertex/ParabolaVertex7.pg">
     <statement><p>Find the range of the function</p>
-<p><me>f(x)=3-\left(8x^{2}+5x\right)</me></p>
+<p><me>f(x)=3x-x^{2}+9</me></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left(-\infty ,\frac{121}{32}\right]</m>
+        <m>\left(-\infty ,\frac{45}{4}\right]</m>
       </p>
     </answer>
   </static>

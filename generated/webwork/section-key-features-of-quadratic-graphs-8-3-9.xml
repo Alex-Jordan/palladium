@@ -1,39 +1,39 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-key-features-of-quadratic-graphs-8-3-9" assembly-id="section-key-features-of-quadratic-graphs-8-3-9">
-  <static seed="995" source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex80.pg">
+  <static seed="528" source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex80.pg">
     <statement><p>Find the axis of symmetry and vertex of the quadratic function.</p>
-<p><m>{y}={-4x^{2}+24x}</m></p>
+<p><m>{y}={x^{2}+8x}</m></p>
 <p>Axis of symmetry: <fillin characters="13" name="AnSwEr0001"/></p>
 <p>Vertex: <fillin characters="13" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>x = 3</m>
+        <m>x = -4</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(3,36\right)</m>
+        <m>\left(-4,-16\right)</m>
       </p>
     </answer>
     <solution><p>This quadratic function is given in standard form. Identify that:</p>
-<p><m>\displaystyle{ a=-4,b=24,c=0 }</m></p>
+<p><m>\displaystyle{ a=1,b=8,c=0 }</m></p>
 <p>To find the parabola<rsq/>s axis of symmetry, we use the formula <m>\displaystyle{x=-\frac{b}{2a}}</m></p>
 <p><m>\displaystyle{\begin{aligned}[t]
   x \amp = -\frac{b}{2a} \\
-   \amp = -\frac{24}{2(-4)} \\
-   \amp = 3
+   \amp = -\frac{8}{2(1)} \\
+   \amp = -4
 \end{aligned}
     }</m></p>
-<p>This parabola<rsq/>s axis of symmetry is <m>\displaystyle{x=3}</m>.</p>
-<p>Next, we substitute <m>\displaystyle{x=3}</m> into <m>\displaystyle{{y}={-4x^{2}+24x}}</m></p>
+<p>This parabola<rsq/>s axis of symmetry is <m>\displaystyle{x=-4}</m>.</p>
+<p>Next, we substitute <m>\displaystyle{x=-4}</m> into <m>\displaystyle{{y}={x^{2}+8x}}</m></p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   y \amp = -4(3)^{2}+24(3) \\
-    \amp = -4 \cdot 9 + 72 \\
-    \amp = {36}
+   y \amp = 1(-4)^{2}+8(-4) \\
+    \amp = 1 \cdot 16  - 32 \\
+    \amp = {-16}
 \end{aligned}
     }</m></p>
-<p>This parabola<rsq/>s vertex is <m>\displaystyle{(3,{36})}</m>.</p>
+<p>This parabola<rsq/>s vertex is <m>\displaystyle{(-4,{-16})}</m>.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex80.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

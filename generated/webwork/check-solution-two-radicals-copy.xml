@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-solution-two-radicals-copy" assembly-id="check-solution-two-radicals-copy">
-  <static seed="2460">
-    <statement><p>Is <m>4</m> a solution to <m>{\sqrt{3x-3}+5}={\sqrt{17x-4}}\text{?}</m></p>
+  <static seed="2324">
+    <statement><p>Is <m>3</m> a solution to <m>{\sqrt{2x-2}}={\sqrt{17x-2}-4}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>\sqrt{3x-3}+5</m></cell>
+<cell><m>\sqrt{2x-2}</m></cell>
 <cell><m>=</m></cell>
-<cell><m>\sqrt{17x-4}</m></cell>
+<cell><m>\sqrt{17x-2}-4</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
@@ -24,17 +24,17 @@
 </statement>
     <answer>
       <p>
-        <m>8</m>
+        <m>2</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>8</m>
+        <m>3</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\text{Yes, it is a solution.}</m>
+        <m>\text{No, it is not a solution.}</m>
       </p>
     </answer>
   </static>

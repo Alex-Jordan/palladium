@@ -27,11 +27,8 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PCCmacros.pl",
-  "contextCurrency.pl",
-  "contextPercent.pl",
-  "parserLinearRelation.pl",
-  "randomPerson.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -44,40 +41,23 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$name = randomPerson();
-$profession = list_random(
-  'a radiography technician',
-  'a microelectronics engineer',
-  'a dental hygienist',
-  'a high school teacher',
-  'an office manager',
-  'a restaurant manager',
-  'a web designer',
-  'a tax accountant',
-  'a paralegal',
-  'a structural engineer'
-);
-Context("Currency")->flags->set(trimTrailingZeros => 1);
-$final = 65000 + random(-8000,8000);
-$current = Currency($final);
-Context("Percent");
-$decimal = random(0.02,0.06,0.001);
-$percent = Percent($decimal);
-Context("LinearRelation")->variables->are(S => 'Real');
-$equation = LinearRelation("S + $decimal S < $final");
+($a,$r) = random_coprime([2..9], [-9..-1,1..9]);
+Context()->noreduce('(-x)-y');
+$left = Formula("$a**2 x^2")->reduce;
+$right = Formula("2*$a*$r x - ($r)**2")->reduce;
+Context("FiniteSolutionSets");
+$sols = Formula("{$r/$a}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Write an inequality to model the scenario. There is no need to solve the inequality.
+Solve the equation by factoring.
 
-[$name]'s current annual salary as [$profession] is [`[$current]\text{.}`] This is with a raise by more than [`[$percent]`] over last year's salary. What might [$name->possessive] salary have been last year? Set up an inequality where the solution set represents the possible answers to this question. There is no need to solve it.
+[`[$left] = [$right]`]
 
-[@KeyboardInstructions('Use [|S|]* as the variable.')@]**
-
-[_]{$equation}{20}
+[_]{$sols}{16}
 
 END_PGML
 

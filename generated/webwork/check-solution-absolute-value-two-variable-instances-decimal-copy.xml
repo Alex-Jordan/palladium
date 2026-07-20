@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-solution-absolute-value-two-variable-instances-decimal-copy" assembly-id="check-solution-absolute-value-two-variable-instances-decimal-copy">
-  <static seed="2464">
-    <statement><p>Is <m>{6.5}</m> a solution to <m>{\left|9x+5\right|}={\left|-4x-37.5\right|}\text{?}</m></p>
+  <static seed="2328">
+    <statement><p>Is <m>{4}</m> a solution to <m>{\left|4x+0.9\right|}={\left|2x+12.3\right|}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>\left|9x+5\right|</m></cell>
+<cell><m>\left|4x+0.9\right|</m></cell>
 <cell><m>=</m></cell>
-<cell><m>\left|-4x-37.5\right|</m></cell>
+<cell><m>\left|2x+12.3\right|</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
@@ -24,17 +24,17 @@
 </statement>
     <answer>
       <p>
-        <m>63.5</m>
+        <m>16.9</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>63.5</m>
+        <m>20.3</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\text{Yes, it is a solution.}</m>
+        <m>\text{No, it is not a solution.}</m>
       </p>
     </answer>
   </static>

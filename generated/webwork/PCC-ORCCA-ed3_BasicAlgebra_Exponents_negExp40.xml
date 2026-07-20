@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp40" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp40">
-  <static seed="1723">
-    <statement><p><m>\displaystyle\frac{t^{2}}{\left(t^{3}\right)^{8}}</m></p>
+  <static seed="1587">
+    <statement><p><m>\displaystyle\frac{r^{3}}{\left(r^{6}\right)^{5}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{1}{t^{22}}</m>
+        <m>\frac{1}{r^{27}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\displaystyle{\frac{a^m}{a^n} = a^{m-n}}</m> 
 and also that <m>\left(a^m\right)^n=a^{mn}</m></p>
 <p><m>\begin{aligned}
-                 \displaystyle\frac{t^{2}}{\left(t^{3}\right)^{8}}\amp = \frac{t^{2}}{t^{24}}\\
- \amp = t^{2-24}\\
-                                                       \amp  =t^{-22}\\
-                                    \amp  = {\frac{1}{t^{22}}}
+                 \displaystyle\frac{r^{3}}{\left(r^{6}\right)^{5}}\amp = \frac{r^{3}}{r^{30}}\\
+ \amp = r^{3-30}\\
+                                                       \amp  =r^{-27}\\
+                                    \amp  = {\frac{1}{r^{27}}}
            \end{aligned}</m></p>
 </solution>
   </static>

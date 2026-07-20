@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-convert-mixed-numer-small" assembly-id="convert-mixed-numer-small">
-  <static seed="2127">
-    <statement><p><m>\displaystyle 6\,{{\frac{5}{4}}}</m></p>
+  <static seed="1991">
+    <statement><p><m>\displaystyle 9\,{{\frac{4}{9}}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{29}{4}}</m>
+        <m>{\frac{85}{9}}</m>
       </p>
     </answer>
   </static>

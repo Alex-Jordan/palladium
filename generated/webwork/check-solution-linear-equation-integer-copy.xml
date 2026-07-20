@@ -1,34 +1,34 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-solution-linear-equation-integer-copy" assembly-id="check-solution-linear-equation-integer-copy">
-  <static seed="2442">
-    <statement><p>Is <m>{-2}</m> a solution to <m>{2x+6}={2}\text{?}</m></p>
+  <static seed="2306">
+    <statement><p>Is <m>{-1}</m> a solution to <m>{5x-7}={-22}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>2x+6</m></cell>
+<cell><m>5x-7</m></cell>
 <cell><m>=</m></cell>
-<cell><m>2</m></cell>
+<cell><m>-22</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
 <cell><m>\wonder{=}</m></cell>
-<cell><m>2</m></cell>
+<cell><m>-22</m></cell>
 </row>
 </tabular>
 <p><fillin name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>2</m>
+        <m>-12</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\text{Yes, it is a solution.}</m>
+        <m>\text{No, it is not a solution.}</m>
       </p>
     </answer>
   </static>

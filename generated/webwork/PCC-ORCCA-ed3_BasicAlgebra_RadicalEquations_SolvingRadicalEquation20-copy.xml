@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation20-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation20-copy">
-  <static seed="2025">
-    <statement><p><m>\displaystyle{ {\sqrt{2x}} = {10} }</m></p>
+  <static seed="1889">
+    <statement><p><m>\displaystyle{ {\sqrt{3x}} = {9} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{50\right\}</m>
+        <m>\left\{27\right\}</m>
       </p>
     </answer>
     <solution><p>To remove the square root, we square both sides of the equation:</p>
 <p><m>\displaystyle{\begin{aligned}
-   {\sqrt{2x}} \amp = {10} \\
-   ({\sqrt{2x}})^2 \amp = ({10})^2 \\
-   2x \amp = 100 \\
-   \frac{2x}{2} \amp = \frac{100}{2} \\
-   x \amp = 50
+   {\sqrt{3x}} \amp = {9} \\
+   ({\sqrt{3x}})^2 \amp = ({9})^2 \\
+   3x \amp = 81 \\
+   \frac{3x}{3} \amp = \frac{81}{3} \\
+   x \amp = 27
 \end{aligned}
     }</m></p>
 <p>Whenever we square both sides of an equation, we could create extraneous solutions. We must check our solution. This part is left as exercise.</p>

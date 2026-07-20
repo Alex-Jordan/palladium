@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-inequality-solution-absolute-value-two-variable-instances-fraction-copy" assembly-id="check-inequality-solution-absolute-value-two-variable-instances-fraction-copy">
-  <static seed="2492">
-    <statement><p>Is <m>{{\frac{9}{4}}}</m> a solution to <m>{\left|7x+{\frac{3}{4}}\right|}\lt{\left|6x+3\right|}\text{?}</m></p>
+  <static seed="2356">
+    <statement><p>Is <m>{{\frac{11}{7}}}</m> a solution to <m>{\left|2x-{\frac{7}{8}}\right|}\geq{\left|9x-{\frac{71}{8}}\right|}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>\left|7x+{\frac{3}{4}}\right|</m></cell>
-<cell><m>\lt</m></cell>
-<cell><m>\left|6x+3\right|</m></cell>
+<cell><m>\left|2x-{\frac{7}{8}}\right|</m></cell>
+<cell><m>\geq</m></cell>
+<cell><m>\left|9x-{\frac{71}{8}}\right|</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
-<cell><m>\wonder{\lt}</m></cell>
+<cell><m>\wonder{\geq}</m></cell>
 <cell><fillin characters="3" name="AnSwEr0002"/>
 </cell>
 </row>
@@ -24,12 +24,12 @@
 </statement>
     <answer>
       <p>
-        <m>{\frac{33}{2}}</m>
+        <m>{\frac{127}{56}}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>{\frac{33}{2}}</m>
+        <m>{\frac{295}{56}}</m>
       </p>
     </answer>
     <answer>

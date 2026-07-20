@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-order-of-operations-groupaminusbtimesc" assembly-id="order-of-operations-groupaminusbtimesc">
-  <static seed="2179">
-    <statement><p><m>(6 - 3) \cdot 5</m></p>
+  <static seed="2043">
+    <statement><p><m>(8 - 5) \cdot 2</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>15</m>
+        <m>6</m>
       </p>
     </answer>
   </static>

@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication40" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication40">
-  <static seed="2655">
-    <statement><p><m>\left({t-10}\right)\left({t-4}\right)</m></p>
+  <static seed="2519">
+    <statement><p><m>\left({t-7}\right)\left({t-1}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>t^{2}-14t+40</m>
+        <m>t^{2}-8t+7</m>
       </p>
     </answer>
     <solution><p>We use the FOIL technique- <alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast</p>
 <p><m>\begin{aligned}
-              \left({t-10}\right)({t-4})\amp ={t^{2}-4t-10t+40}\\
-                                \amp ={t^{2}-14t+40}
+              \left({t-7}\right)({t-1})\amp ={t^{2}-t-7t+7}\\
+                                \amp ={t^{2}-8t+7}
       \end{aligned}</m></p>
 </solution>
   </static>

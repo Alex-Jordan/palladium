@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-combine-three-terms-decimals-copy" assembly-id="combine-three-terms-decimals-copy">
-  <static seed="2289">
-    <statement><p><m>{-9.5x+54x-3.8x}</m></p>
+  <static seed="2153">
+    <statement><p><m>{1.3u-2u+8.6u}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>40.7x</m>
+        <m>7.9u</m>
       </p>
     </answer>
   </static>

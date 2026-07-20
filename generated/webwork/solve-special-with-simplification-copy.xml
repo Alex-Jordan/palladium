@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-special-with-simplification-copy" assembly-id="solve-special-with-simplification-copy">
-  <static seed="1520">
-    <statement><p><m>{-3\mathopen{}\left(Y+8\right)-\left(3Y-7\right)}={-20+3\mathopen{}\left(2-2Y\right)}</m></p>
+  <static seed="1384">
+    <statement><p><m>{-4\mathopen{}\left(K+3\right)-\left(-19K+6\right)}={-56+5\mathopen{}\left(8+3K\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>

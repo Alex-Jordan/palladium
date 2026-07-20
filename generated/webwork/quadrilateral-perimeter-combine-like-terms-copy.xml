@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-quadrilateral-perimeter-combine-like-terms-copy" assembly-id="quadrilateral-perimeter-combine-like-terms-copy">
-  <static seed="2299">
+  <static seed="2163">
     <statement><!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/quadrilateral-perimeter-combine-like-terms-copy-image-1" width="94%">
-<shortdescription>a quadrilateral whose sides are labeled ((1/8)*C), ((4/9)*S), ((2/3)*S), and (2*C).</shortdescription>
+<shortdescription>a quadrilateral whose sides are labeled (z), ((3/2)*f), ((8/3)*f), and (3*z).</shortdescription>
 </image>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{17}{8}C+\frac{10}{9}S</m>
+        <m>4z+\frac{25}{6}f</m>
       </p>
     </answer>
-    <solution><p>The perimeter is the result from adding the four sides together: <m>2C + {\frac{2}{3}}S + {\frac{4}{9}}S + {\frac{1}{8}}C\text{.}</m> There are two <m>C</m>-terms and two <m>S</m>-terms. We combine each pair of like terms and the perimeter is <m>{\frac{17}{8}C+\frac{10}{9}S}\text{.}</m></p>
+    <solution><p>The perimeter is the result from adding the four sides together: <m>3z + z + {\frac{3}{2}}f + {\frac{8}{3}}f\text{.}</m> There are two <m>z</m>-terms and two <m>f</m>-terms. We combine each pair of like terms and the perimeter is <m>{4z+\frac{25}{6}f}\text{.}</m></p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/Appendices/A_3_5_69.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

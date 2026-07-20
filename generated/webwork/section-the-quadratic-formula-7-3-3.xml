@@ -1,27 +1,27 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-the-quadratic-formula-7-3-3" assembly-id="section-the-quadratic-formula-7-3-3">
-  <static seed="966">
-    <statement><p>While standing on a tree branch that is 41 ft high off the ground, a squirrel kicks a nut in an arc. The nut falls cleanly to the ground without hitting anything on the way down. While the nut is in the air, its height from the ground, in feet, <m>t</m> seconds after the kick is <m>{-16t^{2}+2.2t+41}\text{.}</m> How long will it be until the nut hits the ground?</p>
+  <static seed="499">
+    <statement><p>While standing on a tree branch that is 22 ft high off the ground, a squirrel kicks a nut in an arc. The nut falls cleanly to the ground without hitting anything on the way down. While the nut is in the air, its height from the ground, in feet, <m>t</m> seconds after the kick is <m>{-16t^{2}+3.1t+22}\text{.}</m> How long will it be until the nut hits the ground?</p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>1.67101\ {\rm s}</m>
+        <m>1.27347\ {\rm s}</m>
       </p>
     </answer>
-    <solution><p>When the nut hits the ground, the height will be <m>0\text{.}</m> So we must solve the equation <m>{-16t^{2}+2.2t+41}=0\text{.}</m> Using the quadratic formula:</p>
+    <solution><p>When the nut hits the ground, the height will be <m>0\text{.}</m> So we must solve the equation <m>{-16t^{2}+3.1t+22}=0\text{.}</m> Using the quadratic formula:</p>
 <p><me>\begin{aligned}
 t\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
-\amp=\frac{-2.2\pm\sqrt{2.2^2-4\left(-16\right)\left(41\right)}}{2\left(-16\right)}\\
-\amp=\frac{-2.2\pm\sqrt{2628.84}}{-32}\\
-\amp\approx\frac{-2.2\pm{51.2722}}{-32}\\
-t\amp\approx\frac{-2.2-{51.2722}}{-32}\quad\text{or}\quad t\approx\frac{-2.2+{51.2722}}{-32}\\
-t\amp\approx{1.67101}\quad\text{or}\quad t\approx{-1.53351}
+\amp=\frac{-3.1\pm\sqrt{3.1^2-4\left(-16\right)\left(22\right)}}{2\left(-16\right)}\\
+\amp=\frac{-3.1\pm\sqrt{1417.61}}{-32}\\
+\amp\approx\frac{-3.1\pm{37.6512}}{-32}\\
+t\amp\approx\frac{-3.1-{37.6512}}{-32}\quad\text{or}\quad t\approx\frac{-3.1+{37.6512}}{-32}\\
+t\amp\approx{1.27347}\quad\text{or}\quad t\approx{-1.07972}
 \end{aligned}</me></p>
-<p>Only the solution <m>t\approx{1.67101}</m> makes sense in this situation. So it will takes <m>{1.67101\ {\rm s}}</m> for the ball to hit the ground.</p>
+<p>Only the solution <m>t\approx{1.27347}</m> makes sense in this situation. So it will takes <m>{1.27347\ {\rm s}}</m> for the ball to hit the ground.</p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_4_5_100.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_5_5_100.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -38,7 +38,7 @@ t\amp\approx{1.67101}\quad\text{or}\quad t\approx{-1.53351}
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.4.5.100)
+## Problem1(1.5.5.100)
 ## Author()
 ## Institution()
 ## Language(en-US)

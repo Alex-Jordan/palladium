@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-interval-graph-to-set-builder-and-interval-notation-infinite-closed-copy" assembly-id="interval-graph-to-set-builder-and-interval-notation-infinite-closed-copy">
-  <static seed="2410">
+  <static seed="2274">
     <statement><!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/interval-graph-to-set-builder-and-interval-notation-infinite-closed-copy-image-1" width="100%">
-<shortdescription>a numberline with a shaded region; the shaded region extends all the way to the left with an arrowhead; it extends to the right up to 5 where there is a right bracket</shortdescription>
+<shortdescription>a numberline with a shaded region; the shaded region extends all the way to the left with an arrowhead; it extends to the right up to 4 where there is a right bracket</shortdescription>
 </image>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 <p><fillin characters="12" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{x \mid x\le 5\right\}</m>
+        <m>\left\{x \mid x\le 4\right\}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(-\infty ,5\right]</m>
+        <m>\left(-\infty ,4\right]</m>
       </p>
     </answer>
   </static>

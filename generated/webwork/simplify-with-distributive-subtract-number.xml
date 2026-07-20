@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-with-distributive-subtract-number" assembly-id="simplify-with-distributive-subtract-number">
-  <static seed="2356">
-    <statement><p><m>{2\mathopen{}\left(9S+4\right)-3}</m></p>
+  <static seed="2220">
+    <statement><p><m>{4\mathopen{}\left(3P+2\right)-9}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>18S+5</m>
+        <m>12P+\left(-1\right)</m>
       </p>
     </answer>
   </static>

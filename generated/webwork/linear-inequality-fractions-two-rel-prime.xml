@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-linear-inequality-fractions-two-rel-prime" assembly-id="linear-inequality-fractions-two-rel-prime">
-  <static seed="1506">
-    <statement><p><m>{8x-{\frac{7}{3}}} \gt {-8x-{\frac{1}{10}}}</m></p>
+  <static seed="1370">
+    <statement><p><m>{x-9} \lt {-{\frac{1}{7}}x+{\frac{7}{9}}}</m></p>
 <p><fillin characters="4" name="AnSwEr0001"/></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 <p><fillin characters="16" name="AnSwEr0003"/></p>
 </statement>
     <answer>
       <p>
-        <m>30</m>
+        <m>63</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left\{x \mid x &gt; \frac{67}{480}\right\}</m>
+        <m>\left\{x \mid x &lt; \frac{77}{9}\right\}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left({\frac{67}{480}},\infty \right)</m>
+        <m>\left(-\infty ,{\frac{77}{9}}\right)</m>
       </p>
     </answer>
   </static>

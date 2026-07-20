@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-12-4" assembly-id="section-solving-rational-equations-10-12-4">
-  <static seed="1611" source="Contrib/PCC/BasicAlgebra/RationalLiteralEquations/LiteralEquation270.pg">
-    <statement><p>Solve this equation for <m>x</m>:</p>
-<p><m>\displaystyle{ b = \frac{x}{m} }</m></p>
+  <static seed="1475" source="Contrib/PCC/BasicAlgebra/RationalLiteralEquations/LiteralEquation270.pg">
+    <statement><p>Solve this equation for <m>C</m>:</p>
+<p><m>\displaystyle{ a = \frac{C}{c} }</m></p>
 <p><fillin characters="7" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>x = bm</m>
+        <m>C = ac</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   b \amp = \frac{x}{m} \\
-   b \cdot m \amp = \frac{x}{m} \cdot m \\
-   b \cdot m \amp = x \\
-   x \amp = b \cdot m
+   a \amp = \frac{C}{c} \\
+   a \cdot c \amp = \frac{C}{c} \cdot c \\
+   a \cdot c \amp = C \\
+   C \amp = a \cdot c
 \end{aligned}
 }</m></p>
 </solution>

@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp45-copy3" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp45-copy3">
-  <static seed="1959">
-    <statement><p><m>t^{-3}\cdot t^{2}</m></p>
+  <static seed="1823">
+    <statement><p><m>t^{-8}\cdot t^{6}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{1}{t^{1}}</m>
+        <m>\frac{1}{t^{2}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remember that <m>a^m\cdot a^n = a^{m+n}</m></p>
 <p><m>\begin{aligned}
-                 t^{-3}\cdot t^{2} \amp = t^{-3+2}\\
-                                                       \amp  =t^{-1}\\
-                                    \amp  = {\frac{1}{t^{1}}}
+                 t^{-8}\cdot t^{6} \amp = t^{-8+6}\\
+                                                       \amp  =t^{-2}\\
+                                    \amp  = {\frac{1}{t^{2}}}
            \end{aligned}</m></p>
 </solution>
   </static>

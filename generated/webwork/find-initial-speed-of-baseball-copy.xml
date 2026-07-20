@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-find-initial-speed-of-baseball-copy" assembly-id="find-initial-speed-of-baseball-copy">
-  <static seed="2562">
-    <statement><p>The ball lands after <m>{5.4\ {\rm s}}</m> seconds.</p>
+  <static seed="2426">
+    <statement><p>The ball lands after <m>{5.3\ {\rm s}}</m> seconds.</p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 <p><fillin characters="10" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>-466.56+5.4v+6 = 0</m>
+        <m>-449.44+5.3v+6 = 0</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>85.2889\ {\textstyle\frac{\rm\mathstrut ft}{\rm\mathstrut s}}</m>
+        <m>83.6679\ {\textstyle\frac{\rm\mathstrut ft}{\rm\mathstrut s}}</m>
       </p>
     </answer>
   </static>

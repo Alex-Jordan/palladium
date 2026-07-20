@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-list-terms-distinct-variables-copy" assembly-id="list-terms-distinct-variables-copy">
-  <static seed="2263">
-    <statement><p><m>{{\frac{3}{5}}s-5.5j-{\frac{5}{4}}e-{\frac{4}{7}}w}</m></p>
+  <static seed="2127">
+    <statement><p><m>{45H+1.8z+2.9Q-4.6h}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{3}{5}}s, -5.5j, -{\frac{5}{4}}e, -{\frac{4}{7}}w</m>
+        <m>45H, 1.8z, 2.9Q, -4.6h</m>
       </p>
     </answer>
   </static>

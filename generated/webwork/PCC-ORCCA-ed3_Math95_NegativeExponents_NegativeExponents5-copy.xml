@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_NegativeExponents_NegativeExponents5-copy" assembly-id="PCC-ORCCA-ed3_Math95_NegativeExponents_NegativeExponents5-copy">
-  <static seed="1710">
-    <statement><p><m>\displaystyle {\frac{15x^{-12}}{16x^{-20}}}</m></p>
+  <static seed="1574">
+    <statement><p><m>\displaystyle {\frac{20x^{-10}}{21x^{-27}}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{15x^{8}}{16}</m>
+        <m>\frac{20x^{17}}{21}</m>
       </p>
     </answer>
   </static>

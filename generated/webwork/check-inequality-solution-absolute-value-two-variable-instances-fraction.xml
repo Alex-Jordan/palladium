@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-inequality-solution-absolute-value-two-variable-instances-fraction" assembly-id="check-inequality-solution-absolute-value-two-variable-instances-fraction">
-  <static seed="2491">
-    <statement><p>Is <m>{{\frac{8}{3}}}</m> a solution to <m>{\left|2x+{\frac{8}{7}}\right|}\neq{\left|4x-{\frac{88}{21}}\right|}\text{?}</m></p>
+  <static seed="2355">
+    <statement><p>Is <m>{{\frac{7}{6}}}</m> a solution to <m>{\left|4x+{\frac{2}{7}}\right|}\neq{\left|6x-{\frac{43}{21}}\right|}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>\left|2x+{\frac{8}{7}}\right|</m></cell>
+<cell><m>\left|4x+{\frac{2}{7}}\right|</m></cell>
 <cell><m>\neq</m></cell>
-<cell><m>\left|4x-{\frac{88}{21}}\right|</m></cell>
+<cell><m>\left|6x-{\frac{43}{21}}\right|</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
@@ -24,12 +24,12 @@
 </statement>
     <answer>
       <p>
-        <m>{\frac{136}{21}}</m>
+        <m>{\frac{104}{21}}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>{\frac{136}{21}}</m>
+        <m>{\frac{104}{21}}</m>
       </p>
     </answer>
     <answer>

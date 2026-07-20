@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-rent-a-car" assembly-id="rent-a-car">
-  <static seed="2431">
+  <static seed="2295">
     <statement><p>In most US states, you must be at least 21 years old to rent a car. Write an interval for the age <m>a</m> of someone who could legally rent a car.</p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 <p><fillin characters="12" name="AnSwEr0002"/></p>

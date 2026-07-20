@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-hexagon-perimeter" assembly-id="hexagon-perimeter">
-  <static seed="2229">
+  <static seed="2093">
     <statement><p>Find the perimeter of this shape, which is not drawn to scale. Simplify the perimeter expression as much as possible.</p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/hexagon-perimeter-image-1" width="47%">

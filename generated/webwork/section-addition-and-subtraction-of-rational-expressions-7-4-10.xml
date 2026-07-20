@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-addition-and-subtraction-of-rational-expressions-7-4-10" assembly-id="section-addition-and-subtraction-of-rational-expressions-7-4-10">
-  <static seed="1423" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions101.pg">
+  <static seed="1287" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions101.pg">
     <statement><p>Add or subtract the rational expressions to a single rational expression and then simplify.</p>
-<p><m>\displaystyle{{-\frac{10ry}{r^{2}-7ry+6y^{2}}-\frac{2r}{r-y}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{-\frac{15ry}{r^{2}-3ry-4y^{2}}+\frac{3r}{r-4y}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-\frac{2r}{r-6y}</m>
+        <m>\frac{3r}{r+y}</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   {-\frac{10ry}{r^{2}-7ry+6y^{2}}-\frac{2r}{r-y}} 
-      \amp = {-\frac{10ry}{\left(r-y\right)\mathopen{}\left(r-6y\right)}-\frac{2r}{r-y}} \\
-      \amp = {-\frac{10ry}{\left(r-y\right)\mathopen{}\left(r-6y\right)}-\frac{2r}{r-y}} \cdot \frac{(r - 6y)}{(r - 6y)} \\
-      \amp = {-\frac{10ry}{\left(r-y\right)\mathopen{}\left(r-6y\right)}-\frac{2r\mathopen{}\left(r-6y\right)}{\left(r-y\right)\mathopen{}\left(r-6y\right)}} \\
-      \amp = {\frac{-10ry-2r\mathopen{}\left(r-6y\right)}{\left(r-y\right)\mathopen{}\left(r-6y\right)}} \\
-      \amp = {\frac{-10ry-2r^{2}+12ry}{\left(r-y\right)\mathopen{}\left(r-6y\right)}} \\
-      \amp = {\frac{-2r^{2}+2ry}{\left(r-y\right)\mathopen{}\left(r-6y\right)}} \\
-      \amp = \frac{{-2r\mathopen{}\left(r-y\right)}}{{\left(r-y\right)\mathopen{}\left(r-6y\right)}} \\
-      \amp = {-\frac{2r}{r-6y}}
+   {-\frac{15ry}{r^{2}-3ry-4y^{2}}+\frac{3r}{r-4y}} 
+      \amp = {-\frac{15ry}{\left(r-4y\right)\mathopen{}\left(r+y\right)}+\frac{3r}{r-4y}} \\
+      \amp = {-\frac{15ry}{\left(r-4y\right)\mathopen{}\left(r+y\right)}+\frac{3r}{r-4y}} \cdot \frac{(r+1y)}{(r+1y)} \\
+      \amp = {-\frac{15ry}{\left(r-4y\right)\mathopen{}\left(r+y\right)}+\frac{3r\mathopen{}\left(r+y\right)}{\left(r-4y\right)\mathopen{}\left(r+y\right)}} \\
+      \amp = {\frac{-15ry+3r\mathopen{}\left(r+y\right)}{\left(r-4y\right)\mathopen{}\left(r+y\right)}} \\
+      \amp = {\frac{-15ry+3r^{2}+3ry}{\left(r-4y\right)\mathopen{}\left(r+y\right)}} \\
+      \amp = {\frac{3r^{2}-12ry}{\left(r-4y\right)\mathopen{}\left(r+y\right)}} \\
+      \amp = \frac{{3r\mathopen{}\left(r-4y\right)}}{{\left(r-4y\right)\mathopen{}\left(r+y\right)}} \\
+      \amp = {\frac{3r}{r+y}}
 \end{aligned}
     }</m></p>
 </solution>

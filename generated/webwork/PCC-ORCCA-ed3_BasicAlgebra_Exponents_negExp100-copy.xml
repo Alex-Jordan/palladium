@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp100-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp100-copy">
-  <static seed="1750">
-    <statement><p><m>\displaystyle\frac{\left(2t^{10}\right)^{2}}{t^{-5}}</m></p>
+  <static seed="1614">
+    <statement><p><m>\displaystyle\frac{\left(6r^{12}\right)^{3}}{r^{-15}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>4t^{25}</m>
+        <m>216r^{51}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\displaystyle{\frac{a^m}{a^n} = a^{m-n}}</m> 
 and also that <m>\left(a^m\right)^n=a^{mn}</m></p>
 <p><m>\begin{aligned}
-                 \displaystyle\frac{\left(2t^{10}\right)^{2}}{t^{-5}}\amp = 
-\displaystyle\frac{\left(2\right)^{2}t^{10\cdot2}}{t^{-5}}\\
- \amp = \displaystyle\frac{4t^{20}}{t^{-5}}\\
- \amp = 4t^{20-(-5)}\\
-                                    \amp  = {4t^{25}}
+                 \displaystyle\frac{\left(6r^{12}\right)^{3}}{r^{-15}}\amp = 
+\displaystyle\frac{\left(6\right)^{3}r^{12\cdot3}}{r^{-15}}\\
+ \amp = \displaystyle\frac{216r^{36}}{r^{-15}}\\
+ \amp = 216r^{36-(-15)}\\
+                                    \amp  = {216r^{51}}
            \end{aligned}</m></p>
 </solution>
   </static>

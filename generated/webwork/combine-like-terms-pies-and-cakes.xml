@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-combine-like-terms-pies-and-cakes" assembly-id="combine-like-terms-pies-and-cakes">
-  <static seed="2305">
-    <introduction><p>Dangelo and Mohammad are co-owners of a  pastry shop. Dangelo bakes pies and Mohammad bakes cakes. Dangelo is able to bake <m>p</m> pies each day he works and Mohammad is able to bake <m>c</m> cakes each day he works.</p>
-<p>One month, Dangelo worked <m>19</m> days and Mohammad worked <m>23</m> days. That month they produced <m>{19p+23c}</m> baked goods in total.</p>
+  <static seed="2169">
+    <introduction><p>Chad and Alex are co-owners of a  pastry shop. Chad bakes pies and Alex bakes cakes. Chad is able to bake <m>p</m> pies each day he works and Alex is able to bake <m>c</m> cakes each day he works.</p>
+<p>One month, Chad worked <m>16</m> days and Alex worked <m>19</m> days. That month they produced <m>{16p+19c}</m> baked goods in total.</p>
 </introduction>
     <task>
-      <statement><p>The next month, Dangelo worked <m>24</m> days and Mohammad worked <m>22</m> days. How many baked goods did they produce that month?</p>
+      <statement><p>The next month, Chad worked <m>22</m> days and Alex worked <m>18</m> days. How many baked goods did they produce that month?</p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>24p+22c</m>
+          <m>22p+18c</m>
         </p>
       </answer>
     </task>
@@ -20,7 +20,7 @@
 </statement>
       <answer>
         <p>
-          <m>43p+45c</m>
+          <m>38p+37c</m>
         </p>
       </answer>
     </task>

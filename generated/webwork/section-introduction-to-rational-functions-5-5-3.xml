@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-introduction-to-rational-functions-5-5-3" assembly-id="section-introduction-to-rational-functions-5-5-3">
-  <static seed="1236">
-    <statement><p>In a forest, the number of deer can be modeled by the function <m>f(t)={\frac{140t+450}{0.7t+5}}\text{,}</m> where <m>t</m> stands for the number of years from now. Answer the question with technology.</p>
-<p>After <fillin characters="10" name="AnSwEr0001"/> years, there would be approximately 150 deer living in the forest.</p>
+  <static seed="1100">
+    <statement><p>In a forest, the number of deer can be modeled by the function <m>f(t)={\frac{120t+630}{0.4t+7}}\text{,}</m> where <m>t</m> stands for the number of years from now. Answer the question with technology.</p>
+<p>After <fillin characters="10" name="AnSwEr0001"/> years, there would be approximately 200 deer living in the forest.</p>
 </statement>
     <answer>
       <p>
-        <m>8.6</m>
+        <m>19.3</m>
       </p>
     </answer>
-    <solution><p>Use technology to graph the function <m>f(t)={\frac{140t+450}{0.7t+5}}\text{.}</m></p>
+    <solution><p>Use technology to graph the function <m>f(t)={\frac{120t+630}{0.4t+7}}\text{.}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-introduction-to-rational-functions-5-5-3-image-1.png" width="100%"/>
-<p>To locate the point whose <m>y</m>-value is <m>150\text{,}</m> we graph a second function <m>y=150\text{.}</m> They have an intersection <m>(8.6,150)\text{.}</m> This point implies there will be approximately <m>150</m> deer living in the forest after <m>8.6</m> years.</p>
+<p>To locate the point whose <m>y</m>-value is <m>200\text{,}</m> we graph a second function <m>y=200\text{.}</m> They have an intersection <m>(19.3,200)\text{.}</m> This point implies there will be approximately <m>200</m> deer living in the forest after <m>19.3</m> years.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/3_1_3_30.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

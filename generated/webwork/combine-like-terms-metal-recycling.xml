@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-combine-like-terms-metal-recycling" assembly-id="combine-like-terms-metal-recycling">
-  <static seed="2307">
-    <introduction><p>A metals recycling plant makes its revenue from selling aluminum at <m>A</m> dollars per ton, steel at <m>S</m> dollars per ton, and tin at <m>T</m> dollars per ton. One week, they processed <m>2.89</m> tons of aluminum, <m>3.11</m> tons of steel, and <m>3.65</m> tons of tin. So they generated <m>{2.89A+3.11S+3.65T}</m> dollars in revenue.</p>
+  <static seed="2171">
+    <introduction><p>A metals recycling plant makes its revenue from selling aluminum at <m>A</m> dollars per ton, steel at <m>S</m> dollars per ton, and tin at <m>T</m> dollars per ton. One week, they processed <m>2.77</m> tons of aluminum, <m>3.7</m> tons of steel, and <m>3.21</m> tons of tin. So they generated <m>{2.77A+3.7S+3.21T}</m> dollars in revenue.</p>
 </introduction>
     <task>
-      <statement><p>The next week, they processed <m>2.12</m> tons of aluminum, <m>3.83</m> tons of steel, and <m>3.73</m> tons of tin. How much revenue (in dollars) did this generate that week?</p>
+      <statement><p>The next week, they processed <m>2.68</m> tons of aluminum, <m>3.2</m> tons of steel, and <m>2.49</m> tons of tin. How much revenue (in dollars) did this generate that week?</p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>2.12A+3.83S+3.73T</m>
+          <m>2.68A+3.2S+2.49T</m>
         </p>
       </answer>
     </task>
@@ -19,7 +19,7 @@
 </statement>
       <answer>
         <p>
-          <m>5.01A+6.94S+7.38T</m>
+          <m>5.45A+6.9S+5.7T</m>
         </p>
       </answer>
     </task>

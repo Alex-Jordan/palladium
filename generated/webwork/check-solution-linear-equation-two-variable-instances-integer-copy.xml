@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-solution-linear-equation-two-variable-instances-integer-copy" assembly-id="check-solution-linear-equation-two-variable-instances-integer-copy">
-  <static seed="2448">
-    <statement><p>Is <m>{-8}</m> a solution to <m>{2x+6}={5x+30}\text{?}</m></p>
+  <static seed="2312">
+    <statement><p>Is <m>{12}</m> a solution to <m>{4x+5}={7x-22}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>2x+6</m></cell>
+<cell><m>4x+5</m></cell>
 <cell><m>=</m></cell>
-<cell><m>5x+30</m></cell>
+<cell><m>7x-22</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
@@ -24,17 +24,17 @@
 </statement>
     <answer>
       <p>
-        <m>-10</m>
+        <m>53</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>-10</m>
+        <m>62</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\text{Yes, it is a solution.}</m>
+        <m>\text{No, it is not a solution.}</m>
       </p>
     </answer>
   </static>

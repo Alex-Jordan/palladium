@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-isolate-axplusbequalsc-copy" assembly-id="isolate-axplusbequalsc-copy">
-  <static seed="1560">
-    <statement><p><m>L</m> in <m>{ML+f}={V}</m></p>
+  <static seed="1424">
+    <statement><p><m>I</m> in <m>{bI+v}={D}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>L = \frac{V-f}{M}</m>
+        <m>I = \frac{D-v}{b}</m>
       </p>
     </answer>
-    <solution><p>We need to keep our focus on <m>L</m> and take algebra steps that bring us closer to isolating <m>L\text{.}</m></p>
+    <solution><p>We need to keep our focus on <m>I</m> and take algebra steps that bring us closer to isolating <m>I\text{.}</m></p>
 <p><me>\begin{aligned}
-{ML+f} \amp= {V}\\
-{ML+f-f} \amp= {V-f}\\
-{ML} \amp= {V-f}\\
-{L} \amp= {\frac{V-f}{M}}
+{bI+v} \amp= {D}\\
+{bI+v-v} \amp= {D-v}\\
+{bI} \amp= {D-v}\\
+{I} \amp= {\frac{D-v}{b}}
 \end{aligned}</me></p>
 </solution>
   </static>

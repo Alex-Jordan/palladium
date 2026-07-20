@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals06-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals06-copy">
-  <static seed="1825">
-    <statement><p><m>\displaystyle{ {\sqrt{392}} }</m></p>
+  <static seed="1689">
+    <statement><p><m>\displaystyle{ {\sqrt{450}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>14\sqrt{2}</m>
+        <m>15\sqrt{2}</m>
       </p>
     </answer>
-    <solution><p>To simplify <m>{\sqrt{392}}</m>, first prime factor it, and then <lq/>take out<rq/> any pair of numbers from inside the square root:</p>
+    <solution><p>To simplify <m>{\sqrt{450}}</m>, first prime factor it, and then <lq/>take out<rq/> any pair of numbers from inside the square root:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   {\sqrt{392}} \amp = \sqrt{2 \cdot 2 \cdot 2 \cdot 7 \cdot 7}  \\
-            \amp =2 \cdot 7 \sqrt{2} \\
-            \amp =14 \sqrt{2}
+   {\sqrt{450}} \amp = \sqrt{2 \cdot 3 \cdot 3 \cdot 5 \cdot 5}  \\
+            \amp =3 \cdot 5 \sqrt{2} \\
+            \amp =15 \sqrt{2}
 \end{aligned}
     }</m></p>
 </solution>

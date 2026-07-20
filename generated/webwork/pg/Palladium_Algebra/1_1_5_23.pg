@@ -27,10 +27,8 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PCCmacros.pl",
-  "contextCurrency.pl",
-  "contextPercent.pl",
-  "parserLinearRelation.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -43,39 +41,23 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$item = list_random(
-  'A bicycle',
-  'A dishwasher',
-  'A cell phone',
-  'A television',
-  'A car stereo',
-  'A formal suit',
-  'A designer dress',
-  'A tool shed',
-  'A tablet',
-  'An annual wine subscription',
-);
-Context("Currency")->flags->set(trimTrailingZeros => 1);
-$final = 400 + random(-100,100);
-$current = Currency($final);
-Context("Percent");
-$decimal = random(0.05,0.25,0.01);
-$percent = Percent($decimal);
-Context("LinearRelation")->variables->are(p => 'Real');
-$equation = LinearRelation("p - $decimal p = $final");
+($a,$r,$s) = (1, 0, non_zero_random(-9,9));
+Context()->noreduce('(-x)-y');
+$left = Formula("x^2")->reduce;
+$right = Formula("$s x")->reduce;
+Context("FiniteSolutionSets");
+$sols = Formula("{$r,$s}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Write an equation to model the scenario. There is no need to solve the equation.
+Solve the equation by factoring.
 
-[$item] is on sale with a [`[$percent]`] discount and the final price is [`[$current]\text{.}`] What was the original price before the discount is applied? Set up an equation to answer this question. There is no need to solve it.
+[`[$left] = [$right]`]
 
-[@KeyboardInstructions('Use [|p|]* as the variable.')@]**
-
-[_]{$equation}{20}
+[_]{$sols}{16}
 
 END_PGML
 

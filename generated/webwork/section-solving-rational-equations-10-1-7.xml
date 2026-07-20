@@ -1,29 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-1-7" assembly-id="section-solving-rational-equations-10-1-7">
-  <static seed="1472" source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses160.pg">
+  <static seed="1336" source="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses160.pg">
     <statement><p>Solve the equation.</p>
-<p><m>\displaystyle{ {3\mathopen{}\left(q+5\right)-7\mathopen{}\left(q-8\right)}={55}  }</m></p>
+<p><m>\displaystyle{ {4\mathopen{}\left(p+8\right)-10\mathopen{}\left(p-2\right)}={52}  }</m></p>
 <p><fillin characters="31" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\{4\}</m>
+        <m>\{0\}</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-3(q +5) -7(q-8)       \amp = 55 \\
-3(q +5) +(-7)(q+(-8)) \amp = 55 \\
-3q +3 \cdot 5 +(-7) \cdot q +(-7) \cdot (-8) \amp = 55 \\
-3q +15 -7q +56 \amp = 55 \\
-3q -7q +15+56 \amp = 55 \\
-      -4q +71 \amp = 55 \\
-      -4q +71\mathbf{{}-71} \amp = 55\mathbf{{}-71} \\
-      -4q             \amp = -16 \\
-      \frac{-4q}{-4} \amp = \frac{-16}{-4} \\
-      q                      \amp = 4
+4(p +8) -10(p-2)       \amp = 52 \\
+4(p +8) +(-10)(p+(-2)) \amp = 52 \\
+4p +4 \cdot 8 +(-10) \cdot p +(-10) \cdot (-2) \amp = 52 \\
+4p +32 -10p +20 \amp = 52 \\
+4p -10p +32+20 \amp = 52 \\
+      -6p +52 \amp = 52 \\
+      -6p +52\mathbf{{}-52} \amp = 52\mathbf{{}-52} \\
+      -6p             \amp = 0 \\
+      \frac{-6p}{-6} \amp = \frac{0}{-6} \\
+      p                      \amp = 0
 \end{aligned}
     }</m></p>
-<p>The solution to this equation is <m>4</m>. To stress that this is a value assigned to <m>q</m>, some report <m>q = 4</m>. We can also say that the solution set is <m>\{4\}</m>, or that <m>q\in\left\{4\right\}</m>. If we substitute <m>4</m> in for <m>q</m> in the original equation <m>3\mathopen{}\left(q+5\right)-7\mathopen{}\left(q-8\right)=55</m>, the equation will be true. Please check this on your own; it is an important habit.</p>
+<p>The solution to this equation is <m>0</m>. To stress that this is a value assigned to <m>p</m>, some report <m>p = 0</m>. We can also say that the solution set is <m>\{0\}</m>, or that <m>p\in\left\{0\right\}</m>. If we substitute <m>0</m> in for <m>p</m> in the original equation <m>4\mathopen{}\left(p+8\right)-10\mathopen{}\left(p-2\right)=52</m>, the equation will be true. Please check this on your own; it is an important habit.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses160.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-equation-subtract-decimal" assembly-id="solve-equation-subtract-decimal">
-  <static seed="2547">
-    <statement><p><m>{a-13.4}={12.72}</m></p>
+  <static seed="2411">
+    <statement><p><m>{X-19.1}={18.56}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{26.12\right\}</m>
+        <m>\left\{37.66\right\}</m>
       </p>
     </answer>
   </static>

@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication60" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication60">
-  <static seed="2657">
-    <statement><p><m>\left({3x+5}\right)\left({6x+3}\right)</m></p>
+  <static seed="2521">
+    <statement><p><m>\left({5x+8}\right)\left({4x+1}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>18x^{2}+39x+15</m>
+        <m>20x^{2}+37x+8</m>
       </p>
     </answer>
     <solution><p>We use the FOIL technique- <alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast</p>
 <p><m>\begin{aligned}
-              \left({3x+5}\right)({6x+3})\amp ={18x^{2}+9x+30x+15}\\
-                                \amp ={18x^{2}+39x+15}
+              \left({5x+8}\right)({4x+1})\amp ={20x^{2}+5x+32x+8}\\
+                                \amp ={20x^{2}+37x+8}
       \end{aligned}</m></p>
 </solution>
   </static>

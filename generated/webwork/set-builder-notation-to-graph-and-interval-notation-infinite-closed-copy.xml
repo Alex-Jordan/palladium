@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-set-builder-notation-to-graph-and-interval-notation-infinite-closed-copy" assembly-id="set-builder-notation-to-graph-and-interval-notation-infinite-closed-copy">
-  <static seed="2420">
-    <statement><p><m>{\{ x \mid x \le 7 \}}</m></p>
+  <static seed="2284">
+    <statement><p><m>{\{ x \mid x \le 6 \}}</m></p>
 <p><fillin name="AnSwEr0001"/></p>
 <p><fillin characters="12" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\text{interval}, \left(-\infty ,7\right]\right\}</m>
+        <m>\left\{\text{interval}, \left(-\infty ,6\right]\right\}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(-\infty ,7\right]</m>
+        <m>\left(-\infty ,6\right]</m>
       </p>
     </answer>
-    <solution><p>The set-builder notation tells us to graph all numbers less than or equal to <m>7\text{.}</m> So the shading can start all the way to the left <lq/>at <m>-\infty</m><rq/> and extend up to <m>7\text{.}</m> There should be a bracket at <m>7</m> to indicate that <m>7</m> is included.</p>
+    <solution><p>The set-builder notation tells us to graph all numbers less than or equal to <m>6\text{.}</m> So the shading can start all the way to the left <lq/>at <m>-\infty</m><rq/> and extend up to <m>6\text{.}</m> There should be a bracket at <m>6</m> to indicate that <m>6</m> is included.</p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/set-builder-notation-to-graph-and-interval-notation-infinite-closed-copy-image-1" width="100%"/>
-<p>And we read the number line from left to right, with the shading extending to <m>-\infty</m> and going all the way up to <m>7\text{,}</m> including <m>7\text{.}</m> So in interval notation, the interval is <m>{\left(-\infty ,7\right]}\text{.}</m></p>
+<p>And we read the number line from left to right, with the shading extending to <m>-\infty</m> and going all the way up to <m>6\text{,}</m> including <m>6\text{.}</m> So in interval notation, the interval is <m>{\left(-\infty ,6\right]}\text{.}</m></p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/Appendices/A_5_4_41.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

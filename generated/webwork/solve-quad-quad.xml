@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-quad-quad" assembly-id="solve-quad-quad">
+  <static seed="887">
+    <statement><p><m>{\left(x^{2}+2x-3\right)\mathopen{}\left(x^{2}+x-30\right)} = {0}</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{-6,5,1,-3\right\}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_3_6_51.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.3.6.51)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+($r,$s,$t,$u) = (random_subset(4, -9..-1,1..9));
+Context()->noreduce('(-x)-y');
+$left = Formula("(x^2 - ($t+$u) x + $t*$u)(x^2 - ($r+$s)x + $r*$s)")->reduce;
+$right = Formula("0")->reduce;
+Context("FiniteSolutionSets");
+$sols = Formula("{$r, $s, $t,$u}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve the equation by factoring.
+
+[`[$left] = [$right]`]
+
+[_]{$sols}{16}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

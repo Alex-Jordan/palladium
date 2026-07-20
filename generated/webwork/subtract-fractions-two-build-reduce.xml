@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-subtract-fractions-two-build-reduce" assembly-id="subtract-fractions-two-build-reduce">
-  <static seed="2260">
-    <statement><p><m>{{\frac{7}{24}}}-{{\frac{4}{15}}}</m></p>
+  <static seed="2124">
+    <statement><p><m>{{\frac{5}{12}}}-{{\frac{5}{28}}}</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{1}{40}}</m>
+        <m>{\frac{5}{21}}</m>
       </p>
     </answer>
   </static>

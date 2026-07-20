@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-1-5" assembly-id="section-multiplication-and-division-of-rational-expressions-7-1-5">
-  <static seed="1245" source="Contrib/PCC/BasicAlgebra/FractionArithmetic/MultiplyFractions60.pg">
-    <statement><p>Multiply: <m>\displaystyle{-\frac{18}{17} \cdot \left(-\frac{5}{9}\right)}</m></p>
+  <static seed="1109" source="Contrib/PCC/BasicAlgebra/FractionArithmetic/MultiplyFractions60.pg">
+    <statement><p>Multiply: <m>\displaystyle{-\frac{3}{10} \cdot \left(-\frac{2}{27}\right)}</m></p>
 <p><fillin characters="9" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{10}{17}}</m>
+        <m>{\frac{1}{45}}</m>
       </p>
     </answer>
     <solution><p>To multiply two fractions, multiply both numerators and both denominators. Don<rsq/>t forget to reduce the fraction if possible.</p>
 <p>Remember: a negative number times a negative number produces a positive result.</p>
 <p>We have:</p>
 <p><m>\displaystyle{\begin{aligned}
-    -\frac{18}{17} \cdot \left(-\frac{5}{9}\right)
-    \amp = \frac{18}{17} \cdot \frac{5}{9}\amp \hbox{We can divide both the first numerator and second denominator by 9.}\\
-    \amp = \frac{2}{17} \cdot \frac{5}{1}\\
-    \amp = \frac{10}{17}
+    -\frac{3}{10} \cdot \left(-\frac{2}{27}\right)
+    \amp = \frac{3}{10} \cdot \frac{2}{27}\amp \hbox{We can divide both the first numerator and second denominator by 3.}\\
+    \amp = \frac{1}{10} \cdot \frac{2}{9}\\
+    \amp = \frac{1}{45}
     \end{aligned} }</m></p>
 </solution>
   </static>

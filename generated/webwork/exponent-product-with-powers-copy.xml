@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-product-with-powers-copy" assembly-id="exponent-product-with-powers-copy">
-  <static seed="2587">
-    <statement><p><m>{7k^{4}\cdot 3k^{3}}</m></p>
+  <static seed="2451">
+    <statement><p><m>{9i^{2}\cdot 6i^{9}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>21k^{0}</m>
+        <m>54i^{0}</m>
       </p>
     </answer>
   </static>

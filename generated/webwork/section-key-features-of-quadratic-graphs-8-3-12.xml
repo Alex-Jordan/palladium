@@ -1,39 +1,39 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-key-features-of-quadratic-graphs-8-3-12" assembly-id="section-key-features-of-quadratic-graphs-8-3-12">
-  <static seed="998" source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex100.pg">
+  <static seed="531" source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex100.pg">
     <statement><p>Find the axis of symmetry and vertex of the quadratic function.</p>
-<p><m>{y}={-4x^{2}-12x+1}</m></p>
+<p><m>{y}={3x^{2}+3x-4}</m></p>
 <p>Axis of symmetry: <fillin characters="13" name="AnSwEr0001"/></p>
 <p>Vertex: <fillin characters="13" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>x = -{\frac{3}{2}}</m>
+        <m>x = -{\frac{1}{2}}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(-{\frac{3}{2}},10\right)</m>
+        <m>\left(-{\frac{1}{2}},-{\frac{19}{4}}\right)</m>
       </p>
     </answer>
     <solution><p>This quadratic function is given in standard form. Identify that:</p>
-<p><m>\displaystyle{ a=-4,b=-12,c=1 }</m></p>
+<p><m>\displaystyle{ a=3,b=3,c=-4 }</m></p>
 <p>To find the parabola<rsq/>s axis of symmetry, we use the formula <m>\displaystyle{x=-\frac{b}{2a}}</m></p>
 <p><m>\displaystyle{\begin{aligned}
   x \amp = -\frac{b}{2a} \\
-   \amp = -\frac{-12}{2(-4)} \\
-   \amp = {-{\frac{3}{2}}}
+   \amp = -\frac{3}{2(3)} \\
+   \amp = {-{\frac{1}{2}}}
 \end{aligned}
     }</m></p>
-<p>This parabola<rsq/>s axis of symmetry is the line <m>\displaystyle{x={-{\frac{3}{2}}}}</m>.</p>
-<p>Next, substitute <m>\displaystyle{x={-{\frac{3}{2}}}}</m> into <m>\displaystyle{{y}={-4x^{2}-12x+1}}</m>, and we have:</p>
+<p>This parabola<rsq/>s axis of symmetry is the line <m>\displaystyle{x={-{\frac{1}{2}}}}</m>.</p>
+<p>Next, substitute <m>\displaystyle{x={-{\frac{1}{2}}}}</m> into <m>\displaystyle{{y}={3x^{2}+3x-4}}</m>, and we have:</p>
 <p><m>\displaystyle{\begin{aligned}
-   y \amp = -4\left({-{\frac{3}{2}}}\right)^{2} - 12\left({-{\frac{3}{2}}}\right)+1 \\
-    \amp = -4 \cdot {{\frac{9}{4}}} +{\frac{36}{2}} + 1 \\
-    \amp = {10}
+   y \amp = 3\left({-{\frac{1}{2}}}\right)^{2}+3\left({-{\frac{1}{2}}}\right) - 4 \\
+    \amp = 3 \cdot {{\frac{1}{4}}} -{\frac{3}{2}}  - 4 \\
+    \amp = {-{\frac{19}{4}}}
 \end{aligned}
     }</m></p>
-<p>This parabola<rsq/>s vertex is at <m>\displaystyle{\left({-{\frac{3}{2}}},{10}\right)}</m>.</p>
+<p>This parabola<rsq/>s vertex is at <m>\displaystyle{\left({-{\frac{1}{2}}},{-{\frac{19}{4}}}\right)}</m>.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex100.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

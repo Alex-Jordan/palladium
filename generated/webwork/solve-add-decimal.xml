@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-add-decimal" assembly-id="solve-add-decimal">
-  <static seed="2509">
+  <static seed="2373">
     <statement><p>Solve the equation <m>-7.3+z=5.1</m> for <m>z\text{.}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>

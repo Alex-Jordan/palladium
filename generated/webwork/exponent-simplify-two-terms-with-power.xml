@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-simplify-two-terms-with-power" assembly-id="exponent-simplify-two-terms-with-power">
-  <static seed="2622">
-    <statement><p><m>{3h^{5}\mathopen{}\left(4h^{8}\right)^{3}-\left(8h^{6}\right)^{2}\cdot 9h^{17}}</m></p>
+  <static seed="2486">
+    <statement><p><m>{2g^{2}\mathopen{}\left(-3g^{8}\right)^{2}-\left(4g^{4}\right)^{3}\cdot 4g^{6}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-384h^{29}</m>
+        <m>-238g^{18}</m>
       </p>
     </answer>
   </static>

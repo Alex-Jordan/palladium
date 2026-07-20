@@ -1,25 +1,25 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-4-4" assembly-id="section-multiplication-and-division-of-rational-expressions-7-4-4">
-  <static seed="1269" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions40.pg">
+  <static seed="1133" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions40.pg">
     <statement><p>Simplify the following expression, and if applicable, write the restricted domain on the simplified expression.</p>
-<p><m>\displaystyle{{\frac{-9\mathopen{}\left(r+10\right)}{\left(r-6\right)\mathopen{}\left(r+10\right)}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{-3\mathopen{}\left(y-3\right)}{\left(y-4\right)\mathopen{}\left(y-3\right)}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-\frac{9}{r-6}, r\ne -10</m>
+        <m>-\frac{3}{y-4}, y\ne 3</m>
       </p>
     </answer>
     <solution><p>To simplify the expression, we first factor both the numerator and denominator, and then cross out common factors. In this question, both the numerator and denominator have been factored, so we can simply cross out common factors.</p>
 <p><m>\displaystyle{\begin{aligned}
-   {\frac{-9\mathopen{}\left(r+10\right)}{\left(r-6\right)\mathopen{}\left(r+10\right)}} 
-                     \amp = {-\frac{9}{r-6}, r\ne -10}
+   {\frac{-3\mathopen{}\left(y-3\right)}{\left(y-4\right)\mathopen{}\left(y-3\right)}} 
+                     \amp = {-\frac{3}{y-4}, y\ne 3}
 \end{aligned}
     }</m></p>
-<p>Since the factor <m>r+10</m> was canceled, the domain condition lost during the simplification is:</p>
+<p>Since the factor <m>y - 3</m> was canceled, the domain condition lost during the simplification is:</p>
 <p><m>\displaystyle{\begin{aligned}
-   r+10 \amp  \ne 0 \\
-   r+10 \mathbf{-10} \amp  \ne 0 \mathbf{-10} \\
-   r \amp  \ne -10
+   y - 3 \amp  \ne 0 \\
+   y - 3 \mathbf{ + 3} \amp  \ne 0 \mathbf{ + 3} \\
+   y \amp  \ne 3
 \end{aligned}
     }</m></p>
 </solution>

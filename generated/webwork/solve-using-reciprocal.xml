@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-using-reciprocal" assembly-id="solve-using-reciprocal">
-  <static seed="2513">
+  <static seed="2377">
     <statement><p>Solve the equation <m>-\frac{3}{5}x=11</m> for <m>x\text{.}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>

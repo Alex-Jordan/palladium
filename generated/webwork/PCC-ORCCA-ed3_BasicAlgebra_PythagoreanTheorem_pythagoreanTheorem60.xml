@@ -1,38 +1,38 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PythagoreanTheorem_pythagoreanTheorem60" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PythagoreanTheorem_pythagoreanTheorem60">
-  <static seed="855">
-    <statement><p>Malik is designing a rectangular garden. The garden<rsq/>s diagonal must be <m>15.3</m> feet, and the ratio between the garden<rsq/>s width and length must be <m>15:8</m>. Find the size of the garden<rsq/>s width and length.</p>
+  <static seed="1046">
+    <statement><p>Rebeca is designing a rectangular garden. The garden<rsq/>s diagonal must be <m>44.2</m> feet, and the ratio between the garden<rsq/>s width and length must be <m>12:5</m>. Find the size of the garden<rsq/>s width and length.</p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>13.5\ {\rm ft}</m>
+        <m>40.8\ {\rm ft}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>7.2\ {\rm ft}</m>
+        <m>17\ {\rm ft}</m>
       </p>
     </answer>
     <solution><p>We will draw a diagram for the garden.</p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/PCC-ORCCA-ed3_BasicAlgebra_PythagoreanTheorem_pythagoreanTheorem60-image-1.png" width="40%"/>
-<p>Since the ratio between its width and length is <m>15:8</m>, assume the width is <m>15x</m> feet, and its length is <m>8x</m> feet. By the Pythagorean Theorem, we have:</p>
+<p>Since the ratio between its width and length is <m>12:5</m>, assume the width is <m>12x</m> feet, and its length is <m>5x</m> feet. By the Pythagorean Theorem, we have:</p>
 <p><m>\displaystyle{\begin{aligned}
-   (15x)^{2}+(8x)^{2} \amp = 15.3^{2} \\
-   225x^2+64x^2 \amp = 234.09 \\
-   289x^2 \amp = 234.09 \\
-   \frac{289x^2}{289} \amp = \frac{234.09}{289} \\
-   x^2 \amp = 0.81 \\
-   \sqrt{x^2} \amp = \sqrt{0.81} \\
-   x \amp = 0.9
+   (12x)^{2}+(5x)^{2} \amp = 44.2^{2} \\
+   144x^2+25x^2 \amp = 1953.64 \\
+   169x^2 \amp = 1953.64 \\
+   \frac{169x^2}{169} \amp = \frac{1953.64}{169} \\
+   x^2 \amp = 11.56 \\
+   \sqrt{x^2} \amp = \sqrt{11.56} \\
+   x \amp = 3.4
 \end{aligned}
     }</m></p>
-<p>The garden<rsq/>s width is <m>15x=15\cdot0.9=13.5</m> feet, and its length is <m>8x=8\cdot0.9=7.2</m> feet.</p>
+<p>The garden<rsq/>s width is <m>12x=12\cdot3.4=40.8</m> feet, and its length is <m>5x=5\cdot3.4=17</m> feet.</p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_3_4_51.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/2_4_7_137.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 # WeBWorK problem written by Carl Yao
 # Portland Community College

@@ -1,35 +1,35 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator70" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator70">
-  <static seed="1916">
-    <statement><p><m>\displaystyle{ \frac{1}{{\sqrt{28}}} }</m></p>
+  <static seed="1780">
+    <statement><p><m>\displaystyle{ \frac{1}{{\sqrt{12}}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{\sqrt{7}}{14}</m>
+        <m>\frac{\sqrt{3}}{6}</m>
       </p>
     </answer>
-    <solution><p>We need to legally remove the radical <m>{\sqrt{28}}</m> from the denominator.</p>
+    <solution><p>We need to legally remove the radical <m>{\sqrt{12}}</m> from the denominator.</p>
 <p>Let<rsq/>s simplify the radical first:</p>
 <p><m>\displaystyle{\begin{aligned}
-   {\sqrt{28}} \amp = \sqrt{2 \cdot 2 \cdot 7}  \\
-            \amp =2 \sqrt{7} \\
+   {\sqrt{12}} \amp = \sqrt{2 \cdot 2 \cdot 3}  \\
+            \amp =2 \sqrt{3} \\
             \amp  
 \end{aligned}
     }</m></p>
 <p>Now the problem becomes:</p>
-<p><m>\displaystyle{ \frac{1}{{\sqrt{28}}} = \frac{1}{2 \sqrt{7}} }</m></p>
+<p><m>\displaystyle{ \frac{1}{{\sqrt{12}}} = \frac{1}{2 \sqrt{3}} }</m></p>
 <p>To remove the radical from the denominator, we will use this property:</p>
 <p><m>\displaystyle{ \sqrt{x} \cdot \sqrt{x} = x }</m></p>
 <p>In this case, we have:</p>
-<p><m>\displaystyle{ \sqrt{7} \cdot \sqrt{7} = 7 }</m></p>
-<p>Multiply both the numerator and denominator by <m>\sqrt{7}</m>, and we have:</p>
+<p><m>\displaystyle{ \sqrt{3} \cdot \sqrt{3} = 3 }</m></p>
+<p>Multiply both the numerator and denominator by <m>\sqrt{3}</m>, and we have:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   \frac{1}{{\sqrt{28}}}\amp = \frac{1}{2 \sqrt{7}} \\
-\amp = \frac{1}{2 \sqrt{7}}\cdot\frac{\sqrt{7}}{\sqrt{7}} \\
-      \amp = \frac{1 \cdot \sqrt{7}}{2 \sqrt{7} \cdot \sqrt{7}} \\
-      \amp = \frac{ \sqrt{7}}{2 \cdot 7} \\
-      \amp = \frac{ \sqrt{7}}{14}
+   \frac{1}{{\sqrt{12}}}\amp = \frac{1}{2 \sqrt{3}} \\
+\amp = \frac{1}{2 \sqrt{3}}\cdot\frac{\sqrt{3}}{\sqrt{3}} \\
+      \amp = \frac{1 \cdot \sqrt{3}}{2 \sqrt{3} \cdot \sqrt{3}} \\
+      \amp = \frac{ \sqrt{3}}{2 \cdot 3} \\
+      \amp = \frac{ \sqrt{3}}{6}
 \end{aligned}
     }</m></p>
 </solution>

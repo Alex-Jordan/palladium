@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-restauraunt-bill-check-solution" assembly-id="restauraunt-bill-check-solution">
-  <static seed="2499">
-    <statement><p>If your restaurant bill is <m>x</m> and you add <m>20\%</m> tip, the total is <m>x + 0.20x\text{.}</m> If the total was <m>{\$64.80}\text{,}</m> then we have an equation <m>{x+0.2x}={64.8}\text{.}</m> Was the bill before tip <m>{\$56}\text{?}</m></p>
+  <static seed="2363">
+    <statement><p>If your restaurant bill is <m>x</m> and you add <m>20\%</m> tip, the total is <m>x + 0.20x\text{.}</m> If the total was <m>{\$63.48}\text{,}</m> then we have an equation <m>{x+0.2x}={63.48}\text{.}</m> Was the bill before tip <m>{\$52.90}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
@@ -10,25 +10,25 @@
 <row>
 <cell><m>x+0.2x</m></cell>
 <cell><m>=</m></cell>
-<cell><m>64.8</m></cell>
+<cell><m>63.48</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
 <cell><m>\wonder{=}</m></cell>
-<cell><m>64.8</m></cell>
+<cell><m>63.48</m></cell>
 </row>
 </tabular>
 <p><fillin name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>67.2</m>
+        <m>63.48</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\text{No, it is not a solution.}</m>
+        <m>\text{Yes, it is a solution.}</m>
       </p>
     </answer>
   </static>

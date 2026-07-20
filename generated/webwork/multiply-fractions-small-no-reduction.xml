@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-multiply-fractions-small-no-reduction" assembly-id="multiply-fractions-small-no-reduction">
-  <static seed="2077">
-    <statement><p><m>\displaystyle {{\frac{9}{7}}}\cdot {{\frac{2}{5}}}</m></p>
+  <static seed="1941">
+    <statement><p><m>\displaystyle {{\frac{8}{9}}}\cdot {{\frac{5}{7}}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{18}{35}}</m>
+        <m>{\frac{40}{63}}</m>
       </p>
     </answer>
   </static>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-square-and-nth-root-properties-7-6" assembly-id="section-square-and-nth-root-properties-7-6">
-  <static seed="1787">
+  <static seed="1651">
     <statement><p>Simplify <m>\sqrt{72}\text{.}</m></p>
 <p><fillin characters="15" name="AnSwEr0001"/></p>
 </statement>

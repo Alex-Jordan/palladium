@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-square-roots-and-the-quadratic-formula-9-2-14" assembly-id="section-square-roots-and-the-quadratic-formula-9-2-14">
+  <static seed="1066">
+    <statement><p>If you add <m>{{\frac{10}{3}}}</m> to a certain positive number, then also subtract <m>1</m> from that same number, and multiply the results, you get <m>{-{\frac{22}{9}}}\text{.}</m> What was the original number?</p>
+<p><fillin characters="20" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>{\frac{1}{3}}</m>
+      </p>
+    </answer>
+    <solution><p>Let <m>x</m> be the mystery number. We are told that <m>\left(x+{{\frac{10}{3}}}\right)\left(x-1\right)={-{\frac{22}{9}}}\text{.}</m> So</p>
+<p><me>\begin{aligned}
+x^2-1x + {{\frac{10}{3}}}x - {{\frac{10}{3}}}\amp={-{\frac{22}{9}}}\\
+{x^{2}+{\frac{7}{3}}x-{\frac{8}{9}}}\amp=0
+\end{aligned}</me></p>
+<p>Now we can apply the quadratic formula:</p>
+<p><me>\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{{-{\frac{7}{3}}}\pm\sqrt{{{\frac{49}{9}}}-4(1)\left({-{\frac{8}{9}}}\right)}}{2}\\
+\amp=\frac{{-{\frac{7}{3}}}\pm\sqrt{{9}}}{2}\\
+\amp=\frac{{-{\frac{7}{3}}}\pm{3}}{2}\\
+x\amp=\frac{{-{\frac{7}{3}}}-{3}}{2}\quad\text{or}\quad x=\frac{{-{\frac{7}{3}}}+{3}}{2}\\
+x\amp={-{\frac{8}{3}}}\quad\text{or}\quad x={{\frac{1}{3}}}
+\end{aligned}</me></p>
+<p>Both <m>{-{\frac{8}{3}}}</m> and <m>{{\frac{1}{3}}}</m> solve the equation, but we were asked to find a positive number. So the mystery number is <m>{{\frac{1}{3}}}\text{.}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_4_7_157.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.4.7.157)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Fraction");
+do {$r = Fraction(list_random(-9..-1),random(2,3,1))} until (($r->value)[1] != 1);
+do {$s = Fraction(list_random(1..9),random(2,3,1))} until (($r->value)[1] != 1);
+$a = 1;
+$b = -($r + $s);
+$c = $r*$s;
+Context()->noreduce('(-x)-y','(-x)+y');
+$f = Formula("x^2+$b x+$c")->reduce;
+$negb = -$b;
+$bsquared = ($b)**2;
+$discriminant = ($b)**2 - 4*1*$c;
+$sqrtdisc = Fraction(sqrt($discriminant));
+$sub = random(1,3,1);
+$add = -$r - $s + $sub;
+$as = $add*$sub;
+$product = -$as - $c;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+If you add [`[$add]`] to a certain positive number, then also subtract [`[$sub]`] from that same number, and multiply the results, you get [`[$product]\text{.}`] What was the original number?
+
+[_]{$s}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Let [`x`] be the mystery number. We are told that [`\left(x+[$add]\right)\left(x-[$sub]\right)=[$product]\text{.}`] So
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+x^2-[$sub]x + [$add]x - [$as]\amp=[$product]\\
+[$f]\amp=0
+\end{aligned}
+```]
+
+Now we can apply the quadratic formula:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{[$negb]\pm\sqrt{[$bsquared]-4(1)\left([$c]\right)}}{2}\\
+\amp=\frac{[$negb]\pm\sqrt{[$discriminant]}}{2}\\
+\amp=\frac{[$negb]\pm[$sqrtdisc]}{2}\\
+x\amp=\frac{[$negb]-[$sqrtdisc]}{2}\quad\text{or}\quad x=\frac{[$negb]+[$sqrtdisc]}{2}\\
+x\amp=[$r]\quad\text{or}\quad x=[$s]
+\end{aligned}
+```]
+
+Both [`[$r]`] and [`[$s]`] solve the equation, but we were asked to find a positive number. So the mystery number is [`[$s]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

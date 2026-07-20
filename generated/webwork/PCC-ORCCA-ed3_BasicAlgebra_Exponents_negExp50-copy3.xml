@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp50-copy3" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp50-copy3">
-  <static seed="1961">
-    <statement><p><m>(-9x^{-9})\cdot (9x^{4})</m></p>
+  <static seed="1825">
+    <statement><p><m>(-6x^{-14})\cdot (4x^{9})</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{-81}{x^{5}}</m>
+        <m>\frac{-24}{x^{5}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remember that <m>a^m\cdot a^n = a^{m+n}</m></p>
 <p><m>\begin{aligned}
-                         (-9x^{-9})\cdot (9x^{4}) \amp = (-9)\cdot(9)x^{-9+4}\\
-                                                       \amp  =-81x^{-5}\\
-                                    \amp  = -\frac{81}{x^{5}}
+                         (-6x^{-14})\cdot (4x^{9}) \amp = (-6)\cdot(4)x^{-14+9}\\
+                                                       \amp  =-24x^{-5}\\
+                                    \amp  = -\frac{24}{x^{5}}
            \end{aligned}</m></p>
 </solution>
   </static>

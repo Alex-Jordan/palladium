@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication115-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication115-copy">
-  <static seed="2670">
-    <statement><p><m>\left({6r^{2}-2}\right)\left({2r^{2}-10}\right)</m></p>
+  <static seed="2534">
+    <statement><p><m>\left({2r^{2}-9}\right)\left({r^{2}-2}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>12r^{4}-64r^{2}+20</m>
+        <m>2r^{4}-13r^{2}+18</m>
       </p>
     </answer>
     <solution><p>We use the FOIL technique: <alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast. <me>\begin{aligned}
-              \left({6r^{2}-2}\right)({2r^{2}-10})\amp ={12r^{4}-60r^{2}-4r^{2}+20}\\
-                                \amp ={12r^{4}-64r^{2}+20}
+              \left({2r^{2}-9}\right)({r^{2}-2})\amp ={2r^{4}-4r^{2}-9r^{2}+18}\\
+                                \amp ={2r^{4}-13r^{2}+18}
       \end{aligned}</me></p>
 </solution>
   </static>

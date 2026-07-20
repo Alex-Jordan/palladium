@@ -1,0 +1,68 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.5.64)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("FiniteSolutionSets");
+$a = list_random(2,3,5);
+$b = list_random(4,9,16,25);
+$c = $a * $b;
+$exp = random(12,50,2);
+$smallexp = $exp - 2;
+$sqrt = Formula("sqrt($b)")->reduce;
+$answer = Formula("{0, 1/$sqrt, -1/$sqrt}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve for [`x`] in the equation [`[$c]x^{[$exp]}-[$a]x^{[$smallexp]} = 0 \text{.}`]
+
+[_]{$answer}{20}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

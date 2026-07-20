@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-6-8" assembly-id="section-completing-the-square-8-6-8">
-  <static seed="1201" source="Contrib/PCC/Math95/ParabolaVertex/ParabolaVertex8.pg">
+  <static seed="734" source="Contrib/PCC/Math95/ParabolaVertex/ParabolaVertex8.pg">
     <statement><p>Find the range of the function</p>
-<p><me>f(x)=10x^{2}+x-1</me></p>
+<p><me>f(x)=3x^{2}+9x+6</me></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left[\frac{-41}{40},\infty \right)</m>
+        <m>\left[\frac{-3}{4},\infty \right)</m>
       </p>
     </answer>
   </static>

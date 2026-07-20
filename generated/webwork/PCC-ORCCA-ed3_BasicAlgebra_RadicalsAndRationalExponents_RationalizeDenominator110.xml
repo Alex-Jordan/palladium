@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator110" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator110">
-  <static seed="1932">
-    <statement><p><m>\displaystyle{ \sqrt{\frac{15}{7}} }</m></p>
+  <static seed="1796">
+    <statement><p><m>\displaystyle{ \sqrt{\frac{14}{13}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{\sqrt{105}}{7}</m>
+        <m>\frac{\sqrt{182}}{13}</m>
       </p>
     </answer>
     <solution><p>We first use this property:</p>
 <p><m>\displaystyle{ \sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}} }</m></p>
 <p>Then we will rationalize the denominator. The full process is:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \sqrt{\frac{15}{7}} 
-      \amp = \frac{\sqrt{15}}{\sqrt{7}} \\
-      \amp = \frac{\sqrt{15}}{\sqrt{7}}\cdot\frac{\sqrt{7}}{\sqrt{7}} \\
-      \amp = \frac{\sqrt{15} \cdot \sqrt{7}}{\sqrt{7} \cdot \sqrt{7}} \\
-   \amp = \frac{\sqrt{105}}{7}
+   \sqrt{\frac{14}{13}} 
+      \amp = \frac{\sqrt{14}}{\sqrt{13}} \\
+      \amp = \frac{\sqrt{14}}{\sqrt{13}}\cdot\frac{\sqrt{13}}{\sqrt{13}} \\
+      \amp = \frac{\sqrt{14} \cdot \sqrt{13}}{\sqrt{13} \cdot \sqrt{13}} \\
+   \amp = \frac{\sqrt{182}}{13}
 \end{aligned}
     }</m></p>
 <p>Note that we used this property in the last step:</p>

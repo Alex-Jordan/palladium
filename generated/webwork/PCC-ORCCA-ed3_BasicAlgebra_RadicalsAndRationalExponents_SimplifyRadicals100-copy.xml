@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals100-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals100-copy">
-  <static seed="1853">
-    <statement><p><m>\displaystyle{{\sqrt{2}} \left({\sqrt{19}} + {\sqrt{5}}\right) }</m></p>
+  <static seed="1717">
+    <statement><p><m>\displaystyle{{\sqrt{2}} \left({\sqrt{3}} + {\sqrt{13}}\right) }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\sqrt{38}+\sqrt{10}</m>
+        <m>\sqrt{6}+\sqrt{26}</m>
       </p>
     </answer>
     <solution><p>Use the distributive property and simplify.</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   {\sqrt{2}} \left({\sqrt{19}} + {\sqrt{5}}\right) 
-   \amp = {\sqrt{2}} \cdot {\sqrt{19}} + {\sqrt{2}} \cdot {\sqrt{5}} \\
-   \amp = {\sqrt{38}+\sqrt{10}}
+   {\sqrt{2}} \left({\sqrt{3}} + {\sqrt{13}}\right) 
+   \amp = {\sqrt{2}} \cdot {\sqrt{3}} + {\sqrt{2}} \cdot {\sqrt{13}} \\
+   \amp = {\sqrt{6}+\sqrt{26}}
 \end{aligned}
     }</m></p>
 </solution>

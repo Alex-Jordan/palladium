@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication15" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication15">
-  <static seed="2639">
-    <statement><p><m>{7x^{2}}\left({-10x^{2}-7x}\right)</m></p>
+  <static seed="2503">
+    <statement><p><m>{-10x^{2}}\left({-7x^{2}+4x}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-70x^{4}-49x^{3}</m>
+        <m>70x^{4}-40x^{3}</m>
       </p>
     </answer>
     <solution><p>We multiply the monomial by each term in the binomial, using 
 the properties of exponents to help us</p>
 <p><m>\begin{aligned}
-              {7x^{2}}({-10x^{2}-7x})\amp ={-70x^{4}-49x^{3}}
+              {-10x^{2}}({-7x^{2}+4x})\amp ={70x^{4}-40x^{3}}
       \end{aligned}</m></p>
 </solution>
   </static>

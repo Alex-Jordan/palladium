@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator35-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator35-copy">
-  <static seed="1937">
-    <statement><p><m>\displaystyle{ \frac{4}{\sqrt{r}} }</m></p>
+  <static seed="1801">
+    <statement><p><m>\displaystyle{ \frac{5}{\sqrt{r}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{4\sqrt{r}}{r}</m>
+        <m>\frac{5\sqrt{r}}{r}</m>
       </p>
     </answer>
     <solution><p>We need to legally remove the radical <m>\sqrt{r}</m> from the denominator.</p>
@@ -14,9 +14,9 @@
 <p><m>\displaystyle{ \sqrt{r} \cdot \sqrt{r} = r }</m></p>
 <p>We will multiply both the numerator and denominator by <m>\sqrt{r}</m>, and we have:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   \frac{4}{\sqrt{r}} \amp = \frac{4}{\sqrt{r}}\cdot \frac{\sqrt{r}}{\sqrt{r}}\\
-      \amp = \frac{4 \cdot \sqrt{r}}{\sqrt{r} \cdot \sqrt{r}} \\
-      \amp = \frac{4 \cdot \sqrt{r}}{r}
+   \frac{5}{\sqrt{r}} \amp = \frac{5}{\sqrt{r}}\cdot \frac{\sqrt{r}}{\sqrt{r}}\\
+      \amp = \frac{5 \cdot \sqrt{r}}{\sqrt{r} \cdot \sqrt{r}} \\
+      \amp = \frac{5 \cdot \sqrt{r}}{r}
 \end{aligned}
     }</m></p>
 </solution>

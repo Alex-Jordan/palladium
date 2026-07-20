@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-addition-and-subtraction-of-rational-expressions-7-4-8" assembly-id="section-addition-and-subtraction-of-rational-expressions-7-4-8">
-  <static seed="1421" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions81.pg">
+  <static seed="1285" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions81.pg">
     <statement><p>Add or subtract the rational expressions to a single rational expression and then simplify.</p>
-<p><m>\displaystyle{{\frac{3}{yx-2}-\frac{6yx}{y^{2}x^{2}-4}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{4}{yx+1}-\frac{8yx}{y^{2}x^{2}-1}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-\frac{3}{yx+2}</m>
+        <m>-\frac{4}{yx-1}</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   {\frac{3}{yx-2}-\frac{6yx}{y^{2}x^{2}-4}} 
-      \amp = {\frac{3}{yx-2}}-\frac{6 y x}{(y x - 2)(y x + 2)} \\
-      \amp = \frac{3\cdot({yx+2})}{({yx-2})\cdot({yx+2})} -\frac{6 y x}{(y x - 2)(y x + 2)} \\
-      \amp = \frac{{3\mathopen{}\left(yx+2\right)-6yx}}{(yx - 2)(yx + 2)} \\
-      \amp = \frac{{3yx+6-6yx}}{(yx - 2)(yx + 2)} \\
-      \amp = \frac{{-3yx+6}}{(yx - 2)(yx + 2)} \\
-      \amp = \frac{{-3\mathopen{}\left(yx-2\right)}}{(yx - 2)(yx + 2)} \\
-      \amp = {-\frac{3}{yx+2}}
+   {\frac{4}{yx+1}-\frac{8yx}{y^{2}x^{2}-1}} 
+      \amp = {\frac{4}{yx+1}}-\frac{8 y x}{(y x+1)(y x-1)} \\
+      \amp = \frac{4\cdot({yx-1})}{({yx+1})\cdot({yx-1})} -\frac{8 y x}{(y x+1)(y x-1)} \\
+      \amp = \frac{{4\mathopen{}\left(yx-1\right)-8yx}}{(yx+1)(yx-1)} \\
+      \amp = \frac{{4yx-4-8yx}}{(yx+1)(yx-1)} \\
+      \amp = \frac{{-4yx-4}}{(yx+1)(yx-1)} \\
+      \amp = \frac{{-4\mathopen{}\left(yx+1\right)}}{(yx+1)(yx-1)} \\
+      \amp = {-\frac{4}{yx-1}}
 \end{aligned}
     }</m></p>
 </solution>

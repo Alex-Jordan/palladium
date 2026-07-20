@@ -1,25 +1,25 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator60-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator60-copy">
-  <static seed="1915">
-    <statement><p><m>\displaystyle{ \frac{4}{\sqrt{2}} }</m></p>
+  <static seed="1779">
+    <statement><p><m>\displaystyle{ \frac{40}{\sqrt{10}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>2\sqrt{2}</m>
+        <m>4\sqrt{10}</m>
       </p>
     </answer>
-    <solution><p>We need to legally remove the radical <m>\sqrt{2}</m> from the denominator.</p>
+    <solution><p>We need to legally remove the radical <m>\sqrt{10}</m> from the denominator.</p>
 <p>We will use this property:</p>
 <p><m>\displaystyle{ \sqrt{x} \cdot \sqrt{x} = x }</m></p>
 <p>In this case, we have:</p>
-<p><m>\displaystyle{ \sqrt{2} \cdot \sqrt{2} = 2 }</m></p>
-<p>Multiply both the numerator and denominator by <m>\sqrt{2}</m>, and we have:</p>
+<p><m>\displaystyle{ \sqrt{10} \cdot \sqrt{10} = 10 }</m></p>
+<p>Multiply both the numerator and denominator by <m>\sqrt{10}</m>, and we have:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   \frac{4}{\sqrt{2}} \amp = \frac{4}{\sqrt{2}}\cdot\frac{\sqrt{2}}{\sqrt{2}}\\
-      \amp = \frac{4 \cdot \sqrt{2}}{\sqrt{2} \cdot \sqrt{2}} \\
-      \amp = \frac{4 \sqrt{2}}{2} \amp \text{We can divide both the numerator and denominator by 2.}\\
-      \amp = 2 \sqrt{2}
+   \frac{40}{\sqrt{10}} \amp = \frac{40}{\sqrt{10}}\cdot\frac{\sqrt{10}}{\sqrt{10}}\\
+      \amp = \frac{40 \cdot \sqrt{10}}{\sqrt{10} \cdot \sqrt{10}} \\
+      \amp = \frac{40 \sqrt{10}}{10} \amp \text{We can divide both the numerator and denominator by 10.}\\
+      \amp = 4 \sqrt{10}
 \end{aligned}
     }</m></p>
 </solution>

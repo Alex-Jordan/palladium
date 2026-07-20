@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-special-with-like-terms2-copy" assembly-id="solve-special-with-like-terms2-copy">
-  <static seed="1516">
-    <statement><p><m>{7D-6-9D}={5-2D-7}</m></p>
+  <static seed="1380">
+    <statement><p><m>{6Z+8-4Z}={-8+2Z+5}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>

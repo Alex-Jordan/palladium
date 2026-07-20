@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp170" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp170">
-  <static seed="1777">
-    <statement><p><m>\displaystyle\frac{\left(t^{6}y^{-7}\right)^{-4}}{\left(t^{-5}y^{5}\right)^{-3}}</m></p>
+  <static seed="1641">
+    <statement><p><m>\displaystyle\frac{\left(r^{5}t^{-6}\right)^{-4}}{\left(r^{-4}t^{3}\right)^{-2}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{y^{43}}{t^{39}}</m>
+        <m>\frac{t^{30}}{r^{28}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\left(a^m\right)^{n}=a^{mn}</m></p>
 <p><m>\begin{aligned}
-\frac{\left(t^{6}y^{-7}\right)^{-4}}{\left(t^{-5}y^{5}\right)^{-3}}
-                      \amp = \frac{t^{6\cdot(-4)}y^{(-7)\cdot(-4)}}{t^{(-5)\cdot(-3)}\cdot y^{5\cdot (-3)}}\\
-                     \amp = \frac{t^{-24}y^{28}}{t^{15}\cdot y^{-15}}\\
- \amp = t^{-24-15} y^{28+15}\\
- \amp = t^{-39} y^{43}\\
-                                    \amp  = {\frac{y^{43}}{t^{39}}}
+\frac{\left(r^{5}t^{-6}\right)^{-4}}{\left(r^{-4}t^{3}\right)^{-2}}
+                      \amp = \frac{r^{5\cdot(-4)}t^{(-6)\cdot(-4)}}{r^{(-4)\cdot(-2)}\cdot t^{3\cdot (-2)}}\\
+                     \amp = \frac{r^{-20}t^{24}}{r^{8}\cdot t^{-6}}\\
+ \amp = r^{-20-8} t^{24+6}\\
+ \amp = r^{-28} t^{30}\\
+                                    \amp  = {\frac{t^{30}}{r^{28}}}
            \end{aligned}</m></p>
 </solution>
   </static>

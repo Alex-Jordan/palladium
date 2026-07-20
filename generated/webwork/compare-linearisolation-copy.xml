@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-compare-linearisolation-copy" assembly-id="compare-linearisolation-copy">
-  <static seed="1556">
+  <static seed="1420">
     <introduction/>
     <task>
-      <statement><p><m>{6n+5}={8}</m> for <m>n\text{.}</m></p>
+      <statement><p><m>{5l+9}={7}</m> for <m>l\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>\left\{\frac{1}{2}\right\}</m>
+          <m>\left\{\frac{-2}{5}\right\}</m>
         </p>
       </answer>
     </task>
     <task>
-      <statement><p><m>{hn+x}={a}</m> for <m>n\text{.}</m></p>
+      <statement><p><m>{wl+M}={J}</m> for <m>l\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>n = \frac{a-x}{h}</m>
+          <m>l = \frac{J-M}{w}</m>
         </p>
       </answer>
     </task>

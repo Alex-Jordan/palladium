@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-fraction-arithmetic-6-11" assembly-id="section-fraction-arithmetic-6-11">
-  <static seed="2056">
+  <static seed="1920">
     <statement><p>A chef had <m>\frac{2}{3}</m> cups of flour and needed to use <m>\frac{1}{8}</m> cup to thicken a sauce. How much flour is left? <fillin characters="1" name="AnSwEr0001"/></p>
 </statement>
     <answer>

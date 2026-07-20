@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_SolvingRadicalEquations_SolvingRadicalEquationsLiteral112" assembly-id="PCC-ORCCA-ed3_Math95_SolvingRadicalEquations_SolvingRadicalEquationsLiteral112">
-  <static seed="2045">
+  <static seed="1909">
     <statement><p>In an electric circuit, resonance occurs when the frequency <m>f</m>, inductance <m>L</m>, and capacitance <m>C</m> fulfill the following equation:</p>
 <p><me>{f} = {\frac{1}{2\pi \sqrt{LC}}}</me></p>
 <p>The frequency is measured in Hertz, the inductance in Henry, and the capacitance in Farad.</p>

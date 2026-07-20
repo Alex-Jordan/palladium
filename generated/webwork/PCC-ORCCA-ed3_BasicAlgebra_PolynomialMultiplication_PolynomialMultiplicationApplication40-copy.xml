@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication40-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication40-copy">
-  <static seed="2706">
-    <statement><p>A rectangle<rsq/>s base can be modeled by <m>{x-7}</m> meters, and its height can be modeled by <m>{x-9}</m> meters. Use a polynomial to represent the rectangle<rsq/>s area in expanded form.</p>
+  <static seed="2570">
+    <statement><p>A rectangle<rsq/>s base can be modeled by <m>{x+7}</m> meters, and its height can be modeled by <m>{x-3}</m> meters. Use a polynomial to represent the rectangle<rsq/>s area in expanded form.</p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>x^{2}-16x+63</m>
+        <m>x^{2}+4x-21</m>
       </p>
     </answer>
     <solution><p>A rectangle<rsq/>s area formula is:</p>
@@ -14,13 +14,13 @@
 <p>After substitution, we have:</p>
 <p><m>\displaystyle{\begin{aligned}
    \text{area} \amp = (\text{length})\cdot(\text{width}) \\
-                     \amp = ({x-7})({x-9}) \\
-                     \amp = {x\mathopen{}\left(x-7\right)-9\mathopen{}\left(x-7\right)} \\
-                     \amp = {x^{2}-7x-9x+63} \\
-                     \amp = {x^{2}-16x+63}
+                     \amp = ({x+7})({x-3}) \\
+                     \amp = {x\mathopen{}\left(x+7\right)-3\mathopen{}\left(x+7\right)} \\
+                     \amp = {x^{2}+7x-3x-21} \\
+                     \amp = {x^{2}+4x-21}
 \end{aligned}
     }</m></p>
-<p>The rectangle<rsq/>s area is <m>{x^{2}-16x+63}</m> square meters.</p>
+<p>The rectangle<rsq/>s area is <m>{x^{2}+4x-21}</m> square meters.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/Appendices/A_9_5_74.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

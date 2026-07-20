@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-distribute-monomial-linear" assembly-id="exponent-distribute-monomial-linear">
-  <static seed="2598">
-    <statement><p><m>{8r\mathopen{}\left(7r-6\right)}</m></p>
+  <static seed="2462">
+    <statement><p><m>{-7p\mathopen{}\left(8p+10\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>r^{2}+r</m>
+        <m>p^{2}+p</m>
       </p>
     </answer>
   </static>

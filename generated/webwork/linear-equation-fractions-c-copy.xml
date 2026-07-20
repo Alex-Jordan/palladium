@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-linear-equation-fractions-c-copy" assembly-id="linear-equation-fractions-c-copy">
-  <static seed="1482">
-    <statement><p><m>{3x+11} = {{\frac{7}{10}}}</m></p>
+  <static seed="1346">
+    <statement><p><m>{2x+4} = {{\frac{11}{7}}}</m></p>
 <p><fillin characters="4" name="AnSwEr0001"/></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>10</m>
+        <m>7</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left\{\frac{-103}{30}\right\}</m>
+        <m>\left\{\frac{-17}{14}\right\}</m>
       </p>
     </answer>
   </static>

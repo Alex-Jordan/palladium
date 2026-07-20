@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-use-distributive-property-copy" assembly-id="use-distributive-property-copy">
-  <static seed="2341">
-    <statement><p>Apply the distributive property to <m>{4\mathopen{}\left(j+8\right)}\text{.}</m></p>
+  <static seed="2205">
+    <statement><p>Apply the distributive property to <m>{6\mathopen{}\left(h+2\right)}\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>4j+4\cdot 8</m>
+        <m>6h+6\cdot 2</m>
       </p>
     </answer>
   </static>

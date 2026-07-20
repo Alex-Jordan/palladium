@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar160" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar160">
-  <static seed="2697">
-    <statement><p><m>\left({a+b-7}\right)\left({a+b+7}\right)</m></p>
+  <static seed="2561">
+    <statement><p><m>\left({a+b+7}\right)\left({a+b-7}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
@@ -11,12 +11,12 @@
     </answer>
     <solution><p>There are a few different ways to approach this problem. One such way is to 
 write the expression as</p>
-<p><m>\displaystyle{    ({a+b-7})({a+b+7})=((a+b) - 7)((a+b) + 7)
+<p><m>\displaystyle{    ({a+b+7})({a+b-7})=((a+b)+7)((a+b)-7)
 }</m></p>
 <p>This allows us to use the FOIL technique: <alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast 
 twice in succession</p>
 <p><m>\displaystyle{    \begin{aligned}
-     ((a+b) - 7)((a+b) + 7)\amp =(a+b)^2 + 7(a+b) - 7(a+b)+(-7\cdot7)\\
+     ((a+b)+7)((a+b)-7)\amp =(a+b)^2-7(a+b)+7(a+b)+(7\cdot-7)\\
                       \amp  = {a^{2}+2ab+b^{2}-49}
     \end{aligned}
 }</m></p>

@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-4-6" assembly-id="section-multiplication-and-division-of-rational-expressions-7-4-6">
-  <static seed="1271" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions50.pg">
+  <static seed="1135" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions50.pg">
     <statement><p>Simplify the following expression, and if applicable, write the restricted domain on the simplified expression.</p>
-<p><m>\displaystyle{{\frac{\left(r+4\right)\mathopen{}\left(r-10\right)}{10-r}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{\left(r+6\right)\mathopen{}\left(r-7\right)}{7-r}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-r-4, r\ne 10</m>
+        <m>-r-6, r\ne 7</m>
       </p>
     </answer>
-    <solution><p>By the formula <m>x-y = -(y-x)</m>, we have <m>10-r = -(r-10)</m>. Now we can simplify the expression:</p>
+    <solution><p>By the formula <m>x-y = -(y-x)</m>, we have <m>7-r = -(r-7)</m>. Now we can simplify the expression:</p>
 <p><m>\displaystyle{\begin{aligned}
-   {\frac{\left(r+4\right)\mathopen{}\left(r-10\right)}{10-r}} \amp = \frac{{\left(r+4\right)\mathopen{}\left(r-10\right)}}{-(r-10)} \\
-                     \amp = \frac{r+4}{-1} \\
-                     \amp = {-r-4, r\ne 10}
+   {\frac{\left(r+6\right)\mathopen{}\left(r-7\right)}{7-r}} \amp = \frac{{\left(r+6\right)\mathopen{}\left(r-7\right)}}{-(r-7)} \\
+                     \amp = \frac{r+6}{-1} \\
+                     \amp = {-r-6, r\ne 7}
 \end{aligned}
     }</m></p>
-<p>Since the factor <m>r-10</m> was crossed out, the domain condition lost during the simplification is <m>r \ne {10}</m>.</p>
+<p>Since the factor <m>r-7</m> was crossed out, the domain condition lost during the simplification is <m>r \ne {7}</m>.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions50.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

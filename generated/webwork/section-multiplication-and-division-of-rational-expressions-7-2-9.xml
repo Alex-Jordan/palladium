@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-2-9" assembly-id="section-multiplication-and-division-of-rational-expressions-7-2-9">
-  <static seed="1258" source="Contrib/PCC/BasicAlgebra/Factoring/factoring390.pg">
+  <static seed="1122" source="Contrib/PCC/BasicAlgebra/Factoring/factoring390.pg">
     <statement><p>Factor the given polynomial.</p>
-<p><m>{4y^{7}+12y^{6}+8y^{5}}=</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>{8x^{7}+24x^{6}+16x^{5}}=</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>4y^{5}\mathopen{}\left(y+2\right)\mathopen{}\left(y+1\right)</m>
+        <m>8x^{5}\mathopen{}\left(x+2\right)\mathopen{}\left(x+1\right)</m>
       </p>
     </answer>
-    <solution><p>Let<rsq/>s start by noting that <m>4y^{5}</m> is a common factor to each term, so 
+    <solution><p>Let<rsq/>s start by noting that <m>8x^{5}</m> is a common factor to each term, so 
 we may write</p>
-<p><m>{4y^{7}+12y^{6}+8y^{5}}={4y^{5}\mathopen{}\left(y^{2}+3y+2\right)}</m></p>
+<p><m>{8x^{7}+24x^{6}+16x^{5}}={8x^{5}\mathopen{}\left(x^{2}+3x+2\right)}</m></p>
 <p>To factor this expression further we make the following observations:
 <ul label="disc">
 <li>
@@ -20,12 +20,12 @@ we may write</p>
 <li>
 <p>the middle term<rsq/>s coefficient and the last term are <em>positive</em> which means that the factorization
 will have the form</p>
-<p><m>(y+\phantom{3})(y+\phantom{3})</m></p>
+<p><m>(x+\phantom{3})(x+\phantom{3})</m></p>
 </li>
 </ul></p>
 <p>We look for factors of <m>2</m> that add to <m>3</m>; the 
 factors that work are <m>2</m> and <m>1</m> so</p>
-<p><m>{4y^{7}+12y^{6}+8y^{5}}={4y^{5}\mathopen{}\left(y+2\right)\mathopen{}\left(y+1\right)}</m></p>
+<p><m>{8x^{7}+24x^{6}+16x^{5}}={8x^{5}\mathopen{}\left(x+2\right)\mathopen{}\left(x+1\right)}</m></p>
 <p>Note that this answer can be checked by using the FOIL (<alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast) technique (exercise).</p>
 </solution>
   </static>

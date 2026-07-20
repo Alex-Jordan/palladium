@@ -1,28 +1,28 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-addition-and-subtraction-of-rational-expressions-7-1-4" assembly-id="section-addition-and-subtraction-of-rational-expressions-7-1-4">
-  <static seed="1363" source="Contrib/PCC/BasicAlgebra/FractionArithmetic/AddFractions26.pg">
-    <statement><p>Add: <m>\displaystyle{\frac{9}{10} + \frac{3}{5}}</m></p>
+  <static seed="1227" source="Contrib/PCC/BasicAlgebra/FractionArithmetic/AddFractions26.pg">
+    <statement><p>Add: <m>\displaystyle{\frac{7}{10} + \frac{5}{6}}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{3}{2}}</m>
+        <m>{\frac{23}{15}}</m>
       </p>
     </answer>
     <solution><p>To add two fractions with different denominators, we first have to find a common denominator.</p>
-<p>In this case, the least common multiple of <m>10</m> and <m>5</m> is <m>10</m>.</p>
-<p>Look at the first fraction <m>\displaystyle{\frac{9}{10}}</m>. To change the denominator to <m>10</m>, we multiply <m>1</m> at both the top and bottom, and we have:</p>
-<p><m>\displaystyle{ \begin{aligned}\frac{9}{10} \amp = \frac{9 \cdot 1}{10 \cdot 1}\\ \amp = \frac{9}{10} \end{aligned}}</m></p>
-<p>Similarly, we change the second fraction<rsq/>s denominator to <m>10</m>:</p>
-<p><m>\displaystyle{ \begin{aligned}\frac{3}{5} \amp = \frac{3 \cdot 2}{5 \cdot 2}\\ \amp = \frac{6}{10} \end{aligned}}</m></p>
+<p>In this case, the least common multiple of <m>10</m> and <m>6</m> is <m>30</m>.</p>
+<p>Look at the first fraction <m>\displaystyle{\frac{7}{10}}</m>. To change the denominator to <m>30</m>, we multiply <m>3</m> at both the top and bottom, and we have:</p>
+<p><m>\displaystyle{ \begin{aligned}\frac{7}{10} \amp = \frac{7 \cdot 3}{10 \cdot 3}\\ \amp = \frac{21}{30} \end{aligned}}</m></p>
+<p>Similarly, we change the second fraction<rsq/>s denominator to <m>30</m>:</p>
+<p><m>\displaystyle{ \begin{aligned}\frac{5}{6} \amp = \frac{5 \cdot 5}{6 \cdot 5}\\ \amp = \frac{25}{30} \end{aligned}}</m></p>
 <p>Now we can add those two fractions. The full process is:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \frac{9}{10} + \frac{3}{5}
-        \amp = \frac{9}{10} + \frac{6}{10} \\
-        \amp = \frac{9 + 6}{10} \\
-        \amp = \frac{15}{10} \amp \hbox{We can reduce this by dividing 5 into both the numerator and the denominator.
+   \frac{7}{10} + \frac{5}{6}
+        \amp = \frac{21}{30} + \frac{25}{30} \\
+        \amp = \frac{21 + 25}{30} \\
+        \amp = \frac{46}{30} \amp \hbox{We can reduce this by dividing 2 into both the numerator and the denominator.
 }\\
-        \amp = \frac{3}{2}
+        \amp = \frac{23}{15}
 \end{aligned}
     }</m></p>
 </solution>

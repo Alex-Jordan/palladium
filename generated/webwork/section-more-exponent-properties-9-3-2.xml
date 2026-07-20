@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-more-exponent-properties-9-3-2" assembly-id="section-more-exponent-properties-9-3-2">
-  <static seed="1783">
+  <static seed="1647">
     <statement><p>Consider the expression <m>\dfrac{x^a\cdot x^b}{x^c}</m> where <m>a\gt0, b\lt0\text{,}</m> and <m>c \gt 0\text{.}</m>
 <ol label="a.">
 <li>
@@ -15,20 +15,20 @@
 </statement>
     <answer>
       <p>
-        <m>10;\,-2;\,2</m>
+        <m>9;\,-2;\,1</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>3;\,-4;\,7</m>
+        <m>5;\,-6;\,7</m>
       </p>
     </answer>
     <solution><p><ol label="a.">
 <li>
-<p>The problem states that <m>\frac{x^a\cdot x^b}{x^c}=x^{6}\text{.}</m> To simplify <m>\frac{x^a\cdot x^b}{x^c}\text{,}</m> we must add the exponents <m>a</m> and <m>b\text{,}</m> and then subtract the exponent <m>c\text{.}</m> Thus, <m>a+b-c</m> must equal <m>6\text{.}</m> For example, <m>10+{-2}-2=6\text{.}</m></p>
+<p>The problem states that <m>\frac{x^a\cdot x^b}{x^c}=x^{6}\text{.}</m> To simplify <m>\frac{x^a\cdot x^b}{x^c}\text{,}</m> we must add the exponents <m>a</m> and <m>b\text{,}</m> and then subtract the exponent <m>c\text{.}</m> Thus, <m>a+b-c</m> must equal <m>6\text{.}</m> For example, <m>9+{-2}-1=6\text{.}</m></p>
 </li>
 <li>
-<p>First off, we must remember that <m>\frac{1}{x^{8}} = x^{-8}\text{.}</m> To simplify <m>\frac {x^{a} \cdot x^{b}}{x^{c}}\text{,}</m> we must add the exponents <m>a</m> and <m>b\text{,}</m> and then subtract the exponent <m>c\text{.}</m> Thus, <m>a + b - c</m> must equal <m>-8\text{.}</m> For example, <m>3 + {-4} - 7 = -8\text{.}</m></p>
+<p>First off, we must remember that <m>\frac{1}{x^{8}} = x^{-8}\text{.}</m> To simplify <m>\frac {x^{a} \cdot x^{b}}{x^{c}}\text{,}</m> we must add the exponents <m>a</m> and <m>b\text{,}</m> and then subtract the exponent <m>c\text{.}</m> Thus, <m>a + b - c</m> must equal <m>-8\text{.}</m> For example, <m>5 + {-6} - 7 = -8\text{.}</m></p>
 </li>
 </ol></p>
 </solution>

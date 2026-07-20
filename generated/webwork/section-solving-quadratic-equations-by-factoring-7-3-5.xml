@@ -1,38 +1,38 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-quadratic-equations-by-factoring-7-3-5" assembly-id="section-solving-quadratic-equations-by-factoring-7-3-5">
-  <static seed="796" source="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication30.pg">
-    <statement><p>A rectangle<rsq/>s base is <m>{6\ {\rm cm}}</m> longer than its height. The rectangle<rsq/>s area is <m>{55\ {\rm cm^{2}}}</m>. Find this rectangle<rsq/>s dimensions.</p>
+  <static seed="58" source="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication30.pg">
+    <statement><p>A rectangle<rsq/>s base is <m>{9\ {\rm cm}}</m> longer than its height. The rectangle<rsq/>s area is <m>{112\ {\rm cm^{2}}}</m>. Find this rectangle<rsq/>s dimensions.</p>
 <p>The rectangle<rsq/>s height is <fillin characters="11" name="AnSwEr0001"/>.</p>
 <p>The rectangle<rsq/>s base is <fillin characters="11" name="AnSwEr0002"/>.</p>
 </statement>
     <answer>
       <p>
-        <m>5\ {\rm cm}</m>
+        <m>7\ {\rm cm}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>11\ {\rm cm}</m>
+        <m>16\ {\rm cm}</m>
       </p>
     </answer>
-    <solution><p>Let the rectangle<rsq/>s height be <m>x</m> centimeters. Then its base is <m>x+6</m> centimeters.</p>
-<p>It<rsq/>s given that the rectangle<rsq/>s area is <m>{55\ {\rm cm^{2}}}</m>, so we can write and solve the equation:</p>
+    <solution><p>Let the rectangle<rsq/>s height be <m>x</m> centimeters. Then its base is <m>x+9</m> centimeters.</p>
+<p>It<rsq/>s given that the rectangle<rsq/>s area is <m>{112\ {\rm cm^{2}}}</m>, so we can write and solve the equation:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   x(x+6) \amp = 55 \\
-   x^{2}+6x \amp = 55 \\
-   x^{2}+6x - 55 \amp = 0 \\
+   x(x+9) \amp = 112 \\
+   x^{2}+9x \amp = 112 \\
+   x^{2}+9x - 112 \amp = 0 \\
 \end{aligned}
     }</m></p>
 <p>The polynomial can be factored, so we will solve this equation by factoring:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   (x-5)(x+11) \amp =0 \\
-   x-5=0 \quad \amp \text{or} \quad x +11=0 \\
-   x=5 \quad \amp \text{or} \quad x= -11
+   (x-7)(x+16) \amp =0 \\
+   x-7=0 \quad \amp \text{or} \quad x +16=0 \\
+   x=7 \quad \amp \text{or} \quad x= -16
 \end{aligned}
     }</m></p>
-<p>The solution <m>x= -11</m> will not be considered, as a rectangle<rsq/>s height must be positive. The height is <m>{5\ {\rm cm}}</m>.</p>
-<p>Recall that the rectangle<rsq/>s base is <m>x+6</m> centimeters, where <m>x</m> is the height. Thus the base is <m>{5\ {\rm cm}} + {6\ {\rm cm}}</m>, or <m>{11\ {\rm cm}}</m>.</p>
-<p>So the rectangle<rsq/>s height is <m>{5\ {\rm cm}}</m>, and its base is <m>{11\ {\rm cm}}</m>.</p>
+<p>The solution <m>x= -16</m> will not be considered, as a rectangle<rsq/>s height must be positive. The height is <m>{7\ {\rm cm}}</m>.</p>
+<p>Recall that the rectangle<rsq/>s base is <m>x+9</m> centimeters, where <m>x</m> is the height. Thus the base is <m>{7\ {\rm cm}} + {9\ {\rm cm}}</m>, or <m>{16\ {\rm cm}}</m>.</p>
+<p>So the rectangle<rsq/>s height is <m>{7\ {\rm cm}}</m>, and its base is <m>{16\ {\rm cm}}</m>.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication30.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

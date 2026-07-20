@@ -1,26 +1,26 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-key-features-of-quadratic-graphs-8-6-7" assembly-id="section-key-features-of-quadratic-graphs-8-6-7">
-  <static seed="1013" source="Contrib/PCC/BasicAlgebra/QuadraticApplications/MaxMinApplication30.pg">
+  <static seed="546" source="Contrib/PCC/BasicAlgebra/QuadraticApplications/MaxMinApplication30.pg">
     <statement><p>You will build a rectangular sheep enclosure next to a river.
 There is no need to build a fence along the river, so you only need to build on three sides.
-You have a total of <m>410</m> feet of fence to use. Find the dimensions of the pen such that you can enclose the maximum possible area.
+You have a total of <m>450</m> feet of fence to use. Find the dimensions of the pen such that you can enclose the maximum possible area.
 One approach is to let <m>x</m> represent the length of fencing that runs perpendicular to the river, and write an expression for the area of the enclosure.
 Then find its vertex and interpret it.</p>
 <p>The length of the pen (parallel to the river) should be <fillin characters="12" name="AnSwEr0001"/>, the width (perpendicular to the river) should be <fillin characters="12" name="AnSwEr0002"/>, and the maximum possible area is <fillin characters="12" name="AnSwEr0003"/>.</p>
 </statement>
     <answer>
       <p>
-        <m>205\ {\rm ft}</m>
+        <m>225\ {\rm ft}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>102.5\ {\rm ft}</m>
+        <m>112.5\ {\rm ft}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>21012.5\ {\rm ft^{2}}</m>
+        <m>25312.5\ {\rm ft^{2}}</m>
       </p>
     </answer>
     <solution><p>Drawing a diagram should help us write an expression for the area of the pen.</p>
@@ -28,34 +28,34 @@ Then find its vertex and interpret it.</p>
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-key-features-of-quadratic-graphs-8-6-7-image-1.png" width="66%"/>
 <p>Let the width be <m>w</m> ft, and the length be <m>\ell</m> ft. Since there are only three sides of the fence, we have:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-\ell+2w \amp = 410 \\
-\ell    \amp = 410-2w
+\ell+2w \amp = 450 \\
+\ell    \amp = 450-2w
 \end{aligned}
 }</m></p>
-<p>If the pen<rsq/>s width is <m>w</m> feet, then its length is <m>410-2w</m> feet.
+<p>If the pen<rsq/>s width is <m>w</m> feet, then its length is <m>450-2w</m> feet.
 Now we can write an expression for the area of the pen:</p>
 <p><m>\displaystyle{\begin{align}
-\text{area}\amp = (410-2w)w\\
-\amp = -2w^{2}+410 w
+\text{area}\amp = (450-2w)w\\
+\amp = -2w^{2}+450 w
 \end{align}}</m></p>
-<p>Identify that <m>a=-2</m>, <m>b=410</m>, and <m>c=0</m>. The maximum area happens at the parabola<rsq/>s vertex.</p>
+<p>Identify that <m>a=-2</m>, <m>b=450</m>, and <m>c=0</m>. The maximum area happens at the parabola<rsq/>s vertex.</p>
 <p>To find the vertex, we first find the parabola<rsq/>s axis of symmetry by using the axis formula:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
   h \amp = -\frac{b}{2a} \\
-  h \amp = -\frac{410}{2(-2)} \\
-  h \amp =  102.5
+  h \amp = -\frac{450}{2(-2)} \\
+  h \amp =  112.5
 \end{aligned}
 }</m></p>
-<p>Next, we substitute <m>w= 102.5</m> into the expression, and we have:</p>
+<p>Next, we substitute <m>w= 112.5</m> into the expression, and we have:</p>
 <p><m>\displaystyle{\begin{aligned}[t] 
-  {-2w^{2}+410w} \amp =  -2(102.5)^2+410(102.5)  \\
-  \amp =  {21012.5} 
+  {-2w^{2}+450w} \amp =  -2(112.5)^2+450(112.5)  \\
+  \amp =  {25312.5} 
 \end{aligned}
 }</m></p>
-<p>The parabola<rsq/>s vertex is at <m>{\left(102.5,21012.5\right)}</m>.
-This implies that the pen<rsq/>s maximum area is <m>{21012.5}</m> square feet.
-This happens when the width is <m>102.5</m> feet, and the length is <m>410 - 2(102.5)</m>, or <m>205</m>, feet.</p>
-<p>So when the length is <m>205</m> feet and the width is <m>102.5</m> feet, the pen has a maximum possible area of <m>{21012.5}</m> square feet.</p>
+<p>The parabola<rsq/>s vertex is at <m>{\left(112.5,25312.5\right)}</m>.
+This implies that the pen<rsq/>s maximum area is <m>{25312.5}</m> square feet.
+This happens when the width is <m>112.5</m> feet, and the length is <m>450 - 2(112.5)</m>, or <m>225</m>, feet.</p>
+<p>So when the length is <m>225</m> feet and the width is <m>112.5</m> feet, the pen has a maximum possible area of <m>{25312.5}</m> square feet.</p>
 <p>The following graph illustrates our findings.</p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-key-features-of-quadratic-graphs-8-6-7-image-2.png" width="40%"/>

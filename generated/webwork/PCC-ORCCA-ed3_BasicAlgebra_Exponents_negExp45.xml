@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp45" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp45">
-  <static seed="1727">
-    <statement><p><m>x^{-15}\cdot x^{11}</m></p>
+  <static seed="1591">
+    <statement><p><m>x^{-20}\cdot x^{2}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{1}{x^{4}}</m>
+        <m>\frac{1}{x^{18}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remember that <m>a^m\cdot a^n = a^{m+n}</m></p>
 <p><m>\begin{aligned}
-                 x^{-15}\cdot x^{11} \amp = x^{-15+11}\\
-                                                       \amp  =x^{-4}\\
-                                    \amp  = {\frac{1}{x^{4}}}
+                 x^{-20}\cdot x^{2} \amp = x^{-20+2}\\
+                                                       \amp  =x^{-18}\\
+                                    \amp  = {\frac{1}{x^{18}}}
            \end{aligned}</m></p>
 </solution>
   </static>

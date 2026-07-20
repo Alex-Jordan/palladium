@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents7" assembly-id="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents7">
-  <static seed="1994">
-    <statement><p><m>\displaystyle{{a^{\frac{5}{6}}}}</m></p>
+  <static seed="1858">
+    <statement><p><m>\displaystyle{{a^{\frac{2}{3}}}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\sqrt[6]{a^{5}}</m>
+        <m>\sqrt[3]{a^{2}}</m>
       </p>
     </answer>
     <solution><p>When we have fractions as exponents, the numerator indicates the power while the denominator indicates the radical: <m>x^\frac{m}{n} = \sqrt[n]{x^m}</m>. So we can rewrite our expression as follows:</p>
 <p><m>\displaystyle{\begin{aligned}
-   a^\frac{5}{6} \amp = \sqrt[6]{a^5} \\
+   a^\frac{2}{3} \amp = \sqrt[3]{a^2} \\
 \end{aligned}
     }</m></p>
 </solution>

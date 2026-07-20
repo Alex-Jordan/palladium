@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp130-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp130-copy">
-  <static seed="1762">
-    <statement><p><m>\left(x^{9}\right)^{3}\cdot x^{-25}</m></p>
+  <static seed="1626">
+    <statement><p><m>\left(x^{13}\right)^{4}\cdot x^{-32}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>x^{2}</m>
+        <m>x^{20}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remember that <m>a^m\cdot a^n = a^{m+n}</m></p>
 <p><m>\begin{aligned}
-                \left(x^{9}\right)^{3}\cdot x^{-25} \amp = x^{9\cdot3}x^{-25}\\
-                                                                          \amp  =x^{27}x^{-25}\\
-                                                                      \amp  =x^{27-25}\\
-                                    \amp  = {x^{2}}
+                \left(x^{13}\right)^{4}\cdot x^{-32} \amp = x^{13\cdot4}x^{-32}\\
+                                                                          \amp  =x^{52}x^{-32}\\
+                                                                      \amp  =x^{52-32}\\
+                                    \amp  = {x^{20}}
            \end{aligned}</m></p>
 </solution>
   </static>

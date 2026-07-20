@@ -1,44 +1,44 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-introduction-to-exponent-properties-6-3-4" assembly-id="section-introduction-to-exponent-properties-6-3-4">
-  <static seed="2630">
+  <static seed="2494">
     <statement><p>Fill in the blanks with algebraic expressions that make the equation true. You may not use <m>0</m> or <m>1</m> in any of the blank spaces. For example, if <m>\mathord{?}+\mathord{?}=8x\text{,}</m> then one possible answer is <m>3x+5x=8x\text{.}</m></p>
 <p>There are infinitely many correct answers. <em>Be creative.</em> After finding a correct answer, see if you can come up with a different answer that is also correct.</p>
 <p><ol label="a.">
 <li>
-<p><fillin characters="6" name="AnSwEr0001"/><m>{}+{}</m><fillin characters="6" name="MuLtIaNsWeR_AnSwEr0001_1"/><m>{}={-17x}</m></p>
+<p><fillin characters="6" name="AnSwEr0001"/><m>{}+{}</m><fillin characters="6" name="MuLtIaNsWeR_AnSwEr0001_1"/><m>{}={-23x}</m></p>
 </li>
 <li>
-<p><fillin characters="6" name="AnSwEr0002"/><m>{}+{}</m><fillin characters="6" name="MuLtIaNsWeR_AnSwEr0002_1"/><m>{}={-19x^{25}}</m></p>
+<p><fillin characters="6" name="AnSwEr0002"/><m>{}+{}</m><fillin characters="6" name="MuLtIaNsWeR_AnSwEr0002_1"/><m>{}={-17x^{20}}</m></p>
 </li>
 <li>
-<p><fillin characters="6" name="AnSwEr0003"/><m>{}\cdot{}</m><fillin characters="6" name="MuLtIaNsWeR_AnSwEr0003_1"/><m>{}\cdot{}</m><fillin characters="6" name="MuLtIaNsWeR_AnSwEr0003_2"/><m>{}={7x^{55}}</m></p>
+<p><fillin characters="6" name="AnSwEr0003"/><m>{}\cdot{}</m><fillin characters="6" name="MuLtIaNsWeR_AnSwEr0003_1"/><m>{}\cdot{}</m><fillin characters="6" name="MuLtIaNsWeR_AnSwEr0003_2"/><m>{}={13x^{45}}</m></p>
 </li>
 </ol></p>
 </statement>
     <answer>
       <p>
-        <m>-13x;\,-4x</m>
+        <m>-13x;\,-10x</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>-13x^{25};\,-6x^{25}</m>
+        <m>-7x^{20};\,-10x^{20}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>7;\,x^{25};\,x^{30}</m>
+        <m>13;\,x^{25};\,x^{20}</m>
       </p>
     </answer>
     <solution><p><ol label="a.">
 <li>
-<p>Think about adding like terms. One possibility is: <m>{-13x} + {-4x} = {-17x}\text{.}</m></p>
+<p>Think about adding like terms. One possibility is: <m>{-13x} + {-10x} = {-23x}\text{.}</m></p>
 </li>
 <li>
-<p>Think about adding like terms. One possibility is: <m>{-13x^{25}} + {-6x^{25}} = {-19x^{25}}\text{.}</m></p>
+<p>Think about adding like terms. One possibility is: <m>{-7x^{20}} + {-10x^{20}} = {-17x^{20}}\text{.}</m></p>
 </li>
 <li>
-<p>Think about multiplying exponents. One possibility is: <m>{7} \cdot {x^{25}} \cdot {x^{30}} = {7x^{55}}\text{.}</m></p>
+<p>Think about multiplying exponents. One possibility is: <m>{13} \cdot {x^{25}} \cdot {x^{20}} = {13x^{45}}\text{.}</m></p>
 </li>
 </ol></p>
 </solution>

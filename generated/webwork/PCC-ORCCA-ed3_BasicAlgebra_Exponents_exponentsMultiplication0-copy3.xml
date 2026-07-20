@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication0-copy3" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication0-copy3">
-  <static seed="1949">
-    <statement><p><m>{y^{17}}\cdot{y^{11}}</m></p>
+  <static seed="1813">
+    <statement><p><m>{r^{16}}\cdot{r^{17}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>y^{28}</m>
+        <m>r^{33}</m>
       </p>
     </answer>
     <solution><p>We <em>add</em> the exponents as follows: <me>\begin{aligned}
-           y^{17}\cdot y^{11}\amp =y^{17+11}\\
-                             \amp =y^{28}
+           r^{16}\cdot r^{17}\amp =r^{16+17}\\
+                             \amp =r^{33}
        \end{aligned}</me></p>
 </solution>
   </static>

@@ -1,29 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-the-quadratic-formula-7-2-2-65" assembly-id="section-the-quadratic-formula-7-2-2-65">
-  <static seed="942">
-    <statement><p><m>{x^{2}}={-{\frac{23}{3}}x-{\frac{14}{3}}}</m></p>
+  <static seed="475">
+    <statement><p><m>{x^{2}}={{\frac{56}{9}}x-{\frac{4}{3}}}</m></p>
 <p><fillin characters="40" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{-7,\frac{-2}{3}\right\}</m>
+        <m>\left\{\frac{2}{9},6\right\}</m>
       </p>
     </answer>
     <solution><p>To use the quadratic formula, we write the equation in standard form:</p>
 <p><me>=0</me></p>
-<p>and identify <m>a=1\text{,}</m> <m>b={{\frac{23}{3}}}\text{,}</m> and <m>c={{\frac{14}{3}}}\text{.}</m></p>
+<p>and identify <m>a=1\text{,}</m> <m>b={-{\frac{56}{9}}}\text{,}</m> and <m>c={{\frac{4}{3}}}\text{.}</m></p>
 <p><me>\begin{aligned}
 x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
-\amp=\frac{{-{\frac{23}{3}}}\pm\sqrt{{{\frac{529}{9}}}-4(1)({{\frac{14}{3}}})}}{2}\\
-\amp=\frac{{-{\frac{23}{3}}}\pm\sqrt{{{\frac{361}{9}}}}}{2}\\
-\amp=\frac{{-{\frac{23}{3}}}\pm{{\frac{19}{3}}}}{2}\\
-x\amp=\frac{{-{\frac{23}{3}}}-{{\frac{19}{3}}}}{2}\quad\text{or}\quad x=\frac{{-{\frac{23}{3}}}+{{\frac{19}{3}}}}{2}\\
-x\amp=-7\quad\text{or}\quad x={-{\frac{2}{3}}}
+\amp=\frac{{{\frac{56}{9}}}\pm\sqrt{{{\frac{3136}{81}}}-4(1)({{\frac{4}{3}}})}}{2}\\
+\amp=\frac{{{\frac{56}{9}}}\pm\sqrt{{{\frac{2704}{81}}}}}{2}\\
+\amp=\frac{{{\frac{56}{9}}}\pm{{\frac{52}{9}}}}{2}\\
+x\amp=\frac{{{\frac{56}{9}}}-{{\frac{52}{9}}}}{2}\quad\text{or}\quad x=\frac{{{\frac{56}{9}}}+{{\frac{52}{9}}}}{2}\\
+x\amp={{\frac{2}{9}}}\quad\text{or}\quad x=6
 \end{aligned}</me></p>
-<p>The solution set is <m>{\left\{-7,\frac{-2}{3}\right\}}\text{.}</m></p>
+<p>The solution set is <m>{\left\{\frac{2}{9},6\right\}}\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_4_5_75.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_5_5_75.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg copied-from="section-the-quadratic-formula-7-2-2-64"><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -40,7 +40,7 @@ x\amp=-7\quad\text{or}\quad x={-{\frac{2}{3}}}
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.4.5.76)
+## Problem1(1.5.5.76)
 ## Author()
 ## Institution()
 ## Language(en-US)

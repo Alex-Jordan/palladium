@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp41" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp41">
-  <static seed="1725">
-    <statement><p><m>\displaystyle\frac{x^{-5}}{\left(x^{6}\right)^{3}}</m></p>
+  <static seed="1589">
+    <statement><p><m>\displaystyle\frac{t^{-3}}{\left(t^{9}\right)^{9}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{1}{x^{23}}</m>
+        <m>\frac{1}{t^{84}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\displaystyle{\frac{a^m}{a^n} = a^{m-n}}</m> 
 and also that <m>\left(a^m\right)^n=a^{mn}</m></p>
 <p><m>\begin{aligned}
-                 \displaystyle\frac{x^{-5}}{\left(x^{6}\right)^{3}}\amp = \frac{x^{-5}}{x^{18}}\\
- \amp = x^{-5-18}\\
-                                                       \amp  =x^{-23}\\
-                                    \amp  = {\frac{1}{x^{23}}}
+                 \displaystyle\frac{t^{-3}}{\left(t^{9}\right)^{9}}\amp = \frac{t^{-3}}{t^{81}}\\
+ \amp = t^{-3-81}\\
+                                                       \amp  =t^{-84}\\
+                                    \amp  = {\frac{1}{t^{84}}}
            \end{aligned}</m></p>
 </solution>
   </static>

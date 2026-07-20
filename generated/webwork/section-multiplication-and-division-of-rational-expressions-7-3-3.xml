@@ -1,73 +1,73 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-3-3" assembly-id="section-multiplication-and-division-of-rational-expressions-7-3-3">
-  <static seed="1263" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions20.pg">
+  <static seed="1127" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions20.pg">
     <statement><p>Simplify the following expressions, and if applicable, write the restricted domain on the simplified expression.</p>
 <p><ol label="a.">
 <li>
-<p><m>\displaystyle{{\frac{t+2}{t+2}}=}</m> <fillin characters="40" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{t+4}{t+4}}=}</m> <fillin characters="40" name="AnSwEr0001"/></p>
 </li>
 <li>
-<p><m>\displaystyle{{\frac{t+2}{2+t}}=}</m> <fillin characters="40" name="AnSwEr0002"/></p>
+<p><m>\displaystyle{{\frac{t+4}{4+t}}=}</m> <fillin characters="40" name="AnSwEr0002"/></p>
 </li>
 <li>
-<p><m>\displaystyle{{\frac{t-2}{t-2}}=}</m> <fillin characters="40" name="AnSwEr0003"/></p>
+<p><m>\displaystyle{{\frac{t-4}{t-4}}=}</m> <fillin characters="40" name="AnSwEr0003"/></p>
 </li>
 <li>
-<p><m>\displaystyle{{\frac{t-2}{2-t}}=}</m> <fillin characters="40" name="AnSwEr0004"/></p>
+<p><m>\displaystyle{{\frac{t-4}{4-t}}=}</m> <fillin characters="40" name="AnSwEr0004"/></p>
 </li>
 </ol></p>
 </statement>
     <answer>
       <p>
-        <m>1, t\ne -2</m>
+        <m>1, t\ne -4</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>1, t\ne -2</m>
+        <m>1, t\ne -4</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>1, t\ne 2</m>
+        <m>1, t\ne 4</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>-1, t\ne 2</m>
+        <m>-1, t\ne 4</m>
       </p>
     </answer>
     <solution><p><ol label="a.">
 <li>
 <p><m>\displaystyle{    \begin{aligned}
-    {\frac{t+2}{t+2}} \amp = {1, t\ne -2}
+    {\frac{t+4}{t+4}} \amp = {1, t\ne -4}
     \end{aligned}
     }</m></p>
-<p>Since the factor <m>t+2</m> was crossed out, <m>-2</m> is not in the domain. So the answer is <m>{1, t\ne -2}</m>.</p>
+<p>Since the factor <m>t+4</m> was crossed out, <m>-4</m> is not in the domain. So the answer is <m>{1, t\ne -4}</m>.</p>
 </li>
 <li>
 <p><m>\displaystyle{    \begin{aligned}[t]
-    {\frac{t+2}{2+t}} \amp = \frac{{t+2}}{{t+2}} \\
-    \amp = {1, t\ne -2}
+    {\frac{t+4}{4+t}} \amp = \frac{{t+4}}{{t+4}} \\
+    \amp = {1, t\ne -4}
     \end{aligned}
     }</m></p>
-<p>Since the factor <m>t+2</m> was crossed out, <m>-2</m> is not in the domain. So the answer is <m>{1, t\ne -2}</m>.</p>
+<p>Since the factor <m>t+4</m> was crossed out, <m>-4</m> is not in the domain. So the answer is <m>{1, t\ne -4}</m>.</p>
 </li>
 <li>
 <p><m>\displaystyle{    \begin{aligned}
-    {\frac{t-2}{t-2}} \amp = {1, t\ne 2}
+    {\frac{t-4}{t-4}} \amp = {1, t\ne 4}
     \end{aligned}
     }</m></p>
-<p>Since the factor <m>t-2</m> was crossed out, <m>2</m> is not in the domain. So the answer is <m>{1, t\ne 2}</m>.</p>
+<p>Since the factor <m>t-4</m> was crossed out, <m>4</m> is not in the domain. So the answer is <m>{1, t\ne 4}</m>.</p>
 </li>
 <li>
 <p><m>\displaystyle{    \begin{aligned}[t]
-    {\frac{t-2}{2-t}} \amp = \frac{{t-2}}{-(t-2)} \\
+    {\frac{t-4}{4-t}} \amp = \frac{{t-4}}{-(t-4)} \\
     \amp = \frac{1}{-1} \\
-    \amp = {-1, t\ne 2}
+    \amp = {-1, t\ne 4}
     \end{aligned}
     }</m></p>
-<p>Since the factor <m>t-2</m> was crossed out, <m>2</m> is not in the domain. So the answer is <m>{-1, t\ne 2}</m>.</p>
+<p>Since the factor <m>t-4</m> was crossed out, <m>4</m> is not in the domain. So the answer is <m>{-1, t\ne 4}</m>.</p>
 </li>
 </ol></p>
 </solution>

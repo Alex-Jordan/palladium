@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation50-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation50-copy">
-  <static seed="2031">
-    <statement><p><m>\displaystyle{ {-\sqrt{-2-t}+3} = {2} }</m></p>
+  <static seed="1895">
+    <statement><p><m>\displaystyle{ {-5\sqrt{6-t}-6} = {-21} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
@@ -11,14 +11,14 @@
     </answer>
     <solution><p>To solve an equation with radicals, we first separate the radical on one side of the equation, and then square both sides:</p>
 <p><m>\displaystyle{\begin{aligned}
-   {-\sqrt{-2-t}+3} \amp = {2} \\
-   {-\sqrt{-2-t}+3} \mathbf{{}-3} \amp = {2} \mathbf{{}-3}  \\
-   -1\sqrt{-2-t} \amp = {-1} \\
-   \frac{-1\sqrt{-2-t}}{-1} \amp = \frac{{-1}}{-1} \\
-   \sqrt{-2-t} \amp = 1 \\
-   (\sqrt{-2-t})^2 \amp = (1)^2 \\
-   -2-t \amp = 1 \\
-   -2-t \mathbf{{} + 2} \amp = 1 \mathbf{{} + 2}  \\
+   {-5\sqrt{6-t}-6} \amp = {-21} \\
+   {-5\sqrt{6-t}-6} \mathbf{{} + 6} \amp = {-21} \mathbf{{} + 6}  \\
+   -5\sqrt{6-t} \amp = {-15} \\
+   \frac{-5\sqrt{6-t}}{-5} \amp = \frac{{-15}}{-5} \\
+   \sqrt{6-t} \amp = 3 \\
+   (\sqrt{6-t})^2 \amp = (3)^2 \\
+   6-t \amp = 9 \\
+   6-t \mathbf{{}-6} \amp = 9 \mathbf{{}-6}  \\
    -t \amp = 3 \\
    t \amp = -3
 \end{aligned}

@@ -27,9 +27,8 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PCCmacros.pl",
-  "parserNumberWithUnits.pl",
-  "parserLinearRelation.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -42,27 +41,21 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$final = random(300, 400, 10);
-$end = NumberWithUnits("$final gal");
-$rate = random(8,12);
-$speed = NumberWithUnits("$rate gal/min");
-$initial = random(100, 150, 10);
-$start = NumberWithUnits("$initial gal");
-Context("LinearRelation")->variables->are(t => 'Real');
-$inequality = LinearRelation("$initial + $rate t <= $final");
+($a,$r) = (1, non_zero_random(-9,9));
+Context()->noreduce('(-x)-y');
+$left = Formula("x^2 - 2*$r x + ($r)**2")->reduce;
+$right = Formula("0")->reduce;
+Context("FiniteSolutionSets");
+$sols = Formula("{$r}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Write an inequality to model the scenario. There is no need to solve the inequality.
+Solve the equation by factoring.
 
-A swimming pool is filling with water from a garden hose at a rate of [`[$speed]\text{.}`] If the pool already has [`[$start]`] of water and can hold up to [`[$end]\text{,}`] set up an inequality modeling how much time can pass without the pool overflowing. There is no need to solve it.
-
-[@KeyboardInstructions('Use [|t|]* as the variable.')@]**
-
-[_]{$inequality}{20}
+[`[$left] = [$right]`]
 
 END_PGML
 

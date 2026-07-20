@@ -1,27 +1,27 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-10-12" assembly-id="section-solving-rational-equations-10-10-12">
-  <static seed="1583" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations20.pg">
+  <static seed="1447" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations20.pg">
     <statement><p>Solve the equation.</p>
-<p><m>\displaystyle{ {\frac{1}{4t}-\frac{1}{3t}}={1}  }</m></p>
+<p><m>\displaystyle{ {\frac{5}{6t}+\frac{2}{3t}}={5}  }</m></p>
 <p><fillin characters="31" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\frac{-1}{12}\right\}</m>
+        <m>\left\{\frac{3}{10}\right\}</m>
       </p>
     </answer>
-    <solution><p>To clear fractions in an equation, multiply each side of the equation by a common denominator. For this problem, a common denominator is <m>{12t}</m>.</p>
+    <solution><p>To clear fractions in an equation, multiply each side of the equation by a common denominator. For this problem, a common denominator is <m>{18t}</m>.</p>
 <p><m>\displaystyle{\begin{aligned}
-  {\frac{1}{4t}-\frac{1}{3t}} \amp = {1} \\
-  {\frac{1}{4t}\cdot 12t-\frac{1}{3t}\cdot 12t} \amp = {1\cdot 12t} \\
-  3 - 4 \amp = {12t} \\
-  -1 \amp = {12t} \\
-  \frac{-1}{12} \amp = \frac{{12t}}{12} \\
-  {\left\{\frac{-1}{12}\right\}} \amp = t \\
-  t \amp  = {\left\{\frac{-1}{12}\right\}}
+  {\frac{5}{6t}+\frac{2}{3t}} \amp = {5} \\
+  {\frac{5}{6t}\cdot 18t+\frac{2}{3t}\cdot 18t} \amp = {5\cdot 18t} \\
+  15+12 \amp = {90t} \\
+  27 \amp = {90t} \\
+  \frac{27}{90} \amp = \frac{{90t}}{90} \\
+  {\left\{\frac{3}{10}\right\}} \amp = t \\
+  t \amp  = {\left\{\frac{3}{10}\right\}}
 \end{aligned}
     }</m></p>
-<p>We must check solutions when we solve rational equations. By the original equation, the domain condition is <m>t \ne 0</m>. This doesn<rsq/>t conflict with the solution above, so the solution is <m>t = {\left\{\frac{-1}{12}\right\}}</m>.</p>
+<p>We must check solutions when we solve rational equations. By the original equation, the domain condition is <m>t \ne 0</m>. This doesn<rsq/>t conflict with the solution above, so the solution is <m>t = {\left\{\frac{3}{10}\right\}}</m>.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations20.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

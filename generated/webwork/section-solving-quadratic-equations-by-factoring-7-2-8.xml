@@ -1,26 +1,41 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-quadratic-equations-by-factoring-7-2-8" assembly-id="section-solving-quadratic-equations-by-factoring-7-2-8">
-  <static seed="741" source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad245.pg">
-    <statement><p>Solve the equation.</p>
-<p><m>{x^{2}-5x-50} = 0</m></p>
-<p><fillin characters="20" name="AnSwEr0001"/></p>
+  <static seed="59" source="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication60.pg">
+    <statement><p>There is a rectangular lot in the garden, with <m>{9\ {\rm ft}}</m> in length and <m>{5\ {\rm ft}}</m> in width. You plan to expand the lot by an equal length around its four sides, and make the area of the expanded rectangle <m>{77\ {\rm ft^{2}}}</m>. How long should you expand the original lot in four directions?</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-solving-quadratic-equations-by-factoring-7-2-8-image-1.png" width="40%"/>
+<p>You should expand the original lot by <fillin characters="9" name="AnSwEr0001"/> in four directions.</p>
 </statement>
     <answer>
       <p>
-        <m>\left\{10,-5\right\}</m>
+        <m>1\ {\rm ft}</m>
       </p>
     </answer>
-    <solution><p>There are a few ways to solve quadratic equations- the easiest way to solve this particular 
-type of problem is to use the <em>zero product principle</em>.</p>
-<p><m>\begin{aligned}
-                {x^{2}-5x-50} = 0 \amp \Rightarrow {\left(x-10\right)\mathopen{}\left(x+5\right)}=0\\
-                                \amp \Rightarrow x=10\text{ or } x=-5\\
-        \end{aligned}</m></p>
-<p>Note that <em>all</em> quadratic equations have <alert>two</alert> (possibly repeated) solutions; in this problem both solutions are real. Each solution can be checked by substituting it into the original equation- this is left as an exercise.</p>
-<p>You might have solved the equation using the Quadratic Formula- the final 
-result is the same.</p>
+    <solution><p>Assume you will extend the lot<rsq/>s four sides by <m>x</m> feet. According to the diagram, the expanded rectangle<rsq/>s length will become <m>9+2x</m> feet, and its width will become <m>5+2x</m> feet. The new rectangle<rsq/>s area will be <m>(9+2x)(5+2x)</m> square feet. It<rsq/>s given its new area is <m>{77\ {\rm ft^{2}}}</m>, so we can write and solve an equation:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   (9+2x)(5+2x) \amp = 77 \\
+   4x^2+28x+45 \amp = 77 \\
+   4x^2+28x - 32 \amp = 0 \\
+   4(x^2+7x - 8) \amp = 0 \\
+   4(x+8)(x-1) \amp = 0 \\
+   x+8 \amp = 0 \text{  or  } x-1 = 0 \\
+   x \amp = -8 \text{  or  }  x= 1 \\
+\end{aligned}
+    }</m></p>
+<p>We could solve this equation by the Quadratic Formula. Identify that <m>a=4,b=28,c=-32</m>.</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   x \amp = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a} \\
+   x \amp = \frac{-(28) \pm \sqrt{(28)^{2}-4(4)(-32)}}{2(4)} \\
+   x \amp = \frac{-28 \pm \sqrt{1296}}{8} \\
+   x \amp = \frac{-28 \pm 36}{8} \\
+   x \amp = \frac{-28 + 36}{8} \text{  or  } x= \frac{-28 - 36}{8} \\
+   x\amp =1 \text{  or  }  x= -8
+\end{aligned}
+    }</m></p>
+<p>We don<rsq/>t take the negative solution as it doesn<rsq/>t make sense in this context.</p>
+<p>You should expand the original lot by <m>{1\ {\rm ft}}</m> in four directions.</p>
 </solution>
   </static>
-  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad245.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
-  <pg source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad245.pg"/>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication60.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication60.pg"/>
 </webwork-reps>

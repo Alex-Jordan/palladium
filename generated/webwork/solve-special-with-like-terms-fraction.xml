@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-special-with-like-terms-fraction" assembly-id="solve-special-with-like-terms-fraction">
-  <static seed="1525">
-    <statement><p><m>{{\frac{9}{8}}d-7+{\frac{5}{9}}d}={2+{\frac{121}{72}}d-9}</m></p>
+  <static seed="1389">
+    <statement><p><m>{{\frac{3}{8}}x+2+{\frac{8}{5}}x}={-4+{\frac{79}{40}}x+6}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>

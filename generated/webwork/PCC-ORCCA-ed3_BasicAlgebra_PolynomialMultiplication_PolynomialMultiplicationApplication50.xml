@@ -1,27 +1,27 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication50" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication50">
-  <static seed="2707">
-    <statement><p>An artist sells her paintings at <m>{\$18.00}</m> per piece. Currently, she can sell <m>150</m> paintings per year. So her annual income from paintings is <m>18\cdot150=2700</m> dollars. She plans to raise the price. However, for each <m>{\$3.00}</m> of price increase per painting, her customers would buy <m>5</m> fewer paintings annually.</p>
-<p>Assume the artist would raise the price of her painting <m>x</m> times, each time by <m>{\$3.00}</m>. Use an expanded polynomial to represent her new income per year.</p>
+  <static seed="2571">
+    <statement><p>An artist sells his paintings at <m>{\$17.00}</m> per piece. Currently, he can sell <m>110</m> paintings per year. So his annual income from paintings is <m>17\cdot110=1870</m> dollars. He plans to raise the price. However, for each <m>{\$4.00}</m> of price increase per painting, his customers would buy <m>9</m> fewer paintings annually.</p>
+<p>Assume the artist would raise the price of his painting <m>x</m> times, each time by <m>{\$4.00}</m>. Use an expanded polynomial to represent his new income per year.</p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-15x^{2}+360x+2700</m>
+        <m>-36x^{2}+287x+1870</m>
       </p>
     </answer>
-    <solution><p>Currently, each painting costs <m>{\$18.00}</m>. After raising the price <m>x</m> times, each time by <m>{\$3.00}</m>, each painting<rsq/>s new price would be <m>{18+3x}</m> dollars.</p>
-<p>Currently, the artist sells <m>150</m> paintings per year. After raising the price <m>x</m> times, each time selling <m>5</m> fewer paintings, he would sell <m>{150-5x}</m> paintings per year.</p>
+    <solution><p>Currently, each painting costs <m>{\$17.00}</m>. After raising the price <m>x</m> times, each time by <m>{\$4.00}</m>, each painting<rsq/>s new price would be <m>{17+4x}</m> dollars.</p>
+<p>Currently, the artist sells <m>110</m> paintings per year. After raising the price <m>x</m> times, each time selling <m>9</m> fewer paintings, he would sell <m>{110-9x}</m> paintings per year.</p>
 <p>His annual income can be calculated by multiplying each painting<rsq/>s price with the number of paintings he would sell:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \text{annual income} \amp =  ({18+3x})({150-5x}) \\
-                     \amp = {\left(18+3x\right)\mathopen{}\left(150-5x\right)} \\
-                     \amp = {150\mathopen{}\left(18+3x\right)-5x\mathopen{}\left(18+3x\right)} \\
-                     \amp = {2700+450x-90x-15x^{2}} \\
-                     \amp = {-15x^{2}+360x+2700}
+   \text{annual income} \amp =  ({17+4x})({110-9x}) \\
+                     \amp = {\left(17+4x\right)\mathopen{}\left(110-9x\right)} \\
+                     \amp = {110\mathopen{}\left(17+4x\right)-9x\mathopen{}\left(17+4x\right)} \\
+                     \amp = {1870+440x-153x-36x^{2}} \\
+                     \amp = {-36x^{2}+287x+1870}
 \end{aligned}
     }</m></p>
-<p>After raising the price <m>x</m> times, each time by <m>{\$3.00}</m>, the artist<rsq/>s annual income from paintings would be <m>{-15x^{2}+360x+2700}</m> dollars.</p>
+<p>After raising the price <m>x</m> times, each time by <m>{\$4.00}</m>, the artist<rsq/>s annual income from paintings would be <m>{-36x^{2}+287x+1870}</m> dollars.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/Appendices/A_9_5_75.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

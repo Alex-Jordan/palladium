@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-the-quadratic-formula-4-4" assembly-id="section-the-quadratic-formula-4-4">
-  <static seed="866">
+  <static seed="399">
     <statement><p>Two numbers have sum <m>35\text{,}</m> and their product is <m>-30\text{.}</m> Find these two numbers.</p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
@@ -32,7 +32,7 @@ x=\frac{35-\sqrt{1345}}{2}\quad\text{or}\quad x=\frac{35+\sqrt{1345}}{2}
 <p>Actually these are the two numbers we were looking for. They sum to <m>35</m> and multiply to <m>-30\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_4_9.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_5_9.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -49,7 +49,7 @@ x=\frac{35-\sqrt{1345}}{2}\quad\text{or}\quad x=\frac{35+\sqrt{1345}}{2}
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.4.9)
+## Problem1(1.5.9)
 ## Author()
 ## Institution()
 ## Language(en-US)

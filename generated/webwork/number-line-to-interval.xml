@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-number-line-to-interval" assembly-id="number-line-to-interval">
-  <static seed="2378">
+  <static seed="2242">
     <introduction><p>For each interval expressed in the number lines, write the interval notation.</p>
 </introduction>
     <task>

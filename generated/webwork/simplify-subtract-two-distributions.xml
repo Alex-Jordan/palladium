@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-subtract-two-distributions" assembly-id="simplify-subtract-two-distributions">
-  <static seed="2364">
-    <statement><p><m>{3\mathopen{}\left(5M+2\right)-4\mathopen{}\left(6M+8\right)}</m></p>
+  <static seed="2228">
+    <statement><p><m>{6\mathopen{}\left(7J+8\right)-9\mathopen{}\left(4J+3\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-9M+\left(-26\right)</m>
+        <m>6J+21</m>
       </p>
     </answer>
   </static>

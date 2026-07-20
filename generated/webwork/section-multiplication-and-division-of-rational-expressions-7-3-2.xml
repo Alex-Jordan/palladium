@@ -1,73 +1,73 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-3-2" assembly-id="section-multiplication-and-division-of-rational-expressions-7-3-2">
-  <static seed="1262" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions20.pg">
+  <static seed="1126" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions20.pg">
     <statement><p>Simplify the following expressions, and if applicable, write the restricted domain on the simplified expression.</p>
 <p><ol label="a.">
 <li>
-<p><m>\displaystyle{{\frac{r+5}{r+5}}=}</m> <fillin characters="40" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{r+7}{r+7}}=}</m> <fillin characters="40" name="AnSwEr0001"/></p>
 </li>
 <li>
-<p><m>\displaystyle{{\frac{r+5}{5+r}}=}</m> <fillin characters="40" name="AnSwEr0002"/></p>
+<p><m>\displaystyle{{\frac{r+7}{7+r}}=}</m> <fillin characters="40" name="AnSwEr0002"/></p>
 </li>
 <li>
-<p><m>\displaystyle{{\frac{r-5}{r-5}}=}</m> <fillin characters="40" name="AnSwEr0003"/></p>
+<p><m>\displaystyle{{\frac{r-7}{r-7}}=}</m> <fillin characters="40" name="AnSwEr0003"/></p>
 </li>
 <li>
-<p><m>\displaystyle{{\frac{r-5}{5-r}}=}</m> <fillin characters="40" name="AnSwEr0004"/></p>
+<p><m>\displaystyle{{\frac{r-7}{7-r}}=}</m> <fillin characters="40" name="AnSwEr0004"/></p>
 </li>
 </ol></p>
 </statement>
     <answer>
       <p>
-        <m>1, r\ne -5</m>
+        <m>1, r\ne -7</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>1, r\ne -5</m>
+        <m>1, r\ne -7</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>1, r\ne 5</m>
+        <m>1, r\ne 7</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>-1, r\ne 5</m>
+        <m>-1, r\ne 7</m>
       </p>
     </answer>
     <solution><p><ol label="a.">
 <li>
 <p><m>\displaystyle{    \begin{aligned}
-    {\frac{r+5}{r+5}} \amp = {1, r\ne -5}
+    {\frac{r+7}{r+7}} \amp = {1, r\ne -7}
     \end{aligned}
     }</m></p>
-<p>Since the factor <m>r+5</m> was crossed out, <m>-5</m> is not in the domain. So the answer is <m>{1, r\ne -5}</m>.</p>
+<p>Since the factor <m>r+7</m> was crossed out, <m>-7</m> is not in the domain. So the answer is <m>{1, r\ne -7}</m>.</p>
 </li>
 <li>
 <p><m>\displaystyle{    \begin{aligned}[t]
-    {\frac{r+5}{5+r}} \amp = \frac{{r+5}}{{r+5}} \\
-    \amp = {1, r\ne -5}
+    {\frac{r+7}{7+r}} \amp = \frac{{r+7}}{{r+7}} \\
+    \amp = {1, r\ne -7}
     \end{aligned}
     }</m></p>
-<p>Since the factor <m>r+5</m> was crossed out, <m>-5</m> is not in the domain. So the answer is <m>{1, r\ne -5}</m>.</p>
+<p>Since the factor <m>r+7</m> was crossed out, <m>-7</m> is not in the domain. So the answer is <m>{1, r\ne -7}</m>.</p>
 </li>
 <li>
 <p><m>\displaystyle{    \begin{aligned}
-    {\frac{r-5}{r-5}} \amp = {1, r\ne 5}
+    {\frac{r-7}{r-7}} \amp = {1, r\ne 7}
     \end{aligned}
     }</m></p>
-<p>Since the factor <m>r-5</m> was crossed out, <m>5</m> is not in the domain. So the answer is <m>{1, r\ne 5}</m>.</p>
+<p>Since the factor <m>r-7</m> was crossed out, <m>7</m> is not in the domain. So the answer is <m>{1, r\ne 7}</m>.</p>
 </li>
 <li>
 <p><m>\displaystyle{    \begin{aligned}[t]
-    {\frac{r-5}{5-r}} \amp = \frac{{r-5}}{-(r-5)} \\
+    {\frac{r-7}{7-r}} \amp = \frac{{r-7}}{-(r-7)} \\
     \amp = \frac{1}{-1} \\
-    \amp = {-1, r\ne 5}
+    \amp = {-1, r\ne 7}
     \end{aligned}
     }</m></p>
-<p>Since the factor <m>r-5</m> was crossed out, <m>5</m> is not in the domain. So the answer is <m>{-1, r\ne 5}</m>.</p>
+<p>Since the factor <m>r-7</m> was crossed out, <m>7</m> is not in the domain. So the answer is <m>{-1, r\ne 7}</m>.</p>
 </li>
 </ol></p>
 </solution>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-distribute-power-linear-copy" assembly-id="exponent-distribute-power-linear-copy">
-  <static seed="2601">
-    <statement><p><m>{-8z^{7}\mathopen{}\left(2z+10\right)}</m></p>
+  <static seed="2465">
+    <statement><p><m>{-3y^{2}\mathopen{}\left(8y+7\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>z^{8}+z^{7}</m>
+        <m>y^{3}+y^{2}</m>
       </p>
     </answer>
   </static>

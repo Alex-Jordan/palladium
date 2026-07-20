@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-third-power-equation" assembly-id="solve-third-power-equation">
-  <static seed="1900">
-    <statement><p><m>x^3 = 17</m></p>
+  <static seed="1764">
+    <statement><p><m>x^3 = 15</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\sqrt[3]{17}</m>
+        <m>\sqrt[3]{15}</m>
       </p>
     </answer>
-    <solution><p>We need a number that multiplies with itself <m>3</m> times to make <m>17\text{.}</m> This is exactly what <m>\sqrt[3]{17}</m> means.</p>
+    <solution><p>We need a number that multiplies with itself <m>3</m> times to make <m>15\text{.}</m> This is exactly what <m>\sqrt[3]{15}</m> means.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/4_2_10_109.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

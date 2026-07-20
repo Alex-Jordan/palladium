@@ -1,39 +1,39 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator130" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator130">
-  <static seed="1938">
-    <statement><p><m>\displaystyle{ \sqrt{\frac{7}{48}}  }</m></p>
+  <static seed="1802">
+    <statement><p><m>\displaystyle{ \sqrt{\frac{5}{96}}  }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{\sqrt{21}}{12}</m>
+        <m>\frac{\sqrt{30}}{24}</m>
       </p>
     </answer>
     <solution><p>We first use this property:</p>
 <p><m>\displaystyle{ \sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}} }</m></p>
 <p>Thus we have:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \sqrt{\frac{7}{48}} 
-      \amp = \frac{\sqrt{7}}{\sqrt{48}} \\
+   \sqrt{\frac{5}{96}} 
+      \amp = \frac{\sqrt{5}}{\sqrt{96}} \\
 \end{aligned}
     }</m></p>
 <p>We can simplify the radical in the denominator:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \sqrt{48}
-            \amp = \sqrt{2 \cdot 2 \cdot 2 \cdot 2 \cdot 3}  \\
-            \amp =2 \cdot 2 \sqrt{3} \\
-            \amp =4 \sqrt{3} 
+   \sqrt{96}
+            \amp = \sqrt{2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 3}  \\
+            \amp =2 \cdot 2 \sqrt{2 \cdot 3} \\
+            \amp =4 \sqrt{6} 
 \end{aligned}
     }</m></p>
 <p>Then we will rationalize the denominator. The full process is:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   \sqrt{\frac{7}{48}} 
-      \amp = \frac{\sqrt{7}}{\sqrt{48}} \\
-      \amp = \frac{\sqrt{7}}{4\sqrt{3}} \\
-      \amp = \frac{\sqrt{7}}{4\sqrt{3}}\cdot\frac{\sqrt{3}}{\sqrt{3}} \\
-      \amp = \frac{\sqrt{7} \cdot \sqrt{3}}{4\sqrt{3}\cdot \sqrt{3}} \\
-      \amp = \frac{\sqrt{7} \cdot \sqrt{3}}{4 \cdot 3} \\
-      \amp = \frac{\sqrt{21}}{12}
+   \sqrt{\frac{5}{96}} 
+      \amp = \frac{\sqrt{5}}{\sqrt{96}} \\
+      \amp = \frac{\sqrt{5}}{4\sqrt{6}} \\
+      \amp = \frac{\sqrt{5}}{4\sqrt{6}}\cdot\frac{\sqrt{6}}{\sqrt{6}} \\
+      \amp = \frac{\sqrt{5} \cdot \sqrt{6}}{4\sqrt{6}\cdot \sqrt{6}} \\
+      \amp = \frac{\sqrt{5} \cdot \sqrt{6}}{4 \cdot 6} \\
+      \amp = \frac{\sqrt{30}}{24}
 \end{aligned}
     }</m></p>
 <p>Note that we used this property in the last step:</p>

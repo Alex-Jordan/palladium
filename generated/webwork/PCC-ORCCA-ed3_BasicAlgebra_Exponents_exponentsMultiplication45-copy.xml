@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication45-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication45-copy">
-  <static seed="1955">
-    <statement><p><m>\left(-3y^{7}\right)^2</m></p>
+  <static seed="1819">
+    <statement><p><m>\left(-10x^{6}\right)^3</m></p>
 <p><fillin characters="1" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>9y^{14}</m>
+        <m>-1000x^{18}</m>
       </p>
     </answer>
     <solution><p>We <em>multiply</em> the exponents and apply the rule <m>(ab)^m=a^m\cdot b^m</m> as follows</p>
 <p><m>\begin{aligned}
-           \left(-3y^{7}\right)^{2}\amp =(-3)^{2}y^{7\cdot2}\\
-                             \amp =9y^{14}
+           \left(-10x^{6}\right)^{3}\amp =(-10)^{3}x^{6\cdot3}\\
+                             \amp =-1000x^{18}
        \end{aligned}</m></p>
 </solution>
   </static>

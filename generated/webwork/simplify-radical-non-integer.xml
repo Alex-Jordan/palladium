@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-radical-non-integer" assembly-id="simplify-radical-non-integer">
-  <static seed="1884">
-    <statement><p><m>{\sqrt[5]{96}}\text{.}</m></p>
+  <static seed="1748">
+    <statement><p><m>{\sqrt[3]{56}}\text{.}</m></p>
 <p><fillin characters="30" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>2\sqrt[5]{3}</m>
+        <m>2\sqrt[3]{7}</m>
       </p>
     </answer>
     <solution><p><me>\begin{aligned}
-{\sqrt[5]{96}}\amp = \sqrt[5]{32\cdot 3}\\
-\amp = \sqrt[5]{32}\cdot \sqrt[5]{3}\\
-\amp = {2\sqrt[5]{3}}
+{\sqrt[3]{56}}\amp = \sqrt[3]{8\cdot 7}\\
+\amp = \sqrt[3]{8}\cdot \sqrt[3]{7}\\
+\amp = {2\sqrt[3]{7}}
 \end{aligned}</me></p>
 </solution>
   </static>

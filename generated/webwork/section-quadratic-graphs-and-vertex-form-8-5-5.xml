@@ -1,26 +1,26 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-quadratic-graphs-and-vertex-form-8-5-5" assembly-id="section-quadratic-graphs-and-vertex-form-8-5-5">
-  <static seed="1099">
-    <statement><p>An object was launched from the top of a hill with an upward vertical velocity of <m>150</m> feet per second. The height of the object can be modeled by the function <m>h(t)={-16t^{2}+150t+100}\text{,}</m> where <m>t</m> represents the number of seconds after the launch. Assume the object landed on the ground at sea level. Find the answer using technology.</p>
+  <static seed="632">
+    <statement><p>An object was launched from the top of a hill with an upward vertical velocity of <m>200</m> feet per second. The height of the object can be modeled by the function <m>h(t)={-16t^{2}+200t+150}\text{,}</m> where <m>t</m> represents the number of seconds after the launch. Assume the object landed on the ground at sea level. Find the answer using technology.</p>
 <p><fillin characters="10" name="AnSwEr0001"/> seconds after its launch, the object reached its maximum height of <fillin characters="10" name="AnSwEr0002"/> feet.</p>
 </statement>
     <answer>
       <p>
-        <m>4.6875</m>
+        <m>6.25</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>451.562</m>
+        <m>775</m>
       </p>
     </answer>
-    <solution><p>Use technology to graph the function <m>h(t)={-16t^{2}+150t+100}\text{,}</m> and then find the parabola<rsq/>s vertex, <m>(4.6875,{451.562})\text{.}</m></p>
+    <solution><p>Use technology to graph the function <m>h(t)={-16t^{2}+200t+150}\text{,}</m> and then find the parabola<rsq/>s vertex, <m>(6.25,{775})\text{.}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-quadratic-graphs-and-vertex-form-8-5-5-image-1.png" width="47%"/>
-<p>According to the vertex point <m>(4.6875,{451.562})\text{,}</m> <m>4.6875</m> seconds after it was launched, the object reached its maximum height of <m>{451.562}</m> feet.</p>
+<p>According to the vertex point <m>(6.25,{775})\text{,}</m> <m>6.25</m> seconds after it was launched, the object reached its maximum height of <m>{775}</m> feet.</p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_7_6_38.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_8_6_38.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -37,7 +37,7 @@
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.7.6.38)
+## Problem1(1.8.6.38)
 ## Author()
 ## Institution()
 ## Language(en-US)

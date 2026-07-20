@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals140-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals140-copy">
-  <static seed="1865">
-    <statement><p><m>\displaystyle{\left(8 - 6 {\sqrt{6}}\right)^2 }</m></p>
+  <static seed="1729">
+    <statement><p><m>\displaystyle{\left(3 - 5 {\sqrt{6}}\right)^2 }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>280-96\sqrt{6}</m>
+        <m>159-30\sqrt{6}</m>
       </p>
     </answer>
     <solution><p>To square the radical expression, use the FOIL method:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   \left(8 - 6 {\sqrt{6}}\right)^2 
-   \amp = (8 - 6 {\sqrt{6}}) (8 - 6 {\sqrt{6}}) \\
-   \amp = 8 \cdot 8 - 8 \cdot 6 {\sqrt{6}} - 8 \cdot 6 {\sqrt{6}} + \left(6 {\sqrt{6}}\right) \cdot \left(6 {\sqrt{6}}\right)\\
-\amp = 8 \cdot 8 - 8 \cdot 6 {\sqrt{6}} - 8 \cdot 6 {\sqrt{6}} + 6 \cdot 6 \cdot {\sqrt{6}} \cdot {\sqrt{6}}\\
-\amp = 8 \cdot 8 - 8 \cdot 6 {\sqrt{6}} - 8 \cdot 6 {\sqrt{6}} + 36 \cdot 6\\
-\amp =64 - 48 {\sqrt{6}} - 48 {\sqrt{6}} + 216\\
-\amp ={280-96\sqrt{6}}
+   \left(3 - 5 {\sqrt{6}}\right)^2 
+   \amp = (3 - 5 {\sqrt{6}}) (3 - 5 {\sqrt{6}}) \\
+   \amp = 3 \cdot 3 - 3 \cdot 5 {\sqrt{6}} - 3 \cdot 5 {\sqrt{6}} + \left(5 {\sqrt{6}}\right) \cdot \left(5 {\sqrt{6}}\right)\\
+\amp = 3 \cdot 3 - 3 \cdot 5 {\sqrt{6}} - 3 \cdot 5 {\sqrt{6}} + 5 \cdot 5 \cdot {\sqrt{6}} \cdot {\sqrt{6}}\\
+\amp = 3 \cdot 3 - 3 \cdot 5 {\sqrt{6}} - 3 \cdot 5 {\sqrt{6}} + 25 \cdot 6\\
+\amp =9 - 15 {\sqrt{6}} - 15 {\sqrt{6}} + 150\\
+\amp ={159-30\sqrt{6}}
 \end{aligned}
     }</m></p>
 </solution>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-special-with-like-terms2-inequality-copy" assembly-id="solve-special-with-like-terms2-inequality-copy">
-  <static seed="1536">
-    <statement><p><m>{-8B+8-7B}\geq{-6-15B+3}</m></p>
+  <static seed="1400">
+    <statement><p><m>{-9W+5-2W}\geq{-1-11W-5}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>

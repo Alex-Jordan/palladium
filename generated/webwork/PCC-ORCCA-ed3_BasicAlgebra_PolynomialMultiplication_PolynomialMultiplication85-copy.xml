@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication85-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication85-copy">
-  <static seed="2668">
-    <statement><p><m>\left({6y^{3}+1}\right)\left({y^{2}+9}\right)</m></p>
+  <static seed="2532">
+    <statement><p><m>\left({9y^{3}+4}\right)\left({y^{2}+6}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>6y^{5}+54y^{3}+y^{2}+9</m>
+        <m>9y^{5}+54y^{3}+4y^{2}+24</m>
       </p>
     </answer>
     <solution><p>We use the FOIL technique- <alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast</p>
 <p><m>\begin{aligned}
-              \left({6y^{3}+1}\right)({y^{2}+9})\amp ={6y^{5}+54y^{3}+y^{2}+9}
+              \left({9y^{3}+4}\right)({y^{2}+6})\amp ={9y^{5}+54y^{3}+4y^{2}+24}
       \end{aligned}</m></p>
 </solution>
   </static>

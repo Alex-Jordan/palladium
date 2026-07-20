@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-special-with-simplification2-inequality" assembly-id="solve-special-with-simplification2-inequality">
-  <static seed="1539">
-    <statement><p><m>{3-2\mathopen{}\left(7-5m\right)}\leq{12m-\left(8+2m\right)}</m></p>
+  <static seed="1403">
+    <statement><p><m>{8-3\mathopen{}\left(4-2h\right)}\gt{10h-\left(6+4h\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
@@ -11,10 +11,10 @@
     </answer>
     <solution><p>We try to use the standard steps for solving an inequality:</p>
 <p><me>\begin{aligned}
-{3-2\mathopen{}\left(7-5m\right)} \amp\leq {12m-\left(8+2m\right)}\\
-{-11+10m} \amp\leq {12m-8-2m}\\
-{10m-11} \amp\leq {10m-8}\\
-{-11} \amp\leq {-8}
+{8-3\mathopen{}\left(4-2h\right)} \amp\gt {10h-\left(6+4h\right)}\\
+{-4+6h} \amp\gt {10h-6-4h}\\
+{6h-4} \amp\gt {6h-6}\\
+{-4} \amp\gt {-6}
 \end{aligned}</me></p>
 <p>This is an outright true inequality. So all real numbers are solutions.</p>
 </solution>

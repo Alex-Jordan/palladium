@@ -1,0 +1,43 @@
+\documentclass{standalone}
+\usepackage[svgnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\begin{document}
+\begin{tikzpicture}[x=0.260416666666667in,y=0.260416666666667in]
+
+\tikzset{
+	>={Stealth[scale=1.8]},
+	clip even odd rule/.code={\pgfseteorule},
+	inverse clip/.style={ clip,insert path=[clip even odd rule]{
+		(-10,-10) rectangle (10,10) }
+	}
+}
+\definecolor{borderblue}{HTML}{356AA0}
+\definecolor{fillpurple}{HTML}{A384E5}
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{foreground}
+\pgfsetlayers{background,main,foreground}
+\begin{pgfonlayer}{background}
+	\fill[white,rounded corners=14pt]
+	(-10,-10) rectangle (10,10);
+\end{pgfonlayer}
+\foreach \x in {1,2,3,4,5,6,7,8,9,-1,-2,-3,-4,-5,-6,-7,-8,-9}{\draw[line width=0.2pt,color=lightgray] (\x,-10) -- (\x,10);}
+\foreach \y in {1,2,3,4,5,6,7,8,9,-1,-2,-3,-4,-5,-6,-7,-8,-9}{\draw[line width=0.2pt,color=lightgray] (-10,\y) -- (10,\y);}
+\huge
+\draw[<->,thick] (-10,0) -- (10,0)
+node[above left,outer sep=2pt]{\(x\)};
+\draw[<->,thick] (0,-10) -- (0,10)
+node[below right,outer sep=2pt]{\(y\)};
+\foreach \x/\label in {-8/-8,-6/-6,-4/-4,-2/-2,2/2,4/4,6/6,8/8}{\draw[thin, opacity = 0.5] (\x,5pt) -- (\x,-5pt) node[baseline, yshift = -15pt, opacity = 1]{\(\label\)};}
+\foreach \x in {-9,-7,-5,-3,-1,1,3,5,7,9}{\draw[thin, opacity = 0.5] (\x,0) -- (\x,-5pt);}
+\foreach \y/\label in {-8/-8,-6/-6,-4/-4,-2/-2,2/2,4/4,6/6,8/8}{\draw[thin, opacity = 0.5] (5pt,\y) -- (-5pt,\y) node[left, opacity = 1]{$\label$};}
+\foreach \y in {-9,-7,-5,-3,-1,1,3,5,7,9}{\draw[thin, opacity = 0.5] (0, \y) -- (-5pt, \y);}
+\draw[borderblue,rounded corners=14pt,thick] (-10,-10) rectangle (10,10);
+\begin{pgfonlayer}{foreground}
+\clip[rounded corners=14pt] (-10,-10) rectangle (10,10);
+\draw[thick, blue, line width = 2.5pt, solid] plot[domain = -6.46410161513775:0.464101615137754, smooth] (\x, {1 * (\x)^2 + (6) * \x + (7)});
+\end{pgfonlayer}
+\begin{pgfonlayer}{background}
+\end{pgfonlayer}
+\end{tikzpicture}
+\end{document}

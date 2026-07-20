@@ -1,44 +1,44 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-television-set" assembly-id="television-set">
-  <static seed="863">
-    <statement><p>Kaeden is designing a <m>43</m>-inch TV, which means that the diagonal of the TV<rsq/>s screen will be <m>43</m> inches long.</p>
+  <static seed="1054">
+    <statement><p>Matteo is designing a <m>55</m>-inch TV, which means that the diagonal of the TV<rsq/>s screen will be <m>55</m> inches long.</p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/television-set-image-1" width="50%">
-<shortdescription>a rectangle representing the TV with a diagonal line drawn and labeled c=43 in;</shortdescription>
+<shortdescription>a rectangle representing the TV with a diagonal line drawn and labeled c=55 in;</shortdescription>
 </image>
-<p>He needs the screen<rsq/>s width-to-height ratio to be <m>4:3\text{.}</m> Find the TV screen<rsq/>s width and height.</p>
+<p>He needs the screen<rsq/>s width-to-height ratio to be <m>16:9\text{.}</m> Find the TV screen<rsq/>s width and height.</p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 <p><fillin characters="6" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>34.4\ {\rm in}</m>
+        <m>47.9367\ {\rm in}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>25.8\ {\rm in}</m>
+        <m>26.9644\ {\rm in}</m>
       </p>
     </answer>
-    <solution><p>Let <m>x</m> represent the height of the screen, in inches. Since the screen<rsq/>s width-to-height ratio will be <m>4:3\text{,}</m> then the width is <m>\frac{4}{3}</m> times as long as the height. The width is <m>\frac{4}{3}x</m> inches. We can draw a diagram.</p>
+    <solution><p>Let <m>x</m> represent the height of the screen, in inches. Since the screen<rsq/>s width-to-height ratio will be <m>16:9\text{,}</m> then the width is <m>\frac{16}{9}</m> times as long as the height. The width is <m>\frac{16}{9}x</m> inches. We can draw a diagram.</p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/television-set-image-2" width="50%">
-<shortdescription>The previous image of the TV with the height labeled x in and the base width labeled 4/3 in</shortdescription>
+<shortdescription>The previous image of the TV with the height labeled x in and the base width labeled 16/9 in</shortdescription>
 </image>
 <p>Now we can use the Pythagorean Theorem to write and solve an equation:</p>
 <p><me>\begin{aligned}
 a^2+b^2\amp=c^2\\
-\left(\frac{4}{3}x\right)^2+x^2\amp=43^2\\
-\frac{16}{9}x^2+\frac{9}{9}x^2\amp=1849\\
-\frac{25}{9}x^2\amp=1849\\
-\multiplyleft{\frac{9}{16}}\frac{25}{9}x^2\amp=\multiplyleft{\frac{9}{16}}1849\\
-x^2\amp=665.64\\
-x\amp=25.8
+\left(\frac{16}{9}x\right)^2+x^2\amp=55^2\\
+\frac{256}{81}x^2+\frac{81}{81}x^2\amp=3025\\
+\frac{337}{81}x^2\amp=3025\\
+\multiplyleft{\frac{81}{256}}\frac{337}{81}x^2\amp=\multiplyleft{\frac{81}{256}}3025\\
+x^2\amp=727.077151335312\\
+x\amp=26.9643681797907
 \end{aligned}</me></p>
-<p>Since the screen<rsq/>s height is <m>{25.8\ {\rm in}}\text{,}</m> its width is <m>\frac{4}{3}25.8=1183.36</m> inches.</p>
+<p>Since the screen<rsq/>s height is <m>{26.9644\ {\rm in}}\text{,}</m> its width is <m>\frac{16}{9}26.9643681797907=2297.92284866469</m> inches.</p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_3_4_59.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/2_4_7_145.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -55,7 +55,7 @@ x\amp=25.8
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.3.4.59)
+## Problem1(2.4.7.145)
 ## Author()
 ## Institution()
 ## Language(en-US)

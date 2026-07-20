@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-three-powers" assembly-id="exponent-three-powers">
-  <static seed="2574">
-    <statement><p><m>{a^{4}a^{9}a^{10}}</m></p>
+  <static seed="2438">
+    <statement><p><m>{y^{6}y^{3}y^{8}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>a^{23}</m>
+        <m>y^{17}</m>
       </p>
     </answer>
   </static>

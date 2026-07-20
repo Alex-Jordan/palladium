@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents12-copy" assembly-id="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents12-copy">
-  <static seed="1989">
-    <statement><p><m>\displaystyle{\sqrt{7 z + 10}}</m></p>
+  <static seed="1853">
+    <statement><p><m>\displaystyle{\sqrt[4]{10 y + 3}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left(7z+10\right)^{\frac{1}{2}}</m>
+        <m>\left(10y+3\right)^{\frac{1}{4}}</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   \sqrt{7 z + 10} \amp = {\left(7z+10\right)^{\frac{1}{2}}} \\
+   \sqrt[4]{10 y + 3} \amp = {\left(10y+3\right)^{\frac{1}{4}}} \\
 \end{aligned}
     }</m></p>
-<p>So the answer in calculator/WeBWorK notation is <m>({7z+10})</m>^<m>(1/2)</m>.</p>
+<p>So the answer in calculator/WeBWorK notation is <m>({10y+3})</m>^<m>(1/4)</m>.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/4_4_4_42.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

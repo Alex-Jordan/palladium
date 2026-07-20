@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-special-with-distribution-copy" assembly-id="solve-special-with-distribution-copy">
-  <static seed="1518">
-    <statement><p><m>{-8\mathopen{}\left(B-2\right)}={-8\mathopen{}\left(B+3\right)}</m></p>
+  <static seed="1382">
+    <statement><p><m>{-9\mathopen{}\left(k+3\right)}={-9\mathopen{}\left(k+8\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>

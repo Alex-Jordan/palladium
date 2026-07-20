@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_SimplifyRadicals_SimplifyRadicals26-copy3" assembly-id="PCC-ORCCA-ed3_Math95_SimplifyRadicals_SimplifyRadicals26-copy3">
-  <static seed="1947">
-    <statement><p><m>\displaystyle{ \dfrac{\sqrt{2}-11}{\sqrt{11}+7} }</m></p>
+  <static seed="1811">
+    <statement><p><m>\displaystyle{ \dfrac{\sqrt{3}-10}{\sqrt{13}+5} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{77-11\sqrt{11}-7\sqrt{2}+\sqrt{22}}{-38}</m>
+        <m>\frac{50-10\sqrt{13}-5\sqrt{3}+\sqrt{39}}{-12}</m>
       </p>
     </answer>
     <solution><p>We will use the Difference of Squares formula:</p>
 <p><m>\displaystyle{ (a+b)(a-b) = a^2-b^2 }</m></p>
 <p>This will help us get rid of the radical in the denominator by multiplying with the conjugate:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \dfrac{\sqrt{2}-11}{\sqrt{11}+7}
-                \amp = \dfrac{\sqrt{2}-11}{\sqrt{11}+7}\cdot\dfrac{\sqrt{11}-7}{\sqrt{11}-7} \\
-                \amp = \dfrac{\sqrt{2}\sqrt{11}-7\sqrt{2}-11\sqrt{11}+(11)(7)}{\left(\sqrt{11}\right)^2-(7)^2} \\
-                \amp = \dfrac{\sqrt{(2)(11)}-7\sqrt{2}-11\sqrt{11}+77}{11-49} \\
-                \amp = \dfrac{\sqrt{22}-7\sqrt{2}-11\sqrt{11}+77}{-38} \\
+   \dfrac{\sqrt{3}-10}{\sqrt{13}+5}
+                \amp = \dfrac{\sqrt{3}-10}{\sqrt{13}+5}\cdot\dfrac{\sqrt{13}-5}{\sqrt{13}-5} \\
+                \amp = \dfrac{\sqrt{3}\sqrt{13}-5\sqrt{3}-10\sqrt{13}+(10)(5)}{\left(\sqrt{13}\right)^2-(5)^2} \\
+                \amp = \dfrac{\sqrt{(3)(13)}-5\sqrt{3}-10\sqrt{13}+50}{13-25} \\
+                \amp = \dfrac{\sqrt{39}-5\sqrt{3}-10\sqrt{13}+50}{-12} \\
 \end{aligned}
     }</m></p>
 </solution>

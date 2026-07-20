@@ -1,29 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-inequality-solution-absolute-value-integer" assembly-id="check-inequality-solution-absolute-value-integer">
-  <static seed="2487">
-    <statement><p>Is <m>{-3}</m> a solution to <m>{\left|5x+2\right|}\leq{8}\text{?}</m></p>
+  <static seed="2351">
+    <statement><p>Is <m>{-4}</m> a solution to <m>{\left|8x+7\right|}\gt{25}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>\left|5x+2\right|</m></cell>
-<cell><m>\leq</m></cell>
-<cell><m>8</m></cell>
+<cell><m>\left|8x+7\right|</m></cell>
+<cell><m>\gt</m></cell>
+<cell><m>25</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
-<cell><m>\wonder{\leq}</m></cell>
-<cell><m>8</m></cell>
+<cell><m>\wonder{\gt}</m></cell>
+<cell><m>25</m></cell>
 </row>
 </tabular>
 <p><fillin name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>13</m>
+        <m>25</m>
       </p>
     </answer>
     <answer>

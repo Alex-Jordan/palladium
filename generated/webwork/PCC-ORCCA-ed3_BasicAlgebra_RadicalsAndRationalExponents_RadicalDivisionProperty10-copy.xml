@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty10-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty10-copy">
-  <static seed="1819">
-    <statement><p><m>\displaystyle{ \frac{{\sqrt{80}}}{{\sqrt{5}}}}</m></p>
+  <static seed="1683">
+    <statement><p><m>\displaystyle{ \frac{{\sqrt{54}}}{{\sqrt{6}}}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>4</m>
+        <m>3</m>
       </p>
     </answer>
     <solution><p>We will use the division property of radicals:</p>
@@ -14,10 +14,10 @@
 <p>The full process is:</p>
 <p><m>\displaystyle{ 
 \begin{aligned}
-   \frac{{\sqrt{80}}}{{\sqrt{5}}}
-      \amp = \sqrt{\frac{80}{5}} \\
-      \amp = \sqrt{16} \\
-      \amp = {4}
+   \frac{{\sqrt{54}}}{{\sqrt{6}}}
+      \amp = \sqrt{\frac{54}{6}} \\
+      \amp = \sqrt{9} \\
+      \amp = {3}
 \end{aligned}
     }</m></p>
 </solution>

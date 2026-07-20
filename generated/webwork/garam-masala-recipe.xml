@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-garam-masala-recipe" assembly-id="garam-masala-recipe">
-  <static seed="1648">
-    <statement><p>An internet recipe for <m>4</m> tbsp of garam masala calls for <m>1.75</m> tbsp of ground black pepper. You want to use up the last of your ground black pepper supply, which is <m>1.25</m> tbsp. Assuming you have enough of all of the other ingredients, how much garam masala will you make?</p>
+  <static seed="1512">
+    <statement><p>An internet recipe for <m>3</m> tbsp of garam masala calls for <m>1.67</m> tbsp of ground coriander. You want to use up the last of your ground coriander supply, which is <m>1.75</m> tbsp. Assuming you have enough of all of the other ingredients, how much garam masala will you make?</p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>2.85714\ {\rm tbsp}</m>
+        <m>3.14371\ {\rm tbsp}</m>
       </p>
     </answer>
   </static>

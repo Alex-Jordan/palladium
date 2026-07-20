@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp5" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp5">
-  <static seed="1697">
-    <statement><p><m>\displaystyle\frac{8^{-3}}{2^{-2}}</m></p>
+  <static seed="1561">
+    <statement><p><m>\displaystyle\frac{7^{-2}}{4^{-3}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{1}{128}}</m>
+        <m>{\frac{64}{49}}</m>
       </p>
     </answer>
     <solution><p>We evaluate the expression by remembering that <m>\displaystyle{x^{-n}}</m> is the same thing as <m>\displaystyle{\frac{1}{x^n}}</m> 
 for any non-zero,
 real value of <m>x</m>.</p>
 <p><m>\displaystyle{      \begin{aligned}
-            \displaystyle\frac{8^{-3}}{2^{-2}} \amp  = \displaystyle\frac{\displaystyle\frac{1}{8^{3}}}{\displaystyle\frac{1}{2^{2}}} \\
-                              \amp  = \displaystyle\frac{1}{8^{3}}\cdot \frac{2^{2}}{1} \\
-                              \amp  = \frac{2^{2}}{8^{3}}\\
-                             \amp  = \frac{{4}}{{512}}\\
-                             \amp  = \displaystyle \frac{1}{128}
+            \displaystyle\frac{7^{-2}}{4^{-3}} \amp  = \displaystyle\frac{\displaystyle\frac{1}{7^{2}}}{\displaystyle\frac{1}{4^{3}}} \\
+                              \amp  = \displaystyle\frac{1}{7^{2}}\cdot \frac{4^{3}}{1} \\
+                              \amp  = \frac{4^{3}}{7^{2}}\\
+                             \amp  = \frac{{64}}{{49}}\\
+                             \amp  = \displaystyle \frac{64}{49}
       \end{aligned}
     }</m></p>
 <p>Remember that when dividing by a fraction we multiply by its reciprocal.</p>

@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-inequality-solution-linear-equation-two-variable-instances-integer-copy" assembly-id="check-inequality-solution-linear-equation-two-variable-instances-integer-copy">
-  <static seed="2474">
-    <statement><p>Is <m>{8}</m> a solution to <m>{9x+3}\neq{3x+51}\text{?}</m></p>
+  <static seed="2338">
+    <statement><p>Is <m>{7}</m> a solution to <m>{4x-3}\gt{6x-17}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>9x+3</m></cell>
-<cell><m>\neq</m></cell>
-<cell><m>3x+51</m></cell>
+<cell><m>4x-3</m></cell>
+<cell><m>\gt</m></cell>
+<cell><m>6x-17</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
-<cell><m>\wonder{\neq}</m></cell>
+<cell><m>\wonder{\gt}</m></cell>
 <cell><fillin characters="3" name="AnSwEr0002"/>
 </cell>
 </row>
@@ -24,12 +24,12 @@
 </statement>
     <answer>
       <p>
-        <m>75</m>
+        <m>25</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>75</m>
+        <m>25</m>
       </p>
     </answer>
     <answer>

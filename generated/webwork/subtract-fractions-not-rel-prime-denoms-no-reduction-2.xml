@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-subtract-fractions-not-rel-prime-denoms-no-reduction-2" assembly-id="subtract-fractions-not-rel-prime-denoms-no-reduction-2">
-  <static seed="2118">
-    <statement><p><m>\displaystyle {{\frac{5}{24}}} - {{\frac{7}{16}}}</m></p>
+  <static seed="1982">
+    <statement><p><m>\displaystyle {{\frac{2}{5}}} - {{\frac{1}{18}}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-{\frac{11}{48}}</m>
+        <m>{\frac{31}{90}}</m>
       </p>
     </answer>
   </static>

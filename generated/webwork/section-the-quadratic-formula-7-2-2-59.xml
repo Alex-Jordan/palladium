@@ -1,29 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-the-quadratic-formula-7-2-2-59" assembly-id="section-the-quadratic-formula-7-2-2-59">
-  <static seed="936">
-    <statement><p><m>{x^{2}+{\frac{27}{56}}}={{\frac{87}{56}}x}</m></p>
+  <static seed="469">
+    <statement><p><m>{x^{2}-{\frac{7}{6}}x}={{\frac{10}{3}}}</m></p>
 <p><fillin characters="40" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\frac{3}{7},\frac{9}{8}\right\}</m>
+        <m>\left\{\frac{-4}{3},\frac{5}{2}\right\}</m>
       </p>
     </answer>
     <solution><p>To use the quadratic formula, we write the equation in standard form:</p>
-<p><me>{x^{2}-{\frac{87}{56}}x+{\frac{27}{56}}}=0</me></p>
-<p>and identify <m>a=1\text{,}</m> <m>b={-{\frac{87}{56}}}\text{,}</m> and <m>c={{\frac{27}{56}}}\text{.}</m></p>
+<p><me>{x^{2}-{\frac{7}{6}}x-{\frac{10}{3}}}=0</me></p>
+<p>and identify <m>a=1\text{,}</m> <m>b={-{\frac{7}{6}}}\text{,}</m> and <m>c={-{\frac{10}{3}}}\text{.}</m></p>
 <p><me>\begin{aligned}
 x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
-\amp=\frac{{{\frac{87}{56}}}\pm\sqrt{{{\frac{7569}{3136}}}-4(1)({{\frac{27}{56}}})}}{2}\\
-\amp=\frac{{{\frac{87}{56}}}\pm\sqrt{{{\frac{1521}{3136}}}}}{2}\\
-\amp=\frac{{{\frac{87}{56}}}\pm{{\frac{39}{56}}}}{2}\\
-x\amp=\frac{{{\frac{87}{56}}}-{{\frac{39}{56}}}}{2}\quad\text{or}\quad x=\frac{{{\frac{87}{56}}}+{{\frac{39}{56}}}}{2}\\
-x\amp={{\frac{3}{7}}}\quad\text{or}\quad x={{\frac{9}{8}}}
+\amp=\frac{{{\frac{7}{6}}}\pm\sqrt{{{\frac{49}{36}}}-4(1)({-{\frac{10}{3}}})}}{2}\\
+\amp=\frac{{{\frac{7}{6}}}\pm\sqrt{{{\frac{529}{36}}}}}{2}\\
+\amp=\frac{{{\frac{7}{6}}}\pm{{\frac{23}{6}}}}{2}\\
+x\amp=\frac{{{\frac{7}{6}}}-{{\frac{23}{6}}}}{2}\quad\text{or}\quad x=\frac{{{\frac{7}{6}}}+{{\frac{23}{6}}}}{2}\\
+x\amp={-{\frac{4}{3}}}\quad\text{or}\quad x={{\frac{5}{2}}}
 \end{aligned}</me></p>
-<p>The solution set is <m>{\left\{\frac{3}{7},\frac{9}{8}\right\}}\text{.}</m></p>
+<p>The solution set is <m>{\left\{\frac{-4}{3},\frac{5}{2}\right\}}\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_4_5_69.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_5_5_69.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg copied-from="section-the-quadratic-formula-7-2-2-58"><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -40,7 +40,7 @@ x\amp={{\frac{3}{7}}}\quad\text{or}\quad x={{\frac{9}{8}}}
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.4.5.70)
+## Problem1(1.5.5.70)
 ## Author()
 ## Institution()
 ## Language(en-US)

@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents20" assembly-id="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents20">
-  <static seed="2014">
-    <statement><p><m>\displaystyle{\sqrt[5]{c}\cdot\sqrt[10]{c^{3}}}</m></p>
+  <static seed="1878">
+    <statement><p><m>\displaystyle{\sqrt{c} \cdot \sqrt[10]{c^{3}}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>c^{\frac{1}{2}}</m>
+        <m>c^{\frac{4}{5}}</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   \sqrt[5]{c}\cdot\sqrt[10]{c^{3}}
-   \amp = c^{\frac{1}{5}} \cdot c^{\frac{3}{10}} \\
-   \amp = c^{\frac{1}{5}+\frac{3}{10}} \\
-   \amp = c^{\frac{2}{10}+\frac{3}{10}} \\
-   \amp = c^{\frac{5}{10}} \\
-   \amp = c^{{{\frac{1}{2}}}}
+   \sqrt{c} \cdot \sqrt[10]{c^{3}}
+   \amp = c^{\frac{1}{2}} \cdot c^{\frac{3}{10}} \\
+   \amp = c^{\frac{1}{2}+\frac{3}{10}} \\
+   \amp = c^{\frac{5}{10}+\frac{3}{10}} \\
+   \amp = c^{\frac{8}{10}} \\
+   \amp = c^{{{\frac{4}{5}}}}
 \end{aligned}
     }</m></p>
 </solution>

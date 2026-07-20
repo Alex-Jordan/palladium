@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication35" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication35">
-  <static seed="2653">
-    <statement><p><m>\left({t+8}\right)\left({t-3}\right)</m></p>
+  <static seed="2517">
+    <statement><p><m>\left({r+1}\right)\left({r-10}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>t^{2}+5t-24</m>
+        <m>r^{2}-9r-10</m>
       </p>
     </answer>
     <solution><p>We use the FOIL technique- <alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast</p>
 <p><m>\begin{aligned}
-              \left({t+8}\right)({t-3})\amp ={t^{2}-3t+8t-24}\\
-                                \amp ={t^{2}+5t-24}
+              \left({r+1}\right)({r-10})\amp ={r^{2}-10r+r-10}\\
+                                \amp ={r^{2}-9r-10}
       \end{aligned}</m></p>
 </solution>
   </static>

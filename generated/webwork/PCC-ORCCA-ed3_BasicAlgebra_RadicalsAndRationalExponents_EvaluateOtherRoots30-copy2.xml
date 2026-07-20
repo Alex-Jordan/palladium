@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateOtherRoots30-copy2" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateOtherRoots30-copy2">
-  <static seed="1984">
-    <statement><p><m>\displaystyle{\sqrt[3]{9^{2}}}</m></p>
+  <static seed="1848">
+    <statement><p><m>\displaystyle{\sqrt[4]{13^{3}}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>4.32675</m>
+        <m>6.84633</m>
       </p>
     </answer>
     <solution><p>Radicals can be converted into fractional exponents this way:</p>
 <p><m>\displaystyle{ \sqrt[n]{x^{m}} = (x^{m})^{\frac{1}{n}} = x^{\frac{m}{n}} }</m></p>
 <p>For this problem, we have:</p>
-<p><m>\displaystyle{ \sqrt[3]{9^{2}} = (9^{2})^{\frac{1}{3}} = 9^{\frac{2}{3}} }</m></p>
-<p>Next, enter <m>9</m>^<m>(2/3)</m> into a graphing calculator, and we get the answer <m>4.32674871092222</m>. Round it to two decimal places, we have:</p>
-<p><m>\displaystyle{ \sqrt[3]{9^{2}} \approx 4.33 }</m></p>
+<p><m>\displaystyle{ \sqrt[4]{13^{3}} = (13^{3})^{\frac{1}{4}} = 13^{\frac{3}{4}} }</m></p>
+<p>Next, enter <m>13</m>^<m>(3/4)</m> into a graphing calculator, and we get the answer <m>6.84632504202305</m>. Round it to two decimal places, we have:</p>
+<p><m>\displaystyle{ \sqrt[4]{13^{3}} \approx 6.85 }</m></p>
 <p>Remember that, in TI-89, we need to press Diamond Enter to get decimal answers; and in Casio ClassPad 330, we have to tap the Fraction to Decimal icon.</p>
 </solution>
   </static>

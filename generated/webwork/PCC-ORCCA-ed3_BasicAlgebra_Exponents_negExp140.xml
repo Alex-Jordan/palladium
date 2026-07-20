@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp140" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp140">
-  <static seed="1765">
-    <statement><p><m>\displaystyle\frac{\left(y^{6}\right)^{3}}{\left(y^{4}\right)^{5}}</m></p>
+  <static seed="1629">
+    <statement><p><m>\displaystyle\frac{\left(y^{9}\right)^{4}}{\left(y^{13}\right)^{4}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{1}{y^{2}}</m>
+        <m>\frac{1}{y^{16}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\displaystyle{\frac{a^m}{a^n} = a^{m-n}}</m> and <m>\left(a^m\right)^{n}=a^{mn}</m></p>
 <p><m>\begin{aligned}
-                 \frac{\left(y^{6}\right)^{3}}{\left(y^{4}\right)^{5}} 
-                      \amp = \frac{y^{6\cdot3}}{y^{4\cdot5}}\\
-                      \amp = \frac{y^{18}}{y^{20}}\\
-                      \amp = y^{18-20}\\
-                      \amp =y^{-2}\\
-                                    \amp  = {\frac{1}{y^{2}}}
+                 \frac{\left(y^{9}\right)^{4}}{\left(y^{13}\right)^{4}} 
+                      \amp = \frac{y^{9\cdot4}}{y^{13\cdot4}}\\
+                      \amp = \frac{y^{36}}{y^{52}}\\
+                      \amp = y^{36-52}\\
+                      \amp =y^{-16}\\
+                                    \amp  = {\frac{1}{y^{16}}}
            \end{aligned}</m></p>
 </solution>
   </static>

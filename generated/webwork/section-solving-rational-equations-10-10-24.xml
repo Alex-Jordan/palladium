@@ -1,40 +1,38 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-10-24" assembly-id="section-solving-rational-equations-10-10-24">
-  <static seed="1595" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations60.pg">
+  <static seed="1459" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations60.pg">
     <statement><p>Solve the equation.</p>
-<p><m>\displaystyle{ {\frac{1}{r+2}+\frac{2}{r^{2}+2r}} = \frac{1}{7} }</m></p>
+<p><m>\displaystyle{ {\frac{1}{r+7}+\frac{7}{r^{2}+7r}} = -\frac{1}{2} }</m></p>
 <p><fillin characters="34" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{-\left(-7\right)\right\}</m>
+        <m>\left\{-2\right\}</m>
       </p>
     </answer>
-    <solution><p>To get rid of fractions, we multiply each term in this equation by the common denominator, which is <m>{7r\mathopen{}\left(r+2\right)}</m> in this example.</p>
+    <solution><p>To get rid of fractions, we multiply each term in this equation by the common denominator, which is <m>{2r\mathopen{}\left(r+7\right)}</m> in this example.</p>
 <p><m>\displaystyle{\begin{aligned}
-   \amp {\frac{1}{r+2}+\frac{2}{r^{2}+2r}} = \frac{1}{7} \\
-   \amp {\frac{1}{r+2}+\frac{2}{r\mathopen{}\left(r+2\right)}} =\frac{1}{7} \\
-   \amp {\frac{1}{r+2}\cdot 7r\mathopen{}\left(r+2\right)+\frac{2}{r\mathopen{}\left(r+2\right)}\cdot 7r\mathopen{}\left(r+2\right)} = \frac{1}{7} \cdot 7 r (r+2) \\
-   \amp {7r+14} = {r^{2}+2r} \\
-   \amp {7r+14-r^{2}-2r} = 0 \\
-   \amp {5r-r^{2}+14} = 0 \\
-   \amp {-1\mathopen{}\left(5r-r^{2}+14\right)} = (-1) \cdot 0 \\
-   \amp {r^{2}-5r-14} = 0 \\
-   \amp {\left(r+2\right)\mathopen{}\left(r-7\right)} = 0 \\
-   \amp r+2=0 \:\: or\:\: r - 7=0 \\
-   \amp r=-2 \:\: or\:\: r=7
+   \amp {\frac{1}{r+7}+\frac{7}{r^{2}+7r}} = -\frac{1}{2} \\
+   \amp {\frac{1}{r+7}+\frac{7}{r\mathopen{}\left(r+7\right)}} =-\frac{1}{2} \\
+   \amp {\frac{1}{r+7}\cdot 2r\mathopen{}\left(r+7\right)+\frac{7}{r\mathopen{}\left(r+7\right)}\cdot 2r\mathopen{}\left(r+7\right)} = -\frac{1}{2} \cdot 2 r (r+7) \\
+   \amp {2r+14} = {-\left(r^{2}+7r\right)} \\
+   \amp {2r+14+r^{2}+7r} = 0 \\
+   \amp {r^{2}+9r+14} = 0 \\
+   \amp {\left(r+7\right)\mathopen{}\left(r+2\right)} = 0 \\
+   \amp r+7=0 \:\: or\:\: r+2=0 \\
+   \amp r=-7 \:\: or\:\: r=-2
 \end{aligned}
     }</m></p>
 <p><alert>Checking</alert></p>
 <p>We must check solutions when we solve rational equations. In the original equation, both denominators cannot be <m>0</m>. We set them to <m>0</m>, so we can find out what values to exclude from the solution set.</p>
 <p><m>\displaystyle{\begin{aligned}
-   \amp r^2+2r = 0 \amp \;\amp  r+2=0 \\
-   \amp r(r+2) =0 \amp \;\amp  r=-2 \\
-   \amp r=0 \:\:or\:\: r+2=0 \\
-   \amp r=0 \:\:or\:\: r=-2
+   \amp r^2+7r = 0 \amp \;\amp  r+7=0 \\
+   \amp r(r+7) =0 \amp \;\amp  r=-7 \\
+   \amp r=0 \:\:or\:\: r+7=0 \\
+   \amp r=0 \:\:or\:\: r=-7
 \end{aligned}
     }</m></p>
-<p>We must exclude <m>0</m> and <m>-2</m> from the solution set. We can see <m>r=-2</m> is an extraneous solution, so the final solution is <m>r=7</m>.</p>
+<p>We must exclude <m>0</m> and <m>-7</m> from the solution set. We can see <m>r=-7</m> is an extraneous solution, so the final solution is <m>r=-2</m>.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations60.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

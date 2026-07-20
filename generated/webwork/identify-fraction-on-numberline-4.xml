@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-identify-fraction-on-numberline-4" assembly-id="identify-fraction-on-numberline-4">
-  <static seed="2064">
+  <static seed="1928">
     <statement><!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/identify-fraction-on-numberline-4-image-1" width="100%"/>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-{\frac{26}{5}}</m>
+        <m>-{\frac{23}{4}}</m>
       </p>
     </answer>
   </static>

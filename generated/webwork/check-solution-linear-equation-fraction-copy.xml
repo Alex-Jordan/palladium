@@ -1,29 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-solution-linear-equation-fraction-copy" assembly-id="check-solution-linear-equation-fraction-copy">
-  <static seed="2446">
-    <statement><p>Is <m>{1}</m> a solution to <m>{7x-{\frac{3}{2}}}={{\frac{97}{10}}}\text{?}</m></p>
+  <static seed="2310">
+    <statement><p>Is <m>{{\frac{9}{8}}}</m> a solution to <m>{2x+{\frac{5}{9}}}={{\frac{83}{36}}}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>7x-{\frac{3}{2}}</m></cell>
+<cell><m>2x+{\frac{5}{9}}</m></cell>
 <cell><m>=</m></cell>
-<cell><m>{\frac{97}{10}}</m></cell>
+<cell><m>{\frac{83}{36}}</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
 <cell><m>\wonder{=}</m></cell>
-<cell><m>{\frac{97}{10}}</m></cell>
+<cell><m>{\frac{83}{36}}</m></cell>
 </row>
 </tabular>
 <p><fillin name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{11}{2}}</m>
+        <m>{\frac{101}{36}}</m>
       </p>
     </answer>
     <answer>

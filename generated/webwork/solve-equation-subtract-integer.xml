@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-equation-subtract-integer" assembly-id="solve-equation-subtract-integer">
-  <static seed="2519">
-    <statement><p><m>{V-8}={-19}</m></p>
+  <static seed="2383">
+    <statement><p><m>{S-13}={5}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{-11\right\}</m>
+        <m>\left\{18\right\}</m>
       </p>
     </answer>
   </static>

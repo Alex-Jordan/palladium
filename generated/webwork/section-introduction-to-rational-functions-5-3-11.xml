@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-introduction-to-rational-functions-5-3-11" assembly-id="section-introduction-to-rational-functions-5-3-11">
-  <static seed="1222" source="Contrib/PCC/BasicAlgebra/RationalFunctions/rationalFunctionDomain10.pg">
-    <statement><p>Find the domain of the function <m>r</m> defined by <m>\displaystyle{r(x)=\frac{x - 4}{x^{3}}}</m></p>
+  <static seed="1086" source="Contrib/PCC/BasicAlgebra/RationalFunctions/rationalFunctionDomain10.pg">
+    <statement><p>Find the domain of the function <m>A</m> defined by <m>\displaystyle{A(x)=\frac{x - 5}{x^{4}}}</m></p>
 <p><fillin characters="34" name="AnSwEr0001"/></p>
 </statement>
     <answer>

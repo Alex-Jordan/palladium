@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-equation-add-left-integer" assembly-id="solve-equation-add-left-integer">
-  <static seed="2517">
-    <statement><p><m>{1+J}={3}</m></p>
+  <static seed="2381">
+    <statement><p><m>{-9}={7+G}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{2\right\}</m>
+        <m>\left\{-16\right\}</m>
       </p>
     </answer>
   </static>

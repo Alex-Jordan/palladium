@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-introduction-to-rational-functions-5-5-8" assembly-id="section-introduction-to-rational-functions-5-5-8">
-  <static seed="1241">
-    <statement><p>The concentration of a drug in a patient<rsq/>s blood stream, in milligrams per liter, can be modeled by the function <m>C(t)={\frac{6t}{t^{2}+7}}\text{,}</m> where <m>t</m> is the number of hours since the drug is injected. Answer the following question with technology.</p>
+  <static seed="1105">
+    <statement><p>The concentration of a drug in a patient<rsq/>s blood stream, in milligrams per liter, can be modeled by the function <m>C(t)={\frac{6t}{t^{2}+9}}\text{,}</m> where <m>t</m> is the number of hours since the drug is injected. Answer the following question with technology.</p>
 <p>As time goes on, the drug<rsq/>s concentration in the patient<rsq/>s blood stream levels off at approximately <fillin characters="10" name="AnSwEr0001"/> milligrams per liter.</p>
 </statement>
     <answer>
@@ -12,7 +12,7 @@
     <solution><p>With technology, we can find <m>y</m>-values of a few points when <m>x</m>-values are very large. For example:
 <ul label="disc">
 <li>
-<p><m>(10,0.56)</m></p>
+<p><m>(10,0.55)</m></p>
 </li>
 <li>
 <p><m>(100,0.06)</m></p>

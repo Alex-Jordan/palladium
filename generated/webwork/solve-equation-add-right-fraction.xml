@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-equation-add-right-fraction" assembly-id="solve-equation-add-right-fraction">
-  <static seed="2531">
-    <statement><p><m>{{\frac{9}{10}}}={l+{\frac{2}{3}}}</m></p>
+  <static seed="2395">
+    <statement><p><m>{{\frac{2}{9}}}={i+{\frac{5}{3}}}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\frac{7}{30}\right\}</m>
+        <m>\left\{\frac{-13}{9}\right\}</m>
       </p>
     </answer>
   </static>

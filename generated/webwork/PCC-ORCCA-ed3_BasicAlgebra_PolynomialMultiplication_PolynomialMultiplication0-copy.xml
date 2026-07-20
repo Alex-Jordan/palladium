@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication0-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication0-copy">
-  <static seed="2634">
-    <statement><p><m>{3x}\left({x+5}\right)</m></p>
+  <static seed="2498">
+    <statement><p><m>{2x}\left({x-7}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>3x^{2}+15x</m>
+        <m>2x^{2}-14x</m>
       </p>
     </answer>
     <solution><p>We multiply the monomial by each term in the binomial, using 
 the properties of exponents to help us.</p>
 <p><m>\begin{aligned}
-              {3x}({x+5})\amp ={3x^{2}+15x}
+              {2x}({x-7})\amp ={2x^{2}-14x}
       \end{aligned}</m></p>
 </solution>
   </static>

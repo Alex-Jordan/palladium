@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-5-3" assembly-id="section-multiplication-and-division-of-rational-expressions-7-5-3">
-  <static seed="1297" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions81.pg">
+  <static seed="1161" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions81.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{{\frac{3rx-r^{2}x^{2}}{r^{2}x^{2}+2rx-15}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{5ry-r^{2}y^{2}}{r^{2}y^{2}-2ry-15}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-\frac{rx}{rx+5}</m>
+        <m>-\frac{ry}{ry+3}</m>
       </p>
     </answer>
     <solution><p>To simplify the expression, we first factor both the numerator and denominator, and then cross out common terms:</p>
 <p><m>\displaystyle{\begin{aligned}
-   {\frac{3rx-r^{2}x^{2}}{r^{2}x^{2}+2rx-15}} \amp = \frac{{rx\mathopen{}\left(3-rx\right)}}{{\left(rx-3\right)\mathopen{}\left(rx+5\right)}} \\
-                     \amp = \frac{{-rx\mathopen{}\left(rx-3\right)}}{{\left(rx-3\right)\mathopen{}\left(rx+5\right)}} \\
-                     \amp = {-\frac{rx}{rx+5}}
+   {\frac{5ry-r^{2}y^{2}}{r^{2}y^{2}-2ry-15}} \amp = \frac{{ry\mathopen{}\left(5-ry\right)}}{{\left(ry-5\right)\mathopen{}\left(ry+3\right)}} \\
+                     \amp = \frac{{-ry\mathopen{}\left(ry-5\right)}}{{\left(ry-5\right)\mathopen{}\left(ry+3\right)}} \\
+                     \amp = {-\frac{ry}{ry+3}}
 \end{aligned}
     }</m></p>
 </solution>

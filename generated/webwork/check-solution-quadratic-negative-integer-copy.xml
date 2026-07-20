@@ -1,29 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-solution-quadratic-negative-integer-copy" assembly-id="check-solution-quadratic-negative-integer-copy">
-  <static seed="2452">
-    <statement><p>Is <m>{-4}</m> a solution to <m>{7x^{2}-9x}={148}\text{?}</m></p>
+  <static seed="2316">
+    <statement><p>Is <m>{-4}</m> a solution to <m>{9x^{2}+4x}={128}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>7x^{2}-9x</m></cell>
+<cell><m>9x^{2}+4x</m></cell>
 <cell><m>=</m></cell>
-<cell><m>148</m></cell>
+<cell><m>128</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
 <cell><m>\wonder{=}</m></cell>
-<cell><m>148</m></cell>
+<cell><m>128</m></cell>
 </row>
 </tabular>
 <p><fillin name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>148</m>
+        <m>128</m>
       </p>
     </answer>
     <answer>

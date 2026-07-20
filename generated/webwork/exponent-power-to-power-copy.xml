@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-power-to-power-copy" assembly-id="exponent-power-to-power-copy">
-  <static seed="2577">
-    <statement><p><m>{\left(4^{2}\right)^{3}}</m></p>
+  <static seed="2441">
+    <statement><p><m>{\left(4^{5}\right)^{6}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>4^{6}</m>
+        <m>4^{30}</m>
       </p>
     </answer>
   </static>

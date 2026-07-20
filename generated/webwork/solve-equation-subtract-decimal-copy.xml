@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-equation-subtract-decimal-copy" assembly-id="solve-equation-subtract-decimal-copy">
-  <static seed="2548">
-    <statement><p><m>{g-6.2}={1.77}</m></p>
+  <static seed="2412">
+    <statement><p><m>{d-12.8}={7.51}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{7.97\right\}</m>
+        <m>\left\{20.31\right\}</m>
       </p>
     </answer>
   </static>

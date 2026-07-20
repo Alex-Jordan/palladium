@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication25-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication25-copy">
-  <static seed="1668">
-    <statement><p><m>\left(2t^{9}\right)^2</m></p>
+  <static seed="1532">
+    <statement><p><m>\left(3r^{8}\right)^3</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>4t^{18}</m>
+        <m>27r^{24}</m>
       </p>
     </answer>
     <solution><p>We <em>multiply</em> the exponents and apply the rule <m>(ab)^m=a^m\cdot b^m</m> as follows</p>
 <p><m>\begin{aligned}
-           \left(2t^{9}\right)^{2}\amp =(2)^{2}t^{9\cdot2}\\
-                             \amp =4t^{18}
+           \left(3r^{8}\right)^{3}\amp =(3)^{3}r^{8\cdot3}\\
+                             \amp =27r^{24}
        \end{aligned}</m></p>
 </solution>
   </static>

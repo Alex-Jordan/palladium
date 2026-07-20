@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-equation-subtract-fraction" assembly-id="solve-equation-subtract-fraction">
-  <static seed="2535">
-    <statement><p><m>{{\frac{6}{7}}}={I-{\frac{8}{5}}}</m></p>
+  <static seed="2399">
+    <statement><p><m>{-{\frac{9}{7}}}={G-{\frac{1}{6}}}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\frac{86}{35}\right\}</m>
+        <m>\left\{\frac{-47}{42}\right\}</m>
       </p>
     </answer>
   </static>

@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp135" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp135">
-  <static seed="1763">
-    <statement><p><m>\left(3x^{5}\right)^{4}\cdot x^{-13}</m></p>
+  <static seed="1627">
+    <statement><p><m>\left(4x^{9}\right)^{2}\cdot x^{-7}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>81x^{7}</m>
+        <m>16x^{11}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remember that <m>a^m\cdot a^n = a^{m+n}</m> and <m>\left(a^m\right)^n=a^{mn}</m>.</p>
 <p><m>\begin{aligned}
-                \left(3x^{5}\right)^{4}\cdot x^{-13} \amp = 3^{4}x^{5\cdot4}x^{-13}\\
-                                                                          \amp  =81x^{20}x^{-13}\\
-                                                                      \amp  =81x^{20-13}\\
-                                    \amp  = {81x^{7}}
+                \left(4x^{9}\right)^{2}\cdot x^{-7} \amp = 4^{2}x^{9\cdot2}x^{-7}\\
+                                                                          \amp  =16x^{18}x^{-7}\\
+                                                                      \amp  =16x^{18-7}\\
+                                    \amp  = {16x^{11}}
            \end{aligned}</m></p>
 </solution>
   </static>

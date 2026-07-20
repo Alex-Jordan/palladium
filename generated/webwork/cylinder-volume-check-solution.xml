@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-cylinder-volume-check-solution" assembly-id="cylinder-volume-check-solution">
-  <static seed="2507">
-    <statement><p>The formula for a cylinder<rsq/>s volume is <m>V=\pi r^2h\text{,}</m> where <m>V</m> is the volume, <m>r</m> is the base radius, and <m>h</m> is the height. And <m>\pi</m> is a number that is about <m>3.14\text{.}</m> If we know the volume of a cylinder is <m>{{\frac{27}{320}}\pi }</m> and if we also know its height is <m>{{\frac{3}{5}}}</m> then we have the equation <m>{{\frac{27}{320}}\pi }={\pi r^{2}{\frac{3}{5}}}\text{.}</m> Is the radius <m>{{\frac{3}{8}}}\text{?}</m></p>
+  <static seed="2371">
+    <statement><p>The formula for a cylinder<rsq/>s volume is <m>V=\pi r^2h\text{,}</m> where <m>V</m> is the volume, <m>r</m> is the base radius, and <m>h</m> is the height. And <m>\pi</m> is a number that is about <m>3.14\text{.}</m> If we know the volume of a cylinder is <m>{{\frac{3}{5}}\pi }</m> and if we also know its height is <m>{{\frac{5}{3}}}</m> then we have the equation <m>{{\frac{3}{5}}\pi }={\pi r^{2}{\frac{5}{3}}}\text{.}</m> Is the radius <m>{{\frac{4}{5}}}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>{\frac{27}{320}}\pi</m></cell>
+<cell><m>{\frac{3}{5}}\pi</m></cell>
 <cell><m>=</m></cell>
-<cell><m>\pi r^{2}{\frac{3}{5}}</m></cell>
+<cell><m>\pi r^{2}{\frac{5}{3}}</m></cell>
 </row>
 <row>
-<cell><m>\frac{27}{320}\pi</m></cell>
+<cell><m>\frac{3}{5}\pi</m></cell>
 <cell><m>\wonder{=}</m></cell>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
@@ -23,12 +23,12 @@
 </statement>
     <answer>
       <p>
-        <m>\frac{27}{320}\pi </m>
+        <m>\frac{16}{15}\pi </m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\text{Yes, it is a solution.}</m>
+        <m>\text{No, it is not a solution.}</m>
       </p>
     </answer>
   </static>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-add-fractions-same-denom-some-reduction-2" assembly-id="add-fractions-same-denom-some-reduction-2">
-  <static seed="2100">
-    <statement><p><m>\displaystyle {{\frac{5}{6}}} + {{\frac{1}{6}}}</m></p>
+  <static seed="1964">
+    <statement><p><m>\displaystyle {{\frac{5}{2}}} + {{\frac{3}{2}}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>1</m>
+        <m>4</m>
       </p>
     </answer>
   </static>

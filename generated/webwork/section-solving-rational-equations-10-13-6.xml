@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-13-6" assembly-id="section-solving-rational-equations-10-13-6">
-  <static seed="1621">
+  <static seed="1485">
     <statement><p>Use technology to solve the equation.</p>
 <p><me>2x-\frac{1}{x+4}=\frac{3}{x+6}
                 \text{.}</me></p>

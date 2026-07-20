@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp35" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp35">
-  <static seed="1719">
-    <statement><p><m>\displaystyle\frac{54y^{11}}{9y^{26}}</m></p>
+  <static seed="1583">
+    <statement><p><m>\displaystyle\frac{24y^{28}}{6y^{39}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{6}{y^{15}}</m>
+        <m>\frac{4}{y^{11}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\displaystyle{\frac{a^m}{a^n} = a^{m-n}}</m></p>
 <p><m>\begin{aligned}
-                 \displaystyle\frac{54y^{11}}{9y^{26}} \amp = 6y^{11-26}\\
-                                                       \amp  =6y^{-15}\\
-                                    \amp  = {\frac{6}{y^{15}}}
+                 \displaystyle\frac{24y^{28}}{6y^{39}} \amp = 4y^{28-39}\\
+                                                       \amp  =4y^{-11}\\
+                                    \amp  = {\frac{4}{y^{11}}}
            \end{aligned}</m></p>
 </solution>
   </static>

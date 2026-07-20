@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar85" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar85">
-  <static seed="2673">
-    <statement><p><m>\left({a-9b}\right)\left({10a-6b}\right)</m></p>
+  <static seed="2537">
+    <statement><p><m>\left({a-2b}\right)\left({10a+3b}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>10a^{2}-96ab+54b^{2}</m>
+        <m>10a^{2}-17ab-6b^{2}</m>
       </p>
     </answer>
     <solution><p>We multiply the polynomials using the FOIL method: <alert>F</alert>irst <alert>O</alert>utside
 <alert>I</alert>nside <alert>L</alert>ast</p>
 <p><m>\displaystyle{    \begin{aligned}
-        \left({a-9b}\right)\left({10a-6b}\right)\amp = {a\cdot 10a-a\cdot 6b-9b\cdot 10a+9b\cdot 6b}\\
-                      \amp  = {10a^{2}-96ab+54b^{2}}
+        \left({a-2b}\right)\left({10a+3b}\right)\amp = {a\cdot 10a+a\cdot 3b-2b\cdot 10a-2b\cdot 3b}\\
+                      \amp  = {10a^{2}-17ab-6b^{2}}
     \end{aligned}
 }</m></p>
 </solution>

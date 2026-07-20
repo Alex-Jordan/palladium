@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp30-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp30-copy">
-  <static seed="1718">
-    <statement><p><m>\displaystyle\frac{x^{41}}{x^{42}}</m></p>
+  <static seed="1582">
+    <statement><p><m>\displaystyle\frac{x^{3}}{x^{8}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{1}{x^{1}}</m>
+        <m>\frac{1}{x^{5}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\frac{a^m}{a^n} = a^{m-n}</m>.</p>
 <p><m>\begin{aligned}
-                 \displaystyle\frac{x^{41}}{x^{42}} \amp = x^{41-42}\\
-                                                       \amp  =x^{-1}\\
-                                    \amp  = {\frac{1}{x^{1}}}
+                 \displaystyle\frac{x^{3}}{x^{8}} \amp = x^{3-8}\\
+                                                       \amp  =x^{-5}\\
+                                    \amp  = {\frac{1}{x^{5}}}
            \end{aligned}</m></p>
 </solution>
   </static>

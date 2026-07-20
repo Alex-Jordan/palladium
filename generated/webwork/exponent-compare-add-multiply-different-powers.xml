@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-compare-add-multiply-different-powers" assembly-id="exponent-compare-add-multiply-different-powers">
-  <static seed="2608">
+  <static seed="2472">
     <introduction/>
     <task>
-      <statement><p><m>{u^{5}+u^{2}}</m></p>
+      <statement><p><m>{t^{7}+t^{4}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>u^{5}+u^{2}</m>
+          <m>t^{7}+t^{4}</m>
         </p>
       </answer>
     </task>
     <task>
-      <statement><p><m>u^5\cdot u^2</m></p>
+      <statement><p><m>t^7\cdot t^4</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>u^{7}</m>
+          <m>t^{11}</m>
         </p>
       </answer>
     </task>

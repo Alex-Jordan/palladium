@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-use-multiplicative-associativity" assembly-id="use-multiplicative-associativity">
-  <static seed="2328">
-    <statement><p>Apply associativity to <m>{\left(7M\right)L}\text{.}</m></p>
+  <static seed="2192">
+    <statement><p>Apply associativity to <m>{\left(13K\right)b}\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>7\mathopen{}\left(ML\right)</m>
+        <m>13\mathopen{}\left(Kb\right)</m>
       </p>
     </answer>
   </static>

@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar95-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar95-copy">
-  <static seed="2678">
-    <statement><p><m>\left({6ab-3}\right)\left({2ab-10}\right)</m></p>
+  <static seed="2542">
+    <statement><p><m>\left({6ab+6}\right)\left({5ab+8}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>12a^{2}b^{2}-66ab+30</m>
+        <m>30a^{2}b^{2}+78ab+48</m>
       </p>
     </answer>
     <solution><p>We multiply the polynomials using the FOIL method: <alert>F</alert>irst <alert>O</alert>utside
 <alert>I</alert>nside <alert>L</alert>ast</p>
 <p><m>\displaystyle{    \begin{aligned}
-        \left({6ab-3}\right)\left({2ab-10}\right)\amp ={6ab\cdot 2ab-6ab\cdot 10-3\cdot 2ab+30}\\
-                      \amp  = {12a^{2}b^{2}-66ab+30}
+        \left({6ab+6}\right)\left({5ab+8}\right)\amp ={6ab\cdot 5ab+6ab\cdot 8+6\cdot 5ab+48}\\
+                      \amp  = {30a^{2}b^{2}+78ab+48}
     \end{aligned}
 }</m></p>
 </solution>

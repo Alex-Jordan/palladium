@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-multiply-polynomials-4-copy" assembly-id="multiply-polynomials-4-copy">
-  <static seed="2686">
-    <statement><p><m>{-2y\mathopen{}\left(y+1\right)\mathopen{}\left(y+8\right)}</m></p>
+  <static seed="2550">
+    <statement><p><m>{4y\mathopen{}\left(y+2\right)\mathopen{}\left(y+3\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-2y^{3}-18y^{2}-16y</m>
+        <m>4y^{3}+20y^{2}+24y</m>
       </p>
     </answer>
-    <solution><p>We could first distribute <m>{-2y}</m> into <m>{y+1}</m> to get <m>{-2y^{2}-2y}\text{,}</m> and then multiply <m>{-2y^{2}-2y}</m> and <m>{y+8}\text{:}</m></p>
+    <solution><p>We could first distribute <m>{4y}</m> into <m>{y+2}</m> to get <m>{4y^{2}+8y}\text{,}</m> and then multiply <m>{4y^{2}+8y}</m> and <m>{y+3}\text{:}</m></p>
 <p><me>\begin{aligned}
-{-2y\mathopen{}\left(y+1\right)\mathopen{}\left(y+8\right)}\amp=({-2y^{2}-2y})({y+8})\\
-\amp={-2y^{3}-18y^{2}-16y}
+{4y\mathopen{}\left(y+2\right)\mathopen{}\left(y+3\right)}\amp=({4y^{2}+8y})({y+3})\\
+\amp={4y^{3}+20y^{2}+24y}
 \end{aligned}</me></p>
-<p>We could also first multiply <m>{y+1}</m> and <m>{y+8}</m> to get <m>{y^{2}+9y+8}\text{,}</m> and then distribute <m>-2y</m> into <m>{y^{2}+9y+8}\text{:}</m></p>
+<p>We could also first multiply <m>{y+2}</m> and <m>{y+3}</m> to get <m>{y^{2}+5y+6}\text{,}</m> and then distribute <m>4y</m> into <m>{y^{2}+5y+6}\text{:}</m></p>
 <p><me>\begin{aligned}
-{-2y\mathopen{}\left(y+1\right)\mathopen{}\left(y+8\right)}\amp={-2\mathopen{}\left(y^{2}+9y+8\right)}\\
-\amp={-2y^{3}-18y^{2}-16y}
+{4y\mathopen{}\left(y+2\right)\mathopen{}\left(y+3\right)}\amp={4\mathopen{}\left(y^{2}+5y+6\right)}\\
+\amp={4y^{3}+20y^{2}+24y}
 \end{aligned}</me></p>
 </solution>
   </static>

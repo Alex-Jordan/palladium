@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-true-false-compare-negative-decimals-copy" assembly-id="true-false-compare-negative-decimals-copy">
-  <static seed="2382">
-    <statement><p><m>-9.26 &gt; -9.02</m></p>
+  <static seed="2246">
+    <statement><p><m>-9.31 \leq -9.74</m></p>
 <p><fillin name="AnSwEr0001"/></p>
 </statement>
     <answer>

@@ -1,41 +1,41 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers40-copy" assembly-id="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers40-copy">
-  <static seed="1799">
+  <static seed="1663">
     <introduction/>
     <task>
-      <statement><p><m>\displaystyle{ \sqrt{16} }</m></p>
+      <statement><p><m>\displaystyle{ \sqrt{9} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>4</m>
+          <m>3</m>
         </p>
       </answer>
-      <solution><p>Just knowing the first few square numbers, <m>\sqrt{16} = 4</m>.</p>
+      <solution><p>Just knowing the first few square numbers, <m>\sqrt{9} = 3</m>.</p>
 </solution>
     </task>
     <task>
-      <statement><p><m>\displaystyle{ \sqrt{0.16} }</m></p>
+      <statement><p><m>\displaystyle{ \sqrt{0.09} }</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>0.4</m>
+          <m>0.3</m>
         </p>
       </answer>
-      <solution><p>Since <m>0.16=16/100</m>, we have <m>\sqrt{0.16}=\sqrt{16/100}=4/10=0.4</m>.</p>
+      <solution><p>Since <m>0.09=9/100</m>, we have <m>\sqrt{0.09}=\sqrt{9/100}=3/10=0.3</m>.</p>
 </solution>
     </task>
     <task>
-      <statement><p><m>\displaystyle{ \sqrt{1600} }</m></p>
+      <statement><p><m>\displaystyle{ \sqrt{900} }</m></p>
 <p><fillin characters="16" name="AnSwEr0003"/></p>
 </statement>
       <answer>
         <p>
-          <m>40</m>
+          <m>30</m>
         </p>
       </answer>
-      <solution><p>Since <m>1600=16\cdot100</m>, we have <m>\sqrt{1600}=\sqrt{16\cdot100}=4\cdot10=40</m>.</p>
+      <solution><p>Since <m>900=9\cdot100</m>, we have <m>\sqrt{900}=\sqrt{9\cdot100}=3\cdot10=30</m>.</p>
 </solution>
     </task>
   </static>

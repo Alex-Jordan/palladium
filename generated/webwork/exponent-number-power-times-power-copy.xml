@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-number-power-times-power-copy" assembly-id="exponent-number-power-times-power-copy">
-  <static seed="2571">
-    <statement><p><m>{7^{4}\cdot 7^{7}}</m></p>
+  <static seed="2435">
+    <statement><p><m>{6^{7}\cdot 6^{10}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>7^{11}</m>
+        <m>6^{17}</m>
       </p>
     </answer>
   </static>

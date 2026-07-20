@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-6-2" assembly-id="section-completing-the-square-8-6-2">
-  <static seed="1195" source="Contrib/PCC/Math95/ParabolaVertex/ParabolaVertex5.pg">
+  <static seed="728" source="Contrib/PCC/Math95/ParabolaVertex/ParabolaVertex5.pg">
     <statement><p>Find the minimum value of the function</p>
-<p><me>f(x)=4x^{2}+3x+10</me></p>
+<p><me>f(x)=7x^{2}-10x-5</me></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{151}{16}}</m>
+        <m>-{\frac{60}{7}}</m>
       </p>
     </answer>
   </static>

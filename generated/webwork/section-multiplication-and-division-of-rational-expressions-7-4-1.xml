@@ -1,25 +1,25 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-4-1" assembly-id="section-multiplication-and-division-of-rational-expressions-7-4-1">
-  <static seed="1266" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions30.pg">
+  <static seed="1130" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions30.pg">
     <statement><p>Simplify the following expression, and if applicable, write the restricted domain on the simplified expression.</p>
-<p><m>\displaystyle{{\frac{x+10}{\left(x-5\right)\mathopen{}\left(x+10\right)}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{x+4}{\left(x-2\right)\mathopen{}\left(x+4\right)}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{1}{x-5}, x\ne -10</m>
+        <m>\frac{1}{x-2}, x\ne -4</m>
       </p>
     </answer>
     <solution><p>To simplify the expression, we first factor both the numerator and denominator, and then cross out common factors. In this question, both the numerator and denominator have been factored, so we can simply cross out common factors.</p>
 <p><m>\displaystyle{\begin{aligned}
-   {\frac{x+10}{\left(x-5\right)\mathopen{}\left(x+10\right)}} 
-                     \amp = {\frac{1}{x-5}, x\ne -10}
+   {\frac{x+4}{\left(x-2\right)\mathopen{}\left(x+4\right)}} 
+                     \amp = {\frac{1}{x-2}, x\ne -4}
 \end{aligned}
     }</m></p>
-<p>Since the factor <m>x+10</m> was crossed out, the domain condition lost during the simplification is:</p>
+<p>Since the factor <m>x+4</m> was crossed out, the domain condition lost during the simplification is:</p>
 <p><m>\displaystyle{\begin{aligned}
-   x+10 \amp  \ne 0 \\
-   x+10 \mathbf{-10} \amp  \ne 0 \mathbf{-10} \\
-   x \amp  \ne -10
+   x+4 \amp  \ne 0 \\
+   x+4 \mathbf{-4} \amp  \ne 0 \mathbf{-4} \\
+   x \amp  \ne -4
 \end{aligned}
     }</m></p>
 </solution>

@@ -1,41 +1,41 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers60-copy" assembly-id="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers60-copy">
-  <static seed="1803">
+  <static seed="1667">
     <introduction/>
     <task>
-      <statement><p><m>\displaystyle{ \sqrt{64} }</m></p>
+      <statement><p><m>\displaystyle{ \sqrt{49} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>8</m>
+          <m>7</m>
         </p>
       </answer>
-      <solution><p>Just knowing the first few square numbers, <m>\sqrt{64} = 8</m>.</p>
+      <solution><p>Just knowing the first few square numbers, <m>\sqrt{49} = 7</m>.</p>
 </solution>
     </task>
     <task>
-      <statement><p><m>\displaystyle{ \sqrt{0.64} }</m></p>
+      <statement><p><m>\displaystyle{ \sqrt{0.49} }</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>0.8</m>
+          <m>0.7</m>
         </p>
       </answer>
-      <solution><p>Since <m>0.64=64/100</m>, we have <m>\sqrt{0.64}=\sqrt{64/100}=8/10=0.8</m>.</p>
+      <solution><p>Since <m>0.49=49/100</m>, we have <m>\sqrt{0.49}=\sqrt{49/100}=7/10=0.7</m>.</p>
 </solution>
     </task>
     <task>
-      <statement><p><m>\displaystyle{ \sqrt{0.0064} }</m></p>
+      <statement><p><m>\displaystyle{ \sqrt{0.0049} }</m></p>
 <p><fillin characters="16" name="AnSwEr0003"/></p>
 </statement>
       <answer>
         <p>
-          <m>0.08</m>
+          <m>0.07</m>
         </p>
       </answer>
-      <solution><p>Since <m>0.0064=64/10000</m>, we have <m>\sqrt{0.0064}=\sqrt{64/10000}=8/100=0.08</m>.</p>
+      <solution><p>Since <m>0.0049=49/10000</m>, we have <m>\sqrt{0.0049}=\sqrt{49/10000}=7/100=0.07</m>.</p>
 </solution>
     </task>
   </static>

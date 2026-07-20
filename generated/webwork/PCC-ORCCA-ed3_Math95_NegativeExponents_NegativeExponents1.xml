@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_NegativeExponents_NegativeExponents1" assembly-id="PCC-ORCCA-ed3_Math95_NegativeExponents_NegativeExponents1">
-  <static seed="1701">
-    <statement><p><m>\displaystyle {16x^{-6}}</m></p>
+  <static seed="1565">
+    <statement><p><m>\displaystyle {5x^{-5}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{16}{x^{6}}</m>
+        <m>\frac{5}{x^{5}}</m>
       </p>
     </answer>
   </static>

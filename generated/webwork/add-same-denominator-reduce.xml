@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-add-same-denominator-reduce" assembly-id="add-same-denominator-reduce">
-  <static seed="2234">
-    <statement><p><m>{{\frac{4}{9}}}+{{\frac{5}{9}}}</m></p>
+  <static seed="2098">
+    <statement><p><m>{{\frac{4}{19}}}+{{\frac{15}{19}}}</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>

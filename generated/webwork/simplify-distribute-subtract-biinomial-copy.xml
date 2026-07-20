@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-distribute-subtract-biinomial-copy" assembly-id="simplify-distribute-subtract-biinomial-copy">
-  <static seed="2367">
-    <statement><p><m>{3\mathopen{}\left(6e+4\right)-\left(2e+8\right)}</m></p>
+  <static seed="2231">
+    <statement><p><m>{5\mathopen{}\left(9b+8\right)-\left(7b+2\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>16e+4</m>
+        <m>38b+38</m>
       </p>
     </answer>
   </static>

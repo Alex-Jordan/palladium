@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-6-5" assembly-id="section-completing-the-square-8-6-5">
-  <static seed="1198" source="Contrib/PCC/Math95/ParabolaVertex/ParabolaVertex6.pg">
+  <static seed="731" source="Contrib/PCC/Math95/ParabolaVertex/ParabolaVertex6.pg">
     <statement><p>Find the maximum value of the function</p>
-<p><me>f(x)=2x-7x^{2}-6</me></p>
+<p><me>f(x)=10x-10x^{2}</me></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-{\frac{41}{7}}</m>
+        <m>{\frac{5}{2}}</m>
       </p>
     </answer>
   </static>

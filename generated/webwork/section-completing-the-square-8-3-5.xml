@@ -1,38 +1,38 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-3-5" assembly-id="section-completing-the-square-8-3-5">
-  <static seed="1184">
-    <statement><p>Consider <m>f(y)={y^{2}-3y-4}\text{.}</m>
+  <static seed="717">
+    <statement><p>Consider <m>h(t)={t^{2}+3t+1}\text{.}</m>
 <ol label="a.">
 <li>
-<p>Give the formula for <m>f</m> in vertex form.</p>
+<p>Give the formula for <m>h</m> in vertex form.</p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </li>
 <li>
-<p>What is the vertex of the parabola graph of <m>f\text{?}</m></p>
+<p>What is the vertex of the parabola graph of <m>h\text{?}</m></p>
 <p><fillin characters="20" name="AnSwEr0002"/></p>
 </li>
 </ol></p>
 </statement>
     <answer>
       <p>
-        <m>f\mathopen{}\left(y\right) = \left(y-\frac{3}{2}\right)^{2}-\frac{25}{4}</m>
+        <m>h\mathopen{}\left(t\right) = \left(t+\frac{3}{2}\right)^{2}-\frac{5}{4}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(\frac{3}{2},\frac{-25}{4}\right)</m>
+        <m>\left(\frac{-3}{2},\frac{-5}{4}\right)</m>
       </p>
     </answer>
-    <solution><p>Compute <m>\left(\frac{-3}{2}\right)^2={{\frac{9}{4}}}\text{.}</m> Then</p>
+    <solution><p>Compute <m>\left(\frac{3}{2}\right)^2={{\frac{9}{4}}}\text{.}</m> Then</p>
 <p><me>\begin{aligned}
-f(y)\amp = {y^{2}-3y}+{{\frac{9}{4}}}-{{\frac{9}{4}}} - 4\\
-\amp=\left({y^{2}-3y+{\frac{9}{4}}}\right)-{{\frac{9}{4}}} - 4\\
-\amp={\left(y-\frac{3}{2}\right)^{2}-\frac{25}{4}}
+h(t)\amp = {t^{2}+3t}+{{\frac{9}{4}}}-{{\frac{9}{4}}}+1\\
+\amp=\left({t^{2}+3t+{\frac{9}{4}}}\right)-{{\frac{9}{4}}}+1\\
+\amp={\left(t+\frac{3}{2}\right)^{2}-\frac{5}{4}}
 \end{aligned}</me></p>
-<p>From the vertex form, we can see the vertex is <m>{\left(\frac{3}{2},\frac{-25}{4}\right)}\text{.}</m></p>
+<p>From the vertex form, we can see the vertex is <m>{\left(\frac{-3}{2},\frac{-5}{4}\right)}\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_8_6_31.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_9_6_31.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg copied-from="section-completing-the-square-8-3-4"><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -49,7 +49,7 @@ f(y)\amp = {y^{2}-3y}+{{\frac{9}{4}}}-{{\frac{9}{4}}} - 4\\
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.8.6.32)
+## Problem1(1.9.6.32)
 ## Author()
 ## Institution()
 ## Language(en-US)

@@ -1,0 +1,75 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.2.8.99)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context()->noreduce('(-x)-y');
+do {
+  $h = non_zero_random(-9,9);
+  $left = Formula("(x-$h)^2")->reduce;
+  ($m,$b) = random_subset(2, -6..-1,1..6);
+  $right = Formula("$m x + $b")->reduce;
+  $D = (2*$h+$m)**2 - 4*($h**2 - $b);
+} until $D > 0;
+$x1 = (-(2*$h+$m) - sqrt($D))/2;
+$x2 = (-(2*$h+$m) + sqrt($D))/2;
+Context("FiniteSolutionSets");
+Context()->flags->remove("NumberCheck");
+$sols = Formula("{$x1,$x2}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use a graphing app to solve the equation graphically. Make sure you follow a process that involves making two curves and looking at their intersection points.
+
+[`[$left]=[$right]`]
+
+[_]{$sols}{6}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

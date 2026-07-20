@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-product-to-power-multivar-copy" assembly-id="exponent-product-to-power-multivar-copy">
-  <static seed="2583">
-    <statement><p><m>{\left(4ad\right)^{3}}</m></p>
+  <static seed="2447">
+    <statement><p><m>{\left(5yi\right)^{2}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>64a^{3}d^{3}</m>
+        <m>25y^{2}i^{2}</m>
       </p>
     </answer>
   </static>

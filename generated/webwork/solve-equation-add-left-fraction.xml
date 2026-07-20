@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-equation-add-left-fraction" assembly-id="solve-equation-add-left-fraction">
-  <static seed="2533">
-    <statement><p><m>{{\frac{5}{6}}+x}={-{\frac{7}{12}}}</m></p>
+  <static seed="2397">
+    <statement><p><m>{{\frac{7}{12}}+u}={{\frac{1}{5}}}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\frac{-17}{12}\right\}</m>
+        <m>\left\{\frac{-23}{60}\right\}</m>
       </p>
     </answer>
     <solution><p>The opposite action to addition is subtraction.</p>
 <p><me>\begin{aligned}
-{{\frac{5}{6}}+x} \amp= {-{\frac{7}{12}}}\\
-{{\frac{5}{6}}+x}\subtractright{{{\frac{5}{6}}}} \amp= {-{\frac{7}{12}}}\subtractright{{{\frac{5}{6}}}}\\
-x \amp= {-{\frac{17}{12}}}
+{{\frac{7}{12}}+u} \amp= {{\frac{1}{5}}}\\
+{{\frac{7}{12}}+u}\subtractright{{{\frac{7}{12}}}} \amp= {{\frac{1}{5}}}\subtractright{{{\frac{7}{12}}}}\\
+u \amp= {-{\frac{23}{60}}}
 \end{aligned}</me></p>
-<p>The solution set is <m>{\left\{\frac{-17}{12}\right\}}\text{.}</m></p>
+<p>The solution set is <m>{\left\{\frac{-23}{60}\right\}}\text{.}</m></p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/Appendices/A_7_6_19.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

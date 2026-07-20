@@ -1,29 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-rental-fee-check-solution" assembly-id="rental-fee-check-solution">
-  <static seed="2500">
-    <statement><p>The rental fee for a beach house is <m>{\$370}</m> plus <m>{\$200}</m> per night. If you stay <m>n</m> nights, the total is <m>{370+200n}\text{.}</m> You stayed and the total was <m>{\$1{,}170}\text{,}</m> giving the equation <m>{370+200n}={1170}\text{.}</m> Did you stay <m>7</m> nights?</p>
+  <static seed="2364">
+    <statement><p>The rental fee for a beach house is <m>{\$370}</m> plus <m>{\$125}</m> per night. If you stay <m>n</m> nights, the total is <m>{370+125n}\text{.}</m> You stayed and the total was <m>{\$995}\text{,}</m> giving the equation <m>{370+125n}={995}\text{.}</m> Did you stay <m>4</m> nights?</p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>370+200n</m></cell>
+<cell><m>370+125n</m></cell>
 <cell><m>=</m></cell>
-<cell><m>1170</m></cell>
+<cell><m>995</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
 <cell><m>\wonder{=}</m></cell>
-<cell><m>1170</m></cell>
+<cell><m>995</m></cell>
 </row>
 </tabular>
 <p><fillin name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>1770</m>
+        <m>870</m>
       </p>
     </answer>
     <answer>

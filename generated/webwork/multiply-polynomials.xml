@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-multiply-polynomials" assembly-id="multiply-polynomials">
-  <static seed="2679">
-    <statement><p><m>{4\mathopen{}\left(r+3\right)\mathopen{}\left(r+7\right)}</m></p>
+  <static seed="2543">
+    <statement><p><m>{2\mathopen{}\left(r+9\right)\mathopen{}\left(r+5\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>4r^{2}+40r+84</m>
+        <m>2r^{2}+28r+90</m>
       </p>
     </answer>
-    <solution><p>We could first distribute <m>4</m> into <m>{r+3}</m> to get <m>{4r+12}\text{,}</m> and then multiply <m>{4r+12}</m> and <m>{r+7}\text{:}</m></p>
+    <solution><p>We could first distribute <m>2</m> into <m>{r+9}</m> to get <m>{2r+18}\text{,}</m> and then multiply <m>{2r+18}</m> and <m>{r+5}\text{:}</m></p>
 <p><me>\begin{aligned}
-{4\mathopen{}\left(r+3\right)\mathopen{}\left(r+7\right)}\amp=({4r+12})({r+7})\\
-\amp={4r^{2}+40r+84}
+{2\mathopen{}\left(r+9\right)\mathopen{}\left(r+5\right)}\amp=({2r+18})({r+5})\\
+\amp={2r^{2}+28r+90}
 \end{aligned}</me></p>
-<p>We could also first multiply <m>{r+3}</m> and <m>{r+7}</m> to get <m>{r^{2}+10r+21}\text{,}</m> and then distribute <m>4</m> into <m>{r^{2}+10r+21}\text{:}</m></p>
+<p>We could also first multiply <m>{r+9}</m> and <m>{r+5}</m> to get <m>{r^{2}+14r+45}\text{,}</m> and then distribute <m>2</m> into <m>{r^{2}+14r+45}\text{:}</m></p>
 <p><me>\begin{aligned}
-{4\mathopen{}\left(r+3\right)\mathopen{}\left(r+7\right)}\amp=4({r^{2}+10r+21})\\
-\amp={4r^{2}+40r+84}
+{2\mathopen{}\left(r+9\right)\mathopen{}\left(r+5\right)}\amp=2({r^{2}+14r+45})\\
+\amp={2r^{2}+28r+90}
 \end{aligned}</me></p>
 </solution>
   </static>

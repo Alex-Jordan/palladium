@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-quadratic-functions-review-linear-function-notation" assembly-id="quadratic-functions-review-linear-function-notation">
+  <static seed="7">
+    <statement><p>Let <m>N</m> be the function defined by <m>N(x)=6x-7\text{.}</m> Find <m>N(-3)\text{.}</m></p>
+<p><fillin characters="5" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>-25</m>
+      </p>
+    </answer>
+    <solution><p><m>N(\substitute{-3})=6(\substitute{-3})-7=-18-7=-25</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/1_1_5_2.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.5.2)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+$ans = Compute("-25");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Let [`N`] be the function defined by [`N(x)=6x-7\text{.}`] Find [`N(-3)\text{.}`]
+
+[_]{$ans}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}N(\substitute{-3})=6(\substitute{-3})-7=-18-7=-25`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

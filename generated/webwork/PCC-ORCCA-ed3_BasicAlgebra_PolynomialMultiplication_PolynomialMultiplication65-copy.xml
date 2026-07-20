@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication65-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication65-copy">
-  <static seed="2660">
-    <statement><p><m>\left({3r-10}\right)\left({2r-7}\right)</m></p>
+  <static seed="2524">
+    <statement><p><m>\left({5y-10}\right)\left({6y-3}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>6r^{2}-41r+70</m>
+        <m>30y^{2}-75y+30</m>
       </p>
     </answer>
     <solution><p>We use the FOIL technique- <alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast</p>
 <p><m>\begin{aligned}
-              \left({3r-10}\right)({2r-7})\amp ={6r^{2}-21r-20r+70}\\
-                                \amp ={6r^{2}-41r+70}
+              \left({5y-10}\right)({6y-3})\amp ={30y^{2}-15y-60y+30}\\
+                                \amp ={30y^{2}-75y+30}
       \end{aligned}</m></p>
 </solution>
   </static>

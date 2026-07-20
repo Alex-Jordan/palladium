@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-compare-add-multiply-powers-coeffs" assembly-id="exponent-compare-add-multiply-powers-coeffs">
-  <static seed="2612">
+  <static seed="2476">
     <introduction/>
     <task>
-      <statement><p><m>{7e^{2}+5e^{2}}</m></p>
+      <statement><p><m>{3d^{4}+4d^{4}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>12e^{2}</m>
+          <m>7d^{4}</m>
         </p>
       </answer>
     </task>
     <task>
-      <statement><p><m>\left(7e^2\right)\cdot\left(5e^2\right)</m></p>
+      <statement><p><m>\left(3d^4\right)\cdot\left(4d^4\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>35e^{4}</m>
+          <m>12d^{8}</m>
         </p>
       </answer>
     </task>

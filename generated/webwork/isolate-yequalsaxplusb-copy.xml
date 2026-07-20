@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-isolate-yequalsaxplusb-copy" assembly-id="isolate-yequalsaxplusb-copy">
-  <static seed="1562">
-    <statement><p><m>x</m> in <m>{y}={cx+Y}</m></p>
+  <static seed="1426">
+    <statement><p><m>x</m> in <m>{y}={qx+l}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>x = \frac{y-Y}{c}</m>
+        <m>x = \frac{y-l}{q}</m>
       </p>
     </answer>
   </static>

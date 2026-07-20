@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-list-terms-distinct-powers-copy" assembly-id="list-terms-distinct-powers-copy">
-  <static seed="2267">
-    <statement><p><m>{-{\frac{1}{5}}t^{8}+{\frac{9}{10}}t^{9}-71t^{2}}</m></p>
+  <static seed="2131">
+    <statement><p><m>{-{\frac{4}{7}}x-x^{7}-{\frac{7}{4}}+2.7x^{4}}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-{\frac{1}{5}}t^{8}, {\frac{9}{10}}t^{9}, -71t^{2}</m>
+        <m>-{\frac{4}{7}}x, -x^{7}, -{\frac{7}{4}}, 2.7x^{4}</m>
       </p>
     </answer>
   </static>

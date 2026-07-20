@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator50" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator50">
-  <static seed="1926">
-    <statement><p><m>\displaystyle{ \frac{15}{\sqrt{10}} }</m></p>
+  <static seed="1790">
+    <statement><p><m>\displaystyle{ \frac{2}{\sqrt{10}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{3\sqrt{10}}{2}</m>
+        <m>\frac{\sqrt{10}}{5}</m>
       </p>
     </answer>
     <solution><p>We need to legally remove the radical <m>\sqrt{10}</m> from the denominator.</p>
@@ -16,10 +16,10 @@
 <p><m>\displaystyle{ \sqrt{10} \cdot \sqrt{10} = 10 }</m></p>
 <p>We will multiply both the numerator and denominator by <m>\sqrt{10}</m>, and we have:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   \frac{15}{\sqrt{10}} \amp = \frac{15}{\sqrt{10}} \cdot\frac{\sqrt{10}}{\sqrt{10}}\\
-      \amp = \frac{15 \cdot \sqrt{10}}{\sqrt{10} \cdot \sqrt{10}} \\
-      \amp = \frac{15 \sqrt{10}}{10} \amp \text{We can divide both the numerator and denominator by 5.}\\
-      \amp = \frac{3 \sqrt{10}}{2}
+   \frac{2}{\sqrt{10}} \amp = \frac{2}{\sqrt{10}} \cdot\frac{\sqrt{10}}{\sqrt{10}}\\
+      \amp = \frac{2 \cdot \sqrt{10}}{\sqrt{10} \cdot \sqrt{10}} \\
+      \amp = \frac{2 \sqrt{10}}{10} \amp \text{We can divide both the numerator and denominator by 2.}\\
+      \amp = \frac{ \sqrt{10}}{5}
 \end{aligned}
     }</m></p>
 </solution>

@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateOtherRoots30-copy3" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateOtherRoots30-copy3">
-  <static seed="1985">
-    <statement><p><m>\displaystyle{\sqrt[3]{16^{2}}}</m></p>
+  <static seed="1849">
+    <statement><p><m>\displaystyle{\sqrt[5]{17^{4}}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>6.3496</m>
+        <m>9.64626</m>
       </p>
     </answer>
     <solution><p>Radicals can be converted into fractional exponents this way:</p>
 <p><m>\displaystyle{ \sqrt[n]{x^{m}} = (x^{m})^{\frac{1}{n}} = x^{\frac{m}{n}} }</m></p>
 <p>For this problem, we have:</p>
-<p><m>\displaystyle{ \sqrt[3]{16^{2}} = (16^{2})^{\frac{1}{3}} = 16^{\frac{2}{3}} }</m></p>
-<p>Next, enter <m>16</m>^<m>(2/3)</m> into a graphing calculator, and we get the answer <m>6.3496042078728</m>. Round it to two decimal places, we have:</p>
-<p><m>\displaystyle{ \sqrt[3]{16^{2}} \approx 6.35 }</m></p>
+<p><m>\displaystyle{ \sqrt[5]{17^{4}} = (17^{4})^{\frac{1}{5}} = 17^{\frac{4}{5}} }</m></p>
+<p>Next, enter <m>17</m>^<m>(4/5)</m> into a graphing calculator, and we get the answer <m>9.64626385641686</m>. Round it to two decimal places, we have:</p>
+<p><m>\displaystyle{ \sqrt[5]{17^{4}} \approx 9.65 }</m></p>
 <p>Remember that, in TI-89, we need to press Diamond Enter to get decimal answers; and in Casio ClassPad 330, we have to tap the Fraction to Decimal icon.</p>
 </solution>
   </static>

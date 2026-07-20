@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-addition-and-subtraction-of-rational-expressions-7-3-37" assembly-id="section-addition-and-subtraction-of-rational-expressions-7-3-37">
-  <static seed="1412" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions140.pg">
+  <static seed="1276" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions140.pg">
     <statement><p>Add or subtract the rational expressions to a single rational expression and then simplify. If applicable, state the restricted domain.</p>
-<p><m>\displaystyle{{-\frac{1}{y+5}+4} =}</m> <fillin characters="40" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{1}{y-3}+3} =}</m> <fillin characters="40" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{4y+19}{y+5}, \left(-\infty ,\infty \right)</m>
+        <m>\frac{3y-8}{y-3}, \left(-\infty ,\infty \right)</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   {-\frac{1}{y+5}+4} 
-      \amp = {-\frac{1}{y+5}} +\frac{4}{1} \\
-      \amp = {-\frac{1}{y+5}} +\frac{4}{1} \cdot \frac{(y+5)}{(y+5)} \\
-      \amp = {-\frac{1}{y+5}+\frac{4\mathopen{}\left(y+5\right)}{y+5}} \\
-      \amp = {\frac{-1+4\mathopen{}\left(y+5\right)}{y+5}} \\
-      \amp = {\frac{-1+4y+20}{y+5}} \\
-      \amp = {\frac{4y+19}{y+5}, \left(-\infty ,\infty \right)}
+   {\frac{1}{y-3}+3} 
+      \amp = {\frac{1}{y-3}} +\frac{3}{1} \\
+      \amp = {\frac{1}{y-3}} +\frac{3}{1} \cdot \frac{(y - 3)}{(y - 3)} \\
+      \amp = {\frac{1}{y-3}+\frac{3\mathopen{}\left(y-3\right)}{y-3}} \\
+      \amp = {\frac{1+3\mathopen{}\left(y-3\right)}{y-3}} \\
+      \amp = {\frac{1+3y-9}{y-3}} \\
+      \amp = {\frac{3y-8}{y-3}, \left(-\infty ,\infty \right)}
 \end{aligned}
     }</m></p>
 </solution>

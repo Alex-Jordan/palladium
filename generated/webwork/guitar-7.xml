@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-guitar-7" assembly-id="guitar-7">
-  <static seed="2020">
+  <static seed="1884">
     <statement><p>By moving from one fret to another that is seven frets away, the frequency of the note changes by a factor of <m>2^{7/12}\text{.}</m> Use a calculator to find this number as a decimal.</p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 <p>This decimal shows you that <m>2^{7/12}</m> is very close to a <lq/>nice<rq/> fraction with a small denominator. Two notes with this frequency ratio form a <lq/>perfect fifth<rq/> in music. What is that fraction?</p>

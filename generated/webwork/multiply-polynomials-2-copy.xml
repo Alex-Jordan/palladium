@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-multiply-polynomials-2-copy" assembly-id="multiply-polynomials-2-copy">
-  <static seed="2682">
-    <statement><p><m>{-4\mathopen{}\left(t+8\right)\mathopen{}\left(t+10\right)}</m></p>
+  <static seed="2546">
+    <statement><p><m>{-5\mathopen{}\left(t-7\right)\mathopen{}\left(t+4\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-4t^{2}-72t-320</m>
+        <m>-5t^{2}+15t+140</m>
       </p>
     </answer>
-    <solution><p>We could first distribute <m>-4</m> into <m>{t+8}</m> to get <m>{-4t-32}\text{,}</m> and then multiply <m>{-4t-32}</m> and <m>{t+10}\text{:}</m></p>
+    <solution><p>We could first distribute <m>-5</m> into <m>{t-7}</m> to get <m>{-5t+35}\text{,}</m> and then multiply <m>{-5t+35}</m> and <m>{t+4}\text{:}</m></p>
 <p><me>\begin{aligned}
-{-4\mathopen{}\left(t+8\right)\mathopen{}\left(t+10\right)}\amp=({-4t-32})({t+10})\\
-\amp={-4t^{2}-72t-320}
+{-5\mathopen{}\left(t-7\right)\mathopen{}\left(t+4\right)}\amp=({-5t+35})({t+4})\\
+\amp={-5t^{2}+15t+140}
 \end{aligned}</me></p>
-<p>We could also first multiply <m>{t+8}</m> and <m>{t+10}</m> to get <m>{t^{2}+18t+80}\text{,}</m> and then distribute <m>-4</m> into <m>{t^{2}+18t+80}\text{:}</m></p>
+<p>We could also first multiply <m>{t-7}</m> and <m>{t+4}</m> to get <m>{t^{2}-3t-28}\text{,}</m> and then distribute <m>-5</m> into <m>{t^{2}-3t-28}\text{:}</m></p>
 <p><me>\begin{aligned}
-{-4\mathopen{}\left(t+8\right)\mathopen{}\left(t+10\right)}\amp={-4\mathopen{}\left(t^{2}+18t+80\right)}\\
-\amp={-4t^{2}-72t-320}
+{-5\mathopen{}\left(t-7\right)\mathopen{}\left(t+4\right)}\amp={-5\mathopen{}\left(t^{2}-3t-28\right)}\\
+\amp={-5t^{2}+15t+140}
 \end{aligned}</me></p>
 </solution>
   </static>

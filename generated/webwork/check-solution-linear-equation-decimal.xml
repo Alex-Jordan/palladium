@@ -1,34 +1,34 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-solution-linear-equation-decimal" assembly-id="check-solution-linear-equation-decimal">
-  <static seed="2443">
-    <statement><p>Is <m>{0.6}</m> a solution to <m>{3x-5}={-2.9}\text{?}</m></p>
+  <static seed="2307">
+    <statement><p>Is <m>{-0.9}</m> a solution to <m>{6x+7.4}={2}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>3x-5</m></cell>
+<cell><m>6x+7.4</m></cell>
 <cell><m>=</m></cell>
-<cell><m>-2.9</m></cell>
+<cell><m>2</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
 <cell><m>\wonder{=}</m></cell>
-<cell><m>-2.9</m></cell>
+<cell><m>2</m></cell>
 </row>
 </tabular>
 <p><fillin name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>-3.2</m>
+        <m>2</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\text{No, it is not a solution.}</m>
+        <m>\text{Yes, it is a solution.}</m>
       </p>
     </answer>
   </static>

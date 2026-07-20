@@ -1,29 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-2-8" assembly-id="section-completing-the-square-8-2-8">
-  <static seed="1171">
+  <static seed="704">
     <statement><p>Solve the equation by completing the square.</p>
-<p><m>{r^{2}+14r+48}={0}</m></p>
+<p><m>{t^{2}+8t+15}={0}</m></p>
 <p><fillin characters="25" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{-8,-6\right\}</m>
+        <m>\left\{-5,-3\right\}</m>
       </p>
     </answer>
-    <solution><p>Move the constant term to the other side to get <m>{r^{2}+14r} = {-48}\text{.}</m> Then compute <m>\left(\frac{14}{2}\right)^2={49}\text{.}</m> Then</p>
+    <solution><p>Move the constant term to the other side to get <m>{t^{2}+8t} = {-15}\text{.}</m> Then compute <m>\left(\frac{8}{2}\right)^2={16}\text{.}</m> Then</p>
 <p><me>\begin{aligned}
-{r^{2}+14r}+{49}\amp = {-48}+{49}\\
-{r^{2}+14r}+{49}\amp = {1}\\
-\left({r+7}\right)^2\amp = {1}
+{t^{2}+8t}+{16}\amp = {-15}+{16}\\
+{t^{2}+8t}+{16}\amp = {1}\\
+\left({t+4}\right)^2\amp = {1}
 \end{aligned}</me></p>
 <p><me>\begin{aligned}
-{r+7} \amp = -{1}\amp\amp\text{or}\amp {r+7} \amp = {1}\\
-r \amp = -8\amp\amp\text{or}\amp r \amp = -6
+{t+4} \amp = -{1}\amp\amp\text{or}\amp {t+4} \amp = {1}\\
+t \amp = -5\amp\amp\text{or}\amp t \amp = -3
 \end{aligned}</me></p>
-<p>So the solution set is <m>{\left\{-8,-6\right\}}\text{.}</m></p>
+<p>So the solution set is <m>{\left\{-5,-3\right\}}\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_8_6_19.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_9_6_19.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -40,7 +40,7 @@ r \amp = -8\amp\amp\text{or}\amp r \amp = -6
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.8.6.19)
+## Problem1(1.9.6.19)
 ## Author()
 ## Institution()
 ## Language(en-US)

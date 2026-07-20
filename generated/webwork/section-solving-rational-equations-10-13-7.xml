@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-13-7" assembly-id="section-solving-rational-equations-10-13-7">
-  <static seed="1622">
+  <static seed="1486">
     <statement><p>Use technology to solve the equation.</p>
 <p><me>\frac{1}{x^2-1}-\frac{2}{x-4}=\frac{3}{x-2}
                 \text{.}</me></p>

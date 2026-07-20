@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-special-with-simplification2" assembly-id="solve-special-with-simplification2">
-  <static seed="1521">
-    <statement><p><m>{11-2\mathopen{}\left(7-3H\right)}={11H-\left(1+5H\right)}</m></p>
+  <static seed="1385">
+    <statement><p><m>{6-3\mathopen{}\left(4+3B\right)}={-13B-\left(8-4B\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>

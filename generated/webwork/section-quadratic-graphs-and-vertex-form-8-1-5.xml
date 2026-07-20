@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-quadratic-graphs-and-vertex-form-8-1-5" assembly-id="section-quadratic-graphs-and-vertex-form-8-1-5">
-  <static seed="1073" source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication75.pg">
+  <static seed="606" source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication75.pg">
     <statement><p>Multiply the polynomials.</p>
-<p><m>\left({2t-10}\right)\left({t+9}\right)=</m><fillin characters="32" name="AnSwEr0001"/></p>
+<p><m>\left({5x-6}\right)\left({x+3}\right)=</m><fillin characters="32" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>2t^{2}+8t-90</m>
+        <m>5x^{2}+9x-18</m>
       </p>
     </answer>
     <solution><p>We use the FOIL technique: <alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast. <me>\begin{aligned}
-              \left({2t-10}\right)({t+9})\amp ={2t^{2}+18t-10t-90}\\
-                                \amp ={2t^{2}+8t-90}
+              \left({5x-6}\right)({x+3})\amp ={5x^{2}+15x-6x-18}\\
+                                \amp ={5x^{2}+9x-18}
       \end{aligned}</me></p>
 </solution>
   </static>

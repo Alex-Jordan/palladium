@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-standard-linear-equation-for-y" assembly-id="solve-standard-linear-equation-for-y">
-  <static seed="1565">
-    <statement><p><m>{18x-3y}={-3}</m></p>
+  <static seed="1429">
+    <statement><p><m>{12x-2y}={18}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>y = 6x+1</m>
+        <m>y = 6x-9</m>
       </p>
     </answer>
     <solution><p><me>\begin{aligned}
-{18x-3y} \amp = {-3}\\
-{18x-3y-18x} \amp = {-3-18x}\\
-{-3y} \amp = {-3-18x}\\
-{\frac{-3y}{-3}} \amp = {\frac{-3-18x}{-3}}\\
-{y} \amp = {6x+1}
+{12x-2y} \amp = {18}\\
+{12x-2y-12x} \amp = {18-12x}\\
+{-2y} \amp = {18-12x}\\
+{\frac{-2y}{-2}} \amp = {\frac{18-12x}{-2}}\\
+{y} \amp = {6x-9}
 \end{aligned}</me></p>
 </solution>
   </static>

@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers30" assembly-id="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers30">
-  <static seed="1796">
+  <static seed="1660">
     <introduction/>
     <task>
-      <statement><p><m>\displaystyle{ \sqrt{{{\frac{121}{64}}}} }</m></p>
+      <statement><p><m>\displaystyle{ \sqrt{{{\frac{100}{81}}}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>{\frac{11}{8}}</m>
+          <m>{\frac{10}{9}}</m>
         </p>
       </answer>
       <solution><p>For finding the square root of a fraction, we may find the square roots of the numerator and denominator separately.
-Just knowing the first few square numbers, <m>\sqrt{{{\frac{121}{64}}}} = {{\frac{11}{8}}}</m>.</p>
+Just knowing the first few square numbers, <m>\sqrt{{{\frac{100}{81}}}} = {{\frac{10}{9}}}</m>.</p>
 </solution>
     </task>
     <task>
-      <statement><p><m>\displaystyle{ \sqrt{{-{\frac{36}{25}}}} }</m></p>
+      <statement><p><m>\displaystyle{ \sqrt{{-{\frac{4}{9}}}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>

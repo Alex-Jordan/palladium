@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-indentify-abc-special-coeff-copy" assembly-id="indentify-abc-special-coeff-copy">
+  <static seed="746">
+    <statement><p><m>f(x)={0.75x^{2}+{\frac{2}{5}}x+\sqrt{7}}</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>a = 0.75, b = {\frac{2}{5}}, c = 2.64575</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_2_8_11.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg copied-from="indentify-abc-special-coeff"><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.2.8.12)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "parserAssignment.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Fraction")->noreduce('(-x)-y');
+Context()->flags->set(reduceConstantFunctions => 0);
+@a = (
+  Fraction(random_coprime([-9..-1,1..9], [2..9])),
+  random(1,99)/100,
+  Formula("sqrt(" . list_random(2,3,5,6,7,10) . ")")
+);
+($a,$b,$c) = random_subset(3,@a);
+$f = Formula("$a x^2 + $b x + $c");
+Context("Fraction")->variables->are(map {$_ =>'Real'} ('a'..'c'));
+parser::Assignment->Allow;
+$answer = List(Compute("a = $a"), Compute("b = $b"), Compute("c = $c"));
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Identify [`a\text{,}`] [`b\text{,}`] and [`c`] from the quadratic function formula.
+
+[`f(x)=[$f]`]
+
+[@KeyboardInstructions('For example, enter [`a=1,b=2,c=3\text{.}`]')@]**
+
+[_]{$answer}{16}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

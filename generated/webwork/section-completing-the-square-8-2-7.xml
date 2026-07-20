@@ -1,30 +1,30 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-2-7" assembly-id="section-completing-the-square-8-2-7">
-  <static seed="1170">
+  <static seed="703">
     <statement><p>Solve the equation by completing the square.</p>
-<p><m>{r^{2}-4r}={-1}</m></p>
+<p><m>{t^{2}-10t}={4}</m></p>
 <p><fillin characters="25" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{2-\sqrt{3},2+\sqrt{3}\right\}</m>
+        <m>\left\{5-\sqrt{29},5+\sqrt{29}\right\}</m>
       </p>
     </answer>
-    <solution><p>Compute <m>\left(\frac{-4}{2}\right)^2={4}\text{.}</m> Then</p>
+    <solution><p>Compute <m>\left(\frac{-10}{2}\right)^2={25}\text{.}</m> Then</p>
 <p><me>\begin{aligned}
-{r^{2}-4r}+{4}\amp = {-1}+{4}\\
-{r^{2}-4r}+{4}\amp = {3}\\
-\left({r-2}\right)^2\amp = {3}
+{t^{2}-10t}+{25}\amp = {4}+{25}\\
+{t^{2}-10t}+{25}\amp = {29}\\
+\left({t-5}\right)^2\amp = {29}
 \end{aligned}</me></p>
 <p><me>\begin{aligned}
-{r-2} \amp = -{\sqrt{3}}\amp\amp\text{or}\amp {r-2} \amp = {\sqrt{3}}\\
-{r} \amp = {2}-{\sqrt{3}}\amp\amp\text{or}\amp {r} \amp = {2}+{\sqrt{3}}\\
-r \amp = {2-\sqrt{3}}\amp\amp\text{or}\amp r \amp = {2+\sqrt{3}}
+{t-5} \amp = -{\sqrt{29}}\amp\amp\text{or}\amp {t-5} \amp = {\sqrt{29}}\\
+{t} \amp = {5}-{\sqrt{29}}\amp\amp\text{or}\amp {t} \amp = {5}+{\sqrt{29}}\\
+t \amp = {5-\sqrt{29}}\amp\amp\text{or}\amp t \amp = {5+\sqrt{29}}
 \end{aligned}</me></p>
-<p>So the solution set is <m>{\left\{2-\sqrt{3},2+\sqrt{3}\right\}}\text{.}</m></p>
+<p>So the solution set is <m>{\left\{5-\sqrt{29},5+\sqrt{29}\right\}}\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_8_6_17.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_9_6_17.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg copied-from="section-completing-the-square-8-2-6"><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -41,7 +41,7 @@ r \amp = {2-\sqrt{3}}\amp\amp\text{or}\amp r \amp = {2+\sqrt{3}}
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.8.6.18)
+## Problem1(1.9.6.18)
 ## Author()
 ## Institution()
 ## Language(en-US)

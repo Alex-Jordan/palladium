@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_FOILradical2" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_FOILradical2">
-  <static seed="1868">
-    <statement><p><m>\displaystyle{\left({\sqrt{13}} + {\sqrt{11}}\right)\left({\sqrt{13}} - {\sqrt{11}}\right) }</m></p>
+  <static seed="1732">
+    <statement><p><m>\displaystyle{\left({\sqrt{11}} + {\sqrt{13}}\right)\left({\sqrt{11}} - {\sqrt{13}}\right) }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>2</m>
+        <m>-2</m>
       </p>
     </answer>
     <solution><p>Use the FOIL method to multiply these binomial expressions together, or notice
@@ -14,10 +14,10 @@ that we have the difference of squares formula:</p>
 <p><m>\displaystyle{ (A+B)(A-B)=A^{2}-B^{2} }</m></p>
 <p>We have:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-    ({\sqrt{13}} + {\sqrt{11}})({\sqrt{13}} - {\sqrt{11}}) 
-               \amp = \left({\sqrt{13}}\right)^2 - \left({\sqrt{11}}\right)^2 \\
-               \amp = 13 - 11 \\
-               \amp = {2}
+    ({\sqrt{11}} + {\sqrt{13}})({\sqrt{11}} - {\sqrt{13}}) 
+               \amp = \left({\sqrt{11}}\right)^2 - \left({\sqrt{13}}\right)^2 \\
+               \amp = 11 - 13 \\
+               \amp = {-2}
 \end{aligned}
     }</m></p>
 </solution>

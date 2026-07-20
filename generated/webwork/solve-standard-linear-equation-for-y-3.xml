@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-standard-linear-equation-for-y-3" assembly-id="solve-standard-linear-equation-for-y-3">
-  <static seed="1569">
-    <statement><p><m>{-9x+7y}={-2}</m></p>
+  <static seed="1433">
+    <statement><p><m>{-3x+7y}={-11}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>y = {\frac{9}{7}}x+-{\frac{2}{7}}</m>
+        <m>y = {\frac{3}{7}}x+-{\frac{11}{7}}</m>
       </p>
     </answer>
     <solution><p><me>\begin{aligned}
-{-9x+7y} \amp = {-2}\\
-{-9x+7y+9x} \amp = {-2+9x}\\
-{7y} \amp = {-2+9x}\\
-{\frac{7y}{7}} \amp = {\frac{-2+9x}{7}}\\
-{y} \amp = {{\frac{9}{7}}x - {\frac{2}{7}}}
+{-3x+7y} \amp = {-11}\\
+{-3x+7y+3x} \amp = {-11+3x}\\
+{7y} \amp = {-11+3x}\\
+{\frac{7y}{7}} \amp = {\frac{-11+3x}{7}}\\
+{y} \amp = {{\frac{3}{7}}x - {\frac{11}{7}}}
 \end{aligned}</me></p>
 </solution>
   </static>

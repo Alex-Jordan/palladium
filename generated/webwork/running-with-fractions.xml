@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-running-with-fractions" assembly-id="running-with-fractions">
-  <static seed="1641">
-    <statement><p>Mateo is running on a track. We start the clock as he passes the 16 m mark, and he is running 31 m every 6 s. How long does it take for Mateo to reach the 60 m mark?</p>
+  <static seed="1505">
+    <statement><p>Leroy is running on a track. We start the clock as he passes the 19 m mark, and he is running 31 m every 6 s. How long does it take for Leroy to reach the 85 m mark?</p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>8.51613\ {\rm s}</m>
+        <m>12.7742\ {\rm s}</m>
       </p>
     </answer>
   </static>

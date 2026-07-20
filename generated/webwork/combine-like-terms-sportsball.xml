@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-combine-like-terms-sportsball" assembly-id="combine-like-terms-sportsball">
-  <static seed="2306">
+  <static seed="2170">
     <introduction><p>Sportsball is a game similar to basketball. There are three ways for a team to score points: a <lq/>long field goal<rq/> earns <m>L</m> points; a <lq/>short field goal<rq/> earns <m>S</m> points; and a <lq/>penalty shot<rq/> earns <m>P</m> points.</p>
-<p>In the first half of one game, a team scored <m>8</m> penalty shots, <m>18</m> long field goals, and <m>22</m> short field goals. So they earned <m>{8P+18L+22S}</m> points.</p>
+<p>In the first half of one game, a team scored <m>15</m> penalty shots, <m>31</m> long field goals, and <m>39</m> short field goals. So they earned <m>{15P+31L+39S}</m> points.</p>
 </introduction>
     <task>
-      <statement><p>In the second half of the game, that same team scored <m>11</m> penalty shots, <m>21</m> long field goals, and <m>43</m> short field goals. How many points did they earn during the second half?</p>
+      <statement><p>In the second half of the game, that same team scored <m>23</m> penalty shots, <m>35</m> long field goals, and <m>45</m> short field goals. How many points did they earn during the second half?</p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>11P+21L+43S</m>
+          <m>23P+35L+45S</m>
         </p>
       </answer>
     </task>
@@ -20,7 +20,7 @@
 </statement>
       <answer>
         <p>
-          <m>19P+39L+65S</m>
+          <m>38P+66L+84S</m>
         </p>
       </answer>
     </task>

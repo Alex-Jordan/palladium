@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-multiply-fractions-one-integer-small-no-reduction" assembly-id="multiply-fractions-one-integer-small-no-reduction">
-  <static seed="2079">
-    <statement><p><m>\displaystyle {3}\cdot {{\frac{7}{4}}}</m></p>
+  <static seed="1943">
+    <statement><p><m>\displaystyle {3}\cdot {{\frac{2}{7}}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{21}{4}}</m>
+        <m>{\frac{6}{7}}</m>
       </p>
     </answer>
   </static>

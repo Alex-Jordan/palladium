@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-4-9" assembly-id="section-completing-the-square-8-4-9">
-  <static seed="1194" source="Contrib/PCC/BasicAlgebra/QuadraticFunctions/QuadraticDomainRange40.pg">
+  <static seed="727" source="Contrib/PCC/BasicAlgebra/QuadraticFunctions/QuadraticDomainRange40.pg">
     <statement><p>Complete the square to convert the quadratic function from standard form to vertex form, and use the result to find the function<rsq/>s domain and range.</p>
-<p><m>f(x) = {-4x^{2}-48x-154}</m></p>
+<p><m>f(x) = {-4x^{2}-24x-29}</m></p>
 <p>The domain of <m>f</m> is <fillin characters="14" name="AnSwEr0001"/></p>
 <p>The range of <m>f</m> is <fillin characters="14" name="AnSwEr0002"/></p>
 </statement>
@@ -13,34 +13,34 @@
     </answer>
     <answer>
       <p>
-        <m>\left(-\infty ,-10\right]</m>
+        <m>\left(-\infty ,7\right]</m>
       </p>
     </answer>
     <solution><p>We have to factor out the leading coefficient <m>-4</m> first:</p>
 <p><m>\displaystyle{\begin{aligned}
-   f(x) \amp = {-4x^{2}-48x-154} \\
-         \amp = -4({x^{2}+12x}) - 154 \\
+   f(x) \amp = {-4x^{2}-24x-29} \\
+         \amp = -4({x^{2}+6x}) - 29 \\
 \end{aligned}
     }</m></p>
 <p>One way to change a quadratic function from standard form to vertex form is to use the skill of <lq/>completing the square.<rq/></p>
 <p>To use the skill of <lq/>completing the square,<rq/> we need to use the perfect square formula:</p>
 <p><m>\displaystyle{ x^2+2ax+a^2 = (x+a)^2 }</m></p>
-<p>Step 1: By the formula <m>x^2+2ax+a^2 = (x+a)^2</m>, we have <m>x^2+12x+...= (x+6)^{2}</m>.</p>
-<p>Step 2: By the formula <m>x^2+2ax+a^2 = (x+a)^2</m>, we have <m>x^2+12x+36=(x+6)^{2}</m>.</p>
+<p>Step 1: By the formula <m>x^2+2ax+a^2 = (x+a)^2</m>, we have <m>x^2+6x+...= (x+3)^{2}</m>.</p>
+<p>Step 2: By the formula <m>x^2+2ax+a^2 = (x+a)^2</m>, we have <m>x^2+6x+9=(x+3)^{2}</m>.</p>
 <p>The full solution is:</p>
 <p><m>\displaystyle{\begin{aligned}
-   f(x) \amp = {-4x^{2}-48x-154} \\
-         \amp = -4({x^{2}+12x}) - 154 \\
-         \amp = -4(x^{2}+12x+36 -36)  - 154 \\
-         \amp = -4[(x+6)^{2} -36]  - 154 \\
-         \amp = -4(x+6)^{2}  + 144  - 154 \\
-         \amp = -4(x+6)^{2}  - 10 \\
+   f(x) \amp = {-4x^{2}-24x-29} \\
+         \amp = -4({x^{2}+6x}) - 29 \\
+         \amp = -4(x^{2}+6x+9 -9)  - 29 \\
+         \amp = -4[(x+3)^{2} -9]  - 29 \\
+         \amp = -4(x+3)^{2}  + 36  - 29 \\
+         \amp = -4(x+3)^{2} +7 \\
 \end{aligned}
     }</m></p>
-<p>Once we change the function<rsq/>s equation to vertex form, we can see the parabola<rsq/>s vertex is <m>{\left(-6,-10\right)}</m>. This parabola faces upward because its leading coefficient is positive.</p>
+<p>Once we change the function<rsq/>s equation to vertex form, we can see the parabola<rsq/>s vertex is <m>{\left(-3,7\right)}</m>. This parabola faces upward because its leading coefficient is positive.</p>
 <p>With this information, we can determine its domain and range:</p>
 <p>domain: <m>{\left(-\infty ,\infty \right)}</m></p>
-<p>range: <m>{\left(-\infty ,-10\right]}</m></p>
+<p>range: <m>{\left(-\infty ,7\right]}</m></p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/QuadraticFunctions/QuadraticDomainRange40.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

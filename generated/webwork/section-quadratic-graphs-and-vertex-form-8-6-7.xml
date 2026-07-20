@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-quadratic-graphs-and-vertex-form-8-6-7" assembly-id="section-quadratic-graphs-and-vertex-form-8-6-7">
-  <static seed="1111" source="Contrib/PCC/Math95/ParabolaVertex/ParabolaVertex4.pg">
-    <statement><p>Find the vertex of the graph of <m>y=-9.7\mathopen{}\left(x-7.2\right)^{2}+8.8</m>.</p>
+  <static seed="644" source="Contrib/PCC/Math95/ParabolaVertex/ParabolaVertex4.pg">
+    <statement><p>Find the vertex of the graph of <m>y=-3.9\mathopen{}\left(x+5.7\right)^{2}-5.1</m>.</p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left(7.2,8.8\right)</m>
+        <m>\left(-5.7,-5.1\right)</m>
       </p>
     </answer>
   </static>

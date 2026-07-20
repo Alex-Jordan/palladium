@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-set-builder-notation-to-graph-and-interval-notation-infinite-open" assembly-id="set-builder-notation-to-graph-and-interval-notation-infinite-open">
-  <static seed="2417">
-    <statement><p><m>{\{ x \mid x \lt  2 \}}</m></p>
+  <static seed="2281">
+    <statement><p><m>{\{ x \mid x \lt  1 \}}</m></p>
 <p><fillin name="AnSwEr0001"/></p>
 <p><fillin characters="12" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\text{interval}, \left(-\infty ,2\right)\right\}</m>
+        <m>\left\{\text{interval}, \left(-\infty ,1\right)\right\}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(-\infty ,2\right)</m>
+        <m>\left(-\infty ,1\right)</m>
       </p>
     </answer>
   </static>

@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-6-4" assembly-id="section-completing-the-square-8-6-4">
-  <static seed="1197" source="Contrib/PCC/Math95/ParabolaVertex/ParabolaVertex6.pg">
+  <static seed="730" source="Contrib/PCC/Math95/ParabolaVertex/ParabolaVertex6.pg">
     <statement><p>Find the maximum value of the function</p>
-<p><me>f(x)=10x-6x^{2}+6</me></p>
+<p><me>f(x)=-\left(9x^{2}+4x+8\right)</me></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{61}{6}}</m>
+        <m>-{\frac{68}{9}}</m>
       </p>
     </answer>
   </static>

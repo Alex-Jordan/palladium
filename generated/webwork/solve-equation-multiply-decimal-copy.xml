@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-equation-multiply-decimal-copy" assembly-id="solve-equation-multiply-decimal-copy">
-  <static seed="2552">
-    <statement><p><m>{9.1C}={6.6}</m></p>
+  <static seed="2416">
+    <statement><p><m>{1.7z}={-10.4}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{0.725275\right\}</m>
+        <m>\left\{-6.11765\right\}</m>
       </p>
     </answer>
   </static>

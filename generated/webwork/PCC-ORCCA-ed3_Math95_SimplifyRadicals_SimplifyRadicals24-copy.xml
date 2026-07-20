@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_SimplifyRadicals_SimplifyRadicals24-copy" assembly-id="PCC-ORCCA-ed3_Math95_SimplifyRadicals_SimplifyRadicals24-copy">
-  <static seed="1941">
-    <statement><p><m>\displaystyle{ \dfrac{9}{\sqrt{7}+9} }</m></p>
+  <static seed="1805">
+    <statement><p><m>\displaystyle{ \dfrac{8}{\sqrt{17}+8} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{81-9\sqrt{7}}{74}</m>
+        <m>\frac{64-8\sqrt{17}}{47}</m>
       </p>
     </answer>
     <solution><p>We will use the Difference of Squares formula:</p>
 <p><m>\displaystyle{ (a+b)(a-b) = a^2-b^2 }</m></p>
 <p>This will help us get rid of the radical in the denominator by multiplying with the conjugate:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \dfrac{9}{\sqrt{7}+9}
-                \amp = \dfrac{9}{\sqrt{7}+9}\cdot\dfrac{\sqrt{7}-9}{\sqrt{7}-9} \\
-                \amp = \dfrac{9\sqrt{7}-(9)(9)}{\left(\sqrt{7}\right)^2-(9)^2} \\
-                \amp = \dfrac{9\sqrt{7}-81}{7-81} \\
-                \amp = \dfrac{9\sqrt{7}-81}{-74} \\
+   \dfrac{8}{\sqrt{17}+8}
+                \amp = \dfrac{8}{\sqrt{17}+8}\cdot\dfrac{\sqrt{17}-8}{\sqrt{17}-8} \\
+                \amp = \dfrac{8\sqrt{17}-(8)(8)}{\left(\sqrt{17}\right)^2-(8)^2} \\
+                \amp = \dfrac{8\sqrt{17}-64}{17-64} \\
+                \amp = \dfrac{8\sqrt{17}-64}{-47} \\
 \end{aligned}
     }</m></p>
 </solution>

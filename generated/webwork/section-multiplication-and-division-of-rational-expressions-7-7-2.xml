@@ -1,31 +1,31 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-7-2" assembly-id="section-multiplication-and-division-of-rational-expressions-7-7-2">
-  <static seed="1312" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions10.pg">
+  <static seed="1176" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions10.pg">
     <statement><p>Select all correct equations:</p>
 <p><var form="checkboxes">
-<li>
-<p><m>-\frac{x}{y} = \frac{x}{-y}</m></p>
-</li>
-<li>
-<p><m>4 \cdot \frac{x}{y} = \frac{x}{4 y}</m></p>
-</li>
-<li>
-<p><m>4 \cdot \frac{x}{y} = \frac{4 x}{4 y}</m></p>
-</li>
 <li>
 <p><m>-\frac{x}{y} = \frac{-x}{-y}</m></p>
 </li>
 <li>
-<p><m>-\frac{x}{y} = \frac{-x}{y}</m></p>
+<p><m>3 \cdot \frac{x}{y} = \frac{3 x}{3 y}</m></p>
 </li>
 <li>
-<p><m>4 \cdot \frac{x}{y} = \frac{4 x}{y}</m></p>
+<p><m>3 \cdot \frac{x}{y} = \frac{x}{3 y}</m></p>
+</li>
+<li>
+<p><m>-\frac{x}{y} = \frac{x}{-y}</m></p>
+</li>
+<li>
+<p><m>3 \cdot \frac{x}{y} = \frac{3 x}{y}</m></p>
+</li>
+<li>
+<p><m>-\frac{x}{y} = \frac{-x}{y}</m></p>
 </li>
 </var></p>
 </statement>
-    <solution><p>The correct answer is AEF.</p>
+    <solution><p>The correct answer is DEF.</p>
 <p>Here is the correct way to do fraction multiplication:</p>
-<p><m>4 \cdot \frac{x}{y} = \frac{4}{1} \cdot \frac{x}{y} = \frac{4 x}{y}</m></p>
+<p><m>3 \cdot \frac{x}{y} = \frac{3}{1} \cdot \frac{x}{y} = \frac{3 x}{y}</m></p>
 <p>When a negative symbol is in front of a fraction, we can do:</p>
 <p><m>-\frac{x}{y} = \frac{-x}{y}</m> (correct)</p>
 <p><m>-\frac{x}{y} = \frac{x}{-y}</m> (correct)</p>

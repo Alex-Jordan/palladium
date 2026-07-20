@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-distributive-property-to-add-like-terms" assembly-id="distributive-property-to-add-like-terms">
-  <static seed="2309">
+  <static seed="2173">
     <introduction><p>Where possible, simplify the following expressions by combining like terms.</p>
 </introduction>
     <task>

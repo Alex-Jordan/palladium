@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-quotient-to-power-copy" assembly-id="exponent-quotient-to-power-copy">
-  <static seed="2597">
-    <statement><p><m>{\left(\frac{n^{5}}{2}\right)^{6}}</m></p>
+  <static seed="2461">
+    <statement><p><m>{\left(\frac{m^{7}}{2}\right)^{3}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{n^{0}}{64}</m>
+        <m>\frac{m^{0}}{8}</m>
       </p>
     </answer>
   </static>

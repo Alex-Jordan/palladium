@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-subtract-fractions-same-denom-some-reduction" assembly-id="subtract-fractions-same-denom-some-reduction">
-  <static seed="2113">
-    <statement><p><m>\displaystyle {{\frac{7}{2}}} - {{\frac{7}{2}}}</m></p>
+  <static seed="1977">
+    <statement><p><m>\displaystyle {{\frac{9}{2}}} - {{\frac{7}{2}}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>0</m>
+        <m>1</m>
       </p>
     </answer>
   </static>

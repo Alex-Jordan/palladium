@@ -1,0 +1,67 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.6.63)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextUnits.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+($r,$s) = num_sort(random_subset(2,2..12));
+$a = -6;
+$b = 6*($s - $r);
+$c = 6*$r*$s;
+Context("Units")->withUnitsFor("time");
+$answer = Compute("$s s");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+For a falling object on Mars, with height measured in feet and time measured in seconds, the curvature coefficient of its height function is (roughly) [`-6\text{.}`]
+
+An object on Mars is shot straight up from a height of [`[$c]`] feet with an initial speed of [`[$c]`] feet per second. How long will it take for the object to land?
+
+[_]{$answer}{16}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

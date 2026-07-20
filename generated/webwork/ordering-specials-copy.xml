@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-ordering-specials-copy" assembly-id="ordering-specials-copy">
-  <static seed="2406">
-    <statement><p><m>{\sqrt{5}}\quad{{\frac{7}{8}}}\quad{4}\quad{{\frac{8}{9}}}\quad{\pi }</m></p>
+  <static seed="2270">
+    <statement><p><m>{\frac{\pi }{3}}\quad{3.5}\quad{{\frac{3}{2}}}\quad{\sqrt{3}}\quad{{\frac{9}{4}}}</m></p>
 <p><fillin characters="30" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\pi &gt;{\frac{8}{9}}&gt;{\frac{7}{8}}&gt;\sqrt{5}&gt;4</m>
+        <m>\sqrt{3}&gt;\frac{\pi }{3}&gt;3.5&gt;{\frac{9}{4}}&gt;{\frac{3}{2}}</m>
       </p>
     </answer>
   </static>

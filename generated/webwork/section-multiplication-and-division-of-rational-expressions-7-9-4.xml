@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-9-4" assembly-id="section-multiplication-and-division-of-rational-expressions-7-9-4">
-  <static seed="1342" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions40.pg">
+  <static seed="1206" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions40.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{{\frac{4r^{5}x^{2}}{5r^{4}}} \cdot {\frac{25r^{4}x}{24x^{4}}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{6r^{5}t}{5r^{3}}} \cdot {\frac{25rt^{2}}{12t^{4}}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{5r^{5}}{6x}</m>
+        <m>\frac{5r^{3}}{2t}</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   {\frac{4r^{5}x^{2}}{5r^{4}}} \cdot {\frac{25r^{4}x}{24x^{4}}} \amp = \frac{{4r^{5}x^{2}} \cdot {25r^{4}x}}{{5r^{4}} \cdot {24x^{4}}} \\
-                                      \amp = \frac{4 \cdot 25 \cdot r^{9} \cdot x^{3}}{5 \cdot 24 \cdot r^4 \cdot x^4} \\
-                                      \amp = {\frac{5r^{5}}{6x}}
+   {\frac{6r^{5}t}{5r^{3}}} \cdot {\frac{25rt^{2}}{12t^{4}}} \amp = \frac{{6r^{5}t} \cdot {25rt^{2}}}{{5r^{3}} \cdot {12t^{4}}} \\
+                                      \amp = \frac{6 \cdot 25 \cdot r^{6} \cdot t^{3}}{5 \cdot 12 \cdot r^3 \cdot t^4} \\
+                                      \amp = {\frac{5r^{3}}{2t}}
 \end{aligned}
     }</m></p>
 </solution>

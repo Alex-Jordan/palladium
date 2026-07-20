@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot40-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot40-copy">
-  <static seed="1813">
-    <statement><p><m>\displaystyle{\sqrt{-{{\frac{81}{100}}}}}</m></p>
+  <static seed="1677">
+    <statement><p><m>\displaystyle{\sqrt{-{{\frac{64}{121}}}}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\text{not a real number}\hbox{ or }0.9i</m>
+        <m>\text{not a real number}\hbox{ or }0.727273i</m>
       </p>
     </answer>
     <solution><p>The square root of a negative number is <c>not a real number</c>.</p>

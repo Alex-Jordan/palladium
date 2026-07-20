@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-12-8" assembly-id="section-solving-rational-equations-10-12-8">
-  <static seed="1615" source="Contrib/PCC/BasicAlgebra/RationalLiteralEquations/LiteralEquation290.pg">
-    <statement><p>Solve this equation for <m>B</m>:</p>
-<p><m>\displaystyle{ \frac{1}{n} = \frac{8}{B+8} }</m></p>
+  <static seed="1479" source="Contrib/PCC/BasicAlgebra/RationalLiteralEquations/LiteralEquation290.pg">
+    <statement><p>Solve this equation for <m>p</m>:</p>
+<p><m>\displaystyle{ \frac{1}{m} = \frac{3}{p+9} }</m></p>
 <p><fillin characters="7" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>B = 8n-8</m>
+        <m>p = 3m-9</m>
       </p>
     </answer>
-    <solution><p>To solve this equation, we multiple both sides with the common denominator <m>{n\mathopen{}\left(B+8\right)}</m>:</p>
+    <solution><p>To solve this equation, we multiple both sides with the common denominator <m>{m\mathopen{}\left(p+9\right)}</m>:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \frac{1}{n} \amp = \frac{8}{B+8}   \\
-   \frac{1}{n} \cdot n(B+8) \amp = \frac{8}{B+8} \cdot n(B+8) \\
-   B+8 \amp = 8n \\
-   B \amp = 8n - 8
+   \frac{1}{m} \amp = \frac{3}{p+9}   \\
+   \frac{1}{m} \cdot m(p+9) \amp = \frac{3}{p+9} \cdot m(p+9) \\
+   p+9 \amp = 3m \\
+   p \amp = 3m - 9
 \end{aligned}
 }</m></p>
 </solution>

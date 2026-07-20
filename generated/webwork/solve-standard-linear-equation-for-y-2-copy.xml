@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-standard-linear-equation-for-y-2-copy" assembly-id="solve-standard-linear-equation-for-y-2-copy">
-  <static seed="1568">
-    <statement><p><m>{5x+6y}={-12}</m></p>
+  <static seed="1432">
+    <statement><p><m>{-8x-6y}={60}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>y = -{\frac{5}{6}}x-2</m>
+        <m>y = -{\frac{4}{3}}x-10</m>
       </p>
     </answer>
     <solution><p><me>\begin{aligned}
-{5x+6y} \amp = {-12}\\
-{5x+6y-5x} \amp = {-12-5x}\\
-{6y} \amp = {-12-5x}\\
-{\frac{6y}{6}} \amp = {\frac{-12-5x}{6}}\\
-{y} \amp = {-{\frac{5}{6}}x-2}
+{-8x-6y} \amp = {60}\\
+{-8x-6y+8x} \amp = {60+8x}\\
+{-6y} \amp = {60+8x}\\
+{\frac{-6y}{-6}} \amp = {\frac{60+8x}{-6}}\\
+{y} \amp = {-{\frac{4}{3}}x-10}
 \end{aligned}</me></p>
 </solution>
   </static>

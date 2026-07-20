@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals30-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals30-copy">
-  <static seed="1843">
-    <statement><p><m>\displaystyle{{10\sqrt{13}} - {14\sqrt{13}} + {11\sqrt{13}} }</m></p>
+  <static seed="1707">
+    <statement><p><m>\displaystyle{{10\sqrt{5}} - {17\sqrt{5}} + {14\sqrt{5}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>7\sqrt{13}</m>
+        <m>7\sqrt{5}</m>
       </p>
     </answer>
     <solution><p>Since these are like radicals, we can combine them as like terms.</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-        {10\sqrt{13}} - {14\sqrt{13}} + {11\sqrt{13}} \amp = (10 - 14 + 11) \sqrt{13} \\
-                            \amp = {7\sqrt{13}}
+        {10\sqrt{5}} - {17\sqrt{5}} + {14\sqrt{5}} \amp = (10 - 17 + 14) \sqrt{5} \\
+                            \amp = {7\sqrt{5}}
 \end{aligned}
 }</m></p>
 </solution>

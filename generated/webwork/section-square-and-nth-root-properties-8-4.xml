@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-square-and-nth-root-properties-8-4" assembly-id="section-square-and-nth-root-properties-8-4">
-  <static seed="1790">
+  <static seed="1654">
     <statement><p>Multiply <m>2\sqrt{7}\cdot3\sqrt{21}\text{.}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>

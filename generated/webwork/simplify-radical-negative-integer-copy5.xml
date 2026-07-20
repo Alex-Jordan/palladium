@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-radical-negative-integer-copy5" assembly-id="simplify-radical-negative-integer-copy5">
-  <static seed="1883">
-    <statement><p><m>{\sqrt[4]{-81}}\text{.}</m></p>
+  <static seed="1747">
+    <statement><p><m>{\sqrt[3]{-8}}\text{.}</m></p>
 <p><fillin characters="30" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\text{not a real number}</m>
+        <m>-2</m>
       </p>
     </answer>
-    <solution><p>Since -81 is negative and 4 is even, this is not a real number.</p>
+    <solution><p>Since -8 is negative and 3 is odd, a 3rd root of -8 exists and is equal to 2.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/4_2_10_87.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

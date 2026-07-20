@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation40" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation40">
-  <static seed="2028">
-    <statement><p><m>\displaystyle{ {-2\sqrt{r}} = {4} }</m></p>
+  <static seed="1892">
+    <statement><p><m>\displaystyle{ {-3\sqrt{y}} = {12} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
@@ -9,11 +9,11 @@
         <m>\text{no real solutions}</m>
       </p>
     </answer>
-    <solution><p>It will help to divide by <m>-2</m> on both sides.</p>
+    <solution><p>It will help to divide by <m>-3</m> on both sides.</p>
 <p><m>\displaystyle{\begin{aligned}
-   {-2\sqrt{r}} \amp = {4} \\
-   \frac{{-2\sqrt{r}}}{-2} \amp = \frac{{4}}{-2} \\
-   \sqrt{r} \amp = -2 \\
+   {-3\sqrt{y}} \amp = {12} \\
+   \frac{{-3\sqrt{y}}}{-3} \amp = \frac{{12}}{-3} \\
+   \sqrt{y} \amp = -4 \\
 \end{aligned}
     }</m></p>
 <p>Since a square root cannot generate negative numbers, this equation has no real solution.</p>

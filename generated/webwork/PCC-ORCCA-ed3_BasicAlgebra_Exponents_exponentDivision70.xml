@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentDivision70" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentDivision70">
-  <static seed="1956">
-    <statement><p><m>\displaystyle\frac{{x^{13}}}{{x^{2}}}</m></p>
+  <static seed="1820">
+    <statement><p><m>\displaystyle\frac{{r^{12}}}{{r^{5}}}</m></p>
 <p><fillin characters="11" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>x^{11}</m>
+        <m>r^{7}</m>
       </p>
     </answer>
     <solution><p>We <em>subtract</em> the exponents as follows</p>
 <p><m>\begin{aligned}
-           \frac{x^{13}}{x^{2}}\amp =x^{13-2}\\
-                             \amp =x^{11}
+           \frac{r^{12}}{r^{5}}\amp =r^{12-5}\\
+                             \amp =r^{7}
        \end{aligned}</m></p>
 </solution>
   </static>

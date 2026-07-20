@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication15-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication15-copy">
-  <static seed="2640">
-    <statement><p><m>{-4y^{2}}\left({-7y^{2}-5y}\right)</m></p>
+  <static seed="2504">
+    <statement><p><m>{7y^{2}}\left({-4y^{2}-9y}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>28y^{4}+20y^{3}</m>
+        <m>-28y^{4}-63y^{3}</m>
       </p>
     </answer>
     <solution><p>We multiply the monomial by each term in the binomial, using 
 the properties of exponents to help us</p>
 <p><m>\begin{aligned}
-              {-4y^{2}}({-7y^{2}-5y})\amp ={28y^{4}+20y^{3}}
+              {7y^{2}}({-4y^{2}-9y})\amp ={-28y^{4}-63y^{3}}
       \end{aligned}</m></p>
 </solution>
   </static>

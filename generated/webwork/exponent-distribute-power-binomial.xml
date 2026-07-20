@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-distribute-power-binomial" assembly-id="exponent-distribute-power-binomial">
-  <static seed="2602">
-    <statement><p><m>{10c^{5}\mathopen{}\left(2c^{6}+6c^{2}\right)}</m></p>
+  <static seed="2466">
+    <statement><p><m>{6b^{8}\mathopen{}\left(9b^{7}+4b^{9}\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>c^{11}+c^{7}</m>
+        <m>b^{15}+b^{17}</m>
       </p>
     </answer>
   </static>

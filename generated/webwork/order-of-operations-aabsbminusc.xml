@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-order-of-operations-aabsbminusc" assembly-id="order-of-operations-aabsbminusc">
-  <static seed="2203">
-    <statement><p><m>9 \abs{3 - 4}</m></p>
+  <static seed="2067">
+    <statement><p><m>8 \abs{5 - 4}</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>9</m>
+        <m>8</m>
       </p>
     </answer>
   </static>

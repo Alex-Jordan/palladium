@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication25" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication25">
-  <static seed="1667">
-    <statement><p><m>\left(4y^{8}\right)^3</m></p>
+  <static seed="1531">
+    <statement><p><m>\left(2t^{7}\right)^4</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>64y^{24}</m>
+        <m>16t^{28}</m>
       </p>
     </answer>
     <solution><p>We <em>multiply</em> the exponents and apply the rule <m>(ab)^m=a^m\cdot b^m</m> as follows</p>
 <p><m>\begin{aligned}
-           \left(4y^{8}\right)^{3}\amp =(4)^{3}y^{8\cdot3}\\
-                             \amp =64y^{24}
+           \left(2t^{7}\right)^{4}\amp =(2)^{4}t^{7\cdot4}\\
+                             \amp =16t^{28}
        \end{aligned}</m></p>
 </solution>
   </static>

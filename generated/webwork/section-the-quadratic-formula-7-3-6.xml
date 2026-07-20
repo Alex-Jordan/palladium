@@ -1,28 +1,28 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-the-quadratic-formula-7-3-6" assembly-id="section-the-quadratic-formula-7-3-6">
-  <static seed="969">
-    <statement><p>One rectangular wall in your classroom is <m>{11\ {\rm ft}}</m> longer than it is tall. The total area of the wall is <m>{180\ {\rm ft^{2}}}\text{.}</m> How tall is the wall?</p>
+  <static seed="502">
+    <statement><p>One rectangular wall in your classroom is <m>{13.75\ {\rm ft}}</m> longer than it is tall. The total area of the wall is <m>{246\ {\rm ft^{2}}}\text{.}</m> How tall is the wall?</p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>9\ {\rm ft}</m>
+        <m>10.25\ {\rm ft}</m>
       </p>
     </answer>
-    <solution><p>The area of a rectangle is given by multipying its two dimensions. If we let <m>h</m> stand for the height of the wall, then <m>{h+11}</m> is the width, and the total area is <m>{h\mathopen{}\left(h+11\right)}\text{.}</m> So we must solve the equation <m>{h\mathopen{}\left(h+11\right)}=180\text{.}</m></p>
-<p>After multiplying and moving to standard form, we have <m>{h^{2}+11h-180}=0\text{.}</m> Using the quadratic formula:</p>
+    <solution><p>The area of a rectangle is given by multipying its two dimensions. If we let <m>h</m> stand for the height of the wall, then <m>{h+13.75}</m> is the width, and the total area is <m>{h\mathopen{}\left(h+13.75\right)}\text{.}</m> So we must solve the equation <m>{h\mathopen{}\left(h+13.75\right)}=246\text{.}</m></p>
+<p>After multiplying and moving to standard form, we have <m>{h^{2}+13.75h-246}=0\text{.}</m> Using the quadratic formula:</p>
 <p><me>\begin{aligned}
 h\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
-\amp=\frac{-11\pm\sqrt{11^2-4\left(1\right)\left(-180\right)}}{2\left(1\right)}\\
-\amp=\frac{-11\pm\sqrt{841}}{2}\\
-\amp=\frac{-11\pm{29}}{2}\\
-h\amp=\frac{-11-{29}}{2}\quad\text{or}\quad h=\frac{-11+{29}}{2}\\
-h\amp={-20}\quad\text{or}\quad h={9}
+\amp=\frac{-13.75\pm\sqrt{13.75^2-4\left(1\right)\left(-246\right)}}{2\left(1\right)}\\
+\amp=\frac{-13.75\pm\sqrt{1173.0625}}{2}\\
+\amp=\frac{-13.75\pm{34.25}}{2}\\
+h\amp=\frac{-13.75-{34.25}}{2}\quad\text{or}\quad h=\frac{-13.75+{34.25}}{2}\\
+h\amp={-24}\quad\text{or}\quad h={10.25}
 \end{aligned}</me></p>
-<p>Only the solution <m>h\approx{9}</m> makes sense in this situation. The wall is <m>{9\ {\rm ft}}</m> tall.</p>
+<p>Only the solution <m>h\approx{10.25}</m> makes sense in this situation. The wall is <m>{10.25\ {\rm ft}}</m> tall.</p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_4_5_103.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_5_5_103.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -39,7 +39,7 @@ h\amp={-20}\quad\text{or}\quad h={9}
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.4.5.103)
+## Problem1(1.5.5.103)
 ## Author()
 ## Institution()
 ## Language(en-US)

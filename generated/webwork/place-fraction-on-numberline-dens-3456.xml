@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-place-fraction-on-numberline-dens-3456" assembly-id="place-fraction-on-numberline-dens-3456">
-  <static seed="2060">
-    <statement><p>Find the fraction <m>{{\frac{8}{3}}}</m> on the numberline.</p>
+  <static seed="1924">
+    <statement><p>Find the fraction <m>{{\frac{7}{3}}}</m> on the numberline.</p>
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/place-fraction-on-numberline-dens-3456-image-1" width="83%"/>
 <p><fillin name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\text{point}, \left(2.66667,0\right)\right\}</m>
+        <m>\left\{\text{point}, \left(2.33333,0\right)\right\}</m>
       </p>
     </answer>
   </static>

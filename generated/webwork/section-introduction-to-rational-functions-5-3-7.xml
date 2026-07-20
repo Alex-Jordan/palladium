@@ -1,26 +1,26 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-introduction-to-rational-functions-5-3-7" assembly-id="section-introduction-to-rational-functions-5-3-7">
-  <static seed="1218" source="Contrib/PCC/BasicAlgebra/FunctionBasics/Functions212.pg">
-    <statement><p>Find the domain of <m>\displaystyle{K}</m> where <m>\displaystyle{K(x)={\frac{3x+1}{x^{2}+4x}}}</m>.</p>
+  <static seed="1082" source="Contrib/PCC/BasicAlgebra/FunctionBasics/Functions212.pg">
+    <statement><p>Find the domain of <m>\displaystyle{H}</m> where <m>\displaystyle{H(x)={\frac{9x+7}{x^{2}-3x}}}</m>.</p>
 <p><fillin characters="13" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left(-\infty ,-4\right)\cup \left(-4,0\right)\cup \left(0,\infty \right)</m>
+        <m>\left(-\infty ,0\right)\cup \left(0,3\right)\cup \left(3,\infty \right)</m>
       </p>
     </answer>
-    <solution><p>Since we are not allowed to divide by zero, the denominator of <m>\displaystyle{K}</m> cannot be zero. To find what <m>x</m> values will make the denominator zero, we solve the equation:</p>
+    <solution><p>Since we are not allowed to divide by zero, the denominator of <m>\displaystyle{H}</m> cannot be zero. To find what <m>x</m> values will make the denominator zero, we solve the equation:</p>
 <p><m>\displaystyle{\begin{aligned}
-   {x^{2}+4x} \amp = 0 \\
-   x(x+4) \amp = 0 \\
-   x =0 \amp \text{ or } x+4=0\\
-   x = 0 \amp \text{ or } x =-4\\
+   {x^{2}-3x} \amp = 0 \\
+   x(x - 3) \amp = 0 \\
+   x =0 \amp \text{ or } x - 3=0\\
+   x = 0 \amp \text{ or } x =3\\
 \end{aligned}
 }</m></p>
-<p>We need to take <m>0</m> and <m>-4</m> out of the function<rsq/>s domain, because they will cause the denominator to be zero, and we cannot divide by zero. The domain of <m>K</m> is:</p>
-<p><m>\displaystyle{ {\left(-\infty ,-4\right)\cup \left(-4,0\right)\cup \left(0,\infty \right)} }</m></p>
+<p>We need to take <m>0</m> and <m>3</m> out of the function<rsq/>s domain, because they will cause the denominator to be zero, and we cannot divide by zero. The domain of <m>H</m> is:</p>
+<p><m>\displaystyle{ {\left(-\infty ,0\right)\cup \left(0,3\right)\cup \left(3,\infty \right)} }</m></p>
 <p>We could also use set notation to represent the domain:</p>
-<p><m>\displaystyle{ \{ x \mid x \ne 0, x \ne -4 \} }</m></p>
+<p><m>\displaystyle{ \{ x \mid x \ne 0, x \ne 3 \} }</m></p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/FunctionBasics/Functions212.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

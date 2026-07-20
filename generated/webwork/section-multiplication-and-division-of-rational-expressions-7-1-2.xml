@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-1-2" assembly-id="section-multiplication-and-division-of-rational-expressions-7-1-2">
-  <static seed="1242" source="Contrib/PCC/BasicAlgebra/FractionArithmetic/MultiplyFractions40.pg">
-    <statement><p>Multiply: <m>\displaystyle{-\frac{11}{7} \cdot \frac{2}{11}}</m></p>
+  <static seed="1106" source="Contrib/PCC/BasicAlgebra/FractionArithmetic/MultiplyFractions40.pg">
+    <statement><p>Multiply: <m>\displaystyle{-\frac{18}{5} \cdot \frac{7}{22}}</m></p>
 <p><fillin characters="9" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-{\frac{2}{7}}</m>
+        <m>-{\frac{63}{55}}</m>
       </p>
     </answer>
     <solution><p>To multiply two fractions, multiply both numerators and both denominators. Don<rsq/>t forget to reduce the fraction if possible.</p>
 <p>Remember: a positive number times a negative number is a negative number.</p>
 <p>We have:</p>
 <p><m>\displaystyle{\begin{aligned}
-    -\frac{11}{7} \cdot \frac{2}{11}
-    \amp =-\frac{1\cdot11}{7} \cdot \frac{2}{1\cdot11} \\
-    \amp =-\frac{1}{7} \cdot \frac{2}{1}\\ 
-    \amp = -\frac{2}{7} 
+    -\frac{18}{5} \cdot \frac{7}{22}
+    \amp =-\frac{9\cdot2}{5} \cdot \frac{7}{11\cdot2} \\
+    \amp =-\frac{9}{5} \cdot \frac{7}{11}\\ 
+    \amp = -\frac{63}{55} 
     \end{aligned}}</m></p>
 </solution>
   </static>

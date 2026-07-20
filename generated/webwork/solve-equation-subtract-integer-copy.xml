@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-equation-subtract-integer-copy" assembly-id="solve-equation-subtract-integer-copy">
-  <static seed="2520">
-    <statement><p><m>{b-1}={8}</m></p>
+  <static seed="2384">
+    <statement><p><m>{Y-6}={14}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{9\right\}</m>
+        <m>\left\{20\right\}</m>
       </p>
     </answer>
   </static>

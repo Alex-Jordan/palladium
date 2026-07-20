@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty30" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty30">
-  <static seed="1836">
-    <statement><p><m>\displaystyle{ \sqrt{\frac{7}{4}} \cdot \sqrt{\frac{1}{4}}}</m></p>
+  <static seed="1700">
+    <statement><p><m>\displaystyle{ \sqrt{\frac{1}{4}} \cdot \sqrt{\frac{3}{4}}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{\sqrt{7}}{4}</m>
+        <m>\frac{\sqrt{3}}{4}</m>
       </p>
     </answer>
     <solution><p>First, we use the multiplication property of radicals:</p>
@@ -14,9 +14,9 @@
 <p>We have:</p>
 <p><m>\displaystyle{ 
 \begin{aligned}[t]
-   \sqrt{\frac{7}{4}} \cdot \sqrt{\frac{1}{4}} 
-       \amp = \sqrt{ \frac{7}{4} \cdot \frac{1}{4} } \\
-       \amp = \sqrt{ \frac{7}{16} }
+   \sqrt{\frac{1}{4}} \cdot \sqrt{\frac{3}{4}} 
+       \amp = \sqrt{ \frac{1}{4} \cdot \frac{3}{4} } \\
+       \amp = \sqrt{ \frac{3}{16} }
 \end{aligned}
     }</m></p>
 <p>Next, we will use the division property of radicals:</p>
@@ -24,9 +24,9 @@
 <p>We have:</p>
 <p><m>\displaystyle{ 
 \begin{aligned}[t]
-   \sqrt{ \frac{7}{16}}
-      \amp = \frac{\sqrt{7}} {\sqrt{16}} \\
-      \amp = \frac{\sqrt{7}} {4} \\
+   \sqrt{ \frac{3}{16}}
+      \amp = \frac{\sqrt{3}} {\sqrt{16}} \\
+      \amp = \frac{\sqrt{3}} {4} \\
 \end{aligned}
     }</m></p>
 </solution>

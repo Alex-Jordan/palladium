@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar80-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar80-copy">
-  <static seed="2672">
-    <statement><p><m>\left({a-9b}\right)\left({a+8b}\right)</m></p>
+  <static seed="2536">
+    <statement><p><m>\left({a-9b}\right)\left({a-2b}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>a^{2}-ab-72b^{2}</m>
+        <m>a^{2}-11ab+18b^{2}</m>
       </p>
     </answer>
     <solution><p>We multiply the polynomials using the FOIL method: <alert>F</alert>irst <alert>O</alert>utside
 <alert>I</alert>nside <alert>L</alert>ast</p>
 <p><m>\displaystyle{    \begin{aligned}
-        \left({a-9b}\right)\left({a+8b}\right)\amp = {aa+a\cdot 8b-9ba-9b\cdot 8b}\\
-                      \amp  = {a^{2}-ab-72b^{2}}
+        \left({a-9b}\right)\left({a-2b}\right)\amp = {aa-a\cdot 2b-9ba+9b\cdot 2b}\\
+                      \amp  = {a^{2}-11ab+18b^{2}}
     \end{aligned}
 }</m></p>
 </solution>

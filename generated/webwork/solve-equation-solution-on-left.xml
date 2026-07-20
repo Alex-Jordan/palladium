@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-equation-solution-on-left" assembly-id="solve-equation-solution-on-left">
-  <static seed="2510">
+  <static seed="2374">
     <statement><p>Solve the equation <m>51=-17a</m> for <m>a\text{.}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>

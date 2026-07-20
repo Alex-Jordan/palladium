@@ -1,32 +1,32 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_SolvingRadicalEquations_SolvingRadicalEquations2" assembly-id="PCC-ORCCA-ed3_Math95_SolvingRadicalEquations_SolvingRadicalEquations2">
-  <static seed="2038">
-    <statement><p><m>\displaystyle{ \sqrt[3]{r-7} = {5} }</m></p>
+  <static seed="1902">
+    <statement><p><m>\displaystyle{ \sqrt[3]{r-9} = {8} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{132\right\}</m>
+        <m>\left\{521\right\}</m>
       </p>
     </answer>
     <solution><p>To get rid of the cube root in this equation, we raise the left side and the right side of the equation each to the third power.</p>
 <p><m>\displaystyle{\begin{aligned}
-   \sqrt[3]{r-7} \amp = {5} \\
-   \left(\sqrt[3]{r-7}\right)^3 \amp = \left(5\right)^3 \\
-   r-7 \amp = 125 \\
-   r-7+7 \amp = 125+7 \\
-   r \amp = {132} \\
+   \sqrt[3]{r-9} \amp = {8} \\
+   \left(\sqrt[3]{r-9}\right)^3 \amp = \left(8\right)^3 \\
+   r-9 \amp = 512 \\
+   r-9+9 \amp = 512+9 \\
+   r \amp = {521} \\
 \end{aligned}
     }</m></p>
 <p>We must check our solutions when we solve radical equations. We therefore substitute our answer into the original equation:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \sqrt[3]{r-7} \amp \stackrel{?}{=} {5} \\
-   \sqrt[3]{{132}-7} \amp \stackrel{?}{=} 5 \\
-   \sqrt[3]{} \amp \stackrel{?}{=} 5 \\
-   5 \amp \stackrel{?}{=} 5 \\
+   \sqrt[3]{r-9} \amp \stackrel{?}{=} {8} \\
+   \sqrt[3]{{521}-9} \amp \stackrel{?}{=} 8 \\
+   \sqrt[3]{} \amp \stackrel{?}{=} 8 \\
+   8 \amp \stackrel{?}{=} 8 \\
 \end{aligned}
     }</m></p>
-<p>That is true, so the solution set is <m>\{{132}\}</m>.</p>
+<p>That is true, so the solution set is <m>\{{521}\}</m>.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/4_5_4_17.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

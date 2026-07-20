@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-special-with-like-terms" assembly-id="solve-special-with-like-terms">
-  <static seed="1513">
-    <statement><p><m>{i+10-8i}={2-7i+8}</m></p>
+  <static seed="1377">
+    <statement><p><m>{-X+10-3X}={7-4X+3}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
@@ -11,8 +11,8 @@
     </answer>
     <solution><p>We try to use the standard steps for solving an equation:</p>
 <p><me>\begin{aligned}
-{i+10-8i} \amp= {2-7i+8}\\
-{-7i+10} \amp= {-7i+10}\\
+{-X+10-3X} \amp= {7-4X+3}\\
+{-4X+10} \amp= {-4X+10}\\
 {10} \amp= {10}
 \end{aligned}</me></p>
 <p>This is an outright true equation, so all real numbers are solutions. The solution set is <m>(-\infty,\infty)\text{,}</m> which we can write as <m>\mathbb{R}\text{.}</m></p>

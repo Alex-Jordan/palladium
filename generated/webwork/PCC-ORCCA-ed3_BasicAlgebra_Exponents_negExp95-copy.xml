@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp95-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp95-copy">
-  <static seed="1748">
-    <statement><p><m>\displaystyle\frac{\left(2r^{6}\right)^{3}}{r^{36}}</m></p>
+  <static seed="1612">
+    <statement><p><m>\displaystyle\frac{\left(6y^{9}\right)^{3}}{y^{34}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{8}{r^{18}}</m>
+        <m>\frac{216}{y^{7}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\displaystyle{\frac{a^m}{a^n} = a^{m-n}}</m> 
 and also that <m>\left(a^m\right)^n=a^{mn}</m></p>
 <p><m>\displaystyle{           \begin{aligned}
-                 \displaystyle\frac{\left(2r^{6}\right)^{3}}{r^{36}}\amp = 
-\displaystyle\frac{\left(2\right)^{3}r^{6\cdot3}}{r^{36}}\\
- \amp = \displaystyle\frac{8r^{18}}{r^{36}}\\
- \amp = 8r^{18-36}\\
-                                                       \amp  =8r^{-18}\\
-                                    \amp  = {\frac{8}{r^{18}}}
+                 \displaystyle\frac{\left(6y^{9}\right)^{3}}{y^{34}}\amp = 
+\displaystyle\frac{\left(6\right)^{3}y^{9\cdot3}}{y^{34}}\\
+ \amp = \displaystyle\frac{216y^{27}}{y^{34}}\\
+ \amp = 216y^{27-34}\\
+                                                       \amp  =216y^{-7}\\
+                                    \amp  = {\frac{216}{y^{7}}}
            \end{aligned}
     }</m></p>
 </solution>

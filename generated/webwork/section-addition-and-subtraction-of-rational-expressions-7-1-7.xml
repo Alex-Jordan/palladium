@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-addition-and-subtraction-of-rational-expressions-7-1-7" assembly-id="section-addition-and-subtraction-of-rational-expressions-7-1-7">
-  <static seed="1366" source="Contrib/PCC/BasicAlgebra/FractionArithmetic/SubtractFractions05.pg">
-    <statement><p>Subtract: <m>\displaystyle{\frac{5}{14} - \frac{1}{14}}</m></p>
+  <static seed="1230" source="Contrib/PCC/BasicAlgebra/FractionArithmetic/SubtractFractions05.pg">
+    <statement><p>Subtract: <m>\displaystyle{\frac{17}{12} - \frac{7}{12}}</m></p>
 <p><fillin characters="11" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{2}{7}}</m>
+        <m>{\frac{5}{6}}</m>
       </p>
     </answer>
     <solution><p>To subtract two fractions with the same denominator, we simply subtract the numerators and keep the denominator unchanged.</p>
 <p><m>\displaystyle{\begin{aligned}
-   \frac{5}{14} - \frac{1}{14}
-        \amp = \frac{5 - 1}{14} \\
-        \amp = \frac{4}{14} \amp \hbox{We can reduce this by dividing 2 into both the numerator and the denominator.
+   \frac{17}{12} - \frac{7}{12}
+        \amp = \frac{17 - 7}{12} \\
+        \amp = \frac{10}{12} \amp \hbox{We can reduce this by dividing 2 into both the numerator and the denominator.
 }\\
-        \amp = \frac{2}{7} \\
+        \amp = \frac{5}{6} \\
 \end{aligned}
     }</m></p>
 </solution>

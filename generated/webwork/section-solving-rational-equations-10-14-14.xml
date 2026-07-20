@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-14-14" assembly-id="section-solving-rational-equations-10-14-14">
-  <static seed="1635" source="Contrib/PCC/Math95/RatEqApplications/RatEqApplications2.pg">
-    <statement><p>The winner of a <m>4\ {\rm mi}</m> race finishes <m>7.49\ {\rm min}</m> ahead of the second-place runner.  On average, the winner ran <m>0.7\ {\textstyle\frac{\rm\mathstrut mi}{\rm\mathstrut hr}}</m> faster than the second place runner.  Find the average running speed for each runner.</p>
+  <static seed="1499" source="Contrib/PCC/Math95/RatEqApplications/RatEqApplications2.pg">
+    <statement><p>The winner of a <m>10\ {\rm mi}</m> race finishes <m>18.31\ {\rm min}</m> ahead of the second-place runner.  On average, the winner ran <m>0.9\ {\textstyle\frac{\rm\mathstrut mi}{\rm\mathstrut hr}}</m> faster than the second place runner.  Find the average running speed for each runner.</p>
 <p>The winner's average speed was <fillin characters="15" name="AnSwEr0001"/> and the second-place runner's average speed was <fillin characters="15" name="AnSwEr0002"/>.</p>
 </statement>
     <answer>
       <p>
-        <m>5.1\ {\textstyle\frac{\rm\mathstrut mi}{\rm\mathstrut hr}}</m>
+        <m>5.9\ {\textstyle\frac{\rm\mathstrut mi}{\rm\mathstrut hr}}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>4.4\ {\textstyle\frac{\rm\mathstrut mi}{\rm\mathstrut hr}}</m>
+        <m>5\ {\textstyle\frac{\rm\mathstrut mi}{\rm\mathstrut hr}}</m>
       </p>
     </answer>
   </static>

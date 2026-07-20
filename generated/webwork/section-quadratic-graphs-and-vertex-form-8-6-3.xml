@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-quadratic-graphs-and-vertex-form-8-6-3" assembly-id="section-quadratic-graphs-and-vertex-form-8-6-3">
-  <static seed="1107" source="Contrib/PCC/Math95/ParabolaVertex/ParabolaVertex3.pg">
-    <statement><p>Find the vertex of the graph of <m>y=2\mathopen{}\left(x+5\right)^{2}-5</m>.</p>
+  <static seed="640" source="Contrib/PCC/Math95/ParabolaVertex/ParabolaVertex3.pg">
+    <statement><p>Find the vertex of the graph of <m>y=8\mathopen{}\left(x-2\right)^{2}+2</m>.</p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left(-5,-5\right)</m>
+        <m>\left(2,2\right)</m>
       </p>
     </answer>
   </static>

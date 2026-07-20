@@ -19,7 +19,7 @@ type of problem is to use the <em>square root method</em>.</p>
 <p>Note that <em>all</em> quadratic equations have <alert>two</alert> (possibly repeated) solutions; in this problem both solutions are real. Each solution can be checked by substituting it into the original equation- this is left as an exercise.</p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_3_4_5.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/2_4_7_5.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 # WeBWorK problem written by Chris Hughes, 2013
 # Portland Community College

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-combine-four-terms-distinct-variables-fractions" assembly-id="combine-four-terms-distinct-variables-fractions">
-  <static seed="2290">
-    <statement><p><m>{{\frac{8}{5}}Y+{\frac{5}{3}}C-C-Y}</m></p>
+  <static seed="2154">
+    <statement><p><m>{2l+z+z+2l}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{2}{3}C+\frac{3}{5}Y</m>
+        <m>2z+4l</m>
       </p>
     </answer>
   </static>

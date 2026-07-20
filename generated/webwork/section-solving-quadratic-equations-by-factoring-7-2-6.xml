@@ -1,26 +1,52 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-quadratic-equations-by-factoring-7-2-6" assembly-id="section-solving-quadratic-equations-by-factoring-7-2-6">
-  <static seed="739" source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad240.pg">
-    <statement><p>Solve the equation.</p>
-<p><m>{x^{2}+11x+18} = 0</m></p>
-<p><fillin characters="20" name="AnSwEr0001"/></p>
+  <static seed="57" source="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication40.pg">
+    <statement><p>A rectangle<rsq/>s base is <m>{5\ {\rm in}}</m> shorter than three times its height. The rectangle<rsq/>s area is <m>{12\ {\rm in^{2}}}</m>. Find this rectangle<rsq/>s dimensions.</p>
+<p>The rectangle<rsq/>s height is <fillin characters="11" name="AnSwEr0001"/>.</p>
+<p>The rectangle<rsq/>s base is <fillin characters="11" name="AnSwEr0002"/>.</p>
 </statement>
     <answer>
       <p>
-        <m>\left\{-9,-2\right\}</m>
+        <m>3\ {\rm in}</m>
       </p>
     </answer>
-    <solution><p>There are a few ways to solve quadratic equations- the easiest way to solve this particular 
-type of problem is to use the <em>zero product principle</em>.</p>
-<p><m>\begin{aligned}
-                {x^{2}+11x+18} = 0 \amp \Rightarrow {\left(x+9\right)\mathopen{}\left(x+2\right)}=0\\
-                                \amp \Rightarrow x=-9\text{ or } x=-2\\
-        \end{aligned}</m></p>
-<p>Note that <em>all</em> quadratic equations have <alert>two</alert> (possibly repeated) solutions; in this problem both solutions are real. Each solution can be checked by substituting it into the original equation- this is left as an exercise.</p>
-<p>You might have solved the equation using the Quadratic Formula- the final 
-result is the same.</p>
+    <answer>
+      <p>
+        <m>4\ {\rm in}</m>
+      </p>
+    </answer>
+    <solution><p>Let the rectangle<rsq/>s height be <m>x</m> inches.  Then its base is <m>3x-5</m> inches.</p>
+<p>It<rsq/>s given that the rectangle<rsq/>s area is <m>{12\ {\rm in^{2}}}</m>, so we can write and solve the equation:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   x(3x-5) \amp = 12 \\
+   3x^{2}-5x \amp = 12 \\
+   3x^{2}-5x - 12 \amp = 0 \\
+\end{aligned}
+    }</m></p>
+<p>The polynomial can be factored, so we will first solve this equation by factoring:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   (3x+4)(x-3) \amp =0 \\
+   3x+4=0 \amp \text{  or  } x-3=0  \\
+   3x=-4 \amp \text{  or  } x=3 \\
+   x=\text{a negative number} \amp \text{  or  } x=3
+\end{aligned}
+    }</m></p>
+<p>We could also solve the equation by the Quadratic Formula.</p>
+<p>Identify that <m>a=3,b=-5,c=-12</m>.</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   x \amp = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a} \\
+   x \amp = \frac{-(-5) \pm \sqrt{(-5)^{2}-4(3)(-12)}}{2(3)} \\
+   x \amp = \frac{5 \pm \sqrt{169}}{6} \\
+   x \amp = \frac{5 \pm 13}{6} \\
+   x \amp = \frac{5 + 13}{6}  \text{  or  } x= \frac{5 - 13}{6} \\
+   x\amp =3 \text{  or  } x= \text{a negative number}
+\end{aligned}
+    }</m></p>
+<p>Notice that there is no need to calculate the negative result, as a rectangle<rsq/>s height cannot be negative. The height is <m>{3\ {\rm in}}</m>.</p>
+<p>Recall that the rectangle<rsq/>s base is <m>3x-5</m> inches, where <m>x</m> is the height. Thus the base is <m>3 \cdot {3\ {\rm in}} - {5\ {\rm in}}</m>, which is <m>{4\ {\rm in}}</m>.</p>
+<p>So the rectangle<rsq/>s height is <m>{3\ {\rm in}}</m>, and its base is <m>{4\ {\rm in}}</m>.</p>
 </solution>
   </static>
-  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad240.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
-  <pg source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad240.pg"/>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication40.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication40.pg"/>
 </webwork-reps>

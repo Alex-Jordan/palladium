@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-special-with-like-terms2-inequality" assembly-id="solve-special-with-like-terms2-inequality">
-  <static seed="1535">
-    <statement><p><m>{9c+7-2c}\geq{4+7c+6}</m></p>
+  <static seed="1399">
+    <statement><p><m>{8v+3+4v}\geq{-9+12v-1}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\text{no real solutions}</m>
+        <m>\left(-\infty ,\infty \right)\hbox{ or }\text{infinitely many solutions}</m>
       </p>
     </answer>
   </static>

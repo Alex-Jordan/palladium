@@ -1,25 +1,25 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-interval-graph-to-set-builder-and-interval-notation-closed-infinite" assembly-id="interval-graph-to-set-builder-and-interval-notation-closed-infinite">
-  <static seed="2411">
+  <static seed="2275">
     <statement><!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/interval-graph-to-set-builder-and-interval-notation-closed-infinite-image-1" width="100%">
-<shortdescription>a numberline with a shaded region; the shaded region begins at 7 where there is a left bracket; it extends to the right all the way with an arrowhead</shortdescription>
+<shortdescription>a numberline with a shaded region; the shaded region begins at 6 where there is a left bracket; it extends to the right all the way with an arrowhead</shortdescription>
 </image>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 <p><fillin characters="12" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{x \mid x\ge 7\right\}</m>
+        <m>\left\{x \mid x\ge 6\right\}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left[7,\infty \right)</m>
+        <m>\left[6,\infty \right)</m>
       </p>
     </answer>
-    <solution><p>The interval represents all numbers greater than or equal to <m>7\text{.}</m> So in set-builder notation, the interval is <m>{\{ x \mid x \ge 7 \}}\text{.}</m></p>
-<p>And we read the number line from left to right, with the shading starting at <m>7</m> (and including <m>7</m>) and extending on to <m>\infty\text{.}</m> So in interval notation, the interval is <m>{\left[7,\infty \right)}\text{.}</m></p>
+    <solution><p>The interval represents all numbers greater than or equal to <m>6\text{.}</m> So in set-builder notation, the interval is <m>{\{ x \mid x \ge 6 \}}\text{.}</m></p>
+<p>And we read the number line from left to right, with the shading starting at <m>6</m> (and including <m>6</m>) and extending on to <m>\infty\text{.}</m> So in interval notation, the interval is <m>{\left[6,\infty \right)}\text{.}</m></p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/Appendices/A_5_4_33.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

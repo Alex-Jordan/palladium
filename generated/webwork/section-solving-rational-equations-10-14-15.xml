@@ -1,31 +1,31 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-14-15" assembly-id="section-solving-rational-equations-10-14-15">
-  <static seed="1636" source="Contrib/PCC/Math95/RatEqApplications/RatEqApplications3.pg">
-    <statement><p>In still water a tugboat can travel <m>15\ {\textstyle\frac{\rm\mathstrut mi}{\rm\mathstrut hr}}</m>.  It travels <m>46\ {\rm mi}</m> upstream and then <m>46\ {\rm mi}</m> downstream in a total time of <m>6.19\ {\rm hr}</m>.  Find the speed of the current.</p>
+  <static seed="1500" source="Contrib/PCC/Math95/RatEqApplications/RatEqApplications3.pg">
+    <statement><p>In still water a tugboat can travel <m>17\ {\textstyle\frac{\rm\mathstrut mi}{\rm\mathstrut hr}}</m>.  It travels <m>32\ {\rm mi}</m> upstream and then <m>32\ {\rm mi}</m> downstream in a total time of <m>3.78\ {\rm hr}</m>.  Find the speed of the current.</p>
 <p>The current's speed is <fillin characters="15" name="AnSwEr0001"/>.</p>
 </statement>
     <answer>
       <p>
-        <m>1.43519\ {\textstyle\frac{\rm\mathstrut mi}{\rm\mathstrut hr}}</m>
+        <m>1.08135\ {\textstyle\frac{\rm\mathstrut mi}{\rm\mathstrut hr}}</m>
       </p>
     </answer>
-    <solution><p>It<rsq/>s given that the boat traveled at <m>15</m> miles per hour in still water. Assume the river flows at <m>x</m> miles per hour.</p>
-<p>Then, the boat traveled upstream at <m>15-x</m> miles per hour, and downstream at <m>15+x</m> miles per hour.</p>
-<p>Using the formula <m>\text{time}=\frac{\text{distance}}{\text{speed}}</m>, we know the boat traveled upstream for <m>\frac{46}{15-x}</m> hours; and it traveled downstream in <m>\frac{46}{15+x}</m> hours.</p>
-<p>It<rsq/>s given that the whole trip took <m>6.19</m> hours, so we can write an equation and solve it:</p>
+    <solution><p>It<rsq/>s given that the boat traveled at <m>17</m> miles per hour in still water. Assume the river flows at <m>x</m> miles per hour.</p>
+<p>Then, the boat traveled upstream at <m>17-x</m> miles per hour, and downstream at <m>17+x</m> miles per hour.</p>
+<p>Using the formula <m>\text{time}=\frac{\text{distance}}{\text{speed}}</m>, we know the boat traveled upstream for <m>\frac{32}{17-x}</m> hours; and it traveled downstream in <m>\frac{32}{17+x}</m> hours.</p>
+<p>It<rsq/>s given that the whole trip took <m>3.78</m> hours, so we can write an equation and solve it:</p>
 <p><m>\displaystyle{\begin{aligned}
-  \amp \frac{46}{15-x}+\frac{46}{15+x} = 6.19 \\
-  \amp \frac{46}{15-x} \cdot {\left(15+x\right)\mathopen{}\left(15-x\right)} +\frac{46}{15+x} \cdot {\left(15+x\right)\mathopen{}\left(15-x\right)} = 6.19 \cdot {\left(15+x\right)\mathopen{}\left(15-x\right)} \\
-  \amp 46(15+x) + 46(15-x) = 6.19({225-x^{2}}) \\
-  \amp 690+46x + 690-46x = 1392.75-6.19x^2 \\
-  \amp 1380 = 1392.75-6.19x^2 \\
-  \amp -12.75 = -6.19x^2 \\
-  \amp \frac{-12.75}{-6.19} = x^2 \\
-  \amp x = \pm \sqrt{\frac{-12.75}{-6.19}} \\
-  \amp x \approx \pm {1.43519\ {\textstyle\frac{\rm\mathstrut mi}{\rm\mathstrut hr}}}
+  \amp \frac{32}{17-x}+\frac{32}{17+x} = 3.78 \\
+  \amp \frac{32}{17-x} \cdot {\left(17+x\right)\mathopen{}\left(17-x\right)} +\frac{32}{17+x} \cdot {\left(17+x\right)\mathopen{}\left(17-x\right)} = 3.78 \cdot {\left(17+x\right)\mathopen{}\left(17-x\right)} \\
+  \amp 32(17+x) + 32(17-x) = 3.78({289-x^{2}}) \\
+  \amp 544+32x + 544-32x = 1092.42-3.78x^2 \\
+  \amp 1088 = 1092.42-3.78x^2 \\
+  \amp -4.41999999999985 = -3.78x^2 \\
+  \amp \frac{-4.41999999999985}{-3.78} = x^2 \\
+  \amp x = \pm \sqrt{\frac{-4.41999999999985}{-3.78}} \\
+  \amp x \approx \pm {1.08135\ {\textstyle\frac{\rm\mathstrut mi}{\rm\mathstrut hr}}}
 \end{aligned}
     }</m></p>
-<p>In this situation, since speed cannot be negative, <m>x={1.43519\ {\textstyle\frac{\rm\mathstrut mi}{\rm\mathstrut hr}}}</m> is the only solution. The speed of the current was <m>{1.43519\ {\textstyle\frac{\rm\mathstrut mi}{\rm\mathstrut hr}}}</m> miles per hour.</p>
+<p>In this situation, since speed cannot be negative, <m>x={1.08135\ {\textstyle\frac{\rm\mathstrut mi}{\rm\mathstrut hr}}}</m> is the only solution. The speed of the current was <m>{1.08135\ {\textstyle\frac{\rm\mathstrut mi}{\rm\mathstrut hr}}}</m> miles per hour.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/Math95/RatEqApplications/RatEqApplications3.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

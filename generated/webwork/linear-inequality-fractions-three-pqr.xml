@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-linear-inequality-fractions-three-pqr" assembly-id="linear-inequality-fractions-three-pqr">
-  <static seed="1508">
-    <statement><p><m>{5x-{\frac{4}{15}}} \gt {-{\frac{1}{12}}x+{\frac{3}{20}}}</m></p>
+  <static seed="1372">
+    <statement><p><m>{{\frac{1}{12}}x-4} \leq {{\frac{7}{15}}x-{\frac{7}{20}}}</m></p>
 <p><fillin characters="4" name="AnSwEr0001"/></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 <p><fillin characters="16" name="AnSwEr0003"/></p>
@@ -13,12 +13,12 @@
     </answer>
     <answer>
       <p>
-        <m>\left\{x \mid x &gt; \frac{5}{61}\right\}</m>
+        <m>\left\{x \mid x\ge \frac{-219}{23}\right\}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left({\frac{5}{61}},\infty \right)</m>
+        <m>\left[-{\frac{219}{23}},\infty \right)</m>
       </p>
     </answer>
   </static>

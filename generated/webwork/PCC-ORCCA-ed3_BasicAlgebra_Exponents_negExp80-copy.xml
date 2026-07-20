@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp80-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp80-copy">
-  <static seed="1742">
-    <statement><p><m>9^{-1}+6^{-1}</m></p>
+  <static seed="1606">
+    <statement><p><m>9^{-1}+8^{-1}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{5}{18}}</m>
+        <m>{\frac{17}{72}}</m>
       </p>
     </answer>
     <solution><p>We evaluate the expression by remembering that <m>x^{-n}</m> is the same thing as <m>\displaystyle{\frac{1}{x^n}}</m> 
 for any non-zero,
 real value of <m>x</m>. Once we have rewritten each term, the problem is a simple fraction problem.</p>
 <p><m>\begin{aligned}
-            9^{-1}+6^{-1} \amp  = \frac{1}{9}+\frac{1}{6}\\
-                                \amp  = \frac{1}{9}\cdot\frac{6}{6}+\frac{1}{6}\cdot\frac{9}{9}\\
-                               \amp  = \frac{6+9}{54}\\
-                             \amp  = \displaystyle\frac{5}{18}
+            9^{-1}+8^{-1} \amp  = \frac{1}{9}+\frac{1}{8}\\
+                                \amp  = \frac{1}{9}\cdot\frac{8}{8}+\frac{1}{8}\cdot\frac{9}{9}\\
+                               \amp  = \frac{8+9}{72}\\
+                             \amp  = \displaystyle\frac{17}{72}
       \end{aligned}</m></p>
 </solution>
   </static>

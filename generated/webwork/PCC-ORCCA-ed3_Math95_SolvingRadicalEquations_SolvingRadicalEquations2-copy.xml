@@ -1,32 +1,32 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_SolvingRadicalEquations_SolvingRadicalEquations2-copy" assembly-id="PCC-ORCCA-ed3_Math95_SolvingRadicalEquations_SolvingRadicalEquations2-copy">
-  <static seed="2039">
-    <statement><p><m>\displaystyle{ \sqrt[3]{t-4} = {9} }</m></p>
+  <static seed="1903">
+    <statement><p><m>\displaystyle{ \sqrt[3]{r-6} = {3} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{733\right\}</m>
+        <m>\left\{33\right\}</m>
       </p>
     </answer>
     <solution><p>To get rid of the cube root in this equation, we raise the left side and the right side of the equation each to the third power.</p>
 <p><m>\displaystyle{\begin{aligned}
-   \sqrt[3]{t-4} \amp = {9} \\
-   \left(\sqrt[3]{t-4}\right)^3 \amp = \left(9\right)^3 \\
-   t-4 \amp = 729 \\
-   t-4+4 \amp = 729+4 \\
-   t \amp = {733} \\
+   \sqrt[3]{r-6} \amp = {3} \\
+   \left(\sqrt[3]{r-6}\right)^3 \amp = \left(3\right)^3 \\
+   r-6 \amp = 27 \\
+   r-6+6 \amp = 27+6 \\
+   r \amp = {33} \\
 \end{aligned}
     }</m></p>
 <p>We must check our solutions when we solve radical equations. We therefore substitute our answer into the original equation:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \sqrt[3]{t-4} \amp \stackrel{?}{=} {9} \\
-   \sqrt[3]{{733}-4} \amp \stackrel{?}{=} 9 \\
-   \sqrt[3]{} \amp \stackrel{?}{=} 9 \\
-   9 \amp \stackrel{?}{=} 9 \\
+   \sqrt[3]{r-6} \amp \stackrel{?}{=} {3} \\
+   \sqrt[3]{{33}-6} \amp \stackrel{?}{=} 3 \\
+   \sqrt[3]{} \amp \stackrel{?}{=} 3 \\
+   3 \amp \stackrel{?}{=} 3 \\
 \end{aligned}
     }</m></p>
-<p>That is true, so the solution set is <m>\{{733}\}</m>.</p>
+<p>That is true, so the solution set is <m>\{{33}\}</m>.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/4_5_4_18.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

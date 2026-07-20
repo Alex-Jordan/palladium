@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-ordering-decimals" assembly-id="ordering-decimals">
-  <static seed="2401">
-    <statement><p><m>{5.8}\enspace{8.6}\enspace{-7.3}\enspace{-8.5}\enspace{-7.6}</m></p>
+  <static seed="2265">
+    <statement><p><m>{5.4}\enspace{-0.4}\enspace{-7.9}\enspace{3.7}\enspace{-7.2}</m></p>
 <p><fillin characters="30" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>8.6&gt;5.8&gt;-7.3&gt;-7.6&gt;-8.5</m>
+        <m>5.4&gt;3.7&gt;-0.4&gt;-7.2&gt;-7.9</m>
       </p>
     </answer>
   </static>

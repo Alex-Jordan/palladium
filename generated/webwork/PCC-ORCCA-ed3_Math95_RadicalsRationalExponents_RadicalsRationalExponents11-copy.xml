@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents11-copy" assembly-id="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents11-copy">
-  <static seed="1987">
-    <statement><p><m>\displaystyle{\sqrt[4]{x}}</m></p>
+  <static seed="1851">
+    <statement><p><m>\displaystyle{\sqrt[6]{c}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>x^{\frac{1}{4}}</m>
+        <m>c^{\frac{1}{6}}</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   \sqrt[4]{x} \amp = {x^{\frac{1}{4}}} \\
+   \sqrt[6]{c} \amp = {c^{\frac{1}{6}}} \\
 \end{aligned}
     }</m></p>
-<p>The answer in calculator/WeBWorK notation is <m>x</m>^<m>(1/4)</m>.</p>
+<p>The answer in calculator/WeBWorK notation is <m>c</m>^<m>(1/6)</m>.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/4_4_4_40.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-order-of-operations-7-1-2-80" assembly-id="section-order-of-operations-7-1-2-80">
-  <static seed="2220">
-    <statement><p><m>\dfrac{96 \div  4}{15 - 9} \cdot  4</m></p>
+  <static seed="2084">
+    <statement><p><m>\dfrac{8 \cdot  12}{60 \div  5} \cdot  2</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>

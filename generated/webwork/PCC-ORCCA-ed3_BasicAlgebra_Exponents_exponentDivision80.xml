@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentDivision80" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentDivision80">
-  <static seed="1691">
-    <statement><p><m>\left(\displaystyle\frac{x^{3}}{2y^{8}z^{7}}\right)^{3}</m></p>
+  <static seed="1555">
+    <statement><p><m>\left(\displaystyle\frac{x^{6}}{2y^{2}z^{4}}\right)^{3}</m></p>
 <p><fillin characters="26" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{x^{9}}{8y^{24}z^{21}}</m>
+        <m>\frac{x^{18}}{8y^{6}z^{12}}</m>
       </p>
     </answer>
     <solution><p>The quotient to power rule says that</p>
@@ -15,9 +15,9 @@
 <p><m>(a^m)^n = a^{mn}</m></p>
 <p>Using these two tools together allows us to write</p>
 <p><m>\begin{aligned}
-       \left(\displaystyle\frac{x^{3}}{2y^{8}z^{7}}\right)^{3}=
-                       \amp  = \displaystyle\frac{x^{3\cdot3}}{2^{3}y^{8\cdot3}z^{7\cdot3}}\\
-                       \amp  = \displaystyle\frac{x^{9}}{8y^{24}z^{21}}\\
+       \left(\displaystyle\frac{x^{6}}{2y^{2}z^{4}}\right)^{3}=
+                       \amp  = \displaystyle\frac{x^{6\cdot3}}{2^{3}y^{2\cdot3}z^{4\cdot3}}\\
+                       \amp  = \displaystyle\frac{x^{18}}{8y^{6}z^{12}}\\
         \end{aligned}</m></p>
 </solution>
   </static>

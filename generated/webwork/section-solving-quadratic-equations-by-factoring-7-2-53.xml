@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-quadratic-equations-by-factoring-7-2-53" assembly-id="section-solving-quadratic-equations-by-factoring-7-2-53">
-  <static seed="786" source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad350.pg">
+  <static seed="62" source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad350.pg">
     <statement><p>Solve the equation.</p>
-<p><m>{4x^{2}+44x+121}=0</m></p>
+<p><m>{81x^{2}+126x+49}=0</m></p>
 <p><fillin characters="26" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\frac{-11}{2}\right\}</m>
+        <m>\left\{\frac{-7}{9}\right\}</m>
       </p>
     </answer>
     <solution><p>There are a few ways to solve quadratic equations- the easiest way to solve this particular 
 type of problem is to use the <em>zero product principle</em>.</p>
 <p><m>\begin{aligned}
-                 {4x^{2}+44x+121}=0 \amp \Rightarrow {\left(2x+11\right)\mathopen{}\left(2x+11\right)}=0 \\
-                                    \amp  \Rightarrow {\left\{\frac{-11}{2}\right\}}
+                 {81x^{2}+126x+49}=0 \amp \Rightarrow {\left(9x+7\right)\mathopen{}\left(9x+7\right)}=0 \\
+                                    \amp  \Rightarrow {\left\{\frac{-7}{9}\right\}}
        \end{aligned}</m></p>
 <p>In this problem there is just <alert>one</alert>, <em>repeated</em> solution.</p>
 <p>The solution can be checked by substituting it into the original equation- this is left as an exercise.</p>

@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-solution-quadratic-positive-integer" assembly-id="check-solution-quadratic-positive-integer">
-  <static seed="2453">
-    <statement><p>Is <m>{1}</m> a solution to <m>{4x^{2}-6}={5x+38}\text{?}</m></p>
+  <static seed="2317">
+    <statement><p>Is <m>{4}</m> a solution to <m>{6x^{2}-2}={8x+62}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>4x^{2}-6</m></cell>
+<cell><m>6x^{2}-2</m></cell>
 <cell><m>=</m></cell>
-<cell><m>5x+38</m></cell>
+<cell><m>8x+62</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
@@ -24,17 +24,17 @@
 </statement>
     <answer>
       <p>
-        <m>-2</m>
+        <m>94</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>43</m>
+        <m>94</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\text{No, it is not a solution.}</m>
+        <m>\text{Yes, it is a solution.}</m>
       </p>
     </answer>
   </static>

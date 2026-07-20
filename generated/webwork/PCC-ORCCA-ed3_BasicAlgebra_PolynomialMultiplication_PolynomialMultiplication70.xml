@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication70" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication70">
-  <static seed="2661">
-    <statement><p><m>\left({10r-9}\right)\left({r-2}\right)</m></p>
+  <static seed="2525">
+    <statement><p><m>\left({4r-6}\right)\left({r-5}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>10r^{2}-29r+18</m>
+        <m>4r^{2}-26r+30</m>
       </p>
     </answer>
     <solution><p>We use the FOIL technique- <alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast</p>
 <p><m>\begin{aligned}
-              \left({10r-9}\right)({r-2})\amp ={10r^{2}-20r-9r+18}\\
-                                \amp ={10r^{2}-29r+18}
+              \left({4r-6}\right)({r-5})\amp ={4r^{2}-20r-6r+30}\\
+                                \amp ={4r^{2}-26r+30}
       \end{aligned}</m></p>
 </solution>
   </static>

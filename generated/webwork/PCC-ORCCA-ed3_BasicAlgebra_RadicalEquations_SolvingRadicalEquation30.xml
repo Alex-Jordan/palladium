@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation30" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation30">
-  <static seed="2026">
-    <statement><p><m>\displaystyle{ {4\sqrt{y}} = {12} }</m></p>
+  <static seed="1890">
+    <statement><p><m>\displaystyle{ {2\sqrt{y}} = {8} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{9\right\}</m>
+        <m>\left\{16\right\}</m>
       </p>
     </answer>
     <solution><p>To solve an equation with radicals, we first separate the radical on one side of the equation, and then square both sides:</p>
 <p><m>\displaystyle{\begin{aligned}
-   {4\sqrt{y}} \amp = {12} \\
-   \frac{{4\sqrt{y}}}{4} \amp = \frac{{12}}{4} \\
-   \sqrt{y} \amp = 3 \\
-   (\sqrt{y})^2 \amp = (3)^2 \\
-   y \amp = 9
+   {2\sqrt{y}} \amp = {8} \\
+   \frac{{2\sqrt{y}}}{2} \amp = \frac{{8}}{2} \\
+   \sqrt{y} \amp = 4 \\
+   (\sqrt{y})^2 \amp = (4)^2 \\
+   y \amp = 16
 \end{aligned}
     }</m></p>
 <p>Whenever we square both sides of an equation, we could create extraneous solutions. We must check our solution. This part is left as exercise.</p>

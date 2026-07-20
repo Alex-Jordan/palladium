@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-use-distributive-property-negate-copy" assembly-id="use-distributive-property-negate-copy">
-  <static seed="2347">
-    <statement><p>Apply the distributive property to <m>{-\left(S+\frac{3}{5}\right)}\text{.}</m></p>
+  <static seed="2211">
+    <statement><p>Apply the distributive property to <m>{-\left(Q+\frac{5}{8}\right)}\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-S-\left(\frac{3}{5}\right)</m>
+        <m>-Q-\left(\frac{5}{8}\right)</m>
       </p>
     </answer>
   </static>

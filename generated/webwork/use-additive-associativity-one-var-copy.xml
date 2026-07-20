@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-use-additive-associativity-one-var-copy" assembly-id="use-additive-associativity-one-var-copy">
-  <static seed="2327">
-    <statement><p>Apply associativity to <m>{{\frac{1}{7}}+\left(H+H^{2}\right)}\text{.}</m></p>
+  <static seed="2191">
+    <statement><p>Apply associativity to <m>{D+\left(D^{2}+{\frac{4}{5}}\right)}\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left({\frac{1}{7}}+H\right)+H^{2}</m>
+        <m>\left(D+D^{2}\right)+{\frac{4}{5}}</m>
       </p>
     </answer>
-    <solution><p>The expression has three terms. To apply associativity, we write the three terms in the same order from left to right, but change which two terms are grouped. This gives us <m>{\left({\frac{1}{7}}+H\right)+H^{2}}\text{.}</m></p>
+    <solution><p>The expression has three terms. To apply associativity, we write the three terms in the same order from left to right, but change which two terms are grouped. This gives us <m>{\left(D+D^{2}\right)+{\frac{4}{5}}}\text{.}</m></p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/Appendices/A_4_6_15.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

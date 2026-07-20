@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-radical-denominator-integer-numerator-splits-copy3" assembly-id="simplify-radical-denominator-integer-numerator-splits-copy3">
-  <static seed="1895">
-    <statement><p><m>{\sqrt[4]{\frac{112}{81}}}\text{.}</m></p>
+  <static seed="1759">
+    <statement><p><m>{\sqrt[3]{\frac{40}{27}}}\text{.}</m></p>
 <p><fillin characters="30" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{2}{3}\sqrt[4]{7}</m>
+        <m>\frac{2}{3}\sqrt[3]{5}</m>
       </p>
     </answer>
     <solution><p><me>\begin{aligned}
-{\sqrt[4]{\frac{112}{81}}}\amp = \frac{\sqrt[4]{112}}{\sqrt[4]{81}}\\
-\amp = \frac{\sqrt[4]{16\cdot 7}}{3}\\
-\amp = \frac{\sqrt[4]{16}\sqrt[4]{7}}{3}\\
-\amp = \frac{2\sqrt[4]{7}}{3}\\
-\amp = \frac{2}{3}\sqrt[4]{7}
+{\sqrt[3]{\frac{40}{27}}}\amp = \frac{\sqrt[3]{40}}{\sqrt[3]{27}}\\
+\amp = \frac{\sqrt[3]{8\cdot 5}}{3}\\
+\amp = \frac{\sqrt[3]{8}\sqrt[3]{5}}{3}\\
+\amp = \frac{2\sqrt[3]{5}}{3}\\
+\amp = \frac{2}{3}\sqrt[3]{5}
 \end{aligned}</me></p>
 </solution>
   </static>

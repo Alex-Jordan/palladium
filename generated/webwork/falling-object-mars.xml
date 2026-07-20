@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-falling-object-mars" assembly-id="falling-object-mars">
+  <static seed="899">
+    <statement><p>An object on Mars is shot straight up from a height of <m>336</m> feet with an initial speed of <m>336</m> feet per second. How long will it take for the object to land?</p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>8\,\text{s}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_3_6_63.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.3.6.63)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextUnits.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+($r,$s) = num_sort(random_subset(2,2..12));
+$a = -6;
+$b = 6*($s - $r);
+$c = 6*$r*$s;
+Context("Units")->withUnitsFor("time");
+$answer = Compute("$s s");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+For a falling object on Mars, with height measured in feet and time measured in seconds, the curvature coefficient of its height function is (roughly) [`-6\text{.}`]
+
+An object on Mars is shot straight up from a height of [`[$c]`] feet with an initial speed of [`[$c]`] feet per second. How long will it take for the object to land?
+
+[_]{$answer}{16}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

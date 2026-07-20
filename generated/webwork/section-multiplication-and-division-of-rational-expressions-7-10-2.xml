@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-10-2" assembly-id="section-multiplication-and-division-of-rational-expressions-7-10-2">
-  <static seed="1360">
-    <statement><p>Simplify the following: <m>\frac{1}{x+1} \div \frac{x+2}{x+1} \div \frac{x+3}{x+2} \div \frac{x+4}{x+3} \div \cdots \div \frac{x+65}{x+64} \text{.}</m> For this exercise, you do not have to write the restricted domain of the simplified expression.</p>
+  <static seed="1224">
+    <statement><p>Simplify the following: <m>\frac{1}{x+1} \div \frac{x+2}{x+1} \div \frac{x+3}{x+2} \div \frac{x+4}{x+3} \div \cdots \div \frac{x+60}{x+59} \text{.}</m> For this exercise, you do not have to write the restricted domain of the simplified expression.</p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{1}{x+65}</m>
+        <m>\frac{1}{x+60}</m>
       </p>
     </answer>
     <solution><p><me>\begin{aligned}
-\amp\frac{1}{x+1} \div \frac{x+2}{x+1} \div \frac{x+3}{x+2} \div \frac{x+4}{x+3} \div \dots \frac{x+65}{x+64}\\
-\amp=\frac{1}{x+1} \cdot \frac{x+1}{x+2} \cdot \frac{x+2}{x+3} \cdot \frac{x+3}{x+4} \cdot \dots \frac{x+64}{x+65}\\
-\amp=\frac{1}{x+65}, x \neq 1, 2, 3, \dots 64
+\amp\frac{1}{x+1} \div \frac{x+2}{x+1} \div \frac{x+3}{x+2} \div \frac{x+4}{x+3} \div \dots \frac{x+60}{x+59}\\
+\amp=\frac{1}{x+1} \cdot \frac{x+1}{x+2} \cdot \frac{x+2}{x+3} \cdot \frac{x+3}{x+4} \cdot \dots \frac{x+59}{x+60}\\
+\amp=\frac{1}{x+60}, x \neq 1, 2, 3, \dots 59
 \end{aligned}</me></p>
 </solution>
   </static>

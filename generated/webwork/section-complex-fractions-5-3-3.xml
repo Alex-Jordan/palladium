@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-complex-fractions-5-3-3" assembly-id="section-complex-fractions-5-3-3">
-  <static seed="1454" source="Contrib/PCC/Math95/ComplexFractions/ComplexFractions1.pg">
+  <static seed="1318" source="Contrib/PCC/Math95/ComplexFractions/ComplexFractions1.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{\frac{{\frac{m}{n}}}{{\frac{5m}{4n^{2}}}}=}</m><fillin characters="40" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{\frac{{\frac{m}{n}}}{{\frac{6m}{5n^{2}}}}=}</m><fillin characters="40" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{4n}{5}</m>
+        <m>\frac{5n}{6}</m>
       </p>
     </answer>
-    <solution><p>To simply the complex fraction <m>\frac{{\frac{m}{n}}}{{\frac{5m}{4n^{2}}}}</m>, we multiple the numerator and denominator with the common denominator of <m>{\frac{m}{n}}</m> and <m>{\frac{5m}{4n^{2}}}</m>, which is <m>{4n^{2}}</m>.</p>
+    <solution><p>To simply the complex fraction <m>\frac{{\frac{m}{n}}}{{\frac{6m}{5n^{2}}}}</m>, we multiple the numerator and denominator with the common denominator of <m>{\frac{m}{n}}</m> and <m>{\frac{6m}{5n^{2}}}</m>, which is <m>{5n^{2}}</m>.</p>
 <p><m>\displaystyle{\begin{aligned}
-  \frac{{\frac{m}{n}}}{{\frac{5m}{4n^{2}}}} \amp = \frac{{\frac{m}{n}}\cdot{4n^{2}}}{{\frac{5m}{4n^{2}}}\cdot{4n^{2}}} \\
-    \amp = \frac{{4mn}}{{5m}} \amp  \\
-    \amp = {\frac{4n}{5}}
+  \frac{{\frac{m}{n}}}{{\frac{6m}{5n^{2}}}} \amp = \frac{{\frac{m}{n}}\cdot{5n^{2}}}{{\frac{6m}{5n^{2}}}\cdot{5n^{2}}} \\
+    \amp = \frac{{5mn}}{{6m}} \amp  \\
+    \amp = {\frac{5n}{6}}
 \end{aligned}
     }</m></p>
 <p>Note that you are not required to enter lost domain conditions in this problem, but it<rsq/>s good to know the following.</p>

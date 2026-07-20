@@ -1,40 +1,40 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-complex-fractions-5-3-6" assembly-id="section-complex-fractions-5-3-6">
-  <static seed="1457" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions12.pg">
+  <static seed="1321" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions12.pg">
     <statement><p>Simplify this expression.</p>
 <p><ol label="a.">
 <li>
-<p><m>\displaystyle{\frac{ \frac{y}{r} }{ x } =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{\frac{ \frac{y}{t} }{ x } =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </li>
 <li>
-<p><m>\displaystyle{\frac{ y }{ \frac{r}{x} } =}</m> <fillin characters="19" name="AnSwEr0002"/></p>
+<p><m>\displaystyle{\frac{ y }{ \frac{t}{x} } =}</m> <fillin characters="19" name="AnSwEr0002"/></p>
 </li>
 </ol></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{y}{rx}</m>
+        <m>\frac{y}{tx}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\frac{yx}{r}</m>
+        <m>\frac{yx}{t}</m>
       </p>
     </answer>
     <solution><p><alert>Problem 1</alert></p>
-<p>We multiply the complex fraction<rsq/>s numerator and denominator by <m>r</m>, and we have:</p>
+<p>We multiply the complex fraction<rsq/>s numerator and denominator by <m>t</m>, and we have:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \frac{ \frac{y}{r} }{ x } 
-      \amp = \frac{ \frac{y}{r} \cdot r }{ x \cdot r } \\
-      \amp = {\frac{y}{rx}}
+   \frac{ \frac{y}{t} }{ x } 
+      \amp = \frac{ \frac{y}{t} \cdot t }{ x \cdot t } \\
+      \amp = {\frac{y}{tx}}
 \end{aligned}
     }</m></p>
 <p><alert>Problem 2</alert></p>
 <p>We multiply the complex fraction<rsq/>s numerator and denominator by <m>x</m>, and we have:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \frac{ y }{ \frac{r}{x} } 
-      \amp = \frac{ y \cdot x } { \frac{r}{x} \cdot x }\\
-      \amp = {\frac{yx}{r}}
+   \frac{ y }{ \frac{t}{x} } 
+      \amp = \frac{ y \cdot x } { \frac{t}{x} \cdot x }\\
+      \amp = {\frac{yx}{t}}
 \end{aligned}
     }</m></p>
 </solution>

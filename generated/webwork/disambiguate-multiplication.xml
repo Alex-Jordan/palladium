@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-disambiguate-multiplication" assembly-id="disambiguate-multiplication">
-  <static seed="2373">
+  <static seed="2237">
     <introduction><p>The expression <m>{xyz}</m> would be ambiguous if we did not have a left-to-right reading convention.</p>
 </introduction>
     <task>

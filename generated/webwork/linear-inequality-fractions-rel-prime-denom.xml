@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-linear-inequality-fractions-rel-prime-denom" assembly-id="linear-inequality-fractions-rel-prime-denom">
-  <static seed="1502">
-    <statement><p><m>{{\frac{7}{4}}x+{\frac{8}{3}}} \leq {-3}</m></p>
+  <static seed="1366">
+    <statement><p><m>{{\frac{2}{3}}x+{\frac{1}{8}}} \geq {-7}</m></p>
 <p><fillin characters="4" name="AnSwEr0001"/></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 <p><fillin characters="16" name="AnSwEr0003"/></p>
 </statement>
     <answer>
       <p>
-        <m>12</m>
+        <m>24</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left\{x \mid x\le \frac{-68}{21}\right\}</m>
+        <m>\left\{x \mid x\ge \frac{-171}{16}\right\}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(-\infty ,-{\frac{68}{21}}\right]</m>
+        <m>\left[-{\frac{171}{16}},\infty \right)</m>
       </p>
     </answer>
   </static>

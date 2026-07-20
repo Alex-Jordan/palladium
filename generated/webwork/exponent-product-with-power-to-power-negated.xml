@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-product-with-power-to-power-negated" assembly-id="exponent-product-with-power-to-power-negated">
-  <static seed="2592">
-    <statement><p><m>{-\left(5z^{9}\right)^{3}}</m></p>
+  <static seed="2456">
+    <statement><p><m>{-\left(3y^{6}\right)^{3}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-125z^{27}</m>
+        <m>-27y^{18}</m>
       </p>
     </answer>
   </static>

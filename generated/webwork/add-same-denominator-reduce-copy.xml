@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-add-same-denominator-reduce-copy" assembly-id="add-same-denominator-reduce-copy">
-  <static seed="2235">
-    <statement><p><m>{{\frac{7}{12}}}+{{\frac{11}{12}}}</m></p>
+  <static seed="2099">
+    <statement><p><m>{{\frac{7}{10}}}+{{\frac{9}{10}}}</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{3}{2}}</m>
+        <m>{\frac{8}{5}}</m>
       </p>
     </answer>
   </static>

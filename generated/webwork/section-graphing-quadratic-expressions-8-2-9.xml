@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-graphing-quadratic-expressions-8-2-9" assembly-id="section-graphing-quadratic-expressions-8-2-9">
-  <static seed="1041" source="PCC-ORCCA-ed3/BasicAlgebra/GraphingQuadratics/ParabolaIntercepts80.pg">
+  <static seed="574" source="PCC-ORCCA-ed3/BasicAlgebra/GraphingQuadratics/ParabolaIntercepts80.pg">
     <statement><p>Find the <m>y</m>-intercept and any <m>x</m>-intercept(s) of the quadratic curve.</p>
-<p><m>{y}={x^{2}+x+4}</m></p>
+<p><m>{y}={x^{2}+3x+7}</m></p>
 <p><m>y</m>-intercept: <fillin characters="16" name="AnSwEr0001"/></p>
 <p><m>x</m>-intercept(s): <fillin characters="17" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left(0,4\right)</m>
+        <m>\left(0,7\right)</m>
       </p>
     </answer>
     <answer>
@@ -16,20 +16,20 @@
         <m>\text{DNE}</m>
       </p>
     </answer>
-    <solution><p>To find a parabola<rsq/>s <m>y</m>-intercept, we substitute <m>x=0</m> into <m>{y}={x^{2}+x+4}</m>, and we have <m>y=4</m>.</p>
-<p>The parabola<rsq/>s <m>y</m>-intercept is <m>(0,4)</m>.</p>
-<p>To find a parabola<rsq/>s <m>x</m>-intercept, we substitute <m>y=0</m> into <m>{y}={x^{2}+x+4}</m>, and then solve for <m>x</m>:</p>
+    <solution><p>To find a parabola<rsq/>s <m>y</m>-intercept, we substitute <m>x=0</m> into <m>{y}={x^{2}+3x+7}</m>, and we have <m>y=7</m>.</p>
+<p>The parabola<rsq/>s <m>y</m>-intercept is <m>(0,7)</m>.</p>
+<p>To find a parabola<rsq/>s <m>x</m>-intercept, we substitute <m>y=0</m> into <m>{y}={x^{2}+3x+7}</m>, and then solve for <m>x</m>:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   y \amp = {x^{2}+x+4} \\
-   0 \amp = {x^{2}+x+4} \\
+   y \amp = {x^{2}+3x+7} \\
+   0 \amp = {x^{2}+3x+7} \\
 \end{aligned}
     }</m></p>
 <p>The polynomial cannot be factored, so we use the Quadratic Formula to solve this equation.</p>
-<p>Identify that <m>a=1,b=1,c=4</m>. We have:</p>
+<p>Identify that <m>a=1,b=3,c=7</m>. We have:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
    x \amp = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a} \\
-   x \amp = \frac{-(1) \pm \sqrt{(1)^{2}-4(1)(4)}}{2(1)} \\
-   x \amp = \frac{-1 \pm \sqrt{-15}}{2} \\
+   x \amp = \frac{-(3) \pm \sqrt{(3)^{2}-4(1)(7)}}{2(1)} \\
+   x \amp = \frac{-3 \pm \sqrt{-19}}{2} \\
 \end{aligned}
     }</m></p>
 <p>The square root of a negative number us <alert>not real</alert>, so this quadratic equation has no real solution.</p>

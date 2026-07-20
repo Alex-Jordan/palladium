@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty40-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty40-copy">
-  <static seed="1839">
-    <statement><p><m>\displaystyle{ {\sqrt{\frac{35}{13}}} \cdot {\sqrt{\frac{5}{13}}} }</m></p>
+  <static seed="1703">
+    <statement><p><m>\displaystyle{ {\sqrt{\frac{8}{17}}} \cdot {\sqrt{\frac{4}{17}}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{5\sqrt{7}}{13}</m>
+        <m>\frac{4\sqrt{2}}{17}</m>
       </p>
     </answer>
     <solution><p>First, we use the multiplication property of radicals:</p>
@@ -14,9 +14,9 @@
 <p>We have:</p>
 <p><m>\displaystyle{ 
 \begin{aligned}[t]
-   {\sqrt{\frac{35}{13}}} \cdot {\sqrt{\frac{5}{13}}}
-       \amp = \sqrt{ \frac{35}{13} \cdot \frac{5}{13} } \\
-       \amp = \sqrt{ \frac{175}{169} }
+   {\sqrt{\frac{8}{17}}} \cdot {\sqrt{\frac{4}{17}}}
+       \amp = \sqrt{ \frac{8}{17} \cdot \frac{4}{17} } \\
+       \amp = \sqrt{ \frac{32}{289} }
 \end{aligned}
     }</m></p>
 <p>Next, we will use the division property of radicals:</p>
@@ -24,20 +24,20 @@
 <p>We have:</p>
 <p><m>\displaystyle{ 
 \begin{aligned}[t]
-   \sqrt{ \frac{175}{169}}
-      \amp = \frac{\sqrt{175}} {\sqrt{169}} \\
-      \amp = \frac{\sqrt{175}} {13} \\
+   \sqrt{ \frac{32}{289}}
+      \amp = \frac{\sqrt{32}} {\sqrt{289}} \\
+      \amp = \frac{\sqrt{32}} {17} \\
 \end{aligned}
     }</m></p>
-<p>We must continue by simplifying the radical <m>\sqrt{175}</m>:</p>
+<p>We must continue by simplifying the radical <m>\sqrt{32}</m>:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   \sqrt{175} \amp = \sqrt{5 \cdot 5 \cdot 7}  \\
-            \amp =5 \sqrt{7} \\
-            \amp 
+   \sqrt{32} \amp = \sqrt{2 \cdot 2 \cdot 2 \cdot 2 \cdot 2}  \\
+            \amp =2 \cdot 2 \sqrt{2} \\
+            \amp =4 \sqrt{2}
 \end{aligned}
     }</m></p>
 <p>The final answer is:</p>
-<p><m>\displaystyle{ \frac{5\sqrt{7}} {13} }</m></p>
+<p><m>\displaystyle{ \frac{4\sqrt{2}} {17} }</m></p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/4_2_10_48.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

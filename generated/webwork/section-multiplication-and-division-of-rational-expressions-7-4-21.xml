@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-4-21" assembly-id="section-multiplication-and-division-of-rational-expressions-7-4-21">
-  <static seed="1286" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions140.pg">
+  <static seed="1150" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions140.pg">
     <statement><p>Simplify the following expression, and if applicable, write the restricted domain on the simplified expression.</p>
-<p><m>\displaystyle{{\frac{-y^{2}+4y+5}{y^{2}-25}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{-y^{2}-2y+8}{y^{2}-16}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-\frac{y+1}{y+5}, y\ne 5</m>
+        <m>-\frac{y-2}{y-4}, y\ne -4</m>
       </p>
     </answer>
     <solution><p>To simplify the expression, we first factor both the numerator and denominator, and then cross out common factors.</p>
 <p>If a polynomial is not in order, we order it by the variable<rsq/>s degrees.</p>
 <p>If the leading coefficient is negative, we factor out <m>-1</m>.</p>
 <p><m>\displaystyle{\begin{aligned}
-   {\frac{-y^{2}+4y+5}{y^{2}-25}} \amp = \frac{{-\left(y^{2}-4y-5\right)}}{{y^{2}-25}} \\
-                     \amp = \frac{{-\left(y+1\right)\mathopen{}\left(y-5\right)}}{{\left(y-5\right)\mathopen{}\left(y+5\right)}} \\
-                     \amp = {-\frac{y+1}{y+5}, y\ne 5}
+   {\frac{-y^{2}-2y+8}{y^{2}-16}} \amp = \frac{{-\left(y^{2}+2y-8\right)}}{{y^{2}-16}} \\
+                     \amp = \frac{{-\left(y-2\right)\mathopen{}\left(y+4\right)}}{{\left(y+4\right)\mathopen{}\left(y-4\right)}} \\
+                     \amp = {-\frac{y-2}{y-4}, y\ne -4}
 \end{aligned}
     }</m></p>
-<p>Since the factor <m>y - 5</m> was crossed out, the domain condition lost during the simplification is <m>y \ne 5</m>.</p>
+<p>Since the factor <m>y+4</m> was crossed out, the domain condition lost during the simplification is <m>y \ne -4</m>.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions140.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

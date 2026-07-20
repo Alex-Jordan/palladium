@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-solution-radical-integer" assembly-id="check-solution-radical-integer">
-  <static seed="2457">
-    <statement><p>Is <m>1</m> a solution to <m>{\sqrt{81x}}={14-2x}\text{?}</m></p>
+  <static seed="2321">
+    <statement><p>Is <m>2</m> a solution to <m>{12-x}={\sqrt{40x+1}}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>\sqrt{81x}</m></cell>
+<cell><m>12-x</m></cell>
 <cell><m>=</m></cell>
-<cell><m>14-2x</m></cell>
+<cell><m>\sqrt{40x+1}</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
@@ -24,12 +24,12 @@
 </statement>
     <answer>
       <p>
-        <m>9</m>
+        <m>10</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>12</m>
+        <m>9</m>
       </p>
     </answer>
     <answer>

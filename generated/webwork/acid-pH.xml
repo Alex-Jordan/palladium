@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-acid-pH" assembly-id="acid-pH">
-  <static seed="2436">
+  <static seed="2300">
     <statement><p>Write an interval for the pH level of an acid.</p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 <p><fillin characters="12" name="AnSwEr0002"/></p>

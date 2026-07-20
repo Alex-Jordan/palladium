@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp50-copy2" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp50-copy2">
-  <static seed="1960">
-    <statement><p><m>(-2x^{-15})\cdot (5x^{13})</m></p>
+  <static seed="1824">
+    <statement><p><m>(-8t^{-20})\cdot (8t^{5})</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{-10}{x^{2}}</m>
+        <m>\frac{-64}{t^{15}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remember that <m>a^m\cdot a^n = a^{m+n}</m></p>
 <p><m>\begin{aligned}
-                         (-2x^{-15})\cdot (5x^{13}) \amp = (-2)\cdot(5)x^{-15+13}\\
-                                                       \amp  =-10x^{-2}\\
-                                    \amp  = -\frac{10}{x^{2}}
+                         (-8t^{-20})\cdot (8t^{5}) \amp = (-8)\cdot(8)t^{-20+5}\\
+                                                       \amp  =-64t^{-15}\\
+                                    \amp  = -\frac{64}{t^{15}}
            \end{aligned}</m></p>
 </solution>
   </static>

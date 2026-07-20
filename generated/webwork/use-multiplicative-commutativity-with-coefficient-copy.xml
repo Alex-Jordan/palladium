@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-use-multiplicative-commutativity-with-coefficient-copy" assembly-id="use-multiplicative-commutativity-with-coefficient-copy">
-  <static seed="2335">
-    <statement><p>Apply commutativity of multiplication to <m>{Bq+k}\text{.}</m></p>
+  <static seed="2199">
+    <statement><p>Apply commutativity of multiplication to <m>{yF+z}\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>qB+k</m>
+        <m>Fy+z</m>
       </p>
     </answer>
-    <solution><p>There is one place in this expression where there is multiplication. To apply commutativity of multiplication, we just write those two factors in the opposite order. This gives us <m>{qB+k}\text{.}</m></p>
+    <solution><p>There is one place in this expression where there is multiplication. To apply commutativity of multiplication, we just write those two factors in the opposite order. This gives us <m>{Fy+z}\text{.}</m></p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/Appendices/A_4_6_23.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

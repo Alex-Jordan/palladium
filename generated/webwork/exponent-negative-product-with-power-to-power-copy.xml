@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-negative-product-with-power-to-power-copy" assembly-id="exponent-negative-product-with-power-to-power-copy">
-  <static seed="2589">
-    <statement><p><m>{\left(-5r^{8}\right)^{2}}</m></p>
+  <static seed="2453">
+    <statement><p><m>{\left(-4p^{5}\right)^{3}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>25r^{16}</m>
+        <m>-64p^{15}</m>
       </p>
     </answer>
   </static>

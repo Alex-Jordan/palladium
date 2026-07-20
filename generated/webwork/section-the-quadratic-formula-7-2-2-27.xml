@@ -1,25 +1,25 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-the-quadratic-formula-7-2-2-27" assembly-id="section-the-quadratic-formula-7-2-2-27">
-  <static seed="904">
-    <statement><p><m>{49x^{2}-42x+9}=0</m></p>
+  <static seed="437">
+    <statement><p><m>{9x^{2}+12x+4}=0</m></p>
 <p><fillin characters="40" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\frac{3}{7}\right\}</m>
+        <m>\left\{\frac{-2}{3}\right\}</m>
       </p>
     </answer>
-    <solution><p>To use the quadratic formula, we identify <m>a=49\text{,}</m> <m>b={-42}\text{,}</m> and <m>c={9}\text{.}</m></p>
+    <solution><p>To use the quadratic formula, we identify <m>a=9\text{,}</m> <m>b={12}\text{,}</m> and <m>c={4}\text{.}</m></p>
 <p><me>\begin{aligned}
 x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
-\amp=\frac{{42}\pm\sqrt{{1764}-4(1)({9})}}{2(49)}\\
-\amp=\frac{{42}\pm\sqrt{0}}{98}\\
-\amp=\frac{{42}}{98}
+\amp=\frac{{-12}\pm\sqrt{{144}-4(1)({4})}}{2(9)}\\
+\amp=\frac{{-12}\pm\sqrt{0}}{18}\\
+\amp=\frac{{-12}}{18}
 \end{aligned}</me></p>
-<p>Since the disciriminant (that number in the radical) is <m>0\text{,}</m> there is only one solution. The solution set is <m>{\left\{\frac{3}{7}\right\}}\text{.}</m></p>
+<p>Since the disciriminant (that number in the radical) is <m>0\text{,}</m> there is only one solution. The solution set is <m>{\left\{\frac{-2}{3}\right\}}\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_4_5_37.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_5_5_37.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg copied-from="section-the-quadratic-formula-7-2-2-26"><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -36,7 +36,7 @@ x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.4.5.38)
+## Problem1(1.5.5.38)
 ## Author()
 ## Institution()
 ## Language(en-US)

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-ordering" assembly-id="ordering">
-  <static seed="2376">
+  <static seed="2240">
     <introduction><p>Use the <m>\gt</m> symbol to arrange the following numbers in order from greatest to least.</p>
 </introduction>
     <task>

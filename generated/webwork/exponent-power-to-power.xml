@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-power-to-power" assembly-id="exponent-power-to-power">
-  <static seed="2576">
-    <statement><p><m>{\left(3^{8}\right)^{6}}</m></p>
+  <static seed="2440">
+    <statement><p><m>{\left(3^{10}\right)^{9}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>3^{48}</m>
+        <m>3^{90}</m>
       </p>
     </answer>
   </static>

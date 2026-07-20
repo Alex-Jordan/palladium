@@ -1,33 +1,33 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-the-quadratic-formula-7-2-3-4" assembly-id="section-the-quadratic-formula-7-2-3-4">
-  <static seed="952">
-    <statement><p><m>{5\sqrt{x}}={x+4}</m></p>
+  <static seed="485">
+    <statement><p><m>{6\sqrt{x}}={x+8}</m></p>
 <p><fillin characters="40" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{1,16\right\}</m>
+        <m>\left\{4,16\right\}</m>
       </p>
     </answer>
     <solution><p>First we square each side to obtain a quadratic equation. Then we can rearrange that into standard form.</p>
 <p><me>\begin{aligned}
-\left({5\sqrt{x}}\right)^2\amp=\left({x+4}\right)^2\\
-{25x}\amp={x^{2}+8x+16}\\
-0\amp={x^{2}-17x+16}
+\left({6\sqrt{x}}\right)^2\amp=\left({x+8}\right)^2\\
+{36x}\amp={x^{2}+16x+64}\\
+0\amp={x^{2}-20x+64}
 \end{aligned}</me></p>
-<p>Now we can identify <m>a={1}\text{,}</m> <m>b={-17}\text{,}</m> and <m>c={16}\text{,}</m> and apply the quadratic formula.</p>
+<p>Now we can identify <m>a={1}\text{,}</m> <m>b={-20}\text{,}</m> and <m>c={64}\text{,}</m> and apply the quadratic formula.</p>
 <p><me>\begin{aligned}
 x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
-\amp=\frac{{17}\pm\sqrt{{289}-4\left({1}\right)\left({16}\right)}}{2\left({1}\right)}\\
-\amp=\frac{{17}\pm\sqrt{{225}}}{{2}}\\
-\amp=\frac{{17}\pm{15}}{{2}}\\
-x\amp=\frac{{17}-{15}}{{2}}\quad\text{or}\quad x=\frac{{17}+{15}}{{2}}\\
-x\amp=1\quad\text{or}\quad x=16
+\amp=\frac{{20}\pm\sqrt{{400}-4\left({1}\right)\left({64}\right)}}{2\left({1}\right)}\\
+\amp=\frac{{20}\pm\sqrt{{144}}}{{2}}\\
+\amp=\frac{{20}\pm{12}}{{2}}\\
+x\amp=\frac{{20}-{12}}{{2}}\quad\text{or}\quad x=\frac{{20}+{12}}{{2}}\\
+x\amp=4\quad\text{or}\quad x=16
 \end{aligned}</me></p>
-<p>The only possible solutions are <m>1</m> and <m>16\text{.}</m> They each check as valid solutions in the original equation, so the solution set is <m>{\left\{1,16\right\}}\text{.}</m></p>
+<p>The only possible solutions are <m>4</m> and <m>16\text{.}</m> They each check as valid solutions in the original equation, so the solution set is <m>{\left\{4,16\right\}}\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_4_5_85.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_5_5_85.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg copied-from="section-the-quadratic-formula-7-2-3-3"><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -44,7 +44,7 @@ x\amp=1\quad\text{or}\quad x=16
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.4.5.86)
+## Problem1(1.5.5.86)
 ## Author()
 ## Institution()
 ## Language(en-US)

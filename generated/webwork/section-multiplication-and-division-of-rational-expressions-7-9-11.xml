@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-9-11" assembly-id="section-multiplication-and-division-of-rational-expressions-7-9-11">
-  <static seed="1349" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions45.pg">
+  <static seed="1213" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions45.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{({y^{4}-8y^{3}x+16y^{2}x^{2}}) \div ({y^{5}-4y^{4}x}) =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{({y^{5}-10y^{4}x+25y^{3}x^{2}}) \div ({y^{5}-5y^{4}x}) =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{y-4x}{y^{2}}</m>
+        <m>\frac{y-5x}{y}</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   ({y^{4}-8y^{3}x+16y^{2}x^{2}}) \div ({y^{5}-4y^{4}x}) 
-      \amp = \frac{{y^{4}-8y^{3}x+16y^{2}x^{2}}}{1} \div \frac{{y^{5}-4y^{4}x}}{1} \\
-      \amp = \frac{{y^{4}-8y^{3}x+16y^{2}x^{2}}}{1} \cdot {\frac{1}{y^{5}-4y^{4}x}} \\
-      \amp = \frac{{y^{2}\mathopen{}\left(y^{2}-8yx+16x^{2}\right)}}{1} \cdot \frac{1}{{y^{4}\mathopen{}\left(y-4x\right)}} \\
-      \amp = \frac{{y^{2}\mathopen{}\left(y-4x\right)^{2}}}{1} \cdot \frac{1}{{y^{4}\mathopen{}\left(y-4x\right)}} \\
-      \amp = {\frac{y-4x}{y^{2}}}
+   ({y^{5}-10y^{4}x+25y^{3}x^{2}}) \div ({y^{5}-5y^{4}x}) 
+      \amp = \frac{{y^{5}-10y^{4}x+25y^{3}x^{2}}}{1} \div \frac{{y^{5}-5y^{4}x}}{1} \\
+      \amp = \frac{{y^{5}-10y^{4}x+25y^{3}x^{2}}}{1} \cdot {\frac{1}{y^{5}-5y^{4}x}} \\
+      \amp = \frac{{y^{3}\mathopen{}\left(y^{2}-10yx+25x^{2}\right)}}{1} \cdot \frac{1}{{y^{4}\mathopen{}\left(y-5x\right)}} \\
+      \amp = \frac{{y^{3}\mathopen{}\left(y-5x\right)^{2}}}{1} \cdot \frac{1}{{y^{4}\mathopen{}\left(y-5x\right)}} \\
+      \amp = {\frac{y-5x}{y}}
 \end{aligned}
     }</m></p>
 </solution>

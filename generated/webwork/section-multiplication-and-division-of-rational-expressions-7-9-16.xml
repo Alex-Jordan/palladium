@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-9-16" assembly-id="section-multiplication-and-division-of-rational-expressions-7-9-16">
-  <static seed="1354" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions60.pg">
+  <static seed="1218" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions60.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{{\frac{18ty^{4}}{t-5y}} \div {\frac{3t^{8}y}{t^{2}-25y^{2}}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{20t^{3}r^{3}}{t-10r}} \div {\frac{4t^{8}r}{t^{2}-100r^{2}}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{6y^{3}\mathopen{}\left(t+5y\right)}{t^{7}}</m>
+        <m>\frac{5r^{2}\mathopen{}\left(t+10r\right)}{t^{5}}</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   {\frac{18ty^{4}}{t-5y}} \div {\frac{3t^{8}y}{t^{2}-25y^{2}}} 
-      \amp = {\frac{18ty^{4}}{t-5y}} \cdot {\frac{t^{2}-25y^{2}}{3t^{8}y}} \\
-      \amp = {\frac{18ty^{4}}{t-5y}} \cdot \frac{{\left(t-5y\right)\mathopen{}\left(t+5y\right)}}{{3t^{8}y}} \\
-      \amp = {\frac{6y^{3}\mathopen{}\left(t+5y\right)}{t^{7}}}
+   {\frac{20t^{3}r^{3}}{t-10r}} \div {\frac{4t^{8}r}{t^{2}-100r^{2}}} 
+      \amp = {\frac{20t^{3}r^{3}}{t-10r}} \cdot {\frac{t^{2}-100r^{2}}{4t^{8}r}} \\
+      \amp = {\frac{20t^{3}r^{3}}{t-10r}} \cdot \frac{{\left(t-10r\right)\mathopen{}\left(t+10r\right)}}{{4t^{8}r}} \\
+      \amp = {\frac{5r^{2}\mathopen{}\left(t+10r\right)}{t^{5}}}
 \end{aligned}
     }</m></p>
 </solution>

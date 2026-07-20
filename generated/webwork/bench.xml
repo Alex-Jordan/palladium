@@ -1,42 +1,42 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-bench" assembly-id="bench">
-  <static seed="864">
-    <statement><p>Makena wanted to make a bench.</p>
+  <static seed="1055">
+    <statement><p>Rebeca wanted to make a bench.</p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/bench-image-1" width="47%">
 <shortdescription>a sketch of a bench with an arc drawn on the backrest of the bench</shortdescription>
 </image>
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/bench-image-2" width="47%">
-<shortdescription>the bench backrest board is labeled 66 in by 12 in and a large circle that makes the arc on the board; there is a dot in the center of the circle</shortdescription>
+<shortdescription>the bench backrest board is labeled 48 in by 10 in and a large circle that makes the arc on the board; there is a dot in the center of the circle</shortdescription>
 </image>
-<p>She wanted the top of the bench back to be a perfect portion of a circle, in the shape of an arc, as in the image. (Note that this won<rsq/>t be a half-circle, just a small portion of a circular edge.) He started with a rectangular board <m>12</m> inches wide and <m>66</m> inches long, and a piece of string, like a compass, to draw a circular arc on the board. How long should the string be so that it can be swung round to draw the arc?</p>
+<p>She wanted the top of the bench back to be a perfect portion of a circle, in the shape of an arc, as in the image. (Note that this won<rsq/>t be a half-circle, just a small portion of a circular edge.) He started with a rectangular board <m>10</m> inches wide and <m>48</m> inches long, and a piece of string, like a compass, to draw a circular arc on the board. How long should the string be so that it can be swung round to draw the arc?</p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>51.375\ {\rm in}</m>
+        <m>33.8\ {\rm in}</m>
       </p>
     </answer>
-    <solution><p>Let<rsq/>s define <m>x</m> to be the radius of the circle in question, in inches. The circle should go through the bottom corners of the board and just barely touch the top of the board. That means that the line from the middle of the bottom of the board to the center of the circle will be <m>12</m> inches shorter than the radius.</p>
+    <solution><p>Let<rsq/>s define <m>x</m> to be the radius of the circle in question, in inches. The circle should go through the bottom corners of the board and just barely touch the top of the board. That means that the line from the middle of the bottom of the board to the center of the circle will be <m>10</m> inches shorter than the radius.</p>
 <p>&gt;&gt;</p>
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/bench-image-3" width="47%">
-<shortdescription>a diagram using the radii of the circle to form a triangle with the bench back board; The base of the triangle is a radius that is horizontal from the center of the circle to the bottom of the backrest, labeled x-12; The hypotenuse is another radius from the center of the circle to the corner of the backrest, labeled x; the height of the triangle is labeled 33 in from the center to edge of the backrest</shortdescription>
+<shortdescription>a diagram using the radii of the circle to form a triangle with the bench back board; The base of the triangle is a radius that is horizontal from the center of the circle to the bottom of the backrest, labeled x-10; The hypotenuse is another radius from the center of the circle to the corner of the backrest, labeled x; the height of the triangle is labeled 24 in from the center to edge of the backrest</shortdescription>
 </image>
 <p>&lt;&lt;</p>
 <p>Now we can set up the Pythagorean Theorem based on the scenario. The equation <m>a^2+b^2=c^2</m> turns into...</p>
 <p><me>\begin{aligned}
-(x-12)^2+33^2\amp=x^2\\
-x^2-24x+144+1089\amp=x^2\\
--24x+1233\amp=0
+(x-10)^2+24^2\amp=x^2\\
+x^2-20x+100+576\amp=x^2\\
+-20x+676\amp=0
 \end{aligned}</me></p>
 <p>Note that at this point the equation is no longer quadratic! Solve the linear equation by isolating <m>x</m></p>
 <p><me>\begin{aligned}
-x\amp=51.375
+x\amp=33.8
 \end{aligned}</me></p>
-<p>So, the circle radius required is <m>51.375</m> inches. Makena found a friend to hold the string at one end and drew a circular segment on the board to great effect.</p>
+<p>So, the circle radius required is <m>33.8</m> inches. Rebeca found a friend to hold the string at one end and drew a circular segment on the board to great effect.</p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_3_4_60.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/2_4_7_146.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -53,7 +53,7 @@ x\amp=51.375
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.3.4.60)
+## Problem1(2.4.7.146)
 ## Author()
 ## Institution()
 ## Language(en-US)

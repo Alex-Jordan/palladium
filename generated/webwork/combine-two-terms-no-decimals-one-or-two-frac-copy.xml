@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-combine-two-terms-no-decimals-one-or-two-frac-copy" assembly-id="combine-two-terms-no-decimals-one-or-two-frac-copy">
-  <static seed="2273">
-    <statement><p><m>{J+{\frac{5}{4}}J}</m></p>
+  <static seed="2137">
+    <statement><p><m>{-2G+4G}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{9}{4}J</m>
+        <m>2G</m>
       </p>
     </answer>
   </static>

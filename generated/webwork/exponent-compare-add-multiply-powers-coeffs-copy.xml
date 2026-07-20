@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-compare-add-multiply-powers-coeffs-copy" assembly-id="exponent-compare-add-multiply-powers-coeffs-copy">
-  <static seed="2613">
+  <static seed="2477">
     <introduction/>
     <task>
-      <statement><p><m>{3h^{7}+4h^{7}}</m></p>
+      <statement><p><m>{5g^{9}+8g^{9}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>7h^{7}</m>
+          <m>13g^{9}</m>
         </p>
       </answer>
     </task>
     <task>
-      <statement><p><m>\left(3h^7\right)\cdot\left(4h^7\right)</m></p>
+      <statement><p><m>\left(5g^9\right)\cdot\left(8g^9\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>12h^{14}</m>
+          <m>40g^{18}</m>
         </p>
       </answer>
     </task>

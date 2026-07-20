@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-minimum-deposit" assembly-id="minimum-deposit">
-  <static seed="2433">
+  <static seed="2297">
     <statement><p>A bank offers a higher interest rate on an account if the initial deposit is at least <m>\$5000\text{.}</m> Write an interval for the initial deposit <m>d</m> that could trigger the higher rate.</p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 <p><fillin characters="12" name="AnSwEr0002"/></p>

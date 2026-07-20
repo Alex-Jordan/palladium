@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-addition-and-subtraction-of-rational-expressions-7-3-12" assembly-id="section-addition-and-subtraction-of-rational-expressions-7-3-12">
-  <static seed="1387" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions110.pg">
+  <static seed="1251" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions110.pg">
     <statement><p>Add or subtract the rational expressions to a single rational expression and then simplify. If applicable, state the restricted domain.</p>
-<p><m>\displaystyle{{\frac{1}{r+6}+\frac{6}{r-6}} =}</m> <fillin characters="40" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{5}{r-5}+\frac{2}{r+6}} =}</m> <fillin characters="40" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{7r+30}{\left(r+6\right)\mathopen{}\left(r-6\right)}, \left(-\infty ,\infty \right)</m>
+        <m>\frac{7r+20}{\left(r-5\right)\mathopen{}\left(r+6\right)}, \left(-\infty ,\infty \right)</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   {\frac{1}{r+6}+\frac{6}{r-6}} 
-      \amp = {\frac{1}{r+6}} \cdot \frac{(r - 6)}{(r - 6)} +\frac{6}{r - 6} \cdot \frac{(r+6)}{(r+6)}  \\
-      \amp = {\frac{r-6+6\mathopen{}\left(r+6\right)}{\left(r+6\right)\mathopen{}\left(r-6\right)}} \\
-      \amp = {\frac{r-6+6r+36}{\left(r+6\right)\mathopen{}\left(r-6\right)}} \\
-      \amp = {\frac{7r+30}{\left(r+6\right)\mathopen{}\left(r-6\right)}}
+   {\frac{5}{r-5}+\frac{2}{r+6}} 
+      \amp = {\frac{5}{r-5}} \cdot \frac{(r+6)}{(r+6)} +\frac{2}{r+6} \cdot \frac{(r - 5)}{(r - 5)}  \\
+      \amp = {\frac{5\mathopen{}\left(r+6\right)+2\mathopen{}\left(r-5\right)}{\left(r-5\right)\mathopen{}\left(r+6\right)}} \\
+      \amp = {\frac{5r+30+2r-10}{\left(r-5\right)\mathopen{}\left(r+6\right)}} \\
+      \amp = {\frac{7r+20}{\left(r-5\right)\mathopen{}\left(r+6\right)}}
 \end{aligned}
     }</m></p>
 </solution>

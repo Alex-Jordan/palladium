@@ -1,41 +1,41 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers20-copy" assembly-id="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers20-copy">
-  <static seed="1795">
+  <static seed="1659">
     <introduction/>
     <task>
-      <statement><p><m>\displaystyle{ \sqrt{100} }</m></p>
+      <statement><p><m>\displaystyle{ \sqrt{81} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>10</m>
+          <m>9</m>
         </p>
       </answer>
-      <solution><p>Just knowing the first few square numbers, <m>\sqrt{100} = 10</m>.</p>
+      <solution><p>Just knowing the first few square numbers, <m>\sqrt{81} = 9</m>.</p>
 </solution>
     </task>
     <task>
-      <statement><p><m>\displaystyle{ \sqrt{1} }</m></p>
+      <statement><p><m>\displaystyle{ \sqrt{16} }</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>1</m>
+          <m>4</m>
         </p>
       </answer>
-      <solution><p>Just knowing the first few square numbers, <m>\sqrt{1} = 1</m>.</p>
+      <solution><p>Just knowing the first few square numbers, <m>\sqrt{16} = 4</m>.</p>
 </solution>
     </task>
     <task>
-      <statement><p><m>\displaystyle{ \sqrt{4} }</m></p>
+      <statement><p><m>\displaystyle{ \sqrt{25} }</m></p>
 <p><fillin characters="16" name="AnSwEr0003"/></p>
 </statement>
       <answer>
         <p>
-          <m>2</m>
+          <m>5</m>
         </p>
       </answer>
-      <solution><p>Just knowing the first few square numbers, <m>\sqrt{4} = 2</m>.</p>
+      <solution><p>Just knowing the first few square numbers, <m>\sqrt{25} = 5</m>.</p>
 </solution>
     </task>
   </static>

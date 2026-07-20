@@ -1,0 +1,86 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.2.8.89)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "parserGraphTool.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Fraction")->noreduce('(-x)-y');
+$r = list_random(-5..-1,1..5);
+do {
+  $s = ($r % 2)
+    ? random(-5,5,2)
+    : non_zero_random(-4,4,2);
+} until abs($r) != abs($s);
+$h = ($r + $s)/2;
+$c = list_random(-5..-1,1..5);
+$a = Fraction($c, $r*$s);
+$b = -$a*($r+$s);
+$f = Formula("$a x^2 + $b x + $c")->reduce;
+$k = $f->eval(x => $h);
+$l = $f->eval(x => -1);
+$r = $f->eval(x => 1);
+$u = $c + $b;
+$gt = GraphTool(
+    "{point,($h,$k)}",
+    "{line,solid,(0,$c),(1,$u)}"
+)->with(
+    staticObjects => ["{quadratic,solid,(0,$c),(-1,$l),(1,$r)}"],
+    availableTools => ["PointTool", "LineTool"],
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Add graphical elements to the given graphs as requested.
+
+The graph of [`y=[$f]`] is given. Draw a point that represents the vertex. Draw a line that represents the initial slope.
+
+[_]{$gt}{1}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

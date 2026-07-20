@@ -1,0 +1,100 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.2.9)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGlateximage.pl",
+  "contextForm.pl",
+  "parserPopUp.pl",
+  "Pd.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$f = Formula("-1/4(x + 2)(x - 6)");
+Context("Point");
+$vertex = Point("(2, 4)");
+$roots = List("-2,6");
+$iv = $f->eval(x => 0);
+$is = $f->D()->eval(x => 0);
+$curv = DropDown(['positive', 'negative'], 1, showInStatic => 0);
+
+$image_1 = createLaTeXImage();
+$image_1->addToPreamble(latexImagePreamble());
+$image_1->BEGIN_LATEX_IMAGE
+\begin{tikzpicture}
+  \begin{axis}
+    \addplot[domain=-4.5:7] {-1/4*(x+2)*(x-6)};
+  \end{axis}
+\end{tikzpicture}
+
+END_LATEX_IMAGE
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Here is the graph of a quadratic function [`f\text{.}`]
+
+>> [@image(insertGraph($image_1), width=>360)@]*  <<
+
+a.  Where is the vertex?
+
+    [_]{$vertex}{6}
+
+a.  What are the roots?
+
+    [_]{$roots}{6}
+
+a.  What is the initial value?
+
+    [_]{$iv}{6}
+
+a.  What is the initial slope?
+
+    [_]{$is}{6}
+
+a.  Is the leading coefficient of this function's formula positive or negative?
+
+    [_]{$curv}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

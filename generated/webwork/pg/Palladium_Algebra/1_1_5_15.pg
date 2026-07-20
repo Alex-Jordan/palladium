@@ -27,9 +27,8 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PCCmacros.pl",
-  "parserNumberWithUnits.pl",
-  "parserLinearRelation.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -42,27 +41,25 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$initial = 100;
-$start = NumberWithUnits("$initial lb");
-$rate = random(7,12);
-$speed = NumberWithUnits("$rate lb");
-$final = random(20,30,5);
-$end = NumberWithUnits("$final lb");
-Context("LinearRelation")->variables->are(t => 'Real');
-$equation = LinearRelation("$initial - $rate t = $final");
+($r,$s) = random_subset(2,1..9);
+$r *= -1;
+($r,$s) = random_subset(2,$r,$s);
+Context()->noreduce('(-x)-y');
+$right = random(1,9);
+$left = Formula("x^2 - ($r+$s)x + ($r*$s + $right)")->reduce;
+Context("FiniteSolutionSets");
+$sols = Formula("{$r,$s}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Write an equation to model the scenario. There is no need to solve the equation.
+Solve the equation by factoring.
 
-A restaurant stocks its pantry with [`[$start]`] of onions. When the supply reaches [`[$end]\text{,}`] it's time to order more. Recently, the restaurant has been using [`[$speed]`] of onions per day. How long since restocking will it take until another order must be placed? Write an equation to model this scenario. There is no need to solve it.
+[`[$left] = [$right]`]
 
-[@KeyboardInstructions('Use [|t|]* as the variable.')@]**
-
-[_]{$equation}{20}
+[_]{$sols}{16}
 
 END_PGML
 

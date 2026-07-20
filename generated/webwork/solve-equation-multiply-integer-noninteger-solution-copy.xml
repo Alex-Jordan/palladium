@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-equation-multiply-integer-noninteger-solution-copy" assembly-id="solve-equation-multiply-integer-noninteger-solution-copy">
-  <static seed="2526">
-    <statement><p><m>{17J}={14}</m></p>
+  <static seed="2390">
+    <statement><p><m>{-15}={-13G}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\frac{14}{17}\right\}</m>
+        <m>\left\{\frac{15}{13}\right\}</m>
       </p>
     </answer>
   </static>

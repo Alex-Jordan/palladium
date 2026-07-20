@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-solution-quadratic-positive-integer-copy" assembly-id="check-solution-quadratic-positive-integer-copy">
-  <static seed="2454">
-    <statement><p>Is <m>{5}</m> a solution to <m>{9x^{2}-3}={7x+187}\text{?}</m></p>
+  <static seed="2318">
+    <statement><p>Is <m>{2}</m> a solution to <m>{3x^{2}-9}={2x+31}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>9x^{2}-3</m></cell>
+<cell><m>3x^{2}-9</m></cell>
 <cell><m>=</m></cell>
-<cell><m>7x+187</m></cell>
+<cell><m>2x+31</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
@@ -24,17 +24,17 @@
 </statement>
     <answer>
       <p>
-        <m>222</m>
+        <m>3</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>222</m>
+        <m>35</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\text{Yes, it is a solution.}</m>
+        <m>\text{No, it is not a solution.}</m>
       </p>
     </answer>
   </static>

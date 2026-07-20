@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-add-two-distributions-fractions" assembly-id="simplify-add-two-distributions-fractions">
-  <static seed="2368">
-    <statement><p><m>{\frac{3}{8}\mathopen{}\left(2Y-3\right)+5\mathopen{}\left(9Y-\frac{9}{5}\right)}</m></p>
+  <static seed="2232">
+    <statement><p><m>{\frac{3}{5}\mathopen{}\left(7n-8\right)+5\mathopen{}\left(9n-\frac{3}{4}\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{183}{4}Y+\frac{-81}{8}</m>
+        <m>\frac{246}{5}n+\frac{-171}{20}</m>
       </p>
     </answer>
   </static>

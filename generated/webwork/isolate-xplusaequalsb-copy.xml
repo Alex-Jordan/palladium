@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-isolate-xplusaequalsb-copy" assembly-id="isolate-xplusaequalsb-copy">
-  <static seed="1558">
-    <statement><p><m>z</m> in <m>{z+w}={n}</m></p>
+  <static seed="1422">
+    <statement><p><m>w</m> in <m>{w+L}={D}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>z = n-w</m>
+        <m>w = D-L</m>
       </p>
     </answer>
   </static>

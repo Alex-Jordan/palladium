@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar90" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar90">
-  <static seed="2675">
-    <statement><p><m>\left({3a+10b}\right)\left({3a+2b}\right)</m></p>
+  <static seed="2539">
+    <statement><p><m>\left({3a+4b}\right)\left({5a-9b}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>9a^{2}+36ab+20b^{2}</m>
+        <m>15a^{2}-7ab-36b^{2}</m>
       </p>
     </answer>
     <solution><p>We multiply the polynomials using the FOIL method: <alert>F</alert>irst <alert>O</alert>utside
 <alert>I</alert>nside <alert>L</alert>ast</p>
 <p><m>\displaystyle{    \begin{aligned}
-        \left({3a+10b}\right)\left({3a+2b}\right)\amp ={3a\cdot 3a+3a\cdot 2b+10b\cdot 3a+10b\cdot 2b}\\
-                      \amp  = {9a^{2}+36ab+20b^{2}}
+        \left({3a+4b}\right)\left({5a-9b}\right)\amp ={3a\cdot 5a-3a\cdot 9b+4b\cdot 5a-4b\cdot 9b}\\
+                      \amp  = {15a^{2}-7ab-36b^{2}}
     \end{aligned}
 }</m></p>
 </solution>

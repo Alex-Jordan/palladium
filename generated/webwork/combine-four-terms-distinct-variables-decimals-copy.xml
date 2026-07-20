@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-combine-four-terms-distinct-variables-decimals-copy" assembly-id="combine-four-terms-distinct-variables-decimals-copy">
-  <static seed="2293">
-    <statement><p><m>{-U+W-74U-W}</m></p>
+  <static seed="2157">
+    <statement><p><m>{-5.5R+R+5.3j+91j}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-75U</m>
+        <m>-4.5R+96.3j</m>
       </p>
     </answer>
   </static>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-the-quadratic-formula-7-3-7" assembly-id="section-the-quadratic-formula-7-3-7">
-  <static seed="970">
-    <statement><p>The rectangular floor of your classroom is <m>{22.5\ {\rm m}}</m> longer than it is wide. The total floor area is <m>{304\ {\rm m^{2}}}\text{.}</m> How wide is the floor? (This is asking for the shorter dimension.)</p>
+  <static seed="503">
+    <statement><p>The rectangular floor of your classroom is <m>{9.25\ {\rm m}}</m> longer than it is wide. The total floor area is <m>{215\ {\rm m^{2}}}\text{.}</m> How wide is the floor? (This is asking for the shorter dimension.)</p>
 <p><fillin characters="1" name="AnSwEr0001"/></p>
 </statement>
     <answer>
@@ -9,20 +9,20 @@
         <m>20</m>
       </p>
     </answer>
-    <solution><p>The area of a rectangle is given by multipying its two dimensions. If we let <m>w</m> stand for the width of the floor (the shorter dimension), then <m>{w+22.5}</m> is the length, and the total area is <m>{w\mathopen{}\left(w+22.5\right)}\text{.}</m> So we must solve the equation <m>{w\mathopen{}\left(w+22.5\right)}=304\text{.}</m></p>
-<p>After multiplying and moving to standard form, we have <m>{w^{2}+22.5w-304}=0\text{.}</m> Using the quadratic formula:</p>
+    <solution><p>The area of a rectangle is given by multipying its two dimensions. If we let <m>w</m> stand for the width of the floor (the shorter dimension), then <m>{w+9.25}</m> is the length, and the total area is <m>{w\mathopen{}\left(w+9.25\right)}\text{.}</m> So we must solve the equation <m>{w\mathopen{}\left(w+9.25\right)}=215\text{.}</m></p>
+<p>After multiplying and moving to standard form, we have <m>{w^{2}+9.25w-215}=0\text{.}</m> Using the quadratic formula:</p>
 <p><me>\begin{aligned}
 h\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
-\amp=\frac{-22.5\pm\sqrt{22.5^2-4\left(1\right)\left(-304\right)}}{2\left(1\right)}\\
-\amp=\frac{-22.5\pm\sqrt{1722.25}}{2}\\
-\amp=\frac{-22.5\pm{41.5}}{2}\\
-h\amp=\frac{-22.5-{41.5}}{2}\quad\text{or}\quad h=\frac{-22.5+{41.5}}{2}\\
-h\amp={-32}\quad\text{or}\quad h={9.5}
+\amp=\frac{-9.25\pm\sqrt{9.25^2-4\left(1\right)\left(-215\right)}}{2\left(1\right)}\\
+\amp=\frac{-9.25\pm\sqrt{945.5625}}{2}\\
+\amp=\frac{-9.25\pm{30.75}}{2}\\
+h\amp=\frac{-9.25-{30.75}}{2}\quad\text{or}\quad h=\frac{-9.25+{30.75}}{2}\\
+h\amp={-20}\quad\text{or}\quad h={10.75}
 \end{aligned}</me></p>
-<p>Only the solution <m>h\approx{9.5}</m> makes sense in this situation. The floor is <m>{9.5\ {\rm m}}</m> wide.</p>
+<p>Only the solution <m>h\approx{10.75}</m> makes sense in this situation. The floor is <m>{10.75\ {\rm m}}</m> wide.</p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_4_5_104.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_5_5_104.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -39,7 +39,7 @@ h\amp={-32}\quad\text{or}\quad h={9.5}
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.4.5.104)
+## Problem1(1.5.5.104)
 ## Author()
 ## Institution()
 ## Language(en-US)

@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp80" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp80">
-  <static seed="1741">
-    <statement><p><m>8^{-1}+9^{-1}</m></p>
+  <static seed="1605">
+    <statement><p><m>8^{-1}+3^{-1}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{17}{72}}</m>
+        <m>{\frac{11}{24}}</m>
       </p>
     </answer>
     <solution><p>We evaluate the expression by remembering that <m>x^{-n}</m> is the same thing as <m>\displaystyle{\frac{1}{x^n}}</m> 
 for any non-zero,
 real value of <m>x</m>. Once we have rewritten each term, the problem is a simple fraction problem.</p>
 <p><m>\begin{aligned}
-            8^{-1}+9^{-1} \amp  = \frac{1}{8}+\frac{1}{9}\\
-                                \amp  = \frac{1}{8}\cdot\frac{9}{9}+\frac{1}{9}\cdot\frac{8}{8}\\
-                               \amp  = \frac{9+8}{72}\\
-                             \amp  = \displaystyle\frac{17}{72}
+            8^{-1}+3^{-1} \amp  = \frac{1}{8}+\frac{1}{3}\\
+                                \amp  = \frac{1}{8}\cdot\frac{3}{3}+\frac{1}{3}\cdot\frac{8}{8}\\
+                               \amp  = \frac{3+8}{24}\\
+                             \amp  = \displaystyle\frac{11}{24}
       \end{aligned}</m></p>
 </solution>
   </static>

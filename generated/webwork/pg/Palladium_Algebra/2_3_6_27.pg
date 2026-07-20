@@ -1,0 +1,69 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.3.6.27)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$r = 0;
+($a,$s) = random_coprime([2..9], [-9..-2,2..9]);
+Context()->noreduce('(-x)-y');
+$left = Formula("$a x^2")->reduce;
+$right = Formula("$s x")->reduce;
+Context("FiniteSolutionSets");
+$sols = Formula("{$r,$s/$a}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve the equation by factoring.
+
+[`[$left] = [$right]`]
+
+[_]{$sols}{16}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

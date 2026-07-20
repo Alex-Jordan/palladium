@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp135-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp135-copy">
-  <static seed="1764">
-    <statement><p><m>\left(4y^{13}\right)^{2}\cdot y^{-11}</m></p>
+  <static seed="1628">
+    <statement><p><m>\left(4y^{4}\right)^{3}\cdot y^{-2}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>16y^{15}</m>
+        <m>64y^{10}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remember that <m>a^m\cdot a^n = a^{m+n}</m> and <m>\left(a^m\right)^n=a^{mn}</m>.</p>
 <p><m>\begin{aligned}
-                \left(4y^{13}\right)^{2}\cdot y^{-11} \amp = 4^{2}y^{13\cdot2}y^{-11}\\
-                                                                          \amp  =16y^{26}y^{-11}\\
-                                                                      \amp  =16y^{26-11}\\
-                                    \amp  = {16y^{15}}
+                \left(4y^{4}\right)^{3}\cdot y^{-2} \amp = 4^{3}y^{4\cdot3}y^{-2}\\
+                                                                          \amp  =64y^{12}y^{-2}\\
+                                                                      \amp  =64y^{12-2}\\
+                                    \amp  = {64y^{10}}
            \end{aligned}</m></p>
 </solution>
   </static>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-mxequalsmxplusb" assembly-id="solve-mxequalsmxplusb">
-  <static seed="1509">
-    <statement><p><m>{2b}={2b+7}</m></p>
+  <static seed="1373">
+    <statement><p><m>{2h}={2h+5}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>

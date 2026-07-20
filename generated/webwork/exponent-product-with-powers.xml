@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-product-with-powers" assembly-id="exponent-product-with-powers">
-  <static seed="2586">
-    <statement><p><m>{2h^{6}\cdot 9h^{3}}</m></p>
+  <static seed="2450">
+    <statement><p><m>{4g^{4}\cdot 3g^{9}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>18h^{0}</m>
+        <m>12g^{0}</m>
       </p>
     </answer>
   </static>

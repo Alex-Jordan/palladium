@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-apples-cost" assembly-id="apples-cost">
-  <static seed="1649">
-    <statement><p>Katlyn and Reese went to the weekend market to buy apples in bulk for a school event, canning lots of applesauce. Katlyn bought 54 lb of apples and paid $48.60. Reese has bagged her apples and has 82 lb of apples ready. How much will it Reese<rsq/>s bag of apples cost?</p>
+  <static seed="1513">
+    <statement><p>Josephine and Arturo went to the weekend market to buy apples in bulk for a school event, canning lots of applesauce. Josephine bought 61 lb of apples and paid $48.19. Arturo has bagged his apples and has 90 lb of apples ready. How much will it Arturo<rsq/>s bag of apples cost?</p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\$73.80</m>
+        <m>\$71.10</m>
       </p>
     </answer>
   </static>

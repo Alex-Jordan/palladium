@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot20" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot20">
-  <static seed="1806">
+  <static seed="1670">
     <statement><p><m>\displaystyle{\sqrt{{{\frac{121}{144}}}}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-mxequalsmxplusb-fraction-inequality-copy" assembly-id="solve-mxequalsmxplusb-fraction-inequality-copy">
-  <static seed="1542">
-    <statement><p><m>{{\frac{7}{5}}F}\geq{{\frac{7}{5}}F-9}</m></p>
+  <static seed="1406">
+    <statement><p><m>{{\frac{7}{3}}W}\leq{{\frac{7}{3}}W-4}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left(-\infty ,\infty \right)\hbox{ or }\text{infinitely many solutions}</m>
+        <m>\text{no real solutions}</m>
       </p>
     </answer>
   </static>

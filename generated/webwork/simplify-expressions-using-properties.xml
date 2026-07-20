@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-expressions-using-properties" assembly-id="simplify-expressions-using-properties">
-  <static seed="2311">
+  <static seed="2175">
     <introduction><p>Simplify the expressions using the commutative, associative, and distributive properties.</p>
 </introduction>
     <task>

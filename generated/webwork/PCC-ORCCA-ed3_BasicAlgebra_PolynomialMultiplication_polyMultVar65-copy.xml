@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar65-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar65-copy">
-  <static seed="2644">
-    <statement><p><m>{8x^{12}y^{13}}\left({2x^{13}-5y^{20}}\right)</m></p>
+  <static seed="2508">
+    <statement><p><m>{-8x^{10}y^{9}}\left({-5x^{8}+3y^{9}}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>16x^{25}y^{13}-40x^{12}y^{33}</m>
+        <m>40x^{18}y^{9}-24x^{10}y^{18}</m>
       </p>
     </answer>
     <solution><p>We multiply the polynomials using
 the rule <m>a^m\cdot a^n = a^{m+n}</m> to guide us</p>
 <p><m>\displaystyle{    \begin{aligned}
-        \left({8x^{12}y^{13}}\right)\left({2x^{13}-5y^{20}}\right)\amp = 16x^{12+13}y^{13} - 40x^{12}y^{13+20}\\
-                      \amp  = {16x^{25}y^{13}-40x^{12}y^{33}}
+        \left({-8x^{10}y^{9}}\right)\left({-5x^{8}+3y^{9}}\right)\amp = 40x^{10+8}y^{9} - 24x^{10}y^{9+9}\\
+                      \amp  = {40x^{18}y^{9}-24x^{10}y^{18}}
     \end{aligned}
 }</m></p>
 <p>Note that we are using the <em>distributive</em> property of multiplication in this problem: <m>a(b+c)=ab+ac</m>.</p>

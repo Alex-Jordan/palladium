@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-try-all-algebra-properties" assembly-id="try-all-algebra-properties">
-  <static seed="2308">
+  <static seed="2172">
     <task>
       <statement><p>Use the commutative property of multiplication to write an equivalent expression to <m>{53m}\text{.}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>

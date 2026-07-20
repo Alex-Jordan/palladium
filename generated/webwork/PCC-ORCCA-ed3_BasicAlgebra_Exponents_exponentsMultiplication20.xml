@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication20" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication20">
-  <static seed="1665">
-    <statement><p><m>\displaystyle{\left(t^{5}\right)^{4}}</m></p>
+  <static seed="1529">
+    <statement><p><m>\displaystyle{\left(x^{5}\right)^{7}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>t^{20}</m>
+        <m>x^{35}</m>
       </p>
     </answer>
     <solution><p>We <em>multiply</em> the exponents as follows: <me>\begin{aligned}
-           \left(t^{5}\right)^{4}\amp =t^{5\cdot4}\\
-                             \amp =t^{20}
+           \left(x^{5}\right)^{7}\amp =x^{5\cdot7}\\
+                             \amp =x^{35}
        \end{aligned}</me></p>
 </solution>
   </static>

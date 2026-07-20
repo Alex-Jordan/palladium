@@ -226,40 +226,56 @@ source_file = Palladium_Algebra/2_1_30.pg
 problem_id = 30
 problem_end
 problem_start
-source_file = Palladium_Algebra/2_3_5.pg
+source_file = Palladium_Algebra/2_2_3.pg
+problem_id = 3
+problem_end
+problem_start
+source_file = Palladium_Algebra/2_2_5.pg
 problem_id = 5
 problem_end
 problem_start
-source_file = Palladium_Algebra/2_3_7.pg
-problem_id = 7
-problem_end
-problem_start
-source_file = Palladium_Algebra/2_4_9.pg
-problem_id = 9
-problem_end
-problem_start
-source_file = Palladium_Algebra/2_5_8.pg
+source_file = Palladium_Algebra/2_2_8.pg
 problem_id = 8
 problem_end
 problem_start
-source_file = Palladium_Algebra/2_5_15.pg
-problem_id = 15
+source_file = Palladium_Algebra/2_2_9.pg
+problem_id = 9
 problem_end
 problem_start
-source_file = Palladium_Algebra/2_7_12.pg
-problem_id = 12
+source_file = Palladium_Algebra/2_2_16.pg
+problem_id = 16
 problem_end
 problem_start
-source_file = Palladium_Algebra/2_7_17.pg
-problem_id = 17
+source_file = Palladium_Algebra/2_2_18.pg
+problem_id = 18
 problem_end
 problem_start
-source_file = Palladium_Algebra/2_7_23.pg
+source_file = Palladium_Algebra/2_2_20.pg
+problem_id = 20
+problem_end
+problem_start
+source_file = Palladium_Algebra/2_2_22.pg
+problem_id = 22
+problem_end
+problem_start
+source_file = Palladium_Algebra/2_2_23.pg
 problem_id = 23
 problem_end
 problem_start
-source_file = Palladium_Algebra/2_8_7.pg
+source_file = Palladium_Algebra/2_2_26.pg
+problem_id = 26
+problem_end
+problem_start
+source_file = Palladium_Algebra/2_4_5.pg
+problem_id = 5
+problem_end
+problem_start
+source_file = Palladium_Algebra/2_4_7.pg
 problem_id = 7
+problem_end
+problem_start
+source_file = Palladium_Algebra/2_4_25.pg
+problem_id = 25
 problem_end
 problem_start
 source_file = Palladium_Algebra/3_1_7.pg

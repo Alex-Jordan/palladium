@@ -1,27 +1,27 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp160-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp160-copy">
-  <static seed="1774">
-    <statement><p><m>\displaystyle\left(\frac{y^{7}}{3}\right)^{-3}</m></p>
+  <static seed="1638">
+    <statement><p><m>\displaystyle\left(\frac{y^{10}}{2}\right)^{-3}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{27}{y^{21}}</m>
+        <m>\frac{8}{y^{30}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\left(a^m\right)^{n}=a^{mn}</m></p>
 <p><m>\begin{aligned}
-                 \left(\frac{y^{7}}{3}\right)^{-3}
-                      \amp = \frac{y^{7\cdot(-3)}}{3^{-3}}\\
-                      \amp = \frac{y^{-21}}{3^{-3}}\\
-                                    \amp  = {\frac{27}{y^{21}}}
+                 \left(\frac{y^{10}}{2}\right)^{-3}
+                      \amp = \frac{y^{10\cdot(-3)}}{2^{-3}}\\
+                      \amp = \frac{y^{-30}}{2^{-3}}\\
+                                    \amp  = {\frac{8}{y^{30}}}
            \end{aligned}</m></p>
 <p>You might have preferred to do this problem a little differently:</p>
 <p><m>\begin{aligned}
-                 \left(\frac{y^{7}}{3}\right)^{-3}
-                      \amp = \left(\frac{3}{y^{7}}\right)^{3}\\
-                      \amp = \frac{3^{3}}{y^{21}}\\
-                                    \amp  = {\frac{27}{y^{21}}}
+                 \left(\frac{y^{10}}{2}\right)^{-3}
+                      \amp = \left(\frac{2}{y^{10}}\right)^{3}\\
+                      \amp = \frac{2^{3}}{y^{30}}\\
+                                    \amp  = {\frac{8}{y^{30}}}
            \end{aligned}</m></p>
 </solution>
   </static>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-combine-three-terms-fractions-copy" assembly-id="combine-three-terms-fractions-copy">
-  <static seed="2287">
-    <statement><p><m>{-{\frac{5}{4}}l+{\frac{1}{7}}l-l}</m></p>
+  <static seed="2151">
+    <statement><p><m>{{\frac{9}{4}}i+10i-{\frac{1}{4}}i}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{-59}{28}l</m>
+        <m>12i</m>
       </p>
     </answer>
   </static>

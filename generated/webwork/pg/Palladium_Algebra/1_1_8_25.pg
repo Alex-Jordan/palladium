@@ -1,0 +1,81 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.8.25)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+($a,$r,$s) = random_subset(3,1..9);
+$f = Formula("$a(x-$r)(x-$s)");
+$roots = List($r,$s);
+Context("Fraction");
+$h = Fraction($r+$s,2);
+$k = $f->eval(x => $h);
+Context("Point");
+$vertex = Point("($h,$k)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Identify the curvature coefficient, roots, and vertex of the quadratic function with the given formula.
+
+[`f(x) = [$f]`]
+
+[@KeyboardInstructions('Enter the curvature coefficient here.')@]**
+
+[_]{$a}{6}
+
+[@KeyboardInstructions('Enter the roots here.')@]**
+
+[_]{$roots}{6}
+
+[@KeyboardInstructions('Enter the vertex coordinates here.')@]**
+
+[_]{$vertex}{6}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

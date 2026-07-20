@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-introduction-to-rational-functions-5-3-10" assembly-id="section-introduction-to-rational-functions-5-3-10">
-  <static seed="1221" source="Contrib/PCC/BasicAlgebra/RationalFunctions/rationalFunctionDomain10.pg">
-    <statement><p>Find the domain of the function <m>n</m> defined by <m>\displaystyle{n(x)=\frac{x - 6}{x^{4}}}</m></p>
+  <static seed="1085" source="Contrib/PCC/BasicAlgebra/RationalFunctions/rationalFunctionDomain10.pg">
+    <statement><p>Find the domain of the function <m>y</m> defined by <m>\displaystyle{y(x)=\frac{x - 8}{x^{5}}}</m></p>
 <p><fillin characters="34" name="AnSwEr0001"/></p>
 </statement>
     <answer>

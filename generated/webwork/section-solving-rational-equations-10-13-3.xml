@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-13-3" assembly-id="section-solving-rational-equations-10-13-3">
-  <static seed="1618">
+  <static seed="1482">
     <statement><p>Use technology to solve the equation.</p>
 <p><me>\frac{x-9}{x^5+1}=-3x-7
                 \text{.}</me></p>

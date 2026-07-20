@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-quadratic-graphs-and-vertex-form-8-1-9" assembly-id="section-quadratic-graphs-and-vertex-form-8-1-9">
-  <static seed="1077" source="Contrib/PCC/BasicAlgebra/Factoring/factoring375.pg">
+  <static seed="610" source="Contrib/PCC/BasicAlgebra/Factoring/factoring375.pg">
     <statement><p>Factor the given polynomial.</p>
-<p><m>{2y^{2}+20y+18}=</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>{10r^{2}+30r+20}=</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>2\mathopen{}\left(y+1\right)\mathopen{}\left(y+9\right)</m>
+        <m>10\mathopen{}\left(r+1\right)\mathopen{}\left(r+2\right)</m>
       </p>
     </answer>
-    <solution><p>Let<rsq/>s start by noting that <m>2</m> is a common factor to each term, so 
+    <solution><p>Let<rsq/>s start by noting that <m>10</m> is a common factor to each term, so 
 we may write</p>
-<p><m>{2y^{2}+20y+18}={2\mathopen{}\left(y^{2}+10y+9\right)}</m></p>
+<p><m>{10r^{2}+30r+20}={10\mathopen{}\left(r^{2}+3r+2\right)}</m></p>
 <p>To factor this expression further we make the following observations:
 <ul label="disc">
 <li>
@@ -20,12 +20,12 @@ we may write</p>
 <li>
 <p>the middle term<rsq/>s coefficient and the last term are <em>positive</em> which means that the factorization
 will have the form</p>
-<p><m>(y+\phantom{3})(y+\phantom{3})</m></p>
+<p><m>(r+\phantom{3})(r+\phantom{3})</m></p>
 </li>
 </ul></p>
-<p>We look for factors of <m>9</m> that add to <m>10</m>; the 
-factors that work are <m>1</m> and <m>9</m> so</p>
-<p><m>{2y^{2}+20y+18}={2\mathopen{}\left(y+1\right)\mathopen{}\left(y+9\right)}</m></p>
+<p>We look for factors of <m>2</m> that add to <m>3</m>; the 
+factors that work are <m>1</m> and <m>2</m> so</p>
+<p><m>{10r^{2}+30r+20}={10\mathopen{}\left(r+1\right)\mathopen{}\left(r+2\right)}</m></p>
 <p>Note that this answer can be checked by using the FOIL (<alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast) technique (exercise).</p>
 </solution>
   </static>

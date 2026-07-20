@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-product-power-to-power-multivar-copy" assembly-id="exponent-product-power-to-power-multivar-copy">
-  <static seed="2617">
-    <statement><p><m>{4u^{8}g\mathopen{}\left(3u^{7}g^{9}\right)^{2}}</m></p>
+  <static seed="2481">
+    <statement><p><m>{3tn^{7}\mathopen{}\left(2t^{5}n^{4}\right)^{2}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>36u^{22}g^{19}</m>
+        <m>12t^{11}n^{15}</m>
       </p>
     </answer>
   </static>

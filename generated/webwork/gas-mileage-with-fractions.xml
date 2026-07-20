@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-gas-mileage-with-fractions" assembly-id="gas-mileage-with-fractions">
-  <static seed="1642">
-    <statement><p>Ray filled the gas tank in their car to <m>{13\ {\rm gal}}\text{.}</m> When the tank reaches <m>{1\ {\rm gal}}\text{,}</m> the low gas light will come on. On average, Ray<rsq/>s car uses <m>{{\frac{3}{68}}\ {\rm gal}}</m> per mile driven. How many miles will Ray<rsq/>s car be able to drive before the low gas light comes on?</p>
+  <static seed="1506">
+    <statement><p>Mohammad filled the gas tank in his car to <m>{15\ {\rm gal}}\text{.}</m> When the tank reaches <m>{1\ {\rm gal}}\text{,}</m> the low gas light will come on. On average, Mohammad<rsq/>s car uses <m>{{\frac{4}{79}}\ {\rm gal}}</m> per mile driven. How many miles will Mohammad<rsq/>s car be able to drive before the low gas light comes on?</p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>272\ {\rm mi}</m>
+        <m>\frac{553}{2}\ {\rm mi}</m>
       </p>
     </answer>
   </static>

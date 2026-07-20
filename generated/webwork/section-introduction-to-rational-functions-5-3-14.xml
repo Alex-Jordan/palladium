@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-introduction-to-rational-functions-5-3-14" assembly-id="section-introduction-to-rational-functions-5-3-14">
-  <static seed="1225" source="Contrib/PCC/BasicAlgebra/RationalFunctions/rationalFunctionDomain30.pg">
-    <statement><p>Find the domain of the function <m>t</m> defined by
-<m>\displaystyle{t(x)=\frac{x+3}{x + 3}}</m></p>
+  <static seed="1089" source="Contrib/PCC/BasicAlgebra/RationalFunctions/rationalFunctionDomain30.pg">
+    <statement><p>Find the domain of the function <m>A</m> defined by
+<m>\displaystyle{A(x)=\frac{x+2}{x + 2}}</m></p>
 <p><fillin characters="34" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left(-\infty ,-3\right)\cup \left(-3,\infty \right)</m>
+        <m>\left(-\infty ,-2\right)\cup \left(-2,\infty \right)</m>
       </p>
     </answer>
     <solution><p>The only potential for an invalid input value would be if the denominator of this expression works out to <m>0</m>. In this problem, we should not first simplify this function by doing:</p>
-<p><m>\displaystyle{ t(x) = \frac{x+3}{x + 3} = 1 }</m></p>
-<p>and say the domain is all real numbers. Instead we should solve <m>x+3=0</m> and get <m>x=-3</m>, and find the domain to be <m>{\left(-\infty ,-3\right)\cup \left(-3,\infty \right)}</m>.</p>
+<p><m>\displaystyle{ A(x) = \frac{x+2}{x + 2} = 1 }</m></p>
+<p>and say the domain is all real numbers. Instead we should solve <m>x+2=0</m> and get <m>x=-2</m>, and find the domain to be <m>{\left(-\infty ,-2\right)\cup \left(-2,\infty \right)}</m>.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalFunctions/rationalFunctionDomain30.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

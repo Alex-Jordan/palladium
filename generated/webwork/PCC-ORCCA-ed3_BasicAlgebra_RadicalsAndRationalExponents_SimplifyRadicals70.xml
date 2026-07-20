@@ -1,25 +1,25 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals70" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals70">
-  <static seed="1846">
-    <statement><p><m>\displaystyle{{\sqrt{27}} - {\sqrt{48}} }</m></p>
+  <static seed="1710">
+    <statement><p><m>\displaystyle{{\sqrt{75}} - {\sqrt{48}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-\sqrt{3}</m>
+        <m>\sqrt{3}</m>
       </p>
     </answer>
     <solution><p>First, simplify each radical to see if they are like radicals:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   {\sqrt{27}} \amp = \sqrt{3 \cdot 3 \cdot 3} \amp \amp \amp \quad\amp \amp     {\sqrt{48}} \amp = \sqrt{2 \cdot 2 \cdot 2 \cdot 2 \cdot 3}\\
-            \amp =3 \sqrt{3} \amp \amp \amp \amp \amp              \amp =2 \cdot 2 \sqrt{3}\\
+   {\sqrt{75}} \amp = \sqrt{3 \cdot 5 \cdot 5} \amp \amp \amp \quad\amp \amp     {\sqrt{48}} \amp = \sqrt{2 \cdot 2 \cdot 2 \cdot 2 \cdot 3}\\
+            \amp =5 \sqrt{3} \amp \amp \amp \amp \amp              \amp =2 \cdot 2 \sqrt{3}\\
             \amp  \amp \amp \amp \amp \amp              \amp =4 \sqrt{3}
 \end{aligned}
     }</m></p>
 <p>Then we combine like terms to reach the answer.</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   {\sqrt{27}} - {\sqrt{48}} \amp = 3 \sqrt{3} - 4 \sqrt{3} \\
-                       \amp = {-\sqrt{3}}
+   {\sqrt{75}} - {\sqrt{48}} \amp = 5 \sqrt{3} - 4 \sqrt{3} \\
+                       \amp = {\sqrt{3}}
 \end{aligned}
     }</m></p>
 </solution>

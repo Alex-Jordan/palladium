@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_NegativeExponents_NegativeExponents3" assembly-id="PCC-ORCCA-ed3_Math95_NegativeExponents_NegativeExponents3">
-  <static seed="1705">
-    <statement><p><m>\displaystyle {\frac{10x^{-10}}{x}}</m></p>
+  <static seed="1569">
+    <statement><p><m>\displaystyle {\frac{15x^{-10}}{x}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{10}{x^{11}}</m>
+        <m>\frac{15}{x^{11}}</m>
       </p>
     </answer>
   </static>

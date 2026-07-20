@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_SimplifyRadicals_SimplifyRadicals26" assembly-id="PCC-ORCCA-ed3_Math95_SimplifyRadicals_SimplifyRadicals26">
-  <static seed="1944">
-    <statement><p><m>\displaystyle{ \dfrac{\sqrt{2}-7}{\sqrt{7}+6} }</m></p>
+  <static seed="1808">
+    <statement><p><m>\displaystyle{ \dfrac{\sqrt{3}-7}{\sqrt{11}+3} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{42-7\sqrt{7}-6\sqrt{2}+\sqrt{14}}{-29}</m>
+        <m>\frac{21-7\sqrt{11}-3\sqrt{3}+\sqrt{33}}{2}</m>
       </p>
     </answer>
     <solution><p>We will use the Difference of Squares formula:</p>
 <p><m>\displaystyle{ (a+b)(a-b) = a^2-b^2 }</m></p>
 <p>This will help us get rid of the radical in the denominator by multiplying with the conjugate:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \dfrac{\sqrt{2}-7}{\sqrt{7}+6}
-                \amp = \dfrac{\sqrt{2}-7}{\sqrt{7}+6}\cdot\dfrac{\sqrt{7}-6}{\sqrt{7}-6} \\
-                \amp = \dfrac{\sqrt{2}\sqrt{7}-6\sqrt{2}-7\sqrt{7}+(7)(6)}{\left(\sqrt{7}\right)^2-(6)^2} \\
-                \amp = \dfrac{\sqrt{(2)(7)}-6\sqrt{2}-7\sqrt{7}+42}{7-36} \\
-                \amp = \dfrac{\sqrt{14}-6\sqrt{2}-7\sqrt{7}+42}{-29} \\
+   \dfrac{\sqrt{3}-7}{\sqrt{11}+3}
+                \amp = \dfrac{\sqrt{3}-7}{\sqrt{11}+3}\cdot\dfrac{\sqrt{11}-3}{\sqrt{11}-3} \\
+                \amp = \dfrac{\sqrt{3}\sqrt{11}-3\sqrt{3}-7\sqrt{11}+(7)(3)}{\left(\sqrt{11}\right)^2-(3)^2} \\
+                \amp = \dfrac{\sqrt{(3)(11)}-3\sqrt{3}-7\sqrt{11}+21}{11-9} \\
+                \amp = \dfrac{\sqrt{33}-3\sqrt{3}-7\sqrt{11}+21}{2} \\
 \end{aligned}
     }</m></p>
 </solution>

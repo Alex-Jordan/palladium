@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-solution-radical-integer-copy" assembly-id="check-solution-radical-integer-copy">
-  <static seed="2458">
-    <statement><p>Is <m>2</m> a solution to <m>{10-2x}={\sqrt{18x}}\text{?}</m></p>
+  <static seed="2322">
+    <statement><p>Is <m>1</m> a solution to <m>{2x+6}={\sqrt{64x}}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>10-2x</m></cell>
+<cell><m>2x+6</m></cell>
 <cell><m>=</m></cell>
-<cell><m>\sqrt{18x}</m></cell>
+<cell><m>\sqrt{64x}</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
@@ -24,12 +24,12 @@
 </statement>
     <answer>
       <p>
-        <m>6</m>
+        <m>8</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>6</m>
+        <m>8</m>
       </p>
     </answer>
     <answer>

@@ -1,39 +1,39 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-key-features-of-quadratic-graphs-8-6-4" assembly-id="section-key-features-of-quadratic-graphs-8-6-4">
-  <static seed="1010" source="Contrib/PCC/BasicAlgebra/QuadraticApplications/MaxMinApplication20.pg">
-    <statement><p>Consider two numbers where one number is <m>10</m> less than 5 times a second number. Find a pair of such numbers that has the least product possible. One approach is to let <m>x</m> represent the smaller number, and write a formula for a function of <m>x</m> that outputs the product of the two numbers. Then find its vertex and interpret it.</p>
+  <static seed="543" source="Contrib/PCC/BasicAlgebra/QuadraticApplications/MaxMinApplication20.pg">
+    <statement><p>Consider two numbers where one number is <m>6</m> less than twice a second number. Find a pair of such numbers that has the least product possible. One approach is to let <m>x</m> represent the smaller number, and write a formula for a function of <m>x</m> that outputs the product of the two numbers. Then find its vertex and interpret it.</p>
 <p>These two numbers are <fillin characters="11" name="AnSwEr0001"/> and the least possible product is <fillin characters="11" name="AnSwEr0002"/>.</p>
 </statement>
     <answer>
       <p>
-        <m>1, -5</m>
+        <m>1.5, -3</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>-5</m>
+        <m>-4.5</m>
       </p>
     </answer>
-    <solution><p>If we call the first number <m>x</m>, then the second number is <m>5x-10</m>. Let the function <m>f</m> give the product of the two numbers. So we have:</p>
-<p><m>f(x)=x(5x-10)</m></p>
+    <solution><p>If we call the first number <m>x</m>, then the second number is <m>2x-6</m>. Let the function <m>f</m> give the product of the two numbers. So we have:</p>
+<p><m>f(x)=x(2x-6)</m></p>
 <p>This is a quadratic function. We will rewrite it in standard form first:</p>
-<p><m>f(x)={5x^{2}-10x}</m></p>
-<p>In this formula for <m>f</m>, <m>x</m> represents the first number, and <m>f(x)</m> represents these two numbers<rsq/> product. Identify that <m>a=5, b=-10, c=0</m>.</p>
-<p>Each output of this function represents the product of two numbers that differ by <m>10</m>. The smallest possible product happens at the parabola<rsq/>s vertex.</p>
+<p><m>f(x)={2x^{2}-6x}</m></p>
+<p>In this formula for <m>f</m>, <m>x</m> represents the first number, and <m>f(x)</m> represents these two numbers<rsq/> product. Identify that <m>a=2, b=-6, c=0</m>.</p>
+<p>Each output of this function represents the product of two numbers that differ by <m>6</m>. The smallest possible product happens at the parabola<rsq/>s vertex.</p>
 <p>To find the parabola<rsq/>s vertex, we first find the parabola<rsq/>s axis of symmetry by the axis formula:</p>
 <p><m>\begin{aligned}
   x \amp = -\frac{b}{2a} \\
-  x \amp = -\frac{-10}{2(5)} \\
-  x \amp =  1
+  x \amp = -\frac{-6}{2(2)} \\
+  x \amp =  1.5
 \end{aligned}</m></p>
-<p>Next, we substitute <m>x= 1</m> into the rule for the function, and we have:</p>
+<p>Next, we substitute <m>x= 1.5</m> into the rule for the function, and we have:</p>
 <p><m>\begin{aligned}
-  f(x) \amp =  {5x^{2}-10x}  \\
-  f(1) \amp =  5(1)^2-10(1)  \\
-  f(1) \amp =  {-5} 
+  f(x) \amp =  {2x^{2}-6x}  \\
+  f(1.5) \amp =  2(1.5)^2-6(1.5)  \\
+  f(1.5) \amp =  {-4.5} 
 \end{aligned}</m></p>
-<p>The parabola<rsq/>s vertex is at <m>{\left(1,-5\right)}</m>. This implies that the minimum product of such pairs is <m>{-5}</m>. This happens when one number is <m>1</m>, and the other number is <m>5(1)-10</m>, or rather <m>-5</m>.</p>
-<p>So these two numbers are <m>1</m> and <m>-5</m>. The minimum product is <m>{-5}</m>.</p>
+<p>The parabola<rsq/>s vertex is at <m>{\left(1.5,-4.5\right)}</m>. This implies that the minimum product of such pairs is <m>{-4.5}</m>. This happens when one number is <m>1.5</m>, and the other number is <m>2(1.5)-6</m>, or rather <m>-3</m>.</p>
+<p>So these two numbers are <m>1.5</m> and <m>-3</m>. The minimum product is <m>{-4.5}</m>.</p>
 <!-- PTX:WARNING: PGML wanted to place a horizontal rule here. -->
 <p>The following graph of <m>f</m> illustrates our findings.</p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->

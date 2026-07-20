@@ -1,0 +1,66 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.2.8.35)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+($a,$b,$c) = random_subset(3,-9..-1,1..9);
+$f = Formula("$a x^2 + $b x + $c")->reduce;
+$x = list_random(-5 .. -2);
+Context("LimitedNumeric");
+$ans = Compute($f->eval(x => $x));
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Evaluate the given function at the given value.
+
+If [`f(x)=[$f]\text{,}`] find [`f([$x])\text{.}`]
+
+[_]{$ans}{6}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-5-4" assembly-id="section-multiplication-and-division-of-rational-expressions-7-5-4">
-  <static seed="1298" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions90.pg">
+  <static seed="1162" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions90.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{{\frac{6r+24t}{r^{2}+6rt+8t^{2}}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{2r+4x}{r^{2}+6rx+8x^{2}}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{6}{r+2t}</m>
+        <m>\frac{2}{r+4x}</m>
       </p>
     </answer>
     <solution><p>To simplify the expression, we first factor both the numerator and denominator, and then cross out common terms:</p>
 <p><m>\displaystyle{\begin{aligned}
-   {\frac{6r+24t}{r^{2}+6rt+8t^{2}}} \amp = \frac{{6\mathopen{}\left(r+4t\right)}}{{\left(r+4t\right)\mathopen{}\left(r+2t\right)}} \\
-                     \amp = {\frac{6}{r+2t}}
+   {\frac{2r+4x}{r^{2}+6rx+8x^{2}}} \amp = \frac{{2\mathopen{}\left(r+2x\right)}}{{\left(r+2x\right)\mathopen{}\left(r+4x\right)}} \\
+                     \amp = {\frac{2}{r+4x}}
 \end{aligned}
     }</m></p>
 </solution>

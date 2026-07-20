@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-with-distributive-add-number" assembly-id="simplify-with-distributive-add-number">
-  <static seed="2358">
-    <statement><p><m>{2+4\mathopen{}\left(8e-7\right)}</m></p>
+  <static seed="2222">
+    <statement><p><m>{9+6\mathopen{}\left(2b-5\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>32e+\left(-26\right)</m>
+        <m>12b+\left(-21\right)</m>
       </p>
     </answer>
-    <solution><p>First, apply the distributive property to get <m>{2+32e-28}\text{.}</m> Now add the two like terms to get <m>{32e+\left(-26\right)}\text{.}</m></p>
+    <solution><p>First, apply the distributive property to get <m>{9+12b-30}\text{.}</m> Now add the two like terms to get <m>{12b+\left(-21\right)}\text{.}</m></p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/Appendices/A_4_6_47.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

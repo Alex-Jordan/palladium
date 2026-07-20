@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-subtract-fractions-rel-prime-denoms" assembly-id="subtract-fractions-rel-prime-denoms">
-  <static seed="2244">
-    <statement><p><m>{{\frac{4}{5}}}-{{\frac{1}{3}}}</m></p>
+  <static seed="2108">
+    <statement><p><m>{{\frac{1}{2}}}-{{\frac{1}{5}}}</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{7}{15}}</m>
+        <m>{\frac{3}{10}}</m>
       </p>
     </answer>
   </static>

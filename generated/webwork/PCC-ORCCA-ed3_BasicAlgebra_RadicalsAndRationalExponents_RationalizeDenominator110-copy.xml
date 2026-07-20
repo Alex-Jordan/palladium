@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator110-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator110-copy">
-  <static seed="1933">
-    <statement><p><m>\displaystyle{ \sqrt{\frac{2}{11}} }</m></p>
+  <static seed="1797">
+    <statement><p><m>\displaystyle{ \sqrt{\frac{15}{7}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{\sqrt{22}}{11}</m>
+        <m>\frac{\sqrt{105}}{7}</m>
       </p>
     </answer>
     <solution><p>We first use this property:</p>
 <p><m>\displaystyle{ \sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}} }</m></p>
 <p>Then we will rationalize the denominator. The full process is:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \sqrt{\frac{2}{11}} 
-      \amp = \frac{\sqrt{2}}{\sqrt{11}} \\
-      \amp = \frac{\sqrt{2}}{\sqrt{11}}\cdot\frac{\sqrt{11}}{\sqrt{11}} \\
-      \amp = \frac{\sqrt{2} \cdot \sqrt{11}}{\sqrt{11} \cdot \sqrt{11}} \\
-   \amp = \frac{\sqrt{22}}{11}
+   \sqrt{\frac{15}{7}} 
+      \amp = \frac{\sqrt{15}}{\sqrt{7}} \\
+      \amp = \frac{\sqrt{15}}{\sqrt{7}}\cdot\frac{\sqrt{7}}{\sqrt{7}} \\
+      \amp = \frac{\sqrt{15} \cdot \sqrt{7}}{\sqrt{7} \cdot \sqrt{7}} \\
+   \amp = \frac{\sqrt{105}}{7}
 \end{aligned}
     }</m></p>
 <p>Note that we used this property in the last step:</p>

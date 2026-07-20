@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-9-17" assembly-id="section-multiplication-and-division-of-rational-expressions-7-9-17">
-  <static seed="1355" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions60.pg">
+  <static seed="1219" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions60.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{{\frac{15x^{5}r^{3}}{x+r}} \div {\frac{5x^{9}r}{x^{2}-r^{2}}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{18t^{5}y^{5}}{t-10y}} \div {\frac{6t^{9}y}{t^{2}-100y^{2}}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{3r^{2}\mathopen{}\left(x-r\right)}{x^{4}}</m>
+        <m>\frac{3y^{4}\mathopen{}\left(t+10y\right)}{t^{4}}</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   {\frac{15x^{5}r^{3}}{x+r}} \div {\frac{5x^{9}r}{x^{2}-r^{2}}} 
-      \amp = {\frac{15x^{5}r^{3}}{x+r}} \cdot {\frac{x^{2}-r^{2}}{5x^{9}r}} \\
-      \amp = {\frac{15x^{5}r^{3}}{x+r}} \cdot \frac{{\left(x+r\right)\mathopen{}\left(x-r\right)}}{{5x^{9}r}} \\
-      \amp = {\frac{3r^{2}\mathopen{}\left(x-r\right)}{x^{4}}}
+   {\frac{18t^{5}y^{5}}{t-10y}} \div {\frac{6t^{9}y}{t^{2}-100y^{2}}} 
+      \amp = {\frac{18t^{5}y^{5}}{t-10y}} \cdot {\frac{t^{2}-100y^{2}}{6t^{9}y}} \\
+      \amp = {\frac{18t^{5}y^{5}}{t-10y}} \cdot \frac{{\left(t-10y\right)\mathopen{}\left(t+10y\right)}}{{6t^{9}y}} \\
+      \amp = {\frac{3y^{4}\mathopen{}\left(t+10y\right)}{t^{4}}}
 \end{aligned}
     }</m></p>
 </solution>

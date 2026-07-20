@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-inequality-with-clearing-denominators" assembly-id="inequality-with-clearing-denominators">
-  <static seed="1466">
+  <static seed="1330">
     <statement><p>Solve for <m>x</m> in the inequality <m>\frac{4}{7}-\frac{4}{3}x\le\frac{2}{3}\text{.}</m> Write the solution set in both set-builder notation and interval notation.</p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 <p><fillin characters="20" name="AnSwEr0002"/></p>

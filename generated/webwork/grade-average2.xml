@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-grade-average2" assembly-id="grade-average2">
-  <static seed="1646">
+  <static seed="1510">
     <statement><p>In one college math course, the final grade (out of <m>100</m> points) is calculated by adding one-third of the homework average, one-sixth of the class project score, one-fourth of the midterm score, and one-fourth of the final exam score.</p>
-<p>Don has 86 for their homework average, 100 for their class project score, and 71 for their midterm score. Their goal is to finish the course with a final grade of 80. What must they score on the final exam?</p>
+<p>Colt has 64 for his homework average, 85 for his class project score, and 85 for his midterm score. His goal is to finish the course with a final grade of 70. What must he score on the final exam?</p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>67.6667</m>
+        <m>53</m>
       </p>
     </answer>
   </static>

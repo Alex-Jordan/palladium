@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_NegativeExponents_NegativeExponents1-copy" assembly-id="PCC-ORCCA-ed3_Math95_NegativeExponents_NegativeExponents1-copy">
-  <static seed="1702">
-    <statement><p><m>\displaystyle {11x^{-7}}</m></p>
+  <static seed="1566">
+    <statement><p><m>\displaystyle {15x^{-6}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{11}{x^{7}}</m>
+        <m>\frac{15}{x^{6}}</m>
       </p>
     </answer>
   </static>

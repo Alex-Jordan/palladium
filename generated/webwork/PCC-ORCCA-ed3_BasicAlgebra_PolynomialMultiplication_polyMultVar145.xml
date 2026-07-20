@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar145" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar145">
-  <static seed="2695">
-    <statement><p><m>\left({a-5b}\right)\left({a^{2}-4ab+8b^{2}}\right)</m></p>
+  <static seed="2559">
+    <statement><p><m>\left({a-5b}\right)\left({a^{2}-7ab-6b^{2}}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>a^{3}-9a^{2}b+28ab^{2}-40b^{3}</m>
+        <m>a^{3}-12a^{2}b+29ab^{2}+30b^{3}</m>
       </p>
     </answer>
     <solution><p>We multiply the polynomials by using the terms from <m>{a-5b}</m>
 successively. <me>\begin{aligned}
-        \left({a-5b}\right)\left({a^{2}-4ab+8b^{2}}\right)\amp = {aa^{2}-a\cdot 4ab+a\cdot 8b^{2}-5ba^{2}+5b\cdot 4ab-5b\cdot 8b^{2}}\\
-                      \amp  = {a^{3}-9a^{2}b+28ab^{2}-40b^{3}}
+        \left({a-5b}\right)\left({a^{2}-7ab-6b^{2}}\right)\amp = {aa^{2}-a\cdot 7ab-a\cdot 6b^{2}-5ba^{2}+5b\cdot 7ab+5b\cdot 6b^{2}}\\
+                      \amp  = {a^{3}-12a^{2}b+29ab^{2}+30b^{3}}
     \end{aligned}</me></p>
 </solution>
   </static>

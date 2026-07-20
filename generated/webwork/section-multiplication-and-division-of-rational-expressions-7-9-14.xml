@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-9-14" assembly-id="section-multiplication-and-division-of-rational-expressions-7-9-14">
-  <static seed="1352" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions56.pg">
+  <static seed="1216" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions56.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{{\frac{r^{2}}{r^{2}x-r}} \div {\frac{1}{r^{2}x^{2}-4rx+3}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{r^{2}}{r^{2}y+3r}} \div {\frac{1}{r^{2}y^{2}-ry-12}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>r\mathopen{}\left(rx-3\right)</m>
+        <m>r\mathopen{}\left(ry-4\right)</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   {\frac{r^{2}}{r^{2}x-r}} \div {\frac{1}{r^{2}x^{2}-4rx+3}} 
-      \amp = {\frac{r^{2}}{r^{2}x-r}} \cdot {\frac{r^{2}x^{2}-4rx+3}{1}} \\
-      \amp = \frac{{r^{2}}}{{r\mathopen{}\left(rx-1\right)}} \cdot \frac{{\left(rx-1\right)\mathopen{}\left(rx-3\right)}}{{1}} \\
-      \amp = {r\mathopen{}\left(rx-3\right)}
+   {\frac{r^{2}}{r^{2}y+3r}} \div {\frac{1}{r^{2}y^{2}-ry-12}} 
+      \amp = {\frac{r^{2}}{r^{2}y+3r}} \cdot {\frac{r^{2}y^{2}-ry-12}{1}} \\
+      \amp = \frac{{r^{2}}}{{r\mathopen{}\left(ry+3\right)}} \cdot \frac{{\left(ry+3\right)\mathopen{}\left(ry-4\right)}}{{1}} \\
+      \amp = {r\mathopen{}\left(ry-4\right)}
 \end{aligned}
     }</m></p>
 </solution>

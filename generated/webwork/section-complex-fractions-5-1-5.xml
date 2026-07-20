@@ -1,42 +1,42 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-complex-fractions-5-1-5" assembly-id="section-complex-fractions-5-1-5">
-  <static seed="1428" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions11.pg">
+  <static seed="1292" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions11.pg">
     <statement><p>Calculate the following. Use an improper fraction in your answer.</p>
 <p><ol label="a.">
 <li>
-<p><m>\displaystyle{\frac{ 1 }{ \frac{7}{2} } =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{\frac{ 1 }{ \frac{9}{5} } =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </li>
 <li>
-<p><m>\displaystyle{\frac{ \frac{1}{7} }{2} =}</m> <fillin characters="19" name="AnSwEr0002"/></p>
+<p><m>\displaystyle{\frac{ \frac{1}{9} }{5} =}</m> <fillin characters="19" name="AnSwEr0002"/></p>
 </li>
 </ol></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{2}{7}}</m>
+        <m>{\frac{5}{9}}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>{\frac{1}{14}}</m>
+        <m>{\frac{1}{45}}</m>
       </p>
     </answer>
     <solution><p><ol label="a.">
 <li>
-<p>We multiply <m>2</m> in both the numerator and denominator:</p>
+<p>We multiply <m>5</m> in both the numerator and denominator:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \frac{ 1 }{ \frac{7}{2} } 
-      \amp = \frac{ 1 \cdot 2 }{ \frac{7}{2} \cdot 2 } \\
-      \amp = {{\frac{2}{7}}}
+   \frac{ 1 }{ \frac{9}{5} } 
+      \amp = \frac{ 1 \cdot 5 }{ \frac{9}{5} \cdot 5 } \\
+      \amp = {{\frac{5}{9}}}
 \end{aligned}
     }</m></p>
 </li>
 <li>
-<p>We multiply <m>7</m> in both the numerator and denominator:</p>
+<p>We multiply <m>9</m> in both the numerator and denominator:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \frac{ \frac{1}{7} }{2} 
-      \amp = \frac{ \frac{1}{7} \cdot 7 }{ 2 \cdot 7 } \\
-      \amp = {{\frac{1}{14}}}
+   \frac{ \frac{1}{9} }{5} 
+      \amp = \frac{ \frac{1}{9} \cdot 9 }{ 5 \cdot 9 } \\
+      \amp = {{\frac{1}{45}}}
 \end{aligned}
     }</m></p>
 </li>

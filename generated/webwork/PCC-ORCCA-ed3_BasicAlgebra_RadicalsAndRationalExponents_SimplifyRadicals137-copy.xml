@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals137-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals137-copy">
-  <static seed="1859">
-    <statement><p><m>\displaystyle{ \left(8+\sqrt{7}\right)^2 }</m></p>
+  <static seed="1723">
+    <statement><p><m>\displaystyle{ \left(8+\sqrt{2}\right)^2 }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>71+16\sqrt{7}</m>
+        <m>66+16\sqrt{2}</m>
       </p>
     </answer>
     <solution><p>To square the radical expression, use the FOIL method:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   \left(8+\sqrt{7}\right)^2 
-   \amp = (8+\sqrt{7})(8+\sqrt{7}) \\
-   \amp = 8\cdot8 + 8\sqrt{7} + 8\sqrt{7} + \sqrt{7}\cdot\sqrt{7} \\
-   \amp = 64 + 16\sqrt{7} + 7 \\
-   \amp = {71+16\sqrt{7}}
+   \left(8+\sqrt{2}\right)^2 
+   \amp = (8+\sqrt{2})(8+\sqrt{2}) \\
+   \amp = 8\cdot8 + 8\sqrt{2} + 8\sqrt{2} + \sqrt{2}\cdot\sqrt{2} \\
+   \amp = 64 + 16\sqrt{2} + 2 \\
+   \amp = {66+16\sqrt{2}}
 \end{aligned}
     }</m></p>
 </solution>

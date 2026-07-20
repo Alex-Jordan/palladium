@@ -1,34 +1,34 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-solution-linear-equation-fraction" assembly-id="check-solution-linear-equation-fraction">
-  <static seed="2445">
-    <statement><p>Is <m>{{\frac{7}{5}}}</m> a solution to <m>{2x-{\frac{1}{9}}}={{\frac{121}{45}}}\text{?}</m></p>
+  <static seed="2309">
+    <statement><p>Is <m>{{\frac{9}{2}}}</m> a solution to <m>{4x-{\frac{5}{2}}}={{\frac{23}{2}}}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>2x-{\frac{1}{9}}</m></cell>
+<cell><m>4x-{\frac{5}{2}}</m></cell>
 <cell><m>=</m></cell>
-<cell><m>{\frac{121}{45}}</m></cell>
+<cell><m>{\frac{23}{2}}</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
 <cell><m>\wonder{=}</m></cell>
-<cell><m>{\frac{121}{45}}</m></cell>
+<cell><m>{\frac{23}{2}}</m></cell>
 </row>
 </tabular>
 <p><fillin name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{121}{45}}</m>
+        <m>{\frac{31}{2}}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\text{Yes, it is a solution.}</m>
+        <m>\text{No, it is not a solution.}</m>
       </p>
     </answer>
   </static>

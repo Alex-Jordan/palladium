@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-radical-denominator-integer-numerator-splits" assembly-id="simplify-radical-denominator-integer-numerator-splits">
-  <static seed="1892">
+  <static seed="1756">
     <statement><p><m>{\sqrt[3]{\frac{135}{8}}}\text{.}</m></p>
 <p><fillin characters="30" name="AnSwEr0001"/></p>
 </statement>

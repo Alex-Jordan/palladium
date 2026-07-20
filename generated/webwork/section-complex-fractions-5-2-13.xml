@@ -1,26 +1,26 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-complex-fractions-5-2-13" assembly-id="section-complex-fractions-5-2-13">
-  <static seed="1444" source="Contrib/PCC/Math95/ComplexFractions/ComplexFractions7.pg">
+  <static seed="1308" source="Contrib/PCC/Math95/ComplexFractions/ComplexFractions7.pg">
     <statement><p>Simplify this expression, and if applicable, write the restricted domain.</p>
-<p><m>\displaystyle{\frac{{\frac{1}{k-5}+\frac{3}{k+5}}}{{1-\frac{1}{k+5}}}=}</m> <fillin characters="40" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{\frac{{\frac{1}{k-1}-\frac{5}{k+1}}}{{4-\frac{1}{k+1}}}=}</m> <fillin characters="40" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{2\mathopen{}\left(2k-5\right)}{\left(k+4\right)\mathopen{}\left(k-5\right)}, k\ne -5</m>
+        <m>-\frac{2\mathopen{}\left(2k-3\right)}{\left(4k+3\right)\mathopen{}\left(k-1\right)}, k\ne -1</m>
       </p>
     </answer>
-    <solution><p>To simply the complex fraction <m>\frac{{\frac{1}{k-5}+\frac{3}{k+5}}}{{1-\frac{1}{k+5}}}</m>, we multiple the numerator and denominator with the common denominator of <m>{\frac{1}{k-5}+\frac{3}{k+5}}</m> and <m>{1-\frac{1}{k+5}}</m>, which is <m>{\left(k-5\right)\mathopen{}\left(k+5\right)}</m>.</p>
+    <solution><p>To simply the complex fraction <m>\frac{{\frac{1}{k-1}-\frac{5}{k+1}}}{{4-\frac{1}{k+1}}}</m>, we multiple the numerator and denominator with the common denominator of <m>{\frac{1}{k-1}-\frac{5}{k+1}}</m> and <m>{4-\frac{1}{k+1}}</m>, which is <m>{\left(k-1\right)\mathopen{}\left(k+1\right)}</m>.</p>
 <p><m>\displaystyle{\begin{aligned}
-  \frac{{\frac{1}{k-5}+\frac{3}{k+5}}}{{1-\frac{1}{k+5}}} \amp = \frac{({\frac{1}{k-5}+\frac{3}{k+5}})\cdot{\left(k-5\right)\mathopen{}\left(k+5\right)}}{({1-\frac{1}{k+5}})\cdot{\left(k-5\right)\mathopen{}\left(k+5\right)}} \\
-    \amp = \frac{{\frac{1}{k-5}\mathopen{}\left(k-5\right)\mathopen{}\left(k+5\right)+\frac{3}{k+5}\mathopen{}\left(k-5\right)\mathopen{}\left(k+5\right)}}{{\left(k-5\right)\mathopen{}\left(k+5\right)-\frac{1}{k+5}\mathopen{}\left(k-5\right)\mathopen{}\left(k+5\right)}} \\
-    \amp = \frac{{k+5+3\mathopen{}\left(k-5\right)}}{{k^{2}-25-\left(k-5\right)}}, k \ne -5 \text{ and }  k \ne 5 \\
-    \amp = \frac{{k+5+3k-15}}{{k^{2}-25-k+5}}, k \ne -5 \text{ and }  k \ne 5 \\
-    \amp = \frac{{4k-10}}{{k^{2}-k-20}}, k \ne -5 \text{ and }  k \ne 5 \\
-    \amp = {\frac{2\mathopen{}\left(2k-5\right)}{\left(k+4\right)\mathopen{}\left(k-5\right)}, k\ne -5}
+  \frac{{\frac{1}{k-1}-\frac{5}{k+1}}}{{4-\frac{1}{k+1}}} \amp = \frac{({\frac{1}{k-1}-\frac{5}{k+1}})\cdot{\left(k-1\right)\mathopen{}\left(k+1\right)}}{({4-\frac{1}{k+1}})\cdot{\left(k-1\right)\mathopen{}\left(k+1\right)}} \\
+    \amp = \frac{{\frac{1}{k-1}\mathopen{}\left(k-1\right)\mathopen{}\left(k+1\right)-\frac{5}{k+1}\mathopen{}\left(k-1\right)\mathopen{}\left(k+1\right)}}{{4\mathopen{}\left(k-1\right)\mathopen{}\left(k+1\right)-\frac{1}{k+1}\mathopen{}\left(k-1\right)\mathopen{}\left(k+1\right)}} \\
+    \amp = \frac{{k+1-5\mathopen{}\left(k-1\right)}}{{4\mathopen{}\left(k^{2}-1\right)-\left(k-1\right)}}, k \ne -1 \text{ and }  k \ne 1 \\
+    \amp = \frac{{k+1-5k+5}}{{4k^{2}-4-k+1}}, k \ne -1 \text{ and }  k \ne 1 \\
+    \amp = \frac{{-4k+6}}{{4k^{2}-k-3}}, k \ne -1 \text{ and }  k \ne 1 \\
+    \amp = {-\frac{2\mathopen{}\left(2k-3\right)}{\left(4k+3\right)\mathopen{}\left(k-1\right)}, k\ne -1}
 \end{aligned}
     }</m></p>
-<p>Since <m>k + 5</m> was canceled, <m>k \ne -5</m> is a lost domain condition.</p>
-<p>Although <m>k - 5</m> was also canceled, <m>k \ne 5</m> is not a lost domain condition because it is implied in the solution.</p>
+<p>Since <m>k + 1</m> was canceled, <m>k \ne -1</m> is a lost domain condition.</p>
+<p>Although <m>k - 1</m> was also canceled, <m>k \ne 1</m> is not a lost domain condition because it is implied in the solution.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/Math95/ComplexFractions/ComplexFractions7.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

@@ -1,31 +1,31 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-2-14" assembly-id="section-completing-the-square-8-2-14">
-  <static seed="1177">
+  <static seed="710">
     <statement><p>Solve the equation by completing the square.</p>
-<p><m>{3y^{2}-10y+7}={0}</m></p>
+<p><m>{3r^{2}-16r+21}={0}</m></p>
 <p><fillin characters="25" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{1,\frac{7}{3}\right\}</m>
+        <m>\left\{\frac{7}{3},3\right\}</m>
       </p>
     </answer>
-    <solution><p>Move the constant term to the other side to get <m>{3y^{2}-10y} = {-7}\text{.}</m></p>
-<p>Divide through by <m>3</m> to get <m>{y^{2}-{\frac{10}{3}}y} = {-{\frac{7}{3}}}\text{.}</m></p>
-<p>Compute <m>\left(\frac{{-{\frac{10}{3}}}}{2}\right)^2={{\frac{25}{9}}}\text{.}</m> Then</p>
+    <solution><p>Move the constant term to the other side to get <m>{3r^{2}-16r} = {-21}\text{.}</m></p>
+<p>Divide through by <m>3</m> to get <m>{r^{2}-{\frac{16}{3}}r} = {-7}\text{.}</m></p>
+<p>Compute <m>\left(\frac{{-{\frac{16}{3}}}}{2}\right)^2={{\frac{64}{9}}}\text{.}</m> Then</p>
 <p><me>\begin{aligned}
-{y^{2}-{\frac{10}{3}}y}+{{\frac{25}{9}}}\amp = {-{\frac{7}{3}}}+{{\frac{25}{9}}}\\
-{y^{2}-{\frac{10}{3}}y}+{{\frac{25}{9}}}\amp = {{\frac{4}{9}}}\\
-\left({y-\frac{5}{3}}\right)^2\amp = {{\frac{4}{9}}}
+{r^{2}-{\frac{16}{3}}r}+{{\frac{64}{9}}}\amp = {-7}+{{\frac{64}{9}}}\\
+{r^{2}-{\frac{16}{3}}r}+{{\frac{64}{9}}}\amp = {{\frac{1}{9}}}\\
+\left({r-\frac{8}{3}}\right)^2\amp = {{\frac{1}{9}}}
 \end{aligned}</me></p>
 <p><me>\begin{aligned}
-{y-\frac{5}{3}} \amp = -{{\frac{2}{3}}}\amp\amp\text{or}\amp {y-\frac{5}{3}} \amp = {{\frac{2}{3}}}\\
-y \amp = {1}\amp\amp\text{or}\amp y \amp = {{\frac{7}{3}}}
+{r-\frac{8}{3}} \amp = -{{\frac{1}{3}}}\amp\amp\text{or}\amp {r-\frac{8}{3}} \amp = {{\frac{1}{3}}}\\
+r \amp = {{\frac{7}{3}}}\amp\amp\text{or}\amp r \amp = {3}
 \end{aligned}</me></p>
-<p>So the solution set is <m>{\left\{1,\frac{7}{3}\right\}}\text{.}</m></p>
+<p>So the solution set is <m>{\left\{\frac{7}{3},3\right\}}\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_8_6_25.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_9_6_25.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -42,7 +42,7 @@ y \amp = {1}\amp\amp\text{or}\amp y \amp = {{\frac{7}{3}}}
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.8.6.25)
+## Problem1(1.9.6.25)
 ## Author()
 ## Institution()
 ## Language(en-US)

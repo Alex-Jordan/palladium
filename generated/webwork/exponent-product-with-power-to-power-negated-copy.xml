@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-product-with-power-to-power-negated-copy" assembly-id="exponent-product-with-power-to-power-negated-copy">
-  <static seed="2593">
-    <statement><p><m>{-\left(4c^{7}\right)^{4}}</m></p>
+  <static seed="2457">
+    <statement><p><m>{-\left(5b^{4}\right)^{2}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-256c^{28}</m>
+        <m>-25b^{8}</m>
       </p>
     </answer>
   </static>

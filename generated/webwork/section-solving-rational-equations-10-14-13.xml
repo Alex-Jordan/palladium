@@ -1,32 +1,32 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-14-13" assembly-id="section-solving-rational-equations-10-14-13">
-  <static seed="1634" source="Contrib/PCC/Math95/RatEqApplications/RatEqApplications1.pg">
-    <statement><p>Suppose that a large pump can empty a swimming pool in <m>49\ {\rm hr}</m>  and that a small pump can empty the same pool in <m>59\ {\rm hr}</m>.  If both pumps are used at the same time, how long will it take to empty the pool?</p>
+  <static seed="1498" source="Contrib/PCC/Math95/RatEqApplications/RatEqApplications1.pg">
+    <statement><p>Suppose that a large pump can empty a swimming pool in <m>48\ {\rm hr}</m>  and that a small pump can empty the same pool in <m>61\ {\rm hr}</m>.  If both pumps are used at the same time, how long will it take to empty the pool?</p>
 <p>If both pumps are used at the same time, it will take <fillin characters="15" name="AnSwEr0001"/> to empty the pool.</p>
 </statement>
     <answer>
       <p>
-        <m>26.7685\ {\rm hr}</m>
+        <m>26.8624\ {\rm hr}</m>
       </p>
     </answer>
     <solution><p>Let<rsq/>s understand how to use fractions to model work problems. Assume it takes a pipe <m>5</m> hours to empty a pool. If we treat the whole job as one whole, each hour, the pipe would empty <m>\frac{1}{5}</m> of the pool.</p>
 <p>Similarly, if it takes a pipe <m>x</m> hours to empty a pool, each hour, the pipe would empty <m>\frac{1}{x}</m> of the pool.</p>
 <p>Now we are ready to model this situation with math.</p>
-<p>It<rsq/>s given that it takes the large pump <m>49</m> hours to empty the pool. Each hour, the large pump empties <m>\frac{1}{49}</m> of the pool.</p>
-<p>Similarly, each hour, the smaller pump empties <m>\frac{1}{59}</m> of the pool.</p>
+<p>It<rsq/>s given that it takes the large pump <m>48</m> hours to empty the pool. Each hour, the large pump empties <m>\frac{1}{48}</m> of the pool.</p>
+<p>Similarly, each hour, the smaller pump empties <m>\frac{1}{61}</m> of the pool.</p>
 <p>Assume that, if both pipes are turned on, it would take <m>x</m> hours to empty the pool. Thus, each hour, they can empty <m>\frac{1}{x}</m> of the pool.</p>
 <p>Now we can write an equation and solve it:</p>
 <p><m>\displaystyle{\begin{aligned}
-  \amp \frac{1}{49}+\frac{1}{59} = \frac{1}{x} \\
-  \amp \frac{1}{49} \cdot {2891x} +\frac{1}{59} \cdot {2891x} = \frac{1}{x} \cdot {2891x} \\
-  \amp 59x + 49x = 2891 \\
-  \amp 108x = 2891 \\
-  \amp  \frac{108x}{108} = \frac{2891}{108} \\
-  \amp  x \approx {26.7685\ {\rm hr}}
+  \amp \frac{1}{48}+\frac{1}{61} = \frac{1}{x} \\
+  \amp \frac{1}{48} \cdot {2928x} +\frac{1}{61} \cdot {2928x} = \frac{1}{x} \cdot {2928x} \\
+  \amp 61x + 48x = 2928 \\
+  \amp 109x = 2928 \\
+  \amp  \frac{109x}{109} = \frac{2928}{109} \\
+  \amp  x \approx {26.8624\ {\rm hr}}
 \end{aligned}
     }</m></p>
-<p>In the second step, to get rid of all fractions, we multiplied each term with the common denominator <m>{2891x}</m>.</p>
-<p>By the solution we got, if both pipe are turned on, it would take <m>{26.7685\ {\rm hr}}</m> hours to empty the pool.</p>
+<p>In the second step, to get rid of all fractions, we multiplied each term with the common denominator <m>{2928x}</m>.</p>
+<p>By the solution we got, if both pipe are turned on, it would take <m>{26.8624\ {\rm hr}}</m> hours to empty the pool.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/Math95/RatEqApplications/RatEqApplications1.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

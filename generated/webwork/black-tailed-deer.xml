@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-black-tailed-deer" assembly-id="black-tailed-deer">
-  <static seed="1652">
-    <statement><p>To estimate the health of the black-tailed deer population in the Jewell Meadow Wildlife Area, the Oregon Department of Fish and Wildlife caught, tagged, and released <m>99</m> black-tailed deer. A month later, they returned and observed <m>83</m> black-tailed deer, <m>9</m> of which had tags. Approximately how many black-tailed deer are in the Jewell Meadow Wildlife Area?</p>
+  <static seed="1516">
+    <statement><p>To estimate the health of the black-tailed deer population in the Jewell Meadow Wildlife Area, the Oregon Department of Fish and Wildlife caught, tagged, and released <m>98</m> black-tailed deer. A month later, they returned and observed <m>88</m> black-tailed deer, <m>11</m> of which had tags. Approximately how many black-tailed deer are in the Jewell Meadow Wildlife Area?</p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>913</m>
+        <m>784</m>
       </p>
     </answer>
     <solution><p>Let <m>x</m> represent how many deer are in the Jewell Meadow Area. We set up a proportional equation:</p>
 <p><me>\begin{aligned}
 \frac{\text{tagged deer}}{\text{total deer}} \amp= \frac{\text{tagged deer}}{\text{total deer}}\\
-\frac{9}{83} \amp= \frac{99}{x}\\
-\frac{9}{83} \multiplyright{83\cdot x} \amp= \frac{99}{x}\multiplyright{83\cdot x}\\
-9 \cdot x \amp= 99\cdot 83\\
-\divideunder{9 \cdot x}{9} \amp= \divideunder{99\cdot 83}{9}\\
-x \amp= 913
+\frac{11}{88} \amp= \frac{98}{x}\\
+\frac{11}{88} \multiplyright{88\cdot x} \amp= \frac{98}{x}\multiplyright{88\cdot x}\\
+11 \cdot x \amp= 98\cdot 88\\
+\divideunder{11 \cdot x}{11} \amp= \divideunder{98\cdot 88}{11}\\
+x \amp= 784
 \end{aligned}</me></p>
-<p>There are approximately <m>913</m> deer in the Jewell Meadow Area.</p>
+<p>There are approximately <m>784</m> deer in the Jewell Meadow Area.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/3_5_8_187.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

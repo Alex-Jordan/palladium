@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-distribute-subtract-biinomial" assembly-id="simplify-distribute-subtract-biinomial">
-  <static seed="2366">
-    <statement><p><m>{6\mathopen{}\left(3Y+7\right)-\left(2Y+4\right)}</m></p>
+  <static seed="2230">
+    <statement><p><m>{8\mathopen{}\left(5V+3\right)-\left(9V+6\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>16Y+38</m>
+        <m>31V+18</m>
       </p>
     </answer>
   </static>

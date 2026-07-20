@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-compare-positive-fractions" assembly-id="compare-positive-fractions">
-  <static seed="2391">
-    <statement><p><m>{{\frac{8}{7}}}</m> <fillin characters="3" name="AnSwEr0001"/> <m>{{\frac{11}{8}}}</m></p>
+  <static seed="2255">
+    <statement><p><m>{{\frac{12}{7}}}</m> <fillin characters="3" name="AnSwEr0001"/> <m>{{\frac{1}{2}}}</m></p>
 </statement>
     <answer>
       <p>
-        <m>{\verb!&lt;!}</m>
+        <m>{\verb!&gt;!}</m>
       </p>
     </answer>
   </static>

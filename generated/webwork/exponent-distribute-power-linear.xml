@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-distribute-power-linear" assembly-id="exponent-distribute-power-linear">
-  <static seed="2600">
-    <statement><p><m>{5x^{3}\mathopen{}\left(6x-10\right)}</m></p>
+  <static seed="2464">
+    <statement><p><m>{10v^{5}\mathopen{}\left(4v+6\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>x^{4}+x^{3}</m>
+        <m>v^{6}+v^{5}</m>
       </p>
     </answer>
   </static>

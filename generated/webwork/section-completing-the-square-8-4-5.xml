@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-4-5" assembly-id="section-completing-the-square-8-4-5">
-  <static seed="1190" source="Contrib/PCC/BasicAlgebra/QuadraticFunctions/QuadraticDomainRange20.pg">
+  <static seed="723" source="Contrib/PCC/BasicAlgebra/QuadraticFunctions/QuadraticDomainRange20.pg">
     <statement><p>Complete the square to convert the quadratic function from standard form to vertex form, and use the result to find the function<rsq/>s domain and range.</p>
-<p><m>f(x) = {-x^{2}+12x-38}</m></p>
+<p><m>f(x) = {-x^{2}-18x-76}</m></p>
 <p>The domain of <m>f</m> is <fillin characters="14" name="AnSwEr0001"/></p>
 <p>The range of <m>f</m> is <fillin characters="14" name="AnSwEr0002"/></p>
 </statement>
@@ -13,34 +13,34 @@
     </answer>
     <answer>
       <p>
-        <m>\left(-\infty ,-2\right]</m>
+        <m>\left(-\infty ,5\right]</m>
       </p>
     </answer>
     <solution><p>We have to factor out the leading negative sign first:</p>
 <p><m>\displaystyle{\begin{aligned}
-   f(x) \amp = {-x^{2}+12x-38} \\
-         \amp = -({x^{2}-12x}) - 38 \\
+   f(x) \amp = {-x^{2}-18x-76} \\
+         \amp = -({x^{2}+18x}) - 76 \\
 \end{aligned}
     }</m></p>
 <p>One way to change a quadratic function from standard form to vertex form is to use the skill of <lq/>completing the square.<rq/></p>
 <p>To use the skill of <lq/>completing the square,<rq/> we need to use the perfect square formula:</p>
 <p><m>\displaystyle{ x^2+2ax+a^2 = (x+a)^2 }</m></p>
-<p>Step 1: By the formula <m>x^2+2ax+a^2 = (x+a)^2</m>, we have <m>x^2-12x+...= (x-6)^{2}</m>.</p>
-<p>Step 2: By the formula <m>x^2+2ax+a^2 = (x+a)^2</m>, we have <m>x^2-12x+36=(x-6)^{2}</m>.</p>
+<p>Step 1: By the formula <m>x^2+2ax+a^2 = (x+a)^2</m>, we have <m>x^2 + 18x+...= (x + 9)^{2}</m>.</p>
+<p>Step 2: By the formula <m>x^2+2ax+a^2 = (x+a)^2</m>, we have <m>x^2 + 18x+81=(x + 9)^{2}</m>.</p>
 <p>The full solution is:</p>
 <p><m>\displaystyle{\begin{aligned}
-   f(x) \amp = {-x^{2}+12x-38} \\
-         \amp = -({x^{2}-12x}) - 38 \\
-         \amp = -(x^{2}-12x+36 -36)  - 38 \\
-         \amp = -[(x-6)^{2} -36]  - 38 \\
-         \amp = -(x-6)^{2} +36  - 38 \\
-         \amp = -(x-6)^{2}  - 2 \\
+   f(x) \amp = {-x^{2}-18x-76} \\
+         \amp = -({x^{2}+18x}) - 76 \\
+         \amp = -(x^{2} + 18x+81 -81)  - 76 \\
+         \amp = -[(x + 9)^{2} -81]  - 76 \\
+         \amp = -(x + 9)^{2} +81  - 76 \\
+         \amp = -(x + 9)^{2} +5 \\
 \end{aligned}
     }</m></p>
-<p>Once we change the function<rsq/>s equation to vertex form, we can see the parabola<rsq/>s vertex is <m>{\left(6,-2\right)}</m>. This parabola faces down because its leading coefficient is negative.</p>
+<p>Once we change the function<rsq/>s equation to vertex form, we can see the parabola<rsq/>s vertex is <m>{\left(-9,5\right)}</m>. This parabola faces down because its leading coefficient is negative.</p>
 <p>With this information, we can determine its domain and range:</p>
 <p>domain: <m>{\left(-\infty ,\infty \right)}</m></p>
-<p>range: <m>{\left(-\infty ,-2\right]}</m></p>
+<p>range: <m>{\left(-\infty ,5\right]}</m></p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/QuadraticFunctions/QuadraticDomainRange20.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

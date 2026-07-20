@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-combine-four-terms-distinct-variables-decimals" assembly-id="combine-four-terms-distinct-variables-decimals">
-  <static seed="2292">
-    <statement><p><m>{n-25P+0.1P+90n}</m></p>
+  <static seed="2156">
+    <statement><p><m>{-4.1L-79B-7.5B+L}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-24.9P+91n</m>
+        <m>-3.1L-86.5B</m>
       </p>
     </answer>
   </static>

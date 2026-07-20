@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-special-with-like-terms-fraction-copy" assembly-id="solve-special-with-like-terms-fraction-copy">
-  <static seed="1526">
-    <statement><p><m>{{\frac{5}{9}}C-13+{\frac{9}{7}}C}={-4+{\frac{116}{63}}C-9}</m></p>
+  <static seed="1390">
+    <statement><p><m>{{\frac{8}{9}}X-3+{\frac{3}{4}}X}={-9+{\frac{59}{36}}X+6}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>

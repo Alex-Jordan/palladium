@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentDivision20" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentDivision20">
-  <static seed="1681">
-    <statement><p><m>8C^0</m></p>
+  <static seed="1545">
+    <statement><p><m>5q^0</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>8</m>
+        <m>5</m>
       </p>
     </answer>
     <solution><p>The zero-exponent rule says that <m>a^0=1</m> where <m>a</m> is any real number except <m>0</m>, so</p>
 <p><m>\begin{aligned}
-         8C^0\amp =8\cdot 1\\
-                     \amp  = 8
+         5q^0\amp =5\cdot 1\\
+                     \amp  = 5
          \end{aligned}</m></p>
 </solution>
   </static>

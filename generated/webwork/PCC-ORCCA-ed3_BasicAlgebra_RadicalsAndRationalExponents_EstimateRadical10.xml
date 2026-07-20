@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EstimateRadical10" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EstimateRadical10">
-  <static seed="1804">
-    <statement><p>Estimate the value of <m>\sqrt{84}</m>:</p>
+  <static seed="1668">
+    <statement><p>Estimate the value of <m>\sqrt{63}</m>:</p>
 <p><ul form="popup" name="AnSwEr0001"><li>
-<p>9.83</p>
+<p>7.06</p>
 </li><li>
-<p>8.17</p>
+<p>7.94</p>
 </li><li>
-<p>8.83</p>
+<p>8.06</p>
 </li><li>
-<p>9.17</p>
+<p>8.94</p>
 </li></ul></p>
 </statement>
     <answer>
       <p>
-        <m>\text{9.17}</m>
+        <m>\text{7.94}</m>
       </p>
     </answer>
     <solution><p>It<rsq/>s important to write down the first few square numbers on scratch paper:</p>
@@ -32,10 +32,10 @@
    ...
 \end{aligned}
     }</m></p>
-<p>Locate the value <m>84</m> in the list of square numbers.</p>
-<p>Since the number <m>84</m> is between <m>81</m> and <m>100</m>, the value of <m>\sqrt{84}</m> must be between <m>9</m> and <m>10</m>.</p>
-<p>Next, since the number <m>84</m> is closer to <m>81</m>, the value of <m>\sqrt{84}</m> must be closer to <m>9</m>.</p>
-<p>This is how we can determine the correct answer is <m>9.17</m>.</p>
+<p>Locate the value <m>63</m> in the list of square numbers.</p>
+<p>Since the number <m>63</m> is between <m>49</m> and <m>64</m>, the value of <m>\sqrt{63}</m> must be between <m>7</m> and <m>8</m>.</p>
+<p>Next, since the number <m>63</m> is closer to <m>64</m>, the value of <m>\sqrt{63}</m> must be closer to <m>8</m>.</p>
+<p>This is how we can determine the correct answer is <m>7.94</m>.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/4_2_10_13.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

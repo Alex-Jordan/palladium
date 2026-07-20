@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-linear-inequality-fractions-same-denom" assembly-id="linear-inequality-fractions-same-denom">
-  <static seed="1501">
-    <statement><p><m>{{\frac{3}{4}}x+1} \gt {{\frac{5}{4}}}</m></p>
+  <static seed="1365">
+    <statement><p><m>{{\frac{7}{3}}x+8} \lt {{\frac{2}{3}}}</m></p>
 <p><fillin characters="4" name="AnSwEr0001"/></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 <p><fillin characters="16" name="AnSwEr0003"/></p>
 </statement>
     <answer>
       <p>
-        <m>4</m>
+        <m>3</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left\{x \mid x &gt; \frac{1}{3}\right\}</m>
+        <m>\left\{x \mid x &lt; \frac{-22}{7}\right\}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left({\frac{1}{3}},\infty \right)</m>
+        <m>\left(-\infty ,-{\frac{22}{7}}\right)</m>
       </p>
     </answer>
   </static>

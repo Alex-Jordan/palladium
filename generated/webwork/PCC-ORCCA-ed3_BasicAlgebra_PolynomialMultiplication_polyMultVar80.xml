@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar80" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar80">
-  <static seed="2671">
-    <statement><p><m>\left({a+8b}\right)\left({a-4b}\right)</m></p>
+  <static seed="2535">
+    <statement><p><m>\left({a+8b}\right)\left({a+7b}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>a^{2}+4ab-32b^{2}</m>
+        <m>a^{2}+15ab+56b^{2}</m>
       </p>
     </answer>
     <solution><p>We multiply the polynomials using the FOIL method: <alert>F</alert>irst <alert>O</alert>utside
 <alert>I</alert>nside <alert>L</alert>ast</p>
 <p><m>\displaystyle{    \begin{aligned}
-        \left({a+8b}\right)\left({a-4b}\right)\amp = {aa-a\cdot 4b+8ba-8b\cdot 4b}\\
-                      \amp  = {a^{2}+4ab-32b^{2}}
+        \left({a+8b}\right)\left({a+7b}\right)\amp = {aa+a\cdot 7b+8ba+8b\cdot 7b}\\
+                      \amp  = {a^{2}+15ab+56b^{2}}
     \end{aligned}
 }</m></p>
 </solution>

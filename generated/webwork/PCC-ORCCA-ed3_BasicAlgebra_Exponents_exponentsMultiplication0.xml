@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication0" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication0">
-  <static seed="1663">
-    <statement><p><m>{x^{4}}\cdot{x^{20}}</m></p>
+  <static seed="1527">
+    <statement><p><m>{y^{3}}\cdot{y^{6}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>x^{24}</m>
+        <m>y^{9}</m>
       </p>
     </answer>
     <solution><p>We <em>add</em> the exponents as follows: <me>\begin{aligned}
-           x^{4}\cdot x^{20}\amp =x^{4+20}\\
-                             \amp =x^{24}
+           y^{3}\cdot y^{6}\amp =y^{3+6}\\
+                             \amp =y^{9}
        \end{aligned}</me></p>
 </solution>
   </static>

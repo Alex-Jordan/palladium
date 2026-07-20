@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-introduction-to-exponent-properties-4-11" assembly-id="section-introduction-to-exponent-properties-4-11">
-  <static seed="2566" source="Contrib/PCC/BasicAlgebra/Exponents/exponentsMultiplication20.pg">
+  <static seed="2430" source="Contrib/PCC/BasicAlgebra/Exponents/exponentsMultiplication20.pg">
     <statement><p>Use the properties of exponents to simplify the expression.</p>
-<p><m>\displaystyle{\left(r^{3}\right)^{2}}</m></p>
+<p><m>\displaystyle{\left(t^{2}\right)^{5}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>r^{6}</m>
+        <m>t^{10}</m>
       </p>
     </answer>
     <solution><p>We <em>multiply</em> the exponents as follows: <me>\begin{aligned}
-           \left(r^{3}\right)^{2}\amp =r^{3\cdot2}\\
-                             \amp =r^{6}
+           \left(t^{2}\right)^{5}\amp =t^{2\cdot5}\\
+                             \amp =t^{10}
        \end{aligned}</me></p>
 </solution>
   </static>

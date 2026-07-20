@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-graphing-quadratic-expressions-8-1-12" assembly-id="section-graphing-quadratic-expressions-8-1-12">
-  <static seed="1032" source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticEquations/solveQuad176.pg">
+  <static seed="565" source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticEquations/solveQuad176.pg">
     <statement><p>Solve the equation.</p>
-<p><m>{2x^{2}-x+10}= 0</m></p>
+<p><m>{4x^{2}+x+6}= 0</m></p>
 <p><fillin characters="23" name="AnSwEr0001"/></p>
 </statement>
     <answer>
@@ -14,8 +14,8 @@
 not easily factor, so we will use the Quadratic Formula:</p>
 <p><m>\begin{aligned}
             x \amp  = \frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
-                   \amp  = \frac{1\pm\sqrt{1-80}}{4}\\
-                   \amp  = \frac{1\pm\sqrt{-79}}{4}\\
+                   \amp  = \frac{-1\pm\sqrt{1-96}}{8}\\
+                   \amp  = \frac{-1\pm\sqrt{-95}}{8}\\
         \end{aligned}</m></p>
 <p>The square root of a negative number is <em>not</em> real, so we conclude that there are <alert>no real solutions</alert> to this
 equation.</p>

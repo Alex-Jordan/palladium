@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar75" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar75">
-  <static seed="2647">
-    <statement><p><m>{2a^{6}}\left({4a^{5}+5a^{5}b^{8}+9b^{8}}\right)</m></p>
+  <static seed="2511">
+    <statement><p><m>{-2a^{4}}\left({-7a^{8}-3a^{7}b^{8}+8b^{9}}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>8a^{11}+10a^{11}b^{8}+18a^{6}b^{8}</m>
+        <m>14a^{12}+6a^{11}b^{8}-16a^{4}b^{9}</m>
       </p>
     </answer>
     <solution><p>We multiply the polynomials using the rule <m>a^m\cdot a^n = a^{m+n}</m> 
 to guide us. <me>\begin{aligned}
-        \left({2a^{6}}\right)\left({4a^{5}+5a^{5}b^{8}+9b^{8}}\right)\amp = 8a^{6+5}+10a^{6+5}b^{8}+18a^{6}b^{8}\\
-                      \amp  = {8a^{11}+10a^{11}b^{8}+18a^{6}b^{8}}
+        \left({-2a^{4}}\right)\left({-7a^{8}-3a^{7}b^{8}+8b^{9}}\right)\amp = 14a^{4+8}+6a^{4+7}b^{8} - 16a^{4}b^{9}\\
+                      \amp  = {14a^{12}+6a^{11}b^{8}-16a^{4}b^{9}}
     \end{aligned}</me></p>
 <p>Note that we are using the <em>distributive</em> property of multiplication in this problem: <m>x(y+z)=xy+xz</m>.</p>
 </solution>

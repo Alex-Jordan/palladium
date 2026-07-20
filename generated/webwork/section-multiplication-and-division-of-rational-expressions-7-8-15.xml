@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-8-15" assembly-id="section-multiplication-and-division-of-rational-expressions-7-8-15">
-  <static seed="1330" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions40.pg">
+  <static seed="1194" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions40.pg">
     <statement><p>Simplify this expression, and if applicable, write the restricted domain.</p>
-<p><m>\displaystyle{{\frac{4y^{2}-49}{2y^{2}+9y+7}} \div ({7-2y}) =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{4x^{2}-25}{2x^{2}+7x+5}} \div ({5-2x}) =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-\frac{1}{y+1}, y\ne 3.5\hbox{ and }y\ne -3.5</m>
+        <m>-\frac{1}{x+1}, x\ne 2.5\hbox{ and }x\ne -2.5</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   {\frac{4y^{2}-49}{2y^{2}+9y+7}} \div {7-2y} 
-      \amp = {\frac{4y^{2}-49}{2y^{2}+9y+7}} \div \frac{{7-2y}}{1} \\
-      \amp = {\frac{4y^{2}-49}{2y^{2}+9y+7}} \cdot {\frac{1}{7-2y}} \\
-      \amp =  \frac{{\left(2y+7\right)\mathopen{}\left(2y-7\right)}}{{\left(2y+7\right)\mathopen{}\left(y+1\right)}} \cdot \frac{{1}}{{-\left(2y-7\right)}} \\
-      \amp = {-\frac{1}{y+1}, y\ne 3.5\hbox{ and }y\ne -3.5}
+   {\frac{4x^{2}-25}{2x^{2}+7x+5}} \div {5-2x} 
+      \amp = {\frac{4x^{2}-25}{2x^{2}+7x+5}} \div \frac{{5-2x}}{1} \\
+      \amp = {\frac{4x^{2}-25}{2x^{2}+7x+5}} \cdot {\frac{1}{5-2x}} \\
+      \amp =  \frac{{\left(2x+5\right)\mathopen{}\left(2x-5\right)}}{{\left(2x+5\right)\mathopen{}\left(x+1\right)}} \cdot \frac{{1}}{{-\left(2x-5\right)}} \\
+      \amp = {-\frac{1}{x+1}, x\ne 2.5\hbox{ and }x\ne -2.5}
 \end{aligned}
     }</m></p>
-<p>Since the factors <m>2y+7</m> and <m>2y-7</m> were canceled, the domain condition lost during the simplification are <m>y \ne {{\frac{7}{2}}\; and \;-{\frac{7}{2}}}</m>.</p>
+<p>Since the factors <m>2x+5</m> and <m>2x-5</m> were canceled, the domain condition lost during the simplification are <m>x \ne {{\frac{5}{2}}\; and \;-{\frac{5}{2}}}</m>.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions40.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

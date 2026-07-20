@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-introduction-to-rational-functions-5-3-12" assembly-id="section-introduction-to-rational-functions-5-3-12">
-  <static seed="1223" source="Contrib/PCC/BasicAlgebra/RationalFunctions/rationalFunctionDomain20.pg">
-    <statement><p>Find the domain of the function <m>B</m> defined by <m>\displaystyle{B(x)=\frac{x - 2}{x^2+81}}</m></p>
+  <static seed="1087" source="Contrib/PCC/BasicAlgebra/RationalFunctions/rationalFunctionDomain20.pg">
+    <statement><p>Find the domain of the function <m>q</m> defined by <m>\displaystyle{q(x)=\frac{x - 3}{x^2+36}}</m></p>
 <p><fillin characters="34" name="AnSwEr0001"/></p>
 </statement>
     <answer>
@@ -9,7 +9,7 @@
         <m>\left(-\infty ,\infty \right)</m>
       </p>
     </answer>
-    <solution><p>The only potential for an invalid input value would be if the denominator of this expression works out to <m>0</m>. However, since <m>x^2 \ge 0</m>, <m>x^2 + 81 \gt 0</m> is always true.</p>
+    <solution><p>The only potential for an invalid input value would be if the denominator of this expression works out to <m>0</m>. However, since <m>x^2 \ge 0</m>, <m>x^2 + 36 \gt 0</m> is always true.</p>
 <p>Therefore the domain is <m>{\left(-\infty ,\infty \right)}</m>.</p>
 </solution>
   </static>

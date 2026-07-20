@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot50" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot50">
-  <static seed="1814">
-    <statement><p><m>\displaystyle{-\sqrt{{{\frac{100}{121}}}}}</m></p>
+  <static seed="1678">
+    <statement><p><m>\displaystyle{-\sqrt{{{\frac{81}{100}}}}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{-10}{11}</m>
+        <m>\frac{-9}{10}</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{ 
 \begin{aligned}[t]
-   -\sqrt{\frac{100}{121}} \amp = - \frac{\sqrt{100}}{\sqrt{121}} \\
-                             \amp = - \frac{10}{11} 
+   -\sqrt{\frac{81}{100}} \amp = - \frac{\sqrt{81}}{\sqrt{100}} \\
+                             \amp = - \frac{9}{10} 
 \end{aligned}
     }</m></p>
 </solution>

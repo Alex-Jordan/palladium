@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-graphing-quadratic-expressions-8-1-6" assembly-id="section-graphing-quadratic-expressions-8-1-6">
-  <static seed="1026" source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticEquations/solveQuad310.pg">
+  <static seed="559" source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticEquations/solveQuad310.pg">
     <statement><p>Solve the equation.</p>
-<p><m>{x^{2}-4} = 0</m></p>
+<p><m>{x^{2}-64} = 0</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{-2,2\right\}</m>
+        <m>\left\{-8,8\right\}</m>
       </p>
     </answer>
     <solution><p>There are a few ways you can approach this problem- you might like to use
 the <em>square root method</em> or else you might prefer to <em>factor</em> the equation
 and then use the <em>zero product principle</em>.</p>
 <p><m>\begin{aligned}
-                     {x^{2}-4}=0 \amp \Rightarrow {\left(x+2\right)\mathopen{}\left(x-2\right)}=0 \\
-                                    \amp  \Rightarrow {\left\{-2,2\right\}}
+                     {x^{2}-64}=0 \amp \Rightarrow {\left(x+8\right)\mathopen{}\left(x-8\right)}=0 \\
+                                    \amp  \Rightarrow {\left\{-8,8\right\}}
        \end{aligned}</m></p>
 <p>Note that <em>all</em> quadratic equations have <alert>two</alert> (possibly repeated) solutions; in this problem both solutions are real. Each solution can be checked by substituting it into the original equation- this is left as an exercise.</p>
 <p>You might have solved the equation using the Quadratic Formula- the final 

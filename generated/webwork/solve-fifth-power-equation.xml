@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-fifth-power-equation" assembly-id="solve-fifth-power-equation">
-  <static seed="1908">
-    <statement><p><m>x^5 = -13</m></p>
+  <static seed="1772">
+    <statement><p><m>x^5 = 10</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\sqrt[5]{-13}</m>
+        <m>\sqrt[5]{10}</m>
       </p>
     </answer>
   </static>

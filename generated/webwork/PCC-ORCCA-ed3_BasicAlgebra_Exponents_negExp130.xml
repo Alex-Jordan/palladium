@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp130" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp130">
-  <static seed="1761">
-    <statement><p><m>\left(t^{14}\right)^{5}\cdot t^{-16}</m></p>
+  <static seed="1625">
+    <statement><p><m>\left(t^{5}\right)^{2}\cdot t^{-9}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>t^{54}</m>
+        <m>t^{1}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remember that <m>a^m\cdot a^n = a^{m+n}</m></p>
 <p><m>\begin{aligned}
-                \left(t^{14}\right)^{5}\cdot t^{-16} \amp = t^{14\cdot5}t^{-16}\\
-                                                                          \amp  =t^{70}t^{-16}\\
-                                                                      \amp  =t^{70-16}\\
-                                    \amp  = {t^{54}}
+                \left(t^{5}\right)^{2}\cdot t^{-9} \amp = t^{5\cdot2}t^{-9}\\
+                                                                          \amp  =t^{10}t^{-9}\\
+                                                                      \amp  =t^{10-9}\\
+                                    \amp  = {t^{1}}
            \end{aligned}</m></p>
 </solution>
   </static>

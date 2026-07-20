@@ -1,42 +1,42 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-quadratic-graphs-and-vertex-form-8-5-10" assembly-id="section-quadratic-graphs-and-vertex-form-8-5-10">
-  <static seed="1104">
-    <statement><p>A farmer purchased <m>320</m> meters of fencing, and will build a rectangular pen with it. To enclose the largest possible area, what should the pen<rsq/>s length and width be? Model the pen<rsq/>s area with a function, and then find its maximum value.</p>
+  <static seed="637">
+    <statement><p>A farmer purchased <m>520</m> meters of fencing, and will build a rectangular pen with it. To enclose the largest possible area, what should the pen<rsq/>s length and width be? Model the pen<rsq/>s area with a function, and then find its maximum value.</p>
 <p>Use a comma to separate your answers.</p>
 <p>To enclose the largest possible area, the pen<rsq/>s length and width should be <fillin characters="10" name="AnSwEr0001"/> meters.</p>
 </statement>
     <answer>
       <p>
-        <m>80, 80</m>
+        <m>130, 130</m>
       </p>
     </answer>
-    <solution><p>Assume the rectangle<rsq/>s length is <m>l</m> meters, and its width is <m>w</m> meters. Since the rectangle<rsq/>s perimeter is given as <m>320</m> meters, we have:</p>
+    <solution><p>Assume the rectangle<rsq/>s length is <m>l</m> meters, and its width is <m>w</m> meters. Since the rectangle<rsq/>s perimeter is given as <m>520</m> meters, we have:</p>
 <p><me>\begin{aligned}
 P\amp=2(l+w)\\
-320\amp=2(l+w)\\
-160\amp=l+w\\
-160-l\amp=w
+520\amp=2(l+w)\\
+260\amp=l+w\\
+260-l\amp=w
 \end{aligned}</me></p>
-<p>The area of the pen is <m>A=lw\text{.}</m> Substitute <m>w=160-l</m> into <m>A=lw\text{,}</m> we have:</p>
+<p>The area of the pen is <m>A=lw\text{.}</m> Substitute <m>w=260-l</m> into <m>A=lw\text{,}</m> we have:</p>
 <p><me>\begin{aligned}
 A\amp=lw\\
-A\amp=l(160-l)\\
-A\amp=-l^2+160l
+A\amp=l(260-l)\\
+A\amp=-l^2+260l
 \end{aligned}</me></p>
-<p>Next, we use technology to graph the function <m>A=-l^2+160l\text{,}</m> and then find the parabola<rsq/>s vertex <m>(80,{6400})\text{.}</m></p>
+<p>Next, we use technology to graph the function <m>A=-l^2+260l\text{,}</m> and then find the parabola<rsq/>s vertex <m>(130,{16900})\text{.}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-quadratic-graphs-and-vertex-form-8-5-10-image-1.png" width="47%"/>
-<p>According to the vertex point <m>(80,{6400})\text{,}</m> when the pen<rsq/>s length is <m>80</m> meters, the pen has the maximum area <m>{6400}</m> square meters.</p>
-<p>When <m>l=80\text{,}</m> we have:</p>
+<p>According to the vertex point <m>(130,{16900})\text{,}</m> when the pen<rsq/>s length is <m>130</m> meters, the pen has the maximum area <m>{16900}</m> square meters.</p>
+<p>When <m>l=130\text{,}</m> we have:</p>
 <p><me>\begin{aligned}
-w\amp=160-l\\
-\amp=160-80\\
-\amp=80
+w\amp=260-l\\
+\amp=260-130\\
+\amp=130
 \end{aligned}</me></p>
-<p>To maximize the pen<rsq/>s area, the length and width should both be <m>80</m> meters. This implies the pen is a square.</p>
+<p>To maximize the pen<rsq/>s area, the length and width should both be <m>130</m> meters. This implies the pen is a square.</p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_7_6_43.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_8_6_43.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -53,7 +53,7 @@ w\amp=160-l\\
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.7.6.43)
+## Problem1(1.8.6.43)
 ## Author()
 ## Institution()
 ## Language(en-US)

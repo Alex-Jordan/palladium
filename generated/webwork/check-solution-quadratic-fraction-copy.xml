@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-solution-quadratic-fraction-copy" assembly-id="check-solution-quadratic-fraction-copy">
-  <static seed="2456">
-    <statement><p>Is <m>{{\frac{9}{5}}}</m> a solution to <m>{5x^{2}-5x-{\frac{36}{5}}}={0}\text{?}</m></p>
+  <static seed="2320">
+    <statement><p>Is <m>{{\frac{8}{9}}}</m> a solution to <m>{9x^{2}+x-8}={0}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>5x^{2}-5x-{\frac{36}{5}}</m></cell>
+<cell><m>9x^{2}+x-8</m></cell>
 <cell><m>=</m></cell>
 <cell><m>0</m></cell>
 </row>

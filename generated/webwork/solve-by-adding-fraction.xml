@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-by-adding-fraction" assembly-id="solve-by-adding-fraction">
-  <static seed="2512">
+  <static seed="2376">
     <statement><p>Solve the equation <m>q - \frac{3}{7} = \frac{3}{2}</m> for <m>q\text{.}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>

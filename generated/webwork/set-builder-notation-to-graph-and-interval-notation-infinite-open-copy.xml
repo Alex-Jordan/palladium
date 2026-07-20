@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-set-builder-notation-to-graph-and-interval-notation-infinite-open-copy" assembly-id="set-builder-notation-to-graph-and-interval-notation-infinite-open-copy">
-  <static seed="2418">
+  <static seed="2282">
     <statement><p><m>{\{ x \mid x \lt  3 \}}</m></p>
 <p><fillin name="AnSwEr0001"/></p>
 <p><fillin characters="12" name="AnSwEr0002"/></p>

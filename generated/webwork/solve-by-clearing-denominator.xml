@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-by-clearing-denominator" assembly-id="solve-by-clearing-denominator">
-  <static seed="1464">
+  <static seed="1328">
     <statement><p>Solve for <m>z</m> in <m>-\frac{2}{5}z-\frac{3}{2}=-\frac{1}{2}z+\frac{4}{5}\text{.}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>

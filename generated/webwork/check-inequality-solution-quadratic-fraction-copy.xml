@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-inequality-solution-quadratic-fraction-copy" assembly-id="check-inequality-solution-quadratic-fraction-copy">
-  <static seed="2482">
-    <statement><p>Is <m>{{\frac{8}{3}}}</m> a solution to <m>{3x^{2}-5x-8}\leq{0}\text{?}</m></p>
+  <static seed="2346">
+    <statement><p>Is <m>{1}</m> a solution to <m>{6x^{2}+6x-{\frac{91}{6}}}\gt{0}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>3x^{2}-5x-8</m></cell>
-<cell><m>\leq</m></cell>
+<cell><m>6x^{2}+6x-{\frac{91}{6}}</m></cell>
+<cell><m>\gt</m></cell>
 <cell><m>0</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
-<cell><m>\wonder{\leq}</m></cell>
+<cell><m>\wonder{\gt}</m></cell>
 <cell><m>0</m></cell>
 </row>
 </tabular>
@@ -23,12 +23,12 @@
 </statement>
     <answer>
       <p>
-        <m>0</m>
+        <m>-{\frac{19}{6}}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\text{Yes, it is a solution.}</m>
+        <m>\text{No, it is not a solution.}</m>
       </p>
     </answer>
   </static>

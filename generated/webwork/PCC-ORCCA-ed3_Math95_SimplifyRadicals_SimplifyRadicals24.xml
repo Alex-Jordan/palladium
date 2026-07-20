@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_SimplifyRadicals_SimplifyRadicals24" assembly-id="PCC-ORCCA-ed3_Math95_SimplifyRadicals_SimplifyRadicals24">
-  <static seed="1940">
-    <statement><p><m>\displaystyle{ \dfrac{9}{\sqrt{15}+8} }</m></p>
+  <static seed="1804">
+    <statement><p><m>\displaystyle{ \dfrac{5}{\sqrt{22}+7} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{72-9\sqrt{15}}{49}</m>
+        <m>\frac{35-5\sqrt{22}}{27}</m>
       </p>
     </answer>
     <solution><p>We will use the Difference of Squares formula:</p>
 <p><m>\displaystyle{ (a+b)(a-b) = a^2-b^2 }</m></p>
 <p>This will help us get rid of the radical in the denominator by multiplying with the conjugate:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \dfrac{9}{\sqrt{15}+8}
-                \amp = \dfrac{9}{\sqrt{15}+8}\cdot\dfrac{\sqrt{15}-8}{\sqrt{15}-8} \\
-                \amp = \dfrac{9\sqrt{15}-(9)(8)}{\left(\sqrt{15}\right)^2-(8)^2} \\
-                \amp = \dfrac{9\sqrt{15}-72}{15-64} \\
-                \amp = \dfrac{9\sqrt{15}-72}{-49} \\
+   \dfrac{5}{\sqrt{22}+7}
+                \amp = \dfrac{5}{\sqrt{22}+7}\cdot\dfrac{\sqrt{22}-7}{\sqrt{22}-7} \\
+                \amp = \dfrac{5\sqrt{22}-(5)(7)}{\left(\sqrt{22}\right)^2-(7)^2} \\
+                \amp = \dfrac{5\sqrt{22}-35}{22-49} \\
+                \amp = \dfrac{5\sqrt{22}-35}{-27} \\
 \end{aligned}
     }</m></p>
 </solution>

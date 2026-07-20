@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-equation-add-right-integer-copy" assembly-id="solve-equation-add-right-integer-copy">
-  <static seed="2516">
-    <statement><p><m>{D+8}={14}</m></p>
+  <static seed="2380">
+    <statement><p><m>{A+14}={20}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
@@ -11,9 +11,9 @@
     </answer>
     <solution><p>The opposite action to addition is subtraction.</p>
 <p><me>\begin{aligned}
-{D+8} \amp= {14}\\
-{D+8}\subtractright{8} \amp= {14}\subtractright{8}\\
-D \amp= 6
+{A+14} \amp= {20}\\
+{A+14}\subtractright{14} \amp= {20}\subtractright{14}\\
+A \amp= 6
 \end{aligned}</me></p>
 <p>The solution set is <m>{\left\{6\right\}}\text{.}</m></p>
 </solution>

@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication5" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication5">
-  <static seed="2635">
-    <statement><p><m>{-8x}\left({-4x+6}\right)</m></p>
+  <static seed="2499">
+    <statement><p><m>{-8x}\left({7x-4}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>32x^{2}-48x</m>
+        <m>-56x^{2}+32x</m>
       </p>
     </answer>
     <solution><p>We multiply the monomial by each term in the binomial, using 
 the properties of exponents to help us.  <me>\begin{aligned}
-              {-8x}({-4x+6})\amp ={32x^{2}-48x}
+              {-8x}({7x-4})\amp ={-56x^{2}+32x}
       \end{aligned}</me></p>
 </solution>
   </static>

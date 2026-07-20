@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-compare-fraction-to-decimal-copy" assembly-id="compare-fraction-to-decimal-copy">
-  <static seed="2398">
-    <statement><p><m>{{\frac{9}{11}}}</m> <fillin characters="3" name="AnSwEr0001"/> <m>{0.82}</m></p>
+  <static seed="2262">
+    <statement><p><m>{1.44}</m> <fillin characters="3" name="AnSwEr0001"/> <m>{{\frac{13}{9}}}</m></p>
 </statement>
     <answer>
       <p>

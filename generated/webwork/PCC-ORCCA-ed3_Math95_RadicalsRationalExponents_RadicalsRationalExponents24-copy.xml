@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents24-copy" assembly-id="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents24-copy">
-  <static seed="2019">
-    <statement><p><m>\displaystyle{\sqrt{y}\sqrt[7]{y}}</m></p>
+  <static seed="1883">
+    <statement><p><m>\displaystyle{\sqrt{r}\sqrt[6]{r}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>y^{\frac{9}{14}}</m>
+        <m>r^{\frac{2}{3}}</m>
       </p>
     </answer>
     <solution><p>We rewrite the expression using rational exponents <m>\sqrt[n]{x^m} = x^\frac{m}{n}</m>. Then we use exponent properties and add the fractions.</p>
 <p><m>\displaystyle{\begin{aligned}
-   \sqrt{y}\sqrt[7]{y}
-           \amp = y^{\frac{1}{2}}y^{\frac{1}{7}} \\
-           \amp = y^{\frac{1}{2}+\frac{1}{7}} \\
-           \amp = y^{\frac{7}{14}+\frac{2}{14}} \\
-           \amp = y^{\frac{9}{14}} \\
+   \sqrt{r}\sqrt[6]{r}
+           \amp = r^{\frac{1}{2}}r^{\frac{1}{6}} \\
+           \amp = r^{\frac{1}{2}+\frac{1}{6}} \\
+           \amp = r^{\frac{6}{12}+\frac{2}{12}} \\
+           \amp = r^{\frac{8}{12}} \\
 \end{aligned}
     }</m></p>
 <p>If the fraction in the exponent is not fully simplified after the last step, make sure to reduce it to its lowest terms.</p>

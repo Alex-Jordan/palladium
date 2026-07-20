@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp30" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp30">
-  <static seed="1717">
-    <statement><p><m>\displaystyle\frac{x^{7}}{x^{11}}</m></p>
+  <static seed="1581">
+    <statement><p><m>\displaystyle\frac{x^{22}}{x^{25}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{1}{x^{4}}</m>
+        <m>\frac{1}{x^{3}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\frac{a^m}{a^n} = a^{m-n}</m>.</p>
 <p><m>\begin{aligned}
-                 \displaystyle\frac{x^{7}}{x^{11}} \amp = x^{7-11}\\
-                                                       \amp  =x^{-4}\\
-                                    \amp  = {\frac{1}{x^{4}}}
+                 \displaystyle\frac{x^{22}}{x^{25}} \amp = x^{22-25}\\
+                                                       \amp  =x^{-3}\\
+                                    \amp  = {\frac{1}{x^{3}}}
            \end{aligned}</m></p>
 </solution>
   </static>

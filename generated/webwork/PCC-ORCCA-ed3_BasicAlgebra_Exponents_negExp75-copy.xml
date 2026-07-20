@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp75-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp75-copy">
-  <static seed="1740">
+  <static seed="1604">
     <statement><p><m>7^{-2}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>

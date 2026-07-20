@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-quadratic-graphs-and-vertex-form-8-9-8" assembly-id="section-quadratic-graphs-and-vertex-form-8-9-8">
-  <static seed="1129">
-    <statement><p>Let <m>f</m> be defined by <m>f(x)={-6\mathopen{}\left(x-{\frac{1}{2}}\right)^{2}+\left(-1\right)}\text{.}</m>
+  <static seed="662">
+    <statement><p>Let <m>h</m> be defined by <m>h(x)={9\mathopen{}\left(x + {\frac{5}{4}}\right)^{2}+{\frac{9}{5}}}\text{.}</m>
 <ol label="a.">
 <li>
-<p>What is the domain of <m>f\text{?}</m></p>
+<p>What is the domain of <m>h\text{?}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </li>
 <li>
-<p>What is the range of <m>f\text{?}</m></p>
+<p>What is the range of <m>h\text{?}</m></p>
 <p><fillin characters="10" name="AnSwEr0002"/></p>
 </li>
 </ol></p>
@@ -20,7 +20,7 @@
     </answer>
     <answer>
       <p>
-        <m>\left(-\infty ,-1\right]</m>
+        <m>\left[\frac{9}{5},\infty \right)</m>
       </p>
     </answer>
     <solution><p><ol label="a.">
@@ -28,12 +28,12 @@
 <p>The function is quadratic, so the domain is <m>{\left(-\infty ,\infty \right)}\text{.}</m> There are no invalid inputs for this function.</p>
 </li>
 <li>
-<p>Since the formula is in vertex form, we can see that the graph of <m>f</m> has a vertex at <m>{\left(0.5,-1\right)}\text{.}</m> Since the leading coefficient is <m>-6</m> which is negative, the parabola opens downward. So the range is all numbers less than or equal to <m>{-1}\text{.}</m> So the range is <m>{\left(-\infty ,-1\right]}\text{.}</m></p>
+<p>Since the formula is in vertex form, we can see that the graph of <m>h</m> has a vertex at <m>{\left(-1.25,1.8\right)}\text{.}</m> Since the leading coefficient is <m>9</m> which is positive, the parabola opens upward. So the range is all numbers greater than or equal to <m>{{\frac{9}{5}}}\text{.}</m> So the range is <m>{\left[1.8,\infty \right)}\text{.}</m></p>
 </li>
 </ol></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_7_6_67.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_8_6_67.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg copied-from="section-quadratic-graphs-and-vertex-form-8-9-7"><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -50,7 +50,7 @@
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.7.6.68)
+## Problem1(1.8.6.68)
 ## Author()
 ## Institution()
 ## Language(en-US)

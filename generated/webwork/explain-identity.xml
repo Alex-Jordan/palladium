@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-explain-identity" assembly-id="explain-identity">
-  <static seed="2374">
+  <static seed="2238">
     <statement><p>Think of a number. Add four to your number. Now double that. Then add six. Then halve it. Finally, subtract <m>7\text{.}</m> What is the result? Do you always get the same result, regardless of what number you start with? How does this work? Explain using algebra.</p>
 <p><var form="essay" height="6" width="76"/></p>
 </statement>

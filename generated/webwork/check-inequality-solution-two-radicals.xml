@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-inequality-solution-two-radicals" assembly-id="check-inequality-solution-two-radicals">
-  <static seed="2485">
-    <statement><p>Is <m>2</m> a solution to <m>{\sqrt{33x-2}-6}\gt{\sqrt{3x-2}}\text{?}</m></p>
+  <static seed="2349">
+    <statement><p>Is <m>1</m> a solution to <m>{\sqrt{2x-1}+2}\geq{\sqrt{26x-1}}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>\sqrt{33x-2}-6</m></cell>
-<cell><m>\gt</m></cell>
-<cell><m>\sqrt{3x-2}</m></cell>
+<cell><m>\sqrt{2x-1}+2</m></cell>
+<cell><m>\geq</m></cell>
+<cell><m>\sqrt{26x-1}</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
-<cell><m>\wonder{\gt}</m></cell>
+<cell><m>\wonder{\geq}</m></cell>
 <cell><fillin characters="3" name="AnSwEr0002"/>
 </cell>
 </row>
@@ -24,12 +24,12 @@
 </statement>
     <answer>
       <p>
-        <m>2</m>
+        <m>3</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>2</m>
+        <m>5</m>
       </p>
     </answer>
     <answer>

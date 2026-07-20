@@ -1,43 +1,43 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplying-polynomials-7-3-2" assembly-id="section-multiplying-polynomials-7-3-2">
-  <static seed="2709">
+  <static seed="2573">
     <statement><p>Fill in the blanks with algebraic expressions that make the equation true. You may not use <m>0</m> or <m>1</m> in any of the blank spaces. An example is <m>\mathord{?} + \mathord{?} = 8x \text{,}</m> where one possible answer is <m>3x + 5x = 8x \text{.}</m> There are infinitely many correct answers to this problem. <em>Be creative.</em> After finding a correct answer, see if you can come up with a different answer that is also correct.</p>
 <p><ol label="a.">
 <li>
-<p><fillin characters="10" name="AnSwEr0001"/> <m>+</m> <fillin characters="10" name="MuLtIaNsWeR_AnSwEr0001_1"/> <m>= {-9xy}</m></p>
+<p><fillin characters="10" name="AnSwEr0001"/> <m>+</m> <fillin characters="10" name="MuLtIaNsWeR_AnSwEr0001_1"/> <m>= {-17xy}</m></p>
 </li>
 <li>
-<p><fillin characters="10" name="AnSwEr0002"/> <m>+</m> <fillin characters="10" name="MuLtIaNsWeR_AnSwEr0002_1"/> <m>= {-19x^{25}y^{8}}</m></p>
+<p><fillin characters="10" name="AnSwEr0002"/> <m>+</m> <fillin characters="10" name="MuLtIaNsWeR_AnSwEr0002_1"/> <m>= {-21x^{15}y^{8}}</m></p>
 </li>
 <li>
-<p><fillin characters="3" name="AnSwEr0003"/> <m>\cdot</m> <fillin characters="3" name="MuLtIaNsWeR_AnSwEr0003_1"/> <m>\cdot</m> <fillin characters="3" name="MuLtIaNsWeR_AnSwEr0003_2"/> <m>\cdot</m> <fillin characters="3" name="MuLtIaNsWeR_AnSwEr0003_3"/> <m>\cdot</m> <fillin characters="3" name="MuLtIaNsWeR_AnSwEr0003_4"/> <m>= {5x^{30}y^{50}}</m></p>
+<p><fillin characters="3" name="AnSwEr0003"/> <m>\cdot</m> <fillin characters="3" name="MuLtIaNsWeR_AnSwEr0003_1"/> <m>\cdot</m> <fillin characters="3" name="MuLtIaNsWeR_AnSwEr0003_2"/> <m>\cdot</m> <fillin characters="3" name="MuLtIaNsWeR_AnSwEr0003_3"/> <m>\cdot</m> <fillin characters="3" name="MuLtIaNsWeR_AnSwEr0003_4"/> <m>= {2x^{75}y^{60}}</m></p>
 </li>
 </ol></p>
 </statement>
     <answer>
       <p>
-        <m>-xy;\,-8xy</m>
+        <m>-9xy;\,-8xy</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>-13x^{25}y^{8};\,-6x^{25}y^{8}</m>
+        <m>-11x^{15}y^{8};\,-10x^{15}y^{8}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>x^{20};\,x^{10};\,y^{30};\,y^{20};\,5</m>
+        <m>x^{45};\,x^{30};\,y^{30};\,y^{30};\,2</m>
       </p>
     </answer>
     <solution><p><ol label="a.">
 <li>
-<p>Think about adding like terms. One possibility is: <m>{-xy} + {-8xy} = {-9xy}\text{.}</m></p>
+<p>Think about adding like terms. One possibility is: <m>{-9xy} + {-8xy} = {-17xy}\text{.}</m></p>
 </li>
 <li>
-<p>Think about adding like terms. One possibility is: <m>{-13x^{25}y^{8}} + {-6x^{25}y^{8}} = {-19x^{25}y^{8}}\text{.}</m></p>
+<p>Think about adding like terms. One possibility is: <m>{-11x^{15}y^{8}} + {-10x^{15}y^{8}} = {-21x^{15}y^{8}}\text{.}</m></p>
 </li>
 <li>
-<p>Think about multiplying exponents. One possibility is: <m>5 \cdot {x^{20}} \cdot {x^{10}} \cdot {y^{30}} \cdot {y^{20}} = {5x^{30}y^{50}}\text{.}</m></p>
+<p>Think about multiplying exponents. One possibility is: <m>2 \cdot {x^{45}} \cdot {x^{30}} \cdot {y^{30}} \cdot {y^{30}} = {2x^{75}y^{60}}\text{.}</m></p>
 </li>
 </ol></p>
 </solution>

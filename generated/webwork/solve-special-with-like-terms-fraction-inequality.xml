@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-special-with-like-terms-fraction-inequality" assembly-id="solve-special-with-like-terms-fraction-inequality">
-  <static seed="1543">
-    <statement><p><m>{{\frac{7}{8}}b+9+{\frac{1}{9}}b}\leq{3+{\frac{71}{72}}b+6}</m></p>
+  <static seed="1407">
+    <statement><p><m>{{\frac{9}{8}}u-2+{\frac{3}{5}}u}\leq{-4+{\frac{69}{40}}u+2}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>

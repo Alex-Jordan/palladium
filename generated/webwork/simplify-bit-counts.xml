@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-bit-counts" assembly-id="simplify-bit-counts">
-  <static seed="2626">
+  <static seed="2490">
     <statement><p>There are about <m>10^{19}</m> grains of sand on Earth. On average there are also about <m>10^{19}</m> atoms in a grain of sand. Using these numbers, how many total atoms are there on Earth in grains of sand?</p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>

@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-quadratic-equations-by-factoring-7-1-11" assembly-id="section-solving-quadratic-equations-by-factoring-7-1-11">
-  <static seed="734" source="Contrib/PCC/BasicAlgebra/Factoring/factoring470.pg">
+  <static seed="10" source="Contrib/PCC/BasicAlgebra/Factoring/factoring470.pg">
     <statement><p>Factor the given polynomial.</p>
-<p><m>{144y^{4}-25}=</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>{64x^{4}-25}=</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left(12y^{2}+5\right)\mathopen{}\left(12y^{2}-5\right)</m>
+        <m>\left(8x^{2}+5\right)\mathopen{}\left(8x^{2}-5\right)</m>
       </p>
     </answer>
     <solution><p>Note that the given expression is the <em>difference of squares</em></p>
 <p><m>\begin{aligned}
-                {144y^{4}-25} \amp  = ({12y}^2)^2-5^2\\
-                            \amp  = {\left(12y^{2}+5\right)\mathopen{}\left(12y^{2}-5\right)}
+                {64x^{4}-25} \amp  = ({8x}^2)^2-5^2\\
+                            \amp  = {\left(8x^{2}+5\right)\mathopen{}\left(8x^{2}-5\right)}
             \end{aligned}</m></p>
 <p>Note that this answer can be checked by using the FOIL (<alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast) technique (exercise).</p>
 </solution>

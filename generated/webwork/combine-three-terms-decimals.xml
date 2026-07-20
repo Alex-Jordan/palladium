@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-combine-three-terms-decimals" assembly-id="combine-three-terms-decimals">
-  <static seed="2288">
-    <statement><p><m>{r+8.6r+9.7r}</m></p>
+  <static seed="2152">
+    <statement><p><m>{7.7n+7.2n+n}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>19.3r</m>
+        <m>15.9n</m>
       </p>
     </answer>
   </static>

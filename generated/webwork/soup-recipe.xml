@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-soup-recipe" assembly-id="soup-recipe">
-  <static seed="1647">
-    <statement><p>An old cookbook has a recipe for soup that uses <m>15</m> g of flour for thickener. The recipe makes <m>1.75</m> gal of soup, but you are adjusting it to make only <m>1.5</m> gal. How much flour should you use?</p>
+  <static seed="1511">
+    <statement><p>An old cookbook has a recipe for soup that uses <m>10</m> g of flour for thickener. The recipe makes <m>2.5</m> gal of soup, but you are adjusting it to make only <m>2.25</m> gal. How much flour should you use?</p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>12.8571\ {\rm g}</m>
+        <m>9\ {\rm g}</m>
       </p>
     </answer>
     <solution><p>Let <m>x</m> be how many grams of flour we should use. The amount of flour is proportional to the amount of soup, so we can compare the ratios of flour to soup for our batch with the original recipe:</p>
-<p><me>\frac{x}{1.5} = \frac{15}{1.75}</me></p>
+<p><me>\frac{x}{2.25} = \frac{10}{2.5}</me></p>
 <p>These denominators are not whole numbers, and we decide not to try using the least common multiple. Instead, we just multiply on each side by both denominators:</p>
 <p><me>\begin{aligned}
-1.75\cdot 1.5\cdot \frac{x}{1.5} \amp= 1.75\cdot 1.5\cdot \frac{15}{1.75} \\
-1.75 x \amp= 22.5\\
-x \amp= \frac{22.5}{1.75 }\\
-x \amp= 12.8571428571429
+2.5\cdot 2.25\cdot \frac{x}{2.25} \amp= 2.5\cdot 2.25\cdot \frac{10}{2.5} \\
+2.5 x \amp= 22.5\\
+x \amp= \frac{22.5}{2.5 }\\
+x \amp= 9
 \end{aligned}</me></p>
-<p>So we should use <m>{12.8571\ {\rm g}}</m> of flour.</p>
+<p>So we should use <m>{9\ {\rm g}}</m> of flour.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/3_5_8_182.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

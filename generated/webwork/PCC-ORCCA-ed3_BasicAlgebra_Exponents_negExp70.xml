@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp70" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp70">
-  <static seed="1737">
-    <statement><p><m>\displaystyle\frac{4}{(-2)^{-3}}</m></p>
+  <static seed="1601">
+    <statement><p><m>\displaystyle\frac{-6}{(-2)^{-3}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-32</m>
+        <m>48</m>
       </p>
     </answer>
     <solution><p>We evaluate the expression by remembering that <m>x^{-n}</m> is the same thing as <m>\displaystyle{\frac{1}{x^n}}</m> 
 for any non-zero,
 real value of <m>x</m>.</p>
 <p><m>\displaystyle{      \begin{aligned}
-            \frac{4}{(-2)^{-3}} \amp  = \frac{4}{\frac{1}{(-2)^{3}}}\\
-                                    \amp  = 4\cdot(-2)^{3}\\
-                             \amp  = {-32}
+            \frac{-6}{(-2)^{-3}} \amp  = \frac{-6}{\frac{1}{(-2)^{3}}}\\
+                                    \amp  = -6\cdot(-2)^{3}\\
+                             \amp  = {48}
       \end{aligned}
     }</m></p>
 <p>Remember that when we divide by a fraction we <em>multiply</em> by its reciprocal.</p>

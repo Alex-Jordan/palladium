@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-12-7" assembly-id="section-solving-rational-equations-10-12-7">
-  <static seed="1614" source="Contrib/PCC/BasicAlgebra/RationalLiteralEquations/LiteralEquation280.pg">
+  <static seed="1478" source="Contrib/PCC/BasicAlgebra/RationalLiteralEquations/LiteralEquation280.pg">
     <statement><p>Solve this equation for <m>C</m>:</p>
-<p><m>\displaystyle{ \frac{1}{4C} = \frac{1}{q} }</m></p>
+<p><m>\displaystyle{ \frac{1}{7C} = \frac{1}{t} }</m></p>
 <p><fillin characters="7" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>C = \frac{q}{4}</m>
+        <m>C = \frac{t}{7}</m>
       </p>
     </answer>
-    <solution><p>To solve this equation, we multiple both sides with the common denominator <m>{4Cq}</m>:</p>
+    <solution><p>To solve this equation, we multiple both sides with the common denominator <m>{7Ct}</m>:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \frac{1}{4C} \amp = \frac{1}{q}  \\
-   \frac{1}{4C} \cdot 4Cq \amp = \frac{1}{q} \cdot 4Cq \\
-   q \amp = 4C \\
-   \frac{q}{4} \amp = \frac{4C}{4} \\
-   \frac{q}{4} \amp = C \\
-   C \amp = \frac{q}{4}
+   \frac{1}{7C} \amp = \frac{1}{t}  \\
+   \frac{1}{7C} \cdot 7Ct \amp = \frac{1}{t} \cdot 7Ct \\
+   t \amp = 7C \\
+   \frac{t}{7} \amp = \frac{7C}{7} \\
+   \frac{t}{7} \amp = C \\
+   C \amp = \frac{t}{7}
 \end{aligned}
 }</m></p>
 </solution>

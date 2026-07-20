@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-1-8" assembly-id="section-completing-the-square-8-1-8">
-  <static seed="1159">
-    <statement><p>Use a square root to solve <m>{y^{2}-12y+36}={81}\text{.}</m></p>
+  <static seed="692">
+    <statement><p>Use a square root to solve <m>{r^{2}+2r+1}={16}\text{.}</m></p>
 <p><fillin characters="25" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{15,-3\right\}</m>
+        <m>\left\{3,-5\right\}</m>
       </p>
     </answer>
-    <solution><p>The left side is a perfect square trinomial. So the equation may be written <m>{\left(y-6\right)^{2}}={81}\text{.}</m> Then using the square root property:</p>
+    <solution><p>The left side is a perfect square trinomial. So the equation may be written <m>{\left(r+1\right)^{2}}={16}\text{.}</m> Then using the square root property:</p>
 <p><me>\begin{aligned}
-{y-6}\amp=\sqrt{{81}}\amp\amp\text{or}\amp {y-6}\amp=-\sqrt{{81}}\\
-{y-6}\amp=9\amp\amp\text{or}\amp {y-6}\amp=-9\\
-y\amp=15\amp\amp\text{or}\amp y\amp=-3
+{r+1}\amp=\sqrt{{16}}\amp\amp\text{or}\amp {r+1}\amp=-\sqrt{{16}}\\
+{r+1}\amp=4\amp\amp\text{or}\amp {r+1}\amp=-4\\
+r\amp=3\amp\amp\text{or}\amp r\amp=-5
 \end{aligned}</me></p>
-<p>So the solution set is <m>{\left\{15,-3\right\}}\text{.}</m></p>
+<p>So the solution set is <m>{\left\{3,-5\right\}}\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_8_6_7.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_9_6_7.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -35,7 +35,7 @@ y\amp=15\amp\amp\text{or}\amp y\amp=-3
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.8.6.7)
+## Problem1(1.9.6.7)
 ## Author()
 ## Institution()
 ## Language(en-US)

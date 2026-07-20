@@ -27,11 +27,8 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PCCmacros.pl",
-  "contextCurrency.pl",
-  "contextPercent.pl",
-  "parserLinearRelation.pl",
-  "randomPerson.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -44,40 +41,23 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$name = randomPerson();
-$profession = list_random(
-  'a radiography technician',
-  'a microelectronics engineer',
-  'a dental hygienist',
-  'a high school teacher',
-  'an office manager',
-  'a restaurant manager',
-  'a web designer',
-  'a tax accountant',
-  'a paralegal',
-  'a structural engineer'
-);
-Context("Currency")->flags->set(trimTrailingZeros => 1);
-$final = 65000 + random(-8000,8000);
-$current = Currency($final);
-Context("Percent");
-$decimal = random(0.02,0.06,0.001);
-$percent = Percent($decimal);
-Context("LinearRelation")->variables->are(S => 'Real');
-$equation = LinearRelation("S + $decimal S = $final");
+($r,$s) = random_subset(2,1..9);
+Context()->noreduce('(-x)-y');
+$left = Formula("x^2 - ($r+$s)x")->reduce;
+$right = Formula("-$r*$s");
+Context("FiniteSolutionSets");
+$sols = Formula("{$r,$s}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Write an equation to model the scenario. There is no need to solve the equation.
+Solve the equation by factoring.
 
-[$name]'s current annual salary as [$profession] is [`[$current]\text{.}`] This is with a raise of [`[$percent]`] over last year's salary. What was [$name->possessive] salary last year? Set up an equation to answer this question. There is no need to solve it.
+[`[$left] = [$right]`]
 
-[@KeyboardInstructions('Use [|S|]* as the variable.')@]**
-
-[_]{$equation}{20}
+[_]{$sols}{16}
 
 END_PGML
 

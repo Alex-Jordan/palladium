@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-the-quadratic-formula-7-4-2" assembly-id="section-the-quadratic-formula-7-4-2">
-  <static seed="977">
+  <static seed="510">
     <statement><p>Solve for <m>x</m> in the equation <m>mx^{2}+nx+p=0\text{,}</m> assuming <m>m\neq0\text{.}</m></p>
 <p><fillin characters="40" name="AnSwEr0001"/></p>
 </statement>
@@ -12,7 +12,7 @@
     <solution><p>To solve a quadratic equation of the form <m>ax^{2}+bx+c=0\text{,}</m> we can use the quadratic formula. In this case, <m>a=m\text{,}</m> <m>b=n\text{,}</m> and <m>c=p\text{.}</m> Therefore the solutions are <m>\frac{-n+\sqrt{n^{2}-4mp}}{2m}, \frac{-n-\sqrt{n^{2}-4mp}}{2m}\text{,}</m> or <m>\frac{-n \pm \sqrt{n^{2}-4mp}}{2m}\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_4_5_111.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_5_5_111.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -29,7 +29,7 @@
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.4.5.111)
+## Problem1(1.5.5.111)
 ## Author()
 ## Institution()
 ## Language(en-US)

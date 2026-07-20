@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-key-features-of-quadratic-graphs-8-3-17" assembly-id="section-key-features-of-quadratic-graphs-8-3-17">
-  <static seed="1003" source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex40.pg">
+  <static seed="536" source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex40.pg">
     <statement><p>Find the axis of symmetry and vertex of the quadratic function.</p>
-<p><m>{y}={-0.5x^{2}}</m></p>
+<p><m>{y}={-3x^{2}}</m></p>
 <p>Axis of symmetry: <fillin characters="13" name="AnSwEr0001"/></p>
 <p>Vertex: <fillin characters="13" name="AnSwEr0002"/></p>
 </statement>
@@ -17,7 +17,7 @@
       </p>
     </answer>
     <solution><p>This quadratic function is given in vertex form. We can treat the function as:</p>
-<p><m>\displaystyle{y=-0.5(x+0)^{2}+0}</m></p>
+<p><m>\displaystyle{y=-3(x+0)^{2}+0}</m></p>
 <p>We can easily identify that its axis of symmetry is <m>x=0</m>, and its vertex is <m>(0,0)</m>.</p>
 </solution>
   </static>

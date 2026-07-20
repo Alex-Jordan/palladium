@@ -1,23 +1,40 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-quadratic-equations-by-factoring-7-2-4" assembly-id="section-solving-quadratic-equations-by-factoring-7-2-4">
-  <static seed="737" source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad235.pg">
-    <statement><p>Solve the equation.</p>
-<p><m>{-98\mathopen{}\left(x+2\right)\mathopen{}\left(18x-1\right)} = 0</m></p>
-<p><fillin characters="20" name="AnSwEr0001"/></p>
+  <static seed="55" source="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication30.pg">
+    <statement><p>A rectangle<rsq/>s base is <m>{9\ {\rm cm}}</m> longer than its height. The rectangle<rsq/>s area is <m>{70\ {\rm cm^{2}}}</m>. Find this rectangle<rsq/>s dimensions.</p>
+<p>The rectangle<rsq/>s height is <fillin characters="11" name="AnSwEr0001"/>.</p>
+<p>The rectangle<rsq/>s base is <fillin characters="11" name="AnSwEr0002"/>.</p>
 </statement>
     <answer>
       <p>
-        <m>\left\{-2,\frac{1}{18}\right\}</m>
+        <m>5\ {\rm cm}</m>
       </p>
     </answer>
-    <solution><p>There are a few ways to solve quadratic equations- the easiest way to solve this particular 
-type of problem is to use the <em>zero product principle</em>.</p>
-<p><m>{-98\mathopen{}\left(x+2\right)\mathopen{}\left(18x-1\right)}= 0 \Rightarrow x={-2}\text{ or } x={{\frac{1}{18}}}\\</m></p>
-<p>Note that <em>all</em> quadratic equations have <alert>two</alert> (possibly repeated) solutions; in this problem both solutions are real. Each solution can be checked by substituting it into the original equation- this is left as an exercise.</p>
-<p>You might have solved the equation using the Quadratic Formula- the final 
-result is the same.</p>
+    <answer>
+      <p>
+        <m>14\ {\rm cm}</m>
+      </p>
+    </answer>
+    <solution><p>Let the rectangle<rsq/>s height be <m>x</m> centimeters. Then its base is <m>x+9</m> centimeters.</p>
+<p>It<rsq/>s given that the rectangle<rsq/>s area is <m>{70\ {\rm cm^{2}}}</m>, so we can write and solve the equation:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   x(x+9) \amp = 70 \\
+   x^{2}+9x \amp = 70 \\
+   x^{2}+9x - 70 \amp = 0 \\
+\end{aligned}
+    }</m></p>
+<p>The polynomial can be factored, so we will solve this equation by factoring:</p>
+<p><m>\displaystyle{\begin{aligned}[t]
+   (x-5)(x+14) \amp =0 \\
+   x-5=0 \quad \amp \text{or} \quad x +14=0 \\
+   x=5 \quad \amp \text{or} \quad x= -14
+\end{aligned}
+    }</m></p>
+<p>The solution <m>x= -14</m> will not be considered, as a rectangle<rsq/>s height must be positive. The height is <m>{5\ {\rm cm}}</m>.</p>
+<p>Recall that the rectangle<rsq/>s base is <m>x+9</m> centimeters, where <m>x</m> is the height. Thus the base is <m>{5\ {\rm cm}} + {9\ {\rm cm}}</m>, or <m>{14\ {\rm cm}}</m>.</p>
+<p>So the rectangle<rsq/>s height is <m>{5\ {\rm cm}}</m>, and its base is <m>{14\ {\rm cm}}</m>.</p>
 </solution>
   </static>
-  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad235.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
-  <pg source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad235.pg"/>
+  <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication30.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg source="Contrib/PCC/BasicAlgebra/QuadraticApplications/QuadraticEquationApplication30.pg"/>
 </webwork-reps>

@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-1-8" assembly-id="section-multiplication-and-division-of-rational-expressions-7-1-8">
-  <static seed="1248" source="Contrib/PCC/BasicAlgebra/FractionArithmetic/DivideFractions20.pg">
-    <statement><p>Divide: <m>\displaystyle{ \frac{2}{15} \div \left(-\frac{7}{12}\right) }</m></p>
+  <static seed="1112" source="Contrib/PCC/BasicAlgebra/FractionArithmetic/DivideFractions20.pg">
+    <statement><p>Divide: <m>\displaystyle{ \frac{3}{4} \div \left(-\frac{5}{6}\right) }</m></p>
 <p><fillin characters="9" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-{\frac{8}{35}}</m>
+        <m>-{\frac{9}{10}}</m>
       </p>
     </answer>
     <solution><p>When we do division with fractions, as with</p>
-<p><m>\displaystyle{\frac{2}{15} \div \left(-\frac{7}{12}\right) }</m></p>
+<p><m>\displaystyle{\frac{3}{4} \div \left(-\frac{5}{6}\right) }</m></p>
 <p>we first change division to multiplication, and at the same time, flip the second fraction. In this case, we have</p>
-<p><m>\displaystyle{\frac{2}{15} \cdot \left(-\frac{12}{7}\right) }</m></p>
+<p><m>\displaystyle{\frac{3}{4} \cdot \left(-\frac{6}{5}\right) }</m></p>
 <p>Then we do fraction multiplication as usual. The full process is:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-    \frac{2}{15} \div \left(-\frac{7}{12}\right)
-        \amp = \frac{2}{15} \cdot \left(-\frac{12}{7}\right) \amp \hbox{We can divide the first denominator and the second numerator by 3.}\\
-        \amp = \frac{2}{5 }\cdot\left(-\frac{4}{7}\right) \\
-        \amp = -\frac{8}{35}
+    \frac{3}{4} \div \left(-\frac{5}{6}\right)
+        \amp = \frac{3}{4} \cdot \left(-\frac{6}{5}\right) \amp \hbox{We can divide the first denominator and the second numerator by 2.}\\
+        \amp = \frac{3}{2 }\cdot\left(-\frac{3}{5}\right) \\
+        \amp = -\frac{9}{10}
 \end{aligned}
     }</m></p>
 </solution>

@@ -1,25 +1,25 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-1-11" assembly-id="section-completing-the-square-8-1-11">
-  <static seed="1162">
-    <statement><p>Use a square root to solve <m>{9r^{2}-36r+36}={9}\text{.}</m></p>
+  <static seed="695">
+    <statement><p>Use a square root to solve <m>{25t^{2}+20t+4}={64}\text{.}</m></p>
 <p><fillin characters="25" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{3,1\right\}</m>
+        <m>\left\{\frac{6}{5},-2\right\}</m>
       </p>
     </answer>
-    <solution><p>The left side is a perfect square trinomial. So the equation may be written <m>{\left(3r-6\right)^{2}}={9}\text{.}</m> Then using the square root property:</p>
+    <solution><p>The left side is a perfect square trinomial. So the equation may be written <m>{\left(5t+2\right)^{2}}={64}\text{.}</m> Then using the square root property:</p>
 <p><me>\begin{aligned}
-{3r-6}\amp=\sqrt{{9}}\amp\amp\text{or}\amp {3r-6}\amp=-\sqrt{{9}}\\
-{3r-6}\amp=3\amp\amp\text{or}\amp {3r-6}\amp=-3\\
-3r\amp=9\amp\amp\text{or}\amp 3r\amp=3\\
-r\amp={3}\amp\amp\text{or}\amp r\amp={1}
+{5t+2}\amp=\sqrt{{64}}\amp\amp\text{or}\amp {5t+2}\amp=-\sqrt{{64}}\\
+{5t+2}\amp=8\amp\amp\text{or}\amp {5t+2}\amp=-8\\
+5t\amp=6\amp\amp\text{or}\amp 5t\amp=-10\\
+t\amp={{\frac{6}{5}}}\amp\amp\text{or}\amp t\amp={-2}
 \end{aligned}</me></p>
-<p>So the solution set is <m>{\left\{3,1\right\}}\text{.}</m></p>
+<p>So the solution set is <m>{\left\{\frac{6}{5},-2\right\}}\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_8_6_9.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_9_6_9.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg copied-from="section-completing-the-square-8-1-10"><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -36,7 +36,7 @@ r\amp={3}\amp\amp\text{or}\amp r\amp={1}
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.8.6.10)
+## Problem1(1.9.6.10)
 ## Author()
 ## Institution()
 ## Language(en-US)

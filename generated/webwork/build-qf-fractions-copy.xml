@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-build-qf-fractions-copy" assembly-id="build-qf-fractions-copy">
+  <static seed="808">
+    <statement><p><m>g</m> has curvature coefficient <m>{{\frac{5}{2}}}\text{,}</m> initial slope <m>{{\frac{2}{5}}}\text{,}</m> and initial value <m>{{\frac{6}{5}}}\text{.}</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>g\mathopen{}\left(x\right) = {\frac{5}{2}}x^{2}+{\frac{2}{5}}x+{\frac{6}{5}}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_2_8_73.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg copied-from="build-qf-fractions"><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.2.8.74)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "parserAssignment.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Fraction");
+@a = map {Fraction(random_coprime([1..9],[2..9]))} (0,1,2);
+($a,$b,$c) = @a;
+$f = list_random('f', 'g', 'p', 'q', 'r', 'z');
+parser::Assignment->Allow;
+parser::Assignment->Function($f);
+$answer = Formula("$f(x) = $a x^2 + $b x + $c");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Write a formula for the quadratic function with the given features.
+
+[`[$f]`] has curvature coefficient [`[$a]\text{,}`] initial slope [`[$b]\text{,}`] and initial value [`[$c]\text{.}`]
+
+[@KeyboardInstructions('Enter the complete function formula [`[$f](x)=\ldots\text{.}`]')@]**
+
+[_]{$answer}{16}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

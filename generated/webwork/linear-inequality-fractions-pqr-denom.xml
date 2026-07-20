@@ -1,35 +1,35 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-linear-inequality-fractions-pqr-denom" assembly-id="linear-inequality-fractions-pqr-denom">
-  <static seed="1504">
-    <statement><p><m>{{\frac{1}{12}}x-{\frac{7}{20}}} \leq {{\frac{4}{15}}}</m></p>
+  <static seed="1368">
+    <statement><p><m>{{\frac{5}{6}}x-{\frac{1}{15}}} \geq {{\frac{1}{10}}}</m></p>
 <p><fillin characters="4" name="AnSwEr0001"/></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 <p><fillin characters="16" name="AnSwEr0003"/></p>
 </statement>
     <answer>
       <p>
-        <m>60</m>
+        <m>30</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left\{x \mid x\le \frac{37}{5}\right\}</m>
+        <m>\left\{x \mid x\ge \frac{1}{5}\right\}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(-\infty ,{\frac{37}{5}}\right]</m>
+        <m>\left[{\frac{1}{5}},\infty \right)</m>
       </p>
     </answer>
-    <solution><p>This inequality has terms with denominators <m>{12}\text{,}</m> <m>{20}\text{,}</m> and <m>{15}\text{.}</m> The least common multiple of these is <m>{60}\text{.}</m> So the first step in solving this inequality can be to multiply on each side by <m>{60}\text{.}</m></p>
+    <solution><p>This inequality has terms with denominators <m>{6}\text{,}</m> <m>{15}\text{,}</m> and <m>{10}\text{.}</m> The least common multiple of these is <m>{30}\text{.}</m> So the first step in solving this inequality can be to multiply on each side by <m>{30}\text{.}</m></p>
 <p><me>\begin{aligned}
-{60}\left({{\frac{1}{12}}x-{\frac{7}{20}}}\right) \amp\leq {60}\left({{\frac{4}{15}}}\right)\\
-{5x-21} \amp\leq {16}\\
-{5x-21+21} \amp\leq {37}\\
-{5x} \amp\leq {37}\\
-{x} \amp\leq {{\frac{37}{5}}}
+{30}\left({{\frac{5}{6}}x-{\frac{1}{15}}}\right) \amp\geq {30}\left({{\frac{1}{10}}}\right)\\
+{25x-2} \amp\geq {3}\\
+{25x-2+2} \amp\geq {5}\\
+{25x} \amp\geq {5}\\
+{x} \amp\geq {{\frac{1}{5}}}
 \end{aligned}</me></p>
-<p>The solution set is <m>\{x\mid x \leq {{\frac{37}{5}}}\}</m> using set-builder notation. In interval notation, we have <m>{\left(-\infty ,{\frac{37}{5}}\right]}\text{.}</m></p>
+<p>The solution set is <m>\{x\mid x \geq {{\frac{1}{5}}}\}</m> using set-builder notation. In interval notation, we have <m>{\left[{\frac{1}{5}},\infty \right)}\text{.}</m></p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/3_5_8_39.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

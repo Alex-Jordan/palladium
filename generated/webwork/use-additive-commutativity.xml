@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-use-additive-commutativity" assembly-id="use-additive-commutativity">
-  <static seed="2330">
-    <statement><p>Apply commutativity to <m>{Z+c}\text{.}</m></p>
+  <static seed="2194">
+    <statement><p>Apply commutativity to <m>{W+r}\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>c+Z</m>
+        <m>r+W</m>
       </p>
     </answer>
   </static>

@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp0-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp0-copy">
-  <static seed="1696">
-    <statement><p><m>\left(\frac{1}{9}\right)^{-2}</m></p>
+  <static seed="1560">
+    <statement><p><m>\left(\frac{1}{8}\right)^{-3}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>81</m>
+        <m>512</m>
       </p>
     </answer>
     <solution><p>We evaluate the expression by remembering that <m>\displaystyle{ x^{-n} }</m> is the same thing as <m>\displaystyle{ \frac{1}{x^n} }</m> 
 for any non-zero,
 real value of <m>x</m></p>
 <p><m>\begin{aligned}
-            \displaystyle\left(\frac{1}{9}\right)^{-2}\amp =\displaystyle\left(\frac{9}{1}\right)^{2}\\
-                             \amp  = {81}
+            \displaystyle\left(\frac{1}{8}\right)^{-3}\amp =\displaystyle\left(\frac{8}{1}\right)^{3}\\
+                             \amp  = {512}
       \end{aligned}</m></p>
 </solution>
   </static>

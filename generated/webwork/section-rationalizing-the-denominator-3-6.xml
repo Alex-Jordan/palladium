@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-rationalizing-the-denominator-3-6" assembly-id="section-rationalizing-the-denominator-3-6">
-  <static seed="1910">
+  <static seed="1774">
     <statement><p>Rationalize the denominator in <m>\frac{2}{\sqrt{10}}\text{.}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>

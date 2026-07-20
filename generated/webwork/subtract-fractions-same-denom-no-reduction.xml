@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-subtract-fractions-same-denom-no-reduction" assembly-id="subtract-fractions-same-denom-no-reduction">
-  <static seed="2111">
-    <statement><p><m>\displaystyle {{\frac{8}{5}}} - {{\frac{2}{5}}}</m></p>
+  <static seed="1975">
+    <statement><p><m>\displaystyle {{\frac{9}{7}}} - {{\frac{6}{7}}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{6}{5}}</m>
+        <m>{\frac{3}{7}}</m>
       </p>
     </answer>
   </static>

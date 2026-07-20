@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-special-with-like-terms-copy" assembly-id="solve-special-with-like-terms-copy">
-  <static seed="1514">
-    <statement><p><m>{3h+10+5h}={9+8h+1}</m></p>
+  <static seed="1378">
+    <statement><p><m>{2W-7-9W}={-5-7W-2}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
@@ -11,9 +11,9 @@
     </answer>
     <solution><p>We try to use the standard steps for solving an equation:</p>
 <p><me>\begin{aligned}
-{3h+10+5h} \amp= {9+8h+1}\\
-{8h+10} \amp= {8h+10}\\
-{10} \amp= {10}
+{2W-7-9W} \amp= {-5-7W-2}\\
+{-7W-7} \amp= {-7W-7}\\
+{-7} \amp= {-7}
 \end{aligned}</me></p>
 <p>This is an outright true equation, so all real numbers are solutions. The solution set is <m>(-\infty,\infty)\text{,}</m> which we can write as <m>\mathbb{R}\text{.}</m></p>
 </solution>

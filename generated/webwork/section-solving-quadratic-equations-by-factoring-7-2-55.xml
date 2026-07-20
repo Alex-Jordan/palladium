@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-quadratic-equations-by-factoring-7-2-55" assembly-id="section-solving-quadratic-equations-by-factoring-7-2-55">
-  <static seed="788" source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad355.pg">
+  <static seed="64" source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad355.pg">
     <statement><p>Solve the equation.</p>
-<p><m>{\left(x-5\right)\mathopen{}\left(x^{2}+5x+6\right)} = 0</m></p>
+<p><m>{\left(x-1\right)\mathopen{}\left(x^{2}+10x+9\right)} = 0</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{-3,-2,5\right\}</m>
+        <m>\left\{-1,-9,1\right\}</m>
       </p>
     </answer>
     <solution><p>Note that this is <em>not</em> a quadratic equation, as its degree is <m>3</m>. However, 
 the factoring technique still applies</p>
 <p><m>\begin{aligned}
-                {\left(x-5\right)\mathopen{}\left(x^{2}+5x+6\right)} = 0 \amp \Rightarrow {\left(x-5\right)\mathopen{}\left(x+3\right)\mathopen{}\left(x+2\right)}=0\\
-                                \amp \Rightarrow x=-3\text{ or } x=-2 \text{ or }x=5\\
+                {\left(x-1\right)\mathopen{}\left(x^{2}+10x+9\right)} = 0 \amp \Rightarrow {\left(x-1\right)\mathopen{}\left(x+1\right)\mathopen{}\left(x+9\right)}=0\\
+                                \amp \Rightarrow x=-1\text{ or } x=-9 \text{ or }x=1\\
         \end{aligned}</m></p>
 <p>Each solution can be checked by substituting it into the original equation- this is left as an exercise.</p>
 </solution>

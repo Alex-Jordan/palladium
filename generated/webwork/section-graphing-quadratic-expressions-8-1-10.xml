@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-graphing-quadratic-expressions-8-1-10" assembly-id="section-graphing-quadratic-expressions-8-1-10">
-  <static seed="1030" source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticEquations/solveQuad175.pg">
+  <static seed="563" source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticEquations/solveQuad175.pg">
     <statement><p>Solve the equation.</p>
-<p><m>{3x^{2}-8x-4}= 0</m></p>
+<p><m>{3x^{2}+4x-8}= 0</m></p>
 <p><fillin characters="29" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\frac{4-2\sqrt{7}}{3},\frac{4+2\sqrt{7}}{3}\right\}</m>
+        <m>\left\{\frac{-2-2\sqrt{7}}{3},\frac{-2+2\sqrt{7}}{3}\right\}</m>
       </p>
     </answer>
     <solution><p>This equation does 
 not easily factor, so we will use the Quadratic Formula:</p>
 <p><m>\begin{aligned}
             x \amp  = \frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
-                   \amp  = \frac{8\pm\sqrt{64 + 48}}{6}\\
-                   \amp  = \frac{8\pm\sqrt{112}}{6}\\
-                   \amp  = \frac{8\pm4\sqrt{7}}{6}\\
+                   \amp  = \frac{-4\pm\sqrt{16 + 96}}{6}\\
+                   \amp  = \frac{-4\pm\sqrt{112}}{6}\\
+                   \amp  = \frac{-4\pm4\sqrt{7}}{6}\\
         \end{aligned}</m></p>
-<p>So <m>{\left\{\frac{4-2\sqrt{7}}{3},\frac{4+2\sqrt{7}}{3}\right\}}</m>.</p>
+<p>So <m>{\left\{\frac{-2-2\sqrt{7}}{3},\frac{-2+2\sqrt{7}}{3}\right\}}</m>.</p>
 <p>Note that <em>all</em> quadratic equations have <alert>two</alert> (possibly repeated) solutions; in this problem both solutions are real. Each solution can be checked by substituting it into the original equation- this is left as an exercise.</p>
 </solution>
   </static>

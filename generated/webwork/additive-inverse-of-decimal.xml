@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-additive-inverse-of-decimal" assembly-id="additive-inverse-of-decimal">
-  <static seed="2316">
-    <statement><p>Additive inverse of <m>-1.1\text{.}</m></p>
+  <static seed="2180">
+    <statement><p>Additive inverse of <m>-2.8\text{.}</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>1.1</m>
+        <m>2.8</m>
       </p>
     </answer>
   </static>

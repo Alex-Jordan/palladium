@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-fourth-power-equation-negative-copy" assembly-id="solve-fourth-power-equation-negative-copy">
-  <static seed="1907">
-    <statement><p><m>x^4 = -7</m></p>
+  <static seed="1771">
+    <statement><p><m>x^4 = -5</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>

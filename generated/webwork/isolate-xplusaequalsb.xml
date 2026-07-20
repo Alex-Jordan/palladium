@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-isolate-xplusaequalsb" assembly-id="isolate-xplusaequalsb">
-  <static seed="1557">
-    <statement><p><m>u</m> in <m>{u+P}={T}</m></p>
+  <static seed="1421">
+    <statement><p><m>r</m> in <m>{r+d}={j}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>u = T-P</m>
+        <m>r = j-d</m>
       </p>
     </answer>
   </static>

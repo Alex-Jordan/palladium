@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-add-two-distributions-double-negative" assembly-id="simplify-add-two-distributions-double-negative">
-  <static seed="2362">
-    <statement><p><m>{9\mathopen{}\left(5A+7\right)-2\mathopen{}\left(3A-6\right)}</m></p>
+  <static seed="2226">
+    <statement><p><m>{3\mathopen{}\left(8x+5\right)-9\mathopen{}\left(6x-4\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>39A+75</m>
+        <m>-30x+51</m>
       </p>
     </answer>
   </static>

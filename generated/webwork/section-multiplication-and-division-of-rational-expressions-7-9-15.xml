@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-9-15" assembly-id="section-multiplication-and-division-of-rational-expressions-7-9-15">
-  <static seed="1353" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions56.pg">
+  <static seed="1217" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions56.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{{\frac{t^{3}}{t^{2}r+4t}} \div {\frac{1}{t^{2}r^{2}+tr-12}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{t^{2}}{t^{2}x-5t}} \div {\frac{1}{t^{2}x^{2}+tx-30}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>t^{2}\mathopen{}\left(tr-3\right)</m>
+        <m>t\mathopen{}\left(tx+6\right)</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   {\frac{t^{3}}{t^{2}r+4t}} \div {\frac{1}{t^{2}r^{2}+tr-12}} 
-      \amp = {\frac{t^{3}}{t^{2}r+4t}} \cdot {\frac{t^{2}r^{2}+tr-12}{1}} \\
-      \amp = \frac{{t^{3}}}{{t\mathopen{}\left(tr+4\right)}} \cdot \frac{{\left(tr+4\right)\mathopen{}\left(tr-3\right)}}{{1}} \\
-      \amp = {t^{2}\mathopen{}\left(tr-3\right)}
+   {\frac{t^{2}}{t^{2}x-5t}} \div {\frac{1}{t^{2}x^{2}+tx-30}} 
+      \amp = {\frac{t^{2}}{t^{2}x-5t}} \cdot {\frac{t^{2}x^{2}+tx-30}{1}} \\
+      \amp = \frac{{t^{2}}}{{t\mathopen{}\left(tx-5\right)}} \cdot \frac{{\left(tx-5\right)\mathopen{}\left(tx+6\right)}}{{1}} \\
+      \amp = {t\mathopen{}\left(tx+6\right)}
 \end{aligned}
     }</m></p>
 </solution>

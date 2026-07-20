@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-inequality-solution-absolute-value-two-variable-instances-decimal-copy" assembly-id="check-inequality-solution-absolute-value-two-variable-instances-decimal-copy">
-  <static seed="2490">
-    <statement><p>Is <m>{4.4}</m> a solution to <m>{\left|8x-1.1\right|}\lt{\left|-3x-20.9\right|}\text{?}</m></p>
+  <static seed="2354">
+    <statement><p>Is <m>{3.7}</m> a solution to <m>{\left|3x-5.2\right|}\geq{\left|9x-27.4\right|}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>\left|8x-1.1\right|</m></cell>
-<cell><m>\lt</m></cell>
-<cell><m>\left|-3x-20.9\right|</m></cell>
+<cell><m>\left|3x-5.2\right|</m></cell>
+<cell><m>\geq</m></cell>
+<cell><m>\left|9x-27.4\right|</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
-<cell><m>\wonder{\lt}</m></cell>
+<cell><m>\wonder{\geq}</m></cell>
 <cell><fillin characters="3" name="AnSwEr0002"/>
 </cell>
 </row>
@@ -24,17 +24,17 @@
 </statement>
     <answer>
       <p>
-        <m>34.1</m>
+        <m>5.9</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>34.1</m>
+        <m>5.9</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\text{No, it is not a solution.}</m>
+        <m>\text{Yes, it is a solution.}</m>
       </p>
     </answer>
   </static>

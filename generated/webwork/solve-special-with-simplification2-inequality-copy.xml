@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-special-with-simplification2-inequality-copy" assembly-id="solve-special-with-simplification2-inequality-copy">
-  <static seed="1540">
-    <statement><p><m>{-15+2\mathopen{}\left(5+3r\right)}\lt{10r-\left(8+4r\right)}</m></p>
+  <static seed="1404">
+    <statement><p><m>{-2-2\mathopen{}\left(2+5l\right)}\geq{-15l-\left(6-5l\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\text{no real solutions}</m>
+        <m>\left(-\infty ,\infty \right)\hbox{ or }\text{infinitely many solutions}</m>
       </p>
     </answer>
     <solution><p>We try to use the standard steps for solving an inequality:</p>
 <p><me>\begin{aligned}
-{-15+2\mathopen{}\left(5+3r\right)} \amp\lt {10r-\left(8+4r\right)}\\
-{-5+6r} \amp\lt {10r-8-4r}\\
-{6r-5} \amp\lt {6r-8}\\
-{-5} \amp\lt {-8}
+{-2-2\mathopen{}\left(2+5l\right)} \amp\geq {-15l-\left(6-5l\right)}\\
+{-6-10l} \amp\geq {5l-\left(15l+6\right)}\\
+{-\left(6+10l\right)} \amp\geq {-\left(10l+6\right)}\\
+{-6} \amp\geq {-6}
 \end{aligned}</me></p>
-<p>This is an outright false inequality. So there are no solutions.</p>
+<p>This is an outright true inequality. So all real numbers are solutions.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/3_5_8_74.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

@@ -1,25 +1,25 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-4-7" assembly-id="section-multiplication-and-division-of-rational-expressions-7-4-7">
-  <static seed="1272" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions60.pg">
+  <static seed="1136" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions60.pg">
     <statement><p>Simplify the following expression, and if applicable, write the restricted domain on the simplified expression.</p>
-<p><m>\displaystyle{{\frac{-9t+72}{t-8}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{-3t+15}{t-5}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-9, t\ne 8</m>
+        <m>-3, t\ne 5</m>
       </p>
     </answer>
     <solution><p>To simplify the expression, we first factor both the numerator and denominator, and then cross out common factor. In this question, both the numerator and denominator have been factored, so we can simply cross out common factors.</p>
 <p><m>\displaystyle{\begin{aligned}
-   {\frac{-9t+72}{t-8}} \amp = \frac{{-9\mathopen{}\left(t-8\right)}}{{t-8}} \\
-                     \amp = {-9, t\ne 8}
+   {\frac{-3t+15}{t-5}} \amp = \frac{{-3\mathopen{}\left(t-5\right)}}{{t-5}} \\
+                     \amp = {-3, t\ne 5}
 \end{aligned}
     }</m></p>
-<p>Since the factor <m>t - 8</m> was crossed out, the domain condition lost during the simplification is:</p>
+<p>Since the factor <m>t - 5</m> was crossed out, the domain condition lost during the simplification is:</p>
 <p><m>\displaystyle{\begin{aligned}
-   t - 8 \amp  \ne 0 \\
-   t - 8 \mathbf{ + 8} \amp  \ne 0 \mathbf{ + 8} \\
-   t \amp  \ne 8
+   t - 5 \amp  \ne 0 \\
+   t - 5 \mathbf{ + 5} \amp  \ne 0 \mathbf{ + 5} \\
+   t \amp  \ne 5
 \end{aligned}
     }</m></p>
 </solution>

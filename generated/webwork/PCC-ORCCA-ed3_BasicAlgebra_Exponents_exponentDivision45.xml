@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentDivision45" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentDivision45">
-  <static seed="1685">
-    <statement><p><m>\left(\displaystyle\frac{x^{4}}{7}\right)^{2}</m></p>
+  <static seed="1549">
+    <statement><p><m>\left(\displaystyle\frac{x^{7}}{6}\right)^{3}</m></p>
 <p><fillin characters="26" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{x^{8}}{49}</m>
+        <m>\frac{x^{21}}{216}</m>
       </p>
     </answer>
     <solution><p>The quotient to power rule says that</p>
@@ -15,9 +15,9 @@
 <p><m>(a^m)^n = a^{mn}</m></p>
 <p>Using these two tools together allows us to write</p>
 <p><m>\begin{aligned}
-            \left(\displaystyle\frac{x^{4}}{7}\right)^{2}
-                       \amp  = \displaystyle\frac{x^{4\cdot2}}{7^{2}}\\
-                       \amp  = \displaystyle\frac{x^{8}}{49}\\
+            \left(\displaystyle\frac{x^{7}}{6}\right)^{3}
+                       \amp  = \displaystyle\frac{x^{7\cdot3}}{6^{3}}\\
+                       \amp  = \displaystyle\frac{x^{21}}{216}\\
         \end{aligned}</m></p>
 </solution>
   </static>

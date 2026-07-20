@@ -1,34 +1,34 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-inequality-solution-linear-equation-fraction" assembly-id="check-inequality-solution-linear-equation-fraction">
-  <static seed="2471">
-    <statement><p>Is <m>{{\frac{5}{9}}}</m> a solution to <m>{2x+{\frac{8}{5}}}\geq{{\frac{122}{45}}}\text{?}</m></p>
+  <static seed="2335">
+    <statement><p>Is <m>{{\frac{7}{6}}}</m> a solution to <m>{4x-{\frac{9}{8}}}\lt{{\frac{53}{24}}}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>2x+{\frac{8}{5}}</m></cell>
-<cell><m>\geq</m></cell>
-<cell><m>{\frac{122}{45}}</m></cell>
+<cell><m>4x-{\frac{9}{8}}</m></cell>
+<cell><m>\lt</m></cell>
+<cell><m>{\frac{53}{24}}</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
-<cell><m>\wonder{\geq}</m></cell>
-<cell><m>{\frac{122}{45}}</m></cell>
+<cell><m>\wonder{\lt}</m></cell>
+<cell><m>{\frac{53}{24}}</m></cell>
 </row>
 </tabular>
 <p><fillin name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{122}{45}}</m>
+        <m>{\frac{85}{24}}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\text{Yes, it is a solution.}</m>
+        <m>\text{No, it is not a solution.}</m>
       </p>
     </answer>
   </static>

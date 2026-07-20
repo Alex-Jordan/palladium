@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals20-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals20-copy">
-  <static seed="1841">
-    <statement><p><m>\displaystyle{{19\sqrt{2}} - {20\sqrt{2}} }</m></p>
+  <static seed="1705">
+    <statement><p><m>\displaystyle{{18\sqrt{6}} - {19\sqrt{6}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-\sqrt{2}</m>
+        <m>-\sqrt{6}</m>
       </p>
     </answer>
     <solution><p>Since these are like radicals, we can combine them as like terms.</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-        {19\sqrt{2}} - {20\sqrt{2}} \amp = (19 - 20) \sqrt{2} \\
-                            \amp = {-\sqrt{2}} \\
+        {18\sqrt{6}} - {19\sqrt{6}} \amp = (18 - 19) \sqrt{6} \\
+                            \amp = {-\sqrt{6}} \\
 \end{aligned}
 }</m></p>
 </solution>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-disambiguate-addition" assembly-id="disambiguate-addition">
-  <static seed="2372">
-    <introduction><p>The expression <m>{H+x+I}</m> would be ambiguous if we did not have a left-to-right reading convention.</p>
+  <static seed="2236">
+    <introduction><p>The expression <m>{D+M+X}</m> would be ambiguous if we did not have a left-to-right reading convention.</p>
 </introduction>
     <task>
       <statement><p>Use grouping symbols to emphasize the order that these additions should be carried out.</p>
@@ -9,7 +9,7 @@
 </statement>
       <answer>
         <p>
-          <m>\left(H+x\right)+I</m>
+          <m>\left(D+M\right)+X</m>
         </p>
       </answer>
     </task>
@@ -19,7 +19,7 @@
 </statement>
       <answer>
         <p>
-          <m>H+\left(x+I\right)</m>
+          <m>D+\left(M+X\right)</m>
         </p>
       </answer>
     </task>

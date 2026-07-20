@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-find-celsius-kelvin-temperature-copy" assembly-id="find-celsius-kelvin-temperature-copy">
-  <static seed="2554">
-    <statement><p><m>80</m> Kelvin</p>
+  <static seed="2418">
+    <statement><p><m>74</m> Kelvin</p>
 <p><fillin characters="15" name="AnSwEr0001"/></p>
 <p><fillin characters="10" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>80 = C+273</m>
+        <m>74 = C+273</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>-193\ {\rm degC}</m>
+        <m>-199\ {\rm degC}</m>
       </p>
     </answer>
   </static>

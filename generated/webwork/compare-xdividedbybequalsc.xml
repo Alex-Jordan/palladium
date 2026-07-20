@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-compare-xdividedbybequalsc" assembly-id="compare-xdividedbybequalsc">
-  <static seed="1553">
+  <static seed="1417">
     <introduction/>
     <task>
-      <statement><p><m>{\frac{X}{8}}={6}</m> for <m>X\text{.}</m></p>
+      <statement><p><m>{\frac{V}{6}}={4}</m> for <m>V\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>\left\{48\right\}</m>
+          <m>\left\{24\right\}</m>
         </p>
       </answer>
     </task>
     <task>
-      <statement><p><m>{\frac{X}{j}}={k}</m> for <m>X\text{.}</m></p>
+      <statement><p><m>{\frac{V}{x}}={z}</m> for <m>V\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>X = kj</m>
+          <m>V = zx</m>
         </p>
       </answer>
     </task>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-order-of-operations-asqrtbminusc" assembly-id="order-of-operations-asqrtbminusc">
-  <static seed="2215">
-    <statement><p><m>2\sqrt{13-4}</m></p>
+  <static seed="2079">
+    <statement><p><m>4\sqrt{10-6}</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>6</m>
+        <m>8</m>
       </p>
     </answer>
   </static>

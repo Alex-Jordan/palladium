@@ -1,27 +1,27 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_QuadraticEquations_solveQuad115-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_QuadraticEquations_solveQuad115-copy">
-  <static seed="836">
-    <statement><p><m>(r+1)^2 = 50</m></p>
+  <static seed="941">
+    <statement><p><m>(x - 1)^2 = 98</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{-1+5\sqrt{2},-1-5\sqrt{2}\right\}</m>
+        <m>\left\{1+7\sqrt{2},1-7\sqrt{2}\right\}</m>
       </p>
     </answer>
     <solution><p>There are a few ways to solve quadratic equations- the easiest way to solve this particular type of problem is to use the <em>square root method</em>.</p>
 <p><m>\displaystyle{       \begin{aligned}
-   (r+1)^2 \amp = 50 \\
-   \sqrt{(r+1)^2} \amp = \pm\sqrt{50} \\
-   r+1 \amp = \pm\sqrt{2\cdot5^2} \\
-   r+1 \amp = \pm5\sqrt{2} \\
-   r \amp = -1\pm5\sqrt{2} \\
-   r\amp =-1+5\sqrt{2}\text{ or } r=-1-5\sqrt{2}\\
+   (x - 1)^2 \amp = 98 \\
+   \sqrt{(x - 1)^2} \amp = \pm\sqrt{98} \\
+   x - 1 \amp = \pm\sqrt{2\cdot7^2} \\
+   x - 1 \amp = \pm7\sqrt{2} \\
+   x \amp = 1\pm7\sqrt{2} \\
+   x\amp =1+7\sqrt{2}\text{ or } x=1-7\sqrt{2}\\
        \end{aligned}
     }</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_3_4_32.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/2_4_7_32.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 # WeBWorK problem written by Chris Hughes, 2013
 # Portland Community College

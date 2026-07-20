@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-5-6" assembly-id="section-multiplication-and-division-of-rational-expressions-7-5-6">
-  <static seed="1300" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions141.pg">
+  <static seed="1164" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions141.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{{\frac{-t^{2}+tx+30x^{2}}{t^{2}-36x^{2}}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{-t^{2}-6ty-5y^{2}}{t^{2}-25y^{2}}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-\frac{t+5x}{t+6x}</m>
+        <m>-\frac{t+y}{t-5y}</m>
       </p>
     </answer>
     <solution><p>To simplify the expression, we first factor both the numerator and denominator, and then cross out common terms.</p>
 <p>If a polynomial is not in order, we order it by the variable<rsq/>s degrees.</p>
 <p>If the leading coefficient is negative, we factor out <m>-1</m>.</p>
 <p><m>\displaystyle{\begin{aligned}
-   {\frac{-t^{2}+tx+30x^{2}}{t^{2}-36x^{2}}} \amp = \frac{{-\left(t^{2}-tx-30x^{2}\right)}}{{t^{2}-36x^{2}}} \\
-                     \amp = \frac{{-\left(t+5x\right)\mathopen{}\left(t-6x\right)}}{{\left(t-6x\right)\mathopen{}\left(t+6x\right)}} \\
-                     \amp = {-\frac{t+5x}{t+6x}}
+   {\frac{-t^{2}-6ty-5y^{2}}{t^{2}-25y^{2}}} \amp = \frac{{-\left(t^{2}+6ty+5y^{2}\right)}}{{t^{2}-25y^{2}}} \\
+                     \amp = \frac{{-\left(t+y\right)\mathopen{}\left(t+5y\right)}}{{\left(t+5y\right)\mathopen{}\left(t-5y\right)}} \\
+                     \amp = {-\frac{t+y}{t-5y}}
 \end{aligned}
     }</m></p>
 </solution>

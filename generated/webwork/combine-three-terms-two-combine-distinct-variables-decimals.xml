@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-combine-three-terms-two-combine-distinct-variables-decimals" assembly-id="combine-three-terms-two-combine-distinct-variables-decimals">
-  <static seed="2280">
-    <statement><p><m>{8.4w-9.1x+x}</m></p>
+  <static seed="2144">
+    <statement><p><m>{-9.6u+67L-L}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-8.1x+8.4w</m>
+        <m>-9.6u+66L</m>
       </p>
     </answer>
   </static>

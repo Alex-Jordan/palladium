@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar70" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar70">
-  <static seed="2645">
-    <statement><p><m>{9a^{13}b^{3}}\left({-6a^{18}b^{10}+5a^{4}b^{15}}\right)</m></p>
+  <static seed="2509">
+    <statement><p><m>{9a^{12}b^{16}}\left({8a^{13}b^{17}-3a^{9}b^{16}}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-54a^{31}b^{13}+45a^{17}b^{18}</m>
+        <m>72a^{25}b^{33}-27a^{21}b^{32}</m>
       </p>
     </answer>
     <solution><p>We multiply the polynomials using the rule <m>a^m\cdot a^n = a^{m+n}</m> 
 to guide us</p>
 <p><m>\displaystyle{    \begin{aligned}
-        \left({9a^{13}b^{3}}\right)\left({-6a^{18}b^{10}+5a^{4}b^{15}}\right)\amp = -54a^{13+18}b^{3+10}+45a^{13+4}b^{3+15}\\
-                      \amp  = {-54a^{31}b^{13}+45a^{17}b^{18}}
+        \left({9a^{12}b^{16}}\right)\left({8a^{13}b^{17}-3a^{9}b^{16}}\right)\amp = 72a^{12+13}b^{16+17} - 27a^{12+9}b^{16+16}\\
+                      \amp  = {72a^{25}b^{33}-27a^{21}b^{32}}
     \end{aligned}
 }</m></p>
 <p>Note that we are using the <em>distributive</em> property of multiplication in this problem: <m>x(y+z)=xy+xz</m>.</p>

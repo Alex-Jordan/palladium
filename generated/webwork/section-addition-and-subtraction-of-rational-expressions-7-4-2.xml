@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-addition-and-subtraction-of-rational-expressions-7-4-2" assembly-id="section-addition-and-subtraction-of-rational-expressions-7-4-2">
-  <static seed="1415" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions20.pg">
+  <static seed="1279" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions20.pg">
     <statement><p>Add or subtract the rational expressions to a single rational expression and then simplify.</p>
-<p><m>\displaystyle{{\frac{64r^{2}}{8r-5x}-\frac{25x^{2}}{8r-5x}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{100r^{2}}{10r-3y}-\frac{9y^{2}}{10r-3y}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>8r+5x</m>
+        <m>10r+3y</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   {\frac{64r^{2}}{8r-5x}-\frac{25x^{2}}{8r-5x}} 
-      \amp = \frac{{64r^{2}-25x^{2}}}{{8r-5x}} \\
-      \amp = \frac{{\left(8r-5x\right)\mathopen{}\left(8r+5x\right)}}{{8r-5x}} \\
-      \amp = {8r+5x}
+   {\frac{100r^{2}}{10r-3y}-\frac{9y^{2}}{10r-3y}} 
+      \amp = \frac{{100r^{2}-9y^{2}}}{{10r-3y}} \\
+      \amp = \frac{{\left(10r-3y\right)\mathopen{}\left(10r+3y\right)}}{{10r-3y}} \\
+      \amp = {10r+3y}
 \end{aligned}
     }</m></p>
 </solution>

@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_MultiplyRadicals10" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_MultiplyRadicals10">
-  <static seed="1828">
-    <statement><p><m>5\sqrt{13} \cdot 6\sqrt{11}</m></p>
+  <static seed="1692">
+    <statement><p><m>4\sqrt{3} \cdot 8\sqrt{2}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>30\sqrt{143}</m>
+        <m>32\sqrt{6}</m>
       </p>
     </answer>
-    <solution><p>To simplify the expression <m>5\sqrt{13} \cdot 6\sqrt{11}</m>, first multiply the coefficients: <m>5 \cdot 6={30}</m>.</p>
-<p>Next multiply the radicands: <m>13\cdot11={143}</m>. So we have <m>{30\sqrt{143}}</m>.</p>
+    <solution><p>To simplify the expression <m>4\sqrt{3} \cdot 8\sqrt{2}</m>, first multiply the coefficients: <m>4 \cdot 8={32}</m>.</p>
+<p>Next multiply the radicands: <m>3\cdot2={6}</m>. So we have <m>{32\sqrt{6}}</m>.</p>
 <p>Now that we have thought about how to simplify this expression, we can write the entire process as follows.</p>
 <p><m>\displaystyle{ 
 \begin{aligned}[t]
-5\sqrt{13} \cdot 6\sqrt{11}\amp =5\cdot 6\sqrt{13} \sqrt{11}\\
-\amp ={30}\sqrt{13\cdot11}\\
-\amp ={30\sqrt{143}}\\
+4\sqrt{3} \cdot 8\sqrt{2}\amp =4\cdot 8\sqrt{3} \sqrt{2}\\
+\amp ={32}\sqrt{3\cdot2}\\
+\amp ={32\sqrt{6}}\\
 \end{aligned}
 }</m></p>
 </solution>

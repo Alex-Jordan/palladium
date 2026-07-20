@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-add-fractions-two-build-no-reduce-copy" assembly-id="add-fractions-two-build-no-reduce-copy">
-  <static seed="2255">
-    <statement><p><m>{{\frac{9}{14}}}+{{\frac{3}{20}}}</m></p>
+  <static seed="2119">
+    <statement><p><m>{{\frac{2}{21}}}+{{\frac{5}{18}}}</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{111}{140}}</m>
+        <m>{\frac{47}{126}}</m>
       </p>
     </answer>
   </static>

@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals139" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals139">
-  <static seed="1862">
-    <statement><p><m>\displaystyle{ \left(\sqrt{14} + \sqrt{2}\right)^2 }</m></p>
+  <static seed="1726">
+    <statement><p><m>\displaystyle{ \left(\sqrt{6} - \sqrt{2}\right)^2 }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>16+4\sqrt{7}</m>
+        <m>8-4\sqrt{3}</m>
       </p>
     </answer>
     <solution><p>To square the radical expression, use the FOIL method:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   \left(\sqrt{14} + \sqrt{2}\right)^2 
-   \amp = (\sqrt{14}+\sqrt{2})(\sqrt{14}+\sqrt{2}) \\
-   \amp = \sqrt{14}\cdot\sqrt{14} + \sqrt{14}\cdot\sqrt{2} + \sqrt{14}\cdot\sqrt{2} + \sqrt{2}\cdot\sqrt{2} \\
-   \amp = 14 + \sqrt{14\cdot2} + \sqrt{14\cdot2} +2\\
-   \amp = 16 + 2\sqrt{14\cdot2} \\
-   \amp = 16 + 2\sqrt{2^2\cdot7} \\
-   \amp = 16 + 2\cdot 2 \cdot\sqrt{7} \\
-   \amp = {16+4\sqrt{7}}
+   \left(\sqrt{6} - \sqrt{2}\right)^2 
+   \amp = (\sqrt{6}-\sqrt{2})(\sqrt{6}-\sqrt{2}) \\
+   \amp = \sqrt{6}\cdot\sqrt{6} - \sqrt{6}\cdot\sqrt{2} - \sqrt{6}\cdot\sqrt{2} + (-\sqrt{2})(-\sqrt{2}) \\
+   \amp = 6 - \sqrt{6\cdot2} - \sqrt{6\cdot2} +2\\
+   \amp = 8 - 2\sqrt{6\cdot2} \\
+   \amp = 8 - 2\sqrt{2^2\cdot3} \\
+   \amp = 8 - 2\cdot 2 \cdot\sqrt{3} \\
+   \amp = {8-4\sqrt{3}}
 \end{aligned}
     }</m></p>
 </solution>

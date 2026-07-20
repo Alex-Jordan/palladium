@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-fraction-arithmetic-3-6" assembly-id="section-fraction-arithmetic-3-6">
-  <static seed="2050">
+  <static seed="1914">
     <introduction><p>Reduce these fractions into lowest terms.</p>
 </introduction>
     <task>

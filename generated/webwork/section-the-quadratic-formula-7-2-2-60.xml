@@ -1,29 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-the-quadratic-formula-7-2-2-60" assembly-id="section-the-quadratic-formula-7-2-2-60">
-  <static seed="937">
-    <statement><p><m>{x^{2}+4}={-8x}</m></p>
+  <static seed="470">
+    <statement><p><m>{x^{2}-9}={-4x}</m></p>
 <p><fillin characters="40" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{-4-2\sqrt{3},-4+2\sqrt{3}\right\}</m>
+        <m>\left\{-2-\sqrt{13},-2+\sqrt{13}\right\}</m>
       </p>
     </answer>
     <solution><p>To use the quadratic formula, we write the equation in standard form:</p>
-<p><me>{x^{2}+8x+4}=0</me></p>
-<p>and identify <m>a=1\text{,}</m> <m>b=8\text{,}</m> and <m>c=4\text{.}</m></p>
+<p><me>{x^{2}+4x-9}=0</me></p>
+<p>and identify <m>a=1\text{,}</m> <m>b=4\text{,}</m> and <m>c=-9\text{.}</m></p>
 <p><me>\begin{aligned}
 x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
-\amp=\frac{-8\pm\sqrt{64-4(1)(4)}}{2}\\
-\amp=\frac{-8\pm\sqrt{48}}{2}\\
-\amp=\frac{-8\pm4\sqrt{3}}{2}\\
-x\amp=\frac{-8-4\sqrt{3}}{2}\quad\text{or}\quad x=\frac{-8+4\sqrt{3}}{2}\\
-x\amp={-4-2\sqrt{3}}\quad\text{or}\quad x={-4+2\sqrt{3}}
+\amp=\frac{-4\pm\sqrt{16-4(1)(-9)}}{2}\\
+\amp=\frac{-4\pm\sqrt{52}}{2}\\
+\amp=\frac{-4\pm2\sqrt{13}}{2}\\
+x\amp=\frac{-4-2\sqrt{13}}{2}\quad\text{or}\quad x=\frac{-4+2\sqrt{13}}{2}\\
+x\amp={-2-\sqrt{13}}\quad\text{or}\quad x={-2+\sqrt{13}}
 \end{aligned}</me></p>
-<p>The solution set is <m>{\left\{-4-2\sqrt{3},-4+2\sqrt{3}\right\}}\text{.}</m></p>
+<p>The solution set is <m>{\left\{-2-\sqrt{13},-2+\sqrt{13}\right\}}\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_4_5_71.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_5_5_71.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -40,7 +40,7 @@ x\amp={-4-2\sqrt{3}}\quad\text{or}\quad x={-4+2\sqrt{3}}
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.4.5.71)
+## Problem1(1.5.5.71)
 ## Author()
 ## Institution()
 ## Language(en-US)

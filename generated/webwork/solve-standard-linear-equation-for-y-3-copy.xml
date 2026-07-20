@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-standard-linear-equation-for-y-3-copy" assembly-id="solve-standard-linear-equation-for-y-3-copy">
-  <static seed="1570">
-    <statement><p><m>{-4x-8y}={-3}</m></p>
+  <static seed="1434">
+    <statement><p><m>{6x+8y}={-11}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>y = -{\frac{1}{2}}x+{\frac{3}{8}}</m>
+        <m>y = -{\frac{3}{4}}x+-{\frac{11}{8}}</m>
       </p>
     </answer>
     <solution><p><me>\begin{aligned}
-{-4x-8y} \amp = {-3}\\
-{-4x-8y+4x} \amp = {-3+4x}\\
-{-8y} \amp = {-3+4x}\\
-{\frac{-8y}{-8}} \amp = {\frac{-3+4x}{-8}}\\
-{y} \amp = {-{\frac{1}{2}}x+{\frac{3}{8}}}
+{6x+8y} \amp = {-11}\\
+{6x+8y-6x} \amp = {-11-6x}\\
+{8y} \amp = {-11-6x}\\
+{\frac{8y}{8}} \amp = {\frac{-11-6x}{8}}\\
+{y} \amp = {-{\frac{3}{4}}x - {\frac{11}{8}}}
 \end{aligned}</me></p>
 </solution>
   </static>

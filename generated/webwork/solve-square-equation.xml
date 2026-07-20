@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-square-equation" assembly-id="solve-square-equation">
-  <static seed="1896">
-    <statement><p><m>x^2 = 46</m></p>
+  <static seed="1760">
+    <statement><p><m>x^2 = 42</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\sqrt{46}\hbox{ or }-\sqrt{46}</m>
+        <m>\sqrt{42}\hbox{ or }-\sqrt{42}</m>
       </p>
     </answer>
   </static>

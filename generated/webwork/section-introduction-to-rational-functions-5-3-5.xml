@@ -1,26 +1,26 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-introduction-to-rational-functions-5-3-5" assembly-id="section-introduction-to-rational-functions-5-3-5">
-  <static seed="1216" source="Contrib/PCC/BasicAlgebra/FunctionBasics/Functions211.pg">
-    <statement><p>Find the domain of <m>\displaystyle{G}</m> where <m>\displaystyle{G(x)={\frac{4-3x}{x^{2}-15x+54}}}</m>.</p>
+  <static seed="1080" source="Contrib/PCC/BasicAlgebra/FunctionBasics/Functions211.pg">
+    <statement><p>Find the domain of <m>\displaystyle{G}</m> where <m>\displaystyle{G(x)={\frac{3x-10}{x^{2}+16x+63}}}</m>.</p>
 <p><fillin characters="13" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left(-\infty ,6\right)\cup \left(6,9\right)\cup \left(9,\infty \right)</m>
+        <m>\left(-\infty ,-9\right)\cup \left(-9,-7\right)\cup \left(-7,\infty \right)</m>
       </p>
     </answer>
     <solution><p>Since we are not allowed to divide by zero, the denominator of <m>\displaystyle{G}</m> cannot be zero. To find what <m>x</m> values will make the denominator zero, we solve the equation:</p>
 <p><m>\displaystyle{\begin{aligned}
-   {x^{2}-15x+54} \amp = 0 \\
-   (x - 6)(x - 9) \amp = 0 \\
-   x - 6 =0 \amp \text{ or } x - 9=0\\
-   x = 6 \amp \text{ or } x =9\\
+   {x^{2}+16x+63} \amp = 0 \\
+   (x+9)(x+7) \amp = 0 \\
+   x+9 =0 \amp \text{ or } x+7=0\\
+   x = -9 \amp \text{ or } x =-7\\
 \end{aligned}
 }</m></p>
-<p>We need to take <m>6</m> and <m>9</m> out of the function<rsq/>s domain, because they will cause the denominator to be zero, and we cannot divide by zero. The domain of <m>G</m> is:</p>
-<p><m>\displaystyle{ {\left(-\infty ,6\right)\cup \left(6,9\right)\cup \left(9,\infty \right)} }</m></p>
+<p>We need to take <m>-9</m> and <m>-7</m> out of the function<rsq/>s domain, because they will cause the denominator to be zero, and we cannot divide by zero. The domain of <m>G</m> is:</p>
+<p><m>\displaystyle{ {\left(-\infty ,-9\right)\cup \left(-9,-7\right)\cup \left(-7,\infty \right)} }</m></p>
 <p>We could also use set notation to represent the domain:</p>
-<p><m>\displaystyle{ \{ x \mid x \ne 6, x \ne 9 \} }</m></p>
+<p><m>\displaystyle{ \{ x \mid x \ne -9, x \ne -7 \} }</m></p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/FunctionBasics/Functions211.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals138-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals138-copy">
-  <static seed="1861">
-    <statement><p><m>\displaystyle{ \left(\sqrt{2}-1\right)^2 }</m></p>
+  <static seed="1725">
+    <statement><p><m>\displaystyle{ \left(\sqrt{3}-1\right)^2 }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>3-2\sqrt{2}</m>
+        <m>4-2\sqrt{3}</m>
       </p>
     </answer>
     <solution><p>To square the radical expression, use the FOIL method:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   \left(\sqrt{2}-1\right)^2 
-   \amp = (\sqrt{2}-1)(\sqrt{2}-1) \\
-   \amp = \sqrt{2}\cdot\sqrt{2} - 1\sqrt{2} - 1\sqrt{2} + (-1)(-1)  \\
-   \amp = 2 - 2\sqrt{2} + 1 \\
-   \amp = {3-2\sqrt{2}}
+   \left(\sqrt{3}-1\right)^2 
+   \amp = (\sqrt{3}-1)(\sqrt{3}-1) \\
+   \amp = \sqrt{3}\cdot\sqrt{3} - 1\sqrt{3} - 1\sqrt{3} + (-1)(-1)  \\
+   \amp = 3 - 2\sqrt{3} + 1 \\
+   \amp = {4-2\sqrt{3}}
 \end{aligned}
     }</m></p>
 </solution>

@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-9-7" assembly-id="section-multiplication-and-division-of-rational-expressions-7-9-7">
-  <static seed="1345" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions55.pg">
+  <static seed="1209" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions55.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{{\frac{t^{2}+5tr+6r^{2}}{t-4r}} \cdot {\frac{2t-8r}{t+2r}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{t^{2}+4tx-5x^{2}}{t+4x}} \cdot {\frac{3t+12x}{t+5x}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>2\mathopen{}\left(t+3r\right)</m>
+        <m>3\mathopen{}\left(t-x\right)</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   {\frac{t^{2}+5tr+6r^{2}}{t-4r}} \cdot {\frac{2t-8r}{t+2r}} 
-      \amp = \frac{{\left(t+2r\right)\mathopen{}\left(t+3r\right)}}{{t-4r}} \cdot \frac{{2\mathopen{}\left(t-4r\right)}}{{t+2r}} \\
-      \amp = {2\mathopen{}\left(t+3r\right)}
+   {\frac{t^{2}+4tx-5x^{2}}{t+4x}} \cdot {\frac{3t+12x}{t+5x}} 
+      \amp = \frac{{\left(t+5x\right)\mathopen{}\left(t-x\right)}}{{t+4x}} \cdot \frac{{3\mathopen{}\left(t+4x\right)}}{{t+5x}} \\
+      \amp = {3\mathopen{}\left(t-x\right)}
 \end{aligned}
     }</m></p>
 </solution>

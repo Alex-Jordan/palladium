@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-ordering-fractions" assembly-id="ordering-fractions">
-  <static seed="2403">
-    <statement><p><m>{{\frac{3}{2}}}\quad{{\frac{2}{7}}}\quad{{\frac{7}{6}}}\quad{{\frac{3}{4}}}\quad{{\frac{13}{8}}}</m></p>
+  <static seed="2267">
+    <statement><p><m>{{\frac{3}{2}}}\quad{{\frac{17}{9}}}\quad{{\frac{7}{8}}}\quad{{\frac{2}{7}}}\quad{{\frac{1}{4}}}</m></p>
 <p><fillin characters="30" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{13}{8}}&gt;{\frac{3}{2}}&gt;{\frac{7}{6}}&gt;{\frac{3}{4}}&gt;{\frac{2}{7}}</m>
+        <m>{\frac{17}{9}}&gt;{\frac{3}{2}}&gt;{\frac{7}{8}}&gt;{\frac{2}{7}}&gt;{\frac{1}{4}}</m>
       </p>
     </answer>
   </static>

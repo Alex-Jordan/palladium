@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp140-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp140-copy">
-  <static seed="1766">
-    <statement><p><m>\displaystyle\frac{\left(r^{4}\right)^{2}}{\left(r^{13}\right)^{5}}</m></p>
+  <static seed="1630">
+    <statement><p><m>\displaystyle\frac{\left(y^{6}\right)^{2}}{\left(y^{9}\right)^{4}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{1}{r^{57}}</m>
+        <m>\frac{1}{y^{24}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\displaystyle{\frac{a^m}{a^n} = a^{m-n}}</m> and <m>\left(a^m\right)^{n}=a^{mn}</m></p>
 <p><m>\begin{aligned}
-                 \frac{\left(r^{4}\right)^{2}}{\left(r^{13}\right)^{5}} 
-                      \amp = \frac{r^{4\cdot2}}{r^{13\cdot5}}\\
-                      \amp = \frac{r^{8}}{r^{65}}\\
-                      \amp = r^{8-65}\\
-                      \amp =r^{-57}\\
-                                    \amp  = {\frac{1}{r^{57}}}
+                 \frac{\left(y^{6}\right)^{2}}{\left(y^{9}\right)^{4}} 
+                      \amp = \frac{y^{6\cdot2}}{y^{9\cdot4}}\\
+                      \amp = \frac{y^{12}}{y^{36}}\\
+                      \amp = y^{12-36}\\
+                      \amp =y^{-24}\\
+                                    \amp  = {\frac{1}{y^{24}}}
            \end{aligned}</m></p>
 </solution>
   </static>

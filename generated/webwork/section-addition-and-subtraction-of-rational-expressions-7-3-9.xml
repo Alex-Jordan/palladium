@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-addition-and-subtraction-of-rational-expressions-7-3-9" assembly-id="section-addition-and-subtraction-of-rational-expressions-7-3-9">
-  <static seed="1384" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions30.pg">
+  <static seed="1248" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions30.pg">
     <statement><p>Add or subtract the rational expressions to a single rational expression and then simplify. If applicable, state the restricted domain.</p>
-<p><m>\displaystyle{{\frac{5}{x^{2}-4x-45}-\frac{x-4}{x^{2}-4x-45}} =}</m> <fillin characters="40" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{3}{x^{2}-10x+16}-\frac{x-5}{x^{2}-10x+16}} =}</m> <fillin characters="40" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-\frac{1}{x+5}, x\ne 9</m>
+        <m>-\frac{1}{x-2}, x\ne 8</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   {\frac{5}{x^{2}-4x-45}-\frac{x-4}{x^{2}-4x-45}} 
-      \amp = \frac{{5-\left(x-4\right)}}{{x^{2}-4x-45}} \\
-      \amp = \frac{{5-x+4}}{{\left(x-9\right)\mathopen{}\left(x+5\right)}} \\
-      \amp = \frac{{-x+9}}{{\left(x-9\right)\mathopen{}\left(x+5\right)}} \\
-      \amp = \frac{{-\left(x-9\right)}}{{\left(x-9\right)\mathopen{}\left(x+5\right)}} \\
-      \amp = {-\frac{1}{x+5}, x\ne 9}
+   {\frac{3}{x^{2}-10x+16}-\frac{x-5}{x^{2}-10x+16}} 
+      \amp = \frac{{3-\left(x-5\right)}}{{x^{2}-10x+16}} \\
+      \amp = \frac{{3-x+5}}{{\left(x-8\right)\mathopen{}\left(x-2\right)}} \\
+      \amp = \frac{{-x+8}}{{\left(x-8\right)\mathopen{}\left(x-2\right)}} \\
+      \amp = \frac{{-\left(x-8\right)}}{{\left(x-8\right)\mathopen{}\left(x-2\right)}} \\
+      \amp = {-\frac{1}{x-2}, x\ne 8}
 \end{aligned}
     }</m></p>
-<p>Since the factor <m>x-9</m> was canceled, the domain condition lost during the simplification is <m>x \ne {9}</m>.</p>
+<p>Since the factor <m>x-8</m> was canceled, the domain condition lost during the simplification is <m>x \ne {8}</m>.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions30.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

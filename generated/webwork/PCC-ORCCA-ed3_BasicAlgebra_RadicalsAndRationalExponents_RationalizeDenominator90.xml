@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator90" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator90">
-  <static seed="1928">
-    <statement><p><m>\displaystyle{ \sqrt{\frac{13}{36}} }</m></p>
+  <static seed="1792">
+    <statement><p><m>\displaystyle{ \sqrt{\frac{3}{25}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{\sqrt{13}}{6}</m>
+        <m>\frac{\sqrt{3}}{5}</m>
       </p>
     </answer>
     <solution><p>We need to use this property for this problem:</p>
 <p><m>\displaystyle{ \sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}} }</m></p>
 <p>Thus we have:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \sqrt{\frac{13}{36}} 
-      \amp = \frac{\sqrt{13}}{\sqrt{36}} \\
-      \amp = \frac{\sqrt{13}}{6}
+   \sqrt{\frac{3}{25}} 
+      \amp = \frac{\sqrt{3}}{\sqrt{25}} \\
+      \amp = \frac{\sqrt{3}}{5}
 \end{aligned}
     }</m></p>
 <p>Since no radicals are left in the denominator, there is no need to further simplify this expression.</p>

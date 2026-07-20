@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-find-step-run-copy" assembly-id="find-step-run-copy">
-  <static seed="2556">
-    <statement><p>The rise is <m>6.125</m> inches.</p>
+  <static seed="2420">
+    <statement><p>The rise is <m>8.625</m> inches.</p>
 <p><fillin characters="15" name="AnSwEr0001"/></p>
 <p><fillin characters="10" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>6.125+N = 17.5</m>
+        <m>8.625+N = 17.5</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>11.375\ {\rm in}</m>
+        <m>8.875\ {\rm in}</m>
       </p>
     </answer>
   </static>

@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-list-terms-two-variables" assembly-id="list-terms-two-variables">
-  <static seed="2264">
-    <statement><p><m>{9.2a-G+G-{\frac{7}{4}}a}</m></p>
+  <static seed="2128">
+    <statement><p><m>{-5.3p+{\frac{1}{5}}W-{\frac{9}{7}}W-p}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>9.2a, -G, G, -{\frac{7}{4}}a</m>
+        <m>-5.3p, {\frac{1}{5}}W, -{\frac{9}{7}}W, -p</m>
       </p>
     </answer>
-    <solution><p>The terms are the pieces being added together. Any piece that is subtracted from other pieces can be viewed as adding a negative. So the terms are <m>{9.2a, -G, G, -{\frac{7}{4}}a}\text{.}</m></p>
+    <solution><p>The terms are the pieces being added together. Any piece that is subtracted from other pieces can be viewed as adding a negative. So the terms are <m>{-5.3p, {\frac{1}{5}}W, -{\frac{9}{7}}W, -p}\text{.}</m></p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/Appendices/A_3_5_35.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

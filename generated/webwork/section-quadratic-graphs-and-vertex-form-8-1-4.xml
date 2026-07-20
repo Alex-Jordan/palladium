@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-quadratic-graphs-and-vertex-form-8-1-4" assembly-id="section-quadratic-graphs-and-vertex-form-8-1-4">
-  <static seed="1072" source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication75.pg">
+  <static seed="605" source="Contrib/PCC/BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication75.pg">
     <statement><p>Multiply the polynomials.</p>
-<p><m>\left({5r-4}\right)\left({r+2}\right)=</m><fillin characters="32" name="AnSwEr0001"/></p>
+<p><m>\left({8t-1}\right)\left({t+6}\right)=</m><fillin characters="32" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>5r^{2}+6r-8</m>
+        <m>8t^{2}+47t-6</m>
       </p>
     </answer>
     <solution><p>We use the FOIL technique: <alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast. <me>\begin{aligned}
-              \left({5r-4}\right)({r+2})\amp ={5r^{2}+10r-4r-8}\\
-                                \amp ={5r^{2}+6r-8}
+              \left({8t-1}\right)({t+6})\amp ={8t^{2}+48t-t-6}\\
+                                \amp ={8t^{2}+47t-6}
       \end{aligned}</me></p>
 </solution>
   </static>

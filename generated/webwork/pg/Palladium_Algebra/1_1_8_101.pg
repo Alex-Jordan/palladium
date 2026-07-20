@@ -1,0 +1,82 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.8.101)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextUnits.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$T = random(300,500,10);
+Context("Units")->withUnitsFor("length");
+$x = $T/4;
+$x = Compute("$x ft");
+$y = $T/2;
+$y = Compute("$y ft");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+You are planning to build a rectangular sheep enclosure next to one wall of an enormous barn. There will be no need to build any fencing alongside the barn, so you only need to build fencing on three sides. You have a total of [`[$T]`] feet of fencing to use. Find the dimensions of the pen such that you can enclose the maximum possible area.
+
+[@KeyboardInstructions('Enter the short side length here.')@]**
+
+[_]{$x}{6}
+
+[@KeyboardInstructions('Enter the long side length here.')@]**
+
+[_]{$y}{6}
+
+END_PGML
+
+############################################################
+# Hint
+############################################################
+#Set value of $showHint in PGcourse.pl for course-wide attempt threshhold for revealing hints
+
+BEGIN_PGML_HINT
+Let [`𝑥`] represent the length of fencing (in feet) that runs perpendicular to the barn, and write an expression for the third side of fencing. Then write an expression for the area of the enclosure. Find the vertex and interpret it.
+
+END_PGML_HINT
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

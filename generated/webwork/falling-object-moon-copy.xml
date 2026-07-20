@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-falling-object-moon-copy" assembly-id="falling-object-moon-copy">
+  <static seed="902">
+    <statement><p>An object on Mars is shot straight up from a height of <m>61.6</m> meters with an initial speed of <m>61.6</m> meters per second. How long will it take for the object to land?</p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <hint><p>Once you set up an equation, if you have any decimal coefficients, multiply each side of the equation by <m>10</m> to clear decimals.</p>
+</hint>
+    <answer>
+      <p>
+        <m>11\,\text{s}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_3_6_65.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg copied-from="falling-object-moon"><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.3.6.66)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextUnits.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+($r,$s) = num_sort(random_subset(2,2..12));
+$a = -0.8;
+$b = 0.8*($s - $r);
+$c = 0.8*$r*$s;
+Context("Units")->withUnitsFor("time");
+$answer = Compute("$s s");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+For a falling object on the Moon, with height measured in meters and time measured in seconds, the curvature coefficient of its height function is (roughly) [`-0.8\text{.}`]
+
+An object on Mars is shot straight up from a height of [`[$c]`] meters with an initial speed of [`[$c]`] meters per second. How long will it take for the object to land?
+
+[_]{$answer}{16}
+
+END_PGML
+
+############################################################
+# Hint
+############################################################
+#Set value of $showHint in PGcourse.pl for course-wide attempt threshhold for revealing hints
+
+BEGIN_PGML_HINT
+Once you set up an equation, if you have any decimal coefficients, multiply each side of the equation by [`10`] to clear decimals.
+
+END_PGML_HINT
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

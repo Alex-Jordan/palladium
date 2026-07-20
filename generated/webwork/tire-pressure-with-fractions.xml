@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-tire-pressure-with-fractions" assembly-id="tire-pressure-with-fractions">
-  <static seed="1644">
-    <statement><p>One of the tires on your car looks a little flat. You measure its air pressure and are alarmed to see it so low at <m>{20\ {\rm psi}}\text{.}</m> You have a portable device that can pump air into the tire increasing the pressure at a rate of <m>{{\frac{8}{5}}\ {\textstyle\frac{\rm\mathstrut psi}{\rm\mathstrut min}}}\text{.}</m> How long will it take to fill the tire to the manual<rsq/>s recommended pressure of <m>{30\ {\rm psi}}\text{?}</m></p>
+  <static seed="1508">
+    <statement><p>One of the tires on your car looks a little flat. You measure its air pressure and are alarmed to see it so low at <m>{25\ {\rm psi}}\text{.}</m> You have a portable device that can pump air into the tire increasing the pressure at a rate of <m>{{\frac{7}{6}}\ {\textstyle\frac{\rm\mathstrut psi}{\rm\mathstrut min}}}\text{.}</m> How long will it take to fill the tire to the manual<rsq/>s recommended pressure of <m>{32\ {\rm psi}}\text{?}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{25}{4}\ {\rm min}</m>
+        <m>6\ {\rm min}</m>
       </p>
     </answer>
   </static>

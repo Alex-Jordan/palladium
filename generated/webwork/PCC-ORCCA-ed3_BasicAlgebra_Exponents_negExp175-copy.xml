@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp175-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp175-copy">
-  <static seed="1780">
-    <statement><p><m>3x^{-8}y^{6}z^{-7}\left(4x^{6}\right)^{-3}</m></p>
+  <static seed="1644">
+    <statement><p><m>3x^{-4}y^{6}z^{-4}\left(5x^{8}\right)^{-2}</m></p>
 <p><fillin characters="22" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{3y^{6}}{64x^{26}z^{7}}</m>
+        <m>\frac{3y^{6}}{25x^{20}z^{4}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remember that <m>a^m\cdot a^n = a^{m+n}</m> and <m>\left(a^m\right)^n=a^{mn}</m>.</p>
 <p><m>\begin{aligned}
-      3x^{-8}y^{6}z^{-7}\left(4x^{6}\right)^{-3}
-                  \amp =  3x^{-8}y^{6}z^{-7}4^{-3}x^{6(-3)}\\
-                  \amp =  3x^{-8}y^{6}z^{-7}4^{-3}x^{-18}\\
-                  \amp =  3x^{-8-18}y^{6}z^{-7}\frac{1}{4^{3}}\\
-                  \amp =  3x^{-26}y^{6}z^{-7}\frac{1}{4^{3}}\\
-                  \amp  = {\frac{3y^{6}}{64x^{26}z^{7}}}
+      3x^{-4}y^{6}z^{-4}\left(5x^{8}\right)^{-2}
+                  \amp =  3x^{-4}y^{6}z^{-4}5^{-2}x^{8(-2)}\\
+                  \amp =  3x^{-4}y^{6}z^{-4}5^{-2}x^{-16}\\
+                  \amp =  3x^{-4-16}y^{6}z^{-4}\frac{1}{5^{2}}\\
+                  \amp =  3x^{-20}y^{6}z^{-4}\frac{1}{5^{2}}\\
+                  \amp  = {\frac{3y^{6}}{25x^{20}z^{4}}}
            \end{aligned}</m></p>
 </solution>
   </static>

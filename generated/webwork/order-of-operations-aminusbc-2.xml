@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-order-of-operations-aminusbc-2" assembly-id="order-of-operations-aminusbc-2">
-  <static seed="2151">
-    <statement><p><m>3 - 5(7)</m></p>
+  <static seed="2015">
+    <statement><p><m>2 - 7(8)</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-32</m>
+        <m>-54</m>
       </p>
     </answer>
   </static>

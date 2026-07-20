@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-linear-equation-fractions-c" assembly-id="linear-equation-fractions-c">
-  <static seed="1481">
-    <statement><p><m>{12x+4} = {{\frac{2}{9}}}</m></p>
+  <static seed="1345">
+    <statement><p><m>{12x+7} = {{\frac{6}{7}}}</m></p>
 <p><fillin characters="4" name="AnSwEr0001"/></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>9</m>
+        <m>7</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left\{\frac{-17}{54}\right\}</m>
+        <m>\left\{\frac{-43}{84}\right\}</m>
       </p>
     </answer>
   </static>

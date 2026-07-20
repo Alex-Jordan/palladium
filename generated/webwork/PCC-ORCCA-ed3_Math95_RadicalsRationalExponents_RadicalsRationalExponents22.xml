@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents22" assembly-id="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents22">
-  <static seed="2016">
-    <statement><p><m>\displaystyle{\sqrt{\sqrt{z}}}</m></p>
+  <static seed="1880">
+    <statement><p><m>\displaystyle{\sqrt[4]{\sqrt[4]{y}}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>z^{\frac{1}{4}}</m>
+        <m>y^{\frac{1}{16}}</m>
       </p>
     </answer>
     <solution><p>We rewrite the expression using rational exponents <m>\sqrt[n]{x} = x^\frac{1}{n}</m>. Then we use exponent properties and multiply the fractions.</p>
 <p><m>\displaystyle{\begin{aligned}
-   \sqrt{\sqrt{z}}
-           \amp = \left( \sqrt{z} \right)^{\frac{1}{2}} \\
-           \amp = \left(z^{\frac{1}{2}}\right)^{\frac{1}{2}} \\
-           \amp = z^{\frac{1}{2}\cdot\frac{1}{2}} \\
-           \amp = z^{\frac{1}{4}} \\
+   \sqrt[4]{\sqrt[4]{y}}
+           \amp = \left( \sqrt[4]{y} \right)^{\frac{1}{4}} \\
+           \amp = \left(y^{\frac{1}{4}}\right)^{\frac{1}{4}} \\
+           \amp = y^{\frac{1}{4}\cdot\frac{1}{4}} \\
+           \amp = y^{\frac{1}{16}} \\
 \end{aligned}
     }</m></p>
-<p>So the answer in calculator/WeBWorK notation is <m>z</m>^<m>(1/4)</m>.</p>
+<p>So the answer in calculator/WeBWorK notation is <m>y</m>^<m>(1/16)</m>.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/4_4_4_69.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

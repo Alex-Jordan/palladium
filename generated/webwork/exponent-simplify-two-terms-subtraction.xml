@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-simplify-two-terms-subtraction" assembly-id="exponent-simplify-two-terms-subtraction">
-  <static seed="2620">
-    <statement><p><m>{-5c\cdot 2c^{4}+4c^{3}\cdot 8c^{2}}</m></p>
+  <static seed="2484">
+    <statement><p><m>{2a^{3}\cdot 7a^{9}+5a^{5}\cdot 3a^{7}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>22c^{5}</m>
+        <m>29a^{12}</m>
       </p>
     </answer>
   </static>

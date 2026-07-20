@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp110-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp110-copy">
-  <static seed="1754">
-    <statement><p><m>\displaystyle\left(\frac{12x^{8}}{2x^{2}}\right)^{-2}</m></p>
+  <static seed="1618">
+    <statement><p><m>\displaystyle\left(\frac{18x^{13}}{6x^{5}}\right)^{-5}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{1}{36x^{12}}</m>
+        <m>\frac{1}{243x^{40}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\displaystyle{\frac{a^m}{a^n} = a^{m-n}}</m></p>
 <p><m>\begin{aligned}
-                 \left(\displaystyle\frac{12x^{8}}{2x^{2}}\right)^{-2} \amp = \left(6x^{8-2}\right)^{-2}\\
-\amp = 6^{-2}\left(x^{6}\right)^{-2}\\
-\amp  = 6^{-2}x^{6\cdot(-2)}\\
-                                                       \amp  =\frac{1}{36}x^{-12}\\
-                                    \amp  = {\frac{1}{36x^{12}}}
+                 \left(\displaystyle\frac{18x^{13}}{6x^{5}}\right)^{-5} \amp = \left(3x^{13-5}\right)^{-5}\\
+\amp = 3^{-5}\left(x^{8}\right)^{-5}\\
+\amp  = 3^{-5}x^{8\cdot(-5)}\\
+                                                       \amp  =\frac{1}{243}x^{-40}\\
+                                    \amp  = {\frac{1}{243x^{40}}}
            \end{aligned}</m></p>
 </solution>
   </static>

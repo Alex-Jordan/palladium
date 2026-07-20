@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-order-of-operations-asqrtbdivc" assembly-id="order-of-operations-asqrtbdivc">
-  <static seed="2217">
-    <statement><p><m>8\sqrt{96\div3}</m></p>
+  <static seed="2081">
+    <statement><p><m>6\sqrt{160\div5}</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>45.2548</m>
+        <m>33.9411</m>
       </p>
     </answer>
   </static>

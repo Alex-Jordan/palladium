@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-multiply-fractions-two-reductions-2" assembly-id="multiply-fractions-two-reductions-2">
-  <static seed="2084">
-    <statement><p><m>\displaystyle {{\frac{2}{35}}}\cdot {{\frac{5}{18}}}</m></p>
+  <static seed="1948">
+    <statement><p><m>\displaystyle {{\frac{8}{21}}}\cdot {{\frac{3}{40}}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{1}{63}}</m>
+        <m>{\frac{1}{35}}</m>
       </p>
     </answer>
   </static>

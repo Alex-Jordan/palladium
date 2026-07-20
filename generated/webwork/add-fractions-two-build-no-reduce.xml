@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-add-fractions-two-build-no-reduce" assembly-id="add-fractions-two-build-no-reduce">
-  <static seed="2254">
-    <statement><p><m>{{\frac{7}{24}}}+{{\frac{3}{28}}}</m></p>
+  <static seed="2118">
+    <statement><p><m>{{\frac{7}{30}}}+{{\frac{3}{35}}}</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{67}{168}}</m>
+        <m>{\frac{67}{210}}</m>
       </p>
     </answer>
   </static>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-add-fractions-one-build-reduce" assembly-id="add-fractions-one-build-reduce">
-  <static seed="2250">
-    <statement><p><m>{{\frac{5}{11}}}+{{\frac{8}{55}}}</m></p>
+  <static seed="2114">
+    <statement><p><m>{{\frac{1}{3}}}+{{\frac{4}{15}}}</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>

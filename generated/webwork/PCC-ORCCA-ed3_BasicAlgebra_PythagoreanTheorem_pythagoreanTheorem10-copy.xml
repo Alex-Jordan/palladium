@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PythagoreanTheorem_pythagoreanTheorem10-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PythagoreanTheorem_pythagoreanTheorem10-copy">
-  <static seed="846">
+  <static seed="1037">
     <statement><!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/PCC-ORCCA-ed3_BasicAlgebra_PythagoreanTheorem_pythagoreanTheorem10-copy-image-1" width="40%">
-<shortdescription>a right triangle with legs of lengths 32 and 60 where the hypotenuse is labeled x</shortdescription>
+<shortdescription>a right triangle with legs of lengths 21 and 72 where the hypotenuse is labeled x</shortdescription>
 <description>
 <p/></description>
 </image>
@@ -11,20 +11,20 @@
 </statement>
     <answer>
       <p>
-        <m>68</m>
+        <m>75</m>
       </p>
     </answer>
     <solution><p>By the Pythagorean Theorem, we have:</p>
 <p><me>\begin{aligned}
-  32^{2}+60^{2} \amp = x^{2} \\
-  1024+ 3600 \amp = x^{2} \\
-  4624 \amp = x^{2} \\
-  \sqrt{4624} \amp = x \\
-  68 \amp = x
+  21^{2}+72^{2} \amp = x^{2} \\
+  441+ 5184 \amp = x^{2} \\
+  5625 \amp = x^{2} \\
+  \sqrt{5625} \amp = x \\
+  75 \amp = x
 \end{aligned}</me></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_3_4_42.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/2_4_7_128.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 # WeBWorK problem written by Alex Jordan
 # Portland Community College

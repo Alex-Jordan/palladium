@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_SimplifyRadicals_SimplifyRadicals24-copy3" assembly-id="PCC-ORCCA-ed3_Math95_SimplifyRadicals_SimplifyRadicals24-copy3">
-  <static seed="1943">
-    <statement><p><m>\displaystyle{ \dfrac{3}{\sqrt{15}+8} }</m></p>
+  <static seed="1807">
+    <statement><p><m>\displaystyle{ \dfrac{2}{\sqrt{14}+5} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{24-3\sqrt{15}}{49}</m>
+        <m>\frac{10-2\sqrt{14}}{11}</m>
       </p>
     </answer>
     <solution><p>We will use the Difference of Squares formula:</p>
 <p><m>\displaystyle{ (a+b)(a-b) = a^2-b^2 }</m></p>
 <p>This will help us get rid of the radical in the denominator by multiplying with the conjugate:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \dfrac{3}{\sqrt{15}+8}
-                \amp = \dfrac{3}{\sqrt{15}+8}\cdot\dfrac{\sqrt{15}-8}{\sqrt{15}-8} \\
-                \amp = \dfrac{3\sqrt{15}-(3)(8)}{\left(\sqrt{15}\right)^2-(8)^2} \\
-                \amp = \dfrac{3\sqrt{15}-24}{15-64} \\
-                \amp = \dfrac{3\sqrt{15}-24}{-49} \\
+   \dfrac{2}{\sqrt{14}+5}
+                \amp = \dfrac{2}{\sqrt{14}+5}\cdot\dfrac{\sqrt{14}-5}{\sqrt{14}-5} \\
+                \amp = \dfrac{2\sqrt{14}-(2)(5)}{\left(\sqrt{14}\right)^2-(5)^2} \\
+                \amp = \dfrac{2\sqrt{14}-10}{14-25} \\
+                \amp = \dfrac{2\sqrt{14}-10}{-11} \\
 \end{aligned}
     }</m></p>
 </solution>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-simplify-two-terms-subtraction-copy" assembly-id="exponent-simplify-two-terms-subtraction-copy">
-  <static seed="2621">
-    <statement><p><m>{5e^{4}\cdot 9e^{9}-3e^{8}\cdot 6e^{5}}</m></p>
+  <static seed="2485">
+    <statement><p><m>{-2d^{2}\cdot 4d^{8}-3d^{6}\cdot 9d^{4}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>27e^{13}</m>
+        <m>-35d^{10}</m>
       </p>
     </answer>
   </static>

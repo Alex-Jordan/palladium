@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-complex-fractions-5-3-9" assembly-id="section-complex-fractions-5-3-9">
-  <static seed="1460" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions50.pg">
+  <static seed="1324" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions50.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{{\frac{\frac{4}{r}}{24+\frac{4y}{3}}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{\frac{5}{r}}{30-\frac{5t}{3}}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{3}{r\mathopen{}\left(y+18\right)}\hbox{ or }\frac{3}{ry+18r}</m>
+        <m>\frac{3}{r\mathopen{}\left(18-t\right)}\hbox{ or }\frac{3}{18r-rt}</m>
       </p>
     </answer>
     <solution><p>To simplify a complex fraction, we find the common denominator of all fractions. In this case, it is <m>{3r}</m>. We multiply the complex fraction<rsq/>s numerator and denominator by this common denominator, and we have:</p>
 <p><m>\displaystyle{\begin{aligned}
-   {\frac{\frac{4}{r}}{24+\frac{4y}{3}}} 
-      \amp = {\frac{\frac{4}{r}}{24+\frac{4y}{3}}} \cdot \frac{{3r}}{{3r}} \\
-      \amp = \frac{ \frac{4}{r} \cdot 3 r}{(24+\frac{4 y}{3}) \cdot 3 r} \\
-      \amp = \frac{4 \cdot 3}{24 \cdot 3 r + \frac{4 y}{3} \cdot 3 r} \\
-      \amp = \frac{12}{72 r + 4 r y} \\
-      \amp = \frac{12}{4 r (18 + y)} \\
-      \amp = {\frac{3}{r\mathopen{}\left(y+18\right)}\hbox{ or }\frac{3}{ry+18r}}
+   {\frac{\frac{5}{r}}{30-\frac{5t}{3}}} 
+      \amp = {\frac{\frac{5}{r}}{30-\frac{5t}{3}}} \cdot \frac{{3r}}{{3r}} \\
+      \amp = \frac{ \frac{5}{r} \cdot 3 r}{(30-\frac{5 t}{3}) \cdot 3 r} \\
+      \amp = \frac{5 \cdot 3}{30 \cdot 3 r - \frac{5 t}{3} \cdot 3 r} \\
+      \amp = \frac{15}{90 r - 5 r t} \\
+      \amp = \frac{15}{5 r (18 - t)} \\
+      \amp = {\frac{3}{r\mathopen{}\left(18-t\right)}\hbox{ or }\frac{3}{18r-rt}}
 \end{aligned}
     }</m></p>
 </solution>

@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-equation-multiply-fraction" assembly-id="solve-equation-multiply-fraction">
-  <static seed="2537">
-    <statement><p><m>{{\frac{1}{7}}V}={-{\frac{5}{2}}}</m></p>
+  <static seed="2401">
+    <statement><p><m>{{\frac{4}{5}}R}={{\frac{7}{10}}}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\frac{-35}{2}\right\}</m>
+        <m>\left\{\frac{7}{8}\right\}</m>
       </p>
     </answer>
     <solution><p>To undo multiplication by a fraction, we can multiply my its reciprocal.</p>
 <p><me>\begin{aligned}
-{{\frac{1}{7}}V} \amp= {-{\frac{5}{2}}}\\
-\multiplyleft{{7}}{{\frac{1}{7}}V} \amp= \multiplyleft{{7}}{-{\frac{5}{2}}}\\
-V \amp= {-{\frac{35}{2}}}
+{{\frac{4}{5}}R} \amp= {{\frac{7}{10}}}\\
+\multiplyleft{{{\frac{5}{4}}}}{{\frac{4}{5}}R} \amp= \multiplyleft{{{\frac{5}{4}}}}{{\frac{7}{10}}}\\
+R \amp= {{\frac{7}{8}}}
 \end{aligned}</me></p>
-<p>The solution set is <m>{\left\{\frac{-35}{2}\right\}}\text{.}</m></p>
+<p>The solution set is <m>{\left\{\frac{7}{8}\right\}}\text{.}</m></p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/Appendices/A_7_6_23.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

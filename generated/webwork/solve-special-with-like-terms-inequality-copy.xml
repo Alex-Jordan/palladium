@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-special-with-like-terms-inequality-copy" assembly-id="solve-special-with-like-terms-inequality-copy">
-  <static seed="1534">
-    <statement><p><m>{7V-13+5V}\leq{-5+12V-8}</m></p>
+  <static seed="1398">
+    <statement><p><m>{6I+7-8I}\geq{2-2I+5}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>

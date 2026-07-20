@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-add-fractions-rel-prime-denoms-no-reduction" assembly-id="add-fractions-rel-prime-denoms-no-reduction">
-  <static seed="2101">
-    <statement><p><m>\displaystyle {{\frac{5}{9}}} + {{\frac{7}{2}}}</m></p>
+  <static seed="1965">
+    <statement><p><m>\displaystyle {{\frac{5}{7}}} + {{\frac{9}{2}}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{73}{18}}</m>
+        <m>{\frac{73}{14}}</m>
       </p>
     </answer>
   </static>

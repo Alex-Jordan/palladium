@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateFractionalExponent10" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateFractionalExponent10">
-  <static seed="1974">
+  <static seed="1838">
     <introduction/>
     <task>
-      <statement><p><m>\displaystyle{ 49^{\frac{1}{2}} }</m></p>
+      <statement><p><m>\displaystyle{ 36^{\frac{1}{2}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>7</m>
+          <m>6</m>
         </p>
       </answer>
-      <solution><p>Since <m>x^{1/2}=\sqrt{x}</m>, we have <m>\displaystyle{ 49^{\frac{1}{2}} = \sqrt{49} = {7} }</m>.</p>
+      <solution><p>Since <m>x^{1/2}=\sqrt{x}</m>, we have <m>\displaystyle{ 36^{\frac{1}{2}} = \sqrt{36} = {6} }</m>.</p>
 </solution>
     </task>
     <task>
-      <statement><p><m>\displaystyle{ (-49)^{\frac{1}{2}} }</m></p>
+      <statement><p><m>\displaystyle{ (-36)^{\frac{1}{2}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>
@@ -23,19 +23,19 @@
           <m>\text{DNE}</m>
         </p>
       </answer>
-      <solution><p>Since <m>x^{1/2}=\sqrt{x}</m>, we have <m>\displaystyle{ (-49)^{\frac{1}{2}} = \sqrt{-49} = \text{undefined} }</m>.</p>
+      <solution><p>Since <m>x^{1/2}=\sqrt{x}</m>, we have <m>\displaystyle{ (-36)^{\frac{1}{2}} = \sqrt{-36} = \text{undefined} }</m>.</p>
 </solution>
     </task>
     <task>
-      <statement><p><m>\displaystyle{ -49^{\frac{1}{2}} }</m></p>
+      <statement><p><m>\displaystyle{ -36^{\frac{1}{2}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0003"/></p>
 </statement>
       <answer>
         <p>
-          <m>-7</m>
+          <m>-6</m>
         </p>
       </answer>
-      <solution><p>Since <m>x^{1/2}=\sqrt{x}</m>, we have <m>\displaystyle{ -49^{\frac{1}{2}} = -\sqrt{49} = {-7} }</m>.</p>
+      <solution><p>Since <m>x^{1/2}=\sqrt{x}</m>, we have <m>\displaystyle{ -36^{\frac{1}{2}} = -\sqrt{36} = {-6} }</m>.</p>
 </solution>
     </task>
   </static>

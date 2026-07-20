@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-add-two-distributions" assembly-id="simplify-add-two-distributions">
-  <static seed="2360">
-    <statement><p><m>{7\mathopen{}\left(6p+3\right)+2\mathopen{}\left(4p+5\right)}</m></p>
+  <static seed="2224">
+    <statement><p><m>{9\mathopen{}\left(8m+7\right)+6\mathopen{}\left(4m+2\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>50p+31</m>
+        <m>96m+75</m>
       </p>
     </answer>
   </static>

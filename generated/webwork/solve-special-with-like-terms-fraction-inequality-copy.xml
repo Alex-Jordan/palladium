@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-special-with-like-terms-fraction-inequality-copy" assembly-id="solve-special-with-like-terms-fraction-inequality-copy">
-  <static seed="1544">
-    <statement><p><m>{{\frac{2}{9}}A+3+{\frac{4}{7}}A}\leq{-3+{\frac{50}{63}}A+6}</m></p>
+  <static seed="1408">
+    <statement><p><m>{{\frac{5}{9}}V-7+{\frac{7}{4}}V}\leq{-9+{\frac{83}{36}}V+2}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>

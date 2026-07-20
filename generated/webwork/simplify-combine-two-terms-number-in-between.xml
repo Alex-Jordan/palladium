@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-combine-two-terms-number-in-between" assembly-id="simplify-combine-two-terms-number-in-between">
-  <static seed="2354">
-    <statement><p><m>{15H+19+4H}</m></p>
+  <static seed="2218">
+    <statement><p><m>{20D+12+9D}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>19H+19</m>
+        <m>29D+12</m>
       </p>
     </answer>
   </static>

@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication25-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication25-copy">
-  <static seed="2650">
-    <statement><p><m>\left({y+9}\right)\left({y+6}\right)</m></p>
+  <static seed="2514">
+    <statement><p><m>\left({y+1}\right)\left({y+9}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>y^{2}+15y+54</m>
+        <m>y^{2}+10y+9</m>
       </p>
     </answer>
     <solution><p>We use the <lq/>FOIL<rq/> technique: First Outside Inside Last.</p>
 <p><m>\begin{aligned}
-              \left({y+9}\right)({y+6})\amp ={y^{2}+6y+9y+54}\\
-                                \amp ={y^{2}+15y+54}
+              \left({y+1}\right)({y+9})\amp ={y^{2}+9y+y+9}\\
+                                \amp ={y^{2}+10y+9}
       \end{aligned}</m></p>
 </solution>
   </static>

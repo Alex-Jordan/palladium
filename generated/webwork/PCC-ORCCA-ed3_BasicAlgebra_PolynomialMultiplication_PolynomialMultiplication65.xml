@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication65" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication65">
-  <static seed="2659">
-    <statement><p><m>\left({5y-8}\right)\left({3y-8}\right)</m></p>
+  <static seed="2523">
+    <statement><p><m>\left({6y-5}\right)\left({y-10}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>15y^{2}-64y+64</m>
+        <m>6y^{2}-65y+50</m>
       </p>
     </answer>
     <solution><p>We use the FOIL technique- <alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast</p>
 <p><m>\begin{aligned}
-              \left({5y-8}\right)({3y-8})\amp ={15y^{2}-40y-24y+64}\\
-                                \amp ={15y^{2}-64y+64}
+              \left({6y-5}\right)({y-10})\amp ={6y^{2}-60y-5y+50}\\
+                                \amp ={6y^{2}-65y+50}
       \end{aligned}</m></p>
 </solution>
   </static>

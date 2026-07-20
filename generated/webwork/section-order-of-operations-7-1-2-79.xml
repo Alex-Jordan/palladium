@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-order-of-operations-7-1-2-79" assembly-id="section-order-of-operations-7-1-2-79">
-  <static seed="2219">
-    <statement><p><m>9 \cdot  \dfrac{96 \div  2}{3 + 5}</m></p>
+  <static seed="2083">
+    <statement><p><m>7 - \dfrac{16 \cdot  6}{12 - 4}</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>54</m>
+        <m>-5</m>
       </p>
     </answer>
   </static>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-equation-subtract-fraction-copy" assembly-id="solve-equation-subtract-fraction-copy">
-  <static seed="2536">
-    <statement><p><m>{{\frac{8}{9}}}={P-{\frac{5}{3}}}</m></p>
+  <static seed="2400">
+    <statement><p><m>{-{\frac{3}{7}}}={L-{\frac{7}{9}}}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\frac{23}{9}\right\}</m>
+        <m>\left\{\frac{22}{63}\right\}</m>
       </p>
     </answer>
   </static>

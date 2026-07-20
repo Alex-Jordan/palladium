@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-graphing-quadratic-expressions-8-2-11" assembly-id="section-graphing-quadratic-expressions-8-2-11">
-  <static seed="1043" source="PCC-ORCCA-ed3/BasicAlgebra/GraphingQuadratics/ParabolaIntercepts80.pg">
+  <static seed="576" source="PCC-ORCCA-ed3/BasicAlgebra/GraphingQuadratics/ParabolaIntercepts80.pg">
     <statement><p>Find the <m>y</m>-intercept and any <m>x</m>-intercept(s) of the quadratic curve.</p>
-<p><m>{y}={x^{2}+2x+6}</m></p>
+<p><m>{y}={x^{2}+4x+8}</m></p>
 <p><m>y</m>-intercept: <fillin characters="16" name="AnSwEr0001"/></p>
 <p><m>x</m>-intercept(s): <fillin characters="17" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left(0,6\right)</m>
+        <m>\left(0,8\right)</m>
       </p>
     </answer>
     <answer>
@@ -16,20 +16,20 @@
         <m>\text{DNE}</m>
       </p>
     </answer>
-    <solution><p>To find a parabola<rsq/>s <m>y</m>-intercept, we substitute <m>x=0</m> into <m>{y}={x^{2}+2x+6}</m>, and we have <m>y=6</m>.</p>
-<p>The parabola<rsq/>s <m>y</m>-intercept is <m>(0,6)</m>.</p>
-<p>To find a parabola<rsq/>s <m>x</m>-intercept, we substitute <m>y=0</m> into <m>{y}={x^{2}+2x+6}</m>, and then solve for <m>x</m>:</p>
+    <solution><p>To find a parabola<rsq/>s <m>y</m>-intercept, we substitute <m>x=0</m> into <m>{y}={x^{2}+4x+8}</m>, and we have <m>y=8</m>.</p>
+<p>The parabola<rsq/>s <m>y</m>-intercept is <m>(0,8)</m>.</p>
+<p>To find a parabola<rsq/>s <m>x</m>-intercept, we substitute <m>y=0</m> into <m>{y}={x^{2}+4x+8}</m>, and then solve for <m>x</m>:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   y \amp = {x^{2}+2x+6} \\
-   0 \amp = {x^{2}+2x+6} \\
+   y \amp = {x^{2}+4x+8} \\
+   0 \amp = {x^{2}+4x+8} \\
 \end{aligned}
     }</m></p>
 <p>The polynomial cannot be factored, so we use the Quadratic Formula to solve this equation.</p>
-<p>Identify that <m>a=1,b=2,c=6</m>. We have:</p>
+<p>Identify that <m>a=1,b=4,c=8</m>. We have:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
    x \amp = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a} \\
-   x \amp = \frac{-(2) \pm \sqrt{(2)^{2}-4(1)(6)}}{2(1)} \\
-   x \amp = \frac{-2 \pm \sqrt{-20}}{2} \\
+   x \amp = \frac{-(4) \pm \sqrt{(4)^{2}-4(1)(8)}}{2(1)} \\
+   x \amp = \frac{-4 \pm \sqrt{-16}}{2} \\
 \end{aligned}
     }</m></p>
 <p>The square root of a negative number us <alert>not real</alert>, so this quadratic equation has no real solution.</p>

@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-identify-linear-equations-2-copy" assembly-id="identify-linear-equations-2-copy">
-  <static seed="2496">
+  <static seed="2360">
     <statement><ul form="checkboxes" name="AnSwEr0001">
 <li>
-<p><m>z^{2}+q^{2}=-10</m></p>
+<p><m>q^{2}+y^{2}\geq30</m></p>
 </li>
 <li>
-<p><m>\left|-8.4z-2\right|\neq-62</m></p>
+<p><m>y\sqrt{17}\geq-44</m></p>
 </li>
 <li>
-<p><m>13z+8\lt-72</m></p>
+<p><m>7x-4=-24</m></p>
 </li>
 <li>
-<p><m>\pi r^{2}=53\pi </m></p>
+<p><m>\pi r^{2}=48\pi </m></p>
 </li>
 <li>
-<p><m>p\sqrt{7}\gt67</m></p>
+<p><m>3zq\lt38</m></p>
 </li>
 <li>
-<p><m>5zr\leq-87</m></p>
+<p><m>\left|-7.3y-1\right|\leq34</m></p>
 </li>
 <li>
 <p>None of the above</p>
@@ -28,13 +28,13 @@
 </p></statement>
     <answer>
       <p>
-        <m>\text{Choice 3, Choice 5}</m>
+        <m>\text{Choice 2, Choice 3}</m>
       </p>
     </answer>
-    <solution><p><m>5zr\leq-87</m> is not linear because it multiplies two variables together.</p>
-<p><m>z^{2}+q^{2}=-10</m> and <m>\pi r^{2}=53\pi</m> are not linear because variables are raised to the second power.</p>
-<p><m>\left|-8.4z-2\right|\neq-62</m> is not linear because a variable is within absolute value bars.</p>
-<p>That leaves <m>13z+8\lt-72</m> and <m>p\sqrt{7}\gt67\text{,}</m> which are both linear.</p>
+    <solution><p><m>3zq\lt38</m> is not linear because it multiplies two variables together.</p>
+<p><m>q^{2}+y^{2}\geq30</m> and <m>\pi r^{2}=48\pi</m> are not linear because variables are raised to the second power.</p>
+<p><m>\left|-7.3y-1\right|\leq34</m> is not linear because a variable is within absolute value bars.</p>
+<p>That leaves <m>7x-4=-24</m> and <m>y\sqrt{17}\geq-44\text{,}</m> which are both linear.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/Appendices/A_6_6_55.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

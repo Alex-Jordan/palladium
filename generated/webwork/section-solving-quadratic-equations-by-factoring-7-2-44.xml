@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-quadratic-equations-by-factoring-7-2-44" assembly-id="section-solving-quadratic-equations-by-factoring-7-2-44">
-  <static seed="777" source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad330.pg">
+  <static seed="53" source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad330.pg">
     <statement><p>Solve the equation.</p>
-<p><m>{x\mathopen{}\left(4x+49\right)}={-90}</m></p>
+<p><m>{x\mathopen{}\left(5x+43\right)}={70}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\frac{-9}{4},-10\right\}</m>
+        <m>\left\{\frac{7}{5},-10\right\}</m>
       </p>
     </answer>
     <solution><p>There are a few ways to solve quadratic equations- the easiest way to solve this particular 
 type of problem is to use the <em>zero product principle</em>.</p>
 <p><m>\begin{aligned}
-                     {x\mathopen{}\left(4x+49\right)}={-90}               \amp \Rightarrow {4x^{2}+49x+90}=0 \\
-                                    \amp \Rightarrow {\left(4x+9\right)\mathopen{}\left(x+10\right)}=0 \\
-                                    \amp  \Rightarrow {\left\{\frac{-9}{4},-10\right\}}
+                     {x\mathopen{}\left(5x+43\right)}={70}               \amp \Rightarrow {5x^{2}+43x-70}=0 \\
+                                    \amp \Rightarrow {\left(5x-7\right)\mathopen{}\left(x+10\right)}=0 \\
+                                    \amp  \Rightarrow {\left\{\frac{7}{5},-10\right\}}
        \end{aligned}</m></p>
 <p>This quadratic equation has two distinct, real solutions.</p>
 <p>The solutions can be checked by substituting them into the original equation- this is left as an exercise.</p>

@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication10-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication10-copy">
-  <static seed="2638">
-    <statement><p><m>{-9x^{2}}\left({x+10}\right)</m></p>
+  <static seed="2502">
+    <statement><p><m>{-10x^{2}}\left({x+5}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-9x^{3}-90x^{2}</m>
+        <m>-10x^{3}-50x^{2}</m>
       </p>
     </answer>
     <solution><p>We multiply the monomial by each term in the binomial, using 
 the properties of exponents to help us</p>
 <p><m>\begin{aligned}
-              {-9x^{2}}({x+10})\amp ={-9x^{3}-90x^{2}}
+              {-10x^{2}}({x+5})\amp ={-10x^{3}-50x^{2}}
       \end{aligned}</m></p>
 </solution>
   </static>

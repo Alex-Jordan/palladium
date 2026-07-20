@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents7-copy" assembly-id="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents7-copy">
-  <static seed="1995">
-    <statement><p><m>\displaystyle{{b^{\frac{4}{5}}}}</m></p>
+  <static seed="1859">
+    <statement><p><m>\displaystyle{{b^{\frac{5}{6}}}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\sqrt[5]{b^{4}}</m>
+        <m>\sqrt[6]{b^{5}}</m>
       </p>
     </answer>
     <solution><p>When we have fractions as exponents, the numerator indicates the power while the denominator indicates the radical: <m>x^\frac{m}{n} = \sqrt[n]{x^m}</m>. So we can rewrite our expression as follows:</p>
 <p><m>\displaystyle{\begin{aligned}
-   b^\frac{4}{5} \amp = \sqrt[5]{b^4} \\
+   b^\frac{5}{6} \amp = \sqrt[6]{b^5} \\
 \end{aligned}
     }</m></p>
 </solution>

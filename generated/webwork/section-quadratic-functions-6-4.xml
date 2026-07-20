@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-quadratic-functions-6-4" assembly-id="section-quadratic-functions-6-4">
+  <static seed="730">
+    <statement><p>Factor the function formula <m>g(x)=3x^2+3x-60</m> and use the result to identify the roots and the horizontal intercepts.</p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+<p><fillin characters="16" name="AnSwEr0002"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>-5, 4</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\left(-5,0\right), \left(4,0\right)</m>
+      </p>
+    </answer>
+    <solution><p>The function formula factors as <m>g(x)=3(x+5)(x-4)\text{.}</m> So we can see that the roots are <m>-5</m> and <m>4\text{.}</m> These are the numbers that <lq/>zero out<rq/> the formula by canceling what we see in the formula. And the horizontal intercepts are <m>(-5,0)</m> and <m>(4,0)\text{.}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_2_18.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.2.18)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$roots = List(-5,4);
+Context("Point");
+$hi = List("(-5,0)", "(4,0)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Factor the function formula [`g(x)=3x^2+3x-60`] and use the result to identify the roots and the horizontal intercepts.
+
+[@KeyboardInstructions('Enter the roots here.')@]**
+
+[_]{$roots}{16}
+
+[@KeyboardInstructions('Enter the horizontal intercepts here.')@]**
+
+[_]{$hi}{16}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The function formula factors as [`g(x)=3(x+5)(x-4)\text{.}`] So we can see that the roots are [`-5`] and [`4\text{.}`] These are the numbers that "zero out" the formula by canceling what we see in the formula. And the horizontal intercepts are [`(-5,0)`] and [`(4,0)\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

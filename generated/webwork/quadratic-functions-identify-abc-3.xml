@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-quadratic-functions-identify-abc-3" assembly-id="quadratic-functions-identify-abc-3">
+  <static seed="9">
+    <statement><p>Let <m>h(t)=11t-5t^2\text{.}</m>
+<ol label="a.">
+<li>
+<p><m>a=</m><fillin characters="5" name="AnSwEr0001"/></p>
+</li>
+<li>
+<p><m>b=</m><fillin characters="5" name="AnSwEr0002"/></p>
+</li>
+<li>
+<p><m>c=</m><fillin characters="5" name="AnSwEr0003"/></p>
+</li>
+</ol></p>
+</statement>
+    <answer>
+      <p>
+        <m>-5</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>11</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>0</m>
+      </p>
+    </answer>
+    <solution><p>Rewriting <m>h(t)=11t-5t^2</m> in the order <m>at^2+bt+c</m> gives <m>h(t)=-5t^2+11t+0\text{.}</m> So <m>a=-5\text{,}</m> <m>b=11\text{,}</m> and <m>c=0\text{.}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/1_1_5_4.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.5.4)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+$a = Compute("-5");
+$b = Compute("11");
+$c = Compute("0");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Let [`h(t)=11t-5t^2\text{.}`]
+a.  [`a=`][_]{$a}{5}
+
+a.  [`b=`][_]{$b}{5}
+
+a.  [`c=`][_]{$c}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Rewriting [`h(t)=11t-5t^2`] in the order [`at^2+bt+c`] gives [`h(t)=-5t^2+11t+0\text{.}`] So [`a=-5\text{,}`] [`b=11\text{,}`] and [`c=0\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

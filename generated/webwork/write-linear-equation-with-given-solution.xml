@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-write-linear-equation-with-given-solution" assembly-id="write-linear-equation-with-given-solution">
-  <static seed="2563">
+  <static seed="2427">
     <statement><p>Write a linear equation whose solution is <m>x = 5\text{.}</m> You may not write an equation whose left side is just <lq/><m>x</m><rq/> or whose right side is just <lq/><m>x</m><rq/>.</p>
 <p>There are infinitely many correct answers to this problem. <em>Be creative.</em> After finding an equation that works, see if you can come up with a different one that also works.</p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>

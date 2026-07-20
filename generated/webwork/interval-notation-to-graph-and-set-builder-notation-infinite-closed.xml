@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-interval-notation-to-graph-and-set-builder-notation-infinite-closed" assembly-id="interval-notation-to-graph-and-set-builder-notation-infinite-closed">
-  <static seed="2429">
-    <statement><p><m>{\left(-\infty ,7\right]}</m></p>
+  <static seed="2293">
+    <statement><p><m>{\left(-\infty ,6\right]}</m></p>
 <p><fillin name="AnSwEr0001"/></p>
 <p><fillin characters="12" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\text{interval}, \left(-\infty ,7\right]\right\}</m>
+        <m>\left\{\text{interval}, \left(-\infty ,6\right]\right\}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left\{x \mid x\le 7\right\}</m>
+        <m>\left\{x \mid x\le 6\right\}</m>
       </p>
     </answer>
   </static>

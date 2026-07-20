@@ -1,43 +1,43 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-complex-fractions-5-1-3" assembly-id="section-complex-fractions-5-1-3">
-  <static seed="1426" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions10.pg">
+  <static seed="1290" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions10.pg">
     <statement><p>Calculate the following. Use an improper fraction in your answer.</p>
 <p><ol label="a.">
 <li>
-<p><m>\displaystyle{\frac{ \frac{25}{3} }{ \frac{5}{7} } =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{\frac{ \frac{9}{4} }{ \frac{3}{7} } =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </li>
 <li>
-<p><m>\displaystyle{\frac{ \frac{t}{y} }{ \frac{x}{r} } =}</m> <fillin characters="19" name="AnSwEr0002"/></p>
+<p><m>\displaystyle{\frac{ \frac{t}{r} }{ \frac{x}{y} } =}</m> <fillin characters="19" name="AnSwEr0002"/></p>
 </li>
 </ol></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{35}{3}}</m>
+        <m>{\frac{21}{4}}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\frac{tr}{yx}</m>
+        <m>\frac{ty}{rx}</m>
       </p>
     </answer>
     <solution><p><alert>Problem 1</alert></p>
-<p>To simplify a complex fraction, we find the common denominator of all fractions. In this case, it is <m>21</m>. We multiply the complex fraction<rsq/>s numerator and denominator by this common denominator, and we have:</p>
+<p>To simplify a complex fraction, we find the common denominator of all fractions. In this case, it is <m>28</m>. We multiply the complex fraction<rsq/>s numerator and denominator by this common denominator, and we have:</p>
 <p><m>\displaystyle{\begin{aligned}
     
-      \amp = \frac{ \frac{25}{3} \cdot 21 }{ \frac{5}{7} \cdot 21 } \\
-      \amp = \frac{ 175 }{ 15 } \\
-      \amp = {{\frac{35}{3}}}
+      \amp = \frac{ \frac{9}{4} \cdot 28 }{ \frac{3}{7} \cdot 28 } \\
+      \amp = \frac{ 63 }{ 12 } \\
+      \amp = {{\frac{21}{4}}}
 \end{aligned}
     }</m></p>
 <p>Here is a simple way to do fraction multiplication:</p>
-<p><m>\displaystyle{ \frac{25}{3} \cdot 21 = 21 \div 3 \cdot 25 = 175 }</m></p>
+<p><m>\displaystyle{ \frac{9}{4} \cdot 28 = 28 \div 4 \cdot 9 = 63 }</m></p>
 <p><alert>Problem 2</alert></p>
-<p>To simplify a complex fraction, we find the common denominator of all fractions. In this case, it is <m>{yr}</m>. We multiply the complex fraction<rsq/>s numerator and denominator by this common denominator, and we have:</p>
+<p>To simplify a complex fraction, we find the common denominator of all fractions. In this case, it is <m>{ry}</m>. We multiply the complex fraction<rsq/>s numerator and denominator by this common denominator, and we have:</p>
 <p><m>\displaystyle{\begin{aligned}
     
-      \amp = \frac{ \frac{t}{y} \cdot {yr} }{ \frac{x}{r} \cdot {yr} } \\
-      \amp = {\frac{tr}{yx}}
+      \amp = \frac{ \frac{t}{r} \cdot {ry} }{ \frac{x}{y} \cdot {ry} } \\
+      \amp = {\frac{ty}{rx}}
 \end{aligned}
     }</m></p>
 </solution>

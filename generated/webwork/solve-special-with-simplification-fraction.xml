@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-special-with-simplification-fraction" assembly-id="solve-special-with-simplification-fraction">
-  <static seed="1527">
-    <statement><p><m>{{\frac{3}{2}}\mathopen{}\left(x+8\right)-\left({\frac{3}{14}}x-7\right)}={{\frac{148}{7}}+{\frac{3}{7}}\mathopen{}\left(-5+3x\right)}</m></p>
+  <static seed="1391">
+    <statement><p><m>{{\frac{5}{2}}\mathopen{}\left(i+5\right)-\left(-{\frac{9}{2}}i-2\right)}={{\frac{203}{6}}+{\frac{7}{3}}\mathopen{}\left(-7+3i\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left(-\infty ,\infty \right)\hbox{ or }\text{infinitely many solutions}</m>
+        <m>\text{no real solutions}</m>
       </p>
     </answer>
   </static>

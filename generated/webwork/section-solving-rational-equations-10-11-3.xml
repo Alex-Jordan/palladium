@@ -1,30 +1,30 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-11-3" assembly-id="section-solving-rational-equations-10-11-3">
-  <static seed="1603" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations28.pg">
+  <static seed="1467" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations28.pg">
     <statement><p>Solve the equation.</p>
-<p><m>\displaystyle{ {\frac{1}{y-5}-\frac{3}{y+6}}={-\frac{7}{y^{2}+y-30}}  }</m></p>
+<p><m>\displaystyle{ {\frac{4}{y-7}-\frac{3}{y-8}}={-\frac{2}{y^{2}-15y+56}}  }</m></p>
 <p><fillin characters="31" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{14\right\}</m>
+        <m>\left\{9\right\}</m>
       </p>
     </answer>
-    <solution><p>To clear fractions in an equation, multiply each side of the equation by a common denominator. For this problem, a common denominator is <m>{\left(y-5\right)\mathopen{}\left(y+6\right)}</m>.</p>
+    <solution><p>To clear fractions in an equation, multiply each side of the equation by a common denominator. For this problem, a common denominator is <m>{\left(y-7\right)\mathopen{}\left(y-8\right)}</m>.</p>
 <p><m>\displaystyle{\begin{aligned}
-  {\frac{1}{y-5}-\frac{3}{y+6}} \amp = {-\frac{7}{y^{2}+y-30}} \\
-  {\frac{1}{y-5}-\frac{3}{y+6}} \amp = {-\frac{7}{\left(y-5\right)\mathopen{}\left(y+6\right)}} \\
-  {\frac{1}{y-5}\mathopen{}\left(y-5\right)\mathopen{}\left(y+6\right)-\frac{3}{y+6}\mathopen{}\left(y-5\right)\mathopen{}\left(y+6\right)} \amp = {-\frac{7}{\left(y-5\right)\mathopen{}\left(y+6\right)}\mathopen{}\left(y-5\right)\mathopen{}\left(y+6\right)} \\
-  {y+6-3\mathopen{}\left(y-5\right)} \amp = {-7} \\
-  {y+6-3y+15} \amp = {-7} \\
-  {-2y+21} \amp = {-7} \\
-  {-2y} \amp = -28 \\
-  \frac{-2 y}{-2} \amp = \frac{-28}{-2} \\
-  y \amp = 14
+  {\frac{4}{y-7}-\frac{3}{y-8}} \amp = {-\frac{2}{y^{2}-15y+56}} \\
+  {\frac{4}{y-7}-\frac{3}{y-8}} \amp = {-\frac{2}{\left(y-7\right)\mathopen{}\left(y-8\right)}} \\
+  {\frac{4}{y-7}\mathopen{}\left(y-7\right)\mathopen{}\left(y-8\right)-\frac{3}{y-8}\mathopen{}\left(y-7\right)\mathopen{}\left(y-8\right)} \amp = {-\frac{2}{\left(y-7\right)\mathopen{}\left(y-8\right)}\mathopen{}\left(y-7\right)\mathopen{}\left(y-8\right)} \\
+  {4\mathopen{}\left(y-8\right)-3\mathopen{}\left(y-7\right)} \amp = {-2} \\
+  {4y-32-3y+21} \amp = {-2} \\
+  {y-11} \amp = {-2} \\
+  {y} \amp = 9 \\
+  
+  
 \end{aligned}
     }</m></p>
 <p>We must check solutions when we solve rational equations. In the original equation, both denominators cannot be <m>0</m>. We set them to <m>0</m>, so we can find out what values to exclude from the solution set.</p>
-<p>For this example, it<rsq/>s easy to see we must exclude <m>5</m> and <m>-6</m> from the solution set. These values are not in the solution set we got, so the final solution is <m>y=14</m>.</p>
+<p>For this example, it<rsq/>s easy to see we must exclude <m>7</m> and <m>8</m> from the solution set. These values are not in the solution set we got, so the final solution is <m>y=9</m>.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations28.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-9-8" assembly-id="section-multiplication-and-division-of-rational-expressions-7-9-8">
-  <static seed="1346" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions30.pg">
+  <static seed="1210" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions30.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{{\frac{xt^{3}}{3}} \div {\frac{xt}{9}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{ty^{8}}{3}} \div {\frac{ty^{3}}{18}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>3t^{2}</m>
+        <m>6y^{5}</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   {\frac{xt^{3}}{3}} \div {\frac{xt}{9}} 
-      \amp = {\frac{xt^{3}}{3}} \cdot {\frac{9}{xt}} \\
-      \amp = {3t^{2}}
+   {\frac{ty^{8}}{3}} \div {\frac{ty^{3}}{18}} 
+      \amp = {\frac{ty^{8}}{3}} \cdot {\frac{18}{ty^{3}}} \\
+      \amp = {6y^{5}}
 \end{aligned}
     }</m></p>
 </solution>

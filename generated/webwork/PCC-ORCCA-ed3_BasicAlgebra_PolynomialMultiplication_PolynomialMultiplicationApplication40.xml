@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication40" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication40">
-  <static seed="2705">
-    <statement><p>A rectangle<rsq/>s base can be modeled by <m>{x+6}</m> meters, and its height can be modeled by <m>{x+7}</m> meters. Use a polynomial to represent the rectangle<rsq/>s area in expanded form.</p>
+  <static seed="2569">
+    <statement><p>A rectangle<rsq/>s base can be modeled by <m>{x+6}</m> meters, and its height can be modeled by <m>{x-8}</m> meters. Use a polynomial to represent the rectangle<rsq/>s area in expanded form.</p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>x^{2}+13x+42</m>
+        <m>x^{2}-2x-48</m>
       </p>
     </answer>
     <solution><p>A rectangle<rsq/>s area formula is:</p>
@@ -14,13 +14,13 @@
 <p>After substitution, we have:</p>
 <p><m>\displaystyle{\begin{aligned}
    \text{area} \amp = (\text{length})\cdot(\text{width}) \\
-                     \amp = ({x+6})({x+7}) \\
-                     \amp = {x\mathopen{}\left(x+6\right)+7\mathopen{}\left(x+6\right)} \\
-                     \amp = {x^{2}+6x+7x+42} \\
-                     \amp = {x^{2}+13x+42}
+                     \amp = ({x+6})({x-8}) \\
+                     \amp = {x\mathopen{}\left(x+6\right)-8\mathopen{}\left(x+6\right)} \\
+                     \amp = {x^{2}+6x-8x-48} \\
+                     \amp = {x^{2}-2x-48}
 \end{aligned}
     }</m></p>
-<p>The rectangle<rsq/>s area is <m>{x^{2}+13x+42}</m> square meters.</p>
+<p>The rectangle<rsq/>s area is <m>{x^{2}-2x-48}</m> square meters.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/Appendices/A_9_5_73.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

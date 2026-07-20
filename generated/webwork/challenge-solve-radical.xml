@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-challenge-solve-radical" assembly-id="challenge-solve-radical">
-  <static seed="2048">
+  <static seed="1912">
     <statement><p>Solve for <m>x\text{.}</m></p>
 <p><me>\sqrt{1+\sqrt{7}}=\sqrt{2+\sqrt{\frac{1}{\sqrt{x}}}-1}</me></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>

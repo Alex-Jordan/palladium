@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals139-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals139-copy">
-  <static seed="1863">
-    <statement><p><m>\displaystyle{ \left(\sqrt{21} - \sqrt{3}\right)^2 }</m></p>
+  <static seed="1727">
+    <statement><p><m>\displaystyle{ \left(\sqrt{10} - \sqrt{2}\right)^2 }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>24-6\sqrt{7}</m>
+        <m>12-4\sqrt{5}</m>
       </p>
     </answer>
     <solution><p>To square the radical expression, use the FOIL method:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   \left(\sqrt{21} - \sqrt{3}\right)^2 
-   \amp = (\sqrt{21}-\sqrt{3})(\sqrt{21}-\sqrt{3}) \\
-   \amp = \sqrt{21}\cdot\sqrt{21} - \sqrt{21}\cdot\sqrt{3} - \sqrt{21}\cdot\sqrt{3} + (-\sqrt{3})(-\sqrt{3}) \\
-   \amp = 21 - \sqrt{21\cdot3} - \sqrt{21\cdot3} +3\\
-   \amp = 24 - 2\sqrt{21\cdot3} \\
-   \amp = 24 - 2\sqrt{3^2\cdot7} \\
-   \amp = 24 - 2\cdot 3 \cdot\sqrt{7} \\
-   \amp = {24-6\sqrt{7}}
+   \left(\sqrt{10} - \sqrt{2}\right)^2 
+   \amp = (\sqrt{10}-\sqrt{2})(\sqrt{10}-\sqrt{2}) \\
+   \amp = \sqrt{10}\cdot\sqrt{10} - \sqrt{10}\cdot\sqrt{2} - \sqrt{10}\cdot\sqrt{2} + (-\sqrt{2})(-\sqrt{2}) \\
+   \amp = 10 - \sqrt{10\cdot2} - \sqrt{10\cdot2} +2\\
+   \amp = 12 - 2\sqrt{10\cdot2} \\
+   \amp = 12 - 2\sqrt{2^2\cdot5} \\
+   \amp = 12 - 2\cdot 2 \cdot\sqrt{5} \\
+   \amp = {12-4\sqrt{5}}
 \end{aligned}
     }</m></p>
 </solution>

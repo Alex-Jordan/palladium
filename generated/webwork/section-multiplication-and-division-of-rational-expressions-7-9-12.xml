@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-9-12" assembly-id="section-multiplication-and-division-of-rational-expressions-7-9-12">
-  <static seed="1350" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions55.pg">
+  <static seed="1214" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions55.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{{\frac{1}{y^{2}-4yt-5t^{2}}} \div {\frac{y^{3}}{y^{2}+yt}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{1}{y^{2}+9yx+20x^{2}}} \div {\frac{y^{2}}{y^{2}+5yx}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{1}{y^{2}\mathopen{}\left(y-5t\right)}</m>
+        <m>\frac{1}{y\mathopen{}\left(y+4x\right)}</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   {\frac{1}{y^{2}-4yt-5t^{2}}} \div {\frac{y^{3}}{y^{2}+yt}} 
-      \amp = {\frac{1}{y^{2}-4yt-5t^{2}}} \cdot {\frac{y^{2}+yt}{y^{3}}} \\
-      \amp = \frac{{1}}{{\left(y+t\right)\mathopen{}\left(y-5t\right)}} \cdot \frac{{y\mathopen{}\left(y+t\right)}}{{y^{3}}} \\
-      \amp = {\frac{1}{y^{2}\mathopen{}\left(y-5t\right)}}
+   {\frac{1}{y^{2}+9yx+20x^{2}}} \div {\frac{y^{2}}{y^{2}+5yx}} 
+      \amp = {\frac{1}{y^{2}+9yx+20x^{2}}} \cdot {\frac{y^{2}+5yx}{y^{2}}} \\
+      \amp = \frac{{1}}{{\left(y+5x\right)\mathopen{}\left(y+4x\right)}} \cdot \frac{{y\mathopen{}\left(y+5x\right)}}{{y^{2}}} \\
+      \amp = {\frac{1}{y\mathopen{}\left(y+4x\right)}}
 \end{aligned}
     }</m></p>
 </solution>

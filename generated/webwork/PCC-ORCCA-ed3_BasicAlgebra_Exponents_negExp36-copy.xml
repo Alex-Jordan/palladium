@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp36-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp36-copy">
-  <static seed="1722">
-    <statement><p><m>\displaystyle\frac{-3r^{16}}{11r^{24}}</m></p>
+  <static seed="1586">
+    <statement><p><m>\displaystyle\frac{-11r^{35}}{7r^{37}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{-3}{11r^{8}}</m>
+        <m>\frac{-11}{7r^{2}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\displaystyle{\frac{a^m}{a^n} = a^{m-n}}</m></p>
 <p><m>\displaystyle{           \begin{aligned}
-                 \displaystyle\frac{-3r^{16}}{11r^{24}} \amp = \frac{-3}{11}r^{16-24}\\
-                                                       \amp  =\frac{-3}{11}r^{-8}\\
-                                    \amp  = -\frac{3}{11 r^{8}}
+                 \displaystyle\frac{-11r^{35}}{7r^{37}} \amp = \frac{-11}{7}r^{35-37}\\
+                                                       \amp  =\frac{-11}{7}r^{-2}\\
+                                    \amp  = -\frac{11}{7 r^{2}}
            \end{aligned}
     }</m></p>
 </solution>

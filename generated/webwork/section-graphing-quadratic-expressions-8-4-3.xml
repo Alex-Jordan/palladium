@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-graphing-quadratic-expressions-8-4-3" assembly-id="section-graphing-quadratic-expressions-8-4-3">
-  <static seed="1055" source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticApplications/FlyingObjectApp10.pg">
-    <statement><p>An object was shot up into the air with an initial vertical speed of <m>576</m> feet per second. Its height as time passes can be modeled by the quadratic equation <m>y={-16t^{2}+576t}</m>. Here <m>t</m> represents the number of seconds since the object<rsq/>s release, and <m>y</m> represents the object<rsq/>s height in feet.</p>
+  <static seed="588" source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticApplications/FlyingObjectApp10.pg">
+    <statement><p>An object was shot up into the air with an initial vertical speed of <m>352</m> feet per second. Its height as time passes can be modeled by the quadratic equation <m>y={-16t^{2}+352t}</m>. Here <m>t</m> represents the number of seconds since the object<rsq/>s release, and <m>y</m> represents the object<rsq/>s height in feet.</p>
 <p><ol label="a.">
 <li>
 <p>After <fillin characters="12" name="AnSwEr0001"/>, this object reached its maximum height of <fillin characters="11" name="AnSwEr0002"/>.</p>
@@ -10,33 +10,13 @@
 <p>This object flew for <fillin characters="12" name="AnSwEr0003"/> before it landed on the ground.</p>
 </li>
 <li>
-<p>This object was <fillin characters="12" name="AnSwEr0004"/> in the air <m>{12\ {\rm s}}</m> after its release.</p>
+<p>This object was <fillin characters="12" name="AnSwEr0004"/> in the air <m>{15\ {\rm s}}</m> after its release.</p>
 </li>
 <li>
-<p>This object was <m>{4400\ {\rm ft}}</m> high at two times: once <fillin characters="12" name="AnSwEr0005"/> after its release, and again later <fillin characters="12" name="AnSwEr0006"/> after its release.</p>
+<p>This object was <m>{1872\ {\rm ft}}</m> high at two times: once <fillin characters="12" name="AnSwEr0005"/> after its release, and again later <fillin characters="12" name="AnSwEr0006"/> after its release.</p>
 </li>
 </ol></p>
 </statement>
-    <answer>
-      <p>
-        <m>18\ {\rm s}</m>
-      </p>
-    </answer>
-    <answer>
-      <p>
-        <m>5184\ {\rm ft}</m>
-      </p>
-    </answer>
-    <answer>
-      <p>
-        <m>36\ {\rm s}</m>
-      </p>
-    </answer>
-    <answer>
-      <p>
-        <m>4608\ {\rm ft}</m>
-      </p>
-    </answer>
     <answer>
       <p>
         <m>11\ {\rm s}</m>
@@ -44,10 +24,30 @@
     </answer>
     <answer>
       <p>
-        <m>25\ {\rm s}</m>
+        <m>1936\ {\rm ft}</m>
       </p>
     </answer>
-    <solution><p>The function <m>f</m> given by the rule <m>f(t)={-16t^{2}+576t}</m> is quadratic. Identify that <m>a=-16, b=576, c=0</m>.</p>
+    <answer>
+      <p>
+        <m>22\ {\rm s}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>1680\ {\rm ft}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>9\ {\rm s}</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>13\ {\rm s}</m>
+      </p>
+    </answer>
+    <solution><p>The function <m>f</m> given by the rule <m>f(t)={-16t^{2}+352t}</m> is quadratic. Identify that <m>a=-16, b=352, c=0</m>.</p>
 <p><ol label="1.">
 <li>
 <p>Since <m>a\lt 0</m>, this parabola opens down. Its vertex represents the maximum height the object can go and when it got there.</p>
@@ -56,61 +56,61 @@
 <p>To find the vertex, we first find the parabola<rsq/>s axis of symmetry by the axis formula:</p>
 <p><m>\begin{aligned}
   t \amp = -\frac{b}{2a} \\
-  t \amp = -\frac{576}{2(-16)} \\
-  t \amp =  18
+  t \amp = -\frac{352}{2(-16)} \\
+  t \amp =  11
 \end{aligned}</m></p>
-<p>Next, we substitute <m>t= 18</m> into <m>f</m><rsq/>s formula, and we have:</p>
+<p>Next, we substitute <m>t= 11</m> into <m>f</m><rsq/>s formula, and we have:</p>
 <p><m>\begin{aligned}
-  f(t) \amp =  {-16t^{2}+576t}  \\
-  f(18) \amp =  -16(18)^2+576(18)  \\
-  f(18) \amp =  {5184} 
+  f(t) \amp =  {-16t^{2}+352t}  \\
+  f(11) \amp =  -16(11)^2+352(11)  \\
+  f(11) \amp =  {1936} 
 \end{aligned}</m></p>
-<p>The parabola<rsq/>s vertex is at <m>{\left(18,5184\right)}</m>. This implies that <m>{18\ {\rm s}}</m> after the release, the object reached its maximum height of <m>{5184\ {\rm ft}}</m>.</p>
+<p>The parabola<rsq/>s vertex is at <m>{\left(11,1936\right)}</m>. This implies that <m>{11\ {\rm s}}</m> after the release, the object reached its maximum height of <m>{1936\ {\rm ft}}</m>.</p>
 <p><ol label="1.">
 <li>
 <p>The parabola<rsq/>s <m>x</m>-intercepts represent the moments when the object was at a height of <m>0</m>: on the ground. We will solve the equation <m>f(t)=0</m> to find its <m>x</m>-intercepts. We have:</p>
 <p><m>\begin{aligned}
-   f(t) \amp = {-16t^{2}+576t} \\
-   0    \amp = {-16t^{2}+576t} \\
-   0    \amp = -t({16t-576}) \\
-   -t \amp = 0 \amp  \text{or} \amp \amp  {16t-576}\amp =0 \\
-   t \amp = 0 \amp  \text{or} \amp \amp  {16t}\amp =576 \\
-   t \amp = 0 \amp  \text{or} \amp \amp  t\amp =36
+   f(t) \amp = {-16t^{2}+352t} \\
+   0    \amp = {-16t^{2}+352t} \\
+   0    \amp = -t({16t-352}) \\
+   -t \amp = 0 \amp  \text{or} \amp \amp  {16t-352}\amp =0 \\
+   t \amp = 0 \amp  \text{or} \amp \amp  {16t}\amp =352 \\
+   t \amp = 0 \amp  \text{or} \amp \amp  t\amp =22
 \end{aligned}</m></p>
 </li>
 </ol></p>
-<p>This parabola has two <m>x</m>-intercepts: <m>(0,0)</m> and <m>(36,0)</m>. The point <m>(0,0)</m> represents the moment when the object was released; the point <m>(36,0)</m> implies the object fell back to the ground after <m>{36\ {\rm s}}</m>.</p>
+<p>This parabola has two <m>x</m>-intercepts: <m>(0,0)</m> and <m>(22,0)</m>. The point <m>(0,0)</m> represents the moment when the object was released; the point <m>(22,0)</m> implies the object fell back to the ground after <m>{22\ {\rm s}}</m>.</p>
 <p><ol label="1.">
 <li>
-<p>To find the object<rsq/>s height <m>12</m> seconds after it was released, we substitute <m>t=12</m> into the fomrula for <m>f</m>, and we have:</p>
+<p>To find the object<rsq/>s height <m>15</m> seconds after it was released, we substitute <m>t=15</m> into the fomrula for <m>f</m>, and we have:</p>
 <p><m>\begin{aligned}
-   f(t)   \amp = {-16t^{2}+576t} \\
-   f(12) \amp = -16(12)^2+576(12) \\
-   f(12) \amp = {4608}
+   f(t)   \amp = {-16t^{2}+352t} \\
+   f(15) \amp = -16(15)^2+352(15) \\
+   f(15) \amp = {1680}
 \end{aligned}</m></p>
 </li>
 </ol></p>
-<p>This result shows that <m>{12\ {\rm s}}</m> after the object was released, it was <m>{4608\ {\rm ft}}</m> high in the air.</p>
+<p>This result shows that <m>{15\ {\rm s}}</m> after the object was released, it was <m>{1680\ {\rm ft}}</m> high in the air.</p>
 <p><ol label="1.">
 <li>
-<p>To find when the object was <m>{4400\ {\rm ft}}</m> high, we solve the equation <m>f(t)={4400}</m>.</p>
+<p>To find when the object was <m>{1872\ {\rm ft}}</m> high, we solve the equation <m>f(t)={1872}</m>.</p>
 <p><m>\begin{aligned}
-   f(t) \amp = {-16t^{2}+576t} \\
-   {4400} \amp = {-16t^{2}+576t} \\
-   0   \amp = {-16t^{2}+576t-4400} 
+   f(t) \amp = {-16t^{2}+352t} \\
+   {1872} \amp = {-16t^{2}+352t} \\
+   0   \amp = {-16t^{2}+352t-1872} 
 \end{aligned}</m></p>
 </li>
 </ol></p>
-<p>For such big numbers, it<rsq/>s easier to use the Quadratic Formula to solve this equation. Identify that <m>a=-16,b=576,c={-4400}</m>. We have:</p>
+<p>For such big numbers, it<rsq/>s easier to use the Quadratic Formula to solve this equation. Identify that <m>a=-16,b=352,c={-1872}</m>. We have:</p>
 <p><m>\begin{aligned}
    t \amp = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a} \\
-   t \amp = \frac{-(576) \pm \sqrt{(576)^{2}-4(-16)({-4400})}}{2(-16)} \\
-   t \amp = \frac{-576 \pm \sqrt{{50176}}}{-32} \\
-   t \amp = \frac{-576 \pm {224}}{-32} \\
-   t \amp = \frac{-576 + {224}}{-32} \amp  \text{or} \amp \amp  t=\frac{-576 - {224}}{-32} \\
-   t \amp = 11 \amp  \text{or} \amp \amp  t=25
+   t \amp = \frac{-(352) \pm \sqrt{(352)^{2}-4(-16)({-1872})}}{2(-16)} \\
+   t \amp = \frac{-352 \pm \sqrt{{4096}}}{-32} \\
+   t \amp = \frac{-352 \pm {64}}{-32} \\
+   t \amp = \frac{-352 + {64}}{-32} \amp  \text{or} \amp \amp  t=\frac{-352 - {64}}{-32} \\
+   t \amp = 9 \amp  \text{or} \amp \amp  t=13
 \end{aligned}</m></p>
-<p>This result shows that the object was <m>{4400\ {\rm ft}}</m> high twice during its flight: once <m>{11\ {\rm s}}</m> after it was released (on its way up), and another time <m>25</m> seconds after it was released (on its way down).</p>
+<p>This result shows that the object was <m>{1872\ {\rm ft}}</m> high twice during its flight: once <m>{9\ {\rm s}}</m> after it was released (on its way up), and another time <m>13</m> seconds after it was released (on its way down).</p>
 <!-- PTX:WARNING: PGML wanted to place a horizontal rule here. -->
 <p>It<rsq/>s important to understand the role of each part of this question in the graph of <m>f</m>.</p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-quotient-with-powers-copy" assembly-id="exponent-quotient-with-powers-copy">
-  <static seed="2595">
-    <statement><p><m>{\frac{h^{2}}{9}\frac{h^{3}}{6}}</m></p>
+  <static seed="2459">
+    <statement><p><m>{\frac{g^{8}}{3}\frac{g^{7}}{9}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{h^{0}}{54}</m>
+        <m>\frac{g^{0}}{27}</m>
       </p>
     </answer>
   </static>

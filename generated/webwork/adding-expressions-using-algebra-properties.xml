@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-adding-expressions-using-algebra-properties" assembly-id="adding-expressions-using-algebra-properties">
-  <static seed="2310">
+  <static seed="2174">
     <introduction><p>Use the associative, commutative, and distributive properties to simplify the following expressions as much as possible.</p>
 </introduction>
     <task>

@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar70-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar70-copy">
-  <static seed="2646">
-    <statement><p><m>{-10a^{15}b^{10}}\left({9a^{6}b^{18}-5a^{15}b^{14}}\right)</m></p>
+  <static seed="2510">
+    <statement><p><m>{-10a^{18}b^{7}}\left({3a^{20}b^{15}-7a^{18}b^{15}}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-90a^{21}b^{28}+50a^{30}b^{24}</m>
+        <m>-30a^{38}b^{22}+70a^{36}b^{22}</m>
       </p>
     </answer>
     <solution><p>We multiply the polynomials using the rule <m>a^m\cdot a^n = a^{m+n}</m> 
 to guide us</p>
 <p><m>\displaystyle{    \begin{aligned}
-        \left({-10a^{15}b^{10}}\right)\left({9a^{6}b^{18}-5a^{15}b^{14}}\right)\amp = -90a^{15+6}b^{10+18}+50a^{15+15}b^{10+14}\\
-                      \amp  = {-90a^{21}b^{28}+50a^{30}b^{24}}
+        \left({-10a^{18}b^{7}}\right)\left({3a^{20}b^{15}-7a^{18}b^{15}}\right)\amp = -30a^{18+20}b^{7+15}+70a^{18+18}b^{7+15}\\
+                      \amp  = {-30a^{38}b^{22}+70a^{36}b^{22}}
     \end{aligned}
 }</m></p>
 <p>Note that we are using the <em>distributive</em> property of multiplication in this problem: <m>x(y+z)=xy+xz</m>.</p>

@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp100" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp100">
-  <static seed="1749">
-    <statement><p><m>\displaystyle\frac{\left(2r^{3}\right)^{3}}{r^{-9}}</m></p>
+  <static seed="1613">
+    <statement><p><m>\displaystyle\frac{\left(6r^{6}\right)^{2}}{r^{-5}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>8r^{18}</m>
+        <m>36r^{17}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\displaystyle{\frac{a^m}{a^n} = a^{m-n}}</m> 
 and also that <m>\left(a^m\right)^n=a^{mn}</m></p>
 <p><m>\begin{aligned}
-                 \displaystyle\frac{\left(2r^{3}\right)^{3}}{r^{-9}}\amp = 
-\displaystyle\frac{\left(2\right)^{3}r^{3\cdot3}}{r^{-9}}\\
- \amp = \displaystyle\frac{8r^{9}}{r^{-9}}\\
- \amp = 8r^{9-(-9)}\\
-                                    \amp  = {8r^{18}}
+                 \displaystyle\frac{\left(6r^{6}\right)^{2}}{r^{-5}}\amp = 
+\displaystyle\frac{\left(6\right)^{2}r^{6\cdot2}}{r^{-5}}\\
+ \amp = \displaystyle\frac{36r^{12}}{r^{-5}}\\
+ \amp = 36r^{12-(-5)}\\
+                                    \amp  = {36r^{17}}
            \end{aligned}</m></p>
 </solution>
   </static>

@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-square-roots-and-the-quadratic-formula-9-2-13" assembly-id="section-square-roots-and-the-quadratic-formula-9-2-13">
+  <static seed="1065">
+    <statement><p>A new electric car company is ready to sell its debut model. Studying the current state of the electric car market, they estimate that if they charge each customer <m>p</m> dollars, they will have <m>{1000000-4p}</m> sales. What is the lowest price that they could use so that they end up with a revenue of <m>{\$2}</m> billion?</p>
+<p><fillin characters="20" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\$2{,}016.26</m>
+      </p>
+    </answer>
+    <solution><p>If they set the price at <m>p</m> dollars per car, the revenue will be <m>(\text{number sold})\cdot\text{price}\text{,}</m> which is <m>({1000000-4p})p\text{,}</m> which simplifies to <m>{-4p^{2}+1000000p}\text{.}</m> We need to solve the equation <m>{-4p^{2}+1000000p}=2000000000\text{.}</m> In standard form, this is <m>{-4p^{2}+1000000p-2000000000}=0\text{,}</m> and the quadratic formula says:</p>
+<p><me>\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{-1000000\pm\sqrt{1000000000000-4(-4)(-2000000000)}}{2(-4)}\\
+\amp=\frac{-1000000\pm\sqrt{968000000000}}{-8}\\
+\amp\approx\frac{-1000000\pm{983869.9101}}{-8}\\
+x\approx\amp\frac{-1000000-{983869.9101}}{-8}\quad\text{or}\quad x\approx\frac{-1000000+{983869.9101}}{-8}\\
+x\approx\amp{247983.73876}\quad\text{or}\quad x\approx{2016.2612375}
+\end{aligned}</me></p>
+<p>The possible solutions are <m>{247983.73876}</m> and <m>{2016.2612375}\text{.}</m> They are both valid solutions, but the question was to find the <em>lowest</em> price we could set to reach a profit of <m>\text{.}</m> So we should set the price to be <m>{\$2{,}016.26}\text{.}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_4_7_156.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.4.7.156)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextCurrency.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Currency")->currency->addSymbol("dollars","dollar");
+Context()->variables->are(p=>'Real');
+Context()->flags->set(trimTrailingZeros=>1,tolerance=>100);
+Context()->noreduce('(-x)+y','(-x)-y');
+Context()->{format}{number} = "%.11g";
+$maxSales = 1000000;
+$desiredRevenue = random(1,2,1)*10**9;
+$desiredRevenueC = Currency($desiredRevenue/10**9);
+# no one will buy it for $250000;
+$rate = $maxSales/250000;
+$sales = Formula("$maxSales - $rate p")->reduce;
+$revenue = Formula("-$rate p^2 + $maxSales p")->reduce;
+$a = -$rate;
+$b = $maxSales;
+$c = -$desiredRevenue;
+$f = Formula("$a p^2 + $b p + $c")->reduce;
+$negb = -$b;
+$bsquared = $b*$b;
+$discriminant = $bsquared - 4*$a*$c;
+$sqrtdisc = Real(sqrt($discriminant));
+$a2 = 2*$a;
+$r = ($negb - $sqrtdisc)/$a2;
+$s = ($negb + $sqrtdisc)/$a2;
+$sC = Currency(Round($s,2));
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+A new electric car company is ready to sell its debut model. Studying the current state of the electric car market, they estimate that if they charge each customer [`p`] dollars, they will have [`[$sales]`] sales. What is the lowest price that they could use so that they end up with a revenue of [`[$desiredRevenueC]`] billion?
+
+[_]{$sC}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+If they set the price at [`p`] dollars per car, the revenue will be [`(\text{number sold})\cdot\text{price}\text{,}`] which is [`([$sales])p\text{,}`] which simplifies to [`[$revenue]\text{.}`] We need to solve the equation [`[$revenue]=[$desiredRevenue]\text{.}`] In standard form, this is [`[$f]=0\text{,}`] and the quadratic formula says:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{[$negb]\pm\sqrt{[$bsquared]-4([$a])([$c])}}{2([$a])}\\
+\amp=\frac{[$negb]\pm\sqrt{[$discriminant]}}{[$a2]}\\
+\amp\approx\frac{[$negb]\pm[$sqrtdisc]}{[$a2]}\\
+x\approx\amp\frac{[$negb]-[$sqrtdisc]}{[$a2]}\quad\text{or}\quad x\approx\frac{[$negb]+[$sqrtdisc]}{[$a2]}\\
+x\approx\amp[$r]\quad\text{or}\quad x\approx[$s]
+\end{aligned}
+```]
+
+The possible solutions are [`[$r]`] and [`[$s]\text{.}`] They are both valid solutions, but the question was to find the _lowest_ price we could set to reach a profit of [`[$desiredProfitC]\text{.}`] So we should set the price to be [`[$sC]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

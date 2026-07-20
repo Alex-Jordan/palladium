@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-14-16" assembly-id="section-solving-rational-equations-10-14-16">
-  <static seed="1637" source="Contrib/PCC/Math95/RatEqApplications/RatEqApplications4.pg">
-    <statement><p>Without any wind an airplane flies at <m>299\ {\textstyle\frac{\rm\mathstrut mi}{\rm\mathstrut hr}}</m>.  The plane travels <m>690\ {\rm mi}</m> into the wind and then returns with the wind in a total time of <m>4.63\ {\rm hr}</m>.  Find the average speed of the wind.</p>
+  <static seed="1501" source="Contrib/PCC/Math95/RatEqApplications/RatEqApplications4.pg">
+    <statement><p>Without any wind an airplane flies at <m>212\ {\textstyle\frac{\rm\mathstrut mi}{\rm\mathstrut hr}}</m>.  The plane travels <m>810\ {\rm mi}</m> into the wind and then returns with the wind in a total time of <m>7.67\ {\rm hr}</m>.  Find the average speed of the wind.</p>
 <p>The wind's speed is <fillin characters="15" name="AnSwEr0001"/>.</p>
 </statement>
     <answer>
       <p>
-        <m>16.7991\ {\textstyle\frac{\rm\mathstrut mi}{\rm\mathstrut hr}}</m>
+        <m>12.9208\ {\textstyle\frac{\rm\mathstrut mi}{\rm\mathstrut hr}}</m>
       </p>
     </answer>
   </static>

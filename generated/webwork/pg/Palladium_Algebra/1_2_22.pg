@@ -1,0 +1,81 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.2.22)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Point");
+$vertex = Point("(-8,-30)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the vertex coordinates for the function with formula [`f(x)=\frac12x^2+8x+2\text{.}`]
+
+[_]{$vertex}{16}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Since [`h=-\frac{b}{2a}\text{,}`] we have [`h=-\frac{8}{2(1/2)}=-8\text{.}`] And then
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+k \amp=f(-8)\\
+k \amp=\frac12(-8)^2+8(-8)+2\\
+k \amp=\frac12(64)-64+2\\
+k \amp=32-64+2\\
+k \amp=-30
+\end{aligned}
+```]
+
+So the vertex is at [`(-8,-30)\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

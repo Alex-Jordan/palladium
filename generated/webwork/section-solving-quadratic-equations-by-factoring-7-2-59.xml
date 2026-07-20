@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-quadratic-equations-by-factoring-7-2-59" assembly-id="section-solving-quadratic-equations-by-factoring-7-2-59">
-  <static seed="792" source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad365.pg">
+  <static seed="68" source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad365.pg">
     <statement><p>Solve the equation.</p>
-<p><m>{x^{3}+10x^{2}+24x} = 0</m></p>
+<p><m>{x^{3}-7x^{2}-8x} = 0</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{0,-4,-6\right\}</m>
+        <m>\left\{0,-1,8\right\}</m>
       </p>
     </answer>
     <solution><p>There are a few ways to solve quadratic equations- the easiest way to solve this particular 
 type of problem is to use the <em>zero product principle</em>.</p>
 <p><m>\begin{aligned}
-                {x^{3}+10x^{2}+24x} = 0 \amp \Rightarrow {x\mathopen{}\left(x+4\right)\mathopen{}\left(x+6\right)}=0\\
-                                \amp \Rightarrow x=0\text{ or }x=-4\text{ or } x=-6\\
+                {x^{3}-7x^{2}-8x} = 0 \amp \Rightarrow {x\mathopen{}\left(x+1\right)\mathopen{}\left(x-8\right)}=0\\
+                                \amp \Rightarrow x=0\text{ or }x=-1\text{ or } x=8\\
         \end{aligned}</m></p>
 <p>Each solution can be checked by substituting it into the original equation- this is left as an exercise.</p>
 </solution>

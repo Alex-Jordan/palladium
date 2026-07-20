@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-1-8" assembly-id="section-solving-rational-equations-10-1-8">
-  <static seed="1473" source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad80.pg">
+  <static seed="1337" source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad80.pg">
     <statement><p>Solve the equation.</p>
-<p><m>\left(x - 8\right)^2 = 4</m></p>
+<p><m>\left(x - 10\right)^2 = 25</m></p>
 <p><fillin characters="34" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{10,6\right\}</m>
+        <m>\left\{15,5\right\}</m>
       </p>
     </answer>
     <solution><p>There are a few ways to solve quadratic equations- the easiest way to solve this particular 
 type of problem is to use the <em>square root method</em>.</p>
 <p><m>\begin{aligned}
-               \left(x - 8\right)^2 = 4\amp  \Rightarrow x - 8 = 2\text{ or } x=-2\\
-                                    \amp  \Rightarrow x=10\text{ or } x=6
+               \left(x - 10\right)^2 = 25\amp  \Rightarrow x - 10 = 5\text{ or } x=-5\\
+                                    \amp  \Rightarrow x=15\text{ or } x=5
        \end{aligned}</m></p>
 <p>Note that <em>all</em> quadratic equations have <alert>two</alert> (possibly repeated) solutions; in this problem both solutions are real. Each solution can be checked by substituting it into the original equation- this is left as an exercise.</p>
 </solution>

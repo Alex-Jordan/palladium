@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-combine-four-terms-distinct-powers-decimals" assembly-id="combine-four-terms-distinct-powers-decimals">
-  <static seed="2294">
-    <statement><p><m>{9.3a^{5}+a^{4}+39a^{4}-a^{5}}</m></p>
+  <static seed="2158">
+    <statement><p><m>{-0.7X^{2}-38X^{5}+2.2X^{5}+X^{2}}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>40a^{4}+8.3a^{5}</m>
+        <m>0.3X^{2}-35.8X^{5}</m>
       </p>
     </answer>
   </static>

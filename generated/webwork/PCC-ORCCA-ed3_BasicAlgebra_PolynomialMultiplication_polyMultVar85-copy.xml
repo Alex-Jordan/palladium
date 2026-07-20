@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar85-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar85-copy">
-  <static seed="2674">
-    <statement><p><m>\left({a+6b}\right)\left({2a-3b}\right)</m></p>
+  <static seed="2538">
+    <statement><p><m>\left({a+8b}\right)\left({2a+10b}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>2a^{2}+9ab-18b^{2}</m>
+        <m>2a^{2}+26ab+80b^{2}</m>
       </p>
     </answer>
     <solution><p>We multiply the polynomials using the FOIL method: <alert>F</alert>irst <alert>O</alert>utside
 <alert>I</alert>nside <alert>L</alert>ast</p>
 <p><m>\displaystyle{    \begin{aligned}
-        \left({a+6b}\right)\left({2a-3b}\right)\amp = {a\cdot 2a-a\cdot 3b+6b\cdot 2a-6b\cdot 3b}\\
-                      \amp  = {2a^{2}+9ab-18b^{2}}
+        \left({a+8b}\right)\left({2a+10b}\right)\amp = {a\cdot 2a+a\cdot 10b+8b\cdot 2a+8b\cdot 10b}\\
+                      \amp  = {2a^{2}+26ab+80b^{2}}
     \end{aligned}
 }</m></p>
 </solution>

@@ -1,29 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-the-quadratic-formula-7-2-2-42" assembly-id="section-the-quadratic-formula-7-2-2-42">
-  <static seed="919">
-    <statement><p><m>{x^{2}+35}={12x}</m></p>
+  <static seed="452">
+    <statement><p><m>{x^{2}-8x}={9}</m></p>
 <p><fillin characters="40" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{5,7\right\}</m>
+        <m>\left\{-1,9\right\}</m>
       </p>
     </answer>
     <solution><p>To use the quadratic formula, we write the equation in standard form:</p>
-<p><me>{x^{2}-12x+35}=0</me></p>
-<p>and identify <m>a=1\text{,}</m> <m>b=-12\text{,}</m> and <m>c=35\text{.}</m></p>
+<p><me>{x^{2}-8x-9}=0</me></p>
+<p>and identify <m>a=1\text{,}</m> <m>b=-8\text{,}</m> and <m>c=-9\text{.}</m></p>
 <p><me>\begin{aligned}
 x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
-\amp=\frac{12\pm\sqrt{144-4(1)(35)}}{2}\\
-\amp=\frac{12\pm\sqrt{4}}{2}\\
-\amp=\frac{12\pm{2}}{2}\\
-x\amp=\frac{12-{2}}{2}\quad\text{or}\quad x=\frac{12+{2}}{2}\\
-x\amp=5\quad\text{or}\quad x=7
+\amp=\frac{8\pm\sqrt{64-4(1)(-9)}}{2}\\
+\amp=\frac{8\pm\sqrt{100}}{2}\\
+\amp=\frac{8\pm{10}}{2}\\
+x\amp=\frac{8-{10}}{2}\quad\text{or}\quad x=\frac{8+{10}}{2}\\
+x\amp=-1\quad\text{or}\quad x=9
 \end{aligned}</me></p>
-<p>The solution set is <m>{\left\{5,7\right\}}\text{.}</m></p>
+<p>The solution set is <m>{\left\{-1,9\right\}}\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_4_5_53.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_5_5_53.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -40,7 +40,7 @@ x\amp=5\quad\text{or}\quad x=7
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.4.5.53)
+## Problem1(1.5.5.53)
 ## Author()
 ## Institution()
 ## Language(en-US)

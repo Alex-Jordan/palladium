@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty20-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty20-copy">
-  <static seed="1821">
-    <statement><p><m>\displaystyle{ \frac{{\sqrt{2}}}{{\sqrt{50}}} }</m></p>
+  <static seed="1685">
+    <statement><p><m>\displaystyle{ \frac{{\sqrt{3}}}{{\sqrt{48}}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{1}{5}</m>
+        <m>\frac{1}{4}</m>
       </p>
     </answer>
     <solution><p>We will use the division property of radicals:</p>
@@ -14,10 +14,10 @@
 <p>The full process is:</p>
 <p><m>\displaystyle{ 
 \begin{aligned}[t]
-   \frac{{\sqrt{2}}}{{\sqrt{50}}}
-      \amp = \sqrt{\frac{2}{50}} \\
-      \amp = \sqrt{\frac{1}{25}} \\
-      \amp = {\frac{1}{5}}
+   \frac{{\sqrt{3}}}{{\sqrt{48}}}
+      \amp = \sqrt{\frac{3}{48}} \\
+      \amp = \sqrt{\frac{1}{16}} \\
+      \amp = {\frac{1}{4}}
 \end{aligned}
     }</m></p>
 </solution>

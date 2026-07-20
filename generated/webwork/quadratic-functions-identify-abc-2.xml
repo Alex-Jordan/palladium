@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-quadratic-functions-identify-abc-2" assembly-id="quadratic-functions-identify-abc-2">
+  <static seed="8">
+    <statement><p>Let <m>g(x)=x^2-16\text{.}</m>
+<ol label="a.">
+<li>
+<p><m>a=</m><fillin characters="5" name="AnSwEr0001"/></p>
+</li>
+<li>
+<p><m>b=</m><fillin characters="5" name="AnSwEr0002"/></p>
+</li>
+<li>
+<p><m>c=</m><fillin characters="5" name="AnSwEr0003"/></p>
+</li>
+</ol></p>
+</statement>
+    <answer>
+      <p>
+        <m>1</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>0</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>-16</m>
+      </p>
+    </answer>
+    <solution><p>Since there is no <m>x</m>-term, <m>b=0\text{.}</m> So <m>a=1\text{,}</m> <m>b=0\text{,}</m> and <m>c=-16\text{.}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/1_1_5_3.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.5.3)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+$a = Compute("1");
+$b = Compute("0");
+$c = Compute("-16");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Let [`g(x)=x^2-16\text{.}`]
+a.  [`a=`][_]{$a}{5}
+
+a.  [`b=`][_]{$b}{5}
+
+a.  [`c=`][_]{$c}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Since there is no [`x`]-term, [`b=0\text{.}`] So [`a=1\text{,}`] [`b=0\text{,}`] and [`c=-16\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

@@ -1,29 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-2-2" assembly-id="section-completing-the-square-8-2-2">
-  <static seed="1165">
+  <static seed="698">
     <statement><p>Solve the equation by completing the square.</p>
-<p><m>{t^{2}-6t}={-5}</m></p>
+<p><m>{y^{2}-4y}={5}</m></p>
 <p><fillin characters="25" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{1,5\right\}</m>
+        <m>\left\{-1,5\right\}</m>
       </p>
     </answer>
-    <solution><p>Compute <m>\left(\frac{-6}{2}\right)^2={9}\text{.}</m> Then</p>
+    <solution><p>Compute <m>\left(\frac{-4}{2}\right)^2={4}\text{.}</m> Then</p>
 <p><me>\begin{aligned}
-{t^{2}-6t}+{9}\amp = {-5}+{9}\\
-{t^{2}-6t}+{9}\amp = {4}\\
-\left({t-\frac{3}{1}}\right)^2\amp = {4}
+{y^{2}-4y}+{4}\amp = {5}+{4}\\
+{y^{2}-4y}+{4}\amp = {9}\\
+\left({y-\frac{2}{1}}\right)^2\amp = {9}
 \end{aligned}</me></p>
 <p><me>\begin{aligned}
-{t-\frac{3}{1}} \amp = -{2}\amp\amp\text{or}\amp {t-\frac{3}{1}} \amp = {2}\\
-t \amp = 1\amp\amp\text{or}\amp t \amp = 5
+{y-\frac{2}{1}} \amp = -{3}\amp\amp\text{or}\amp {y-\frac{2}{1}} \amp = {3}\\
+y \amp = -1\amp\amp\text{or}\amp y \amp = 5
 \end{aligned}</me></p>
-<p>So the solution set is <m>{\left\{1,5\right\}}\text{.}</m></p>
+<p>So the solution set is <m>{\left\{-1,5\right\}}\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_8_6_13.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_9_6_13.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -40,7 +40,7 @@ t \amp = 1\amp\amp\text{or}\amp t \amp = 5
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.8.6.13)
+## Problem1(1.9.6.13)
 ## Author()
 ## Institution()
 ## Language(en-US)

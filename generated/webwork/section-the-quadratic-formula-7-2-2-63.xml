@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-the-quadratic-formula-7-2-2-63" assembly-id="section-the-quadratic-formula-7-2-2-63">
-  <static seed="940">
-    <statement><p><m>{2x^{2}+3}={-2x}</m></p>
+  <static seed="473">
+    <statement><p><m>{4x^{2}+7}={9x}</m></p>
 <p><fillin characters="40" name="AnSwEr0001"/></p>
 </statement>
     <answer>
@@ -10,17 +10,17 @@
       </p>
     </answer>
     <solution><p>To use the quadratic formula, we write the equation in standard form:</p>
-<p><me>{2x^{2}+2x+3}=0</me></p>
-<p>and identify <m>a=2\text{,}</m> <m>b=2\text{,}</m> and <m>c=3\text{.}</m></p>
+<p><me>{4x^{2}-9x+7}=0</me></p>
+<p>and identify <m>a=4\text{,}</m> <m>b=-9\text{,}</m> and <m>c=7\text{.}</m></p>
 <p><me>\begin{aligned}
 x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
-\amp=\frac{-2\pm\sqrt{4-4(2)(3)}}{2(2)}\\
-\amp=\frac{-2\pm\sqrt{-20}}{2(2)}
+\amp=\frac{9\pm\sqrt{81-4(4)(7)}}{2(4)}\\
+\amp=\frac{9\pm\sqrt{-31}}{2(4)}
 \end{aligned}</me></p>
 <p>Since we are asked to take the square root of a negative number, there are no real solutions.</p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_4_5_73.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_5_5_73.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg copied-from="section-the-quadratic-formula-7-2-2-62"><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -37,7 +37,7 @@ x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.4.5.74)
+## Problem1(1.5.5.74)
 ## Author()
 ## Institution()
 ## Language(en-US)

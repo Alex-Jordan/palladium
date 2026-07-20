@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-quadratic-equations-by-factoring-8-3-3" assembly-id="section-solving-quadratic-equations-by-factoring-8-3-3">
+  <static seed="906">
+    <statement><p>Solve for <m>x</m> in the equation <m>8x^{30}-2x^{28} = 0 \text{.}</m></p>
+<p><fillin characters="20" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{0,\frac{1}{2},\frac{-1}{2}\right\}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_3_6_70.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.3.6.70)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("FiniteSolutionSets");
+$a = list_random(2,3,5);
+$b = list_random(4,9,16,25);
+$c = $a * $b;
+$exp = random(12,50,2);
+$smallexp = $exp - 2;
+$sqrt = Formula("sqrt($b)")->reduce;
+$answer = Formula("{0, 1/$sqrt, -1/$sqrt}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve for [`x`] in the equation [`[$c]x^{[$exp]}-[$a]x^{[$smallexp]} = 0 \text{.}`]
+
+[_]{$answer}{20}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

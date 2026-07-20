@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_MultiplyRadicals40-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_MultiplyRadicals40-copy">
-  <static seed="1835">
-    <statement><p><m>\displaystyle{ {\sqrt{2}} \cdot {8\sqrt{8}} }</m></p>
+  <static seed="1699">
+    <statement><p><m>\displaystyle{ {\sqrt{2}} \cdot {5\sqrt{8}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>32</m>
+        <m>20</m>
       </p>
     </answer>
     <solution><p>We will use the multiplication property of radicals:</p>
 <p><m>\displaystyle{ \sqrt{a} \cdot \sqrt{b} = \sqrt{ab} }</m></p>
 <p>We have:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   {\sqrt{2}} \cdot {8\sqrt{8}} 
-     \amp = 8 \sqrt{2} \cdot \sqrt{8} \\
-     \amp = 8 \sqrt{2 \cdot 8} \\
-     \amp = 8 \sqrt{16} \\
-     \amp = 8 \cdot 4 \\
-     \amp = {32}
+   {\sqrt{2}} \cdot {5\sqrt{8}} 
+     \amp = 5 \sqrt{2} \cdot \sqrt{8} \\
+     \amp = 5 \sqrt{2 \cdot 8} \\
+     \amp = 5 \sqrt{16} \\
+     \amp = 5 \cdot 4 \\
+     \amp = {20}
 \end{aligned}
     }</m></p>
 </solution>

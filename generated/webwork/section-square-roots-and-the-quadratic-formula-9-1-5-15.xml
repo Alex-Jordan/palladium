@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-square-roots-and-the-quadratic-formula-9-1-5-15" assembly-id="section-square-roots-and-the-quadratic-formula-9-1-5-15">
+  <static seed="1034">
+    <statement><p><m>{3\sqrt{2x}-4}={-2x}</m></p>
+<p><fillin characters="40" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{\frac{1}{2}\right\}</m>
+      </p>
+    </answer>
+    <solution><p>First we arrange so the radical term is the only term on one side.</p>
+<p><me>\begin{aligned}
+{3\sqrt{2x}-4}\amp={-2x}\\
+{3\sqrt{2x}}\amp={4-2x}
+\end{aligned}</me></p>
+<p>Now we square each side to obtain a quadratic equation. Then we can rearrange that into standard form.</p>
+<p><me>\begin{aligned}
+\left({3\sqrt{2x}}\right)^2\amp=\left({4-2x}\right)^2\\
+{18x}\amp={4x^{2}-16x+16}\\
+{18x}\amp={4x^{2}-16x+16}\\
+0\amp={4x^{2}-34x+16}
+\end{aligned}</me></p>
+<p>Now we can identify <m>a={4}\text{,}</m> <m>b={-34}\text{,}</m> and <m>c={16}\text{,}</m> and apply the quadratic formula.</p>
+<p><me>\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{{34}\pm\sqrt{{1156}-4\left({4}\right)\left({16}\right)}}{2\left({4}\right)}\\
+\amp=\frac{{34}\pm\sqrt{{900}}}{{8}}\\
+\amp=\frac{{34}\pm{30}}{{8}}\\
+x\amp=\frac{{34}-{30}}{{8}}\quad\text{or}\quad x=\frac{{34}+{30}}{{8}}\\
+x\amp={{\frac{1}{2}}}\quad\text{or}\quad x={8}
+\end{aligned}</me></p>
+<p>The only possible solutions are <m>{{\frac{1}{2}}}</m> and <m>{8}\text{.}</m> We can check that <m>{{\frac{1}{2}}}</m> solves the original equation, but <m>{8}</m> does not. So the solution set is <m>{\left\{\frac{1}{2}\right\}}\text{.}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_4_7_125.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.4.7.125)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "PGchoicemacros.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+# unshifted $r, $s
+$rs = list_random([1,4],[1,9],[1,16],[4,9],[4,16],[9,16]);
+($r,$s) = ($rs->[0],$rs->[1]);
+if ($r % 2 != $s % 2 and $r % 3 != $s % 3) {$n = random(2,3,1)}
+elsif ($r % 2 != $s % 2) {$n = 2}
+elsif ($r % 3 != $s % 3) {$n = 3}
+else {$n = 5};
+# shift c such that n divides (r-c)
+$c = $r - non_zero_random(-3,3,1);
+Context("Fraction");
+#(r,sqrt(r)) and (s,-sqrt(s))
+$m = Fraction(-sqrt($s)-sqrt($r),$s-$r);
+$b = Fraction(sqrt($r) - $m*$r);
+$newm = $m*$n;
+$newb = $m*$c+$b;
+$a = lcm(($newm->value)[1],($newb->value)[1]);
+$anewm = $a*$newm;
+$anewb = $a*$newb;
+($origleft,$origright) = (Formula("$anewm x")->reduce,Formula("$anewb"))[NchooseK(2,2)];
+$origleft = Formula("$a sqrt($n x + $c)-$origleft")->reduce;
+$left = Formula("$a sqrt($n x + $c)")->reduce;
+$right = Formula("$anewm x + $anewb")->reduce;
+$leftsquared = Formula("$a^2($n x + $c)")->reduce;
+$leftsquaredexpanded = Formula("$a^2*$n x + $a^2*$c")->reduce;
+$rightsquared = Formula("($anewm)^2 x^2 + 2*$anewm*$anewb x + ($anewb)^2")->reduce;
+$A = ($anewm)**2;
+$B = 2*$anewm*$anewb - $a*$a*$n;
+$C = ($anewb)**2 - $a*$a*$c;
+$f = Formula("$A x^2 + $B x + $C")->reduce;
+$negB = -$B;
+$Bsquared = $B*$B;
+$discriminant = $Bsquared - 4*$A*$C;
+$A2 = 2*$A;
+$sqrtdisc = Fraction(sqrt($discriminant));
+($sol1,$sol2) = map{Fraction($_-$c,$n)}($r,$s);
+Context("FiniteSolutionSets");
+$solutions = Formula("{$sol1}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve the equation.
+
+[`[$origleft]=[$origright]`]
+
+[@KeyboardInstructions('If you need to enter a square root like [`\sqrt{17}\text{,}`] type [|sqrt(17)|]*. If there is no real solution, enter [|no real solution|]*.')@]**
+
+[_]{$solutions}{40}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+First we arrange so the radical term is the only term on one side.
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+[$origleft]\amp=[$origright]\\
+[$left]\amp=[$right]
+\end{aligned}
+```]
+
+Now we square each side to obtain a quadratic equation. Then we can rearrange that into standard form.
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+\left([$left]\right)^2\amp=\left([$right]\right)^2\\
+[$leftsquared]\amp=[$rightsquared]\\
+[$leftsquaredexpanded]\amp=[$rightsquared]\\
+0\amp=[$f]
+\end{aligned}
+```]
+
+Now we can identify [`a=[$A]\text{,}`] [`b=[$B]\text{,}`] and [`c=[$C]\text{,}`] and apply the quadratic formula.
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{[$negB]\pm\sqrt{[$Bsquared]-4\left([$A]\right)\left([$C]\right)}}{2\left([$A]\right)}\\
+\amp=\frac{[$negB]\pm\sqrt{[$discriminant]}}{[$A2]}\\
+\amp=\frac{[$negB]\pm[$sqrtdisc]}{[$A2]}\\
+x\amp=\frac{[$negB]-[$sqrtdisc]}{[$A2]}\quad\text{or}\quad x=\frac{[$negB]+[$sqrtdisc]}{[$A2]}\\
+x\amp=[$sol1]\quad\text{or}\quad x=[$sol2]
+\end{aligned}
+```]
+
+The only possible solutions are [`[$sol1]`] and [`[$sol2]\text{.}`] We can check that [`[$sol1]`] solves the original equation, but [`[$sol2]`] does not. So the solution set is [`[$solutions]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

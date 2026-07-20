@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-world-record-hammer-throw" assembly-id="world-record-hammer-throw">
-  <static seed="2434">
+  <static seed="2298">
     <statement><p>The world record for the women<rsq/>s hammer throw is held by Anita Włodarczyk, who threw 82.98 m. Write an interval for the distance <m>d</m> of a throw that could beat her record.</p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 <p><fillin characters="12" name="AnSwEr0002"/></p>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-product-power-to-power" assembly-id="exponent-product-power-to-power">
-  <static seed="2614">
-    <statement><p><m>{5j^{2}\mathopen{}\left(3j^{4}\right)^{3}}</m></p>
+  <static seed="2478">
+    <statement><p><m>{4i^{3}\mathopen{}\left(5i^{4}\right)^{2}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>135j^{14}</m>
+        <m>100i^{11}</m>
       </p>
     </answer>
   </static>

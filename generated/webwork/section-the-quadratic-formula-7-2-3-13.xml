@@ -1,39 +1,39 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-the-quadratic-formula-7-2-3-13" assembly-id="section-the-quadratic-formula-7-2-3-13">
-  <static seed="961">
-    <statement><p><m>{5\sqrt{2x+4}-2x}={8}</m></p>
+  <static seed="494">
+    <statement><p><m>{6\sqrt{5x+5}-13}={5x}</m></p>
 <p><fillin characters="40" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\frac{-3}{2},6\right\}</m>
+        <m>\left\{\frac{-1}{5},\frac{11}{5}\right\}</m>
       </p>
     </answer>
     <solution><p>First we arrange so the radical term is the only term on one side.</p>
 <p><me>\begin{aligned}
-{5\sqrt{2x+4}-2x}\amp={8}\\
-{5\sqrt{2x+4}}\amp={2x+8}
+{6\sqrt{5x+5}-13}\amp={5x}\\
+{6\sqrt{5x+5}}\amp={5x+13}
 \end{aligned}</me></p>
 <p>Now we square each side to obtain a quadratic equation. Then we can rearrange that into standard form.</p>
 <p><me>\begin{aligned}
-\left({5\sqrt{2x+4}}\right)^2\amp=\left({2x+8}\right)^2\\
-{25\mathopen{}\left(2x+4\right)}\amp={4x^{2}+32x+64}\\
-{50x+100}\amp={4x^{2}+32x+64}\\
-0\amp={4x^{2}-18x-36}
+\left({6\sqrt{5x+5}}\right)^2\amp=\left({5x+13}\right)^2\\
+{36\mathopen{}\left(5x+5\right)}\amp={25x^{2}+130x+169}\\
+{180x+180}\amp={25x^{2}+130x+169}\\
+0\amp={25x^{2}-50x-11}
 \end{aligned}</me></p>
-<p>Now we can identify <m>a={4}\text{,}</m> <m>b={-18}\text{,}</m> and <m>c={-36}\text{,}</m> and apply the quadratic formula.</p>
+<p>Now we can identify <m>a={25}\text{,}</m> <m>b={-50}\text{,}</m> and <m>c={-11}\text{,}</m> and apply the quadratic formula.</p>
 <p><me>\begin{aligned}
 x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
-\amp=\frac{{18}\pm\sqrt{{324}-4\left({4}\right)\left({-36}\right)}}{2\left({4}\right)}\\
-\amp=\frac{{18}\pm\sqrt{{900}}}{{8}}\\
-\amp=\frac{{18}\pm{30}}{{8}}\\
-x\amp=\frac{{18}-{30}}{{8}}\quad\text{or}\quad x=\frac{{18}+{30}}{{8}}\\
-x\amp={-{\frac{3}{2}}}\quad\text{or}\quad x={6}
+\amp=\frac{{50}\pm\sqrt{{2500}-4\left({25}\right)\left({-11}\right)}}{2\left({25}\right)}\\
+\amp=\frac{{50}\pm\sqrt{{3600}}}{{50}}\\
+\amp=\frac{{50}\pm{60}}{{50}}\\
+x\amp=\frac{{50}-{60}}{{50}}\quad\text{or}\quad x=\frac{{50}+{60}}{{50}}\\
+x\amp={-{\frac{1}{5}}}\quad\text{or}\quad x={{\frac{11}{5}}}
 \end{aligned}</me></p>
-<p>The only possible solutions are <m>{-{\frac{3}{2}}}</m> and <m>{6}\text{.}</m> They each check as valid solutions in the original equation, so the solution set is <m>{\left\{\frac{-3}{2},6\right\}}\text{.}</m></p>
+<p>The only possible solutions are <m>{-{\frac{1}{5}}}</m> and <m>{{\frac{11}{5}}}\text{.}</m> They each check as valid solutions in the original equation, so the solution set is <m>{\left\{\frac{-1}{5},\frac{11}{5}\right\}}\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_4_5_95.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_5_5_95.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -50,7 +50,7 @@ x\amp={-{\frac{3}{2}}}\quad\text{or}\quad x={6}
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.4.5.95)
+## Problem1(1.5.5.95)
 ## Author()
 ## Institution()
 ## Language(en-US)

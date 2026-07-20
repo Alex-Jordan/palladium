@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-order-of-operations-7-1-2-81" assembly-id="section-order-of-operations-7-1-2-81">
-  <static seed="2221">
-    <statement><p><m>8 \cdot  \dfrac{288 \div  2}{8 + 4}</m></p>
+  <static seed="2085">
+    <statement><p><m>6 \cdot  \dfrac{2 \cdot  16}{16 - 8}</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>96</m>
+        <m>24</m>
       </p>
     </answer>
   </static>

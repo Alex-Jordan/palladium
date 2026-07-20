@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp105" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp105">
-  <static seed="1751">
-    <statement><p><m>\displaystyle\left(\frac{t^{9}}{t^{7}}\right)^{-5}</m></p>
+  <static seed="1615">
+    <statement><p><m>\displaystyle\left(\frac{t^{14}}{t^{2}}\right)^{-4}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{1}{t^{10}}</m>
+        <m>\frac{1}{t^{48}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\displaystyle{\frac{a^m}{a^n} = a^{m-n}}</m></p>
 <p><m>\begin{aligned}
-                 \left(\displaystyle\frac{t^{9}}{t^{7}}\right)^{-5} \amp = \left(t^{9-7}\right)^{-5}\\
-\amp = \left(t^{2}\right)^{-5}\\
-\amp  = t^{2\cdot(-5)}\\
-                                                       \amp  =t^{-10}\\
-                                    \amp  = {\frac{1}{t^{10}}}
+                 \left(\displaystyle\frac{t^{14}}{t^{2}}\right)^{-4} \amp = \left(t^{14-2}\right)^{-4}\\
+\amp = \left(t^{12}\right)^{-4}\\
+\amp  = t^{12\cdot(-4)}\\
+                                                       \amp  =t^{-48}\\
+                                    \amp  = {\frac{1}{t^{48}}}
            \end{aligned}</m></p>
 </solution>
   </static>

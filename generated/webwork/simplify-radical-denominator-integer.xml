@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-radical-denominator-integer" assembly-id="simplify-radical-denominator-integer">
-  <static seed="1890">
-    <statement><p><m>{\sqrt[4]{\frac{7}{16}}}\text{.}</m></p>
+  <static seed="1754">
+    <statement><p><m>{\sqrt[3]{\frac{2}{27}}}\text{.}</m></p>
 <p><fillin characters="30" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{1}{2}\sqrt[4]{7}</m>
+        <m>\frac{1}{3}\sqrt[3]{2}</m>
       </p>
     </answer>
     <solution><p><me>\begin{aligned}
-{\sqrt[4]{\frac{7}{16}}}\amp = \frac{\sqrt[4]{7}}{\sqrt[4]{16}}\\
-\amp = \frac{\sqrt[4]{7}}{2}\\
-\amp = \frac{1}{2}\sqrt[4]{7}
+{\sqrt[3]{\frac{2}{27}}}\amp = \frac{\sqrt[3]{2}}{\sqrt[3]{27}}\\
+\amp = \frac{\sqrt[3]{2}}{3}\\
+\amp = \frac{1}{3}\sqrt[3]{2}
 \end{aligned}</me></p>
 </solution>
   </static>

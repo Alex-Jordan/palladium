@@ -1,27 +1,27 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp165-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp165-copy">
-  <static seed="1776">
-    <statement><p><m>\displaystyle\left(\frac{r^{3}}{x^{12}}\right)^{-5}</m></p>
+  <static seed="1640">
+    <statement><p><m>\displaystyle\left(\frac{r^{9}}{t^{12}}\right)^{-4}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{x^{60}}{r^{15}}</m>
+        <m>\frac{t^{48}}{r^{36}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\left(a^m\right)^{n}=a^{mn}</m></p>
 <p><m>\begin{aligned}
-                 \left(\frac{r^{3}}{x^{12}}\right)^{-5}
-                      \amp = \frac{r^{3\cdot(-5)}}{x^{12\cdot(-5)}}\\
-                      \amp = \frac{r^{-15}}{x^{-60}}\\
-                                    \amp  = {\frac{x^{60}}{r^{15}}}
+                 \left(\frac{r^{9}}{t^{12}}\right)^{-4}
+                      \amp = \frac{r^{9\cdot(-4)}}{t^{12\cdot(-4)}}\\
+                      \amp = \frac{r^{-36}}{t^{-48}}\\
+                                    \amp  = {\frac{t^{48}}{r^{36}}}
            \end{aligned}</m></p>
 <p>Alternatively, you may prefer</p>
 <p><m>\begin{aligned}
-                 \left(\frac{r^{3}}{x^{12}}\right)^{-5}
-                      \amp = \left(\frac{x^{12}}{r^{3}}\right)^{5}\\
-                      \amp  = \frac{x^{12\cdot(5)}}{r^{3\cdot(5)}}\\
-                                    \amp  = {\frac{x^{60}}{r^{15}}}
+                 \left(\frac{r^{9}}{t^{12}}\right)^{-4}
+                      \amp = \left(\frac{t^{12}}{r^{9}}\right)^{4}\\
+                      \amp  = \frac{t^{12\cdot(4)}}{r^{9\cdot(4)}}\\
+                                    \amp  = {\frac{t^{48}}{r^{36}}}
            \end{aligned}</m></p>
 </solution>
   </static>

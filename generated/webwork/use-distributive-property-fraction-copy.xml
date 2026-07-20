@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-use-distributive-property-fraction-copy" assembly-id="use-distributive-property-fraction-copy">
-  <static seed="2345">
-    <statement><p>Apply the distributive property to <m>{\frac{9}{5}\mathopen{}\left(H+\frac{5}{6}\right)}\text{.}</m></p>
+  <static seed="2209">
+    <statement><p>Apply the distributive property to <m>{\frac{3}{4}\mathopen{}\left(D+\frac{7}{10}\right)}\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{9}{5}H+\frac{9}{5}\frac{5}{6}</m>
+        <m>\frac{3}{4}D+\frac{3}{4}\frac{7}{10}</m>
       </p>
     </answer>
   </static>

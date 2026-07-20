@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-1-4" assembly-id="section-multiplication-and-division-of-rational-expressions-7-1-4">
-  <static seed="1244" source="Contrib/PCC/BasicAlgebra/FractionArithmetic/MultiplyFractions60.pg">
-    <statement><p>Multiply: <m>\displaystyle{-\frac{16}{9} \cdot \left(-\frac{9}{20}\right)}</m></p>
+  <static seed="1108" source="Contrib/PCC/BasicAlgebra/FractionArithmetic/MultiplyFractions60.pg">
+    <statement><p>Multiply: <m>\displaystyle{-\frac{14}{15} \cdot \left(-\frac{19}{28}\right)}</m></p>
 <p><fillin characters="9" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{4}{5}}</m>
+        <m>{\frac{19}{30}}</m>
       </p>
     </answer>
     <solution><p>To multiply two fractions, multiply both numerators and both denominators. Don<rsq/>t forget to reduce the fraction if possible.</p>
 <p>Remember: a negative number times a negative number produces a positive result.</p>
 <p>We have:</p>
 <p><m>\displaystyle{\begin{aligned}
-    -\frac{16}{9} \cdot \left(-\frac{9}{20}\right)
-    \amp = \frac{16}{9} \cdot \frac{9}{20}\amp \hbox{We can divide both the first numerator and second denominator by 4.}\\
-    \amp = \frac{4}{9} \cdot \frac{9}{5}\\
-    \amp = \frac{4}{5}
+    -\frac{14}{15} \cdot \left(-\frac{19}{28}\right)
+    \amp = \frac{14}{15} \cdot \frac{19}{28}\amp \hbox{We can divide both the first numerator and second denominator by 14.}\\
+    \amp = \frac{1}{15} \cdot \frac{19}{2}\\
+    \amp = \frac{19}{30}
     \end{aligned} }</m></p>
 </solution>
   </static>

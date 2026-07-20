@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents24" assembly-id="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents24">
-  <static seed="2018">
-    <statement><p><m>\displaystyle{\sqrt{m}\sqrt[6]{m}}</m></p>
+  <static seed="1882">
+    <statement><p><m>\displaystyle{\sqrt{b}\sqrt[6]{b}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>m^{\frac{2}{3}}</m>
+        <m>b^{\frac{2}{3}}</m>
       </p>
     </answer>
     <solution><p>We rewrite the expression using rational exponents <m>\sqrt[n]{x^m} = x^\frac{m}{n}</m>. Then we use exponent properties and add the fractions.</p>
 <p><m>\displaystyle{\begin{aligned}
-   \sqrt{m}\sqrt[6]{m}
-           \amp = m^{\frac{1}{2}}m^{\frac{1}{6}} \\
-           \amp = m^{\frac{1}{2}+\frac{1}{6}} \\
-           \amp = m^{\frac{6}{12}+\frac{2}{12}} \\
-           \amp = m^{\frac{8}{12}} \\
+   \sqrt{b}\sqrt[6]{b}
+           \amp = b^{\frac{1}{2}}b^{\frac{1}{6}} \\
+           \amp = b^{\frac{1}{2}+\frac{1}{6}} \\
+           \amp = b^{\frac{6}{12}+\frac{2}{12}} \\
+           \amp = b^{\frac{8}{12}} \\
 \end{aligned}
     }</m></p>
 <p>If the fraction in the exponent is not fully simplified after the last step, make sure to reduce it to its lowest terms.</p>

@@ -1,39 +1,39 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-3-7" assembly-id="section-completing-the-square-8-3-7">
-  <static seed="1186">
-    <statement><p>Consider <m>h(t)={3t^{2}+3t-1}\text{.}</m>
+  <static seed="719">
+    <statement><p>Consider <m>G(x)={6x^{2}+48x-2}\text{.}</m>
 <ol label="a.">
 <li>
-<p>Give the formula for <m>h</m> in vertex form.</p>
+<p>Give the formula for <m>G</m> in vertex form.</p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </li>
 <li>
-<p>What is the vertex of the parabola graph of <m>h\text{?}</m></p>
+<p>What is the vertex of the parabola graph of <m>G\text{?}</m></p>
 <p><fillin characters="20" name="AnSwEr0002"/></p>
 </li>
 </ol></p>
 </statement>
     <answer>
       <p>
-        <m>h\mathopen{}\left(t\right) = 3\mathopen{}\left(t+\frac{1}{2}\right)^{2}-\frac{7}{4}</m>
+        <m>G\mathopen{}\left(x\right) = 6\mathopen{}\left(x+4\right)^{2}-98</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(\frac{-1}{2},\frac{-7}{4}\right)</m>
+        <m>\left(-4,-98\right)</m>
       </p>
     </answer>
-    <solution><p>First factor out the leading coefficient from the first two terms, giving <m>h(t)={3\mathopen{}\left(t^{2}+t\right)-1}\text{.}</m> Then compute <m>\left(\frac{1}{2}\right)^2={{\frac{1}{4}}}\text{.}</m> Then</p>
+    <solution><p>First factor out the leading coefficient from the first two terms, giving <m>G(x)={6\mathopen{}\left(x^{2}+8x\right)-2}\text{.}</m> Then compute <m>\left(\frac{8}{2}\right)^2={16}\text{.}</m> Then</p>
 <p><me>\begin{aligned}
-h(t)\amp = {3\mathopen{}\left(t^{2}+t+{\frac{1}{4}}-{\frac{1}{4}}\right)-1}\\
-\amp = {3\mathopen{}\left(t^{2}+t+{\frac{1}{4}}\right)-{\frac{3}{4}}-1}\\
-\amp = {3\mathopen{}\left(t^{2}+t+{\frac{1}{4}}\right)-{\frac{7}{4}}}\\
-\amp={3\mathopen{}\left(t+\frac{1}{2}\right)^{2}-\frac{7}{4}}
+G(x)\amp = {6\mathopen{}\left(x^{2}+8x+16-16\right)-2}\\
+\amp = {6\mathopen{}\left(x^{2}+8x+16\right)-96-2}\\
+\amp = {6\mathopen{}\left(x^{2}+8x+16\right)-98}\\
+\amp={6\mathopen{}\left(x+4\right)^{2}-98}
 \end{aligned}</me></p>
-<p>From the vertex form, we can see the vertex is <m>{\left(\frac{-1}{2},\frac{-7}{4}\right)}\text{.}</m></p>
+<p>From the vertex form, we can see the vertex is <m>{\left(-4,-98\right)}\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_8_6_33.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_9_6_33.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg copied-from="section-completing-the-square-8-3-6"><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -50,7 +50,7 @@ h(t)\amp = {3\mathopen{}\left(t^{2}+t+{\frac{1}{4}}-{\frac{1}{4}}\right)-1}\\
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.8.6.34)
+## Problem1(1.9.6.34)
 ## Author()
 ## Institution()
 ## Language(en-US)
@@ -171,7 +171,7 @@ a.  Give the formula for [`[$f]`] in vertex form.
 
 a.  What is the vertex of the parabola graph of [`[$f]\text{?}`]
 
-    [_]{$vertex}{20}
+    [_]{$vertex}{20}   
 
 END_PGML
 

@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-solution-linear-equation-two-variable-instances-fraction-copy" assembly-id="check-solution-linear-equation-two-variable-instances-fraction-copy">
-  <static seed="2450">
-    <statement><p>Is <m>{{\frac{3}{2}}}</m> a solution to <m>{4x-{\frac{7}{3}}}={3x-{\frac{5}{6}}}\text{?}</m></p>
+  <static seed="2314">
+    <statement><p>Is <m>{{\frac{2}{5}}}</m> a solution to <m>{6x+{\frac{9}{5}}}={5x+{\frac{11}{5}}}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>4x-{\frac{7}{3}}</m></cell>
+<cell><m>6x+{\frac{9}{5}}</m></cell>
 <cell><m>=</m></cell>
-<cell><m>3x-{\frac{5}{6}}</m></cell>
+<cell><m>5x+{\frac{11}{5}}</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
@@ -24,12 +24,12 @@
 </statement>
     <answer>
       <p>
-        <m>{\frac{11}{3}}</m>
+        <m>{\frac{21}{5}}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>{\frac{11}{3}}</m>
+        <m>{\frac{21}{5}}</m>
       </p>
     </answer>
     <answer>
@@ -37,7 +37,7 @@
         <m>\text{Yes, it is a solution.}</m>
       </p>
     </answer>
-    <solution><p>We have to substitute <m>{{\frac{3}{2}}}</m> in for <m>x</m> and simplify each side. The left side simplifies to <m>{{\frac{11}{3}}}</m> and the right side simplifies to <m>{{\frac{11}{3}}}\text{.}</m> Since these are equal,  <m>{{\frac{3}{2}}}</m>  is a solution to  <m>{4x-{\frac{7}{3}}}={3x-{\frac{5}{6}}}\text{.}</m></p>
+    <solution><p>We have to substitute <m>{{\frac{2}{5}}}</m> in for <m>x</m> and simplify each side. The left side simplifies to <m>{{\frac{21}{5}}}</m> and the right side simplifies to <m>{{\frac{21}{5}}}\text{.}</m> Since these are equal,  <m>{{\frac{2}{5}}}</m>  is a solution to  <m>{6x+{\frac{9}{5}}}={5x+{\frac{11}{5}}}\text{.}</m></p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/Appendices/A_6_6_9.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

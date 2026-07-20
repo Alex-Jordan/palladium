@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-multiply-polynomials-5" assembly-id="multiply-polynomials-5">
-  <static seed="2687">
-    <statement><p><m>{5\mathopen{}\left(5r+1\right)\mathopen{}\left(r+4\right)}</m></p>
+  <static seed="2551">
+    <statement><p><m>{-4\mathopen{}\left(3y-2\right)\mathopen{}\left(y+2\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>25r^{2}+105r+20</m>
+        <m>-12y^{2}-16y+16</m>
       </p>
     </answer>
-    <solution><p>We could first distribute <m>5</m> into <m>{5r+1}</m> to get <m>{25r+5}\text{,}</m> and then multiply <m>{25r+5}</m> and <m>{r+4}\text{:}</m></p>
+    <solution><p>We could first distribute <m>-4</m> into <m>{3y-2}</m> to get <m>{-12y+8}\text{,}</m> and then multiply <m>{-12y+8}</m> and <m>{y+2}\text{:}</m></p>
 <p><me>\begin{aligned}
-{5\mathopen{}\left(5r+1\right)\mathopen{}\left(r+4\right)}\amp=({25r+5})({r+4})\\
-\amp={25r^{2}+105r+20}
+{-4\mathopen{}\left(3y-2\right)\mathopen{}\left(y+2\right)}\amp=({-12y+8})({y+2})\\
+\amp={-12y^{2}-16y+16}
 \end{aligned}</me></p>
-<p>We could also first multiply <m>{5r+1}</m> and <m>{r+4}</m> to get <m>{5r^{2}+21r+4}\text{,}</m> and then distribute <m>5</m> into <m>{5r^{2}+21r+4}\text{:}</m></p>
+<p>We could also first multiply <m>{3y-2}</m> and <m>{y+2}</m> to get <m>{3y^{2}+4y-4}\text{,}</m> and then distribute <m>-4</m> into <m>{3y^{2}+4y-4}\text{:}</m></p>
 <p><me>\begin{aligned}
-{5\mathopen{}\left(5r+1\right)\mathopen{}\left(r+4\right)}\amp={5\mathopen{}\left(5r^{2}+21r+4\right)}\\
-\amp={25r^{2}+105r+20}
+{-4\mathopen{}\left(3y-2\right)\mathopen{}\left(y+2\right)}\amp={-4\mathopen{}\left(3y^{2}+4y-4\right)}\\
+\amp={-12y^{2}-16y+16}
 \end{aligned}</me></p>
 </solution>
   </static>

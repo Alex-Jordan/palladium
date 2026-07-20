@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-multiply-three-fractions-some-reductions" assembly-id="multiply-three-fractions-some-reductions">
-  <static seed="2087">
-    <statement><p><m>\displaystyle {{\frac{1}{3}}}\cdot {{\frac{8}{9}}}\cdot {{\frac{5}{4}}}</m></p>
+  <static seed="1951">
+    <statement><p><m>\displaystyle {{\frac{1}{4}}}\cdot {{\frac{1}{2}}}\cdot {{\frac{5}{9}}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{10}{27}}</m>
+        <m>{\frac{5}{72}}</m>
       </p>
     </answer>
   </static>

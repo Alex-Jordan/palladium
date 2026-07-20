@@ -1,29 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-inequality-solution-quadratic-negative-integer-copy" assembly-id="check-inequality-solution-quadratic-negative-integer-copy">
-  <static seed="2478">
-    <statement><p>Is <m>{-4}</m> a solution to <m>{6x^{2}-8x}\neq{128}\text{?}</m></p>
+  <static seed="2342">
+    <statement><p>Is <m>{-5}</m> a solution to <m>{9x^{2}+2x}\gt{215}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>6x^{2}-8x</m></cell>
-<cell><m>\neq</m></cell>
-<cell><m>128</m></cell>
+<cell><m>9x^{2}+2x</m></cell>
+<cell><m>\gt</m></cell>
+<cell><m>215</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
-<cell><m>\wonder{\neq}</m></cell>
-<cell><m>128</m></cell>
+<cell><m>\wonder{\gt}</m></cell>
+<cell><m>215</m></cell>
 </row>
 </tabular>
 <p><fillin name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>128</m>
+        <m>215</m>
       </p>
     </answer>
     <answer>

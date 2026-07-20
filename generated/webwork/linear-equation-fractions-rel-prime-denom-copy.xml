@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-linear-equation-fractions-rel-prime-denom-copy" assembly-id="linear-equation-fractions-rel-prime-denom-copy">
-  <static seed="1486">
-    <statement><p><m>{{\frac{4}{5}}x-{\frac{2}{7}}} = {3}</m></p>
+  <static seed="1350">
+    <statement><p><m>{{\frac{7}{5}}x-{\frac{5}{4}}} = {-3}</m></p>
 <p><fillin characters="4" name="AnSwEr0001"/></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>35</m>
+        <m>20</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left\{\frac{115}{28}\right\}</m>
+        <m>\left\{\frac{-5}{4}\right\}</m>
       </p>
     </answer>
   </static>

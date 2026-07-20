@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-reduce-small-fraction-medium-factor" assembly-id="reduce-small-fraction-medium-factor">
-  <static seed="2067">
-    <statement><p><m>\dfrac{48}{54}</m></p>
+  <static seed="1931">
+    <statement><p><m>\dfrac{48}{30}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{8}{9}}</m>
+        <m>{\frac{8}{5}}</m>
       </p>
     </answer>
   </static>

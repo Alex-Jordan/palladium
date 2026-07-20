@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-product-to-power-multivar" assembly-id="exponent-product-to-power-multivar">
-  <static seed="2582">
-    <statement><p><m>{\left(2xj\right)^{4}}</m></p>
+  <static seed="2446">
+    <statement><p><m>{\left(3wt\right)^{3}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>16x^{4}j^{4}</m>
+        <m>27w^{3}t^{3}</m>
       </p>
     </answer>
   </static>

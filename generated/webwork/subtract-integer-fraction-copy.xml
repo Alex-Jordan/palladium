@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-subtract-integer-fraction-copy" assembly-id="subtract-integer-fraction-copy">
-  <static seed="2241">
-    <statement><p><m>1-{{\frac{3}{14}}}</m></p>
+  <static seed="2105">
+    <statement><p><m>8-{{\frac{3}{4}}}</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{11}{14}}</m>
+        <m>{\frac{29}{4}}</m>
       </p>
     </answer>
   </static>

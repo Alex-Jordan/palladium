@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers60" assembly-id="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers60">
-  <static seed="1802">
+  <static seed="1666">
     <introduction/>
     <task>
       <statement><p><m>\displaystyle{ \sqrt{36} }</m></p>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-introduction-to-rational-functions-5-1-4" assembly-id="section-introduction-to-rational-functions-5-1-4">
-  <static seed="1209" source="Contrib/PCC/BasicAlgebra/RationalFunctions/rationalFunctionApplication20.pg">
+  <static seed="1073" source="Contrib/PCC/BasicAlgebra/RationalFunctions/rationalFunctionApplication20.pg">
     <statement><p>In a certain store, cashiers can serve <m>60</m> customers per hour on average. If <m>x</m> customers arrive at the store in a given hour, then the average number of customers <m>C</m> waiting in line can be modeled by the function</p>
 <p><me>C(x) = {\frac{x^{2}}{3600-60x}}</me></p>
 <p>where <m>x\lt 60</m>.</p>
@@ -10,7 +10,7 @@
 <p>If <m>45</m> customers arrived in the store in the past hour, there are approximately <fillin characters="10" name="AnSwEr0001"/> customers waiting in line.</p>
 </li>
 <li>
-<p>If there are <m>7</m> customers waiting in line, approximately <fillin characters="10" name="AnSwEr0002"/> customers arrived in the past hour.</p>
+<p>If there are <m>6</m> customers waiting in line, approximately <fillin characters="10" name="AnSwEr0002"/> customers arrived in the past hour.</p>
 </li>
 </ol></p>
 </statement>
@@ -21,7 +21,7 @@
     </answer>
     <answer>
       <p>
-        <m>53</m>
+        <m>52</m>
       </p>
     </answer>
     <solution><p><ol label="a.">
@@ -31,13 +31,13 @@
 <p>If <m>45</m> customers arrived in the store in the past hour, there are approximately <m>2</m> customers waiting in line.</p>
 </li>
 <li>
-<p>If there are <m>7</m> customers waiting in line, approximately how many customers arrived in the past hour? To answer this question, we substitute <m>C</m> with <m>7</m>, and we have:</p>
-<p><m>\displaystyle{ 7= {\frac{x^{2}}{3600-60x}} }</m></p>
+<p>If there are <m>6</m> customers waiting in line, approximately how many customers arrived in the past hour? To answer this question, we substitute <m>C</m> with <m>6</m>, and we have:</p>
+<p><m>\displaystyle{ 6= {\frac{x^{2}}{3600-60x}} }</m></p>
 <p>We will use a graphing calculator<rsq/>s <c>solve()</c> function to solve this equation. For a TI-89, press <c>Home</c>, <c>F2</c>, choose <c>solve(</c>, press <c>Enter</c>. Then, type in the equation:</p>
-<pre>solve(7 = x^2/(3600 - 60x), x)</pre>
+<pre>solve(6 = x^2/(3600 - 60x), x)</pre>
 <p>For Casio ClassPad 300, tap <c>Main</c>, <c>Action</c> in the menu, <c>Advanced</c>, <c>solve</c>, and then type in the same equation above.</p>
-<p>Ignore the unreasonable solution, and round the reasonable solution to <m>53</m>.</p>
-<p>If there are <m>7</m> customers waiting in line, approximately <m>53</m> customers arrived in the past hour.</p>
+<p>Ignore the unreasonable solution, and round the reasonable solution to <m>52</m>.</p>
+<p>If there are <m>6</m> customers waiting in line, approximately <m>52</m> customers arrived in the past hour.</p>
 </li>
 </ol></p>
 </solution>

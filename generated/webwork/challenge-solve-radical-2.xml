@@ -1,33 +1,33 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-challenge-solve-radical-2" assembly-id="challenge-solve-radical-2">
-  <static seed="2049">
+  <static seed="1913">
     <statement><p>Solve for <m>x\text{.}</m></p>
-<p><me>\sqrt{1+\sqrt{10}}=\sqrt{2+\sqrt{\frac{1}{\sqrt{x}}}-1}</me></p>
+<p><me>\sqrt{1+\sqrt{8}}=\sqrt{2+\sqrt{\frac{1}{\sqrt{x}}}-1}</me></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\frac{1}{100}\right\}</m>
+        <m>\left\{\frac{1}{64}\right\}</m>
       </p>
     </answer>
     <solution><p><me>\begin{aligned}
-\sqrt{1+\sqrt{10}}\amp=\sqrt{2+\sqrt{\frac{1}{\sqrt{x}}}-1}\\
-\left(\sqrt{1+\sqrt{10}}\right)^{2}\amp=\left(\sqrt{2+\sqrt{\frac{1}{\sqrt{x}}}-1}\right)^{2}\\
-1+\sqrt{10}\amp=2+\sqrt{\frac{1}{\sqrt{x}}}-1\\
-1+\sqrt{10}\amp=1+\sqrt{\frac{1}{\sqrt{x}}}\\
-\sqrt{10}\amp=\sqrt{\frac{1}{\sqrt{x}}}\\
-\left(\sqrt{10}\right)^{2}\amp=\left(\sqrt{\frac{1}{\sqrt{x}}}\right)^{2}\\
-10\amp=\frac{1}{\sqrt{x}}\\
-10^{2}\amp=\left(\frac{1}{\sqrt{x}}\right)^{2}\\
-100\amp=\frac{1}{x}\\
-100x\amp=1\\
-x \amp= {\frac{1}{100}}
+\sqrt{1+\sqrt{8}}\amp=\sqrt{2+\sqrt{\frac{1}{\sqrt{x}}}-1}\\
+\left(\sqrt{1+\sqrt{8}}\right)^{2}\amp=\left(\sqrt{2+\sqrt{\frac{1}{\sqrt{x}}}-1}\right)^{2}\\
+1+\sqrt{8}\amp=2+\sqrt{\frac{1}{\sqrt{x}}}-1\\
+1+\sqrt{8}\amp=1+\sqrt{\frac{1}{\sqrt{x}}}\\
+\sqrt{8}\amp=\sqrt{\frac{1}{\sqrt{x}}}\\
+\left(\sqrt{8}\right)^{2}\amp=\left(\sqrt{\frac{1}{\sqrt{x}}}\right)^{2}\\
+8\amp=\frac{1}{\sqrt{x}}\\
+8^{2}\amp=\left(\frac{1}{\sqrt{x}}\right)^{2}\\
+64\amp=\frac{1}{x}\\
+64x\amp=1\\
+x \amp= {\frac{1}{64}}
 \end{aligned}</me></p>
-<p>To check the proposed solution, we will replace <m>x</m> with <m>{\frac{1}{100}}\text{:}</m></p>
+<p>To check the proposed solution, we will replace <m>x</m> with <m>{\frac{1}{64}}\text{:}</m></p>
 <p><me>\begin{aligned}
-\sqrt{1+\sqrt{10}}\amp\wonder{=}\sqrt{2+\sqrt{\frac{1}{\sqrt{{\frac{1}{100}}}}}-1}\\
-\sqrt{1+\sqrt{10}}\amp\wonder{=}\sqrt{1+\sqrt{\frac{1}{\frac{1}{10}}}}\\
-\sqrt{1+\sqrt{10}}\amp\confirm{=}\sqrt{1+\sqrt{10}}
+\sqrt{1+\sqrt{8}}\amp\wonder{=}\sqrt{2+\sqrt{\frac{1}{\sqrt{{\frac{1}{64}}}}}-1}\\
+\sqrt{1+\sqrt{8}}\amp\wonder{=}\sqrt{1+\sqrt{\frac{1}{\frac{1}{8}}}}\\
+\sqrt{1+\sqrt{8}}\amp\confirm{=}\sqrt{1+\sqrt{8}}
 \end{aligned}</me></p>
 </solution>
   </static>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-evaluate-fraction-power-copy3" assembly-id="evaluate-fraction-power-copy3">
-  <static seed="1662">
+  <static seed="1526">
     <statement><p>A WeBWorK problem right here was meant to be a copy of another problem, but potentially with different randomization, but there was a failure. The <c>@copy</c> attribute was set to <c>webwork-evaluate-fraction-power</c>. Please report me, so the publisher can get more details by searching the runtime output for <lq/><c>PTX:ERROR</c><rq/>.</p>
 </statement>
   </static>

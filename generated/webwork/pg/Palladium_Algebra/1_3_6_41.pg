@@ -1,0 +1,68 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.3.6.41)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+($a,$r,$s,$k) = (1, random_subset(3, -9..-1,1..9));
+Context()->noreduce('(-x)-y');
+$left = Formula("(x - $k)(x - ($r+$s-$k))")->reduce;
+$right = Formula("($r-$k)*($k-$s)")->reduce;
+Context("FiniteSolutionSets");
+$sols = Formula("{$r, $s}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve the equation by factoring.
+
+[`[$left] = [$right]`]
+
+[_]{$sols}{16}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

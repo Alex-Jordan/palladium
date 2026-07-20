@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-key-features-of-quadratic-graphs-8-2-2" assembly-id="section-key-features-of-quadratic-graphs-8-2-2">
-  <static seed="985" source="Library/FortLewis/Algebra/1-1-Expressions/MCH1-1-1-04-Expressions.pg">
+  <static seed="518" source="Library/FortLewis/Algebra/1-1-Expressions/MCH1-1-1-04-Expressions.pg">
     <statement><p>Evaluate the expression 
-<m>\displaystyle \frac{1}{6} \big( x + 1 \big)^2 - 7</m> 
-when <m>x = -7</m>.</p>
+<m>\displaystyle \frac{1}{4} \big( x + 2 \big)^2 - 2</m> 
+when <m>x = -6</m>.</p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-1</m>
+        <m>2</m>
       </p>
     </answer>
   </static>

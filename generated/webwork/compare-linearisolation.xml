@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-compare-linearisolation" assembly-id="compare-linearisolation">
-  <static seed="1555">
+  <static seed="1419">
     <introduction/>
     <task>
-      <statement><p><m>{7i+9}={6}</m> for <m>i\text{.}</m></p>
+      <statement><p><m>{5f+4}={7}</m> for <m>f\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>\left\{\frac{-3}{7}\right\}</m>
+          <m>\left\{\frac{3}{5}\right\}</m>
         </p>
       </answer>
     </task>
     <task>
-      <statement><p><m>{zi+b}={q}</m> for <m>i\text{.}</m></p>
+      <statement><p><m>{Nf+r}={Y}</m> for <m>f\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>i = \frac{q-b}{z}</m>
+          <m>f = \frac{Y-r}{N}</m>
         </p>
       </answer>
     </task>

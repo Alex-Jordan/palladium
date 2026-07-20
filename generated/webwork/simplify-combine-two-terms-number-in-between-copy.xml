@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-combine-two-terms-number-in-between-copy" assembly-id="simplify-combine-two-terms-number-in-between-copy">
-  <static seed="2355">
-    <statement><p><m>{9M+14+13M}</m></p>
+  <static seed="2219">
+    <statement><p><m>{14J+7+18J}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>22M+14</m>
+        <m>32J+7</m>
       </p>
     </answer>
   </static>

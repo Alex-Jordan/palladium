@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-inequality-solution-quadratic-fraction" assembly-id="check-inequality-solution-quadratic-fraction">
-  <static seed="2481">
-    <statement><p>Is <m>{2}</m> a solution to <m>{4x^{2}+x-14}\leq{0}\text{?}</m></p>
+  <static seed="2345">
+    <statement><p>Is <m>{{\frac{6}{7}}}</m> a solution to <m>{7x^{2}+7x-{\frac{78}{7}}}\gt{0}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>4x^{2}+x-14</m></cell>
-<cell><m>\leq</m></cell>
+<cell><m>7x^{2}+7x-{\frac{78}{7}}</m></cell>
+<cell><m>\gt</m></cell>
 <cell><m>0</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
-<cell><m>\wonder{\leq}</m></cell>
+<cell><m>\wonder{\gt}</m></cell>
 <cell><m>0</m></cell>
 </row>
 </tabular>
@@ -23,7 +23,7 @@
 </statement>
     <answer>
       <p>
-        <m>4</m>
+        <m>0</m>
       </p>
     </answer>
     <answer>

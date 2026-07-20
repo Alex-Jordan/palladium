@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-qf-find-roots-curv-copy" assembly-id="qf-find-roots-curv-copy">
+  <static seed="760">
+    <statement><p><m>f(x) = {2\mathopen{}\left(x-9\right)\mathopen{}\left(x-6\right)}</m></p>
+<p><fillin characters="6" name="AnSwEr0001"/></p>
+<p><fillin characters="6" name="AnSwEr0002"/></p>
+<p><fillin characters="6" name="AnSwEr0003"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>2</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>9, 6</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>\left(7.5,-4.5\right)</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_2_8_25.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg copied-from="qf-find-roots-curv"><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.2.8.26)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextForm.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+($a,$r,$s) = random_subset(3,1..9);
+$f = Formula("$a(x-$r)(x-$s)");
+$roots = List($r,$s);
+Context("Fraction");
+$h = Fraction($r+$s,2);
+$k = $f->eval(x => $h);
+Context("Point");
+$vertex = Point("($h,$k)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Identify the curvature coefficient, roots, and vertex of the quadratic function with the given formula.
+
+[`f(x) = [$f]`]
+
+[@KeyboardInstructions('Enter the curvature coefficient here.')@]**
+
+[_]{$a}{6}
+
+[@KeyboardInstructions('Enter the roots here.')@]**
+
+[_]{$roots}{6}
+
+[@KeyboardInstructions('Enter the vertex coordinates here.')@]**
+
+[_]{$vertex}{6}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

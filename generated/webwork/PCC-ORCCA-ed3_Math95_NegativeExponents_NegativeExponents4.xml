@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_NegativeExponents_NegativeExponents4" assembly-id="PCC-ORCCA-ed3_Math95_NegativeExponents_NegativeExponents4">
-  <static seed="1707">
-    <statement><p><m>\displaystyle {\frac{11x^{-3}}{x^{-16}}}</m></p>
+  <static seed="1571">
+    <statement><p><m>\displaystyle {\frac{16x^{-20}}{x^{-38}}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>11x^{13}</m>
+        <m>16x^{18}</m>
       </p>
     </answer>
   </static>

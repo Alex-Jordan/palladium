@@ -1,34 +1,34 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-plant-height-check-solution" assembly-id="plant-height-check-solution">
-  <static seed="2503">
-    <statement><p>When a young tree was planted in your school<rsq/>s garden, it was 4 feet tall. It grows 7/8 feet per year. After some number <m>n</m> of years, the tree is 18 feet tall. This gives us the equation <m>{4+{\frac{7}{8}}n}={18}\text{.}</m> Has it been <m>16</m> years?</p>
+  <static seed="2367">
+    <statement><p>When a young tree was planted in your school<rsq/>s garden, it was 4 feet tall. It grows 3/5 feet per year. After some number <m>n</m> of years, the tree is 16 feet tall. This gives us the equation <m>{4+{\frac{3}{5}}n}={16}\text{.}</m> Has it been <m>17</m> years?</p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>4+{\frac{7}{8}}n</m></cell>
+<cell><m>4+{\frac{3}{5}}n</m></cell>
 <cell><m>=</m></cell>
-<cell><m>18</m></cell>
+<cell><m>16</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
 <cell><m>\wonder{=}</m></cell>
-<cell><m>18</m></cell>
+<cell><m>16</m></cell>
 </row>
 </tabular>
 <p><fillin name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>18</m>
+        <m>14.2</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\text{Yes, it is a solution.}</m>
+        <m>\text{No, it is not a solution.}</m>
       </p>
     </answer>
   </static>

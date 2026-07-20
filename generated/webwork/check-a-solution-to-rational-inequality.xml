@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-a-solution-to-rational-inequality" assembly-id="check-a-solution-to-rational-inequality">
-  <static seed="2439">
+  <static seed="2303">
     <statement><p>Is <m>2</m> a solution to the inequality <m>\frac{z+3}{z-1}\lt\sqrt{18z}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>

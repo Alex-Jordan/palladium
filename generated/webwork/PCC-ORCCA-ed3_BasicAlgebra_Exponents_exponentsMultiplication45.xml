@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication45" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication45">
-  <static seed="1954">
-    <statement><p><m>\left(-7r^{5}\right)^3</m></p>
+  <static seed="1818">
+    <statement><p><m>\left(-4y^{5}\right)^2</m></p>
 <p><fillin characters="1" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-343r^{15}</m>
+        <m>16y^{10}</m>
       </p>
     </answer>
     <solution><p>We <em>multiply</em> the exponents and apply the rule <m>(ab)^m=a^m\cdot b^m</m> as follows</p>
 <p><m>\begin{aligned}
-           \left(-7r^{5}\right)^{3}\amp =(-7)^{3}r^{5\cdot3}\\
-                             \amp =-343r^{15}
+           \left(-4y^{5}\right)^{2}\amp =(-4)^{2}y^{5\cdot2}\\
+                             \amp =16y^{10}
        \end{aligned}</m></p>
 </solution>
   </static>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-order-of-operations-fractiongrouping" assembly-id="order-of-operations-fractiongrouping">
-  <static seed="2218">
-    <statement><p><m>6 - \dfrac{288 \div  2}{21 - 9}</m></p>
+  <static seed="2082">
+    <statement><p><m>\dfrac{96 \div  4}{4 \cdot  2} - 4</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-6</m>
+        <m>-1</m>
       </p>
     </answer>
   </static>

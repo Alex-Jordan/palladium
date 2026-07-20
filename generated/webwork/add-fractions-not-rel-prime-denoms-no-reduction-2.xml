@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-add-fractions-not-rel-prime-denoms-no-reduction-2" assembly-id="add-fractions-not-rel-prime-denoms-no-reduction-2">
-  <static seed="2104">
-    <statement><p><m>\displaystyle {{\frac{9}{49}}} + {{\frac{9}{14}}}</m></p>
+  <static seed="1968">
+    <statement><p><m>\displaystyle {{\frac{1}{2}}} + {{\frac{2}{45}}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{81}{98}}</m>
+        <m>{\frac{49}{90}}</m>
       </p>
     </answer>
   </static>

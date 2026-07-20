@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-combine-two-terms-no-frac-one-or-two-decimal" assembly-id="combine-two-terms-no-frac-one-or-two-decimal">
-  <static seed="2270">
-    <statement><p><m>{3.1r+38r}</m></p>
+  <static seed="2134">
+    <statement><p><m>{0.8p-5.6p}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>41.1r</m>
+        <m>-4.8p</m>
       </p>
     </answer>
   </static>

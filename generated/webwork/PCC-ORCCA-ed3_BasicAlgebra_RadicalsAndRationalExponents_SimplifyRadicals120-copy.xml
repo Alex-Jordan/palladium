@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals120-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals120-copy">
-  <static seed="1855">
-    <statement><p><m>\displaystyle{\left(4 + {\sqrt{6}}\right)\left(3 + {\sqrt{6}}\right) }</m></p>
+  <static seed="1719">
+    <statement><p><m>\displaystyle{\left(6 + {\sqrt{6}}\right)\left(9 + {\sqrt{6}}\right) }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>7\sqrt{6}+18</m>
+        <m>15\sqrt{6}+60</m>
       </p>
     </answer>
     <solution><p>Using the FOIL method to multiply these binomial expressions together,
 we will have four terms:</p>
 <p><m>\displaystyle{
 \begin{aligned}[t]
-   (4 + {\sqrt{6}})(3 + {\sqrt{6}})
-   \amp = 4 \cdot 3 + 4{\sqrt{6}} +3{\sqrt{6}}+{\sqrt{6}}\cdot {\sqrt{6}} \\
- \amp =12 + 4 {\sqrt{6}} + 3 {\sqrt{6}} + 6\\
-   \amp = {7\sqrt{6}+18}
+   (6 + {\sqrt{6}})(9 + {\sqrt{6}})
+   \amp = 6 \cdot 9 + 6{\sqrt{6}} +9{\sqrt{6}}+{\sqrt{6}}\cdot {\sqrt{6}} \\
+ \amp =54 + 6 {\sqrt{6}} + 9 {\sqrt{6}} + 6\\
+   \amp = {15\sqrt{6}+60}
 \end{aligned}
     }</m></p>
 </solution>

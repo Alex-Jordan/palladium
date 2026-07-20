@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_NegativeExponents_NegativeExponents4-copy" assembly-id="PCC-ORCCA-ed3_Math95_NegativeExponents_NegativeExponents4-copy">
-  <static seed="1708">
-    <statement><p><m>\displaystyle {\frac{18x^{-5}}{x^{-9}}}</m></p>
+  <static seed="1572">
+    <statement><p><m>\displaystyle {\frac{7x^{-4}}{x^{-15}}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>18x^{4}</m>
+        <m>7x^{11}</m>
       </p>
     </answer>
   </static>

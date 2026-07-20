@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-graphing-quadratic-expressions-8-1-2" assembly-id="section-graphing-quadratic-expressions-8-1-2">
-  <static seed="1022" source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticEquations/solveQuad240.pg">
+  <static seed="555" source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticEquations/solveQuad240.pg">
     <statement><p>Solve the equation.</p>
-<p><m>{x^{2}+11x+18} = 0</m></p>
+<p><m>{x^{2}+7x+10} = 0</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{-2,-9\right\}</m>
+        <m>\left\{-5,-2\right\}</m>
       </p>
     </answer>
     <solution><p>There are a few ways to solve quadratic equations- the easiest way to solve this particular 
 type of problem is to use the <em>zero product principle</em>.</p>
 <p><m>\begin{aligned}
-                {x^{2}+11x+18} = 0 \amp \Rightarrow {\left(x+2\right)\mathopen{}\left(x+9\right)}=0\\
-                                \amp \Rightarrow x=-2\text{ or } x=-9\\
+                {x^{2}+7x+10} = 0 \amp \Rightarrow {\left(x+5\right)\mathopen{}\left(x+2\right)}=0\\
+                                \amp \Rightarrow x=-5\text{ or } x=-2\\
         \end{aligned}</m></p>
 <p>Note that <em>all</em> quadratic equations have <alert>two</alert> (possibly repeated) solutions; in this problem both solutions are real. Each solution can be checked by substituting it into the original equation- this is left as an exercise.</p>
 <p>You might have solved the equation using the Quadratic Formula- the final 

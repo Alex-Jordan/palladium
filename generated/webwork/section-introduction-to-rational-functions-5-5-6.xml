@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-introduction-to-rational-functions-5-5-6" assembly-id="section-introduction-to-rational-functions-5-5-6">
-  <static seed="1239">
-    <statement><p>The concentration of a drug in a patient<rsq/>s blood stream, in milligrams per liter, can be modeled by the function <m>C</m>m&gt;, with <m>C(t)={\frac{3t}{t^{2}+6}}\text{,}</m> where <m>t</m> is the number of hours since the drug is injected. Use technology to complete the following sentence.</p>
-<p>The drug<rsq/>s concentration is 0.4 milligrams per liter <fillin characters="10" name="AnSwEr0001"/> hours after injection and then again <fillin characters="10" name="AnSwEr0002"/> hours after injection.</p>
+  <static seed="1103">
+    <statement><p>The concentration of a drug in a patient<rsq/>s blood stream, in milligrams per liter, can be modeled by the function <m>C</m>m&gt;, with <m>C(t)={\frac{3t}{t^{2}+7}}\text{,}</m> where <m>t</m> is the number of hours since the drug is injected. Use technology to complete the following sentence.</p>
+<p>The drug<rsq/>s concentration is 0.49 milligrams per liter <fillin characters="10" name="AnSwEr0001"/> hours after injection and then again <fillin characters="10" name="AnSwEr0002"/> hours after injection.</p>
 </statement>
     <answer>
       <p>
-        <m>0.910546</m>
+        <m>1.52139</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>0.91, 6.59</m>
+        <m>1.52, 4.6</m>
       </p>
     </answer>
-    <solution><p>To locate the points on <m>C(t)</m> where the <m>y</m>-value is <m>0.4\text{,}</m> we use technology to graph the function <m>C(t)={\frac{3t}{t^{2}+6}}</m> and <m>y=0.4\text{,}</m> and then locate their intersections.</p>
+    <solution><p>To locate the points on <m>C(t)</m> where the <m>y</m>-value is <m>0.49\text{,}</m> we use technology to graph the function <m>C(t)={\frac{3t}{t^{2}+7}}</m> and <m>y=0.49\text{,}</m> and then locate their intersections.</p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-introduction-to-rational-functions-5-5-6-image-1.png" width="100%"/>
-<p>The intersections are <m>(0.91,0.4)</m> and <m>(6.59,0.4)\text{.}</m> Those points imply the drug concentration in the blood stream will be approximately <m>0.4</m> milligrams per liter approximately <m>0.91</m> hours since injection, and then again at this level <m>6.59</m> hours since the injection.</p>
+<p>The intersections are <m>(1.52,0.49)</m> and <m>(4.6,0.49)\text{.}</m> Those points imply the drug concentration in the blood stream will be approximately <m>0.49</m> milligrams per liter approximately <m>1.52</m> hours since injection, and then again at this level <m>4.6</m> hours since the injection.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/3_1_3_33.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

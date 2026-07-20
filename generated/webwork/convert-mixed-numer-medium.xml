@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-convert-mixed-numer-medium" assembly-id="convert-mixed-numer-medium">
-  <static seed="2129">
-    <statement><p><m>\displaystyle 9\,{{\frac{7}{16}}}</m></p>
+  <static seed="1993">
+    <statement><p><m>\displaystyle 3\,{{\frac{7}{11}}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{151}{16}}</m>
+        <m>{\frac{40}{11}}</m>
       </p>
     </answer>
   </static>

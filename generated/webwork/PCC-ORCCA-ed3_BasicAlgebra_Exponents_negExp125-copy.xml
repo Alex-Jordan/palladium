@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp125-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp125-copy">
-  <static seed="1760">
-    <statement><p><m>\displaystyle\frac{3t^{4}\cdot7t^{6}}{8t^{5}}</m></p>
+  <static seed="1624">
+    <statement><p><m>\displaystyle\frac{8t^{6}\cdot4t^{9}}{9t^{4}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{21t^{5}}{8}</m>
+        <m>\frac{32t^{11}}{9}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>a^m\cdot a^n=a^{m+n}</m> and <m>\displaystyle{\frac{a^m}{a^n} = a^{m-n}}</m></p>
 <p><m>\displaystyle{           \begin{aligned}
-                \frac{3t^{4}\cdot7t^{6}}{8t^{5}}
-                      \amp = \frac{21t^{4+6}}{8t^{5}}\\
-                                    \amp  = {\frac{21t^{5}}{8}}
+                \frac{8t^{6}\cdot4t^{9}}{9t^{4}}
+                      \amp = \frac{32t^{6+9}}{9t^{4}}\\
+                                    \amp  = {\frac{32t^{11}}{9}}
            \end{aligned}
     }</m></p>
 </solution>

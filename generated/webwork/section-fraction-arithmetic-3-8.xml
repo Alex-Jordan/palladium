@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-fraction-arithmetic-3-8" assembly-id="section-fraction-arithmetic-3-8">
-  <static seed="2051">
+  <static seed="1915">
     <statement><p>Sayid scored <m>\frac{21}{25}</m> on a recent exam. Build up this fraction so that the denominator is <m>100\text{,}</m> so that Sayid can understand what percent score he earned.</p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>

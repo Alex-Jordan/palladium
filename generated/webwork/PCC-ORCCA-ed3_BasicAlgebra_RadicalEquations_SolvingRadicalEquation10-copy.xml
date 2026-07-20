@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation10-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation10-copy">
-  <static seed="2023">
-    <statement><p><m>\displaystyle{ {\sqrt{t}} = {10} }</m></p>
+  <static seed="1887">
+    <statement><p><m>\displaystyle{ {\sqrt{t}} = {2} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{100\right\}</m>
+        <m>\left\{4\right\}</m>
       </p>
     </answer>
     <solution><p>To remove the square root, we square both sides of the equation:</p>
 <p><m>\displaystyle{\begin{aligned}
-   {\sqrt{t}} \amp = {10} \\
-   ({\sqrt{t}})^2 \amp = ({10})^2 \\
-   t \amp = 100
+   {\sqrt{t}} \amp = {2} \\
+   ({\sqrt{t}})^2 \amp = ({2})^2 \\
+   t \amp = 4
 \end{aligned}
     }</m></p>
 <p>Whenever we square both sides of an equation, we could create extraneous solutions. We must check our solution. This part is left as exercise.</p>

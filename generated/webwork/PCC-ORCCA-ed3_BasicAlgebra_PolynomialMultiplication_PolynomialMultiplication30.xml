@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication30" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication30">
-  <static seed="2651">
-    <statement><p><m>\left({6r+10}\right)\left({r+6}\right)</m></p>
+  <static seed="2515">
+    <statement><p><m>\left({8y+3}\right)\left({y+2}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>6r^{2}+46r+60</m>
+        <m>8y^{2}+19y+6</m>
       </p>
     </answer>
     <solution><p>We use the FOIL technique- <alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast</p>
 <p><m>\begin{aligned}
-              \left({6r+10}\right)({r+6})\amp ={6r^{2}+36r+10r+60}\\
-                                \amp ={6r^{2}+46r+60}
+              \left({8y+3}\right)({y+2})\amp ={8y^{2}+16y+3y+6}\\
+                                \amp ={8y^{2}+19y+6}
       \end{aligned}</m></p>
 </solution>
   </static>

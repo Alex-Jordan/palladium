@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-7-2" assembly-id="section-completing-the-square-8-7-2">
-  <static seed="1205">
+  <static seed="738">
     <statement><p>Let <m>f(x) = x^{2}+bx+c\text{.}</m> Let <m>b</m> and <m>c</m> be real numbers. Complete the square to find the vertex of <m>f(x) = x^{2}+bx+c\text{.}</m> Write <m>f(x)</m> in vertex form and then state the vertex.</p>
 <p><var form="essay" height="6" width="76"/></p>
 </statement>
@@ -12,7 +12,7 @@ f(x) = x^{2}+bx+c  \amp = \left(x + \frac{b}{2}\right)^{2} - \frac{b^{2}}{4} +c\
 <p>Thus, the vertex is <m>(\frac{-b}{2},\frac{4c-b^{2}}{4})\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_8_6_73.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_9_6_73.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -29,7 +29,7 @@ f(x) = x^{2}+bx+c  \amp = \left(x + \frac{b}{2}\right)^{2} - \frac{b^{2}}{4} +c\
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.8.6.73)
+## Problem1(1.9.6.73)
 ## Author()
 ## Institution()
 ## Language(en-US)

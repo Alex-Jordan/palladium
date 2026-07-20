@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-find-diameter" assembly-id="find-diameter">
-  <static seed="2559">
-    <statement><p>The circumference is <m>{10\pi \ {\rm cm}}\text{.}</m></p>
+  <static seed="2423">
+    <statement><p>The circumference is <m>{15\pi \ {\rm cm}}\text{.}</m></p>
 <p><fillin characters="15" name="AnSwEr0001"/></p>
 <p><fillin characters="10" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>10\pi  = \pi d</m>
+        <m>15\pi  = \pi d</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>10\ {\rm cm}</m>
+        <m>15\ {\rm cm}</m>
       </p>
     </answer>
   </static>

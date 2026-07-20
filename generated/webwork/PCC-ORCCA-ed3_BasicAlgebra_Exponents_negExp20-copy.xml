@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp20-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp20-copy">
-  <static seed="1714">
-    <statement><p><m>\displaystyle\frac{t^{-8}}{x^{6}}</m></p>
+  <static seed="1578">
+    <statement><p><m>\displaystyle\frac{r^{-8}}{t^{10}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{1}{x^{6}t^{8}}</m>
+        <m>\frac{1}{t^{10}r^{8}}</m>
       </p>
     </answer>
     <solution><p>We evaluate the expression by remembering that <m>x^{-n}</m> is the same thing as <m>\displaystyle{\frac{1}{x^n}}</m> for any non-zero,
 real value of <m>x</m>.</p>
-<p>Note that only <m>t</m> is raised to a negative power.</p>
+<p>Note that only <m>r</m> is raised to a negative power.</p>
 <p><m>\begin{aligned}
-         \displaystyle\frac{t^{-8}}{x^{6}}
-            \amp  = {\frac{1}{x^{6}t^{8}}}
+         \displaystyle\frac{r^{-8}}{t^{10}}
+            \amp  = {\frac{1}{t^{10}r^{8}}}
         \end{aligned}</m></p>
 </solution>
   </static>

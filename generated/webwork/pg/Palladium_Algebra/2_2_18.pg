@@ -1,0 +1,77 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.2.18)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$roots = List(-5,4);
+Context("Point");
+$hi = List("(-5,0)", "(4,0)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Factor the function formula [`g(x)=3x^2+3x-60`] and use the result to identify the roots and the horizontal intercepts.
+
+[@KeyboardInstructions('Enter the roots here.')@]**
+
+[_]{$roots}{16}
+
+[@KeyboardInstructions('Enter the horizontal intercepts here.')@]**
+
+[_]{$hi}{16}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The function formula factors as [`g(x)=3(x+5)(x-4)\text{.}`] So we can see that the roots are [`-5`] and [`4\text{.}`] These are the numbers that "zero out" the formula by canceling what we see in the formula. And the horizontal intercepts are [`(-5,0)`] and [`(4,0)\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-multiply-polynomials-5-copy" assembly-id="multiply-polynomials-5-copy">
-  <static seed="2688">
-    <statement><p><m>{2\mathopen{}\left(3r-2\right)\mathopen{}\left(r+4\right)}</m></p>
+  <static seed="2552">
+    <statement><p><m>{5\mathopen{}\left(4r-5\right)\mathopen{}\left(r+1\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>6r^{2}+20r-16</m>
+        <m>20r^{2}-5r-25</m>
       </p>
     </answer>
-    <solution><p>We could first distribute <m>2</m> into <m>{3r-2}</m> to get <m>{6r-4}\text{,}</m> and then multiply <m>{6r-4}</m> and <m>{r+4}\text{:}</m></p>
+    <solution><p>We could first distribute <m>5</m> into <m>{4r-5}</m> to get <m>{20r-25}\text{,}</m> and then multiply <m>{20r-25}</m> and <m>{r+1}\text{:}</m></p>
 <p><me>\begin{aligned}
-{2\mathopen{}\left(3r-2\right)\mathopen{}\left(r+4\right)}\amp=({6r-4})({r+4})\\
-\amp={6r^{2}+20r-16}
+{5\mathopen{}\left(4r-5\right)\mathopen{}\left(r+1\right)}\amp=({20r-25})({r+1})\\
+\amp={20r^{2}-5r-25}
 \end{aligned}</me></p>
-<p>We could also first multiply <m>{3r-2}</m> and <m>{r+4}</m> to get <m>{3r^{2}+10r-8}\text{,}</m> and then distribute <m>2</m> into <m>{3r^{2}+10r-8}\text{:}</m></p>
+<p>We could also first multiply <m>{4r-5}</m> and <m>{r+1}</m> to get <m>{4r^{2}-r-5}\text{,}</m> and then distribute <m>5</m> into <m>{4r^{2}-r-5}\text{:}</m></p>
 <p><me>\begin{aligned}
-{2\mathopen{}\left(3r-2\right)\mathopen{}\left(r+4\right)}\amp={2\mathopen{}\left(3r^{2}+10r-8\right)}\\
-\amp={6r^{2}+20r-16}
+{5\mathopen{}\left(4r-5\right)\mathopen{}\left(r+1\right)}\amp={5\mathopen{}\left(4r^{2}-r-5\right)}\\
+\amp={20r^{2}-5r-25}
 \end{aligned}</me></p>
 </solution>
   </static>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-equation-variable-in-numerator-fraction" assembly-id="solve-equation-variable-in-numerator-fraction">
-  <static seed="2541">
-    <statement><p><m>{-{\frac{1}{7}}}={7\frac{r}{8}}</m></p>
+  <static seed="2405">
+    <statement><p><m>{{\frac{4}{7}}}={10\frac{p}{9}}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\frac{-8}{49}\right\}</m>
+        <m>\left\{\frac{18}{35}\right\}</m>
       </p>
     </answer>
   </static>

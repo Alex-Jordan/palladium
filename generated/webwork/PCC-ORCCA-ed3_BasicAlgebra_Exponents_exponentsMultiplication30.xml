@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication30" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication30">
-  <static seed="1669">
-    <statement><p><m>\displaystyle{({7t^{17}})\cdot({4t^{18}})}</m></p>
+  <static seed="1533">
+    <statement><p><m>\displaystyle{({-8r^{16}})\cdot({-9r^{4}})}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>28t^{35}</m>
+        <m>72r^{20}</m>
       </p>
     </answer>
     <solution><p>We <em>multiply</em> the coefficients, and <em>add</em> the exponents as follows: <me>\begin{aligned}
-           ({7t^{17}})\cdot ({4t^{18}})\amp =(7 \cdot 4)\cdot t^{17+18}\\
-                             \amp =28t^{35}
+           ({-8r^{16}})\cdot ({-9r^{4}})\amp =(-8 \cdot -9)\cdot r^{16+4}\\
+                             \amp =72r^{20}
        \end{aligned}</me></p>
 </solution>
   </static>

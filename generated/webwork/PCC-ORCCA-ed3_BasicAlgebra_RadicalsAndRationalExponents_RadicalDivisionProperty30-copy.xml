@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty30-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty30-copy">
-  <static seed="1837">
-    <statement><p><m>\displaystyle{ \sqrt{\frac{3}{5}} \cdot \sqrt{\frac{1}{5}}}</m></p>
+  <static seed="1701">
+    <statement><p><m>\displaystyle{ \sqrt{\frac{7}{5}} \cdot \sqrt{\frac{3}{5}}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{\sqrt{3}}{5}</m>
+        <m>\frac{\sqrt{21}}{5}</m>
       </p>
     </answer>
     <solution><p>First, we use the multiplication property of radicals:</p>
@@ -14,9 +14,9 @@
 <p>We have:</p>
 <p><m>\displaystyle{ 
 \begin{aligned}[t]
-   \sqrt{\frac{3}{5}} \cdot \sqrt{\frac{1}{5}} 
-       \amp = \sqrt{ \frac{3}{5} \cdot \frac{1}{5} } \\
-       \amp = \sqrt{ \frac{3}{25} }
+   \sqrt{\frac{7}{5}} \cdot \sqrt{\frac{3}{5}} 
+       \amp = \sqrt{ \frac{7}{5} \cdot \frac{3}{5} } \\
+       \amp = \sqrt{ \frac{21}{25} }
 \end{aligned}
     }</m></p>
 <p>Next, we will use the division property of radicals:</p>
@@ -24,9 +24,9 @@
 <p>We have:</p>
 <p><m>\displaystyle{ 
 \begin{aligned}[t]
-   \sqrt{ \frac{3}{25}}
-      \amp = \frac{\sqrt{3}} {\sqrt{25}} \\
-      \amp = \frac{\sqrt{3}} {5} \\
+   \sqrt{ \frac{21}{25}}
+      \amp = \frac{\sqrt{21}} {\sqrt{25}} \\
+      \amp = \frac{\sqrt{21}} {5} \\
 \end{aligned}
     }</m></p>
 </solution>

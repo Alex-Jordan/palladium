@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-linear-equation-fractions-three-pqr-copy" assembly-id="linear-equation-fractions-three-pqr-copy">
-  <static seed="1498">
-    <statement><p><m>{{\frac{3}{20}}x-{\frac{5}{12}}} = {-{\frac{1}{15}}x+3}</m></p>
+  <static seed="1362">
+    <statement><p><m>{{\frac{1}{15}}x-{\frac{3}{10}}} = {5x-{\frac{7}{6}}}</m></p>
 <p><fillin characters="4" name="AnSwEr0001"/></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>60</m>
+        <m>30</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left\{\frac{205}{13}\right\}</m>
+        <m>\left\{\frac{13}{74}\right\}</m>
       </p>
     </answer>
   </static>

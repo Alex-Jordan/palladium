@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PythagoreanTheorem_pythagoreanTheorem30-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PythagoreanTheorem_pythagoreanTheorem30-copy">
-  <static seed="850">
+  <static seed="1041">
     <statement><!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/PCC-ORCCA-ed3_BasicAlgebra_PythagoreanTheorem_pythagoreanTheorem30-copy-image-1" width="40%">
-<shortdescription>a right triangle with one leg of length 9 and a hypotenuse of length 15, where the other leg is labeled x</shortdescription>
+<shortdescription>a right triangle with one leg of length 5 and a hypotenuse of length 13, where the other leg is labeled x</shortdescription>
 <description>
 <p/></description>
 </image>
@@ -16,15 +16,15 @@
     </answer>
     <solution><p>By the Pythagorean Theorem, we have:</p>
 <p><me>\begin{aligned}
-  x^{2}+9^{2} \amp = 15^{2} \\
-  x^{2}+81  \amp = 225 \\
+  x^{2}+5^{2} \amp = 13^{2} \\
+  x^{2}+25  \amp = 169 \\
            x^{2} \amp = 144\\
            x     \amp = \sqrt{144}\\
            x     \amp = 12
 \end{aligned}</me></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_3_4_46.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/2_4_7_132.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 # WeBWorK problem written by Alex Jordan
 # Portland Community College

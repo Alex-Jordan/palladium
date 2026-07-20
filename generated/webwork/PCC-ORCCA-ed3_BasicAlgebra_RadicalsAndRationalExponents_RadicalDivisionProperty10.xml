@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty10" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty10">
-  <static seed="1818">
-    <statement><p><m>\displaystyle{ \frac{{\sqrt{18}}}{{\sqrt{2}}}}</m></p>
+  <static seed="1682">
+    <statement><p><m>\displaystyle{ \frac{{\sqrt{27}}}{{\sqrt{3}}}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
@@ -14,8 +14,8 @@
 <p>The full process is:</p>
 <p><m>\displaystyle{ 
 \begin{aligned}
-   \frac{{\sqrt{18}}}{{\sqrt{2}}}
-      \amp = \sqrt{\frac{18}{2}} \\
+   \frac{{\sqrt{27}}}{{\sqrt{3}}}
+      \amp = \sqrt{\frac{27}{3}} \\
       \amp = \sqrt{9} \\
       \amp = {3}
 \end{aligned}

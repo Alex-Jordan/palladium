@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-combine-like-terms" assembly-id="combine-like-terms">
-  <static seed="2228">
+  <static seed="2092">
     <introduction><p>Simplify each expression by combining like terms (if possible).</p>
 </introduction>
     <task>

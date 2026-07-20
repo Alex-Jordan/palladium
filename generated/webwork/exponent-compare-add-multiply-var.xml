@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-compare-add-multiply-var" assembly-id="exponent-compare-add-multiply-var">
-  <static seed="2604">
+  <static seed="2468">
     <introduction/>
     <task>
-      <statement><p><m>{h+h}</m></p>
+      <statement><p><m>{g+g}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>2h</m>
+          <m>2g</m>
         </p>
       </answer>
     </task>
     <task>
-      <statement><p><m>h\cdot h</m></p>
+      <statement><p><m>g\cdot g</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>h^{2}</m>
+          <m>g^{2}</m>
         </p>
       </answer>
     </task>

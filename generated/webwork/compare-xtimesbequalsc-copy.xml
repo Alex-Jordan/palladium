@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-compare-xtimesbequalsc-copy" assembly-id="compare-xtimesbequalsc-copy">
-  <static seed="1552">
+  <static seed="1416">
     <introduction/>
     <task>
-      <statement><p><m>{2R}={7}</m> for <m>R\text{.}</m></p>
+      <statement><p><m>{8N}={5}</m> for <m>N\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>\left\{\frac{7}{2}\right\}</m>
+          <m>\left\{\frac{5}{8}\right\}</m>
         </p>
       </answer>
     </task>
     <task>
-      <statement><p><m>{AR}={N}</m> for <m>R\text{.}</m></p>
+      <statement><p><m>{QN}={e}</m> for <m>N\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>R = \frac{N}{A}</m>
+          <m>N = \frac{e}{Q}</m>
         </p>
       </answer>
     </task>

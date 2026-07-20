@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-mxequalsmxplusb-fraction" assembly-id="solve-mxequalsmxplusb-fraction">
-  <static seed="1523">
-    <statement><p><m>{{\frac{6}{7}}J}={{\frac{6}{7}}J+2}</m></p>
+  <static seed="1387">
+    <statement><p><m>{{\frac{5}{8}}a}={{\frac{5}{8}}a+8}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
@@ -11,8 +11,8 @@
     </answer>
     <solution><p>We try to use the standard steps for solving an equation:</p>
 <p><me>\begin{aligned}
-{{\frac{6}{7}}J} \amp= {{\frac{6}{7}}J+2}\\
-0 \amp= 2
+{{\frac{5}{8}}a} \amp= {{\frac{5}{8}}a+8}\\
+0 \amp= 8
 \end{aligned}</me></p>
 <p>This is an outright false equation, so there are no solutions. We could write the solution set as <m>\{\}</m> or <m>\emptyset\text{.}</m></p>
 </solution>

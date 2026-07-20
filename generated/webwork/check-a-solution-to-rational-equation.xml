@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-a-solution-to-rational-equation" assembly-id="check-a-solution-to-rational-equation">
-  <static seed="2440">
+  <static seed="2304">
     <statement><p>Is <m>-3</m> a solution to the equation <m>x^2+x+1=\frac{3x+2}{x+2}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>

@@ -1,27 +1,27 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-the-quadratic-formula-7-3-11" assembly-id="section-the-quadratic-formula-7-3-11">
-  <static seed="974">
-    <statement><p>A new electric car company is ready to sell its debut model. Studying the current state of the electric car market, they estimate that if they charge each customer <m>p</m> dollars, they will have <m>{1000000-4p}</m> sales. What is the lowest price that they could use so that they end up with a revenue of <m>{\$2}</m> billion?</p>
+  <static seed="507">
+    <statement><p>A new electric car company is ready to sell its debut model. Studying the current state of the electric car market, they estimate that if they charge each customer <m>p</m> dollars, they will have <m>{1000000-4p}</m> sales. What is the lowest price that they could use so that they end up with a revenue of <m>{\$1}</m> billion?</p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\$2{,}016.26</m>
+        <m>\$1{,}004.03</m>
       </p>
     </answer>
-    <solution><p>If they set the price at <m>p</m> dollars per car, the revenue will be <m>(\text{number sold})\cdot\text{price}\text{,}</m> which is <m>({1000000-4p})p\text{,}</m> which simplifies to <m>{-4p^{2}+1000000p}\text{.}</m> We need to solve the equation <m>{-4p^{2}+1000000p}=2000000000\text{.}</m> In standard form, this is <m>{-4p^{2}+1000000p-2000000000}=0\text{,}</m> and the quadratic formula says:</p>
+    <solution><p>If they set the price at <m>p</m> dollars per car, the revenue will be <m>(\text{number sold})\cdot\text{price}\text{,}</m> which is <m>({1000000-4p})p\text{,}</m> which simplifies to <m>{-4p^{2}+1000000p}\text{.}</m> We need to solve the equation <m>{-4p^{2}+1000000p}=1000000000\text{.}</m> In standard form, this is <m>{-4p^{2}+1000000p-1000000000}=0\text{,}</m> and the quadratic formula says:</p>
 <p><me>\begin{aligned}
 x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
-\amp=\frac{-1000000\pm\sqrt{1000000000000-4(-4)(-2000000000)}}{2(-4)}\\
-\amp=\frac{-1000000\pm\sqrt{968000000000}}{-8}\\
-\amp\approx\frac{-1000000\pm{983869.9101}}{-8}\\
-x\approx\amp\frac{-1000000-{983869.9101}}{-8}\quad\text{or}\quad x\approx\frac{-1000000+{983869.9101}}{-8}\\
-x\approx\amp{247983.73876}\quad\text{or}\quad x\approx{2016.2612375}
+\amp=\frac{-1000000\pm\sqrt{1000000000000-4(-4)(-1000000000)}}{2(-4)}\\
+\amp=\frac{-1000000\pm\sqrt{984000000000}}{-8}\\
+\amp\approx\frac{-1000000\pm{991967.74141}}{-8}\\
+x\approx\amp\frac{-1000000-{991967.74141}}{-8}\quad\text{or}\quad x\approx\frac{-1000000+{991967.74141}}{-8}\\
+x\approx\amp{248995.96768}\quad\text{or}\quad x\approx{1004.0323236}
 \end{aligned}</me></p>
-<p>The possible solutions are <m>{247983.73876}</m> and <m>{2016.2612375}\text{.}</m> They are both valid solutions, but the question was to find the <em>lowest</em> price we could set to reach a profit of <m>\text{.}</m> So we should set the price to be <m>{\$2{,}016.26}\text{.}</m></p>
+<p>The possible solutions are <m>{248995.96768}</m> and <m>{1004.0323236}\text{.}</m> They are both valid solutions, but the question was to find the <em>lowest</em> price we could set to reach a profit of <m>\text{.}</m> So we should set the price to be <m>{\$1{,}004.03}\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_4_5_108.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_5_5_108.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -38,7 +38,7 @@ x\approx\amp{247983.73876}\quad\text{or}\quad x\approx{2016.2612375}
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.4.5.108)
+## Problem1(1.5.5.108)
 ## Author()
 ## Institution()
 ## Language(en-US)

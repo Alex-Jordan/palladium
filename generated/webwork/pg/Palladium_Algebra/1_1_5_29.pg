@@ -27,9 +27,8 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PCCmacros.pl",
-  "parserNumberWithUnits.pl",
-  "parserLinearRelation.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -42,27 +41,23 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$final = random(1600, 2000, 100);
-$end = NumberWithUnits("$final lb");
-$rate = 8.3454;
-$speed = NumberWithUnits("$rate lb/gal");
-$initial = random(80, 100, 5);
-$start = NumberWithUnits("$initial lb");
-Context("LinearRelation")->variables->are(V => 'Real');
-$inequality = LinearRelation("$initial + $rate V <= $final");
+($a,$r) = (1, non_zero_random(-9,9));
+Context()->noreduce('(-x)-y');
+$left = Formula("x^2 - 2*$r x + ($r)**2")->reduce;
+$right = Formula("0")->reduce;
+Context("FiniteSolutionSets");
+$sols = Formula("{$r}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Write an inequality to model the scenario. There is no need to solve the inequality.
+Solve the equation by factoring.
 
-A flatbed truck that hauls water is able to carry a maximum of [`[$end]\text{.}`] Water weighs [`[$speed]\text{,}`] and the plastic tank on the truck that holds the water weighs [`[$start]\text{.}`] How many gallons of water can the truck haul? Set up an inequality to answer this question. There is no need to solve it.
+[`[$left] = [$right]`]
 
-[@KeyboardInstructions('Use [|V|]* as the variable.')@]**
-
-[_]{$inequality}{20}
+[_]{$sols}{16}
 
 END_PGML
 

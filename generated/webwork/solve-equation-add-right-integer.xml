@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-equation-add-right-integer" assembly-id="solve-equation-add-right-integer">
-  <static seed="2515">
-    <statement><p><m>{x+15}={-5}</m></p>
+  <static seed="2379">
+    <statement><p><m>{u+1}={12}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{-20\right\}</m>
+        <m>\left\{11\right\}</m>
       </p>
     </answer>
     <solution><p>The opposite action to addition is subtraction.</p>
 <p><me>\begin{aligned}
-{x+15} \amp= {-5}\\
-{x+15}\subtractright{15} \amp= {-5}\subtractright{15}\\
-x \amp= -20
+{u+1} \amp= {12}\\
+{u+1}\subtractright{1} \amp= {12}\subtractright{1}\\
+u \amp= 11
 \end{aligned}</me></p>
-<p>The solution set is <m>{\left\{-20\right\}}\text{.}</m></p>
+<p>The solution set is <m>{\left\{11\right\}}\text{.}</m></p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/Appendices/A_7_6_1.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-introduction-to-exponent-properties-4-15" assembly-id="section-introduction-to-exponent-properties-4-15">
-  <static seed="2567" source="Contrib/PCC/BasicAlgebra/Exponents/exponentsMultiplication23.pg">
+  <static seed="2431" source="Contrib/PCC/BasicAlgebra/Exponents/exponentsMultiplication23.pg">
     <statement><p>Use the properties of exponents to simplify the expression.</p>
-<p><m>\displaystyle{\left(4t\right)^2}</m></p>
+<p><m>\displaystyle{\left(5x\right)^2}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>16t^{2}</m>
+        <m>25x^{2}</m>
       </p>
     </answer>
     <solution><p>We <em>multiply</em> the exponents and apply the rule <m>(ab)^m=a^m\cdot b^m</m> as follows: <me>\begin{aligned}
-           \left(4t\right)^{2}\amp =(4)^{2}t^{2}\\
-                             \amp =16t^{2}
+           \left(5x\right)^{2}\amp =(5)^{2}x^{2}\\
+                             \amp =25x^{2}
        \end{aligned}</me></p>
 </solution>
   </static>

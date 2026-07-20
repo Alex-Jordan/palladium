@@ -1,0 +1,67 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.1.5.55)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextUnits.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+($r,$s) = num_sort(random_subset(2,2..12));
+$a = -5;
+$b = 5*($s - $r);
+$c = 5*$r*$s;
+Context("Units")->withUnitsFor("time");
+$answer = Compute("$s s");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+For a falling object on Earth, with height measured in meters and time measured in seconds, the curvature coefficient of its height function is (roughly) [`-5\text{.}`]
+
+An object on Earth is shot straight up from a height of [`[$c]`] meters with an initial speed of [`[$c]`] meters per second. How long will it take for the object to land?
+
+[_]{$answer}{16}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

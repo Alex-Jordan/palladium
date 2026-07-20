@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-quadratic-equations-by-factoring-7-2-47" assembly-id="section-solving-quadratic-equations-by-factoring-7-2-47">
-  <static seed="780" source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad335.pg">
+  <static seed="56" source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad335.pg">
     <statement><p>Solve the equation.</p>
-<p><m>{\left(x-6\right)\mathopen{}\left(x-1\right)} = {-4}</m></p>
+<p><m>{\left(x+1\right)\mathopen{}\left(x+2\right)} = {6}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{5,2\right\}</m>
+        <m>\left\{-4,1\right\}</m>
       </p>
     </answer>
     <solution><p>Our priority must be to manipulate this equation until one side is equal to 
 <m>0</m>; once that is achieved, we will use the <em>zero product principle</em></p>
 <p><m>\begin{aligned}
-            {\left(x-6\right)\mathopen{}\left(x-1\right)}={-4} \amp   \Rightarrow {x^{2}-7x+6}= -4 \\
-                          \amp  \Rightarrow {x^{2}-7x+10}= 0 \\
-                          \amp  \Rightarrow {\left(x-5\right)\mathopen{}\left(x-2\right)}= 0 \\
-                          \amp  \Rightarrow x=5\text{ or } x=2\\
+            {\left(x+1\right)\mathopen{}\left(x+2\right)}={6} \amp   \Rightarrow {x^{2}+3x+2}= 6 \\
+                          \amp  \Rightarrow {x^{2}+3x-4}= 0 \\
+                          \amp  \Rightarrow {\left(x+4\right)\mathopen{}\left(x-1\right)}= 0 \\
+                          \amp  \Rightarrow x=-4\text{ or } x=1\\
         \end{aligned}</m></p>
 <p>Note that <em>all</em> quadratic equations have <alert>two</alert> (possibly repeated) solutions; in this problem both solutions are real. Each solution can be checked by substituting it into the original equation- this is left as an exercise.</p>
 <p>You might have solved the equation using the Quadratic Formula- the final 

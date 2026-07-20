@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-equation-multiply-integer-integer-solution-copy" assembly-id="solve-equation-multiply-integer-integer-solution-copy">
-  <static seed="2524">
-    <statement><p><m>{6x}={-120}</m></p>
+  <static seed="2388">
+    <statement><p><m>{17u}={-153}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{-20\right\}</m>
+        <m>\left\{-9\right\}</m>
       </p>
     </answer>
   </static>

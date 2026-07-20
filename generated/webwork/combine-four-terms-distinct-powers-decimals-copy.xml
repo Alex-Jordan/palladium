@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-combine-four-terms-distinct-powers-decimals-copy" assembly-id="combine-four-terms-distinct-powers-decimals-copy">
-  <static seed="2295">
-    <statement><p><m>{-f^{4}+56f^{5}+f^{5}-f^{4}}</m></p>
+  <static seed="2159">
+    <statement><p><m>{9.8c^{4}+7.6c^{2}+11c^{4}+c^{2}}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-2f^{4}+57f^{5}</m>
+        <m>8.6c^{2}+20.8c^{4}</m>
       </p>
     </answer>
   </static>

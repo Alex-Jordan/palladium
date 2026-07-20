@@ -1,39 +1,39 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator130-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator130-copy">
-  <static seed="1939">
-    <statement><p><m>\displaystyle{ \sqrt{\frac{2}{175}}  }</m></p>
+  <static seed="1803">
+    <statement><p><m>\displaystyle{ \sqrt{\frac{11}{75}}  }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{\sqrt{14}}{35}</m>
+        <m>\frac{\sqrt{33}}{15}</m>
       </p>
     </answer>
     <solution><p>We first use this property:</p>
 <p><m>\displaystyle{ \sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}} }</m></p>
 <p>Thus we have:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \sqrt{\frac{2}{175}} 
-      \amp = \frac{\sqrt{2}}{\sqrt{175}} \\
+   \sqrt{\frac{11}{75}} 
+      \amp = \frac{\sqrt{11}}{\sqrt{75}} \\
 \end{aligned}
     }</m></p>
 <p>We can simplify the radical in the denominator:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \sqrt{175}
-            \amp = \sqrt{5 \cdot 5 \cdot 7}  \\
-            \amp =5 \sqrt{7} \\
+   \sqrt{75}
+            \amp = \sqrt{3 \cdot 5 \cdot 5}  \\
+            \amp =5 \sqrt{3} \\
             \amp  
 \end{aligned}
     }</m></p>
 <p>Then we will rationalize the denominator. The full process is:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   \sqrt{\frac{2}{175}} 
-      \amp = \frac{\sqrt{2}}{\sqrt{175}} \\
-      \amp = \frac{\sqrt{2}}{5\sqrt{7}} \\
-      \amp = \frac{\sqrt{2}}{5\sqrt{7}}\cdot\frac{\sqrt{7}}{\sqrt{7}} \\
-      \amp = \frac{\sqrt{2} \cdot \sqrt{7}}{5\sqrt{7}\cdot \sqrt{7}} \\
-      \amp = \frac{\sqrt{2} \cdot \sqrt{7}}{5 \cdot 7} \\
-      \amp = \frac{\sqrt{14}}{35}
+   \sqrt{\frac{11}{75}} 
+      \amp = \frac{\sqrt{11}}{\sqrt{75}} \\
+      \amp = \frac{\sqrt{11}}{5\sqrt{3}} \\
+      \amp = \frac{\sqrt{11}}{5\sqrt{3}}\cdot\frac{\sqrt{3}}{\sqrt{3}} \\
+      \amp = \frac{\sqrt{11} \cdot \sqrt{3}}{5\sqrt{3}\cdot \sqrt{3}} \\
+      \amp = \frac{\sqrt{11} \cdot \sqrt{3}}{5 \cdot 3} \\
+      \amp = \frac{\sqrt{33}}{15}
 \end{aligned}
     }</m></p>
 <p>Note that we used this property in the last step:</p>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-three-product-powers-copy" assembly-id="exponent-three-product-powers-copy">
-  <static seed="2591">
-    <statement><p><m>{\left(4x\right)^{3}\mathopen{}\left(9x\right)^{2}\mathopen{}\left(3x\right)^{9}}</m></p>
+  <static seed="2455">
+    <statement><p><m>{\left(6w\right)^{10}\mathopen{}\left(3w\right)^{5}\mathopen{}\left(9w\right)^{7}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>108x^{14}</m>
+        <m>162w^{22}</m>
       </p>
     </answer>
   </static>

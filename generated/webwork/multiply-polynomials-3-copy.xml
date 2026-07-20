@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-multiply-polynomials-3-copy" assembly-id="multiply-polynomials-3-copy">
-  <static seed="2684">
-    <statement><p><m>{x\mathopen{}\left(x+10\right)\mathopen{}\left(x+5\right)}</m></p>
+  <static seed="2548">
+    <statement><p><m>{x\mathopen{}\left(x-5\right)\mathopen{}\left(x-10\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>x^{3}+15x^{2}+50x</m>
+        <m>x^{3}-15x^{2}+50x</m>
       </p>
     </answer>
-    <solution><p>We could first distribute <m>x</m> into <m>{x+10}</m> to get <m>{x^{2}+10x}\text{,}</m> and then multiply <m>{x^{2}+10x}</m> and <m>{x+5}\text{:}</m></p>
+    <solution><p>We could first distribute <m>x</m> into <m>{x-5}</m> to get <m>{x^{2}-5x}\text{,}</m> and then multiply <m>{x^{2}-5x}</m> and <m>{x-10}\text{:}</m></p>
 <p><me>\begin{aligned}
-{x\mathopen{}\left(x+10\right)\mathopen{}\left(x+5\right)}\amp=({x^{2}+10x})({x+5})\\
-\amp={x^{3}+15x^{2}+50x}
+{x\mathopen{}\left(x-5\right)\mathopen{}\left(x-10\right)}\amp=({x^{2}-5x})({x-10})\\
+\amp={x^{3}-15x^{2}+50x}
 \end{aligned}</me></p>
-<p>We could also first multiply <m>{x+10}</m> and <m>{x+5}</m> to get <m>{x^{2}+15x+50}\text{,}</m> and then distribute <m>x</m> into <m>{x^{2}+15x+50}\text{:}</m></p>
+<p>We could also first multiply <m>{x-5}</m> and <m>{x-10}</m> to get <m>{x^{2}-15x+50}\text{,}</m> and then distribute <m>x</m> into <m>{x^{2}-15x+50}\text{:}</m></p>
 <p><me>\begin{aligned}
-{x\mathopen{}\left(x+10\right)\mathopen{}\left(x+5\right)}\amp=x({x^{2}+15x+50})\\
-\amp={x^{3}+15x^{2}+50x}
+{x\mathopen{}\left(x-5\right)\mathopen{}\left(x-10\right)}\amp=x({x^{2}-15x+50})\\
+\amp={x^{3}-15x^{2}+50x}
 \end{aligned}</me></p>
 </solution>
   </static>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-use-multiplicative-commutativity-with-factored-copy" assembly-id="use-multiplicative-commutativity-with-factored-copy">
-  <static seed="2337">
-    <statement><p>Apply commutativity of multiplication to <m>{7\mathopen{}\left(M+2\right)}\text{.}</m></p>
+  <static seed="2201">
+    <statement><p>Apply commutativity of multiplication to <m>{10\mathopen{}\left(J+4\right)}\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left(M+2\right)\cdot 7</m>
+        <m>\left(J+4\right)\cdot 10</m>
       </p>
     </answer>
   </static>

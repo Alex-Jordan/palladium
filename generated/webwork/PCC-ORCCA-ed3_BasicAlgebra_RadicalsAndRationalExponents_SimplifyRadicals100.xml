@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals100" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals100">
-  <static seed="1852">
-    <statement><p><m>\displaystyle{{\sqrt{2}} \left({\sqrt{3}} + {\sqrt{17}}\right) }</m></p>
+  <static seed="1716">
+    <statement><p><m>\displaystyle{{\sqrt{2}} \left({\sqrt{11}} + {\sqrt{5}}\right) }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\sqrt{6}+\sqrt{34}</m>
+        <m>\sqrt{22}+\sqrt{10}</m>
       </p>
     </answer>
     <solution><p>Use the distributive property and simplify.</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   {\sqrt{2}} \left({\sqrt{3}} + {\sqrt{17}}\right) 
-   \amp = {\sqrt{2}} \cdot {\sqrt{3}} + {\sqrt{2}} \cdot {\sqrt{17}} \\
-   \amp = {\sqrt{6}+\sqrt{34}}
+   {\sqrt{2}} \left({\sqrt{11}} + {\sqrt{5}}\right) 
+   \amp = {\sqrt{2}} \cdot {\sqrt{11}} + {\sqrt{2}} \cdot {\sqrt{5}} \\
+   \amp = {\sqrt{22}+\sqrt{10}}
 \end{aligned}
     }</m></p>
 </solution>

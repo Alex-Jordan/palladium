@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp155" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp155">
-  <static seed="1771">
-    <statement><p><m>\left(x^{-4}y^{8}\right)^{-5}</m></p>
+  <static seed="1635">
+    <statement><p><m>\left(x^{-8}r^{4}\right)^{-4}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{x^{20}}{y^{40}}</m>
+        <m>\frac{x^{32}}{r^{16}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\displaystyle{\frac{a^m}{a^n} = a^{m-n}}</m> and <m>\left(a^m\right)^{n}=a^{mn}</m></p>
 <p><m>\begin{aligned}
-                 \left(x^{-4}y^{8}\right)^{-5}
-                      \amp = x^{(-4)\cdot(-5)}y^{8\cdot(-5)}\\
-                      \amp = x^{20}y^{-40}\\
-                                    \amp  = {\frac{x^{20}}{y^{40}}}
+                 \left(x^{-8}r^{4}\right)^{-4}
+                      \amp = x^{(-8)\cdot(-4)}r^{4\cdot(-4)}\\
+                      \amp = x^{32}r^{-16}\\
+                                    \amp  = {\frac{x^{32}}{r^{16}}}
            \end{aligned}</m></p>
 </solution>
   </static>

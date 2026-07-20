@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-subtract-same-denominator-no-reduce" assembly-id="subtract-same-denominator-no-reduce">
-  <static seed="2232">
-    <statement><p><m>{{\frac{5}{7}}}-{{\frac{3}{7}}}</m></p>
+  <static seed="2096">
+    <statement><p><m>{{\frac{16}{17}}}-{{\frac{3}{17}}}</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{2}{7}}</m>
+        <m>{\frac{13}{17}}</m>
       </p>
     </answer>
   </static>

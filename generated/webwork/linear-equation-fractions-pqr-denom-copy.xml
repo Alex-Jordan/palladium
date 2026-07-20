@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-linear-equation-fractions-pqr-denom-copy" assembly-id="linear-equation-fractions-pqr-denom-copy">
-  <static seed="1490">
-    <statement><p><m>{{\frac{1}{30}}x-{\frac{8}{35}}} = {{\frac{1}{42}}}</m></p>
+  <static seed="1354">
+    <statement><p><m>{{\frac{2}{15}}x-{\frac{2}{21}}} = {{\frac{8}{35}}}</m></p>
 <p><fillin characters="4" name="AnSwEr0001"/></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>210</m>
+        <m>105</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left\{\frac{53}{7}\right\}</m>
+        <m>\left\{\frac{17}{7}\right\}</m>
       </p>
     </answer>
   </static>

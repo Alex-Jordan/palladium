@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-combine-two-terms-no-combine" assembly-id="combine-two-terms-no-combine">
-  <static seed="2274">
-    <statement><p><m>{76P+{\frac{1}{2}}A}</m></p>
+  <static seed="2138">
+    <statement><p><m>{-3.6L+4Q}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>76P+\frac{1}{2}A</m>
+        <m>-3.6L+4Q</m>
       </p>
     </answer>
   </static>

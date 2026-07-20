@@ -27,10 +27,6 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PCCmacros.pl",
-  "parserNumberWithUnits.pl",
-  "parserLinearRelation.pl",
-  "randomPerson.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -43,30 +39,40 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$name = randomPerson();
-$initial = random(12, 18);
-$start = NumberWithUnits("$initial gal");
-$rate = random(0.04,0.05,0.001);
-$speed = NumberWithUnits("$rate gal/mi");
-$final = 1;
-$end = NumberWithUnits("$final gal");
-Context("LinearRelation")->variables->are(d => 'Real');
-$equation = LinearRelation("$initial - $rate d = $final");
+Context("Numeric");
+@ans = (Real(-4), Real(-1));
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Write an equation to model the scenario. There is no need to solve the equation.
+Let [`Q`] be the function defined by [`Q(x)=-3x^2+2x+4\text{.}`]
+a.  Find [`Q(2)\text{.}`]
 
-[$name] filled the gas tank in [$name->possessive] car to [`[$start]\text{.}`] When the tank reaches [`[$end]\text{,}`] the low gas light will come on. On average, [$name]'s car uses [`[$speed]`] per mile driven. How many miles will [$name]'s car be able to drive before the low gas light comes on? Write an equation to model this scenario. There is no need to solve it.
+    [_]{$ans[0]}{5}
 
-[@KeyboardInstructions('Use [|d|]* as the variable.')@]**
+a.  Find [`Q(-1)\text{.}`]
 
-[_]{$equation}{20}
+    [_]{$ans[1]}{5}
 
 END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  [`\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}\newcommand{\amp}{&}\begin{aligned}
+                      Q(\substitute{2})\amp=-3(\substitute{2})^2+2(\substitute{2})+4\\
+                      \amp=-12+4+4=-4
+                    \end{aligned}`]
+a.  [`\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}\newcommand{\amp}{&}\begin{aligned}
+                      Q(\substitute{-1})\amp=-3(\substitute{-1})^2+2(\substitute{-1})+4\\
+                      \amp=-3-2+4=-1
+                    \end{aligned}`]
+
+END_PGML_SOLUTION
 
 ############################################################
 # End Problem

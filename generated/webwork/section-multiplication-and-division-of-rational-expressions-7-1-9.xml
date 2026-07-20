@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-1-9" assembly-id="section-multiplication-and-division-of-rational-expressions-7-1-9">
-  <static seed="1249" source="Contrib/PCC/BasicAlgebra/FractionArithmetic/DivideFractions20.pg">
-    <statement><p>Divide: <m>\displaystyle{ \frac{7}{9} \div \left(-\frac{2}{15}\right) }</m></p>
+  <static seed="1113" source="Contrib/PCC/BasicAlgebra/FractionArithmetic/DivideFractions20.pg">
+    <statement><p>Divide: <m>\displaystyle{ \frac{7}{10} \div \left(-\frac{4}{25}\right) }</m></p>
 <p><fillin characters="9" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-{\frac{35}{6}}</m>
+        <m>-{\frac{35}{8}}</m>
       </p>
     </answer>
     <solution><p>When we do division with fractions, as with</p>
-<p><m>\displaystyle{\frac{7}{9} \div \left(-\frac{2}{15}\right) }</m></p>
+<p><m>\displaystyle{\frac{7}{10} \div \left(-\frac{4}{25}\right) }</m></p>
 <p>we first change division to multiplication, and at the same time, flip the second fraction. In this case, we have</p>
-<p><m>\displaystyle{\frac{7}{9} \cdot \left(-\frac{15}{2}\right) }</m></p>
+<p><m>\displaystyle{\frac{7}{10} \cdot \left(-\frac{25}{4}\right) }</m></p>
 <p>Then we do fraction multiplication as usual. The full process is:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-    \frac{7}{9} \div \left(-\frac{2}{15}\right)
-        \amp = \frac{7}{9} \cdot \left(-\frac{15}{2}\right) \amp \hbox{We can divide the first denominator and the second numerator by 3.}\\
-        \amp = \frac{7}{3 }\cdot\left(-\frac{5}{2}\right) \\
-        \amp = -\frac{35}{6}
+    \frac{7}{10} \div \left(-\frac{4}{25}\right)
+        \amp = \frac{7}{10} \cdot \left(-\frac{25}{4}\right) \amp \hbox{We can divide the first denominator and the second numerator by 5.}\\
+        \amp = \frac{7}{2 }\cdot\left(-\frac{5}{4}\right) \\
+        \amp = -\frac{35}{8}
 \end{aligned}
     }</m></p>
 </solution>

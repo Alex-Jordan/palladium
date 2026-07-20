@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-indentify-qf-vocab-some-zero" assembly-id="indentify-qf-vocab-some-zero">
+  <static seed="755">
+    <statement><p><m>f(x)={2x^{2}+3x}</m></p>
+<p><fillin characters="6" name="AnSwEr0001"/></p>
+<p><fillin characters="6" name="AnSwEr0002"/></p>
+<p><fillin characters="6" name="AnSwEr0003"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>0</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>3</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>2</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_2_8_21.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.2.8.21)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PCCmacros.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context()->noreduce('(-x)-y');
+@a = random_subset(3, -9 .. -1, 1 .. 9);
+$a[list_random(1,2)] = 0;
+($a, $b, $c) = @a;
+$f = Formula("$a x^2 + $b x + $c")->reduce;
+Context("Numeric")->variables->are(map {$_ =>'Real'} ('a'..'c'));
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Identify the initial value, the initial slope, and the curvature coefficient.
+
+[`f(x)=[$f]`]
+
+[@KeyboardInstructions('Enter the initial value here.')@]**
+
+[_]{$c}{6}
+
+[@KeyboardInstructions('Enter the initial slope here.')@]**
+
+[_]{$b}{6}
+
+[@KeyboardInstructions('Enter the curvature coefficient here.')@]**
+
+[_]{$a}{6}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

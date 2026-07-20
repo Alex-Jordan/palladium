@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-order-of-operations-checkpoint-groupaminusgroupbsquareddivgroupcminusdcubed" assembly-id="order-of-operations-checkpoint-groupaminusgroupbsquareddivgroupcminusdcubed">
-  <static seed="2139">
+  <static seed="2003">
     <statement><p>Simplify <m>(20-4^2)\div(4-6)^3\text{.}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>

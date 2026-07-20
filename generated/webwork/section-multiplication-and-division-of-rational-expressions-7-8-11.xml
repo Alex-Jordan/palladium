@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-8-11" assembly-id="section-multiplication-and-division-of-rational-expressions-7-8-11">
-  <static seed="1326" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions20.pg">
+  <static seed="1190" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions20.pg">
     <statement><p>Simplify this expression, and if applicable, write the restricted domain.</p>
-<p><m>\displaystyle{{16t} \div {\frac{4}{t^{4}}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{15t} \div {\frac{5}{t^{3}}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>4t^{5}, t\ne 0</m>
+        <m>3t^{4}, t\ne 0</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   {16t} \div {\frac{4}{t^{4}}} 
-      \amp = {16t} \cdot {\frac{t^{4}}{4}} \\
-      \amp = {4t^{5}, t\ne 0}
+   {15t} \div {\frac{5}{t^{3}}} 
+      \amp = {15t} \cdot {\frac{t^{3}}{5}} \\
+      \amp = {3t^{4}, t\ne 0}
 \end{aligned}
     }</m></p>
 </solution>

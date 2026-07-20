@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals130-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals130-copy">
-  <static seed="1857">
-    <statement><p><m>\displaystyle{\left(7 - {\sqrt{6}}\right)\left(8 - 5 {\sqrt{6}}\right) }</m></p>
+  <static seed="1721">
+    <statement><p><m>\displaystyle{\left(9 - {\sqrt{6}}\right)\left(5 - 2 {\sqrt{6}}\right) }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>86-43\sqrt{6}</m>
+        <m>57-23\sqrt{6}</m>
       </p>
     </answer>
     <solution><p>Using the FOIL method to multiply these binomial expressions together,
 we will have four terms:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   (7 - {\sqrt{6}})(8 - 5 {\sqrt{6}}) 
-   \amp = 7 \cdot 8 - 7 \cdot 5 {\sqrt{6}} - 8 {\sqrt{6}} + {\sqrt{6}} \cdot 5 {\sqrt{6}}\\
-\amp =56 - 35 {\sqrt{6}} - 8 {\sqrt{6}} +
-30\\
-\amp ={86-43\sqrt{6}}
+   (9 - {\sqrt{6}})(5 - 2 {\sqrt{6}}) 
+   \amp = 9 \cdot 5 - 9 \cdot 2 {\sqrt{6}} - 5 {\sqrt{6}} + {\sqrt{6}} \cdot 2 {\sqrt{6}}\\
+\amp =45 - 18 {\sqrt{6}} - 5 {\sqrt{6}} +
+12\\
+\amp ={57-23\sqrt{6}}
 \end{aligned}
     }</m></p>
 </solution>

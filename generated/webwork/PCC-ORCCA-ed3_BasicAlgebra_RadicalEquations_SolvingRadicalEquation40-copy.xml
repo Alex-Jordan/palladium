@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation40-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation40-copy">
-  <static seed="2029">
-    <statement><p><m>\displaystyle{ {-4\sqrt{r}} = {16} }</m></p>
+  <static seed="1893">
+    <statement><p><m>\displaystyle{ {-5\sqrt{r}} = {25} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
@@ -9,11 +9,11 @@
         <m>\text{no real solutions}</m>
       </p>
     </answer>
-    <solution><p>It will help to divide by <m>-4</m> on both sides.</p>
+    <solution><p>It will help to divide by <m>-5</m> on both sides.</p>
 <p><m>\displaystyle{\begin{aligned}
-   {-4\sqrt{r}} \amp = {16} \\
-   \frac{{-4\sqrt{r}}}{-4} \amp = \frac{{16}}{-4} \\
-   \sqrt{r} \amp = -4 \\
+   {-5\sqrt{r}} \amp = {25} \\
+   \frac{{-5\sqrt{r}}}{-5} \amp = \frac{{25}}{-5} \\
+   \sqrt{r} \amp = -5 \\
 \end{aligned}
     }</m></p>
 <p>Since a square root cannot generate negative numbers, this equation has no real solution.</p>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-mxequalsmxplusb-fraction-copy" assembly-id="solve-mxequalsmxplusb-fraction-copy">
-  <static seed="1524">
-    <statement><p><m>{{\frac{7}{6}}f}={{\frac{7}{6}}f-4}</m></p>
+  <static seed="1388">
+    <statement><p><m>{{\frac{7}{3}}v}={{\frac{7}{3}}v+1}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
@@ -11,8 +11,8 @@
     </answer>
     <solution><p>We try to use the standard steps for solving an equation:</p>
 <p><me>\begin{aligned}
-{{\frac{7}{6}}f} \amp= {{\frac{7}{6}}f-4}\\
-0 \amp= -4
+{{\frac{7}{3}}v} \amp= {{\frac{7}{3}}v+1}\\
+0 \amp= 1
 \end{aligned}</me></p>
 <p>This is an outright false equation, so there are no solutions. We could write the solution set as <m>\{\}</m> or <m>\emptyset\text{.}</m></p>
 </solution>

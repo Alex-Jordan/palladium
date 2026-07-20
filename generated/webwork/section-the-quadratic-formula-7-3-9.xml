@@ -1,30 +1,30 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-the-quadratic-formula-7-3-9" assembly-id="section-the-quadratic-formula-7-3-9">
-  <static seed="972">
-    <statement><p>A vegetable garden will be surrounded by a frame of grass sod. The garden itself will be <m>{16\ {\rm ft}}</m> by <m>{10\ {\rm ft}}\text{.}</m> The widths of the four edges of the frame will be equal to each other. There is only <m>{176\ {\rm ft^{2}}}</m> of grass sod available, and it will all be used for this frame. How wide should the four edges be? (What is the value of <m>x</m> in the diagram?)</p>
+  <static seed="505">
+    <statement><p>A vegetable garden will be surrounded by a frame of grass sod. The garden itself will be <m>{19\ {\rm ft}}</m> by <m>{14\ {\rm ft}}\text{.}</m> The widths of the four edges of the frame will be equal to each other. There is only <m>{92\ {\rm ft^{2}}}</m> of grass sod available, and it will all be used for this frame. How wide should the four edges be? (What is the value of <m>x</m> in the diagram?)</p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-the-quadratic-formula-7-3-9-image-1" width="40%"/>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>2.78709\ {\rm ft}</m>
+        <m>1.29267\ {\rm ft}</m>
       </p>
     </answer>
-    <solution><p>We can find a formula for the surface area of the frame by taking the area of the outer rectangle and subtracting the area of the inner rectangle. The outer rectangle<rsq/>s width is <m>16+2x</m> feet. Its height is <m>10+2x</m> feet. So its area is <m>(16+2x)(10+2x)</m> square feet. The inner rectangle area is <m>(16)(10)</m> square feet. So the surface area of the frame, in square feet, is <m>(16+2x)(10+2x)-(16)(10)\text{,}</m> which simplifies to <m>{4x^{2}+52x}\text{.}</m> So we must solve the equation <m>{4x^{2}+52x}=176\text{.}</m></p>
-<p>Writing the quadratic equation in standard form, <m>{4x^{2}+52x-176}=0\text{.}</m> Now we apply the quadratic formula.</p>
+    <solution><p>We can find a formula for the surface area of the frame by taking the area of the outer rectangle and subtracting the area of the inner rectangle. The outer rectangle<rsq/>s width is <m>19+2x</m> feet. Its height is <m>14+2x</m> feet. So its area is <m>(19+2x)(14+2x)</m> square feet. The inner rectangle area is <m>(19)(14)</m> square feet. So the surface area of the frame, in square feet, is <m>(19+2x)(14+2x)-(19)(14)\text{,}</m> which simplifies to <m>{4x^{2}+66x}\text{.}</m> So we must solve the equation <m>{4x^{2}+66x}=92\text{.}</m></p>
+<p>Writing the quadratic equation in standard form, <m>{4x^{2}+66x-92}=0\text{.}</m> Now we apply the quadratic formula.</p>
 <p><me>\begin{aligned}
 x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
-\amp=\frac{-52\pm\sqrt{2704-4(4)(-176)}}{2(4)}\\
-\amp=\frac{-52\pm\sqrt{5520}}{8}\\
-\amp\approx\frac{-52\pm{74.2967}}{8}\\
-x\approx\amp\frac{-52-{74.2967}}{8}\quad\text{or}\quad x\approx\frac{-52+{74.2967}}{8}\\
-x\approx\amp{-15.7871}\quad\text{or}\quad x\approx{2.78709}
+\amp=\frac{-66\pm\sqrt{4356-4(4)(-92)}}{2(4)}\\
+\amp=\frac{-66\pm\sqrt{5828}}{8}\\
+\amp\approx\frac{-66\pm{76.3413}}{8}\\
+x\approx\amp\frac{-66-{76.3413}}{8}\quad\text{or}\quad x\approx\frac{-66+{76.3413}}{8}\\
+x\approx\amp{-17.7927}\quad\text{or}\quad x\approx{1.29267}
 \end{aligned}</me></p>
-<p>The possible solutions are <m>{-15.7871}</m> and <m>{2.78709}\text{,}</m> but only <m>{2.78709}</m> makes sense in this context. Each edge of the frame will be about <m>{2.78709\ {\rm ft}}</m> wide.</p>
+<p>The possible solutions are <m>{-17.7927}</m> and <m>{1.29267}\text{,}</m> but only <m>{1.29267}</m> makes sense in this context. Each edge of the frame will be about <m>{1.29267\ {\rm ft}}</m> wide.</p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_4_5_106.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_5_5_106.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -41,7 +41,7 @@ x\approx\amp{-15.7871}\quad\text{or}\quad x\approx{2.78709}
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.4.5.106)
+## Problem1(1.5.5.106)
 ## Author()
 ## Institution()
 ## Language(en-US)

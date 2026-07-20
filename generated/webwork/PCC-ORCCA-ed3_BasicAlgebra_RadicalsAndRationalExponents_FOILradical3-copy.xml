@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_FOILradical3-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_FOILradical3-copy">
-  <static seed="1871">
-    <statement><p><m>\displaystyle{\left({2\sqrt{7}} + {5\sqrt{5}}\right)\left({2\sqrt{7}} - {5\sqrt{5}}\right) }</m></p>
+  <static seed="1735">
+    <statement><p><m>\displaystyle{\left({2\sqrt{5}} + {7\sqrt{6}}\right)\left({2\sqrt{5}} - {7\sqrt{6}}\right) }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-97</m>
+        <m>-274</m>
       </p>
     </answer>
     <solution><p>Use the FOIL method to multiply these binomial expressions together, or notice
@@ -14,11 +14,11 @@ that we have the difference of squares formula:</p>
 <p><m>\displaystyle{ (A+B)(A-B)=A^{2}-B^{2} }</m></p>
 <p>We have:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-    ({2\sqrt{7}} + {5\sqrt{5}})({2\sqrt{7}} - {5\sqrt{5}})
-               \amp = \left({2\sqrt{7}}\right)^2 - \left({5\sqrt{5}}\right)^2 \\
-               \amp = 2^2 \cdot 7 - 5^2 \cdot 5 \\
-               \amp = 28 - 125 \\
-               \amp = {-97}
+    ({2\sqrt{5}} + {7\sqrt{6}})({2\sqrt{5}} - {7\sqrt{6}})
+               \amp = \left({2\sqrt{5}}\right)^2 - \left({7\sqrt{6}}\right)^2 \\
+               \amp = 2^2 \cdot 5 - 7^2 \cdot 6 \\
+               \amp = 20 - 294 \\
+               \amp = {-274}
 \end{aligned}
     }</m></p>
 </solution>

@@ -27,9 +27,8 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PGchoicemacros.pl",
-  "contextCurrency.pl",
-  "contextPercent.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -42,34 +41,25 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("Percent");
-($p, $q) = map{Percent($_*0.005 + 0.01)} (0..4)[NchooseK(5,2)];
-Context("Currency");
-Context()->currency->addSymbol("dollars", "dollar");
-Context()->flags->set(trimTrailingZeros => 1);
-$original = random(9, 11, 0.25);
-$current = Currency(round($original*(1 + $p->value)*(1 + $q->value)));
-$original = Currency($current / (1 + $p) / (1 + $q));
+($a,$r) = random_coprime([2..9], [1..9]);
+Context()->noreduce('(-x)-y');
+$left = Formula("$a**2 x^2 - $r**2")->reduce;
+$right = Formula("0")->reduce;
+Context("FiniteSolutionSets");
+$sols = Formula("{-$r/$a, $r/$a}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Last year, Joan received a [`[$p]`] raise. This year, she received a [`[$q]`] raise. Her current wage is [`[$current]`] an hour. What was her wage before the two raises?
+Solve the equation by factoring.
 
-[_]{$original}{10}
+[`[$left] = [$right]`]
+
+[_]{$sols}{16}
 
 END_PGML
-
-############################################################
-# Solution
-############################################################
-
-BEGIN_PGML_SOLUTION
-We can represent this situation with the equation: [` x \cdot (1 + [$p->value]) \cdot (1 + [$q->value]) = [$current->value]\text{.}`] Solve this equation for [`x\text{.}`]
-
-END_PGML_SOLUTION
 
 ############################################################
 # End Problem

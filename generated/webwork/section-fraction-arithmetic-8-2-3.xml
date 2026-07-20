@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-fraction-arithmetic-8-2-3" assembly-id="section-fraction-arithmetic-8-2-3">
-  <static seed="2134">
-    <statement><p>Given that <m>a\neq0\text{,}</m> simplify <m>\displaystyle{}{\frac{3}{a}+\frac{3}{2a}}\text{.}</m></p>
+  <static seed="1998">
+    <statement><p>Given that <m>a\neq0\text{,}</m> simplify <m>\displaystyle{}{\frac{3}{a}+\frac{5}{2a}}\text{.}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{9}{2a}</m>
+        <m>\frac{11}{2a}</m>
       </p>
     </answer>
     <solution><p>Since the fractions don<rsq/>t have the same denominator, we have to make them have like denominators. Multiply the first fraction by <m>\frac{2}{2}\text{.}</m></p>
 <p><me>\begin{aligned}
-{\frac{3}{a}+\frac{3}{2a}} \amp = {\frac{3}{a}}\cdot \frac{2}{2} + {\frac{3}{2a}}\\
-\amp = \frac{6}{2a} + {\frac{3}{2a}}\\
-\amp = {\frac{9}{2a}}
+{\frac{3}{a}+\frac{5}{2a}} \amp = {\frac{3}{a}}\cdot \frac{2}{2} + {\frac{5}{2a}}\\
+\amp = \frac{6}{2a} + {\frac{5}{2a}}\\
+\amp = {\frac{11}{2a}}
 \end{aligned}</me></p>
 </solution>
   </static>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-add-fractions-rel-prime-denoms-copy" assembly-id="add-fractions-rel-prime-denoms-copy">
-  <static seed="2243">
-    <statement><p><m>{{\frac{3}{8}}}+{{\frac{14}{17}}}</m></p>
+  <static seed="2107">
+    <statement><p><m>{{\frac{4}{7}}}+{{\frac{3}{16}}}</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{163}{136}}</m>
+        <m>{\frac{85}{112}}</m>
       </p>
     </answer>
   </static>

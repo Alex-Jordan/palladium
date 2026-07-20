@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication85" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication85">
-  <static seed="2667">
-    <statement><p><m>\left({10y^{3}+7}\right)\left({y^{2}+2}\right)</m></p>
+  <static seed="2531">
+    <statement><p><m>\left({3x^{3}+10}\right)\left({x^{2}+9}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>10y^{5}+20y^{3}+7y^{2}+14</m>
+        <m>3x^{5}+27x^{3}+10x^{2}+90</m>
       </p>
     </answer>
     <solution><p>We use the FOIL technique- <alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast</p>
 <p><m>\begin{aligned}
-              \left({10y^{3}+7}\right)({y^{2}+2})\amp ={10y^{5}+20y^{3}+7y^{2}+14}
+              \left({3x^{3}+10}\right)({x^{2}+9})\amp ={3x^{5}+27x^{3}+10x^{2}+90}
       \end{aligned}</m></p>
 </solution>
   </static>

@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-variable-power-to-power-copy" assembly-id="exponent-variable-power-to-power-copy">
-  <static seed="2579">
-    <statement><p><m>{\left(n^{10}\right)^{6}}</m></p>
+  <static seed="2443">
+    <statement><p><m>{\left(m^{3}\right)^{8}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>n^{60}</m>
+        <m>m^{24}</m>
       </p>
     </answer>
-    <solution><p>This expression raises <m>n</m> to an exponent, and then raises the result to another exponent. In this situation we can multiply the two exponents and get: <m>{n^{60}}\text{.}</m></p>
+    <solution><p>This expression raises <m>m</m> to an exponent, and then raises the result to another exponent. In this situation we can multiply the two exponents and get: <m>{m^{24}}\text{.}</m></p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/Appendices/A_8_4_11.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

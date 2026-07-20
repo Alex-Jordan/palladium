@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-true-false-compare-negative-integers" assembly-id="true-false-compare-negative-integers">
-  <static seed="2379">
-    <statement><p><m>-58 \geq -97</m></p>
+  <static seed="2243">
+    <statement><p><m>-64 \geq -69</m></p>
 <p><fillin name="AnSwEr0001"/></p>
 </statement>
     <answer>

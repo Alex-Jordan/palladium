@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-quadratic-equations-by-factoring-7-2-56" assembly-id="section-solving-quadratic-equations-by-factoring-7-2-56">
-  <static seed="789" source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad360.pg">
+  <static seed="65" source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad360.pg">
     <statement><p>Solve the equation.</p>
-<p><m>{x\mathopen{}\left(x^{2}-16\right)} = 0</m></p>
+<p><m>{x\mathopen{}\left(x^{2}-4\right)} = 0</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{-4,4,0\right\}</m>
+        <m>\left\{-2,2,0\right\}</m>
       </p>
     </answer>
     <solution><p>Note that this is <em>not</em> a quadratic equation, as its degree is <m>3</m>. However, 
 the factoring technique still applies</p>
 <p><m>\begin{aligned}
-                {x\mathopen{}\left(x^{2}-16\right)} = 0 \amp \Rightarrow {x\mathopen{}\left(x+4\right)\mathopen{}\left(x-4\right)}=0\\
-                                \amp \Rightarrow x=-4\text{ or } x=4 \text{ or }x=0\\
+                {x\mathopen{}\left(x^{2}-4\right)} = 0 \amp \Rightarrow {x\mathopen{}\left(x+2\right)\mathopen{}\left(x-2\right)}=0\\
+                                \amp \Rightarrow x=-2\text{ or } x=2 \text{ or }x=0\\
         \end{aligned}</m></p>
 <p>Each solution can be checked by substituting it into the original equation- this is left as an exercise.</p>
 </solution>

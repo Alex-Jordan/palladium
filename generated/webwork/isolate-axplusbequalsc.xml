@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-isolate-axplusbequalsc" assembly-id="isolate-axplusbequalsc">
-  <static seed="1559">
-    <statement><p><m>F</m> in <m>{fF+K}={j}</m></p>
+  <static seed="1423">
+    <statement><p><m>B</m> in <m>{tB+a}={T}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>F = \frac{j-K}{f}</m>
+        <m>B = \frac{T-a}{t}</m>
       </p>
     </answer>
-    <solution><p>We need to keep our focus on <m>F</m> and take algebra steps that bring us closer to isolating <m>F\text{.}</m></p>
+    <solution><p>We need to keep our focus on <m>B</m> and take algebra steps that bring us closer to isolating <m>B\text{.}</m></p>
 <p><me>\begin{aligned}
-{fF+K} \amp= {j}\\
-{fF+K-K} \amp= {j-K}\\
-{fF} \amp= {j-K}\\
-{F} \amp= {\frac{j-K}{f}}
+{tB+a} \amp= {T}\\
+{tB+a-a} \amp= {T-a}\\
+{tB} \amp= {T-a}\\
+{B} \amp= {\frac{T-a}{t}}
 \end{aligned}</me></p>
 </solution>
   </static>

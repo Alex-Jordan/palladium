@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentDivision5-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentDivision5-copy">
-  <static seed="1678">
-    <statement><p><m>-41^0</m></p>
+  <static seed="1542">
+    <statement><p><m>-38^0</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
@@ -10,9 +10,9 @@
       </p>
     </answer>
     <solution><p>The zero-exponent definition says that <m>a^0=1</m> where <m>a</m> is any real number; notice that 
-the exponent applies to <m>41</m>, <em>not</em> to <m>\left(-41\right)</m> so</p>
+the exponent applies to <m>38</m>, <em>not</em> to <m>\left(-38\right)</m> so</p>
 <p><m>\begin{aligned}
-               -41^0 \amp  = (-1)\cdot \left(41\right)^0\\
+               -38^0 \amp  = (-1)\cdot \left(38\right)^0\\
                             \amp  = -1\cdot 1\\
                             \amp  = -1
         \end{aligned}</m></p>

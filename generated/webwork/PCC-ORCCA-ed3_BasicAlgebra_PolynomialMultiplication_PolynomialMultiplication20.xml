@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication20" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication20">
-  <static seed="2641">
-    <statement><p><m>{10y^{2}}\left({-5y^{2}-10y+5}\right)</m></p>
+  <static seed="2505">
+    <statement><p><m>{-3y^{2}}\left({-2y^{2}-4y-3}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-50y^{4}-100y^{3}+50y^{2}</m>
+        <m>6y^{4}+12y^{3}+9y^{2}</m>
       </p>
     </answer>
     <solution><p>We multiply the monomial by each term in the trinomial, using 
 the properties of exponents to help us</p>
 <p><m>\begin{aligned}
-              {10y^{2}}({-5y^{2}-10y+5})\amp ={-50y^{4}-100y^{3}+50y^{2}}
+              {-3y^{2}}({-2y^{2}-4y-3})\amp ={6y^{4}+12y^{3}+9y^{2}}
       \end{aligned}</m></p>
 </solution>
   </static>

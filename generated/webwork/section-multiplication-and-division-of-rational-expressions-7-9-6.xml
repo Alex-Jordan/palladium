@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-9-6" assembly-id="section-multiplication-and-division-of-rational-expressions-7-9-6">
-  <static seed="1344" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions55.pg">
+  <static seed="1208" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions55.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{{\frac{t^{2}+2tx-15x^{2}}{t+x}} \cdot {\frac{2t+2x}{t+5x}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{t^{2}-2tx-15x^{2}}{t-2x}} \cdot {\frac{2t-4x}{t+3x}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>2\mathopen{}\left(t-3x\right)</m>
+        <m>2\mathopen{}\left(t-5x\right)</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   {\frac{t^{2}+2tx-15x^{2}}{t+x}} \cdot {\frac{2t+2x}{t+5x}} 
-      \amp = \frac{{\left(t+5x\right)\mathopen{}\left(t-3x\right)}}{{t+x}} \cdot \frac{{2\mathopen{}\left(t+x\right)}}{{t+5x}} \\
-      \amp = {2\mathopen{}\left(t-3x\right)}
+   {\frac{t^{2}-2tx-15x^{2}}{t-2x}} \cdot {\frac{2t-4x}{t+3x}} 
+      \amp = \frac{{\left(t+3x\right)\mathopen{}\left(t-5x\right)}}{{t-2x}} \cdot \frac{{2\mathopen{}\left(t-2x\right)}}{{t+3x}} \\
+      \amp = {2\mathopen{}\left(t-5x\right)}
 \end{aligned}
     }</m></p>
 </solution>

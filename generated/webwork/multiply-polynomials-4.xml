@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-multiply-polynomials-4" assembly-id="multiply-polynomials-4">
-  <static seed="2685">
-    <statement><p><m>{2y\mathopen{}\left(y-8\right)\mathopen{}\left(y-7\right)}</m></p>
+  <static seed="2549">
+    <statement><p><m>{5x\mathopen{}\left(x-1\right)\mathopen{}\left(x+7\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>2y^{3}-30y^{2}+112y</m>
+        <m>5x^{3}+30x^{2}-35x</m>
       </p>
     </answer>
-    <solution><p>We could first distribute <m>{2y}</m> into <m>{y-8}</m> to get <m>{2y^{2}-16y}\text{,}</m> and then multiply <m>{2y^{2}-16y}</m> and <m>{y-7}\text{:}</m></p>
+    <solution><p>We could first distribute <m>{5x}</m> into <m>{x-1}</m> to get <m>{5x^{2}-5x}\text{,}</m> and then multiply <m>{5x^{2}-5x}</m> and <m>{x+7}\text{:}</m></p>
 <p><me>\begin{aligned}
-{2y\mathopen{}\left(y-8\right)\mathopen{}\left(y-7\right)}\amp=({2y^{2}-16y})({y-7})\\
-\amp={2y^{3}-30y^{2}+112y}
+{5x\mathopen{}\left(x-1\right)\mathopen{}\left(x+7\right)}\amp=({5x^{2}-5x})({x+7})\\
+\amp={5x^{3}+30x^{2}-35x}
 \end{aligned}</me></p>
-<p>We could also first multiply <m>{y-8}</m> and <m>{y-7}</m> to get <m>{y^{2}-15y+56}\text{,}</m> and then distribute <m>2y</m> into <m>{y^{2}-15y+56}\text{:}</m></p>
+<p>We could also first multiply <m>{x-1}</m> and <m>{x+7}</m> to get <m>{x^{2}+6x-7}\text{,}</m> and then distribute <m>5x</m> into <m>{x^{2}+6x-7}\text{:}</m></p>
 <p><me>\begin{aligned}
-{2y\mathopen{}\left(y-8\right)\mathopen{}\left(y-7\right)}\amp={2\mathopen{}\left(y^{2}-15y+56\right)}\\
-\amp={2y^{3}-30y^{2}+112y}
+{5x\mathopen{}\left(x-1\right)\mathopen{}\left(x+7\right)}\amp={5\mathopen{}\left(x^{2}+6x-7\right)}\\
+\amp={5x^{3}+30x^{2}-35x}
 \end{aligned}</me></p>
 </solution>
   </static>

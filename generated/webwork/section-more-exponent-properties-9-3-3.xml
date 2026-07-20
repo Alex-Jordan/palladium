@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-more-exponent-properties-9-3-3" assembly-id="section-more-exponent-properties-9-3-3">
-  <static seed="1784">
+  <static seed="1648">
     <statement><p>Consider the expression <m>\dfrac{x^a\cdot x^b}{x^c}</m> where <m>a\lt0, b\lt0\text{,}</m> and <m>c \gt0\text{.}</m>
 <ol label="a.">
 <li>
-<p>Are there values for <m>a\text{,}</m> <m>b\text{,}</m> and <m>c</m> so that the expression equals <m>x^{6}\text{?}</m> If so, fill in the blanks below with possible values for <m>a\text{,}</m> <m>b\text{,}</m> and <m>c\text{.}</m> If not, fill in the blanks below with the word <c>none</c>.</p>
+<p>Are there values for <m>a\text{,}</m> <m>b\text{,}</m> and <m>c</m> so that the expression equals <m>x^{7}\text{?}</m> If so, fill in the blanks below with possible values for <m>a\text{,}</m> <m>b\text{,}</m> and <m>c\text{.}</m> If not, fill in the blanks below with the word <c>none</c>.</p>
 <p><m>a</m> = <fillin characters="10" name="AnSwEr0001"/>, <m>b</m> = <fillin characters="10" name="AnSwEr0002"/>, and <m>c</m> = <fillin characters="10" name="AnSwEr0003"/></p>
 </li>
 <li>
-<p>Are there values for <m>a\text{,}</m> <m>b\text{,}</m> and <m>c</m> so that the expression equals <m>\frac{1}{x^{8}}\text{?}</m> If so, fill in the blanks below with possible values for <m>a\text{,}</m> <m>b\text{,}</m> and <m>c\text{.}</m> If not, fill in the blanks below with the word <c>none</c>.</p>
+<p>Are there values for <m>a\text{,}</m> <m>b\text{,}</m> and <m>c</m> so that the expression equals <m>\frac{1}{x^{10}}\text{?}</m> If so, fill in the blanks below with possible values for <m>a\text{,}</m> <m>b\text{,}</m> and <m>c\text{.}</m> If not, fill in the blanks below with the word <c>none</c>.</p>
 <p><m>a</m> = <fillin characters="10" name="AnSwEr0004"/>, <m>b</m> = <fillin characters="10" name="MuLtIaNsWeR_AnSwEr0004_1"/>, and <m>c</m> = <fillin characters="10" name="MuLtIaNsWeR_AnSwEr0004_2"/></p>
 </li>
 </ol></p>
@@ -30,15 +30,15 @@
     </answer>
     <answer>
       <p>
-        <m>4;\,-10;\,2</m>
+        <m>2;\,-7;\,5</m>
       </p>
     </answer>
     <solution><p><ol label="a.">
 <li>
-<p>The problem states that <m>\frac{x^a\cdot x^b}{x^c}=x^{6}\text{.}</m> To simplify <m>\frac{x^a\cdot x^b}{x^c}\text{,}</m> we must add the exponents <m>a</m> and <m>b\text{,}</m> and then subtract the exponent <m>c\text{.}</m> Thus, <m>a+b-c</m> must equal 6. Since <m>a</m> and <m>b</m> are negative, <m>a+b</m> is a negative number. Then, we have to subtract <m>c\text{,}</m> which is a positive number. Thus, <m>a+b-c</m> will result in a negative number, but <m>a+b-c</m> must equal 6. Therefore, it is not possible to come up with values for <m>a\text{,}</m> <m>b\text{,}</m> and <m>c</m> that work.</p>
+<p>The problem states that <m>\frac{x^a\cdot x^b}{x^c}=x^{7}\text{.}</m> To simplify <m>\frac{x^a\cdot x^b}{x^c}\text{,}</m> we must add the exponents <m>a</m> and <m>b\text{,}</m> and then subtract the exponent <m>c\text{.}</m> Thus, <m>a+b-c</m> must equal 7. Since <m>a</m> and <m>b</m> are negative, <m>a+b</m> is a negative number. Then, we have to subtract <m>c\text{,}</m> which is a positive number. Thus, <m>a+b-c</m> will result in a negative number, but <m>a+b-c</m> must equal 7. Therefore, it is not possible to come up with values for <m>a\text{,}</m> <m>b\text{,}</m> and <m>c</m> that work.</p>
 </li>
 <li>
-<p>First off, we must remember that <m>\frac{1}{x^{8}}=x^{-8}\text{.}</m> To simplify <m>\frac{x^a\cdot x^b}{x^c}\text{,}</m> we must add the exponents <m>a</m> and <m>b\text{,}</m> and then subtract the exponent <m>c\text{.}</m> Thus, <m>a+b-c</m> must equal -8. For example, <m>10+{-3}-1=-8\text{.}</m></p>
+<p>First off, we must remember that <m>\frac{1}{x^{10}}=x^{-10}\text{.}</m> To simplify <m>\frac{x^a\cdot x^b}{x^c}\text{,}</m> we must add the exponents <m>a</m> and <m>b\text{,}</m> and then subtract the exponent <m>c\text{.}</m> Thus, <m>a+b-c</m> must equal -10. For example, <m>10+{-1}-2=-10\text{.}</m></p>
 </li>
 </ol></p>
 </solution>

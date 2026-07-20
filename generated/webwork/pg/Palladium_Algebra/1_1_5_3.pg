@@ -27,9 +27,8 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PCCmacros.pl",
-  "parserNumberWithUnits.pl",
-  "parserLinearRelation.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -42,25 +41,23 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$final = random(200,400,5);
-$volume = NumberWithUnits("$final gal");
-$realrate = random(500,600,10);
-$rate = NumberWithUnits("$realrate gal/hr");
-Context("LinearRelation")->variables->are(t => 'Real');
-$equation = LinearRelation("$realrate t = $final");
+($m,$r) = random_coprime([1..9], [-9..-2,2..9]);
+($n,$s) = random_coprime([1..9], [-9..-2,2..9]);
+$left = Formula("($m x - $r)($n x - $s)")->reduce;
+$right = Formula("0");
+Context("FiniteSolutionSets");
+$sols = Formula("{$r/$m,$s/$n}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Write an equation to model the scenario. There is no need to solve the equation.
+Solve the equation by factoring.
 
-When a heating oil tank is decommissioned, it is drained of its remaining oil and then filled with an inert material, such as sand. One cylindrical oil tank has a volume of [`[$volume]`] and is being filled with sand at a rate of [`[$rate]\text{.}`] Write an equation where the solution is the amount of time, in hours, that it will take to fill the tank with sand. There is no need to solve the equation.
+[`[$left] = [$right]`]
 
-[@KeyboardInstructions('Use [|t|]* as the variable.')@]**
-
-[_]{$equation}{20}
+[_]{$sols}{16}
 
 END_PGML
 

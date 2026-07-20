@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-combine-like-terms-office-lunch" assembly-id="combine-like-terms-office-lunch">
-  <static seed="2304">
+  <static seed="2168">
     <introduction><p>Every Friday, an office supervisor provides catered lunches for everyone working in the office. People can order a sandwich (costs <m>S</m> dollars) or a burrito (costs <m>B</m> dollars).</p>
-<p>One week, the office ordered <m>6</m> sandwiches and <m>15</m> burritos. So the bill came to <m>{6S+15B}</m> dollars.</p>
+<p>One week, the office ordered <m>9</m> sandwiches and <m>11</m> burritos. So the bill came to <m>{9S+11B}</m> dollars.</p>
 </introduction>
     <task>
-      <statement><p>The next week, the office ordered <m>8</m> sandwiches and <m>13</m> burritos. How much was the bill that week, in dollars?</p>
+      <statement><p>The next week, the office ordered <m>11</m> sandwiches and <m>9</m> burritos. How much was the bill that week, in dollars?</p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>8S+13B</m>
+          <m>11S+9B</m>
         </p>
       </answer>
     </task>
@@ -20,7 +20,7 @@
 </statement>
       <answer>
         <p>
-          <m>14S+28B</m>
+          <m>20S+20B</m>
         </p>
       </answer>
     </task>

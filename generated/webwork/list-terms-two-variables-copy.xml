@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-list-terms-two-variables-copy" assembly-id="list-terms-two-variables-copy">
-  <static seed="2265">
-    <statement><p><m>{{\frac{5}{4}}I+5.3b-0.2b-10I}</m></p>
+  <static seed="2129">
+    <statement><p><m>{-8.8X+49r+X-6.6X}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{5}{4}}I, 5.3b, -0.2b, -10I</m>
+        <m>-8.8X, 49r, X, -6.6X</m>
       </p>
     </answer>
-    <solution><p>The terms are the pieces being added together. Any piece that is subtracted from other pieces can be viewed as adding a negative. So the terms are <m>{{\frac{5}{4}}I, 5.3b, -0.2b, -10I}\text{.}</m></p>
+    <solution><p>The terms are the pieces being added together. Any piece that is subtracted from other pieces can be viewed as adding a negative. So the terms are <m>{-8.8X, 49r, X, -6.6X}\text{.}</m></p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/Appendices/A_3_5_35.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

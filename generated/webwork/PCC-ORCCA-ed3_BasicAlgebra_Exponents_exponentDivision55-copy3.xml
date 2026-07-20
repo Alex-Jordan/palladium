@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentDivision55-copy3" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentDivision55-copy3">
-  <static seed="1953">
-    <statement><p><m>\left(\displaystyle\frac{9x^{4}}{2}\right)^{2}</m></p>
+  <static seed="1817">
+    <statement><p><m>\left(\displaystyle\frac{5x^{3}}{8}\right)^{2}</m></p>
 <p><fillin characters="26" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{81x^{8}}{4}</m>
+        <m>\frac{25x^{6}}{64}</m>
       </p>
     </answer>
     <solution><p>The quotient to power rule says that</p>
@@ -15,9 +15,9 @@
 <p><m>(a^m)^n = a^{mn}</m></p>
 <p>Using these two tools together allows us to write</p>
 <p><m>\begin{aligned}
-            \left(\displaystyle\frac{9x^{4}}{2}\right)^{2}
-                       \amp  = \displaystyle\frac{9^{2}x^{4\cdot2}}{2^{2}}\\
-                       \amp  = \displaystyle\frac{81x^{8}}{4}\\
+            \left(\displaystyle\frac{5x^{3}}{8}\right)^{2}
+                       \amp  = \displaystyle\frac{5^{2}x^{3\cdot2}}{8^{2}}\\
+                       \amp  = \displaystyle\frac{25x^{6}}{64}\\
         \end{aligned}</m></p>
 </solution>
   </static>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-subtract-fractions-not-rel-prime-denoms-some-reduction-2" assembly-id="subtract-fractions-not-rel-prime-denoms-some-reduction-2">
-  <static seed="2120">
-    <statement><p><m>\displaystyle {{\frac{4}{35}}} - {{\frac{1}{15}}}</m></p>
+  <static seed="1984">
+    <statement><p><m>\displaystyle {{\frac{1}{45}}} - {{\frac{8}{63}}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{1}{21}}</m>
+        <m>-{\frac{11}{105}}</m>
       </p>
     </answer>
   </static>

@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-quadratic-functions-evaluate-1" assembly-id="quadratic-functions-evaluate-1">
+  <static seed="726">
+    <introduction><p>Let <m>f</m> be the function defined by <m>f(x)=4x^2-3x-2\text{.}</m></p>
+</introduction>
+    <task>
+      <statement><p>Find <m>f(2)\text{.}</m></p>
+<p><fillin characters="5" name="AnSwEr0001"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>8</m>
+        </p>
+      </answer>
+      <solution><p><m>\begin{aligned}
+                  f(\substitute{2})\amp=4(\substitute{2})^2-3(\substitute{2})-2\\
+                  \amp=16-6-2=8
+                \end{aligned}</m></p>
+</solution>
+    </task>
+    <task>
+      <statement><p>Find <m>f(-1)\text{.}</m></p>
+<p><fillin characters="5" name="AnSwEr0002"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>5</m>
+        </p>
+      </answer>
+      <solution><p><m>\begin{aligned}
+                  f(\substitute{-1})\amp=4(\substitute{-1})^2-3(\substitute{-1})-2\\
+                  \amp=4+3-2=5
+                \end{aligned}</m></p>
+</solution>
+    </task>
+    <task>
+      <statement><p>Find <m>f\mathopen{}\left(\frac{1}{2}\right)\mathclose{}\text{.}</m></p>
+<p><fillin characters="5" name="AnSwEr0003"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-{\frac{5}{2}}</m>
+        </p>
+      </answer>
+      <solution><p><m>\begin{aligned}
+                  f\mathopen{}\left(\substitute{\frac{1}{2}}\right)\mathclose{}
+                    \amp=4\left(\substitute{\frac{1}{2}}\right)^2-3\left(\substitute{\frac{1}{2}}\right)-2\\
+                  \amp=4\left(\frac{1}{4}\right)-\frac{3}{2}-2\\
+                  \amp=1-\frac{3}{2}-2=-\frac{5}{2}
+                \end{aligned}</m></p>
+</solution>
+    </task>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_2_5.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.2.5)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "scaffold.pl",
+  "contextFraction.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+COMMENT('This problem is scaffolded with multiple parts');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Fraction");
+@ans = (Real(8), Real(5), Fraction(-5,2));
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Let [`f`] be the function defined by [`f(x)=4x^2-3x-2\text{.}`]
+
+END_PGML
+
+############################################################
+# Scaffold
+############################################################
+Scaffold::Begin(numbered => 1,is_open => "correct_or_first_incorrect",can_open => always,);
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+Find [`f(2)\text{.}`]
+
+ [_]{$ans[0]}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}\newcommand{\amp}{&}\begin{aligned}
+                  f(\substitute{2})\amp=4(\substitute{2})^2-3(\substitute{2})-2\\
+                  \amp=16-6-2=8
+                \end{aligned}`]
+
+END_PGML_SOLUTION
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+Find [`f(-1)\text{.}`]
+
+ [_]{$ans[1]}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}\newcommand{\amp}{&}\begin{aligned}
+                  f(\substitute{-1})\amp=4(\substitute{-1})^2-3(\substitute{-1})-2\\
+                  \amp=4+3-2=5
+                \end{aligned}`]
+
+END_PGML_SOLUTION
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+Find [`f\mathopen{}\left(\frac{1}{2}\right)\mathclose{}\text{.}`]
+
+ [_]{$ans[2]}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}\newcommand{\amp}{&}\begin{aligned}
+                  f\mathopen{}\left(\substitute{\frac{1}{2}}\right)\mathclose{}
+                    \amp=4\left(\substitute{\frac{1}{2}}\right)^2-3\left(\substitute{\frac{1}{2}}\right)-2\\
+                  \amp=4\left(\frac{1}{4}\right)-\frac{3}{2}-2\\
+                  \amp=1-\frac{3}{2}-2=-\frac{5}{2}
+                \end{aligned}`]
+
+END_PGML_SOLUTION
+
+Section::End();
+
+Scaffold::End();
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

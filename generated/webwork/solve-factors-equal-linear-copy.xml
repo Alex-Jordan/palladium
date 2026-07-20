@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-factors-equal-linear-copy" assembly-id="solve-factors-equal-linear-copy">
+  <static seed="882">
+    <statement><p><m>{x\mathopen{}\left(x+5\right)} = {4\mathopen{}\left(2x+1\right)}</m></p>
+<p><fillin characters="16" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\left\{-1,4\right\}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_3_6_45.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg copied-from="solve-factors-equal-linear"><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.3.6.46)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+do {
+  ($a,$r,$s,$k) = (list_random(2..9), random_subset(3, -9..-1,1..9));
+  $g = gcd($a,$r*$s);
+} until ($r+$s!=$a && $g>1);
+Context()->noreduce('(-x)-y');
+$left = Formula("x(x - ($r+$s-$a))")->reduce;
+$right = Formula("$g (($a/$g) x - ($r*$s/$g))")->reduce;
+Context("FiniteSolutionSets");
+$sols = Formula("{$r, $s}");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Solve the equation by factoring.
+
+[`[$left] = [$right]`]
+
+[_]{$sols}{16}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

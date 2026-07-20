@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-key-features-of-quadratic-graphs-8-3-21" assembly-id="section-key-features-of-quadratic-graphs-8-3-21">
-  <static seed="1007" source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex10.pg">
+  <static seed="540" source="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex10.pg">
     <statement><p>Find the axis of symmetry and vertex of the quadratic function.</p>
-<p><m>{y}={-0.2\mathopen{}\left(x+1\right)^{2}-4}</m></p>
+<p><m>{y}={0.4\mathopen{}\left(x+4\right)^{2}+1}</m></p>
 <p>Axis of symmetry: <fillin characters="13" name="AnSwEr0001"/></p>
 <p>Vertex: <fillin characters="13" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>x = -1</m>
+        <m>x = -4</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(-1,-4\right)</m>
+        <m>\left(-4,1\right)</m>
       </p>
     </answer>
-    <solution><p>This quadratic function is given in vertex form. We can easily identify that its axis of symmetry is <m>x=-1</m>, and its vertex is <m>(-1,-4)</m>.</p>
+    <solution><p>This quadratic function is given in vertex form. We can easily identify that its axis of symmetry is <m>x=-4</m>, and its vertex is <m>(-4,1)</m>.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/GraphingQuadratics/IdentifyAxisVertex10.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

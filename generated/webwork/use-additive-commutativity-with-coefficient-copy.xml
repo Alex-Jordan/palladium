@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-use-additive-commutativity-with-coefficient-copy" assembly-id="use-additive-commutativity-with-coefficient-copy">
-  <static seed="2333">
-    <statement><p>Apply commutativity of addition to <m>{{\frac{4}{5}}q+a}\text{.}</m></p>
+  <static seed="2197">
+    <statement><p>Apply commutativity of addition to <m>{{\frac{7}{6}}m+q}\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>a+{\frac{4}{5}}q</m>
+        <m>q+{\frac{7}{6}}m</m>
       </p>
     </answer>
   </static>

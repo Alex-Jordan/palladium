@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp95" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp95">
-  <static seed="1747">
-    <statement><p><m>\displaystyle\frac{\left(2y^{10}\right)^{2}}{y^{22}}</m></p>
+  <static seed="1611">
+    <statement><p><m>\displaystyle\frac{\left(6y^{3}\right)^{2}}{y^{33}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{4}{y^{2}}</m>
+        <m>\frac{36}{y^{27}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\displaystyle{\frac{a^m}{a^n} = a^{m-n}}</m> 
 and also that <m>\left(a^m\right)^n=a^{mn}</m></p>
 <p><m>\displaystyle{           \begin{aligned}
-                 \displaystyle\frac{\left(2y^{10}\right)^{2}}{y^{22}}\amp = 
-\displaystyle\frac{\left(2\right)^{2}y^{10\cdot2}}{y^{22}}\\
- \amp = \displaystyle\frac{4y^{20}}{y^{22}}\\
- \amp = 4y^{20-22}\\
-                                                       \amp  =4y^{-2}\\
-                                    \amp  = {\frac{4}{y^{2}}}
+                 \displaystyle\frac{\left(6y^{3}\right)^{2}}{y^{33}}\amp = 
+\displaystyle\frac{\left(6\right)^{2}y^{3\cdot2}}{y^{33}}\\
+ \amp = \displaystyle\frac{36y^{6}}{y^{33}}\\
+ \amp = 36y^{6-33}\\
+                                                       \amp  =36y^{-27}\\
+                                    \amp  = {\frac{36}{y^{27}}}
            \end{aligned}
     }</m></p>
 </solution>

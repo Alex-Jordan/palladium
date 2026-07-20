@@ -1,32 +1,32 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-the-quadratic-formula-7-3-12" assembly-id="section-the-quadratic-formula-7-3-12">
-  <static seed="975">
-    <statement><p>If you add <m>{0}</m> to a certain positive number, then also subtract <m>1</m> from that same number, and multiply the results, you get <m>{{\frac{3}{4}}}\text{.}</m> What was the original number?</p>
+  <static seed="508">
+    <statement><p>If you add <m>{2}</m> to a certain positive number, then also subtract <m>1</m> from that same number, and multiply the results, you get <m>{{\frac{27}{4}}}\text{.}</m> What was the original number?</p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{3}{2}}</m>
+        <m>{\frac{5}{2}}</m>
       </p>
     </answer>
-    <solution><p>Let <m>x</m> be the mystery number. We are told that <m>\left(x+{0}\right)\left(x-1\right)={{\frac{3}{4}}}\text{.}</m> So</p>
+    <solution><p>Let <m>x</m> be the mystery number. We are told that <m>\left(x+{2}\right)\left(x-1\right)={{\frac{27}{4}}}\text{.}</m> So</p>
 <p><me>\begin{aligned}
-x^2-1x + {0}x - {0}\amp={{\frac{3}{4}}}\\
-{x^{2}-x-{\frac{3}{4}}}\amp=0
+x^2-1x + {2}x - {2}\amp={{\frac{27}{4}}}\\
+{x^{2}+x-{\frac{35}{4}}}\amp=0
 \end{aligned}</me></p>
 <p>Now we can apply the quadratic formula:</p>
 <p><me>\begin{aligned}
 x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
-\amp=\frac{{1}\pm\sqrt{{1}-4(1)\left({-{\frac{3}{4}}}\right)}}{2}\\
-\amp=\frac{{1}\pm\sqrt{{4}}}{2}\\
-\amp=\frac{{1}\pm{2}}{2}\\
-x\amp=\frac{{1}-{2}}{2}\quad\text{or}\quad x=\frac{{1}+{2}}{2}\\
-x\amp={-{\frac{1}{2}}}\quad\text{or}\quad x={{\frac{3}{2}}}
+\amp=\frac{{-1}\pm\sqrt{{1}-4(1)\left({-{\frac{35}{4}}}\right)}}{2}\\
+\amp=\frac{{-1}\pm\sqrt{{36}}}{2}\\
+\amp=\frac{{-1}\pm{6}}{2}\\
+x\amp=\frac{{-1}-{6}}{2}\quad\text{or}\quad x=\frac{{-1}+{6}}{2}\\
+x\amp={-{\frac{7}{2}}}\quad\text{or}\quad x={{\frac{5}{2}}}
 \end{aligned}</me></p>
-<p>Both <m>{-{\frac{1}{2}}}</m> and <m>{{\frac{3}{2}}}</m> solve the equation, but we were asked to find a positive number. So the mystery number is <m>{{\frac{3}{2}}}\text{.}</m></p>
+<p>Both <m>{-{\frac{7}{2}}}</m> and <m>{{\frac{5}{2}}}</m> solve the equation, but we were asked to find a positive number. So the mystery number is <m>{{\frac{5}{2}}}\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_4_5_109.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_5_5_109.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -43,7 +43,7 @@ x\amp={-{\frac{1}{2}}}\quad\text{or}\quad x={{\frac{3}{2}}}
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.4.5.109)
+## Problem1(1.5.5.109)
 ## Author()
 ## Institution()
 ## Language(en-US)

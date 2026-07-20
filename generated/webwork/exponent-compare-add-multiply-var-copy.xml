@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-compare-add-multiply-var-copy" assembly-id="exponent-compare-add-multiply-var-copy">
-  <static seed="2605">
+  <static seed="2469">
     <introduction/>
     <task>
-      <statement><p><m>{k+k}</m></p>
+      <statement><p><m>{i+i}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>2k</m>
+          <m>2i</m>
         </p>
       </answer>
     </task>
     <task>
-      <statement><p><m>k\cdot k</m></p>
+      <statement><p><m>i\cdot i</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>k^{2}</m>
+          <m>i^{2}</m>
         </p>
       </answer>
     </task>

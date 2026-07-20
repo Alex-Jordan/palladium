@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-three-product-powers" assembly-id="exponent-three-product-powers">
-  <static seed="2590">
-    <statement><p><m>{\left(7u\right)^{3}\mathopen{}\left(5u\right)^{7}\mathopen{}\left(4u\right)^{9}}</m></p>
+  <static seed="2454">
+    <statement><p><m>{\left(9t\right)^{10}\mathopen{}\left(7t\right)^{9}\mathopen{}\left(3t\right)^{6}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>140u^{19}</m>
+        <m>189t^{25}</m>
       </p>
     </answer>
   </static>

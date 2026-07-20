@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-inequality-solution-two-radicals-copy" assembly-id="check-inequality-solution-two-radicals-copy">
-  <static seed="2486">
-    <statement><p>Is <m>3</m> a solution to <m>{\sqrt{22x-2}}\leq{\sqrt{2x-2}+8}\text{?}</m></p>
+  <static seed="2350">
+    <statement><p>Is <m>2</m> a solution to <m>{\sqrt{x-1}}\gt{\sqrt{13x-1}-4}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>\sqrt{22x-2}</m></cell>
-<cell><m>\leq</m></cell>
-<cell><m>\sqrt{2x-2}+8</m></cell>
+<cell><m>\sqrt{x-1}</m></cell>
+<cell><m>\gt</m></cell>
+<cell><m>\sqrt{13x-1}-4</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
-<cell><m>\wonder{\leq}</m></cell>
+<cell><m>\wonder{\gt}</m></cell>
 <cell><fillin characters="3" name="AnSwEr0002"/>
 </cell>
 </row>
@@ -24,17 +24,17 @@
 </statement>
     <answer>
       <p>
-        <m>8</m>
+        <m>1</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>10</m>
+        <m>1</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\text{Yes, it is a solution.}</m>
+        <m>\text{No, it is not a solution.}</m>
       </p>
     </answer>
   </static>

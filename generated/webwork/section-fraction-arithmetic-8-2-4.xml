@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-fraction-arithmetic-8-2-4" assembly-id="section-fraction-arithmetic-8-2-4">
-  <static seed="2135">
-    <statement><p>Given that <m>a\neq0\text{,}</m> simplify <m>\displaystyle{}{\frac{4}{a}-\frac{8}{5a}}\text{.}</m></p>
+  <static seed="1999">
+    <statement><p>Given that <m>a\neq0\text{,}</m> simplify <m>\displaystyle{}{\frac{4}{a}-\frac{2}{5a}}\text{.}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{12}{5a}</m>
+        <m>\frac{18}{5a}</m>
       </p>
     </answer>
     <solution><p>Since the fractions don<rsq/>t have the same denominator, we have to make them have like denominators. Multiply the first fraction by <m>\frac{5}{5}\text{.}</m></p>
 <p><me>\begin{aligned}
-{\frac{4}{a}-\frac{8}{5a}} \amp = {\frac{4}{a}}\cdot \frac{5}{5} - {\frac{8}{5a}}\\
-\amp = \frac{20}{5a} - {\frac{8}{5a}}\\
-\amp = {\frac{12}{5a}}
+{\frac{4}{a}-\frac{2}{5a}} \amp = {\frac{4}{a}}\cdot \frac{5}{5} - {\frac{2}{5a}}\\
+\amp = \frac{20}{5a} - {\frac{2}{5a}}\\
+\amp = {\frac{18}{5a}}
 \end{aligned}</me></p>
 </solution>
   </static>

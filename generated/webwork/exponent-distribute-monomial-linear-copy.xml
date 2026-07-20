@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-distribute-monomial-linear-copy" assembly-id="exponent-distribute-monomial-linear-copy">
-  <static seed="2599">
-    <statement><p><m>{2u\mathopen{}\left(6u+10\right)}</m></p>
+  <static seed="2463">
+    <statement><p><m>{7t\mathopen{}\left(2t+4\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>u^{2}+u</m>
+        <m>t^{2}+t</m>
       </p>
     </answer>
   </static>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-subtract-fraction-and-integer-2" assembly-id="subtract-fraction-and-integer-2">
-  <static seed="2122">
-    <statement><p><m>\displaystyle {{\frac{9}{7}}} - {4}</m></p>
+  <static seed="1986">
+    <statement><p><m>\displaystyle {6} - {{\frac{9}{2}}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-{\frac{19}{7}}</m>
+        <m>{\frac{3}{2}}</m>
       </p>
     </answer>
   </static>

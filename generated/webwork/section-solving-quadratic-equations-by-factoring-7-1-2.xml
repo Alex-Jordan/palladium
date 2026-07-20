@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-quadratic-equations-by-factoring-7-1-2" assembly-id="section-solving-quadratic-equations-by-factoring-7-1-2">
-  <static seed="725" source="Contrib/PCC/BasicAlgebra/Factoring/factoring41.pg">
+  <static seed="1" source="Contrib/PCC/BasicAlgebra/Factoring/factoring41.pg">
     <statement><p>Factor the given polynomial.</p>
-<p><m>2y - 4=</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>8x+24=</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>2\mathopen{}\left(y-2\right)</m>
+        <m>8\mathopen{}\left(x+3\right)</m>
       </p>
     </answer>
-    <solution><p>The greatest common factor is <m>2</m>, so we can factor the polynomial as follows:</p>
-<p><m>2y - 4={2\mathopen{}\left(y-2\right)}</m></p>
+    <solution><p>The greatest common factor is <m>8</m>, so we can factor the polynomial as follows:</p>
+<p><m>8x+24={8\mathopen{}\left(x+3\right)}</m></p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/Factoring/factoring41.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

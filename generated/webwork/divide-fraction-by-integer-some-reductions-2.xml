@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-divide-fraction-by-integer-some-reductions-2" assembly-id="divide-fraction-by-integer-some-reductions-2">
-  <static seed="2094">
-    <statement><p><m>\displaystyle {{\frac{6}{5}}}\div {2}</m></p>
+  <static seed="1958">
+    <statement><p><m>\displaystyle {{\frac{4}{3}}}\div {4}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{3}{5}}</m>
+        <m>{\frac{1}{3}}</m>
       </p>
     </answer>
   </static>

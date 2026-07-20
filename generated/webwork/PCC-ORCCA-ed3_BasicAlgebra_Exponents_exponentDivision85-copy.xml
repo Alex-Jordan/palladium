@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentDivision85-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentDivision85-copy">
-  <static seed="1694">
-    <statement><p><m>\left(\displaystyle\frac{-9x^{7}}{2y^{3}}\right)^{3}</m></p>
+  <static seed="1558">
+    <statement><p><m>\left(\displaystyle\frac{-9x^{6}}{10y^{4}}\right)^{2}</m></p>
 <p><fillin characters="26" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{-729x^{21}}{8y^{9}}</m>
+        <m>\frac{81x^{12}}{100y^{8}}</m>
       </p>
     </answer>
     <solution><p>The quotient to power rule says that</p>
@@ -15,9 +15,9 @@
 <p><m>(a^m)^n = a^{mn}</m></p>
 <p>Using these two tools together allows us to write</p>
 <p><m>\begin{aligned}
-       \left(\displaystyle\frac{-9x^{7}}{2y^{3}}\right)^{3}
-                       \amp  = \displaystyle\frac{(-9)^{3}x^{7\cdot3}}{2^{3}y^{3\cdot3}}\\
-                       \amp  = \displaystyle\frac{-729x^{21}}{8y^{9}}\\
+       \left(\displaystyle\frac{-9x^{6}}{10y^{4}}\right)^{2}
+                       \amp  = \displaystyle\frac{(-9)^{2}x^{6\cdot2}}{10^{2}y^{4\cdot2}}\\
+                       \amp  = \displaystyle\frac{81x^{12}}{100y^{8}}\\
         \end{aligned}</m></p>
 </solution>
   </static>

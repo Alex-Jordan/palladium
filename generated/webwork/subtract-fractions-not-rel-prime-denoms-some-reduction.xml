@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-subtract-fractions-not-rel-prime-denoms-some-reduction" assembly-id="subtract-fractions-not-rel-prime-denoms-some-reduction">
-  <static seed="2119">
-    <statement><p><m>\displaystyle {{\frac{3}{35}}} - {{\frac{3}{10}}}</m></p>
+  <static seed="1983">
+    <statement><p><m>\displaystyle {{\frac{1}{10}}} - {{\frac{7}{6}}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-{\frac{3}{14}}</m>
+        <m>-{\frac{16}{15}}</m>
       </p>
     </answer>
   </static>

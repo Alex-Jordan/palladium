@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-compare-positive-fractions-copy" assembly-id="compare-positive-fractions-copy">
-  <static seed="2392">
-    <statement><p><m>{{\frac{15}{8}}}</m> <fillin characters="3" name="AnSwEr0001"/> <m>{{\frac{3}{5}}}</m></p>
+  <static seed="2256">
+    <statement><p><m>{{\frac{5}{8}}}</m> <fillin characters="3" name="AnSwEr0001"/> <m>{{\frac{1}{7}}}</m></p>
 </statement>
     <answer>
       <p>

@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents10-copy" assembly-id="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents10-copy">
-  <static seed="1999">
-    <statement><p><m>\displaystyle{{4^{\frac{1}{3}}t^{\frac{2}{3}}}}</m></p>
+  <static seed="1863">
+    <statement><p><m>\displaystyle{{10^{\frac{1}{4}}z^{\frac{3}{4}}}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\sqrt[3]{4t^{2}}</m>
+        <m>\sqrt[4]{10z^{3}}</m>
       </p>
     </answer>
     <solution><p>When we have fractions as exponents, the numerator indicates the power while the denominator indicates the radical: <m>x^\frac{m}{n} = \sqrt[n]{x^m}</m>. So we can rewrite our expression as follows. We then use radical properties to simplify.</p>
 <p><m>\displaystyle{\begin{aligned}
-   4^\frac{1}{3}t^\frac{2}{3} \amp = \sqrt[3]{4}\sqrt[3]{t^2} \\
-                                                                    \amp = \sqrt[3]{4t^2} \\
+   10^\frac{1}{4}z^\frac{3}{4} \amp = \sqrt[4]{10}\sqrt[4]{z^3} \\
+                                                                    \amp = \sqrt[4]{10z^3} \\
 \end{aligned}
     }</m></p>
 </solution>

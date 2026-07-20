@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-equation-negate-fraction-copy" assembly-id="solve-equation-negate-fraction-copy">
-  <static seed="2540">
-    <statement><p><m>{-l}={{\frac{1}{4}}}</m></p>
+  <static seed="2404">
+    <statement><p><m>{-i}={{\frac{3}{8}}}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\frac{-1}{4}\right\}</m>
+        <m>\left\{\frac{-3}{8}\right\}</m>
       </p>
     </answer>
   </static>

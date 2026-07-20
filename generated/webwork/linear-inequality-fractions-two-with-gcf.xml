@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-linear-inequality-fractions-two-with-gcf" assembly-id="linear-inequality-fractions-two-with-gcf">
-  <static seed="1507">
-    <statement><p><m>{{\frac{4}{15}}x+4} \leq {-{\frac{7}{18}}x+7}</m></p>
+  <static seed="1371">
+    <statement><p><m>{{\frac{3}{16}}x-{\frac{7}{20}}} \lt {x-6}</m></p>
 <p><fillin characters="4" name="AnSwEr0001"/></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 <p><fillin characters="16" name="AnSwEr0003"/></p>
 </statement>
     <answer>
       <p>
-        <m>90</m>
+        <m>80</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left\{x \mid x\le \frac{270}{59}\right\}</m>
+        <m>\left\{x \mid x &gt; \frac{452}{65}\right\}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(-\infty ,{\frac{270}{59}}\right]</m>
+        <m>\left({\frac{452}{65}},\infty \right)</m>
       </p>
     </answer>
   </static>

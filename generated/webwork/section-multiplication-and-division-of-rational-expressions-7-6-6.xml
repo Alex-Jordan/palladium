@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-6-6" assembly-id="section-multiplication-and-division-of-rational-expressions-7-6-6">
-  <static seed="1308" source="Contrib/PCC/BasicAlgebra/RationalFunctions/reduceRationalFunction30.pg">
+  <static seed="1172" source="Contrib/PCC/BasicAlgebra/RationalFunctions/reduceRationalFunction30.pg">
     <statement><p>Simplify the function formula, and if applicable, write the restricted domain.</p>
-<p><m>\displaystyle{ h(t) = {\frac{t^{4}-10t^{3}+25t^{2}}{5t^{4}-23t^{3}-10t^{2}}} }</m></p>
-<p>Reduced <m>h(t)=</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{ G(t) = {\frac{t^{4}-2t^{3}+t^{2}}{3t^{4}-2t^{3}-t^{2}}} }</m></p>
+<p>Reduced <m>G(t)=</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{t-5}{5t+2}, t\ne 5\hbox{ and }t\ne 0</m>
+        <m>\frac{t-1}{3t+1}, t\ne 1\hbox{ and }t\ne 0</m>
       </p>
     </answer>
     <solution><p>To simplify the expression, we first factor both the numerator and denominator, and then cancel common factors.</p>
 <p><m>\displaystyle{\begin{aligned}
-   h(t) \amp = {\frac{t^{4}-10t^{3}+25t^{2}}{5t^{4}-23t^{3}-10t^{2}}} \\
-                 \amp = \frac{{t^{2}\mathopen{}\left(t^{2}-10t+25\right)}}{{t^{2}\mathopen{}\left(5t^{2}-23t-10\right)}} \\
-                 \amp = \frac{{t^{2}\mathopen{}\left(t-5\right)^{2}}}{{t^{2}\mathopen{}\left(5t+2\right)\mathopen{}\left(t-5\right)}} \\
-                 \amp = {\frac{t-5}{5t+2}, t\ne 5\hbox{ and }t\ne 0}
+   G(t) \amp = {\frac{t^{4}-2t^{3}+t^{2}}{3t^{4}-2t^{3}-t^{2}}} \\
+                 \amp = \frac{{t^{2}\mathopen{}\left(t^{2}-2t+1\right)}}{{t^{2}\mathopen{}\left(3t^{2}-2t-1\right)}} \\
+                 \amp = \frac{{t^{2}\mathopen{}\left(t-1\right)^{2}}}{{t^{2}\mathopen{}\left(3t+1\right)\mathopen{}\left(t-1\right)}} \\
+                 \amp = {\frac{t-1}{3t+1}, t\ne 1\hbox{ and }t\ne 0}
 \end{aligned}
     }</m></p>
-<p>Since <m>t^{2}(t - 5)</m> was canceled, the domain condition lost during the reduction is <m>t \ne {5, 0}</m>.</p>
+<p>Since <m>t^{2}(t - 1)</m> was canceled, the domain condition lost during the reduction is <m>t \ne {1, 0}</m>.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalFunctions/reduceRationalFunction30.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-introduction-to-rational-functions-5-5-2" assembly-id="section-introduction-to-rational-functions-5-5-2">
-  <static seed="1235">
-    <statement><p>In a forest, the number of deer can be modeled by the function <m>f(t)={\frac{360t+560}{0.9t+7}}\text{,}</m> where <m>t</m> stands for the number of years from now. Answer the question with technology.</p>
-<p>After 30 years, there would be approximately <fillin characters="10" name="AnSwEr0001"/> deer living in the forest.</p>
+  <static seed="1099">
+    <statement><p>In a forest, the number of deer can be modeled by the function <m>f(t)={\frac{300t+160}{0.6t+2}}\text{,}</m> where <m>t</m> stands for the number of years from now. Answer the question with technology.</p>
+<p>After 20 years, there would be approximately <fillin characters="10" name="AnSwEr0001"/> deer living in the forest.</p>
 </statement>
     <answer>
       <p>
-        <m>334</m>
+        <m>440</m>
       </p>
     </answer>
-    <solution><p>Use technology to graph the function <m>f(t)={\frac{360t+560}{0.9t+7}}\text{.}</m></p>
+    <solution><p>Use technology to graph the function <m>f(t)={\frac{300t+160}{0.6t+2}}\text{.}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-introduction-to-rational-functions-5-5-2-image-1.png" width="100%"/>
-<p>Locate the point whose <m>x</m>-value is <m>30\text{,}</m> which is <m>(30,{334.118})\text{.}</m> This point implies there will be approximately <m>334</m> deer living in the forest after <m>30</m> years.</p>
+<p>Locate the point whose <m>x</m>-value is <m>20\text{,}</m> which is <m>(20,{440})\text{.}</m> This point implies there will be approximately <m>440</m> deer living in the forest after <m>20</m> years.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/3_1_3_29.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

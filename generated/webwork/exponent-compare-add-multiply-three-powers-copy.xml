@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-compare-add-multiply-three-powers-copy" assembly-id="exponent-compare-add-multiply-three-powers-copy">
-  <static seed="2611">
+  <static seed="2475">
     <introduction/>
     <task>
-      <statement><p><m>{c^{4}+c^{3}+c^{4}}</m></p>
+      <statement><p><m>{b^{6}+b^{7}+b^{7}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>2c^{4}+c^{3}</m>
+          <m>2b^{7}+b^{6}</m>
         </p>
       </answer>
     </task>
     <task>
-      <statement><p><m>c^4\cdot c^3\cdot c^4</m></p>
+      <statement><p><m>b^6\cdot b^7\cdot b^7</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>c^{11}</m>
+          <m>b^{20}</m>
         </p>
       </answer>
     </task>

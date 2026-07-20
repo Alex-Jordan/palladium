@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-5-7" assembly-id="section-multiplication-and-division-of-rational-expressions-7-5-7">
-  <static seed="1301" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions141.pg">
+  <static seed="1165" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions141.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{{\frac{-x^{2}-7xt-6t^{2}}{x^{2}-36t^{2}}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{-t^{2}+8tx-15x^{2}}{t^{2}-25x^{2}}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-\frac{x+t}{x-6t}</m>
+        <m>-\frac{t-3x}{t+5x}</m>
       </p>
     </answer>
     <solution><p>To simplify the expression, we first factor both the numerator and denominator, and then cross out common terms.</p>
 <p>If a polynomial is not in order, we order it by the variable<rsq/>s degrees.</p>
 <p>If the leading coefficient is negative, we factor out <m>-1</m>.</p>
 <p><m>\displaystyle{\begin{aligned}
-   {\frac{-x^{2}-7xt-6t^{2}}{x^{2}-36t^{2}}} \amp = \frac{{-\left(x^{2}+7xt+6t^{2}\right)}}{{x^{2}-36t^{2}}} \\
-                     \amp = \frac{{-\left(x+t\right)\mathopen{}\left(x+6t\right)}}{{\left(x+6t\right)\mathopen{}\left(x-6t\right)}} \\
-                     \amp = {-\frac{x+t}{x-6t}}
+   {\frac{-t^{2}+8tx-15x^{2}}{t^{2}-25x^{2}}} \amp = \frac{{-\left(t^{2}-8tx+15x^{2}\right)}}{{t^{2}-25x^{2}}} \\
+                     \amp = \frac{{-\left(t-3x\right)\mathopen{}\left(t-5x\right)}}{{\left(t-5x\right)\mathopen{}\left(t+5x\right)}} \\
+                     \amp = {-\frac{t-3x}{t+5x}}
 \end{aligned}
     }</m></p>
 </solution>

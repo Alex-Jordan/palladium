@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-introduction-to-rational-functions-5-3-13" assembly-id="section-introduction-to-rational-functions-5-3-13">
-  <static seed="1224" source="Contrib/PCC/BasicAlgebra/RationalFunctions/rationalFunctionDomain20.pg">
-    <statement><p>Find the domain of the function <m>q</m> defined by <m>\displaystyle{q(x)=\frac{x+1}{x^2+4}}</m></p>
+  <static seed="1088" source="Contrib/PCC/BasicAlgebra/RationalFunctions/rationalFunctionDomain20.pg">
+    <statement><p>Find the domain of the function <m>a</m> defined by <m>\displaystyle{a(x)=\frac{x - 1}{x^2+49}}</m></p>
 <p><fillin characters="34" name="AnSwEr0001"/></p>
 </statement>
     <answer>
@@ -9,7 +9,7 @@
         <m>\left(-\infty ,\infty \right)</m>
       </p>
     </answer>
-    <solution><p>The only potential for an invalid input value would be if the denominator of this expression works out to <m>0</m>. However, since <m>x^2 \ge 0</m>, <m>x^2 + 4 \gt 0</m> is always true.</p>
+    <solution><p>The only potential for an invalid input value would be if the denominator of this expression works out to <m>0</m>. However, since <m>x^2 \ge 0</m>, <m>x^2 + 49 \gt 0</m> is always true.</p>
 <p>Therefore the domain is <m>{\left(-\infty ,\infty \right)}</m>.</p>
 </solution>
   </static>

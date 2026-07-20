@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentDivision70-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentDivision70-copy">
-  <static seed="1957">
-    <statement><p><m>\displaystyle\frac{{r^{15}}}{{r^{11}}}</m></p>
+  <static seed="1821">
+    <statement><p><m>\displaystyle\frac{{t^{14}}}{{t}}</m></p>
 <p><fillin characters="11" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>r^{4}</m>
+        <m>t^{13}</m>
       </p>
     </answer>
     <solution><p>We <em>subtract</em> the exponents as follows</p>
 <p><m>\begin{aligned}
-           \frac{r^{15}}{r^{11}}\amp =r^{15-11}\\
-                             \amp =r^{4}
+           \frac{t^{14}}{t^{1}}\amp =t^{14-1}\\
+                             \amp =t^{13}
        \end{aligned}</m></p>
 </solution>
   </static>

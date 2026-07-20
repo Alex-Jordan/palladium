@@ -1,29 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-the-quadratic-formula-7-2-2-53" assembly-id="section-the-quadratic-formula-7-2-2-53">
-  <static seed="930">
-    <statement><p><m>{32x^{2}}={76x-45}</m></p>
+  <static seed="463">
+    <statement><p><m>{27x^{2}}={-21x+20}</m></p>
 <p><fillin characters="40" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\frac{9}{8},\frac{5}{4}\right\}</m>
+        <m>\left\{\frac{-4}{3},\frac{5}{9}\right\}</m>
       </p>
     </answer>
     <solution><p>To use the quadratic formula, we write the equation in standard form:</p>
-<p><me>{32x^{2}-76x+45}=0</me></p>
-<p>and identify <m>a=32\text{,}</m> <m>b={-76}\text{,}</m> and <m>c={45}\text{.}</m></p>
+<p><me>{27x^{2}+21x-20}=0</me></p>
+<p>and identify <m>a=27\text{,}</m> <m>b={21}\text{,}</m> and <m>c={-20}\text{.}</m></p>
 <p><me>\begin{aligned}
 x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
-\amp=\frac{{76}\pm\sqrt{{5776}-4(32)({45})}}{2(32)}\\
-\amp=\frac{{76}\pm\sqrt{{16}}}{64}\\
-\amp=\frac{{76}\pm{4}}{64}\\
-x\amp=\frac{{76}-{4}}{64}\quad\text{or}\quad x=\frac{{76}+{4}}{64}\\
-x\amp={{\frac{9}{8}}}\quad\text{or}\quad x={{\frac{5}{4}}}
+\amp=\frac{{-21}\pm\sqrt{{441}-4(27)({-20})}}{2(27)}\\
+\amp=\frac{{-21}\pm\sqrt{{2601}}}{54}\\
+\amp=\frac{{-21}\pm{51}}{54}\\
+x\amp=\frac{{-21}-{51}}{54}\quad\text{or}\quad x=\frac{{-21}+{51}}{54}\\
+x\amp={-{\frac{4}{3}}}\quad\text{or}\quad x={{\frac{5}{9}}}
 \end{aligned}</me></p>
-<p>The solution set is <m>{\left\{\frac{9}{8},\frac{5}{4}\right\}}\text{.}</m></p>
+<p>The solution set is <m>{\left\{\frac{-4}{3},\frac{5}{9}\right\}}\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_4_5_63.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_5_5_63.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg copied-from="section-the-quadratic-formula-7-2-2-52"><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -40,7 +40,7 @@ x\amp={{\frac{9}{8}}}\quad\text{or}\quad x={{\frac{5}{4}}}
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.4.5.64)
+## Problem1(1.5.5.64)
 ## Author()
 ## Institution()
 ## Language(en-US)

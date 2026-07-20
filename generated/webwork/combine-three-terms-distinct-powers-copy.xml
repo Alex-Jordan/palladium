@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-combine-three-terms-distinct-powers-copy" assembly-id="combine-three-terms-distinct-powers-copy">
-  <static seed="2277">
-    <statement><p><m>{5.4-{\frac{3}{2}}f^{4}-f^{5}}</m></p>
+  <static seed="2141">
+    <statement><p><m>{-1.6+4d+4.5d^{2}}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>5.4-\frac{3}{2}f^{4}-f^{5}</m>
+        <m>-1.6+4d+4.5d^{2}</m>
       </p>
     </answer>
   </static>

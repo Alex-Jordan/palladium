@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-quadratic-equations-by-factoring-7-2-49" assembly-id="section-solving-quadratic-equations-by-factoring-7-2-49">
-  <static seed="782" source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad340.pg">
+  <static seed="58" source="Contrib/PCC/BasicAlgebra/QuadraticEquations/solveQuad340.pg">
     <statement><p>Solve the equation.</p>
-<p><m>{\left(x-1\right)\mathopen{}\left(4x+5\right)} = {1+3x^{2}}</m></p>
+<p><m>{\left(x-1\right)\mathopen{}\left(2x+5\right)} = {x^{2}-1}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{-3,2\right\}</m>
+        <m>\left\{1,-4\right\}</m>
       </p>
     </answer>
     <solution><p>Our priority must be to manipulate this equation until one side is equal to 
 <m>0</m>; once that is achieved, we will use the <em>zero product principle</em></p>
 <p><m>\begin{aligned}
-            {\left(x-1\right)\mathopen{}\left(4x+5\right)}={1+3x^{2}} \amp   \Rightarrow {4x^{2}+x-5}= {1+3x^{2}}\\
-                          \amp  \Rightarrow {x^{2}+x-6}= 0 \\
-                          \amp  \Rightarrow {\left(x+3\right)\mathopen{}\left(x-2\right)}= 0 \\
-                          \amp  \Rightarrow x=-3\text{ or } x=2\\
+            {\left(x-1\right)\mathopen{}\left(2x+5\right)}={x^{2}-1} \amp   \Rightarrow {2x^{2}+3x-5}= {x^{2}-1}\\
+                          \amp  \Rightarrow {x^{2}+3x-4}= 0 \\
+                          \amp  \Rightarrow {\left(x-1\right)\mathopen{}\left(x+4\right)}= 0 \\
+                          \amp  \Rightarrow x=1\text{ or } x=-4\\
         \end{aligned}</m></p>
 <p>Note that <em>all</em> quadratic equations have <alert>two</alert> (possibly repeated) solutions; in this problem both solutions are real. Each solution can be checked by substituting it into the original equation- this is left as an exercise.</p>
 <p>You might have solved the equation using the Quadratic Formula- the final 

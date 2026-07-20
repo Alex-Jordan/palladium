@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-linear-equation-fractions-two-with-gcf" assembly-id="linear-equation-fractions-two-with-gcf">
-  <static seed="1495">
-    <statement><p><m>{{\frac{3}{16}}x+6} = {{\frac{3}{20}}x-3}</m></p>
+  <static seed="1359">
+    <statement><p><m>{{\frac{2}{15}}x+2} = {-{\frac{7}{20}}x+6}</m></p>
 <p><fillin characters="4" name="AnSwEr0001"/></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>80</m>
+        <m>60</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left\{-240\right\}</m>
+        <m>\left\{\frac{240}{29}\right\}</m>
       </p>
     </answer>
   </static>

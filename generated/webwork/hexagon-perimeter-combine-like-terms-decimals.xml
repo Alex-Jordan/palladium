@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-hexagon-perimeter-combine-like-terms-decimals" assembly-id="hexagon-perimeter-combine-like-terms-decimals">
-  <static seed="2300">
+  <static seed="2164">
     <statement><!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/hexagon-perimeter-combine-like-terms-decimals-image-1" width="94%">
-<shortdescription>a quadrilateral whose sides are labeled (y), (y), (I), (6.5*y), (34*I), and (71*I).</shortdescription>
+<shortdescription>a quadrilateral whose sides are labeled (P), (5.4*F), (5.6*P), (48*F), (49*P), and (52*F).</shortdescription>
 </image>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>106I+8.5y</m>
+        <m>105.4F+55.6P</m>
       </p>
     </answer>
-    <solution><p>The perimeter is the result from adding the six sides together: <m>6.5y + y + 71I + y + 34I + I\text{.}</m> There are three <m>I</m>-terms and three <m>y</m>-terms. We combine each triple of like terms and the perimeter is <m>{106I+8.5y}\text{.}</m></p>
+    <solution><p>The perimeter is the result from adding the six sides together: <m>49P + P + 5.4F + 48F + 5.6P + 52F\text{.}</m> There are three <m>F</m>-terms and three <m>P</m>-terms. We combine each triple of like terms and the perimeter is <m>{105.4F+55.6P}\text{.}</m></p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/Appendices/A_3_5_71.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

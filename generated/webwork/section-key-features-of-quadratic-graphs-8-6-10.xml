@@ -1,60 +1,60 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-key-features-of-quadratic-graphs-8-6-10" assembly-id="section-key-features-of-quadratic-graphs-8-6-10">
-  <static seed="1016" source="Contrib/PCC/BasicAlgebra/QuadraticApplications/MaxMinApplication40.pg">
+  <static seed="549" source="Contrib/PCC/BasicAlgebra/QuadraticApplications/MaxMinApplication40.pg">
     <statement><p>You will build two identical rectangular enclosures next to a each other, sharing a side.
-You have a total of <m>360</m> feet of fence to use. Find the dimensions of each pen such that you can enclose the maximum possible area.
+You have a total of <m>396</m> feet of fence to use. Find the dimensions of each pen such that you can enclose the maximum possible area.
 One approach is to let <m>x</m> represent the length of fencing that the two pens share, and write a formula for the total area of the enclosures.
 Then find its vertex and interpret it.</p>
 <p>The length of each pen (along the wall that they share) should be <fillin characters="12" name="AnSwEr0001"/>, the width should be <fillin characters="12" name="AnSwEr0002"/>, and the maximum possible area of each pen is <fillin characters="12" name="AnSwEr0003"/>.</p>
 </statement>
     <answer>
       <p>
-        <m>60\ {\rm ft}</m>
+        <m>66\ {\rm ft}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>45\ {\rm ft}</m>
+        <m>49.5\ {\rm ft}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>2700\ {\rm ft^{2}}</m>
+        <m>3267\ {\rm ft^{2}}</m>
       </p>
     </answer>
     <solution><p>Drawing a diagram should help us write an expression for the area of the pen.</p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-key-features-of-quadratic-graphs-8-6-10-image-1.png" width="66%"/>
-<p>Let the width be <m>w</m> ft, and the length be <m>\ell</m> ft. Since there is a total of 360 feet of fence, we have:</p>
+<p>Let the width be <m>w</m> ft, and the length be <m>\ell</m> ft. Since there is a total of 396 feet of fence, we have:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-4w+3\ell \amp = 360 \\
-4w    \amp = 360-3\ell \\
-\frac{4w}{4} \amp = \frac{360}{4}-\frac{3\ell}{4} \\
-w     \amp = 90-0.75\ell
+4w+3\ell \amp = 396 \\
+4w    \amp = 396-3\ell \\
+\frac{4w}{4} \amp = \frac{396}{4}-\frac{3\ell}{4} \\
+w     \amp = 99-0.75\ell
 \end{aligned}
 }</m></p>
-<p>If each pen<rsq/>s length is <m>\ell</m> feet, then its width is <m>90-0.75\ell</m> feet. Now we can write an expression for the area of each pen:</p>
+<p>If each pen<rsq/>s length is <m>\ell</m> feet, then its width is <m>99-0.75\ell</m> feet. Now we can write an expression for the area of each pen:</p>
 <p><m>\displaystyle{\begin{align}
-\text{area}\amp =(90-0.75\ell)\ell\\
-\amp =-0.75\ell^{2}+90 \ell
+\text{area}\amp =(99-0.75\ell)\ell\\
+\amp =-0.75\ell^{2}+99 \ell
 \end{align}
 }</m></p>
-<p>Identify that <m>a=-0.75</m>, <m>b=90</m>, <m>c=0</m>. The maximum area happens at the parabola<rsq/>s vertex.</p>
+<p>Identify that <m>a=-0.75</m>, <m>b=99</m>, <m>c=0</m>. The maximum area happens at the parabola<rsq/>s vertex.</p>
 <p>To find the vertex, we first find the parabola<rsq/>s axis of symmetry by using the axis formula:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
   h \amp = -\frac{b}{2a} \\
-  h \amp = -\frac{90}{2(-0.75)} \\
-  h \amp =  60
+  h \amp = -\frac{99}{2(-0.75)} \\
+  h \amp =  66
 \end{aligned}
 }</m></p>
-<p>Next, we substitute <m>\ell= 60</m> into the expression, and we have:</p>
+<p>Next, we substitute <m>\ell= 66</m> into the expression, and we have:</p>
 <p><m>\displaystyle{\begin{aligned}[t] 
- -0.75(60)^2+90(60) \amp =  {2700} 
+ -0.75(66)^2+99(66) \amp =  {3267} 
 \end{aligned}
 }</m></p>
-<p>The parabola<rsq/>s vertex is at <m>{\left(60,2700\right)}</m>. This implies that each pen<rsq/>s maximum area is <m>{2700}</m> square feet.
-This happens when the length is <m>{60\ {\rm ft}}</m> feet, and the width is <m>90 - 0.75 \cdot 60</m>, or <m>45</m>, feet.</p>
-<p>So when the length is <m>{60\ {\rm ft}}</m> and the width is <m>{45\ {\rm ft}}</m>, each pen has a maximum area of <m>{2700\ {\rm ft^{2}}}</m>.</p>
+<p>The parabola<rsq/>s vertex is at <m>{\left(66,3267\right)}</m>. This implies that each pen<rsq/>s maximum area is <m>{3267}</m> square feet.
+This happens when the length is <m>{66\ {\rm ft}}</m> feet, and the width is <m>99 - 0.75 \cdot 66</m>, or <m>49.5</m>, feet.</p>
+<p>So when the length is <m>{66\ {\rm ft}}</m> and the width is <m>{49.5\ {\rm ft}}</m>, each pen has a maximum area of <m>{3267\ {\rm ft^{2}}}</m>.</p>
 <p>The following graph illustrates our findings.</p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-key-features-of-quadratic-graphs-8-6-10-image-2.png" width="40%"/>

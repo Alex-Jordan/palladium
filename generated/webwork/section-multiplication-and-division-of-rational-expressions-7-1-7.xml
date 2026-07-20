@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-1-7" assembly-id="section-multiplication-and-division-of-rational-expressions-7-1-7">
-  <static seed="1247" source="Contrib/PCC/BasicAlgebra/FractionArithmetic/DivideFractions10.pg">
-    <statement><p>Divide: <m>\displaystyle{ \frac{1}{7} \div \frac{5}{4} }</m></p>
+  <static seed="1111" source="Contrib/PCC/BasicAlgebra/FractionArithmetic/DivideFractions10.pg">
+    <statement><p>Divide: <m>\displaystyle{ \frac{1}{9} \div \frac{7}{5} }</m></p>
 <p><fillin characters="9" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{4}{35}}</m>
+        <m>{\frac{5}{63}}</m>
       </p>
     </answer>
     <solution><p>When we do division with fractions, as with</p>
-<p><m>\displaystyle{\frac{1}{7} \div \frac{5}{4} }</m></p>
+<p><m>\displaystyle{\frac{1}{9} \div \frac{7}{5} }</m></p>
 <p>we first change division to multiplication, and at the same time flip the second fraction. In this case, we have</p>
-<p><m>\displaystyle{\frac{1}{7} \cdot \frac{4}{5} }</m></p>
+<p><m>\displaystyle{\frac{1}{9} \cdot \frac{5}{7} }</m></p>
 <p>Then we do fraction multiplication as usual. The full process is:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-    \frac{1}{7} \div \frac{5}{4}
-        \amp = \frac{1}{7} \cdot \frac{4}{5} \\
-        \amp = \frac{1 \cdot 4}{7 \cdot 5} \\
-        \amp = \frac{4}{35}
+    \frac{1}{9} \div \frac{7}{5}
+        \amp = \frac{1}{9} \cdot \frac{5}{7} \\
+        \amp = \frac{1 \cdot 5}{9 \cdot 7} \\
+        \amp = \frac{5}{63}
 \end{aligned}
     }</m></p>
 </solution>

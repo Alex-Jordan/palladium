@@ -1,29 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-the-quadratic-formula-7-2-2-56" assembly-id="section-the-quadratic-formula-7-2-2-56">
-  <static seed="933">
-    <statement><p><m>{x^{2}-{\frac{16}{7}}}={{\frac{24}{7}}x}</m></p>
+  <static seed="466">
+    <statement><p><m>{x^{2}-27}={{\frac{3}{2}}x}</m></p>
 <p><fillin characters="40" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\frac{-4}{7},4\right\}</m>
+        <m>\left\{\frac{-9}{2},6\right\}</m>
       </p>
     </answer>
     <solution><p>To use the quadratic formula, we write the equation in standard form:</p>
-<p><me>{x^{2}-{\frac{24}{7}}x-{\frac{16}{7}}}=0</me></p>
-<p>and identify <m>a=1\text{,}</m> <m>b={-{\frac{24}{7}}}\text{,}</m> and <m>c={-{\frac{16}{7}}}\text{.}</m></p>
+<p><me>{x^{2}-{\frac{3}{2}}x-27}=0</me></p>
+<p>and identify <m>a=1\text{,}</m> <m>b={-{\frac{3}{2}}}\text{,}</m> and <m>c={-27}\text{.}</m></p>
 <p><me>\begin{aligned}
 x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
-\amp=\frac{{{\frac{24}{7}}}\pm\sqrt{{{\frac{576}{49}}}-4(1)\left({-{\frac{16}{7}}}\right)}}{2}\\
-\amp=\frac{{{\frac{24}{7}}}\pm\sqrt{{{\frac{1024}{49}}}}}{2}\\
-\amp=\frac{{{\frac{24}{7}}}\pm{{\frac{32}{7}}}}{2}\\
-x\amp=\frac{{{\frac{24}{7}}}-{{\frac{32}{7}}}}{2}\quad\text{or}\quad x=\frac{{{\frac{24}{7}}}+{{\frac{32}{7}}}}{2}\\
-x\amp={-{\frac{4}{7}}}\quad\text{or}\quad x=4
+\amp=\frac{{{\frac{3}{2}}}\pm\sqrt{{{\frac{9}{4}}}-4(1)\left({-27}\right)}}{2}\\
+\amp=\frac{{{\frac{3}{2}}}\pm\sqrt{{{\frac{441}{4}}}}}{2}\\
+\amp=\frac{{{\frac{3}{2}}}\pm{{\frac{21}{2}}}}{2}\\
+x\amp=\frac{{{\frac{3}{2}}}-{{\frac{21}{2}}}}{2}\quad\text{or}\quad x=\frac{{{\frac{3}{2}}}+{{\frac{21}{2}}}}{2}\\
+x\amp={-{\frac{9}{2}}}\quad\text{or}\quad x=6
 \end{aligned}</me></p>
-<p>The solution set is <m>{\left\{\frac{-4}{7},4\right\}}\text{.}</m></p>
+<p>The solution set is <m>{\left\{\frac{-9}{2},6\right\}}\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_4_5_67.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_5_5_67.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -40,7 +40,7 @@ x\amp={-{\frac{4}{7}}}\quad\text{or}\quad x=4
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.4.5.67)
+## Problem1(1.5.5.67)
 ## Author()
 ## Institution()
 ## Language(en-US)

@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-9-10" assembly-id="section-multiplication-and-division-of-rational-expressions-7-9-10">
-  <static seed="1348" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions45.pg">
+  <static seed="1212" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions45.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{({y^{3}+4y^{2}r+4yr^{2}}) \div ({y^{5}+2y^{4}r}) =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{({x^{4}-12x^{3}r+36x^{2}r^{2}}) \div ({x^{5}-6x^{4}r}) =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{y+2r}{y^{3}}</m>
+        <m>\frac{x-6r}{x^{2}}</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   ({y^{3}+4y^{2}r+4yr^{2}}) \div ({y^{5}+2y^{4}r}) 
-      \amp = \frac{{y^{3}+4y^{2}r+4yr^{2}}}{1} \div \frac{{y^{5}+2y^{4}r}}{1} \\
-      \amp = \frac{{y^{3}+4y^{2}r+4yr^{2}}}{1} \cdot {\frac{1}{y^{5}+2y^{4}r}} \\
-      \amp = \frac{{y\mathopen{}\left(y^{2}+4yr+4r^{2}\right)}}{1} \cdot \frac{1}{{y^{4}\mathopen{}\left(y+2r\right)}} \\
-      \amp = \frac{{y\mathopen{}\left(y+2r\right)^{2}}}{1} \cdot \frac{1}{{y^{4}\mathopen{}\left(y+2r\right)}} \\
-      \amp = {\frac{y+2r}{y^{3}}}
+   ({x^{4}-12x^{3}r+36x^{2}r^{2}}) \div ({x^{5}-6x^{4}r}) 
+      \amp = \frac{{x^{4}-12x^{3}r+36x^{2}r^{2}}}{1} \div \frac{{x^{5}-6x^{4}r}}{1} \\
+      \amp = \frac{{x^{4}-12x^{3}r+36x^{2}r^{2}}}{1} \cdot {\frac{1}{x^{5}-6x^{4}r}} \\
+      \amp = \frac{{x^{2}\mathopen{}\left(x^{2}-12xr+36r^{2}\right)}}{1} \cdot \frac{1}{{x^{4}\mathopen{}\left(x-6r\right)}} \\
+      \amp = \frac{{x^{2}\mathopen{}\left(x-6r\right)^{2}}}{1} \cdot \frac{1}{{x^{4}\mathopen{}\left(x-6r\right)}} \\
+      \amp = {\frac{x-6r}{x^{2}}}
 \end{aligned}
     }</m></p>
 </solution>

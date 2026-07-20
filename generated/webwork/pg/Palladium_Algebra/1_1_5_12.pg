@@ -27,9 +27,6 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PCCmacros.pl",
-  "parserLinearRelation.pl",
-  "randomPerson.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -42,27 +39,40 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$name = randomPerson();
-$initial = random(12,17);
-$rate = random(10,15);
-$final = 100;
-Context("LinearRelation")->variables->are(t => 'Real');
-$equation = LinearRelation("$initial + $rate t = $final");
+Context("Numeric");
+@ans = (Real(-4), Real(-1));
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Write an equation to model the scenario. There is no need to solve the equation.
+Let [`Q`] be the function defined by [`Q(x)=-3x^2+2x+4\text{.}`]
+a.  Find [`Q(2)\text{.}`]
 
-[$name] puts a pot of water from the tap onto the stove and turns the burner all the way up. The water temperature starts at [`[$initial]\,^{\circ}C`] and climbs steadily up to the boiling point of [`[$final]\,^{\circ}C\text{,}`] raising at a rate of [`[$rate]\,\frac{^{\circ}C}{\text{min}}\text{.}`] How long will it take for the pot to boil? Write an equation to model this scenario. There is no need to solve it.
+    [_]{$ans[0]}{5}
 
-[@KeyboardInstructions('Use [|t|]* as the variable.')@]**
+a.  Find [`Q(-1)\text{.}`]
 
-[_]{$equation}{20}
+    [_]{$ans[1]}{5}
 
 END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  [`\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}\newcommand{\amp}{&}\begin{aligned}
+                      Q(\substitute{2})\amp=-3(\substitute{2})^2+2(\substitute{2})+4\\
+                      \amp=-12+4+4=-4
+                    \end{aligned}`]
+a.  [`\newcommand{\substitute}[1]{{\color{blue}{{#1}}}}\newcommand{\amp}{&}\begin{aligned}
+                      Q(\substitute{-1})\amp=-3(\substitute{-1})^2+2(\substitute{-1})+4\\
+                      \amp=-3-2+4=-1
+                    \end{aligned}`]
+
+END_PGML_SOLUTION
 
 ############################################################
 # End Problem

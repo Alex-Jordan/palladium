@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-linear-inequality-fractions-b" assembly-id="linear-inequality-fractions-b">
-  <static seed="1499">
-    <statement><p><m>{12x+{\frac{8}{11}}} \lt {11}</m></p>
+  <static seed="1363">
+    <statement><p><m>{12x+{\frac{12}{11}}} \gt {4}</m></p>
 <p><fillin characters="4" name="AnSwEr0001"/></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 <p><fillin characters="16" name="AnSwEr0003"/></p>
@@ -13,12 +13,12 @@
     </answer>
     <answer>
       <p>
-        <m>\left\{x \mid x &lt; \frac{113}{132}\right\}</m>
+        <m>\left\{x \mid x &gt; \frac{8}{33}\right\}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(-\infty ,{\frac{113}{132}}\right)</m>
+        <m>\left({\frac{8}{33}},\infty \right)</m>
       </p>
     </answer>
   </static>

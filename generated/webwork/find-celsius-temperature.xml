@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-find-celsius-temperature" assembly-id="find-celsius-temperature">
-  <static seed="2511">
+  <static seed="2375">
     <statement><p>To convert a temperature in degrees Celsius to degrees Kelvin, there is a formula <m>K = C + 273\text{.}</m> The surface temperature of Pluto is about <m>40</m> Kelvin. What is the surface temperature of Pluto in degrees Celsius?</p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-compare-fraction-to-decimal" assembly-id="compare-fraction-to-decimal">
-  <static seed="2397">
-    <statement><p><m>{{\frac{14}{9}}}</m> <fillin characters="3" name="AnSwEr0001"/> <m>{1.56}</m></p>
+  <static seed="2261">
+    <statement><p><m>{{\frac{1}{7}}}</m> <fillin characters="3" name="AnSwEr0001"/> <m>{0.14}</m></p>
 </statement>
     <answer>
       <p>
-        <m>{\verb!&lt;!}</m>
+        <m>{\verb!&gt;!}</m>
       </p>
     </answer>
   </static>

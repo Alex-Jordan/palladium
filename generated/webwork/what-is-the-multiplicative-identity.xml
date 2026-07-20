@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-what-is-the-multiplicative-identity" assembly-id="what-is-the-multiplicative-identity">
-  <static seed="2323">
+  <static seed="2187">
     <statement><p>What number is the multiplicative identity?</p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>

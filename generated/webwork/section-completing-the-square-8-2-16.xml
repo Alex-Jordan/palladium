@@ -1,31 +1,31 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-2-16" assembly-id="section-completing-the-square-8-2-16">
-  <static seed="1179">
+  <static seed="712">
     <statement><p>Solve the equation by completing the square.</p>
-<p><m>{2r^{2}-5r-2}={0}</m></p>
+<p><m>{2t^{2}+7t+1}={0}</m></p>
 <p><fillin characters="25" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\frac{5}{4}-\frac{1}{4}\sqrt{41},\frac{5}{4}+\frac{1}{4}\sqrt{41}\right\}</m>
+        <m>\left\{\frac{-7}{4}-\frac{1}{4}\sqrt{41},\frac{-7}{4}+\frac{1}{4}\sqrt{41}\right\}</m>
       </p>
     </answer>
-    <solution><p>Move the constant term to the other side to get <m>{2r^{2}-5r} = {2}\text{.}</m></p>
-<p>Divide through by <m>2</m> to get <m>{r^{2}-{\frac{5}{2}}r} = {1}\text{.}</m></p>
-<p>Compute <m>\left(\frac{{-{\frac{5}{2}}}}{2}\right)^2={{\frac{25}{16}}}\text{.}</m> Then</p>
+    <solution><p>Move the constant term to the other side to get <m>{2t^{2}+7t} = {-1}\text{.}</m></p>
+<p>Divide through by <m>2</m> to get <m>{t^{2}+{\frac{7}{2}}t} = {-{\frac{1}{2}}}\text{.}</m></p>
+<p>Compute <m>\left(\frac{{{\frac{7}{2}}}}{2}\right)^2={{\frac{49}{16}}}\text{.}</m> Then</p>
 <p><me>\begin{aligned}
-{r^{2}-{\frac{5}{2}}r}+{{\frac{25}{16}}}\amp = {1}+{{\frac{25}{16}}}\\
-{r^{2}-{\frac{5}{2}}r}+{{\frac{25}{16}}}\amp = {{\frac{41}{16}}}\\
-\left({r-\frac{5}{4}}\right)^2\amp = {{\frac{41}{16}}}
+{t^{2}+{\frac{7}{2}}t}+{{\frac{49}{16}}}\amp = {-{\frac{1}{2}}}+{{\frac{49}{16}}}\\
+{t^{2}+{\frac{7}{2}}t}+{{\frac{49}{16}}}\amp = {{\frac{41}{16}}}\\
+\left({t+\frac{7}{4}}\right)^2\amp = {{\frac{41}{16}}}
 \end{aligned}</me></p>
 <p><me>\begin{aligned}
-{r-\frac{5}{4}} \amp = -{\frac{1}{4}\sqrt{41}}\amp\amp\text{or}\amp {r-\frac{5}{4}} \amp = {\frac{1}{4}\sqrt{41}}\\
-r \amp = {\frac{5}{4}-\frac{1}{4}\sqrt{41}}\amp\amp\text{or}\amp r \amp = {\frac{5}{4}+\frac{1}{4}\sqrt{41}}
+{t+\frac{7}{4}} \amp = -{\frac{1}{4}\sqrt{41}}\amp\amp\text{or}\amp {t+\frac{7}{4}} \amp = {\frac{1}{4}\sqrt{41}}\\
+t \amp = {\frac{-7}{4}-\frac{1}{4}\sqrt{41}}\amp\amp\text{or}\amp t \amp = {\frac{-7}{4}+\frac{1}{4}\sqrt{41}}
 \end{aligned}</me></p>
-<p>So the solution set is <m>{\left\{\frac{5}{4}-\frac{1}{4}\sqrt{41},\frac{5}{4}+\frac{1}{4}\sqrt{41}\right\}}\text{.}</m></p>
+<p>So the solution set is <m>{\left\{\frac{-7}{4}-\frac{1}{4}\sqrt{41},\frac{-7}{4}+\frac{1}{4}\sqrt{41}\right\}}\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_8_6_27.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_9_6_27.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -42,7 +42,7 @@ r \amp = {\frac{5}{4}-\frac{1}{4}\sqrt{41}}\amp\amp\text{or}\amp r \amp = {\frac
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.8.6.27)
+## Problem1(1.9.6.27)
 ## Author()
 ## Institution()
 ## Language(en-US)

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-water-evaporating" assembly-id="water-evaporating">
-  <static seed="1463">
+  <static seed="1327">
     <statement><p>In a science lab, a container had <m>21</m> ounces of water at 9:00<nbsp/>AM. Water has been evaporating at the rate of <m>3</m> ounces every <m>5</m> minutes. When will there be <m>8</m> ounces of water left?</p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>

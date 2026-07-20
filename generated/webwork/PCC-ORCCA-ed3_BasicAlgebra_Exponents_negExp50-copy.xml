@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp50-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp50-copy">
-  <static seed="1730">
-    <statement><p><m>(-9r^{-14})\cdot (-10r^{13})</m></p>
+  <static seed="1594">
+    <statement><p><m>(-6y^{-19})\cdot (-5y^{7})</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{90}{r^{1}}</m>
+        <m>\frac{30}{y^{12}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remember that <m>a^m\cdot a^n = a^{m+n}</m></p>
 <p><m>\begin{aligned}
-                         (-9r^{-14})\cdot (-10r^{13}) \amp = (-9)\cdot(-10)r^{-14+13}\\
-                                                       \amp  =90r^{-1}\\
-                                    \amp  = \frac{90}{r^{1}}
+                         (-6y^{-19})\cdot (-5y^{7}) \amp = (-6)\cdot(-5)y^{-19+7}\\
+                                                       \amp  =30y^{-12}\\
+                                    \amp  = \frac{30}{y^{12}}
            \end{aligned}</m></p>
 </solution>
   </static>

@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-linear-inequality-fractions-c" assembly-id="linear-inequality-fractions-c">
-  <static seed="1500">
-    <statement><p><m>{2x+9} \leq {{\frac{1}{10}}}</m></p>
+  <static seed="1364">
+    <statement><p><m>{2x+12} \geq {{\frac{5}{7}}}</m></p>
 <p><fillin characters="4" name="AnSwEr0001"/></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 <p><fillin characters="16" name="AnSwEr0003"/></p>
 </statement>
     <answer>
       <p>
-        <m>10</m>
+        <m>7</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left\{x \mid x\le \frac{-89}{20}\right\}</m>
+        <m>\left\{x \mid x\ge \frac{-79}{14}\right\}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(-\infty ,-{\frac{89}{20}}\right]</m>
+        <m>\left[-{\frac{79}{14}},\infty \right)</m>
       </p>
     </answer>
   </static>

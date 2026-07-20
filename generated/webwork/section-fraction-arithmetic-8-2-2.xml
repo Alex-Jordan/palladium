@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-fraction-arithmetic-8-2-2" assembly-id="section-fraction-arithmetic-8-2-2">
-  <static seed="2133">
-    <statement><p>Given that <m>a\neq0\text{,}</m> simplify <m>\displaystyle{}{\frac{2}{a}+\frac{6}{a}}\text{.}</m></p>
+  <static seed="1997">
+    <statement><p>Given that <m>a\neq0\text{,}</m> simplify <m>\displaystyle{}{\frac{2}{a}+\frac{8}{a}}\text{.}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{8}{a}</m>
+        <m>\frac{10}{a}</m>
       </p>
     </answer>
     <solution><p>Since the fractions have the same denominator, we can just add numerators and keep that denominator.</p>
 <p><me>\begin{aligned}
-{\frac{2}{a}+\frac{6}{a}} \amp= \frac{2+6}{a}\\
-\amp = {\frac{8}{a}}
+{\frac{2}{a}+\frac{8}{a}} \amp= \frac{2+8}{a}\\
+\amp = {\frac{10}{a}}
 \end{aligned}</me></p>
 </solution>
   </static>

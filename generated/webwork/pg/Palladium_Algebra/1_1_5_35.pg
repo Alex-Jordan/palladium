@@ -27,10 +27,8 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PCCmacros.pl",
-  "contextCurrency.pl",
-  "contextPercent.pl",
-  "parserLinearRelation.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -43,27 +41,23 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("Currency")->flags->set(trimTrailingZeros => 1);
-$final = 90 + random(-30, 30, 0.05);
-$current = Currency($final);
-Context("Percent");
-$decimal = random(0.16,0.20,0.01);
-$percent = Percent($decimal);
-Context("LinearRelation")->variables->are(b => 'Real');
-$equation = LinearRelation("b + $decimal b <= $final");
+($a,$r) = (1, list_random(1..9));
+Context()->noreduce('(-x)-y');
+$left = Formula("x^2 - $r**2")->reduce;
+$right = Formula("0")->reduce;
+Context("FiniteSolutionSets");
+$sols = Formula("{-$r, $r}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Write an inequality to model the scenario. There is no need to solve the inequality.
+Solve the equation by factoring.
 
-The final bill at a restaurant one night was [`[$current]\text{,}`] including a tip that was at least [`[$percent]\text{.}`] What could the bill have been before the tip was added? Set up an inequality where the solution set represents the possible amounts that the original bill might have been. There is no need to solve it.
+[`[$left] = [$right]`]
 
-[@KeyboardInstructions('Use [|b|]* as the variable.')@]**
-
-[_]{$equation}{20}
+[_]{$sols}{16}
 
 END_PGML
 

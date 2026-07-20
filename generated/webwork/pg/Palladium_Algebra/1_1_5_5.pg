@@ -27,10 +27,8 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PCCmacros.pl",
-  "parserNumberWithUnits.pl",
-  "parserLinearRelation.pl",
-  "randomPerson.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -43,27 +41,25 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$name = randomPerson();
-$rate = random(50,65);
-$speed = NumberWithUnits("$rate mph");
-$I = list_random(5,10,15,20,25,35,40,55,65,70,75,80,90,95);
-$initial = random(100,200);
-$final = $initial + random(80,250);
-Context("LinearRelation")->variables->are(t => 'Real');
-$equation = LinearRelation("$initial + $rate t = $final");
+($r,$s) = random_subset(2,1..9);
+$r *= -1;
+$s *= -1;
+Context()->noreduce('(-x)-y');
+$left = Formula("x^2 - ($r+$s)x + $r*$s")->reduce;
+$right = Formula("0");
+Context("FiniteSolutionSets");
+$sols = Formula("{$r,$s}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Write an equation to model the scenario. There is no need to solve the equation.
+Solve the equation by factoring.
 
-[$name] is driving with an average speed of [`[$speed]`] on Interstate-[$I]. [$name->Subject] [$name->verb('look')] out the window and [$name->verb('see')] mile marker [$initial] pass by. How long will it take [$name->object] to reach [$name->possessive] destination, which is at mile marker [$final]? Write an equation to model this scenario. There is no need to solve it.
+[`[$left] = [$right]`]
 
-[@KeyboardInstructions('Use [|t|]* as the variable.')@]**
-
-[_]{$equation}{20}
+[_]{$sols}{16}
 
 END_PGML
 

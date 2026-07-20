@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-quadratic-functions-identify-abc-1" assembly-id="quadratic-functions-identify-abc-1">
+  <static seed="725">
+    <statement><p>Let <m>f(x)=2-9x-6x^2\text{.}</m> Then  <m>a=</m><fillin characters="5" name="AnSwEr0001"/>, <m>b=</m><fillin characters="5" name="AnSwEr0002"/>, and <m>c=</m><fillin characters="5" name="AnSwEr0003"/>.</p>
+</statement>
+    <answer>
+      <p>
+        <m>-6</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>-9</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>2</m>
+      </p>
+    </answer>
+    <solution><p>Rewriting <m>f(x)=2-9x-6x^2</m> in standard order gives <m>f(x)=-6x^2-9x+2\text{.}</m> So <m>a=-6\text{,}</m> <m>b=-9\text{,}</m> and <m>c=2\text{.}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_2_3.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.2.3)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Numeric");
+$a = Compute("-6");
+$b = Compute("-9");
+$c = Compute("2");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Let [`f(x)=2-9x-6x^2\text{.}`] Then  [`a=`][_]{$a}{5}, [`b=`][_]{$b}{5}, and [`c=`][_]{$c}{5}.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Rewriting [`f(x)=2-9x-6x^2`] in standard order gives [`f(x)=-6x^2-9x+2\text{.}`] So [`a=-6\text{,}`] [`b=-9\text{,}`] and [`c=2\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp170-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp170-copy">
-  <static seed="1778">
-    <statement><p><m>\displaystyle\frac{\left(t^{5}x^{-7}\right)^{-4}}{\left(t^{-6}x^{7}\right)^{-3}}</m></p>
+  <static seed="1642">
+    <statement><p><m>\displaystyle\frac{\left(t^{4}y^{-4}\right)^{-3}}{\left(t^{-4}y^{5}\right)^{-3}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{x^{49}}{t^{38}}</m>
+        <m>\frac{y^{27}}{t^{24}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\left(a^m\right)^{n}=a^{mn}</m></p>
 <p><m>\begin{aligned}
-\frac{\left(t^{5}x^{-7}\right)^{-4}}{\left(t^{-6}x^{7}\right)^{-3}}
-                      \amp = \frac{t^{5\cdot(-4)}x^{(-7)\cdot(-4)}}{t^{(-6)\cdot(-3)}\cdot x^{7\cdot (-3)}}\\
-                     \amp = \frac{t^{-20}x^{28}}{t^{18}\cdot x^{-21}}\\
- \amp = t^{-20-18} x^{28+21}\\
- \amp = t^{-38} x^{49}\\
-                                    \amp  = {\frac{x^{49}}{t^{38}}}
+\frac{\left(t^{4}y^{-4}\right)^{-3}}{\left(t^{-4}y^{5}\right)^{-3}}
+                      \amp = \frac{t^{4\cdot(-3)}y^{(-4)\cdot(-3)}}{t^{(-4)\cdot(-3)}\cdot y^{5\cdot (-3)}}\\
+                     \amp = \frac{t^{-12}y^{12}}{t^{12}\cdot y^{-15}}\\
+ \amp = t^{-12-12} y^{12+15}\\
+ \amp = t^{-24} y^{27}\\
+                                    \amp  = {\frac{y^{27}}{t^{24}}}
            \end{aligned}</m></p>
 </solution>
   </static>

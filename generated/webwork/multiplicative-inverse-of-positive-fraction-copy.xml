@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-multiplicative-inverse-of-positive-fraction-copy" assembly-id="multiplicative-inverse-of-positive-fraction-copy">
-  <static seed="2319">
-    <statement><p>Multiplicative inverse of <m>{{\frac{8}{3}}}\text{.}</m></p>
+  <static seed="2183">
+    <statement><p>Multiplicative inverse of <m>{{\frac{7}{8}}}\text{.}</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{3}{8}}</m>
+        <m>{\frac{8}{7}}</m>
       </p>
     </answer>
   </static>

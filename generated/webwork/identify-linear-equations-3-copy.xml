@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-identify-linear-equations-3-copy" assembly-id="identify-linear-equations-3-copy">
-  <static seed="2498">
+  <static seed="2362">
     <statement><ul form="checkboxes" name="AnSwEr0001">
 <li>
-<p><m>5=-7-5y</m></p>
+<p><m>-5\leq-2-16r</m></p>
 </li>
 <li>
-<p><m>8q^{2}-2r\geq48</m></p>
+<p><m>6.4r=48</m></p>
 </li>
 <li>
-<p><m>2V^{2}-7z^{2}\leq1</m></p>
+<p><m>2r^{2}+3V=-55</m></p>
 </li>
 <li>
-<p><m>-200=440y-2r</m></p>
+<p><m>\sqrt{5q}-13=6</m></p>
 </li>
 <li>
-<p><m>2.8q=67</m></p>
+<p><m>2q^{2}+5x^{2}=1</m></p>
 </li>
 <li>
-<p><m>\sqrt{9V}-11\leq5</m></p>
+<p><m>-102\leq731V-240r</m></p>
 </li>
 <li>
 <p>None of the above</p>
@@ -28,7 +28,7 @@
 </p></statement>
     <answer>
       <p>
-        <m>\text{Choice 1, Choice 4, Choice 5}</m>
+        <m>\text{Choice 1, Choice 2, Choice 6}</m>
       </p>
     </answer>
   </static>

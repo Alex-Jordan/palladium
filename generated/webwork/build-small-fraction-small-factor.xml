@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-build-small-fraction-small-factor" assembly-id="build-small-fraction-small-factor">
-  <static seed="2071">
+  <static seed="1935">
     <statement><p><m>\dfrac{1}{4}</m> with denominator <m>8</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>

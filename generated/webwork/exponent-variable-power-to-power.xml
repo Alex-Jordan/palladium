@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-variable-power-to-power" assembly-id="exponent-variable-power-to-power">
-  <static seed="2578">
-    <statement><p><m>{\left(k^{6}\right)^{9}}</m></p>
+  <static seed="2442">
+    <statement><p><m>{\left(i^{9}\right)^{3}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>k^{54}</m>
+        <m>i^{27}</m>
       </p>
     </answer>
-    <solution><p>This expression raises <m>k</m> to an exponent, and then raises the result to another exponent. In this situation we can multiply the two exponents and get: <m>{k^{54}}\text{.}</m></p>
+    <solution><p>This expression raises <m>i</m> to an exponent, and then raises the result to another exponent. In this situation we can multiply the two exponents and get: <m>{i^{27}}\text{.}</m></p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/Appendices/A_8_4_11.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

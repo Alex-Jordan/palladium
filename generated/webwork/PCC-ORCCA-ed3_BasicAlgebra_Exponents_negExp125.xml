@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp125" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp125">
-  <static seed="1759">
-    <statement><p><m>\displaystyle\frac{10t^{7}\cdot5t^{2}}{9t^{7}}</m></p>
+  <static seed="1623">
+    <statement><p><m>\displaystyle\frac{9r^{9}\cdot7r^{5}}{5r^{7}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{50t^{2}}{9}</m>
+        <m>\frac{63r^{7}}{5}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>a^m\cdot a^n=a^{m+n}</m> and <m>\displaystyle{\frac{a^m}{a^n} = a^{m-n}}</m></p>
 <p><m>\displaystyle{           \begin{aligned}
-                \frac{10t^{7}\cdot5t^{2}}{9t^{7}}
-                      \amp = \frac{50t^{7+2}}{9t^{7}}\\
-                                    \amp  = {\frac{50t^{2}}{9}}
+                \frac{9r^{9}\cdot7r^{5}}{5r^{7}}
+                      \amp = \frac{63r^{9+5}}{5r^{7}}\\
+                                    \amp  = {\frac{63r^{7}}{5}}
            \end{aligned}
     }</m></p>
 </solution>

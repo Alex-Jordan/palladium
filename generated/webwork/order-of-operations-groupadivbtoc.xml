@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-order-of-operations-groupadivbtoc" assembly-id="order-of-operations-groupadivbtoc">
-  <static seed="2193">
-    <statement><p><m>[ 6 \div 3 ] ^{4}</m></p>
+  <static seed="2057">
+    <statement><p><m>[ 4 \div 2 ] ^{4}</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>

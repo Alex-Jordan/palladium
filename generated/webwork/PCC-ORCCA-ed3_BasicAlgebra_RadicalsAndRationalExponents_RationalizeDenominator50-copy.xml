@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator50-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator50-copy">
-  <static seed="1927">
-    <statement><p><m>\displaystyle{ \frac{4}{\sqrt{14}} }</m></p>
+  <static seed="1791">
+    <statement><p><m>\displaystyle{ \frac{10}{\sqrt{14}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{2\sqrt{14}}{7}</m>
+        <m>\frac{5\sqrt{14}}{7}</m>
       </p>
     </answer>
     <solution><p>We need to legally remove the radical <m>\sqrt{14}</m> from the denominator.</p>
@@ -16,10 +16,10 @@
 <p><m>\displaystyle{ \sqrt{14} \cdot \sqrt{14} = 14 }</m></p>
 <p>We will multiply both the numerator and denominator by <m>\sqrt{14}</m>, and we have:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   \frac{4}{\sqrt{14}} \amp = \frac{4}{\sqrt{14}} \cdot\frac{\sqrt{14}}{\sqrt{14}}\\
-      \amp = \frac{4 \cdot \sqrt{14}}{\sqrt{14} \cdot \sqrt{14}} \\
-      \amp = \frac{4 \sqrt{14}}{14} \amp \text{We can divide both the numerator and denominator by 2.}\\
-      \amp = \frac{2 \sqrt{14}}{7}
+   \frac{10}{\sqrt{14}} \amp = \frac{10}{\sqrt{14}} \cdot\frac{\sqrt{14}}{\sqrt{14}}\\
+      \amp = \frac{10 \cdot \sqrt{14}}{\sqrt{14} \cdot \sqrt{14}} \\
+      \amp = \frac{10 \sqrt{14}}{14} \amp \text{We can divide both the numerator and denominator by 2.}\\
+      \amp = \frac{5 \sqrt{14}}{7}
 \end{aligned}
     }</m></p>
 </solution>

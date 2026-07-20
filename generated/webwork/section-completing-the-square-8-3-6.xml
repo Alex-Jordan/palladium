@@ -1,39 +1,39 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-3-6" assembly-id="section-completing-the-square-8-3-6">
-  <static seed="1185">
-    <statement><p>Consider <m>g(x)={8x^{2}+48x-1}\text{.}</m>
+  <static seed="718">
+    <statement><p>Consider <m>F(y)={2y^{2}-10y+4}\text{.}</m>
 <ol label="a.">
 <li>
-<p>Give the formula for <m>g</m> in vertex form.</p>
+<p>Give the formula for <m>F</m> in vertex form.</p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </li>
 <li>
-<p>What is the vertex of the parabola graph of <m>g\text{?}</m></p>
+<p>What is the vertex of the parabola graph of <m>F\text{?}</m></p>
 <p><fillin characters="20" name="AnSwEr0002"/></p>
 </li>
 </ol></p>
 </statement>
     <answer>
       <p>
-        <m>g\mathopen{}\left(x\right) = 8\mathopen{}\left(x+3\right)^{2}-73</m>
+        <m>F\mathopen{}\left(y\right) = 2\mathopen{}\left(y-\frac{5}{2}\right)^{2}-\frac{17}{2}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(-3,-73\right)</m>
+        <m>\left(\frac{5}{2},\frac{-17}{2}\right)</m>
       </p>
     </answer>
-    <solution><p>First factor out the leading coefficient from the first two terms, giving <m>g(x)={8\mathopen{}\left(x^{2}+6x\right)-1}\text{.}</m> Then compute <m>\left(\frac{6}{2}\right)^2={9}\text{.}</m> Then</p>
+    <solution><p>First factor out the leading coefficient from the first two terms, giving <m>F(y)={2\mathopen{}\left(y^{2}-5y\right)+4}\text{.}</m> Then compute <m>\left(\frac{-5}{2}\right)^2={{\frac{25}{4}}}\text{.}</m> Then</p>
 <p><me>\begin{aligned}
-g(x)\amp = {8\mathopen{}\left(x^{2}+6x+9-9\right)-1}\\
-\amp = {8\mathopen{}\left(x^{2}+6x+9\right)-72-1}\\
-\amp = {8\mathopen{}\left(x^{2}+6x+9\right)-73}\\
-\amp={8\mathopen{}\left(x+3\right)^{2}-73}
+F(y)\amp = {2\mathopen{}\left(y^{2}-5y+{\frac{25}{4}}-{\frac{25}{4}}\right)+4}\\
+\amp = {2\mathopen{}\left(y^{2}-5y+{\frac{25}{4}}\right)-{\frac{25}{2}}+4}\\
+\amp = {2\mathopen{}\left(y^{2}-5y+{\frac{25}{4}}\right)-{\frac{17}{2}}}\\
+\amp={2\mathopen{}\left(y-\frac{5}{2}\right)^{2}-\frac{17}{2}}
 \end{aligned}</me></p>
-<p>From the vertex form, we can see the vertex is <m>{\left(-3,-73\right)}\text{.}</m></p>
+<p>From the vertex form, we can see the vertex is <m>{\left(\frac{5}{2},\frac{-17}{2}\right)}\text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_8_6_33.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_9_6_33.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -50,7 +50,7 @@ g(x)\amp = {8\mathopen{}\left(x^{2}+6x+9-9\right)-1}\\
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.8.6.33)
+## Problem1(1.9.6.33)
 ## Author()
 ## Institution()
 ## Language(en-US)

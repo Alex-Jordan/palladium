@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-quadratic-graphs-and-vertex-form-8-7-4" assembly-id="section-quadratic-graphs-and-vertex-form-8-7-4">
-  <static seed="1115" source="Contrib/PCC/BasicAlgebra/QuadraticFunctions/QuadraticVertexForm15.pg">
+  <static seed="648" source="Contrib/PCC/BasicAlgebra/QuadraticFunctions/QuadraticVertexForm15.pg">
     <statement><p>A graph of a function <m>f</m> is given. Use the graph to write a formula for <m>f</m> in vertex form. You will need to identify the vertex and also one more point on the graph to find the leading coefficient <m>a</m>.</p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-quadratic-graphs-and-vertex-form-8-7-4-image-1.png" width="40%"/>
@@ -8,22 +8,22 @@
 </statement>
     <answer>
       <p>
-        <m>-3\mathopen{}\left(x-4\right)^{2}+2</m>
+        <m>-2\mathopen{}\left(x-2\right)^{2}+3</m>
       </p>
     </answer>
     <solution><p>A parabola<rsq/>s vertex form looks like <m>f(x) = a(x-h)^2+k</m>.</p>
-<p>We can see the vertex is at <m>(4,2)</m>, we have <m>f(x) = a{\left(x-4\right)^{2}+2}</m>.</p>
-<p>Next, we can see the parabola passes the point <m>(3,{-1})</m>. (We could choose to use another point on the parabola.) We substitute this point <m>(3,{-1})</m> into <m>f(x) = a{\left(x-4\right)^{2}+2}</m>, and solve for <m>a</m>:</p>
+<p>We can see the vertex is at <m>(2,3)</m>, we have <m>f(x) = a{\left(x-2\right)^{2}+3}</m>.</p>
+<p>Next, we can see the parabola passes the point <m>(3,{1})</m>. (We could choose to use another point on the parabola.) We substitute this point <m>(3,{1})</m> into <m>f(x) = a{\left(x-2\right)^{2}+3}</m>, and solve for <m>a</m>:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   f(x) \amp = a{\left(x-4\right)^{2}+2}  \\
-   {-1} \amp = a(3-4)^2+2 \\
-   {-1} \amp = a(-1)^2+2 \\
-   {-1} \amp = a+2 \\
-   {-3} \amp = a \\
-   a \amp = -3
+   f(x) \amp = a{\left(x-2\right)^{2}+3}  \\
+   {1} \amp = a(3-2)^2+3 \\
+   {1} \amp = a(1)^2+3 \\
+   {1} \amp = a+3 \\
+   {-2} \amp = a \\
+   a \amp = -2
 \end{aligned}
     }</m></p>
-<p>The solution is <m>f(x) = {-3\mathopen{}\left(x-4\right)^{2}+2}</m>.</p>
+<p>The solution is <m>f(x) = {-2\mathopen{}\left(x-2\right)^{2}+3}</m>.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/QuadraticFunctions/QuadraticVertexForm15.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-standard-linear-equation-for-y-4-copy" assembly-id="solve-standard-linear-equation-for-y-4-copy">
-  <static seed="1572">
-    <statement><p><m>{28x+24y}={-93}</m></p>
+  <static seed="1436">
+    <statement><p><m>{-50x+20y}={-320}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>y = -{\frac{7}{6}}x+-{\frac{31}{8}}</m>
+        <m>y = {\frac{5}{2}}x-16</m>
       </p>
     </answer>
     <solution><p><me>\begin{aligned}
-{28x+24y} \amp = {-93}\\
-{28x+24y-28x} \amp = {-93-28x}\\
-{24y} \amp = {-93-28x}\\
-{\frac{24y}{24}} \amp = {\frac{-93-28x}{24}}\\
-{y} \amp = {-{\frac{7}{6}}x - {\frac{31}{8}}}
+{-50x+20y} \amp = {-320}\\
+{-50x+20y+50x} \amp = {-320+50x}\\
+{20y} \amp = {-320+50x}\\
+{\frac{20y}{20}} \amp = {\frac{-320+50x}{20}}\\
+{y} \amp = {{\frac{5}{2}}x-16}
 \end{aligned}</me></p>
 </solution>
   </static>

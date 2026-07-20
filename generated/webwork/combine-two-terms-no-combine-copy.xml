@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-combine-two-terms-no-combine-copy" assembly-id="combine-two-terms-no-combine-copy">
-  <static seed="2275">
-    <statement><p><m>{-8.2V+{\frac{4}{9}}i}</m></p>
+  <static seed="2139">
+    <statement><p><m>{33S+{\frac{1}{6}}x}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-8.2V+\frac{4}{9}i</m>
+        <m>33S+\frac{1}{6}x</m>
       </p>
     </answer>
   </static>

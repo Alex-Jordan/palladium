@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-8-4" assembly-id="section-multiplication-and-division-of-rational-expressions-7-8-4">
-  <static seed="1319" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions53.pg">
+  <static seed="1183" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions53.pg">
     <statement><p>Simplify this expression, and if applicable, write the restricted domain.</p>
-<p><m>\displaystyle{{\frac{x^{2}-16x}{x^{2}-16}} \cdot {\frac{x^{2}-4x}{x^{2}-13x-48}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{t^{2}-4t}{t^{2}-4}} \cdot {\frac{t^{2}-2t}{t^{2}-12t+32}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{x^{2}}{\left(x+4\right)\mathopen{}\left(x+3\right)}, x\ne 4\hbox{ and }x\ne 16</m>
+        <m>\frac{t^{2}}{\left(t+2\right)\mathopen{}\left(t-8\right)}, t\ne 2\hbox{ and }t\ne 4</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   {\frac{x^{2}-16x}{x^{2}-16}} \cdot {\frac{x^{2}-4x}{x^{2}-13x-48}} 
-      \amp = \frac{{x\mathopen{}\left(x-16\right)}}{{\left(x+4\right)\mathopen{}\left(x-4\right)}} \cdot \frac{{x\mathopen{}\left(x-4\right)}}{{\left(x-16\right)\mathopen{}\left(x+3\right)}} \\
-      \amp = {\frac{x^{2}}{\left(x+4\right)\mathopen{}\left(x+3\right)}, x\ne 4\hbox{ and }x\ne 16}
+   {\frac{t^{2}-4t}{t^{2}-4}} \cdot {\frac{t^{2}-2t}{t^{2}-12t+32}} 
+      \amp = \frac{{t\mathopen{}\left(t-4\right)}}{{\left(t+2\right)\mathopen{}\left(t-2\right)}} \cdot \frac{{t\mathopen{}\left(t-2\right)}}{{\left(t-4\right)\mathopen{}\left(t-8\right)}} \\
+      \amp = {\frac{t^{2}}{\left(t+2\right)\mathopen{}\left(t-8\right)}, t\ne 2\hbox{ and }t\ne 4}
 \end{aligned}
     }</m></p>
 </solution>

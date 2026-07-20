@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-13-2" assembly-id="section-solving-rational-equations-10-13-2">
-  <static seed="1617">
+  <static seed="1481">
     <statement><p>Use technology to solve the equation.</p>
 <p><me>\frac{10}{x^2+3}=\frac{x+1}{x+5}
                 \text{.}</me></p>

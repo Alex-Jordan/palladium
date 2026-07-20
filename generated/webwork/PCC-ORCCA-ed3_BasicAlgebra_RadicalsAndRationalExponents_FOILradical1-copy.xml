@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_FOILradical1-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_FOILradical1-copy">
-  <static seed="1867">
-    <statement><p><m>\displaystyle{\left(3 - {\sqrt{11}}\right)\left(3 + {\sqrt{11}}\right) }</m></p>
+  <static seed="1731">
+    <statement><p><m>\displaystyle{\left(5 - {\sqrt{11}}\right)\left(5 + {\sqrt{11}}\right) }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-2</m>
+        <m>14</m>
       </p>
     </answer>
     <solution><p>Use the FOIL method to multiply these binomial expressions together, or notice
@@ -14,10 +14,10 @@ that we have the difference of squares formula:</p>
 <p><m>\displaystyle{ (A+B)(A-B)=A^{2}-B^{2} }</m></p>
 <p>We have:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-    (3 - {\sqrt{11}})(3 + {\sqrt{11}}) 
-               \amp = 3^2 - \left({\sqrt{11}}\right)^2 \\
-               \amp = 9 - 11 \\
-               \amp = {-2}
+    (5 - {\sqrt{11}})(5 + {\sqrt{11}}) 
+               \amp = 5^2 - \left({\sqrt{11}}\right)^2 \\
+               \amp = 25 - 11 \\
+               \amp = {14}
 \end{aligned}
     }</m></p>
 </solution>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-true-false-compare-fraction-to-decimal-copy" assembly-id="true-false-compare-fraction-to-decimal-copy">
-  <static seed="2386">
-    <statement><p><m>{{\frac{9}{8}}} \neq {1.125}</m></p>
+  <static seed="2250">
+    <statement><p><m>{1.75} \geq {{\frac{7}{4}}}</m></p>
 <p><fillin name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\text{False}</m>
+        <m>\text{True}</m>
       </p>
     </answer>
   </static>

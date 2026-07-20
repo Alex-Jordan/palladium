@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-2-10" assembly-id="section-multiplication-and-division-of-rational-expressions-7-2-10">
-  <static seed="1259" source="Contrib/PCC/BasicAlgebra/Factoring/factoring390.pg">
+  <static seed="1123" source="Contrib/PCC/BasicAlgebra/Factoring/factoring390.pg">
     <statement><p>Factor the given polynomial.</p>
-<p><m>{4y^{4}+20y^{3}+24y^{2}}=</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>{6y^{8}+24y^{7}+18y^{6}}=</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>4y^{2}\mathopen{}\left(y+2\right)\mathopen{}\left(y+3\right)</m>
+        <m>6y^{6}\mathopen{}\left(y+3\right)\mathopen{}\left(y+1\right)</m>
       </p>
     </answer>
-    <solution><p>Let<rsq/>s start by noting that <m>4y^{2}</m> is a common factor to each term, so 
+    <solution><p>Let<rsq/>s start by noting that <m>6y^{6}</m> is a common factor to each term, so 
 we may write</p>
-<p><m>{4y^{4}+20y^{3}+24y^{2}}={4y^{2}\mathopen{}\left(y^{2}+5y+6\right)}</m></p>
+<p><m>{6y^{8}+24y^{7}+18y^{6}}={6y^{6}\mathopen{}\left(y^{2}+4y+3\right)}</m></p>
 <p>To factor this expression further we make the following observations:
 <ul label="disc">
 <li>
@@ -23,9 +23,9 @@ will have the form</p>
 <p><m>(y+\phantom{3})(y+\phantom{3})</m></p>
 </li>
 </ul></p>
-<p>We look for factors of <m>6</m> that add to <m>5</m>; the 
-factors that work are <m>2</m> and <m>3</m> so</p>
-<p><m>{4y^{4}+20y^{3}+24y^{2}}={4y^{2}\mathopen{}\left(y+2\right)\mathopen{}\left(y+3\right)}</m></p>
+<p>We look for factors of <m>3</m> that add to <m>4</m>; the 
+factors that work are <m>3</m> and <m>1</m> so</p>
+<p><m>{6y^{8}+24y^{7}+18y^{6}}={6y^{6}\mathopen{}\left(y+3\right)\mathopen{}\left(y+1\right)}</m></p>
 <p>Note that this answer can be checked by using the FOIL (<alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast) technique (exercise).</p>
 </solution>
   </static>

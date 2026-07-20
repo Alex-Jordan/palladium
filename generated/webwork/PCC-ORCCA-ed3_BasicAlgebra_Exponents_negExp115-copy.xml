@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp115-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp115-copy">
-  <static seed="1756">
-    <statement><p><m>\left(-3y^{-14}\right)^{-3}</m></p>
+  <static seed="1620">
+    <statement><p><m>\left(-4y^{-19}\right)^{-2}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-\frac{y^{42}}{27}</m>
+        <m>\frac{y^{38}}{16}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\left(a^m\right)^n = a^{mn}</m></p>
 <p><m>\begin{aligned}
-                           \left(-3y^{-14}\right)^{-3} \amp = (-3)^{-3}y^{(-14)\cdot(-3)}\\
-\amp  = \frac{1}{(-3)^{3}}y^{42}\\
-\amp  = \frac{1}{-27}y^{42}\\
-                                    \amp  = {-\frac{y^{42}}{27}}
+                           \left(-4y^{-19}\right)^{-2} \amp = (-4)^{-2}y^{(-19)\cdot(-2)}\\
+\amp  = \frac{1}{(-4)^{2}}y^{38}\\
+\amp  = \frac{1}{16}y^{38}\\
+                                    \amp  = {\frac{y^{38}}{16}}
            \end{aligned}</m></p>
 </solution>
   </static>

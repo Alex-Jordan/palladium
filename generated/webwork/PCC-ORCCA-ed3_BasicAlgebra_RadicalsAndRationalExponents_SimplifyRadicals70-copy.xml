@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals70-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals70-copy">
-  <static seed="1847">
-    <statement><p><m>\displaystyle{{\sqrt{245}} - {\sqrt{180}} }</m></p>
+  <static seed="1711">
+    <statement><p><m>\displaystyle{{\sqrt{45}} - {\sqrt{20}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
@@ -11,14 +11,14 @@
     </answer>
     <solution><p>First, simplify each radical to see if they are like radicals:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   {\sqrt{245}} \amp = \sqrt{5 \cdot 7 \cdot 7} \amp \amp \amp \quad\amp \amp     {\sqrt{180}} \amp = \sqrt{2 \cdot 2 \cdot 3 \cdot 3 \cdot 5}\\
-            \amp =7 \sqrt{5} \amp \amp \amp \amp \amp              \amp =2 \cdot 3 \sqrt{5}\\
-            \amp  \amp \amp \amp \amp \amp              \amp =6 \sqrt{5}
+   {\sqrt{45}} \amp = \sqrt{3 \cdot 3 \cdot 5} \amp \amp \amp \quad\amp \amp     {\sqrt{20}} \amp = \sqrt{2 \cdot 2 \cdot 5}\\
+            \amp =3 \sqrt{5} \amp \amp \amp \amp \amp              \amp =2 \sqrt{5}\\
+            \amp  \amp \amp \amp \amp \amp              \amp 
 \end{aligned}
     }</m></p>
 <p>Then we combine like terms to reach the answer.</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   {\sqrt{245}} - {\sqrt{180}} \amp = 7 \sqrt{5} - 6 \sqrt{5} \\
+   {\sqrt{45}} - {\sqrt{20}} \amp = 3 \sqrt{5} - 2 \sqrt{5} \\
                        \amp = {\sqrt{5}}
 \end{aligned}
     }</m></p>

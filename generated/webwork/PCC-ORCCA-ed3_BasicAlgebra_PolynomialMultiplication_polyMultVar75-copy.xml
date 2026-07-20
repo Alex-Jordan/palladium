@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar75-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar75-copy">
-  <static seed="2648">
-    <statement><p><m>{3a^{9}}\left({-8a^{10}-5a^{7}b^{4}-9b^{10}}\right)</m></p>
+  <static seed="2512">
+    <statement><p><m>{3a^{6}}\left({-2a^{4}+3a^{4}b^{8}+9b^{8}}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-24a^{19}-15a^{16}b^{4}-27a^{9}b^{10}</m>
+        <m>-6a^{10}+9a^{10}b^{8}+27a^{6}b^{8}</m>
       </p>
     </answer>
     <solution><p>We multiply the polynomials using the rule <m>a^m\cdot a^n = a^{m+n}</m> 
 to guide us. <me>\begin{aligned}
-        \left({3a^{9}}\right)\left({-8a^{10}-5a^{7}b^{4}-9b^{10}}\right)\amp = -24a^{9+10} - 15a^{9+7}b^{4} - 27a^{9}b^{10}\\
-                      \amp  = {-24a^{19}-15a^{16}b^{4}-27a^{9}b^{10}}
+        \left({3a^{6}}\right)\left({-2a^{4}+3a^{4}b^{8}+9b^{8}}\right)\amp = -6a^{6+4}+9a^{6+4}b^{8}+27a^{6}b^{8}\\
+                      \amp  = {-6a^{10}+9a^{10}b^{8}+27a^{6}b^{8}}
     \end{aligned}</me></p>
 <p>Note that we are using the <em>distributive</em> property of multiplication in this problem: <m>x(y+z)=xy+xz</m>.</p>
 </solution>

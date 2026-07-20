@@ -27,8 +27,7 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PGlateximage.pl",
-  "Pd.pl",
+  "contextForm.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -41,33 +40,17 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("Point");
-$answer = Point(3,2);
-
-$image_1 = createLaTeXImage();
-$image_1->addToPreamble(latexImagePreamble());
-$image_1->BEGIN_LATEX_IMAGE
-\begin{tikzpicture}
-  \begin{axis}[
-      width=0.47\orccaprintwidth
-    ]
-    \addplot[firstcurve, domain=-6:7]{x-1};
-    \addplot[secondcurve, domain=-2:7]{5-x};
-  \end{axis}
-\end{tikzpicture}
-
-END_LATEX_IMAGE
+Context("Form")->variables->are(q => 'Real');
+$answer = Formula("{-2sqrt(3)-2, 2sqrt(3)-2}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Determine the solution to the system of equations graphed below.
+Solve for [`q`] in [`(q+2)^2-12=0\text{.}`]
 
->> [@image(insertGraph($image_1), width=>282)@]*  <<
-
-[_]{$answer}{5}
+[_]{$answer}{16}
 
 END_PGML
 
@@ -76,7 +59,26 @@ END_PGML
 ############################################################
 
 BEGIN_PGML_SOLUTION
-The two lines intersect where [`x=3`] and [`y=2\text{,}`] so the solution is the point [`(3,2)\text{.}`]
+It's important to suppress any urge to expand the squared binomial.
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+(q+2)^2-12\amp=0\\
+(q+2)^2\amp=12\\
+q+2\amp=\pm\sqrt{12}\\
+q+2\amp=\pm\sqrt{4\cdot3}\\
+q+2\amp=\pm2\sqrt{3}\\
+q\amp=\pm2\sqrt{3}-2
+\end{aligned}
+```]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+q\amp=-2\sqrt{3}-2\amp\text{or}\amp\amp q\amp=2\sqrt{3}-2
+\end{aligned}
+```]
+
+The solution set is [`\left\{-2\sqrt{3}-2,2\sqrt{3}-2\right\}\text{.}`]
 
 END_PGML_SOLUTION
 

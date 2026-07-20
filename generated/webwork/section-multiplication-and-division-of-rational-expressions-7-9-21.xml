@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-9-21" assembly-id="section-multiplication-and-division-of-rational-expressions-7-9-21">
-  <static seed="1359" source="Contrib/PCC/Math95/ComplexFractions/ComplexFractions2.pg">
+  <static seed="1223" source="Contrib/PCC/Math95/ComplexFractions/ComplexFractions2.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{\frac{{\frac{st^{2}}{8u}}}{{\frac{s}{4tu}}}=}</m><fillin characters="40" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{\frac{{\frac{st^{2}}{10u}}}{{\frac{s}{7tu}}}=}</m><fillin characters="40" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{t^{3}}{2}</m>
+        <m>\frac{7t^{3}}{10}</m>
       </p>
     </answer>
-    <solution><p>To simply the complex fraction <m>\frac{{\frac{st^{2}}{8u}}}{{\frac{s}{4tu}}}</m>, we multiple the numerator and denominator with the common denominator of <m>{\frac{st^{2}}{8u}}</m> and <m>{\frac{s}{4tu}}</m>, which is <m>{8tu}</m>.</p>
+    <solution><p>To simply the complex fraction <m>\frac{{\frac{st^{2}}{10u}}}{{\frac{s}{7tu}}}</m>, we multiple the numerator and denominator with the common denominator of <m>{\frac{st^{2}}{10u}}</m> and <m>{\frac{s}{7tu}}</m>, which is <m>{70tu}</m>.</p>
 <p><m>\displaystyle{\begin{aligned}
-  \frac{{\frac{st^{2}}{8u}}}{{\frac{s}{4tu}}} \amp = \frac{{\frac{st^{2}}{8u}}\cdot{8tu}}{{\frac{s}{4tu}}\cdot{8tu}} \\
-    \amp = {\frac{t^{3}}{2}}
+  \frac{{\frac{st^{2}}{10u}}}{{\frac{s}{7tu}}} \amp = \frac{{\frac{st^{2}}{10u}}\cdot{70tu}}{{\frac{s}{7tu}}\cdot{70tu}} \\
+    \amp = {\frac{7t^{3}}{10}}
 \end{aligned}
     }</m></p>
 <p>Note that you are not required to enter lost domain conditions in this problem, but it<rsq/>s good to know the following.</p>

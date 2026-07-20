@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents13" assembly-id="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents13">
-  <static seed="2006">
-    <statement><p><m>\displaystyle{\sqrt[9]{y}\,\sqrt[9]{y}}</m></p>
+  <static seed="1870">
+    <statement><p><m>\displaystyle{\sqrt[11]{x}\,\sqrt[11]{x}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>y^{\frac{2}{9}}</m>
+        <m>x^{\frac{2}{11}}</m>
       </p>
     </answer>
     <solution><p>We will use the following properties:</p>
@@ -14,12 +14,12 @@
 <p><m>\displaystyle{ x^m\cdot x^n=x^{m+n} }</m></p>
 <p>The solution is:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \sqrt[9]{y}\sqrt[9]{y} \amp = y^\frac{1}{9}y^\frac{1}{9} \\
-                                                         \amp = y^\left(\frac{1}{9}+\frac{1}{9}\right) \\
-                                                         \amp = y^\frac{2}{9} \\
+   \sqrt[11]{x}\sqrt[11]{x} \amp = x^\frac{1}{11}x^\frac{1}{11} \\
+                                                         \amp = x^\left(\frac{1}{11}+\frac{1}{11}\right) \\
+                                                         \amp = x^\frac{2}{11} \\
 \end{aligned}
     }</m></p>
-<p>So the answer in calculator/WeBWorK notation is <m>{y^{\frac{2}{9}}}</m>.</p>
+<p>So the answer in calculator/WeBWorK notation is <m>{x^{\frac{2}{11}}}</m>.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/4_4_4_59.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

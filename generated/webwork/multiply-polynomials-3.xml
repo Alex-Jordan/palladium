@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-multiply-polynomials-3" assembly-id="multiply-polynomials-3">
-  <static seed="2683">
-    <statement><p><m>{x\mathopen{}\left(x-3\right)\mathopen{}\left(x-4\right)}</m></p>
+  <static seed="2547">
+    <statement><p><m>{x\mathopen{}\left(x+2\right)\mathopen{}\left(x-2\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>x^{3}-7x^{2}+12x</m>
+        <m>x^{3}-4x</m>
       </p>
     </answer>
-    <solution><p>We could first distribute <m>x</m> into <m>{x-3}</m> to get <m>{x^{2}-3x}\text{,}</m> and then multiply <m>{x^{2}-3x}</m> and <m>{x-4}\text{:}</m></p>
+    <solution><p>We could first distribute <m>x</m> into <m>{x+2}</m> to get <m>{x^{2}+2x}\text{,}</m> and then multiply <m>{x^{2}+2x}</m> and <m>{x-2}\text{:}</m></p>
 <p><me>\begin{aligned}
-{x\mathopen{}\left(x-3\right)\mathopen{}\left(x-4\right)}\amp=({x^{2}-3x})({x-4})\\
-\amp={x^{3}-7x^{2}+12x}
+{x\mathopen{}\left(x+2\right)\mathopen{}\left(x-2\right)}\amp=({x^{2}+2x})({x-2})\\
+\amp={x^{3}-4x}
 \end{aligned}</me></p>
-<p>We could also first multiply <m>{x-3}</m> and <m>{x-4}</m> to get <m>{x^{2}-7x+12}\text{,}</m> and then distribute <m>x</m> into <m>{x^{2}-7x+12}\text{:}</m></p>
+<p>We could also first multiply <m>{x+2}</m> and <m>{x-2}</m> to get <m>{x^{2}-4}\text{,}</m> and then distribute <m>x</m> into <m>{x^{2}-4}\text{:}</m></p>
 <p><me>\begin{aligned}
-{x\mathopen{}\left(x-3\right)\mathopen{}\left(x-4\right)}\amp=x({x^{2}-7x+12})\\
-\amp={x^{3}-7x^{2}+12x}
+{x\mathopen{}\left(x+2\right)\mathopen{}\left(x-2\right)}\amp=x({x^{2}-4})\\
+\amp={x^{3}-4x}
 \end{aligned}</me></p>
 </solution>
   </static>

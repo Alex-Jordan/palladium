@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-8-10" assembly-id="section-multiplication-and-division-of-rational-expressions-7-8-10">
-  <static seed="1325" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions10.pg">
+  <static seed="1189" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions10.pg">
     <statement><p>Simplify this expression, and if applicable, write the restricted domain.</p>
-<p><m>\displaystyle{{\frac{r}{r+2}} \div {2r^{4}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{r}{r-12}} \div {4r^{2}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{1}{2r^{3}\mathopen{}\left(r+2\right)}, \left(-\infty ,\infty \right)</m>
+        <m>\frac{1}{4r\mathopen{}\left(r-12\right)}, \left(-\infty ,\infty \right)</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   {\frac{r}{r+2}} \div {2r^{4}} 
-      \amp = {\frac{r}{r+2}} \cdot {\frac{1}{2r^{4}}} \\
-      \amp = {\frac{1}{2r^{3}\mathopen{}\left(r+2\right)}, \left(-\infty ,\infty \right)}
+   {\frac{r}{r-12}} \div {4r^{2}} 
+      \amp = {\frac{r}{r-12}} \cdot {\frac{1}{4r^{2}}} \\
+      \amp = {\frac{1}{4r\mathopen{}\left(r-12\right)}, \left(-\infty ,\infty \right)}
 \end{aligned}
     }</m></p>
 </solution>

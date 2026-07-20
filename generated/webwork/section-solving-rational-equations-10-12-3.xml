@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-12-3" assembly-id="section-solving-rational-equations-10-12-3">
-  <static seed="1610" source="Contrib/PCC/BasicAlgebra/RationalLiteralEquations/LiteralEquation260.pg">
-    <statement><p>Solve this equation for <m>q</m>:</p>
-<p><m>\displaystyle{ t = \frac{b}{q} }</m></p>
+  <static seed="1474" source="Contrib/PCC/BasicAlgebra/RationalLiteralEquations/LiteralEquation260.pg">
+    <statement><p>Solve this equation for <m>t</m>:</p>
+<p><m>\displaystyle{ r = \frac{C}{t} }</m></p>
 <p><fillin characters="7" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>q = \frac{b}{t}</m>
+        <m>t = \frac{C}{r}</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   t \amp = \frac{b}{q} \\
-   t \cdot q \amp = \frac{b}{q} \cdot q \\
-   t \cdot q \amp = b \\
-   \frac{t \cdot q}{t} \amp = \frac{b}{t} \\
-   q \amp = \frac{b}{t} 
+   r \amp = \frac{C}{t} \\
+   r \cdot t \amp = \frac{C}{t} \cdot t \\
+   r \cdot t \amp = C \\
+   \frac{r \cdot t}{r} \amp = \frac{C}{r} \\
+   t \amp = \frac{C}{r} 
 \end{aligned}
 }</m></p>
 </solution>

@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication20-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplicationApplication20-copy">
-  <static seed="2702">
-    <statement><p>A triangle<rsq/>s height is <m>2</m> feet longer than <m>6 \text{ times}</m> its base. If we use <m>b</m> to represent the triangle<rsq/>s base, use a polynomial to represent the triangle<rsq/>s area in expanded form. A triangle<rsq/>s area can be calculated by <m>A=\frac{1}{2}bh</m>, where <m>b</m> stands for base, and <m>h</m> stands for height.</p>
+  <static seed="2566">
+    <statement><p>A triangle<rsq/>s height is <m>2</m> feet longer than <m>\text{twice}</m> its base. If we use <m>b</m> to represent the triangle<rsq/>s base, use a polynomial to represent the triangle<rsq/>s area in expanded form. A triangle<rsq/>s area can be calculated by <m>A=\frac{1}{2}bh</m>, where <m>b</m> stands for base, and <m>h</m> stands for height.</p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>3b^{2}+b</m>
+        <m>b^{2}+b</m>
       </p>
     </answer>
-    <solution><p>The triangle<rsq/>s base is <m>b</m> feet. Since the triangle<rsq/>s height is <m>2</m> feet longer than <m>6 \text{ times}</m> its base, its height is <m>6b+2</m> feet. We substitute those two values into a triangle<rsq/>s area formula, and we have:</p>
+    <solution><p>The triangle<rsq/>s base is <m>b</m> feet. Since the triangle<rsq/>s height is <m>2</m> feet longer than <m>\text{twice}</m> its base, its height is <m>2b+2</m> feet. We substitute those two values into a triangle<rsq/>s area formula, and we have:</p>
 <p><m>\displaystyle{\begin{aligned}
    A \amp = \frac{1}{2}bh \\
-      \amp = \frac{1}{2}b(6b+2) \\
-      \amp = \frac{1}{2}6b^2+\frac{1}{2}2b \\
-      \amp ={3b^{2}+b}
+      \amp = \frac{1}{2}b(2b+2) \\
+      \amp = \frac{1}{2}2b^2+\frac{1}{2}2b \\
+      \amp ={b^{2}+b}
 \end{aligned}
     }</m></p>
-<p>The triangle<rsq/>s area is <m>{3b^{2}+b}</m> square feet.</p>
+<p>The triangle<rsq/>s area is <m>{b^{2}+b}</m> square feet.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/Appendices/A_9_5_70.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

@@ -1,27 +1,27 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-the-quadratic-formula-7-2-2-41" assembly-id="section-the-quadratic-formula-7-2-2-41">
-  <static seed="918">
-    <statement><p><m>{3.9x^{2}-13.1x+6.8}=0</m></p>
+  <static seed="451">
+    <statement><p><m>{7.6x^{2}-12.2x+4.4}=0</m></p>
 <p><fillin characters="40" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{0.641659,2.71732\right\}</m>
+        <m>\left\{0.547151,1.05811\right\}</m>
       </p>
     </answer>
-    <solution><p>To use the quadratic formula, we identify <m>a=3.9\text{,}</m> <m>b=-13.1\text{,}</m> and <m>c=6.8\text{.}</m></p>
+    <solution><p>To use the quadratic formula, we identify <m>a=7.6\text{,}</m> <m>b=-12.2\text{,}</m> and <m>c=4.4\text{.}</m></p>
 <p><me>\begin{aligned}
 x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
-\amp=\frac{13.1\pm\sqrt{171.61-4(3.9)(6.8)}}{2(3.9)}\\
-\amp=\frac{13.1\pm\sqrt{65.53}}{7.8}\\
-\amp\approx\frac{13.1\pm{8.09506}}{7.8}\\
-x\amp\approx\frac{13.1-{8.09506}}{7.8}\quad\text{or}\quad x\approx\frac{13.1+{8.09506}}{7.8}\\
-x\amp\approx{0.641659}\quad\text{or}\quad x\approx{2.71732}
+\amp=\frac{12.2\pm\sqrt{148.84-4(7.6)(4.4)}}{2(7.6)}\\
+\amp=\frac{12.2\pm\sqrt{15.08}}{15.2}\\
+\amp\approx\frac{12.2\pm{3.8833}}{15.2}\\
+x\amp\approx\frac{12.2-{3.8833}}{15.2}\quad\text{or}\quad x\approx\frac{12.2+{3.8833}}{15.2}\\
+x\amp\approx{0.547151}\quad\text{or}\quad x\approx{1.05811}
 \end{aligned}</me></p>
-<p>The solution set is approximately <m>{\left\{0.641659,2.71732\right\}}\text{.}</m> Note that since we started with decimal coefficients, we felt it was acceptible to round the solutions to decimal approximations rather than keep to the exact solutions.</p>
+<p>The solution set is approximately <m>{\left\{0.547151,1.05811\right\}}\text{.}</m> Note that since we started with decimal coefficients, we felt it was acceptible to round the solutions to decimal approximations rather than keep to the exact solutions.</p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_4_5_51.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_5_5_51.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg copied-from="section-the-quadratic-formula-7-2-2-40"><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -38,7 +38,7 @@ x\amp\approx{0.641659}\quad\text{or}\quad x\approx{2.71732}
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.4.5.52)
+## Problem1(1.5.5.52)
 ## Author()
 ## Institution()
 ## Language(en-US)

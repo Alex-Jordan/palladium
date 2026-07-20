@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers30-copy" assembly-id="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers30-copy">
-  <static seed="1797">
+  <static seed="1661">
     <introduction/>
     <task>
-      <statement><p><m>\displaystyle{ \sqrt{{{\frac{144}{25}}}} }</m></p>
+      <statement><p><m>\displaystyle{ \sqrt{{{\frac{121}{64}}}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>{\frac{12}{5}}</m>
+          <m>{\frac{11}{8}}</m>
         </p>
       </answer>
       <solution><p>For finding the square root of a fraction, we may find the square roots of the numerator and denominator separately.
-Just knowing the first few square numbers, <m>\sqrt{{{\frac{144}{25}}}} = {{\frac{12}{5}}}</m>.</p>
+Just knowing the first few square numbers, <m>\sqrt{{{\frac{121}{64}}}} = {{\frac{11}{8}}}</m>.</p>
 </solution>
     </task>
     <task>
-      <statement><p><m>\displaystyle{ \sqrt{{-{\frac{121}{9}}}} }</m></p>
+      <statement><p><m>\displaystyle{ \sqrt{{-{\frac{9}{16}}}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>

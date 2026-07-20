@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication0-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication0-copy">
-  <static seed="1664">
-    <statement><p><m>{y^{6}}\cdot{y^{13}}</m></p>
+  <static seed="1528">
+    <statement><p><m>{t^{5}}\cdot{t^{18}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>y^{19}</m>
+        <m>t^{23}</m>
       </p>
     </answer>
     <solution><p>We <em>add</em> the exponents as follows: <me>\begin{aligned}
-           y^{6}\cdot y^{13}\amp =y^{6+13}\\
-                             \amp =y^{19}
+           t^{5}\cdot t^{18}\amp =t^{5+18}\\
+                             \amp =t^{23}
        \end{aligned}</me></p>
 </solution>
   </static>

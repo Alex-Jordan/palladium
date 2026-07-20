@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_SimplifyRadicals_SimplifyRadicals24-copy2" assembly-id="PCC-ORCCA-ed3_Math95_SimplifyRadicals_SimplifyRadicals24-copy2">
-  <static seed="1942">
-    <statement><p><m>\displaystyle{ \dfrac{2}{\sqrt{14}+5} }</m></p>
+  <static seed="1806">
+    <statement><p><m>\displaystyle{ \dfrac{9}{\sqrt{6}+7} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{10-2\sqrt{14}}{11}</m>
+        <m>\frac{63-9\sqrt{6}}{43}</m>
       </p>
     </answer>
     <solution><p>We will use the Difference of Squares formula:</p>
 <p><m>\displaystyle{ (a+b)(a-b) = a^2-b^2 }</m></p>
 <p>This will help us get rid of the radical in the denominator by multiplying with the conjugate:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \dfrac{2}{\sqrt{14}+5}
-                \amp = \dfrac{2}{\sqrt{14}+5}\cdot\dfrac{\sqrt{14}-5}{\sqrt{14}-5} \\
-                \amp = \dfrac{2\sqrt{14}-(2)(5)}{\left(\sqrt{14}\right)^2-(5)^2} \\
-                \amp = \dfrac{2\sqrt{14}-10}{14-25} \\
-                \amp = \dfrac{2\sqrt{14}-10}{-11} \\
+   \dfrac{9}{\sqrt{6}+7}
+                \amp = \dfrac{9}{\sqrt{6}+7}\cdot\dfrac{\sqrt{6}-7}{\sqrt{6}-7} \\
+                \amp = \dfrac{9\sqrt{6}-(9)(7)}{\left(\sqrt{6}\right)^2-(7)^2} \\
+                \amp = \dfrac{9\sqrt{6}-63}{6-49} \\
+                \amp = \dfrac{9\sqrt{6}-63}{-43} \\
 \end{aligned}
     }</m></p>
 </solution>

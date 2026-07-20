@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-isolate-xoveraplusbequalsc-copy" assembly-id="isolate-xoveraplusbequalsc-copy">
-  <static seed="1564">
-    <statement><p><m>h</m> in <m>{\frac{h}{s}+Q}={P}</m></p>
+  <static seed="1428">
+    <statement><p><m>f</m> in <m>{\frac{f}{I}+e}={A}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>h = s\mathopen{}\left(P-Q\right)</m>
+        <m>f = I\mathopen{}\left(A-e\right)</m>
       </p>
     </answer>
   </static>

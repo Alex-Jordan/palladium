@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-identify-linear-equations-2" assembly-id="identify-linear-equations-2">
-  <static seed="2495">
+  <static seed="2359">
     <statement><ul form="checkboxes" name="AnSwEr0001">
 <li>
-<p><m>V^{2}+q^{2}=-59</m></p>
+<p><m>p\sqrt{29}=43</m></p>
 </li>
 <li>
-<p><m>\left|-8y-9\right|=1</m></p>
+<p><m>\pi r^{2}=14\pi </m></p>
 </li>
 <li>
-<p><m>z\sqrt{20}\geq-61</m></p>
+<p><m>y^{2}+q^{2}=-89</m></p>
 </li>
 <li>
-<p><m>7z-1\lt-45</m></p>
+<p><m>8yV=29</m></p>
 </li>
 <li>
-<p><m>yp=70</m></p>
+<p><m>y+7=-10</m></p>
 </li>
 <li>
-<p><m>\pi r^{2}\neq41\pi </m></p>
+<p><m>\left|1-6.9y\right|\lt79</m></p>
 </li>
 <li>
 <p>None of the above</p>
@@ -28,13 +28,13 @@
 </p></statement>
     <answer>
       <p>
-        <m>\text{Choice 3, Choice 4}</m>
+        <m>\text{Choice 1, Choice 5}</m>
       </p>
     </answer>
-    <solution><p><m>yp=70</m> is not linear because it multiplies two variables together.</p>
-<p><m>V^{2}+q^{2}=-59</m> and <m>\pi r^{2}\neq41\pi</m> are not linear because variables are raised to the second power.</p>
-<p><m>\left|-8y-9\right|=1</m> is not linear because a variable is within absolute value bars.</p>
-<p>That leaves <m>7z-1\lt-45</m> and <m>z\sqrt{20}\geq-61\text{,}</m> which are both linear.</p>
+    <solution><p><m>8yV=29</m> is not linear because it multiplies two variables together.</p>
+<p><m>y^{2}+q^{2}=-89</m> and <m>\pi r^{2}=14\pi</m> are not linear because variables are raised to the second power.</p>
+<p><m>\left|1-6.9y\right|\lt79</m> is not linear because a variable is within absolute value bars.</p>
+<p>That leaves <m>y+7=-10</m> and <m>p\sqrt{29}=43\text{,}</m> which are both linear.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/Appendices/A_6_6_55.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

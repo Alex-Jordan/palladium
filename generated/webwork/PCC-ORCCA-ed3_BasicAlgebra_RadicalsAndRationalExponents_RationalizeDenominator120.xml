@@ -1,38 +1,38 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator120" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator120">
-  <static seed="1934">
-    <statement><p><m>\displaystyle{ \sqrt{\frac{24}{5}}  }</m></p>
+  <static seed="1798">
+    <statement><p><m>\displaystyle{ \sqrt{\frac{8}{5}}  }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{2\sqrt{30}}{5}</m>
+        <m>\frac{2\sqrt{10}}{5}</m>
       </p>
     </answer>
     <solution><p>We first use this property:</p>
 <p><m>\displaystyle{ \sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}} }</m></p>
 <p>Thus we have:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \sqrt{\frac{24}{5}} 
-      \amp = \frac{\sqrt{24}}{\sqrt{5}} \\
+   \sqrt{\frac{8}{5}} 
+      \amp = \frac{\sqrt{8}}{\sqrt{5}} \\
 \end{aligned}
     }</m></p>
 <p>We can simplify the radical in the numerator:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \sqrt{24}
-            \amp = \sqrt{2 \cdot 2 \cdot 2 \cdot 3}  \\
-            \amp =2 \sqrt{2 \cdot 3} \\
-            \amp =2 \sqrt{6} 
+   \sqrt{8}
+            \amp = \sqrt{2 \cdot 2 \cdot 2}  \\
+            \amp =2 \sqrt{2} \\
+            \amp  
 \end{aligned}
     }</m></p>
 <p>Then we will rationalize the denominator. The full process is:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   \sqrt{\frac{24}{5}} 
-      \amp = \frac{\sqrt{24}}{\sqrt{5}} \\
-      \amp = \frac{ 2 \sqrt{6}}{\sqrt{5}} \\
-      \amp = \frac{ 2 \sqrt{6}}{\sqrt{5}}\cdot\frac{\sqrt{5}}{\sqrt{5}} \\
-      \amp = \frac{ 2 \sqrt{6}\cdot \sqrt{5}}{\sqrt{5}\cdot \sqrt{5}} \\
-      \amp = \frac{2\sqrt{30}}{5}
+   \sqrt{\frac{8}{5}} 
+      \amp = \frac{\sqrt{8}}{\sqrt{5}} \\
+      \amp = \frac{ 2 \sqrt{2}}{\sqrt{5}} \\
+      \amp = \frac{ 2 \sqrt{2}}{\sqrt{5}}\cdot\frac{\sqrt{5}}{\sqrt{5}} \\
+      \amp = \frac{ 2 \sqrt{2}\cdot \sqrt{5}}{\sqrt{5}\cdot \sqrt{5}} \\
+      \amp = \frac{2\sqrt{10}}{5}
 \end{aligned}
     }</m></p>
 <p>Note that we used this property in the last step:</p>

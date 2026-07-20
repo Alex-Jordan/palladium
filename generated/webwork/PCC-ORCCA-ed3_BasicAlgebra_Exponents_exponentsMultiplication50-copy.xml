@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication50-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication50-copy">
-  <static seed="1674">
-    <statement><p><m>-4\left(-5x^{5}\right)^2</m></p>
+  <static seed="1538">
+    <statement><p><m>-5\left(-2t^{5}\right)^2</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-100x^{10}</m>
+        <m>-20t^{10}</m>
       </p>
     </answer>
     <solution><p>We <em>multiply</em> the exponents and apply the rule <m>(ab)^m=a^m\cdot b^m</m> as follows</p>
 <p><m>\begin{aligned}
-           -4\left(-5x^{5}\right)^{2}\amp =-4(-5)^{2}x^{5\cdot2}\\
-                             \amp =-4\cdot25x^{10}\\
-                             \amp =-100x^{10}
+           -5\left(-2t^{5}\right)^{2}\amp =-5(-2)^{2}t^{5\cdot2}\\
+                             \amp =-5\cdot4t^{10}\\
+                             \amp =-20t^{10}
        \end{aligned}</m></p>
 </solution>
   </static>

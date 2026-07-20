@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-complex-fractions-5-3-10" assembly-id="section-complex-fractions-5-3-10">
-  <static seed="1461" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions40.pg">
+  <static seed="1325" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions40.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{{\frac{\frac{4}{t}-\frac{8}{x}}{\frac{20}{t}+\frac{4}{x}}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{\frac{2}{r}+\frac{6}{y}}{\frac{2}{r}-\frac{2}{y}}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{x-2t}{5x+t}</m>
+        <m>\frac{y+3r}{y-r}</m>
       </p>
     </answer>
-    <solution><p>To simplify a complex fraction, we find the common denominator of all fractions. In this case, it is <m>{tx}</m>. We multiply the complex fraction<rsq/>s numerator and denominator by this common denominator, and we have:</p>
+    <solution><p>To simplify a complex fraction, we find the common denominator of all fractions. In this case, it is <m>{ry}</m>. We multiply the complex fraction<rsq/>s numerator and denominator by this common denominator, and we have:</p>
 <p><m>\displaystyle{\begin{aligned}
-   {\frac{\frac{4}{t}-\frac{8}{x}}{\frac{20}{t}+\frac{4}{x}}} 
-      \amp = {\frac{\frac{4}{t}-\frac{8}{x}}{\frac{20}{t}+\frac{4}{x}}} \cdot \frac{{tx}}{{tx}} \\
-      \amp = {\frac{\left(\frac{4}{t}-\frac{8}{x}\right)tx}{\left(\frac{20}{t}+\frac{4}{x}\right)tx}} \\
-      \amp = \frac{\frac{4}{t} \cdot t x  -\frac{8}{x} \cdot t x }{\frac{20}{t} \cdot t x +\frac{4}{x} \cdot t x } \\
-      \amp = \frac{4 x - 8 t}{20 x + 4 t} \\
-      \amp = {\frac{4\mathopen{}\left(x-2t\right)}{4\mathopen{}\left(5x+t\right)}} \\
-      \amp = {\frac{x-2t}{5x+t}}
+   {\frac{\frac{2}{r}+\frac{6}{y}}{\frac{2}{r}-\frac{2}{y}}} 
+      \amp = {\frac{\frac{2}{r}+\frac{6}{y}}{\frac{2}{r}-\frac{2}{y}}} \cdot \frac{{ry}}{{ry}} \\
+      \amp = {\frac{\left(\frac{2}{r}+\frac{6}{y}\right)ry}{\left(\frac{2}{r}-\frac{2}{y}\right)ry}} \\
+      \amp = \frac{\frac{2}{r} \cdot r y +\frac{6}{y} \cdot r y }{\frac{2}{r} \cdot r y  - \frac{2}{y} \cdot r y } \\
+      \amp = \frac{2 y + 6 r}{2 y - 2 r} \\
+      \amp = {\frac{2\mathopen{}\left(y+3r\right)}{2\mathopen{}\left(y-r\right)}} \\
+      \amp = {\frac{y+3r}{y-r}}
 \end{aligned}
     }</m></p>
 </solution>

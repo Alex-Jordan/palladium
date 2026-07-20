@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-rocky-mountain-elk" assembly-id="rocky-mountain-elk">
-  <static seed="1651">
-    <statement><p>To estimate the health of the Rocky Mountain elk population in the Wenaha Wildlife Area, the Oregon Department of Fish and Wildlife caught, tagged, and released <m>38</m> Rocky Mountain elk. A month later, they returned and observed <m>43</m> Rocky Mountain elk, <m>8</m> of which had tags. Approximately how many Rocky Mountain elk are in the Wenaha Wildlife Area?</p>
+  <static seed="1515">
+    <statement><p>To estimate the health of the Rocky Mountain elk population in the Wenaha Wildlife Area, the Oregon Department of Fish and Wildlife caught, tagged, and released <m>38</m> Rocky Mountain elk. A month later, they returned and observed <m>46</m> Rocky Mountain elk, <m>10</m> of which had tags. Approximately how many Rocky Mountain elk are in the Wenaha Wildlife Area?</p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>204</m>
+        <m>175</m>
       </p>
     </answer>
     <solution><p>Let <m>x</m> represent how many elk are in the Wenaha Wildlife Area. We set up a proportional equation:</p>
 <p><me>\begin{aligned}
 \frac{\text{tagged elk}}{\text{total elk}} \amp= \frac{\text{tagged elk}}{\text{total elk}}\\
-\frac{8}{43} \amp= \frac{38}{x}\\
-\frac{8}{43} \multiplyright{43\cdot x} \amp= \frac{38}{x}\multiplyright{43\cdot x}\\
-8 \cdot x \amp= 38\cdot 43\\
-\divideunder{8 \cdot x}{8} \amp= \divideunder{38\cdot 43}{8}\\
-x \amp= 204
+\frac{10}{46} \amp= \frac{38}{x}\\
+\frac{10}{46} \multiplyright{46\cdot x} \amp= \frac{38}{x}\multiplyright{46\cdot x}\\
+10 \cdot x \amp= 38\cdot 46\\
+\divideunder{10 \cdot x}{10} \amp= \divideunder{38\cdot 46}{10}\\
+x \amp= 175
 \end{aligned}</me></p>
-<p>There are approximately <m>204</m> elk in the Wenaha Wildlife Area.</p>
+<p>There are approximately <m>175</m> elk in the Wenaha Wildlife Area.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/3_5_8_186.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

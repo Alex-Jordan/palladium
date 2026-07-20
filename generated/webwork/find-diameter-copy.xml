@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-find-diameter-copy" assembly-id="find-diameter-copy">
-  <static seed="2560">
-    <statement><p>The circumference is <m>{3\pi \ {\rm cm}}\text{.}</m></p>
+  <static seed="2424">
+    <statement><p>The circumference is <m>{9\pi \ {\rm cm}}\text{.}</m></p>
 <p><fillin characters="15" name="AnSwEr0001"/></p>
 <p><fillin characters="10" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>3\pi  = \pi d</m>
+        <m>9\pi  = \pi d</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>3\ {\rm cm}</m>
+        <m>9\ {\rm cm}</m>
       </p>
     </answer>
   </static>

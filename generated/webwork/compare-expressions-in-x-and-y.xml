@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-compare-expressions-in-x-and-y" assembly-id="compare-expressions-in-x-and-y">
-  <static seed="2437">
+  <static seed="2301">
     <introduction><p>Choose the correct inequality or equal sign to make the relation true.</p>
 </introduction>
     <task>

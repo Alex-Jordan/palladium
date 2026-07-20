@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-mxplusbequalsmxplusb" assembly-id="solve-mxplusbequalsmxplusb">
-  <static seed="1511">
-    <statement><p><m>{4J+6}={4J+6}</m></p>
+  <static seed="1375">
+    <statement><p><m>{3Z-8}={3Z-8}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>

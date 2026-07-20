@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-radical-negative-integer-copy4" assembly-id="simplify-radical-negative-integer-copy4">
-  <static seed="1882">
-    <statement><p><m>{\sqrt[6]{-64}}\text{.}</m></p>
+  <static seed="1746">
+    <statement><p><m>{\sqrt[4]{-16}}\text{.}</m></p>
 <p><fillin characters="30" name="AnSwEr0001"/></p>
 </statement>
     <answer>
@@ -9,7 +9,7 @@
         <m>\text{not a real number}</m>
       </p>
     </answer>
-    <solution><p>Since -64 is negative and 6 is even, this is not a real number.</p>
+    <solution><p>Since -16 is negative and 4 is even, this is not a real number.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/4_2_10_87.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

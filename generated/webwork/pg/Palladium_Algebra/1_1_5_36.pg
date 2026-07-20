@@ -27,11 +27,8 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PCCmacros.pl",
-  "contextCurrency.pl",
-  "contextPercent.pl",
-  "parserLinearRelation.pl",
-  "randomPerson.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -44,28 +41,21 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$name = randomPerson();
-Context("Currency")->flags->set(trimTrailingZeros => 1);
-$final = 1400 + random(-300, 300, 10);
-$current = Currency($final);
-Context("Percent");
-$decimal = random(0.01,0.03,0.001);
-$percent = Percent($decimal);
-Context("LinearRelation")->variables->are(r => 'Real');
-$equation = LinearRelation("r + $decimal r > $final");
+($a,$r) = (1, list_random(1..9));
+Context()->noreduce('(-x)-y');
+$left = Formula("x^2 - $r**2")->reduce;
+$right = Formula("0")->reduce;
+Context("FiniteSolutionSets");
+$sols = Formula("{-$r, $r}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Write an inequality to model the scenario. There is no need to solve the inequality.
+Solve the equation by factoring.
 
-Overall, the median rent for a one-bedroom apartment in a city rose by [`[$percent]`] over the previous year. [$name] was fortunate in that [$name->possessive] rent did not raise by that high of a percentage. It went from last year's amount to [`[$current]\text{.}`] Set up an inequality where the solution set represents what [$name->possessive] rent could might have been last year. There is no need to solve it.
-
-[@KeyboardInstructions('Use [|r|]* as the variable.')@]**
-
-[_]{$equation}{20}
+[`[$left] = [$right]`]
 
 END_PGML
 

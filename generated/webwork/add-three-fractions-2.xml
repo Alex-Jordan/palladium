@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-add-three-fractions-2" assembly-id="add-three-fractions-2">
-  <static seed="2108">
-    <statement><p><m>\displaystyle {{\frac{5}{3}}} + {{\frac{7}{2}}} + {{\frac{2}{3}}}</m></p>
+  <static seed="1972">
+    <statement><p><m>\displaystyle {{\frac{2}{3}}} + {{\frac{9}{7}}} + {{\frac{2}{3}}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{35}{6}}</m>
+        <m>{\frac{55}{21}}</m>
       </p>
     </answer>
   </static>

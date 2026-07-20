@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentDivision50" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentDivision50">
-  <static seed="1687">
-    <statement><p><m>\left(\displaystyle\frac{-9}{8x^{2}}\right)^{3}</m></p>
+  <static seed="1551">
+    <statement><p><m>\left(\displaystyle\frac{-7}{10x^{5}}\right)^{2}</m></p>
 <p><fillin characters="26" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{-729}{512x^{6}}</m>
+        <m>\frac{49}{100x^{10}}</m>
       </p>
     </answer>
     <solution><p>The quotient to power rule says that</p>
@@ -15,9 +15,9 @@
 <p><m>(a^m)^n = a^{mn}</m></p>
 <p>Using these two tools together allows us to write</p>
 <p><m>\begin{aligned}
-           \left(\displaystyle\frac{-9}{8x^{2}}\right)^{3}
-                       \amp  = \displaystyle\frac{(-9)^{3}}{8^{3}x^{2\cdot3}}\\
-                       \amp  = \displaystyle \frac{-729}{512x^{6}}\\
+           \left(\displaystyle\frac{-7}{10x^{5}}\right)^{2}
+                       \amp  = \displaystyle\frac{(-7)^{2}}{10^{2}x^{5\cdot2}}\\
+                       \amp  = \displaystyle \frac{49}{100x^{10}}\\
         \end{aligned}</m></p>
 </solution>
   </static>

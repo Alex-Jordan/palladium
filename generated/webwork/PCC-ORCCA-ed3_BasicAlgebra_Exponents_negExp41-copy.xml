@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp41-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp41-copy">
-  <static seed="1726">
-    <statement><p><m>\displaystyle\frac{x^{-2}}{\left(x^{3}\right)^{10}}</m></p>
+  <static seed="1590">
+    <statement><p><m>\displaystyle\frac{x^{-4}}{\left(x^{6}\right)^{7}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{1}{x^{32}}</m>
+        <m>\frac{1}{x^{46}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\displaystyle{\frac{a^m}{a^n} = a^{m-n}}</m> 
 and also that <m>\left(a^m\right)^n=a^{mn}</m></p>
 <p><m>\begin{aligned}
-                 \displaystyle\frac{x^{-2}}{\left(x^{3}\right)^{10}}\amp = \frac{x^{-2}}{x^{30}}\\
- \amp = x^{-2-30}\\
-                                                       \amp  =x^{-32}\\
-                                    \amp  = {\frac{1}{x^{32}}}
+                 \displaystyle\frac{x^{-4}}{\left(x^{6}\right)^{7}}\amp = \frac{x^{-4}}{x^{42}}\\
+ \amp = x^{-4-42}\\
+                                                       \amp  =x^{-46}\\
+                                    \amp  = {\frac{1}{x^{46}}}
            \end{aligned}</m></p>
 </solution>
   </static>

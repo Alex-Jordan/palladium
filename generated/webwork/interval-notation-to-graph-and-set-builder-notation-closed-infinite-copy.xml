@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-interval-notation-to-graph-and-set-builder-notation-closed-infinite-copy" assembly-id="interval-notation-to-graph-and-set-builder-notation-closed-infinite-copy">
-  <static seed="2424">
+  <static seed="2288">
     <statement><p><m>{\left[-2,\infty \right)}</m></p>
 <p><fillin name="AnSwEr0001"/></p>
 <p><fillin characters="12" name="AnSwEr0002"/></p>

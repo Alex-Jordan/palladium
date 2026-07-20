@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp50" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp50">
-  <static seed="1729">
-    <statement><p><m>(-2y^{-3})\cdot (-6y^{2})</m></p>
+  <static seed="1593">
+    <statement><p><m>(-8y^{-8})\cdot (-9y^{7})</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{12}{y^{1}}</m>
+        <m>\frac{72}{y^{1}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remember that <m>a^m\cdot a^n = a^{m+n}</m></p>
 <p><m>\begin{aligned}
-                         (-2y^{-3})\cdot (-6y^{2}) \amp = (-2)\cdot(-6)y^{-3+2}\\
-                                                       \amp  =12y^{-1}\\
-                                    \amp  = \frac{12}{y^{1}}
+                         (-8y^{-8})\cdot (-9y^{7}) \amp = (-8)\cdot(-9)y^{-8+7}\\
+                                                       \amp  =72y^{-1}\\
+                                    \amp  = \frac{72}{y^{1}}
            \end{aligned}</m></p>
 </solution>
   </static>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-add-fractions-not-rel-prime-denoms-some-reduction" assembly-id="add-fractions-not-rel-prime-denoms-some-reduction">
-  <static seed="2105">
-    <statement><p><m>\displaystyle {{\frac{8}{35}}} + {{\frac{4}{45}}}</m></p>
+  <static seed="1969">
+    <statement><p><m>\displaystyle {{\frac{3}{56}}} + {{\frac{6}{35}}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{20}{63}}</m>
+        <m>{\frac{9}{40}}</m>
       </p>
     </answer>
   </static>

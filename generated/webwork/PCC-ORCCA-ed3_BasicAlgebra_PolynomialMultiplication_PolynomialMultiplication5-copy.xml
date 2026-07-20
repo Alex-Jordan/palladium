@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication5-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication5-copy">
-  <static seed="2636">
-    <statement><p><m>{9x}\left({8x-6}\right)</m></p>
+  <static seed="2500">
+    <statement><p><m>{9x}\left({-2x+4}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>72x^{2}-54x</m>
+        <m>-18x^{2}+36x</m>
       </p>
     </answer>
     <solution><p>We multiply the monomial by each term in the binomial, using 
 the properties of exponents to help us.  <me>\begin{aligned}
-              {9x}({8x-6})\amp ={72x^{2}-54x}
+              {9x}({-2x+4})\amp ={-18x^{2}+36x}
       \end{aligned}</me></p>
 </solution>
   </static>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-order-of-operations-aminusbtoc" assembly-id="order-of-operations-aminusbtoc">
-  <static seed="2164">
-    <statement><p><m>9 - 4^{3}</m></p>
+  <static seed="2028">
+    <statement><p><m>3 - 2^{3}</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-55</m>
+        <m>-5</m>
       </p>
     </answer>
   </static>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-with-variable-in-numerator" assembly-id="solve-with-variable-in-numerator">
-  <static seed="2514">
+  <static seed="2378">
     <statement><p>Solve the equation <m>\frac{7H}{12}=\frac{2}{3}</m> for <m>H\text{.}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-product-power-to-power-multivar" assembly-id="exponent-product-power-to-power-multivar">
-  <static seed="2616">
-    <statement><p><m>{2r^{4}p^{3}\mathopen{}\left(3r^{8}p^{5}\right)^{2}}</m></p>
+  <static seed="2480">
+    <statement><p><m>{5p^{7}y^{9}\mathopen{}\left(4p^{4}y^{8}\right)^{4}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>18r^{20}p^{13}</m>
+        <m>1280p^{23}y^{41}</m>
       </p>
     </answer>
   </static>

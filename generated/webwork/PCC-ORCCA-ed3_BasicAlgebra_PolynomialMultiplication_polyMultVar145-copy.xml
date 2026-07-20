@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar145-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_polyMultVar145-copy">
-  <static seed="2696">
-    <statement><p><m>\left({a+6b}\right)\left({a^{2}-8ab+3b^{2}}\right)</m></p>
+  <static seed="2560">
+    <statement><p><m>\left({a-6b}\right)\left({a^{2}+2ab+6b^{2}}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>a^{3}-2a^{2}b-45ab^{2}+18b^{3}</m>
+        <m>a^{3}-4a^{2}b-6ab^{2}-36b^{3}</m>
       </p>
     </answer>
-    <solution><p>We multiply the polynomials by using the terms from <m>{a+6b}</m>
+    <solution><p>We multiply the polynomials by using the terms from <m>{a-6b}</m>
 successively. <me>\begin{aligned}
-        \left({a+6b}\right)\left({a^{2}-8ab+3b^{2}}\right)\amp = {aa^{2}-a\cdot 8ab+a\cdot 3b^{2}+6ba^{2}-6b\cdot 8ab+6b\cdot 3b^{2}}\\
-                      \amp  = {a^{3}-2a^{2}b-45ab^{2}+18b^{3}}
+        \left({a-6b}\right)\left({a^{2}+2ab+6b^{2}}\right)\amp = {aa^{2}+a\cdot 2ab+a\cdot 6b^{2}-6ba^{2}-6b\cdot 2ab-6b\cdot 6b^{2}}\\
+                      \amp  = {a^{3}-4a^{2}b-6ab^{2}-36b^{3}}
     \end{aligned}</me></p>
 </solution>
   </static>

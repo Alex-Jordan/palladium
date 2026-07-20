@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-combine-three-terms-two-combine-distinct-powers-decimals-copy" assembly-id="combine-three-terms-two-combine-distinct-powers-decimals-copy">
-  <static seed="2285">
-    <statement><p><m>{5.9a^{3}+7.6a-5.6a^{3}}</m></p>
+  <static seed="2149">
+    <statement><p><m>{5.1X^{5}+5.2X^{5}+2.8X^{2}}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>7.6a+0.3a^{3}</m>
+        <m>2.8X^{2}+10.3X^{5}</m>
       </p>
     </answer>
   </static>

@@ -1,41 +1,41 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers50-copy" assembly-id="PCC-ORCCA-ed3_BasicMath_IntegerAndSquareRoot_identifySquareNumbers50-copy">
-  <static seed="1801">
+  <static seed="1665">
     <introduction/>
     <task>
-      <statement><p><m>\displaystyle{ \sqrt{25} }</m></p>
+      <statement><p><m>\displaystyle{ \sqrt{16} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>        5</m>
+          <m>        4</m>
         </p>
       </answer>
-      <solution><p>Just knowing the first few square numbers, <m>\sqrt{25} = 5</m>.</p>
+      <solution><p>Just knowing the first few square numbers, <m>\sqrt{16} = 4</m>.</p>
 </solution>
     </task>
     <task>
-      <statement><p><m>\displaystyle{ \sqrt{2500} }</m></p>
+      <statement><p><m>\displaystyle{ \sqrt{1600} }</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>       50</m>
+          <m>       40</m>
         </p>
       </answer>
-      <solution><p>Since <m>2500=25\cdot100</m>, we have <m>\sqrt{2500}=\sqrt{25\cdot100}=5\cdot10=50</m>.</p>
+      <solution><p>Since <m>1600=16\cdot100</m>, we have <m>\sqrt{1600}=\sqrt{16\cdot100}=4\cdot10=40</m>.</p>
 </solution>
     </task>
     <task>
-      <statement><p><m>\displaystyle{ \sqrt{250000} }</m></p>
+      <statement><p><m>\displaystyle{ \sqrt{160000} }</m></p>
 <p><fillin characters="16" name="AnSwEr0003"/></p>
 </statement>
       <answer>
         <p>
-          <m>      500</m>
+          <m>      400</m>
         </p>
       </answer>
-      <solution><p>Since <m>250000=25\cdot10000</m>, we have <m>\sqrt{250000}=\sqrt{25\cdot10000}=5\cdot100=500</m>.</p>
+      <solution><p>Since <m>160000=16\cdot10000</m>, we have <m>\sqrt{160000}=\sqrt{16\cdot10000}=4\cdot100=400</m>.</p>
 </solution>
     </task>
   </static>

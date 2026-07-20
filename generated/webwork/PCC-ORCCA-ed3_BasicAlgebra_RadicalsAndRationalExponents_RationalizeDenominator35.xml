@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator35" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator35">
-  <static seed="1936">
-    <statement><p><m>\displaystyle{ \frac{1}{\sqrt{t}} }</m></p>
+  <static seed="1800">
+    <statement><p><m>\displaystyle{ \frac{2}{\sqrt{t}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{\sqrt{t}}{t}</m>
+        <m>\frac{2\sqrt{t}}{t}</m>
       </p>
     </answer>
     <solution><p>We need to legally remove the radical <m>\sqrt{t}</m> from the denominator.</p>
@@ -14,9 +14,9 @@
 <p><m>\displaystyle{ \sqrt{t} \cdot \sqrt{t} = t }</m></p>
 <p>We will multiply both the numerator and denominator by <m>\sqrt{t}</m>, and we have:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   \frac{1}{\sqrt{t}} \amp = \frac{1}{\sqrt{t}}\cdot \frac{\sqrt{t}}{\sqrt{t}}\\
-      \amp = \frac{1 \cdot \sqrt{t}}{\sqrt{t} \cdot \sqrt{t}} \\
-      \amp = \frac{1 \cdot \sqrt{t}}{t}
+   \frac{2}{\sqrt{t}} \amp = \frac{2}{\sqrt{t}}\cdot \frac{\sqrt{t}}{\sqrt{t}}\\
+      \amp = \frac{2 \cdot \sqrt{t}}{\sqrt{t} \cdot \sqrt{t}} \\
+      \amp = \frac{2 \cdot \sqrt{t}}{t}
 \end{aligned}
     }</m></p>
 </solution>

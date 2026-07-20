@@ -27,10 +27,8 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PCCmacros.pl",
-  "contextCurrency.pl",
-  "contextPercent.pl",
-  "parserLinearRelation.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -43,39 +41,21 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$item = list_random(
-  'A bicycle',
-  'A dishwasher',
-  'A cell phone',
-  'A television',
-  'A car stereo',
-  'A formal suit',
-  'A designer dress',
-  'A tool shed',
-  'A tablet',
-  'An annual wine subscription',
-);
-Context("Currency")->flags->set(trimTrailingZeros => 1);
-$final = 400 + random(-100,100);
-$current = Currency($final);
-Context("Percent");
-$decimal = random(0.05,0.25,0.01);
-$percent = Percent($decimal);
-Context("LinearRelation")->variables->are(p => 'Real');
-$equation = LinearRelation("p - $decimal p >= $final");
+($a,$r) = random_coprime([2..9], [-9..-1,1..9]);
+Context()->noreduce('(-x)-y');
+$left = Formula("$a**2 x^2")->reduce;
+$right = Formula("2*$a*$r x - ($r)**2")->reduce;
+Context("FiniteSolutionSets");
+$sols = Formula("{$r/$a}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Write an inequality to model the scenario. There is no need to solve the inequality.
+Solve the equation by factoring.
 
-[$item] is on sale where all items have at least a [`[$percent]`] discount. The final price is [`[$current]\text{.}`] What might the original price have been before the discount was applied? Set up an inequality to answer this question. There is no need to solve it.
-
-[@KeyboardInstructions('Use [|p|]* as the variable.')@]**
-
-[_]{$equation}{20}
+[`[$left] = [$right]`]
 
 END_PGML
 

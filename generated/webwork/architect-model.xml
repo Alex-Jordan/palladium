@@ -1,30 +1,30 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-architect-model" assembly-id="architect-model">
-  <static seed="1650">
-    <statement><p>Mateo is an architect and he is making a scale model of a building. The actual building will be <m>54</m> ft tall. In the model, the height of the building will be <m>7</m> in tall and there will be a little model person standing next to the building. How tall should Mateo make the model of that person who is meant to represent a <m>5</m> ft <m>6</m> in tall person?</p>
+  <static seed="1514">
+    <statement><p>Leroy is an architect and he is making a scale model of a building. The actual building will be <m>68</m> ft tall. In the model, the height of the building will be <m>10</m> in tall and there will be a little model person standing next to the building. How tall should Leroy make the model of that person who is meant to represent a <m>5</m> ft <m>6</m> in tall person?</p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>0.712963\ {\rm in}</m>
+        <m>0.808824\ {\rm in}</m>
       </p>
     </answer>
-    <solution><p>Let <m>h</m> be the height of the person in Mateo<rsq/>s model, which we<rsq/>ll measure in inches. We<rsq/>ll create a proportional equation that compares the building and person<rsq/>s heights in the model to their heights in real life:</p>
+    <solution><p>Let <m>h</m> be the height of the person in Leroy<rsq/>s model, which we<rsq/>ll measure in inches. We<rsq/>ll create a proportional equation that compares the building and person<rsq/>s heights in the model to their heights in real life:</p>
 <p><me>\begin{aligned}
 \frac{\text{height of model building in inches}}{\text{height of actual building in feet}}\amp=\frac{\text{height of model person in inches}}{\text{height of actual person in feet}}\\
-\frac{7\,\text{in}}{54\,\text{ft}}\amp=\frac{h\,\text{in}}{5\,\text{ft}\,6\text{in}}
+\frac{10\,\text{in}}{68\,\text{ft}}\amp=\frac{h\,\text{in}}{5\,\text{ft}\,6\text{in}}
 \end{aligned}</me></p>
 <p>Before we can just eliminate the units, we<rsq/>ll need to convert 5 ft<nbsp/>6 in to feet:</p>
 <p><me>\frac{2\,\text{in}}{30\,\text{ft}}=\frac{h\,\text{in}}{5.5\,\text{ft}}</me></p>
 <p>Now we can remove the units and continue solving:</p>
 <p><me>\begin{aligned}
-\frac{7}{54}\amp=\frac{h}{5.5}\\
-\multiplyleft{54\cdot5.5}\frac{7}{54}\amp=\frac{h}{5.5}\multiplyright{54\cdot5.5}\\
-5.5\cdot 7 \amp= 54h\\
-38.5 \amp= 54h\\
-h\amp\approx 0.712962962962963
+\frac{10}{68}\amp=\frac{h}{5.5}\\
+\multiplyleft{68\cdot5.5}\frac{10}{68}\amp=\frac{h}{5.5}\multiplyright{68\cdot5.5}\\
+5.5\cdot 10 \amp= 68h\\
+55 \amp= 68h\\
+h\amp\approx 0.808823529411765
 \end{aligned}</me></p>
-<p>Mateo should make the model be <m>{0.712963\ {\rm in}}</m> tall.</p>
+<p>Leroy should make the model be <m>{0.808824\ {\rm in}}</m> tall.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/3_5_8_185.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

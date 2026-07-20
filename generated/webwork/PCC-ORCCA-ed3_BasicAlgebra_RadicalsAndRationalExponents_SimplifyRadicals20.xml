@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals20" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_SimplifyRadicals20">
-  <static seed="1840">
-    <statement><p><m>\displaystyle{{18\sqrt{7}} - {19\sqrt{7}} }</m></p>
+  <static seed="1704">
+    <statement><p><m>\displaystyle{{17\sqrt{11}} - {18\sqrt{11}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-\sqrt{7}</m>
+        <m>-\sqrt{11}</m>
       </p>
     </answer>
     <solution><p>Since these are like radicals, we can combine them as like terms.</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-        {18\sqrt{7}} - {19\sqrt{7}} \amp = (18 - 19) \sqrt{7} \\
-                            \amp = {-\sqrt{7}} \\
+        {17\sqrt{11}} - {18\sqrt{11}} \amp = (17 - 18) \sqrt{11} \\
+                            \amp = {-\sqrt{11}} \\
 \end{aligned}
 }</m></p>
 </solution>

@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-completing-the-square-8-6-9" assembly-id="section-completing-the-square-8-6-9">
-  <static seed="1202" source="Contrib/PCC/Math95/ParabolaVertex/ParabolaVertex8.pg">
+  <static seed="735" source="Contrib/PCC/Math95/ParabolaVertex/ParabolaVertex8.pg">
     <statement><p>Find the range of the function</p>
-<p><me>f(x)=x^{2}-6x+8</me></p>
+<p><me>f(x)=4x^{2}+2x-7</me></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left[-1,\infty \right)</m>
+        <m>\left[\frac{-29}{4},\infty \right)</m>
       </p>
     </answer>
   </static>

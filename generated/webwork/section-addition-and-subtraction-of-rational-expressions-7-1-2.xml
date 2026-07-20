@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-addition-and-subtraction-of-rational-expressions-7-1-2" assembly-id="section-addition-and-subtraction-of-rational-expressions-7-1-2">
-  <static seed="1361" source="Contrib/PCC/BasicAlgebra/FractionArithmetic/AddFractions09.pg">
-    <statement><p>Add: <m>\displaystyle{\frac{1}{10} + \frac{11}{10}}</m></p>
+  <static seed="1225" source="Contrib/PCC/BasicAlgebra/FractionArithmetic/AddFractions09.pg">
+    <statement><p>Add: <m>\displaystyle{\frac{19}{15} + \frac{2}{15}}</m></p>
 <p><fillin characters="11" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{6}{5}}</m>
+        <m>{\frac{7}{5}}</m>
       </p>
     </answer>
     <solution><p>To add two fractions with the same denominator, we simply add up the numerators and keep the denominator unchanged.</p>
 <p>The result is:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \frac{1}{10} + \frac{11}{10}
-        \amp = \frac{1 + 11}{10} \\
-        \amp = \frac{12}{10} \amp  \hbox{We can reduce this by dividing 2 into both the numerator and the denominator.
+   \frac{19}{15} + \frac{2}{15}
+        \amp = \frac{19 + 2}{15} \\
+        \amp = \frac{21}{15} \amp  \hbox{We can reduce this by dividing 3 into both the numerator and the denominator.
 }\\
-        \amp = \frac{6}{5} \\
+        \amp = \frac{7}{5} \\
 \end{aligned}
     }</m></p>
 </solution>

@@ -27,8 +27,8 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
+  "contextFiniteSolutionSets.pl",
   "contextForm.pl",
-  "contextLimitedFactor.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -41,36 +41,19 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-Context("LimitedFactor");
-Context()->variables->are(z=>'Real');
-$answer = Formula("(2z-3)(2z+3)");
+Context("FiniteSolutionSets");
+$sols = Formula("{-2,0}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Factor [`4z^2-9\text{.}`]
+Use a graphing app to solve [`2x^2-3x+1=x^2-5x+1\text{.}`] Make sure you follow a process that involves making two curves and looking at their intersection points.
 
-[_]{$answer}{25}
+[_]{$sols}{6}
 
 END_PGML
-
-############################################################
-# Solution
-############################################################
-
-BEGIN_PGML_SOLUTION
-The "[`4z^2`]" at the beginning here is a perfect square. It is the same as [`(2z)^2\text{.}`] So we can take [`A=2z\text{.}`] The "[`9`]" being subtracted is also a perfect square, so we can take [`B=3\text{:}`]
-
-[```\newcommand{\amp}{&}
-\begin{aligned}
-4z^2-9\amp=(A-B)(A+B)\\
-\amp=(2z-3)(2z+3)
-\end{aligned}
-```]
-
-END_PGML_SOLUTION
 
 ############################################################
 # End Problem

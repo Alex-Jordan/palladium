@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-more-exponent-properties-7-8" assembly-id="section-more-exponent-properties-7-8">
-  <static seed="1658">
+  <static seed="1522">
     <task>
       <statement><p>Simplify <m>\dfrac{6x^{3}}{2x^{7}}</m> and write it without using negative exponents.</p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>

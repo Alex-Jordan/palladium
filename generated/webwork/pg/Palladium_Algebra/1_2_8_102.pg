@@ -1,0 +1,73 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.2.8.102)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextUnits.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$T = random(300,500,10);
+Context("Units")->withUnitsFor("length");
+$A = $T**2/24;
+$A = Compute("$A ft^2");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+A farmer plans to build two adjacent rectangular enclosuresusing [`[$T]`] feet of fencing. The two rectangles will share one side in common so that there will be five fencing walls in total. Find the maximum total area that can be possibly be enclosed.
+
+[_]{$A}{6}
+
+END_PGML
+
+############################################################
+# Hint
+############################################################
+#Set value of $showHint in PGcourse.pl for course-wide attempt threshhold for revealing hints
+
+BEGIN_PGML_HINT
+Let [`𝑥`] represent the length of fencing (in feet) for the wall that is shared by both pens. Write an expression for the total area of the enclosure. Find the vertex and interpret it.
+
+END_PGML_HINT
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

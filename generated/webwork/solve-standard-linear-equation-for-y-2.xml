@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-standard-linear-equation-for-y-2" assembly-id="solve-standard-linear-equation-for-y-2">
-  <static seed="1567">
-    <statement><p><m>{2x-6y}={6}</m></p>
+  <static seed="1431">
+    <statement><p><m>{4x+5y}={-50}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>y = {\frac{1}{3}}x-1</m>
+        <m>y = -{\frac{4}{5}}x-10</m>
       </p>
     </answer>
     <solution><p><me>\begin{aligned}
-{2x-6y} \amp = {6}\\
-{2x-6y-2x} \amp = {6-2x}\\
-{-6y} \amp = {6-2x}\\
-{\frac{-6y}{-6}} \amp = {\frac{6-2x}{-6}}\\
-{y} \amp = {{\frac{1}{3}}x-1}
+{4x+5y} \amp = {-50}\\
+{4x+5y-4x} \amp = {-50-4x}\\
+{5y} \amp = {-50-4x}\\
+{\frac{5y}{5}} \amp = {\frac{-50-4x}{5}}\\
+{y} \amp = {-{\frac{4}{5}}x-10}
 \end{aligned}</me></p>
 </solution>
   </static>

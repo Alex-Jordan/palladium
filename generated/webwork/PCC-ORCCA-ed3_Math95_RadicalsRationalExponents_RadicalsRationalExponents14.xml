@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents14" assembly-id="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents14">
-  <static seed="2008">
-    <statement><p><m>\displaystyle{\sqrt[5]{32 t}}</m></p>
+  <static seed="1872">
+    <statement><p><m>\displaystyle{\sqrt[5]{32 z^{3}}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>2t^{\frac{1}{5}}</m>
+        <m>2z^{\frac{3}{5}}</m>
       </p>
     </answer>
     <solution><p>We first use radical properties to simplify. Then we rewrite the expression using rational exponents <m>\sqrt[n]{x} = x^\frac{1}{n}</m>.</p>
 <p><m>\displaystyle{\begin{aligned}
-   \sqrt[5]{32 t} 
-   \amp = (32t)^{\frac{1}{5}} \\
-   \amp = (2^5t)^{\frac{1}{5}} \\
-   \amp = (2^5)^{\frac{1}{5}}(t)^{\frac{1}{5}} \\
-   \amp = {2t^{\frac{1}{5}}}
+   \sqrt[5]{32 z^{3}} 
+   \amp = (32z^{3})^{\frac{1}{5}} \\
+   \amp = (2^5z^{3})^{\frac{1}{5}} \\
+   \amp = (2^5)^{\frac{1}{5}}(z^{3})^{\frac{1}{5}} \\
+   \amp = {2z^{\frac{3}{5}}}
 \end{aligned}
     }</m></p>
-<p>So the answer in calculator/WeBWorK notation is <m>2t</m>^<m>(1/5)</m>.</p>
+<p>So the answer in calculator/WeBWorK notation is <m>2z</m>^<m>(3/5)</m>.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/4_4_4_61.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication35" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication35">
-  <static seed="1671">
-    <statement><p><m>\displaystyle{\left({-\frac{t^{2}}{5}}\right) \cdot \left({\frac{t^{5}}{3}}\right)}</m></p>
+  <static seed="1535">
+    <statement><p><m>\displaystyle{\left({\frac{t^{20}}{8}}\right) \cdot \left({-\frac{t^{10}}{9}}\right)}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-\frac{t^{7}}{15}</m>
+        <m>-\frac{t^{30}}{72}</m>
       </p>
     </answer>
     <solution><p>We <em>multiply</em> the coefficients, and <em>add</em> the exponents as follows</p>
 <p><m>\begin{aligned}
-           \left({-\frac{t^{2}}{5}}\right) \cdot \left({\frac{t^{5}}{3}}\right)\amp =\left({-{\frac{1}{5}}}\right) \cdot \left({{\frac{1}{3}}}\right)\cdot t^{2+5}\\
-                             \amp ={-{\frac{1}{15}}}t^{7}\\
-\amp ={-\frac{t^{7}}{15}}
+           \left({\frac{t^{20}}{8}}\right) \cdot \left({-\frac{t^{10}}{9}}\right)\amp =\left({{\frac{1}{8}}}\right) \cdot \left({-{\frac{1}{9}}}\right)\cdot t^{20+10}\\
+                             \amp ={-{\frac{1}{72}}}t^{30}\\
+\amp ={-\frac{t^{30}}{72}}
        \end{aligned}</m></p>
 </solution>
   </static>

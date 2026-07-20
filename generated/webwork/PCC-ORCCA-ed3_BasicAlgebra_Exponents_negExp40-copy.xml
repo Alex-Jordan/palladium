@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp40-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp40-copy">
-  <static seed="1724">
-    <statement><p><m>\displaystyle\frac{t^{5}}{\left(t^{10}\right)^{6}}</m></p>
+  <static seed="1588">
+    <statement><p><m>\displaystyle\frac{t^{2}}{\left(t^{3}\right)^{3}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{1}{t^{55}}</m>
+        <m>\frac{1}{t^{7}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\displaystyle{\frac{a^m}{a^n} = a^{m-n}}</m> 
 and also that <m>\left(a^m\right)^n=a^{mn}</m></p>
 <p><m>\begin{aligned}
-                 \displaystyle\frac{t^{5}}{\left(t^{10}\right)^{6}}\amp = \frac{t^{5}}{t^{60}}\\
- \amp = t^{5-60}\\
-                                                       \amp  =t^{-55}\\
-                                    \amp  = {\frac{1}{t^{55}}}
+                 \displaystyle\frac{t^{2}}{\left(t^{3}\right)^{3}}\amp = \frac{t^{2}}{t^{9}}\\
+ \amp = t^{2-9}\\
+                                                       \amp  =t^{-7}\\
+                                    \amp  = {\frac{1}{t^{7}}}
            \end{aligned}</m></p>
 </solution>
   </static>

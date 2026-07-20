@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-standard-linear-equation-for-y-4" assembly-id="solve-standard-linear-equation-for-y-4">
-  <static seed="1571">
-    <statement><p><m>{70x+87y}={-79}</m></p>
+  <static seed="1435">
+    <statement><p><m>{20x-83y}={-307}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>y = -{\frac{70}{87}}x+-{\frac{79}{87}}</m>
+        <m>y = {\frac{20}{83}}x+{\frac{307}{83}}</m>
       </p>
     </answer>
     <solution><p><me>\begin{aligned}
-{70x+87y} \amp = {-79}\\
-{70x+87y-70x} \amp = {-79-70x}\\
-{87y} \amp = {-79-70x}\\
-{\frac{87y}{87}} \amp = {\frac{-79-70x}{87}}\\
-{y} \amp = {-{\frac{70}{87}}x - {\frac{79}{87}}}
+{20x-83y} \amp = {-307}\\
+{20x-83y-20x} \amp = {-307-20x}\\
+{-83y} \amp = {-307-20x}\\
+{\frac{-83y}{-83}} \amp = {\frac{-307-20x}{-83}}\\
+{y} \amp = {{\frac{20}{83}}x+{\frac{307}{83}}}
 \end{aligned}</me></p>
 </solution>
   </static>

@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-complex-fractions-5-2-2" assembly-id="section-complex-fractions-5-2-2">
-  <static seed="1433" source="Contrib/PCC/Math95/ComplexFractions/ComplexFractions3.pg">
+  <static seed="1297" source="Contrib/PCC/Math95/ComplexFractions/ComplexFractions3.pg">
     <statement><p>Simplify this expression, and if applicable, write the restricted domain.</p>
-<p><m>\displaystyle{\frac{{\frac{9p+10}{p}}}{{\frac{p+7}{p}}}}</m> = <fillin characters="40" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{\frac{{\frac{4p-1}{p}}}{{\frac{p-6}{p}}}}</m> = <fillin characters="40" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{9p+10}{p+7}, p\ne 0</m>
+        <m>\frac{4p-1}{p-6}, p\ne 0</m>
       </p>
     </answer>
-    <solution><p>To simply the complex fraction <m>\frac{{\frac{9p+10}{p}}}{{\frac{p+7}{p}}}</m>, we multiple the numerator and denominator with the common denominator of <m>{\frac{9p+10}{p}}</m> and <m>{\frac{p+7}{p}}</m>, which is <m>{p}</m>.</p>
+    <solution><p>To simply the complex fraction <m>\frac{{\frac{4p-1}{p}}}{{\frac{p-6}{p}}}</m>, we multiple the numerator and denominator with the common denominator of <m>{\frac{4p-1}{p}}</m> and <m>{\frac{p-6}{p}}</m>, which is <m>{p}</m>.</p>
 <p><m>\displaystyle{\begin{aligned}
-  \frac{{\frac{9p+10}{p}}}{{\frac{p+7}{p}}} \amp = \frac{{\frac{9p+10}{p}}\cdot{p}}{{\frac{p+7}{p}}\cdot{p}} \\
-    \amp = {\frac{9p+10}{p+7}, p\ne 0}
+  \frac{{\frac{4p-1}{p}}}{{\frac{p-6}{p}}} \amp = \frac{{\frac{4p-1}{p}}\cdot{p}}{{\frac{p-6}{p}}\cdot{p}} \\
+    \amp = {\frac{4p-1}{p-6}, p\ne 0}
 \end{aligned}
     }</m></p>
 <p>Since <m>{p}</m> was canceled, <m>p \ne 0</m> is in a lost domain condition.</p>

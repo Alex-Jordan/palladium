@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp15-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp15-copy">
-  <static seed="1712">
-    <statement><p><m>\displaystyle\frac{r^{-11}}{t^{-16}}</m></p>
+  <static seed="1576">
+    <statement><p><m>\displaystyle\frac{r^{-17}}{x^{-10}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{t^{16}}{r^{11}}</m>
+        <m>\frac{x^{10}}{r^{17}}</m>
       </p>
     </answer>
     <solution><p>We evaluate the expression by remembering that <m>x^{-n}</m> is the same thing as <m>\displaystyle{\frac{1}{x^n}}</m> for any non-zero,
@@ -14,10 +14,10 @@ real value of <m>x</m>.</p>
 <p>The first thing we do is to rewrite the expression using fractions- then we remember that when 
 we divide by a fraction it is the same thing as multiplying by its reciprocal.</p>
 <p><m>\displaystyle{        \begin{aligned}
-         \displaystyle\frac{r^{-11}}{t^{-16}}
-            \amp  = \displaystyle\frac{\displaystyle\frac{1}{r^{11}}}{\displaystyle\frac{1}{t^{16}}}\\
-            \amp  = \displaystyle\frac{1}{r^{11}}\cdot \frac{t^{16}}{1}\\
-            \amp  = {\frac{t^{16}}{r^{11}}}
+         \displaystyle\frac{r^{-17}}{x^{-10}}
+            \amp  = \displaystyle\frac{\displaystyle\frac{1}{r^{17}}}{\displaystyle\frac{1}{x^{10}}}\\
+            \amp  = \displaystyle\frac{1}{r^{17}}\cdot \frac{x^{10}}{1}\\
+            \amp  = {\frac{x^{10}}{r^{17}}}
         \end{aligned}
     }</m></p>
 <p>Effectively we <lsq/>flip<rsq/> the fraction since both variables are raised to a negative exponent.</p>

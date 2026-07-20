@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-8-3" assembly-id="section-multiplication-and-division-of-rational-expressions-7-8-3">
-  <static seed="1318" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions53.pg">
+  <static seed="1182" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions53.pg">
     <statement><p>Simplify this expression, and if applicable, write the restricted domain.</p>
-<p><m>\displaystyle{{\frac{t^{2}-4t}{t^{2}-4}} \cdot {\frac{t^{2}-2t}{t^{2}-2t-8}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{t^{2}-16t}{t^{2}-16}} \cdot {\frac{t^{2}-4t}{t^{2}-13t-48}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{t^{2}}{\left(t+2\right)\mathopen{}\left(t+2\right)}, t\ne 2\hbox{ and }t\ne 4</m>
+        <m>\frac{t^{2}}{\left(t+4\right)\mathopen{}\left(t+3\right)}, t\ne 4\hbox{ and }t\ne 16</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   {\frac{t^{2}-4t}{t^{2}-4}} \cdot {\frac{t^{2}-2t}{t^{2}-2t-8}} 
-      \amp = \frac{{t\mathopen{}\left(t-4\right)}}{{\left(t+2\right)\mathopen{}\left(t-2\right)}} \cdot \frac{{t\mathopen{}\left(t-2\right)}}{{\left(t-4\right)\mathopen{}\left(t+2\right)}} \\
-      \amp = {\frac{t^{2}}{\left(t+2\right)\mathopen{}\left(t+2\right)}, t\ne 2\hbox{ and }t\ne 4}
+   {\frac{t^{2}-16t}{t^{2}-16}} \cdot {\frac{t^{2}-4t}{t^{2}-13t-48}} 
+      \amp = \frac{{t\mathopen{}\left(t-16\right)}}{{\left(t+4\right)\mathopen{}\left(t-4\right)}} \cdot \frac{{t\mathopen{}\left(t-4\right)}}{{\left(t-16\right)\mathopen{}\left(t+3\right)}} \\
+      \amp = {\frac{t^{2}}{\left(t+4\right)\mathopen{}\left(t+3\right)}, t\ne 4\hbox{ and }t\ne 16}
 \end{aligned}
     }</m></p>
 </solution>

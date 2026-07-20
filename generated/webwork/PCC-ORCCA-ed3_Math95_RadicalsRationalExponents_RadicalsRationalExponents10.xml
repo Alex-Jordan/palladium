@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents10" assembly-id="PCC-ORCCA-ed3_Math95_RadicalsRationalExponents_RadicalsRationalExponents10">
-  <static seed="1998">
-    <statement><p><m>\displaystyle{{15^{\frac{1}{4}}z^{\frac{3}{4}}}}</m></p>
+  <static seed="1862">
+    <statement><p><m>\displaystyle{{2^{\frac{1}{6}}y^{\frac{5}{6}}}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\sqrt[4]{15z^{3}}</m>
+        <m>\sqrt[6]{2y^{5}}</m>
       </p>
     </answer>
     <solution><p>When we have fractions as exponents, the numerator indicates the power while the denominator indicates the radical: <m>x^\frac{m}{n} = \sqrt[n]{x^m}</m>. So we can rewrite our expression as follows. We then use radical properties to simplify.</p>
 <p><m>\displaystyle{\begin{aligned}
-   15^\frac{1}{4}z^\frac{3}{4} \amp = \sqrt[4]{15}\sqrt[4]{z^3} \\
-                                                                    \amp = \sqrt[4]{15z^3} \\
+   2^\frac{1}{6}y^\frac{5}{6} \amp = \sqrt[6]{2}\sqrt[6]{y^5} \\
+                                                                    \amp = \sqrt[6]{2y^5} \\
 \end{aligned}
     }</m></p>
 </solution>

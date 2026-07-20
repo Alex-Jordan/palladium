@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-key-features-of-quadratic-graphs-8-1-4" assembly-id="section-key-features-of-quadratic-graphs-8-1-4">
-  <static seed="982" source="Contrib/PCC/BasicAlgebra/EquationsAndInequalitiesInTwoVariables/TableForLine110.pg">
+  <static seed="515" source="Contrib/PCC/BasicAlgebra/EquationsAndInequalitiesInTwoVariables/TableForLine110.pg">
     <statement><p>Make a table for the equation.</p>
 <p>The first row is an example.</p>
 <tabular valign="top">
@@ -9,21 +9,21 @@
 <col halign="center"/>
 <row>
 <cell><m>x</m></cell>
-<cell><m>y=\frac{7}{8} x  - 7</m></cell>
+<cell><m>y=\frac{1}{2} x  - 1</m></cell>
 <cell>Points</cell>
 </row>
 <row>
-<cell><m>-24</m></cell>
-<cell><m>-28</m></cell>
-<cell><m>\left(-24,-28\right)</m></cell>
+<cell><m>-6</m></cell>
+<cell><m>-4</m></cell>
+<cell><m>\left(-6,-4\right)</m></cell>
 </row>
 <row>
-<cell><m>-16</m></cell>
+<cell><m>-4</m></cell>
 <cell><fillin characters="3" name="AnSwEr0001"/></cell>
 <cell><fillin characters="6" name="AnSwEr0002"/></cell>
 </row>
 <row>
-<cell><m>-8</m></cell>
+<cell><m>-2</m></cell>
 <cell><fillin characters="3" name="AnSwEr0003"/></cell>
 <cell><fillin characters="6" name="AnSwEr0004"/></cell>
 </row>
@@ -33,12 +33,12 @@
 <cell><fillin characters="6" name="AnSwEr0006"/></cell>
 </row>
 <row>
-<cell><m>8</m></cell>
+<cell><m>2</m></cell>
 <cell><fillin characters="3" name="AnSwEr0007"/></cell>
 <cell><fillin characters="6" name="AnSwEr0008"/></cell>
 </row>
 <row>
-<cell><m>16</m></cell>
+<cell><m>4</m></cell>
 <cell><fillin characters="3" name="AnSwEr0009"/></cell>
 <cell><fillin characters="6" name="AnSwEr0010"/></cell>
 </row>
@@ -47,39 +47,39 @@
 <col width="50%"/>
 <row>
 <cell>
-Values of <m>x</m> and <m>y</m> satisfying the equation <m>y=\frac{7}{8} x  - 7</m>
+Values of <m>x</m> and <m>y</m> satisfying the equation <m>y=\frac{1}{2} x  - 1</m>
 </cell>
 </row>
 </tabular>
 </statement>
     <answer>
       <p>
-        <m>-21</m>
+        <m>-3</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(-16,-21\right)</m>
+        <m>\left(-4,-3\right)</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>-14</m>
+        <m>-2</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(-8,-14\right)</m>
+        <m>\left(-2,-2\right)</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>-7</m>
+        <m>-1</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(0,-7\right)</m>
+        <m>\left(0,-1\right)</m>
       </p>
     </answer>
     <answer>
@@ -89,17 +89,17 @@ Values of <m>x</m> and <m>y</m> satisfying the equation <m>y=\frac{7}{8} x  - 7<
     </answer>
     <answer>
       <p>
-        <m>\left(8,0\right)</m>
+        <m>\left(2,0\right)</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>7</m>
+        <m>1</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(16,7\right)</m>
+        <m>\left(4,1\right)</m>
       </p>
     </answer>
     <solution><tabular valign="top">
@@ -112,41 +112,41 @@ Values of <m>x</m> and <m>y</m> satisfying the equation <m>y=\frac{7}{8} x  - 7<
 <cell>Points</cell>
 </row>
 <row>
-<cell><m>-24</m></cell>
-<cell><m>-28</m></cell>
-<cell><m>\left(-24,-28\right)</m></cell>
+<cell><m>-6</m></cell>
+<cell><m>-4</m></cell>
+<cell><m>\left(-6,-4\right)</m></cell>
 </row>
 <row>
-<cell><m>-16</m></cell>
-<cell><m>y=\frac{7}{8} \cdot (-16)  - 7=-21</m></cell>
-<cell><m>\left(-16,-21\right)</m></cell>
+<cell><m>-4</m></cell>
+<cell><m>y=\frac{1}{2} \cdot (-4)  - 1=-3</m></cell>
+<cell><m>\left(-4,-3\right)</m></cell>
 </row>
 <row>
-<cell><m>-8</m></cell>
-<cell><m>y=\frac{7}{8} \cdot (-8)  - 7=-14</m></cell>
-<cell><m>\left(-8,-14\right)</m></cell>
+<cell><m>-2</m></cell>
+<cell><m>y=\frac{1}{2} \cdot (-2)  - 1=-2</m></cell>
+<cell><m>\left(-2,-2\right)</m></cell>
 </row>
 <row>
 <cell><m>0</m></cell>
-<cell><m>y=\frac{7}{8} \cdot (0)  - 7=-7</m></cell>
-<cell><m>\left(0,-7\right)</m></cell>
+<cell><m>y=\frac{1}{2} \cdot (0)  - 1=-1</m></cell>
+<cell><m>\left(0,-1\right)</m></cell>
 </row>
 <row>
-<cell><m>8</m></cell>
-<cell><m>y=\frac{7}{8} \cdot (8)  - 7=0</m></cell>
-<cell><m>\left(8,0\right)</m></cell>
+<cell><m>2</m></cell>
+<cell><m>y=\frac{1}{2} \cdot (2)  - 1=0</m></cell>
+<cell><m>\left(2,0\right)</m></cell>
 </row>
 <row>
-<cell><m>16</m></cell>
-<cell><m>y=\frac{7}{8} \cdot (16)  - 7=7</m></cell>
-<cell><m>\left(16,7\right)</m></cell>
+<cell><m>4</m></cell>
+<cell><m>y=\frac{1}{2} \cdot (4)  - 1=1</m></cell>
+<cell><m>\left(4,1\right)</m></cell>
 </row>
 </tabular>
 <tabular>
 <col width="50%"/>
 <row>
 <cell>
-Values of <m>x</m> and <m>y</m> satisfying the equation <m>y=\frac{7}{8} x  - 7</m>
+Values of <m>x</m> and <m>y</m> satisfying the equation <m>y=\frac{1}{2} x  - 1</m>
 </cell>
 </row>
 </tabular>  

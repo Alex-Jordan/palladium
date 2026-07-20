@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-mxequalsmxplusb-inequality-copy" assembly-id="solve-mxequalsmxplusb-inequality-copy">
-  <static seed="1530">
-    <statement><p><m>{5F}\lt{5F-6}</m></p>
+  <static seed="1394">
+    <statement><p><m>{4W}\geq{4W-1}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\text{no real solutions}</m>
+        <m>\left(-\infty ,\infty \right)\hbox{ or }\text{infinitely many solutions}</m>
       </p>
     </answer>
   </static>

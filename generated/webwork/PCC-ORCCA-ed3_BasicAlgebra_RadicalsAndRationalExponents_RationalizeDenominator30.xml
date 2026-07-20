@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator30" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator30">
-  <static seed="1912">
-    <statement><p><m>\displaystyle{ \frac{1}{\sqrt{7}} }</m></p>
+  <static seed="1776">
+    <statement><p><m>\displaystyle{ \frac{1}{\sqrt{6}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{\sqrt{7}}{7}</m>
+        <m>\frac{\sqrt{6}}{6}</m>
       </p>
     </answer>
-    <solution><p>We need to legally remove the radical <m>\sqrt{7}</m> from the denominator.</p>
+    <solution><p>We need to legally remove the radical <m>\sqrt{6}</m> from the denominator.</p>
 <p>We will use this property:</p>
 <p><m>\displaystyle{ \sqrt{x} \cdot \sqrt{x} = x }</m></p>
 <p>In this case, we have:</p>
-<p><m>\displaystyle{ \sqrt{7} \cdot \sqrt{7} = 7 }</m></p>
-<p>We will multiply both the numerator and denominator by <m>\sqrt{7}</m>, and we have:</p>
+<p><m>\displaystyle{ \sqrt{6} \cdot \sqrt{6} = 6 }</m></p>
+<p>We will multiply both the numerator and denominator by <m>\sqrt{6}</m>, and we have:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   \frac{1}{\sqrt{7}} \amp = \frac{1}{\sqrt{7}}\cdot \frac{\sqrt{7}}{\sqrt{7}}\\
-      \amp = \frac{1 \cdot \sqrt{7}}{\sqrt{7} \cdot \sqrt{7}} \\
-      \amp = \frac{\sqrt{7}}{7}
+   \frac{1}{\sqrt{6}} \amp = \frac{1}{\sqrt{6}}\cdot \frac{\sqrt{6}}{\sqrt{6}}\\
+      \amp = \frac{1 \cdot \sqrt{6}}{\sqrt{6} \cdot \sqrt{6}} \\
+      \amp = \frac{\sqrt{6}}{6}
 \end{aligned}
     }</m></p>
 </solution>

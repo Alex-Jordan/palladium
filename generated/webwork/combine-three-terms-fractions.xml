@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-combine-three-terms-fractions" assembly-id="combine-three-terms-fractions">
-  <static seed="2286">
-    <statement><p><m>{7f+{\frac{5}{3}}f-{\frac{1}{4}}f}</m></p>
+  <static seed="2150">
+    <statement><p><m>{{\frac{4}{7}}c-{\frac{3}{10}}c+9c}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{101}{12}f</m>
+        <m>\frac{649}{70}c</m>
       </p>
     </answer>
   </static>

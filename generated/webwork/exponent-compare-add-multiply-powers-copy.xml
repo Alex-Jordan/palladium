@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-compare-add-multiply-powers-copy" assembly-id="exponent-compare-add-multiply-powers-copy">
-  <static seed="2607">
+  <static seed="2471">
     <introduction/>
     <task>
-      <statement><p><m>{r^{8}+r^{8}}</m></p>
+      <statement><p><m>{p^{2}+p^{2}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>2r^{8}</m>
+          <m>2p^{2}</m>
         </p>
       </answer>
     </task>
     <task>
-      <statement><p><m>r^8\cdot r^8</m></p>
+      <statement><p><m>p^2\cdot p^2</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>r^{16}</m>
+          <m>p^{4}</m>
         </p>
       </answer>
     </task>

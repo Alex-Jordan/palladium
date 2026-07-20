@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-9-20" assembly-id="section-multiplication-and-division-of-rational-expressions-7-9-20">
-  <static seed="1358" source="Contrib/PCC/Math95/ComplexFractions/ComplexFractions2.pg">
+  <static seed="1222" source="Contrib/PCC/Math95/ComplexFractions/ComplexFractions2.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{\frac{{\frac{ab^{2}}{10c}}}{{\frac{a}{10bc}}}=}</m><fillin characters="40" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{\frac{{\frac{ab^{2}}{5c}}}{{\frac{a}{3bc}}}=}</m><fillin characters="40" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>b^{3}</m>
+        <m>\frac{3b^{3}}{5}</m>
       </p>
     </answer>
-    <solution><p>To simply the complex fraction <m>\frac{{\frac{ab^{2}}{10c}}}{{\frac{a}{10bc}}}</m>, we multiple the numerator and denominator with the common denominator of <m>{\frac{ab^{2}}{10c}}</m> and <m>{\frac{a}{10bc}}</m>, which is <m>{10bc}</m>.</p>
+    <solution><p>To simply the complex fraction <m>\frac{{\frac{ab^{2}}{5c}}}{{\frac{a}{3bc}}}</m>, we multiple the numerator and denominator with the common denominator of <m>{\frac{ab^{2}}{5c}}</m> and <m>{\frac{a}{3bc}}</m>, which is <m>{15bc}</m>.</p>
 <p><m>\displaystyle{\begin{aligned}
-  \frac{{\frac{ab^{2}}{10c}}}{{\frac{a}{10bc}}} \amp = \frac{{\frac{ab^{2}}{10c}}\cdot{10bc}}{{\frac{a}{10bc}}\cdot{10bc}} \\
-    \amp = {b^{3}}
+  \frac{{\frac{ab^{2}}{5c}}}{{\frac{a}{3bc}}} \amp = \frac{{\frac{ab^{2}}{5c}}\cdot{15bc}}{{\frac{a}{3bc}}\cdot{15bc}} \\
+    \amp = {\frac{3b^{3}}{5}}
 \end{aligned}
     }</m></p>
 <p>Note that you are not required to enter lost domain conditions in this problem, but it<rsq/>s good to know the following.</p>

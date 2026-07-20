@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-compare-xtimesbequalsc" assembly-id="compare-xtimesbequalsc">
-  <static seed="1551">
+  <static seed="1415">
     <introduction/>
     <task>
-      <statement><p><m>{5L}={7}</m> for <m>L\text{.}</m></p>
+      <statement><p><m>{2I}={6}</m> for <m>I\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>\left\{\frac{7}{5}\right\}</m>
+          <m>\left\{3\right\}</m>
         </p>
       </answer>
     </task>
     <task>
-      <statement><p><m>{TL}={s}</m> for <m>L\text{.}</m></p>
+      <statement><p><m>{iI}={H}</m> for <m>I\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>L = \frac{s}{T}</m>
+          <m>I = \frac{H}{i}</m>
         </p>
       </answer>
     </task>

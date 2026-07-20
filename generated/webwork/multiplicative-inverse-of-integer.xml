@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-multiplicative-inverse-of-integer" assembly-id="multiplicative-inverse-of-integer">
-  <static seed="2314">
-    <statement><p>Multiplicative inverse of <m>-6\text{.}</m></p>
+  <static seed="2178">
+    <statement><p>Multiplicative inverse of <m>-7\text{.}</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-{\frac{1}{6}}</m>
+        <m>-{\frac{1}{7}}</m>
       </p>
     </answer>
   </static>

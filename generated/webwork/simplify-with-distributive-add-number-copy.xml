@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-with-distributive-add-number-copy" assembly-id="simplify-with-distributive-add-number-copy">
-  <static seed="2359">
-    <statement><p><m>{2+9\mathopen{}\left(3j-6\right)}</m></p>
+  <static seed="2223">
+    <statement><p><m>{9+4\mathopen{}\left(6g-3\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>27j+\left(-52\right)</m>
+        <m>24g+\left(-3\right)</m>
       </p>
     </answer>
-    <solution><p>First, apply the distributive property to get <m>{2+27j-54}\text{.}</m> Now add the two like terms to get <m>{27j+\left(-52\right)}\text{.}</m></p>
+    <solution><p>First, apply the distributive property to get <m>{9+24g-12}\text{.}</m> Now add the two like terms to get <m>{24g+\left(-3\right)}\text{.}</m></p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/Appendices/A_4_6_47.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

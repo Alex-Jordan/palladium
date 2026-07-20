@@ -1,26 +1,26 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation50" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation50">
-  <static seed="2030">
-    <statement><p><m>\displaystyle{ {2\sqrt{-9-t}-1} = {7} }</m></p>
+  <static seed="1894">
+    <statement><p><m>\displaystyle{ {-2\sqrt{-3-r}-6} = {-20} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{-25\right\}</m>
+        <m>\left\{-52\right\}</m>
       </p>
     </answer>
     <solution><p>To solve an equation with radicals, we first separate the radical on one side of the equation, and then square both sides:</p>
 <p><m>\displaystyle{\begin{aligned}
-   {2\sqrt{-9-t}-1} \amp = {7} \\
-   {2\sqrt{-9-t}-1} \mathbf{{} + 1} \amp = {7} \mathbf{{} + 1}  \\
-   2\sqrt{-9-t} \amp = {8} \\
-   \frac{2\sqrt{-9-t}}{2} \amp = \frac{{8}}{2} \\
-   \sqrt{-9-t} \amp = 4 \\
-   (\sqrt{-9-t})^2 \amp = (4)^2 \\
-   -9-t \amp = 16 \\
-   -9-t \mathbf{{} + 9} \amp = 16 \mathbf{{} + 9}  \\
-   -t \amp = 25 \\
-   t \amp = -25
+   {-2\sqrt{-3-r}-6} \amp = {-20} \\
+   {-2\sqrt{-3-r}-6} \mathbf{{} + 6} \amp = {-20} \mathbf{{} + 6}  \\
+   -2\sqrt{-3-r} \amp = {-14} \\
+   \frac{-2\sqrt{-3-r}}{-2} \amp = \frac{{-14}}{-2} \\
+   \sqrt{-3-r} \amp = 7 \\
+   (\sqrt{-3-r})^2 \amp = (7)^2 \\
+   -3-r \amp = 49 \\
+   -3-r \mathbf{{} + 3} \amp = 49 \mathbf{{} + 3}  \\
+   -r \amp = 52 \\
+   r \amp = -52
 \end{aligned}
     }</m></p>
 <p>Whenever we square both sides of an equation, we could create extraneous solutions. We must check our solution. This part is left as exercise.</p>

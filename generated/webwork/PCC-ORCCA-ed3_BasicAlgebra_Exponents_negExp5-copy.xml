@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp5-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp5-copy">
-  <static seed="1698">
-    <statement><p><m>\displaystyle\frac{2^{-2}}{7^{-3}}</m></p>
+  <static seed="1562">
+    <statement><p><m>\displaystyle\frac{8^{-2}}{2^{-3}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{343}{4}}</m>
+        <m>{\frac{1}{8}}</m>
       </p>
     </answer>
     <solution><p>We evaluate the expression by remembering that <m>\displaystyle{x^{-n}}</m> is the same thing as <m>\displaystyle{\frac{1}{x^n}}</m> 
 for any non-zero,
 real value of <m>x</m>.</p>
 <p><m>\displaystyle{      \begin{aligned}
-            \displaystyle\frac{2^{-2}}{7^{-3}} \amp  = \displaystyle\frac{\displaystyle\frac{1}{2^{2}}}{\displaystyle\frac{1}{7^{3}}} \\
-                              \amp  = \displaystyle\frac{1}{2^{2}}\cdot \frac{7^{3}}{1} \\
-                              \amp  = \frac{7^{3}}{2^{2}}\\
-                             \amp  = \frac{{343}}{{4}}\\
-                             \amp  = \displaystyle \frac{343}{4}
+            \displaystyle\frac{8^{-2}}{2^{-3}} \amp  = \displaystyle\frac{\displaystyle\frac{1}{8^{2}}}{\displaystyle\frac{1}{2^{3}}} \\
+                              \amp  = \displaystyle\frac{1}{8^{2}}\cdot \frac{2^{3}}{1} \\
+                              \amp  = \frac{2^{3}}{8^{2}}\\
+                             \amp  = \frac{{8}}{{64}}\\
+                             \amp  = \displaystyle \frac{1}{8}
       \end{aligned}
     }</m></p>
 <p>Remember that when dividing by a fraction we multiply by its reciprocal.</p>

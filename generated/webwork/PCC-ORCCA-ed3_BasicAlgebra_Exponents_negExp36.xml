@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp36" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp36">
-  <static seed="1721">
-    <statement><p><m>\displaystyle\frac{-7r^{11}}{9r^{40}}</m></p>
+  <static seed="1585">
+    <statement><p><m>\displaystyle\frac{-15y^{4}}{7y^{6}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{-7}{9r^{29}}</m>
+        <m>\frac{-15}{7y^{2}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\displaystyle{\frac{a^m}{a^n} = a^{m-n}}</m></p>
 <p><m>\displaystyle{           \begin{aligned}
-                 \displaystyle\frac{-7r^{11}}{9r^{40}} \amp = \frac{-7}{9}r^{11-40}\\
-                                                       \amp  =\frac{-7}{9}r^{-29}\\
-                                    \amp  = -\frac{7}{9 r^{29}}
+                 \displaystyle\frac{-15y^{4}}{7y^{6}} \amp = \frac{-15}{7}y^{4-6}\\
+                                                       \amp  =\frac{-15}{7}y^{-2}\\
+                                    \amp  = -\frac{15}{7 y^{2}}
            \end{aligned}
     }</m></p>
 </solution>

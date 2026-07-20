@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-5-9" assembly-id="section-multiplication-and-division-of-rational-expressions-7-5-9">
-  <static seed="1303" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions151.pg">
+  <static seed="1167" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions151.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{{\frac{5y^{2}x^{2}+7yx+2}{-7yx-4-3y^{2}x^{2}}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{2x^{2}y^{2}+7xy+5}{-11xy-5-6x^{2}y^{2}}}=}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-\frac{5yx+2}{3yx+4}</m>
+        <m>-\frac{2xy+5}{6xy+5}</m>
       </p>
     </answer>
     <solution><p>To simplify the expression, we first factor both the numerator and denominator, and then cross out common terms:</p>
 <p><m>\displaystyle{\begin{aligned}
-   {\frac{5y^{2}x^{2}+7yx+2}{-7yx-4-3y^{2}x^{2}}} \amp = \frac{{\left(5yx+2\right)\mathopen{}\left(yx+1\right)}}{{-3y^{2}x^{2}-7yx-4}} \\
-                     \amp = \frac{{\left(5yx+2\right)\mathopen{}\left(yx+1\right)}}{{-\left(3y^{2}x^{2}+7yx+4\right)}} \\
-                     \amp = \frac{{\left(5yx+2\right)\mathopen{}\left(yx+1\right)}}{{-\left(3yx+4\right)\mathopen{}\left(yx+1\right)}} \\
-                     \amp = {-\frac{5yx+2}{3yx+4}}
+   {\frac{2x^{2}y^{2}+7xy+5}{-11xy-5-6x^{2}y^{2}}} \amp = \frac{{\left(2xy+5\right)\mathopen{}\left(xy+1\right)}}{{-6x^{2}y^{2}-11xy-5}} \\
+                     \amp = \frac{{\left(2xy+5\right)\mathopen{}\left(xy+1\right)}}{{-\left(6x^{2}y^{2}+11xy+5\right)}} \\
+                     \amp = \frac{{\left(2xy+5\right)\mathopen{}\left(xy+1\right)}}{{-\left(6xy+5\right)\mathopen{}\left(xy+1\right)}} \\
+                     \amp = {-\frac{2xy+5}{6xy+5}}
 \end{aligned}
     }</m></p>
 </solution>

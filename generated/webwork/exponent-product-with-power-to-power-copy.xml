@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-product-with-power-to-power-copy" assembly-id="exponent-product-with-power-to-power-copy">
-  <static seed="2585">
-    <statement><p><m>{\left(3f^{9}\right)^{3}}</m></p>
+  <static seed="2449">
+    <statement><p><m>{\left(4d^{6}\right)^{4}}</m></p>
 <p><fillin characters="6" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>27f^{27}</m>
+        <m>256d^{24}</m>
       </p>
     </answer>
-    <solution><p>This expression is a product of two things (<m>3</m> and <m>f^{9}</m>) that is then raised to a power. We can raise each of the two factors to that outer power instead:</p>
-<p><me>3^{3}\left(f^{9}\right)^{3}</me></p>
-<p>and then use the power-to-power property of exponents to simplify it more: <m>{27f^{27}}\text{.}</m></p>
+    <solution><p>This expression is a product of two things (<m>4</m> and <m>d^{6}</m>) that is then raised to a power. We can raise each of the two factors to that outer power instead:</p>
+<p><me>4^{4}\left(d^{6}\right)^{4}</me></p>
+<p>and then use the power-to-power property of exponents to simplify it more: <m>{256d^{24}}\text{.}</m></p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/Appendices/A_8_4_17.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

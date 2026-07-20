@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-equation-add-left-decimal" assembly-id="solve-equation-add-left-decimal">
-  <static seed="2545">
-    <statement><p><m>{7.96+P}={-16.72}</m></p>
+  <static seed="2409">
+    <statement><p><m>{12.64+L}={2.5}</m></p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{-24.68\right\}</m>
+        <m>\left\{-10.14\right\}</m>
       </p>
     </answer>
   </static>

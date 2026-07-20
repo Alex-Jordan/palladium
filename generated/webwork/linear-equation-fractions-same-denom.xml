@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-linear-equation-fractions-same-denom" assembly-id="linear-equation-fractions-same-denom">
-  <static seed="1483">
-    <statement><p><m>{{\frac{7}{4}}x-12} = {{\frac{1}{4}}}</m></p>
+  <static seed="1347">
+    <statement><p><m>{{\frac{10}{3}}x-4} = {{\frac{7}{3}}}</m></p>
 <p><fillin characters="4" name="AnSwEr0001"/></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>4</m>
+        <m>3</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left\{7\right\}</m>
+        <m>\left\{\frac{19}{10}\right\}</m>
       </p>
     </answer>
   </static>

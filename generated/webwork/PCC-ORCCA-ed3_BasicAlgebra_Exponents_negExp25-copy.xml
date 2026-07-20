@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp25-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp25-copy">
-  <static seed="1716">
-    <statement><p><m>\displaystyle\frac{1}{27x^{-5}}</m></p>
+  <static seed="1580">
+    <statement><p><m>\displaystyle\frac{1}{41t^{-10}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{x^{5}}{27}</m>
+        <m>\frac{t^{10}}{41}</m>
       </p>
     </answer>
     <solution><p>We evaluate the expression by remembering that <m>x^{-n}</m> is the same thing as <m>\frac{1}{x^n}</m> for any non-zero,
 real value of <m>x</m>.</p>
-<p><m>\displaystyle\frac{1}{27x^{-5}} = \displaystyle\frac{x^{5}}{27}</m></p>
-<p>Notice that the <m>27</m> in the denominator does <em>not</em> go in the numerator because it is not raised to the power <m>-5</m>; in other words, 
-<m>27x^{-5}\ne (27x)^{-5}</m>.</p>
+<p><m>\displaystyle\frac{1}{41t^{-10}} = \displaystyle\frac{t^{10}}{41}</m></p>
+<p>Notice that the <m>41</m> in the denominator does <em>not</em> go in the numerator because it is not raised to the power <m>-10</m>; in other words, 
+<m>41t^{-10}\ne (41t)^{-10}</m>.</p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/4_1_7_58.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation10" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalEquations_SolvingRadicalEquation10">
-  <static seed="2022">
-    <statement><p><m>\displaystyle{ {\sqrt{t}} = {3} }</m></p>
+  <static seed="1886">
+    <statement><p><m>\displaystyle{ {\sqrt{t}} = {6} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{9\right\}</m>
+        <m>\left\{36\right\}</m>
       </p>
     </answer>
     <solution><p>To remove the square root, we square both sides of the equation:</p>
 <p><m>\displaystyle{\begin{aligned}
-   {\sqrt{t}} \amp = {3} \\
-   ({\sqrt{t}})^2 \amp = ({3})^2 \\
-   t \amp = 9
+   {\sqrt{t}} \amp = {6} \\
+   ({\sqrt{t}})^2 \amp = ({6})^2 \\
+   t \amp = 36
 \end{aligned}
     }</m></p>
 <p>Whenever we square both sides of an equation, we could create extraneous solutions. We must check our solution. This part is left as exercise.</p>

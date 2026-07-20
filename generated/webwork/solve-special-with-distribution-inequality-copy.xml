@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-solve-special-with-distribution-inequality-copy" assembly-id="solve-special-with-distribution-inequality-copy">
-  <static seed="1538">
-    <statement><p><m>{-4\mathopen{}\left(a-2\right)}\geq{-4\mathopen{}\left(a+9\right)}</m></p>
+  <static seed="1402">
+    <statement><p><m>{-5\mathopen{}\left(I+4\right)}\leq{-5\mathopen{}\left(I-4\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>

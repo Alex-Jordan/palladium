@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication30-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentsMultiplication30-copy">
-  <static seed="1670">
-    <statement><p><m>\displaystyle{({-9t^{19}})\cdot({-3t^{11}})}</m></p>
+  <static seed="1534">
+    <statement><p><m>\displaystyle{({-4t^{18}})\cdot({10t^{17}})}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>27t^{30}</m>
+        <m>-40t^{35}</m>
       </p>
     </answer>
     <solution><p>We <em>multiply</em> the coefficients, and <em>add</em> the exponents as follows: <me>\begin{aligned}
-           ({-9t^{19}})\cdot ({-3t^{11}})\amp =(-9 \cdot -3)\cdot t^{19+11}\\
-                             \amp =27t^{30}
+           ({-4t^{18}})\cdot ({10t^{17}})\amp =(-4 \cdot 10)\cdot t^{18+17}\\
+                             \amp =-40t^{35}
        \end{aligned}</me></p>
 </solution>
   </static>

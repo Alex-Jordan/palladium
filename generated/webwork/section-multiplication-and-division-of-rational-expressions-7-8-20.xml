@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-8-20" assembly-id="section-multiplication-and-division-of-rational-expressions-7-8-20">
-  <static seed="1335" source="Contrib/PCC/Math95/ComplexFractions/ComplexFractions3.pg">
+  <static seed="1199" source="Contrib/PCC/Math95/ComplexFractions/ComplexFractions3.pg">
     <statement><p>Simplify this expression, and if applicable, write the restricted domain.</p>
-<p><m>\displaystyle{\frac{{\frac{10m+7}{m}}}{{\frac{m+4}{m}}}}</m> = <fillin characters="40" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{\frac{{\frac{5p-8}{p}}}{{\frac{p-3}{p}}}}</m> = <fillin characters="40" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{10m+7}{m+4}, m\ne 0</m>
+        <m>\frac{5p-8}{p-3}, p\ne 0</m>
       </p>
     </answer>
-    <solution><p>To simply the complex fraction <m>\frac{{\frac{10m+7}{m}}}{{\frac{m+4}{m}}}</m>, we multiple the numerator and denominator with the common denominator of <m>{\frac{10m+7}{m}}</m> and <m>{\frac{m+4}{m}}</m>, which is <m>{m}</m>.</p>
+    <solution><p>To simply the complex fraction <m>\frac{{\frac{5p-8}{p}}}{{\frac{p-3}{p}}}</m>, we multiple the numerator and denominator with the common denominator of <m>{\frac{5p-8}{p}}</m> and <m>{\frac{p-3}{p}}</m>, which is <m>{p}</m>.</p>
 <p><m>\displaystyle{\begin{aligned}
-  \frac{{\frac{10m+7}{m}}}{{\frac{m+4}{m}}} \amp = \frac{{\frac{10m+7}{m}}\cdot{m}}{{\frac{m+4}{m}}\cdot{m}} \\
-    \amp = {\frac{10m+7}{m+4}, m\ne 0}
+  \frac{{\frac{5p-8}{p}}}{{\frac{p-3}{p}}} \amp = \frac{{\frac{5p-8}{p}}\cdot{p}}{{\frac{p-3}{p}}\cdot{p}} \\
+    \amp = {\frac{5p-8}{p-3}, p\ne 0}
 \end{aligned}
     }</m></p>
-<p>Since <m>{m}</m> was canceled, <m>m \ne 0</m> is in a lost domain condition.</p>
+<p>Since <m>{p}</m> was canceled, <m>p \ne 0</m> is in a lost domain condition.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/Math95/ComplexFractions/ComplexFractions3.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

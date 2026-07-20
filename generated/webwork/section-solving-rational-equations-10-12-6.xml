@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-12-6" assembly-id="section-solving-rational-equations-10-12-6">
-  <static seed="1613" source="Contrib/PCC/BasicAlgebra/RationalLiteralEquations/LiteralEquation280.pg">
-    <statement><p>Solve this equation for <m>B</m>:</p>
-<p><m>\displaystyle{ \frac{1}{8B} = \frac{1}{a} }</m></p>
+  <static seed="1477" source="Contrib/PCC/BasicAlgebra/RationalLiteralEquations/LiteralEquation280.pg">
+    <statement><p>Solve this equation for <m>A</m>:</p>
+<p><m>\displaystyle{ \frac{1}{3A} = \frac{1}{B} }</m></p>
 <p><fillin characters="7" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>B = \frac{a}{8}</m>
+        <m>A = \frac{B}{3}</m>
       </p>
     </answer>
-    <solution><p>To solve this equation, we multiple both sides with the common denominator <m>{8Ba}</m>:</p>
+    <solution><p>To solve this equation, we multiple both sides with the common denominator <m>{3AB}</m>:</p>
 <p><m>\displaystyle{\begin{aligned}
-   \frac{1}{8B} \amp = \frac{1}{a}  \\
-   \frac{1}{8B} \cdot 8Ba \amp = \frac{1}{a} \cdot 8Ba \\
-   a \amp = 8B \\
-   \frac{a}{8} \amp = \frac{8B}{8} \\
-   \frac{a}{8} \amp = B \\
-   B \amp = \frac{a}{8}
+   \frac{1}{3A} \amp = \frac{1}{B}  \\
+   \frac{1}{3A} \cdot 3AB \amp = \frac{1}{B} \cdot 3AB \\
+   B \amp = 3A \\
+   \frac{B}{3} \amp = \frac{3A}{3} \\
+   \frac{B}{3} \amp = A \\
+   A \amp = \frac{B}{3}
 \end{aligned}
 }</m></p>
 </solution>

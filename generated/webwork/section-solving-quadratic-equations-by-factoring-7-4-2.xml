@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-quadratic-equations-by-factoring-7-4-2" assembly-id="section-solving-quadratic-equations-by-factoring-7-4-2">
-  <static seed="801">
-    <statement><p>Give an example of a cubic equation that has three solutions: one solution is <m>x = 7\text{,}</m> the second solution is <m>x= -4\text{,}</m> and the third solution is <m>x = \frac{2}{3} \text{.}</m> Write your equation in standard form.</p>
+  <static seed="63">
+    <statement><p>Give an example of a cubic equation that has three solutions: one solution is <m>x = 10\text{,}</m> the second solution is <m>x= -8\text{,}</m> and the third solution is <m>x = \frac{2}{3} \text{.}</m> Write your equation in standard form.</p>
 <p><fillin characters="30" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>(x-7)*(x--4)*(x-2/3)=0</m>
+        <m>(x-10)*(x--8)*(x-2/3)=0</m>
       </p>
     </answer>
     <solution><p>I will first write a cubic equation in factored form: <m>(x-a)(x-b)(x-c) = 0</m> where <m>a,
-                b\text{,}</m> and <m>c</m> are the solutions of the equation. Thus, we can write the cubic equation as <m>(x-7)(x-(-4))(x - \frac{2}{3}) = 0</m> or <m>(x-7)(x + 4)(x - \frac{2}{3}) = 0 \text{.}</m></p>
+                b\text{,}</m> and <m>c</m> are the solutions of the equation. Thus, we can write the cubic equation as <m>(x-10)(x-(-8))(x - \frac{2}{3}) = 0</m> or <m>(x-10)(x + 8)(x - \frac{2}{3}) = 0 \text{.}</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_2_5_77.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/1_1_5_63.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
@@ -30,7 +30,7 @@
 ## EditionText1()
 ## AuthorText1()
 ## Section1(not reported)
-## Problem1(2.2.5.77)
+## Problem1(1.1.5.63)
 ## Author()
 ## Institution()
 ## Language(en-US)

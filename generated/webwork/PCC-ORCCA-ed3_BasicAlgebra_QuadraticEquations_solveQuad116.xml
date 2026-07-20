@@ -1,31 +1,31 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_QuadraticEquations_solveQuad116" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_QuadraticEquations_solveQuad116">
-  <static seed="837">
-    <statement><p><m>10 = 30 - (r - 5)^2</m></p>
+  <static seed="942">
+    <statement><p><m>3 = 78 - (y - 7)^2</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{5+2\sqrt{5},5-2\sqrt{5}\right\}</m>
+        <m>\left\{7+5\sqrt{3},7-5\sqrt{3}\right\}</m>
       </p>
     </answer>
     <solution><p>There are a few ways to solve quadratic equations- the easiest way to solve this particular type of problem is to use the <em>square root method</em>.</p>
 <p><m>\displaystyle{       \begin{aligned}
-   10 \amp = 30 - (r - 5)^2 \\
-   10 \mathbf{{}-30} \amp = 30 - (r - 5)^2 \mathbf{{}-30} \\
-   -20 \amp = - (r - 5)^2 \\
-   (-1)\cdot (-20) \amp = (-1)\cdot[- (r - 5)^2] \\
-   20 \amp = (r - 5)^2 \\
-   \pm\sqrt{20} \amp = \sqrt{(r - 5)^2} \\
-   \pm\sqrt{2^2\cdot5} \amp = r - 5 \\
-   \pm2\sqrt{5} \amp = r - 5  \\
-   5\pm2\sqrt{5} \amp = r \\
-   r\amp =5+2\sqrt{5}\text{ or } r=5-2\sqrt{5}\\
+   3 \amp = 78 - (y - 7)^2 \\
+   3 \mathbf{{}-78} \amp = 78 - (y - 7)^2 \mathbf{{}-78} \\
+   -75 \amp = - (y - 7)^2 \\
+   (-1)\cdot (-75) \amp = (-1)\cdot[- (y - 7)^2] \\
+   75 \amp = (y - 7)^2 \\
+   \pm\sqrt{75} \amp = \sqrt{(y - 7)^2} \\
+   \pm\sqrt{3\cdot5^2} \amp = y - 7 \\
+   \pm5\sqrt{3} \amp = y - 7  \\
+   7\pm5\sqrt{3} \amp = y \\
+   y\amp =7+5\sqrt{3}\text{ or } y=7-5\sqrt{3}\\
        \end{aligned}
     }</m></p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_3_4_33.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/2_4_7_33.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 # WeBWorK problem written by Chris Hughes, 2013
 # Portland Community College

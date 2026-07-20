@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-rationalizing-the-denominator-4-4" assembly-id="section-rationalizing-the-denominator-4-4">
-  <static seed="1911">
+  <static seed="1775">
     <statement><p>Rationalize the denominator in <m>\frac{\sqrt{3}}{3-2\sqrt{3}}\text{.}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>

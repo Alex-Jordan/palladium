@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication75-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication75-copy">
-  <static seed="2664">
-    <statement><p><m>\left({10t-7}\right)\left({t+10}\right)</m></p>
+  <static seed="2528">
+    <statement><p><m>\left({4t-1}\right)\left({t+8}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>10t^{2}+93t-70</m>
+        <m>4t^{2}+31t-8</m>
       </p>
     </answer>
     <solution><p>We use the FOIL technique: <alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast. <me>\begin{aligned}
-              \left({10t-7}\right)({t+10})\amp ={10t^{2}+100t-7t-70}\\
-                                \amp ={10t^{2}+93t-70}
+              \left({4t-1}\right)({t+8})\amp ={4t^{2}+32t-t-8}\\
+                                \amp ={4t^{2}+31t-8}
       \end{aligned}</me></p>
 </solution>
   </static>

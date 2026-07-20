@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-multiply-polynomials-2" assembly-id="multiply-polynomials-2">
-  <static seed="2681">
-    <statement><p><m>{-\left(t-1\right)\mathopen{}\left(t-5\right)}</m></p>
+  <static seed="2545">
+    <statement><p><m>{-2\mathopen{}\left(t+6\right)\mathopen{}\left(t+10\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-t^{2}+6t-5</m>
+        <m>-2t^{2}-32t-120</m>
       </p>
     </answer>
-    <solution><p>We could first distribute <m>-1</m> into <m>{t-1}</m> to get <m>{-t+1}\text{,}</m> and then multiply <m>{-t+1}</m> and <m>{t-5}\text{:}</m></p>
+    <solution><p>We could first distribute <m>-2</m> into <m>{t+6}</m> to get <m>{-2t-12}\text{,}</m> and then multiply <m>{-2t-12}</m> and <m>{t+10}\text{:}</m></p>
 <p><me>\begin{aligned}
-{-\left(t-1\right)\mathopen{}\left(t-5\right)}\amp=({-t+1})({t-5})\\
-\amp={-t^{2}+6t-5}
+{-2\mathopen{}\left(t+6\right)\mathopen{}\left(t+10\right)}\amp=({-2t-12})({t+10})\\
+\amp={-2t^{2}-32t-120}
 \end{aligned}</me></p>
-<p>We could also first multiply <m>{t-1}</m> and <m>{t-5}</m> to get <m>{t^{2}-6t+5}\text{,}</m> and then distribute <m>-1</m> into <m>{t^{2}-6t+5}\text{:}</m></p>
+<p>We could also first multiply <m>{t+6}</m> and <m>{t+10}</m> to get <m>{t^{2}+16t+60}\text{,}</m> and then distribute <m>-2</m> into <m>{t^{2}+16t+60}\text{:}</m></p>
 <p><me>\begin{aligned}
-{-\left(t-1\right)\mathopen{}\left(t-5\right)}\amp={-\left(t^{2}-6t+5\right)}\\
-\amp={-t^{2}+6t-5}
+{-2\mathopen{}\left(t+6\right)\mathopen{}\left(t+10\right)}\amp={-2\mathopen{}\left(t^{2}+16t+60\right)}\\
+\amp={-2t^{2}-32t-120}
 \end{aligned}</me></p>
 </solution>
   </static>

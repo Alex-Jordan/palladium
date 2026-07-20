@@ -1,0 +1,86 @@
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.2.20)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Point");
+$vertex = Point("(3,-8)");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Where is the vertex for the quadratic function with formula [`f(x)=2(x-1)(x-5)\text{?}`]
+
+[_]{$vertex}{6}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+We can see that the roots are [`1`] and [`5\text{.}`] So [`h`] will be their average:
+
+[```
+              h=\frac{1+5}{2}=\frac{6}{2}=3
+            ```]
+
+And then we can find [`k`] by evaluating [`f(3)\text{.}`]
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+k\amp=f(3)\\
+\amp=2(3-1)(3-5)\\
+\amp=2(2)(-2)\\
+\amp=-8
+\end{aligned}
+```]
+
+So the vertex is at [`(3,-8)\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();

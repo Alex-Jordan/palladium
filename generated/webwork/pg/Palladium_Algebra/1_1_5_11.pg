@@ -27,9 +27,8 @@ loadMacros(
   "PGstandard.pl",
   "PGML.pl",
   "AnswerFormatHelp.pl",
-  "PCCmacros.pl",
-  "parserLinearRelation.pl",
-  "randomPerson.pl",
+  "contextFiniteSolutionSets.pl",
+  "contextForm.pl",
   "PGcourse.pl",
 );
 COMMENT('Authored in PreTeXt');
@@ -42,25 +41,25 @@ TEXT(beginproblem());
 ############################################################
 # PG Setup Code
 ############################################################
-$name = randomPerson();
-$initial = random(55,62);
-$rate = random(20,30);
-$final = 212;
-Context("LinearRelation")->variables->are(t => 'Real');
-$equation = LinearRelation("$initial + $rate t = $final");
+($r,$s) = random_subset(2,1..9);
+$r *= -1;
+$s *= -1;
+Context()->noreduce('(-x)-y');
+$right = random(1,9);
+$left = Formula("x^2 - ($r+$s)x + ($r*$s+$right)")->reduce;
+Context("FiniteSolutionSets");
+$sols = Formula("{$r,$s}");
 
 ############################################################
 # Body
 ############################################################
 
 BEGIN_PGML
-Write an equation to model the scenario. There is no need to solve the equation.
+Solve the equation by factoring.
 
-[$name] puts a pot of water from the tap onto the stove and turns the burner all the way up. The water temperature starts at [`[$initial]\,^{\circ}F`] and climbs steadily up to the boiling point of [`[$final]\,^{\circ}F\text{,}`] raising at a rate of [`[$rate]\,\frac{^{\circ}F}{\text{min}}\text{.}`] How long will it take for the pot to boil? Write an equation to model this scenario. There is no need to solve it.
+[`[$left] = [$right]`]
 
-[@KeyboardInstructions('Use [|t|]* as the variable.')@]**
-
-[_]{$equation}{20}
+[_]{$sols}{16}
 
 END_PGML
 

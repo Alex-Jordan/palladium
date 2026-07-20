@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-graphing-quadratic-expressions-8-1-5" assembly-id="section-graphing-quadratic-expressions-8-1-5">
-  <static seed="1025" source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticEquations/solveQuad290.pg">
+  <static seed="558" source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticEquations/solveQuad290.pg">
     <statement><p>Solve the equation.</p>
-<p><m>{x^{2}-12x+36}=0</m></p>
+<p><m>{x^{2}-20x+100}=0</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{6\right\}</m>
+        <m>\left\{10\right\}</m>
       </p>
     </answer>
     <solution><p>There are a few ways to solve quadratic equations- the easiest way to solve this particular 
 type of problem is to use the <em>zero product principle</em>.</p>
 <p><m>\begin{aligned}
-                 {x^{2}-12x+36}=0 \amp \Rightarrow {\left(x-6\right)\mathopen{}\left(x-6\right)}=0 \\
-                                    \amp  \Rightarrow {\left\{6\right\}}
+                 {x^{2}-20x+100}=0 \amp \Rightarrow {\left(x-10\right)\mathopen{}\left(x-10\right)}=0 \\
+                                    \amp  \Rightarrow {\left\{10\right\}}
        \end{aligned}</m></p>
 <p>In this problem there is just <alert>one</alert>, <em>repeated</em> solution.</p>
 <p>The solution can be checked by substituting it into the original equation- this is left as an exercise.</p>

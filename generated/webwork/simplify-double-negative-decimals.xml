@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-double-negative-decimals" assembly-id="simplify-double-negative-decimals">
-  <static seed="2370">
-    <statement><p><m>{1.3\mathopen{}\left(8.4v-4.8\right)-0.7\mathopen{}\left(3.8v-2.3\right)}</m></p>
+  <static seed="2234">
+    <statement><p><m>{4.1\mathopen{}\left(1.1s-2.3\right)-8.9\mathopen{}\left(6.9s-0.4\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>8.26v+\left(-4.63\right)</m>
+        <m>-56.9s+\left(-5.87\right)</m>
       </p>
     </answer>
   </static>

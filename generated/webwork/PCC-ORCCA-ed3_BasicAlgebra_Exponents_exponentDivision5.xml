@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentDivision5" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_exponentDivision5">
-  <static seed="1677">
-    <statement><p><m>-35^0</m></p>
+  <static seed="1541">
+    <statement><p><m>-32^0</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
@@ -10,9 +10,9 @@
       </p>
     </answer>
     <solution><p>The zero-exponent definition says that <m>a^0=1</m> where <m>a</m> is any real number; notice that 
-the exponent applies to <m>35</m>, <em>not</em> to <m>\left(-35\right)</m> so</p>
+the exponent applies to <m>32</m>, <em>not</em> to <m>\left(-32\right)</m> so</p>
 <p><m>\begin{aligned}
-               -35^0 \amp  = (-1)\cdot \left(35\right)^0\\
+               -32^0 \amp  = (-1)\cdot \left(32\right)^0\\
                             \amp  = -1\cdot 1\\
                             \amp  = -1
         \end{aligned}</m></p>

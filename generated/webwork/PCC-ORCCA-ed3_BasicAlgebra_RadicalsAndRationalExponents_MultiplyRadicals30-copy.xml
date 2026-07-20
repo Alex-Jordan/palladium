@@ -1,27 +1,27 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_MultiplyRadicals30-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_MultiplyRadicals30-copy">
-  <static seed="1833">
-    <statement><p><m>\displaystyle{5\sqrt{6} \cdot 5\sqrt{75}}</m></p>
+  <static seed="1697">
+    <statement><p><m>\displaystyle{5\sqrt{6} \cdot 2\sqrt{12}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>375\sqrt{2}</m>
+        <m>60\sqrt{2}</m>
       </p>
     </answer>
     <solution><p>First, we multiply coefficients and radicals:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   5\sqrt{6} \cdot 5\sqrt{75}
-      \amp = 5 \cdot 5 \cdot \sqrt{6} \cdot \sqrt{75} \\
-      \amp = {25} \sqrt{6 \cdot 75}
+   5\sqrt{6} \cdot 2\sqrt{12}
+      \amp = 5 \cdot 2 \cdot \sqrt{6} \cdot \sqrt{12} \\
+      \amp = {10} \sqrt{6 \cdot 12}
 \end{aligned}
     }</m></p>
 <p>Next, prime factor each number inside the radical, and the take out pairs. The rest of the process is:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   {25} \sqrt{6 \cdot 75}
-   \amp =  {25} \sqrt{ 2 \cdot 3 \cdot 3 \cdot 5 \cdot 5 } \\
-   \amp =  25 \cdot3 \cdot 5 \sqrt{2}\\
-   \amp = {375} \sqrt{2}
+   {10} \sqrt{6 \cdot 12}
+   \amp =  {10} \sqrt{ 2 \cdot 3 \cdot 2 \cdot 2 \cdot 3 } \\
+   \amp =  10 \cdot2 \cdot 3 \sqrt{2}\\
+   \amp = {60} \sqrt{2}
 \end{aligned}
     }</m></p>
 </solution>

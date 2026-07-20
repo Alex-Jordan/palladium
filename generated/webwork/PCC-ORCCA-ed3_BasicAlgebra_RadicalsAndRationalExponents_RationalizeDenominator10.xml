@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator10" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator10">
-  <static seed="1920">
-    <statement><p><m>\displaystyle{ \frac{5}{\sqrt{{49}}} }</m></p>
+  <static seed="1784">
+    <statement><p><m>\displaystyle{ \frac{5}{\sqrt{{81}}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{5}{7}</m>
+        <m>\frac{5}{9}</m>
       </p>
     </answer>
     <solution><p>Because the denominator in this problem is a perfect square, we can easily evaluate the square root:</p>
-<p><m>\displaystyle{ \frac{5}{\sqrt{{49}}} = \frac{5}{7} }</m></p>
+<p><m>\displaystyle{ \frac{5}{\sqrt{{81}}} = \frac{5}{9} }</m></p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/4_3_4_9.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

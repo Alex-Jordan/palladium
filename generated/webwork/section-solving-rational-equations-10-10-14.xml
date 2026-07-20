@@ -1,36 +1,36 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-10-14" assembly-id="section-solving-rational-equations-10-10-14">
-  <static seed="1585" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations25.pg">
+  <static seed="1449" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations25.pg">
     <statement><p>Solve the equation.</p>
-<p><m>\displaystyle{ {\frac{y}{3y-3}-\frac{5}{y-1}}={1}  }</m></p>
+<p><m>\displaystyle{ {\frac{y}{4y+12}-\frac{3}{y+3}}={4}  }</m></p>
 <p><fillin characters="31" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{-6\right\}</m>
+        <m>\left\{-4\right\}</m>
       </p>
     </answer>
-    <solution><p>To clear fractions in an equation, multiply each side of the equation by a common denominator. For this problem, a common denominator is <m>{3\mathopen{}\left(y-1\right)}</m>.</p>
+    <solution><p>To clear fractions in an equation, multiply each side of the equation by a common denominator. For this problem, a common denominator is <m>{4\mathopen{}\left(y+3\right)}</m>.</p>
 <p><m>\displaystyle{\begin{aligned}
-  {\frac{y}{3y-3}-\frac{5}{y-1}} \amp = {1} \\
-  {\frac{y}{3\mathopen{}\left(y-1\right)}-\frac{5}{y-1}} \amp = {1} \\
-  {\frac{y}{3\mathopen{}\left(y-1\right)}\cdot 3\mathopen{}\left(y-1\right)-\frac{5}{y-1}\cdot 3\mathopen{}\left(y-1\right)} \amp = {3\mathopen{}\left(y-1\right)} \\
-  {y-15} \amp = {3y-3} \\
-  {y-3y} \amp = {-3-\left(-15\right)} \\
-  {-2y} \amp = {12} \\
-  \frac{{-2y}}{-2} \amp = \frac{{12}}{-2} \\
-  y \amp = -6
+  {\frac{y}{4y+12}-\frac{3}{y+3}} \amp = {4} \\
+  {\frac{y}{4\mathopen{}\left(y+3\right)}-\frac{3}{y+3}} \amp = {4} \\
+  {\frac{y}{4\mathopen{}\left(y+3\right)}\cdot 4\mathopen{}\left(y+3\right)-\frac{3}{y+3}\cdot 4\mathopen{}\left(y+3\right)} \amp = {16\mathopen{}\left(y+3\right)} \\
+  {y-12} \amp = {16y+48} \\
+  {y-16y} \amp = {48-\left(-12\right)} \\
+  {-15y} \amp = {60} \\
+  \frac{{-15y}}{-15} \amp = \frac{{60}}{-15} \\
+  y \amp = -4
 \end{aligned}
     }</m></p>
 <p>We must check solutions when we solve rational equations. In the original equation, both denominators cannot be <m>0</m>. We set them to <m>0</m>, so we can find out what values to exclude from the solution set.</p>
 <p><m>\displaystyle{\begin{aligned}
-   \amp 3y - 3 = 0 \amp \;\amp  y - 1=0 \\
-   \amp 3y = 3 \amp \;\amp  y=1 \\
-   \amp \frac{3y}{3} = \frac{3}{3} \\
-   \amp y = 1 \\
+   \amp 4y+12 = 0 \amp \;\amp  y+3=0 \\
+   \amp 4y = -12 \amp \;\amp  y=-3 \\
+   \amp \frac{4y}{4} = \frac{-12}{4} \\
+   \amp y = -3 \\
 \end{aligned}
     }</m></p>
-<p>We must exclude <m>1</m> from the solution set. This value is not in the solution set we got, so the final solution is <m>y=-6</m>.</p>
+<p>We must exclude <m>-3</m> from the solution set. This value is not in the solution set we got, so the final solution is <m>y=-4</m>.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations25.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

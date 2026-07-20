@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-inequality-solution-radical-integer-copy" assembly-id="check-inequality-solution-radical-integer-copy">
-  <static seed="2484">
-    <statement><p>Is <m>1</m> a solution to <m>{7-x}\gt{\sqrt{36x}}\text{?}</m></p>
+  <static seed="2348">
+    <statement><p>Is <m>7</m> a solution to <m>{\sqrt{11x+4}}\lt{x+2}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>7-x</m></cell>
-<cell><m>\gt</m></cell>
-<cell><m>\sqrt{36x}</m></cell>
+<cell><m>\sqrt{11x+4}</m></cell>
+<cell><m>\lt</m></cell>
+<cell><m>x+2</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
-<cell><m>\wonder{\gt}</m></cell>
+<cell><m>\wonder{\lt}</m></cell>
 <cell><fillin characters="3" name="AnSwEr0002"/>
 </cell>
 </row>
@@ -24,12 +24,12 @@
 </statement>
     <answer>
       <p>
-        <m>6</m>
+        <m>9</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>6</m>
+        <m>9</m>
       </p>
     </answer>
     <answer>

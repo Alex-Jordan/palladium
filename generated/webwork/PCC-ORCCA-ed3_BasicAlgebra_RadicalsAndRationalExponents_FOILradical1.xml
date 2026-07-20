@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_FOILradical1" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_FOILradical1">
-  <static seed="1866">
-    <statement><p><m>\displaystyle{\left(6 - {\sqrt{11}}\right)\left(6 + {\sqrt{11}}\right) }</m></p>
+  <static seed="1730">
+    <statement><p><m>\displaystyle{\left(8 - {\sqrt{7}}\right)\left(8 + {\sqrt{7}}\right) }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>25</m>
+        <m>57</m>
       </p>
     </answer>
     <solution><p>Use the FOIL method to multiply these binomial expressions together, or notice
@@ -14,10 +14,10 @@ that we have the difference of squares formula:</p>
 <p><m>\displaystyle{ (A+B)(A-B)=A^{2}-B^{2} }</m></p>
 <p>We have:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-    (6 - {\sqrt{11}})(6 + {\sqrt{11}}) 
-               \amp = 6^2 - \left({\sqrt{11}}\right)^2 \\
-               \amp = 36 - 11 \\
-               \amp = {25}
+    (8 - {\sqrt{7}})(8 + {\sqrt{7}}) 
+               \amp = 8^2 - \left({\sqrt{7}}\right)^2 \\
+               \amp = 64 - 7 \\
+               \amp = {57}
 \end{aligned}
     }</m></p>
 </solution>

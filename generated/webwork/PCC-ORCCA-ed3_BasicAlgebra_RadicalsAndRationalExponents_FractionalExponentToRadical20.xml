@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_FractionalExponentToRadical20" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_FractionalExponentToRadical20">
-  <static seed="2002">
-    <statement><p><m>n^{-\frac{2}{5}}</m></p>
+  <static seed="1866">
+    <statement><p><m>n^{-\frac{3}{7}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{1}{\sqrt[5]{n^{2}}}</m>
+        <m>\frac{1}{\sqrt[7]{n^{3}}}</m>
       </p>
     </answer>
     <solution><p>First, recall how to handle negative exponents:</p>
@@ -16,10 +16,10 @@
 <p>For this problem, we have:</p>
 <p><m>\displaystyle{ 
 \begin{aligned}[t]
-   \amp \phantom{{}=}n^{-\frac{2}{5}} \\
-   \amp = \frac{1}{n^{\frac{2}{5}}}\\
-   \amp = \frac{1}{(n^2)^{\frac{1}{5}}} \\
-   \amp = \frac{1}{\sqrt[5]{n^2}} 
+   \amp \phantom{{}=}n^{-\frac{3}{7}} \\
+   \amp = \frac{1}{n^{\frac{3}{7}}}\\
+   \amp = \frac{1}{(n^3)^{\frac{1}{7}}} \\
+   \amp = \frac{1}{\sqrt[7]{n^3}} 
 \end{aligned}
     }</m></p>
 </solution>

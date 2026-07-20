@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-add-two-distributions-copy" assembly-id="simplify-add-two-distributions-copy">
-  <static seed="2361">
-    <statement><p><m>{4\mathopen{}\left(2v+9\right)+3\mathopen{}\left(7v+6\right)}</m></p>
+  <static seed="2225">
+    <statement><p><m>{6\mathopen{}\left(4s+7\right)+9\mathopen{}\left(2s+3\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>29v+54</m>
+        <m>42s+69</m>
       </p>
     </answer>
   </static>

@@ -1,36 +1,36 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot60-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateSquareRoot60-copy">
-  <static seed="1817">
+  <static seed="1681">
     <introduction/>
     <task>
-      <statement><p><m>\displaystyle{\sqrt{25}-\sqrt{16}}</m></p>
+      <statement><p><m>\displaystyle{\sqrt{25}-\sqrt{9}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>1</m>
+          <m>2</m>
         </p>
       </answer>
       <solution><p>[``
 \begin{aligned}[t]
-   \sqrt{25}-\sqrt{16} &amp;= 5 - 4 \\
-                             &amp;= 1
+   \sqrt{25}-\sqrt{9} &amp;= 5 - 3 \\
+                             &amp;= 2
 \end{aligned}</p>
 </solution>
     </task>
     <task>
-      <statement><p><m>\displaystyle{\sqrt{25-16}}</m></p>
+      <statement><p><m>\displaystyle{\sqrt{25-9}}</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>3</m>
+          <m>4</m>
         </p>
       </answer>
       <solution><p><m>\displaystyle{
 \begin{aligned}[t]
-   \sqrt{25-16} \amp =  \sqrt{9} \\
-                             \amp = {3}
+   \sqrt{25-9} \amp =  \sqrt{16} \\
+                             \amp = {4}
 \end{aligned}
     }</m></p>
 </solution>

@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-linear-equation-fractions-two-with-gcf-copy" assembly-id="linear-equation-fractions-two-with-gcf-copy">
-  <static seed="1496">
-    <statement><p><m>{{\frac{3}{4}}x-7} = {-{\frac{1}{10}}x+7}</m></p>
+  <static seed="1360">
+    <statement><p><m>{3x+{\frac{8}{15}}} = {{\frac{5}{6}}x-6}</m></p>
 <p><fillin characters="4" name="AnSwEr0001"/></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>20</m>
+        <m>30</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left\{\frac{280}{17}\right\}</m>
+        <m>\left\{\frac{-196}{65}\right\}</m>
       </p>
     </answer>
   </static>

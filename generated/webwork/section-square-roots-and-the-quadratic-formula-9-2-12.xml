@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-square-roots-and-the-quadratic-formula-9-2-12" assembly-id="section-square-roots-and-the-quadratic-formula-9-2-12">
+  <static seed="1064">
+    <statement><p>You are ready to self-publish a book online. If the book were free, you estimate <m>50000</m> would order a copy. If you increase the price to <m>p</m> dollars per book you will have fewer orders, and after studying similar book sales you estimate you would have <m>{50000-1000p}</m> sales. What is the largest price that you could set to end up with a revenue of <m>{\$60{,}000}\text{?}</m></p>
+<p><fillin characters="20" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\$48.77</m>
+      </p>
+    </answer>
+    <solution><p>If you set the price at <m>p</m> dollars per book, your revenue will be <m>(\text{number sold})\cdot\text{price}\text{,}</m> which is <m>({50000-1000p})p\text{,}</m> which simplifies to <m>{-1000p^{2}+50000p}\text{.}</m> We need to solve the equation <m>{-1000p^{2}+50000p}=60000\text{.}</m> In standard form, this is <m>{-1000p^{2}+50000p-60000}=0\text{,}</m> and the quadratic formula says:</p>
+<p><me>\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{-50000\pm\sqrt{2500000000-4(-1000)(-60000)}}{2(-1000)}\\
+\amp=\frac{-50000\pm\sqrt{2260000000}}{-2000}\\
+\amp\approx\frac{-50000\pm{47539.5}}{-2000}\\
+x\approx\amp\frac{-50000-{47539.5}}{-2000}\quad\text{or}\quad x\approx\frac{-50000+{47539.5}}{-2000}\\
+x\approx\amp{48.7697}\quad\text{or}\quad x\approx{1.23027}
+\end{aligned}</me></p>
+<p>The possible solutions are <m>{48.7697}</m> and <m>{1.23027}\text{.}</m> They are both valid solutions, but the question was to find the <em>largest</em> price we could set to reach a profit of <m>\text{.}</m> So we should set the price to be <m>{\$48.77}\text{.}</m></p>
+</solution>
+  </static>
+  <rendering-data problemSource="Palladium_Algebra/2_4_7_155.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.4.7.155)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextCurrency.pl",
+  "contextForm.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context("Currency")->currency->addSymbol("dollars", "dollar");
+Context()->variables->are(p => 'Real');
+Context()->flags->set(trimTrailingZeros => 1);
+Context()->noreduce('(-x)+y', '(-x)-y');
+$maxSales = 50000;
+$desiredRevenue = random(40000,60000,10000);
+$desiredRevenueC = Currency($desiredRevenue);
+# no one will buy it for $50;
+$rate = $maxSales/50;
+$sales = Formula("$maxSales - $rate p")->reduce;
+$revenue = Formula("-$rate p^2 + $maxSales p")->reduce;
+$a = -$rate;
+$b = $maxSales;
+$c = -$desiredRevenue;
+$f = Formula("$a p^2 + $b p + $c")->reduce;
+$negb = -$b;
+$bsquared = $b*$b;
+$discriminant = $bsquared - 4*$a*$c;
+$sqrtdisc = Real(sqrt($discriminant));
+$a2 = 2*$a;
+$r = ($negb - $sqrtdisc)/$a2;
+$s = ($negb + $sqrtdisc)/$a2;
+$rC = Currency(Round($r,2));
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+You are ready to self-publish a book online. If the book were free, you estimate [`[$maxSales]`] would order a copy. If you increase the price to [`p`] dollars per book you will have fewer orders, and after studying similar book sales you estimate you would have [`[$sales]`] sales. What is the largest price that you could set to end up with a revenue of [`[$desiredRevenueC]\text{?}`]
+
+[_]{$rC}{20}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+If you set the price at [`p`] dollars per book, your revenue will be [`(\text{number sold})\cdot\text{price}\text{,}`] which is [`([$sales])p\text{,}`] which simplifies to [`[$revenue]\text{.}`] We need to solve the equation [`[$revenue]=[$desiredRevenue]\text{.}`] In standard form, this is [`[$f]=0\text{,}`] and the quadratic formula says:
+
+[```\newcommand{\amp}{&}
+\begin{aligned}
+x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\amp=\frac{[$negb]\pm\sqrt{[$bsquared]-4([$a])([$c])}}{2([$a])}\\
+\amp=\frac{[$negb]\pm\sqrt{[$discriminant]}}{[$a2]}\\
+\amp\approx\frac{[$negb]\pm[$sqrtdisc]}{[$a2]}\\
+x\approx\amp\frac{[$negb]-[$sqrtdisc]}{[$a2]}\quad\text{or}\quad x\approx\frac{[$negb]+[$sqrtdisc]}{[$a2]}\\
+x\approx\amp[$r]\quad\text{or}\quad x\approx[$s]
+\end{aligned}
+```]
+
+The possible solutions are [`[$r]`] and [`[$s]\text{.}`] They are both valid solutions, but the question was to find the _largest_ price we could set to reach a profit of [`[$desiredProfitC]\text{.}`] So we should set the price to be [`[$rC]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+</webwork-reps>

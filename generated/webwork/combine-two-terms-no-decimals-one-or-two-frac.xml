@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-combine-two-terms-no-decimals-one-or-two-frac" assembly-id="combine-two-terms-no-decimals-one-or-two-frac">
-  <static seed="2272">
-    <statement><p><m>{-{\frac{3}{2}}C+36C}</m></p>
+  <static seed="2136">
+    <statement><p><m>{{\frac{5}{2}}z+{\frac{3}{2}}z}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{69}{2}C</m>
+        <m>4z</m>
       </p>
     </answer>
   </static>

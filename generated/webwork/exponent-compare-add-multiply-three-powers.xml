@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-compare-add-multiply-three-powers" assembly-id="exponent-compare-add-multiply-three-powers">
-  <static seed="2610">
+  <static seed="2474">
     <introduction/>
     <task>
-      <statement><p><m>{z^{7}+z^{9}+z^{7}}</m></p>
+      <statement><p><m>{y^{3}+y^{9}+y^{9}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>2z^{7}+z^{9}</m>
+          <m>2y^{9}+y^{3}</m>
         </p>
       </answer>
     </task>
     <task>
-      <statement><p><m>z^7\cdot z^9\cdot z^7</m></p>
+      <statement><p><m>y^3\cdot y^9\cdot y^9</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>z^{23}</m>
+          <m>y^{21}</m>
         </p>
       </answer>
     </task>

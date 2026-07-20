@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-set-builder-notation-to-graph-and-interval-notation-closed-infinite" assembly-id="set-builder-notation-to-graph-and-interval-notation-closed-infinite">
-  <static seed="2415">
-    <statement><p><m>{\{ x \mid x \ge -1 \}}</m></p>
+  <static seed="2279">
+    <statement><p><m>{\{ x \mid x \ge -2 \}}</m></p>
 <p><fillin name="AnSwEr0001"/></p>
 <p><fillin characters="12" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{\text{interval}, \left[-1,\infty \right)\right\}</m>
+        <m>\left\{\text{interval}, \left[-2,\infty \right)\right\}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left[-1,\infty \right)</m>
+        <m>\left[-2,\infty \right)</m>
       </p>
     </answer>
   </static>

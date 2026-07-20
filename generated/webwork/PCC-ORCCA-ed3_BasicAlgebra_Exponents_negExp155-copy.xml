@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp155-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp155-copy">
-  <static seed="1772">
-    <statement><p><m>\left(x^{-5}r^{13}\right)^{-5}</m></p>
+  <static seed="1636">
+    <statement><p><m>\left(x^{-13}y^{13}\right)^{-4}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{x^{25}}{r^{65}}</m>
+        <m>\frac{x^{52}}{y^{52}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\displaystyle{\frac{a^m}{a^n} = a^{m-n}}</m> and <m>\left(a^m\right)^{n}=a^{mn}</m></p>
 <p><m>\begin{aligned}
-                 \left(x^{-5}r^{13}\right)^{-5}
-                      \amp = x^{(-5)\cdot(-5)}r^{13\cdot(-5)}\\
-                      \amp = x^{25}r^{-65}\\
-                                    \amp  = {\frac{x^{25}}{r^{65}}}
+                 \left(x^{-13}y^{13}\right)^{-4}
+                      \amp = x^{(-13)\cdot(-4)}y^{13\cdot(-4)}\\
+                      \amp = x^{52}y^{-52}\\
+                                    \amp  = {\frac{x^{52}}{y^{52}}}
            \end{aligned}</m></p>
 </solution>
   </static>

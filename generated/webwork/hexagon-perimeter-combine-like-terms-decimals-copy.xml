@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-hexagon-perimeter-combine-like-terms-decimals-copy" assembly-id="hexagon-perimeter-combine-like-terms-decimals-copy">
-  <static seed="2301">
+  <static seed="2165">
     <statement><!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/hexagon-perimeter-combine-like-terms-decimals-copy-image-1" width="94%">
-<shortdescription>a quadrilateral whose sides are labeled (P), (7.8*g), (8.7*g), (27*P), (29*g), and (70*P).</shortdescription>
+<shortdescription>a quadrilateral whose sides are labeled (L), (9.2*v), (9.6*L), (42*L), (45*v), and (62*v).</shortdescription>
 </image>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>98P+45.5g</m>
+        <m>52.6L+116.2v</m>
       </p>
     </answer>
-    <solution><p>The perimeter is the result from adding the six sides together: <m>8.7g + 27P + 29g + 70P + P + 7.8g\text{.}</m> There are three <m>P</m>-terms and three <m>g</m>-terms. We combine each triple of like terms and the perimeter is <m>{98P+45.5g}\text{.}</m></p>
+    <solution><p>The perimeter is the result from adding the six sides together: <m>L + 42L + 45v + 62v + 9.6L + 9.2v\text{.}</m> There are three <m>L</m>-terms and three <m>v</m>-terms. We combine each triple of like terms and the perimeter is <m>{52.6L+116.2v}\text{.}</m></p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/Appendices/A_3_5_71.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

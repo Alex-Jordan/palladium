@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-bed-bugs-check-solution" assembly-id="bed-bugs-check-solution">
-  <static seed="2502">
-    <statement><p>To kill bedbug eggs using heat, they must be exposed to at least <m>118^{\circ}F</m> for at least 90 minutes. If you only know the Celsius temperature <m>C\text{,}</m> then to kill the eggs means we have the inequality <m>\frac{9}{5}C+32\geq118\text{.}</m> You have some infested blankets that you put in a sauna for 90 minutes, but the sauna temperature is <m>35^{\circ}C\text{.}</m> Was this hot enough to kill the eggs?</p>
+  <static seed="2366">
+    <statement><p>To kill bedbug eggs using heat, they must be exposed to at least <m>118^{\circ}F</m> for at least 90 minutes. If you only know the Celsius temperature <m>C\text{,}</m> then to kill the eggs means we have the inequality <m>\frac{9}{5}C+32\geq118\text{.}</m> You have some infested blankets that you put in a sauna for 90 minutes, but the sauna temperature is <m>55^{\circ}C\text{.}</m> Was this hot enough to kill the eggs?</p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
@@ -23,12 +23,12 @@
 </statement>
     <answer>
       <p>
-        <m>95</m>
+        <m>131</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\text{No, it is not a solution.}</m>
+        <m>\text{Yes, it is a solution.}</m>
       </p>
     </answer>
   </static>

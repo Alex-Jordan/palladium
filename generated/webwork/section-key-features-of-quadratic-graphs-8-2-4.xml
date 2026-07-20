@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-key-features-of-quadratic-graphs-8-2-4" assembly-id="section-key-features-of-quadratic-graphs-8-2-4">
-  <static seed="987" source="Library/FortLewis/Algebra/1-1-Expressions/MCH1-1-1-02-Expressions.pg">
-    <statement><p>Evaluate the expression <m>-16t^{2}+64t+128</m> when <m>t=-5</m>.</p>
+  <static seed="520" source="Library/FortLewis/Algebra/1-1-Expressions/MCH1-1-1-02-Expressions.pg">
+    <statement><p>Evaluate the expression <m>-16t^{2}+64t+128</m> when <m>t=3</m>.</p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-592</m>
+        <m>176</m>
       </p>
     </answer>
   </static>

@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-multiplication-and-division-of-rational-expressions-7-8-12" assembly-id="section-multiplication-and-division-of-rational-expressions-7-8-12">
-  <static seed="1327" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions20.pg">
+  <static seed="1191" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions20.pg">
     <statement><p>Simplify this expression, and if applicable, write the restricted domain.</p>
-<p><m>\displaystyle{{16t} \div {\frac{4}{t^{3}}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{6t} \div {\frac{3}{t^{3}}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>4t^{4}, t\ne 0</m>
+        <m>2t^{4}, t\ne 0</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   {16t} \div {\frac{4}{t^{3}}} 
-      \amp = {16t} \cdot {\frac{t^{3}}{4}} \\
-      \amp = {4t^{4}, t\ne 0}
+   {6t} \div {\frac{3}{t^{3}}} 
+      \amp = {6t} \cdot {\frac{t^{3}}{3}} \\
+      \amp = {2t^{4}, t\ne 0}
 \end{aligned}
     }</m></p>
 </solution>

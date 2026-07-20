@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty40" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RadicalDivisionProperty40">
-  <static seed="1838">
-    <statement><p><m>\displaystyle{ {\sqrt{\frac{8}{11}}} \cdot {\sqrt{\frac{4}{11}}} }</m></p>
+  <static seed="1702">
+    <statement><p><m>\displaystyle{ {\sqrt{\frac{12}{13}}} \cdot {\sqrt{\frac{4}{13}}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{4\sqrt{2}}{11}</m>
+        <m>\frac{4\sqrt{3}}{13}</m>
       </p>
     </answer>
     <solution><p>First, we use the multiplication property of radicals:</p>
@@ -14,9 +14,9 @@
 <p>We have:</p>
 <p><m>\displaystyle{ 
 \begin{aligned}[t]
-   {\sqrt{\frac{8}{11}}} \cdot {\sqrt{\frac{4}{11}}}
-       \amp = \sqrt{ \frac{8}{11} \cdot \frac{4}{11} } \\
-       \amp = \sqrt{ \frac{32}{121} }
+   {\sqrt{\frac{12}{13}}} \cdot {\sqrt{\frac{4}{13}}}
+       \amp = \sqrt{ \frac{12}{13} \cdot \frac{4}{13} } \\
+       \amp = \sqrt{ \frac{48}{169} }
 \end{aligned}
     }</m></p>
 <p>Next, we will use the division property of radicals:</p>
@@ -24,20 +24,20 @@
 <p>We have:</p>
 <p><m>\displaystyle{ 
 \begin{aligned}[t]
-   \sqrt{ \frac{32}{121}}
-      \amp = \frac{\sqrt{32}} {\sqrt{121}} \\
-      \amp = \frac{\sqrt{32}} {11} \\
+   \sqrt{ \frac{48}{169}}
+      \amp = \frac{\sqrt{48}} {\sqrt{169}} \\
+      \amp = \frac{\sqrt{48}} {13} \\
 \end{aligned}
     }</m></p>
-<p>We must continue by simplifying the radical <m>\sqrt{32}</m>:</p>
+<p>We must continue by simplifying the radical <m>\sqrt{48}</m>:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   \sqrt{32} \amp = \sqrt{2 \cdot 2 \cdot 2 \cdot 2 \cdot 2}  \\
-            \amp =2 \cdot 2 \sqrt{2} \\
-            \amp =4 \sqrt{2}
+   \sqrt{48} \amp = \sqrt{2 \cdot 2 \cdot 2 \cdot 2 \cdot 3}  \\
+            \amp =2 \cdot 2 \sqrt{3} \\
+            \amp =4 \sqrt{3}
 \end{aligned}
     }</m></p>
 <p>The final answer is:</p>
-<p><m>\displaystyle{ \frac{4\sqrt{2}} {11} }</m></p>
+<p><m>\displaystyle{ \frac{4\sqrt{3}} {13} }</m></p>
 </solution>
   </static>
   <rendering-data problemSource="Palladium_Algebra/4_2_10_47.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

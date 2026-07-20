@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-introduction-to-exponent-properties-4-5" assembly-id="section-introduction-to-exponent-properties-4-5">
-  <static seed="2565" source="Contrib/PCC/BasicAlgebra/Exponents/exponentsMultiplication0.pg">
+  <static seed="2429" source="Contrib/PCC/BasicAlgebra/Exponents/exponentsMultiplication0.pg">
     <statement><p>Use the properties of exponents to simplify the expression.</p>
-<p><m>{x^{2}}\cdot{x^{8}}</m></p>
+<p><m>{y^{20}}\cdot{y^{14}}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>x^{10}</m>
+        <m>y^{34}</m>
       </p>
     </answer>
     <solution><p>We <em>add</em> the exponents as follows: <me>\begin{aligned}
-           x^{2}\cdot x^{8}\amp =x^{2+8}\\
-                             \amp =x^{10}
+           y^{20}\cdot y^{14}\amp =y^{20+14}\\
+                             \amp =y^{34}
        \end{aligned}</me></p>
 </solution>
   </static>

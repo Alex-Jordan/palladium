@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-combine-four-terms-distinct-variables-fractions-copy" assembly-id="combine-four-terms-distinct-variables-fractions-copy">
-  <static seed="2291">
-    <statement><p><m>{{\frac{1}{3}}F-{\frac{4}{3}}F-{\frac{7}{2}}I-2I}</m></p>
+  <static seed="2155">
+    <statement><p><m>{-{\frac{9}{2}}F+{\frac{3}{5}}V-{\frac{9}{4}}V+F}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-\frac{11}{2}I-F</m>
+        <m>-\frac{7}{2}F-\frac{33}{20}V</m>
       </p>
     </answer>
   </static>

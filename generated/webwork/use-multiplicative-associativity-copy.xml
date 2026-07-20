@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-use-multiplicative-associativity-copy" assembly-id="use-multiplicative-associativity-copy">
-  <static seed="2329">
-    <statement><p>Apply associativity to <m>{\left(15T\right)u}\text{.}</m></p>
+  <static seed="2193">
+    <statement><p>Apply associativity to <m>{\left(2Q\right)I}\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>15\mathopen{}\left(Tu\right)</m>
+        <m>2\mathopen{}\left(QI\right)</m>
       </p>
     </answer>
   </static>

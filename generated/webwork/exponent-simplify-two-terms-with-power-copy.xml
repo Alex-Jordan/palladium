@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-exponent-simplify-two-terms-with-power-copy" assembly-id="exponent-simplify-two-terms-with-power-copy">
-  <static seed="2623">
-    <statement><p><m>{4j^{2}\mathopen{}\left(-8j^{5}\right)^{3}-\left(-6j^{4}\right)^{2}\cdot 2j^{9}}</m></p>
+  <static seed="2487">
+    <statement><p><m>{6i^{6}\mathopen{}\left(-2i^{9}\right)^{3}-\left(4i^{8}\right)^{2}\cdot 9i^{17}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-2120j^{17}</m>
+        <m>-192i^{33}</m>
       </p>
     </answer>
   </static>

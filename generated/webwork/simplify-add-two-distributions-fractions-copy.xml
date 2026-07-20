@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-add-two-distributions-fractions-copy" assembly-id="simplify-add-two-distributions-fractions-copy">
-  <static seed="2369">
-    <statement><p><m>{\frac{4}{9}\mathopen{}\left(7t-2\right)+8\mathopen{}\left(3t-\frac{6}{7}\right)}</m></p>
+  <static seed="2233">
+    <statement><p><m>{\frac{4}{3}\mathopen{}\left(5J-8\right)+2\mathopen{}\left(9J-\frac{8}{9}\right)}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{244}{9}t+\frac{-488}{63}</m>
+        <m>\frac{74}{3}J+\frac{-112}{9}</m>
       </p>
     </answer>
   </static>

@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp105-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp105-copy">
-  <static seed="1752">
-    <statement><p><m>\displaystyle\left(\frac{t^{3}}{t^{2}}\right)^{-4}</m></p>
+  <static seed="1616">
+    <statement><p><m>\displaystyle\left(\frac{t^{8}}{t^{4}}\right)^{-3}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{1}{t^{4}}</m>
+        <m>\frac{1}{t^{12}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remembering that <m>\displaystyle{\frac{a^m}{a^n} = a^{m-n}}</m></p>
 <p><m>\begin{aligned}
-                 \left(\displaystyle\frac{t^{3}}{t^{2}}\right)^{-4} \amp = \left(t^{3-2}\right)^{-4}\\
-\amp = \left(t^{1}\right)^{-4}\\
-\amp  = t^{1\cdot(-4)}\\
-                                                       \amp  =t^{-4}\\
-                                    \amp  = {\frac{1}{t^{4}}}
+                 \left(\displaystyle\frac{t^{8}}{t^{4}}\right)^{-3} \amp = \left(t^{8-4}\right)^{-3}\\
+\amp = \left(t^{4}\right)^{-3}\\
+\amp  = t^{4\cdot(-3)}\\
+                                                       \amp  =t^{-12}\\
+                                    \amp  = {\frac{1}{t^{12}}}
            \end{aligned}</m></p>
 </solution>
   </static>

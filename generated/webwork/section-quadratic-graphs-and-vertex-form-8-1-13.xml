@@ -1,27 +1,27 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-quadratic-graphs-and-vertex-form-8-1-13" assembly-id="section-quadratic-graphs-and-vertex-form-8-1-13">
-  <static seed="1081" source="Contrib/PCC/BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation30.pg">
+  <static seed="614" source="Contrib/PCC/BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation30.pg">
     <statement><p>For the interval expressed in the number line, write it using set-builder notation and interval notation.</p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-quadratic-graphs-and-vertex-form-8-1-13-image-1" width="60%">
-<shortdescription>Graph of an interval on a number line. There is a right parenthesis at 1.5 and everything left of that is shaded. To the right of the axis, there is a letter h.</shortdescription>
+<shortdescription>Graph of an interval on a number line. There is a right parenthesis at 4 and everything left of that is shaded. To the right of the axis, there is a letter r.</shortdescription>
 </image>
 <p><fillin characters="30" name="AnSwEr0001"/></p>
 <p><fillin characters="30" name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{h \mid h &lt; 1.5\right\}</m>
+        <m>\left\{r \mid r &lt; 4\right\}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(-\infty ,1.5\right)</m>
+        <m>\left(-\infty ,4\right)</m>
       </p>
     </answer>
-    <solution><p>Since the given graph shades all the values less than <m>1.5</m> (but not equal to <m>1.5</m>) the graph represents the inequality <m>h \lt  1.5</m>.</p>
-<p>The corresponding set notation is <m>{\{ h \mid h \lt  1.5 \}}</m>.</p>
-<p>The corresponding interval notation is <m>{\left(-\infty ,1.5\right)}</m>.</p>
+    <solution><p>Since the given graph shades all the values less than <m>4</m> (but not equal to <m>4</m>) the graph represents the inequality <m>r \lt  4</m>.</p>
+<p>The corresponding set notation is <m>{\{ r \mid r \lt  4 \}}</m>.</p>
+<p>The corresponding interval notation is <m>{\left(-\infty ,4\right)}</m>.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/LinearInequalities/GraphToSetAndIntervalNotation30.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

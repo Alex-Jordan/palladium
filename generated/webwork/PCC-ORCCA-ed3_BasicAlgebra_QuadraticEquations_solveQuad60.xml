@@ -1,25 +1,25 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_QuadraticEquations_solveQuad60" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_QuadraticEquations_solveQuad60">
-  <static seed="817">
-    <statement><p><m>25x^2 = 4</m></p>
+  <static seed="922">
+    <statement><p><m>9x^2 = 64</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{-\frac{2}{5},\frac{2}{5}\right\}</m>
+        <m>\left\{-\frac{8}{3},\frac{8}{3}\right\}</m>
       </p>
     </answer>
     <solution><p>There are a few ways to solve quadratic equations- the easiest way to solve this particular 
 type of problem is to use the <em>square root method</em>.</p>
 <p><m>\begin{aligned}
-                 25x^2 = 4 \amp  \Rightarrow x^2 = {{\frac{4}{25}}}\\
-                                    \amp  \Rightarrow x=-\sqrt{{{\frac{4}{25}}}}\text{ or } x=\sqrt{{{\frac{4}{25}}}}\\
-                                    \amp  \Rightarrow x={-{\frac{2}{5}}}\text{ or } x={{\frac{2}{5}}}\\
+                 9x^2 = 64 \amp  \Rightarrow x^2 = {{\frac{64}{9}}}\\
+                                    \amp  \Rightarrow x=-\sqrt{{{\frac{64}{9}}}}\text{ or } x=\sqrt{{{\frac{64}{9}}}}\\
+                                    \amp  \Rightarrow x={-{\frac{8}{3}}}\text{ or } x={{\frac{8}{3}}}\\
        \end{aligned}</m></p>
 <p>Note that <em>all</em> quadratic equations have <alert>two</alert> (possibly repeated) solutions; in this problem both solutions are real. Each solution can be checked by substituting it into the original equation- this is left as an exercise.</p>
 </solution>
   </static>
-  <rendering-data problemSource="Palladium_Algebra/2_3_4_13.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
+  <rendering-data problemSource="Palladium_Algebra/2_4_7_13.pg" origin="generated" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>
   <pg><![CDATA[
 # WeBWorK problem written by Chris Hughes, 2013
 # Portland Community College

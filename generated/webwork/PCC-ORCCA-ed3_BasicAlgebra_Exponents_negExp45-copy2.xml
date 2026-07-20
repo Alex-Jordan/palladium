@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp45-copy2" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_Exponents_negExp45-copy2">
-  <static seed="1958">
-    <statement><p><m>t^{-10}\cdot t^{2}</m></p>
+  <static seed="1822">
+    <statement><p><m>r^{-15}\cdot r^{6}</m></p>
 <p><fillin characters="12" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{1}{t^{8}}</m>
+        <m>\frac{1}{r^{9}}</m>
       </p>
     </answer>
     <solution><p>We use the properties of exponents to help us here, remember that <m>a^m\cdot a^n = a^{m+n}</m></p>
 <p><m>\begin{aligned}
-                 t^{-10}\cdot t^{2} \amp = t^{-10+2}\\
-                                                       \amp  =t^{-8}\\
-                                    \amp  = {\frac{1}{t^{8}}}
+                 r^{-15}\cdot r^{6} \amp = r^{-15+6}\\
+                                                       \amp  =r^{-9}\\
+                                    \amp  = {\frac{1}{r^{9}}}
            \end{aligned}</m></p>
 </solution>
   </static>

@@ -1,29 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-inequality-solution-linear-equation-decimal" assembly-id="check-inequality-solution-linear-equation-decimal">
-  <static seed="2469">
-    <statement><p>Is <m>{-1.3}</m> a solution to <m>{2x-8.7}\leq{-11.3}\text{?}</m></p>
+  <static seed="2333">
+    <statement><p>Is <m>{-2.9}</m> a solution to <m>{5x+3.7}\geq{-10.8}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>2x-8.7</m></cell>
-<cell><m>\leq</m></cell>
-<cell><m>-11.3</m></cell>
+<cell><m>5x+3.7</m></cell>
+<cell><m>\geq</m></cell>
+<cell><m>-10.8</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
-<cell><m>\wonder{\leq}</m></cell>
-<cell><m>-11.3</m></cell>
+<cell><m>\wonder{\geq}</m></cell>
+<cell><m>-10.8</m></cell>
 </row>
 </tabular>
 <p><fillin name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>-11.3</m>
+        <m>-10.8</m>
       </p>
     </answer>
     <answer>

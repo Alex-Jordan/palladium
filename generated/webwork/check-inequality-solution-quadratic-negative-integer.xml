@@ -1,34 +1,34 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-inequality-solution-quadratic-negative-integer" assembly-id="check-inequality-solution-quadratic-negative-integer">
-  <static seed="2477">
-    <statement><p>Is <m>{-5}</m> a solution to <m>{9x^{2}-4x}\gt{245}\text{?}</m></p>
+  <static seed="2341">
+    <statement><p>Is <m>{-5}</m> a solution to <m>{3x^{2}+8x}\geq{35}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>9x^{2}-4x</m></cell>
-<cell><m>\gt</m></cell>
-<cell><m>245</m></cell>
+<cell><m>3x^{2}+8x</m></cell>
+<cell><m>\geq</m></cell>
+<cell><m>35</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
-<cell><m>\wonder{\gt}</m></cell>
-<cell><m>245</m></cell>
+<cell><m>\wonder{\geq}</m></cell>
+<cell><m>35</m></cell>
 </row>
 </tabular>
 <p><fillin name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>245</m>
+        <m>35</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\text{No, it is not a solution.}</m>
+        <m>\text{Yes, it is a solution.}</m>
       </p>
     </answer>
   </static>

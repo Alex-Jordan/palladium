@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-complex-fractions-5-3-8" assembly-id="section-complex-fractions-5-3-8">
-  <static seed="1459" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions50.pg">
+  <static seed="1323" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions50.pg">
     <statement><p>Simplify this expression.</p>
-<p><m>\displaystyle{{\frac{\frac{2}{r}}{12+\frac{2t}{5}}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{\frac{3}{y}}{12+\frac{3x}{2}}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{5}{r\mathopen{}\left(t+30\right)}\hbox{ or }\frac{5}{rt+30r}</m>
+        <m>\frac{2}{y\mathopen{}\left(x+8\right)}\hbox{ or }\frac{2}{yx+8y}</m>
       </p>
     </answer>
-    <solution><p>To simplify a complex fraction, we find the common denominator of all fractions. In this case, it is <m>{5r}</m>. We multiply the complex fraction<rsq/>s numerator and denominator by this common denominator, and we have:</p>
+    <solution><p>To simplify a complex fraction, we find the common denominator of all fractions. In this case, it is <m>{2y}</m>. We multiply the complex fraction<rsq/>s numerator and denominator by this common denominator, and we have:</p>
 <p><m>\displaystyle{\begin{aligned}
-   {\frac{\frac{2}{r}}{12+\frac{2t}{5}}} 
-      \amp = {\frac{\frac{2}{r}}{12+\frac{2t}{5}}} \cdot \frac{{5r}}{{5r}} \\
-      \amp = \frac{ \frac{2}{r} \cdot 5 r}{(12+\frac{2 t}{5}) \cdot 5 r} \\
-      \amp = \frac{2 \cdot 5}{12 \cdot 5 r + \frac{2 t}{5} \cdot 5 r} \\
-      \amp = \frac{10}{60 r + 2 r t} \\
-      \amp = \frac{10}{2 r (30 + t)} \\
-      \amp = {\frac{5}{r\mathopen{}\left(t+30\right)}\hbox{ or }\frac{5}{rt+30r}}
+   {\frac{\frac{3}{y}}{12+\frac{3x}{2}}} 
+      \amp = {\frac{\frac{3}{y}}{12+\frac{3x}{2}}} \cdot \frac{{2y}}{{2y}} \\
+      \amp = \frac{ \frac{3}{y} \cdot 2 y}{(12+\frac{3 x}{2}) \cdot 2 y} \\
+      \amp = \frac{3 \cdot 2}{12 \cdot 2 y + \frac{3 x}{2} \cdot 2 y} \\
+      \amp = \frac{6}{24 y + 3 y x} \\
+      \amp = \frac{6}{3 y (8 + x)} \\
+      \amp = {\frac{2}{y\mathopen{}\left(x+8\right)}\hbox{ or }\frac{2}{yx+8y}}
 \end{aligned}
     }</m></p>
 </solution>

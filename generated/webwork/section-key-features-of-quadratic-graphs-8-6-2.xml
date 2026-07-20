@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-key-features-of-quadratic-graphs-8-6-2" assembly-id="section-key-features-of-quadratic-graphs-8-6-2">
-  <static seed="1008" source="Contrib/PCC/BasicAlgebra/QuadraticApplications/MaxMinApplication10.pg">
-    <statement><p>Consider two numbers where one number is <m>8</m> less than a second number.
+  <static seed="541" source="Contrib/PCC/BasicAlgebra/QuadraticApplications/MaxMinApplication10.pg">
+    <statement><p>Consider two numbers where one number is <m>10</m> less than a second number.
 Find a pair of such numbers that has the least product possible.
 One approach is to let <m>x</m> represent the smaller number, and write an expression for the product of the two numbers.
 Then find its vertex and interpret it.</p>
@@ -9,35 +9,35 @@ Then find its vertex and interpret it.</p>
 </statement>
     <answer>
       <p>
-        <m>-4, 4</m>
+        <m>-5, 5</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>-16</m>
+        <m>-25</m>
       </p>
     </answer>
-    <solution><p>If we call the first number <m>x</m>, then the second number is <m>x+8</m>.
+    <solution><p>If we call the first number <m>x</m>, then the second number is <m>x+10</m>.
 The product of the two numbers is:</p>
-<p><m>x(x+8)</m></p>
+<p><m>x(x+10)</m></p>
 <p>This is a quadratic expression. We will rewrite it in standard form first:</p>
-<p><m>{x^{2}+8x}</m></p>
-<p>Identify that <m>a=1, b=8, c=0</m>. The smallest possible product happens at the parabola<rsq/>s vertex.</p>
+<p><m>{x^{2}+10x}</m></p>
+<p>Identify that <m>a=1, b=10, c=0</m>. The smallest possible product happens at the parabola<rsq/>s vertex.</p>
 <p>To find the parabola<rsq/>s vertex, we first find the parabola<rsq/>s axis of symmetry by the axis formula:</p>
 <p><m>\begin{aligned}
   h \amp = -\frac{b}{2a} \\
-  h \amp = -\frac{8}{2(1)} \\
-  h \amp =  -4
+  h \amp = -\frac{10}{2(1)} \\
+  h \amp =  -5
 \end{aligned}</m></p>
-<p>Next, we substitute <m>x= -4</m> into the expression and we have:</p>
+<p>Next, we substitute <m>x= -5</m> into the expression and we have:</p>
 <p><m>\begin{aligned}
-  {x^{2}+8x} \amp =  (-4)^2+8(-4)  \\
-   \amp =  {-16} 
+  {x^{2}+10x} \amp =  (-5)^2+10(-5)  \\
+   \amp =  {-25} 
 \end{aligned}</m></p>
-<p>The parabola<rsq/>s vertex is at <m>{\left(-4,-16\right)}</m>. This implies that the minimum product of such pairs is <m>{-16}</m>.
-This happens when one number is <m>-4</m>, and the other number is <m>-4+8</m>, or rather <m>4</m>.</p>
-<p>So these two numbers are <m>-4</m> and <m>4</m>. The minimum product is <m>{-16}</m>.</p>
-<p>The following graph of <m>y={x^{2}+8x}</m> illustrates our findings.</p>
+<p>The parabola<rsq/>s vertex is at <m>{\left(-5,-25\right)}</m>. This implies that the minimum product of such pairs is <m>{-25}</m>.
+This happens when one number is <m>-5</m>, and the other number is <m>-5+10</m>, or rather <m>5</m>.</p>
+<p>So these two numbers are <m>-5</m> and <m>5</m>. The minimum product is <m>{-25}</m>.</p>
+<p>The following graph of <m>y={x^{2}+10x}</m> illustrates our findings.</p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-key-features-of-quadratic-graphs-8-6-2-image-1.png" width="40%"/>
 </solution>

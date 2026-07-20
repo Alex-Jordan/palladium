@@ -1,29 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-check-inequality-solution-linear-equation-fraction-copy" assembly-id="check-inequality-solution-linear-equation-fraction-copy">
-  <static seed="2472">
-    <statement><p>Is <m>{2}</m> a solution to <m>{7x-{\frac{7}{8}}}\neq{{\frac{91}{8}}}\text{?}</m></p>
+  <static seed="2336">
+    <statement><p>Is <m>{{\frac{7}{2}}}</m> a solution to <m>{9x+{\frac{3}{2}}}\leq{33}\text{?}</m></p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
 <col halign="center"/>
 <col/>
 <row>
-<cell><m>7x-{\frac{7}{8}}</m></cell>
-<cell><m>\neq</m></cell>
-<cell><m>{\frac{91}{8}}</m></cell>
+<cell><m>9x+{\frac{3}{2}}</m></cell>
+<cell><m>\leq</m></cell>
+<cell><m>33</m></cell>
 </row>
 <row>
 <cell><fillin characters="3" name="AnSwEr0001"/>
 </cell>
-<cell><m>\wonder{\neq}</m></cell>
-<cell><m>{\frac{91}{8}}</m></cell>
+<cell><m>\wonder{\leq}</m></cell>
+<cell><m>33</m></cell>
 </row>
 </tabular>
 <p><fillin name="AnSwEr0002"/></p>
 </statement>
     <answer>
       <p>
-        <m>{\frac{105}{8}}</m>
+        <m>33</m>
       </p>
     </answer>
     <answer>

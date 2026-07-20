@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication115" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication115">
-  <static seed="2669">
-    <statement><p><m>\left({3r^{2}-6}\right)\left({4r^{2}-9}\right)</m></p>
+  <static seed="2533">
+    <statement><p><m>\left({4y^{2}-3}\right)\left({2y^{2}-8}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>12r^{4}-51r^{2}+54</m>
+        <m>8y^{4}-38y^{2}+24</m>
       </p>
     </answer>
     <solution><p>We use the FOIL technique: <alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast. <me>\begin{aligned}
-              \left({3r^{2}-6}\right)({4r^{2}-9})\amp ={12r^{4}-27r^{2}-24r^{2}+54}\\
-                                \amp ={12r^{4}-51r^{2}+54}
+              \left({4y^{2}-3}\right)({2y^{2}-8})\amp ={8y^{4}-32y^{2}-6y^{2}+24}\\
+                                \amp ={8y^{4}-38y^{2}+24}
       \end{aligned}</me></p>
 </solution>
   </static>

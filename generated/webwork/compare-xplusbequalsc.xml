@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-compare-xplusbequalsc" assembly-id="compare-xplusbequalsc">
-  <static seed="1547">
+  <static seed="1411">
     <introduction/>
     <task>
-      <statement><p><m>{n+5}={7}</m> for <m>n\text{.}</m></p>
+      <statement><p><m>{l+2}={6}</m> for <m>l\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>\left\{2\right\}</m>
+          <m>\left\{4\right\}</m>
         </p>
       </answer>
     </task>
     <task>
-      <statement><p><m>{n+p}={K}</m> for <m>n\text{.}</m></p>
+      <statement><p><m>{l+C}={a}</m> for <m>l\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>n = K-p</m>
+          <m>l = a-C</m>
         </p>
       </answer>
     </task>

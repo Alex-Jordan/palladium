@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication80-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_PolynomialMultiplication_PolynomialMultiplication80-copy">
-  <static seed="2666">
-    <statement><p><m>\left({3x-8}\right)\left({x^{2}-7}\right)</m></p>
+  <static seed="2530">
+    <statement><p><m>\left({4x-5}\right)\left({x^{2}-3}\right)</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>3x^{3}-8x^{2}-21x+56</m>
+        <m>4x^{3}-5x^{2}-12x+15</m>
       </p>
     </answer>
     <solution><p>We use the FOIL technique- <alert>F</alert>irst <alert>O</alert>utside <alert>I</alert>nside <alert>L</alert>ast</p>
 <p><m>\begin{aligned}
-              \left({3x-8}\right)({x^{2}-7})\amp ={3x^{3}-21x-8x^{2}+56}\\
-                                \amp ={3x^{3}-8x^{2}-21x+56}
+              \left({4x-5}\right)({x^{2}-3})\amp ={4x^{3}-12x-5x^{2}+15}\\
+                                \amp ={4x^{3}-5x^{2}-12x+15}
       \end{aligned}</m></p>
 </solution>
   </static>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-list-terms-distinct-powers" assembly-id="list-terms-distinct-powers">
-  <static seed="2266">
-    <statement><p><m>{-y^{4}+y^{2}-{\frac{1}{2}}y^{3}-9.1y^{6}}</m></p>
+  <static seed="2130">
+    <statement><p><m>{-{\frac{1}{2}}z^{7}+{\frac{4}{3}}z^{9}-0.8z-z^{8}}</m></p>
 <p><fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>-y^{4}, y^{2}, -{\frac{1}{2}}y^{3}, -9.1y^{6}</m>
+        <m>-{\frac{1}{2}}z^{7}, {\frac{4}{3}}z^{9}, -0.8z, -z^{8}</m>
       </p>
     </answer>
   </static>

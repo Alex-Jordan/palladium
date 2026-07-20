@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-simplify-star-count" assembly-id="simplify-star-count">
-  <static seed="2627">
+  <static seed="2491">
     <statement><p>There are roughly <m>10^8</m> stars in an average galaxy, and there are roughly <m>10^{12}</m> galaxies in the observable universe. Using these numbers, how many stars are there in the observable universe? Answer using a simplified exponent expression, not the actual result.</p>
 <p><fillin characters="10" name="AnSwEr0001"/></p>
 </statement>

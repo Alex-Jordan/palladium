@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-graphing-quadratic-expressions-8-4-6" assembly-id="section-graphing-quadratic-expressions-8-4-6">
-  <static seed="1058" source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticApplications/FlyingObjectApp30.pg">
-    <statement><p>A remote control aircraft will perform a stunt by flying toward the ground and then up. Its height, in feet, can be modeled by the equation <m>h={1.6t^{2}-12.8t+23.6}</m>, where <m>t</m> is in seconds. The plane <ul form="popup" name="AnSwEr0001"><li>
+  <static seed="591" source="PCC-ORCCA-ed3/BasicAlgebra/QuadraticApplications/FlyingObjectApp30.pg">
+    <statement><p>A remote control aircraft will perform a stunt by flying toward the ground and then up. Its height, in feet, can be modeled by the equation <m>h={0.3t^{2}-3.6t+12.8}</m>, where <m>t</m> is in seconds. The plane <ul form="popup" name="AnSwEr0001"><li>
 <p>?</p>
 </li><li>
 <p>will</p>
@@ -11,20 +11,20 @@
 </statement>
     <answer>
       <p>
-        <m>\text{will}</m>
+        <m>\text{will not}</m>
       </p>
     </answer>
-    <solution><p>To determine whether the plane will hit the ground, we substitute <m>h(t)=0</m> into <m>h(t)={1.6t^{2}-12.8t+23.6}</m>, and solve the equation by the Quadratic Formula:</p>
+    <solution><p>To determine whether the plane will hit the ground, we substitute <m>h(t)=0</m> into <m>h(t)={0.3t^{2}-3.6t+12.8}</m>, and solve the equation by the Quadratic Formula:</p>
 <p><m>\displaystyle{
         \begin{aligned}
             t \amp  = \frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
-              \amp  = \frac{-({-12.8})\pm\sqrt{({-12.8})^2-4(1.6)({23.6})}}{2(1.6)}\\
-                   \amp  = \frac{{12.8}\pm\sqrt{{163.84}-{151.04}}}{3.2}\\
-                   \amp  = \frac{{12.8}\pm\sqrt{{12.8}}}{3.2}\\
-                  \amp \approx \frac{12.8\pm 3.58}{3.2} \\\amp \approx \frac{12.8+3.58}{3.2}\text{ or }\frac{12.8-3.58}{3.2} \\\amp \approx 5.12\text{ or }2.88
+              \amp  = \frac{-({-3.6})\pm\sqrt{({-3.6})^2-4(0.3)({12.8})}}{2(0.3)}\\
+                   \amp  = \frac{{3.6}\pm\sqrt{{12.96}-{15.36}}}{0.6}\\
+                   \amp  = \frac{{3.6}\pm\sqrt{{-2.4}}}{0.6}\\
+                  
         \end{aligned}
      }</m></p>
-<p>The plane would hit the ground approximately `2.88` seconds into the stunt.</p>
+<p>Since the equation has no real solution, the plane will not hit the ground during the stunt.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="PCC-ORCCA-ed3/BasicAlgebra/QuadraticApplications/FlyingObjectApp30.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

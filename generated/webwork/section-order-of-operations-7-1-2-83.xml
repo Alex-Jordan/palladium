@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-order-of-operations-7-1-2-83" assembly-id="section-order-of-operations-7-1-2-83">
-  <static seed="2223">
-    <statement><p><m>3^{4 - 2} + 9</m></p>
+  <static seed="2087">
+    <statement><p><m>7 \cdot  2^{20 \div  5}</m></p>
 <p><fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>18</m>
+        <m>112</m>
       </p>
     </answer>
   </static>

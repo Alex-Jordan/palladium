@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateOtherRoots30-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_EvaluateOtherRoots30-copy">
-  <static seed="1983">
-    <statement><p><m>\displaystyle{\sqrt[5]{15^{2}}}</m></p>
+  <static seed="1847">
+    <statement><p><m>\displaystyle{\sqrt[7]{11^{4}}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>2.95418</m>
+        <m>3.93624</m>
       </p>
     </answer>
     <solution><p>Radicals can be converted into fractional exponents this way:</p>
 <p><m>\displaystyle{ \sqrt[n]{x^{m}} = (x^{m})^{\frac{1}{n}} = x^{\frac{m}{n}} }</m></p>
 <p>For this problem, we have:</p>
-<p><m>\displaystyle{ \sqrt[5]{15^{2}} = (15^{2})^{\frac{1}{5}} = 15^{\frac{2}{5}} }</m></p>
-<p>Next, enter <m>15</m>^<m>(2/5)</m> into a graphing calculator, and we get the answer <m>2.95417693906278</m>. Round it to two decimal places, we have:</p>
-<p><m>\displaystyle{ \sqrt[5]{15^{2}} \approx 2.95 }</m></p>
+<p><m>\displaystyle{ \sqrt[7]{11^{4}} = (11^{4})^{\frac{1}{7}} = 11^{\frac{4}{7}} }</m></p>
+<p>Next, enter <m>11</m>^<m>(4/7)</m> into a graphing calculator, and we get the answer <m>3.93623967419613</m>. Round it to two decimal places, we have:</p>
+<p><m>\displaystyle{ \sqrt[7]{11^{4}} \approx 3.94 }</m></p>
 <p>Remember that, in TI-89, we need to press Diamond Enter to get decimal answers; and in Casio ClassPad 330, we have to tap the Fraction to Decimal icon.</p>
 </solution>
   </static>

@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-12-2" assembly-id="section-solving-rational-equations-10-12-2">
-  <static seed="1609" source="Contrib/PCC/BasicAlgebra/RationalLiteralEquations/LiteralEquation260.pg">
-    <statement><p>Solve this equation for <m>A</m>:</p>
-<p><m>\displaystyle{ r = \frac{m}{A} }</m></p>
+  <static seed="1473" source="Contrib/PCC/BasicAlgebra/RationalLiteralEquations/LiteralEquation260.pg">
+    <statement><p>Solve this equation for <m>n</m>:</p>
+<p><m>\displaystyle{ y = \frac{x}{n} }</m></p>
 <p><fillin characters="7" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>A = \frac{m}{r}</m>
+        <m>n = \frac{x}{y}</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   r \amp = \frac{m}{A} \\
-   r \cdot A \amp = \frac{m}{A} \cdot A \\
-   r \cdot A \amp = m \\
-   \frac{r \cdot A}{r} \amp = \frac{m}{r} \\
-   A \amp = \frac{m}{r} 
+   y \amp = \frac{x}{n} \\
+   y \cdot n \amp = \frac{x}{n} \cdot n \\
+   y \cdot n \amp = x \\
+   \frac{y \cdot n}{y} \amp = \frac{x}{y} \\
+   n \amp = \frac{x}{y} 
 \end{aligned}
 }</m></p>
 </solution>

@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-compare-xplusbequalsc-copy" assembly-id="compare-xplusbequalsc-copy">
-  <static seed="1548">
+  <static seed="1412">
     <introduction/>
     <task>
-      <statement><p><m>{u+3}={7}</m> for <m>u\text{.}</m></p>
+      <statement><p><m>{r+9}={4}</m> for <m>r\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>\left\{4\right\}</m>
+          <m>\left\{-5\right\}</m>
         </p>
       </answer>
     </task>
     <task>
-      <statement><p><m>{u+W}={f}</m> for <m>u\text{.}</m></p>
+      <statement><p><m>{r+k}={w}</m> for <m>r\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>u = f-W</m>
+          <m>r = w-k</m>
         </p>
       </answer>
     </task>

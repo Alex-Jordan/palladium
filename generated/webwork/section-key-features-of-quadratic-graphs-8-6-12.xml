@@ -1,52 +1,52 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-key-features-of-quadratic-graphs-8-6-12" assembly-id="section-key-features-of-quadratic-graphs-8-6-12">
-  <static seed="1018" source="Contrib/PCC/BasicAlgebra/QuadraticApplications/MaxMinApplication50.pg">
-    <statement><p>You plan to build four identical rectangular animal enclosures in a row. Each adjacent pair of pens share a fence between them. You have a total of <m>392</m> feet of fence to use. Find the dimensions of each pen such that you can enclose the maximum possible area. One approach is to let <m>x</m> represent the length of fencing that adjacent pens share, and write a formula for a function of <m>x</m> that outputs the total area. Then find its vertex and interpret it.</p>
+  <static seed="551" source="Contrib/PCC/BasicAlgebra/QuadraticApplications/MaxMinApplication50.pg">
+    <statement><p>You plan to build four identical rectangular animal enclosures in a row. Each adjacent pair of pens share a fence between them. You have a total of <m>304</m> feet of fence to use. Find the dimensions of each pen such that you can enclose the maximum possible area. One approach is to let <m>x</m> represent the length of fencing that adjacent pens share, and write a formula for a function of <m>x</m> that outputs the total area. Then find its vertex and interpret it.</p>
 <p>The length of each pen (along the walls that they share) should be <fillin characters="12" name="AnSwEr0001"/>, the width (perpendicular to the river) should be <fillin characters="12" name="AnSwEr0002"/>, and the maximum possible area of each pen is <fillin characters="12" name="AnSwEr0003"/>.</p>
 </statement>
     <answer>
       <p>
-        <m>39.2\ {\rm ft}</m>
+        <m>30.4\ {\rm ft}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>24.5\ {\rm ft}</m>
+        <m>19\ {\rm ft}</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>960.4\ {\rm ft^{2}}</m>
+        <m>577.6\ {\rm ft^{2}}</m>
       </p>
     </answer>
     <solution><p>Drawing a diagram should help us construct up a function for the area of the pen.</p>
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-key-features-of-quadratic-graphs-8-6-12-image-1.png" width="66%"/>
-<p>Let the width be <m>w</m> ft, and the length be <m>L</m> ft. Since there is a total of <m>392</m> feet of fencing, we have:</p>
+<p>Let the width be <m>w</m> ft, and the length be <m>L</m> ft. Since there is a total of <m>304</m> feet of fencing, we have:</p>
 <p><m>\begin{aligned}[t]
-8w+5L \amp = 392 \\
-8w    \amp = 392-5L \\
-\frac{8w}{8} \amp = \frac{392}{8}-\frac{5L}{8} \\
-w     \amp = 49-0.625L
+8w+5L \amp = 304 \\
+8w    \amp = 304-5L \\
+\frac{8w}{8} \amp = \frac{304}{8}-\frac{5L}{8} \\
+w     \amp = 38-0.625L
 \end{aligned}</m></p>
-<p>If each pen's length is <m>L</m> feet, then its width is <m>(49-0.625L)</m> feet. Now we can construct a function for the area of each pen:</p>
-<p><m>f(L)=(49-0.625L)L</m></p>
-<p><m>f(L)=-0.625L^{2}+49 L</m></p>
-<p>In this formula, <m>L</m> represents each pen's length in feet, and <m>f(L)</m> represents each pen's area in square feet. Identify that <m>a=-0.625,b=49,c=0</m>.</p>
+<p>If each pen's length is <m>L</m> feet, then its width is <m>(38-0.625L)</m> feet. Now we can construct a function for the area of each pen:</p>
+<p><m>f(L)=(38-0.625L)L</m></p>
+<p><m>f(L)=-0.625L^{2}+38 L</m></p>
+<p>In this formula, <m>L</m> represents each pen's length in feet, and <m>f(L)</m> represents each pen's area in square feet. Identify that <m>a=-0.625,b=38,c=0</m>.</p>
 <p>Each output of this function represents a possible area of each pen. The maximum area happens at this quadratic function's vertex.</p>
 <p>To find the vertex, we first find the parabola's axis by the axis formula:</p>
 <p><m>\begin{aligned}[t]
   L \amp = -\frac{b}{2a} \\
-  L \amp = -\frac{49}{2(-0.625)} \\
-  L \amp =  39.2
+  L \amp = -\frac{38}{2(-0.625)} \\
+  L \amp =  30.4
 \end{aligned}</m></p>
-<p>Next, we substitute <m>L= 39.2</m> into the rule for the function, and we have:</p>
+<p>Next, we substitute <m>L= 30.4</m> into the rule for the function, and we have:</p>
 <p><m>\begin{aligned}[t] 
-  f(L) \amp =  -0.625w^{2}+49w  \\
-  f(39.2) \amp =  -0.625(39.2)^2+49(39.2)  \\
-  f(39.2) \amp =  960.4 
+  f(L) \amp =  -0.625w^{2}+38w  \\
+  f(30.4) \amp =  -0.625(30.4)^2+38(30.4)  \\
+  f(30.4) \amp =  577.6 
 \end{aligned}</m></p>
-<p>The parabola's vertex is at <m>\left(39.2,960.4\right)</m>. This implies that each pen's maximum area is <m>960.4\ {\rm ft^{2}}</m>. This happens when the length is <m>39.2\ {\rm ft}</m>, and the width is <m>49 - 0.625 \cdot 39.2</m>, or <m>24.5\ {\rm ft}</m>.</p>
-<p>So when the length is <m>39.2\ {\rm ft}</m> and the width is <m>24.5\ {\rm ft}</m>, each pen has a maximum area of <m>960.4\ {\rm ft^{2}}</m>.</p>
+<p>The parabola's vertex is at <m>\left(30.4,577.6\right)</m>. This implies that each pen's maximum area is <m>577.6\ {\rm ft^{2}}</m>. This happens when the length is <m>30.4\ {\rm ft}</m>, and the width is <m>38 - 0.625 \cdot 30.4</m>, or <m>19\ {\rm ft}</m>.</p>
+<p>So when the length is <m>30.4\ {\rm ft}</m> and the width is <m>19\ {\rm ft}</m>, each pen has a maximum area of <m>577.6\ {\rm ft^{2}}</m>.</p>
 <p>The following graph illustrates our findings.</p>
 <image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/section-key-features-of-quadratic-graphs-8-6-12-image-2.png" width="40%"/>
 </solution>

@@ -1,37 +1,38 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-solving-rational-equations-10-10-23" assembly-id="section-solving-rational-equations-10-10-23">
-  <static seed="1594" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations55.pg">
+  <static seed="1458" source="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations55.pg">
     <statement><p>Solve the equation.</p>
-<p><m>\displaystyle{ {\frac{7}{y}-\frac{6}{y-2}} = -2 }</m></p>
+<p><m>\displaystyle{ {-\frac{6}{y}-\frac{8}{y-5}} = 3 }</m></p>
 <p><fillin characters="34" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\left\{-2,\frac{7}{2}\right\}</m>
+        <m>\left\{\frac{10}{3},-3\right\}</m>
       </p>
     </answer>
-    <solution><p>To get rid of fractions, we multiply each term in this equation by the common denominator, which is <m>{y\mathopen{}\left(y-2\right)}</m> in this example.</p>
+    <solution><p>To get rid of fractions, we multiply each term in this equation by the common denominator, which is <m>{y\mathopen{}\left(y-5\right)}</m> in this example.</p>
 <p><m>\displaystyle{\begin{aligned}
-   \amp {\frac{7}{y}-\frac{6}{y-2}} = -2 \\
-   \amp {\frac{7}{y}y\mathopen{}\left(y-2\right)-\frac{6}{y-2}y\mathopen{}\left(y-2\right)} ={-2y\mathopen{}\left(y-2\right)} \\
-   \amp {7\mathopen{}\left(y-2\right)-6y} = {-2y^{2}+4y} \\
-   \amp {7y-14-6y} = {-2y^{2}+4y} \\
-   \amp {y-14} = {-2y^{2}+4y} \\
-   \amp {y-14+2y^{2}-4y} = 0 \\
-   \amp {2y^{2}-3y-14} = 0 \\
-   \amp ({2y-7})({y+2})=0 \\
-   \amp {2y-7}=0 \:\: or\:\: {y+2}=0 \\
-   \amp y={{\frac{7}{2}}} \:\: or\:\: y={-2}
+   \amp {-\frac{6}{y}-\frac{8}{y-5}} = 3 \\
+   \amp {-\frac{6}{y}y\mathopen{}\left(y-5\right)-\frac{8}{y-5}y\mathopen{}\left(y-5\right)} ={3y\mathopen{}\left(y-5\right)} \\
+   \amp {-6\mathopen{}\left(y-5\right)-8y} = {3y^{2}-15y} \\
+   \amp {-6y+30-8y} = {3y^{2}-15y} \\
+   \amp {-14y+30} = {3y^{2}-15y} \\
+   \amp {-14y+30-3y^{2}+15y} = 0 \\
+   \amp {-3y^{2}+y+30} = 0 \\
+   \amp -({3y^{2}-y-30})=0 \\
+   \amp -({y+3})({3y-10})=0 \\
+   \amp {y+3}=0 \:\: or\:\: {3y-10}=0 \\
+   \amp y={-3} \:\: or\:\: y={{\frac{10}{3}}}
 \end{aligned}
     }</m></p>
 <p><alert>Checking</alert></p>
 <p>We must check solutions when we solve rational equations. In the original equation, both denominators cannot be <m>0</m>. We set them to <m>0</m>, so we can find out what values to exclude from the solution set.</p>
 <p><m>\displaystyle{\begin{aligned}
-   \amp y = 0 \amp \;\amp  y - 2=0 \\
-   \amp y=0 \amp \;\amp  y=2
+   \amp y = 0 \amp \;\amp  y - 5=0 \\
+   \amp y=0 \amp \;\amp  y=5
 \end{aligned}
     }</m></p>
-<p>We must exclude <m>0</m> and <m>2</m> from the solution set. There is no conflict with those two solutions we got, so the final solution is <m>y={{\frac{7}{2}}}</m> and <m>y={-2}</m>.</p>
+<p>We must exclude <m>0</m> and <m>5</m> from the solution set. There is no conflict with those two solutions we got, so the final solution is <m>y={-3}</m> and <m>y={{\frac{10}{3}}}</m>.</p>
 </solution>
   </static>
   <rendering-data sourceFilePath="Contrib/PCC/BasicAlgebra/RationalEquations/solveRationalEquations55.pg" origin="webwork2" domain="https://webwork.pcc.edu" course-id="orcca" user-id="orcca" passwd="orcca" language="en-US"/>

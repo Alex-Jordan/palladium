@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-true-false-compare-fractions" assembly-id="true-false-compare-fractions">
-  <static seed="2383">
-    <statement><p><m>{{\frac{3}{8}}} \geq {{\frac{11}{6}}}</m></p>
+  <static seed="2247">
+    <statement><p><m>{{\frac{9}{8}}} &gt; {{\frac{10}{9}}}</m></p>
 <p><fillin name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\text{False}</m>
+        <m>\text{True}</m>
       </p>
     </answer>
   </static>

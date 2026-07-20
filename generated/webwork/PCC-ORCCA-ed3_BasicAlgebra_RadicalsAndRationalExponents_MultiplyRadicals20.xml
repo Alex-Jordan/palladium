@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_MultiplyRadicals20" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_MultiplyRadicals20">
-  <static seed="1830">
-    <statement><p><m>7\sqrt{3} \cdot 9\sqrt{{121}}</m></p>
+  <static seed="1694">
+    <statement><p><m>6\sqrt{7} \cdot 3\sqrt{{121}}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>693\sqrt{3}</m>
+        <m>198\sqrt{7}</m>
       </p>
     </answer>
-    <solution><p>To simplify the expression <m>7\sqrt{3} \cdot 9\sqrt{{121}}</m>, first simplify the square roots.</p>
-<p>This gives <m>7\sqrt{3} \cdot 9\cdot11</m>.</p>
-<p>Next multiply all values not under the radical: <m>7\cdot9\cdot11={693}</m>. So we have <m>{693\sqrt{3}}</m>.</p>
+    <solution><p>To simplify the expression <m>6\sqrt{7} \cdot 3\sqrt{{121}}</m>, first simplify the square roots.</p>
+<p>This gives <m>6\sqrt{7} \cdot 3\cdot11</m>.</p>
+<p>Next multiply all values not under the radical: <m>6\cdot3\cdot11={198}</m>. So we have <m>{198\sqrt{7}}</m>.</p>
 <p>Now that we have thought about how to simplify this expression, we can write the entire process as follows.</p>
 <p><m>\displaystyle{ 
 \begin{aligned}
-7\sqrt{3} \cdot 9\sqrt{{121}}\amp =7\sqrt{3} \cdot 9\cdot11\\
-\amp =7\cdot9\cdot11\sqrt{3}\\
-\amp ={693\sqrt{3}}\\
+6\sqrt{7} \cdot 3\sqrt{{121}}\amp =6\sqrt{7} \cdot 3\cdot11\\
+\amp =6\cdot3\cdot11\sqrt{7}\\
+\amp ={198\sqrt{7}}\\
 \end{aligned}
 }</m></p>
 </solution>

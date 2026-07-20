@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator45-copy" assembly-id="PCC-ORCCA-ed3_BasicAlgebra_RadicalsAndRationalExponents_RationalizeDenominator45-copy">
-  <static seed="1925">
-    <statement><p><m>\displaystyle{ \frac{9}{4\sqrt{2}} }</m></p>
+  <static seed="1789">
+    <statement><p><m>\displaystyle{ \frac{3}{7\sqrt{2}} }</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{9\sqrt{2}}{8}</m>
+        <m>\frac{3\sqrt{2}}{14}</m>
       </p>
     </answer>
     <solution><p>We need to legally remove the radical <m>\sqrt{2}</m> from the denominator.</p>
@@ -16,10 +16,10 @@
 <p><m>\displaystyle{ \sqrt{2} \cdot \sqrt{2} = 2 }</m></p>
 <p>We will multiply both the numerator and denominator by <m>\sqrt{2}</m>, and we have:</p>
 <p><m>\displaystyle{\begin{aligned}[t]
-   \frac{9}{4\sqrt{2}} \amp = \frac{9}{4\sqrt{2}}\cdot\frac{\sqrt{2}}{\sqrt{2}}\\
-      \amp = \frac{9 \cdot \sqrt{2}}{4\sqrt{2} \cdot \sqrt{2}} \\
-      \amp = \frac{9 \sqrt{2}}{4 \cdot 2} \\
-      \amp = \frac{9 \sqrt{2}}{8}
+   \frac{3}{7\sqrt{2}} \amp = \frac{3}{7\sqrt{2}}\cdot\frac{\sqrt{2}}{\sqrt{2}}\\
+      \amp = \frac{3 \cdot \sqrt{2}}{7\sqrt{2} \cdot \sqrt{2}} \\
+      \amp = \frac{3 \sqrt{2}}{7 \cdot 2} \\
+      \amp = \frac{3 \sqrt{2}}{14}
 \end{aligned}
     }</m></p>
 </solution>

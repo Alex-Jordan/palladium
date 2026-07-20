@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-use-distributive-property-fraction" assembly-id="use-distributive-property-fraction">
-  <static seed="2344">
-    <statement><p>Apply the distributive property to <m>{\frac{3}{8}\mathopen{}\left(A+\frac{10}{7}\right)}\text{.}</m></p>
+  <static seed="2208">
+    <statement><p>Apply the distributive property to <m>{\frac{5}{9}\mathopen{}\left(y+\frac{4}{7}\right)}\text{.}</m></p>
 <p><fillin characters="16" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>\frac{3}{8}A+\frac{3}{8}\frac{10}{7}</m>
+        <m>\frac{5}{9}y+\frac{5}{9}\frac{4}{7}</m>
       </p>
     </answer>
   </static>

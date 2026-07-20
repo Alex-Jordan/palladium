@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-addition-and-subtraction-of-rational-expressions-7-4-3" assembly-id="section-addition-and-subtraction-of-rational-expressions-7-4-3">
-  <static seed="1416" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions20.pg">
+  <static seed="1280" source="Contrib/PCC/BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions20.pg">
     <statement><p>Add or subtract the rational expressions to a single rational expression and then simplify.</p>
-<p><m>\displaystyle{{\frac{81t^{2}}{9t+5x}-\frac{25x^{2}}{9t+5x}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
+<p><m>\displaystyle{{\frac{25r^{2}}{5r-6x}-\frac{36x^{2}}{5r-6x}} =}</m> <fillin characters="19" name="AnSwEr0001"/></p>
 </statement>
     <answer>
       <p>
-        <m>9t-5x</m>
+        <m>5r+6x</m>
       </p>
     </answer>
     <solution><p><m>\displaystyle{\begin{aligned}
-   {\frac{81t^{2}}{9t+5x}-\frac{25x^{2}}{9t+5x}} 
-      \amp = \frac{{81t^{2}-25x^{2}}}{{9t+5x}} \\
-      \amp = \frac{{\left(9t+5x\right)\mathopen{}\left(9t-5x\right)}}{{9t+5x}} \\
-      \amp = {9t-5x}
+   {\frac{25r^{2}}{5r-6x}-\frac{36x^{2}}{5r-6x}} 
+      \amp = \frac{{25r^{2}-36x^{2}}}{{5r-6x}} \\
+      \amp = \frac{{\left(5r-6x\right)\mathopen{}\left(5r+6x\right)}}{{5r-6x}} \\
+      \amp = {5r+6x}
 \end{aligned}
     }</m></p>
 </solution>

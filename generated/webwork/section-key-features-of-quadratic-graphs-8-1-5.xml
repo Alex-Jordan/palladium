@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-section-key-features-of-quadratic-graphs-8-1-5" assembly-id="section-key-features-of-quadratic-graphs-8-1-5">
-  <static seed="983" source="Contrib/PCC/BasicAlgebra/EquationsAndInequalitiesInTwoVariables/TableForLine110.pg">
+  <static seed="516" source="Contrib/PCC/BasicAlgebra/EquationsAndInequalitiesInTwoVariables/TableForLine110.pg">
     <statement><p>Make a table for the equation.</p>
 <p>The first row is an example.</p>
 <tabular valign="top">
@@ -9,21 +9,21 @@
 <col halign="center"/>
 <row>
 <cell><m>x</m></cell>
-<cell><m>y=\frac{9}{4} x +2</m></cell>
+<cell><m>y=\frac{1}{8} x +8</m></cell>
 <cell>Points</cell>
 </row>
 <row>
-<cell><m>-12</m></cell>
-<cell><m>-25</m></cell>
-<cell><m>\left(-12,-25\right)</m></cell>
+<cell><m>-24</m></cell>
+<cell><m>5</m></cell>
+<cell><m>\left(-24,5\right)</m></cell>
 </row>
 <row>
-<cell><m>-8</m></cell>
+<cell><m>-16</m></cell>
 <cell><fillin characters="3" name="AnSwEr0001"/></cell>
 <cell><fillin characters="6" name="AnSwEr0002"/></cell>
 </row>
 <row>
-<cell><m>-4</m></cell>
+<cell><m>-8</m></cell>
 <cell><fillin characters="3" name="AnSwEr0003"/></cell>
 <cell><fillin characters="6" name="AnSwEr0004"/></cell>
 </row>
@@ -33,12 +33,12 @@
 <cell><fillin characters="6" name="AnSwEr0006"/></cell>
 </row>
 <row>
-<cell><m>4</m></cell>
+<cell><m>8</m></cell>
 <cell><fillin characters="3" name="AnSwEr0007"/></cell>
 <cell><fillin characters="6" name="AnSwEr0008"/></cell>
 </row>
 <row>
-<cell><m>8</m></cell>
+<cell><m>16</m></cell>
 <cell><fillin characters="3" name="AnSwEr0009"/></cell>
 <cell><fillin characters="6" name="AnSwEr0010"/></cell>
 </row>
@@ -47,59 +47,59 @@
 <col width="50%"/>
 <row>
 <cell>
-Values of <m>x</m> and <m>y</m> satisfying the equation <m>y=\frac{9}{4} x +2</m>
+Values of <m>x</m> and <m>y</m> satisfying the equation <m>y=\frac{1}{8} x +8</m>
 </cell>
 </row>
 </tabular>
 </statement>
     <answer>
       <p>
-        <m>-16</m>
+        <m>6</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(-8,-16\right)</m>
+        <m>\left(-16,6\right)</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>-7</m>
+        <m>7</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(-4,-7\right)</m>
+        <m>\left(-8,7\right)</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>2</m>
+        <m>8</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(0,2\right)</m>
+        <m>\left(0,8\right)</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>11</m>
+        <m>9</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(4,11\right)</m>
+        <m>\left(8,9\right)</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>20</m>
+        <m>10</m>
       </p>
     </answer>
     <answer>
       <p>
-        <m>\left(8,20\right)</m>
+        <m>\left(16,10\right)</m>
       </p>
     </answer>
     <solution><tabular valign="top">
@@ -112,41 +112,41 @@ Values of <m>x</m> and <m>y</m> satisfying the equation <m>y=\frac{9}{4} x +2</m
 <cell>Points</cell>
 </row>
 <row>
-<cell><m>-12</m></cell>
-<cell><m>-25</m></cell>
-<cell><m>\left(-12,-25\right)</m></cell>
+<cell><m>-24</m></cell>
+<cell><m>5</m></cell>
+<cell><m>\left(-24,5\right)</m></cell>
+</row>
+<row>
+<cell><m>-16</m></cell>
+<cell><m>y=\frac{1}{8} \cdot (-16) +8=6</m></cell>
+<cell><m>\left(-16,6\right)</m></cell>
 </row>
 <row>
 <cell><m>-8</m></cell>
-<cell><m>y=\frac{9}{4} \cdot (-8) +2=-16</m></cell>
-<cell><m>\left(-8,-16\right)</m></cell>
-</row>
-<row>
-<cell><m>-4</m></cell>
-<cell><m>y=\frac{9}{4} \cdot (-4) +2=-7</m></cell>
-<cell><m>\left(-4,-7\right)</m></cell>
+<cell><m>y=\frac{1}{8} \cdot (-8) +8=7</m></cell>
+<cell><m>\left(-8,7\right)</m></cell>
 </row>
 <row>
 <cell><m>0</m></cell>
-<cell><m>y=\frac{9}{4} \cdot (0) +2=2</m></cell>
-<cell><m>\left(0,2\right)</m></cell>
-</row>
-<row>
-<cell><m>4</m></cell>
-<cell><m>y=\frac{9}{4} \cdot (4) +2=11</m></cell>
-<cell><m>\left(4,11\right)</m></cell>
+<cell><m>y=\frac{1}{8} \cdot (0) +8=8</m></cell>
+<cell><m>\left(0,8\right)</m></cell>
 </row>
 <row>
 <cell><m>8</m></cell>
-<cell><m>y=\frac{9}{4} \cdot (8) +2=20</m></cell>
-<cell><m>\left(8,20\right)</m></cell>
+<cell><m>y=\frac{1}{8} \cdot (8) +8=9</m></cell>
+<cell><m>\left(8,9\right)</m></cell>
+</row>
+<row>
+<cell><m>16</m></cell>
+<cell><m>y=\frac{1}{8} \cdot (16) +8=10</m></cell>
+<cell><m>\left(16,10\right)</m></cell>
 </row>
 </tabular>
 <tabular>
 <col width="50%"/>
 <row>
 <cell>
-Values of <m>x</m> and <m>y</m> satisfying the equation <m>y=\frac{9}{4} x +2</m>
+Values of <m>x</m> and <m>y</m> satisfying the equation <m>y=\frac{1}{8} x +8</m>
 </cell>
 </row>
 </tabular>  
